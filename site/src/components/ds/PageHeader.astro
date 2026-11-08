@@ -1,0 +1,27 @@
+---
+// The full-width strip that names a page: a tinted band (the
+// --gradient-header token), the title in the brand gradient, what the page holds, and an optional
+// note (e.g. "Not legal advice"). Anything in the slot goes under the description; the "above" slot
+// (e.g. a back link) goes over the title.
+import Container from "./Container.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  note?: string;
+}
+
+const { title, description, note } = Astro.props;
+---
+
+<header class="bg-header border-b">
+  <Container class="py-10 sm:py-12">
+    <div class="mx-auto max-w-3xl text-center">
+      <slot name="above" />
+      <h1 class="mt-0! text-h1 font-bold tracking-tight text-balance text-brand-gradient">{title}</h1>
+      {description && <p class="lead mt-4 text-foreground/80">{description}</p>}
+      <slot />
+      {note && <p class="mt-2 text-sm text-muted-foreground">{note}</p>}
+    </div>
+  </Container>
+</header>

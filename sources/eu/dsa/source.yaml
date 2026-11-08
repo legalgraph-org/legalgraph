@@ -1,0 +1,36 @@
+# Digital Services Act (Regulation (EU) 2022/2065): official XML (Formex 4) of the Official Journal.
+# Not amended since; English is annotated, German is a parallel language version.
+id: eu/dsa
+title: Digital Services Act (Regulation (EU) 2022/2065)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_2022277EN.01000101.xml
+    page: https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng
+    url: https://publications.europa.eu/resource/celex/32022R2065
+    fetch: zip-member
+    member: L_2022277EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 397e488ee00c3468499fecd0a08aa738cb82981632abb73129e0c02eeea0cf18
+  - file: L_2022277DE.01000101.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu
+    url: https://publications.europa.eu/resource/celex/32022R2065
+    fetch: zip-member
+    member: L_2022277DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: c3be4ec6b4e7044fac6c37deb7ca3f29cfd613feb7fbf602664173052df88667
+annotated: L_2022277EN.01000101.annotated.xml

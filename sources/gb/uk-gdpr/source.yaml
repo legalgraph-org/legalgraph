@@ -1,0 +1,22 @@
+# UK GDPR (Regulation (EU) 2016/679 as retained and amended in UK law): the revised (current) text as legislation.gov.uk publishes it, in its official XML (Crown
+# Legislation Markup Language). The GDPR as it applies in the UK after Brexit, amended by UK
+# legislation (including the Data (Use and Access) Act 2025); read together with the Data Protection Act 2018.
+id: gb/uk-gdpr
+title: UK GDPR (Regulation (EU) 2016/679 as retained and amended in UK law)
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: eur-2016-679.xml
+    page: https://www.legislation.gov.uk/eur/2016/679
+    url: https://www.legislation.gov.uk/eur/2016/679/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-02
+    sha256: 4b1fb7a70bdeeeef1de7c282b5e2f8c1c348b914a137a7831089070e04fad12c
+annotated: eur-2016-679.annotated.xml

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Law of Ukraine on Personal Data Protection, Article 12(2), written in schemas/law.xsd from the portal's fragment.
+  The words are the Verkhovna Rada's (zakon.rada.gov.ua); only the structure is ours. Editorial notes on
+  amendments (in braces on the portal) are left out. `legalgraph sources verify` checks every paragraph word
+  for word against the downloaded fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="uk"
+     lga:act="UA-2297" lga:jurisdiction="UA" lga:act-type="Statute"
+     lga:url="https://zakon.rada.gov.ua/laws/show/2297-17">
+  <meta>
+    <title>Про захист персональних даних</title>
+    <date>2010-06-01</date>
+  </meta>
+
+  <section num="Стаття 12" title="Збирання персональних даних" source="2297-17.fragment.html">
+    <paragraph num="2." lga:provision="UA-2297-art12-2" lga:citation="ст. 12 ч. 2 Закону «Про захист персональних даних»" lga:url="https://zakon.rada.gov.ua/laws/show/2297-17#n110" lga:regulates="PrivacyInformation" lga:requires="ControllerIdentity CategoriesOfPersonalData DataSubjectRights ProcessingPurposes Recipients">Суб’єкт персональних даних повідомляється про володільця персональних даних, склад та зміст зібраних персональних даних, свої права, визначені цим Законом, мету збору персональних даних та осіб, яким передаються його персональні дані:
+      <list>
+        <item num="">в момент збору персональних даних, якщо персональні дані збираються у суб’єкта персональних даних;</item>
+        <item num="">в інших випадках протягом тридцяти робочих днів з дня збору персональних даних, крім випадків, встановлених законом.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

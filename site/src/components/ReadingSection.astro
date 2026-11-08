@@ -1,0 +1,156 @@
+---
+// One annotated section (§ or article) of a source document as a reader sees it. Paragraphs that are
+// provisions in the graph are highlighted, with their pointers and annotations, and paired line by
+// line with their counterpart: the English translation, or, for EU law, the other official language
+// version. Each line shows what its item annotations name (lga:requires, lga:defines). The
+// section's annotated XML is underneath.
+import type { Section } from "../content.config";
+import { loadGraph } from "../lib/data";
+import { METHOD, languageName, pagePath } from "../lib/links";
+import { highlightXml } from "../lib/xml";
+import Pointer from "./Pointer.astro";
+import Refs from "./Refs.astro";
+import Status from "./Status.astro";
+
+interface Props {
+  section: Section;
+  lang: string;
+}
+
+const { section, lang } = Astro.props;
+const graph = await loadGraph();
+const ROLE_LABELS: Record<string, string> = {
+  regulates: "regulates",
+  enforces: "enforces",
+  defines: "defines",
+  authorises: "authorises",
+  implements: "implements",
+};
+const paragraphs = section.paragraphs.map((paragraph) => {
+  const provision = paragraph.provision ? graph.provisions.get(paragraph.provision) : undefined;
+  const quote = provision?.data.quotes[0];
+  const [versionLang, versionLines] = Object.entries(paragraph.versions)[0] ?? [];
+  const version = versionLang ? quote?.versions.find((v) => v.lang === versionLang) : undefined;
+  const lines = versionLines ?? quote?.translation?.text?.split("\n") ?? [];
+  const other =
+    version && versionLang
+      ? { id: version.id, lang: versionLang, label: `${languageName(versionLang)} · ${version.official ? "authentic" : "translation for information"}`, status: undefined }
+      : quote?.translation
+        ? {
+            id: `${quote.id}-en`,
+            lang: "en",
+            label: `English · ${METHOD[quote.translation.method] ?? quote.translation.method}`,
+            status: quote.translation.status,
+          }
+        : undefined;
+  const paired = other && lines.length === paragraph.lines.length;
+  const leftLabel = version
+    ? `${languageName(lang)} · ${quote?.official === false ? "translation for information" : "authentic"}, annotated`
+    : "Original";
+  return { ...paragraph, provision, quote, leftLabel, other: paired ? other : undefined, counterpart: paired ? lines : [] };
+});
+const otherTitle = Object.entries(section.titles)[0];
+const badges = [
+  ["requires", "tone-requires", "lga:requires on this item: an information item it names"],
+  ["defines", "tone-defines", "lga:defines on this item: a concept it defines"],
+] as const;
+---
+
+<section class="card space-y-4" id={section.xpath}>
+  <header class="flex flex-wrap items-baseline justify-between gap-2">
+    <h3 class="text-lg font-semibold">
+      {section.num}
+      {section.title && <span class="font-normal text-muted-foreground"> · {section.title}</span>}
+      {otherTitle && <span class="block text-sm font-normal text-muted-foreground" lang={otherTitle[0]}>{otherTitle[1]}</span>}
+    </h3>
+    <span class="font-mono text-xs text-muted-foreground" title="XPath in the annotated XML">{section.xpath}</span>
+  </header>
+
+  {
+    paragraphs.map((paragraph) =>
+      paragraph.provision ? (
+        <article id={paragraph.provision.id} class="space-y-2 rounded-md border-l-4 border-primary bg-primary/5 py-2 pr-2 pl-3">
+          <div class="flex flex-wrap items-center gap-2 text-sm">
+            <a href={pagePath("id", paragraph.provision.id)} class="font-medium">
+              {paragraph.provision.data.citation}
+            </a>
+            <Pointer id={paragraph.provision.id} />
+            <Status status={paragraph.provision.data.reviewStatus} />
+            {Object.entries(paragraph.annotations)
+              .filter(([role]) => role in ROLE_LABELS)
+              .map(([role, value]) => (
+                <span class="text-xs text-muted-foreground">
+                  {ROLE_LABELS[role]} <Refs ids={value.split(" ")} />
+                </span>
+              ))}
+          </div>
+          <div class="pair" data-view="side">
+            <div class="pair-heads text-xs font-medium text-muted-foreground">
+              <div class="flex flex-wrap items-center gap-2">
+                {paragraph.leftLabel}
+                {paragraph.quote && <Pointer id={paragraph.quote.id} graph={false} />}
+              </div>
+              {paragraph.other && (
+                <div class="flex flex-wrap items-center gap-2">
+                  {paragraph.other.label} {paragraph.other.status && <Status status={paragraph.other.status} />}
+                  <Pointer id={paragraph.other.id} graph={false} />
+                </div>
+              )}
+            </div>
+            {paragraph.lines.map((line, index) => (
+              <div class="pair-row">
+                <div>
+                  <p class="law-text" lang={lang}>{line.text}</p>
+                  {line.requires.length + line.defines.length > 0 && (
+                    <p class="mt-1 flex flex-wrap gap-1">
+                      {badges.map(([key, tone, help]) =>
+                        line[key].map((item) => (
+                          <a
+                            href={pagePath("vocab", item)}
+                            class={`tag no-underline py-0.5 font-mono text-[11px] ${tone}`}
+                            title={help}
+                          >
+                            {key === "defines" && "defines: "}
+                            {graph.concepts.get(item)?.data.label ?? item}
+                          </a>
+                        )),
+                      )}
+                    </p>
+                  )}
+                </div>
+                {paragraph.other && (
+                  <p class="law-text text-foreground/80" lang={paragraph.other.lang}>{paragraph.counterpart[index]}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </article>
+      ) : paragraph.lines.length === 1 && paragraph.lines[0]!.text.length <= 200 ? (
+        <p class="law-text text-muted-foreground" lang={lang} title="Not annotated: shown for context, not part of the graph">
+          {paragraph.lines[0]!.text}
+        </p>
+      ) : (
+        <details class="group text-muted-foreground">
+          <summary class="cursor-pointer" title="Not annotated: shown for context, not part of the graph">
+            <span class="law-text" lang={lang}>{paragraph.lines[0]!.text.slice(0, 160)}…</span>
+            <span class="ml-1 text-xs group-open:hidden">
+              show all{paragraph.lines.length > 1 && ` (${paragraph.lines.length} lines)`}
+            </span>
+          </summary>
+          {paragraph.lines.map((line) => (
+            <p class="law-text" lang={lang}>{line.text}</p>
+          ))}
+        </details>
+      ),
+    )
+  }
+
+  <p class="text-xs text-muted-foreground">Paragraphs in grey are not annotated: shown for context, not part of the graph.</p>
+
+  <details class="rounded border border-border bg-muted/60">
+    <summary class="cursor-pointer px-3 py-2 text-sm text-foreground/80">
+      Annotated XML of {section.num} <span class="text-muted-foreground">(indented for reading; <span class="xml-mla">lga:</span> marks what we added)</span>
+    </summary>
+    <pre class="xml-view overflow-x-auto px-3 pb-3 text-xs leading-relaxed whitespace-pre-wrap"><code set:html={highlightXml(section.xml)} /></pre>
+  </details>
+</section>

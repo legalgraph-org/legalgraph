@@ -1,0 +1,16 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:MT-CAP426
+    lgo:amendmentCheck lg:MT-CAP426-amendment-check .
+
+lg:MT-CAP426-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://legislation.mt/eli/cap/426/eng"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "version eli/cap/426/20240217" ;
+    lgo:lastKnownAmendmentDate "2024-02-17"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "legislation.mt ELI metadata: current in-force version dated 17.02.2024."@en .

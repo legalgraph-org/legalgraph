@@ -1,0 +1,71 @@
+[project]
+name = "legalgraph"
+version = "0.1.0"
+description = "Utilities to load, validate, query and export legalgraph"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Aimix GmbH" }]
+requires-python = "~=3.15.0"
+dependencies = [
+    "beautifulsoup4==4.15.0",
+    "click==8.5.0",
+    "lxml==6.1.3",
+    "pypdf==6.1.3",
+    "pyshacl==0.40.2",
+    "python-dotenv==1.2.4",
+    "pyyaml==6.0.3",
+    "rdflib==7.6.0",
+]
+
+[project.scripts]
+legalgraph = "legalgraph.cli:cli"
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+    "ruff==0.17.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = "src"
+module-name = "legalgraph"
+
+[tool.ruff]
+target-version = "py315"
+line-length = 120
+exclude = [".venv", "__pycache__", ".git", ".pytest_cache", ".ruff_cache"]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # flake8-tidy-imports
+    "TID",
+]
+extend-select = ["E501"]
+
+# First-party imports must be absolute, e.g. `from legalgraph.load import Sources`.
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-v", "--no-header", "-m", "not live"]
+python_files = ["test_*.py"]
+markers = [
+    "live: queries the official legal portals over the network (run with -m live)",
+]

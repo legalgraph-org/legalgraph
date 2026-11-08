@@ -1,0 +1,130 @@
+# Live amendment-check coverage, one line per lgo:LegalAct in the graph.
+#
+#   ACT: {kind: <checker>, arg: <portal id>}   — `legalgraph checks amendments` covers it
+#   ACT: {exempt: "<reason>"}                  — consciously not checked, with why
+#
+# Every lgo:LegalAct in the graph must appear here (tested). `kind` is a checker
+# function in legalgraph.amendments; `arg` is the portal-side identifier.
+
+# --- DE: gesetze-im-internet standangabe ---------------------------------------
+DE-AO: {kind: gesetze, arg: ao_1977}
+DE-BDSG: {kind: gesetze, arg: bdsg_2018}
+DE-BFSG: {kind: gesetze, arg: bfsg}
+DE-BGB: {kind: gesetze, arg: bgb}
+DE-DDG: {kind: gesetze, arg: ddg}
+DE-DLInfoV: {kind: gesetze, arg: dlinfov}
+DE-EGBGB: {kind: gesetze, arg: bgbeg}
+DE-EinwV: {kind: gesetze, arg: einwv}
+DE-ElektroG: {kind: gesetze, arg: elektrog_2015}
+DE-GewO: {kind: gesetze, arg: gewo}
+DE-JMStV: {exempt: "gesetze-bayern.de is JavaScript-rendered"}
+DE-MStV: {exempt: "gesetze-bayern.de is JavaScript-rendered"}
+DE-PAngV: {kind: gesetze, arg: pangv_2022}
+DE-TDDDG: {kind: gesetze, arg: ttdsg}
+DE-UStG: {kind: gesetze, arg: ustg_1980}
+DE-UWG: {kind: gesetze, arg: uwg_2004}
+DE-VerpackDG: {kind: gesetze, arg: verpackdg}
+DE-VSBG: {kind: gesetze, arg: vsbg}
+
+# --- EU: Cellar notice=tree AMENDED_BY / REPEALED_BY ----------------------------
+EU-1993-13: {kind: cellar, arg: "31993L0013"}
+EU-1995-46: {kind: cellar, arg: "31995L0046"}
+EU-1998-6: {kind: cellar, arg: "31998L0006"}
+EU-2000-31: {kind: cellar, arg: "32000L0031"}
+EU-2002-58: {kind: cellar, arg: "32002L0058"}
+EU-2005-29: {kind: cellar, arg: "32005L0029"}
+EU-2006-123: {kind: cellar, arg: "32006L0123"}
+EU-2008-593: {kind: cellar, arg: "32008R0593"}
+EU-2009-136: {kind: cellar, arg: "32009L0136"}
+EU-2011-83: {kind: cellar, arg: "32011L0083"}
+EU-2012-1215: {kind: cellar, arg: "32012R1215"}
+EU-2013-524: {kind: cellar, arg: "32013R0524"}
+EU-2016-679: {kind: cellar, arg: "32016R0679"}
+EU-2017-1132: {kind: cellar, arg: "32017L1132"}
+EU-2017-1369: {kind: cellar, arg: "32017R1369"}
+EU-2018-302: {kind: cellar, arg: "32018R0302"}
+EU-2019-882: {kind: cellar, arg: "32019L0882"}
+EU-2022-2065: {kind: cellar, arg: "32022R2065"}
+EU-2023-1795: {kind: cellar, arg: "32023D1795"}
+EU-2023-988: {kind: cellar, arg: "32023R0988"}
+EU-2023-2854: {kind: cellar, arg: "32023R2854"}
+EU-2024-900: {kind: cellar, arg: "32024R0900"}
+EU-2024-1689: {kind: cellar, arg: "32024R1689"}
+EU-2024-3228: {kind: cellar, arg: "32024R3228"}
+EU-COM-2025-837: {exempt: "a COM proposal is not an enacted act; proposals are not amended"}
+
+# --- GB: legislation.gov.uk outstanding changes + annotations -------------------
+GB-CRA-2015: {kind: legislation, arg: ukpga/2015/15}
+GB-DMCC-2024: {kind: legislation, arg: ukpga/2024/13}
+GB-OSA-2023: {kind: legislation, arg: ukpga/2023/50}
+GB-SI-2002-2013: {kind: legislation, arg: uksi/2002/2013}
+GB-SI-2003-2426: {kind: legislation, arg: uksi/2003/2426}
+GB-SI-2013-3134: {kind: legislation, arg: uksi/2013/3134}
+GB-SI-2015-17: {kind: legislation, arg: uksi/2015/17}
+GB-UK-GDPR: {kind: legislation, arg: eur/2016/679}
+
+# --- UA: zakon.rada.gov.ua ------------------------------------------------------
+UA-1023: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-3153: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-270: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-675: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-1089: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-2297: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-2704: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+UA-2849: {exempt: "zakon.rada.gov.ua blocks foreign traffic"}
+
+# --- FR: legifrance -------------------------------------------------------------
+FR-LIL: {exempt: "legifrance.gouv.fr blocks programmatic access"}
+FR-LCEN: {exempt: "legifrance.gouv.fr blocks programmatic access"}
+FR-CONSO: {exempt: "legifrance.gouv.fr blocks programmatic access"}
+
+# --- AT: RIS GeltendeFassung ----------------------------------------------------
+AT-ECG: {kind: ris, arg: "20001703"}
+AT-TKG-2021: {kind: ris, arg: "20011678"}
+AT-UGB: {kind: ris, arg: "10001702"}
+
+# --- CH: fedlex SPARQL ----------------------------------------------------------
+CH-DSG: {kind: fedlex, arg: cc/2022/491}
+CH-UWG: {kind: fedlex, arg: cc/1988/223_223_223}
+
+# --- US / US-CA -----------------------------------------------------------------
+US-ADA: {kind: uscode, arg: "USCODE-2024-title42:USCODE-2024-title42-chap126-subchapIII-sec12182"}
+US-CAN-SPAM: {kind: uscode, arg: "USCODE-2024-title15:USCODE-2024-title15-chap103-sec7704"}
+US-CFR-16-312: {kind: ecfr, arg: "16:312:312.1"}
+US-CFR-28-35: {kind: ecfr, arg: "28:35:35.200"}
+US-CA-CIV-1789-3: {exempt: "leginfo.legislature.ca.gov needs a browser save"}
+US-CA-CCPA: {exempt: "leginfo.legislature.ca.gov needs a browser save"}
+US-CA-BPC: {exempt: "leginfo.legislature.ca.gov needs a browser save"}
+US-CA-CCR-11-CCPA: {kind: cppa, arg: "https://cppa.ca.gov/regulations/"}
+
+# --- CA / CA-ON -----------------------------------------------------------------
+CA-PIPEDA: {kind: laws_lois, arg: "P-8.6"}
+CA-CASL: {kind: laws_lois, arg: "E-1.6"}
+CA-ON-CPA: {exempt: "ontario e-Laws is JavaScript-rendered"}
+
+# --- IT / IE / ES / NO / MT / NL / PT / SE ----------------------------------------
+IT-196-2003: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2003-06-30;196"}
+IT-DLGS-70-2003: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2003-04-09;70"}
+IE-SI-2003-68: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
+IE-SI-336-2011: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
+ES-LSSI: {kind: boe, arg: BOE-A-2002-13758}
+NO-EHL: {kind: lovdata, arg: 2003-05-23-35}
+MT-CAP426: {kind: legislation_mt, arg: cap/426}
+NL-BW3: {kind: wetten, arg: BWBR0005291}
+PT-DL-7-2004: {kind: pgdl, arg: "1399"}
+SE-SFS-2002-562: {kind: riksdagen, arg: lag-2002562-om-elektronisk-handel-och-andra-informations_sfs-2002-562}
+
+# --- smaller jurisdictions --------------------------------------------------------
+CZ-480-2004: {exempt: "e-sbirka.cz is JavaScript-rendered"}
+LV-ISSL: {exempt: "likumi.lv version dates are JavaScript-rendered"}
+HR-ZET: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
+SI-ZEPT: {exempt: "pisrs.si is JavaScript-rendered"}
+TR-6563: {kind: mevzuat, arg: "1.5.6563"}
+CY-156-I-2004: {exempt: "cylaw.org gives no version data"}
+BE-WER: {exempt: "justel needs an interactive session"}
+EE-ISSA: {exempt: "riigiteataja.ee is a JavaScript application"}
+LT-IVPI: {exempt: "e-tar.lt returns HTTP 403"}
+LU-LOI-2000-08-14: {exempt: "legilux.public.lu is a JavaScript application"}
+MD-ECOM: {exempt: "legis.md returns HTTP 403"}
+ME-ZET: {exempt: "podaci.net gives no version data"}
+XK-04-L-094: {exempt: "gzk.rks-gov.net returned an error page"}

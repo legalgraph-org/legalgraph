@@ -1,0 +1,23 @@
+# Закон України «Про захист прав споживачів» (No. 3153-IX): published by the Verkhovna Rada on zakon.rada.gov.ua as HTML only. The fragment holding the
+# law text (div#article) is kept; the articles the graph uses are transcribed in schemas/law.xsd and
+# checked word for word against it. Articles 17, 18 and 21 cover distance and online sales. The portal blocks quick successive requests and
+# foreign traffic: `pause` spaces out downloads, which may need a Ukrainian network.
+id: ua/consumer-rights
+title: Закон України «Про захист прав споживачів» (No. 3153-IX)
+jurisdiction: UA
+language: uk
+publisher: Verkhovna Rada of Ukraine, zakon.rada.gov.ua
+kind: authored-xml
+licence: official-work
+licence_basis: "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright"
+originals:
+  - file: 3153-20.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/3153-20/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: c87df0e38aa3d8dd7e1e40788e635462ba2095dc15d70aa1c284d0af3e9e76b2
+annotated: consumer-rights.law.xml

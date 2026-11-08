@@ -1,0 +1,21 @@
+# California Code of Regulations, title 11 (CCPA regulations), as in force from 1 January 2026,
+# published by the California Privacy Protection Agency: § 7025 makes opt-out preference signals such as Global
+# Privacy Control binding — a business that ignores the signal violates the regulations — and
+# § 7026 sets the rules for opt-out requests. The PDF is the Agency's official publication.
+id: us-ca/ccpa-regulations
+title: California Code of Regulations, title 11 (CCPA regulations)
+jurisdiction: US-CA
+language: en
+publisher: California Privacy Protection Agency, cppa.ca.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Government edicts doctrine: the text of regulations is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020)); only the Agency's own copy is used, not the commercial CCR edition"
+originals:
+  - file: ccpa_statute_eff_20260101.pdf
+    page: https://cppa.ca.gov/regulations/consumer_privacy_act.html
+    url: https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-08
+    sha256: 8d57eba97a7fe13346b7827d0131e1ab84dc110c6ff20daa6fa6ec4a4329d0fe
+annotated: ccpa-regulations.law.xml

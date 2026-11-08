@@ -1,0 +1,57 @@
+# Directive (EU) 2017/1132 relating to certain aspects of company law, consolidated version
+# applying from 12 August 2022, from the Publications Office (Formex 4). Article 26, substituted
+# by Directive (EU) 2019/1151, requires companies to publish the company-law particulars on their
+# websites — the EU basis for the imprint of registered companies. The consolidated text is a
+# documentation tool: the authentic texts are the OJ publications of the directive and of the
+# 2019 amendment, kept here for the quoted provisions (`amends`). English is annotated; German is
+# a parallel language version.
+id: eu/company-law
+title: Directive (EU) 2017/1132 relating to certain aspects of company law, consolidated version of 12 August 2022
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2017L1132EN0030010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017L1132-20220812
+    url: https://publications.europa.eu/resource/celex/02017L1132-20220812
+    fetch: zip-member
+    member: CL2017L1132EN0030010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 12 August 2022, prepared by the Publications Office as a documentation tool. The authentic texts are Directive (EU) 2017/1132 (OJ L 169, 30.6.2017) and its amending acts; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: b0c0711cd07097208473591e7d4ec09fca87218d57de85892470dc783ca962c7
+  - file: CL2017L1132DE0030010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02017L1132-20220812
+    url: https://publications.europa.eu/resource/celex/02017L1132-20220812
+    fetch: zip-member
+    member: CL2017L1132DE0030010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 31149f02348f139efd86841476af3c5cd3d1dba418e353496760b5660e0bc0f1
+  - file: L_2019186EN.01008001.xml
+    role: amendment
+    language: en
+    title: "Directive (EU) 2019/1151, OJ L 186, 11.7.2019"
+    url: https://publications.europa.eu/resource/celex/32019L1151
+    fetch: zip-member
+    member: L_2019186EN.01008001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    amends: ["Art. 26"]
+    retrieved_on: 2026-11-02
+    sha256: f324713d8681928859897668638f70920426565a154a1e5f0c383f42d690ad5c
+annotated: CL2017L1132EN0030010.0001.annotated.xml

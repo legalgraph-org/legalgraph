@@ -1,0 +1,27 @@
+# § 14 UGB (Unternehmensgesetzgebuch): the Austrian imprint duty for companies registered in the
+# Firmenbuch — Firma, Rechtsform, Sitz, Firmenbuchnummer, winding-up and Firmenbuchgericht on
+# business letters, order forms and websites, plus capital details where capital is stated.
+# RIS serves the consolidated text as HTML only; the fragment holding § 14 is kept and the text is
+# transcribed in schemas/law.xsd, checked word for word against it. The earlier enacted wording of
+# § 14(1) differed (a cooperatives sentence has since been repealed), so the consolidated fragment,
+# not the promulgation, is the checked text.
+id: at/ugb
+title: Unternehmensgesetzbuch (§ 14)
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: ugb-14.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_14_TextContainer_14"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Consolidated version (Fassung vom 02.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."
+    retrieved_on: 2026-11-02
+    sha256: bdfc186f645eb95d75d109d777ed9543fab29487c60af107e78788524c94b1ea
+annotated: ugb.law.xml

@@ -1,0 +1,41 @@
+# Directive 2006/123/EC on services in the internal market (the Services Directive), Official
+# Journal text — never substantively amended, so no consolidated version exists. Article 22
+# lists the information every service provider must make available: the EU basis of the German
+# DL-InfoV and the service-sector part of the provider identification notice. English is
+# annotated; German is a parallel language version.
+id: eu/services-directive
+title: Directive 2006/123/EC on services in the internal market
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_2006376EN.01003601.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0123
+    url: https://publications.europa.eu/resource/celex/32006L0123
+    fetch: zip-member
+    member: L_2006376EN.01003601.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Authentic Official Journal text, OJ L 376, 27.12.2006. The directive has not been substantively amended."
+    retrieved_on: 2026-11-02
+    sha256: 3df325e9d9f9a43fdf82c9905f6a704affea5e8b193ed03baa9203ddad85eb29
+  - file: L_2006376DE.01003601.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32006L0123
+    url: https://publications.europa.eu/resource/celex/32006L0123
+    fetch: zip-member
+    member: L_2006376DE.01003601.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 14951e13091d4947c5db42f9f5ff723a720b4c02588ff3726cc10cad5a6c0b2e
+annotated: L_2006376EN.01003601.annotated.xml

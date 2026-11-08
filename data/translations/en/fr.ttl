@@ -1,0 +1,332 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:FR-CNIL-2020-092-p12-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2ab8a0b53746bbb41a91eab3d78f0a51962d04dfabd03c2295b55b10f63aae01" ;
+    lgo:text "As recalled in the guidelines, the purposes of the trackers must be presented to the users before they are offered the possibility to consent or to refuse. They must be formulated in an intelligible way, in language adapted and sufficiently clear to allow the users to understand precisely what they consent to."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-092-p12-q1 .
+
+lg:FR-CNIL-2020-092-p27-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f8af995d864dcdcc3a0904b8b8bc0cbaa709830bc634d88b7560314990ce19af" ;
+    lgo:text "In this regard, the Commission points out that global acceptance and refusal buttons may be offered at the first level of information, via for example the presentation of buttons titled “accept all” and “refuse all”, “I authorise” and “I do not authorise”, “I accept everything” and “I accept nothing” and allowing consent or refusal, in a single action, to several purposes."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-092-p27-q1 .
+
+lg:FR-CNIL-2020-092-p32-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "698ed9c97b22ca7c77a5a5f7e03d9a927bb30b570c5c4eba7878e4537b517d3b" ;
+    lgo:text "For example, at the first level of information, users may have the choice between two buttons presented at the same level and in the same format, on which are written respectively “accept all” and “refuse all”, “authorise” and “prohibit”, or “consent” and “do not consent”, or any other equivalent and sufficiently clear formulation. The Commission considers that this method constitutes a simple and clear way to allow the user to express refusal as easily as consent."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-092-p32-q1 .
+
+lg:FR-CNIL-2020-092-p44-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c543f403cbe7c06fea75e81d49efe426af82f53aae149a787f40471de87042e7" ;
+    lgo:text "In any event, the Commission recommends that the mechanism for managing and withdrawing consent be placed in an area that draws the users' attention or in areas where they would expect to find it, and that the visuals used be as explicit as possible."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-092-p44-q1 .
+
+lg:FR-CNIL-2020-092-p46-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2636f0ed9364c3791c957ed95dab0d789d1f3ccf208a1ebd0529af97eddfcd66" ;
+    lgo:text "The controllers of the processing or processings must be able to demonstrate, at any time, that the users have given their consent. To this end, mechanisms making it possible to demonstrate that the users' consent was validly collected must be put in place."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-092-p46-q1 .
+
+lg:FR-CNIL-2020-092-p9-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7786fbe10dea24a1910b3d0247fc9eb7daae8e2c02378a67bf15287313e78565" ;
+    lgo:text "For the purposes of this recommendation, the absence of the users' consent is designated by the term “refusal”. Any inaction or action of the users other than a positive act signifying their consent must be interpreted as a refusal to consent; in that case, no reading or writing operation subject to consent may legally take place."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-092-p9-q1 .
+
+lg:FR-CNIL-SAN-2021-023-d1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "61dff03df92705110d7b56097b1f9ad2d0574ab189675a1af8e97d992b0e82c7" ;
+    lgo:text "impose on the company [X] an administrative fine of 90,000,000 euros (ninety million euros) for breach of Article 82 of the Informatique et Libertés law"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-023-d1-q1 .
+
+lg:FR-CNIL-SAN-2021-023-d2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "27f8664789596702348e2dce1d580987e9e1a0c5e75da9817a1efc69d802af54" ;
+    lgo:text "impose on the company [Y] an administrative fine of 60,000,000 euros (sixty million euros) for breach of Article 82 of the Informatique et Libertés law"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-023-d2-q1 .
+
+lg:FR-CNIL-SAN-2021-023-d3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "aee37af5281facf3496cc052858a6af507679b5ba58d59ff2df3098701054c9d" ;
+    lgo:text "issue an injunction against the companies [X] and [Y] to change, on the websites [V].fr and [W].com, the way they obtain the consent of users located in France to operations reading and/or writing information in their terminal, by offering them a means of refusing these operations as simple as the mechanism provided for accepting them, in order to guarantee the freedom of their consent; • attach to the injunction a penalty payment of 100,000 euros (one hundred thousand euros) per day of delay at the end of a period of three months following notification of this deliberation"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-023-d3-q1 .
+
+lg:FR-CNIL-SAN-2021-023-p135-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9860fba2fba9a0f36b4728ddadbc250aeb5b722448189b43bbffbe0d61bdbcd2" ;
+    lgo:text "135. The restricted committee therefore considers that making the mechanism for refusing cookies more complex than the one for accepting them in reality discourages users from refusing cookies and encourages them to favour the ease of the Accept all button. An internet user is generally led to visit many websites. Browsing the internet is characterised by its speed and fluidity. Having to click on Personalise and having to understand how the page for refusing cookies is built is likely to discourage the user, who would nevertheless wish to refuse cookies. It is not disputed that, in the present case, the companies offer a choice between accepting and refusing cookies, but the way in which that refusal can be expressed, in the context of browsing the internet, biases the expression of choice in favour of consent so as to impair the freedom of choice."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-023-p135-q1 .
+
+lg:FR-CNIL-SAN-2021-023-title-38b94669a113-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "38b94669a1139e1e1a689a8dab45cf126d030ab344060ae2df0b131c8eae19c3" ;
+    lgo:text "Deliberation of the CNIL's restricted committee No SAN-2021-023 of 31 December 2021"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-023 .
+
+lg:FR-CNIL-SAN-2021-024-d1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "319e2a14dcc023444e59576e306a19a0c89f67afde680e65ed228a3e449ffb55" ;
+    lgo:text "impose an administrative fine on the company [X] of sixty million euros (60,000,000 euros) in respect of the breach of Article 82 of the \"Informatique et Libertés\" law;"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-024-d1-q1 .
+
+lg:FR-CNIL-SAN-2021-024-d2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "20a8657bf67c6007c8e97e9c45f2e4034a9610781b2d208e837e7e29ad2e463f" ;
+    lgo:text "issue an injunction against the company [X] to change, on the website \"[V].com\", the way it obtains the consent of users located in France to operations reading and/or writing information in their terminal, by offering them a means of refusing these operations as simple as the mechanism provided for accepting them, in order to guarantee the freedom of their consent; attach to the injunction a penalty payment of one hundred thousand euros (100,000 euros) per day of delay at the end of a period of three months following notification of this deliberation"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-024-d2-q1 .
+
+lg:FR-CNIL-SAN-2021-024-refus-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "879096742b08bb583a53d4766a4d2a3153cef821652b3d871784f0016a0f492e" ;
+    lgo:text "In the present case, the restricted committee recalls that, as found during the online inspection of 8 April 2021, when a user residing in France visits the website \"[V].com\", they can accept advertising cookies in a single action, by clicking on the button labelled \"Accept cookies\" in the first window. It notes that, by contrast, to refuse these cookies the user must take no fewer than three actions: first click on the button labelled \"Manage data settings\" above the \"Accept cookies\" button in the first window, scroll through the entire content of the second window, in particular to see that the two sliders controlling advertising cookies are deactivated by default, and finally click on the \"Accept all\" button at the bottom of this second window."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-024-refus-q1 .
+
+lg:FR-CNIL-SAN-2021-024-title-193f44358129-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "193f44358129652655ab2e7d5d0be4e71f64fe0987d0b0891100a01940f6972f" ;
+    lgo:text "Deliberation of the CNIL's restricted committee No SAN-2021-024 of 31 December 2021"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2021-024 .
+
+lg:FR-CNIL-SAN-2025-004-title-d8f6e0922791-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d8f6e0922791dedaf6768409eb8e37a17e83598d4f8c4e4d8200f02c2c8f5bd5" ;
+    lgo:text "Deliberation of the CNIL's restricted committee No SAN-2025-004 of 1 September 2025"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2025-004 .
+
+lg:FR-CNIL-SAN-2025-005-title-8e286ef65cfc-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8e286ef65cfcacf8d876803c9bd264da401c4cbd9ec0c0539f3b128da04bf9ce" ;
+    lgo:text "Deliberation of the CNIL's restricted committee No SAN-2025-005 of 1 September 2025"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-SAN-2025-005 .
+
+lg:FR-CONSO-L221-13-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "07c4d1d983b3d15e01cd3879320ad590df415d718a82ff84834264aba98373f0" ;
+    lgo:text "The professional provides the consumer, on a durable medium, within a reasonable time after the conclusion of the contract and at the latest when the good is delivered or before the performance of the service or the contract for supplying digital content not on a tangible medium or digital services begins, with the confirmation of the contract comprising all the information set out in article L. 221-5, unless the professional has already provided it to the consumer, on a durable medium, before the conclusion of the contract. The contract is accompanied by the standard withdrawal form mentioned in point 7 of that article. Where applicable, the professional provides the consumer, in the same conditions and before the end of the withdrawal period, with the confirmation of the consumer's express agreement for the supply of digital content not presented on a tangible medium and of the consumer's acknowledgement that he thereby loses his right of withdrawal."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-03"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CONSO-L221-13-q1 .
+
+lg:FR-CONSO-L221-14-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "59ed46e1d5da0542f1cbc62b85a39343860183c572e58e5ccd078c69b57df67b" ;
+    lgo:text "For contracts concluded by electronic means, the professional reminds the consumer, before the consumer places his order, in a readable and comprehensible manner, of the information on the essential characteristics of the goods or services which are the subject of the order, their price, the duration of the contract and, where applicable, the minimum duration of the consumer's obligations under the contract, as provided for in article L. 221-5. The professional ensures that the consumer, when ordering, explicitly acknowledges his obligation to pay. To this end, the control used by the consumer to validate his order bears the clear and legible mention “order with obligation to pay” or an analogous formula free of ambiguity, indicating that placing the order entails an obligation to pay. Online commerce sites state clearly and legibly, at the latest at the start of the ordering process, the means of payment accepted by the professional and any delivery restrictions."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-03"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CONSO-L221-14-q1 .
+
+lg:FR-CONSO-L221-5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d909d9f05ee51b62aaaeedafe3094ef2d84f33b2ec15ec2c3383cbe4923b46e2" ;
+    lgo:text """I.-Before a contract for the sale of goods or the supply of services, digital content or digital services is concluded, the professional provides the consumer, in a readable and comprehensible manner, with the following information:
+1° The essential characteristics of the good, service, digital service or digital content;
+2° The price of the good, service, digital service or digital content, pursuant to articles L. 112-1 to L. 112-4;
+3° The date by which or the period within which the professional undertakes to deliver the good or to supply the service, digital service or digital content;
+4° Information on his identity, his postal, telephone and electronic contact details, the conditions for terminating the contract, the methods of settling disputes, the other contractual terms and, where applicable, the cost of using the means of distance communication, the existence of codes of conduct and deposits and financial guarantees;
+5° Where applicable, information on legal guarantees, the functionality, compatibility and interoperability of the digital content, digital service or good incorporating digital elements, the other contractual terms and, where applicable, the existence of any restriction on installing software;
+6° The possibility of having recourse to a consumer mediator under the conditions set out in Title I of Book VI;
+7° Where the right of withdrawal exists, the conditions, period and arrangements for exercising it as well as the standard withdrawal form, whose presentation and contents are set by decree of the Conseil d'État and, where applicable, the existence and location of the withdrawal functionality mentioned in article L. 221-21;
+8° Where applicable, the fact that the consumer bears the cost of returning the good in case of withdrawal and, for distance contracts, the cost of returning the good where, by its nature, it cannot normally be sent back by post;
+9° Information on the consumer's obligation to pay costs when exercising the right of withdrawal from a service contract, a water, gas or electricity supply contract or a district-heating subscription which he expressly asked to be performed before the end of the withdrawal period; these costs are calculated as set out in article L. 221-25;
+10° Where the right of withdrawal cannot be exercised under article L. 221-28, the information that the consumer does not benefit from it or, where applicable, the circumstances in which he loses it;
+11° The application of a personalised price based on automated decision-making, where applicable."""@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-03"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CONSO-L221-5-1-q1 .
+
+lg:FR-CONSO-L221-5-1b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "00680657230e35cf23fcf01902fee40f0854be4fb41c6e636babd17c58639fe0" ;
+    lgo:text "The list and content of this information are set by decree of the Conseil d'État. In the case of a public auction sale as defined by the first paragraph of article L. 321-3 of the Commercial Code, the information on the professional's identity and postal, telephone and electronic contact details provided for in point 4 of part I of this article may be replaced by those of the agent."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-03"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CONSO-L221-5-1b-q1 .
+
+lg:FR-CONSO-L221-5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9b1ce154235edcd1aac0a65303682e1458e8d15876ba0efb793ce715c7a0f55e" ;
+    lgo:text "II.-In addition to the information set out in part I, every professional, before concluding a contract for the supply of services and, where there is no contract, before performing the service, provides the additional information required by article L. 111-2."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-03"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CONSO-L221-5-2-q1 .
+
+lg:FR-LCEN-art1-1-I-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dc8d58ff40857866dac176fffe5bfef3363063cf7fc73cd8ab3512b5ca67b3c1" ;
+    lgo:text """I.-Persons whose activity is to publish an online public communication service shall make available to the public, in an open standard:
+1° In the case of natural persons, their surname, first names, domicile and telephone number and, if they are subject to registration formalities in the trade and companies register or in the national register of businesses as a business in the crafts sector, their registration number;
+2° In the case of legal persons, their corporate name or business name and registered office, their telephone number and, in the case of businesses subject to registration formalities in the trade and companies register or in the national register of businesses as a business in the crafts sector, their registration number, their share capital and the address of their registered office;
+3° The name of the director or co-director of publication, within the meaning of Article 93-2 of Law No. 82-652 of 29 July 1982 on audiovisual communication and, where applicable, that of the person responsible for editorial content;
+4° The name, corporate name or business name, address and telephone number of the hosting service provider;
+[…]"""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LCEN-art1-1-I-q1 .
+
+lg:FR-LCEN-art19-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "67f18e6595b1e83538d530e2279b287ebca58727ccd8496468ac7a5f525634bc" ;
+    lgo:text """Without prejudice to the other information obligations laid down by the laws and regulations in force, any person carrying on the activity defined in Article 14 must give those to whom the supply of goods or the provision of services is addressed easy, direct and permanent access, using an open standard, to the following information:
+1° For a natural person, their surname and first names and, for a legal person, its company name;
+2° The address at which it is established, its email address, and telephone details allowing effective contact with it;
+3° If it is subject to registration in the trade and companies register or the trades directory, its registration number, its share capital and the address of its registered office;
+4° If it is liable to value added tax and identified by an individual number under article 286 ter of the General Tax Code, its individual identification number;
+5° If its activity is subject to an authorisation scheme, the name and address of the authority that granted it;
+6° If it is a member of a regulated profession, the reference to the applicable professional rules, its professional title, the Member State in which it was granted, and the name of the order or professional body with which it is registered."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LCEN-art19-1-q1 .
+
+lg:FR-LCEN-art19-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "01206624f48b8511921d9eca524289cd4fd431ccfded3ba8b0c6154e5da78d68" ;
+    lgo:text "Any person carrying on the activity defined in Article 14 must, even in the absence of an offer to contract, whenever they mention a price, indicate it clearly and unambiguously, and in particular whether taxes and delivery charges are included."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LCEN-art19-2-q1 .
+
+lg:FR-LIL-art82-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "087c2c59c87e580e3f74a22b024a9bb0ca953dad4f9accb558e59a8fa503f7db" ;
+    lgo:text """Every subscriber or user of an electronic communications service must be informed clearly and completely, unless they have already been informed, by the controller or its representative:
+1° Of the purpose of any action seeking to access, by electronic transmission, information already stored in their electronic communications terminal equipment, or to write information to that equipment;
+2° Of the means available to them to object."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LIL-art82-1-q1 .
+
+lg:FR-LIL-art82-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "28956a0cf715532abb0e1862dc1986bfc87a56feb1b095a2500d9336339792d7" ;
+    lgo:text "Such access or writing may take place only on condition that the subscriber or user has expressed, after receiving this information, their consent, which may result from appropriate settings of their connection device or of any other device under their control."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LIL-art82-2-q1 .
+
+lg:FR-LIL-art82-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2293fdd6affeae73d42eb5db8f7c5c539dd64f0971c4c4244540cd0e2d27ab82" ;
+    lgo:text """These provisions do not apply if accessing information stored in the user's terminal equipment, or writing information to the user's terminal equipment:
+1° Either has the sole purpose of enabling or facilitating communication by electronic means;
+2° Or is strictly necessary for providing an online communication service at the express request of the user."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LIL-art82-3-q1 .
+
+lg:FR-LIL-title-20cbb4583eef-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "20cbb4583eef11f7c326d2d5de9199393ccde2d1a26cd1c1f62b126872bffde9" ;
+    lgo:text "Law No 78-17 of 6 January 1978 on information technology, files and freedoms"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-LIL .

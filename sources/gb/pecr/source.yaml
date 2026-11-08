@@ -1,0 +1,22 @@
+# Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426), regulation 6
+# (the UK cookie rule), as revised by legislation.gov.uk (official XML, Crown Legislation Markup
+# Language), including the substitution by the Data (Use and Access) Act 2025 in force since 5 February 2026.
+id: gb/pecr
+title: Privacy and Electronic Communications (EC Directive) Regulations 2003, regulation 6
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: uksi-2003-2426-regulation-6.xml
+    page: https://www.legislation.gov.uk/uksi/2003/2426/regulation/6
+    url: https://www.legislation.gov.uk/uksi/2003/2426/regulation/6/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-02
+    sha256: ee167f0bcdcfab5065272377398e41f530cd1a9f4dbe29e9d5849be62f47d61d
+annotated: uksi-2003-2426-regulation-6.annotated.xml

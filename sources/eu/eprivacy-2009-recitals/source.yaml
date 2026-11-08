@@ -1,0 +1,42 @@
+# Directive 2009/136/EC (which replaced Article 5(3) of the ePrivacy Directive with the consent rule
+# for cookies), recital 66: official XML (Formex 4) from the Official Journal, the files in
+# ../eprivacy/ listed again so this index can be checked on its own. Recitals are not binding; they
+# explain how the amended Article 5(3) is to be read. English is annotated; German is a parallel
+# language version.
+id: eu/eprivacy-2009-recitals
+title: Directive 2009/136/EC, recitals
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+document: EU-2009-136-oj
+originals:
+  - file: ../eprivacy/L_2009337EN.01001101.xml
+    title: "Directive 2009/136/EC, OJ L 337, 18.12.2009, p. 11"
+    page: https://eur-lex.europa.eu/eli/dir/2009/136/oj/eng
+    url: https://publications.europa.eu/resource/celex/32009L0136
+    fetch: zip-member
+    member: L_2009337EN.01001101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 111384f04d02190f492edf2110fcc397fa0a3c1d34a4789a8b2c6442d417c897
+  - file: ../eprivacy/L_2009337DE.01001101.xml
+    role: parallel
+    language: de
+    title: "Richtlinie 2009/136/EG, ABl. L 337 vom 18.12.2009, S. 11"
+    page: https://eur-lex.europa.eu/eli/dir/2009/136/oj/deu
+    url: https://publications.europa.eu/resource/celex/32009L0136
+    fetch: zip-member
+    member: L_2009337DE.01001101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 15dea9a9d3ad259921ed0003957a6920ca0ce3f2f9882a09a5e0c8b162a42334
+annotated: L_2009337EN.01001101.annotated.xml

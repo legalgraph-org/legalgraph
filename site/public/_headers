@@ -1,0 +1,15 @@
+/*.ttl
+  Content-Type: text/turtle; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/downloads/*
+  Access-Control-Allow-Origin: *
+
+/sources/*.xml
+  Content-Type: application/xml; charset=utf-8
+
+/sources/*.yaml
+  Content-Type: text/plain; charset=utf-8
+
+/sources/*.html
+  Content-Type: text/plain; charset=utf-8

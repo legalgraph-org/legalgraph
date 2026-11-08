@@ -1,0 +1,21 @@
+# BGH, Urteil vom 28.05.2020 — I ZR 7/16 (Cookie-Einwilligung II): the German follow-up to
+# Planet49 — cookies for user profiles need real consent, a pre-ticked checkbox is not one;
+# and a consent the consumer can only refuse through an elaborate opt-out procedure fails too.
+# ECLI:DE:BGH:2020:280520UIZR7.16.0. The PDF is the BGH's own publication.
+id: de/bgh-cookie-einwilligung
+title: BGH, Urteil vom 28.05.2020 — I ZR 7/16 (Cookie-Einwilligung II)
+jurisdiction: DE
+language: de
+publisher: Bundesgerichtshof, bundesgerichtshof.de
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei"
+originals:
+  - file: I_ZR___7-16A.pdf
+    page: https://www.bundesgerichtshof.de/
+    url: "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2016/I_ZR___7-16A.pdf?__blob=publicationFile&v=1"
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-04
+    sha256: 879a9d1cf015bf56360d66d2838de3cbe6c5195addc9ce1d846ac0f9d2f5964f
+annotated: bgh-cookie-einwilligung.law.xml

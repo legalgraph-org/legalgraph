@@ -1,0 +1,81 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:NO-EHL-s11-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7400c4c5699ddee7677041ac34df4cc36c869b94176d15a87176b27e6541b229" ;
+    lgo:text """Before electronic ordering the service provider must, in a clear, comprehensible and unambiguous manner, inform the service recipient of:
+a. relevant codes of conduct that the service provider follows and whether and where they are available electronically,
+b. the different technical stages connected with concluding the agreement,
+c. whether a concluded agreement will be archived by the service provider and whether it will be accessible,
+d. the technical means for identifying and correcting input errors before the order is placed,
+e. the languages in which the agreement can be concluded."""@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EHL-s11-1-q1 .
+
+lg:NO-EHL-s11-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "154bec35efefb07e08a4e3e1eb346ea6d8bb849a0c767a1a9302aa35f8a6d4c3" ;
+    lgo:text "Contractual terms, standard terms and general terms must be made available to the service recipient in a manner that makes it possible to store and reproduce them. The service provider must arrange the electronic conclusion of contracts so that input errors can easily be detected and corrected before the agreement is concluded."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EHL-s11-2-q1 .
+
+lg:NO-EHL-s11-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e2d3d417ee043c39a9bc5bc59537c3a8ee8193b7452a9f875118cc26bea01ea9" ;
+    lgo:text "The first and third paragraphs do not apply to agreements concluded exclusively by electronic mail or equivalent individual communication, and may be departed from in agreements outside consumer relations."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EHL-s11-3-q1 .
+
+lg:NO-EHL-s8-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c366cf5fc1b51cd168680fdc77843fa8999ec360c627392800bfab6251538982" ;
+    lgo:text """A service provider must, in carrying on its business, always provide information about its name, address, email address and other particulars that make it possible to contact the service provider directly. The service provider must also state:
+a. the enterprise register in which the service provider is registered, as well as the service provider's organisation number and whether the business is subject to value-added tax, and
+b. any authorisations required to carry on the business and the name and address of the relevant authorising authority."""@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EHL-s8-1-q1 .
+
+lg:NO-EHL-s8-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "144de01f2a000a8debb986dd3d189d5b31b2ba90c58efb076ac391c3f9d4032b" ;
+    lgo:text """In the case of professional activity that directly or indirectly under law or regulation requires the person to hold a diploma or certificate of education, the service provider must also state:
+a. its professional title and in which member state it was conferred,
+b. which rules of professional conduct apply to the service provider, and
+c. where the service recipient can access the rules mentioned in letter b."""@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EHL-s8-2-q1 .
+
+lg:NO-EHL-s8-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2e48fde671ef62d25aca43159e81653d7ecd41cdb95852094cd67cf1f738330b" ;
+    lgo:text "The information under the first and second paragraphs must be made easily and directly accessible to service recipients and public authorities. The provision does not apply to service providers that only offer services consisting of transmitting information over an electronic communications network."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EHL-s8-3-q1 .

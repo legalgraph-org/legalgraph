@@ -1,0 +1,332 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Jurisdictions: the EU, the EEA, the European countries the graph covers, and the others it has laws for.
+# skos:exactMatch links to the EU Publications Office country authority table.
+
+lg:EU a lgo:SupranationalOrganisation ;
+    rdfs:label "European Union"@en , "Europäische Union"@de ;
+    lgo:isoCode "EU" .
+
+lg:EEA a lgo:SupranationalOrganisation ;
+    rdfs:label "European Economic Area"@en , "Europäischer Wirtschaftsraum"@de ;
+    rdfs:comment "EU law on the internal market, including the e-Commerce Directive, applies in Iceland, Liechtenstein and Norway through the EEA Agreement."@en ;
+    lgo:isoCode "EEA" .
+
+lg:AL a lgo:Country ;
+    rdfs:label "Albania"@en ;
+    lgo:isoCode "AL" ;
+    lgo:officialLanguage "sq"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/ALB> .
+
+lg:AT a lgo:Country ;
+    rdfs:label "Austria"@en ;
+    lgo:isoCode "AT" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "de"^^xsd:language ;
+    lgo:customaryNoticeName "Impressum"@de ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/AUT> .
+
+lg:BE a lgo:Country ;
+    rdfs:label "Belgium"@en ;
+    lgo:isoCode "BE" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "nl"^^xsd:language , "fr"^^xsd:language , "de"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/BEL> .
+
+lg:BA a lgo:Country ;
+    rdfs:label "Bosnia and Herzegovina"@en ;
+    lgo:isoCode "BA" ;
+    lgo:officialLanguage "bs"^^xsd:language , "hr"^^xsd:language , "sr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/BIH> .
+
+lg:BG a lgo:Country ;
+    rdfs:label "Bulgaria"@en ;
+    lgo:isoCode "BG" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "bg"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/BGR> .
+
+lg:HR a lgo:Country ;
+    rdfs:label "Croatia"@en ;
+    lgo:isoCode "HR" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "hr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/HRV> .
+
+lg:CY a lgo:Country ;
+    rdfs:label "Cyprus"@en ;
+    lgo:isoCode "CY" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "el"^^xsd:language , "tr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/CYP> .
+
+lg:CZ a lgo:Country ;
+    rdfs:label "Czechia"@en ;
+    lgo:isoCode "CZ" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "cs"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/CZE> .
+
+lg:DK a lgo:Country ;
+    rdfs:label "Denmark"@en ;
+    lgo:isoCode "DK" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "da"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/DNK> .
+
+lg:EE a lgo:Country ;
+    rdfs:label "Estonia"@en ;
+    lgo:isoCode "EE" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "et"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/EST> .
+
+lg:FI a lgo:Country ;
+    rdfs:label "Finland"@en ;
+    lgo:isoCode "FI" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "fi"^^xsd:language , "sv"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/FIN> .
+
+lg:FR a lgo:Country ;
+    rdfs:label "France"@en ;
+    lgo:isoCode "FR" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "fr"^^xsd:language ;
+    lgo:customaryNoticeName "mentions légales"@fr ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/FRA> .
+
+lg:DE a lgo:Country ;
+    rdfs:label "Germany"@en ;
+    lgo:isoCode "DE" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "de"^^xsd:language ;
+    lgo:customaryNoticeName "Impressum"@de ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/DEU> .
+
+lg:GR a lgo:Country ;
+    rdfs:label "Greece"@en ;
+    lgo:isoCode "GR" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "el"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/GRC> .
+
+lg:HU a lgo:Country ;
+    rdfs:label "Hungary"@en ;
+    lgo:isoCode "HU" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "hu"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/HUN> .
+
+lg:IS a lgo:Country ;
+    rdfs:label "Iceland"@en ;
+    lgo:isoCode "IS" ;
+    lgo:memberOf lg:EEA ;
+    lgo:officialLanguage "is"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/ISL> .
+
+lg:IE a lgo:Country ;
+    rdfs:label "Ireland"@en ;
+    lgo:isoCode "IE" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "ga"^^xsd:language , "en"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/IRL> .
+
+lg:IT a lgo:Country ;
+    rdfs:label "Italy"@en ;
+    lgo:isoCode "IT" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "it"^^xsd:language ;
+    lgo:customaryNoticeName "note legali"@it ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/ITA> .
+
+lg:XK a lgo:Country ;
+    rdfs:label "Kosovo"@en ;
+    lgo:isoCode "XK" ;
+    lgo:officialLanguage "sq"^^xsd:language , "sr"^^xsd:language .
+
+lg:LV a lgo:Country ;
+    rdfs:label "Latvia"@en ;
+    lgo:isoCode "LV" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "lv"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/LVA> .
+
+lg:LI a lgo:Country ;
+    rdfs:label "Liechtenstein"@en ;
+    lgo:isoCode "LI" ;
+    lgo:memberOf lg:EEA ;
+    lgo:officialLanguage "de"^^xsd:language ;
+    lgo:customaryNoticeName "Impressum"@de ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/LIE> .
+
+lg:LT a lgo:Country ;
+    rdfs:label "Lithuania"@en ;
+    lgo:isoCode "LT" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "lt"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/LTU> .
+
+lg:LU a lgo:Country ;
+    rdfs:label "Luxembourg"@en ;
+    lgo:isoCode "LU" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "lb"^^xsd:language , "fr"^^xsd:language , "de"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/LUX> .
+
+lg:MT a lgo:Country ;
+    rdfs:label "Malta"@en ;
+    lgo:isoCode "MT" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "mt"^^xsd:language , "en"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/MLT> .
+
+lg:MD a lgo:Country ;
+    rdfs:label "Moldova"@en ;
+    lgo:isoCode "MD" ;
+    lgo:officialLanguage "ro"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/MDA> .
+
+lg:ME a lgo:Country ;
+    rdfs:label "Montenegro"@en ;
+    lgo:isoCode "ME" ;
+    lgo:officialLanguage "cnr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/MNE> .
+
+lg:NL a lgo:Country ;
+    rdfs:label "Netherlands"@en ;
+    lgo:isoCode "NL" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "nl"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/NLD> .
+
+lg:MK a lgo:Country ;
+    rdfs:label "North Macedonia"@en ;
+    lgo:isoCode "MK" ;
+    lgo:officialLanguage "mk"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/MKD> .
+
+lg:NO a lgo:Country ;
+    rdfs:label "Norway"@en ;
+    lgo:isoCode "NO" ;
+    lgo:memberOf lg:EEA ;
+    lgo:officialLanguage "nb"^^xsd:language , "nn"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/NOR> .
+
+lg:PL a lgo:Country ;
+    rdfs:label "Poland"@en ;
+    lgo:isoCode "PL" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "pl"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/POL> .
+
+lg:PT a lgo:Country ;
+    rdfs:label "Portugal"@en ;
+    lgo:isoCode "PT" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "pt"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/PRT> .
+
+lg:RO a lgo:Country ;
+    rdfs:label "Romania"@en ;
+    lgo:isoCode "RO" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "ro"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/ROU> .
+
+lg:RS a lgo:Country ;
+    rdfs:label "Serbia"@en ;
+    lgo:isoCode "RS" ;
+    lgo:officialLanguage "sr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/SRB> .
+
+lg:SK a lgo:Country ;
+    rdfs:label "Slovakia"@en ;
+    lgo:isoCode "SK" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "sk"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/SVK> .
+
+lg:SI a lgo:Country ;
+    rdfs:label "Slovenia"@en ;
+    lgo:isoCode "SI" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "sl"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/SVN> .
+
+lg:ES a lgo:Country ;
+    rdfs:label "Spain"@en ;
+    lgo:isoCode "ES" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "es"^^xsd:language ;
+    lgo:customaryNoticeName "aviso legal"@es ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/ESP> .
+
+lg:SE a lgo:Country ;
+    rdfs:label "Sweden"@en ;
+    lgo:isoCode "SE" ;
+    lgo:memberOf lg:EU , lg:EEA ;
+    lgo:officialLanguage "sv"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/SWE> .
+
+lg:CH a lgo:Country ;
+    rdfs:label "Switzerland"@en ;
+    lgo:isoCode "CH" ;
+    lgo:officialLanguage "de"^^xsd:language , "fr"^^xsd:language , "it"^^xsd:language , "rm"^^xsd:language ;
+    lgo:customaryNoticeName "Impressum"@de ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/CHE> .
+
+lg:TR a lgo:Country ;
+    rdfs:label "Türkiye"@en ;
+    lgo:isoCode "TR" ;
+    lgo:officialLanguage "tr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/TUR> .
+
+# --- Beyond the EU and EEA ---------------------------------------------------------
+lg:CA a lgo:Country ;
+    rdfs:label "Canada"@en ;
+    lgo:isoCode "CA" ;
+    lgo:officialLanguage "en"^^xsd:language , "fr"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/CAN> .
+
+
+lg:GB a lgo:Country ;
+    rdfs:label "United Kingdom"@en ;
+    lgo:isoCode "GB" ;
+    lgo:officialLanguage "en"^^xsd:language ;
+    rdfs:comment "Left the EU on 31 January 2020. Websites of companies must show the company's registered name, number and office (Company, Limited Liability Partnership and Business (Names and Trading Disclosures) Regulations 2015); cookies are governed by PECR, personal data by the UK GDPR and the Data Protection Act 2018."@en .
+
+lg:US a lgo:Country ;
+    rdfs:label "United States"@en ;
+    lgo:isoCode "US" ;
+    lgo:officialLanguage "en"^^xsd:language ;
+    rdfs:comment "No general website disclosure duty like the Impressum. Accessibility claims rest on the Americans with Disabilities Act; privacy is regulated sector by sector and by states, such as California (CCPA)."@en .
+
+lg:US-CA a lgo:Subdivision ;
+    rdfs:label "California"@en ;
+    lgo:isoCode "US-CA" ;
+    lgo:subdivisionOf lg:US ;
+    lgo:officialLanguage "en"^^xsd:language .
+
+lg:CA-ON a lgo:Subdivision ;
+    rdfs:label "Ontario"@en ;
+    lgo:isoCode "CA-ON" ;
+    lgo:subdivisionOf lg:CA ;
+    lgo:officialLanguage "en"^^xsd:language , "fr"^^xsd:language .
+
+lg:CA-QC a lgo:Subdivision ;
+    rdfs:label "Quebec"@en ;
+    lgo:isoCode "CA-QC" ;
+    lgo:subdivisionOf lg:CA ;
+    lgo:officialLanguage "fr"^^xsd:language .
+
+lg:UA a lgo:Country ;
+    rdfs:label "Ukraine"@en ;
+    lgo:isoCode "UA" ;
+    lgo:officialLanguage "uk"^^xsd:language ;
+    skos:exactMatch <http://publications.europa.eu/resource/authority/country/UKR> ;
+    rdfs:comment "EU candidate country since 2022, aligning its law with the EU's (consumer rights, personal data, media). Laws are published by the Verkhovna Rada on zakon.rada.gov.ua, in Ukrainian; English versions there are unofficial."@en .

@@ -1,0 +1,29 @@
+name: UK limited company with a marketing website
+description: >
+  A private limited company registered at Companies House, VAT-registered, with a website promoting
+  its services, a contact form, and analytics and advertising cookies. It does not sell online or
+  target people in the EU.
+established_in: GB
+facts:
+  - UkCompany
+  - CommercialDigitalService
+  - RegisteredInPublicRegister
+  - HasVatId
+  - ProcessesPersonalData
+  - NonEssentialDeviceAccess
+obligations:
+  - GB-R-company-website-disclosures
+  - GB-R-website-information
+  - GB-R-website-information-register
+  - GB-R-website-information-vat
+  - GB-R-cookies
+  - GB-R-privacy-information
+  - GB-R-privacy-information-consent
+  - GB-R-consent-conditions
+  - GB-R-consent-no-tying
+  - GB-R-consent-separate
+  - GB-R-lawful-basis
+  - GB-R-privacy-by-design
+  - GB-R-processing-record
+  - GB-R-storage-limitation
+  - GB-R-consent-specific

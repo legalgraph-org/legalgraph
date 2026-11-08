@@ -1,0 +1,16 @@
+---
+import LegalPageView from "../../../components/pages/LegalPageView.astro";
+import { requireLocale, SUPPORTED_LOCALES } from "../../../i18n/locales";
+import { useT } from "../../../i18n/t";
+import { LEGAL_PAGES, legalPage, type LegalPage } from "../../../lib/content";
+
+export function getStaticPaths() {
+  return SUPPORTED_LOCALES.flatMap((locale) => LEGAL_PAGES.map((id) => ({ params: { locale, id } })));
+}
+
+const locale = requireLocale(Astro.params.locale);
+const slug = Astro.params.id as LegalPage;
+const doc = { ...(await legalPage(slug, locale)), slug };
+---
+
+<LegalPageView t={useT(locale)} doc={doc} />

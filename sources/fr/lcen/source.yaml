@@ -1,0 +1,38 @@
+# Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN),
+# consolidated version: art. 17 is the country-of-origin rule of the e-Commerce Directive,
+# art. 18 carried the commercial-communications rules (abrogated 2014, replaced by GDPR/ePR),
+# and art. 19 is France's Impressum — the mandatory provider identity on every professional
+# website. legifrance needs a browser; the fragments are the saved page's article elements.
+id: fr/lcen
+title: Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique
+jurisdiction: FR
+language: fr
+publisher: Légifrance, legifrance.gouv.fr
+kind: authored-xml
+licence: licence-ouverte-2.0
+licence_basis: "legifrance content is published under Licence Ouverte 2.0 (legal notice)"
+originals:
+  - file: art-17.fragment.html
+    url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164?fonds=ALL&init=true&page=1&query=loi+2004-575&searchField=ALL"
+    fetch: html-fragment
+    selector: 'article:has(a[id="linkLEGIARTI000006421561-1-0-4"])'
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: 67888df46db091b1b88afac032e9d379b59da247f391d6310ce9fbc3cd61c3a1
+  - file: art-18.fragment.html
+    url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164?fonds=ALL&init=true&page=1&query=loi+2004-575&searchField=ALL"
+    fetch: html-fragment
+    selector: 'article:has([id="LEGIARTI000006421564-1-0-5"])'
+    media_type: text/html
+    notes:
+      - "Abrogated 19.03.2014 (loi n° 2014-344); kept to record the repeal."
+    retrieved_on: 2026-11-04
+    sha256: 4f981e67cc798b86431cf4a858b9b5accf54ae3a4298b5d2cdd486c592c7aa5a
+  - file: art-19.fragment.html
+    url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164?fonds=ALL&init=true&page=1&query=loi+2004-575&searchField=ALL"
+    fetch: html-fragment
+    selector: 'article:has(a[id="linkLEGIARTI000032236011-1-0-6"])'
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: a386dfacbf5848c5d12e52a72b6eeae2034be1d7a1040055ca976162f2a22357
+annotated: lcen.law.xml

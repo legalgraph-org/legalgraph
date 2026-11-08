@@ -1,0 +1,426 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Germany: who must do what on a website, read from the provisions in data/extracted/de/.
+# Interpretation, so Draft until a lawyer reviews it. A rule applies when all its lgo:appliesWhen
+# conditions hold and none of its lgo:unless conditions does.
+
+# --- Impressum (§ 5 Abs. 1 DDG) -----------------------------------------------------
+
+lg:DE-R-impressum a lgo:Obligation ;
+    rdfs:label "Impressum: name, address and fast electronic contact"@en ;
+    rdfs:comment "Every business-like website or app run from Germany. Advertising, affiliate links or promoting a business are enough; payment by the visitor is not required."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-legal-person a lgo:Obligation ;
+    rdfs:label "Impressum: legal form and authorised representative"@en ;
+    rdfs:comment "Legal persons add their legal form and who may represent them; share capital only if capital is stated at all, and then the full amount."@en ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:LegalPerson ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:LegalForm , lgv:AuthorisedRepresentative ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Impressum: register and registration number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Impressum: supervisory authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Impressum: chamber, professional title and professional rules"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Impressum: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-economic-id a lgo:Obligation ;
+    rdfs:label "Impressum: economic identification number"@en ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:HasEconomicIdNumber ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:EconomicIdNumber ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-liquidation a lgo:Obligation ;
+    rdfs:label "Impressum: liquidation"@en ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:InLiquidation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:LiquidationStatus ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-impressum-audiovisual a lgo:Obligation ;
+    rdfs:label "Impressum: audiovisual media services"@en ;
+    lgo:establishedBy lg:DE-DDG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:AudiovisualMediaService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:AudiovisualRegulator ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Media law (§ 18 MStV) ------------------------------------------------------------
+
+lg:DE-R-telemedia-identification a lgo:Obligation ;
+    rdfs:label "Name and address on any website that is not purely private"@en ;
+    rdfs:comment "Broader than § 5 DDG: also non-commercial websites, unless purely personal or family."@en ;
+    lgo:establishedBy lg:DE-MStV-s18-1 ;
+    lgo:bearer lgv:TelemediaProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:NonPrivateTelemedia ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-telemedia-representative a lgo:Obligation ;
+    rdfs:label "Name and address of the authorised representative"@en ;
+    lgo:establishedBy lg:DE-MStV-s18-1 ;
+    lgo:bearer lgv:TelemediaProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:NonPrivateTelemedia , lgv:LegalPerson ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:AuthorisedRepresentative ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-editorial-responsibility a lgo:Obligation ;
+    rdfs:label "Person responsible for editorial content"@en ;
+    lgo:establishedBy lg:DE-MStV-s18-2 ;
+    lgo:bearer lgv:TelemediaProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:JournalisticEditorialContent ;
+    lgo:partOfDisclosure lgv:EditorialResponsibility ;
+    lgo:requiresDisclosureOf lgv:ResponsibleEditor ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (§ 36 VSBG) -----------------------------------------
+
+lg:DE-R-dispute-resolution-statement a lgo:Obligation ;
+    rdfs:label "State whether the business takes part in consumer dispute resolution"@en ;
+    lgo:establishedBy lg:DE-VSBG-s36-1 , lg:DE-VSBG-s36-2 , lg:DE-VSBG-s36-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsToConsumers ;
+    lgo:unless lgv:TenOrFewerEmployees ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-dispute-resolution-body a lgo:Obligation ;
+    rdfs:label "Name the competent consumer arbitration board"@en ;
+    rdfs:comment "Applies regardless of size once the business has agreed or is obliged to take part."@en ;
+    lgo:establishedBy lg:DE-VSBG-s36-1 , lg:DE-VSBG-s36-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Cookies (§ 25 TDDDG) -------------------------------------------------------------
+
+lg:DE-R-cookie-consent a lgo:Obligation ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Covers any information stored on or read from the device, personal data or not. What happens to personal data afterwards also needs a lawful basis under the GDPR. How it is read: consent cannot be pre-ticked (CJEU, Planet49), scrolling is not consent (EDPB 05/2020, para. 86), and refusing must be as easy and as clearly labelled as accepting (DSK, OH Digitale Dienste, Rn. 50, 137)."@en ;
+    lgo:establishedBy lg:DE-TDDDG-s25-1 , lg:DE-TDDDG-s25-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Email marketing (§ 7 UWG) --------------------------------------------------------
+
+lg:DE-R-email-marketing-consent a lgo:Obligation ;
+    rdfs:label "Prior express consent for advertising emails"@en ;
+    lgo:establishedBy lg:DE-UWG-s7-2 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SendsMarketingEmails ;
+    lgo:unless lgv:EmailsOnlyExistingCustomers ;
+    lgo:requiresAction lgv:ObtainConsentForEmailMarketing , lgv:KeepConsentEvidencePerAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-email-marketing-existing-customers a lgo:Obligation ;
+    rdfs:label "Existing customers: right to object in every advertising email"@en ;
+    lgo:establishedBy lg:DE-UWG-s7-3 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SendsMarketingEmails , lgv:EmailsOnlyExistingCustomers ;
+    lgo:requiresAction lgv:OfferObjectionInEveryEmail ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-email-marketing-sender a lgo:Obligation ;
+    rdfs:label "Identify the sender and give a valid address to unsubscribe"@en ;
+    lgo:establishedBy lg:DE-UWG-s7-2 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SendsMarketingEmails ;
+    lgo:requiresAction lgv:ProvideValidUnsubscribeAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Data protection officer (§ 38 BDSG) ----------------------------------------------
+
+lg:DE-R-data-protection-officer a lgo:Obligation ;
+    rdfs:label "Designate a data protection officer (German thresholds)"@en ;
+    lgo:establishedBy lg:DE-BDSG-s38-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ProcessesPersonalData , lgv:DataProtectionOfficerRequiredInGermany ;
+    lgo:requiresAction lgv:DesignateDataProtectionOfficer ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Selling online to consumers (BGB, EGBGB, PAngV) ----------------------------------
+
+lg:DE-R-pre-contract-information a lgo:Obligation ;
+    rdfs:label "Pre-contractual information for online sales to consumers"@en ;
+    rdfs:comment "Items marked “where applicable” in the law depend on the product; the checklist lists them all for the trader to check."@en ;
+    lgo:establishedBy lg:DE-EGBGB-a246a-s1-1 , lg:DE-EGBGB-a246a-s1-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress ,
+        lgv:TotalPrice , lgv:DeliveryCosts , lgv:PaymentAndDeliveryTerms , lgv:LegalGuarantee , lgv:WithdrawalInformation ,
+        lgv:ReturnCosts , lgv:CommercialGuarantee , lgv:ContractDuration , lgv:SubscriptionCosts , lgv:PersonalisedPricing ,
+        lgv:DigitalProductInformation , lgv:SoftwareUpdatePeriod , lgv:RepairInformation , lgv:CodesOfConduct , lgv:ComplaintAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-checkout-summary a lgo:Obligation ;
+    rdfs:label "Key information and an unambiguous order button at checkout"@en ;
+    rdfs:comment "Without a correctly labelled button the consumer is not bound by the order (§ 312j Abs. 4 BGB)."@en ;
+    lgo:establishedBy lg:DE-BGB-s312j-2 , lg:DE-BGB-s312j-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:ShowKeyInformationBeforeOrder , lgv:LabelOrderButton ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-withdrawal-function a lgo:Obligation ;
+    rdfs:label "Withdrawal button on the online interface (since 19 June 2026)"@en ;
+    lgo:establishedBy lg:DE-BGB-s356a-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:ProvideWithdrawalFunction ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-contract-terms-storable a lgo:Obligation ;
+    rdfs:label "Make the contract terms callable and storable at conclusion"@en ;
+    rdfs:comment "For a contract concluded online the trader must also give the customer tools to correct input errors, the pre-contract information before ordering, and immediate electronic confirmation of the order's receipt (§ 312i(1) Nr. 1–3 BGB; Nr. 4 is the storable-terms duty). Germany's transposition of e-Commerce Directive art. 10(3) and 11."@en ;
+    lgo:establishedBy lg:DE-BGB-s312i-1 ;
+    lgo:refines lg:EU-R-contract-terms-storable ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:ProvideContractTermsInStorableForm , lgv:AllowCorrectionBeforeContract ;
+    lgo:partOfDisclosure lgv:ContractConfirmation ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAndClauses , lgv:ContractCopy ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-total-price a lgo:Obligation ;
+    rdfs:label "State total prices"@en ;
+    lgo:establishedBy lg:DE-PAngV-s3-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ShowsPricesToConsumers ;
+    lgo:partOfDisclosure lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:TotalPrice ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-unit-price a lgo:Obligation ;
+    rdfs:label "State unit prices for goods sold by quantity"@en ;
+    lgo:establishedBy lg:DE-PAngV-s4-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ShowsPricesToConsumers , lgv:SellsGoodsByQuantity ;
+    lgo:partOfDisclosure lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:UnitPrice ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Accessibility (BFSG) ---------------------------------------------------------------
+
+lg:DE-R-accessibility a lgo:Obligation ;
+    rdfs:label "Accessible online shop and accessibility information"@en ;
+    rdfs:comment "E-commerce services for consumers provided after 28 June 2025. Microenterprises providing services are exempt."@en ;
+    lgo:establishedBy lg:DE-BFSG-s3-1 , lg:DE-BFSG-s3-3 , lg:DE-BFSG-s14-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:unless lgv:Microenterprise ;
+    lgo:partOfDisclosure lgv:AccessibilityInformation ;
+    lgo:requiresAction lgv:MakeServiceAccessible ;
+    lgo:requiresDisclosureOf lgv:AccessibilityStatement ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Price reductions and reviews (PAngV § 11, UWG Anhang) ---------------------------------
+
+lg:DE-R-prior-price a lgo:Obligation ;
+    rdfs:label "Show the lowest price of the last 30 days with every price reduction"@en ;
+    lgo:establishedBy lg:DE-PAngV-s11-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ShowsPricesToConsumers , lgv:AnnouncesPriceReductions ;
+    lgo:partOfDisclosure lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:PriorPrice ;
+    lgo:requiresAction lgv:ShowPriorPrice ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-fake-reviews a lgo:Obligation ;
+    rdfs:label "No fake reviews; check that reviews claimed to be from customers are"@en ;
+    lgo:establishedBy lg:DE-UWG-anhang-23b , lg:DE-UWG-anhang-23c ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:PublishesConsumerReviews ;
+    lgo:requiresAction lgv:PreventFakeReviews ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Youth protection (JMStV) ------------------------------------------------------------
+
+lg:DE-R-youth-protection a lgo:Obligation ;
+    rdfs:label "Keep content unsuitable for minors away from the age groups concerned"@en ;
+    lgo:establishedBy lg:DE-JMStV-s5-1 ;
+    lgo:bearer lgv:TelemediaProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:YouthImpairingContent ;
+    lgo:requiresAction lgv:ProtectMinorsFromHarmfulContent ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-youth-protection-officer a lgo:Obligation ;
+    rdfs:label "Youth protection officer, named with fast electronic contact"@en ;
+    rdfs:comment "Often placed in the Impressum. Small providers may instead join a self-regulation body such as the FSM, which then names its contact."@en ;
+    lgo:establishedBy lg:DE-JMStV-s7-1 , lg:DE-JMStV-s7-2 ;
+    lgo:bearer lgv:TelemediaProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:CommercialDigitalService , lgv:YouthImpairingContent ;
+    lgo:unless lgv:SmallTelemediaWithSelfRegulation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:YouthProtectionOfficer ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Electrical equipment and packaging (ElektroG, VerpackDG) ------------------------------
+
+lg:DE-R-weee-registration-number a lgo:Obligation ;
+    rdfs:label "WEEE registration number in offers and invoices"@en ;
+    lgo:establishedBy lg:DE-ElektroG-s6-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:ProducesElectricalEquipment ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:WeeeRegistrationNumber ;
+    lgo:requiresAction lgv:RegisterAsProducer ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-weee-take-back-information a lgo:Obligation ;
+    rdfs:label "Information on returning old electrical devices, on the website"@en ;
+    lgo:establishedBy lg:DE-ElektroG-s18-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:LargeElectricalSeller , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:WeeeTakeBackInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-packaging-registration a lgo:Obligation ;
+    rdfs:label "Register packaging with the Zentrale Stelle Verpackungsregister before selling"@en ;
+    rdfs:comment "Not a website disclosure: marketplaces and fulfilment providers check the registration."@en ;
+    lgo:establishedBy lg:DE-VerpackDG-s6-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:PlacesPackagingOnMarket ;
+    lgo:requiresAction lgv:RegisterAsProducer ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Unfair terms in consumer contracts (§§ 305 ff. BGB) -------------------------------------
+
+lg:DE-R-unfair-terms a lgo:Obligation ;
+    rdfs:label "No unfair terms in standard consumer contracts"@en ;
+    rdfs:comment "§ 307 is the general clause (good-faith imbalance), § 309 the list of terms that are never effective — including No. 9 on advance payments."@en ;
+    lgo:refines lg:EU-R-unfair-terms ;
+    lgo:establishedBy lg:DE-BGB-s305-2 , lg:DE-BGB-s307-1 , lg:DE-BGB-s309-9 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsToConsumers ;
+    lgo:requiresAction lgv:ImposeUnfairTerms ;
+    lgo:reviewStatus lgv:Draft .

@@ -1,0 +1,31 @@
+---
+// Where an element lives in the graph: its identifier (links to its page; hover for the full IRI), the Turtle for
+// that resource, and its place in the interactive graph.
+import { curie, graphPath, iri, pagePath, turtlePath, type Space } from "../lib/links";
+import { localeOfPath } from "../lib/routes";
+
+interface Props {
+  id: string;
+  space?: Space;
+  /** Node to focus in the graph view; false for resources that are not drawn there (quotes, translations). */
+  graph?: string | false;
+}
+
+const { id, space = "id", graph = id } = Astro.props;
+---
+
+<span class="inline-flex items-center gap-1.5 rounded border border-border bg-muted/60 px-1.5 py-0.5 font-mono text-xs text-muted-foreground">
+  <a href={pagePath(space, id)} title={iri(space, id)} class="text-foreground/80 no-underline hover:underline">{curie(space, id)}</a>
+  <span class="text-border-strong">·</span>
+  <a href={turtlePath(space, id)} class="no-underline hover:underline" title="This resource as Turtle">ttl</a>
+  {
+    graph && (
+      <>
+        <span class="text-border-strong">·</span>
+        <a href={graphPath(graph, localeOfPath(Astro.url.pathname))} class="no-underline hover:underline" title="Show in the graph">
+          graph
+        </a>
+      </>
+    )
+  }
+</span>

@@ -1,0 +1,32 @@
+---
+// Decisions that show a rule at work: court or authority, date, case number and what they ordered.
+import { formatDate } from "../i18n/format";
+import { outcomeSummary } from "../lib/cases";
+import { actLabel, loadGraph } from "../lib/data";
+
+interface Props {
+  ids: string[];
+}
+
+const graph = await loadGraph();
+const cases = Astro.props.ids.map((id) => graph.acts.get(id)).filter((a) => a !== undefined);
+---
+
+<ul class="space-y-2 text-sm">
+  {
+    cases.map((c) => (
+      <li>
+        <a href={`/id/${c.id}`} class="font-medium">{actLabel(c)}</a>{" "}
+        <span class="text-muted-foreground">
+          {[
+            c.data.caseNumber && !actLabel(c).includes(c.data.caseNumber) ? c.data.caseNumber : null,
+            c.data.dateDocument && formatDate("en", new Date(c.data.dateDocument)),
+          ]
+            .filter(Boolean)
+            .join(" · ")}
+        </span>
+        {c.data.outcomes.length > 0 && <span> — {c.data.outcomes.map(outcomeSummary).join("; ")}</span>}
+      </li>
+    ))
+  }
+</ul>

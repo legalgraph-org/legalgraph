@@ -1,0 +1,22 @@
+---
+// A node's symbol as the graph draws it (lib/links.ts NODE_SHAPES, NODE_COLORS), for legends.
+import { NODE_COLORS, NODE_SHAPES, SMALL_NODE_TYPES } from "../lib/links";
+
+interface Props {
+  type: string;
+}
+
+const { type } = Astro.props;
+const shape = NODE_SHAPES[type] ?? "ellipse";
+const fill = NODE_COLORS[type] ?? "currentColor";
+const small = SMALL_NODE_TYPES.has(type);
+---
+
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" class="shrink-0">
+  {shape === "ellipse" && <circle cx="8" cy="8" r={small ? 4.5 : 7} fill={fill} />}
+  {shape === "round-rectangle" && <rect x="1" y="1" width="14" height="14" rx="3.5" fill={fill} />}
+  {shape === "diamond" && <polygon points="8,0.5 15.5,8 8,15.5 0.5,8" fill={fill} />}
+  {shape === "hexagon" && <polygon points="0.5,8 4.3,1.5 11.7,1.5 15.5,8 11.7,14.5 4.3,14.5" fill={fill} />}
+  {shape === "tag" && <polygon points="1,2 10.5,2 15.5,8 10.5,14 1,14" fill={fill} />}
+  {shape === "star" && <polygon points="8.0,1.1 9.9,6.0 15.1,6.3 11.0,9.6 12.4,14.7 8.0,11.8 3.6,14.7 5.0,9.6 0.9,6.3 6.1,6.0" fill={fill} />}
+</svg>

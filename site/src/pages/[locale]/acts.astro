@@ -1,0 +1,11 @@
+---
+import ActsPage from "../../components/pages/ActsPage.astro";
+import { SUPPORTED_LOCALES } from "../../i18n/locales";
+import { useT } from "../../i18n/t";
+
+export function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((locale) => ({ params: { locale } }));
+}
+---
+
+<ActsPage t={useT(Astro.params.locale)} />

@@ -1,0 +1,23 @@
+# Ontario Consumer Protection Act, 2002 (S.O. 2002, c. 30, Sched. A), Part IV ss. 38-40 on
+# internet agreements: disclose the prescribed information before the consumer enters, give an
+# express opportunity to accept, decline and correct errors, make the disclosure retainable and
+# printable, deliver a written copy, or the consumer may cancel within 7 days (30 days where the
+# copy is missing). e-Laws serves the consolidated act as HTML; the fragment holding the statute
+# is kept and the text is transcribed in schemas/law.xsd, checked word for word against it.
+id: ca-on/consumer-protection
+title: Consumer Protection Act, 2002 (Ontario)
+jurisdiction: CA-ON
+language: en
+publisher: King's Printer for Ontario, ontario.ca e-Laws
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "Ontario e-Laws: the statutes and regulations of Ontario may be reproduced without permission, if reproduced accurately and not presented as an official version"
+originals:
+  - file: 02c30.fragment.html
+    url: https://www.ontario.ca/laws/statute/02c30
+    fetch: html-fragment
+    selector: "div.WordSection1"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 04c5af46681630e211449acd81bbc940fa9635dd11642aa5047a0686276cdfd3
+annotated: cpa.law.xml

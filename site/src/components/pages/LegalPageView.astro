@@ -1,0 +1,51 @@
+---
+// /legal/<page>, in every language: Markdown in src/content/legal/. A page still being written says
+// so, rather than showing an incomplete text as if it were final.
+import { render, type CollectionEntry } from "astro:content";
+import type { Translate } from "../../i18n/t";
+import { abbreviationMarker } from "../../lib/glossary";
+import Layout from "../../layouts/Layout.astro";
+import { formatDate, type LegalPage, type Localized } from "../../lib/content";
+import Article from "../ds/Article.astro";
+import Heading from "../ds/Heading.astro";
+import Section from "../ds/Section.astro";
+
+interface Props {
+  t: Translate;
+  doc: Localized<CollectionEntry<"legal">> & { slug: LegalPage };
+}
+
+const { t, doc } = Astro.props;
+const mark = await abbreviationMarker(t.locale);
+const { entry, translated } = doc;
+const { Content } = await render(entry);
+---
+
+<Layout title={entry.data.title} description={entry.data.description} t={t} page={`legal/${doc.slug}`} bare>
+  <Section>
+    <Article label={t("On this page")} collapseLabel={t("Collapse")} expandLabel={t("Expand")} mark={mark} class="mx-auto max-w-5xl">
+      <Fragment slot="header">
+        <p class="eyebrow">{t("Legal")}</p>
+        <Heading level={1} class="mt-2!">{entry.data.title}</Heading>
+        <p class="lead mt-4">{entry.data.description}</p>
+        {!entry.data.pending && !translated && <p class="notice mt-6">{t("This page has not been translated yet. Here it is in English.")}</p>}
+      </Fragment>
+      {
+        entry.data.pending ? (
+          <p class="notice mt-8">{t("This page is being written.")}</p>
+        ) : (
+          <div class="prose mt-8" lang={translated ? undefined : "en"}>
+            <Content />
+          </div>
+        )
+      }
+      {
+        entry.data.updated && (
+          <p class="mt-10 border-t pt-4 text-sm text-muted-foreground">
+            {t("Last updated {date}", { date: formatDate(t.locale, entry.data.updated) })}
+          </p>
+        )
+      }
+    </Article>
+  </Section>
+</Layout>

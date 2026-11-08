@@ -1,0 +1,135 @@
+---
+// Every legal act, court decision, authority decision and guideline in the graph, filterable by
+// kind, jurisdiction, review status and whether it is built from the downloaded law text, and
+// searchable by title, short name, case number and identifier.
+import FilterList from "../ds/FilterList.astro";
+import { tagId, type FilterGroup } from "../ds/filter-list.types";
+import Pointer from "../Pointer.astro";
+import Status from "../Status.astro";
+import Layout from "../../layouts/Layout.astro";
+import type { Translate } from "../../i18n/t";
+import { KIND_LABELS, KIND_PLURALS } from "../../lib/cases";
+import { actLabel, actTitle, loadGraph, type Act } from "../../lib/data";
+import { STATUS } from "../../lib/links";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+const graph = await loadGraph();
+const jurisdictionLabel = (id: string) => graph.jurisdictions.get(id)?.data.label ?? id;
+const typeLabel = (id: string) => graph.concepts.get(id)?.data.label ?? id;
+// "1869, last amended 2026": an old date alone reads as if the text were that old.
+const when = (d: Act["data"]) => {
+  const dated = d.dateDocument?.slice(0, 4);
+  const amended = d.lastAmended?.slice(0, 4);
+  return [dated, amended && amended !== dated && `last amended ${amended}`].filter(Boolean).join(", ");
+};
+const KINDS = Object.keys(KIND_LABELS) as Act["data"]["kind"][];
+
+const entries = [...graph.acts.values()].map((act) => {
+  const d = act.data;
+  const fromText = d.documents.length > 0;
+  const tags = [`k-${d.kind}`, `j-${tagId(d.jurisdiction)}`, `s-${tagId(d.reviewStatus)}`, fromText ? "src-text" : "src-curated"];
+  const search = [actLabel(act), ...d.titles.map((t) => t.text), d.titleEn, d.caseNumber, d.ecli, act.id, jurisdictionLabel(d.jurisdiction)]
+    .filter(Boolean)
+    .join(" ")
+    .toLocaleLowerCase();
+  return { act, fromText, tags, search };
+});
+entries.sort(
+  (a, b) =>
+    KINDS.indexOf(a.act.data.kind) - KINDS.indexOf(b.act.data.kind) ||
+    jurisdictionLabel(a.act.data.jurisdiction).localeCompare(jurisdictionLabel(b.act.data.jurisdiction)) ||
+    actLabel(a.act).localeCompare(actLabel(b.act)),
+);
+
+const count = (id: string) => entries.filter((e) => e.tags.includes(id)).length;
+const distinct = <T,>(values: T[]) => [...new Set(values)];
+const groups: FilterGroup[] = [
+  {
+    title: "Kind",
+    options: KINDS.map((kind) => ({ id: `k-${kind}`, label: KIND_PLURALS[kind], count: count(`k-${kind}`) })).filter((o) => o.count > 0),
+  },
+  {
+    title: "Jurisdiction",
+    options: distinct(entries.map((e) => e.act.data.jurisdiction))
+      .map((j) => ({ id: `j-${tagId(j)}`, label: jurisdictionLabel(j), count: count(`j-${tagId(j)}`) }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  },
+  {
+    title: "Review status",
+    options: distinct(entries.map((e) => e.act.data.reviewStatus)).map((s) => ({
+      id: `s-${tagId(s)}`,
+      label: STATUS[s]?.label ?? s,
+      count: count(`s-${tagId(s)}`),
+    })),
+  },
+  {
+    title: "Built from",
+    options: [
+      { id: "src-text", label: "The official law text", count: count("src-text") },
+      { id: "src-curated", label: "Research notes", count: count("src-curated") },
+    ].filter((o) => o.count > 0),
+  },
+];
+---
+
+<Layout
+  t={t}
+  page="acts"
+  title="Laws, judgments and guidelines"
+  header={{
+    title: "Laws, judgments and guidelines",
+    description: "Every legal act, court decision, authority decision and guideline in the graph.",
+  }}
+>
+  <p class="mb-8 max-w-3xl text-muted-foreground">
+    <em>Source checked</em> entries are compared with the official text; those built from <em>the official law text</em> are
+    extracted from the downloaded text itself (see <a href="/en/sources">law texts</a>). Each entry links to its
+    provisions.
+  </p>
+  <FilterList
+    id="acts"
+    groups={groups}
+    total={entries.length}
+    allLabel="All"
+    searchLabel="Search laws, judgments and guidelines"
+    searchPlaceholder="Search by name, title or case number, e.g. GDPR, DDG, C-673/17"
+    emptyText="Nothing matches your search."
+    pageSize={25}
+  >
+    {
+      entries.map(({ act, fromText, tags, search }) => {
+        const d = act.data;
+        const original = actTitle(act);
+        return (
+          <article class="filter-entry card space-y-2 p-5 text-sm" data-tags={tags.join(" ")} data-search={search}>
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <a href={`/id/${act.id}`} class="text-base font-semibold">
+                {actLabel(act)}
+              </a>
+              <span class="text-muted-foreground">
+                {jurisdictionLabel(d.jurisdiction)} · {typeLabel(d.actType)}
+                {when(d) && <> · {when(d)}</>}
+              </span>
+            </div>
+            {original !== actLabel(act) && <p class="text-muted-foreground">{original}</p>}
+            {d.titleEn && d.titleEn !== original && d.titleEn !== actLabel(act) && <p class="text-muted-foreground">{d.titleEn}</p>}
+            <div class="flex flex-wrap items-center gap-2">
+              <Status status={d.reviewStatus} />
+              <span class="text-muted-foreground">
+                {d.provisions.length} {d.provisions.length === 1 ? "provision" : "provisions"}
+                {fromText && <> · from the law text</>}
+                {d.caseNumber && <> · {d.caseNumber}</>}
+              </span>
+              <Pointer id={act.id} />
+            </div>
+          </article>
+        );
+      })
+    }
+  </FilterList>
+</Layout>

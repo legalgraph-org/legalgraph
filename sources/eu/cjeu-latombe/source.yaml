@@ -1,0 +1,42 @@
+# Judgment of the General Court in Case T-553/23, Latombe v Commission: official XML (Formex 4) of the European Court Reports from the Publications
+# Office. Latombe: the General Court upheld the EU-US Data Privacy Framework adequacy decision on 3 September 2025. An appeal to the Court of Justice is reported pending (C-703/25 P). The language of the case, French, is the authentic version; the English
+# text is a translation made by the Court. The operative part — the rulings, which bind
+# national courts on how EU law is to be read — is annotated; French is kept as a parallel
+# version.
+id: eu/cjeu-latombe
+title: Judgment of the General Court in Case T-553/23, Latombe v Commission
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62023TJ0553_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62023TJ0553
+    url: https://publications.europa.eu/resource/celex/62023TJ0553
+    fetch: zip-member
+    member: ECR_62023TJ0553_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: French. This English text is the Court's translation; the authentic version is the French one."
+    retrieved_on: 2026-11-02
+    sha256: 1fee0b5fc7c8323d3568c040dc57a06f15f520dc60c2b64f3bd821bdd497358b
+  - file: ECR_62023TJ0553_FR_01.xml
+    role: parallel
+    language: french
+    page: https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:62023TJ0553
+    url: https://publications.europa.eu/resource/celex/62023TJ0553
+    fetch: zip-member
+    member: ECR_62023TJ0553_FR_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: fra
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 000677e5e627ac3038c63668b51a0cec885d6cd737ff79610da6ed820df46614
+annotated: ECR_62023TJ0553_EN_01.annotated.xml

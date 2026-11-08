@@ -1,0 +1,36 @@
+# European Accessibility Act (Directive (EU) 2019/882): official XML (Formex 4) of the Official Journal.
+# Not amended since; English is annotated, German is a parallel language version.
+id: eu/eaa
+title: European Accessibility Act (Directive (EU) 2019/882)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_2019151EN.01007001.xml
+    page: https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng
+    url: https://publications.europa.eu/resource/celex/32019L0882
+    fetch: zip-member
+    member: L_2019151EN.01007001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 0308b44efe0434a6879753c952d136845842e80b0f98ee7b1c836dc60dfbf3ed
+  - file: L_2019151DE.01007001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/dir/2019/882/oj/deu
+    url: https://publications.europa.eu/resource/celex/32019L0882
+    fetch: zip-member
+    member: L_2019151DE.01007001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: f1ae575508592aa53498c6c1147e4f482c956f90e7f2d1ba1c58486a0ae37923
+annotated: L_2019151EN.01007001.annotated.xml

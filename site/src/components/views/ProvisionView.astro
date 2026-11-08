@@ -1,0 +1,115 @@
+---
+import { actLabel, loadGraph, type Provision } from "../../lib/data";
+import MiniGraph from "../MiniGraph.astro";
+import QuoteBlock from "../QuoteBlock.astro";
+import Refs from "../Refs.astro";
+import Header from "./Header.astro";
+
+interface Props {
+  provision: Provision;
+}
+
+const { provision } = Astro.props;
+const p = provision.data;
+const graph = await loadGraph();
+const act = graph.acts.get(p.act)!;
+const jurisdiction = graph.jurisdictions.get(p.jurisdiction);
+const document = p.document ? graph.documents.get(p.document) : undefined;
+const roles = [
+  ["Regulates", p.regulates],
+  ["Enforces", p.enforces],
+  ["Defines", p.defines],
+  ["Authorises", p.authorises],
+  ["Requires disclosure of", p.requires],
+  ["Implements", p.implements],
+  ["Implemented by", p.implementedBy],
+  ["Explains", p.explains],
+  ["Interprets", p.interprets],
+  ["Interpreted by", p.interpretedBy],
+  ["Read under (repealed)", p.readUnder],
+  ["Decisions read under it", p.readUnderBy],
+  ["Continues (repealed)", p.continues],
+  ["Continued by", p.continuedBy],
+  ["Applies", p.applies],
+  ["Applied by", p.appliedBy],
+  ["Penalises a breach of", p.penalises],
+  ["Penalised by", p.penalisedBy],
+  ["Specifies", p.specifies],
+  ["Specified by", p.specifiedBy],
+  ["Takes precedence over", p.takesPrecedenceOver],
+  ["Gives way to", p.givesWayTo],
+  ["Refers to", p.refersTo],
+  ["Referred to by", p.referredToBy],
+  ["Proposes to amend (not law)", p.proposesToAmend],
+  ["Proposed amendments (not law)", p.proposedAmendments],
+] as const;
+---
+
+<Header
+  kind={act.data.actType === "Legislative proposal" ? "Proposed provision · not law" : "Provision"}
+  title={p.citation}
+  subtitle={`${actLabel(act)} · ${jurisdiction?.data.label ?? p.jurisdiction}`}
+  id={provision.id}
+  status={p.reviewStatus}
+/>
+
+<div class="grid gap-6 lg:grid-cols-[1fr_22rem]">
+  <div class="space-y-4">
+    {p.quotes.map((quote) => <QuoteBlock quote={quote} />)}
+    {p.quotes.length === 0 && <p class="card text-muted-foreground">No quote yet: this entry is a draft from research notes.</p>}
+    {p.comments.map((comment) => <p class="card bg-muted text-sm">{comment.text}</p>)}
+  </div>
+  <aside class="space-y-4">
+    <dl class="card text-sm">
+      <dt>Part of</dt>
+      <dd><Refs ids={[p.act]} /></dd>
+      <dt>Jurisdiction</dt>
+      <dd><Refs ids={[p.jurisdiction]} /></dd>
+      {
+        roles
+          .filter(([, ids]) => ids.length > 0)
+          .map(([label, ids]) => (
+            <>
+              <dt>{label}</dt>
+              <dd>
+                <Refs ids={[...ids]} inline={false} />
+              </dd>
+            </>
+          ))
+      }
+      {
+        p.sourceUrl && (
+          <>
+            <dt>Official text</dt>
+            <dd class="break-all">
+              <a href={p.sourceUrl}>{p.sourceUrl}</a>
+            </dd>
+          </>
+        )
+      }
+    </dl>
+    {
+      document && (
+        <dl class="card text-sm">
+          <dt>Extracted from</dt>
+          <dd>
+            <Refs ids={[document.id]} />
+          </dd>
+          {document.data.annotatedFile && (
+            <>
+              <dt>Element</dt>
+              <dd class="font-mono text-xs break-all">{p.sourceElement}</dd>
+              <dd>
+                <a href={`/id/${document.id}#${provision.id}`}>read in context</a> ·{" "}
+                <a href={`/${document.data.annotatedFile}`}>annotated XML</a> ·{" "}
+                <a href={`/${document.data.path}`}>original</a>
+              </dd>
+            </>
+          )}
+        </dl>
+      )
+    }
+  </aside>
+</div>
+
+<div class="mt-6"><MiniGraph focus={provision.id} /></div>

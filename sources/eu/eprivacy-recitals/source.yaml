@@ -1,0 +1,26 @@
+# ePrivacy Directive recitals 24 and 25 (cookies, spyware), from the authentic Official Journal text:
+# consolidated texts leave recitals out, and the Official Journal of 2002 has no Formex, only the PDF
+# in ../eprivacy/. The recitals are transcribed in schemas/law.xsd (eprivacy-recitals.law.xml) and
+# `legalgraph sources verify` checks each, letter for letter, against the PDF's text. Recitals are not
+# binding; they explain how Article 5(3) is to be read.
+id: eu/eprivacy-recitals
+title: Directive 2002/58/EC (ePrivacy Directive), recitals
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+document: EU-2002-58-oj
+originals:
+  - file: ../eprivacy/l_20120020731en00370047.pdf
+    title: "Official Journal, OJ L 201, 31.7.2002, p. 37"
+    url: https://publications.europa.eu/resource/celex/32002L0058
+    fetch: file
+    headers:
+      Accept: application/pdf
+      Accept-Language: eng
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: 081fa36ca2a4c7cb80d8eecae545568c7a65d74e7d98c6ad8c9060edf7c220ff
+annotated: eprivacy-recitals.law.xml

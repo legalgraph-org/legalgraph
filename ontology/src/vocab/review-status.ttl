@@ -1,0 +1,22 @@
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# How far a resource has been checked (lgo:reviewStatus).
+
+lgv:ReviewStatuses a skos:ConceptScheme ;
+    skos:prefLabel "Review statuses"@en .
+
+lgv:SourceChecked a skos:Concept ;
+    skos:inScheme lgv:ReviewStatuses ;
+    skos:prefLabel "Source checked"@en ;
+    skos:definition "The citation and quotes were compared word for word with the text at the source URL. Not a legal review."@en .
+
+lgv:Draft a skos:Concept ;
+    skos:inScheme lgv:ReviewStatuses ;
+    skos:prefLabel "Draft"@en ;
+    skos:definition "Not yet checked. For acts and provisions: taken from research notes, citation not compared with the official text; do not rely on it. For translations: not yet reviewed by a person."@en .
+
+lgv:Reviewed a skos:Concept ;
+    skos:inScheme lgv:ReviewStatuses ;
+    skos:prefLabel "Reviewed"@en ;
+    skos:definition "For translations: a person who reads both languages checked the translation against the source text (see lgo:reviewedBy)."@en .

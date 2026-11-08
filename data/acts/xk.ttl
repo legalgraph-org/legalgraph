@@ -1,0 +1,17 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# XK: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:XK-04-L-094 a lgo:LegalAct ;
+    eli:title "Law No. 04/L-094 on Information Society Services"@en ;
+    lgo:shortName "04/L-094" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:XK ;
+    lgo:sourceUrl "https://gzk.rks-gov.net/ActDetail.aspx?ActID=2816"^^xsd:anyURI ;
+    rdfs:comment "Provision not yet identified."@en ;
+    lgo:reviewStatus lgv:Draft .

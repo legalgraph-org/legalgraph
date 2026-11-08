@@ -1,0 +1,20 @@
+# Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG; until 13 May 2024 TTDSG): official XML
+# from gesetze-im-internet.de, which still publishes it under the old abbreviation `ttdsg`.
+# § 25 is the German cookie rule, implementing Article 5(3) of the ePrivacy Directive.
+id: de/tdddg
+title: Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz
+jurisdiction: DE
+language: de
+publisher: Bundesministerium der Justiz, gesetze-im-internet.de
+kind: official-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright"
+originals:
+  - file: BJNR198210021.xml
+    url: https://www.gesetze-im-internet.de/ttdsg/xml.zip
+    fetch: zip-member
+    member: BJNR198210021.xml
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: e9609909353a04c0b4cb3afd96132588b38f669d7af01ce49ec16546b55e4afb
+annotated: BJNR198210021.annotated.xml

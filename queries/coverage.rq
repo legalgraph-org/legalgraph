@@ -1,0 +1,21 @@
+# Coverage per country: national acts, provisions and quotes recorded so far.
+PREFIX lgo:  <https://legalgraph.org/ontology#>
+PREFIX eli:  <http://data.europa.eu/eli/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?code ?country (COUNT(DISTINCT ?act) AS ?acts) (COUNT(DISTINCT ?provision) AS ?provisions)
+       (COUNT(DISTINCT ?quote) AS ?quotes)
+WHERE {
+    ?jurisdiction a lgo:Country ;
+        lgo:isoCode ?code ;
+        rdfs:label ?country .
+    OPTIONAL {
+        ?act lgo:jurisdiction ?jurisdiction .
+        OPTIONAL {
+            ?provision eli:is_part_of ?act .
+            OPTIONAL { ?quote lgo:quoteOf ?provision }
+        }
+    }
+}
+GROUP BY ?code ?country
+ORDER BY DESC(?quotes) DESC(?provisions) ?code

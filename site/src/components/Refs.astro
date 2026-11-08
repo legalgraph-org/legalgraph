@@ -1,0 +1,39 @@
+---
+// A list of links to other resources by identifier.
+import { loadGraph, resolve } from "../lib/data";
+
+interface Props {
+  ids: string[];
+  empty?: string;
+  inline?: boolean;
+}
+
+const { ids, empty = "—", inline = true } = Astro.props;
+const graph = await loadGraph();
+const resources = ids.map((id) => resolve(graph, id));
+---
+
+{
+  resources.length === 0 ? (
+    <span class="text-muted-foreground/70">{empty}</span>
+  ) : inline ? (
+    <span>
+      {resources.map((resource, index) => (
+        <>
+          {index > 0 && ", "}
+          <a href={resource.href} title={resource.kind}>
+            {resource.label}
+          </a>
+        </>
+      ))}
+    </span>
+  ) : (
+    <ul class="list-disc space-y-0.5 pl-5">
+      {resources.map((resource) => (
+        <li>
+          <a href={resource.href}>{resource.label}</a> <span class="text-xs text-muted-foreground">{resource.kind}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}

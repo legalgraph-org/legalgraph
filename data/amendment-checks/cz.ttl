@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CZ-480-2004
+    lgo:amendmentCheck lg:CZ-480-2004-amendment-check .
+
+lg:CZ-480-2004-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.e-sbirka.cz/sb/2004/480"^^xsd:anyURI ;
+    rdfs:comment "The official e-sbirka.cz needs a JavaScript session. Unofficial zakonyprolidi.cz shows 'Aktuální znění 23.03.2023 (verze 12)' - needs official confirmation."@en .

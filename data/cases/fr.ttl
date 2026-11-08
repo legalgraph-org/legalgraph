@@ -1,0 +1,101 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# CNIL sanctions on cookies (article 82 of the loi Informatique et Libertés, France's ePrivacy
+# rule). Two years after publication, legifrance replaces the companies' names with [X], [Y], as
+# the decisions themselves provide. The graph keeps them masked the same way and does not store
+# the named publication; the archived January 2022 Légifrance pages are linked instead
+# (sources/link-only.yaml), so who the parties were stays verifiable.
+
+lg:FR-CNIL-SAN-2021-023 lgo:caseNumber "SAN-2021-023" ;
+    lgo:hasOutcome lg:FR-CNIL-SAN-2021-023-outcome-1 , lg:FR-CNIL-SAN-2021-023-outcome-2 , lg:FR-CNIL-SAN-2021-023-outcome-3 ;
+    lgo:illustrates lg:EU-R-cookie-consent ;
+    rdfs:comment "Two websites let users accept cookies with one click but made refusing take several. The published decision shows the two companies as [X] and [Y]; the January 2022 publication, linked under Further reading, names them. The injunction was closed on 13 July 2023 after a button to refuse as easily was added."@en .
+
+lg:FR-CNIL-SAN-2021-023-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "[X]" ;
+    lgo:amount 90000000.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2021-023-d1 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-CNIL-SAN-2021-023-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "[Y]" ;
+    lgo:amount 60000000.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2021-023-d2 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-CNIL-SAN-2021-023-outcome-3 a lgo:Outcome ;
+    lgo:outcomeType lgv:ComplianceOrder ;
+    lgo:against "[X] and [Y]" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2021-023-d3 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Offer a way to refuse as simple as accepting within three months, or pay €100,000 for each day of delay."@en .
+
+lg:FR-CNIL-SAN-2021-024 lgo:caseNumber "SAN-2021-024" ;
+    lgo:hasOutcome lg:FR-CNIL-SAN-2021-024-outcome-1 , lg:FR-CNIL-SAN-2021-024-outcome-2 ;
+    lgo:illustrates lg:EU-R-cookie-consent ;
+    rdfs:comment "Accepting advertising cookies took one click on the first window; refusing took three actions. The published decision shows the company as [X] and the website as [V].com; the January 2022 publication, linked under Further reading, names them."@en .
+
+lg:FR-CNIL-SAN-2021-024-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "[X]" ;
+    lgo:amount 60000000.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2021-024-d1 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-CNIL-SAN-2021-024-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:ComplianceOrder ;
+    lgo:against "[X]" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2021-024-d2 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Offer a way to refuse as simple as accepting within three months, or pay €100,000 for each day of delay."@en .
+
+lg:FR-CNIL-SAN-2025-004 lgo:caseNumber "SAN-2025-004" ;
+    lgo:hasOutcome lg:FR-CNIL-SAN-2025-004-outcome-1 , lg:FR-CNIL-SAN-2025-004-outcome-2 ;
+    lgo:illustrates lg:EU-R-cookie-consent ;
+    rdfs:comment "Two breaches: advertising cookies set at Google-account creation, where refusing took a five-step 'manual personalisation' path (article 82 of the loi Informatique et Libertés), and advertisements shown between Gmail messages without prior consent (article L. 34-5 of the Postal and Electronic Communications Code, not in the graph). Fines of €325 million in total."@en .
+
+lg:FR-CNIL-SAN-2025-004-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "GOOGLE LLC" ;
+    lgo:amount 200000000.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2025-004-d1 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-CNIL-SAN-2025-004-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "GOOGLE IRELAND LIMITED" ;
+    lgo:amount 125000000.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2025-004-d2 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-CNIL-SAN-2025-005 lgo:caseNumber "SAN-2025-005" ;
+    lgo:hasOutcome lg:FR-CNIL-SAN-2025-005-outcome-1 ;
+    lgo:illustrates lg:EU-R-cookie-consent ;
+    rdfs:comment "SHEIN's website set advertising cookies before any choice, its consent window offered only acceptance, and refusals were not respected."@en .
+
+lg:FR-CNIL-SAN-2025-005-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "INFINITE STYLES SERVICES CO. LIMITED (the SHEIN group)" ;
+    lgo:amount 150000000.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:FR-CNIL-SAN-2025-005-d1 ;
+    lgo:forBreachOf lg:FR-LIL-art82-2 ;
+    lgo:reviewStatus lgv:SourceChecked .

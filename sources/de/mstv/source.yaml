@@ -1,0 +1,24 @@
+# Medienstaatsvertrag: a treaty between the German Länder, enacted by each Land. There is no federal
+# XML edition, so the text comes from the Bavarian law portal (BAYERN.RECHT) as HTML.
+# The portal's pages change on every request (session tokens), so `fetch: html-fragment` keeps only
+# the element holding the law text, as BeautifulSoup serialises it; that fragment is stable.
+# MStV.law.xml is written by the maintainers in schemas/law.xsd; `legalgraph sources verify` checks every
+# paragraph of it occurs word for word in the fragment (ignoring the sentence-number superscripts).
+id: de/mstv
+title: Medienstaatsvertrag
+jurisdiction: DE
+language: de
+publisher: Bayerische Staatskanzlei, gesetze-bayern.de (BAYERN.RECHT)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright"
+originals:
+  - file: MStV-18.fragment.html
+    url: https://www.gesetze-bayern.de/Content/Document/MStV-18
+    fetch: html-fragment
+    selector: div.cont
+    text_ignore: ["sup.satznr"]
+    media_type: text/html
+    retrieved_on: 2026-10-31
+    sha256: 16ca4084045fc109d7092c00d5a8494d5788c3ff6fb42741e0c9c7bf691b3d28
+annotated: MStV.law.xml

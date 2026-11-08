@@ -1,0 +1,504 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Terms and legal constructs that acts define or set conditions for (lgo:defines, lgo:regulates),
+# other than disclosure types and information items. The definitions here are short summaries for
+# browsing; the law's own wording is in the quote of the provision that defines each concept.
+
+# --- Data protection (GDPR, Article 4) ---------------------------------------
+
+lgv:DataProtectionConcepts a skos:ConceptScheme ;
+    skos:prefLabel "Data protection concepts"@en .
+
+lgv:PersonalData a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Personal data"@en , "Personenbezogene Daten"@de ;
+    skos:definition "Any information relating to an identified or identifiable natural person, including online identifiers such as cookie IDs and IP addresses."@en .
+
+lgv:DataSubject a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Data subject"@en , "Betroffene Person"@de ;
+    skos:definition "The natural person the personal data relate to: on a website, the visitor, customer or newsletter subscriber."@en .
+
+lgv:Processing a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Processing"@en , "Verarbeitung"@de ;
+    skos:definition "Any operation on personal data, automated or not: collecting, storing, using, disclosing, erasing."@en .
+
+lgv:Controller a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Controller"@en , "Verantwortlicher"@de ;
+    skos:definition "Who decides, alone or jointly with others, why and how personal data are processed: usually the business that runs the website."@en .
+
+lgv:Processor a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Processor"@en , "Auftragsverarbeiter"@de ;
+    skos:definition "Who processes personal data on behalf of a controller, such as a hosting or newsletter provider."@en .
+
+lgv:Recipient a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Recipient"@en , "Empfänger"@de ;
+    skos:definition "Anyone personal data are disclosed to, whether a third party or not."@en .
+
+lgv:Consent a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Consent"@en , "Einwilligung"@de ;
+    skos:definition "A freely given, specific, informed and unambiguous indication of the person's wishes, by a statement or a clear affirmative action."@en .
+
+# --- Lawful bases (GDPR, Article 6(1)) ---------------------------------------
+
+lgv:LawfulBasis a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Lawful basis for processing"@en , "Rechtsgrundlage"@de ;
+    skos:definition "Processing of personal data is lawful only if at least one of the bases of Article 6(1) GDPR applies."@en .
+
+lgv:LawfulBasisConsent a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:LawfulBasis ;
+    skos:related lgv:Consent ;
+    skos:prefLabel "Consent (lawful basis)"@en ;
+    skos:definition "The person has consented to the processing for one or more specific purposes."@en .
+
+lgv:LawfulBasisContract a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:LawfulBasis ;
+    skos:prefLabel "Performance of a contract"@en ;
+    skos:definition "Processing is necessary to perform a contract with the person, or to take steps at their request before entering into one."@en .
+
+lgv:LawfulBasisLegalObligation a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:LawfulBasis ;
+    skos:prefLabel "Legal obligation"@en ;
+    skos:definition "Processing is necessary to comply with a legal obligation of the controller, such as keeping invoices."@en .
+
+lgv:LawfulBasisVitalInterests a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:LawfulBasis ;
+    skos:prefLabel "Vital interests"@en ;
+    skos:definition "Processing is necessary to protect the life or physical integrity of the person or another natural person."@en .
+
+lgv:LawfulBasisPublicTask a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:LawfulBasis ;
+    skos:prefLabel "Public task"@en ;
+    skos:definition "Processing is necessary for a task in the public interest or in the exercise of official authority."@en .
+
+lgv:LawfulBasisLegitimateInterests a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:LawfulBasis ;
+    skos:prefLabel "Legitimate interests"@en ;
+    skos:definition "Processing is necessary for the legitimate interests of the controller or a third party, unless the person's interests or fundamental rights override them."@en .
+
+# --- Territorial scope (GDPR, Article 3) -------------------------------------
+
+lgv:ScopeCriteria a skos:ConceptScheme ;
+    skos:prefLabel "Scope criteria"@en ;
+    skos:definition "Facts that make an act apply to a business: where it is established, whom it targets, what it does."@en .
+
+lgv:EstablishedInTheUnion a lgo:LegalConcept ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Established in the Union"@en ;
+    skos:definition "The controller or processor processes personal data in the context of the activities of an establishment in the EU, wherever the processing takes place."@en .
+
+lgv:OffersGoodsOrServicesInTheUnion a lgo:LegalConcept ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Offers goods or services to people in the Union"@en ;
+    skos:definition "A business outside the EU offers goods or services, paid or free, to people who are in the EU."@en .
+
+lgv:MonitorsBehaviourInTheUnion a lgo:LegalConcept ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Monitors behaviour in the Union"@en ;
+    skos:definition "A business outside the EU monitors the behaviour of people in the EU, for example by tracking or profiling them online."@en .
+
+lgv:RepresentativeInTheUnion a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Representative in the Union"@en , "Vertreter in der Union"@de ;
+    skos:definition "A person in the EU designated by a controller or processor established outside it, to be addressed by authorities and data subjects (Article 27 GDPR)."@en .
+
+lgv:DataProtectionOfficer a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Data protection officer"@en , "Datenschutzbeauftragter"@de ;
+    skos:definition "The person a controller or processor designates to advise on and monitor compliance with data protection law; required in the cases of Article 37 GDPR and, in Germany, § 38 BDSG."@en .
+
+lgv:PublicAuthorityProcessing a lgo:LegalConcept ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Processing by a public authority or body"@en ;
+    skos:definition "Processing carried out by a public authority or body, except courts acting in their judicial capacity."@en .
+
+lgv:LargeScaleMonitoring a lgo:LegalConcept ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Large-scale regular and systematic monitoring"@en ;
+    skos:definition "The core activities consist of processing operations which, by their nature, scope or purposes, require regular and systematic monitoring of data subjects on a large scale, such as online tracking and profiling as a business."@en .
+
+lgv:LargeScaleSpecialCategories a lgo:LegalConcept ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Large-scale processing of special categories of data"@en ;
+    skos:definition "The core activities consist of processing on a large scale of special categories of data (health, religion, …) or of data on criminal convictions."@en .
+
+lgv:ChildConsent a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Consent of a child to online services"@en , "Einwilligung eines Kindes"@de ;
+    skos:definition "Where an online service offered directly to a child relies on consent, a child under 16 (or a lower age a member state sets, at least 13) needs the consent or authorisation of the holder of parental responsibility (Article 8 GDPR)."@en .
+
+lgv:DataSubjectRight a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Right of the data subject"@en , "Betroffenenrecht"@de ;
+    skos:definition "A right people have over their personal data under Chapter III GDPR, which the privacy information must explain."@en .
+
+lgv:RightOfAccess a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:DataSubjectRight ;
+    skos:prefLabel "Right of access"@en , "Auskunftsrecht"@de ;
+    skos:definition "The right to confirmation whether one's personal data are processed, to a copy and to information about the processing (Article 15 GDPR)."@en .
+
+lgv:RightToRectification a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:DataSubjectRight ;
+    skos:prefLabel "Right to rectification"@en , "Recht auf Berichtigung"@de ;
+    skos:definition "The right to have inaccurate personal data corrected and incomplete data completed (Article 16 GDPR)."@en .
+
+lgv:RightToErasure a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:DataSubjectRight ;
+    skos:prefLabel "Right to erasure"@en , "Recht auf Löschung"@de ;
+    skos:definition "The right to have personal data erased, for example when they are no longer needed or consent is withdrawn (Article 17 GDPR)."@en .
+
+lgv:RightToRestriction a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:DataSubjectRight ;
+    skos:prefLabel "Right to restriction of processing"@en , "Recht auf Einschränkung der Verarbeitung"@de ;
+    skos:definition "The right to have processing restricted, for example while the accuracy of the data is contested (Article 18 GDPR)."@en .
+
+lgv:RightToDataPortability a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:DataSubjectRight ;
+    skos:prefLabel "Right to data portability"@en , "Recht auf Datenübertragbarkeit"@de ;
+    skos:definition "The right to receive personal data one provided in a structured, machine-readable format and to have them transmitted to another controller (Article 20 GDPR)."@en .
+
+lgv:RightToObject a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:broader lgv:DataSubjectRight ;
+    skos:prefLabel "Right to object"@en , "Widerspruchsrecht"@de ;
+    skos:definition "The right to object to processing based on legitimate interests or public tasks, and at any time to direct marketing; online, it may be exercised by automated means (Article 21 GDPR)."@en .
+
+lgv:RightToCompensation a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Right to compensation"@en , "Recht auf Schadenersatz"@de ;
+    skos:definition "Anyone who suffers material or non-material damage from an infringement of the GDPR can claim compensation from the controller or processor (Article 82 GDPR)."@en .
+
+lgv:JointControllers a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Joint controllers"@en , "Gemeinsam Verantwortliche"@de ;
+    skos:definition "Two or more controllers who jointly determine purposes and means of processing, such as a website and the provider of an embedded social plugin (CJEU, Fashion ID). They need an arrangement setting out their responsibilities, whose essence is made available to the people concerned (Article 26 GDPR)."@en .
+
+lgv:ReferencesToDirective9546 a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "References to the repealed Data Protection Directive"@en , "Verweise auf die aufgehobene Datenschutzrichtlinie"@de ;
+    skos:definition "References to Directive 95/46/EC, such as the ePrivacy Directive's definition of consent, are read as references to the GDPR (Article 94(2) GDPR)."@en .
+
+lgv:RelationshipWithEPrivacy a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Relationship between the GDPR and the ePrivacy Directive"@en , "Verhältnis von DSGVO und ePrivacy-Richtlinie"@de ;
+    skos:definition "The ePrivacy Directive particularises and complements data protection law for electronic communications; the GDPR imposes no additional obligations where the ePrivacy Directive sets specific ones with the same objective (Article 95 GDPR; Article 1(2) ePrivacy Directive). So storing or reading information on a device follows the ePrivacy rules, while what happens to personal data afterwards follows the GDPR."@en .
+
+# --- Electronic communications (ePrivacy Directive, TDDDG, UWG) -----------------
+
+lgv:ElectronicCommunicationsConcepts a skos:ConceptScheme ;
+    skos:prefLabel "Electronic communications concepts"@en .
+
+lgv:TerminalEquipmentAccess a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:prefLabel "Storing or reading information on a user's device"@en , "Zugriff auf die Endeinrichtung"@de ;
+    skos:altLabel "Cookies and similar technologies"@en ;
+    skos:definition "Storing information in, or gaining access to information already stored in, a user's terminal equipment: cookies, local storage, pixels and device fingerprinting. Allowed only with consent unless strictly necessary (Article 5(3) ePrivacy Directive; § 25 TDDDG)."@en .
+
+lgv:TransmissionOnlyAccess a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:broader lgv:TerminalEquipmentAccess ;
+    skos:prefLabel "Access solely to transmit a communication"@en ;
+    skos:definition "Storage or access whose sole purpose is carrying out the transmission of a message over a public network: exempt from consent."@en .
+
+lgv:StrictlyNecessaryAccess a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:broader lgv:TerminalEquipmentAccess ;
+    skos:prefLabel "Access strictly necessary for a requested service"@en , "Unbedingt erforderlich"@de ;
+    skos:definition "Storage or access strictly necessary for the provider to deliver a digital service the user explicitly requested, such as a shopping cart or login session: exempt from consent."@en .
+
+lgv:StatisticalPurposesAccess a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:broader lgv:TerminalEquipmentAccess ;
+    skos:prefLabel "Access to collect usage statistics to improve a service"@en ;
+    skos:definition "Storage or access whose sole purpose is collecting statistics on how a service or website is used to improve it, with the data not shared except with those helping to improve it. In the UK exempt from consent since 5 February 2026 if users are clearly told and can object free of charge (PECR Schedule A1, paragraph 5); in the EU, analytics needs consent."@en .
+
+lgv:WebsiteFunctionalityAccess a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:broader lgv:TerminalEquipmentAccess ;
+    skos:prefLabel "Access to adapt a website's appearance or functionality"@en ;
+    skos:definition "Storage or access whose sole purpose is adapting how a website appears or functions to the user's preferences, or otherwise enhancing it. In the UK exempt from consent since 5 February 2026 if users are clearly told and can object free of charge (PECR Schedule A1, paragraph 6)."@en .
+
+lgv:ElectronicDirectMarketing a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:prefLabel "Direct marketing by email and similar means"@en , "Werbung mit elektronischer Post"@de ;
+    skos:definition "Sending advertising by email, SMS, fax or automated calls. Requires prior consent, except for similar products to existing customers who were told they can object (Article 13 ePrivacy Directive; § 7 UWG)."@en .
+
+lgv:InternationalTransfer a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Transfer of personal data to a third country"@en , "Übermittlung an ein Drittland"@de ;
+    skos:definition "Making personal data available to a recipient outside the EU/EEA. Allowed with an adequacy decision of the Commission (Article 45 GDPR, such as the EU-US Data Privacy Framework of 2023) or appropriate safeguards such as standard contractual clauses (Article 46)."@en .
+
+lgv:TdddgScope a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:prefLabel "Who the TDDDG applies to"@en , "Anwendungsbereich des TDDDG"@de ;
+    skos:definition "All businesses and persons that have an establishment in Germany, or provide services or take part in providing them there, or make goods available on the market there (§ 1(3) TDDDG); the country-of-origin principle of § 3 DDG is unaffected."@en .
+
+lgv:ConsentManagementService a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:prefLabel "Recognised consent management service"@en , "Anerkannter Dienst zur Einwilligungsverwaltung"@de ;
+    skos:definition "A service that manages consents to storing and reading information on devices, recognised by an independent body when it is user-friendly, has no economic interest of its own in the consents and processes the data for no other purpose (§ 26 TDDDG and the Einwilligungsverwaltungsverordnung)."@en .
+
+# --- Consumer contracts and online platforms -------------------------------------
+
+lgv:ConsumerLawConcepts a skos:ConceptScheme ;
+    skos:prefLabel "Consumer law concepts"@en .
+
+lgv:OrderButton a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Order button"@en , "Bestellbutton"@de ;
+    skos:definition "The button with which a consumer places an order that obliges them to pay. It must say only “order with obligation to pay” (“zahlungspflichtig bestellen”) or something equally unambiguous; otherwise the consumer is not bound."@en .
+
+lgv:WithdrawalFunction a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Withdrawal function"@en , "Widerrufsbutton"@de ;
+    skos:definition "A function on the online interface, labelled “withdraw from contract here” (“Vertrag widerrufen”), with which consumers can withdraw from a distance contract during the withdrawal period. Required since 19 June 2026 (Article 11a CRD; § 356a BGB)."@en .
+
+lgv:Accessibility a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Accessibility of products and services"@en , "Barrierefreiheit"@de ;
+    skos:definition "Products and services can be found, accessed and used by persons with disabilities in the usual way, without particular difficulty and in principle without help. For websites and shops, in practice the harmonised standard EN 301 549 (WCAG 2.1 AA)."@en .
+
+lgv:SinglePointOfContact a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Single point of contact (Digital Services Act)"@en ;
+    skos:definition "An electronic contact intermediary services must designate for authorities (Article 11 DSA) and for users (Article 12 DSA), with the details made public."@en .
+
+lgv:TermsAndConditions a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Terms and conditions"@en , "Allgemeine Geschäftsbedingungen"@de .
+
+lgv:TraderTraceability a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Traceability of traders on marketplaces"@en ;
+    skos:definition "Online marketplaces must obtain and check traders' identity and contact details before they may sell to consumers in the EU (Article 30 DSA)."@en .
+
+lgv:AiInteraction a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Interaction with an AI system"@en ;
+    skos:definition "A person interacts directly with an AI system, such as a chatbot or voice assistant (Article 50(1) AI Act)."@en .
+
+lgv:AiGeneratedContent a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "AI-generated or manipulated content"@en ;
+    skos:definition "Synthetic audio, images, video or text generated or manipulated by AI, including deep fakes (Article 50(2) and (4) AI Act)."@en .
+
+lgv:SmallPlatformExemption a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Exemption of micro and small platforms"@en ;
+    skos:definition "Most obligations for online platforms (Articles 20 to 28 DSA) and for marketplaces (Articles 30 to 32) do not apply to micro and small enterprises, unless designated very large platforms (Articles 19 and 29 DSA)."@en .
+
+# --- Switzerland (DSG) -------------------------------------------------------------
+
+lgv:EffectsInSwitzerland a lgo:LegalConcept , lgo:Condition ;
+    skos:inScheme lgv:ScopeCriteria ;
+    skos:prefLabel "Effects in Switzerland"@en , "Auswirkung in der Schweiz"@de ;
+    skos:definition "The Swiss Data Protection Act applies to situations that have an effect in Switzerland, even if they are caused abroad (Art. 3 DSG): in practice, processing data of people in Switzerland."@en ;
+    lgo:question "Does the business process personal data of people in Switzerland (for example Swiss customers or visitors)?"@en .
+
+lgv:RepresentativeInSwitzerland a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Representative in Switzerland"@en , "Vertretung in der Schweiz"@de ;
+    skos:definition "A contact point in Switzerland that foreign private controllers must designate when they regularly and extensively process data of people in Switzerland in connection with offering goods or services or monitoring their behaviour, with a high risk (Art. 14 DSG)."@en .
+
+# --- California (CCPA) -------------------------------------------------------------
+
+lgv:CcpaBusinessDefinition a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Business under the CCPA"@en ;
+    skos:definition "A for-profit entity that determines why and how consumers' personal information is processed, does business in California and meets a threshold: revenue above USD 25 million (adjusted for inflation), personal information of 100,000 or more consumers or households, or half its revenue from selling or sharing it (Cal. Civ. Code § 1798.140(d))."@en .
+
+lgv:RightToOptOutOfSale a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Right to opt out of sale or sharing"@en ;
+    skos:definition "Consumers may direct a business not to sell their personal information or share it for cross-context behavioural advertising (Cal. Civ. Code § 1798.120)."@en .
+
+lgv:OptOutPreferenceSignal a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Opt-out preference signal"@en ;
+    skos:altLabel "Global Privacy Control"@en ;
+    skos:definition "A signal sent by a browser or device, such as Global Privacy Control, that tells a business the consumer opts out of sale and sharing. A business that honours it may do without the opt-out links (Cal. Civ. Code § 1798.135(b))."@en .
+
+# --- United Kingdom ------------------------------------------------------------------
+
+lgv:UkScopeCriteria a skos:ConceptScheme ;
+    skos:prefLabel "UK scope criteria"@en .
+
+lgv:EstablishedInTheUnitedKingdom a lgo:LegalConcept ;
+    skos:inScheme lgv:UkScopeCriteria .
+
+lgv:OffersGoodsOrServicesInTheUk a lgo:LegalConcept , lgo:Condition ;
+    skos:inScheme lgv:UkScopeCriteria ;
+    skos:prefLabel "Offers goods or services to people in the UK"@en .
+
+lgv:MonitorsBehaviourInTheUk a lgo:LegalConcept , lgo:Condition ;
+    skos:inScheme lgv:UkScopeCriteria ;
+    skos:prefLabel "Monitors behaviour of people in the UK"@en ;
+    lgo:question "Does the business track or profile the online behaviour of people in the UK?"@en .
+
+lgv:RepresentativeInTheUk a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Representative in the United Kingdom"@en ;
+    skos:definition "A person in the UK designated by a controller or processor outside it that targets or monitors people in the UK (Article 27 UK GDPR)."@en .
+
+lgv:ConsumerReviews a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Consumer reviews"@en ;
+    skos:definition "Reviews of products or traders by consumers. Fake or undisclosed incentivised reviews, and publishing reviews without reasonable steps against them, are banned outright in the UK (DMCC Act 2024, Schedule 20 paragraph 13) and in the EU (UCPD Annex I)."@en .
+
+lgv:AdditionalPayments a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Additional payments and pre-ticked boxes"@en ;
+    skos:definition "Payments beyond the price of the main product (insurance, express delivery). They need the consumer's express consent; a pre-ticked box is not consent (Consumer Contracts Regulations 2013, reg. 40; Article 22 CRD)."@en .
+
+lgv:RegulatedUserToUserService a lgo:LegalConcept , lgo:Condition ;
+    skos:inScheme lgv:UkScopeCriteria ;
+    skos:prefLabel "Regulated user-to-user service (UK)"@en ;
+    skos:definition "An internet service where users can share content that other users encounter (comments, forums, uploads, messaging), with links to the UK: a significant number of UK users, the UK as a target market, or a material risk of significant harm to people in the UK (Online Safety Act 2023, s. 4)."@en ;
+    lgo:question "Can users share content on the service that other users can see (comments, forums, uploads, chat), and does it have UK users or target the UK?"@en .
+
+lgv:OnlineSafety a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Online safety duties"@en ;
+    skos:definition "Duties of user-to-user services to assess and mitigate the risk of illegal content and, where children are likely to access the service, content harmful to children (Online Safety Act 2023)."@en .
+
+lgv:UnfairCommercialPractices a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Unfair commercial practices"@en ;
+    skos:definition "Misleading or aggressive practices towards consumers; Annex I of the UCPD lists practices that are always unfair, including fake reviews."@en .
+
+lgv:GeoBlocking a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Geo-blocking"@en ;
+    skos:definition "Blocking, limiting or redirecting customers, or applying different conditions, because of their nationality, residence or place of establishment within the EU (Regulation (EU) 2018/302)."@en .
+
+lgv:YouthProtection a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Protection of minors in media"@en , "Jugendmedienschutz"@de ;
+    skos:definition "Content that can impair the development of children or adolescents must be made inaccessible to the age groups concerned, by age labels, technical means or broadcast times (JMStV)."@en .
+
+lgv:ProducerRegistration a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Producer registration (packaging, electrical equipment)"@en ;
+    skos:definition "Producers placing packaged goods or electrical equipment on the German market must register (Zentrale Stelle Verpackungsregister; stiftung ear) before selling; marketplaces must not let unregistered producers sell."@en .
+
+# --- Ukraine -------------------------------------------------------------------
+
+lgv:RightOfWithdrawal a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Right of withdrawal"@en , "Widerrufsrecht"@de ;
+    skos:definition "The consumer's right to withdraw from a distance or off-premises contract within a period (14 days in EU and Ukrainian law) without giving a reason (Article 9 CRD; Article 13(4) of the 1991 law)."@en .
+
+lgv:StateLanguageUse a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "State-language use"@en ;
+    skos:definition "Use of the state language (Ukrainian) in user interfaces, websites, mobile apps and consumer information, including online shops (Law of Ukraine No. 2704-VIII, Articles 27 and 30)."@en .
+
+lgv:OnlineMedia a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Online media"@en ;
+    skos:definition "Media disseminated on the internet; websites whose main activity is not the dissemination of mass information connected to the owner's other business stay outside the media law (Article 2(2)(2) of the Media Law)."@en .
+
+lgv:ConsumerLaw2023InForce a lgo:LegalConcept , lgo:Condition ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "2023 consumer law in force (Ukraine)"@en ;
+    skos:definition "The Consumer Rights Protection Law of 2023 (No. 3153-IX) takes effect one year after its publication, and not before martial law ends (Section IX(1)); until then the 1991 law applies."@en ;
+    lgo:question "Has Ukraine's 2023 consumer law (No. 3153-IX) taken effect? It applies one year after publication, and not before martial law ends."@en .
+
+lgv:OrderPlacement a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Placing an order online"@en , "Bestellung im elektronischen Geschäftsverkehr"@de ;
+    skos:definition "When a customer orders through a website, the provider must offer means to spot and correct input errors before ordering and acknowledge receipt of the order without delay by electronic means (Article 11 e-Commerce Directive; § 312i BGB)."@en .
+
+lgv:UnfairTerms a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Unfair contract terms"@en , "Unangemessene Benachteiligung in AGB"@de ;
+    skos:definition "Standard terms that, contrary to good faith, cause a significant imbalance to the detriment of the other party are not binding (Directive 93/13/EEC; §§ 307–309 BGB)."@en .
+
+lgv:CancellationButton a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Cancellation button"@en , "Kündigungsbutton"@de ;
+    skos:definition "On a website where consumers can conclude a subscription, a button labelled “cancel contracts here” (“Verträge hier kündigen”) leading to a confirmation page, so the contract can be cancelled online as easily as it was concluded (§ 312k BGB, Germany)."@en .
+
+lgv:SubscriptionCancellation a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Cancelling a subscription"@en , "Kündigung eines Dauerschuldverhältnisses"@de ;
+    skos:definition "Ending an automatically renewing or continuous-service contract: a free, timely and easy mechanism described in the acknowledgment (Cal. B&P Code § 17602(c)); termination online at will by a prominent link, button or termination email when the contract was accepted online (§ 17602(d)); the German cancellation button of § 312k BGB is the same duty."@en .
+
+lgv:CompetitorEnforcement a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Enforcement by competitors"@en , "Durchsetzung durch Mitbewerber"@de ;
+    skos:definition "A competitor may sue over another business's GDPR breach under national unfair-competition law, alongside the supervisory authorities and the people concerned (CJEU, Lindenapotheke, C-21/23). In Germany, this is the basis for an Abmahnung over privacy duties."@en .
+
+lgv:StorageLimitation a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Storage limitation"@en , "Speicherbegrenzung"@de ;
+    skos:definition "Personal data may be kept in a form identifying the person only as long as the processing purpose requires; longer storage needs archiving safeguards (Art. 5(1)(e) GDPR)."@en .
+
+lgv:Accountability a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Accountability"@en , "Rechenschaftspflicht"@de ;
+    skos:definition "The controller is responsible for complying with the data-protection principles and must be able to demonstrate that compliance (Art. 5(2) GDPR)."@en .
+
+lgv:DataProtectionByDesign a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Data protection by design and by default"@en , "Datenschutz durch Technikgestaltung und Voreinstellungen"@de ;
+    skos:definition "Data protection is built into the processing: appropriate technical and organisational measures at design time, and defaults that process only what the purpose needs (Art. 25 GDPR)."@en .
+
+lgv:ProcessingRecord a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Record of processing activities"@en , "Verzeichnis von Verarbeitungstätigkeiten"@de ;
+    skos:definition "Controllers and processors keep a written record of processing activities — purposes, categories, recipients, transfers and retention periods (Art. 30 GDPR)."@en .
+
+lgv:ProcessorResponsibility a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Processor acting as controller"@en , "Auftragsverarbeiter als Verantwortlicher"@de ;
+    skos:definition "A processor that determines purposes and means of processing infringes the Regulation and is then itself treated as a controller (Art. 28(10) GDPR)."@en .
+
+lgv:LiabilityForProcessing a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Liability for unlawful processing"@en , "Haftung für rechtswidrige Verarbeitung"@de ;
+    skos:definition "Controllers are liable for damage caused by infringing processing; processors only where they broke processor duties or acted outside or contrary to lawful instructions — and either escapes liability by proving no responsibility for the harm (Art. 82(2)–(3) GDPR)."@en .
+
+lgv:LimitationPeriod a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Limitation period"@en , "Verjährungsfrist"@de ;
+    skos:definition "The time within which a claim must be brought: three years for most civil claims (§ 195 BGB), six months for unfair-competition claims such as unlawful marketing e-mails (§ 11(1) UWG). Businesses often use it to decide how long to keep consent evidence after the processing ends; no rule ties the two."@en .
+
+lgv:TortLiability a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Liability in tort"@en , "Deliktische Haftung"@de ;
+    skos:definition "Whoever intentionally or negligently and unlawfully injures another's life, body, health, freedom, property or other right must make good the damage (§ 823(1) BGB). German courts count the established business among the 'other rights', which is how a business that is not a competitor sues over unsolicited advertising e-mail; with § 1004 BGB the same interference also grounds an injunction."@en .
+
+lgv:ServiceSwitching a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Switching between data processing services"@en , "Wechsel des Datenverarbeitungsdienstes"@de ;
+    skos:definition "A customer must be able to leave a data-processing service — functional export included — without pre-commercial, technical, contractual or organisational obstacles, with switching free of charge from 12 January 2027 (Data Act, arts. 23, 25, 29)."@en .
+
+lgv:ServiceProviderContract a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Service provider contract"@en ;
+    skos:definition "Under the CCPA the processor-equivalent: a written contract must bind a service provider or contractor to business-purpose use only — no selling or sharing, no use outside the direct business relationship, no combining with other data (§ 1798.140(ag), (aj); Cal. Code Regs. tit. 11, § 7051). The CCPA analog of the GDPR's Article 28 processing agreement."@en .
+
+lgv:DataMinimisation a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Data minimisation"@en , "Datenminimierung"@de ;
+    skos:definition "Personal data must be adequate, relevant and limited to what the purposes require (Art. 5(1)(c) GDPR)."@en .

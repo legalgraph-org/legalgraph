@@ -1,0 +1,26 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# BE: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:BE-WER a lgo:LegalAct ;
+    eli:title "Wetboek van economisch recht"@nl , "Code de droit économique"@fr , "Code of Economic Law"@en ;
+    lgo:shortName "WER / CDE" ;
+    lgo:actType lgv:Code ;
+    lgo:jurisdiction lg:BE ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://economie.fgov.be/sites/default/files/Files/Entreprises/guidelines-informatieverplichtingen-in-het-kader-van-e-commerce.pdf"^^xsd:anyURI ;
+    rdfs:comment "Source is the FPS Economy guidance on e-commerce information duties, not the act itself."@en ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BE-WER-art-XII-6-1 a lgo:Provision ;
+    eli:is_part_of lg:BE-WER ;
+    lgo:citation "Art. XII.6, § 1 WER" ;
+    lgo:sourceUrl "https://economie.fgov.be/sites/default/files/Files/Entreprises/guidelines-informatieverplichtingen-in-het-kader-van-e-commerce.pdf"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:Draft .

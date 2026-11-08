@@ -1,0 +1,2 @@
+# Law texts must stay byte-identical to the official downloads.
+sources/**/*.xml -text -diff

@@ -1,0 +1,25 @@
+# Telekommunikationsgesetz 2021 (TKG 2021): the authentic Bundesgesetzblatt XML from the Austrian
+# Legal Information System (RIS). § 165(3) is the Austrian cookie rule: providers of information-
+# society services must tell the user which personal data they process, on what legal basis, for
+# which purposes and for how long, and may collect it only with the user's active consent on clear
+# and comprehensive information; the technical-necessity exception follows. Checked against the
+# consolidated text (Fassung vom 02.11.2026): § 165(3) is in force unchanged.
+id: at/tkg
+title: Telekommunikationsgesetz 2021 (BGBl. I Nr. 190/2021)
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: official-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: BGBLA_2021_I_190.xml
+    page: https://www.ris.bka.gv.at/eli/bgbl/I/2021/190
+    url: https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2021_I_190/BGBLA_2021_I_190.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Authentic BGBl. promulgation of 28 October 2021. § 165(3) is verbatim in the consolidated version (Fassung vom 02.11.2026); later TKG amendments did not touch it."
+    retrieved_on: 2026-11-03
+    sha256: 63968907f1863dd33d2fdcf6407725271af4511f0ba8bb90635f52fd9c0415ff
+annotated: BGBLA_2021_I_190.annotated.xml

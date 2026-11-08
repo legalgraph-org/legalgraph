@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Robles v. Domino's Pizza, LLC, 913 F.3d 898 (9th Cir. 2019), the passages the graph quotes,
+  written in schemas/law.xsd from the Ninth Circuit's opinion PDF. The words are the court's; only
+  the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CA9-2019-0115" lga:jurisdiction="US" lga:act-type="Judgment"
+     lga:url="https://ca9.uscourts.gov/opinions/opinion_view.php?pk_no=17-55504">
+  <meta>
+    <title>Robles v. Domino's Pizza, LLC, No. 17-55504 (9th Cir. Jan. 15, 2019)</title>
+    <short>Robles v. Domino's Pizza</short>
+    <date>2019-01-15</date>
+  </meta>
+
+  <section num="III.A" title="The ADA's application to Domino's website and app" source="17-55504.pdf">
+    <paragraph num="" lga:provision="US-CA9-2019-0115-ada-applies" lga:citation="Robles v. Domino's Pizza, 913 F.3d 898, part III.A" lga:url="https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/15/17-55504.pdf" lga:interprets="US-ADA-12182-a" lga:regulates="Accessibility">We agree with the district court that the ADA applies to Domino’s website and app. The ADA expressly provides that a place of public accommodation, like Domino’s, engages in unlawful discrimination if it fails to “take such steps as may be necessary to ensure that no individual with a disability is excluded, denied services, segregated or otherwise treated differently than other individuals because of the absence of<page num="11"/> auxiliary aids and services.”<note num="5"/></paragraph>
+    <paragraph num="" lga:provision="US-CA9-2019-0115-nexus" lga:citation="Robles v. Domino's Pizza, 913 F.3d 898, part III.A (nexus)" lga:url="https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/15/17-55504.pdf" lga:interprets="US-ADA-12182-a" lga:regulates="Accessibility">The alleged inaccessibility of Domino’s website and app impedes access to the goods and services of its physical pizza franchises—which are places of public accommodation. See 42 U.S.C. § 12181(7)(B) (listing a restaurant as a covered “public accommodation”). Customers use the website and app to locate a nearby Domino’s restaurant and order pizzas for at-home delivery or in-store pickup. This nexus between Domino’s website and app and physical restaurants—which Domino’s does not contest—is critical to our analysis.</paragraph>
+  </section>
+</law>

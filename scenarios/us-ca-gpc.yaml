@@ -1,0 +1,15 @@
+name: California-facing publisher that honours Global Privacy Control
+description: >
+  A US media company above the CCPA thresholds that shares data with advertising partners, and
+  honours opt-out preference signals (Global Privacy Control) instead of showing the "Do Not Sell or
+  Share" link, as § 1798.135(b) allows.
+facts:
+  - CcpaBusiness
+  - ProcessesPersonalData
+  - SellsOrSharesPersonalData
+  - HonoursOptOutPreferenceSignal
+obligations:
+  - US-CA-R-notice-at-collection
+  - US-CA-R-privacy-policy
+  - US-CA-R-request-methods
+  - US-CA-R-minimal-collection

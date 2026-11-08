@@ -1,0 +1,13 @@
+---
+import { STATUS } from "../lib/links";
+
+interface Props {
+  status: string;
+}
+
+const status = STATUS[Astro.props.status] ?? { label: Astro.props.status, tone: "", help: "" };
+---
+
+<span class={`tag pill ${status.tone}`} title={status.help}>
+  {status.label}
+</span>

@@ -1,0 +1,19 @@
+# Americans with Disabilities Act, Title III (42 U.S.C. § 12182): the official annual edition of the United States Code (2024) as govinfo.gov publishes it, one
+# HTML page per section. govinfo has no XML per section, so section 12182(a), the general rule of Title III (public accommodations) is transcribed in
+# schemas/law.xsd and `legalgraph sources verify` checks it word for word against the page.
+id: us/ada
+title: Americans with Disabilities Act, Title III (42 U.S.C. § 12182)
+jurisdiction: US
+language: en
+publisher: U.S. Government Publishing Office, govinfo.gov (Office of the Law Revision Counsel)
+kind: authored-xml
+licence: public-domain
+licence_basis: "17 U.S.C. § 105: works of the US federal government are not protected by copyright"
+originals:
+  - file: USCODE-2024-title42-chap126-subchapIII-sec12182.htm
+    url: https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap126-subchapIII-sec12182.htm
+    fetch: file
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: a48284859e3d81fc3e165d03c96c7226859783ced1cb3b49f4656a6f969fff7b
+annotated: ada.law.xml

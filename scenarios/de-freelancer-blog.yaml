@@ -1,0 +1,36 @@
+name: German freelance designer with a blog
+description: >
+  A sole trader in Germany with a portfolio website and a blog, Google Analytics behind a consent
+  banner (US provider), a newsletter, a contact form and a VAT identification number. No employees,
+  no consumer contracts through the website.
+established_in: DE
+facts:
+  - CommercialDigitalService
+  - JournalisticEditorialContent
+  - HasVatId
+  - ProcessesPersonalData
+  - NonEssentialDeviceAccess
+  - TransfersOutsideEEA
+  - ReliesOnLegitimateInterests
+  - SendsMarketingEmails
+obligations:
+  - DE-R-impressum
+  - DE-R-impressum-vat
+  - DE-R-telemedia-identification
+  - DE-R-editorial-responsibility
+  - DE-R-cookie-consent
+  - DE-R-email-marketing-consent
+  - DE-R-email-marketing-sender
+  - EU-R-privacy-information
+  - EU-R-privacy-information-legitimate-interests
+  - EU-R-privacy-information-transfers
+  - EU-R-privacy-information-consent
+  - EU-R-lawful-basis
+  - EU-R-consent-conditions
+  - EU-R-consent-separate
+  - EU-R-consent-no-tying
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
+  - EU-R-consent-specific

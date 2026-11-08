@@ -1,0 +1,36 @@
+# Regulation (EU) 2024/900 on the transparency and targeting of political advertising: official XML
+# (Formex 4) of the Official Journal, not amended. English is annotated; German is a parallel version.
+id: eu/political-advertising
+title: Regulation on political advertising ((EU) 2024/900)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_202400900EN.000101.fmx.xml
+    page: https://eur-lex.europa.eu/eli/reg/2024/900/oj/eng
+    url: https://publications.europa.eu/resource/celex/32024R0900
+    fetch: zip-member
+    member: L_202400900EN.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: b67512ba0ae9102b7547539000ac6589d480a5154d1b372c9f702fe2bc15143d
+  - file: L_202400900DE.000101.fmx.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/reg/2024/900/oj/deu
+    url: https://publications.europa.eu/resource/celex/32024R0900
+    fetch: zip-member
+    member: L_202400900DE.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: f07363f763bccfe01e8914548c827fbde77b56c780ee92b5b04c70843216cb8d
+annotated: L_202400900EN.000101.fmx.annotated.xml

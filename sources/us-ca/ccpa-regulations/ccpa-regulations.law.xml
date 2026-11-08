@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  California Code of Regulations, title 11, §§ 7002, 7025 and 7026, written in schemas/law.xsd
+  from the California Privacy Protection Agency's PDF of the regulations as in force from
+  1 January 2026. The words are the Agency's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CA-CCR-11-CCPA" lga:jurisdiction="US-CA" lga:act-type="Ordinance"
+     lga:url="https://cppa.ca.gov/regulations/consumer_privacy_act.html">
+  <meta>
+    <title>California Code of Regulations, title 11, division 6, chapter 1: California Consumer Privacy Act Regulations</title>
+    <short>CCPA Regulations</short>
+    <date>2026-01-01</date>
+  </meta>
+
+  <section num="§ 7025" title="Opt-out preference signals" source="ccpa_statute_eff_20260101.pdf">
+    <paragraph num="(b)" lga:provision="US-CA-CCR-11-7025-b" lga:citation="Cal. Code Regs. tit. 11, § 7025(b)" lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf" lga:regulates="OptOutPreferenceSignal" lga:refers-to="US-CA-CCPA-1798-120-a">A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing:
+      <list>
+        <item num="(1)">The signal shall be in a format commonly used and recognized by businesses. An example would be an HTTP header field or JavaScript object.</item>
+        <item num="(2)">The platform, technology, or mechanism that sends the opt-out preference signal shall make clear to the consumer, whether in its configuration or in disclosures to the public, that the use of the signal is meant to have the effect of opting the consumer out of the sale and sharing of their personal information. The configuration or disclosure does not need to be tailored only to California or to refer to California.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(1)" lga:provision="US-CA-CCR-11-7025-c-1" lga:citation="Cal. Code Regs. tit. 11, § 7025(c)(1)" lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf" lga:regulates="OptOutPreferenceSignal" lga:refers-to="US-CA-CCPA-1798-120-a">The business shall treat the opt-out preference signal as a valid request to opt-out of sale/sharing submitted pursuant to Civil Code section 1798.120 for that browser or device and any consumer profile associated with that browser or device, including pseudonymous profiles. If known, the business shall also treat the opt-out preference signal as a valid request to opt-out of sale/sharing for the consumer. This is not required for a business that does not sell or share personal information.</paragraph>
+  </section>
+
+  <section num="§ 7002" title="Restrictions on the collection and use of personal information" source="ccpa_statute_eff_20260101.pdf">
+    <paragraph num="(a)" lga:provision="US-CA-CCR-11-7002-a" lga:citation="Cal. Code Regs. tit. 11, § 7002(a)"
+      lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+      lga:regulates="DataProtectionByDesign" lga:refers-to="US-CA-CCPA-1798-100-a">In accordance with Civil Code section 1798.100, subdivision (c), a business’s collection, use, retention, and/or sharing of a consumer’s personal information shall be reasonably<page num="6"/> necessary and proportionate to achieve:
+      <list>
+        <item num="(1)">The purpose(s) for which the personal information was collected or processed, which shall comply with the requirements set forth in subsection (b); or</item>
+        <item num="(2)">Another disclosed purpose that is compatible with the context in which the personal information was collected, which shall comply with the requirements set forth in subsection (c).</item>
+      </list>
+    </paragraph>
+    <paragraph num="(b)" lga:provision="US-CA-CCR-11-7002-b" lga:citation="Cal. Code Regs. tit. 11, § 7002(b)"
+      lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+      lga:regulates="DataProtectionByDesign">The purpose(s) for which the personal information was collected or processed shall be consistent with the reasonable expectations of the consumer(s) whose personal information is collected or processed.</paragraph>
+  </section>
+
+  <section num="§ 7026" title="Requests to Opt-Out of Sale/Sharing" source="ccpa_statute_eff_20260101.pdf">
+    <paragraph num="(a)" lga:provision="US-CA-CCR-11-7026-a" lga:citation="Cal. Code Regs. tit. 11, § 7026(a)"
+      lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+      lga:regulates="RightToOptOutOfSale" lga:refers-to="US-CA-CCPA-1798-120-a">A business that sells or shares personal information shall provide two or more designated methods for submitting requests to opt-out of sale/sharing. A business shall consider the methods by which it interacts with consumers, the manner in which the business collects the personal information that it makes available to third parties, available technology, and ease of use by the consumer when determining which methods consumers may use to submit requests to opt-out of sale/sharing. At least one method offered shall reflect the manner in which the business primarily interacts with the consumer. Illustrative examples follow.</paragraph>
+    <paragraph num="(1)" lga:provision="US-CA-CCR-11-7026-a-1" lga:citation="Cal. Code Regs. tit. 11, § 7026(a)(1)" lga:regulates="RightToOptOutOfSale">A business that collects personal information from consumers online shall, at a minimum, allow consumers to submit requests to opt-out of sale/sharing through an opt-out preference signal and at least one of the following methods: an interactive form accessible via the “Do Not Sell or Share My Personal Information” link, the Alternative Opt-out Link, or the business’s privacy policy if the business processes an opt-out preference signal in a frictionless manner.</paragraph>
+  </section>
+</law>

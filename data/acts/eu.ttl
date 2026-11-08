@@ -1,0 +1,222 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# EU-level acts. National provisions point here with lgo:implements.
+
+# --- Directive 2000/31/EC (e-Commerce Directive; additions to data/extracted/eu/ecommerce.ttl) --
+
+lg:EU-2000-31
+    lgo:shortName "e-Commerce Directive" ;
+    eli:id_local "32000L0031" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2000/31/oj> ;
+    rdfs:comment "The common EU baseline for the provider identification notice: Article 5 lists what every information society service provider must make easily, directly and permanently accessible. Member states transpose it into national law, often adding items. Articles 12 to 15 (liability of intermediaries) were deleted by the Digital Services Act from 17 February 2024."@en .
+
+# --- Regulation (EU) 2022/2065 (Digital Services Act; additions to data/extracted/eu/dsa.ttl) --
+
+lg:EU-2022-2065
+    lgo:shortName "DSA" ;
+    eli:id_local "32022R2065" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2022/2065/oj> ;
+    rdfs:comment "Applies directly. It leaves the provider identification duty of the e-Commerce Directive in place; Germany's DDG, which carries § 5 (Impressum), was enacted to implement the DSA. Articles 11 to 14 apply to all intermediary services; Articles 26 and 30 to online platforms, except micro and small enterprises (Article 19)."@en .
+
+# --- Directive 2011/83/EU (Consumer Rights Directive; additions to data/extracted/eu/crd.ttl) --
+
+lg:EU-2011-83
+    lgo:shortName "Consumer Rights Directive" ;
+    eli:id_local "32011L0083" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2011/83/oj> ;
+    rdfs:comment "Harmonises what traders must tell consumers before distance contracts, the order button and the right of withdrawal. Directive (EU) 2023/2673 added the withdrawal function (Article 11a), applying from 19 June 2026; Germany: §§ 312j, 356a BGB and Art. 246a EGBGB."@en .
+
+# --- Directive (EU) 2019/882 (European Accessibility Act; additions to data/extracted/eu/eaa.ttl) --
+
+lg:EU-2019-882
+    lgo:shortName "European Accessibility Act" ;
+    eli:id_local "32019L0882" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2019/882/oj> ;
+    rdfs:comment "Accessibility requirements for products and services, including e-commerce services, applying from 28 June 2025; Germany: BFSG. The EU counterpart to the US ADA for consumer-facing businesses."@en .
+
+# --- Regulation (EU) 2024/1689 (AI Act; additions to data/extracted/eu/ai-act.ttl) --
+
+lg:EU-2024-1689
+    lgo:shortName "AI Act" ;
+    eli:id_local "32024R1689" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/oj> ;
+    rdfs:comment "Article 50 (transparency for chatbots and AI-generated content) applies from 2 August 2026; for marking AI outputs of systems already on the market, a grace period runs to 2 December 2026."@en .
+
+# --- Online dispute resolution (ODR): repealed ------------------------------
+
+lg:EU-2013-524 a lgo:LegalAct ;
+    eli:title "Regulation (EU) No 524/2013 of the European Parliament and of the Council of 21 May 2013 on online dispute resolution for consumer disputes (Regulation on consumer ODR)"@en ;
+    lgo:shortName "ODR Regulation" ;
+    eli:id_local "32013R0524" ;
+    lgo:actType lgv:Regulation ;
+    lgo:jurisdiction lg:EU ;
+    eli:date_document "2013-05-21"^^xsd:date ;
+    eli:date_no_longer_in_force "2025-07-20"^^xsd:date ;
+    eli:repealed_by lg:EU-2024-3228 ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0524"^^xsd:anyURI ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2013/524/oj> ;
+    rdfs:comment "Its Article 14(1) made online traders link to the EU ODR platform, so many imprints still carry that link. The platform closed and the Regulation was repealed with effect from 20 July 2025."@en ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-2013-524-art14-1 a lgo:Provision ;
+    eli:is_part_of lg:EU-2013-524 ;
+    lgo:citation "Art. 14(1) Regulation (EU) No 524/2013" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0524"^^xsd:anyURI ;
+    lgo:regulates lgv:ConsumerDisputeResolution ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-2024-3228 a lgo:LegalAct ;
+    eli:title "Regulation (EU) 2024/3228 repealing Regulation (EU) No 524/2013 (discontinuation of the European ODR Platform)"@en ;
+    eli:id_local "32024R3228" ;
+    lgo:actType lgv:Regulation ;
+    lgo:jurisdiction lg:EU ;
+    eli:repeals lg:EU-2013-524 ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2024/3228/oj/eng"^^xsd:anyURI ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/3228/oj> ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Regulation (EU) 2016/679 (GDPR; additions to data/extracted/eu/gdpr.ttl) --
+
+lg:EU-2016-679
+    lgo:shortName "GDPR" ;
+    eli:id_local "32016R0679" ;
+    eli:first_date_entry_in_force "2016-05-24"^^xsd:date ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2016/679/oj> ;
+    rdfs:comment "Applies from 25 May 2018. A regulation, so it applies directly in every member state without transposition; national law only fills the gaps it leaves open (in Germany the BDSG). Equally authentic in all 24 official languages: the graph quotes the English and German texts from the Official Journal. Never amended; corrected by three corrigenda, none of which touches the provisions quoted here."@en .
+
+# --- Directive 2002/58/EC (ePrivacy; additions to data/extracted/eu/eprivacy.ttl) --
+
+lg:EU-2002-58
+    lgo:shortName "ePrivacy Directive" ;
+    eli:id_local "32002L0058" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2002/58/oj> ;
+    rdfs:comment "Article 5(3), as replaced by Directive 2009/136/EC, is the EU cookie rule; member states transpose it (Germany: § 25 TDDDG). The Digital Omnibus proposal of November 2025 (lg:EU-COM-2025-837) would move the rule for personal data into the GDPR (a new Article 88a); as of late October 2026 it is not adopted, and the Council's position reportedly drops that part."@en .
+
+# --- Court of Justice of the EU (additions to data/extracted/eu/cjeu-*.ttl) ------
+# Fashion ID and Breyer interpret Directive 95/46/EC, which the GDPR repealed (Article 94). Each
+# ruling interprets the GDPR provision that continues the one it read (lgo:interprets) and names the
+# repealed provision it read (lgo:readUnder); the repealed provisions are listed below without quotes.
+
+lg:CJEU-C-673-17 lgo:shortName "Planet49" .
+lg:CJEU-C-40-17 lgo:shortName "Fashion ID" ;
+    rdfs:comment "Interprets Directive 95/46/EC: a website embedding a social plugin (Facebook's Like button) is a joint controller with the plugin's provider for collecting and transmitting visitors' data. The GDPR keeps the same definition of controller (Article 4(7)) and adds joint controllers (Article 26)."@en .
+lg:CJEU-C-40-17-ruling-2 lgo:readUnder lg:EU-1995-46-art2-d .
+lg:CJEU-C-40-17-ruling-3 lgo:readUnder lg:EU-1995-46-art7-f .
+lg:CJEU-C-40-17-ruling-4 lgo:readUnder lg:EU-1995-46-art2-h , lg:EU-1995-46-art7-a .
+lg:CJEU-C-582-14 lgo:shortName "Breyer" ;
+    rdfs:comment "Interprets Directive 95/46/EC: a dynamic IP address can be personal data for a website operator that has legal means to identify the person with additional data held by the internet access provider."@en .
+lg:CJEU-C-582-14-ruling-1 lgo:readUnder lg:EU-1995-46-art2-a ;
+    rdfs:comment "Article 4(1) GDPR, which continues Article 2(a), names online identifiers explicitly (see Recital 30)."@en .
+lg:CJEU-C-582-14-ruling-2 lgo:readUnder lg:EU-1995-46-art7-f .
+
+# --- Directive 95/46/EC (repealed): only the provisions decisions in the graph read ---------------
+
+lg:EU-1995-46 a lgo:LegalAct ;
+    eli:title "Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data"@en ;
+    lgo:shortName "Data Protection Directive" ;
+    lgo:jurisdiction lg:EU ;
+    lgo:actType lgv:Directive ;
+    eli:id_local "31995L0046" ;
+    eli:date_document "1995-10-24"^^xsd:date ;
+    eli:date_no_longer_in_force "2018-05-25"^^xsd:date ;
+    eli:repealed_by lg:EU-2016-679 ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31995L0046"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:Draft ;
+    rdfs:comment "Repealed by the GDPR with effect from 25 May 2018 (Article 94(1)); references to it are read as references to the GDPR (Article 94(2)). Kept so that decisions on it can be traced to the GDPR provisions that continue its rules."@en .
+
+lg:EU-1995-46-art2-a a lgo:Provision ; eli:is_part_of lg:EU-1995-46 ; lgo:citation "Art. 2(a) Directive 95/46/EC" ; lgo:reviewStatus lgv:Draft .
+lg:EU-1995-46-art2-d a lgo:Provision ; eli:is_part_of lg:EU-1995-46 ; lgo:citation "Art. 2(d) Directive 95/46/EC" ; lgo:reviewStatus lgv:Draft .
+lg:EU-1995-46-art2-h a lgo:Provision ; eli:is_part_of lg:EU-1995-46 ; lgo:citation "Art. 2(h) Directive 95/46/EC" ; lgo:reviewStatus lgv:Draft .
+lg:EU-1995-46-art7-a a lgo:Provision ; eli:is_part_of lg:EU-1995-46 ; lgo:citation "Art. 7(a) Directive 95/46/EC" ; lgo:reviewStatus lgv:Draft .
+lg:EU-1995-46-art7-f a lgo:Provision ; eli:is_part_of lg:EU-1995-46 ; lgo:citation "Art. 7(f) Directive 95/46/EC" ; lgo:reviewStatus lgv:Draft .
+
+lg:EU-2016-679-art4-1 lgo:continues lg:EU-1995-46-art2-a .
+lg:EU-2016-679-art4-7 lgo:continues lg:EU-1995-46-art2-d .
+lg:EU-2016-679-art4-11 lgo:continues lg:EU-1995-46-art2-h .
+lg:EU-2016-679-art6-1 lgo:continues lg:EU-1995-46-art7-a , lg:EU-1995-46-art7-f .
+
+lg:CJEU-C-311-18 lgo:shortName "Schrems II" ;
+    rdfs:comment "Invalidated the EU-US Privacy Shield (ruling 5) and set the standard for transfers under standard contractual clauses (ruling 2). Transfers to certified US companies have since relied on the EU-US Data Privacy Framework adequacy decision of 10 July 2023."@en .
+
+# --- COM(2025) 837 (Digital Omnibus proposal; additions to data/extracted/eu/digital-omnibus.ttl) --
+
+lg:EU-COM-2025-837
+    lgo:shortName "Digital Omnibus (proposal)" ;
+    eli:id_local "52025PC0837" ;
+    rdfs:comment "A Commission proposal, not law. It would move the cookie rule for personal data from Article 5(3) of the ePrivacy Directive into the GDPR (Article 88a), add consent-free uses such as first-party audience measurement, require a single-click refusal, and later machine-readable choices (Article 88b). As of late October 2026 the Council had adopted its negotiating position, reportedly without Articles 88a and 88b; trilogues had not begun."@en .
+
+# --- Directive (EU) 2017/1132 (company law; additions to data/extracted/eu/company-law.ttl) ---
+
+lg:EU-2017-1132
+    lgo:shortName "Company Law Directive (recast)" ;
+    eli:id_local "32017L1132" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2017/1132/oj> ;
+    rdfs:comment "Article 26, as substituted by Directive (EU) 2019/1151, extends the company-law particulars — register and company number, legal form, registered office, winding-up status, and the paid-up capital where stated — from business letters and order forms to company websites: the EU basis for the imprint of registered companies."@en .
+
+# --- Directive 2006/123/EC (Services Directive; additions to data/extracted/eu/services-directive.ttl) --
+
+lg:EU-2006-123
+    lgo:shortName "Services Directive" ;
+    eli:id_local "32006L0123" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2006/123/oj> ;
+    rdfs:comment "Article 22 lists what every service provider must make available — name, legal form and address, rapid contact, register, supervisory authority, professional details, VAT ID, use of terms and governing-law clauses, guarantees, price and service features: the EU basis of the German DL-InfoV."@en .
+
+# --- Council Directive 93/13/EEC (unfair terms; additions to data/extracted/eu/unfair-terms.ttl) --
+
+lg:EU-1993-13
+    lgo:shortName "Unfair Terms Directive" ;
+    eli:id_local "31993L0013" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/1993/13/oj> ;
+    rdfs:comment "The EU baseline for standard terms: Article 3 defines the unfair term that does not bind the consumer, Article 4(2) exempts core terms in plain language, Article 5 requires plain intelligible language with interpretation in the consumer's favour, and the Annex is the indicative grey list."@en .
+
+# --- Regulation (EC) No 593/2008 (Rome I; additions to data/extracted/eu/rome-i.ttl) ---
+
+lg:EU-2008-593
+    lgo:shortName "Rome I" ;
+    eli:id_local "32008R0593" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2008/593/oj> ;
+    rdfs:comment "Article 6 protects consumers in choice-of-law clauses: the consumer's home law applies by default, and a choice of law cannot deprive them of its mandatory protections. Paragraph 1's directed-activity test is the conflict-of-laws counterpart of the GDPR's targeting criterion."@en .
+
+# --- Regulation (EU) No 1215/2012 (Brussels Ia; additions to data/extracted/eu/brussels-ia.ttl) --
+
+lg:EU-2012-1215
+    lgo:shortName "Brussels Ia" ;
+    eli:id_local "32012R1215" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2012/1215/oj> ;
+    rdfs:comment "Articles 17 and 18 protect the consumer in jurisdiction matters: a consumer may sue at home and can only be sued there when the professional directed its activities to the consumer's state — the limit on forum-selection clauses in website terms."@en .
+
+# --- Commission Implementing Decision (EU) 2023/1795 (DPF; data/extracted/eu/dpf-adequacy.ttl) --
+
+lg:EU-2023-1795
+    lgo:shortName "EU-US Data Privacy Framework adequacy decision" ;
+    eli:id_local "32023D1795" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dec_impl/2023/1795/oj> ;
+    rdfs:comment "Adequacy for transfers to US organisations on the Data Privacy Framework List — the transfer basis for US vendors since 10 July 2023. Upheld by the General Court in T-553/23 Latombe on 3 September 2025; an appeal is reported pending."@en .
+
+# --- Judgments (additions to data/extracted/eu/cjeu-*.ttl) ---
+
+lg:CJEU-C-604-22 lgo:shortName "IAB Europe" ;
+    rdfs:comment "A consent framework's TC String is personal data when it can be linked to an identifier (ruling 1), and a sectoral organisation running a binding consent framework is a joint controller with its members (ruling 2) — the basis for CMP and consent-string obligations."@en .
+lg:CJEU-C-61-19 lgo:shortName "Orange România" ;
+    rdfs:comment "A pre-ticked box is not consent, and a clause bundled into a contract about something else does not show freely given consent; the controller must demonstrate active, informed consent — the authority on proof and granularity for cookie banners."@en .
+lg:CJEU-C-191-15 lgo:shortName "Amazon EU" ;
+    rdfs:comment "A choice-of-law clause in consumer e-commerce terms is unfair if it gives the impression that only the seller's law applies, without saying the consumer keeps the protection of their home law under Article 6(2) Rome I (ruling 2). The Court applied Article 3(1) of the Unfair Terms Directive through Article 5's transparency standard."@en .
+lg:CJEU-C-300-21 lgo:shortName "Österreichische Post" ;
+    rdfs:comment "Article 82 GDPR damages need no threshold of seriousness and no damage is presumed, but once damage is shown the amount follows national rules — the reason unlawfully transferred data (e.g. Google Fonts) can carry a price."@en .
+lg:CJEU-T-553-23 lgo:shortName "Latombe" ;
+    rdfs:comment "The General Court dismissed the action and upheld the EU-US Data Privacy Framework adequacy decision on 3 September 2025. An appeal to the Court of Justice is reported pending (C-703/25 P), so the decision stands but is under review."@en .
+
+lg:CJEU-C-210-16-ruling-1 lgo:readUnder lg:EU-1995-46-art2-d .
+
+# --- Regulation (EU) 2023/2854 (Data Act; additions to data/extracted/eu/data-act.ttl) ---------
+
+lg:EU-2023-2854
+    lgo:shortName "Data Act" ;
+    eli:id_local "32023R2854" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2023/2854/oj> ;
+    rdfs:comment "Applies from 12 September 2025. Chapter VI governs switching between data-processing services: providers must remove obstacles to switching, including to exporting the customer's data (arts. 23, 25); until 12 January 2027 they may charge for switching no more than the costs directly linked to it, and from that date not at all (art. 29)."@en .

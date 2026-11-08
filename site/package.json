@@ -1,0 +1,34 @@
+{
+  "name": "legalgraph-site",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.3",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run",
+    "i18n:extract": "bun scripts/i18n/extract.ts",
+    "i18n:check": "bun scripts/i18n/check.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "@fontsource-variable/dm-sans": "5.3.0",
+    "@tailwindcss/vite": "4.3.3",
+    "astro": "7.4.4",
+    "cytoscape": "3.34.4",
+    "gettext-parser": "9.1.1",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@astrojs/compiler": "4.0.0",
+    "@types/cytoscape": "3.31.0",
+    "@types/gettext-parser": "9.0.0",
+    "@types/node": "26.6.5",
+    "oxc-parser": "0.154.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.12"
+  }
+}

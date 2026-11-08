@@ -1,0 +1,136 @@
+---
+// Every provision in the graph, filterable by jurisdiction, the kind of text it is part of and
+// review status, and searchable by citation, act, topic and the words of its quotes, in the
+// original and in English.
+import FilterList from "../ds/FilterList.astro";
+import { tagId, type FilterGroup } from "../ds/filter-list.types";
+import Pointer from "../Pointer.astro";
+import Refs from "../Refs.astro";
+import Status from "../Status.astro";
+import Layout from "../../layouts/Layout.astro";
+import type { Translate } from "../../i18n/t";
+import { KIND_LABELS, KIND_PLURALS } from "../../lib/cases";
+import { actLabel, loadGraph, type Act } from "../../lib/data";
+import { STATUS } from "../../lib/links";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+const graph = await loadGraph();
+const jurisdictionLabel = (id: string) => graph.jurisdictions.get(id)?.data.label ?? id;
+const conceptLabel = (id: string) => graph.concepts.get(id)?.data.label ?? id;
+const KINDS = Object.keys(KIND_LABELS) as Act["data"]["kind"][];
+// The first lines of a quote, for a glance; the whole text is on the provision's page.
+const excerpt = (text: string | null | undefined, length = 220) => {
+  const flat = (text ?? "").replace(/\s+/g, " ").trim();
+  return flat.length > length ? `${flat.slice(0, length).replace(/\s+\S*$/, "")} …` : flat;
+};
+
+const entries = [...graph.provisions.values()].map((provision) => {
+  const d = provision.data;
+  const act = graph.acts.get(d.act);
+  const kind = act?.data.kind ?? "act";
+  const quote = d.quotes[0];
+  const english = quote?.lang === "en" ? quote.text : quote?.translation?.text;
+  const tags = [`j-${tagId(d.jurisdiction)}`, `k-${kind}`, `s-${tagId(d.reviewStatus)}`];
+  const search = [
+    d.citation,
+    provision.id,
+    act && actLabel(act),
+    jurisdictionLabel(d.jurisdiction),
+    ...d.regulates.map(conceptLabel),
+    ...d.quotes.flatMap((q) => [q.text, q.translation?.text]),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLocaleLowerCase();
+  return { provision, act, kind, original: quote?.lang === "en" ? undefined : quote?.text, english, tags, search };
+});
+entries.sort(
+  (a, b) =>
+    jurisdictionLabel(a.provision.data.jurisdiction).localeCompare(jurisdictionLabel(b.provision.data.jurisdiction)) ||
+    (a.act ? actLabel(a.act) : "").localeCompare(b.act ? actLabel(b.act) : "") ||
+    a.provision.data.citation.localeCompare(b.provision.data.citation, undefined, { numeric: true }),
+);
+
+const count = (id: string) => entries.filter((e) => e.tags.includes(id)).length;
+const distinct = <T,>(values: T[]) => [...new Set(values)];
+const groups: FilterGroup[] = [
+  {
+    title: "Jurisdiction",
+    options: distinct(entries.map((e) => e.provision.data.jurisdiction))
+      .map((j) => ({ id: `j-${tagId(j)}`, label: jurisdictionLabel(j), count: count(`j-${tagId(j)}`) }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  },
+  {
+    title: "Part of",
+    options: KINDS.map((kind) => ({ id: `k-${kind}`, label: KIND_PLURALS[kind], count: count(`k-${kind}`) })).filter((o) => o.count > 0),
+  },
+  {
+    title: "Review status",
+    options: distinct(entries.map((e) => e.provision.data.reviewStatus)).map((s) => ({
+      id: `s-${tagId(s)}`,
+      label: STATUS[s]?.label ?? s,
+      count: count(`s-${tagId(s)}`),
+    })),
+  },
+];
+---
+
+<Layout
+  t={t}
+  page="provisions"
+  title="Provisions"
+  header={{
+    title: "Provisions",
+    description: "Every provision in the graph: the article, section or paragraph, quoted from the official text.",
+  }}
+>
+  <p class="mb-8 max-w-3xl text-muted-foreground">
+    Search finds words in the quotes too, in the original and in English. Each provision's page has its full text, what
+    it requires and how it relates to other provisions.
+  </p>
+  <FilterList
+    id="provisions"
+    groups={groups}
+    total={entries.length}
+    allLabel="All provisions"
+    searchLabel="Search the provisions"
+    searchPlaceholder="Search citations, laws or words in the text, e.g. § 5 DDG, cookies, Widerruf"
+    emptyText="No provision matches your search."
+    pageSize={25}
+  >
+    {
+      entries.map(({ provision, act, original, english, tags, search }) => {
+        const d = provision.data;
+        return (
+          <article class="filter-entry card space-y-2 p-5 text-sm" data-tags={tags.join(" ")} data-search={search}>
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <a href={`/id/${provision.id}`} class="text-base font-semibold">
+                {d.citation}
+              </a>
+              <span class="text-muted-foreground">
+                {jurisdictionLabel(d.jurisdiction)}
+                {act && <> · {actLabel(act)}</>}
+              </span>
+            </div>
+            {original && <p lang={d.quotes[0]?.lang}>{excerpt(original)}</p>}
+            {english && <p class:list={[original && "text-muted-foreground"]} lang="en">{excerpt(english)}</p>}
+            {d.regulates.length > 0 && (
+              <p>
+                <span class="text-muted-foreground">Regulates:</span> <Refs ids={d.regulates} />
+              </p>
+            )}
+            <div class="flex flex-wrap items-center gap-2">
+              <Status status={d.reviewStatus} />
+              <Pointer id={provision.id} />
+            </div>
+          </article>
+        );
+      })
+    }
+  </FilterList>
+</Layout>

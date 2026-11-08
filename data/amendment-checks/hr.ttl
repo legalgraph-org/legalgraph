@@ -1,0 +1,16 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:HR-ZET
+    lgo:amendmentCheck lg:HR-ZET-amendment-check .
+
+lg:HR-ZET-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "NN 67/2025" ;
+    lgo:lastKnownAmendmentDate "2025-04-09"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2025-04-17"^^xsd:date ;
+    rdfs:comment "Last amended by the act published in Narodne novine 67/2025 (09.04.2025); consolidated version applies from 17.04.2025."@en .

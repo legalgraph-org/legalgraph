@@ -1,0 +1,35 @@
+# Code de la consommation, arts. L221-5, L221-13 and L221-14: the pre-contract list for consumer
+# contracts, the durable-medium confirmation, and the electronic-contract specifics (order-with-
+# payment button, payment methods, delivery restrictions). legifrance needs a browser; the page
+# is the saved consolidated code, with each article cut out by its LEGIARTI anchor.
+id: fr/code-conso
+title: Code de la consommation
+jurisdiction: FR
+language: fr
+publisher: Légifrance, legifrance.gouv.fr
+kind: authored-xml
+licence: licence-ouverte-2.0
+licence_basis: "Légifrance publishes official texts under the Licence Ouverte 2.0 (Etalab); official texts carry no copyright"
+originals:
+  - file: l221-5.fragment.html
+    url: https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/
+    fetch: html-fragment
+    selector: 'article:has(h2[data-anchor="LEGIARTI000053310511"])'
+    media_type: text/html
+    retrieved_on: 2026-11-03
+    sha256: a3858871e7561619e1e9c9ef14c52c441e8afbf681a5f5bcfed8a2e4de6137f2
+  - file: l221-13.fragment.html
+    url: https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/
+    fetch: html-fragment
+    selector: 'article:has(h2[data-anchor="LEGIARTI000044563210"])'
+    media_type: text/html
+    retrieved_on: 2026-11-03
+    sha256: be2cf1f8741209f32d1934d78f69c69b9fae328dc0dfd0069030a498d30335bd
+  - file: l221-14.fragment.html
+    url: https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/
+    fetch: html-fragment
+    selector: 'article:has(h2[data-anchor="LEGIARTI000032226854"])'
+    media_type: text/html
+    retrieved_on: 2026-11-03
+    sha256: 421bbaedc4821ad7a296d46623531e53dedf29f0a3cb2bdb0fc65885c1585cbf
+annotated: code-conso.law.xml

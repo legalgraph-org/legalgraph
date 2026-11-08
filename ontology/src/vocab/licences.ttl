@@ -1,0 +1,38 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# On what terms a source document may be kept in the repository and republished (lgo:licence).
+# Someone else's writing that none of these covers is not kept: it becomes an lgo:ExternalReference.
+
+lgv:Licences a skos:ConceptScheme ;
+    skos:prefLabel "Licences of source documents"@en .
+
+lgv:PublicDomain a skos:Concept ;
+    skos:inScheme lgv:Licences ;
+    skos:prefLabel "Public domain"@en ;
+    skos:definition "Not protected by copyright, such as works of the US federal government (17 U.S.C. § 105) and judicial opinions."@en .
+
+lgv:OfficialWork a skos:Concept ;
+    skos:inScheme lgv:Licences ;
+    skos:prefLabel "Official work"@en ;
+    skos:altLabel "amtliches Werk"@de ;
+    skos:definition "Laws, ordinances, decisions and other official texts that national copyright law exempts, such as § 5 UrhG (Germany) or § 7 UrhG (Austria)."@en .
+
+lgv:LicenceOuverte2 a skos:Concept ;
+    skos:inScheme lgv:Licences ;
+    skos:prefLabel "Licence Ouverte 2.0 (Etalab)"@en ;
+    skos:definition "The French government's open licence: reuse, including commercial, with attribution."@en ;
+    rdfs:seeAlso <https://www.etalab.gouv.fr/licence-ouverte-open-licence/> .
+
+lgv:OpenGovernmentLicence3 a skos:Concept ;
+    skos:inScheme lgv:Licences ;
+    skos:prefLabel "Open Government Licence v3.0"@en ;
+    skos:definition "The UK's licence for Crown copyright material, including legislation: reuse with attribution."@en ;
+    rdfs:seeAlso <https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> .
+
+lgv:ReuseWithAttribution a skos:Concept ;
+    skos:inScheme lgv:Licences ;
+    skos:prefLabel "Reuse with attribution"@en ;
+    skos:definition "The publisher's legal notice allows reproduction if the source is acknowledged, such as EU documents under Commission Decision 2011/833/EU or the EDPB's documents."@en .

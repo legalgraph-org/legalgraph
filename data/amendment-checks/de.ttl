@@ -1,0 +1,220 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:DE-AO
+    lgo:amendmentCheck lg:DE-AO-amendment-check .
+
+lg:DE-AO-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ao_1977/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 6 G v. 22.10.2026 BGBl. 2026 I Nr. 320" ;
+    lgo:lastKnownAmendmentDate "2026-10-22"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-BDSG
+    lgo:amendmentCheck lg:DE-BDSG-amendment-check .
+
+lg:DE-BDSG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/bdsg_2018/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 3 G v. 3.7.2026 I Nr. 199" ;
+    lgo:lastKnownAmendmentDate "2026-07-03"^^xsd:date ;
+    lgo:sourceIsCurrent false ;
+    rdfs:comment "The portal's standangabe already names BGBl. I Nr. 199, but the XML zip has not been rebuilt with it; the committed XML still says Nr. 139. Re-fetch when the XML catches up."@en .
+
+lg:DE-BFSG
+    lgo:amendmentCheck lg:DE-BFSG-amendment-check .
+
+lg:DE-BFSG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/bfsg/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 32 G v. 6.5.2024 BGBl. 2024 I Nr. 149" ;
+    lgo:lastKnownAmendmentDate "2024-05-06"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-BGB
+    lgo:amendmentCheck lg:DE-BGB-amendment-check .
+
+lg:DE-BGB-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/bgb/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 6 G v. 23.7.2026 BGBl. 2026 I Nr. 226" ;
+    lgo:lastKnownAmendmentDate "2026-07-23"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-DDG
+    lgo:amendmentCheck lg:DE-DDG-amendment-check .
+
+lg:DE-DDG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ddg/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 1 G v. 12.5.2026 I Nr. 138" ;
+    lgo:lastKnownAmendmentDate "2026-05-12"^^xsd:date ;
+    lgo:sourceIsCurrent false ;
+    rdfs:comment "The portal's standangabe names BGBl. I Nr. 138; the committed XML still says Nr. 81. Re-fetch when the XML catches up."@en .
+
+lg:DE-DLInfoV
+    lgo:amendmentCheck lg:DE-DLInfoV-amendment-check .
+
+lg:DE-DLInfoV-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/dlinfov/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 3 G v. 12.5.2026 BGBl. 2026 I Nr. 138" ;
+    lgo:lastKnownAmendmentDate "2026-05-12"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-EGBGB
+    lgo:amendmentCheck lg:DE-EGBGB-amendment-check .
+
+lg:DE-EGBGB-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/bgbeg/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 16 G v. 22.10.2026 BGBl. 2026 I Nr. 321" ;
+    lgo:lastKnownAmendmentDate "2026-10-22"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-ElektroG
+    lgo:amendmentCheck lg:DE-ElektroG-amendment-check .
+
+lg:DE-ElektroG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/elektrog_2015/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 1 G v. 25.11.2025 BGBl. 2025 I Nr. 286" ;
+    lgo:lastKnownAmendmentDate "2025-11-25"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-GewO
+    lgo:amendmentCheck lg:DE-GewO-amendment-check .
+
+lg:DE-GewO-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/gewo/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 1 G v. 20.7.2026 BGBl. 2026 I Nr. 215" ;
+    lgo:lastKnownAmendmentDate "2026-07-20"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-PAngV
+    lgo:amendmentCheck lg:DE-PAngV-amendment-check .
+
+lg:DE-PAngV-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 3 G v. 19.10.2026 I Nr. 314" ;
+    lgo:lastKnownAmendmentDate "2026-10-19"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Committed XML re-fetched 08.11.2026; its standangabe now names Nr. 314 (textlich nachgewiesen)."@en .
+
+lg:DE-TDDDG
+    lgo:amendmentCheck lg:DE-TDDDG-amendment-check .
+
+lg:DE-TDDDG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ttdsg/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 3 G v. 10.3.2026 BGBl. 2026 I Nr. 64" ;
+    lgo:lastKnownAmendmentDate "2026-03-10"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-UStG
+    lgo:amendmentCheck lg:DE-UStG-amendment-check .
+
+lg:DE-UStG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ustg_1980/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 5 G v. 29.6.2026 BGBl. 2026 I Nr. 197" ;
+    lgo:lastKnownAmendmentDate "2026-06-29"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-UWG
+    lgo:amendmentCheck lg:DE-UWG-amendment-check .
+
+lg:DE-UWG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 6 G v. 22.10.2026 I Nr. 322" ;
+    lgo:lastKnownAmendmentDate "2026-10-22"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Committed XML re-fetched 08.11.2026; its standangabe now names Nr. 322."@en .
+
+lg:DE-VSBG
+    lgo:amendmentCheck lg:DE-VSBG-amendment-check .
+
+lg:DE-VSBG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/vsbg/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 16 G v. 8.12.2025 BGBl. 2025 I Nr. 318" ;
+    lgo:lastKnownAmendmentDate "2025-12-08"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe of the committed gesetze-im-internet XML."@en .
+
+lg:DE-EinwV
+    lgo:amendmentCheck lg:DE-EinwV-amendment-check .
+
+lg:DE-EinwV-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/"^^xsd:anyURI ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "No amendment since adoption (6.2.2025); the committed XML (build 31.3.2025) shows no standangabe entry."@en .
+
+lg:DE-VerpackDG
+    lgo:amendmentCheck lg:DE-VerpackDG-amendment-check .
+
+lg:DE-VerpackDG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/verpackdg/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Art. 4 G v. 13.7.2026 BGBl. 2026 I Nr. 207" ;
+    lgo:lastKnownAmendmentDate "2026-07-13"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "standangabe notes the amendment is textlich nachgewiesen but dokumentarisch noch nicht abschließend bearbeitet."@en .
+
+lg:DE-JMStV
+    lgo:amendmentCheck lg:DE-JMStV-amendment-check .
+
+lg:DE-JMStV-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-bayern.de/Content/Document/JMStV"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Vertrag v. 14.3.2025 (GVBl. S. 396)" ;
+    lgo:lastKnownAmendmentDate "2025-03-14"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2025-12-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Vollzitat: last amended by Art. 1 of the treaty of 14 March 2025 (GVBl. S. 396); text in force since 01.12.2025 (gesetze-bayern)."@en .
+
+lg:DE-MStV
+    lgo:amendmentCheck lg:DE-MStV-amendment-check .
+
+lg:DE-MStV-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze-bayern.de/Content/Document/MStV"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Verträge v. 14.3.2025 (GVBl. S. 350 und S. 396)" ;
+    lgo:lastKnownAmendmentDate "2025-03-14"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2025-12-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Vollzitat: last amended by Art. 1 (GVBl. S. 350) and Art. 2 (GVBl. S. 396) of the treaties of 14 March 2025; text in force since 01.12.2025."@en .

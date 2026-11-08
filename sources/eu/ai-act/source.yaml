@@ -1,0 +1,67 @@
+# AI Act (Regulation (EU) 2024/1689), consolidated version of 27 July 2026 (after the Digital Omnibus on AI),
+# from the Publications Office (Formex 4), with the authentic Official Journal text: `legalgraph sources verify`
+# proves each quoted provision reads exactly as published in 2024 (Article 50 was not amended).
+id: eu/ai-act
+title: AI Act (Regulation (EU) 2024/1689), consolidated version of 27 July 2026
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2024R1689EN0010010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727
+    url: https://publications.europa.eu/resource/celex/02024R1689-20260727
+    fetch: zip-member
+    member: CL2024R1689EN0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 27 July 2026, prepared by the Publications Office as a documentation tool. The authentic text is Regulation (EU) 2024/1689 (OJ L, 12.7.2024) and its amending acts; each quoted provision is checked against it."
+    retrieved_on: 2026-11-02
+    sha256: dfeac37ec03557cfe751427429c6314c11792f88bf654a381484e5c7239f7893
+  - file: CL2024R1689DE0010020.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02024R1689-20260727
+    url: https://publications.europa.eu/resource/celex/02024R1689-20260727
+    fetch: zip-member
+    member: CL2024R1689DE0010020.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: 9e0e9eee5a0b876679f08315a8a1007dd6ea952caa50b59bc91c51bb6ccddaa0
+  - file: L_202401689EN.000101.fmx.xml
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L, 12.7.2024"
+    url: https://publications.europa.eu/resource/celex/32024R1689
+    fetch: zip-member
+    member: L_202401689EN.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 3b94995b6a7d32cb9f66e8c3fe3a028027cd9160d973ab841e578db75169c6b7
+  - file: L_202401689DE.000101.fmx.xml
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L vom 12.7.2024"
+    url: https://publications.europa.eu/resource/celex/32024R1689
+    fetch: zip-member
+    member: L_202401689DE.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 51dd4f41baa857e5be7a3cf13939b4c48eedba32c08cbaeac7f2a8bd91a1d05f
+annotated: CL2024R1689EN0010010.0001.annotated.xml

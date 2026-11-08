@@ -1,0 +1,66 @@
+# California Consumer Privacy Act of 2018, as amended by the California Privacy Rights Act (Civil Code
+# §§ 1798.100 et seq.): the official text is the Legislature's own leginfo.legislature.ca.gov, one HTML
+# page per section. leginfo refuses automated downloads, so the pages are saved by hand and brought in
+# with `legalgraph sources fetch --saved <file>`; each section's fragment (div#codeLawSectionNoHead) is
+# kept and the sections the graph quotes are transcribed in schemas/law.xsd and checked word for word
+# against it. The CPPA's consolidated statute PDF is kept as a second official copy — note it carries
+# editorial asterisks where § 1798.199.95(d) inflation-adjusted the dollar figures, marks the code text
+# does not have.
+id: us-ca/ccpa
+title: California Consumer Privacy Act (Civil Code § 1798.100 et seq.)
+jurisdiction: US-CA
+language: en
+publisher: California State Legislature, leginfo.legislature.ca.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))"
+originals:
+  - file: civ-1798-100.fragment.html
+    url: "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&sectionNum=1798.100.&op_statues=2020&op_section=4"
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: b646fefa63de3f1d15e63b02336f343aa783302f72ab713c2128b3ffdf2f7f4d
+  - file: civ-1798-120.fragment.html
+    url: "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&sectionNum=1798.120.&op_statues=2024&op_chapter=940&op_section=1"
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 8d5f6c59552c65e714d77a83698bf55307dd2f5ad0668477fba2569b476afedf
+  - file: civ-1798-121.fragment.html
+    url: "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&sectionNum=1798.121.&op_statues=2024&op_chapter=121&op_section=2"
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: a21f35b4bc26a04d801b4160ce0ff679bb2389bfa2bc81a2aa20310b2890b4bf
+  - file: civ-1798-130.fragment.html
+    url: "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&sectionNum=1798.130.&op_statues=2025&op_chapter=67&op_section=26"
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 5563553b566ba5e640c1777d2c39ac2aad83c22bfd33e322202d9f2cb92dff34
+  - file: civ-1798-135.fragment.html
+    url: "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&sectionNum=1798.135.&op_statues=2024&op_chapter=121&op_section=4"
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: c504143f02ef3569e87a50419bb8eb2ccc44a6547316f021ed30186a896c270e
+  - file: civ-1798-140.fragment.html
+    url: "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&sectionNum=1798.140.&op_statues=2025&op_chapter=67&op_section=27"
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 979166bc340f88549a6e2618c0f8164319e5cf833a997c316017cfcca2104123
+  - file: ccpa_statute.pdf
+    url: https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: 0beb83ccf73d82ede066f7e4154952435484410f748da09ac4329ed9afe6a43f
+annotated: ccpa.law.xml

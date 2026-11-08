@@ -1,0 +1,21 @@
+# Einwilligungsverwaltungsverordnung (EinwV): official XML from gesetze-im-internet.de. Made under
+# § 26 TDDDG, it sets the approval requirements for consent-management services — what a cookie
+# banner / CMP must do to be a recognised consent-management service: informed, documented and
+# revocable consent, refusal as easy as consent, and the banner's technical behaviour.
+id: de/einwv
+title: Einwilligungsverwaltungsverordnung
+jurisdiction: DE
+language: de
+publisher: Bundesministerium der Justiz, gesetze-im-internet.de
+kind: official-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright"
+originals:
+  - file: BJNR0200B0025.xml
+    url: https://www.gesetze-im-internet.de/einwv/xml.zip
+    fetch: zip-member
+    member: BJNR0200B0025.xml
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 312f596832002d5975382150b0d8813fa9332a57aa2d48fe14b55bc15a278071
+annotated: BJNR0200B0025.annotated.xml

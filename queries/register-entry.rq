@@ -1,0 +1,13 @@
+# Which provisions require a business to name the register it is entered in, and its registration
+# number (in Germany, the Handelsregister and the HRB number), in each jurisdiction.
+PREFIX lgo:  <https://legalgraph.org/ontology#>
+PREFIX lgv:  <https://legalgraph.org/vocab/>
+PREFIX eli:  <http://data.europa.eu/eli/ontology#>
+
+SELECT ?jurisdiction ?citation
+WHERE {
+    ?provision lgo:requiresDisclosureOf lgv:RegisterEntry ;
+        lgo:citation ?citation ;
+        eli:is_part_of/lgo:jurisdiction/lgo:isoCode ?jurisdiction .
+}
+ORDER BY ?jurisdiction ?citation

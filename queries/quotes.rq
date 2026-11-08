@@ -1,0 +1,23 @@
+# Key quotes per jurisdiction, with the provision they come from and the English translation
+# (empty when the quote is already in English).
+PREFIX lgo:  <https://legalgraph.org/ontology#>
+PREFIX eli:  <http://data.europa.eu/eli/ontology#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?jurisdiction ?citation ?lang ?text ?source ?english ?englishStatus
+WHERE {
+    ?quote a lgo:Quote ;
+        lgo:quoteOf ?provision ;
+        lgo:text ?text ;
+        lgo:sourceUrl ?source .
+    ?provision lgo:citation ?citation ;
+        eli:is_part_of/lgo:jurisdiction/lgo:isoCode ?jurisdiction .
+    BIND (LANG(?text) AS ?lang)
+    OPTIONAL {
+        ?translation lgo:translationOf ?quote ;
+            lgo:text ?english ;
+            lgo:reviewStatus ?status .
+        BIND (STRAFTER(STR(?status), "/vocab/") AS ?englishStatus)
+    }
+}
+ORDER BY ?jurisdiction ?citation ?quote

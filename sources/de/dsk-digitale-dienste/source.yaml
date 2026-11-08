@@ -1,0 +1,23 @@
+# Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale
+# Dienste), version 1.2 of November 2024, by the Conference of the German data protection authorities
+# (DSK): published only as PDF. The paragraphs the graph quotes are transcribed in schemas/law.xsd and
+# `legalgraph sources verify` checks each line, letter for letter, against the PDF's text. Guidance does not
+# bind courts; it shows how the German supervisory authorities enforce § 25 TDDDG and the GDPR.
+# The PDF is kept as published by the authorities for the general public (§ 5 Abs. 2 UrhG); the
+# graph quotes only short passages, with the source.
+id: de/dsk-digitale-dienste
+title: DSK, Orientierungshilfe für Anbieter:innen von digitalen Diensten (Version 1.2)
+jurisdiction: DE
+language: de
+publisher: Konferenz der unabhängigen Datenschutzaufsichtsbehörden des Bundes und der Länder (DSK)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 2 UrhG: an official work published in the official interest for general information; reproduced unchanged with its source"
+originals:
+  - file: OH_Digitale_Dienste.pdf
+    url: https://www.datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: badab6056a54b2e538504d52fc482b74bbed3b845696caa73eb67afc19ca07a7
+annotated: oh-digitale-dienste.law.xml

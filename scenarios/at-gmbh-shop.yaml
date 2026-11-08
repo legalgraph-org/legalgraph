@@ -1,0 +1,45 @@
+name: Austrian GmbH with an online shop
+description: >
+  A GmbH in the Austrian commercial register (Firmenbuch) with a VAT ID, selling to consumers in
+  Austria and Germany through its shop, with analytics cookies after consent. Austria's cookie rule is § 165(3) TKG 2021 — the ePrivacy
+  duty as transposed. Its imprint follows
+  the e-Commerce Directive as transposed in Austria (§ 5 ECG), not German law: the Directive's
+  country-of-origin principle points to the place of establishment.
+established_in: AT
+markets: [EU]
+facts:
+  - EngagesProcessors
+  - CommercialDigitalService
+  - LegalPerson
+  - RegisteredInPublicRegister
+  - HasVatId
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - SellsProductsOnline
+  - ProcessesPersonalData
+  - ReliesOnConsent
+  - NonEssentialDeviceAccess
+obligations:
+  - EU-R-service-provider-information
+  - EU-R-service-provider-information-register
+  - EU-R-service-provider-information-vat
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-lawful-basis
+  - EU-R-consent-conditions
+  - EU-R-product-safety-information
+  - EU-R-geo-blocking
+  - AT-R-cookie-consent
+  - EU-R-unfair-terms
+  - EU-R-consent-separate
+  - EU-R-consent-no-tying
+  - EU-R-contract-terms-storable
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
+  - EU-R-consent-specific
+national:
+  EU-R-service-provider-information: [AT-ECG-s5-1]
+  EU-R-service-provider-information-register: [AT-ECG-s5-1]
+  EU-R-service-provider-information-vat: [AT-ECG-s5-1]

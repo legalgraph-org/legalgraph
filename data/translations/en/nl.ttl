@@ -1,0 +1,25 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:NL-BW3-art15d-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1b343844275e34ad99f8075a35df70c7e9c5e8dbb936f0deac18c134aaa4a592" ;
+    lgo:text """A person who provides an information society service shall make the following details easily, directly and permanently accessible to those who use that service, in particular to obtain information or to make information accessible:
+a. their identity and place of establishment;
+b. details that allow rapid contact and direct and effective communication with them, including their electronic mail address;
+c. where they are entered in a trade register or a comparable public register: the register in which they are entered and their registration number, or an equivalent means of identification in that register;
+[…]"""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-BW3-art15d-1-q1 .

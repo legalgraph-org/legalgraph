@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CNIL, délibération de la formation restreinte n° SAN-2025-004 du 1er septembre 2025 (Google), the
+  finding on the refusal path at Google-account creation and the fines, written in schemas/law.xsd
+  from the saved legifrance page. The words are the CNIL's; only the structure is ours. The CNIL's
+  English courtesy translation is the parallel version (cnil-san-2025-004.en.law.xml).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="FR-CNIL-SAN-2025-004" lga:jurisdiction="FR" lga:act-type="AuthorityDecision"
+     lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182222/">
+  <meta>
+    <title>Délibération de la formation restreinte n° SAN-2025-004 du 1er septembre 2025</title>
+    <short>CNIL SAN-2025-004</short>
+    <date>2025-09-01</date>
+  </meta>
+
+  <section num="134." title="Sur la liberté du consentement lors de la création d'un compte" source="san-2025-004.fragment.html">
+    <paragraph num="134." lga:provision="FR-CNIL-SAN-2025-004-p134" lga:citation="CNIL SAN-2025-004, para. 134" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182222/" lga:interprets="FR-LIL-art82-2" lga:regulates="Consent">La formation restreinte estime que le fait de rendre le mécanisme de refus des cookies liés à la personnalisation des annonces plus complexe que celui consistant à les accepter revient en réalité à décourager les utilisateurs de refuser ces cookies et à les inciter à privilégier la facilité du bouton " Confirmer ". En effet, le fait de devoir cliquer sur " personnalisation manuelle " et comprendre la façon dont est construit le parcours en cinq étapes permettant de refuser les cookies liés à la personnalisation des annonces, est susceptible de décourager l’utilisateur qui souhaiterait pourtant refuser le dépôt de ces cookies mais qui va choisir l’option lui permettant d’accéder le plus rapidement au service. Il n’est pas contesté qu’en l’espèce, les sociétés offraient un choix entre l’acceptation ou le refus des cookies liés à la personnalisation des annonces, mais la formation restreinte considère que les modalités par lesquelles ce refus pouvait être exprimé dans le contexte de création d’un compte Google biaisaient l’expression du choix en favorisant le consentement au dépôt de cookies permettant la publicité personnalisée, altérant ainsi la liberté de choix.</paragraph>
+  </section>
+
+  <section num="Dispositif" title="Par ces motifs" source="san-2025-004.fragment.html">
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2025-004-d1" lga:citation="CNIL SAN-2025-004, dispositif, amende GOOGLE LLC" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182222/" lga:applies="FR-LIL-art82-2">prononcer à l’encontre de la société GOOGLE LLC une amende administrative d’un montant de deux cents millions (200 000 000) d’euros, au regard des manquements constitués à l’article 82 de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés et à l’article L. 34-5 du code des postes et des communications électroniques ;</paragraph>
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2025-004-d2" lga:citation="CNIL SAN-2025-004, dispositif, amende GOOGLE IRELAND LIMITED" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182222/" lga:applies="FR-LIL-art82-2">prononcer à l’encontre de la société GOOGLE IRELAND LIMITED une amende administrative d’un montant de cent vingt-cinq millions (125 000 000) d’euros, au regard des manquements constitués à l’article 82 de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés et à l’article L. 34-5 du code des postes et des communications électroniques;</paragraph>
+  </section>
+</law>

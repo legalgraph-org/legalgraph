@@ -1,0 +1,56 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# France: the mentions légales of the LCEN. Since the SREN law of 21 May 2024 they sit in
+# Article 1-1 (previously Article 6, III).
+
+lg:FR-LCEN a lgo:LegalAct ;
+    eli:title "Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique"@fr , "Law on Confidence in the Digital Economy"@en ;
+    lgo:shortName "LCEN" ;
+    eli:id_local "JORFTEXT000000801164" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:FR ;
+    eli:date_document "2004-06-21"^^xsd:date ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-LCEN-art1-1-I a lgo:Provision ;
+    eli:is_part_of lg:FR-LCEN ;
+    lgo:citation "Article 1-1, I, LCEN" ;
+    lgo:sourceUrl "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/"^^xsd:anyURI ;
+    lgo:regulates lgv:ProviderIdentification , lgv:EditorialResponsibility ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:RegisterEntry ,
+        lgv:ShareCapital , lgv:ResponsibleEditor , lgv:HostingProvider ;
+    rdfs:comment "Applies to anyone whose activity is publishing an online public communication service, and asks for more than Article 5 of the Directive: a phone number, the publication director and the hosting provider."@en ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:FR-LCEN-art1-1-I-q1 a lgo:Quote ;
+    lgo:quoteOf lg:FR-LCEN-art1-1-I ;
+    lgo:text """I.-Les personnes dont l'activité est d'éditer un service de communication au public en ligne mettent à la disposition du public, dans un standard ouvert :
+1° S'il s'agit de personnes physiques, leurs nom, prénoms, domicile et numéro de téléphone et, si elles sont assujetties aux formalités d'inscription au registre du commerce et des sociétés ou au registre national des entreprises en tant qu'entreprise du secteur des métiers et de l'artisanat, le numéro de leur inscription ;
+2° S'il s'agit de personnes morales, leur dénomination ou leur raison sociale et leur siège social, leur numéro de téléphone et, s'il s'agit d'entreprises assujetties aux formalités d'inscription au registre du commerce et des sociétés ou au registre national des entreprises en tant qu'entreprise du secteur des métiers et de l'artisanat, le numéro de leur inscription, leur capital social et l'adresse de leur siège social ;
+3° Le nom du directeur ou du codirecteur de la publication, au sens de l'article 93-2 de la loi n° 82-652 du 29 juillet 1982 sur la communication audiovisuelle et, le cas échéant, celui du responsable de la rédaction ;
+4° Le nom, la dénomination ou la raison sociale, l'adresse et le numéro de téléphone du fournisseur de services d'hébergement ;
+[…]"""@fr ;
+    lgo:sourceUrl "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/"^^xsd:anyURI ;
+    lgo:retrievedOn "2026-05-21"^^xsd:date ;
+    lgo:officialLanguageVersion true .
+
+lg:FR-CNIL-2020-092 a lgo:Guidance ;
+    eli:title "Délibération n° 2020-092 du 17 septembre 2020 portant adoption d'une recommandation proposant des modalités pratiques de mise en conformité en cas de recours aux « cookies et autres traceurs »"@fr , "Deliberation 2020-092: CNIL recommendation on cookies and other trackers"@en ;
+    lgo:shortName "CNIL cookie recommendation" ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:FR ;
+    eli:date_document "2020-09-17"^^xsd:date ;
+    lgo:sourceUrl "https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The CNIL's practical standard for consent collection: inaction is refusal; purposes stated before choice; refuse as easy as accept at the same level; a visible withdrawal mechanism; and controllers must be able to prove consent. It complements the CNIL's 2020-091 guidelines applying Article 82 of the Loi Informatique et Libertés."@en .
+
+lg:FR-CONSO
+    eli:title "French Consumer Code"@en ;
+    rdfs:comment "Articles L221-5 (the pre-contract list, transposing CRD art. 6), L221-13 (durable-medium confirmation, art. 8(7)) and L221-14 (electronic contracts: the « commande avec obligation de paiement » button, payment methods and delivery restrictions). The 2026 ordonnance version is annotated; LCEN art. 19 provider details remain a separate saved source."@en .

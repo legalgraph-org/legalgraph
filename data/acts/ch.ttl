@@ -1,0 +1,45 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Switzerland: not in the EU or EEA. The Impressum duty sits in the unfair competition act:
+# offering goods, works or services online without clear identity and contact details is unfair.
+
+lg:CH-UWG a lgo:LegalAct ;
+    eli:title "Bundesgesetz gegen den unlauteren Wettbewerb (UWG)"@de , "Federal Act on Unfair Competition (UCA)"@en ;
+    lgo:shortName "UWG" ;
+    eli:id_local "SR 241" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CH ;
+    eli:date_document "1986-12-19"^^xsd:date ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en"^^xsd:anyURI ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/de> ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:CH-UWG-art3-1-s a lgo:Provision ;
+    eli:is_part_of lg:CH-UWG ;
+    lgo:citation "Art. 3 Abs. 1 lit. s UWG" ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en"^^xsd:anyURI ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:CH-UWG-art3-1-s-q1 a lgo:Quote ;
+    lgo:quoteOf lg:CH-UWG-art3-1-s ;
+    lgo:text """s. offer goods, works or services online and in doing so fail:
+1. to provide clear and complete details of their identity and their contact address including their email address,
+[…]"""@en ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en"^^xsd:anyURI ;
+    lgo:retrievedOn "2025-01-01"^^xsd:date ;
+    lgo:officialLanguageVersion false ;
+    rdfs:comment "English is not an official language of Swiss federal law; the binding versions are German, French and Italian. retrievedOn is the 'status as of' date of the consolidated text."@en .
+
+# --- DSG (additions to data/extracted/ch/dsg.ttl) ---------------------------------
+
+lg:CH-DSG
+    eli:title "Federal Act on Data Protection (Data Protection Act, FADP)"@en ;
+    eli:first_date_entry_in_force "2023-09-01"^^xsd:date ;
+    rdfs:comment "The revised Swiss data protection law (often called nDSG or revFADP), in force since 1 September 2023. It applies wherever processing has effects in Switzerland. Fines of up to CHF 250,000 are imposed on the responsible individuals, not the company (Art. 60 to 63)."@en .

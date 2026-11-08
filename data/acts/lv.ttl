@@ -1,0 +1,37 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Latvia: Section 4 of the Information Society Services Law.
+
+lg:LV-ISSL a lgo:LegalAct ;
+    eli:title "Informācijas sabiedrības pakalpojumu likums"@lv , "Information Society Services Law"@en ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:LV ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://likumi.lv/ta/en/en/id/96619"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:LV-ISSL-s4-1 a lgo:Provision ;
+    eli:is_part_of lg:LV-ISSL ;
+    lgo:citation "Section 4(1) Information Society Services Law" ;
+    lgo:sourceUrl "https://likumi.lv/ta/en/en/id/96619"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry , lgv:EmailAddress ,
+        lgv:RapidContact , lgv:SupervisoryAuthority , lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:LV-ISSL-s4-1-q1 a lgo:Quote ;
+    lgo:quoteOf lg:LV-ISSL-s4-1 ;
+    lgo:text """(1) A service provider shall provide the following information in a clear, direct and permanently accessible manner:
+1) the firm name (name) or given name and surname, legal address or declared place of residence and registration number (if there is such) of the service provider;
+2) the contact information of the service provider, including electronic-mail address, which ensures the possibility of quickly communicating in a direct manner;
+3) if a special permit (licence) is necessary for commencing the relevant activity – information regarding the institution, which has issued the special permit (licence);
+[…]"""@en ;
+    lgo:sourceUrl "https://likumi.lv/ta/en/en/id/96619"^^xsd:anyURI ;
+    lgo:officialLanguageVersion false ;
+    rdfs:comment "Quoted from the English translation on likumi.lv; the binding text is Latvian."@en .

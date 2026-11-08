@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ehandelsloven, §§ 8 and 11, written in schemas/law.xsd from Lovdata's per-section fragments.
+  The words are the Norwegian official text's; only the structure is ours. `legalgraph sources
+  verify` checks every paragraph word for word against the fragments.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="no"
+     lga:act="NO-EHL" lga:jurisdiction="NO" lga:act-type="Statute"
+     lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35" lga:transposes="EU-2000-31">
+  <meta>
+    <title>Lov om visse sider av elektronisk handel mv. (ehandelsloven)</title>
+    <date>2003-05-23</date>
+  </meta>
+
+  <section num="§ 8" title="Tjenesteyterens opplysningsplikt om virksomheten" source="ehl-s8.fragment.html">
+    <paragraph num="" lga:provision="NO-EHL-s8-1" lga:citation="ehandelsloven § 8 første ledd" lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A78" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">En tjenesteyter skal ved utøving av sin virksomhet alltid gi informasjon om navn, adresse, elektronisk postadresse og øvrige opplysninger som gjør det mulig å komme i direkte forbindelse med tjenesteyteren. I tillegg skal tjenesteyteren opplyse om:
+      <list>
+        <item num="a." lga:requires="RegisterEntry VatStatus">det foretaksregister hvor tjenesteyteren er registrert, samt tjenesteyterens organisasjonsnummer og om virksomheten er merverdiavgiftspliktig, og</item>
+        <item num="b." lga:requires="LicenceDetails">eventuelle godkjenninger som kreves for å utføre virksomheten og navn og adresse på den aktuelle godkjenningsmyndigheten.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="NO-EHL-s8-2" lga:citation="ehandelsloven § 8 annet ledd" lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A78" lga:regulates="ProviderIdentification">Ved yrkesvirksomhet som direkte eller indirekte ved lov eller forskrift er betinget av at vedkommende er innehaver av et diplom eller utdanningsbevis skal tjenesteyteren dessuten opplyse om:
+      <list>
+        <item num="a." lga:requires="ProfessionalTitle">sin yrkestittel og i hvilken medlemsstat den er gitt,</item>
+        <item num="b." lga:requires="ProfessionalRules">hvilke regler for yrkesmessig opptreden som gjelder for tjenesteyteren, og</item>
+        <item num="c.">hvor tjenestemottakeren kan få tilgang til reglene nevnt i bokstav b.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="NO-EHL-s8-3" lga:citation="ehandelsloven § 8 tredje ledd" lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A78" lga:regulates="ProviderIdentification">Informasjonen etter første og andre ledd skal gjøres enkelt og direkte tilgjengelig for tjenestemottakere og offentlige myndigheter. Bestemmelsen får ikke anvendelse overfor tjenesteytere som kun tilbyr tjenester som består i å overføre informasjon over et elektronisk kommunikasjonsnett.</paragraph>
+  </section>
+
+  <section num="§ 11" title="Opplysningsplikt før elektronisk bestilling" source="ehl-s11.fragment.html">
+    <paragraph num="" lga:provision="NO-EHL-s11-1" lga:citation="ehandelsloven § 11 første ledd" lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A711" lga:regulates="PreContractInformation" lga:implements="EU-2000-31-art10-1">Før elektronisk bestilling skal tjenesteyteren på en klar, forståelig og utvetydig måte gi tjenestemottakeren opplysning om:
+      <list>
+        <item num="a." lga:requires="CodesOfConduct">relevante atferdsregler som tjenesteyteren følger og om og hvor disse er tilgjengelige elektronisk,</item>
+        <item num="b." lga:requires="OrderingProcessInformation">de forskjellige tekniske etappene som er knyttet til avtaleinngåelsen,</item>
+        <item num="c." lga:requires="ContractArchiving">om en inngått avtale vil bli arkivert av tjenesteyteren, og om den vil være tilgjengelig,</item>
+        <item num="d." lga:requires="ErrorCorrectionMeans">de tekniske midlene til å finne og rette inntastingsfeil før bestilling er foretatt,</item>
+        <item num="e." lga:requires="ContractLanguages">de språk avtalen kan inngås på.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="NO-EHL-s11-2" lga:citation="ehandelsloven § 11 annet ledd" lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A711" lga:regulates="TermsAndConditions" lga:requires="GeneralTermsAvailability">Avtalevilkår, standardvilkår og generelle vilkår, må gjøres tilgjengelige for tjenestemottakeren på en måte som gjør det mulig å lagre og gjengi dem. Tjenesteyteren skal tilrettelegge den elektroniske avtaleinngåelsen slik at inntastingsfeil på en enkel måte kan oppdages og rettes før avtalen inngås.</paragraph>
+    <paragraph num="" lga:provision="NO-EHL-s11-3" lga:specifies="NO-EHL-s11-1" lga:citation="ehandelsloven § 11 tredje ledd" lga:url="https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A711">Første og tredje ledd gjelder ikke for avtaler som utelukkende inngås ved elektronisk post eller tilsvarende individuell kommunikasjon, og kan fravikes i avtale utenfor forbrukerforhold.</paragraph>
+  </section>
+</law>

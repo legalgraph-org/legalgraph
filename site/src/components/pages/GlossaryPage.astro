@@ -1,0 +1,125 @@
+---
+// /glossary, in every language: the abbreviations the site's own pages use (src/content/glossary.yaml):
+// filterable by kind, searchable, ten to a page. Each entry is the target of
+// the tooltips on the other pages (/glossary#<id>), which open the page of the list that holds it.
+import type { Translate } from "../../i18n/t";
+import Layout from "../../layouts/Layout.astro";
+import { filterLabels } from "../../lib/filter-labels";
+import { glossary, glossaryHref, originalLine, type GlossaryEntry } from "../../lib/glossary";
+import FilterList from "../ds/FilterList.astro";
+import type { FilterGroup } from "../ds/filter-list.types";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const entries = await glossary(t.locale);
+const byId = new Map(entries.map((entry) => [entry.id, entry]));
+const KINDS: Record<GlossaryEntry["kind"], string> = {
+  law: t("Laws"),
+  body: t("Institutions and bodies"),
+  business: t("Business and tax"),
+  standard: t("Technical standards"),
+  licence: t("Licences"),
+  service: t("Portals"),
+};
+const groups: FilterGroup[] = [
+  {
+    title: t("Kind"),
+    options: (Object.keys(KINDS) as GlossaryEntry["kind"][])
+      .map((kind) => ({ id: `k-${kind}`, label: KINDS[kind], count: entries.filter((entry) => entry.kind === kind).length }))
+      .filter((option) => option.count > 0),
+  },
+];
+const search = (entry: GlossaryEntry) =>
+  [entry.term, ...entry.match, entry.expansion, entry.original?.text, entry.short, ...entry.body].filter(Boolean).join(" ").toLocaleLowerCase();
+---
+
+<Layout
+  title={t("Glossary")}
+  description={t("The abbreviations used on legalgraph, from DDG and GDPR to SPARQL and SHACL, explained in plain words.")}
+  t={t}
+  page="glossary"
+  header={{
+    title: t("Glossary"),
+    description: t("The abbreviations on this site, explained: the laws, the bodies that apply them, and the standards the graph is built on."),
+  }}
+>
+  <p class="mb-8 max-w-3xl text-muted-foreground">
+    {t("Wherever one of these terms first appears on a page, it is underlined: point at it for a short explanation, or click it to come here.")}
+  </p>
+
+  <FilterList
+    id="glossary"
+    groups={groups}
+    total={entries.length}
+    allLabel={t("All terms")}
+    searchLabel={t("Search the glossary")}
+    searchPlaceholder={t("Search by abbreviation or meaning, e.g. GDPR, consent, SPARQL")}
+    emptyText={t("No term matches your search.")}
+    pageSize={10}
+    labels={filterLabels(t)}
+  >
+    {
+      entries.map((entry) => {
+        const original = originalLine(entry, t.locale);
+        const related = entry.seeAlso.map((id) => byId.get(id)).filter((other): other is GlossaryEntry => Boolean(other));
+        return (
+          <article id={entry.id} class="glossary-entry filter-entry card p-5" data-tags={`k-${entry.kind}`} data-search={search(entry)}>
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h2 class="mt-0! mb-0! text-xl font-bold text-foreground">
+                <abbr class="no-underline">{entry.term}</abbr>
+              </h2>
+              <span class="text-sm text-muted-foreground">{KINDS[entry.kind]}</span>
+            </div>
+            <p class="mt-1 font-semibold">{entry.expansion}</p>
+            {original && (
+              <p class="text-sm text-muted-foreground">
+                {original.language}: <i lang={original.lang}>{original.text}</i>
+              </p>
+            )}
+            <div class="mt-3 space-y-2 text-muted-foreground">
+              {entry.body.map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
+            </div>
+            {(entry.source || entry.graph || related.length > 0) && (
+              <p class="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm">
+                {entry.source && <a href={entry.source.url}>{entry.source.label} ↗</a>}
+                {entry.graph && (
+                  <span>
+                    <span class="text-muted-foreground">{t("In the graph:")} </span>
+                    <a href={`/id/${entry.graph}`}>{entry.graph}</a>
+                  </span>
+                )}
+                {related.length > 0 && (
+                  <span>
+                    <span class="text-muted-foreground">{t("See also:")} </span>
+                    {related.map((other, index) => (
+                      <>
+                        {index > 0 && ", "}
+                        <a href={glossaryHref(other.id, t.locale)}>{other.term}</a>
+                      </>
+                    ))}
+                  </span>
+                )}
+              </p>
+            )}
+          </article>
+        );
+      })
+    }
+  </FilterList>
+</Layout>
+
+<style>
+  /* An entry opened from a tooltip clears the sticky navbar and stands out. */
+  .glossary-entry {
+    scroll-margin-top: 6rem;
+  }
+  .glossary-entry:target {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+</style>

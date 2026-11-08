@@ -1,0 +1,30 @@
+# Jugendmedienschutz-Staatsvertrag (JMStV): a treaty between the German Länder with no official XML,
+# downloaded from the Bavarian portal gesetze-bayern.de (BAYERN.RECHT) like the MStV. The fragment
+# holding each section's text is kept; the sections the graph uses are transcribed in schemas/law.xsd
+# and checked word for word against them.
+id: de/jmstv
+title: Jugendmedienschutz-Staatsvertrag
+jurisdiction: DE
+language: de
+publisher: Bayerische Staatskanzlei, gesetze-bayern.de (BAYERN.RECHT)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright"
+originals:
+  - file: JMStV-5.fragment.html
+    url: https://www.gesetze-bayern.de/Content/Document/JMStV-5
+    fetch: html-fragment
+    selector: div.cont
+    text_ignore: ["sup.satznr"]
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 77ba42aebe482aa6851c54694f25a34fa3090482a397b67194a43ffa631fcd09
+  - file: JMStV-7.fragment.html
+    url: https://www.gesetze-bayern.de/Content/Document/JMStV-7
+    fetch: html-fragment
+    selector: div.cont
+    text_ignore: ["sup.satznr"]
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 601df6f1c6fd18b96069a124030645ee1565cd0cb7bc53cd4acfd768fcf94618
+annotated: JMStV.law.xml

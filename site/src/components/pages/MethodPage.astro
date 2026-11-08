@@ -1,0 +1,435 @@
+---
+// /method, in every language: how the graph is made, from the official text to the site, and what
+// checks each step. One duty runs through every example: a business established in Germany that is
+// entered in the commercial register must name the register and its number on its website (§ 5(1)
+// no. 4 DDG). The excerpts are cut from the repository's own files at build time, and the build
+// fails if one is no longer there, so the page cannot drift from the data; they stay as they are in
+// every language. The diagram is PipelineDiagram.astro, the folder tree RepoTree.astro; the
+// query's answer is an excerpt, as of the date in the text.
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import T from "../../i18n/T.astro";
+import type { Translate } from "../../i18n/t";
+import { abbreviationMarker } from "../../lib/glossary";
+import Layout from "../../layouts/Layout.astro";
+import { GITHUB_URL } from "../../lib/navigation";
+import { pagePath } from "../../lib/routes";
+import CodeFile from "../CodeFile.astro";
+import Article from "../ds/Article.astro";
+import SectionHeading from "../ds/SectionHeading.astro";
+import PipelineDiagram from "../PipelineDiagram.astro";
+import RepoTree from "../RepoTree.astro";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const mark = await abbreviationMarker(t.locale);
+const repo = (path: string) => readFileSync(join(process.cwd(), "..", path), "utf8");
+const need = <V,>(value: V | undefined | null, what: string): V => {
+  if (value === undefined || value === null) throw new Error(`MethodPage: ${what} is no longer in the repository`);
+  return value;
+};
+
+// 1. Where the file came from.
+const sourceYaml = need(/^originals:[\s\S]*?^annotated: .*$/m.exec(repo("sources/de/ddg/source.yaml"))?.[0], "source.yaml's originals");
+
+// 2. The provision's opening and point 4, with our marks, from the annotated file.
+const xml = repo("sources/de/ddg/BJNR0950B0024.annotated.xml");
+const opening = need(/<P lga:provision="DE-DDG-s5-1"[^>]*>/.exec(xml)?.[0], "the § 5(1) DDG mark");
+const point4 = need(/<DT>4\.<\/DT><DD[^>]*lga:requires="RegisterEntry"[^>]*>.*?<\/DD>/.exec(xml)?.[0], "point 4's mark");
+const annotated = [
+  opening.replace(/ lga:url="[^"]*"/, "").replace(" lga:regulates", "\n   lga:regulates"),
+  "  (1) Diensteanbieter haben für geschäftsmäßige, … digitale Dienste folgende Informationen … ständig verfügbar zu halten:",
+  "  …",
+  "  " + point4.replace("</DT><DD", "</DT>\n  <DD").replace("><LA", ">\n    <LA").replace("</LA></DD>", "</LA>\n  </DD>"),
+].join("\n");
+
+// 3. Its English.
+const english = need(/^4\. the commercial register[^\n]*$/m.exec(repo("data/translations/en/de.ttl"))?.[0], "the English of point 4");
+
+// 4. The generated entry, its list of information items shortened around the register.
+const turtle = readFileSync(join(process.cwd(), "public/id/DE-DDG-s5-1.ttl"), "utf8")
+  .split("\n")
+  .filter((line) => !line.startsWith("#") && !line.startsWith("@prefix"))
+  .join("\n")
+  .trim()
+  .replace(/lgo:requiresDisclosureOf [^;]*lgv:RegisterEntry[^;]*;/, "lgo:requiresDisclosureOf lgv:ProviderName , … , lgv:RegisterEntry , … ;");
+if (!turtle.includes("lgv:RegisterEntry")) need(undefined, "lgv:RegisterEntry on § 5(1) DDG");
+
+// 5. The rule, and the example business that tests it.
+const rule = need(/^lg:DE-R-impressum-register a [\s\S]*?\.$/m.exec(repo("data/rules/de.ttl"))?.[0], "the register rule");
+const scenarioFile = repo("scenarios/de-gmbh-shop.yaml");
+for (const line of ["established_in: DE", "  - RegisteredInPublicRegister", "  - CommercialDigitalService", "  - DE-R-impressum-register"]) {
+  if (!scenarioFile.includes(line)) need(undefined, `"${line.trim()}" in the German shop scenario`);
+}
+const scenario = `name: German GmbH with an online shop
+established_in: DE
+facts:
+  - CommercialDigitalService
+  - RegisteredInPublicRegister
+  - …
+obligations:
+  - DE-R-impressum
+  - DE-R-impressum-register
+  - …`;
+
+const query = repo("queries/register-entry.rq").trim();
+const answer = [
+  ["AT", "§ 5 Abs. 1 ECG"],
+  ["DE", "§ 5 Abs. 1 DDG"],
+  ["EU", "Art. 5(1) Directive 2000/31/EC"],
+  ["FR", "Article 19, alinéa 1, LCEN"],
+  ["GB", "reg. 6(1) Electronic Commerce Regulations 2002"],
+  ["NL", "Artikel 3:15d lid 1 BW"],
+];
+const checks = [
+  ["make upstream", t("Downloads every text again and fails if the portal's words have changed. It needs the network, so it runs on its own.")],
+  ["sources verify", t("Strips our marks and compares with the original, byte for byte; a transcription must match it word for word.")],
+  ["sources extract --check", t("Regenerates the Turtle and fails if it differs from what is published.")],
+  ["validate", t("Parses every file, rejects undefined terms and dangling links, applies the 16 SHACL shapes, and requires English for every non-English text.")],
+  ["pytest", t("Over 100 tests, among them the example businesses, which must get exactly their rules: one more or one fewer fails.")],
+] as const;
+// A step's heading without its number, which its badge shows (and the table of contents reads from
+// a visually hidden copy).
+const unnumbered = (heading: string) => heading.replace(/^\d+\.\s*/, "");
+const excerpt = t("excerpt");
+const inExample = t("In the example:");
+const code = { kind: "code" } as const;
+const strong = { kind: "strong" } as const;
+const em = { kind: "em" } as const;
+// The page's h1 and <title>, fuller than the menu's "Method", for readers arriving from a search.
+const heading = t("How the knowledge graph is built from official law texts");
+// The standards the page names, introduced before the first step; each term's first use becomes its
+// glossary tooltip.
+const terms: [string, string | { msg: string; tags: (typeof code)[] }][] = [
+  ["RDF", t("The data model. Everything is a statement of three parts, such as “§ 5(1) DDG — requires — the register entry”; together, the statements form the graph.")],
+  ["Turtle", { msg: t("Just a syntax: a plain-text way of writing those statements down, readable by people as well as programs. The graph's files end in <0>.ttl</0>."), tags: [code] }],
+  ["SPARQL", t("The query language. One query searches the whole graph, across every country at once; an example follows below.")],
+  ["SHACL", t("Rules about the data, checked by a program, such as “every obligation names the provisions it comes from”.")],
+  ["ELI, SKOS", t("Shared vocabularies: ELI for identifying legislation, SKOS for labels and categories. Because we use them, other graphs understand ours without a translation table.")],
+  ["XML", t("The markup in which the law texts are annotated before anything is generated from them.")],
+];
+---
+
+<Layout
+  title={heading}
+  description={t("How each law text is fetched, checked and turned into data, and how you can check it.")}
+  t={t}
+  page="method"
+  header={{ title: heading, description: t("From law text to graph: how each text is fetched, checked and turned into data, and how you can check it.") }}
+>
+  <Article label={t("On this page")} collapseLabel={t("Collapse")} expandLabel={t("Expand")} mark={mark}>
+    <!-- Text at reading width; the diagram takes the whole column. -->
+    <div class="space-y-4 text-muted-foreground [&>*:not(.pipeline)]:max-w-3xl">
+      <p>
+        {t("Every provision, quote and checklist rule on this site traces back to a file published by an official portal.")}
+        {" "}{t("What the law says is never typed in by hand: it is generated from the official text, and the generation is checked by a program.")}
+        {" "}{t("Our readings of the law are written by hand, kept apart, and marked as drafts.")}
+        {" "}{t("This page is the process, and what makes each step verifiable.")}
+      </p>
+
+      <SectionHeading id="terms" badge="A–Z" class="mt-6!">{t("Before you start: the terms")}</SectionHeading>
+      <p>
+        {t("This page walks through how the graph is built, step by step: from the official text to the files you can download, and the checks in between.")}
+        {" "}{t("The graph is not in a format of our own: it uses open standards of the W3C, which off-the-shelf tools read, so you can query and check it without our software.")}
+      </p>
+      <dl class="terms grid gap-x-6 gap-y-3 sm:grid-cols-[8rem_1fr]">
+        {
+          terms.map(([term, meaning]) => (
+            <>
+              <dt class="font-semibold text-foreground">{term}</dt>
+              <dd>{typeof meaning === "string" ? meaning : <T msg={meaning.msg} tags={meaning.tags} />}</dd>
+            </>
+          ))
+        }
+      </dl>
+      <p>
+        <T
+          msg={t("Every technical term on this page links to the <0>glossary</0>: point at an underlined term for a short explanation, or click it to read more. Why we chose a graph at all is explained <1>further down</1>.")}
+          tags={[{ kind: "link", href: pagePath("glossary", t.locale) }, { kind: "link", href: "#why-a-graph" }]}
+        />
+      </p>
+
+      <SectionHeading id="at-a-glance" badge="⇢" class="mt-10!">{t("The process at a glance")}</SectionHeading>
+      <PipelineDiagram t={t} />
+
+      <SectionHeading id="repository" badge="git" class="mt-10!">{t("Where everything lives")}</SectionHeading>
+      <p>
+        <T
+          msg={t("All of it is in one public repository on <0>GitHub</0>. Each folder below links to it there; the numbers are the steps on this page.")}
+          tags={[{ kind: "link", href: GITHUB_URL }]}
+        />
+      </p>
+      <RepoTree t={t} />
+
+      <SectionHeading id="example" badge="§ 5" class="mt-10!">{t("One duty, followed through")}</SectionHeading>
+      <p>
+        <T
+          msg={t("The steps below follow a single duty from the law to this site. A business established in Germany that is entered in the commercial register must name the register and its number on its website, for example <0>Amtsgericht Charlottenburg, HRB 272803 B</0>, as our own <1>imprint</1> does.")}
+          tags={[em, { kind: "link", href: pagePath("legal/imprint", t.locale) }]}
+        />
+        {" "}{t("The duty is in point 4 of § 5(1) of the Digitale-Dienste-Gesetz (DDG). Businesses elsewhere in the EU have the same duty under their own country's law.")}
+      </p>
+
+      <SectionHeading id="step-1" badge="1" class="mt-10!">
+        <span class="sr-only">1. </span>{unnumbered(t("1. The original is kept, and locked"))}
+      </SectionHeading>
+      <p>
+        {t("The act is downloaded from the official portal — the EU's Cellar, gesetze-im-internet.de, legislation.gov.uk, zakon.rada.gov.ua — and the file is kept unchanged with its SHA-256 and retrieval date.")}
+        {" "}
+        <T
+          msg={t("Where a portal blocks automated access, a page saved by hand in a browser does instead: it is matched to its entry by the browser's <0>saved from url</0> marker.")}
+          tags={[code]}
+        />
+        {" "}
+        <T
+          msg={t("Re-downloading later (<0>sources fetch --check</0>) flags a changed text; for HTML pages the comparison is on the words, not the markup, so a regenerated page or a browser's rewrite does not look like a legal change.")}
+          tags={[code]}
+        />
+      </p>
+      <p>
+        <strong class="text-foreground">{inExample}</strong>
+        {" "}{t("the DDG comes as XML inside a zip from gesetze-im-internet.de. Its index records the file, where it came from, when, and its fingerprint:")}
+      </p>
+      <CodeFile path="sources/de/ddg/source.yaml" note={excerpt} code={sourceYaml} highlight={["retrieved_on: 2026-10-31", "sha256:"]} />
+
+      <SectionHeading id="step-2" badge="2" class="mt-10!">
+        <span class="sr-only">2. </span>{unnumbered(t("2. The text is annotated — and checked against the original"))}
+      </SectionHeading>
+      <p>{t("Which provisions matter, and what each says, is marked up in XML. Two forms, depending on what the portal publishes:")}</p>
+      <ul class="list-disc space-y-2 pl-5">
+        <li>
+          <T
+            msg={t("<0>Official XML</0> (EU Formex, gesetze-im-internet.de, legislation.gov.uk, Fedlex, the US Code): annotations are added inside the official file's own tags. Strip them again and the file is byte-identical to the original — proof that nothing was edited, not just asserted.")}
+            tags={[strong]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>Authored XML</0> (portals with only HTML or PDF — the Rada, EDPB and DSK guidance, much of US and member-state law): the text is transcribed into a small readable schema. <1>sources verify</1> validates the schema and requires every paragraph to occur word for word in the saved original, list item for list item — a transcription cannot silently drift from what was published.")}
+            tags={[strong, code]}
+          />
+        </li>
+      </ul>
+      <p>
+        <strong class="text-foreground">{inExample}</strong>
+        {" "}
+        <T
+          msg={t("the paragraph gets an identifier and a citation, and point 4 gets one mark, <0>lga:requires=\"RegisterEntry\"</0>: this line requires the register entry. Everything else is the official file, untouched.")}
+          tags={[code]}
+        />
+      </p>
+      <CodeFile
+        path="sources/de/ddg/BJNR0950B0024.annotated.xml"
+        note={excerpt}
+        code={annotated}
+        highlight={['lga:provision="DE-DDG-s5-1"', 'lga:requires="RegisterEntry"']}
+      />
+
+      <SectionHeading id="step-3" badge="3" class="mt-10!">
+        <span class="sr-only">3. </span>{unnumbered(t("3. Language versions are checked the same way — or marked as ours"))}
+      </SectionHeading>
+      <p>
+        {t("Where a portal publishes other language versions, they are kept as originals too and each translated provision is checked against its own original and against the structure of the main text.")}
+        {" "}
+        <T
+          msg={t("A translation gets an <0>as_of</0> date: where the portal's own notes show the text it translates was amended later, the check fails — an official translation older than the law must not stand in for it.")}
+          tags={[code]}
+        />
+        {" "}
+        <T
+          msg={t("Whatever has no usable official English is translated by machine and marked <0>translatedBy</0> as such; nothing in the graph is passed off as official that we wrote ourselves.")}
+          tags={[code]}
+        />
+      </p>
+      <p>
+        <strong class="text-foreground">{inExample}</strong>
+        {" "}{t("the DDG has no official English, so its English is a machine translation, marked as one and a draft until a person reviews it. It carries a hash of the German it translates, so it goes stale if the law changes:")}
+      </p>
+      <CodeFile path="data/translations/en/de.ttl" note={excerpt} code={english} highlight={["commercial register", "register number"]} />
+
+      <SectionHeading id="step-4" badge="4" class="mt-10!">
+        <span class="sr-only">4. </span>{unnumbered(t("4. The graph is generated, not written"))}
+      </SectionHeading>
+      <p>
+        <T
+          msg={t("<0>sources extract</0> turns the annotated XML into Turtle — mechanically, same input same bytes — and <1>extract --check</1> proves the published files are exactly what the generator produces.")}
+          tags={[code, code]}
+        />
+      </p>
+      <p>
+        <strong class="text-foreground">{inExample}</strong>
+        {" "}
+        <T
+          msg={t("the mark on point 4 becomes <0>lgv:RegisterEntry</0> in the provision's list of required information. The entry also records the file and the exact element it came from, so the statement leads back to its words:")}
+          tags={[code]}
+        />
+      </p>
+      <CodeFile path="data/extracted/de/ddg.ttl" note={excerpt} code={turtle} highlight={["lgv:RegisterEntry", "lgo:sourceElement"]} />
+
+      <SectionHeading id="step-5" badge="5" class="mt-10!">
+        <span class="sr-only">5. </span>{unnumbered(t("5. Our readings are kept apart"))}
+      </SectionHeading>
+      <p>
+        <T
+          msg={t("What a provision means for a business is a rule, written by hand in its own Turtle files with the cases that illustrate it. Each rule names the provisions it is read from, the conditions under which it applies, and its review status. Rules stay <0>Draft</0> until a lawyer reviews them.")}
+          tags={[em]}
+        />
+      </p>
+      <p>
+        <strong class="text-foreground">{inExample}</strong>
+        {" "}{t("the rule says who must do what, and when. It applies when three things hold: the business is established in Germany, its website serves business purposes, and it is entered in a register. It rests on § 5(1) DDG and spells out the EU rule from the e-Commerce Directive:")}
+      </p>
+      <CodeFile
+        path="data/rules/de.ttl"
+        note={excerpt}
+        code={rule}
+        highlight={["lgo:establishedBy lg:DE-DDG-s5-1", "lgv:RegisteredInPublicRegister", "lgv:Draft"]}
+      />
+      <p>
+        {t("An example business pins the rule down. A German GmbH with an online shop, entered in the register, must get this rule; the tests fail if it gets one rule more or one fewer than listed:")}
+      </p>
+      <CodeFile path="scenarios/de-gmbh-shop.yaml" note={excerpt} code={scenario} highlight={["RegisteredInPublicRegister", "DE-R-impressum-register"]} />
+
+      <SectionHeading id="step-6" badge="6" class="mt-10!">
+        <span class="sr-only">6. </span>{unnumbered(t("6. Published as a site and as data"))}
+      </SectionHeading>
+      <p>
+        {t("One build turns the whole graph into this static site: a page for every country, act, provision, quote and rule.")}
+        {" "}
+        <T
+          msg={t("Every page serves its own Turtle too, and the whole graph is on the <0>downloads page</0> in Turtle, N-Triples and JSON-LD.")}
+          tags={[{ kind: "link", href: pagePath("download", t.locale) }]}
+        />
+        {" "}{t("The site has no database: what you read is the graph itself, rendered.")}
+      </p>
+      <p>
+        <strong class="text-foreground">{inExample}</strong>
+        {" "}
+        <T
+          msg={t("the rule is <0>Impressum: register and registration number</0>, the provision is <1>§ 5 Abs. 1 DDG</1> with its German text and English side by side, and the <2>checklist</2> shows the rule to a business that picks Germany as its country and answers yes to the other two questions.")}
+          tags={[
+            { kind: "link", href: "/id/DE-R-impressum-register" },
+            { kind: "link", href: "/id/DE-DDG-s5-1" },
+            { kind: "link", href: pagePath("checklist", t.locale) },
+          ]}
+        />
+      </p>
+
+      <SectionHeading id="why-a-graph" badge="RDF" class="mt-10!">{t("Why a graph, and why Turtle")}</SectionHeading>
+      <p>{t("Law is a web of references: provisions implement directives, refine each other, define terms and set fines. A graph stores those links as data instead of prose, in the open standards of the web (RDF).")}</p>
+      <ul class="space-y-2 pl-5 list-disc">
+        <li>
+          <T
+            msg={t("<0>Questions across laws and countries.</0> One SPARQL query reaches every provision in every jurisdiction, as the example below shows.")}
+            tags={[strong]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>Every statement has an address.</0> Each entry is a URL, such as <1>legalgraph.org/id/DE-DDG-s5-1</1>, that people can cite and programs can fetch.")}
+            tags={[strong, code]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>Shared vocabularies.</0> Laws are described with ELI, the European Legislation Identifier ontology that EUR-Lex and many national gazettes use; terms with SKOS; metadata with Dublin Core. Court decisions carry their ECLI where the court publishes one, and countries link to the EU Publications Office's country list. Tools that know these standards understand the graph without learning ours.")}
+            tags={[strong]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>It connects with other graphs.</0> RDF from different sources merges as it is: load legalgraph next to EUR-Lex's own data, or your company's, and query across them.")}
+            tags={[strong]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>Rules for the data, checked by a program.</0> SHACL, a W3C standard, states what every entry must have, and validation checks the whole graph against it.")}
+            tags={[strong]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>Turtle is text.</0> People read it, Git shows every change line by line, and reviewers check a correction as they would code. It converts without loss to N-Triples and JSON-LD.")}
+            tags={[strong]}
+          />
+        </li>
+        <li>
+          <T
+            msg={t("<0>It grows without migrations.</0> A new country or a new kind of duty adds statements; there is no database schema to change.")}
+            tags={[strong]}
+          />
+        </li>
+      </ul>
+
+      <SectionHeading id="sparql" badge="?x" class="mt-10!">{t("Ask it your own questions")}</SectionHeading>
+      <p>
+        {t("Because the graph is RDF, it answers questions no page was built for, in SPARQL. This query asks which law, in each country, requires a business to name its register and registration number:")}
+      </p>
+      <CodeFile path="queries/register-entry.rq" code={query} highlight={["lgv:RegisterEntry"]} />
+      <p>{t("Today it finds {provisions} provisions in {jurisdictions} jurisdictions. Some of them:", { provisions: 22, jurisdictions: 14 })}</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-left text-foreground">
+              <th class="py-1 pr-4">{t("Jurisdiction")}</th>
+              <th class="py-1">{t("Provision")}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              answer.map(([jurisdiction, citation]) => (
+                <tr class="border-t">
+                  <td class="py-1 pr-4">{jurisdiction}</td>
+                  <td class="py-1">{citation}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p>
+        <T
+          msg={t("Run it in the repository with <0>uv run legalgraph query register-entry</0>, or load a download into any SPARQL store. The <1>queries</1> folder has more, such as where national law asks for more than the EU directive it implements.")}
+          tags={[code, { kind: "link", href: `${GITHUB_URL}/tree/main/queries` }]}
+        />
+      </p>
+
+      <SectionHeading id="tests" badge="✓" class="mt-10!">{t("How the graph is tested")}</SectionHeading>
+      <p>
+        <T
+          msg={t("<0>make check</0> runs the last four checks below and fails if any one of them fails, so a change that breaks the link to the law cannot pass unnoticed. The first needs the network and runs on its own.")}
+          tags={[code]}
+        />
+      </p>
+      <dl class="space-y-3">
+        {
+          checks.map(([command, what]) => (
+            <div class="card p-4">
+              <dt>
+                <code>{command}</code>
+              </dt>
+              <dd class="mt-1">{what}</dd>
+            </div>
+          ))
+        }
+      </dl>
+
+      <SectionHeading id="check-it-yourself" badge="$" class="mt-10!">{t("Check it yourself")}</SectionHeading>
+      <p>
+        <T
+          msg={t("Everything on this page is in the repository on <0>GitHub</0>: the originals, the annotated texts, the Turtle, the rules, the shapes and the tests. Clone it, run <1>make check</1>, and you have verified the graph yourself.")}
+          tags={[{ kind: "link", href: GITHUB_URL }, code]}
+        />
+        {" "}
+        <T
+          msg={t("The <0>Law texts</0> table lists every original with its hash and the annotated file it was checked against. English is a reading aid — the original text is what the law says.")}
+          tags={[{ kind: "link", href: pagePath("sources", t.locale) }]}
+        />
+      </p>
+    </div>
+  </Article>
+</Layout>

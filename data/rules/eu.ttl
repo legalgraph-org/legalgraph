@@ -1,0 +1,477 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# EU: obligations of the GDPR and other regulations that apply directly, read from
+# data/extracted/eu/. Directives address member states, so a rule resting on a directive stands for
+# the national rules transposing it: the checklist names the national provision for the country where
+# the business is established (the provisions with lgo:implements), and a national rule that spells
+# it out (lgo:refines) takes its place. Interpretation, so Draft until a lawyer reviews it.
+
+# --- Service provider information (Article 5(1) e-Commerce Directive) --------------------
+# The country of establishment's law applies (Article 3(1)), so these follow where the business is
+# established, in the EEA as a whole.
+
+lg:EU-R-service-provider-information a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and fast electronic contact"@en ;
+    rdfs:comment "Every business-like website or app run from the EEA, easily, directly and permanently accessible: in most countries an imprint (Impressum, mentions légales) linked from every page. The binding text is the national law transposing the Directive; many add items of their own."@en ;
+    lgo:establishedBy lg:EU-2000-31-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-service-provider-information-register a lgo:Obligation ;
+    rdfs:label "Provider information: register and registration number"@en ;
+    lgo:establishedBy lg:EU-2000-31-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-service-provider-information-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: supervisory authority"@en ;
+    lgo:establishedBy lg:EU-2000-31-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-service-provider-information-profession a lgo:Obligation ;
+    rdfs:label "Provider information: professional body, title and rules"@en ;
+    lgo:establishedBy lg:EU-2000-31-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-service-provider-information-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:establishedBy lg:EU-2000-31-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Contract terms in storable form (Article 10(3) e-Commerce Directive) -----------------
+# Germany transposes it as § 312i BGB; the German rule refines this one.
+
+lg:EU-R-contract-terms-storable a lgo:Obligation ;
+    rdfs:label "Provide the contract terms so the customer can store and reproduce them"@en ;
+    rdfs:comment "Contract terms and general conditions must reach the customer in a form that keeps — downloadable, printable, in the confirmation email or as a retrievable copy; a webpage that can quietly change afterwards is not enough (art. 10(3) e-Commerce Directive; § 312i(1) Nr. 4 BGB in Germany)."@en ;
+    lgo:establishedBy lg:EU-2000-31-art10-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:ProvideContractTermsInStorableForm ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAndClauses ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Privacy information (Articles 12 and 13 GDPR) -------------------------------------
+
+lg:EU-R-privacy-information a lgo:Obligation ;
+    rdfs:label "Privacy information: who, why, on which basis, to whom, how long, which rights"@en ;
+    rdfs:comment "Given when data are collected: on a website, a privacy policy reachable from every page. Recipients are named if there are any."@en ;
+    lgo:establishedBy lg:EU-2016-679-art12-1 , lg:EU-2016-679-art13-1 , lg:EU-2016-679-art13-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ControllerIdentity , lgv:ProcessingPurposes , lgv:LegalBasisOfProcessing , lgv:Recipients ,
+        lgv:RetentionPeriod , lgv:DataSubjectRights , lgv:ComplaintRight , lgv:ProvisionRequirement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-dpo a lgo:Obligation ;
+    rdfs:label "Privacy information: contact details of the data protection officer"@en ;
+    lgo:establishedBy lg:EU-2016-679-art13-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects , lgv:HasDataProtectionOfficer ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:DataProtectionOfficerContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-legitimate-interests a lgo:Obligation ;
+    rdfs:label "Privacy information: the legitimate interests pursued"@en ;
+    lgo:establishedBy lg:EU-2016-679-art13-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects , lgv:ReliesOnLegitimateInterests ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:LegitimateInterests ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-transfers a lgo:Obligation ;
+    rdfs:label "Privacy information: transfers outside the EU and their safeguards"@en ;
+    lgo:establishedBy lg:EU-2016-679-art13-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects , lgv:TransfersOutsideEEA ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ThirdCountryTransfer ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-consent a lgo:Obligation ;
+    rdfs:label "Privacy information: the right to withdraw consent"@en ;
+    lgo:establishedBy lg:EU-2016-679-art13-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects , lgv:ReliesOnConsent ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalRight ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-automated-decisions a lgo:Obligation ;
+    rdfs:label "Privacy information: automated decision-making and profiling"@en ;
+    lgo:establishedBy lg:EU-2016-679-art13-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects , lgv:UsesAutomatedDecisionMaking ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:AutomatedDecisionMaking ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-representative a lgo:Obligation ;
+    rdfs:label "Privacy information: the representative in the EU"@en ;
+    lgo:establishedBy lg:EU-2016-679-art13-1 , lg:EU-2016-679-art27-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:CollectsDataFromDataSubjects ;
+    lgo:unless lgv:EstablishedInTheUnion ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ControllerRepresentative ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-information-other-sources a lgo:Obligation ;
+    rdfs:label "Privacy information for data obtained elsewhere: categories and source"@en ;
+    lgo:establishedBy lg:EU-2016-679-art14-1 , lg:EU-2016-679-art14-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:ObtainsDataFromOtherSources ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ControllerIdentity , lgv:ProcessingPurposes , lgv:LegalBasisOfProcessing ,
+        lgv:CategoriesOfPersonalData , lgv:Recipients , lgv:RetentionPeriod , lgv:DataSubjectRights , lgv:ComplaintRight ,
+        lgv:SourceOfPersonalData ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Lawfulness and consent (Articles 6 and 7 GDPR) ------------------------------------
+
+lg:EU-R-lawful-basis a lgo:Obligation ;
+    rdfs:label "A lawful basis for every processing purpose"@en ;
+    lgo:establishedBy lg:EU-2016-679-art6-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:HaveLawfulBasis ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-consent-conditions a lgo:Obligation ;
+    rdfs:label "Consent that can be proven and withdrawn as easily as given"@en ;
+    lgo:establishedBy lg:EU-2016-679-art7-1 , lg:EU-2016-679-art7-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:DemonstrateConsent , lgv:MakeWithdrawalAsEasyAsConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-consent-separate a lgo:Obligation ;
+    rdfs:label "Ask for consent apart from other matters"@en ;
+    rdfs:comment "Where consent is given inside a written declaration that also covers other matters — accepting terms of business, a purchase — the request must stand out clearly, in an accessible form and plain language. A marketing-consent checkbox fused into the terms acceptance fails this."@en ;
+    lgo:establishedBy lg:EU-2016-679-art7-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:KeepConsentRequestSeparate ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-consent-no-tying a lgo:Obligation ;
+    rdfs:label "No service conditioned on unnecessary consent"@en ;
+    rdfs:comment "Consent is not freely given when the contract or service is made to depend on processing the service does not need (Art. 7(4); Recital 43; the EDPB reads the bundling prohibition against cookie walls in its consent guidelines)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art7-4 , lg:EU-2016-679-rec43 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:ConditionServiceOnConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Data protection officer and representative (Articles 27 and 37 GDPR) --------------
+
+lg:EU-R-data-protection-officer a lgo:Obligation ;
+    rdfs:label "Designate a data protection officer (GDPR cases)"@en ;
+    lgo:establishedBy lg:EU-2016-679-art37-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:DataProtectionOfficerRequiredByGdpr ;
+    lgo:requiresAction lgv:DesignateDataProtectionOfficer ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-data-protection-officer-contact a lgo:Obligation ;
+    rdfs:label "Publish the data protection officer's contact details"@en ;
+    lgo:establishedBy lg:EU-2016-679-art37-7 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:HasDataProtectionOfficer ;
+    lgo:requiresAction lgv:PublishDataProtectionOfficerContact ;
+    lgo:requiresDisclosureOf lgv:DataProtectionOfficerContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-representative a lgo:Obligation ;
+    rdfs:label "Designate a representative in the EU"@en ;
+    rdfs:comment "For businesses outside the EU that target or monitor people in it. Article 27(2) exempts occasional, low-risk processing; not modelled yet."@en ;
+    lgo:establishedBy lg:EU-2016-679-art27-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:unless lgv:EstablishedInTheUnion ;
+    lgo:requiresAction lgv:DesignateRepresentativeInTheUnion ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Digital Services Act -----------------------------------------------------------------
+
+lg:EU-R-dsa-points-of-contact a lgo:Obligation ;
+    rdfs:label "Points of contact for authorities and users"@en ;
+    lgo:establishedBy lg:EU-2022-2065-art11-1 , lg:EU-2022-2065-art12-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:ProvidesIntermediaryService ;
+    lgo:requiresAction lgv:DesignatePointsOfContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-dsa-terms a lgo:Obligation ;
+    rdfs:label "Content restrictions and moderation in the terms and conditions"@en ;
+    lgo:establishedBy lg:EU-2022-2065-art14-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:ProvidesIntermediaryService ;
+    lgo:requiresDisclosureOf lgv:ContentModerationRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-dsa-advertising a lgo:Obligation ;
+    rdfs:label "Mark advertisements on online platforms"@en ;
+    lgo:establishedBy lg:EU-2022-2065-art26-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:OperatesOnlinePlatform , lgv:ShowsAdvertisementsOnPlatform ;
+    lgo:unless lgv:SmallPlatformExempt ;
+    lgo:partOfDisclosure lgv:CommercialCommunication ;
+    lgo:requiresDisclosureOf lgv:AdvertisementMarking , lgv:Advertiser , lgv:AdTargetingParameters ;
+    lgo:requiresAction lgv:LabelAdvertisements ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-dsa-trader-traceability a lgo:Obligation ;
+    rdfs:label "Know the traders on a marketplace"@en ;
+    lgo:establishedBy lg:EU-2022-2065-art30-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:OperatesMarketplace ;
+    lgo:unless lgv:SmallPlatformExempt ;
+    lgo:requiresAction lgv:VerifyTraders ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- AI Act, Article 50 -----------------------------------------------------------------
+
+lg:EU-R-ai-chatbot a lgo:Obligation ;
+    rdfs:label "Tell people they are talking to an AI"@en ;
+    rdfs:comment "Article 50(1) addresses providers, who must design the system to inform people; a business deploying a third-party chatbot should make sure it does. Unless it is obvious from the context."@en ;
+    lgo:establishedBy lg:EU-2024-1689-art50-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:UsesChatbot ;
+    lgo:partOfDisclosure lgv:AiTransparency ;
+    lgo:requiresDisclosureOf lgv:AiInteractionNotice ;
+    lgo:requiresAction lgv:DiscloseAiInteraction ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-ai-generated-content a lgo:Obligation ;
+    rdfs:label "Disclose deep fakes and AI-generated public-interest text"@en ;
+    lgo:establishedBy lg:EU-2024-1689-art50-4 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:PublishesAiGeneratedMedia ;
+    lgo:partOfDisclosure lgv:AiTransparency ;
+    lgo:requiresDisclosureOf lgv:AiGeneratedContentLabel ;
+    lgo:requiresAction lgv:DiscloseAiGeneratedContent ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Product safety, energy labels, geo-blocking, political ads (regulations) -----------
+
+lg:EU-R-product-safety-information a lgo:Obligation ;
+    rdfs:label "Product safety information in every online offer"@en ;
+    rdfs:comment "Since 13 December 2024. Applies to economic operators selling consumer products online, including marketplace sellers."@en ;
+    lgo:establishedBy lg:EU-2023-988-art19 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:SellsProductsOnline ;
+    lgo:partOfDisclosure lgv:ProductSafetyInformation ;
+    lgo:requiresDisclosureOf lgv:ManufacturerIdentity , lgv:ResponsiblePersonInTheUnion , lgv:ProductIdentification , lgv:SafetyWarnings ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-energy-label a lgo:Obligation ;
+    rdfs:label "Energy label and product information sheet online"@en ;
+    rdfs:comment "The product-group regulations (delegated acts) say how the label is shown online, usually as a nested display next to the price."@en ;
+    lgo:establishedBy lg:EU-2017-1369-art5-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:SellsEnergyLabelledProducts ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:EnergyLabel ;
+    lgo:requiresAction lgv:DisplayEnergyLabel ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-geo-blocking a lgo:Obligation ;
+    rdfs:label "No geo-blocking of customers from other EU countries"@en ;
+    rdfs:comment "Selling to customers from every EU country on the same terms does not oblige a trader to deliver everywhere."@en ;
+    lgo:establishedBy lg:EU-2018-302-art3-1 , lg:EU-2018-302-art4-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:NoGeoBlocking ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-political-advertising a lgo:Obligation ;
+    rdfs:label "Label political advertisements with their sponsor and a transparency notice"@en ;
+    rdfs:comment "Since 10 October 2025."@en ;
+    lgo:establishedBy lg:EU-2024-900-art11-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:ActiveInTheUnion , lgv:PublishesPoliticalAdvertising ;
+    lgo:partOfDisclosure lgv:PoliticalAdvertisingTransparency ;
+    lgo:requiresDisclosureOf lgv:PoliticalAdSponsor ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar access to the user's device (ePrivacy art. 5(3)) --------------------
+# National rules for the same duty (Germany's TDDDG, the UK's PECR) refine this one.
+
+lg:EU-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before storing or accessing information on the user's device"@en ;
+    rdfs:comment "The ePrivacy ground rule for cookies, pixels and similar — exempt only: transmission over a network and what is strictly necessary for a service the user asked for. How it is read: no pre-ticked boxes (CJEU Planet49; IAB Europe C-604/22), refusing as easy as accepting (EDPB Cookie Banner Taskforce; CNIL 2020-092), purposes stated before the choice."@en ;
+    lgo:establishedBy lg:EU-2002-58-art5-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Unfair terms in consumer contracts (Directive 93/13/EEC) --------------------------------
+
+lg:EU-R-unfair-terms a lgo:Obligation ;
+    rdfs:label "No unfair terms in consumer contracts"@en ;
+    rdfs:comment "A non-negotiated term is not binding where, contrary to good faith, it causes a significant imbalance to the consumer's detriment — the Annex is the indicative grey list. The CJEU read it in Amazon (C-191/15) on choice of law."@en ;
+    lgo:establishedBy lg:EU-1993-13-art3-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsToConsumers ;
+    lgo:requiresAction lgv:ImposeUnfairTerms ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Processor contracts, records, retention and design (GDPR arts. 5, 25, 28, 30) -----------
+
+lg:EU-R-processing-agreement a lgo:Obligation ;
+    rdfs:label "A data processing agreement with every processor"@en ;
+    rdfs:comment "Hosting, mailing tools, form processors, analytics vendors: each needs a contract with the Article 28(3) terms — documented instructions, confidentiality, security, sub-processor control, assistance with data-subject rights, and deletion or return of the data at the end of the service at the controller's choice (art. 28(3)(g))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art28-1 , lg:EU-2016-679-art28-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:EngagesProcessors ;
+    lgo:requiresAction lgv:HaveProcessingAgreement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-processing-record a lgo:Obligation ;
+    rdfs:label "Keep a record of processing activities"@en ;
+    rdfs:comment "Purposes, categories, recipients, transfers and retention periods, in writing — the small-business exemption in art. 30(5) does not apply where processing is not occasional, so a website business is covered."@en ;
+    lgo:establishedBy lg:EU-2016-679-art30-1 , lg:EU-2016-679-art30-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:KeepProcessingRecord ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-storage-limitation a lgo:Obligation ;
+    rdfs:label "Keep personal data no longer than the purpose needs"@en ;
+    rdfs:comment "Retention periods and deletion: identifying data only while the purpose lasts; the GDPR sets no period for evidence of consent. In practice it is often kept while the processing runs and then for the time claims could still be brought — in Germany, for example, three years for civil claims (§ 195 BGB) and six months for unfair-competition claims (§ 11 UWG); that is a reading, not a rule of the GDPR."@en ;
+    lgo:establishedBy lg:EU-2016-679-art5-1-e ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:KeepDataNoLongerThanNecessary ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-privacy-by-design a lgo:Obligation ;
+    rdfs:label "Data protection by design and by default"@en ;
+    rdfs:comment "Build the service so defaults collect the minimum the purpose needs — a form should not ask for more than the feature requires, and consent mechanisms should reflect the design standard, not retrofit it."@en ;
+    lgo:establishedBy lg:EU-2016-679-art25-1 , lg:EU-2016-679-art25-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:DesignForDataProtection ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-consent-specific a lgo:Obligation ;
+    rdfs:label "One purpose per consent"@en ;
+    rdfs:comment "Consent is only valid for the purpose it was given for: granular, separate choices — one checkbox must not cover newsletter, profiling and partner offers at once (Art. 4(11) 'specific'; Recital 43; Art. 7(2) keeps the request apart from other matters)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art4-11 , lg:EU-2016-679-art7-2 , lg:EU-2016-679-rec43 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:ObtainConsentPerPurpose ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-processor-end-of-service a lgo:Obligation ;
+    rdfs:label "Delete or return personal data when the service ends"@en ;
+    rdfs:comment "The processor's own duty at contract end: the controller chooses deletion or return, existing copies go unless the law requires storage. A processor that decides purposes and means itself is treated as a controller of that processing (art. 28(10))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art28-3-g , lg:EU-2016-679-art28-10 ;
+    lgo:bearer lgv:Processor ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:ActsAsProcessor ;
+    lgo:requiresAction lgv:ReturnOrDeleteAtEndOfService ;
+    lgo:reviewStatus lgv:Draft .

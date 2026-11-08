@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:LU-LOI-2000-08-14
+    lgo:amendmentCheck lg:LU-LOI-2000-08-14-amendment-check .
+
+lg:LU-LOI-2000-08-14-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://legilux.public.lu/eli/etat/leg/memorial/2000/a96"^^xsd:anyURI ;
+    rdfs:comment "legilux.public.lu is a JavaScript application; the current version could not be read programmatically."@en .

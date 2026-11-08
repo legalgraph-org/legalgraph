@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  E-Commerce-Gesetz (ECG), § 5, written in schemas/law.xsd from the RIS consolidated fragment.
+  The words are the Federal Chancellery's (ris.bka.gv.at, Fassung vom 02.11.2026); only the
+  structure is ours. `legalgraph sources verify` checks every paragraph word for word against
+  the downloaded fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-ECG" lga:jurisdiction="AT" lga:act-type="Statute"
+     lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2001/152">
+  <meta>
+    <title>Bundesgesetz, mit dem bestimmte rechtliche Aspekte des elektronischen Geschäfts- und Rechtsverkehrs geregelt werden (E-Commerce-Gesetz – ECG)</title>
+    <date>2001-12-21</date>
+  </meta>
+
+  <section num="§ 5" title="Allgemeine Informationen" source="ecg-5.fragment.html">
+    <paragraph num="(1)" lga:provision="AT-ECG-s5-1" lga:citation="§ 5 Abs. 1 ECG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2001/152/P5" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Ein Diensteanbieter hat den Nutzern ständig zumindest folgende Informationen leicht und unmittelbar zugänglich zur Verfügung zu stellen:
+      <list>
+        <item num="1." lga:requires="ProviderName">seinen Namen oder seine Firma;</item>
+        <item num="2." lga:requires="GeographicAddress">die geografische Anschrift, unter der er niedergelassen ist;</item>
+        <item num="3." lga:requires="EmailAddress RapidContact">Angaben, auf Grund deren die Nutzer mit ihm rasch und unmittelbar in Verbindung treten können, einschließlich seiner elektronischen Postadresse;</item>
+        <item num="4." lga:requires="RegisterEntry">sofern vorhanden, die Firmenbuchnummer und das Firmenbuchgericht;</item>
+        <item num="5." lga:requires="SupervisoryAuthority">soweit die Tätigkeit einer behördlichen Aufsicht unterliegt, die für ihn zuständige Aufsichtsbehörde;</item>
+        <item num="6." lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">bei einem Diensteanbieter, der gewerbe- oder berufsrechtlichen Vorschriften unterliegt, die Kammer, den Berufsverband oder eine ähnliche Einrichtung, der er angehört, die Berufsbezeichnung und den Mitgliedstaat, in dem diese verliehen worden ist, sowie einen Hinweis auf die anwendbaren gewerbe- oder berufsrechtlichen Vorschriften und den Zugang zu diesen;</item>
+        <item num="7." lga:requires="VatId">sofern vorhanden, die Umsatzsteuer-Identifikationsnummer.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="AT-ECG-s5-2" lga:citation="§ 5 Abs. 2 ECG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2001/152/P5" lga:regulates="PriceTransparency">Sofern in Diensten der Informationsgesellschaft Preise angeführt werden, sind diese so auszuzeichnen, dass sie ein durchschnittlich aufmerksamer Betrachter leicht lesen und zuordnen kann. Es muss eindeutig erkennbar sein, ob die Preise einschließlich der Umsatzsteuer sowie aller sonstigen Abgaben und Zuschläge ausgezeichnet sind (Bruttopreise) oder nicht. Darüber hinaus ist auch anzugeben, ob Versandkosten enthalten sind.</paragraph>
+  </section>
+</law>

@@ -1,0 +1,48 @@
+---
+// One page per identifier in the graph namespace (lg:): jurisdictions, acts, provisions, quotes,
+// translations and source documents.
+import ActView from "../../components/views/ActView.astro";
+import DocumentView from "../../components/views/DocumentView.astro";
+import JurisdictionView from "../../components/views/JurisdictionView.astro";
+import ObligationView from "../../components/views/ObligationView.astro";
+import ProvisionView from "../../components/views/ProvisionView.astro";
+import QuoteView from "../../components/views/QuoteView.astro";
+import Layout from "../../layouts/Layout.astro";
+import { actLabel, loadGraph, resolve } from "../../lib/data";
+import { actJsonLd, provisionJsonLd } from "../../lib/jsonld";
+
+export async function getStaticPaths() {
+  const graph = await loadGraph();
+  const ids = [
+    ...graph.jurisdictions.keys(),
+    ...graph.acts.keys(),
+    ...graph.provisions.keys(),
+    ...graph.documents.keys(),
+    ...graph.obligations.keys(),
+    ...graph.quotes.keys(), // including the other language versions of each quote
+    ...[...graph.quotes.values()].filter(({ quote }) => quote.translation).map(({ quote }) => `${quote.id}-en`),
+  ];
+  return ids.map((id) => ({ params: { id } }));
+}
+
+const { id } = Astro.params;
+const graph = await loadGraph();
+const jurisdiction = graph.jurisdictions.get(id);
+const act = graph.acts.get(id);
+const provision = graph.provisions.get(id);
+const document = graph.documents.get(id);
+const obligation = graph.obligations.get(id);
+const quoted = graph.quotes.get(id) ?? graph.quotes.get(id.replace(/-en$/, ""));
+const title = act ? actLabel(act) : resolve(graph, id).label;
+const jsonld = act ? actJsonLd(graph, act) : provision ? provisionJsonLd(graph, provision) : undefined;
+---
+
+<Layout title={title}>
+  {jsonld && <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+  {jurisdiction && <JurisdictionView jurisdiction={jurisdiction} />}
+  {act && <ActView act={act} />}
+  {provision && <ProvisionView provision={provision} />}
+  {document && <DocumentView document={document} />}
+  {obligation && <ObligationView obligation={obligation} />}
+  {!jurisdiction && !act && !provision && !document && !obligation && quoted && <QuoteView id={id} quote={quoted.quote} provision={quoted.provision} />}
+</Layout>

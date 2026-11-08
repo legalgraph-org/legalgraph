@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The CNIL's English courtesy translation of SAN-2025-004, transcribed in schemas/law.xsd from its
+  PDF, as the parallel version of cnil-san-2025-004.law.xml. The French text prevails. Only
+  lga:provision and lga:url annotate the provisions.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="FR-CNIL-SAN-2025-004" lga:jurisdiction="FR" lga:act-type="AuthorityDecision"
+     lga:url="https://www.cnil.fr/sites/default/files/2025-09/cnil_sanction_google_en.pdf">
+  <meta>
+    <title>Deliberation of the restricted committee No SAN-2025-004 of 1 September 2025</title>
+    <date>2025-09-01</date>
+  </meta>
+
+  <section num="134." title="Freedom of consent at account creation" source="cnil_sanction_google_en.pdf">
+    <paragraph num="134." lga:provision="FR-CNIL-SAN-2025-004-p134" lga:url="https://www.cnil.fr/sites/default/files/2025-09/cnil_sanction_google_en.pdf">The restricted committee considers that making the mechanism of refusal of cookies related to the personalization of ads more complex than that of accepting them is actually to discourage users from refusing these cookies and to encourage them to privilege the ease of the "Confirm" button. The fact that you have to click on ‘manual personalisation’ and understand how the five-step path to reject cookies linked to the personalization of ads is constructed is likely to discourage the user who nevertheless wishes to refuse the deposit of those cookies but who will choose the option enabling him to access the service as quickly as possible. It is not disputed that, in the present case, the companies offered a choice between accepting or refusing cookies linked to the personalization of ads, but the restricted committee considers that the manner in which that refusal could be expressed in the context of the creation of a Google account distorted the expression of choice by favoring consent to the deposit of cookies enabling personalised advertising, thereby altering the freedom of choice.</paragraph>
+  </section>
+
+  <section num="Decision" title="By these reasons" source="cnil_sanction_google_en.pdf">
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2025-004-d1" lga:url="https://www.cnil.fr/sites/default/files/2025-09/cnil_sanction_google_en.pdf">order GOOGLE LLC to pay an administrative fine of EUR 200 000 000 for failure to comply with Article 82 of Law No 78-17 of 6 January 1978 on information technology, files and freedoms and Article L. 34-5 of the Postal and Electronic Communications Code;</paragraph>
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2025-004-d2" lga:url="https://www.cnil.fr/sites/default/files/2025-09/cnil_sanction_google_en.pdf">order GOOGLE IRELAND LIMITED to pay an administrative fine of EUR 125 000 000 in respect of infringements of Article 82 of Law No 78-17 of 6 January 1978 on information technology, files and civil liberties and Article L. 34-5 of the Postal and Electronic Communications Code;</paragraph>
+  </section>
+</law>

@@ -1,0 +1,21 @@
+# Robles v. Domino's Pizza, LLC, 913 F.3d 898 (9th Cir. 2019): ADA Title III applies to
+# websites and apps whose services connect customers to a physical place of public
+# accommodation — the leading federal case on website accessibility. Opinion no. 17-55504,
+# filed 14 January 2019, from the Ninth Circuit's own opinion repository.
+id: us/robles-v-dominos
+title: Robles v. Domino's Pizza, LLC (9th Cir. 2019)
+jurisdiction: US
+language: en
+publisher: United States Court of Appeals for the Ninth Circuit, ca9.uscourts.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Judicial opinions are not copyrightable (government edicts doctrine; 17 U.S.C. § 105)"
+originals:
+  - file: 17-55504.pdf
+    page: https://ca9.uscourts.gov/opinions/opinion_view.php?pk_no=17-55504
+    url: https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/15/17-55504.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-04
+    sha256: 8e1d9114d2b23c0844bc6cd1b9c346aad51489987566812e518a19a1544d1145
+annotated: robles-v-dominos.law.xml

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Loi n° 2004-575 du 21 juin 2004 (LCEN), article 19, written in schemas/law.xsd from the saved
+  legifrance page. The words are the official consolidated text's; only the structure is ours.
+  `legalgraph sources verify` checks every paragraph word for word against the fragment.
+  Article 19 is France's e-commerce provider information (Article 5 of the e-Commerce Directive),
+  next to the mentions légales of Article 1-1 for publishers (data/acts/fr.ttl).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="FR-LCEN" lga:jurisdiction="FR" lga:act-type="Statute" lga:transposes="EU-2000-31"
+     lga:url="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/">
+  <meta>
+    <title>Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique</title>
+    <date>2004-06-21</date>
+  </meta>
+
+  <section num="Article 19" title="Obligations d'information des prestataires de commerce électronique" source="art-19.fragment.html">
+    <paragraph num="" lga:provision="FR-LCEN-art19-1" lga:citation="Article 19, alinéa 1, LCEN" lga:url="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000032236011" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Sans préjudice des autres obligations d'information prévues par les textes législatifs et réglementaires en vigueur, toute personne qui exerce l'activité définie à l'article 14 est tenue d'assurer à ceux à qui est destinée la fourniture de biens ou la prestation de services un accès facile, direct et permanent utilisant un standard ouvert aux informations suivantes :
+      <list>
+        <item num="1°" lga:requires="ProviderName">S'il s'agit d'une personne physique, ses nom et prénoms et, s'il s'agit d'une personne morale, sa raison sociale ;</item>
+        <item num="2°" lga:requires="GeographicAddress EmailAddress PhoneNumber">L'adresse où elle est établie, son adresse de courrier électronique, ainsi que des coordonnées téléphoniques permettant d'entrer effectivement en contact avec elle ;</item>
+        <item num="3°" lga:requires="RegisterEntry ShareCapital">Si elle est assujettie aux formalités d'inscription au registre du commerce et des sociétés ou au répertoire des métiers, le numéro de son inscription, son capital social et l'adresse de son siège social ;</item>
+        <item num="4°" lga:requires="VatId">Si elle est assujettie à la taxe sur la valeur ajoutée et identifiée par un numéro individuel en application de l' article 286 ter du code général des impôts , son numéro individuel d'identification ;</item>
+        <item num="5°" lga:requires="SupervisoryAuthority">Si son activité est soumise à un régime d'autorisation, le nom et l'adresse de l'autorité ayant délivré celle-ci ;</item>
+        <item num="6°" lga:requires="ProfessionalRules ProfessionalTitle ProfessionalBody">Si elle est membre d'une profession réglementée, la référence aux règles professionnelles applicables, son titre professionnel, l'Etat membre dans lequel il a été octroyé ainsi que le nom de l'ordre ou de l'organisme professionnel auprès duquel elle est inscrite.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="FR-LCEN-art19-2" lga:citation="Article 19, alinéa 2, LCEN" lga:url="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000032236011" lga:regulates="PriceTransparency" lga:requires="TotalPrice DeliveryCosts">Toute personne qui exerce l'activité définie à l'article 14 doit, même en l'absence d'offre de contrat, dès lors qu'elle mentionne un prix, indiquer celui-ci de manière claire et non ambiguë, et notamment si les taxes et les frais de livraison sont inclus.</paragraph>
+  </section>
+</law>

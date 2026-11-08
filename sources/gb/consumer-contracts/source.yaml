@@ -1,0 +1,22 @@
+# Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013: the revised (current) text as legislation.gov.uk publishes it, in its official XML (Crown
+# Legislation Markup Language). Pre-contract information for online sales (Schedule 2), the order button
+# (regulation 14) and pre-ticked extras (regulation 40).
+id: gb/consumer-contracts
+title: Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: uksi-2013-3134.xml
+    page: https://www.legislation.gov.uk/uksi/2013/3134
+    url: https://www.legislation.gov.uk/uksi/2013/3134/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-07
+    sha256: 17553ce5cc02365da3a1edac0511ea30138eacb48afacaa90401b9bd4f08a0aa
+annotated: uksi-2013-3134.annotated.xml

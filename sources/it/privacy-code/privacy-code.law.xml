@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Codice in materia di protezione dei dati personali (D.Lgs. 196/2003), Art. 122, written in
+  schemas/law.xsd from Normattiva's consolidated fragment. The words are the official text's
+  (including its editorial '((…))' placeholders); only the structure is ours.
+  `legalgraph sources verify` checks every paragraph word for word against the fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="it"
+     lga:act="IT-196-2003" lga:jurisdiction="IT" lga:act-type="Decree" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196">
+  <meta>
+    <title>Codice in materia di protezione dei dati personali</title>
+    <date>2003-06-30</date>
+  </meta>
+
+  <section num="Art. 122" title="Informazioni raccolte nei riguardi dell'contraente o dell'utente" source="d196-2003-art122.fragment.html">
+    <paragraph num="1." lga:provision="IT-196-2003-art122-1" lga:citation="Art. 122 comma 1 Codice privacy" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196~art122" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:defines="TransmissionOnlyAccess StrictlyNecessaryAccess">L'archiviazione delle informazioni nell'apparecchio terminale di un contraente o di un utente o l'accesso a informazioni già archiviate sono consentiti unicamente a condizione che il contraente o l'utente abbia espresso il proprio consenso dopo essere stato informato con ((...)) modalità semplificate ((...)) . Ciò non vieta l'eventuale archiviazione tecnica o l'accesso alle informazioni già archiviate se finalizzati unicamente ad effettuare la trasmissione di una comunicazione su una rete di comunicazione elettronica, o nella misura strettamente necessaria al fornitore di un servizio della società dell'informazione esplicitamente richiesto dal contraente o dall'utente a erogare tale servizio. Ai fini della determinazione delle modalità semplificate di cui al primo periodo il Garante tiene anche conto delle proposte formulate dalle associazioni maggiormente rappresentative a livello nazionale dei consumatori e delle categorie economiche coinvolte, anche allo scopo di garantire l'utilizzo di metodologie che assicurino l'effettiva consapevolezza del contraente o dell'utente.</paragraph>
+    <paragraph num="2." lga:provision="IT-196-2003-art122-2" lga:citation="Art. 122 comma 2 Codice privacy" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196~art122" lga:regulates="Consent">Ai fini dell'espressione del consenso di cui al comma 1, possono essere utilizzate specifiche configurazioni di programmi informatici o di dispositivi che siano di facile e chiara utilizzabilità per il contraente o l'utente.</paragraph>
+    <paragraph num="2-bis." lga:provision="IT-196-2003-art122-2bis" lga:citation="Art. 122 comma 2-bis Codice privacy" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196~art122" lga:regulates="TerminalEquipmentAccess">Salvo quanto previsto dal comma 1, è vietato l'uso di una rete di comunicazione elettronica per accedere a informazioni archiviate nell'apparecchio terminale di un contraente o di un utente, per archiviare informazioni o per monitorare le operazioni dell'utente.</paragraph>
+  </section>
+</law>

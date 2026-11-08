@@ -1,0 +1,42 @@
+# Judgment in Case C-300/21, Österreichische Post: official XML (Formex 4) of the European Court Reports from the Publications
+# Office. Österreichische Post: Article 82 GDPR needs no threshold of seriousness for damages — the reason unlawfully shared data (Google Fonts et al.) can cost money. The language of the case, German, is the authentic version; the English
+# text is a translation made by the Court. The operative part — the rulings, which bind
+# national courts on how EU law is to be read — is annotated; German is kept as a parallel
+# version.
+id: eu/cjeu-osterreichische-post
+title: Judgment in Case C-300/21, Österreichische Post
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62021CJ0300_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62021CJ0300
+    url: https://publications.europa.eu/resource/celex/62021CJ0300
+    fetch: zip-member
+    member: ECR_62021CJ0300_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-02
+    sha256: 81c09c406c0d83af905258aa2641b76dbb2c0cc09b86f1eb61e4a29ee4fd0e02
+  - file: ECR_62021CJ0300_DE_01.xml
+    role: parallel
+    language: german
+    page: https://eur-lex.europa.eu/legal-content/GE/TXT/?uri=CELEX:62021CJ0300
+    url: https://publications.europa.eu/resource/celex/62021CJ0300
+    fetch: zip-member
+    member: ECR_62021CJ0300_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: cc12c5245b2ccc8608f3da7b0cf3fe4c8f3bd590a5eb46f03641ddc3dbe25fd6
+annotated: ECR_62021CJ0300_EN_01.annotated.xml

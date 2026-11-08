@@ -1,0 +1,98 @@
+# Directive on privacy and electronic communications (ePrivacy Directive), consolidated version.
+# Article 5(3), the cookie rule, was replaced by Directive 2009/136/EC; the Publications Office's
+# consolidated text (Formex 4, from Cellar) shows the directive as amended. Consolidated texts are a
+# documentation tool: the authentic texts are the Official Journal publications of the directive (only
+# as PDF: Formex starts in 2004) and of its amending acts, kept here too (roles authentic and
+# amendment). `legalgraph sources verify` proves each quoted provision occurs word for word in the 2002
+# text, or, where an amending act lists its place (`amends`: here only the places of the quoted
+# provisions), word for word in that act. English is annotated; German is a parallel language version.
+id: eu/eprivacy
+title: Directive 2002/58/EC (ePrivacy Directive), consolidated version of 19 December 2009
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2002L0058EN0020010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219
+    url: https://publications.europa.eu/resource/celex/02002L0058-20091219
+    fetch: zip-member
+    member: CL2002L0058EN0020010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text as of 19 December 2009, prepared by the Publications Office as a documentation tool. The authentic text is Directive 2002/58/EC as published in the Official Journal (OJ L 201, 31.7.2002) and its amending acts; Article 5(3) as replaced by Directive 2009/136/EC (OJ L 337, 18.12.2009)."
+    retrieved_on: 2026-11-02
+    sha256: 27d29a5b9e57db4bbe0503015b6de87a0b80ad5c0fae6991fad74b03fec1be67
+  - file: CL2002L0058DE0020070.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02002L0058-20091219
+    url: https://publications.europa.eu/resource/celex/02002L0058-20091219
+    fetch: zip-member
+    member: CL2002L0058DE0020070.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: 0ab9fe3f6c4fcdcb99f70db329bd790db920307d23878a8a62be514467ac46ec
+  - file: l_20120020731en00370047.pdf
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 201, 31.7.2002, p. 37"
+    url: https://publications.europa.eu/resource/celex/32002L0058
+    fetch: file
+    headers:
+      Accept: application/pdf
+      Accept-Language: eng
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: 081fa36ca2a4c7cb80d8eecae545568c7a65d74e7d98c6ad8c9060edf7c220ff
+  - file: l_20120020731de00370047.pdf
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 201 vom 31.7.2002, S. 37"
+    url: https://publications.europa.eu/resource/celex/32002L0058
+    fetch: file
+    headers:
+      Accept: application/pdf
+      Accept-Language: deu
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: f980c8df2f57a38c651c9228be64b6e3ecd29c6a51f68ace2935775d747cf050
+  - file: L_2009337EN.01001101.xml
+    role: amendment
+    language: en
+    title: "Directive 2009/136/EC, OJ L 337, 18.12.2009, p. 11"
+    url: https://publications.europa.eu/resource/celex/32009L0136
+    fetch: zip-member
+    member: L_2009337EN.01001101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    amends: ["Art. 5(3)", "Art. 13"]
+    retrieved_on: 2026-11-02
+    sha256: 111384f04d02190f492edf2110fcc397fa0a3c1d34a4789a8b2c6442d417c897
+  - file: L_2009337DE.01001101.xml
+    role: amendment
+    language: de
+    title: "Richtlinie 2009/136/EG, ABl. L 337 vom 18.12.2009, S. 11"
+    url: https://publications.europa.eu/resource/celex/32009L0136
+    fetch: zip-member
+    member: L_2009337DE.01001101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    amends: ["Art. 5(3)", "Art. 13"]
+    retrieved_on: 2026-11-02
+    sha256: 15dea9a9d3ad259921ed0003957a6920ca0ce3f2f9882a09a5e0c8b162a42334
+annotated: CL2002L0058EN0020010.0001.annotated.xml

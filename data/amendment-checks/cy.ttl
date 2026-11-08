@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CY-156-I-2004
+    lgo:amendmentCheck lg:CY-156-I-2004-amendment-check .
+
+lg:CY-156-I-2004-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "http://www.cylaw.org/nomoi/enop/non-ind/2004_1_156/full.html"^^xsd:anyURI ;
+    rdfs:comment "cylaw serves the as-published 2004 text only; the act's amendments are known to exist but the latest could not be verified from the source page."@en .

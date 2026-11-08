@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:XK-04-L-094
+    lgo:amendmentCheck lg:XK-04-L-094-amendment-check .
+
+lg:XK-04-L-094-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://gzk.rks-gov.net/ActDetail.aspx?ActID=2816"^^xsd:anyURI ;
+    rdfs:comment "gzk.rks-gov.net returned an error page for this act id; the Kosovo gazette record could not be read."@en .

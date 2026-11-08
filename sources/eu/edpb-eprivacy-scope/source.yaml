@@ -1,0 +1,21 @@
+# EDPB Guidelines 2/2023 on Technical Scope of Art. 5(3) of ePrivacy Directive, version 2.0
+# (adopted 7 October 2024): published only as PDF. The paragraphs the graph quotes are transcribed
+# in schemas/law.xsd and `legalgraph sources verify` checks each, letter for letter, against the
+# PDF's text. The guidelines fix what counts as storage, access, terminal equipment and
+# information for Article 5(3), and apply the scope to tracking techniques beyond cookies.
+id: eu/edpb-eprivacy-scope
+title: EDPB Guidelines 2/2023 on Technical Scope of Art. 5(3) of ePrivacy Directive
+jurisdiction: EU
+language: en
+publisher: European Data Protection Board
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "EDPB legal notice: reproduction is authorised provided the source is acknowledged"
+originals:
+  - file: edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf
+    url: https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-03
+    sha256: dbc1d37783e35ae8668925f92a590ae282eec24c98381a5a8f91b5c2048b5b03
+annotated: edpb-eprivacy-scope.law.xml

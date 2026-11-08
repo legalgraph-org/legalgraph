@@ -1,0 +1,49 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:US-ADA
+    lgo:amendmentCheck lg:US-ADA-amendment-check .
+
+lg:US-ADA-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap126-subchapIII-sec12182.htm"^^xsd:anyURI ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "USCODE-2024 edition shows no Amendments note for 42 U.S.C. 12182; unchanged since 1990."@en .
+
+lg:US-CAN-SPAM
+    lgo:amendmentCheck lg:US-CAN-SPAM-amendment-check .
+
+lg:US-CAN-SPAM-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap103-sec7704.htm"^^xsd:anyURI ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "USCODE-2024 edition shows no Amendments note for 15 U.S.C. 7704; unchanged since 2003."@en .
+
+lg:US-CFR-16-312
+    lgo:amendmentCheck lg:US-CFR-16-312-amendment-check .
+
+lg:US-CFR-16-312-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "90 FR 16977" ;
+    lgo:lastKnownAmendmentDate "2025-04-22"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2025-06-23"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "eCFR authority note: 'as amended at 90 FR 16977, Apr. 22, 2025'."@en .
+
+lg:US-CFR-28-35
+    lgo:amendmentCheck lg:US-CFR-28-35-amendment-check .
+
+lg:US-CFR-28-35-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.ecfr.gov/current/title-28/chapter-I/part-35"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "eCFR version of 20.04.2026" ;
+    lgo:lastKnownAmendmentDate "2026-04-20"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "eCFR versions API lists a substantive version of 35.200 dated 2026-04-20 (after the 2024-06-24 version)."@en .

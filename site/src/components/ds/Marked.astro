@@ -1,0 +1,12 @@
+---
+// Renders its content, then marks it up with `mark` (e.g. glossary terms, lib/glossary.ts): for
+// prose that is not an Article, such as a page's introduction.
+interface Props {
+  mark: (html: string) => string;
+}
+
+const { mark } = Astro.props;
+const html = mark(await Astro.slots.render("default"));
+---
+
+<Fragment set:html={html} />

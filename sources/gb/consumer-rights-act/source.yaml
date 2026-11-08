@@ -1,0 +1,24 @@
+# Consumer Rights Act 2015: the revised (current) text as legislation.gov.uk publishes it, in its
+# official XML (Crown Legislation Markup Language). Section 62 makes an unfair consumer term
+# unenforceable, section 68 requires transparent terms (plain intelligible language, prominence,
+# contra proferentem), and Schedule 2 is the indicative grey list — the UK counterpart of the
+# EU's Unfair Terms Directive for website terms.
+id: gb/consumer-rights-act
+title: Consumer Rights Act 2015
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: ukpga-2015-15.xml
+    page: https://www.legislation.gov.uk/ukpga/2015/15
+    url: https://www.legislation.gov.uk/ukpga/2015/15/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-07
+    sha256: a2bda02653934f4b2f1c6708ebb35f477a739c9552cef6abc820a126ef4615b0
+annotated: ukpga-2015-15.annotated.xml

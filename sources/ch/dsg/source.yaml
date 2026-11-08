@@ -1,0 +1,33 @@
+# Swiss Federal Act on Data Protection (Datenschutzgesetz, DSG; "nDSG", in force since 1 September 2023),
+# consolidated version of 7 July 2025: official XML (Akoma Ntoso) from Fedlex, the Federal Chancellery's
+# publication platform. German, French and Italian are authentic; German is annotated. The English text is
+# Fedlex's translation, published for information only (authentic: false), kept as a parallel version.
+id: ch/dsg
+title: Federal Act on Data Protection (DSG), consolidated version of 7 July 2025
+jurisdiction: CH
+language: de
+publisher: Swiss Federal Chancellery, Fedlex
+kind: official-xml
+licence: official-work
+licence_basis: "Art. 5 Abs. 1 URG (Switzerland): laws and ordinances are not protected by copyright"
+originals:
+  - file: fedlex-data-admin-ch-eli-cc-2022-491-20250707-de-xml-1.xml
+    page: https://www.fedlex.admin.ch/eli/cc/2022/491/de
+    url: https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20250707/de/xml/fedlex-data-admin-ch-eli-cc-2022-491-20250707-de-xml-1.xml
+    fetch: file
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: a99bce3dc59a5c3f25e69ed5e483380c0f1a9b57ec452fedb62e0e68b7baabef
+  - file: fedlex-data-admin-ch-eli-cc-2022-491-20250707-en-xml.xml
+    role: parallel
+    language: en
+    authentic: false
+    page: https://www.fedlex.admin.ch/eli/cc/2022/491/en
+    url: https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20250707/en/xml/fedlex-data-admin-ch-eli-cc-2022-491-20250707-en-xml.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "English translation published by the Federal Chancellery for information. It has no legal force; only the German, French and Italian texts are authentic."
+    retrieved_on: 2026-11-02
+    sha256: 47d871be5cfc9a7668ae13fd513ca19851c29df76d0ed6fdd861e09f32d8fe82
+annotated: fedlex-data-admin-ch-eli-cc-2022-491-20250707-de-xml-1.annotated.xml

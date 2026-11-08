@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:MD-ECOM
+    lgo:amendmentCheck lg:MD-ECOM-amendment-check .
+
+lg:MD-ECOM-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legis.md/cautare/getResults?doc_id=99326&lang=ro"^^xsd:anyURI ;
+    rdfs:comment "legis.md returns HTTP 403 to programmatic clients; the current version could not be read."@en .

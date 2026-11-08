@@ -1,0 +1,27 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:IT-196-2003
+    lgo:amendmentCheck lg:IT-196-2003-amendment-check .
+
+lg:IT-196-2003-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Ultimo aggiornamento all'atto pubblicato il 19/02/2026" ;
+    lgo:lastKnownAmendmentDate "2026-02-19"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "normattiva act page: last published act-level update 19.02.2026."@en .
+
+lg:IT-DLGS-70-2003
+    lgo:amendmentCheck lg:IT-DLGS-70-2003-amendment-check .
+
+lg:IT-DLGS-70-2003-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-09;70"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Ultimo aggiornamento all'atto pubblicato il 17/04/2024" ;
+    lgo:lastKnownAmendmentDate "2024-04-17"^^xsd:date ;
+    rdfs:comment "normattiva act page: last published act-level update 17.04.2024. No source document in the graph."@en .

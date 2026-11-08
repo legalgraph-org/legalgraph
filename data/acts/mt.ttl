@@ -1,0 +1,17 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lg:MT-CAP426 a lgo:LegalAct ;
+    eli:title "Electronic Commerce Act (Cap. 426)"@en ;
+    lgo:shortName "e-Commerce Act (Malta)" ;
+    eli:id_local "Cap. 426" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:MT ;
+    eli:date_document "2002-05-10"^^xsd:date ;
+    lgo:sourceUrl "https://legislation.mt/eli/cap/426/eng"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Article 8C (added by Act XXXV of 2016) transposes Article 5 ECD and adds item (h): the provider must show, prominently and wherever users give data, how they can opt out of unsolicited commercial communications."@en .

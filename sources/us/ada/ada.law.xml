@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  42 U.S.C. § 12182(a) (Americans with Disabilities Act, Title III), written in schemas/law.xsd from
+  the govinfo.gov page of the 2024 edition of the United States Code. The words are the Code's; only
+  the structure is ours. The subsection heading "General rule" is the page's, not part of the text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-ADA" lga:jurisdiction="US" lga:act-type="Statute"
+     lga:url="https://www.ada.gov/law-and-regs/ada/">
+  <meta>
+    <title>Americans with Disabilities Act of 1990</title>
+    <short>ADA</short>
+    <date>1990-07-26</date>
+  </meta>
+  <section num="42 U.S.C. § 12182" title="Prohibition of discrimination by public accommodations" source="USCODE-2024-title42-chap126-subchapIII-sec12182.htm">
+    <paragraph lga:provision="US-ADA-12182-a" lga:citation="42 U.S.C. § 12182(a)"
+               lga:url="https://www.law.cornell.edu/uscode/text/42/12182"
+               lga:regulates="Accessibility">No individual shall be discriminated against on the basis of disability in the full and equal enjoyment of the goods, services, facilities, privileges, advantages, or accommodations of any place of public accommodation by any person who owns, leases (or leases to), or operates a place of public accommodation.</paragraph>
+  </section>
+</law>

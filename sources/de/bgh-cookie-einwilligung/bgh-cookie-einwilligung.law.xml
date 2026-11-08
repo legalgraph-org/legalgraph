@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BGH, Urteil vom 28. Mai 2020 – I ZR 7/16 (Cookie-Einwilligung II), the Senate's Leitsätze,
+  written in schemas/law.xsd from the BGH's PDF. The words are the court's; only the structure is
+  ours. The judgment applies the CJEU's Planet49 ruling (C-673/17) in the same case; § 15 Abs. 3
+  TMG, which it reads in conformity with Article 5(3) of the ePrivacy Directive, has since been
+  replaced by § 25 TTDSG, now TDDDG.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-BGH-2020-0528" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.bundesgerichtshof.de/">
+  <meta>
+    <title>Bundesgerichtshof, Urteil vom 28. Mai 2020 – I ZR 7/16 (Cookie-Einwilligung II)</title>
+    <short>BGH I ZR 7/16 Cookie-Einwilligung II</short>
+    <date>2020-05-28</date>
+  </meta>
+
+  <section num="Leitsätze" title="Leitsätze" source="I_ZR___7-16A.pdf">
+    <paragraph num="a)" lga:provision="DE-BGH-2020-0528-ls-a" lga:citation="BGH I ZR 7/16, Leitsatz a)" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2016/I_ZR___7-16A.pdf?__blob=publicationFile&amp;v=1" lga:interprets="DE-UWG-s7-2" lga:regulates="Consent">Eine wirksame Einwilligung in telefonische Werbung im Sinne von § 7 Abs. 2 Nr. 2 Fall 1 UWG liegt nicht vor, wenn der Verbraucher bei der Erklärung der Einwilligung mit einem aufwendigen Verfahren der Abwahl von in einer Liste aufgeführten Partnerunternehmen konfrontiert wird, das ihn dazu veranlassen kann, von der Ausübung dieser Wahl Abstand zu nehmen und stattdessen dem Unternehmer die Wahl der Werbepartner zu überlassen. Weiß der Verbraucher mangels Kenntnisnahme vom Inhalt der Liste und ohne Ausübung des Wahlrechts nicht, die Produkte oder Dienstleistungen welcher Unternehmer die Einwilligung erfasst, liegt keine Einwilligung für den konkreten Fall vor.</paragraph>
+    <paragraph num="b)" lga:provision="DE-BGH-2020-0528-ls-b" lga:citation="BGH I ZR 7/16, Leitsatz b)" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2016/I_ZR___7-16A.pdf?__blob=publicationFile&amp;v=1" lga:interprets="EU-2002-58-art5-3" lga:regulates="TerminalEquipmentAccess Consent">§ 15 Abs. 3 Satz 1 TMG ist mit Blick auf Art. 5 Abs. 3 Satz 1 der Richtlinie 2002/58/EG dahin richtlinienkonform auszulegen, dass der Diensteanbieter Cookies zur Erstellung von Nutzungsprofilen für Zwecke der Werbung oder Marktforschung nur mit Einwilligung des Nutzers einsetzen darf. Eine elektronisch zu erklärende Einwilligung des Nutzers, die den Abruf von auf seinem Endgerät gespeicherten Informationen mithilfe von Cookies im Wege eines voreingestellten Ankreuzkästchens gestattet, genügt diesem Einwilligungserfordernis nicht.</paragraph>
+  </section>
+</law>

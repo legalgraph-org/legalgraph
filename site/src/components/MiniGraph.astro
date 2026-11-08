@@ -1,0 +1,40 @@
+---
+// The resource and its nearest neighbours (at most 24). Click a node to open its page.
+import { graphPath } from "../lib/links";
+import { localeOfPath } from "../lib/routes";
+
+interface Props {
+  focus: string;
+}
+
+const { focus } = Astro.props;
+---
+
+<section class="card p-0">
+  <div class="flex items-center justify-between border-b border-border px-4 py-2 text-sm">
+    <span class="text-muted-foreground">Neighbours in the graph · click a node to open it</span>
+    <a href={graphPath(focus, localeOfPath(Astro.url.pathname))}>Explore in the full graph →</a>
+  </div>
+  <div class="mini-graph h-80" data-focus={focus}></div>
+</section>
+
+<script>
+  import { loadGraphData, mountGraph, nodeHref } from "../scripts/graph-view";
+
+  const containers = [...document.querySelectorAll<HTMLElement>(".mini-graph")];
+  if (containers.length) {
+    const data = await loadGraphData();
+    for (const container of containers) {
+      const focus = container.dataset.focus!;
+      if (!data.nodes.has(focus)) {
+        container.closest("section")?.remove();
+        continue;
+      }
+      const cy = mountGraph(container, { data, ids: data.around(focus, 24), focus, compact: true });
+      cy.on("tap", "node", (event) => {
+        const node = data.nodes.get(event.target.id());
+        if (node && node.id !== focus) window.location.href = nodeHref(node);
+      });
+    }
+  }
+</script>

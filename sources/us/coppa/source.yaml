@@ -1,0 +1,24 @@
+# Children's Online Privacy Protection Rule (16 CFR Part 312): the official annual edition of the
+# Code of Federal Regulations (revised as of 1 January 2026, carrying the 2025 amendments) in its
+# XML from govinfo.gov. § 312.4 requires the online notice — a prominent link to a children's
+# privacy policy on the home or landing page and where data is collected — and § 312.6 requires
+# verifiable parental consent before collecting children's personal information.
+id: us/coppa
+title: Children's Online Privacy Protection Rule, 16 CFR Part 312
+jurisdiction: US
+language: en
+publisher: U.S. Government Publishing Office, govinfo.gov
+kind: official-xml
+licence: public-domain
+licence_basis: "17 U.S.C. § 105: works of the US federal government are not protected by copyright"
+originals:
+  - file: CFR-2026-title16-vol1-part312.xml
+    page: https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312
+    url: https://www.govinfo.gov/content/pkg/CFR-2026-title16-vol1/xml/CFR-2026-title16-vol1-part312.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "2026 annual edition of Title 16 (revised as of 1 January 2026): includes the 2025 amendments (published 22 April 2025, in force 23 June 2025, most duties enforceable from 22 April 2026)."
+    retrieved_on: 2026-11-02
+    sha256: f8d370aab1537f18d7f7a987fe1449846a50ec5ba3ec4ec71f62010163a0f2ae
+annotated: CFR-2026-title16-vol1-part312.annotated.xml

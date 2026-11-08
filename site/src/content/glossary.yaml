@@ -1,0 +1,655 @@
+# The glossary (/glossary): the abbreviations the site's own pages use.
+# One entry per term, keyed by its id (the anchor on the glossary page). Shared fields:
+#   kind      law | body | business | standard | licence | service (the glossary's filter)
+#   graph     the term's identifier in the graph, if it is in it (links to /id/<graph>)
+#   source    where to read the official text or definition
+#   original  what the letters stand for, in their own language; shown where the page's language differs
+#   seeAlso   other glossary ids
+# and per language (en, de):
+#   match       how the abbreviation is written in that language's prose; the first use on a page
+#               becomes a tooltip linked to the entry (lib/glossary.ts)
+#   expansion   what it stands for, in that language
+#   short       the tooltip: one sentence
+#   body        the entry: plain text, paragraphs separated by a blank line
+
+ddg:
+  kind: law
+  graph: DE-DDG
+  source: { label: "gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/ddg/" }
+  original: { text: "Digitale-Dienste-Gesetz", lang: de }
+  seeAlso: [tdddg, mstv]
+  en:
+    match: [DDG]
+    expansion: "German Digital Services Act"
+    short: "The German law that says what a business website must show about who runs it, the imprint (Impressum)."
+    body: |
+      The Digitale-Dienste-Gesetz took effect on 14 May 2024, replacing the Telemediengesetz (TMG). It puts the EU's Digital Services Act into practice in Germany and carries over the older rules for online services.
+
+      For websites, § 5 is the one that matters: a business offering digital services must keep its name, address, contact details and, where they exist, its register entry and VAT number easy to find and permanently available.
+  de:
+    match: [DDG]
+    expansion: "Digitale-Dienste-Gesetz"
+    short: "Das deutsche Gesetz, das festlegt, was eine geschäftsmäßige Website über ihren Betreiber zeigen muss: das Impressum."
+    body: |
+      Das Digitale-Dienste-Gesetz gilt seit dem 14. Mai 2024 und hat das Telemediengesetz (TMG) abgelöst. Es setzt den Digital Services Act der EU in Deutschland um und übernimmt die älteren Regeln für Online-Dienste.
+
+      Für Websites zählt vor allem § 5: Wer geschäftsmäßig digitale Dienste anbietet, muss Namen, Anschrift, Kontaktdaten und, soweit vorhanden, Registereintrag und Umsatzsteuer-ID leicht erkennbar und ständig verfügbar halten.
+
+gdpr:
+  kind: law
+  graph: EU-2016-679
+  source: { label: "EUR-Lex", url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj" }
+  seeAlso: [edpb, dsk, ccpa]
+  en:
+    match: [GDPR]
+    expansion: "General Data Protection Regulation"
+    short: "The EU regulation on personal data: when it may be processed, what people must be told, and their rights over it."
+    body: |
+      Regulation (EU) 2016/679 has applied since 25 May 2018, directly in every EU member state and, through the EEA Agreement, in Iceland, Liechtenstein and Norway. It applies to anyone processing personal data in the EU, and to businesses elsewhere that offer goods or services to people in the EU or monitor their behaviour.
+
+      On a website it shows up as the privacy policy (Articles 13 and 14 say what it must contain), as consent where processing rests on it, and as the rights of access, rectification, erasure (the "right to be forgotten"), portability and objection.
+  de:
+    match: [DSGVO]
+    expansion: "Datenschutz-Grundverordnung"
+    short: "Die EU-Verordnung über personenbezogene Daten: wann sie verarbeitet werden dürfen, worüber Menschen zu informieren sind und welche Rechte sie haben."
+    body: |
+      Die Verordnung (EU) 2016/679 gilt seit dem 25. Mai 2018 unmittelbar in allen EU-Mitgliedstaaten und über das EWR-Abkommen in Island, Liechtenstein und Norwegen. Sie gilt für jede Verarbeitung personenbezogener Daten in der EU und für Unternehmen anderswo, die Menschen in der EU Waren oder Dienstleistungen anbieten oder ihr Verhalten beobachten.
+
+      Auf einer Website zeigt sie sich in der Datenschutzerklärung (Art. 13 und 14 legen ihren Inhalt fest), in der Einwilligung, wo die Verarbeitung auf ihr beruht, und in den Rechten auf Auskunft, Berichtigung, Löschung („Recht auf Vergessenwerden“), Datenübertragbarkeit und Widerspruch.
+
+tdddg:
+  kind: law
+  graph: DE-TDDDG
+  source: { label: "gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/ttdsg/" }
+  original: { text: "Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz", lang: de }
+  seeAlso: [gdpr, ddg]
+  en:
+    match: [TDDDG]
+    expansion: "German Telecommunications and Digital Services Data Protection Act"
+    short: "The German law behind cookie banners: storing or reading information on a user's device needs consent, unless it is strictly necessary."
+    body: |
+      The TDDDG is the German implementation of the EU's ePrivacy rules. It was called TTDSG until 14 May 2024, when it was renamed alongside the new DDG.
+
+      Its § 25 is the cookie rule: a website may store information on a visitor's device, or read it from there, only with the visitor's consent, unless that is strictly necessary to provide the service the visitor asked for. It covers cookies, local storage, tracking pixels and fingerprinting alike.
+  de:
+    match: [TDDDG]
+    expansion: "Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz"
+    short: "Das deutsche Gesetz hinter Cookie-Bannern: Informationen auf dem Gerät speichern oder auslesen braucht eine Einwilligung, außer es ist unbedingt erforderlich."
+    body: |
+      Das TDDDG setzt die ePrivacy-Regeln der EU in Deutschland um. Bis zum 14. Mai 2024 hieß es TTDSG und wurde mit dem neuen DDG umbenannt.
+
+      § 25 ist die Cookie-Regel: Eine Website darf Informationen auf dem Gerät eines Besuchers nur mit dessen Einwilligung speichern oder auslesen, außer das ist unbedingt erforderlich, um den gewünschten Dienst bereitzustellen. Das gilt gleichermaßen für Cookies, Local Storage, Tracking-Pixel und Fingerprinting.
+
+mstv:
+  kind: law
+  graph: DE-MStV
+  original: { text: "Medienstaatsvertrag", lang: de }
+  seeAlso: [ddg]
+  en:
+    match: [MStV]
+    expansion: "Interstate Media Treaty"
+    short: "The treaty of the German Länder on media; it requires a named person responsible for a website's journalistic and editorial content."
+    body: |
+      The Medienstaatsvertrag replaced the Interstate Broadcasting Treaty in November 2020. It is a treaty between the sixteen German Länder, each of which enacts it as its own law.
+
+      For websites, its § 18(2) matters: online media with journalistic and editorial content, such as articles and news, must name a person responsible for that content, with their address, usually in the imprint.
+  de:
+    match: [MStV]
+    expansion: "Medienstaatsvertrag"
+    short: "Der Staatsvertrag der Länder über Medien; er verlangt für journalistisch-redaktionelle Inhalte einer Website eine verantwortliche Person."
+    body: |
+      Der Medienstaatsvertrag hat im November 2020 den Rundfunkstaatsvertrag abgelöst. Er ist ein Vertrag zwischen den sechzehn Ländern, die ihn jeweils als eigenes Recht erlassen.
+
+      Für Websites zählt § 18 Abs. 2: Telemedien mit journalistisch-redaktionellen Inhalten, etwa Artikeln und Nachrichten, müssen eine verantwortliche Person mit Anschrift nennen, meist im Impressum.
+
+ustg:
+  kind: law
+  graph: DE-UStG
+  source: { label: "gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/ustg_1980/" }
+  original: { text: "Umsatzsteuergesetz", lang: de }
+  seeAlso: [vat]
+  en:
+    match: [UStG]
+    expansion: "German Value Added Tax Act"
+    short: "The German VAT law; it issues the VAT identification number and exempts small businesses from charging VAT."
+    body: |
+      Two of its rules appear on this site. § 27a provides for the VAT identification number, which a business that has one must show in its imprint. § 19 is the small business rule (Kleinunternehmerregelung): below a turnover threshold, a business charges no VAT, and so may have no VAT number to show.
+  de:
+    match: [UStG]
+    expansion: "Umsatzsteuergesetz"
+    short: "Das deutsche Umsatzsteuerrecht; es regelt die Umsatzsteuer-Identifikationsnummer und befreit Kleinunternehmer von der Umsatzsteuer."
+    body: |
+      Zwei seiner Regeln kommen auf dieser Website vor. § 27a sieht die Umsatzsteuer-Identifikationsnummer vor, die ein Unternehmen, das eine hat, im Impressum angeben muss. § 19 ist die Kleinunternehmerregelung: Unterhalb einer Umsatzgrenze erhebt ein Unternehmen keine Umsatzsteuer und hat daher womöglich keine Nummer anzugeben.
+
+vsbg:
+  kind: law
+  graph: DE-VSBG
+  source: { label: "gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/vsbg/" }
+  original: { text: "Verbraucherstreitbeilegungsgesetz", lang: de }
+  en:
+    match: [VSBG]
+    expansion: "German Consumer Dispute Resolution Act"
+    short: "The German law on out-of-court settlement of consumer disputes; larger businesses must say whether they take part."
+    body: |
+      § 36 requires a business with more than ten employees that has a website or uses standard terms to say whether it is willing or obliged to take part in dispute resolution before a consumer arbitration board, and if so, to name the board. Many businesses state that they are neither willing nor obliged.
+  de:
+    match: [VSBG]
+    expansion: "Verbraucherstreitbeilegungsgesetz"
+    short: "Das deutsche Gesetz über die außergerichtliche Beilegung von Verbraucherstreitigkeiten; größere Unternehmen müssen sagen, ob sie teilnehmen."
+    body: |
+      § 36 verpflichtet ein Unternehmen mit mehr als zehn Beschäftigten, das eine Website unterhält oder AGB verwendet, anzugeben, ob es bereit oder verpflichtet ist, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, und wenn ja, die Stelle zu nennen. Viele Unternehmen erklären, dass sie weder bereit noch verpflichtet sind.
+
+urhg:
+  kind: law
+  source: { label: "gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/urhg/" }
+  original: { text: "Urheberrechtsgesetz", lang: de }
+  en:
+    match: [UrhG]
+    expansion: "German Copyright Act"
+    short: "The German copyright law; its § 5 leaves laws and other official works free of copyright."
+    body: |
+      § 5 UrhG says that laws, ordinances, official decrees and court decisions enjoy no copyright protection. That is why legalgraph can keep and publish the German law texts unchanged, outside its own licences.
+  de:
+    match: [UrhG]
+    expansion: "Urheberrechtsgesetz"
+    short: "Das deutsche Urheberrecht; nach seinem § 5 sind Gesetze und andere amtliche Werke urheberrechtlich nicht geschützt."
+    body: |
+      § 5 UrhG bestimmt, dass Gesetze, Verordnungen, amtliche Erlasse und Gerichtsentscheidungen keinen urheberrechtlichen Schutz genießen. Deshalb kann legalgraph die deutschen Gesetzestexte unverändert aufbewahren und veröffentlichen, außerhalb seiner eigenen Lizenzen.
+
+ccpa:
+  kind: law
+  graph: US-CA-CCPA
+  source: { label: "California Legislative Information", url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5" }
+  seeAlso: [gdpr]
+  en:
+    match: [CCPA]
+    expansion: "California Consumer Privacy Act"
+    short: "California's privacy law: consumers may learn what businesses collect about them, have it deleted, and stop its sale or sharing."
+    body: |
+      The California Consumer Privacy Act of 2018, extended by the California Privacy Rights Act of 2020, applies to for-profit businesses that collect personal information of California residents and pass a size threshold.
+
+      It is often compared with the GDPR, but works differently: rather than needing a legal basis for processing, it gives consumers rights to know, delete and correct their data and to opt out of its sale or sharing. That is the "Do Not Sell or Share My Personal Information" link on many websites.
+  de:
+    match: [CCPA]
+    expansion: "California Consumer Privacy Act"
+    short: "Das Datenschutzgesetz Kaliforniens: Verbraucher können erfahren, was Unternehmen über sie sammeln, es löschen lassen und dem Verkauf oder der Weitergabe widersprechen."
+    body: |
+      Der California Consumer Privacy Act von 2018, erweitert durch den California Privacy Rights Act von 2020, gilt für gewinnorientierte Unternehmen, die personenbezogene Daten von Einwohnern Kaliforniens erheben und eine Größenschwelle überschreiten.
+
+      Er wird oft mit der DSGVO verglichen, funktioniert aber anders: Statt eine Rechtsgrundlage für die Verarbeitung zu verlangen, gibt er Verbrauchern Rechte auf Auskunft, Löschung und Berichtigung und das Recht, dem Verkauf oder der Weitergabe zu widersprechen. Daher stammt der Link „Do Not Sell or Share My Personal Information“ auf vielen Websites.
+
+pecr:
+  kind: law
+  graph: GB-SI-2003-2426
+  source: { label: "legislation.gov.uk", url: "https://www.legislation.gov.uk/uksi/2003/2426" }
+  seeAlso: [tdddg, gdpr]
+  en:
+    match: [PECR]
+    expansion: "Privacy and Electronic Communications Regulations 2003"
+    short: "The UK rules on cookies and electronic marketing, the UK's version of the EU ePrivacy Directive."
+    body: |
+      The Privacy and Electronic Communications (EC Directive) Regulations 2003 implemented the ePrivacy Directive in the UK and stayed in force after Brexit. Regulation 6 requires consent for cookies and similar technologies that are not strictly necessary; regulation 22 restricts marketing emails to people who have agreed to them, with a narrow exception for existing customers.
+  de:
+    match: [PECR]
+    expansion: "Privacy and Electronic Communications Regulations 2003"
+    short: "Die britischen Regeln für Cookies und elektronisches Marketing, die britische Fassung der ePrivacy-Richtlinie der EU."
+    body: |
+      Die Privacy and Electronic Communications (EC Directive) Regulations 2003 haben die ePrivacy-Richtlinie im Vereinigten Königreich umgesetzt und gelten nach dem Brexit fort. Regulation 6 verlangt eine Einwilligung für Cookies und ähnliche Techniken, die nicht unbedingt erforderlich sind; Regulation 22 beschränkt Werbe-E-Mails auf Menschen, die zugestimmt haben, mit einer engen Ausnahme für Bestandskunden.
+
+lcen:
+  kind: law
+  graph: FR-LCEN
+  source: { label: "Légifrance", url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164" }
+  original: { text: "Loi pour la confiance dans l'économie numérique", lang: fr }
+  en:
+    match: [LCEN]
+    expansion: "French Law on Confidence in the Digital Economy"
+    short: "The French law of 2004 behind the mentions légales: who publishes a website, and what an online seller must disclose."
+    body: |
+      Loi n° 2004-575 of 21 June 2004 implemented the e-Commerce Directive in France. It requires website publishers to identify themselves, the French counterpart of the German imprint, and sets the information online sellers must give.
+  de:
+    match: [LCEN]
+    expansion: "Französisches Gesetz über das Vertrauen in die digitale Wirtschaft"
+    short: "Das französische Gesetz von 2004 hinter den mentions légales: wer eine Website veröffentlicht und was ein Online-Händler angeben muss."
+    body: |
+      Das Gesetz Nr. 2004-575 vom 21. Juni 2004 hat die E-Commerce-Richtlinie in Frankreich umgesetzt. Es verpflichtet Website-Betreiber, sich zu nennen, das französische Gegenstück zum deutschen Impressum, und legt fest, welche Angaben Online-Händler machen müssen.
+
+ecg:
+  kind: law
+  graph: AT-ECG
+  source: { label: "RIS", url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20001703" }
+  original: { text: "E-Commerce-Gesetz", lang: de }
+  seeAlso: [ddg]
+  en:
+    match: [ECG]
+    expansion: "Austrian E-Commerce Act"
+    short: "Austria's law implementing the e-Commerce Directive; its § 5 sets the information a website must give about its provider."
+    body: |
+      The E-Commerce-Gesetz of 2001 is the Austrian counterpart of the German DDG for websites: § 5 lists the information about the provider that must be easy to find and permanently available, from name and address to register entry and VAT number.
+  de:
+    match: [ECG]
+    expansion: "E-Commerce-Gesetz"
+    short: "Das österreichische Gesetz zur Umsetzung der E-Commerce-Richtlinie; sein § 5 legt fest, was eine Website über ihren Anbieter angeben muss."
+    body: |
+      Das E-Commerce-Gesetz von 2001 ist für Websites das österreichische Gegenstück zum deutschen DDG: § 5 nennt die Angaben über den Anbieter, die leicht auffindbar und ständig verfügbar sein müssen, von Name und Anschrift bis zu Registereintrag und Umsatzsteuer-ID.
+
+edpb:
+  kind: body
+  source: { label: "edpb.europa.eu", url: "https://www.edpb.europa.eu/" }
+  seeAlso: [gdpr, dsk]
+  en:
+    match: [EDPB]
+    expansion: "European Data Protection Board"
+    short: "The EU body of the national data protection authorities; its guidelines say how they read the GDPR."
+    body: |
+      Set up by the GDPR (Article 68), the board brings together the heads of the national data protection authorities and the European Data Protection Supervisor. Its guidelines, such as those on consent, are not law, but they show how the authorities that enforce the GDPR read it.
+  de:
+    match: [EDSA, EDPB]
+    expansion: "Europäischer Datenschutzausschuss"
+    short: "Das EU-Gremium der nationalen Datenschutzbehörden; seine Leitlinien zeigen, wie sie die DSGVO lesen."
+    body: |
+      Der durch die DSGVO (Art. 68) eingerichtete Ausschuss vereint die Leitungen der nationalen Datenschutzbehörden und den Europäischen Datenschutzbeauftragten. Seine Leitlinien, etwa zur Einwilligung, sind kein Gesetz, zeigen aber, wie die Behörden, die die DSGVO durchsetzen, sie verstehen.
+
+dsk:
+  kind: body
+  source: { label: "datenschutzkonferenz-online.de", url: "https://www.datenschutzkonferenz-online.de/" }
+  original: { text: "Datenschutzkonferenz", lang: de }
+  seeAlso: [edpb, tdddg]
+  en:
+    match: [DSK]
+    expansion: "German Data Protection Conference"
+    short: "The joint body of Germany's federal and state data protection authorities; its guidance shows how they apply the law."
+    body: |
+      The Konferenz der unabhängigen Datenschutzaufsichtsbehörden des Bundes und der Länder publishes resolutions and guidance, for example on cookies and tracking under the TDDDG. Like the EDPB's guidelines, it is not law, but it shows how the authorities will decide.
+  de:
+    match: [DSK]
+    expansion: "Datenschutzkonferenz"
+    short: "Das gemeinsame Gremium der Datenschutzaufsichtsbehörden von Bund und Ländern; seine Orientierungshilfen zeigen, wie sie das Recht anwenden."
+    body: |
+      Die Konferenz der unabhängigen Datenschutzaufsichtsbehörden des Bundes und der Länder veröffentlicht Beschlüsse und Orientierungshilfen, etwa zu Cookies und Tracking nach dem TDDDG. Wie die Leitlinien des EDSA sind sie kein Gesetz, zeigen aber, wie die Behörden entscheiden werden.
+
+eu:
+  kind: body
+  graph: EU
+  source: { label: "european-union.europa.eu", url: "https://european-union.europa.eu/" }
+  en:
+    match: [EU]
+    expansion: "European Union"
+    short: "The union of 27 European states; its regulations apply directly in each of them, and its directives are put into national law."
+    body: |
+      Two kinds of EU law matter most for websites. A regulation, such as the GDPR, applies directly in every member state. A directive, such as the e-Commerce or ePrivacy Directive, sets a result that each member state reaches through its own law, which is why the same duty can come from a different act in each country.
+  de:
+    match: [EU]
+    expansion: "Europäische Union"
+    short: "Der Verbund von 27 europäischen Staaten; seine Verordnungen gelten in jedem davon unmittelbar, seine Richtlinien werden in nationales Recht umgesetzt."
+    body: |
+      Zwei Arten von EU-Recht zählen für Websites am meisten. Eine Verordnung wie die DSGVO gilt in jedem Mitgliedstaat unmittelbar. Eine Richtlinie wie die E-Commerce- oder die ePrivacy-Richtlinie gibt ein Ziel vor, das jeder Mitgliedstaat mit eigenem Recht erreicht; deshalb kann dieselbe Pflicht in jedem Land aus einem anderen Gesetz kommen.
+
+eur-lex:
+  kind: service
+  source: { label: "eur-lex.europa.eu", url: "https://eur-lex.europa.eu/" }
+  seeAlso: [eli, ecli]
+  en:
+    match: [EUR-Lex]
+    expansion: "The EU's official portal for its law"
+    short: "The official website for EU law: the Official Journal, legislation, case law and their consolidated versions."
+    body: |
+      EUR-Lex is run by the Publications Office of the EU. Its texts come from Cellar, the Office's repository, which is where legalgraph downloads EU law, in the official Formex XML.
+  de:
+    match: [EUR-Lex]
+    expansion: "Das offizielle Portal der EU für ihr Recht"
+    short: "Die offizielle Website für EU-Recht: Amtsblatt, Rechtsakte, Rechtsprechung und ihre konsolidierten Fassungen."
+    body: |
+      EUR-Lex wird vom Amt für Veröffentlichungen der EU betrieben. Seine Texte kommen aus Cellar, dem Archiv des Amts, aus dem legalgraph das EU-Recht im amtlichen Formex-XML herunterlädt.
+
+vat:
+  kind: business
+  seeAlso: [ustg]
+  en:
+    match: [VAT]
+    expansion: "Value added tax"
+    short: "The EU's sales tax; a business registered for it has a VAT identification number, which its imprint must show."
+    body: |
+      The VAT identification number identifies a business for VAT across the EU, for example DE123456789 in Germany. In Germany it is issued by the Bundeszentralamt für Steuern under § 27a UStG, and the DDG requires a business that has one to show it on its website.
+  de:
+    match: []
+    expansion: "Umsatzsteuer (Mehrwertsteuer)"
+    short: "Die Umsatzsteuer der EU; ein dafür registriertes Unternehmen hat eine Umsatzsteuer-Identifikationsnummer, die ins Impressum gehört."
+    body: |
+      Die Umsatzsteuer-Identifikationsnummer kennzeichnet ein Unternehmen für die Umsatzsteuer in der ganzen EU, in Deutschland etwa DE123456789. Sie wird vom Bundeszentralamt für Steuern nach § 27a UStG vergeben, und das DDG verlangt, dass ein Unternehmen, das eine hat, sie auf seiner Website angibt.
+
+hrb:
+  kind: business
+  original: { text: "Handelsregister Abteilung B", lang: de }
+  seeAlso: [gmbh, ddg]
+  en:
+    match: [HRB]
+    expansion: "Commercial register, section B"
+    short: "The part of the German commercial register for companies such as a GmbH or AG; with the court, its number identifies the company."
+    body: |
+      German commercial registers are kept by the local courts (Amtsgerichte). Section A holds sole traders and partnerships, section B (HRB) companies such as the GmbH and the AG. A register entry is written with the court and the number, for example "Amtsgericht Charlottenburg, HRB 272803 B", and a registered business must show it in its imprint.
+  de:
+    match: [HRB]
+    expansion: "Handelsregister Abteilung B"
+    short: "Der Teil des Handelsregisters für Kapitalgesellschaften wie GmbH oder AG; zusammen mit dem Gericht kennzeichnet seine Nummer das Unternehmen."
+    body: |
+      Die Handelsregister werden von den Amtsgerichten geführt. Abteilung A enthält Einzelkaufleute und Personengesellschaften, Abteilung B (HRB) Kapitalgesellschaften wie GmbH und AG. Ein Eintrag wird mit Gericht und Nummer angegeben, etwa „Amtsgericht Charlottenburg, HRB 272803 B“, und ein eingetragenes Unternehmen muss ihn im Impressum nennen.
+
+gmbh:
+  kind: business
+  original: { text: "Gesellschaft mit beschränkter Haftung", lang: de }
+  seeAlso: [hrb]
+  en:
+    match: [GmbH]
+    expansion: "German limited liability company"
+    short: "The most common German company form: its owners are liable only with the company's capital, at least 25,000 euros."
+    body: |
+      A GmbH is entered in the commercial register (section B) and must name its legal form, its managing directors and its register entry in its imprint. Aimix GmbH, which maintains legalgraph, is one.
+  de:
+    match: [GmbH]
+    expansion: "Gesellschaft mit beschränkter Haftung"
+    short: "Die häufigste deutsche Gesellschaftsform: Die Gesellschafter haften nur mit dem Kapital der Gesellschaft, mindestens 25.000 Euro."
+    body: |
+      Eine GmbH wird im Handelsregister (Abteilung B) eingetragen und muss im Impressum Rechtsform, Geschäftsführung und Registereintrag angeben. Die Aimix GmbH, die legalgraph betreibt, ist eine.
+
+xml:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/XML/" }
+  seeAlso: [html]
+  en:
+    match: [XML]
+    expansion: "Extensible Markup Language"
+    short: "A text format that marks up a document's structure with tags; many official portals publish their laws in it."
+    body: |
+      XML is a W3C standard. Official XML, such as the EU's Formex or the XML of gesetze-im-internet.de, marks paragraphs, points and footnotes as such, so a program can find a provision without guessing. legalgraph adds its own marks (lga:) to these files and proves that removing them gives back the original.
+  de:
+    match: [XML]
+    expansion: "Extensible Markup Language"
+    short: "Ein Textformat, das die Struktur eines Dokuments mit Tags auszeichnet; viele amtliche Portale veröffentlichen ihre Gesetze darin."
+    body: |
+      XML ist ein W3C-Standard. Amtliches XML wie Formex der EU oder das XML von gesetze-im-internet.de zeichnet Absätze, Nummern und Fußnoten als solche aus, sodass ein Programm eine Vorschrift findet, ohne zu raten. legalgraph fügt diesen Dateien eigene Markierungen (lga:) hinzu und weist nach, dass ihr Entfernen das Original zurückgibt.
+
+html:
+  kind: standard
+  source: { label: "WHATWG", url: "https://html.spec.whatwg.org/" }
+  seeAlso: [xml, pdf]
+  en:
+    match: [HTML]
+    expansion: "HyperText Markup Language"
+    short: "The language of web pages. Where a portal publishes a law only as a web page, legalgraph keeps the page and transcribes the text."
+    body: |
+      HTML describes how a page looks rather than how a law is structured, so it is no substitute for official XML. Where it is all a portal offers, legalgraph keeps the page unchanged and transcribes the text into its own XML schema, checked word for word against the page.
+  de:
+    match: [HTML]
+    expansion: "HyperText Markup Language"
+    short: "Die Sprache von Webseiten. Wo ein Portal ein Gesetz nur als Webseite veröffentlicht, bewahrt legalgraph die Seite auf und überträgt den Text."
+    body: |
+      HTML beschreibt, wie eine Seite aussieht, nicht, wie ein Gesetz aufgebaut ist, und ersetzt daher kein amtliches XML. Wo ein Portal nur HTML bietet, bewahrt legalgraph die Seite unverändert auf und überträgt den Text in sein eigenes XML-Schema, Wort für Wort gegen die Seite geprüft.
+
+pdf:
+  kind: standard
+  seeAlso: [html]
+  en:
+    match: [PDF]
+    expansion: "Portable Document Format"
+    short: "A format for fixed page layouts (ISO 32000). Laws published only as PDF are kept as published and transcribed."
+    body: |
+      A PDF reproduces printed pages, not the structure of a text. Where a law or a guideline is published only as PDF, legalgraph keeps the file and transcribes the text, as for HTML.
+  de:
+    match: [PDF]
+    expansion: "Portable Document Format"
+    short: "Ein Format für feste Seitenlayouts (ISO 32000). Nur als PDF veröffentlichte Gesetze werden so aufbewahrt und übertragen."
+    body: |
+      Ein PDF gibt gedruckte Seiten wieder, nicht die Struktur eines Texts. Wo ein Gesetz oder eine Leitlinie nur als PDF erscheint, bewahrt legalgraph die Datei auf und überträgt den Text, wie bei HTML.
+
+json:
+  kind: standard
+  source: { label: "json.org", url: "https://www.json.org/" }
+  seeAlso: [json-ld]
+  en:
+    match: [JSON]
+    expansion: "JavaScript Object Notation"
+    short: "A simple text format for data, read by almost every programming language; the rules and citations downloads use it."
+    body: |
+      JSON is standardised as ECMA-404 and RFC 8259. legalgraph publishes its rules and its citations as JSON, for tools that do not need RDF.
+  de:
+    match: [JSON]
+    expansion: "JavaScript Object Notation"
+    short: "Ein einfaches Textformat für Daten, das fast jede Programmiersprache liest; die Downloads der Regeln und Zitierungen nutzen es."
+    body: |
+      JSON ist als ECMA-404 und RFC 8259 standardisiert. legalgraph veröffentlicht seine Regeln und Zitierungen als JSON, für Werkzeuge, die kein RDF brauchen.
+
+json-ld:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/TR/json-ld11/" }
+  seeAlso: [json, rdf]
+  en:
+    match: [JSON-LD]
+    expansion: "JSON for Linking Data"
+    short: "RDF written as JSON: the whole graph, readable by any JSON tool, with its links intact."
+    body: |
+      JSON-LD is a W3C standard. Each resource becomes a JSON object carrying its identifier, so the data stays linked even for tools that know nothing of RDF. Search engines read it too: the schema.org markup on this site's pages is JSON-LD.
+  de:
+    match: [JSON-LD]
+    expansion: "JSON for Linking Data"
+    short: "RDF als JSON geschrieben: der ganze Graph, lesbar für jedes JSON-Werkzeug, mit erhaltenen Verknüpfungen."
+    body: |
+      JSON-LD ist ein W3C-Standard. Jede Ressource wird zu einem JSON-Objekt mit ihrer Kennung, sodass die Daten auch für Werkzeuge ohne RDF-Kenntnis verknüpft bleiben. Suchmaschinen lesen es ebenfalls: Das schema.org-Markup auf den Seiten dieser Website ist JSON-LD.
+
+rdf:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/RDF/" }
+  seeAlso: [turtle, sparql, shacl, json-ld]
+  en:
+    match: [RDF]
+    expansion: "Resource Description Framework"
+    short: "The W3C's model for data as a graph: every statement is a triple of subject, predicate and object, each named by a URL."
+    body: |
+      "§ 5(1) DDG requires the register entry" is one triple: the provision, the relation, the information item. Because every part is a URL, data from different sources can be merged and queried together without converting it. legalgraph is written in RDF, in the Turtle syntax.
+  de:
+    match: [RDF]
+    expansion: "Resource Description Framework"
+    short: "Das Modell des W3C für Daten als Graph: Jede Aussage ist ein Tripel aus Subjekt, Prädikat und Objekt, jedes durch eine URL benannt."
+    body: |
+      „§ 5 Abs. 1 DDG verlangt die Registerangabe“ ist ein Tripel: die Vorschrift, die Beziehung, die Informationspflicht. Weil jeder Teil eine URL ist, lassen sich Daten aus verschiedenen Quellen ohne Umwandlung zusammenführen und gemeinsam abfragen. legalgraph ist in RDF geschrieben, in der Syntax Turtle.
+
+turtle:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/TR/turtle/" }
+  seeAlso: [rdf, sparql]
+  en:
+    match: [Turtle]
+    expansion: "Terse RDF Triple Language"
+    short: "A W3C syntax for writing RDF as plain text, readable by people as well as programs; its files end in .ttl."
+    body: |
+      Turtle is only a way of writing the graph down: the same triples can be written as N-Triples or JSON-LD, and legalgraph publishes all three. Turtle is the one people read and edit, because prefixes keep it short and each statement ends in a full stop.
+  de:
+    match: [Turtle]
+    expansion: "Terse RDF Triple Language"
+    short: "Eine W3C-Syntax, um RDF als einfachen Text zu schreiben, für Menschen wie für Programme lesbar; ihre Dateien enden auf .ttl."
+    body: |
+      Turtle ist nur eine Schreibweise für den Graphen: Dieselben Tripel lassen sich als N-Triples oder JSON-LD schreiben, und legalgraph veröffentlicht alle drei. Turtle ist die Form, die Menschen lesen und bearbeiten, weil Präfixe sie kurz halten und jede Aussage mit einem Punkt endet.
+
+sparql:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/TR/sparql11-query/" }
+  seeAlso: [rdf]
+  en:
+    match: [SPARQL]
+    expansion: "SPARQL Protocol and RDF Query Language"
+    short: "The query language for RDF graphs: it finds every match of a pattern across the whole graph."
+    body: |
+      A SPARQL query describes a pattern of triples, such as "a provision that requires the register entry, in some jurisdiction", and returns every place in the graph where it holds. The repository's queries folder has examples to run.
+  de:
+    match: [SPARQL]
+    expansion: "SPARQL Protocol and RDF Query Language"
+    short: "Die Abfragesprache für RDF-Graphen: Sie findet jede Übereinstimmung mit einem Muster im ganzen Graphen."
+    body: |
+      Eine SPARQL-Abfrage beschreibt ein Muster aus Tripeln, etwa „eine Vorschrift, die die Registerangabe verlangt, in irgendeiner Rechtsordnung“, und liefert jede Stelle im Graphen, an der es zutrifft. Der Ordner queries im Repository enthält Beispiele zum Ausführen.
+
+shacl:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/TR/shacl/" }
+  seeAlso: [rdf]
+  en:
+    match: [SHACL]
+    expansion: "Shapes Constraint Language"
+    short: "A W3C standard for rules about RDF data, such as 'every act has exactly one jurisdiction', checked by a program."
+    body: |
+      legalgraph's ontology comes with SHACL shapes: a provision marked Source checked must have a quote, an obligation must name the provisions it comes from, and so on. Validation fails if any entry breaks one.
+  de:
+    match: [SHACL]
+    expansion: "Shapes Constraint Language"
+    short: "Ein W3C-Standard für Regeln über RDF-Daten, etwa „jeder Rechtsakt hat genau eine Rechtsordnung“, von einem Programm geprüft."
+    body: |
+      Zur Ontologie von legalgraph gehören SHACL-Shapes: Eine als Source checked markierte Vorschrift muss ein Zitat haben, eine Pflicht muss die Vorschriften nennen, aus denen sie stammt, und so weiter. Die Validierung schlägt fehl, wenn ein Eintrag eine davon verletzt.
+
+skos:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/TR/skos-reference/" }
+  seeAlso: [owl]
+  en:
+    match: [SKOS]
+    expansion: "Simple Knowledge Organization System"
+    short: "A W3C standard for vocabularies: concepts with labels in several languages, definitions and broader or narrower terms."
+    body: |
+      legalgraph's controlled vocabularies, such as the information items a law may require or the types of legal act, are SKOS concept schemes, with labels in English and other languages.
+  de:
+    match: [SKOS]
+    expansion: "Simple Knowledge Organization System"
+    short: "Ein W3C-Standard für Vokabulare: Begriffe mit Bezeichnungen in mehreren Sprachen, Definitionen und Ober- oder Unterbegriffen."
+    body: |
+      Die kontrollierten Vokabulare von legalgraph, etwa die Informationspflichten, die ein Gesetz verlangen kann, oder die Arten von Rechtsakten, sind SKOS-Begriffsschemata mit Bezeichnungen auf Englisch und in anderen Sprachen.
+
+owl:
+  kind: standard
+  source: { label: "W3C", url: "https://www.w3.org/TR/owl2-overview/" }
+  seeAlso: [skos, rdf]
+  en:
+    match: [OWL]
+    expansion: "Web Ontology Language"
+    short: "A W3C standard for defining the classes and properties of a graph: what a provision is, and how it may relate to an act."
+    body: |
+      legalgraph's ontology defines its classes (act, provision, quote, rule) and properties in OWL, and is published with the downloads.
+  de:
+    match: [OWL]
+    expansion: "Web Ontology Language"
+    short: "Ein W3C-Standard, um Klassen und Eigenschaften eines Graphen zu definieren: was eine Vorschrift ist und wie sie zu einem Rechtsakt stehen kann."
+    body: |
+      Die Ontologie von legalgraph definiert ihre Klassen (Rechtsakt, Vorschrift, Zitat, Regel) und Eigenschaften in OWL und wird mit den Downloads veröffentlicht.
+
+eli:
+  kind: standard
+  source: { label: "EUR-Lex", url: "https://eur-lex.europa.eu/eli-register/about.html" }
+  seeAlso: [ecli, eur-lex]
+  en:
+    match: [ELI]
+    expansion: "European Legislation Identifier"
+    short: "An EU standard for naming and describing legislation, with stable web addresses and an ontology; legalgraph uses its ontology."
+    body: |
+      ELI was introduced by the Council of the EU in 2012. Legislation gets addresses that follow a pattern, and its metadata a shared vocabulary. EUR-Lex and many national gazettes use it, so describing acts with ELI makes legalgraph's data meet theirs.
+  de:
+    match: [ELI]
+    expansion: "European Legislation Identifier"
+    short: "Ein EU-Standard, um Rechtsvorschriften zu benennen und zu beschreiben, mit stabilen Webadressen und einer Ontologie; legalgraph nutzt die Ontologie."
+    body: |
+      ELI wurde 2012 vom Rat der EU eingeführt. Rechtsvorschriften erhalten Adressen nach einem Muster, ihre Metadaten ein gemeinsames Vokabular. EUR-Lex und viele nationale Gesetzblätter verwenden es; wer Rechtsakte mit ELI beschreibt, macht seine Daten mit ihren vereinbar.
+
+ecli:
+  kind: standard
+  source: { label: "e-Justice Portal", url: "https://e-justice.europa.eu/topics/legislation-and-case-law/european-case-law-identifier-ecli_en" }
+  seeAlso: [eli]
+  en:
+    match: [ECLI]
+    expansion: "European Case Law Identifier"
+    short: "A uniform identifier for court decisions in Europe, such as ECLI:EU:C:2016:612: country, court, year and number."
+    body: |
+      The ECLI was introduced by the Council of the EU in 2011. Courts that publish one give every decision the same kind of identifier, whatever their country, so a decision can be cited and found unambiguously. legalgraph records it where the court publishes one.
+  de:
+    match: [ECLI]
+    expansion: "European Case Law Identifier"
+    short: "Eine einheitliche Kennung für Gerichtsentscheidungen in Europa, etwa ECLI:EU:C:2016:612: Land, Gericht, Jahr und Nummer."
+    body: |
+      Der ECLI wurde 2011 vom Rat der EU eingeführt. Gerichte, die ihn vergeben, kennzeichnen jede Entscheidung gleich, unabhängig vom Land, sodass sie eindeutig zitiert und gefunden werden kann. legalgraph verzeichnet ihn, wo das Gericht einen veröffentlicht.
+
+sha-256:
+  kind: standard
+  source: { label: "NIST FIPS 180-4", url: "https://csrc.nist.gov/pubs/fips/180-4/upd1/final" }
+  en:
+    match: [SHA-256]
+    expansion: "Secure Hash Algorithm, 256 bits"
+    short: "A fingerprint of a file: any change, even of one character, gives a completely different value."
+    body: |
+      legalgraph records the SHA-256 of every law text it downloads. Anyone can fetch the text again, compute its SHA-256 and compare: if the values match, the file is exactly the one the graph was built from.
+  de:
+    match: [SHA-256]
+    expansion: "Secure Hash Algorithm, 256 Bit"
+    short: "Ein Fingerabdruck einer Datei: Jede Änderung, auch nur eines Zeichens, ergibt einen völlig anderen Wert."
+    body: |
+      legalgraph verzeichnet den SHA-256 jedes heruntergeladenen Gesetzestexts. Jeder kann den Text erneut abrufen, seinen SHA-256 berechnen und vergleichen: Stimmen die Werte überein, ist die Datei genau die, aus der der Graph gebaut wurde.
+
+w3c:
+  kind: body
+  source: { label: "w3.org", url: "https://www.w3.org/" }
+  seeAlso: [rdf, shacl]
+  en:
+    match: [W3C]
+    expansion: "World Wide Web Consortium"
+    short: "The body that writes the open standards of the web, among them RDF, SPARQL, SHACL, SKOS and OWL."
+    body: |
+      Founded in 1994 by Tim Berners-Lee, the W3C develops web standards in the open, with its members and the public. Building on its standards means legalgraph's data works with tools nobody here wrote.
+  de:
+    match: [W3C]
+    expansion: "World Wide Web Consortium"
+    short: "Das Gremium, das die offenen Standards des Webs schreibt, darunter RDF, SPARQL, SHACL, SKOS und OWL."
+    body: |
+      Das 1994 von Tim Berners-Lee gegründete W3C entwickelt Webstandards offen, mit seinen Mitgliedern und der Öffentlichkeit. Auf seinen Standards aufzubauen heißt, dass die Daten von legalgraph mit Werkzeugen funktionieren, die niemand hier geschrieben hat.
+
+url:
+  kind: standard
+  en:
+    match: [URL]
+    expansion: "Uniform Resource Locator"
+    short: "A web address. Every entry in legalgraph has one, which a browser opens as a page and a program can fetch as data."
+    body: |
+      legalgraph's identifiers are URLs under legalgraph.org/id/ and legalgraph.org/vocab/. They are kept stable, so they can be cited in articles, papers and code.
+  de:
+    match: [URL]
+    expansion: "Uniform Resource Locator"
+    short: "Eine Webadresse. Jeder Eintrag in legalgraph hat eine, die ein Browser als Seite öffnet und ein Programm als Daten abrufen kann."
+    body: |
+      Die Kennungen von legalgraph sind URLs unter legalgraph.org/id/ und legalgraph.org/vocab/. Sie bleiben stabil und können daher in Artikeln, Aufsätzen und Code zitiert werden.
+
+cc-by:
+  kind: licence
+  source: { label: "creativecommons.org", url: "https://creativecommons.org/licenses/by/4.0/" }
+  seeAlso: [mit]
+  en:
+    match: [CC BY 4.0, CC BY]
+    expansion: "Creative Commons Attribution 4.0 International"
+    short: "The licence of legalgraph's data: use it for anything, commercial included, as long as you credit it."
+    body: |
+      CC BY 4.0 lets anyone copy, adapt and build on the data, for any purpose, on one condition: credit the source, link the licence and say what was changed. The downloads page gives a credit line to use.
+  de:
+    match: [CC BY 4.0, CC BY]
+    expansion: "Creative Commons Namensnennung 4.0 International"
+    short: "Die Lizenz der Daten von legalgraph: für jeden Zweck nutzbar, auch kommerziell, solange die Quelle genannt wird."
+    body: |
+      CC BY 4.0 erlaubt jedem, die Daten zu kopieren, zu bearbeiten und darauf aufzubauen, für jeden Zweck, unter einer Bedingung: Quelle nennen, Lizenz verlinken und Änderungen angeben. Die Download-Seite nennt eine passende Quellenangabe.
+
+mit:
+  kind: licence
+  source: { label: "opensource.org", url: "https://opensource.org/license/mit" }
+  seeAlso: [cc-by]
+  en:
+    match: [MIT]
+    expansion: "MIT License"
+    short: "The licence of legalgraph's code: a short, permissive licence that allows any use if the copyright notice is kept."
+    body: |
+      Named after the Massachusetts Institute of Technology, where it was first used, the MIT License lets anyone use, change and redistribute the code, also in closed products, provided the licence text and copyright notice go with it.
+  de:
+    match: [MIT]
+    expansion: "MIT-Lizenz"
+    short: "Die Lizenz des Codes von legalgraph: eine kurze, freizügige Lizenz, die jede Nutzung erlaubt, wenn der Urheberrechtsvermerk erhalten bleibt."
+    body: |
+      Benannt nach dem Massachusetts Institute of Technology, wo sie zuerst verwendet wurde, erlaubt die MIT-Lizenz, den Code zu nutzen, zu ändern und weiterzugeben, auch in geschlossenen Produkten, sofern Lizenztext und Urheberrechtsvermerk mitgehen.

@@ -1,0 +1,46 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lg:US-CA9-2019-0115 lgo:caseNumber "No. 17-55504" ;
+    lgo:illustrates lg:US-R-ada-accessibility ;
+    rdfs:comment "Title III of the ADA applies to a website and app connected to a physical place of public accommodation (Domino's restaurants). The Ninth Circuit reversed the dismissal and sent the case back; whether the site was accessible was left to the trial court. The Supreme Court declined to review it."@en .
+
+lg:US-CA-SFSC-2022-0824-sephora
+    lgo:hasOutcome lg:US-CA-SFSC-2022-0824-sephora-outcome-1 , lg:US-CA-SFSC-2022-0824-sephora-outcome-2 ;
+    lgo:illustrates lg:US-CA-R-do-not-sell ;
+    rdfs:comment "The first public enforcement of the CCPA: Sephora let third-party tracking technologies on its site collect data in exchange for analytics and ads, which counts as a sale, without saying so and without honouring Global Privacy Control. Settled by stipulated judgment, without an admission of liability."@en .
+
+lg:US-CA-SFSC-2022-0824-sephora-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Settlement ;
+    lgo:against "Sephora USA, Inc." ;
+    lgo:amount 1200000.0 ;
+    lgo:currency "USD" ;
+    lgo:statedIn lg:US-CA-SFSC-2022-0824-sephora-p17 ;
+    lgo:forBreachOf lg:US-CA-CCPA-1798-120-a , lg:US-CA-CCPA-1798-135-a ;
+    lgo:sanctionedUnder lg:US-CA-CCPA-1798-199-90-a ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:US-CA-SFSC-2022-0824-sephora-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:Injunction ;
+    lgo:against "Sephora USA, Inc." ;
+    lgo:statedIn lg:US-CA-SFSC-2022-0824-sephora-p12 , lg:US-CA-SFSC-2022-0824-sephora-p11 ;
+    lgo:forBreachOf lg:US-CA-CCPA-1798-120-a , lg:US-CA-CCPA-1798-135-a ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Disclose the sale of personal information and process opt-out requests sent by Global Privacy Control."@en .
+
+lg:US-CA-CPPA-2025-0307-honda lgo:caseNumber "ENF23-V-HO-2" ;
+    lgo:hasOutcome lg:US-CA-CPPA-2025-0307-honda-outcome-1 ;
+    lgo:illustrates lg:US-CA-R-do-not-sell , lg:US-CA-R-request-methods ;
+    rdfs:comment "The California Privacy Protection Agency's first enforcement decision: Honda asked for more information than needed to opt out, made consumers verify themselves for opt-out requests, and its cookie tool let consumers 'Allow All' in one step while opting out took more. A stipulated final order."@en .
+
+lg:US-CA-CPPA-2025-0307-honda-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Fine ;
+    lgo:against "American Honda Motor Co., Inc." ;
+    lgo:amount 632500.0 ;
+    lgo:currency "USD" ;
+    lgo:statedIn lg:US-CA-CPPA-2025-0307-honda-p75 ;
+    lgo:forBreachOf lg:US-CA-CCPA-1798-120-a , lg:US-CA-CCPA-1798-135-a ;
+    lgo:sanctionedUnder lg:US-CA-CCPA-1798-155-a ;
+    lgo:reviewStatus lgv:SourceChecked .

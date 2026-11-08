@@ -1,0 +1,21 @@
+---
+// The page-width wrapper every band shares: 1440px max and the side
+// padding; `prose` narrows it to reading width (articles, legal pages).
+interface Props {
+  as?: "div" | "section" | "header" | "footer" | "nav" | "article";
+  width?: "page" | "prose";
+  class?: string;
+}
+
+const { as: Tag = "div", width = "page", class: extra } = Astro.props;
+---
+
+<Tag
+  class:list={[
+    "mx-auto w-full px-4 sm:px-6 lg:px-8",
+    width === "prose" ? "max-w-(--container-prose)" : "max-w-(--container-page)",
+    extra,
+  ]}
+>
+  <slot />
+</Tag>

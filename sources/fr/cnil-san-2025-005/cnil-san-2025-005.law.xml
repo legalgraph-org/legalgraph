@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CNIL, délibération de la formation restreinte n° SAN-2025-005 du 1er septembre 2025 (SHEIN), the
+  finding on the consent window and the fine, written in schemas/law.xsd from the saved legifrance
+  page. The words are the CNIL's; only the structure is ours. The CNIL's English courtesy
+  translation is the parallel version (cnil-san-2025-005.en.law.xml).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="FR-CNIL-SAN-2025-005" lga:jurisdiction="FR" lga:act-type="AuthorityDecision"
+     lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182271/">
+  <meta>
+    <title>Délibération de la formation restreinte n° SAN-2025-005 du 1er septembre 2025</title>
+    <short>CNIL SAN-2025-005</short>
+    <date>2025-09-01</date>
+  </meta>
+
+  <section num="112." title="Sur la liberté du consentement" source="san-2025-005.fragment.html">
+    <paragraph num="112." lga:provision="FR-CNIL-SAN-2025-005-p112" lga:citation="CNIL SAN-2025-005, para. 112" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182271/" lga:interprets="FR-LIL-art82-2" lga:regulates="Consent">La formation restreinte considère que le consentement recueilli par la société via cette fenêtre n’est pas libre pour deux raisons. D’une part, l’acceptation inconditionnelle de l’ensemble des cookies est en effet présentée par la société comme étant la seule option des utilisateurs s’ils souhaitent poursuivre la navigation sur le site " shein.com ". D’autre part, la fenêtre ne fait pas état des moyens dont disposent les utilisateurs pour refuser le dépôt de cookies. La formation restreinte relève notamment la présence d’un bouton permettant d’accepter immédiatement les cookies mais l’absence d’un moyen analogue pour pouvoir les refuser aussi facilement et en un seul clic.</paragraph>
+  </section>
+
+  <section num="Dispositif" title="Par ces motifs" source="san-2025-005.fragment.html">
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2025-005-d1" lga:citation="CNIL SAN-2025-005, dispositif, amende" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182271/" lga:applies="FR-LIL-art82-2">de prononcer à l’encontre de la société INFINITE STYLES SERVICES CO. LIMITED, une amende administrative d’un montant de cent cinquante millions d’euros (150 000 000 €) au regard du manquement constitué à l’article 82 de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique ;</paragraph>
+  </section>
+</law>

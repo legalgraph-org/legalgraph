@@ -1,0 +1,378 @@
+/*
+ * Patterns: the few class names that stand for a repeated combination, so pages say what a thing
+ * is (a card, a control, a tag) instead of repeating its utilities. Everything is built from the
+ * semantic roles of tokens.css, so a pattern works in every theme.
+ */
+
+@utility text-brand-gradient {
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@utility bg-cta-gradient {
+  background: var(--gradient-cta);
+}
+
+@utility bg-header {
+  background: var(--gradient-header);
+}
+
+/* The soft glow behind the home hero. */
+@utility bg-glow {
+  background:
+    radial-gradient(60rem 28rem at 12% -10%, color-mix(in oklab, var(--teal-600) 13%, transparent), transparent),
+    radial-gradient(50rem 28rem at 92% 0%, color-mix(in oklab, var(--blue-700) 11%, transparent), transparent);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 25%, transparent);
+  }
+  a,
+  button,
+  [role="button"],
+  summary {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  /* Links in running content. Navigation, buttons and cards opt out with .no-underline. */
+  main a:not(.no-underline) {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklab, var(--primary) 35%, transparent);
+    text-underline-offset: 2px;
+  }
+  main a:not(.no-underline):hover {
+    text-decoration-color: var(--primary);
+  }
+  main h1 {
+    @apply text-h3 font-bold tracking-tight text-balance sm:text-[2rem];
+  }
+  main h2 {
+    @apply mt-10 mb-3 text-xl font-semibold;
+  }
+  dt {
+    @apply text-sm text-muted-foreground;
+  }
+  dd {
+    @apply mb-2;
+  }
+}
+
+@layer components {
+  /* A bordered surface. As a link it lifts on hover. */
+  .card {
+    @apply rounded-xl border bg-card p-4 shadow-xs;
+  }
+  a.card {
+    @apply no-underline transition hover:border-primary hover:shadow-md;
+    color: inherit;
+  }
+
+  /* Small form controls and toggle buttons (inputs, selects, filter chips). */
+  .control {
+    @apply rounded-md border border-border-strong bg-card px-2 py-0.5 text-foreground;
+  }
+  .control[aria-pressed="true"],
+  .control.is-active {
+    @apply border-foreground bg-foreground text-background;
+  }
+
+  /*
+   * A small label coloured by meaning: add a tone (tone-checked, tone-draft, tone-reviewed,
+   * tone-requires, tone-defines). One variable drives the tint, the text and the ring.
+   */
+  .tag,
+  .xml-mla,
+  .xml-mla-value {
+    --_tone: var(--text-2);
+    @apply inline-flex items-center rounded-sm px-1 text-[0.95em];
+    background: color-mix(in oklab, var(--_tone) 13%, var(--background));
+    color: color-mix(in oklab, var(--_tone) 75%, var(--text));
+  }
+  .tag.pill {
+    @apply rounded-full px-2 py-0.5 text-xs font-medium;
+    box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--_tone) 25%, transparent);
+  }
+  .tone-checked {
+    --_tone: var(--color-tone-checked);
+  }
+  .tone-draft {
+    --_tone: var(--color-tone-draft);
+  }
+  .tone-reviewed {
+    --_tone: var(--color-tone-reviewed);
+  }
+  .tone-requires,
+  .xml-mla,
+  .xml-mla-value {
+    --_tone: var(--color-tone-requires);
+  }
+  .tone-defines {
+    --_tone: var(--color-tone-defines);
+  }
+
+  /* "Not legal advice" and other cautions. */
+  .notice {
+    @apply rounded-lg border p-3 text-sm;
+    border-color: color-mix(in oklab, var(--accent) 35%, var(--background));
+    background: color-mix(in oklab, var(--accent) 7%, var(--background));
+    color: color-mix(in oklab, var(--accent) 55%, var(--text));
+  }
+
+  /* Small caps line above a heading. */
+  .eyebrow {
+    @apply text-sm font-semibold tracking-wide text-primary uppercase;
+  }
+  /* The paragraph under a page title. */
+  .lead {
+    @apply text-lead text-muted-foreground;
+  }
+
+  .law-text {
+    @apply font-serif text-[15px] leading-relaxed whitespace-pre-wrap;
+  }
+  .table,
+  .prose table {
+    @apply w-full border-collapse text-sm;
+  }
+  .table th,
+  .prose th {
+    @apply border-b border-border-strong px-2 py-1.5 text-left font-medium text-muted-foreground;
+  }
+  .table td,
+  .prose td {
+    @apply border-b px-2 py-1.5 align-top;
+  }
+
+  /* Annotated XML on law-text pages. */
+  .xml-tag {
+    color: var(--sky-600);
+  }
+  .xml-attr,
+  .xml-value {
+    @apply text-muted-foreground;
+  }
+  .xml-mla {
+    @apply font-semibold;
+  }
+  .xml-mla-value {
+    @apply px-0;
+  }
+
+  /* Code on a dark band, in any theme. */
+  .code-block,
+  .prose pre {
+    @apply overflow-x-auto rounded-lg p-3 font-mono text-xs;
+    background: var(--navy-900);
+    color: var(--white);
+  }
+}
+
+/*
+ * Rendered Markdown (articles, legal pages), styled without the typography plugin.
+ */
+@layer components {
+  .prose {
+    @apply leading-7 text-foreground;
+  }
+  .prose :is(h2, h3, h4) {
+    @apply text-brand-gradient;
+  }
+  .prose h2 {
+    @apply mt-10 mb-3 text-h3 font-bold;
+  }
+  .prose h3 {
+    @apply mt-8 mb-2 text-lg font-semibold;
+  }
+  .prose h4 {
+    @apply mt-6 mb-2 font-semibold;
+  }
+  .prose p {
+    @apply my-4;
+  }
+  .prose :is(ul, ol) {
+    @apply my-4 pl-6;
+  }
+  .prose ul {
+    @apply list-disc;
+  }
+  .prose ol {
+    @apply list-decimal;
+  }
+  .prose li {
+    @apply my-1;
+  }
+  .prose blockquote {
+    @apply my-4 border-l-4 border-border-strong pl-4 text-muted-foreground;
+  }
+  .prose hr {
+    @apply my-8;
+  }
+  .prose code {
+    @apply rounded bg-muted px-1 py-0.5 font-mono text-[0.92em];
+  }
+  .prose pre {
+    @apply my-4 p-4 text-sm;
+  }
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+  .prose table {
+    @apply my-6;
+  }
+}
+
+/*
+ * Glossary terms in the site's own text (lib/glossary-markup.ts): a dashed
+ * underline, and on hover or keyboard focus a tooltip with what the abbreviation stands for. A click
+ * opens its glossary entry. CSS only.
+ */
+@layer components {
+  a.glossary-abbr,
+  .prose a.glossary-abbr {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed color-mix(in oklab, currentColor 60%, transparent);
+    cursor: help;
+  }
+  a.glossary-abbr:hover {
+    border-bottom-color: var(--primary);
+  }
+  a.glossary-abbr:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  .glossary-abbr abbr {
+    text-decoration: none;
+  }
+  .glossary-tip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 30;
+    width: 18rem;
+    max-width: 80vw;
+    margin-bottom: 0.5rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0.6rem;
+    background: var(--navy-900);
+    color: var(--white);
+    box-shadow: 0 12px 28px -12px rgb(0 0 0 / 0.45);
+    font-family: var(--font-sans, inherit);
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: none;
+    white-space: normal;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-50%);
+    transition: opacity 0.15s;
+  }
+  .glossary-abbr:hover .glossary-tip,
+  .glossary-abbr:focus-visible .glossary-tip {
+    opacity: 1;
+    visibility: visible;
+  }
+  .glossary-tip > span {
+    display: block;
+  }
+  .glossary-tip-title {
+    font-weight: 600;
+  }
+  .glossary-tip-original {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    color: color-mix(in oklab, var(--white) 72%, transparent);
+  }
+  .glossary-tip-short {
+    margin-top: 0.3rem;
+    color: color-mix(in oklab, var(--white) 88%, transparent);
+  }
+  /* On a phone the tooltip opens from the term's left edge, so it stays on screen. */
+  @media (max-width: 640px) {
+    .glossary-tip {
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+/*
+ * Section headings on long pages: the h2 in a card with a gradient frame, led by a badge. Method and
+ * Downloads write them with SectionHeading.astro (a badge naming the section); articles get them by
+ * default (`.prose.sectioned`, BlogPostPage), each h2 framed and numbered 01, 02 … by CSS, so the
+ * Markdown stays plain and the table of contents reads the heading's text alone.
+ */
+@layer components {
+  .section-head,
+  .prose.sectioned h2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.7rem 1.1rem 0.7rem 0.7rem;
+    border: 1.5px solid transparent;
+    border-radius: 16px;
+    background:
+      linear-gradient(90deg, color-mix(in oklab, var(--teal-600) 7%, var(--background)), var(--background) 70%) padding-box,
+      linear-gradient(90deg, var(--teal-600), var(--blue-600)) border-box;
+    box-shadow: 0 10px 24px -16px color-mix(in oklab, var(--blue-700) 55%, transparent);
+  }
+  .section-head.is-featured {
+    background:
+      linear-gradient(90deg, color-mix(in oklab, var(--teal-600) 16%, var(--background)), color-mix(in oklab, var(--blue-600) 8%, var(--background))) padding-box,
+      linear-gradient(90deg, var(--teal-600), var(--blue-600)) border-box;
+  }
+  .section-badge,
+  .prose.sectioned h2::before {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    min-width: 2.75rem;
+    height: 2.25rem;
+    padding: 0 0.55rem;
+    border-radius: 10px;
+    background: var(--gradient-brand);
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  /* The Markdown h2 is the card itself: plain text colour instead of the prose's gradient text. */
+  .prose.sectioned {
+    counter-reset: article-section;
+  }
+  .prose.sectioned h2 {
+    @apply mt-12 mb-5 leading-tight;
+    counter-increment: article-section;
+    color: var(--foreground);
+    -webkit-text-fill-color: var(--foreground);
+  }
+  .prose.sectioned h2::before {
+    content: counter(article-section, decimal-leading-zero);
+  }
+}

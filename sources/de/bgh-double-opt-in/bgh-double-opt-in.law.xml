@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BGH, Urteil vom 10. Februar 2011 – I ZR 164/09 (Double-opt-in-Verfahren), the headnotes and the
+  paragraphs the graph quotes, written in schemas/law.xsd from the BGH's own PDF. The words are
+  the court's; only the structure is ours. `legalgraph sources verify` checks each paragraph
+  against the PDF's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-BGH-2011-0210" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1">
+  <meta>
+    <title>Bundesgerichtshof, Urteil vom 10. Februar 2011 – I ZR 164/09 (Double-opt-in-Verfahren)</title>
+    <short>BGH I ZR 164/09</short>
+    <date>2011-02-10</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="I_ZR_164-09.pdf">
+    <paragraph lga:provision="DE-BGH-2011-0210-tenor-1" lga:citation="BGH I ZR 164/09, Tenor 1"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:applies="DE-UWG-s7-2">Die Revision gegen das Urteil des 14. Zivilsenats des Oberlandesgerichts Dresden vom 22. September 2009 wird zurückgewiesen.</paragraph>
+  </section>
+
+  <section num="Leitsätze" title="Leitsätze" source="I_ZR_164-09.pdf">
+    <paragraph num="a)" lga:provision="DE-BGH-2011-0210-ls-a" lga:citation="BGH I ZR 164/09, Leitsatz a)"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2" lga:regulates="Consent">Die Regelung des § 7 Abs. 2 Nr. 2 UWG, wonach Telefonwerbung gegenüber Verbrauchern generell nur nach deren vorheriger ausdrücklicher Einwilligung zulässig ist (sog. "opt-in"), steht mit dem Unionsrecht im Einklang.</paragraph>
+    <paragraph num="b)" lga:provision="DE-BGH-2011-0210-ls-b" lga:citation="BGH I ZR 164/09, Leitsatz b)"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2" lga:regulates="Consent">Für den Nachweis des Einverständnisses ist es erforderlich, dass der Werbende die konkrete Einverständniserklärung jedes einzelnen Verbrauchers vollständig dokumentiert, was im Fall einer elektronisch übermittelten Einverständniserklärung deren Speicherung und die jederzeitige Möglichkeit eines Ausdrucks voraussetzt.</paragraph>
+    <paragraph num="c)" lga:provision="DE-BGH-2011-0210-ls-c" lga:citation="BGH I ZR 164/09, Leitsatz c)"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2" lga:regulates="Consent">Durch eine Bestätigungsmail im elektronischen Double-opt-in-Verfahren wird weder ein Einverständnis des Verbrauchers mit Werbeanrufen belegt, noch führt sie für sich allein zu einer Beweiserleichterung zugunsten des Werbenden.</paragraph>
+    <paragraph num="d)" lga:provision="DE-BGH-2011-0210-ls-d" lga:citation="BGH I ZR 164/09, Leitsatz d)"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2">Will sich der Verbraucher auch nach Bestätigung seiner E-Mail-Adresse im Double-opt-in-Verfahren darauf berufen, dass er die unter dieser Adresse abgesandte Einwilligung in E-Mail-Werbung nicht abgegeben hat, trägt er dafür die Darlegungslast.</paragraph>
+    <paragraph num="e)" lga:provision="DE-BGH-2011-0210-ls-e" lga:citation="BGH I ZR 164/09, Leitsatz e)"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2">Kann der Verbraucher darlegen, dass die per E-Mail übermittelte Bestätigung nicht von ihm stammt, war die Werbezusendung auch dann wettbewerbswidrig, wenn die E-Mail-Adresse im Double-opt-in-Verfahren gewonnen wurde (im Anschluss an BGH, Urteil vom 11. März 2004 - I ZR 81/01, GRUR 2004, 517 - E-Mail-Werbung I).</paragraph>
+  </section>
+
+  <section num="Gründe" title="Entscheidungsgründe" source="I_ZR_164-09.pdf">
+    <paragraph lga:provision="DE-BGH-2011-0210-rn30" lga:citation="BGH I ZR 164/09, Rn. 30"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2">a) Für die Einwilligung trägt die Beklagte die Darlegungs- und Beweislast (vgl. BGH, Urteil vom 11. März 2004 - I ZR 81/01, GRUR 2004, 517, 519 = WRP 2004, 731 - E-Mail-Werbung I). Sie muss jeweils konkret in der Person des Angerufenen vorliegen. Das Berufungsgericht hat deshalb mit Recht angenommen, dass es nicht genügt, dass die Beklagte nach ihrer Darstellung allgemein Werbeanrufe nicht unverlangt durchführen lässt.</paragraph>
+    <paragraph lga:provision="DE-BGH-2011-0210-rn31" lga:citation="BGH I ZR 164/09, Rn. 31"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2" lga:regulates="Consent">Für den Nachweis des Einverständnisses ist es erforderlich, dass der Werbende die konkrete Einverständniserklärung jedes einzelnen Verbrauchers vollständig dokumentiert. Im Fall einer elektronisch übermittelten Einverständniserklärung setzt das deren Speicherung und die jederzeitige Möglichkeit voraus, sie auszudrucken. Die Speicherung ist dem Werbenden ohne weiteres möglich und zumutbar. Verfahren, bei denen unklar ist, ob eine Einverständniserklärung tatsächlich von dem angerufenen Verbraucher stammt, sind für den erforderlichen Nachweis ungeeignet.</paragraph>
+    <paragraph lga:provision="DE-BGH-2011-0210-rn36" lga:citation="BGH I ZR 164/09, Rn. 36"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2">Im Übrigen kann ein elektronisch durchgeführtes Double-opt-in-Verfahren ein tatsächlich fehlendes Einverständnis von Verbrauchern mit Werbeanrufen nicht ersetzen.</paragraph>
+    <paragraph lga:provision="DE-BGH-2011-0210-rn37" lga:citation="BGH I ZR 164/09, Rn. 37"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&amp;v=1"
+      lga:interprets="DE-UWG-s7-2" lga:regulates="Consent">Geht ein Teilnahmeantrag elektronisch ein, so kann dessen Absender durch eine E-Mail um Bestätigung seines Teilnahmewunsches gebeten werden. Nach Eingang der erbetenen Bestätigung kann angenommen werden, dass der Antrag tatsächlich von der angegebenen E-Mail-Adresse stammt. Hat der Verbraucher durch Setzen eines Häkchens in dem Teilnahmeformular bestätigt, dass er mit der Übersendung von Werbung einverstanden ist, ist grundsätzlich hinreichend dokumentiert, dass er in E-Mail-Werbung an diese E-Mail-Adresse ausdrücklich eingewilligt hat (vgl. LG Berlin, K &amp; R 2007, 430, 431; LG Essen, GRUR 2009, 353, 354 mit zustimmender Anmerkung Klinger; LG München I, K &amp; R 2009, 824). Nach der Rechtsprechung des Senats hat der Werbende mit einem solchen Verfahren ausreichend sichergestellt, dass es nicht aufgrund von Falscheingaben zu einer Versendung von E-Mail-Werbung kommt (vgl. BGH, GRUR 2004, 517, 519 - E-Mail-Werbung I).</paragraph>
+  </section>
+</law>

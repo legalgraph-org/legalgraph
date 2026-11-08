@@ -1,0 +1,78 @@
+---
+// The repository at a glance, for the method page: the folders that matter, what each holds, and
+// the step of the method it belongs to (linking to that section). Each path links to the folder on
+// GitHub, where everything is open for inspection.
+import type { Translate } from "../i18n/t";
+import { GITHUB_URL } from "../lib/navigation";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+type Row = { tree: string; name: string; path?: string; what: string; step?: string };
+const rows: Row[] = [
+  { tree: "", name: "legalgraph/", what: t("The repository"), path: "" },
+  { tree: "├─ ", name: "sources/", path: "sources", what: t("The official texts, byte for byte, one folder per law"), step: "1" },
+  { tree: "│  └─ ", name: "de/ddg/", path: "sources/de/ddg", what: t("One law: the Digitale-Dienste-Gesetz") },
+  { tree: "│     ├─ ", name: "source.yaml", path: "sources/de/ddg/source.yaml", what: t("Where and when it was fetched, and its SHA-256"), step: "1" },
+  { tree: "│     ├─ ", name: "BJNR0950B0024.xml", path: "sources/de/ddg/BJNR0950B0024.xml", what: t("The file from gesetze-im-internet.de, unchanged"), step: "1" },
+  { tree: "│     └─ ", name: "BJNR0950B0024.annotated.xml", path: "sources/de/ddg/BJNR0950B0024.annotated.xml", what: t("The same file with our lga: marks"), step: "2" },
+  { tree: "├─ ", name: "schemas/law.xsd", path: "schemas/law.xsd", what: t("Our XML schema, for texts published only as HTML or PDF"), step: "2" },
+  { tree: "├─ ", name: "data/", path: "data", what: t("The graph, in Turtle") },
+  { tree: "│  ├─ ", name: "extracted/", path: "data/extracted", what: t("Generated from the annotated texts, never edited"), step: "4" },
+  { tree: "│  ├─ ", name: "translations/en/", path: "data/translations/en", what: t("English for every quote in another language"), step: "3" },
+  { tree: "│  ├─ ", name: "rules/", path: "data/rules", what: t("Rules for businesses, written by hand"), step: "5" },
+  { tree: "│  └─ ", name: "cases/", path: "data/cases", what: t("Court and authority decisions, written by hand"), step: "5" },
+  { tree: "├─ ", name: "ontology/", path: "ontology", what: t("Classes, vocabularies and the SHACL shapes") },
+  { tree: "├─ ", name: "scenarios/", path: "scenarios", what: t("Example businesses and the rules they must get") },
+  { tree: "├─ ", name: "queries/", path: "queries", what: t("Example SPARQL queries") },
+  { tree: "├─ ", name: "src/legalgraph/", path: "src/legalgraph", what: t("The code: fetch, verify, extract, validate, build") },
+  { tree: "├─ ", name: "tests/", path: "tests", what: t("The tests") },
+  { tree: "└─ ", name: "site/", path: "site", what: t("This website"), step: "6" },
+];
+const href = (row: Row) => (row.path === "" ? GITHUB_URL : `${GITHUB_URL}/tree/main/${row.path}`);
+---
+
+<div class="repo-tree card overflow-x-auto p-4 text-sm">
+  <ul class="min-w-[36rem] space-y-0.5">
+    {
+      rows.map((row) => (
+        <li class="grid grid-cols-[minmax(0,19rem)_1fr_auto] items-baseline gap-x-4">
+          <span class="font-mono whitespace-pre">
+            <span class="text-muted-foreground" aria-hidden="true">
+              {row.tree}
+            </span>
+            <a href={href(row)} class="text-primary no-underline hover:underline">
+              {row.name}
+            </a>
+          </span>
+          <span class="text-muted-foreground">{row.what}</span>
+          {row.step ? (
+            <a href={`#step-${row.step}`} class="repo-step" title={t("Step {step}", { step: row.step })}>
+              {row.step}
+            </a>
+          ) : (
+            <span />
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .repo-step {
+    display: inline-grid;
+    place-items: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--primary) 14%, var(--background));
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>

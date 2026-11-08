@@ -1,0 +1,11 @@
+---
+import GlossaryPage from "../../components/pages/GlossaryPage.astro";
+import { SUPPORTED_LOCALES } from "../../i18n/locales";
+import { useT } from "../../i18n/t";
+
+export function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((locale) => ({ params: { locale } }));
+}
+---
+
+<GlossaryPage t={useT(Astro.params.locale)} />

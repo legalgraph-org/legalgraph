@@ -1,0 +1,23 @@
+# § 5 ECG (E-Commerce-Gesetz): the Austrian aviso-legal duty implementing Article 5 of the
+# e-Commerce Directive. RIS serves the consolidated text as HTML only; the fragment holding
+# § 5 is kept and the text is transcribed in schemas/law.xsd, checked word for word against it.
+id: at/ecg
+title: E-Commerce-Gesetz (§ 5)
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: ecg-5.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20001703"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_5_TextContainer_5"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Consolidated version (Fassung vom 02.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."
+    retrieved_on: 2026-11-02
+    sha256: f1487ea1eb4299c2dc18f581e17ae5b9f13c16e8085d652cb9ecf7adffc90af4
+annotated: ecg.law.xml

@@ -1,0 +1,44 @@
+# Закон України «Про забезпечення функціонування української мови як державної» (No. 2704-VIII): published by
+# the Verkhovna Rada on zakon.rada.gov.ua as HTML only. The fragment holding the law text (div#article) is
+# kept; the articles the graph uses are transcribed in schemas/law.xsd and checked word for word against it.
+# Article 27(6) requires websites of businesses registered in Ukraine to be in Ukrainian (loading it by
+# default), 27(7) does the same for mobile apps, and Article 30 requires consumer information, including in
+# online shops, in Ukrainian. The portal blocks quick successive requests and foreign traffic: `pause` spaces
+# out downloads, which may need a Ukrainian network — or save the page by hand and run `legalgraph sources
+# fetch --saved <file>`. The English original is the Rada's official translation for information (last
+# modified 13.05.2021); `verify` refuses provisions the portal's own notes show as amended after that
+# (Article 27(6) was rewritten by the Media Law in 2022, so it gets a machine translation instead).
+id: ua/language
+title: Закон України «Про забезпечення функціонування української мови як державної» (No. 2704-VIII)
+jurisdiction: UA
+language: uk
+publisher: Verkhovna Rada of Ukraine, zakon.rada.gov.ua
+kind: authored-xml
+licence: official-work
+licence_basis: "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright"
+originals:
+  - file: 2704-19.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/2704-19/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 6dfd1950c10890b4cde6c0c260802f5834f1f489586d44395a91585f24e3f1ec
+  - file: 2704-19-en.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/en/2704-19/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    role: parallel
+    language: en
+    authentic: false
+    annotated: language.en.law.xml
+    as_of: 2021-05-13
+    notes: ["official translation published for information; last modified 2021-05-13, before later amendments"]
+    retrieved_on: 2026-11-02
+    sha256: cf99ef630b6afcd3f01363523ba9668bea5e158f0b1f9dd9c7d2fff611bca9aa
+annotated: language.law.xml

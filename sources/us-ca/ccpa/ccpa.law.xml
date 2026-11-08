@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  California Civil Code §§ 1798.100 to 1798.140 (CCPA as amended by the CPRA), the parts the graph
+  quotes, written in schemas/law.xsd from the statute text the California Privacy Protection Agency
+  publishes. The words are the statute's; only the structure is ours. Where a section is quoted in
+  part, each quoted paragraph is complete as far as it goes (§ 1798.130(a) paragraphs (1) and (5),
+  § 1798.140(d) paragraph (1)). `legalgraph sources verify` checks each line against the PDF.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CA-CCPA" lga:jurisdiction="US-CA" lga:act-type="Statute"
+     lga:url="https://cppa.ca.gov/regulations/">
+  <meta>
+    <title>California Consumer Privacy Act of 2018</title>
+    <short>CCPA</short>
+    <date>2018-06-28</date>
+  </meta>
+  <section num="§ 1798.100" title="General Duties of Businesses that Collect Personal Information" source="civ-1798-100.fragment.html">
+    <paragraph num="(a)" lga:provision="US-CA-CCPA-1798-100-a" lga:citation="Cal. Civ. Code § 1798.100(a)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.100"
+               lga:regulates="PrivacyInformation">A business that controls the collection of a consumer’s personal information shall, at or before the point of collection, inform consumers of the following:
+      <list>
+        <item num="(1)" lga:requires="CategoriesOfPersonalData ProcessingPurposes">The categories of personal information to be collected and the purposes for which the categories of personal information are collected or used and whether that information is sold or shared. A business shall not collect additional categories of personal information or use personal information collected for additional purposes that are incompatible with the disclosed purpose for which the personal information was collected without providing the consumer with notice consistent with this section.</item>
+        <item num="(2)" lga:requires="CategoriesOfPersonalData ProcessingPurposes">If the business collects sensitive personal information, the categories of sensitive personal information to be collected and the purposes for which the categories of sensitive personal information are collected or used, and whether that information is sold or shared. A business shall not collect additional categories of sensitive personal information or use sensitive personal information collected for additional purposes that are incompatible with the disclosed purpose for which the sensitive personal information was collected without providing the consumer with notice consistent with this section.</item>
+        <item num="(3)" lga:requires="RetentionPeriod">The length of time the business intends to retain each category of personal information, including sensitive personal information, or if that is not possible, the criteria used to determine that period provided that a business shall not retain a consumer’s personal information or sensitive personal information for each disclosed purpose for which the personal information was collected for longer than is reasonably necessary for that disclosed purpose.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="§ 1798.120" title="Consumers’ Right to Opt Out of Sale or Sharing of Personal Information" source="civ-1798-120.fragment.html">
+    <paragraph num="(a)" lga:provision="US-CA-CCPA-1798-120-a" lga:citation="Cal. Civ. Code § 1798.120(a)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.120"
+               lga:defines="RightToOptOutOfSale">
+      <list>
+        <item num="(1)">A consumer shall have the right, at any time, to direct a business that sells or shares personal information about the consumer to third parties not to sell or share the consumer’s personal information. This right may be referred to as the right to opt out of sale or sharing.</item>
+        <item num="(2)">A business to which another business transfers the personal information of a consumer as an asset that is part of a merger, acquisition, bankruptcy, or other transaction in which the transferee assumes control of all of, or part of, the transferor shall comply with a consumer’s direction to the transferor made pursuant to this subdivision.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(b)" lga:provision="US-CA-CCPA-1798-120-b" lga:citation="Cal. Civ. Code § 1798.120(b)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.120"
+               lga:regulates="PrivacyInformation" lga:requires="DoNotSellLink">A business that sells consumers’ personal information to, or shares it with, third parties shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.135, that this information may be sold or shared and that consumers have the “right to opt out” of the sale or sharing of their personal information.</paragraph>
+  </section>
+  <section num="§ 1798.121" title="Consumers’ Right to Limit Use and Disclosure of Sensitive Personal Information" source="civ-1798-121.fragment.html">
+    <paragraph num="(a)" lga:provision="US-CA-CCPA-1798-121-a" lga:citation="Cal. Civ. Code § 1798.121(a)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.121"
+               lga:regulates="PrivacyInformation" lga:requires="LimitSensitiveDataLink">A consumer shall have the right, at any time, to direct a business that collects sensitive personal information about the consumer to limit its use of the consumer’s sensitive personal information to that use which is necessary to perform the services or provide the goods reasonably expected by an average consumer who requests those goods or services, to perform the services set forth in paragraphs (2), (4), (5), and (8) of subdivision (e) of Section 1798.140, and as authorized by regulations adopted pursuant to subparagraph (C) of paragraph (18) of subdivision (a) of Section 1798.185. A business that uses or discloses a consumer’s sensitive personal information for purposes other than those specified in this subdivision shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.135, that this information may be used, or disclosed to a service provider or contractor, for additional, specified purposes and that consumers have the right to limit the use or disclosure of their sensitive personal information.</paragraph>
+  </section>
+  <section num="§ 1798.130(a)" title="Notice, Disclosure, Correction, and Deletion Requirements" source="civ-1798-130.fragment.html">
+    <paragraph num="(1)" lga:provision="US-CA-CCPA-1798-130-a-1" lga:citation="Cal. Civ. Code § 1798.130(a)(1)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.130"
+               lga:regulates="PrivacyInformation">
+      <list>
+        <item num="(A)" lga:requires="RequestMethods">Make available to consumers two or more designated methods for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively, including, at a minimum, a toll-free telephone number. A business that operates exclusively online and has a direct relationship with a consumer from whom it collects personal information shall only be required to provide an email address for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or for requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively.</item>
+        <item num="(B)">If the business maintains an internet website, make the internet website available to consumers to submit requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(5)" lga:provision="US-CA-CCPA-1798-130-a-5" lga:citation="Cal. Civ. Code § 1798.130(a)(5)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.130"
+               lga:regulates="PrivacyInformation">Disclose the following information in its online privacy policy or policies if the business has an online privacy policy or policies and in any California-specific description of consumers’ privacy rights, or if the business does not maintain those policies, on its internet website, and update that information at least once every 12 months:
+      <list>
+        <item num="(A)" lga:requires="DataSubjectRights RequestMethods">A description of a consumer’s rights pursuant to Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125 and two or more designated methods for submitting requests, except as provided in subparagraph (A) of paragraph (1) of subdivision (a).</item>
+        <item num="(B)">For purposes of subdivision (c) of Section 1798.110:
+          <list>
+            <item num="(i)" lga:requires="CategoriesOfPersonalData">A list of the categories of personal information it has collected about consumers in the preceding 12 months by reference to the enumerated category or categories in subdivision (c) that most closely describe the personal information collected.</item>
+            <item num="(ii)" lga:requires="SourceOfPersonalData">The categories of sources from which consumers’ personal information is collected.</item>
+            <item num="(iii)" lga:requires="ProcessingPurposes">The business or commercial purpose for collecting, selling, or sharing consumers’ personal information.</item>
+            <item num="(iv)" lga:requires="Recipients">The categories of third parties to whom the business discloses consumers’ personal information.</item>
+          </list>
+        </item>
+        <item num="(C)">For purposes of paragraphs (1) and (2) of subdivision (c) of Section 1798.115, two separate lists:
+          <list>
+            <item num="(i)" lga:requires="SoldOrSharedCategories">A list of the categories of personal information it has sold or shared about consumers in the preceding 12 months by reference to the<page num="15"/> enumerated category or categories in subdivision (c) that most closely describe the personal information sold or shared, or if the business has not sold or shared consumers’ personal information in the preceding 12 months, the business shall prominently disclose that fact in its privacy policy.</item>
+            <item num="(ii)" lga:requires="Recipients">A list of the categories of personal information it has disclosed about consumers for a business purpose in the preceding 12 months by reference to the enumerated category in subdivision (c) that most closely describes the personal information disclosed, or if the business has not disclosed consumers’ personal information for a business purpose in the preceding 12 months, the business shall disclose that fact.</item>
+          </list>
+        </item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="§ 1798.135" title="Methods of Limiting Sale, Sharing, and Use of Personal Information and Use of Sensitive Personal Information" source="civ-1798-135.fragment.html">
+    <paragraph num="(a)" lga:provision="US-CA-CCPA-1798-135-a" lga:citation="Cal. Civ. Code § 1798.135(a)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.135"
+               lga:regulates="PrivacyInformation">A business that sells or shares consumers’ personal information or uses or discloses consumers’ sensitive personal information for purposes other than those authorized by subdivision (a) of Section 1798.121 shall, in a form that is reasonably accessible to consumers:
+      <list>
+        <item num="(1)" lga:requires="DoNotSellLink">Provide a clear and conspicuous link on the business’ internet homepages, titled “Do Not Sell or Share My Personal Information,” to an internet web page that enables a consumer, or a person authorized by the consumer, to opt out of the sale or sharing of the consumer’s personal information.</item>
+        <item num="(2)" lga:requires="LimitSensitiveDataLink">Provide a clear and conspicuous link on the business’ internet homepages, titled “Limit the Use of My Sensitive Personal Information,” that enables a consumer, or a person authorized by the consumer, to limit the use or disclosure of the consumer’s sensitive personal information to those uses authorized by subdivision (a) of Section 1798.121.</item>
+        <item num="(3)">At the business’ discretion, utilize a single, clearly labeled link on the business’ internet homepages, in lieu of complying with paragraphs (1) and (2), if that link easily allows a consumer to opt out of the sale or sharing of the consumer’s personal information and to limit the use or disclosure of the consumer’s sensitive personal information.</item>
+        <item num="(4)">In the event that a business responds to opt-out requests received pursuant to paragraph (1), (2), or (3) by informing the consumer of a charge for the use of any product or service, present the terms of any financial incentive offered pursuant to subdivision (b) of Section 1798.125 for the retention, use, sale, or sharing of the consumer’s personal information.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="§ 1798.135(b)" title="Opt-out preference signals" source="civ-1798-135.fragment.html">
+    <paragraph num="(1)" lga:provision="US-CA-CCPA-1798-135-b-1" lga:citation="Cal. Civ. Code § 1798.135(b)(1)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.135"
+               lga:defines="OptOutPreferenceSignal">A business shall not be required to comply with subdivision (a) if the business allows consumers to opt out of the sale or sharing of their personal information and to limit the use of their sensitive personal information through an opt-out preference signal sent with the consumer’s consent by a platform, technology, or mechanism, based on technical specifications set forth in regulations adopted pursuant to paragraph (19) of subdivision (a) of Section 1798.185, to the business indicating the consumer’s intent to opt out of the business’ sale or sharing of the consumer’s personal information or to limit the use or disclosure of the consumer’s sensitive personal information, or both.</paragraph>
+  </section>
+  <section num="§ 1798.140" title="Definitions" source="civ-1798-140.fragment.html">
+    <paragraph num="(d)" lga:provision="US-CA-CCPA-1798-140-d-1" lga:citation="Cal. Civ. Code § 1798.140(d)(1)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.140"
+               lga:defines="CcpaBusinessDefinition">“Business” means:
+      <list>
+        <item num="(1)">A sole proprietorship, partnership, limited liability company, corporation, association, or other legal entity that is organized or operated for the profit or financial benefit of its shareholders or other owners, that collects consumers’ personal information, or on the behalf of which such information is collected and that alone, or jointly with others, determines the purposes and means of the processing of consumers’ personal information, that does business in the State of California, and that satisfies one or more of the following thresholds:
+          <list>
+            <item num="(A)">As of January 1 of the calendar year, had annual gross revenues in excess of twenty-five million dollars ($25,000,000) in the preceding calendar year, as adjusted pursuant to subdivision (d) of Section 1798.199.95.</item>
+            <item num="(B)">Alone or in combination, annually buys, sells, or shares the personal information of 100,000 or more consumers or households.</item>
+            <item num="(C)">Derives 50 percent or more of its annual revenues from selling or sharing consumers’ personal information.</item>
+          </list>
+        </item>
+      </list>
+    </paragraph>
+    <paragraph num="(ag) (1)" lga:provision="US-CA-CCPA-1798-140-ag-1" lga:citation="Cal. Civ. Code § 1798.140(ag)(1)"
+               lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.140"
+               lga:defines="ServiceProviderContract">“Service provider” means a person that processes personal information on behalf of a business and that receives from or on behalf of the business consumer’s personal information for a business purpose pursuant to a written contract, provided that the contract prohibits the person from:
+      <list>
+        <item num="(A)">Selling or sharing the personal information.</item>
+        <item num="(B)">Retaining, using, or disclosing the personal information for any purpose other than for the business purposes specified in the contract for the business, including retaining, using, or disclosing the personal information for a commercial purpose other than the business purposes specified in the contract with the business, or as otherwise permitted by this title.</item>
+        <item num="(C)">Retaining, using, or disclosing the information outside of the direct business relationship between the service provider and the business.</item>
+        <item num="(D)">Combining the personal information that the service provider receives from, or on behalf of, the business with personal information that it receives from, or on behalf of, another person or persons, or collects from its own interaction with the consumer, provided that the service provider may combine personal information to perform any business purpose as defined in regulations adopted pursuant to paragraph (9) of subdivision (a) of Section 1798.185, except as provided for in paragraph (6) of subdivision (e) of this section and in regulations adopted by the California Privacy Protection Agency. The contract may, subject to agreement with the service provider, permit the business to monitor the service provider’s compliance with the contract through measures, including, but not limited to, ongoing manual reviews and automated scans and regular assessments, audits, or other technical and operational testing at least once every 12 months.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="§ 1798.155" title="Administrative Enforcement" source="ccpa_statute.pdf">
+    <paragraph num="(a)" lga:provision="US-CA-CCPA-1798-155-a" lga:citation="Cal. Civ. Code § 1798.155(a)"
+               lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf"
+               lga:penalises="US-CA-CCPA-1798-100-a US-CA-CCPA-1798-120-a US-CA-CCPA-1798-135-a US-CA-CCPA-1798-140-ag-1">Any business, service provider, contractor, or other person that violates this title shall be liable for an administrative fine of not more than two thousand five hundred dollars ($2,500) * for each violation or seven thousand five hundred dollars ($7,500)* for each intentional violation or violations involving the personal information of consumers whom the business, service provider, contractor, or other person has actual knowledge are under 16 years of age, as adjusted pursuant to subdivision (d) of Section 1798.199.95, in<page num="47"/>an administrative enforcement action brought by the California Privacy Protection Agency.</paragraph>
+  </section>
+
+  <section num="§ 1798.199.90" title="Civil Penalties" source="ccpa_statute.pdf">
+    <paragraph num="(a)" lga:provision="US-CA-CCPA-1798-199-90-a" lga:citation="Cal. Civ. Code § 1798.199.90(a)"
+               lga:url="https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf"
+               lga:penalises="US-CA-CCPA-1798-100-a US-CA-CCPA-1798-120-a US-CA-CCPA-1798-135-a US-CA-CCPA-1798-140-ag-1">Any business, service provider, contractor, or other person that violates this title shall be subject to an injunction and liable for a civil penalty of not more than two thousand five hundred dollars ($2,500)* for each violation or seven thousand five hundred dollars ($7,500)* for each intentional violation and each violation involving the personal information of minor consumers, as adjusted pursuant subdivision (d) of Section 1798.199.95, which shall be assessed and recovered in a civil action brought in the name of the people of the State of California by the Attorney General. The court may consider the good faith cooperation of the business, service provider, contractor, or other person in determining the amount of the civil penalty.</paragraph>
+  </section>
+</law>

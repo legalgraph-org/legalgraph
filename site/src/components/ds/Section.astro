@@ -1,0 +1,31 @@
+---
+// A full-width page band (after Lumos' Section): a theme for its colours, fluid vertical spacing,
+// and the page container inside. Bands stack on bare pages (home, about, articles).
+import Container from "./Container.astro";
+
+interface Props {
+  theme?: "inherit" | "light" | "dark" | "brand" | "muted";
+  /** Vertical padding: the fluid section spacing, half of it, or none. */
+  space?: "normal" | "small" | "none";
+  width?: "page" | "prose";
+  id?: string;
+  class?: string;
+}
+
+const { theme = "inherit", space = "normal", width = "page", id, class: extra } = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={[
+    theme !== "inherit" && theme !== "muted" && `theme-${theme}`,
+    theme === "muted" && "bg-muted",
+    space === "normal" && "py-section",
+    space === "small" && "py-[calc(var(--spacing-section)/2)]",
+    extra,
+  ]}
+>
+  <Container width={width}>
+    <slot />
+  </Container>
+</section>

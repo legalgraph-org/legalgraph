@@ -1,0 +1,99 @@
+---
+// A quote paired line by line with its counterpart: the English translation, or, for an act that is
+// official in several languages (EU law), its other official language version. Side by side on wide
+// screens (or stacked, by the reader's choice), each half with its own pointer into the graph.
+import type { Quote } from "../content.config";
+import { METHOD, languageName } from "../lib/links";
+import LayoutToggle from "./LayoutToggle.astro";
+import Pointer from "./Pointer.astro";
+import Status from "./Status.astro";
+
+interface Props {
+  quote: Quote;
+}
+
+const { quote } = Astro.props;
+const translation = quote.translation;
+const version = quote.versions[0];
+const other = version
+  ? { id: version.id, lang: version.lang, text: version.text }
+  : translation?.text
+    ? { id: `${quote.id}-en`, lang: "en", text: translation.text }
+    : undefined;
+const original = quote.text.split("\n");
+const counterpart = other?.text.split("\n") ?? [];
+// Both texts keep the line structure of the law (one line per paragraph or item), so lines can be
+// paired. If they ever differ, both texts are shown whole, side by side.
+const aligned = other !== undefined && original.length === counterpart.length;
+const rows = aligned ? original.map((line, index) => [line, counterpart[index]!] as const) : [];
+---
+
+<figure class="card space-y-3" data-quote>
+  <div class="flex flex-wrap items-start justify-between gap-2">
+    <figcaption class="text-sm text-muted-foreground">
+      {languageName(quote.lang)}{!quote.official && " (translation published for information, not binding)"}
+      {version && <> and {languageName(version.lang)}{quote.official && version.official ? ", both authentic" : ""}</>}
+      {quote.retrievedOn && <> · text as of {quote.retrievedOn}</>}
+      {quote.sourceUrl && <> · <a href={quote.sourceUrl}>official source</a></>}
+      {version?.sourceUrl && version.sourceUrl !== quote.sourceUrl && <> · <a href={version.sourceUrl}>{languageName(version.lang)}</a></>}
+    </figcaption>
+    {other && <LayoutToggle />}
+  </div>
+
+  {
+    other ? (
+      <div class="pair" data-view="side">
+        <div class="pair-heads">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-muted-foreground">
+            {version
+              ? `${languageName(quote.lang)} · ${quote.official ? "authentic" : "translation for information"}`
+              : `Original · ${languageName(quote.lang)}`}
+            <Pointer id={quote.id} graph={false} />
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-muted-foreground">
+            {version ? (
+              <>{languageName(version.lang)} · {version.official ? "authentic" : "translation for information"}</>
+            ) : (
+              <>
+                English · {METHOD[translation!.method] ?? translation!.method}
+                <Status status={translation!.status} />
+              </>
+            )}
+            <Pointer id={other.id} graph={false} />
+          </div>
+        </div>
+        {aligned ? (
+          rows.map(([left, right]) => (
+            <div class="pair-row">
+              <p class="law-text" lang={quote.lang}>{left}</p>
+              <p class="law-text text-foreground/80" lang={other.lang}>{right}</p>
+            </div>
+          ))
+        ) : (
+          <div class="pair-row">
+            <p class="law-text" lang={quote.lang}>{quote.text}</p>
+            <p class="law-text text-foreground/80" lang={other.lang}>{other.text}</p>
+          </div>
+        )}
+        {version ? (
+          <p class="text-xs text-muted-foreground">
+            {quote.official && version.official
+              ? "Both texts are official and equally authentic: neither is a translation of the other."
+              : "Both texts are published by the issuing institution; only the one marked authentic is binding."}
+          </p>
+        ) : (
+          <p class="text-xs text-muted-foreground">
+            English by {translation!.by.join(", ")}{translation!.on && ` on ${translation!.on}`}
+            {translation!.reviewedBy.length > 0 && `, reviewed by ${translation!.reviewedBy.join(", ")}`}. A reading
+            aid: the original is what the law says.
+          </p>
+        )}
+      </div>
+    ) : (
+      <div>
+        <div class="mb-2"><Pointer id={quote.id} graph={false} /></div>
+        <p class="law-text" lang={quote.lang}>{quote.text}</p>
+      </div>
+    )
+  }
+</figure>

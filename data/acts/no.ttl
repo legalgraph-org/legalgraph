@@ -1,0 +1,17 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lg:NO-EHL a lgo:LegalAct ;
+    eli:title "Lov om visse sider av elektronisk handel mv. (ehandelsloven)"@no , "Act relating to certain aspects of electronic commerce (the E-Commerce Act)"@en ;
+    lgo:shortName "ehandelsloven" ;
+    eli:id_local "Lov 2003-05-23 nr. 35" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:NO ;
+    eli:date_document "2003-05-23"^^xsd:date ;
+    lgo:sourceUrl "https://lovdata.no/dokument/NL/lov/2003-05-23-35"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The Norwegian e-Commerce Directive transposition. § 8 is the provider-information duty and § 11 the pre-order disclosure; both follow the directive's Article 5 and Article 10 lists with a narrower professional-detail duty than the ECD minimum."@en .

@@ -1,0 +1,40 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:AT-ECG
+    lgo:amendmentCheck lg:AT-ECG-amendment-check .
+
+lg:AT-ECG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20001703"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "BGBl. I Nr. 182/2023" ;
+    lgo:lastKnownAmendmentDate "2023-12-07"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "RIS consolidated version (Fassung vom 02.11.2026) lists BGBl. I Nr. 182/2023 as the last of five amendments."@en .
+
+lg:AT-UGB
+    lgo:amendmentCheck lg:AT-UGB-amendment-check .
+
+lg:AT-UGB-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "BGBl. I Nr. 61/2026" ;
+    lgo:lastKnownAmendmentDate "2026-06-30"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "RIS consolidated version (Fassung vom 02.11.2026) lists BGBl. I Nr. 61/2026 as the latest amendment."@en .
+
+lg:AT-TKG-2021
+    lgo:amendmentCheck lg:AT-TKG-2021-amendment-check .
+
+lg:AT-TKG-2021-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20011678"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "BGBl. I Nr. 94/2025" ;
+    lgo:lastKnownAmendmentDate "2025-12-30"^^xsd:date ;
+    lgo:sourceIsCurrent false ;
+    rdfs:comment "RIS lists BGBl. I Nr. 94/2025 as the eighth and last amendment (§ 188 changed, in force 01.10.2026); the committed original is the 2021 promulgation BGBl."@en .

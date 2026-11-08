@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BlogPostPage from "../../../components/pages/BlogPostPage.astro";
+import { SUPPORTED_LOCALES } from "../../../i18n/locales";
+import { useT } from "../../../i18n/t";
+import { articles, type Localized } from "../../../lib/content";
+
+export async function getStaticPaths() {
+  const paths = await Promise.all(
+    SUPPORTED_LOCALES.map(async (locale) =>
+      (await articles(locale)).map((post) => ({ params: { locale, slug: post.slug }, props: { post } })),
+    ),
+  );
+  return paths.flat();
+}
+
+interface Props {
+  post: Localized<CollectionEntry<"blog">>;
+}
+---
+
+<BlogPostPage t={useT(Astro.params.locale)} post={Astro.props.post} />

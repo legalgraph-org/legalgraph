@@ -1,0 +1,16 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CA-ON-CPA
+    lgo:amendmentCheck lg:CA-ON-CPA-amendment-check .
+
+lg:CA-ON-CPA-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.ontario.ca/laws/statute/02c30"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "2025, c. 24" ;
+    lgo:lastKnownAmendmentDate "2025-12-11"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "e-Laws fragment: consolidation period from 11.12.2025; latest amending chapter cited is 2025, c. 24."@en .

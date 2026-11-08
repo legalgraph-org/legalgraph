@@ -1,0 +1,95 @@
+# Price Indication Directive (98/6/EC), consolidated version from Cellar (Formex 4): Article 6a, the
+# price-reduction rule, was inserted by Directive (EU) 2019/2161. The German Official Journal text of
+# 1998 exists only as PDF.
+# The consolidated text is a documentation tool: `legalgraph sources verify` proves every line of a quoted
+# provision reads as in the authentic Official Journal text, or occurs word for word in an amending act
+# that lists its place (`amends`: only the places of the quoted provisions). English is annotated;
+# German is a parallel language version.
+id: eu/price-indication
+title: Price Indication Directive (98/6/EC), consolidated version of 28 May 2022
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL1998L0006EN0010010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528
+    url: https://publications.europa.eu/resource/celex/01998L0006-20220528
+    fetch: zip-member
+    member: CL1998L0006EN0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 28 May 2022, prepared by the Publications Office as a documentation tool. The authentic texts are Directive 98/6/EC (OJ L 80, 18.3.1998) and its amending acts; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: a3a7174a7e43a222993d71348697e56c4c92b64d1cccce93df521345d666c589
+  - file: CL1998L0006DE0010010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01998L0006-20220528
+    url: https://publications.europa.eu/resource/celex/01998L0006-20220528
+    fetch: zip-member
+    member: CL1998L0006DE0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: a34a8b4878564b905a56607957ed68c868ba748176644152c0107ddc4b907084
+  - file: L_1998080EN.01002701.xml
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 80, 18.3.1998, p. 27"
+    url: https://publications.europa.eu/resource/celex/31998L0006
+    fetch: zip-member
+    member: L_1998080EN.01002701.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 45eb748119cfaf8cbd905618ec875fa0e932592ec662be9fb5705bbaf312ad1e
+  - file: l_08019980318de00270031.pdf
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 80 vom 18.3.1998, S. 27"
+    url: http://publications.europa.eu/resource/cellar/b8fd669f-e013-4f8a-a9e1-2ff0dfee7de6.0004.02/DOC_1
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: 4d5b973825652e56ce3fbb4c5c87120a19277240e412a2e0939ebf11ff6dfaeb
+  - file: L_2019328EN.01000701.xml
+    role: amendment
+    language: en
+    title: "Directive (EU) 2019/2161, OJ L 328, 18.12.2019, p. 7"
+    url: https://publications.europa.eu/resource/celex/32019L2161
+    fetch: zip-member
+    member: L_2019328EN.01000701.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    amends: ["Art. 6a"]
+    retrieved_on: 2026-11-02
+    sha256: 6465dbb90ff70f8416e0b1c8e7c341fcd7c1d738749670dd791d77a2914ef2eb
+  - file: L_2019328DE.01000701.xml
+    role: amendment
+    language: de
+    title: "Richtlinie (EU) 2019/2161, ABl. L 328 vom 18.12.2019, S. 7"
+    url: https://publications.europa.eu/resource/celex/32019L2161
+    fetch: zip-member
+    member: L_2019328DE.01000701.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    amends: ["Art. 6a"]
+    retrieved_on: 2026-11-02
+    sha256: f14598ee49a81452a00767449e05a6cc1f4a333d4d058c38075fc50fb39958c9
+annotated: CL1998L0006EN0010010.0001.annotated.xml

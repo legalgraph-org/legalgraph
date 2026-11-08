@@ -1,0 +1,27 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CH-DSG
+    lgo:amendmentCheck lg:CH-DSG-amendment-check .
+
+lg:CH-DSG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/2022/491/de"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Version of 07.07.2025" ;
+    lgo:lastKnownAmendmentDate "2025-07-07"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "fedlex lists 20250707 as the latest in-force version (after 20250401 and 20230901); the committed AKN is that version."@en .
+
+lg:CH-UWG
+    lgo:amendmentCheck lg:CH-UWG-amendment-check .
+
+lg:CH-UWG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/de"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Version of 01.01.2025" ;
+    lgo:lastKnownAmendmentDate "2025-01-01"^^xsd:date ;
+    rdfs:comment "fedlex lists 20250101 as the latest in-force version. No source document in the graph."@en .

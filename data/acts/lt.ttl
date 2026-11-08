@@ -1,0 +1,24 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# LT: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:LT-IVPI a lgo:LegalAct ;
+    eli:title "Informacinės visuomenės paslaugų įstatymas"@lt , "Law on Information Society Services"@en ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:LT ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.e-tar.lt/portal/en/legalAct/TAR.9A3AD7E27009/asr"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:LT-IVPI-art6-1 a lgo:Provision ;
+    eli:is_part_of lg:LT-IVPI ;
+    lgo:citation "6 straipsnio 1 dalis" ;
+    lgo:sourceUrl "https://www.e-tar.lt/portal/en/legalAct/TAR.9A3AD7E27009/asr"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:Draft .

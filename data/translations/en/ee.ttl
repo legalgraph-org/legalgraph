@@ -1,0 +1,25 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:EE-ISSA-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a9007e47bd5e92582801d3772bbe2bf45e178c090696d421bbc61a0466ae0387" ;
+    lgo:text """(1) A service provider is required to make at least the following information directly and permanently available to the recipient of the service:
+1) the name of the service provider, its registry code and the name of the relevant register, the address and other contact details of the service provider, including its e-mail address;
+2) the registration number, if the law requires registration in the register of economic activities for operating in the relevant field, or the number of the activity licence;
+3) where prices of the service are referred to, information on whether they include taxes and delivery costs;
+4) the VAT registration number, if the service provider is liable to value added tax."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:EE-ISSA-s4-1-q1 .

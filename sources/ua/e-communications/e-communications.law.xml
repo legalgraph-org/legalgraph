@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Law of Ukraine on Electronic Communications, Article 120, written in schemas/law.xsd from the portal's
+  fragment. The words are the Verkhovna Rada's (zakon.rada.gov.ua); only the structure is ours. Editorial
+  notes on amendments (in braces on the portal) are left out. `legalgraph sources verify` checks every
+  paragraph word for word against the downloaded fragment. The portal publishes no English version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="uk"
+     lga:act="UA-1089" lga:jurisdiction="UA" lga:act-type="Statute"
+     lga:url="https://zakon.rada.gov.ua/laws/show/1089-20">
+  <meta>
+    <title>Про електронні комунікації</title>
+    <date>2020-12-16</date>
+  </meta>
+
+  <section num="Стаття 120" title="Захист кінцевих користувачів від спаму" source="1089-20.fragment.html">
+    <paragraph num="1." lga:provision="UA-1089-art120-1" lga:citation="ст. 120 ч. 1 Закону «Про електронні комунікації»" lga:url="https://zakon.rada.gov.ua/laws/show/1089-20#n2138" lga:regulates="ElectronicDirectMarketing">Забороняється умисне масове розсилання електронних, текстових та/або мультимедійних повідомлень без згоди (замовлення) кінцевих користувачів (спаму) на їх адреси електронної пошти або термінальне обладнання, крім повідомлень постачальника електронних комунікаційних послуг, пов’язаних з наданням ним електронних комунікаційних та/або інформаційних послуг, а також крім особистих повідомлень кінцевих користувачів, які не носять масового характеру та розсилаються з некомерційною метою кінцевих користувачів послуг електронних комунікацій.</paragraph>
+    <paragraph num="2." lga:provision="UA-1089-art120-2" lga:citation="ст. 120 ч. 2 Закону «Про електронні комунікації»" lga:url="https://zakon.rada.gov.ua/laws/show/1089-20#n2138" lga:regulates="ElectronicDirectMarketing">Кінцеві користувачі можуть використовувати номери телефонів чи інші мережеві ідентифікатори абонента, отримані будь-якими особами у процесі продажу товарів чи надання послуг, для надсилання реклами з метою продажу товарів або послуг лише за умови наявності згоди кінцевого користувача, в тому числі в електронній формі, та якщо кінцевий користувач отримує можливість безкоштовно в будь-який час у простій і зрозумілій формі відмовитися від використання своїх даних.</paragraph>
+  </section>
+</law>

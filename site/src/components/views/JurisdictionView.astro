@@ -1,0 +1,82 @@
+---
+import { actLabel, actTitle, loadGraph, type Jurisdiction } from "../../lib/data";
+import { languageName } from "../../lib/links";
+import MiniGraph from "../MiniGraph.astro";
+import Pointer from "../Pointer.astro";
+import Refs from "../Refs.astro";
+import Status from "../Status.astro";
+import Header from "./Header.astro";
+
+interface Props {
+  jurisdiction: Jurisdiction;
+}
+
+const { jurisdiction } = Astro.props;
+const j = jurisdiction.data;
+const graph = await loadGraph();
+const acts = j.acts.map((id) => graph.acts.get(id)!).filter(Boolean);
+---
+
+<Header
+  kind={{ country: "Country", organisation: "Organisation", subdivision: "State or region" }[j.kind]}
+  title={j.label}
+  id={jurisdiction.id}
+/>
+
+<!-- The facts in one row under the title, so the acts get the full width. -->
+<dl class="card mb-8 flex flex-wrap gap-x-10 gap-y-3 px-5 py-4 text-sm">
+  <div><dt>Code</dt><dd class="mb-0 font-medium">{j.code}</dd></div>
+  {j.memberOf.length > 0 && <div><dt>Member of</dt><dd class="mb-0"><Refs ids={j.memberOf} /></dd></div>}
+  {j.languages.length > 0 && <div><dt>Official languages</dt><dd class="mb-0">{j.languages.map(languageName).join(", ")}</dd></div>}
+  {
+    j.noticeNames.length > 0 && (
+      <div>
+        <dt title="What the provider identification notice (the website's legal notice) is usually called here">Legal notice called</dt>
+        <dd class="mb-0">
+          {j.noticeNames.map((n, index) => (
+            <>
+              {index > 0 && ", "}
+              <a href="/vocab/ProviderIdentification" lang={n.lang}>{n.text}</a>
+            </>
+          ))}
+        </dd>
+      </div>
+    )
+  }
+  {j.members.length > 0 && <div class="basis-full"><dt>Members</dt><dd class="mb-0"><Refs ids={j.members} /></dd></div>}
+  {j.comment && <div class="basis-full"><dt>Note</dt><dd class="mb-0">{j.comment}</dd></div>}
+</dl>
+
+<div>
+  <h2 class="!mt-0">Legal acts ({acts.length})</h2>
+  {acts.length === 0 && <p class="text-muted-foreground">No national act recorded yet.</p>}
+  {
+    acts.length > 0 && (
+      <table class="table card max-sm:text-sm">
+        <thead>
+          <tr><th>Act</th><th>Provisions</th><th class="max-sm:hidden">Status</th></tr>
+        </thead>
+        <tbody>
+          {acts.map((act) => (
+            <tr>
+              <td>
+                <a href={`/id/${act.id}`}>{actLabel(act)}</a>
+                <div class="text-xs text-muted-foreground">{actTitle(act)}</div>
+                <div class="mt-1"><Pointer id={act.id} /></div>
+                <div class="mt-1 sm:hidden"><Status status={act.data.reviewStatus} /></div>
+              </td>
+              <td>
+                <Refs ids={act.data.provisions} />
+              </td>
+              <td class="whitespace-nowrap max-sm:hidden">
+                <Status status={act.data.reviewStatus} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )
+  }
+</div>
+
+<div class="mt-6"><MiniGraph focus={jurisdiction.id} /></div>

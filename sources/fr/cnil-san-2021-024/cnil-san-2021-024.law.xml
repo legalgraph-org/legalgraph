@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CNIL, délibération de la formation restreinte n° SAN-2021-024 du 31 décembre 2021, the decision
+  (dispositif) and the finding on the refusal mechanism, written in schemas/law.xsd from the saved
+  legifrance page. The words are the CNIL's; only the structure is ours. Two years after
+  publication legifrance replaced the company's name with [X].
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="FR-CNIL-SAN-2021-024" lga:jurisdiction="FR" lga:act-type="AuthorityDecision"
+     lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000044840532/">
+  <meta>
+    <title>Délibération de la formation restreinte n° SAN-2021-024 du 31 décembre 2021</title>
+    <short>CNIL SAN-2021-024</short>
+    <date>2021-12-31</date>
+  </meta>
+
+  <section num="Liberté du consentement" title="Sur le mécanisme de refus" source="san-2021-024.fragment.html">
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2021-024-refus" lga:citation="CNIL SAN-2021-024, mécanisme de refus" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000044840532/" lga:interprets="FR-LIL-art82-2" lga:regulates="Consent">En l’espèce, la formation restreinte rappelle que, tel qu’il ressort des constations effectuées lors du contrôle en ligne du 8 avril 2021, lorsqu’un utilisateur résidant en France se rend sur le site web " [V].com ", il peut accepter le dépôt de cookies publicitaires en une seule action, en cliquant sur le bouton intitulé " Accepter les cookies " figurant sur la première fenêtre. Elle relève qu’en revanche, pour refuser ces cookies, l’utilisateur devra effectuer pas moins de trois actions : d’abord cliquer sur le bouton intitulé " Gérer les paramètres de données " situé au-dessus du bouton " Accepter les cookies " de la première fenêtre, faire défiler l’intégralité du contenu de la seconde fenêtre, notamment pour constater que les deux boutons glissants commandant le dépôt de cookies publicitaires sont désactivés par défaut, et enfin cliquer sur le bouton " Tout accepter " situé au bas de cette seconde fenêtre.</paragraph>
+  </section>
+
+  <section num="Dispositif" title="Par ces motifs" source="san-2021-024.fragment.html">
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2021-024-d1" lga:citation="CNIL SAN-2021-024, dispositif, amende" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000044840532/" lga:applies="FR-LIL-art82-2">prononcer une amende administrative à l’encontre de la société [X] d’un montant de soixante millions d’euros (60 000 000 d’euros) au regard du manquement constitué à l’article 82 de la loi " Informatique et Libertés " ;</paragraph>
+    <paragraph num="" lga:provision="FR-CNIL-SAN-2021-024-d2" lga:citation="CNIL SAN-2021-024, dispositif, injonction" lga:url="https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000044840532/" lga:applies="FR-LIL-art82-2">prononcer à l’encontre de la société [X], une injonction de modifier, sur le site web " [V].com ", les modalités de recueil du consentement des utilisateurs situés en France aux opérations de lecture et/ou d’écriture d’informations dans leur terminal, en leur offrant un moyen de refuser ces opérations présentant une simplicité équivalente au mécanisme prévu pour leur acceptation, afin de garantir la liberté de leur consentement ; assortir l’injonction d’une astreinte de cent mille euros (100 000 euros) par jour de retard à l’issue d’un délai de trois mois suivant la notification de la présente délibération</paragraph>
+  </section>
+</law>

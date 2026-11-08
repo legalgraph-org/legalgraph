@@ -1,0 +1,28 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:SE-SFS-2002-562-s8-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "19b9050c8a8de8d72934278944f183031fbc6a42268c9448fc1374326deb663e" ;
+    lgo:text """Section 8 When a service provider provides information society services, the provider shall give information about its name, its address in the state of establishment and its e-mail address and, where applicable,
+1. its corporate identity number,
+2. its VAT registration number, and
+3. the competent licensing authority.
+If a service provider carries on a regulated professional activity, the information shall also include details of
+1. the professional title and the state in which it was obtained,
+2. the professional body or similar organisation with which the service provider is registered, and
+3. the rules that apply to the professional activity and how to access them."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-SFS-2002-562-s8-q1 .

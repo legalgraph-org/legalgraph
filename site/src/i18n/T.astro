@@ -1,0 +1,43 @@
+---
+// Renders a translated rich-text message: <T msg={t("… <0>Privacy Policy</0> …")} tags={[…]} />.
+// Text is always escaped; each <n>…</n> span is wrapped in tags[n]. No set:html.
+import { parseRichText, type RichTag } from "./rich-text";
+
+interface Props {
+  msg: string;
+  tags: readonly RichTag[];
+}
+
+const { msg, tags } = Astro.props;
+const parts = parseRichText(msg);
+const tagFor = (index: number): RichTag => {
+  const tag = tags[index];
+  if (!tag) {
+    throw new Error(`<T> has no tag ${index} for ${JSON.stringify(msg)}`);
+  }
+  return tag;
+};
+---
+
+{parts.map((part) => {
+  if (part.kind === "text") {
+    return part.text;
+  }
+  const tag = tagFor(part.index);
+  switch (tag.kind) {
+    case "link":
+      return tag.newTab ? (
+        <a href={tag.href} target="_blank" rel="noreferrer noopener">
+          {part.text}
+        </a>
+      ) : (
+        <a href={tag.href}>{part.text}</a>
+      );
+    case "strong":
+      return <strong>{part.text}</strong>;
+    case "em":
+      return <em>{part.text}</em>;
+    case "code":
+      return <code>{part.text}</code>;
+  }
+})}

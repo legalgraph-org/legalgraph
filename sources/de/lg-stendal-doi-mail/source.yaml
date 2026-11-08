@@ -1,0 +1,24 @@
+# LG Stendal, Urteil vom 12. Mai 2021 – 22 S 87/20: the double-opt-in confirmation mail must not
+# carry advertising — even a logo, a "Welcome to" line and a contact prompt exceeded what a
+# permissible transactional mail may contain (§ 7(2) UWG; ECLI:DE:LGSTEND:2021:0512.22S87.20.00).
+# Original from the official Landesrecht Sachsen-Anhalt case-law database (jportal; the
+# interactive session blocks a direct download, so the text is a browser-saved page cut to
+# the document body).
+id: de/lg-stendal-doi-mail
+title: LG Stendal, Urteil vom 12.05.2021 – 22 S 87/20 (Werbung in der Bestätigungsmail)
+jurisdiction: DE
+language: de
+publisher: Landgericht Stendal, Landesrecht Sachsen-Anhalt
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei; the text as published in the Landesrecht Sachsen-Anhalt database"
+originals:
+  - file: 22-s-87-20.fragment.html
+    url: https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771
+    page: https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771
+    fetch: html-fragment
+    selector: "div.pdfrtf__body"
+    media_type: text/html
+    retrieved_on: 2026-11-06
+    sha256: c33dd1944955ded8acbb083581136ca97d69534580aff1008415d406bf736e19
+annotated: lg-stendal-doi-mail.law.xml

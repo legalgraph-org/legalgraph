@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:ME-ZET
+    lgo:amendmentCheck lg:ME-ZET-amendment-check .
+
+lg:ME-ZET-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "http://www.podaci.net/_gCGO/propis/Zakon_o_elektronskoj/Z-etrgov04v0480-1140.html"^^xsd:anyURI ;
+    rdfs:comment "podaci.net serves the as-published 2004 text; the latest amendment could not be verified."@en .

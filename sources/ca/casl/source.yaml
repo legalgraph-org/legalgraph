@@ -1,0 +1,30 @@
+# Canada's Anti-Spam Legislation (CASL), S.C. 2010, c. 23: the official consolidated bilingual
+# XML from laws-lois. English is the annotated text; French is the official parallel version.
+# Section 6(1) (consent required for commercial electronic messages), 6(2) (sender, contact and
+# unsubscribe in the message), 10(1) (what a consent request must say) and 11(1) (the unsubscribe
+# mechanism) are annotated.
+id: ca/casl
+title: An Act to promote the efficiency and adaptability of the Canadian economy by regulating certain activities that discourage reliance on electronic means of carrying out commercial activities (S.C. 2010, c. 23)
+jurisdiction: CA
+language: en
+publisher: Department of Justice Canada, laws-lois.justice.gc.ca
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Reproduction of Federal Law Order (SI/97-5): federal enactments may be reproduced without charge or permission, if reproduced accurately and not presented as an official version"
+originals:
+  - file: E-1.6.en.xml
+    page: https://laws-lois.justice.gc.ca/eng/acts/E-1.6/
+    url: https://laws-lois.justice.gc.ca/eng/XML/E-1.6.xml
+    fetch: file
+    media_type: application/xml
+    retrieved_on: 2026-11-03
+    sha256: 2c001e6e198c88e80e3ae62ae486bc7f94683152e2605a8877d8a019b1af2c87
+  - file: E-1.6.fr.xml
+    page: https://laws-lois.justice.gc.ca/fra/lois/E-1.6/
+    url: https://laws-lois.justice.gc.ca/fra/XML/E-1.6.xml
+    fetch: file
+    role: parallel
+    media_type: application/xml
+    retrieved_on: 2026-11-03
+    sha256: 63ec0de92dc3abffee217cf99625d82a70354cbb4cc450064a43447dbdc08d0c
+annotated: E-1.6.en.annotated.xml

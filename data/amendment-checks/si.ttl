@@ -1,0 +1,15 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:SI-ZEPT
+    lgo:amendmentCheck lg:SI-ZEPT-amendment-check .
+
+lg:SI-ZEPT-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://pisrs.si/pregledPredpisa?id=ZAKO4600"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "ZIUETDS, Ur. l. RS 30/2024" ;
+    lgo:lastKnownAmendmentDate "2024-04-13"^^xsd:date ;
+    rdfs:comment "Latest amendment is ZIUETDS (Ur. l. RS št. 30/2024); the official consolidated text (UPB) applies from 13.04.2024. PisRS page is JavaScript-rendered; the gazette list was cross-checked on uradni-list.si."@en .

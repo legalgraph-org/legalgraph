@@ -1,0 +1,22 @@
+# Electronic Commerce (EC Directive) Regulations 2002: the revised (current) text as legislation.gov.uk publishes it, in its official XML (Crown
+# Legislation Markup Language). Regulation 6 is the UK's general duty for websites to say who runs them,
+# kept after Brexit; regulations 7 and 9 cover advertising and online ordering.
+id: gb/ecommerce-regs
+title: Electronic Commerce (EC Directive) Regulations 2002
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: uksi-2002-2013.xml
+    page: https://www.legislation.gov.uk/uksi/2002/2013
+    url: https://www.legislation.gov.uk/uksi/2002/2013/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-02
+    sha256: e952d0efce2be433ebb1034286c812bc0917fcd9ab0b82c4e5674e98c7ab831f
+annotated: uksi-2002-2013.annotated.xml

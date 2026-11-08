@@ -1,0 +1,41 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Sweden: § 8 of the e-commerce act (SFS 2002:562).
+
+lg:SE-SFS-2002-562 a lgo:LegalAct ;
+    eli:title "Lag (2002:562) om elektronisk handel och andra informationssamhällets tjänster"@sv , "Act on Electronic Commerce and Other Information Society Services"@en ;
+    lgo:shortName "e-handelslagen" ;
+    eli:id_local "SFS 2002:562" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:SE ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:SE-SFS-2002-562-s8 a lgo:Provision ;
+    eli:is_part_of lg:SE-SFS-2002-562 ;
+    lgo:citation "8 § lag (2002:562)" ;
+    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RegisterEntry ,
+        lgv:VatId , lgv:SupervisoryAuthority , lgv:ProfessionalTitle , lgv:ProfessionalBody , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:SE-SFS-2002-562-s8-q1 a lgo:Quote ;
+    lgo:quoteOf lg:SE-SFS-2002-562-s8 ;
+    lgo:text """8 § När en tjänsteleverantör tillhandahåller informationssamhällets tjänster ska leverantören ge information om sitt namn, sin adress i etableringsstaten och sin e-postadress samt i förekommande fall
+1. organisationsnummer,
+2. registreringsnummer för mervärdesskatt, och
+3. behörig tillståndsmyndighet.
+Om en tjänsteleverantör bedriver reglerad yrkesverksamhet ska informationen även omfatta uppgifter om
+1. yrkestitel och den stat där denna erhållits,
+2. den yrkesorganisation eller liknande där tjänsteleverantören är registrerad, och
+3. de bestämmelser som är tillämpliga på yrkesverksamheten och sättet att få tillgång till dem."""@sv ;
+    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"^^xsd:anyURI ;
+    lgo:officialLanguageVersion true .

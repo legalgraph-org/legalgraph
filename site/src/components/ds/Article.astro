@@ -1,0 +1,80 @@
+---
+// A long text with its table of contents on the left: h2 entries with their h3 entries, sticky beside the text on wide screens and
+// hidden on narrow ones; "Collapse"/"Expand" hides the h3 entries (a checkbox and :has(), no script).
+// The headings are read from the rendered text (toc.ts), so Markdown and hand-written pages work
+// alike. The "header" slot (eyebrow, title) sits above the text, in the same column. A text with
+// fewer than two headings has nothing to navigate, so it shows without the panel.
+import { tableOfContents } from "./toc";
+
+interface Props {
+  /** Heading of the panel, e.g. "On this page". */
+  label: string;
+  collapseLabel: string;
+  expandLabel: string;
+  /** Marks up the rendered text, e.g. glossary terms (lib/glossary.ts), after the headings are read. */
+  mark?: (html: string) => string;
+  class?: string;
+}
+
+const { label, collapseLabel, expandLabel, mark, class: extra } = Astro.props;
+const toc = tableOfContents(await Astro.slots.render("default"));
+const { groups } = toc;
+const html = mark ? mark(toc.html) : toc.html;
+const entries = groups.reduce((sum, group) => sum + 1 + group.children.length, 0);
+const nested = groups.some((group) => group.children.length > 0);
+---
+
+<div class:list={["grid grid-cols-1 gap-12", entries >= 2 && "lg:grid-cols-[220px_minmax(0,1fr)]", extra]}>
+  {
+    entries >= 2 && (
+      <aside class="hidden lg:block">
+        <div class="toc sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2">
+          <div class="mb-3 flex items-center justify-between gap-2">
+            <p class="text-sm font-semibold">{label}</p>
+            {nested && (
+              <label class="flex cursor-pointer items-center gap-1 text-xs font-semibold text-muted-foreground hover:text-foreground">
+                <input type="checkbox" checked class="toc-toggle sr-only" />
+                <span class="toc-collapse">▾ {collapseLabel}</span>
+                <span class="toc-expand">▸ {expandLabel}</span>
+              </label>
+            )}
+          </div>
+          <nav aria-label={label} class="space-y-3 border-l pl-3 text-sm">
+            {groups.map((group) => (
+              <div class="space-y-2">
+                <a href={`#${group.id}`} class="block text-muted-foreground no-underline hover:text-foreground">
+                  {group.text}
+                </a>
+                {group.children.length > 0 && (
+                  <div class="toc-sub space-y-2 pl-4">
+                    {group.children.map((child) => (
+                      <a href={`#${child.id}`} class="block text-muted-foreground no-underline hover:text-foreground">
+                        {child.text}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav>
+        </div>
+      </aside>
+    )
+  }
+  <div data-article-text class:list={["min-w-0", entries < 2 && "mx-auto w-full max-w-(--container-prose)"]}>
+    <slot name="header" />
+    <Fragment set:html={html} />
+  </div>
+</div>
+
+<style>
+  .toc:has(.toc-toggle:not(:checked)) .toc-sub,
+  .toc:has(.toc-toggle:not(:checked)) .toc-collapse,
+  .toc:has(.toc-toggle:checked) .toc-expand {
+    display: none;
+  }
+  /* A heading a ToC link jumps to stays clear of the sticky navbar. */
+  :global([data-article-text] :is(h2, h3)) {
+    scroll-margin-top: 6rem;
+  }
+</style>

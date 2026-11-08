@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EDPB Guidelines 2/2023 on Technical Scope of Art. 5(3) of ePrivacy Directive (version 2.0,
+  adopted 7 October 2024), the paragraphs the graph quotes, written in schemas/law.xsd from the
+  EDPB's PDF. The words are the EDPB's; only the structure is ours. `legalgraph sources verify`
+  checks each paragraph against the PDF's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="EDPB-GL-2023-02" lga:jurisdiction="EU" lga:act-type="Guidelines"
+     lga:url="https://www.edpb.europa.eu/documents/guideline/guidelines-22023-on-technical-scope-of-art-53-of-eprivacy-directive_en">
+  <meta>
+    <title>Guidelines 2/2023 on Technical Scope of Art. 5(3) of ePrivacy Directive</title>
+    <short>EDPB Guidelines 2/2023</short>
+    <date>2024-10-07</date>
+  </meta>
+
+  <section num="1" title="Introduction" source="edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf">
+    <paragraph num="1."
+               lga:provision="EDPB-GL-2023-02-p1" lga:citation="EDPB Guidelines 2/2023, para. 1"
+               lga:interprets="EU-2002-58-art5-3 EU-2002-58-rec24">According to Article 5(3) ePD, ‘the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user’ is only allowed on the basis of consent or necessity for specific purposes set out in that Article. As reminded in Recital 24 of the ePD<note num="2"/>, the goal of that provision is to protect the users’ terminal equipment, as they are part of the private sphere of the users. It results from the wording of the Article, that Article 5(3) ePD does not exclusively apply to cookies, but also to ‘similar technologies’. However, there is currently no comprehensive list of the technical operations covered by Article 5(3) ePD.</paragraph>
+  </section>
+
+  <section num="2.5" title="Notion of ‘gaining access’ – Criterion C.1" source="edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf">
+    <paragraph num="30."
+               lga:provision="EDPB-GL-2023-02-p30" lga:citation="EDPB Guidelines 2/2023, para. 30"
+               lga:interprets="EU-2002-58-art5-3">Storing information or gaining access can be independent operations, and performed by independent entities. Storing of information and access to information already stored do not need to be both present for Article 5(3) ePD to apply.</paragraph>
+    <paragraph num="31."
+               lga:provision="EDPB-GL-2023-02-p31" lga:citation="EDPB Guidelines 2/2023, para. 31"
+               lga:interprets="EU-2002-58-art5-3">As noted in the WP29 Opinion 9/2014: ‘Use of the words “stored or accessed” indicates that the storage and access do not need to occur within the same communication and do not need to be performed by the same party. Information that is stored by one party (including information stored by the user or device manufacturer) which is later accessed by another party is therefore within the scope of Art. 5(3)’<note num="20"/>. Consequently, there are no restrictions placed on the origin of information on the terminal equipment for the notion of access to apply.</paragraph>
+  </section>
+
+  <section num="2.6" title="Notions of storage of information’ and ‘stored information’ – Criterion C.2" source="edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf">
+    <paragraph num="35."
+               lga:provision="EDPB-GL-2023-02-p35" lga:citation="EDPB Guidelines 2/2023, para. 35"
+               lga:interprets="EU-2002-58-art5-3">Storage of information in the sense of Article 5(3) ePD refers to placing information on a physical electronic storage medium that is part of a user or subscriber’s terminal equipment<note num="23"/>.</paragraph>
+    <paragraph num="37."
+               lga:provision="EDPB-GL-2023-02-p37" lga:citation="EDPB Guidelines 2/2023, para. 37"
+               lga:interprets="EU-2002-58-art5-3">The ePD does not place any upper or lower limit on the length of time that information must persist on a storage medium to be counted as stored, nor is there an upper or lower limit on the amount of information to be stored.</paragraph>
+  </section>
+
+  <section num="3.1" title="URL and pixel tracking" source="edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf">
+    <paragraph num="50."
+               lga:provision="EDPB-GL-2023-02-p50" lga:citation="EDPB Guidelines 2/2023, para. 50"
+               lga:interprets="EU-2002-58-art5-3">Both tracking links and tracking pixels can be distributed through a wide variety of channels, for example through emails, web sites, or even, in the case of tracking links, through any kind of text messaging systems. That distribution to the user’s terminal equipment does constitute storage, at the very least through the caching mechanism of the client-side software. As such, Article 5(3) ePD is applicable, even if this storage is not permanent.</paragraph>
+    <paragraph num="51."
+               lga:provision="EDPB-GL-2023-02-p51" lga:citation="EDPB Guidelines 2/2023, para. 51"
+               lga:interprets="EU-2002-58-art5-3">The addition of tracking information to URLs or images (pixels) sent to the user constitutes an instruction to the terminal equipment to send back the targeted information (the specified identifier). In the case of dynamically constructed tracking pixels, it is the distribution of the applicative logic (usually a JavaScript code) that constitutes the instruction. As a consequence, it can be considered that the collection of identifiers provided through such tracking mechanisms constitutes a ‘gaining of access’ in the meaning of Article 5(3) ePD, thus it applies to that step as well.</paragraph>
+  </section>
+</law>

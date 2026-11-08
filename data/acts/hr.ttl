@@ -1,0 +1,25 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# HR: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:HR-ZET a lgo:LegalAct ;
+    eli:title "Zakon o elektroničkoj trgovini"@hr , "Electronic Commerce Act"@en ;
+    lgo:shortName "ZET" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:HR ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:HR-ZET-cl6-1 a lgo:Provision ;
+    eli:is_part_of lg:HR-ZET ;
+    lgo:citation "Članak 6. stavak 1. ZET" ;
+    lgo:sourceUrl "https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:Draft .

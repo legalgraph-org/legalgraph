@@ -1,0 +1,494 @@
+---
+// The home page's hero picture: a turning wireframe globe with a small graph of laws on it. Edges
+// draw themselves in, signals travel along them from one provision to the next, and the nodes
+// pulse. Plain SVG: the globe turns by SMIL (each meridian's width follows a sine), the rest is CSS.
+// Everyday terms (Cookies, Imprint, …) take turns to appear around it, each with a dashed line to
+// the law it comes from, so a reader sees what the abbreviations are about.
+// Decorative only (aria-hidden). With reduced motion everything stands still (the script pauses
+// SMIL, the CSS stops the rest).
+
+import type { Translate } from "../i18n/t";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const SIZE = 480;
+const C = SIZE / 2; // centre
+const R = 168; // globe radius
+const TURN = 24; // seconds for a meridian to cross the globe and come back
+
+// Meridians: ellipses whose x radius swings 0 → R → 0, phase-shifted so they seem to turn.
+const MERIDIANS = 6;
+const meridians = Array.from({ length: MERIDIANS }, (_, index) => -(index * TURN) / MERIDIANS);
+// Parallels: fixed latitudes, flattened ellipses for a globe seen slightly from above.
+const parallels = [-0.62, -0.32, 0, 0.32, 0.62].map((lat) => ({
+  cy: C + lat * R,
+  rx: Math.sqrt(1 - lat * lat) * R,
+  ry: Math.sqrt(1 - lat * lat) * R * 0.16,
+}));
+
+// The graph: kinds as on the graph page (jurisdiction, act, provision, rule), loosely Europe-shaped.
+type Kind = "jurisdiction" | "act" | "provision" | "rule";
+const nodes: Record<string, { x: number; y: number; kind: Kind; label?: string }> = {
+  eu: { x: 236, y: 196, kind: "jurisdiction", label: "EU" },
+  de: { x: 304, y: 168, kind: "jurisdiction", label: "DE" },
+  fr: { x: 168, y: 250, kind: "jurisdiction", label: "FR" },
+  gdpr: { x: 150, y: 140, kind: "act", label: "GDPR" },
+  ddg: { x: 352, y: 246, kind: "act", label: "DDG" },
+  art13: { x: 116, y: 320, kind: "provision", label: "Art. 13" },
+  s5: { x: 300, y: 318, kind: "provision", label: "§ 5" },
+  ecd: { x: 236, y: 92, kind: "act", label: "2000/31/EC" },
+  r1: { x: 222, y: 382, kind: "rule" },
+  r2: { x: 404, y: 140, kind: "rule" },
+  eprivacy: { x: 100, y: 236, kind: "act", label: "ePrivacy" },
+  r4: { x: 420, y: 352, kind: "rule" },
+  ukgdpr: { x: 146, y: 60, kind: "act", label: "UK GDPR" },
+  ccpa: { x: 452, y: 230, kind: "act", label: "CCPA" },
+};
+// A third element "comparable" marks two laws that are alike without one deriving from the other
+// (the GDPR and California's CCPA): drawn dashed, with a wider arc and a label.
+const edges: [string, string, "comparable"?][] = [
+  ["eu", "de"],
+  ["eu", "fr"],
+  ["eu", "gdpr"],
+  ["eu", "ecd"],
+  ["ecd", "ddg"],
+  ["de", "ddg"],
+  ["ddg", "s5"],
+  ["gdpr", "art13"],
+  ["fr", "art13"],
+  ["s5", "r1"],
+  ["art13", "r1"],
+  ["de", "r2"],
+  ["eu", "eprivacy"],
+  ["s5", "r4"],
+  ["gdpr", "ukgdpr"],
+  ["gdpr", "ccpa", "comparable"],
+];
+// Each edge bows away from the globe's centre, like a route on a map.
+const paths = edges.map(([from, to, relation], index) => {
+  const a = nodes[from]!;
+  const b = nodes[to]!;
+  const mx = (a.x + b.x) / 2;
+  const my = (a.y + b.y) / 2;
+  const away = Math.hypot(mx - C, my - C) || 1;
+  const bow = Math.hypot(b.x - a.x, b.y - a.y) * (relation ? 0.45 : 0.18);
+  const cx = mx + ((mx - C) / away) * bow;
+  const cy = my + ((my - C) / away) * bow;
+  return {
+    id: `hero-edge-${index}`,
+    d: `M${a.x} ${a.y} Q${cx.toFixed(1)} ${cy.toFixed(1)} ${b.x} ${b.y}`,
+    delay: index * 0.18,
+    relation,
+    // The curve's midpoint, for the label.
+    mid: { x: (a.x + 2 * cx + b.x) / 4, y: (a.y + 2 * cy + b.y) / 4 },
+  };
+});
+// Signals: a few edges carry a travelling dot, staggered, once the edges have drawn in. Each stays
+// hidden until it starts, or it would sit at the SVG's origin.
+const signals = [0, 4, 6, 7, 9, 11, 13].map((edge, index) => ({ href: `#hero-edge-${edge}`, dur: 2.6 + (index % 3) * 0.7, begin: 2.8 + index * 0.9 }));
+const radius: Record<Kind, number> = { jurisdiction: 9, act: 7, provision: 6, rule: 4.5 };
+
+// The terms: where each pill sits and the node it points to (cookies and email marketing come from
+// the ePrivacy Directive; consent, analytics and the right to be forgotten from the GDPR; the privacy
+// policy from Art. 13 GDPR; the imprint from § 5 DDG; "Don't sell data" from the CCPA). One every TERM_GAP seconds, each on screen for about a third of the cycle.
+const TERM_GAP = 3;
+const terms = (
+  [
+    [t("Cookies"), 44, 182, "eprivacy"],
+    [t("Imprint"), 372, 440, "s5"],
+    [t("Consent"), 52, 40, "gdpr"],
+    [t("Don't sell data"), 396, 290, "ccpa"],
+    [t("Right to be forgotten"), 310, 24, "gdpr"],
+    [t("Privacy policy"), 96, 424, "art13"],
+    [t("Analytics"), 56, 96, "gdpr"],
+    [t("Email marketing"), 76, 278, "eprivacy"],
+  ] as const
+).map(([label, x, y, target], index) => {
+  const node = nodes[target]!;
+  const width = label.length * 6.6 + 24;
+  // The line leaves the pill on the side facing the node and stops short of the node's ring.
+  const fromY = node.y > y ? y + 12 : y - 12;
+  const length = Math.hypot(node.x - x, node.y - fromY);
+  const stop = 1 - 16 / length;
+  const toX = (x + (node.x - x) * stop).toFixed(1);
+  const toY = (fromY + (node.y - fromY) * stop).toFixed(1);
+  return { label, x, y, width, node, line: `M${x} ${fromY} L${toX} ${toY}`, delay: 3.5 + index * TERM_GAP };
+});
+const TERM_CYCLE = terms.length * TERM_GAP;
+// Pills must stay inside the picture, beside the hero text, in every language.
+for (const term of terms) {
+  if (term.x - term.width / 2 < 0 || term.x + term.width / 2 > SIZE) {
+    throw new Error(`HeroGraph: the "${term.label}" pill (${t.locale}) runs past the edge; move it in`);
+  }
+}
+---
+
+<svg
+  class="hero-graph h-auto w-full"
+  viewBox={`0 0 ${SIZE} ${SIZE}`}
+  role="presentation"
+  aria-hidden="true"
+  focusable="false"
+  data-hero-graph
+>
+  <defs>
+    <radialGradient id="hero-sphere" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" style="stop-color: var(--teal-300); stop-opacity: 0.22"></stop>
+      <stop offset="60%" style="stop-color: var(--blue-600); stop-opacity: 0.06"></stop>
+      <stop offset="100%" style="stop-color: var(--blue-700); stop-opacity: 0.14"></stop>
+    </radialGradient>
+    <linearGradient id="hero-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" style="stop-color: var(--teal-600)"></stop>
+      <stop offset="100%" style="stop-color: var(--blue-600)"></stop>
+    </linearGradient>
+    <clipPath id="hero-globe-clip"><circle cx={C} cy={C} r={R}></circle></clipPath>
+  </defs>
+
+  <!-- Orbit rings around the globe -->
+  <g class="hero-orbit">
+    <circle cx={C} cy={C} r={R + 34} class="hero-ring" stroke-dasharray="2 10"></circle>
+  </g>
+  <g>
+    <ellipse cx={C} cy={C} rx={R + 58} ry={(R + 58) * 0.34} class="hero-ring hero-ring-flow" stroke-dasharray="1 8" transform={`rotate(-18 ${C} ${C})`}></ellipse>
+  </g>
+
+  <!-- The globe -->
+  <circle cx={C} cy={C} r={R} fill="url(#hero-sphere)" class="hero-outline"></circle>
+  <g clip-path="url(#hero-globe-clip)" class="hero-grid">
+    {parallels.map((p) => <ellipse cx={C} cy={p.cy} rx={p.rx} ry={p.ry}></ellipse>)}
+    {
+      meridians.map((begin) => (
+        <ellipse cx={C} cy={C} rx="0" ry={R}>
+          <animate
+            attributeName="rx"
+            values={`0;${R};0`}
+            keyTimes="0;0.5;1"
+            calcMode="spline"
+            keySplines="0 0.55 0.45 1;0.55 0 1 0.45"
+            dur={`${TURN}s`}
+            begin={`${begin}s`}
+            repeatCount="indefinite"
+          />
+        </ellipse>
+      ))
+    }
+  </g>
+
+  <!-- Edges, drawn in one after another, then breathing -->
+  <g class="hero-edges" fill="none">
+    {
+      paths.map((p) => (
+        <path id={p.id} d={p.d} pathLength="1" class:list={[p.relation && "hero-comparable"]} style={`--delay: ${p.delay}s`} />
+      ))
+    }
+  </g>
+  <g class="hero-relations">
+    {
+      paths
+        .filter((p) => p.relation)
+        .map((p) => (
+          <text x={p.mid.x} y={p.mid.y - 6} text-anchor="middle" class="hero-relation" style={`--delay: ${p.delay + 1}s`}>
+            {t("comparable")}
+          </text>
+        ))
+    }
+  </g>
+
+  <!-- Signals travelling along some edges -->
+  <g class="hero-signals">
+    {
+      signals.map((s) => (
+        <circle r="3" visibility="hidden">
+          <set attributeName="visibility" to="visible" begin={`${s.begin}s`} />
+          <animateMotion dur={`${s.dur}s`} begin={`${s.begin}s`} repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.4 0 0.2 1">
+            <mpath href={s.href} />
+          </animateMotion>
+        </circle>
+      ))
+    }
+  </g>
+
+  <!-- Each term's line and the ring on its node, under the nodes -->
+  <g class="hero-terms">
+    {
+      terms.map((term) => (
+        <g class="hero-term" style={`--delay: ${term.delay}s; --cycle: ${TERM_CYCLE}s`}>
+          <path d={term.line} class="hero-term-line" />
+          <circle cx={term.node.x} cy={term.node.y} r="14" class="hero-term-ring" />
+        </g>
+      ))
+    }
+  </g>
+
+  <!-- Nodes -->
+  <g class="hero-nodes">
+    {
+      Object.entries(nodes).map(([id, n], index) => (
+        <g class={`hero-node hero-${n.kind}`} style={`--delay: ${0.4 + index * 0.12}s`}>
+          {n.kind !== "rule" && <circle cx={n.x} cy={n.y} r={radius[n.kind]} class="hero-pulse" />}
+          <circle cx={n.x} cy={n.y} r={radius[n.kind]} class="hero-dot" data-node={id} />
+          {n.label && (
+            <text x={n.x} y={n.y - radius[n.kind] - 7} text-anchor="middle" class="hero-label">
+              {n.label}
+            </text>
+          )}
+        </g>
+      ))
+    }
+  </g>
+
+  <!-- The terms' pills, over everything -->
+  <g class="hero-terms">
+    {
+      terms.map((term) => (
+        <g class="hero-term hero-term-pill" style={`--delay: ${term.delay}s; --cycle: ${TERM_CYCLE}s`}>
+          <rect x={term.x - term.width / 2} y={term.y - 12} width={term.width} height="24" rx="12" />
+          <text x={term.x} y={term.y + 4} text-anchor="middle">{term.label}</text>
+        </g>
+      ))
+    }
+  </g>
+</svg>
+
+<script>
+  // SMIL ignores prefers-reduced-motion; pause it (the globe and the signals) when it is set.
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const apply = () => {
+    for (const svg of document.querySelectorAll<SVGSVGElement>("[data-hero-graph]")) {
+      if (motion.matches) {
+        svg.pauseAnimations();
+        svg.setCurrentTime(6);
+      } else {
+        svg.unpauseAnimations();
+      }
+    }
+  };
+  apply();
+  motion.addEventListener("change", apply);
+</script>
+
+<style>
+  .hero-graph {
+    overflow: visible;
+  }
+  .hero-outline {
+    stroke: color-mix(in oklab, var(--primary) 35%, transparent);
+    stroke-width: 1.25;
+  }
+  .hero-grid ellipse {
+    fill: none;
+    stroke: color-mix(in oklab, var(--primary) 22%, transparent);
+    stroke-width: 1;
+  }
+  .hero-ring {
+    fill: none;
+    stroke: color-mix(in oklab, var(--blue-600) 40%, transparent);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+  }
+  .hero-orbit {
+    transform-origin: 50% 50%;
+    animation: hero-spin 90s linear infinite;
+  }
+  /* The tilted ring keeps still; its dots flow along it. */
+  .hero-ring-flow {
+    animation: hero-flow 6s linear infinite;
+  }
+  .hero-edges path {
+    stroke: url(#hero-edge);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    opacity: 0.75;
+    animation:
+      hero-draw 1.4s cubic-bezier(0.4, 0, 0.2, 1) var(--delay) forwards,
+      hero-breathe 5s ease-in-out calc(var(--delay) + 1.4s) infinite;
+  }
+  /* Two laws alike without one deriving from the other: dashed, appearing rather than drawn. */
+  .hero-edges path.hero-comparable {
+    stroke-dasharray: 0.012 0.012;
+    stroke-dashoffset: 0;
+    opacity: 0;
+    animation: hero-appear 1.2s ease-out var(--delay) forwards;
+  }
+  .hero-relation {
+    opacity: 0;
+    font-size: 10.5px;
+    font-style: italic;
+    fill: var(--text-2);
+    paint-order: stroke;
+    stroke: var(--background);
+    stroke-width: 3px;
+    animation: hero-appear 0.8s ease-out var(--delay) forwards;
+  }
+  .hero-signals circle {
+    fill: var(--teal-300);
+    filter: drop-shadow(0 0 4px var(--teal-600));
+  }
+  .hero-node {
+    opacity: 0;
+    animation: hero-appear 0.6s ease-out var(--delay) forwards;
+  }
+  .hero-dot {
+    stroke: var(--background);
+    stroke-width: 2;
+  }
+  .hero-jurisdiction .hero-dot {
+    fill: var(--blue-700);
+  }
+  .hero-act .hero-dot {
+    fill: var(--teal-700);
+  }
+  .hero-provision .hero-dot {
+    fill: var(--teal-600);
+  }
+  .hero-rule .hero-dot {
+    fill: color-mix(in oklab, var(--blue-600) 55%, var(--background));
+  }
+  .hero-pulse {
+    fill: none;
+    stroke: var(--teal-600);
+    stroke-width: 1.5;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: hero-pulse 3.2s ease-out calc(var(--delay) + 1s) infinite;
+    opacity: 0;
+  }
+  .hero-jurisdiction .hero-pulse {
+    stroke: var(--blue-600);
+  }
+  .hero-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    fill: var(--text-2);
+    paint-order: stroke;
+    stroke: var(--background);
+    stroke-width: 3px;
+  }
+
+  .hero-term {
+    opacity: 0;
+    animation: hero-term var(--cycle) ease-in-out var(--delay) infinite;
+  }
+  .hero-term-pill {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .hero-term-pill rect {
+    fill: var(--background);
+    stroke: color-mix(in oklab, var(--primary) 45%, transparent);
+    stroke-width: 1.25;
+    filter: drop-shadow(0 2px 6px color-mix(in oklab, var(--blue-700) 14%, transparent));
+  }
+  .hero-term-pill text {
+    font-size: 11.5px;
+    font-weight: 600;
+    fill: var(--primary);
+  }
+  .hero-term-line {
+    fill: none;
+    stroke: var(--teal-600);
+    stroke-width: 1.25;
+    stroke-dasharray: 3 4;
+    /* Dashes flow from the term towards its law. */
+    animation: hero-dash 0.9s linear infinite;
+  }
+  .hero-term-ring {
+    fill: color-mix(in oklab, var(--teal-300) 18%, transparent);
+    stroke: var(--teal-600);
+    stroke-width: 1.5;
+  }
+
+  /* A term fades in, holds for about a third of the cycle, fades out and waits for its turn. */
+  @keyframes hero-term {
+    0% {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    4%,
+    28% {
+      opacity: 1;
+      transform: none;
+    }
+    33%,
+    100% {
+      opacity: 0;
+      transform: none;
+    }
+  }
+  @keyframes hero-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes hero-flow {
+    to {
+      stroke-dashoffset: -18;
+    }
+  }
+  @keyframes hero-dash {
+    to {
+      stroke-dashoffset: -14;
+    }
+  }
+  @keyframes hero-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes hero-breathe {
+    50% {
+      opacity: 0.35;
+    }
+  }
+  @keyframes hero-appear {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hero-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-orbit,
+    .hero-ring-flow,
+    .hero-pulse {
+      animation: none;
+    }
+    .hero-edges path {
+      animation: none;
+      stroke-dashoffset: 0;
+    }
+    .hero-node {
+      animation: none;
+      opacity: 1;
+    }
+    .hero-edges path.hero-comparable,
+    .hero-relation {
+      animation: none;
+      opacity: 1;
+    }
+    .hero-signals {
+      display: none;
+    }
+    /* Every term shows, still, with its line. */
+    .hero-term,
+    .hero-term-line {
+      animation: none;
+      opacity: 1;
+    }
+  }
+</style>

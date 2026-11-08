@@ -1,0 +1,23 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# TR: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:TR-6563 a lgo:LegalAct ;
+    eli:title "6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun"@tr , "Law No. 6563 on the Regulation of Electronic Commerce"@en ;
+    lgo:shortName "6563" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:TR ;
+    lgo:sourceUrl "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6563&MevzuatTur=1&MevzuatTertip=5"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:TR-6563-art3 a lgo:Provision ;
+    eli:is_part_of lg:TR-6563 ;
+    lgo:citation "Madde 3 6563 sayılı Kanun" ;
+    lgo:sourceUrl "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6563&MevzuatTur=1&MevzuatTertip=5"^^xsd:anyURI ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:Draft .

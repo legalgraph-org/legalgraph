@@ -1,0 +1,15 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:PT-DL-7-2004
+    lgo:amendmentCheck lg:PT-DL-7-2004-amendment-check .
+
+lg:PT-DL-7-2004-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1399&tabela=leis"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Lei n.º 12-A/2026, de 15/04" ;
+    lgo:lastKnownAmendmentDate "2026-04-15"^^xsd:date ;
+    rdfs:comment "PGDL consolidated text, 6th version: last altered by Lei n.º 12-A/2026; individual articles revoked by it and Lei 26/2023. Act still in force."@en .

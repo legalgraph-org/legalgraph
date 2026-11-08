@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Code de la consommation, articles L221-5, L221-13 and L221-14, written in schemas/law.xsd from
+  the saved legifrance page. The words are the official consolidated text's; only the structure
+  is ours. `legalgraph sources verify` checks every paragraph word for word against the fragments.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="FR-CONSO" lga:jurisdiction="FR" lga:act-type="Statute"
+     lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/">
+  <meta>
+    <title>Code de la consommation</title>
+    <date>2016-07-01</date>
+  </meta>
+
+  <section num="L221-5" title="Obligation d'information précontractuelle" source="l221-5.fragment.html">
+    <paragraph num="" lga:provision="FR-CONSO-L221-5-1" lga:citation="C. consom. art. L221-5 I" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000053310511" lga:regulates="PreContractInformation">I.-Préalablement à la conclusion d'un contrat de vente de biens ou de fourniture de services, de contenu numérique ou de services numériques, le professionnel fournit au consommateur, de manière lisible et compréhensible, les informations suivantes :
+      <list>
+        <item num="1°" lga:requires="MainCharacteristics">Les caractéristiques essentielles du bien, du service, du service numérique ou du contenu numérique ;</item>
+        <item num="2°" lga:requires="TotalPrice">Le prix du bien, du service, du service numérique ou du contenu numérique, en application des articles L. 112-1 à L. 112-4 ;</item>
+        <item num="3°" lga:requires="PaymentAndDeliveryTerms">La date à laquelle ou le délai dans lequel le professionnel s'engage à livrer le bien ou à fournir le service, le service numérique ou le contenu numérique ;</item>
+        <item num="4°" lga:requires="ProviderName CancellationInformation DisputeResolutionBody CodesOfConduct">Les informations relatives à son identité, à ses coordonnées postales, téléphoniques et électroniques, aux modalités de résiliation, aux modes de règlement des litiges, aux autres conditions contractuelles et, le cas échéant, aux coûts de l'utilisation de la technique de communication à distance, à l'existence de codes de bonne conduite et aux cautions et garanties financières ;</item>
+        <item num="5°" lga:requires="LegalGuarantee DigitalProductInformation">S'il y a lieu, les informations relatives aux garanties légales, aux fonctionnalités, à la compatibilité et à l'interopérabilité du contenu numérique, du service numérique ou du bien comportant des éléments numériques, aux autres conditions contractuelles et, le cas échéant, à l'existence de toute restriction d'installation de logiciel ;</item>
+        <item num="6°" lga:requires="DisputeResolutionBody">La possibilité de recourir à un médiateur de la consommation dans les conditions prévues au titre Ier du livre VI ;</item>
+        <item num="7°" lga:requires="WithdrawalInformation">Lorsque le droit de rétractation existe, les conditions, le délai et les modalités d'exercice de ce droit ainsi que le formulaire type de rétractation, dont les conditions de présentation et les mentions qu'il contient sont fixées par décret en Conseil d'Etat et, le cas échéant, l'existence et l'emplacement de la fonctionnalité de rétractation mentionnée à l' article L. 221-21 ;</item>
+        <item num="8°" lga:requires="ReturnCosts">Le cas échéant, le fait que le consommateur supporte les frais de renvoi du bien en cas de rétractation et, pour les contrats à distance, le coût de renvoi du bien lorsque celui-ci, en raison de sa nature, ne peut normalement être renvoyé par la poste ;</item>
+        <item num="9°">L'information sur l'obligation du consommateur de payer des frais lorsqu'il exerce son droit de rétractation d'un contrat de prestation de services, de distribution d'eau, de fourniture de gaz ou d'électricité et d'abonnement à un réseau de chauffage urbain dont il a demandé expressément l'exécution avant la fin du délai de rétractation ; ces frais sont calculés selon les modalités fixées à l'article L. 221-25 ;</item>
+        <item num="10°" lga:requires="NoWithdrawalRight">Lorsque le droit de rétractation ne peut être exercé en application de l'article L. 221-28 , l'information selon laquelle le consommateur ne bénéficie pas de ce droit ou, le cas échéant, les circonstances dans lesquelles il le perd ;</item>
+        <item num="11°" lga:requires="PersonalisedPricing">L'application d'un prix personnalisé sur la base d'une prise de décision automatisée, s'il y a lieu.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="FR-CONSO-L221-5-1b" lga:citation="C. consom. art. L221-5 I (fin)" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000053310511" lga:regulates="PreContractInformation">La liste et le contenu de ces informations sont précisés par décret en Conseil d'Etat. Dans le cas d'une vente aux enchères publiques telle que définie par le premier alinéa de l'article L. 321-3 du code de commerce , les informations relatives à l'identité et aux coordonnées postales, téléphoniques et électroniques du professionnel prévues au 4° du I du présent article peuvent être remplacées par celles du mandataire.</paragraph>
+    <paragraph num="" lga:provision="FR-CONSO-L221-5-2" lga:citation="C. consom. art. L221-5 II" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000053310511" lga:regulates="PreContractInformation">II.-Outre les informations prévues au I, tout professionnel, avant la conclusion d'un contrat de fourniture de services et, lorsqu'il n'y a pas de contrat, avant l'exécution de la prestation de services, fournit les informations complémentaires prévues par l'article L. 111-2 .</paragraph>
+  </section>
+
+  <section num="L221-13" title="Confirmation du contrat" source="l221-13.fragment.html">
+    <paragraph num="" lga:provision="FR-CONSO-L221-13" lga:citation="C. consom. art. L221-13" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000044563210" lga:regulates="ContractConfirmation" lga:implements="EU-2011-83-art8-7" lga:requires="ContractCopy">Le professionnel fournit au consommateur, sur support durable, dans un délai raisonnable, après la conclusion du contrat et au plus tard au moment de la livraison du bien ou avant le début de l'exécution du service ou du contrat de fourniture de contenu numérique fourni sans support matériel ou de services numériques, la confirmation du contrat comprenant toutes les informations prévues à l'article L. 221-5 , sauf si le professionnel les lui a déjà fournies, sur un support durable, avant la conclusion du contrat. Le contrat est accompagné du formulaire type de rétractation mentionné au 7° du même article. Le cas échéant, le professionnel fournit au consommateur, dans les mêmes conditions et avant l'expiration du délai de rétractation, la confirmation de son accord exprès pour la fourniture d'un contenu numérique non présenté sur un support matériel et de la reconnaissance de la perte de son droit de rétractation.</paragraph>
+  </section>
+
+  <section num="L221-14" title="Contrats conclus par voie électronique" source="l221-14.fragment.html">
+    <paragraph num="" lga:provision="FR-CONSO-L221-14" lga:citation="C. consom. art. L221-14" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000032226854" lga:regulates="OrderPlacement" lga:implements="EU-2011-83-art8-2">Pour les contrats conclus par voie électronique, le professionnel rappelle au consommateur, avant qu'il ne passe sa commande, de manière lisible et compréhensible, les informations relatives aux caractéristiques essentielles des biens ou des services qui font l'objet de la commande, à leur prix, à la durée du contrat et, s'il y a lieu, à la durée minimale des obligations de ce dernier au titre du contrat, telles que prévues à l'article L. 221-5 . Le professionnel veille à ce que le consommateur, lors de sa commande, reconnaisse explicitement son obligation de paiement. A cette fin, la fonction utilisée par le consommateur pour valider sa commande comporte la mention claire et lisible : commande avec obligation de paiement ou une formule analogue, dénuée de toute ambiguïté, indiquant que la passation d'une commande oblige à son paiement. Les sites de commerce en ligne indiquent clairement et lisiblement, au plus tard au début du processus de commande, les moyens de paiement acceptés par le professionnel et les éventuelles restrictions de livraison.</paragraph>
+  </section>
+</law>

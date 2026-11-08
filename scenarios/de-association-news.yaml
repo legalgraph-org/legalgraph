@@ -1,0 +1,20 @@
+name: German sports club with a news page
+description: >
+  A registered non-profit association (e.V.) whose website publishes club news, with no business
+  purpose, no tracking and only server logs as personal data.
+established_in: DE
+facts:
+  - NonPrivateTelemedia
+  - LegalPerson
+  - RegisteredInPublicRegister
+  - JournalisticEditorialContent
+  - ProcessesPersonalData
+obligations:
+  - DE-R-telemedia-identification
+  - DE-R-telemedia-representative
+  - DE-R-editorial-responsibility
+  - EU-R-privacy-information
+  - EU-R-lawful-basis
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation

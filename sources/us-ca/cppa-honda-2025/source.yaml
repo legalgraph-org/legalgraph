@@ -1,0 +1,22 @@
+# California Privacy Protection Agency, order adopting stipulated final order in the matter of
+# American Honda Motor Co. (case ENF23-V-HO-2, 7 March 2025): $632,500 — requiring consumers to
+# verify themselves for non-verifiable requests, an asymmetrical cookie-consent design, hard
+# authorized-agent paths and ad-tech data sharing without the required contracts. The order PDF
+# is the Agency's official publication.
+id: us-ca/cppa-honda-2025
+title: CPPA order, American Honda Motor Co. (ENF23-V-HO-2), 7 March 2025
+jurisdiction: US-CA
+language: en
+publisher: California Privacy Protection Agency, cppa.ca.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Agency decision of a state authority is an official work; California official publications may be used without fee (Government Code § 6253)"
+originals:
+  - file: 20250307_hmc_order.pdf
+    page: https://cppa.ca.gov/enforcement/
+    url: https://www.cppa.ca.gov/regulations/pdf/20250307_hmc_order.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-04
+    sha256: 08893ff5e19972d269ddf182741550e94bc9748382b143d6753b357fcec62f10
+annotated: cppa-honda-2025.law.xml

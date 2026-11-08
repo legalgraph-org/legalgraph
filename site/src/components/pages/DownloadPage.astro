@@ -1,0 +1,253 @@
+---
+// /download, in every language: every way to get the graph, one section each, with what is inside
+// and what it is for. The repository comes first: it holds everything the files are made from, and
+// the checks. The files themselves are served from /downloads/ (written by `legalgraph
+// generate-site`); their sizes are read at build time.
+// Each section hangs off a dashed rail by its heading (SectionHeading, with a badge for the
+// format), like a node on the graph, so the page reads as a list of separate offers.
+import { statSync } from "node:fs";
+import { join } from "node:path";
+import meta from "../../data/meta.json";
+import T from "../../i18n/T.astro";
+import type { Translate } from "../../i18n/t";
+import { abbreviationMarker } from "../../lib/glossary";
+import Layout from "../../layouts/Layout.astro";
+import { GITHUB_URL } from "../../lib/navigation";
+import { pagePath } from "../../lib/routes";
+import Article from "../ds/Article.astro";
+import Button from "../ds/Button.astro";
+import SectionHeading from "../ds/SectionHeading.astro";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const mark = await abbreviationMarker(t.locale);
+const number = (value: number) => value.toLocaleString(t.locale);
+const size = (file: string) => {
+  try {
+    const bytes = statSync(join(process.cwd(), "public/downloads", file)).size;
+    const format = (value: number) => value.toLocaleString(t.locale, { maximumFractionDigits: 1 });
+    return bytes >= 1e6 ? `${format(bytes / 1e6)} MB` : `${Math.max(1, Math.round(bytes / 1e3))} kB`;
+  } catch {
+    return undefined;
+  }
+};
+
+const files = [
+  {
+    id: "turtle",
+    badge: "TTL",
+    title: t("The graph in Turtle"),
+    file: "legalgraph.ttl",
+    format: "Turtle (text/turtle)",
+    what: t("Every jurisdiction, act, provision, quote, translation, source document, rule and case, with prefixes, grouped by resource."),
+    use: t("Read it, load it into rdflib, Apache Jena or Oxigraph, and query it with SPARQL. The format the graph is written in."),
+  },
+  {
+    id: "n-triples",
+    badge: "NT",
+    title: t("The graph in N-Triples"),
+    file: "legalgraph.nt",
+    format: "N-Triples (application/n-triples)",
+    what: t("The same triples as the Turtle file, one per line, with full IRIs and no prefixes."),
+    use: t("Bulk-load it into a triple store, or process it line by line with grep, sort and diff: two versions compare line for line."),
+  },
+  {
+    id: "json-ld",
+    badge: "{ }",
+    title: t("The graph in JSON-LD"),
+    file: "legalgraph.jsonld",
+    format: "JSON-LD (application/ld+json)",
+    what: t("The same graph as JSON, each resource an object with its identifier and properties."),
+    use: t("Use it from JavaScript or any JSON tooling, without an RDF library."),
+  },
+  {
+    id: "ontology",
+    badge: "OWL",
+    title: t("The ontology and vocabularies"),
+    file: "legalgraph-ontology.ttl",
+    format: "Turtle (OWL, SKOS)",
+    what: t("The classes and properties the graph uses (lgo:), and the controlled vocabularies (lgv:): information items, act types, review statuses."),
+    use: t("Understand what each property means, label concepts in English and other languages, and map the graph to your own model. The SHACL shapes the graph is checked against are in the repository."),
+  },
+  {
+    id: "rules",
+    badge: "✓",
+    title: t("Rules and the checklist"),
+    file: "rules.json",
+    format: "JSON",
+    what: t("The rules for businesses, the conditions they apply under, each condition's yes/no question, and the example businesses with the rules they must get."),
+    use: t("Build a checklist into an article or a tool from the graph, instead of retyping it. The site's own checklist runs on this file."),
+  },
+  {
+    id: "citations",
+    badge: "#",
+    title: t("Citations"),
+    file: "citations.json",
+    format: "JSON",
+    what: t("Every identifier in the graph, with a SHA-256 of its triples and the graph's version."),
+    use: t("Check in your build that every identifier you cite still exists, and see when what it says has changed."),
+  },
+];
+const section = "dl-section space-y-4";
+---
+
+<Layout
+  title={t("Downloads")}
+  description={t("The legalgraph knowledge graph in Turtle, N-Triples and JSON-LD, its ontology, its rules and its citations, and the repository with everything they are made from.")}
+  t={t}
+  page="download"
+  header={{
+    title: t("Downloads"),
+    description: t("The whole graph, free to use under CC BY 4.0. Best taken from GitHub, where it comes with the law texts it is built from and the checks that prove it."),
+  }}
+>
+  <Article label={t("On this page")} collapseLabel={t("Collapse")} expandLabel={t("Expand")} mark={mark}>
+    <div class="max-w-3xl space-y-4 text-muted-foreground">
+      <p>
+        {
+          t("The graph as published today: {triples} triples, {provisions} provisions from {acts} laws, judgments and guidelines in {jurisdictions} jurisdictions.", {
+            triples: number(meta.counts.triples),
+            provisions: number(meta.counts.provisions),
+            acts: number(meta.counts.acts),
+            jurisdictions: number(meta.counts.jurisdictions),
+          })
+        }
+      </p>
+
+      <div class="dl-rail">
+      <section class:list={[section, "mt-8!"]}>
+        <SectionHeading id="github" badge="git" featured>{t("Clone it from GitHub (recommended)")}</SectionHeading>
+        <p>
+          {t("The repository is the graph's real home. A clone gives you more than any file below: the official law texts byte for byte, the annotated copies, the editorial Turtle, the ontology with its SHACL shapes, the code that builds everything, and the tests.")}
+          {" "}{t("Run them and you have checked the graph yourself, instead of trusting a download.")}
+        </p>
+        <pre class="code-block"><code>git clone {GITHUB_URL}.git
+cd legalgraph
+make install    # {t("the tools (needs uv)")}
+make check      # {t("verify every law text, validate the graph, run the tests")}
+make export     # dist/legalgraph.{"{ttl,nt,jsonld}"}, {t("built on your machine")}
+make sparql     # {t("query it in your browser with Apache Jena Fuseki (needs Docker)")}</code></pre>
+        <p>
+          <T
+            msg={t("If the graph is useful to you, <0>star the repository</0>: it is how others find the project, and how we see who relies on it. Corrections and questions are welcome there as issues.")}
+            tags={[{ kind: "strong" }]}
+          />
+        </p>
+        <div class="flex flex-wrap gap-3 pt-1">
+          <Button href={GITHUB_URL}>{t("Star and clone on GitHub")}</Button>
+          <Button href={pagePath("blog/how-to-contribute", t.locale)} variant="outline">{t("How to contribute")}</Button>
+          <Button href={pagePath("method", t.locale)} variant="outline">{t("How the graph is built")}</Button>
+        </div>
+      </section>
+
+      {
+        files.map((f) => (
+          <section class={section}>
+            <SectionHeading id={f.id} badge={f.badge}>
+              {f.title}
+            </SectionHeading>
+            <p>
+              <a href={`/downloads/${f.file}`} download class="font-semibold">
+                {f.file}
+              </a>
+              <span class="text-sm">
+                {" "}
+                · {f.format}
+                {size(f.file) && <> · {size(f.file)}</>}
+              </span>
+            </p>
+            <p>
+              <strong class="text-foreground">{t("What is inside.")}</strong> {f.what}
+            </p>
+            <p>
+              <strong class="text-foreground">{t("What it is for.")}</strong> {f.use}
+            </p>
+          </section>
+        ))
+      }
+
+      <section class={section}>
+        <SectionHeading id="one-entry" badge="URL">{t("One entry at a time")}</SectionHeading>
+        <p>{t("Every identifier is also an address. A browser gets the page; a program asking for Turtle gets that entry's triples:")}</p>
+        <pre class="code-block"><code>curl -H "Accept: text/turtle" https://legalgraph.org/id/DE-DDG-s5-1</code></pre>
+        <p>{t("Every page shows its own Turtle too. For the whole graph, use the files above rather than fetching every page.")}</p>
+      </section>
+
+      <section class={section}>
+        <SectionHeading id="law-texts" badge="§">{t("The law texts")}</SectionHeading>
+        <p>
+          <T
+            msg={t("The official originals the graph is built from, with their SHA-256 and retrieval dates, are listed under <0>Law texts</0>, each with its file and our annotated copy. All of them are in the repository.")}
+            tags={[{ kind: "link", href: pagePath("sources", t.locale) }]}
+          />
+        </p>
+      </section>
+
+      <section class={section}>
+        <SectionHeading id="licence" badge="CC">{t("Licence and credit")}</SectionHeading>
+        <p>
+          <T
+            msg={t("The data and the ontology are licensed under <0>CC BY 4.0</0>: use them for anything, commercial included, and credit them, for example:")}
+            tags={[{ kind: "link", href: "https://creativecommons.org/licenses/by/4.0/" }]}
+          />
+        </p>
+        <pre class="code-block"><code>legalgraph by Aimix GmbH (https://aimix.io), licensed under CC BY 4.0.</code></pre>
+        <p>
+          {t("The code is MIT. The law texts are official works and are not covered by our licences.")}
+          {" "}
+          <T
+            msg={t("The graph is research, not legal advice: the <0>terms of use</0> say what that means.")}
+            tags={[{ kind: "link", href: pagePath("legal/terms", t.locale) }]}
+          />
+        </p>
+      </section>
+      </div>
+    </div>
+  </Article>
+</Layout>
+
+<style>
+  /* The rail: a dashed edge down the page that every section hangs off, as nodes hang off a graph. */
+  .dl-rail {
+    position: relative;
+    padding-left: 2.25rem;
+  }
+  .dl-rail::before {
+    content: "";
+    position: absolute;
+    left: 0.6rem;
+    top: 1.6rem;
+    bottom: 2rem;
+    border-left: 2px dashed color-mix(in oklab, var(--teal-600) 40%, transparent);
+  }
+  .dl-section {
+    margin-top: 3rem;
+  }
+  .dl-section:first-child {
+    margin-top: 2rem;
+  }
+  /* Each heading (SectionHeading) joins the rail by a node and a short edge. */
+  .dl-rail :global(.section-head)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(-2.25rem + 0.6rem - 5px);
+    width: 12px;
+    height: 12px;
+    border: 3px solid var(--teal-600);
+    border-radius: 999px;
+    background: var(--background);
+    transform: translateY(-50%);
+  }
+  .dl-rail :global(.section-head)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(-2.25rem + 0.6rem + 7px);
+    width: calc(2.25rem - 0.6rem - 7px);
+    border-top: 2px dashed color-mix(in oklab, var(--teal-600) 55%, transparent);
+  }
+</style>

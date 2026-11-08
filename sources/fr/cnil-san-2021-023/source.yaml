@@ -1,0 +1,24 @@
+# CNIL délibération SAN-2021-023 du 31 décembre 2021 (restricted committee): two websites let
+# users accept cookies in one click but made them refuse through several clicks — consent not
+# free (loi 78-17 art. 82, read with the GDPR). Fines of €90m on [X] and €60m on [Y], plus an
+# injunction with €100,000/day astreinte. Légifrance anonymised the parties two years after
+# publication, as the decision provides; the graph keeps them masked and links the archived
+# January 2022 publication (sources/link-only.yaml), where anyone can verify who they are.
+# legifrance needs a browser; the fragment is the saved deliberation page's .cnil container.
+id: fr/cnil-san-2021-023
+title: CNIL délibération SAN-2021-023 du 31 décembre 2021 (refusing cookies)
+jurisdiction: FR
+language: fr
+publisher: Commission nationale de l'informatique et des libertés, via legifrance.gouv.fr
+kind: authored-xml
+licence: licence-ouverte-2.0
+licence_basis: "legifrance and CNIL content is published under Licence Ouverte 2.0 (legal notices of both sites)"
+originals:
+  - file: san-2021-023.fragment.html
+    url: https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000044840062/
+    fetch: html-fragment
+    selector: ".cnil"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: 015064ec603f1db3ebc43cc7142b782bdacbf4325f7394b961e91ffc0ed458ac
+annotated: cnil-san-2021-023.law.xml

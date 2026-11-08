@@ -1,0 +1,15 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:TR-6563
+    lgo:amendmentCheck lg:TR-6563-amendment-check .
+
+lg:TR-6563-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6563&MevzuatTur=1&MevzuatTertip=5"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Kanun 7529" ;
+    lgo:lastKnownAmendmentDate "2024-10-24"^^xsd:date ;
+    rdfs:comment "mevzuatmetin consolidated PDF shows amendment notes through Law 7529, in force 24.10.2024 (Değişik/Ek: 24/10/2024-7529)."@en .

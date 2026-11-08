@@ -1,0 +1,25 @@
+# Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2003/2426), Schedule A1:
+# the exceptions to the consent rule of regulation 6 (strictly necessary storage or access, and since
+# the Data (Use and Access) Act 2025, in force since 5 February 2026, some statistical, appearance and
+# functionality purposes if users are told and can object). Official XML (Crown Legislation Markup
+# Language) as revised by legislation.gov.uk; regulation 6 itself is in ../pecr/.
+id: gb/pecr-schedule-a1
+title: Privacy and Electronic Communications (EC Directive) Regulations 2003, Schedule A1
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+document: GB-SI-2003-2426-schedule-A1-source
+originals:
+  - file: uksi-2003-2426-schedule-A1.xml
+    page: https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1
+    url: https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-02
+    sha256: 15f43f6f950c2c798a3fc5d2c029931360537da34d5ce2f8929744b123fb970f
+annotated: uksi-2003-2426-schedule-A1.annotated.xml

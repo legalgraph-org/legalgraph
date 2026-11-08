@@ -1,0 +1,42 @@
+# Judgment in Case C-61/19, Orange România: official XML (Formex 4) of the European Court Reports from the Publications
+# Office. Orange România: a pre-ticked box is not consent, and consent bundled into a contract about something else is not freely given — the authority on proof and granularity of consent for banners. The language of the case, Romanian, is the authentic version; the English
+# text is a translation made by the Court. The operative part — the rulings, which bind
+# national courts on how EU law is to be read — is annotated; Romanian is kept as a parallel
+# version.
+id: eu/cjeu-orange-romania
+title: Judgment in Case C-61/19, Orange România
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62019CJ0061_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62019CJ0061
+    url: https://publications.europa.eu/resource/celex/62019CJ0061
+    fetch: zip-member
+    member: ECR_62019CJ0061_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: Romanian. This English text is the Court's translation; the authentic version is the Romanian one."
+    retrieved_on: 2026-11-02
+    sha256: 124eba2e4ce1208ebe6c3119dc95f2670616a6d083404a42cf1efd8938e22603
+  - file: ECR_62019CJ0061_RO_01.xml
+    role: parallel
+    language: romanian
+    page: https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=CELEX:62019CJ0061
+    url: https://publications.europa.eu/resource/celex/62019CJ0061
+    fetch: zip-member
+    member: ECR_62019CJ0061_RO_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: ron
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: a855835e4b251fa1c8715d76fcdf027d736ceb2dfcb93151ad26d11f352ea6c8
+annotated: ECR_62019CJ0061_EN_01.annotated.xml

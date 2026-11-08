@@ -1,0 +1,45 @@
+---
+// What a decision ordered for each party, with the point of the decision that says so and the
+// provisions behind it.
+import { outcomeSummary, type Outcome } from "../lib/cases";
+import Refs from "./Refs.astro";
+import Status from "./Status.astro";
+
+interface Props {
+  outcomes: Outcome[];
+}
+
+const { outcomes } = Astro.props;
+---
+
+{
+  outcomes.map((o) => (
+    <article class="card space-y-2 text-sm">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <p class="m-0! text-base font-semibold">{outcomeSummary(o)}</p>
+        <Status status={o.reviewStatus} />
+      </div>
+      <p class="m-0!">
+        <span class="text-muted-foreground">Against: </span>
+        {o.against.join("; ")}
+      </p>
+      {o.forBreachOf.length > 0 && (
+        <p class="m-0!">
+          <span class="text-muted-foreground">For breach of: </span>
+          <Refs ids={o.forBreachOf} />
+        </p>
+      )}
+      {o.sanctionedUnder.length > 0 && (
+        <p class="m-0!">
+          <span class="text-muted-foreground">Under: </span>
+          <Refs ids={o.sanctionedUnder} />
+        </p>
+      )}
+      <p class="m-0!">
+        <span class="text-muted-foreground">Stated in: </span>
+        <Refs ids={o.statedIn} />
+      </p>
+      {o.comment && <p class="m-0! text-muted-foreground">{o.comment}</p>}
+    </article>
+  ))
+}

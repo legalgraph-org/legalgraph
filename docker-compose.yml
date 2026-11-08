@@ -1,0 +1,23 @@
+# Optional: the graph in Apache Jena Fuseki, a SPARQL server with a query editor in the browser.
+# Read-only, in memory, loaded from the export on every start; reachable from this machine only.
+# See docs/sparql-with-fuseki.md.
+#
+#   make export-full        # writes dist/legalgraph-with-ontology.ttl
+#   docker compose up       # then open http://localhost:3030
+services:
+  fuseki:
+    image: secoresearch/fuseki:5.6.0
+    command:
+      - java
+      - -cp
+      - "*:/javalibs/*"
+      - org.apache.jena.fuseki.main.cmds.FusekiServerCmd
+      - --file=/data/legalgraph-with-ontology.ttl
+      - /legalgraph
+    environment:
+      JAVA_OPTIONS: -Xmx1g
+    ports:
+      - "127.0.0.1:${FUSEKI_PORT:-3030}:3030"
+    volumes:
+      - ./dist:/data:ro
+      - ./docker/fuseki-shiro.ini:/fuseki-base/shiro.ini:ro

@@ -1,0 +1,16 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:ES-LSSI
+    lgo:amendmentCheck lg:ES-LSSI-amendment-check .
+
+lg:ES-LSSI-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Versión publicada el 23/01/2025 (deroga el Real Decreto-ley 9/2024)" ;
+    lgo:lastKnownAmendmentDate "2025-01-23"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "BOE consolidated text: latest update published 23.01.2025, reflecting the repeal of Real Decreto-ley 9/2024."@en .

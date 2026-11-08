@@ -1,0 +1,103 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Canada: commercial electronic messages under CASL (s. 6 consent and content, s. 10 consent
+# requests, s. 11 unsubscribe) and privacy under PIPEDA (Schedule 1 Openness and Consent).
+# Ontario: the internet-agreement duties of the Consumer Protection Act.
+
+# --- Commercial electronic messages (CASL, S.C. 2010, c. 23) -------------------------------
+
+lg:CA-R-cem-consent a lgo:Obligation ;
+    rdfs:label "Consent before sending commercial electronic messages"@en ;
+    rdfs:comment "Opt-in, not opt-out: express or implied consent is required before the message goes out — the opposite of CAN-SPAM."@en ;
+    lgo:establishedBy lg:CA-CASL-s6-1 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:CA ;
+    lgo:appliesWhen lgv:EstablishedInCanada , lgv:SendsMarketingEmails ;
+    lgo:requiresAction lgv:ObtainConsentForEmailMarketing ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CA-R-cem-content a lgo:Obligation ;
+    rdfs:label "Every commercial electronic message: sender, contact and unsubscribe"@en ;
+    lgo:establishedBy lg:CA-CASL-s6-2 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA ;
+    lgo:appliesWhen lgv:EstablishedInCanada , lgv:SendsMarketingEmails ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:RapidContact , lgv:UnsubscribeMechanism ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CA-R-cem-consent-request a lgo:Obligation ;
+    rdfs:label "What a request for express consent must say"@en ;
+    rdfs:comment "The purpose of the consent and the identity of the asker, set out clearly and simply when requesting it."@en ;
+    lgo:establishedBy lg:CA-CASL-s10-1 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA ;
+    lgo:appliesWhen lgv:EstablishedInCanada , lgv:SendsMarketingEmails ;
+    lgo:requiresDisclosureOf lgv:ProcessingPurposes , lgv:ProviderName ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CA-R-cem-unsubscribe a lgo:Obligation ;
+    rdfs:label "A working unsubscribe mechanism at no cost"@en ;
+    lgo:establishedBy lg:CA-CASL-s11-1 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA ;
+    lgo:appliesWhen lgv:EstablishedInCanada , lgv:SendsMarketingEmails ;
+    lgo:requiresAction lgv:OfferUnsubscribe ;
+    lgo:requiresDisclosureOf lgv:UnsubscribeMechanism ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Privacy (PIPEDA, S.C. 2000, c. 5) -----------------------------------------------------
+
+lg:CA-R-privacy-policy a lgo:Obligation ;
+    rdfs:label "Privacy policy: open, readily available, in understandable form"@en ;
+    rdfs:comment "PIPEDA's Openness principle: individuals can acquire information about an organisation's data practices without unreasonable effort — the contact of the accountable person, how to access one's data, what data is held and what goes to related organisations."@en ;
+    lgo:establishedBy lg:CA-PIPEDA-sch1-4-8-1 , lg:CA-PIPEDA-sch1-4-8-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA ;
+    lgo:appliesWhen lgv:EstablishedInCanada , lgv:ProcessesPersonalData ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:DataProtectionOfficerContact , lgv:RequestMethods , lgv:CategoriesOfPersonalData , lgv:ProcessingPurposes , lgv:Recipients ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CA-R-meaningful-consent a lgo:Obligation ;
+    rdfs:label "Consent valid only where the individual can understand the collection"@en ;
+    lgo:establishedBy lg:CA-PIPEDA-s6-1 , lg:CA-PIPEDA-sch1-4-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA ;
+    lgo:appliesWhen lgv:EstablishedInCanada , lgv:ProcessesPersonalData , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:ObtainConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Ontario: internet agreements (CPA 2002, Part IV) ---------------------------------------
+
+lg:CA-ON-R-internet-agreement a lgo:Obligation ;
+    rdfs:label "Internet agreements: prescribed disclosure before the consumer enters"@en ;
+    rdfs:comment "Disclose the prescribed information, give an express opportunity to accept, decline and correct, and make the disclosure accessible, retainable and printable — or the consumer may cancel within seven days of receiving the copy (s. 40). The prescribed lists are in O. Reg. 17/05."@en ;
+    lgo:establishedBy lg:CA-ON-CPA-s38-1 , lg:CA-ON-CPA-s38-2 , lg:CA-ON-CPA-s38-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA-ON ;
+    lgo:appliesWhen lgv:SellsToConsumersInOntario , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:PrescribedContractInformation ;
+    lgo:requiresAction lgv:AllowCorrectionBeforeContract ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CA-ON-R-agreement-copy a lgo:Obligation ;
+    rdfs:label "Deliver a written copy of the internet agreement"@en ;
+    lgo:establishedBy lg:CA-ON-CPA-s39-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA-ON ;
+    lgo:appliesWhen lgv:SellsToConsumersInOntario , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:ContractConfirmation ;
+    lgo:requiresDisclosureOf lgv:ContractCopy ;
+    lgo:reviewStatus lgv:Draft .

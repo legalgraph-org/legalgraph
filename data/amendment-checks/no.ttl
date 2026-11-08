@@ -1,0 +1,17 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:NO-EHL
+    lgo:amendmentCheck lg:NO-EHL-amendment-check .
+
+lg:NO-EHL-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://lovdata.no/dokument/NL/lov/2003-05-23-35"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "LOV-2023-06-16-38" ;
+    lgo:lastKnownAmendmentDate "2023-06-16"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2023-10-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "lovdata: sist endret LOV-2023-06-16-38 fra 01.10.2023."@en .

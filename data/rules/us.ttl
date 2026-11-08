@@ -1,0 +1,194 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# United States and California, read from data/extracted/us/ and data/extracted/us-ca/. Draft until a
+# lawyer reviews it.
+
+lg:US-R-ada-accessibility a lgo:Obligation ;
+    rdfs:label "Accessible website for a business open to the public (ADA Title III, as courts and DOJ read it)"@en ;
+    rdfs:comment "The statute names no web standard; settlements and the DOJ's Title II rule point to WCAG 2.1 Level AA. Courts are divided on websites without a physical location."@en ;
+    lgo:establishedBy lg:US-ADA-12182-a ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US ;
+    lgo:appliesWhen lgv:PlaceOfPublicAccommodation ;
+    lgo:requiresAction lgv:MakeServiceAccessible ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-R-can-spam a lgo:Obligation ;
+    rdfs:label "Commercial email: mark it as advertising, offer an unsubscribe, give a postal address"@en ;
+    lgo:establishedBy lg:US-CAN-SPAM-7704-a-5-A ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US ;
+    lgo:appliesWhen lgv:SendsCommercialEmailInTheUs ;
+    lgo:requiresDisclosureOf lgv:AdvertisementMarking , lgv:GeographicAddress ;
+    lgo:requiresAction lgv:OfferUnsubscribe ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-notice-at-collection a lgo:Obligation ;
+    rdfs:label "Notice at collection: categories, purposes, whether sold or shared, retention"@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-100-a ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:ProcessesPersonalData ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:CategoriesOfPersonalData , lgv:ProcessingPurposes , lgv:RetentionPeriod ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-privacy-policy a lgo:Obligation ;
+    rdfs:label "Online privacy policy: rights, request methods, categories, sources, purposes, recipients, sales"@en ;
+    rdfs:comment "Updated at least once every 12 months."@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-130-a-5 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:ProcessesPersonalData ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:DataSubjectRights , lgv:RequestMethods , lgv:CategoriesOfPersonalData , lgv:SourceOfPersonalData ,
+        lgv:ProcessingPurposes , lgv:Recipients , lgv:SoldOrSharedCategories ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-request-methods a lgo:Obligation ;
+    rdfs:label "Ways to submit privacy requests"@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-130-a-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:ProcessesPersonalData ;
+    lgo:requiresAction lgv:ProvideRequestMethods ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-limit-sensitive a lgo:Obligation ;
+    rdfs:label "“Limit the Use of My Sensitive Personal Information” link"@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-121-a , lg:US-CA-CCPA-1798-135-a ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:UsesSensitiveDataForOtherPurposes ;
+    lgo:unless lgv:HonoursOptOutPreferenceSignal ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:LimitSensitiveDataLink ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-do-not-sell a lgo:Obligation ;
+    rdfs:label "“Do Not Sell or Share My Personal Information” link"@en ;
+    rdfs:comment "Not required if the business honours opt-out preference signals such as Global Privacy Control in the way § 1798.135(b) sets out; the CPPA's regulations still require the opt-out to be explained in the privacy policy."@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-120-b , lg:US-CA-CCPA-1798-135-a , lg:US-CA-CCPA-1798-135-b-1 , lg:US-CA-CCR-11-7026-a ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:SellsOrSharesPersonalData ;
+    lgo:unless lgv:HonoursOptOutPreferenceSignal ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:DoNotSellLink ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- California: electronic commercial service notice (Civ. Code § 1789.3) ------------------
+
+lg:US-CA-R-ecommerce-service-notice a lgo:Obligation ;
+    rdfs:label "Electronic commercial service: provider name, address, phone, charges, complaints"@en ;
+    lgo:establishedBy lg:US-CA-CIV-s1789-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:SellsToConsumersInCalifornia ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:TotalPrice , lgv:ComplaintAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- California: automatic purchase renewals (B&P Code § 17602) ----------------------------
+
+lg:US-CA-R-auto-renewal-terms a lgo:Obligation ;
+    rdfs:label "Auto-renewal terms: clear and conspicuous before the agreement"@en ;
+    lgo:establishedBy lg:US-CA-BPC-s17602-a1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:SellsToConsumersInCalifornia , lgv:OffersAutomaticRenewal ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:SubscriptionTermsDisclosure ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-auto-renewal-consent a lgo:Obligation ;
+    rdfs:label "Affirmative consent to the renewal terms before charging"@en ;
+    lgo:establishedBy lg:US-CA-BPC-s17602-a2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:SellsToConsumersInCalifornia , lgv:OffersAutomaticRenewal ;
+    lgo:requiresAction lgv:ObtainAffirmativeConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-auto-renewal-acknowledgment a lgo:Obligation ;
+    rdfs:label "Retainable acknowledgment with the terms, cancellation policy and how to cancel"@en ;
+    lgo:establishedBy lg:US-CA-BPC-s17602-a3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:SellsToConsumersInCalifornia , lgv:OffersAutomaticRenewal ;
+    lgo:partOfDisclosure lgv:ContractConfirmation ;
+    lgo:requiresDisclosureOf lgv:SubscriptionTermsDisclosure , lgv:CancellationInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-cancel-online a lgo:Obligation ;
+    rdfs:label "Cancel online, at will, where the renewal was accepted online"@en ;
+    rdfs:comment "Free and easy: a toll-free number, email or equivalent mechanism — and when the consumer accepted online, termination exclusively online through a prominent link, button or termination email. Germany's § 312k BGB is the same duty."@en ;
+    lgo:establishedBy lg:US-CA-BPC-s17602-c1 , lg:US-CA-BPC-s17602-d1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:SellsToConsumersInCalifornia , lgv:OffersAutomaticRenewal ;
+    lgo:requiresDisclosureOf lgv:CancellationMechanism , lgv:OnlineCancellation ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Federal: COPPA (16 CFR Part 312) --------------------------------------------------------
+
+lg:US-R-coppa-notice a lgo:Obligation ;
+    rdfs:label "Children's privacy notice: link on the home page and wherever data is collected"@en ;
+    lgo:establishedBy lg:US-CFR-16-312-4-a , lg:US-CFR-16-312-4-d ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US ;
+    lgo:appliesWhen lgv:DirectedToChildrenUnder13 , lgv:ProcessesPersonalData ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress ,
+        lgv:CategoriesOfPersonalData , lgv:ProcessingPurposes , lgv:Recipients , lgv:DataSubjectRights ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-R-coppa-consent a lgo:Obligation ;
+    rdfs:label "Verifiable parental consent before collecting from children"@en ;
+    lgo:establishedBy lg:US-CFR-16-312-5-a-1 , lg:US-CFR-16-312-5-a-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US ;
+    lgo:appliesWhen lgv:DirectedToChildrenUnder13 , lgv:ProcessesPersonalData ;
+    lgo:requiresAction lgv:ObtainParentalConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- CCPA: service provider contracts and data minimisation --------------------------------
+
+lg:US-CA-R-service-provider-contract a lgo:Obligation ;
+    rdfs:label "Written contracts binding service providers and contractors"@en ;
+    rdfs:comment "The CCPA's processing agreement: the contract must prohibit the vendor from selling or sharing the personal information, from using it beyond the specified business purposes — including commercially for itself — and from combining it with other data. A vendor without such a contract is a third party, not a service provider, and transfers to it may count as a sale or share."@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-140-ag-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:ProcessesPersonalData , lgv:EngagesProcessors ;
+    lgo:requiresAction lgv:HaveProcessingAgreement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-minimal-collection a lgo:Obligation ;
+    rdfs:label "Collect and keep only what the disclosed purpose needs"@en ;
+    rdfs:comment "The CCPA's minimisation rule: collection, use, retention and sharing must be reasonably necessary and proportionate to the purpose disclosed at collection — the regulation tests it against the consumer's reasonable expectations (the flashlight-app geolocation example). Retention beyond the disclosed purpose is covered too (§ 1798.100(a)(3))."@en ;
+    lgo:establishedBy lg:US-CA-CCR-11-7002-a , lg:US-CA-CCR-11-7002-b , lg:US-CA-CCPA-1798-100-a ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:ProcessesPersonalData ;
+    lgo:requiresAction lgv:CollectBeyondPurpose ;
+    lgo:reviewStatus lgv:Draft .

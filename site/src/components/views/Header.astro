@@ -1,0 +1,27 @@
+---
+import type { Space } from "../../lib/links";
+import Pointer from "../Pointer.astro";
+import Status from "../Status.astro";
+
+interface Props {
+  kind: string;
+  title: string;
+  subtitle?: string | null;
+  id: string;
+  space?: Space;
+  status?: string;
+  graph?: string | false;
+}
+
+const { kind, title, subtitle, id, space = "id", status, graph = id } = Astro.props;
+---
+
+<header class="mb-6 space-y-2">
+  <p class="text-xs font-medium tracking-wide text-muted-foreground uppercase">{kind}</p>
+  <h1>{title}</h1>
+  {subtitle && <p class="text-muted-foreground">{subtitle}</p>}
+  <div class="flex flex-wrap items-center gap-2">
+    <Pointer id={id} space={space} graph={graph} />
+    {status && <Status status={status} />}
+  </div>
+</header>

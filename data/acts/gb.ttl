@@ -1,0 +1,37 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# United Kingdom: additions to data/extracted/gb/ (the texts come from legislation.gov.uk).
+
+lg:GB-SI-2015-17
+    lgo:shortName "Trading Disclosures Regulations 2015" ;
+    rdfs:comment "Made under the Companies Act 2006. Companies must show their registered name, number, part of the UK where registered and registered office on their websites: the UK's nearest equivalent to the Impressum, for companies only."@en .
+
+lg:GB-SI-2003-2426
+    lgo:shortName "PECR" ;
+    rdfs:comment "Regulation 6, the UK cookie rule, was substituted by the Data (Use and Access) Act 2025 from 5 February 2026: storing or reading information on a device is prohibited unless an exception in Schedule A1 applies, such as consent, strict necessity, or certain analytics and functionality purposes. The exceptions are not quoted here yet."@en .
+
+lg:GB-SI-2002-2013
+    lgo:shortName "Electronic Commerce Regulations 2002" ;
+    rdfs:comment "Implemented the e-Commerce Directive and remains UK law after Brexit. Regulation 6 is the UK's general provider-information duty for websites, covering sole traders and partnerships too."@en .
+
+lg:GB-SI-2013-3134
+    lgo:shortName "Consumer Contracts Regulations 2013" ;
+    rdfs:comment "Implemented the Consumer Rights Directive; amended since Brexit only by UK legislation. There is no UK equivalent of the EU withdrawal button."@en .
+
+lg:GB-DMCC-2024
+    lgo:shortName "DMCC Act 2024" ;
+    rdfs:comment "Part 4 Chapter 1, in force since 6 April 2025, replaced the Consumer Protection from Unfair Trading Regulations 2008 and lets the CMA fine directly. It adds banned practices on fake reviews and requires total prices including mandatory fees. Part 4 Chapter 2 (subscription contracts, sections 253 to 281: pre-contract information, reminder notices, easy exit, cooling-off) is enacted but not yet in force; commencement was announced for January 2027 and secondary legislation is still outstanding."@en .
+
+lg:GB-UK-GDPR
+    lgo:shortName "UK GDPR" ;
+    rdfs:comment "Read together with the Data Protection Act 2018, which supplements it, and as amended by the Data (Use and Access) Act 2025. Controllers also pay the ICO's data protection fee (Data Protection (Charges and Information) Regulations 2018), not quoted here."@en .
+
+lg:GB-OSA-2023
+    lgo:shortName "Online Safety Act 2023" ;
+    rdfs:comment "Applies to user-to-user and search services with links to the UK, enforced by Ofcom through codes of practice. The illegal content duties apply since 17 March 2025 and the children's safety duties since 25 July 2025."@en .
+
+lg:GB-CRA-2015
+    lgo:shortName "Consumer Rights Act 2015" ;
+    rdfs:comment "Section 62 makes an unfair consumer term unenforceable (significant imbalance contrary to good faith, assessed for transparency), section 68 requires plain intelligible language and prominence with interpretation in the consumer's favour, and Schedule 2 is the indicative grey list — the UK's unfair-terms baseline for website terms."@en .

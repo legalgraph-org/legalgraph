@@ -1,0 +1,1962 @@
+msgid ""
+msgstr ""
+"Language: de\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: legalgraph site/scripts/i18n/extract.ts\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/components/pages/GraphPage.astro:69
+msgid "(translation)"
+msgstr "(Übersetzung)"
+
+#: src/components/pages/MethodPage.astro:177
+msgid "1. The original is kept, and locked"
+msgstr "1. Das Original wird aufbewahrt und festgeschrieben"
+
+#: src/components/pages/MethodPage.astro:199
+msgid "2. The text is annotated — and checked against the original"
+msgstr "2. Der Text wird annotiert – und gegen das Original geprüft"
+
+#: src/components/pages/MethodPage.astro:232
+msgid "3. Language versions are checked the same way — or marked as ours"
+msgstr "3. Sprachfassungen werden genauso geprüft – oder als unsere gekennzeichnet"
+
+#: src/components/pages/MethodPage.astro:254
+msgid "4. The graph is generated, not written"
+msgstr "4. Der Graph wird erzeugt, nicht geschrieben"
+
+#: src/components/pages/MethodPage.astro:273
+msgid "5. Our readings are kept apart"
+msgstr "5. Unsere Lesart bleibt getrennt"
+
+#: src/components/pages/MethodPage.astro:297
+msgid "6. Published as a site and as data"
+msgstr "6. Veröffentlicht als Website und als Daten"
+
+#: src/components/pages/MethodPage.astro:211
+msgid "<0>Authored XML</0> (portals with only HTML or PDF — the Rada, EDPB and DSK guidance, much of US and member-state law): the text is transcribed into a small readable schema. <1>sources verify</1> validates the schema and requires every paragraph to occur word for word in the saved original, list item for list item — a transcription cannot silently drift from what was published."
+msgstr "<0>Selbst verfasstes XML</0> (Portale nur mit HTML oder PDF – die Rada, Leitlinien von EDSA und DSK, viel US- und mitgliedstaatliches Recht): Der Text wird in ein kleines, lesbares Schema übertragen. <1>sources verify</1> validiert das Schema und verlangt, dass jeder Absatz Wort für Wort im gespeicherten Original vorkommt, Listenpunkt für Listenpunkt – eine Übertragung kann sich nicht unbemerkt vom Veröffentlichten entfernen."
+
+#: src/components/pages/GraphPage.astro:48
+msgid "<0>Double-click</0> a node, or press <1>Expand</1>, to bring in its neighbours."
+msgstr "<0>Doppelklicken</0> Sie auf einen Knoten, oder drücken Sie <1>Ausklappen</1>, um seine Nachbarn hinzuzuholen."
+
+#: src/components/pages/MethodPage.astro:332
+msgid "<0>Every statement has an address.</0> Each entry is a URL, such as <1>legalgraph.org/id/DE-DDG-s5-1</1>, that people can cite and programs can fetch."
+msgstr "<0>Jede Aussage hat eine Adresse.</0> Jeder Eintrag ist eine URL, etwa <1>legalgraph.org/id/DE-DDG-s5-1</1>, die Menschen zitieren und Programme abrufen können."
+
+#: src/components/pages/GraphPage.astro:49
+msgid "<0>Focus</0> starts over from the node you selected."
+msgstr "<0>Fokussieren</0> beginnt neu beim ausgewählten Knoten."
+
+#: src/components/pages/SourcesPage.astro:150
+msgid "<0>How the text is checked</0>."
+msgstr "<0>Wie der Text geprüft wird</0>."
+
+#: src/components/pages/MethodPage.astro:344
+msgid "<0>It connects with other graphs.</0> RDF from different sources merges as it is: load legalgraph next to EUR-Lex's own data, or your company's, and query across them."
+msgstr "<0>Er verbindet sich mit anderen Graphen.</0> RDF aus verschiedenen Quellen lässt sich unverändert zusammenführen: Laden Sie legalgraph neben die Daten von EUR-Lex oder Ihres Unternehmens und fragen Sie über alle hinweg ab."
+
+#: src/components/pages/MethodPage.astro:362
+msgid "<0>It grows without migrations.</0> A new country or a new kind of duty adds statements; there is no database schema to change."
+msgstr "<0>Er wächst ohne Migrationen.</0> Ein neues Land oder eine neue Art von Pflicht fügt Aussagen hinzu; es gibt kein Datenbankschema, das geändert werden müsste."
+
+#: src/layouts/Layout.astro:99
+msgid "<0>Not legal advice.</0> Maintained by researchers, not lawyers. Check the official text before relying on any entry."
+msgstr "<0>Keine Rechtsberatung.</0> Gepflegt von Forschenden, nicht von Anwälten. Prüfen Sie den amtlichen Text, bevor Sie sich auf einen Eintrag verlassen."
+
+#: src/components/pages/BlogPostPage.astro:50
+msgid "<0>Not legal advice.</0> Written by researchers, not lawyers. Check the official text before relying on it."
+msgstr "<0>Keine Rechtsberatung.</0> Geschrieben von Forschenden, nicht von Anwälten. Prüfen Sie den amtlichen Text, bevor Sie sich darauf verlassen."
+
+#: src/components/pages/MethodPage.astro:205
+msgid "<0>Official XML</0> (EU Formex, gesetze-im-internet.de, legislation.gov.uk, Fedlex, the US Code): annotations are added inside the official file's own tags. Strip them again and the file is byte-identical to the original — proof that nothing was edited, not just asserted."
+msgstr "<0>Amtliches XML</0> (EU-Formex, gesetze-im-internet.de, legislation.gov.uk, Fedlex, der US Code): Die Annotationen kommen in die eigenen Tags der amtlichen Datei. Entfernt man sie wieder, ist die Datei Byte für Byte mit dem Original identisch – ein Beweis, dass nichts verändert wurde, nicht bloß eine Behauptung."
+
+#: src/components/pages/MethodPage.astro:326
+msgid "<0>Questions across laws and countries.</0> One SPARQL query reaches every provision in every jurisdiction, as the example below shows."
+msgstr "<0>Fragen über Gesetze und Länder hinweg.</0> Eine SPARQL-Abfrage erreicht jede Vorschrift in jeder Rechtsordnung, wie das Beispiel unten zeigt."
+
+#: src/components/pages/HomePage.astro:288
+msgid "<0>Researchers, not lawyers.</0> legalgraph publishes structured research, not legal advice. Rules are drafts until a lawyer reviews them, and every page says so."
+msgstr "<0>Forschende, keine Anwälte.</0> legalgraph veröffentlicht strukturierte Recherche, keine Rechtsberatung. Regeln sind Entwürfe, bis eine Anwältin oder ein Anwalt sie geprüft hat, und jede Seite sagt das."
+
+#: src/components/pages/MethodPage.astro:350
+msgid "<0>Rules for the data, checked by a program.</0> SHACL, a W3C standard, states what every entry must have, and validation checks the whole graph against it."
+msgstr "<0>Regeln für die Daten, von einem Programm geprüft.</0> SHACL, ein W3C-Standard, legt fest, was jeder Eintrag haben muss, und die Validierung prüft den ganzen Graphen dagegen."
+
+#: src/components/pages/MethodPage.astro:338
+msgid "<0>Shared vocabularies.</0> Laws are described with ELI, the European Legislation Identifier ontology that EUR-Lex and many national gazettes use; terms with SKOS; metadata with Dublin Core. Court decisions carry their ECLI where the court publishes one, and countries link to the EU Publications Office's country list. Tools that know these standards understand the graph without learning ours."
+msgstr "<0>Gemeinsame Vokabulare.</0> Gesetze werden mit ELI beschrieben, der Ontologie des European Legislation Identifier, die EUR-Lex und viele nationale Gesetzblätter verwenden; Begriffe mit SKOS; Metadaten mit Dublin Core. Gerichtsentscheidungen tragen ihren ECLI, wo das Gericht einen veröffentlicht, und Länder verweisen auf die Länderliste des Amts für Veröffentlichungen der EU. Werkzeuge, die diese Standards kennen, verstehen den Graphen, ohne unseren lernen zu müssen."
+
+#: src/components/pages/MethodPage.astro:356
+msgid "<0>Turtle is text.</0> People read it, Git shows every change line by line, and reviewers check a correction as they would code. It converts without loss to N-Triples and JSON-LD."
+msgstr "<0>Turtle ist Text.</0> Menschen können es lesen, Git zeigt jede Änderung Zeile für Zeile, und eine Korrektur wird geprüft wie Code. Es lässt sich verlustfrei in N-Triples und JSON-LD umwandeln."
+
+#: src/components/pages/MethodPage.astro:404
+msgid "<0>make check</0> runs the last four checks below and fails if any one of them fails, so a change that breaks the link to the law cannot pass unnoticed. The first needs the network and runs on its own."
+msgstr "<0>make check</0> führt die letzten vier Prüfungen unten aus und schlägt fehl, wenn eine davon fehlschlägt, sodass eine Änderung, die die Verbindung zum Gesetz bricht, nicht unbemerkt durchkommt. Die erste braucht das Netz und läuft für sich."
+
+#: src/components/pages/MethodPage.astro:258
+msgid "<0>sources extract</0> turns the annotated XML into Turtle — mechanically, same input same bytes — and <1>extract --check</1> proves the published files are exactly what the generator produces."
+msgstr "<0>sources extract</0> macht aus dem annotierten XML Turtle – mechanisch, gleiche Eingabe, gleiche Bytes – und <1>extract --check</1> weist nach, dass die veröffentlichten Dateien genau das sind, was der Generator erzeugt."
+
+#: src/components/pages/GraphPage.astro:50
+msgid "A dashed node is a law that several provisions in the view are part of."
+msgstr "Ein gestrichelter Knoten ist ein Gesetz, zu dem mehrere Vorschriften in der Ansicht gehören."
+
+#: src/components/pages/HomePage.astro:349
+msgid "A few questions, then the rules with the law behind each. Nothing leaves your browser."
+msgstr "Ein paar Fragen, dann die Regeln, jede mit dem Gesetz dahinter. Nichts verlässt Ihren Browser."
+
+#: src/components/pages/HomePage.astro:317
+msgid "A graph anyone can extend"
+msgstr "Ein Graph, den jeder erweitern kann"
+
+#: src/components/pages/MethodPage.astro:238
+msgid "A translation gets an <0>as_of</0> date: where the portal's own notes show the text it translates was amended later, the check fails — an official translation older than the law must not stand in for it."
+msgstr "Eine Übersetzung bekommt ein Datum <0>as_of</0>: Zeigen die Hinweise des Portals, dass der übersetzte Text später geändert wurde, schlägt die Prüfung fehl – eine amtliche Übersetzung, die älter ist als das Gesetz, darf nicht an seine Stelle treten."
+
+#: src/components/pages/AboutPage.astro:23
+#: src/components/pages/AboutPage.astro:32 src/lib/navigation.ts:53
+#: src/lib/navigation.ts:64
+msgid "About"
+msgstr "Über"
+
+#: src/components/pages/AboutPage.astro:53
+msgid "Aimix's own articles and products use the graph like anyone else."
+msgstr "Die Artikel und Produkte von Aimix nutzen den Graphen wie alle anderen auch."
+
+#: src/lib/filter-labels.ts:10
+msgid "All"
+msgstr "Alle"
+
+#: src/components/BlogList.astro:67
+msgid "All articles"
+msgstr "Alle Artikel"
+
+#: src/components/pages/MethodPage.astro:161
+msgid "All of it is in one public repository on <0>GitHub</0>. Each folder below links to it there; the numbers are the steps on this page."
+msgstr "Alles liegt in einem öffentlichen Repository auf <0>GitHub</0>. Jeder Ordner unten verlinkt dorthin; die Zahlen sind die Schritte auf dieser Seite."
+
+#: src/components/pages/GlossaryPage.astro:57
+msgid "All terms"
+msgstr "Alle Begriffe"
+
+#: src/components/pages/SourcesPage.astro:160
+msgid "All texts"
+msgstr "Alle Texte"
+
+#: src/components/PipelineDiagram.astro:21
+msgid "All the Turtle, checked against the ontology and its SHACL shapes"
+msgstr "Das gesamte Turtle, geprüft gegen die Ontologie und ihre SHACL-Shapes"
+
+#: src/lib/filter-labels.ts:17
+msgid "All {total}"
+msgstr "Alle {total}"
+
+#: src/components/pages/AboutPage.astro:75
+msgid "Always check the official text before relying on an entry."
+msgstr "Prüfen Sie immer den amtlichen Text, bevor Sie sich auf einen Eintrag verlassen."
+
+#: src/components/pages/HomePage.astro:337
+msgid "An AI agent that reads the graph can tell a business which rules apply, quote the law behind each and link to it, instead of answering from memory: a first round of research that a person can check."
+msgstr "Ein KI-Agent, der den Graphen liest, kann einem Unternehmen sagen, welche Regeln gelten, das Gesetz dahinter zitieren und darauf verlinken, statt aus dem Gedächtnis zu antworten: eine erste Recherche, die ein Mensch prüfen kann."
+
+#: src/components/pages/HomePage.astro:198
+msgid "An example"
+msgstr "Ein Beispiel"
+
+#: src/components/pages/MethodPage.astro:292
+msgid "An example business pins the rule down. A German GmbH with an online shop, entered in the register, must get this rule; the tests fail if it gets one rule more or one fewer than listed:"
+msgstr "Ein Beispielunternehmen hält die Regel fest. Eine deutsche GmbH mit Onlineshop, im Register eingetragen, muss diese Regel bekommen; die Tests schlagen fehl, wenn sie eine Regel mehr oder weniger bekommt als aufgeführt:"
+
+#: src/components/pages/AboutPage.astro:33
+msgid "An open graph of website law"
+msgstr "Ein offener Graph des Website-Rechts"
+
+#: src/layouts/Layout.astro:39
+msgid "An open knowledge graph of the laws on what websites must show and do, with every statement traced to the official text."
+msgstr "Ein offener Wissensgraph der Gesetze dazu, was Websites zeigen und tun müssen, jede Aussage zurückverfolgt bis zum amtlichen Text."
+
+#: src/components/HeroGraph.astro:106
+msgid "Analytics"
+msgstr "Webanalyse"
+
+#: src/components/pages/HomePage.astro:237
+msgid "And beyond Germany"
+msgstr "Und über Deutschland hinaus"
+
+#: src/components/PipelineDiagram.astro:19
+msgid "Annotated text"
+msgstr "Annotierter Text"
+
+#: src/lib/navigation.ts:20
+msgid "Answer a few questions, see which rules apply"
+msgstr "Ein paar Fragen beantworten, sehen, welche Regeln gelten"
+
+#: src/components/pages/HomePage.astro:54
+msgid "Answered for you"
+msgstr "Für Sie beantwortet"
+
+#: src/components/pages/HomePage.astro:212
+msgid "Applies when the business is established in Germany, runs a business website and has a VAT ID."
+msgstr "Gilt, wenn das Unternehmen in Deutschland niedergelassen ist, eine geschäftsmäßige Website betreibt und eine USt-IdNr. hat."
+
+#: src/components/BlogList.astro:132
+#: src/components/pages/BlogIndexPage.astro:22 src/lib/navigation.ts:53
+#: src/lib/navigation.ts:65
+msgid "Articles"
+msgstr "Artikel"
+
+#: src/components/pages/HomePage.astro:160
+msgid "Articles and tools about website compliance are full of claims: <0>your imprint needs a VAT number</0>, <1>analytics needs consent</1>, <2>a subscription needs a cancel button</2>."
+msgstr "Artikel und Tools zur Website-Compliance sind voller Behauptungen: <0>Ins Impressum gehört die USt-IdNr.</0>, <1>Analytics braucht eine Einwilligung</1>, <2>ein Abo braucht einen Kündigungsbutton</2>."
+
+#: src/components/pages/BlogIndexPage.astro:23
+msgid "Articles on what websites must show and do, each linking its claims to the law."
+msgstr "Artikel darüber, was Websites zeigen und tun müssen, jede Aussage mit dem Gesetz verlinkt."
+
+#: src/components/pages/MethodPage.astro:368
+msgid "Ask it your own questions"
+msgstr "Stellen Sie ihm Ihre eigenen Fragen"
+
+#: src/components/pages/BlogPostPage.astro:31
+msgid "Back to articles"
+msgstr "Zurück zu den Artikeln"
+
+#: src/components/pages/MethodPage.astro:370
+msgid "Because the graph is RDF, it answers questions no page was built for, in SPARQL. This query asks which law, in each country, requires a business to name its register and registration number:"
+msgstr "Weil der Graph RDF ist, beantwortet er in SPARQL auch Fragen, für die keine Seite gebaut wurde. Diese Abfrage fragt, welches Gesetz in jedem Land ein Unternehmen verpflichtet, sein Register und seine Registernummer anzugeben:"
+
+#: src/components/pages/MethodPage.astro:133
+msgid "Before you start: the terms"
+msgstr "Vorab: die Begriffe"
+
+#: src/components/pages/HomePage.astro:73
+msgid "Browse by country"
+msgstr "Nach Ländern stöbern"
+
+#: src/components/pages/DownloadPage.astro:82
+msgid "Build a checklist into an article or a tool from the graph, instead of retyping it. The site's own checklist runs on this file."
+msgstr "Bauen Sie eine Checkliste aus dem Graphen in einen Artikel oder ein Werkzeug ein, statt sie abzutippen. Die Checkliste dieser Website läuft auf dieser Datei."
+
+#: src/components/pages/HomePage.astro:274
+msgid "Built to be checked, not trusted"
+msgstr "Gebaut, um geprüft zu werden, nicht um ihm zu vertrauen"
+
+#: src/components/pages/DownloadPage.astro:55
+msgid "Bulk-load it into a triple store, or process it line by line with grep, sort and diff: two versions compare line for line."
+msgstr "Laden Sie ihn in einem Zug in einen Triple Store oder verarbeiten Sie ihn Zeile für Zeile mit grep, sort und diff: Zwei Fassungen lassen sich Zeile für Zeile vergleichen."
+
+#: src/components/pages/GlossaryPage.astro:22
+msgid "Business and tax"
+msgstr "Unternehmen und Steuern"
+
+#: src/components/pages/HomePage.astro:74
+msgid "Businesses"
+msgstr "Unternehmen"
+
+#: src/components/BlogList.astro:22 src/components/BlogList.astro:61
+#: src/components/BlogList.astro:62
+msgid "Categories"
+msgstr "Kategorien"
+
+#: src/components/pages/DownloadPage.astro:91
+msgid "Check in your build that every identifier you cite still exists, and see when what it says has changed."
+msgstr "Prüfen Sie in Ihrem Build, dass jede zitierte Kennung noch existiert, und sehen Sie, wann sich ihre Aussage geändert hat."
+
+#: src/components/pages/MethodPage.astro:421
+msgid "Check it yourself"
+msgstr "Prüfen Sie es selbst"
+
+#: src/lib/navigation.ts:20
+msgid "Checklist"
+msgstr "Checkliste"
+
+#: src/layouts/Layout.astro:113
+msgid "Choose a language"
+msgstr "Sprache wählen"
+
+#: src/components/pages/DownloadPage.astro:87
+msgid "Citations"
+msgstr "Zitierungen"
+
+#: src/components/RepoTree.astro:28
+msgid "Classes, vocabularies and the SHACL shapes"
+msgstr "Klassen, Vokabulare und die SHACL-Shapes"
+
+#: src/components/pages/GraphPage.astro:149
+msgid "Clear the search"
+msgstr "Suche leeren"
+
+#: src/components/pages/GraphPage.astro:95
+msgid "Click"
+msgstr "Klicken"
+
+#: src/lib/navigation.ts:26
+msgid "Click through laws, provisions and concepts"
+msgstr "Durch Gesetze, Vorschriften und Begriffe klicken"
+
+#: src/components/pages/DownloadPage.astro:122
+msgid "Clone it from GitHub (recommended)"
+msgstr "Von GitHub klonen (empfohlen)"
+
+#: src/layouts/Layout.astro:114
+msgid "Close"
+msgstr "Schließen"
+
+#: src/components/pages/AboutPage.astro:64
+msgid "Code: MIT."
+msgstr "Code: MIT."
+
+#: src/components/pages/AboutPage.astro:30
+#: src/components/pages/BlogPostPage.astro:43
+#: src/components/pages/DownloadPage.astro:107
+#: src/components/pages/LegalPageView.astro:26
+#: src/components/pages/MethodPage.astro:123
+msgid "Collapse"
+msgstr "Einklappen"
+
+#: src/lib/navigation.ts:25
+msgid "Compare"
+msgstr "Vergleich"
+
+#: src/components/pages/HomePage.astro:85
+msgid "Compare countries"
+msgstr "Länder vergleichen"
+
+#: src/components/pages/GraphPage.astro:60
+msgid "Connections"
+msgstr "Verbindungen"
+
+#: src/components/HeroGraph.astro:102
+msgid "Consent"
+msgstr "Einwilligung"
+
+#: src/components/pages/AboutPage.astro:83
+msgid "Contributors who make substantial, careful contributions can be invited to join the maintainers."
+msgstr "Wer substanziell und sorgfältig beiträgt, kann eingeladen werden, Maintainer zu werden."
+
+#: src/components/pages/HomePage.astro:324
+msgid "Contributors who make substantial, careful contributions can join the maintainers who review and accept changes."
+msgstr "Wer substanziell und sorgfältig beiträgt, kann in den Kreis der Maintainer aufgenommen werden, die Änderungen prüfen und annehmen."
+
+#: src/components/HeroGraph.astro:100
+msgid "Cookies"
+msgstr "Cookies"
+
+#: src/components/pages/AboutPage.astro:82
+msgid "Corrections and additions are made on GitHub: report a problem as an issue, or propose a change as a pull request that follows the graph's ontology."
+msgstr "Korrekturen und Ergänzungen laufen über GitHub: Melden Sie ein Problem als Issue, oder schlagen Sie eine Änderung als Pull Request vor, der der Ontologie des Graphen folgt."
+
+#: src/lib/navigation.ts:21
+msgid "Countries"
+msgstr "Länder"
+
+#: src/components/pages/GraphPage.astro:88
+msgid "Countries, laws, provisions, rules and what they require, as one network."
+msgstr "Länder, Gesetze, Vorschriften, Regeln und was sie verlangen, als ein Netz."
+
+#: src/components/pages/GraphPage.astro:14
+#: src/components/pages/GraphPage.astro:31
+msgid "Country"
+msgstr "Land"
+
+#: src/components/RepoTree.astro:27
+msgid "Court and authority decisions, written by hand"
+msgstr "Gerichts- und Behördenentscheidungen, von Hand erfasst"
+
+#: src/components/pages/AboutPage.astro:67
+msgid "Court decisions and guidelines are reproduced under their publishers' terms, named on each source page."
+msgstr "Gerichtsentscheidungen und Leitlinien werden zu den Bedingungen ihrer Herausgeber wiedergegeben, die auf jeder Quellenseite genannt sind."
+
+#: src/components/pages/GraphPage.astro:37
+msgid "Court or authority decision"
+msgstr "Gerichts- oder Behördenentscheidung"
+
+#: src/lib/navigation.ts:53 src/lib/navigation.ts:60
+msgid "Data"
+msgstr "Daten"
+
+#: src/layouts/Layout.astro:105
+msgid "Data and ontology <0>CC BY 4.0</0>, code MIT. Law texts are official works, reproduced unchanged."
+msgstr "Daten und Ontologie <0>CC BY 4.0</0>, Code MIT. Gesetzestexte sind amtliche Werke, unverändert wiedergegeben."
+
+#: src/components/pages/AboutPage.astro:60
+msgid "Data and ontology: <0>CC BY 4.0</0>, © Aimix GmbH. Credit it as “legalgraph by Aimix GmbH (https://aimix.io), licensed under CC BY 4.0”."
+msgstr "Daten und Ontologie: <0>CC BY 4.0</0>, © Aimix GmbH. Bitte nennen Sie die Quelle als „legalgraph by Aimix GmbH (https://aimix.io), licensed under CC BY 4.0“."
+
+#: src/components/pages/SourcesPage.astro:58
+msgid "Dated {date}"
+msgstr "Vom {date}"
+
+#: src/components/pages/SourcesPage.astro:60
+msgid "Decided {date}"
+msgstr "Entschieden am {date}"
+
+#: src/components/pages/GraphPage.astro:20
+msgid "Decision"
+msgstr "Entscheidung"
+
+#: src/components/pages/SourcesPage.astro:59
+msgid "Delivered {date}"
+msgstr "Verkündet am {date}"
+
+#: src/components/pages/GraphPage.astro:196
+#: src/components/pages/GraphPage.astro:43
+msgid "Details"
+msgstr "Details"
+
+#: src/components/pages/HomePage.astro:76
+msgid "Developers"
+msgstr "Entwicklerinnen und Entwickler"
+
+#: src/components/ExampleGraph.astro:52
+msgid "Diagram of the example: the rule, § 5 DDG, the VAT identification number, and Article 5 of the e-Commerce Directive with the Austrian and French provisions that implement it."
+msgstr "Diagramm des Beispiels: die Regel, § 5 DDG, die Umsatzsteuer-Identifikationsnummer und Artikel 5 der E-Commerce-Richtlinie mit den österreichischen und französischen Vorschriften, die ihn umsetzen."
+
+#: src/components/pages/HomePage.astro:230
+msgid "Digitale-Dienste-Gesetz, as published on gesetze-im-internet.de"
+msgstr "Digitale-Dienste-Gesetz, wie auf gesetze-im-internet.de veröffentlicht"
+
+#: src/components/pages/GraphPage.astro:17
+#: src/components/pages/GraphPage.astro:34
+msgid "Disclosure type"
+msgstr "Angabepflicht"
+
+#: src/components/HeroGraph.astro:103
+msgid "Don't sell data"
+msgstr "Daten nicht verkaufen"
+
+#: src/components/pages/GraphPage.astro:96
+msgid "Double-click"
+msgstr "Doppelklicken"
+
+#: src/components/pages/AboutPage.astro:89
+#: src/components/pages/HomePage.astro:79
+msgid "Download the data"
+msgstr "Daten herunterladen"
+
+#: src/components/PipelineDiagram.astro:28
+#: src/components/pages/DownloadPage.astro:103
+#: src/components/pages/DownloadPage.astro:98 src/lib/navigation.ts:34
+msgid "Downloads"
+msgstr "Downloads"
+
+#: src/components/pages/MethodPage.astro:88
+msgid "Downloads every text again and fails if the portal's words have changed. It needs the network, so it runs on its own."
+msgstr "Lädt jeden Text erneut herunter und schlägt fehl, wenn sich der Wortlaut auf dem Portal geändert hat. Braucht das Netz und läuft daher für sich."
+
+#: src/components/pages/GraphPage.astro:78
+msgid "Draft"
+msgstr "Entwurf"
+
+#: src/components/pages/GraphPage.astro:100
+msgid "Drag a node to move it, drag the background to pan, scroll to zoom. The checkboxes above hide or show each kind of node. Hover a line to see the relation."
+msgstr "Ziehen Sie einen Knoten, um ihn zu verschieben, ziehen Sie den Hintergrund, um die Ansicht zu bewegen, und scrollen Sie zum Zoomen. Die Kästchen oben blenden jede Art von Knoten aus oder ein. Fahren Sie über eine Linie, um die Beziehung zu sehen."
+
+#: src/components/pages/GraphPage.astro:13
+#: src/components/pages/GraphPage.astro:30
+msgid "EU / EEA"
+msgstr "EU / EWR"
+
+#: src/components/PipelineDiagram.astro:24
+msgid "Editorial Turtle"
+msgstr "Redaktionelles Turtle"
+
+#: src/components/HeroGraph.astro:107
+msgid "Email marketing"
+msgstr "E-Mail-Marketing"
+
+#: src/components/RepoTree.astro:25
+msgid "English for every quote in another language"
+msgstr "Englisch für jedes Zitat in einer anderen Sprache"
+
+#: src/lib/filter-labels.ts:13
+msgid "Entries per page"
+msgstr "Einträge pro Seite"
+
+#: src/components/pages/HomePage.astro:253
+msgid "Europe first, and growing"
+msgstr "Zuerst Europa, und es wird mehr"
+
+#: src/components/pages/HomePage.astro:93
+msgid "European Union"
+msgstr "Europäische Union"
+
+#: src/components/pages/BlogIndexPage.astro:37
+msgid "Every claim links to the provision in the graph it comes from, so you can check it against the words of the law."
+msgstr "Jede Aussage verlinkt auf die Vorschrift im Graphen, aus der sie stammt, damit Sie sie am Wortlaut des Gesetzes prüfen können."
+
+#: src/components/pages/AboutPage.astro:48
+msgid "Every entity in the graph has a permanent address, such as <0>legalgraph.org/id/DE-DDG-s5-1</0>."
+msgstr "Jedes Element des Graphen hat eine dauerhafte Adresse, etwa <0>legalgraph.org/id/DE-DDG-s5-1</0>."
+
+#: src/components/pages/DownloadPage.astro:90
+msgid "Every identifier in the graph, with a SHA-256 of its triples and the graph's version."
+msgstr "Jede Kennung im Graphen, mit einem SHA-256 ihrer Tripel und der Version des Graphen."
+
+#: src/components/pages/DownloadPage.astro:174
+msgid "Every identifier is also an address. A browser gets the page; a program asking for Turtle gets that entry's triples:"
+msgstr "Jede Kennung ist auch eine Adresse. Ein Browser bekommt die Seite, ein Programm, das nach Turtle fragt, die Tripel dieses Eintrags:"
+
+#: src/components/pages/DownloadPage.astro:45
+msgid "Every jurisdiction, act, provision, quote, translation, source document, rule and case, with prefixes, grouped by resource."
+msgstr "Jede Rechtsordnung, jedes Gesetz, jede Vorschrift, jedes Zitat, jede Übersetzung, jedes Quelldokument, jede Regel und jeder Fall, mit Präfixen, nach Ressource gruppiert."
+
+#: src/components/pages/MethodPage.astro:303
+msgid "Every page serves its own Turtle too, and the whole graph is on the <0>downloads page</0> in Turtle, N-Triples and JSON-LD."
+msgstr "Jede Seite liefert auch ihr eigenes Turtle, und der ganze Graph steht auf der <0>Download-Seite</0> in Turtle, N-Triples und JSON-LD."
+
+#: src/components/pages/DownloadPage.astro:176
+msgid "Every page shows its own Turtle too. For the whole graph, use the files above rather than fetching every page."
+msgstr "Jede Seite zeigt auch ihr eigenes Turtle. Für den ganzen Graphen nutzen Sie die Dateien oben, statt jede Seite einzeln abzurufen."
+
+#: src/components/pages/MethodPage.astro:127
+msgid "Every provision, quote and checklist rule on this site traces back to a file published by an official portal."
+msgstr "Jede Vorschrift, jedes Zitat und jede Regel der Checkliste auf dieser Website führt auf eine Datei zurück, die ein amtliches Portal veröffentlicht hat."
+
+#: src/lib/navigation.ts:23
+msgid "Every provision, with its quote and its English"
+msgstr "Jede Vorschrift, mit Zitat und englischer Fassung"
+
+#: src/components/pages/HomePage.astro:61
+msgid "Every source records where it came from, when, and its hash. Anyone can fetch it again and compare."
+msgstr "Jede Quelle hält fest, woher sie stammt, wann sie abgerufen wurde und ihren Hash. Jeder kann sie erneut abrufen und vergleichen."
+
+#: src/components/pages/AboutPage.astro:81
+msgid "Every statement in the graph is an annotation on the law's own words, so a correction is a small, reviewable change."
+msgstr "Jede Aussage im Graphen ist eine Annotation am Wortlaut des Gesetzes, daher ist eine Korrektur eine kleine, überprüfbare Änderung."
+
+#: src/components/pages/HomePage.astro:60
+msgid "Every statement traces to the exact words that justify it, as the official portal publishes them."
+msgstr "Jede Aussage führt zu genau den Worten, die sie begründen, so wie das amtliche Portal sie veröffentlicht."
+
+#: src/components/pages/MethodPage.astro:150
+msgid "Every technical term on this page links to the <0>glossary</0>: point at an underlined term for a short explanation, or click it to read more. Why we chose a graph at all is explained <1>further down</1>."
+msgstr "Jeder Fachbegriff auf dieser Seite führt ins <0>Glossar</0>: Zeigen Sie auf einen unterstrichenen Begriff für eine kurze Erklärung, oder klicken Sie ihn an, um mehr zu lesen. Warum wir überhaupt einen Graphen gewählt haben, steht <1>weiter unten</1>."
+
+#: src/components/pages/MethodPage.astro:424
+msgid "Everything on this page is in the repository on <0>GitHub</0>: the originals, the annotated texts, the Turtle, the rules, the shapes and the tests. Clone it, run <1>make check</1>, and you have verified the graph yourself."
+msgstr "Alles auf dieser Seite liegt im Repository auf <0>GitHub</0>: die Originale, die annotierten Texte, das Turtle, die Regeln, die Shapes und die Tests. Klonen Sie es, führen Sie <1>make check</1> aus, und Sie haben den Graphen selbst geprüft."
+
+#: src/components/RepoTree.astro:30
+msgid "Example SPARQL queries"
+msgstr "Beispielabfragen in SPARQL"
+
+#: src/components/RepoTree.astro:29
+msgid "Example businesses and the rules they must get"
+msgstr "Beispielunternehmen und die Regeln, die sie bekommen müssen"
+
+#: src/components/pages/AboutPage.astro:30
+#: src/components/pages/BlogPostPage.astro:43
+#: src/components/pages/DownloadPage.astro:107
+#: src/components/pages/GraphPage.astro:52
+#: src/components/pages/LegalPageView.astro:26
+#: src/components/pages/MethodPage.astro:123
+msgid "Expand"
+msgstr "Ausklappen"
+
+#: src/components/pages/GraphPage.astro:53
+msgid "Expand ({count} of {total})"
+msgstr "Ausklappen ({count} von {total})"
+
+#: src/components/pages/BlogIndexPage.astro:36
+msgid "Explanations of what a website must show and do, and why."
+msgstr "Erklärungen dazu, was eine Website zeigen und tun muss, und warum."
+
+#: src/lib/navigation.ts:53 src/lib/navigation.ts:59
+msgid "Explore"
+msgstr "Entdecken"
+
+#: src/components/ExampleGraph.astro:50
+msgid "Explore the full graph →"
+msgstr "Im ganzen Graphen erkunden →"
+
+#: src/components/pages/HomePage.astro:129
+msgid "Explore the graph"
+msgstr "Den Graphen erkunden"
+
+#: src/components/pages/GraphPage.astro:44
+msgid "Exploring the graph"
+msgstr "Den Graphen erkunden"
+
+#: src/components/BlogList.astro:104
+msgid "Featured"
+msgstr "Empfohlen"
+
+#: src/lib/filter-labels.ts:6
+msgid "Filter"
+msgstr "Filter"
+
+#: src/components/pages/GraphPage.astro:137
+msgid "Find a node"
+msgstr "Knoten suchen"
+
+#: src/components/pages/GraphPage.astro:47
+msgid "Find a node with the search above, or click one in the view."
+msgstr "Suchen Sie einen Knoten mit der Suche oben, oder klicken Sie einen in der Ansicht an."
+
+#: src/components/pages/GraphPage.astro:143
+msgid "Find a node, e.g. § 5 Abs. 1 DDG"
+msgstr "Knoten suchen, z. B. § 5 Abs. 1 DDG"
+
+#: src/components/pages/SourcesPage.astro:151
+msgid "Fingerprints and download dates are on each source page and in the repository."
+msgstr "Hashwerte und Abrufdaten stehen auf jeder Quellenseite und im Repository."
+
+#: src/components/pages/GraphPage.astro:124
+msgid "Fit"
+msgstr "Einpassen"
+
+#: src/components/pages/GraphPage.astro:124
+msgid "Fit the view to what is shown"
+msgstr "Die Ansicht an das Gezeigte anpassen"
+
+#: src/components/pages/GraphPage.astro:54
+#: src/components/pages/GraphPage.astro:98
+msgid "Focus"
+msgstr "Fokussieren"
+
+#: src/layouts/Layout.astro:90
+msgid "Footer navigation"
+msgstr "Footer-Navigation"
+
+#: src/components/pages/SourcesPage.astro:125
+msgid "Format"
+msgstr "Format"
+
+#: src/components/pages/AboutPage.astro:80
+msgid "Found a wrong reading, an outdated text, or a law we should add?"
+msgstr "Eine falsche Auslegung, ein veralteter Text oder ein Gesetz, das fehlt?"
+
+#: src/components/pages/MethodPage.astro:121
+msgid "From law text to graph: how each text is fetched, checked and turned into data, and how you can check it."
+msgstr "Vom Gesetzestext zum Graphen: wie jeder Text abgerufen, geprüft und zu Daten wird, und wie Sie das prüfen können."
+
+#: src/components/PipelineDiagram.astro:56
+msgid "From the law text to the site"
+msgstr "Vom Gesetzestext zur Website"
+
+#: src/components/PipelineDiagram.astro:131
+msgid "From the law text to the site. Numbers are the sections below; each tick is a check that fails the build if the step went wrong."
+msgstr "Vom Gesetzestext zur Website. Die Zahlen sind die Abschnitte unten; jeder Haken ist eine Prüfung, die den Build scheitern lässt, wenn der Schritt schiefging."
+
+#: src/components/pages/HomePage.astro:177
+msgid "From the official text to an answer, without losing the thread"
+msgstr "Vom amtlichen Text zur Antwort, ohne den Faden zu verlieren"
+
+#: src/components/pages/HomePage.astro:94
+msgid "GDPR, ePrivacy, e-Commerce, Digital Services Act, AI Act, consumer rights, and the court rulings and guidelines that read them."
+msgstr "DSGVO, ePrivacy, E-Commerce, Digital Services Act, KI-Verordnung, Verbraucherrechte, und die Urteile und Leitlinien, die sie auslegen."
+
+#: src/components/PipelineDiagram.astro:20
+msgid "Generated Turtle"
+msgstr "Erzeugtes Turtle"
+
+#: src/components/RepoTree.astro:24
+msgid "Generated from the annotated texts, never edited"
+msgstr "Aus den annotierten Texten erzeugt, nie bearbeitet"
+
+#: src/components/PipelineDiagram.astro:69
+msgid "Generated on every build"
+msgstr "Bei jedem Build erzeugt"
+
+#: src/components/pages/HomePage.astro:98
+msgid "Germany"
+msgstr "Deutschland"
+
+#: src/components/pages/HomePage.astro:339
+msgid "Get the data"
+msgstr "Zu den Daten"
+
+#: src/components/pages/GlossaryPage.astro:40
+#: src/components/pages/GlossaryPage.astro:45 src/lib/navigation.ts:35
+msgid "Glossary"
+msgstr "Glossar"
+
+#: src/components/pages/GraphPage.astro:87
+#: src/components/pages/GraphPage.astro:88 src/lib/navigation.ts:26
+msgid "Graph"
+msgstr "Graph"
+
+#: src/components/pages/GraphPage.astro:21
+#: src/components/pages/GraphPage.astro:39
+msgid "Guidance"
+msgstr "Leitlinie"
+
+#: src/components/pages/GraphPage.astro:55
+msgid "Hide"
+msgstr "Ausblenden"
+
+#: src/components/pages/GraphPage.astro:174
+#: src/components/pages/GraphPage.astro:175
+msgid "Hide the details panel"
+msgstr "Detailfeld ausblenden"
+
+#: src/components/pages/HomePage.astro:115
+msgid "Home"
+msgstr "Start"
+
+#: src/components/pages/HomePage.astro:67
+msgid "Honest English"
+msgstr "Ehrliches Englisch"
+
+#: src/components/pages/MethodPage.astro:118
+msgid "How each law text is fetched, checked and turned into data, and how you can check it."
+msgstr "Wie jeder Gesetzestext abgerufen, geprüft und zu Daten wird, und wie Sie das prüfen können."
+
+#: src/components/pages/HomePage.astro:176
+msgid "How it works"
+msgstr "So funktioniert es"
+
+#: src/components/pages/AboutPage.astro:88
+#: src/components/pages/DownloadPage.astro:142
+msgid "How the graph is built"
+msgstr "Wie der Graph entsteht"
+
+#: src/components/pages/MethodPage.astro:401
+msgid "How the graph is tested"
+msgstr "Wie der Graph getestet wird"
+
+#: src/components/pages/MethodPage.astro:103
+msgid "How the knowledge graph is built from official law texts"
+msgstr "Wie der Wissensgraph aus amtlichen Gesetzestexten entsteht"
+
+#: src/lib/navigation.ts:33
+msgid "How the text is fetched, checked and turned into data"
+msgstr "Wie der Text abgerufen, geprüft und zu Daten wird"
+
+#: src/components/pages/AboutPage.astro:87
+#: src/components/pages/DownloadPage.astro:141
+#: src/components/pages/HomePage.astro:330
+msgid "How to contribute"
+msgstr "Wie Sie beitragen"
+
+#: src/components/pages/GraphPage.astro:92
+msgid "How to use the graph"
+msgstr "So bedienen Sie den Graphen"
+
+#: src/components/pages/GraphPage.astro:76
+msgid "Human translation"
+msgstr "Menschliche Übersetzung"
+
+#: src/components/pages/DownloadPage.astro:135
+msgid "If the graph is useful to you, <0>star the repository</0>: it is how others find the project, and how we see who relies on it. Corrections and questions are welcome there as issues."
+msgstr "Wenn Ihnen der Graph nützt, <0>geben Sie dem Repository einen Stern</0>: So finden andere das Projekt, und so sehen wir, wer sich darauf stützt. Korrekturen und Fragen sind dort als Issues willkommen."
+
+#: src/components/pages/HomePage.astro:99
+msgid "Impressum, cookies (TDDDG), consumer contracts, prices, packaging, youth protection, from the official law texts."
+msgstr "Impressum, Cookies (TDDDG), Verbraucherverträge, Preise, Verpackung, Jugendschutz, aus den amtlichen Gesetzestexten."
+
+#: src/components/HeroGraph.astro:101 src/lib/navigation.ts:72
+msgid "Imprint"
+msgstr "Impressum"
+
+#: src/components/pages/MethodPage.astro:98
+msgid "In the example:"
+msgstr "Im Beispiel:"
+
+#: src/components/pages/GlossaryPage.astro:92
+msgid "In the graph:"
+msgstr "Im Graphen:"
+
+#: src/components/pages/GraphPage.astro:62
+msgid "In the view"
+msgstr "In der Ansicht"
+
+#: src/components/pages/GraphPage.astro:18
+#: src/components/pages/GraphPage.astro:35
+msgid "Information item"
+msgstr "Angabe"
+
+#: src/components/pages/GlossaryPage.astro:21
+msgid "Institutions and bodies"
+msgstr "Institutionen und Gremien"
+
+#: src/components/pages/HomePage.astro:63
+msgid "Interpretation is visible"
+msgstr "Auslegung ist sichtbar"
+
+#: src/components/pages/MethodPage.astro:378
+#: src/components/pages/SourcesPage.astro:114
+msgid "Jurisdiction"
+msgstr "Rechtsordnung"
+
+#: src/lib/navigation.ts:21
+msgid "Jurisdictions, their laws and provisions"
+msgstr "Rechtsordnungen, ihre Gesetze und Vorschriften"
+
+#: src/components/pages/MethodPage.astro:108
+msgid "Just a syntax: a plain-text way of writing those statements down, readable by people as well as programs. The graph's files end in <0>.ttl</0>."
+msgstr "Nur eine Schreibweise: die Aussagen als einfacher Text, für Menschen wie für Programme lesbar. Die Dateien des Graphen enden auf <0>.ttl</0>."
+
+#: src/components/pages/GraphPage.astro:130
+msgid "Keep only the selected node, its neighbours in the view, and the laws they share"
+msgstr "Nur den ausgewählten Knoten, seine Nachbarn in der Ansicht und ihre gemeinsamen Gesetze behalten"
+
+#: src/components/pages/AboutPage.astro:52
+msgid "Keeping the graph on its own domain, apart from any company's brand, keeps those addresses stable and lets lawyers, researchers and public bodies contribute to a neutral project."
+msgstr "Eine eigene Domain, getrennt von der Marke eines Unternehmens, hält diese Adressen stabil und erlaubt Anwälten, Forschenden und Behörden, zu einem neutralen Projekt beizutragen."
+
+#: src/components/PipelineDiagram.astro:68
+msgid "Kept in Git: every change versioned and reviewed"
+msgstr "In Git: jede Änderung versioniert und geprüft"
+
+#: src/components/pages/GlossaryPage.astro:29
+msgid "Kind"
+msgstr "Art"
+
+#: src/components/pages/SourcesPage.astro:127 src/layouts/Layout.astro:112
+#: src/layouts/Layout.astro:68 src/layouts/Layout.astro:96
+msgid "Language"
+msgstr "Sprache"
+
+#: src/components/pages/LegalPageView.astro:45
+msgid "Last updated {date}"
+msgstr "Zuletzt aktualisiert am {date}"
+
+#: src/components/pages/MethodPage.astro:322
+msgid "Law is a web of references: provisions implement directives, refine each other, define terms and set fines. A graph stores those links as data instead of prose, in the open standards of the web (RDF)."
+msgstr "Recht ist ein Geflecht von Verweisen: Vorschriften setzen Richtlinien um, konkretisieren einander, definieren Begriffe und legen Bußgelder fest. Ein Graph speichert diese Verbindungen als Daten statt als Fließtext, in den offenen Standards des Webs (RDF)."
+
+#: src/components/pages/HomePage.astro:60
+msgid "Law text first"
+msgstr "Zuerst der Gesetzestext"
+
+#: src/components/pages/SourcesPage.astro:136
+#: src/components/pages/SourcesPage.astro:141 src/lib/navigation.ts:32
+msgid "Law texts"
+msgstr "Gesetzestexte"
+
+#: src/components/pages/AboutPage.astro:66
+msgid "Law texts are official works, reproduced unchanged, and are not covered by our licences."
+msgstr "Gesetzestexte sind amtliche Werke, werden unverändert wiedergegeben und fallen nicht unter unsere Lizenzen."
+
+#: src/components/pages/GlossaryPage.astro:20
+#: src/components/pages/GraphPage.astro:63 src/lib/navigation.ts:22
+msgid "Laws"
+msgstr "Gesetze"
+
+#: src/lib/navigation.ts:22
+msgid "Laws, judgments and guidelines, by country"
+msgstr "Gesetze, Urteile und Leitlinien, nach Land"
+
+#: src/components/PipelineDiagram.astro:18
+msgid "Laws, judgments, guidelines as the portal publishes them: XML, HTML or PDF"
+msgstr "Gesetze, Urteile, Leitlinien, wie das Portal sie veröffentlicht: XML, HTML oder PDF"
+
+#: src/components/pages/HomePage.astro:82
+msgid "Lawyers and researchers"
+msgstr "Juristen und Forschende"
+
+#: src/components/pages/LegalPageView.astro:28 src/lib/navigation.ts:71
+msgid "Legal"
+msgstr "Rechtliches"
+
+#: src/components/pages/GraphPage.astro:15
+#: src/components/pages/GraphPage.astro:32
+msgid "Legal act"
+msgstr "Rechtsakt"
+
+#: src/components/pages/GraphPage.astro:19
+#: src/components/pages/GraphPage.astro:36
+msgid "Legal concept"
+msgstr "Rechtsbegriff"
+
+#: src/components/pages/DownloadPage.astro:190
+msgid "Licence and credit"
+msgstr "Lizenz und Quellenangabe"
+
+#: src/components/pages/AboutPage.astro:56
+#: src/components/pages/GlossaryPage.astro:24
+msgid "Licences"
+msgstr "Lizenzen"
+
+#: src/components/pages/HomePage.astro:73
+msgid "Link a claim to the provision it rests on, so readers can check it."
+msgstr "Verlinken Sie eine Aussage mit der Vorschrift, auf der sie beruht, damit Leser sie prüfen können."
+
+#: src/components/pages/GraphPage.astro:162
+msgid "Loading the graph…"
+msgstr "Der Graph wird geladen …"
+
+#: src/components/pages/GraphPage.astro:75
+msgid "Machine translation"
+msgstr "Maschinelle Übersetzung"
+
+#: src/layouts/Layout.astro:66
+msgid "Main navigation"
+msgstr "Hauptnavigation"
+
+#: src/layouts/Layout.astro:66
+msgid "Menu"
+msgstr "Menü"
+
+#: src/lib/navigation.ts:33
+msgid "Method"
+msgstr "Methode"
+
+#: src/components/pages/HomePage.astro:321
+msgid "More laws, more countries, more court decisions"
+msgstr "Mehr Gesetze, mehr Länder, mehr Gerichtsentscheidungen"
+
+#: src/components/pages/HomePage.astro:163
+msgid "Most of them cannot be checked. The source is paraphrased, out of date, or not given at all."
+msgstr "Die meisten lassen sich nicht prüfen. Die Quelle ist umschrieben, veraltet oder gar nicht angegeben."
+
+#: src/lib/filter-labels.ts:9
+msgid "Next ›"
+msgstr "Weiter ›"
+
+#: src/components/BlogList.astro:99
+msgid "No article matches your search."
+msgstr "Kein Artikel passt zu Ihrer Suche."
+
+#: src/components/pages/BlogIndexPage.astro:48
+msgid "No articles yet. Until then, the <0>method</0> explains how the graph is built, and the <1>checklist</1> shows what it can do."
+msgstr "Noch keine Artikel. Bis dahin erklärt die <0>Methode</0>, wie der Graph entsteht, und die <1>Checkliste</1> zeigt, was er kann."
+
+#: src/components/pages/GlossaryPage.astro:60
+msgid "No term matches your search."
+msgstr "Kein Begriff passt zu Ihrer Suche."
+
+#: src/components/pages/SourcesPage.astro:163
+msgid "No text matches your search."
+msgstr "Kein Text passt zu Ihrer Suche."
+
+#: src/lib/navigation.ts:24
+msgid "Obligations, the conditions they apply under"
+msgstr "Pflichten und die Bedingungen, unter denen sie gelten"
+
+#: src/components/pages/SourcesPage.astro:63
+msgid "Official XML"
+msgstr "Amtliches XML"
+
+#: src/components/PipelineDiagram.astro:18
+msgid "Official text"
+msgstr "Amtlicher Text"
+
+#: src/components/pages/GraphPage.astro:77
+msgid "Official translation"
+msgstr "Amtliche Übersetzung"
+
+#: src/components/pages/HomePage.astro:68
+msgid "Official translations are marked as such. Machine translations are labelled, stay drafts until a person reviews them, and go stale when the law changes."
+msgstr "Amtliche Übersetzungen sind als solche gekennzeichnet. Maschinelle Übersetzungen sind markiert, bleiben Entwürfe, bis ein Mensch sie prüft, und veralten, wenn sich das Gesetz ändert."
+
+#: src/components/pages/AboutPage.astro:30
+#: src/components/pages/BlogPostPage.astro:43
+#: src/components/pages/DownloadPage.astro:107
+#: src/components/pages/LegalPageView.astro:26
+#: src/components/pages/MethodPage.astro:123
+msgid "On this page"
+msgstr "Auf dieser Seite"
+
+#: src/components/pages/AboutPage.astro:51
+msgid "Once other people's data, papers or tools point to an address, it must never change."
+msgstr "Sobald Daten, Aufsätze oder Tools anderer auf eine Adresse verweisen, darf sie sich nie mehr ändern."
+
+#: src/components/pages/MethodPage.astro:300
+msgid "One build turns the whole graph into this static site: a page for every country, act, provision, quote and rule."
+msgstr "Ein Build macht aus dem ganzen Graphen diese statische Website: eine Seite für jedes Land, jeden Rechtsakt, jede Vorschrift, jedes Zitat und jede Regel."
+
+#: src/components/pages/HomePage.astro:199
+msgid "One claim, followed to its source"
+msgstr "Eine Aussage, bis zur Quelle verfolgt"
+
+#: src/components/pages/MethodPage.astro:167
+msgid "One duty, followed through"
+msgstr "Eine Pflicht, durchgehend verfolgt"
+
+#: src/components/pages/DownloadPage.astro:173
+msgid "One entry at a time"
+msgstr "Ein Eintrag nach dem anderen"
+
+#: src/components/RepoTree.astro:18
+msgid "One law: the Digitale-Dienste-Gesetz"
+msgstr "Ein Gesetz: das Digitale-Dienste-Gesetz"
+
+#: src/components/pages/HomePage.astro:120
+msgid "Open data · CC BY 4.0"
+msgstr "Offene Daten · CC BY 4.0"
+
+#: src/components/pages/HomePage.astro:331
+msgid "Open on GitHub"
+msgstr "Auf GitHub öffnen"
+
+#: src/components/pages/GraphPage.astro:56
+msgid "Open page →"
+msgstr "Seite öffnen →"
+
+#: src/components/pages/HomePage.astro:351
+#: src/components/pages/HomePage.astro:74
+msgid "Open the checklist"
+msgstr "Checkliste öffnen"
+
+#: src/components/pages/HomePage.astro:316
+msgid "Open, and growing"
+msgstr "Offen, und wachsend"
+
+#: src/components/RepoTree.astro:22
+msgid "Our XML schema, for texts published only as HTML or PDF"
+msgstr "Unser XML-Schema, für Texte, die nur als HTML oder PDF erscheinen"
+
+#: src/components/PipelineDiagram.astro:19
+msgid "Our marks on the official XML, or a transcription into our XML schema"
+msgstr "Unsere Markierungen im amtlichen XML oder eine Übertragung in unser XML-Schema"
+
+#: src/components/pages/MethodPage.astro:129
+msgid "Our readings of the law are written by hand, kept apart, and marked as drafts."
+msgstr "Unsere Lesart des Gesetzes schreiben wir von Hand, halten sie getrennt und kennzeichnen sie als Entwurf."
+
+#: src/components/pages/MethodPage.astro:92
+msgid "Over 100 tests, among them the example businesses, which must get exactly their rules: one more or one fewer fails."
+msgstr "Über 100 Tests, darunter die Beispielunternehmen, die genau ihre Regeln bekommen müssen: eine mehr oder weniger schlägt fehl."
+
+#: src/lib/filter-labels.ts:7
+msgid "Pages"
+msgstr "Seiten"
+
+#: src/components/pages/MethodPage.astro:91
+msgid "Parses every file, rejects undefined terms and dangling links, applies the 16 SHACL shapes, and requires English for every non-English text."
+msgstr "Liest jede Datei, weist undefinierte Begriffe und ins Leere zeigende Verweise zurück, wendet die 16 SHACL-Shapes an und verlangt Englisch für jeden nicht englischen Text."
+
+#: src/components/pages/GlossaryPage.astro:25
+msgid "Portals"
+msgstr "Portale"
+
+#: src/components/pages/HomePage.astro:273
+msgid "Principles"
+msgstr "Grundsätze"
+
+#: src/lib/navigation.ts:72
+msgid "Privacy"
+msgstr "Datenschutz"
+
+#: src/components/HeroGraph.astro:105
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#: src/components/pages/HomePage.astro:109
+msgid "Privacy, consumer and e-commerce law beyond the EU, from California's CCPA to the Swiss Data Protection Act, and more with every contribution."
+msgstr "Datenschutz-, Verbraucher- und E-Commerce-Recht über die EU hinaus, vom kalifornischen CCPA bis zum Schweizer Datenschutzgesetz, und mehr mit jedem Beitrag."
+
+#: src/lib/navigation.ts:62
+msgid "Project"
+msgstr "Projekt"
+
+#: src/components/pages/GraphPage.astro:57
+msgid "Properties"
+msgstr "Eigenschaften"
+
+#: src/components/pages/GraphPage.astro:16
+#: src/components/pages/GraphPage.astro:33
+#: src/components/pages/MethodPage.astro:379
+msgid "Provision"
+msgstr "Vorschrift"
+
+#: src/lib/navigation.ts:23
+msgid "Provisions"
+msgstr "Vorschriften"
+
+#: src/components/PipelineDiagram.astro:20
+msgid "Provisions and quotes, extracted by a program, never edited by hand"
+msgstr "Vorschriften und Zitate, von einem Programm extrahiert, nie von Hand bearbeitet"
+
+#: src/components/pages/SourcesPage.astro:61
+msgid "Published {date}"
+msgstr "Veröffentlicht am {date}"
+
+#: src/components/BlogList.astro:82 src/components/BlogList.astro:83
+msgid "Quick links"
+msgstr "Schnellzugriff"
+
+#: src/components/pages/MethodPage.astro:188
+msgid "Re-downloading later (<0>sources fetch --check</0>) flags a changed text; for HTML pages the comparison is on the words, not the markup, so a regenerated page or a browser's rewrite does not look like a legal change."
+msgstr "Ein späterer erneuter Download (<0>sources fetch --check</0>) meldet einen geänderten Text; bei HTML-Seiten werden die Wörter verglichen, nicht das Markup, sodass eine neu erzeugte Seite oder die Umschreibung eines Browsers nicht wie eine Rechtsänderung aussieht."
+
+#: src/components/pages/HomePage.astro:46
+msgid "Read into data"
+msgstr "In Daten übersetzt"
+
+#: src/components/pages/DownloadPage.astro:46
+msgid "Read it, load it into rdflib, Apache Jena or Oxigraph, and query it with SPARQL. The format the graph is written in."
+msgstr "Lesen Sie ihn, laden Sie ihn in rdflib, Apache Jena oder Oxigraph und fragen Sie ihn mit SPARQL ab. Das Format, in dem der Graph geschrieben ist."
+
+#: src/components/pages/BlogIndexPage.astro:32
+msgid "Read it, then check it"
+msgstr "Lesen, dann nachprüfen"
+
+#: src/components/BlogList.astro:116
+msgid "Read the article"
+msgstr "Artikel lesen"
+
+#: src/components/pages/BlogIndexPage.astro:34
+msgid "Reading the law behind websites"
+msgstr "Das Recht hinter Websites lesen"
+
+#: src/components/pages/HomePage.astro:335
+msgid "Ready for AI agents"
+msgstr "Bereit für KI-Agenten"
+
+#: src/components/pages/MethodPage.astro:90
+msgid "Regenerates the Turtle and fails if it differs from what is published."
+msgstr "Erzeugt das Turtle neu und schlägt fehl, wenn es vom Veröffentlichten abweicht."
+
+#: src/components/pages/GraphPage.astro:59
+msgid "Relationships ({count})"
+msgstr "Beziehungen ({count})"
+
+#: src/components/pages/HomePage.astro:61
+msgid "Reproducible"
+msgstr "Reproduzierbar"
+
+#: src/components/pages/HomePage.astro:83
+msgid "Review a reading, propose a better one, compare countries line by line."
+msgstr "Eine Auslegung prüfen, eine bessere vorschlagen, Länder Zeile für Zeile vergleichen."
+
+#: src/components/pages/GraphPage.astro:79
+msgid "Reviewed"
+msgstr "Geprüft"
+
+#: src/components/HeroGraph.astro:104
+msgid "Right to be forgotten"
+msgstr "Recht auf Vergessenwerden"
+
+#: src/components/pages/GraphPage.astro:22
+msgid "Rule"
+msgstr "Regel"
+
+#: src/components/pages/GraphPage.astro:38
+msgid "Rule (obligation)"
+msgstr "Regel (Pflicht)"
+
+#: src/lib/navigation.ts:24
+msgid "Rules"
+msgstr "Regeln"
+
+#: src/components/pages/MethodPage.astro:110
+msgid "Rules about the data, checked by a program, such as “every obligation names the provisions it comes from”."
+msgstr "Regeln über die Daten, von einem Programm geprüft, etwa „jede Pflicht nennt die Vorschriften, aus denen sie folgt“."
+
+#: src/components/pages/DownloadPage.astro:78
+msgid "Rules and the checklist"
+msgstr "Regeln und Checkliste"
+
+#: src/components/RepoTree.astro:26
+msgid "Rules for businesses, written by hand"
+msgstr "Regeln für Unternehmen, von Hand geschrieben"
+
+#: src/components/pages/HomePage.astro:51
+msgid "Rules say what a provision means for a business, and when it applies. Each rule names the provisions it comes from, so its reading can be checked and disputed."
+msgstr "Regeln sagen, was eine Vorschrift für ein Unternehmen bedeutet und wann sie gilt. Jede Regel nennt die Vorschriften, aus denen sie stammt, damit ihre Auslegung geprüft und bestritten werden kann."
+
+#: src/components/pages/AboutPage.astro:74
+msgid "Rules start as drafts and stay so until a lawyer reviews them; English translations made by machine are labelled and stay drafts until a person reviews them."
+msgstr "Regeln beginnen als Entwürfe und bleiben es, bis eine Anwältin oder ein Anwalt sie prüft; maschinelle englische Übersetzungen sind gekennzeichnet und bleiben Entwürfe, bis ein Mensch sie prüft."
+
+#: src/components/PipelineDiagram.astro:24
+msgid "Rules, cases, translations: each cites its provisions, Draft until reviewed"
+msgstr "Regeln, Fälle, Übersetzungen: jede nennt ihre Vorschriften, Entwurf bis zur Prüfung"
+
+#: src/components/pages/MethodPage.astro:396
+msgid "Run it in the repository with <0>uv run legalgraph query register-entry</0>, or load a download into any SPARQL store. The <1>queries</1> folder has more, such as where national law asks for more than the EU directive it implements."
+msgstr "Führen Sie sie im Repository mit <0>uv run legalgraph query register-entry</0> aus oder laden Sie einen Download in einen beliebigen SPARQL-Store. Der Ordner <1>queries</1> hat mehr, etwa wo nationales Recht mehr verlangt als die EU-Richtlinie, die es umsetzt."
+
+#: src/components/pages/DownloadPage.astro:125
+msgid "Run them and you have checked the graph yourself, instead of trusting a download."
+msgstr "Führen Sie sie aus, und Sie haben den Graphen selbst geprüft, statt einem Download zu vertrauen."
+
+#: src/components/BlogList.astro:48
+msgid "Search articles"
+msgstr "Artikel durchsuchen"
+
+#: src/components/pages/GlossaryPage.astro:59
+msgid "Search by abbreviation or meaning, e.g. GDPR, consent, SPARQL"
+msgstr "Nach Abkürzung oder Bedeutung suchen, z. B. DSGVO, Einwilligung, SPARQL"
+
+#: src/components/pages/SourcesPage.astro:162
+msgid "Search by name, title or version, e.g. DDG, Datenschutz, consolidated"
+msgstr "Nach Name, Titel oder Fassung suchen, z. B. DDG, Datenschutz, konsolidiert"
+
+#: src/components/pages/GlossaryPage.astro:58
+msgid "Search the glossary"
+msgstr "Glossar durchsuchen"
+
+#: src/components/pages/SourcesPage.astro:161
+msgid "Search the law texts"
+msgstr "Gesetzestexte durchsuchen"
+
+#: src/components/pages/HomePage.astro:266
+msgid "See <0>what each country's law asks a website to show</0>, side by side."
+msgstr "Sehen Sie <0>nebeneinander, was das Recht jedes Landes von einer Website verlangt</0>."
+
+#: src/components/pages/GlossaryPage.astro:98
+msgid "See also:"
+msgstr "Siehe auch:"
+
+#: src/components/pages/HomePage.astro:348
+msgid "See what applies to your website"
+msgstr "Sehen Sie, was für Ihre Website gilt"
+
+#: src/components/pages/HomePage.astro:74
+msgid "See which rules apply to your website, and the law behind each."
+msgstr "Sehen Sie, welche Regeln für Ihre Website gelten, und das Gesetz hinter jeder."
+
+#: src/components/pages/MethodPage.astro:111
+msgid "Shared vocabularies: ELI for identifying legislation, SKOS for labels and categories. Because we use them, other graphs understand ours without a translation table."
+msgstr "Gemeinsame Vokabulare: ELI zur Kennzeichnung von Rechtsvorschriften, SKOS für Bezeichnungen und Kategorien. Weil wir sie verwenden, verstehen andere Graphen unseren ohne Übersetzungstabelle."
+
+#: src/lib/filter-labels.ts:11
+msgid "Show"
+msgstr "Zeige"
+
+#: src/components/pages/GraphPage.astro:187
+#: src/components/pages/GraphPage.astro:188
+msgid "Show the details panel"
+msgstr "Detailfeld einblenden"
+
+#: src/components/pages/GraphPage.astro:212
+msgid "Side by side"
+msgstr "Nebeneinander"
+
+#: src/components/pages/HomePage.astro:167
+msgid "So we built the evidence first, as open data anyone can use, cite and correct."
+msgstr "Also haben wir zuerst die Belege gebaut, als offene Daten, die jeder nutzen, zitieren und korrigieren kann."
+
+#: src/components/pages/DownloadPage.astro:140
+msgid "Star and clone on GitHub"
+msgstr "Auf GitHub markieren und klonen"
+
+#: src/components/pages/GraphPage.astro:134
+#: src/components/pages/GraphPage.astro:99
+msgid "Start over"
+msgstr "Neu beginnen"
+
+#: src/components/PipelineDiagram.astro:27
+msgid "Static site"
+msgstr "Statische Website"
+
+#: src/components/RepoTree.astro:53
+msgid "Step {step}"
+msgstr "Schritt {step}"
+
+#: src/components/pages/MethodPage.astro:89
+msgid "Strips our marks and compares with the original, byte for byte; a transcription must match it word for word."
+msgstr "Entfernt unsere Markierungen und vergleicht mit dem Original, Byte für Byte; eine Übertragung muss Wort für Wort übereinstimmen."
+
+#: src/components/pages/AboutPage.astro:78
+msgid "Take part"
+msgstr "Mitmachen"
+
+#: src/components/pages/GlossaryPage.astro:23
+msgid "Technical standards"
+msgstr "Technische Standards"
+
+#: src/lib/navigation.ts:72
+msgid "Terms of use"
+msgstr "Nutzungsbedingungen"
+
+#: src/components/pages/SourcesPage.astro:79
+msgid "Text as of {date}"
+msgstr "Textstand {date}"
+
+#: src/components/pages/GraphPage.astro:204
+msgid "Text of the law"
+msgstr "Gesetzestext"
+
+#: src/components/pages/MethodPage.astro:429
+msgid "The <0>Law texts</0> table lists every original with its hash and the annotated file it was checked against. English is a reading aid — the original text is what the law says."
+msgstr "Die Tabelle <0>Gesetzestexte</0> listet jedes Original mit seinem Hashwert und der annotierten Datei, gegen die es geprüft wurde. Englisch ist eine Lesehilfe – was das Gesetz sagt, steht im Originaltext."
+
+#: src/lib/navigation.ts:35
+msgid "The abbreviations on this site, explained"
+msgstr "Die Abkürzungen auf dieser Website, erklärt"
+
+#: src/components/pages/GlossaryPage.astro:46
+msgid "The abbreviations on this site, explained: the laws, the bodies that apply them, and the standards the graph is built on."
+msgstr "Die Abkürzungen auf dieser Website, erklärt: die Gesetze, die Stellen, die sie anwenden, und die Standards, auf denen der Graph aufbaut."
+
+#: src/components/pages/GlossaryPage.astro:41
+msgid "The abbreviations used on legalgraph, from DDG and GDPR to SPARQL and SHACL, explained in plain words."
+msgstr "Die Abkürzungen auf legalgraph, von DDG und DSGVO bis SPARQL und SHACL, in einfachen Worten erklärt."
+
+#: src/components/pages/MethodPage.astro:180
+msgid "The act is downloaded from the official portal — the EU's Cellar, gesetze-im-internet.de, legislation.gov.uk, zakon.rada.gov.ua — and the file is kept unchanged with its SHA-256 and retrieval date."
+msgstr "Der Rechtsakt wird vom amtlichen Portal heruntergeladen – Cellar der EU, gesetze-im-internet.de, legislation.gov.uk, zakon.rada.gov.ua – und die Datei wird unverändert mit ihrem SHA-256 und dem Abrufdatum aufbewahrt."
+
+#: src/components/pages/HomePage.astro:55
+msgid "The checklist turns your answers (where you are established, what your website does) into the rules that apply, each with the law behind it."
+msgstr "Die Checkliste macht aus Ihren Antworten (wo Sie niedergelassen sind, was Ihre Website tut) die Regeln, die gelten, jede mit dem Gesetz dahinter."
+
+#: src/components/pages/DownloadPage.astro:72
+msgid "The classes and properties the graph uses (lgo:), and the controlled vocabularies (lgv:): information items, act types, review statuses."
+msgstr "Die Klassen und Eigenschaften, die der Graph verwendet (lgo:), und die kontrollierten Vokabulare (lgv:): Informationspflichten, Arten von Rechtsakten, Prüfstatus."
+
+#: src/components/pages/DownloadPage.astro:199
+msgid "The code is MIT. The law texts are official works and are not covered by our licences."
+msgstr "Der Code steht unter MIT. Die Gesetzestexte sind amtliche Werke und fallen nicht unter unsere Lizenzen."
+
+#: src/components/RepoTree.astro:31
+msgid "The code: fetch, verify, extract, validate, build"
+msgstr "Der Code: abrufen, prüfen, extrahieren, validieren, bauen"
+
+#: src/components/pages/DownloadPage.astro:193
+msgid "The data and the ontology are licensed under <0>CC BY 4.0</0>: use them for anything, commercial included, and credit them, for example:"
+msgstr "Die Daten und die Ontologie stehen unter <0>CC BY 4.0</0>: Nutzen Sie sie für jeden Zweck, auch kommerziell, und nennen Sie die Quelle, zum Beispiel:"
+
+#: src/components/pages/MethodPage.astro:107
+msgid "The data model. Everything is a statement of three parts, such as “§ 5(1) DDG — requires — the register entry”; together, the statements form the graph."
+msgstr "Das Datenmodell. Alles ist eine Aussage aus drei Teilen, etwa „§ 5 Abs. 1 DDG — verlangt — die Registerangabe“; zusammen bilden die Aussagen den Graphen."
+
+#: src/components/pages/HomePage.astro:191
+msgid "The details, with the commands to check any of it yourself, are in the <0>method</0>."
+msgstr "Die Einzelheiten, mit den Befehlen, um alles selbst zu prüfen, stehen in der <0>Methode</0>."
+
+#: src/components/pages/HomePage.astro:233
+msgid "The downloaded file, its SHA-256, and the marked-up copy that proves the quote."
+msgstr "Die heruntergeladene Datei, ihr SHA-256 und die annotierte Kopie, die das Zitat belegt."
+
+#: src/components/pages/MethodPage.astro:173
+msgid "The duty is in point 4 of § 5(1) of the Digitale-Dienste-Gesetz (DDG). Businesses elsewhere in the EU have the same duty under their own country's law."
+msgstr "Die Pflicht steht in § 5 Abs. 1 Nr. 4 des Digitale-Dienste-Gesetzes (DDG). Unternehmen anderswo in der EU haben dieselbe Pflicht nach dem Recht ihres eigenen Landes."
+
+#: src/components/RepoTree.astro:20
+msgid "The file from gesetze-im-internet.de, unchanged"
+msgstr "Die Datei von gesetze-im-internet.de, unverändert"
+
+#: src/components/pages/HomePage.astro:327
+msgid "The goal: enough of the law in one open place that a business owner can see which rules matter most for their business. Not legal advice, but awareness, because the law is public and knowing what it asks should be too."
+msgstr "Das Ziel: so viel vom Recht an einem offenen Ort, dass Unternehmerinnen und Unternehmer sehen, welche Regeln für ihr Unternehmen am meisten zählen. Keine Rechtsberatung, sondern Bewusstsein, denn das Gesetz ist öffentlich, und zu wissen, was es verlangt, sollte es auch sein."
+
+#: src/components/PipelineDiagram.astro:21
+msgid "The graph"
+msgstr "Der Graph"
+
+#: src/components/pages/DownloadPage.astro:111
+msgid "The graph as published today: {triples} triples, {provisions} provisions from {acts} laws, judgments and guidelines in {jurisdictions} jurisdictions."
+msgstr "Der Graph, wie er heute veröffentlicht ist: {triples} Tripel, {provisions} Vorschriften aus {acts} Gesetzen, Urteilen und Leitlinien in {jurisdictions} Rechtsordnungen."
+
+#: src/components/pages/SourcesPage.astro:225
+msgid "The graph built from these texts is on the <0>downloads page</0>, in Turtle, N-Triples and JSON-LD, and in full, with every original and the code, on <1>GitHub</1>."
+msgstr "Der aus diesen Texten gebaute Graph steht auf der <0>Download-Seite</0> in Turtle, N-Triples und JSON-LD, und vollständig, mit jedem Original und dem Code, auf <1>GitHub</1>."
+
+#: src/components/pages/HomePage.astro:323
+msgid "The graph grows with its contributors. New data follows the graph's shared ontology, or adds the terms it needs, and arrives as a pull request on GitHub, where anyone can also raise an issue."
+msgstr "Der Graph wächst mit denen, die beitragen. Neue Daten folgen der gemeinsamen Ontologie des Graphen oder ergänzen die Begriffe, die sie brauchen, und kommen als Pull Request auf GitHub, wo auch jeder ein Issue eröffnen kann."
+
+#: src/components/pages/DownloadPage.astro:60
+msgid "The graph in JSON-LD"
+msgstr "Der Graph in JSON-LD"
+
+#: src/components/pages/DownloadPage.astro:51
+msgid "The graph in N-Triples"
+msgstr "Der Graph in N-Triples"
+
+#: src/components/pages/DownloadPage.astro:42
+msgid "The graph in Turtle"
+msgstr "Der Graph in Turtle"
+
+#: src/components/pages/MethodPage.astro:136
+msgid "The graph is not in a format of our own: it uses open standards of the W3C, which off-the-shelf tools read, so you can query and check it without our software."
+msgstr "Der Graph steht in keinem eigenen Format, sondern in offenen Standards des W3C, die gängige Werkzeuge lesen: Abfragen und prüfen können Sie ihn auch ohne unsere Software."
+
+#: src/components/pages/DownloadPage.astro:202
+msgid "The graph is research, not legal advice: the <0>terms of use</0> say what that means."
+msgstr "Der Graph ist Recherche, keine Rechtsberatung: Die <0>Nutzungsbedingungen</0> sagen, was das bedeutet."
+
+#: src/components/RepoTree.astro:23
+msgid "The graph, in Turtle"
+msgstr "Der Graph, in Turtle"
+
+#: src/components/pages/DownloadPage.astro:180
+msgid "The law texts"
+msgstr "Die Gesetzestexte"
+
+#: src/components/pages/HomePage.astro:42
+msgid "The law, as published"
+msgstr "Das Gesetz, wie veröffentlicht"
+
+#: src/components/pages/SourcesPage.astro:137
+msgid "The laws, judgments and guidelines the graph is built from, as their official portals publish them."
+msgstr "Die Gesetze, Urteile und Leitlinien, aus denen der Graph gebaut ist, so wie ihre amtlichen Portale sie veröffentlichen."
+
+#: src/components/pages/SourcesPage.astro:142
+msgid "The laws, judgments and guidelines the graph is built from, as their official portals publish them. Every statement in the graph traces back to one of these texts."
+msgstr "Die Gesetze, Urteile und Leitlinien, aus denen der Graph gebaut ist, so wie ihre amtlichen Portale sie veröffentlichen. Jede Aussage im Graphen führt auf einen dieser Texte zurück."
+
+#: src/components/pages/DownloadPage.astro:99
+msgid "The legalgraph knowledge graph in Turtle, N-Triples and JSON-LD, its ontology, its rules and its citations, and the repository with everything they are made from."
+msgstr "Der Wissensgraph legalgraph in Turtle, N-Triples und JSON-LD, seine Ontologie, seine Regeln und Zitierungen, und das Repository mit allem, woraus sie gemacht sind."
+
+#: src/components/pages/MethodPage.astro:112
+msgid "The markup in which the law texts are annotated before anything is generated from them."
+msgstr "Die Auszeichnungssprache, in der die Gesetzestexte annotiert werden, bevor etwas aus ihnen erzeugt wird."
+
+#: src/components/pages/DownloadPage.astro:183
+msgid "The official originals the graph is built from, with their SHA-256 and retrieval dates, are listed under <0>Law texts</0>, each with its file and our annotated copy. All of them are in the repository."
+msgstr "Die amtlichen Originale, aus denen der Graph gebaut ist, stehen mit ihrem SHA-256 und Abrufdatum unter <0>Gesetzestexte</0>, jeweils mit ihrer Datei und unserer annotierten Kopie. Alle liegen im Repository."
+
+#: src/lib/navigation.ts:32
+msgid "The official originals, their hashes and annotations"
+msgstr "Die amtlichen Originale, ihre Hashes und Annotationen"
+
+#: src/components/pages/HomePage.astro:228
+msgid "The official source"
+msgstr "Die amtliche Quelle"
+
+#: src/components/PipelineDiagram.astro:58
+msgid "The official text is kept in Git unchanged. It is annotated, and the annotation is proved against the original. A program extracts Turtle from it. Editorial Turtle (rules, cases, translations) is added. The whole graph is validated, then published as a static site, as downloads and for SPARQL queries."
+msgstr "Der amtliche Text wird unverändert in Git aufbewahrt. Er wird annotiert, und die Annotation wird gegen das Original nachgewiesen. Ein Programm erzeugt daraus Turtle. Redaktionelles Turtle (Regeln, Fälle, Übersetzungen) kommt hinzu. Der ganze Graph wird validiert und dann als statische Website, als Downloads und für SPARQL-Abfragen veröffentlicht."
+
+#: src/components/RepoTree.astro:17
+msgid "The official texts, byte for byte, one folder per law"
+msgstr "Die amtlichen Texte, Byte für Byte, ein Ordner pro Gesetz"
+
+#: src/components/pages/DownloadPage.astro:69
+msgid "The ontology and vocabularies"
+msgstr "Ontologie und Vokabulare"
+
+#: src/components/pages/MethodPage.astro:155
+msgid "The process at a glance"
+msgstr "Der Ablauf auf einen Blick"
+
+#: src/components/pages/MethodPage.astro:109
+msgid "The query language. One query searches the whole graph, across every country at once; an example follows below."
+msgstr "Die Abfragesprache. Eine Abfrage durchsucht den ganzen Graphen, über alle Länder zugleich; ein Beispiel folgt unten."
+
+#: src/components/RepoTree.astro:16
+msgid "The repository"
+msgstr "Das Repository"
+
+#: src/components/pages/DownloadPage.astro:124
+msgid "The repository is the graph's real home. A clone gives you more than any file below: the official law texts byte for byte, the annotated copies, the editorial Turtle, the ontology with its SHACL shapes, the code that builds everything, and the tests."
+msgstr "Das Repository ist das eigentliche Zuhause des Graphen. Ein Klon gibt Ihnen mehr als jede Datei unten: die amtlichen Gesetzestexte Byte für Byte, die annotierten Kopien, das redaktionelle Turtle, die Ontologie mit ihren SHACL-Shapes, den Code, der alles baut, und die Tests."
+
+#: src/components/pages/HomePage.astro:209
+msgid "The rule"
+msgstr "Die Regel"
+
+#: src/components/pages/DownloadPage.astro:81
+msgid "The rules for businesses, the conditions they apply under, each condition's yes/no question, and the example businesses with the rules they must get."
+msgstr "Die Regeln für Unternehmen, die Bedingungen, unter denen sie gelten, die Ja/Nein-Frage zu jeder Bedingung und die Beispielunternehmen mit den Regeln, die sie bekommen müssen."
+
+#: src/components/pages/HomePage.astro:240
+msgid "The same duty comes from <0>Article 5 of the e-Commerce Directive</0>, so a business in Austria or France gets it too, with its own country's law named."
+msgstr "Dieselbe Pflicht folgt aus <0>Artikel 5 der E-Commerce-Richtlinie</0>, daher gilt sie auch für ein Unternehmen in Österreich oder Frankreich, mit dem Gesetz des eigenen Landes."
+
+#: src/components/RepoTree.astro:21
+msgid "The same file with our lga: marks"
+msgstr "Dieselbe Datei mit unseren lga:-Markierungen"
+
+#: src/components/pages/DownloadPage.astro:63
+msgid "The same graph as JSON, each resource an object with its identifier and properties."
+msgstr "Derselbe Graph als JSON, jede Ressource ein Objekt mit ihrer Kennung und ihren Eigenschaften."
+
+#: src/components/pages/DownloadPage.astro:54
+msgid "The same triples as the Turtle file, one per line, with full IRIs and no prefixes."
+msgstr "Dieselben Tripel wie in der Turtle-Datei, eines pro Zeile, mit vollständigen IRIs und ohne Präfixe."
+
+#: src/components/pages/MethodPage.astro:306
+msgid "The site has no database: what you read is the graph itself, rendered."
+msgstr "Die Website hat keine Datenbank: Was Sie lesen, ist der Graph selbst, dargestellt."
+
+#: src/components/pages/MethodPage.astro:170
+msgid "The steps below follow a single duty from the law to this site. A business established in Germany that is entered in the commercial register must name the register and its number on its website, for example <0>Amtsgericht Charlottenburg, HRB 272803 B</0>, as our own <1>imprint</1> does."
+msgstr "Die Schritte unten verfolgen eine einzige Pflicht vom Gesetz bis zu dieser Website. Ein in Deutschland niedergelassenes Unternehmen, das im Handelsregister eingetragen ist, muss auf seiner Website das Register und seine Registernummer angeben, zum Beispiel <0>Amtsgericht Charlottenburg, HRB 272803 B</0>, wie es unser eigenes <1>Impressum</1> tut."
+
+#: src/components/RepoTree.astro:32
+msgid "The tests"
+msgstr "Die Tests"
+
+#: src/components/ExampleGraph.astro:49
+msgid "The trail in the graph · click a node to open it"
+msgstr "Die Spur im Graphen · Knoten anklicken, um ihn zu öffnen"
+
+#: src/components/pages/GraphPage.astro:94
+msgid "The view starts with every jurisdiction: the EU and the EEA with their members, and states or provinces with their country."
+msgstr "Die Ansicht beginnt mit allen Rechtsräumen: der EU und dem EWR mit ihren Mitgliedern, und Bundesstaaten oder Provinzen mit ihrem Land."
+
+#: src/components/pages/DownloadPage.astro:104
+msgid "The whole graph, free to use under CC BY 4.0. Best taken from GitHub, where it comes with the law texts it is built from and the checks that prove it."
+msgstr "Der ganze Graph, frei nutzbar unter CC BY 4.0. Am besten von GitHub, wo er mit den Gesetzestexten kommt, aus denen er gebaut ist, und den Prüfungen, die ihn belegen."
+
+#: src/components/pages/HomePage.astro:216
+msgid "The words of the law"
+msgstr "Der Wortlaut des Gesetzes"
+
+#: src/components/pages/BlogPostPage.astro:44
+msgid "This article has not been translated yet. Here it is in English."
+msgstr "Dieser Artikel ist noch nicht übersetzt. Hier ist er auf Englisch."
+
+#: src/components/pages/LegalPageView.astro:31
+msgid "This page has not been translated yet. Here it is in English."
+msgstr "Diese Seite ist noch nicht übersetzt. Hier ist sie auf Englisch."
+
+#: src/components/pages/LegalPageView.astro:35
+msgid "This page is being written."
+msgstr "Diese Seite wird gerade geschrieben."
+
+#: src/layouts/Layout.astro:113
+msgid "This page is in English only. The site's own pages are also in:"
+msgstr "Diese Seite gibt es nur auf Englisch. Die eigenen Seiten der Website gibt es auch auf:"
+
+#: src/components/pages/MethodPage.astro:130
+msgid "This page is the process, and what makes each step verifiable."
+msgstr "Diese Seite zeigt den Ablauf und was jeden Schritt überprüfbar macht."
+
+#: src/components/pages/MethodPage.astro:135
+msgid "This page walks through how the graph is built, step by step: from the official text to the files you can download, and the checks in between."
+msgstr "Diese Seite zeigt Schritt für Schritt, wie der Graph entsteht: vom amtlichen Text bis zu den Dateien zum Herunterladen, mit den Prüfungen dazwischen."
+
+#: src/components/RepoTree.astro:33
+msgid "This website"
+msgstr "Diese Website"
+
+#: src/components/BlogList.astro:53
+msgid "Title, topic or law"
+msgstr "Titel, Thema oder Gesetz"
+
+#: src/components/pages/MethodPage.astro:373
+msgid "Today it finds {provisions} provisions in {jurisdictions} jurisdictions. Some of them:"
+msgstr "Heute findet sie {provisions} Vorschriften in {jurisdictions} Rechtsordnungen. Einige davon:"
+
+#: src/components/pages/SourcesPage.astro:64
+msgid "Transcribed from HTML or PDF"
+msgstr "Aus HTML oder PDF übertragen"
+
+#: src/components/pages/GraphPage.astro:132
+#: src/components/pages/GraphPage.astro:97
+msgid "Trim"
+msgstr "Zuschneiden"
+
+#: src/components/pages/HomePage.astro:128 src/layouts/Layout.astro:69
+msgid "Try the checklist"
+msgstr "Checkliste ausprobieren"
+
+#: src/components/pages/HomePage.astro:50
+msgid "Turned into rules"
+msgstr "Zu Regeln gemacht"
+
+#: src/lib/navigation.ts:34
+msgid "Turtle, N-Triples, JSON-LD and the ontology"
+msgstr "Turtle, N-Triples, JSON-LD und die Ontologie"
+
+#: src/components/pages/GraphPage.astro:58
+#: src/components/pages/SourcesPage.astro:120
+msgid "Type"
+msgstr "Art"
+
+#: src/components/pages/HomePage.astro:104
+msgid "UK GDPR, cookies (PECR), e-commerce and consumer contracts, trading disclosures, online safety."
+msgstr "UK GDPR, Cookies (PECR), E-Commerce und Verbraucherverträge, Pflichtangaben von Unternehmen, Online-Sicherheit."
+
+#: src/components/pages/HomePage.astro:108
+msgid "USA, Canada, Ukraine and {count} more countries"
+msgstr "USA, Kanada, Ukraine und {count} weitere Länder"
+
+#: src/components/pages/DownloadPage.astro:73
+msgid "Understand what each property means, label concepts in English and other languages, and map the graph to your own model. The SHACL shapes the graph is checked against are in the repository."
+msgstr "Verstehen Sie, was jede Eigenschaft bedeutet, benennen Sie Begriffe auf Englisch und in anderen Sprachen und bilden Sie den Graphen auf Ihr eigenes Modell ab. Die SHACL-Shapes, gegen die der Graph geprüft wird, stehen im Repository."
+
+#: src/components/pages/HomePage.astro:103
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: src/components/pages/DownloadPage.astro:64
+msgid "Use it from JavaScript or any JSON tooling, without an RDF library."
+msgstr "Nutzen Sie ihn aus JavaScript oder mit beliebigen JSON-Werkzeugen, ohne RDF-Bibliothek."
+
+#: src/components/pages/HomePage.astro:298
+msgid "Use it, cite it, correct it"
+msgstr "Nutzen, zitieren, korrigieren"
+
+#: src/components/pages/HomePage.astro:77
+msgid "Use the graph in your own tools: Turtle, N-Triples, JSON-LD, and the rules as JSON."
+msgstr "Nutzen Sie den Graphen in Ihren eigenen Tools: Turtle, N-Triples, JSON-LD und die Regeln als JSON."
+
+#: src/components/pages/SourcesPage.astro:183
+msgid "Version:"
+msgstr "Fassung:"
+
+#: src/components/pages/HomePage.astro:43
+msgid "We download each law from its official portal and keep the file unchanged, with its fingerprint and date. A scheduled check downloads it again and fails if the portal's text has changed."
+msgstr "Wir laden jedes Gesetz vom amtlichen Portal und bewahren die Datei unverändert auf, mit Fingerabdruck und Datum. Ein regelmäßiger Check lädt sie erneut und schlägt fehl, wenn sich der Text geändert hat."
+
+#: src/components/pages/HomePage.astro:47
+msgid "We mark up the official text itself: which paragraph regulates what, which information it requires, which EU rule it implements. Stripping our marks gives back the original, byte for byte."
+msgstr "Wir annotieren den amtlichen Text selbst: welcher Absatz was regelt, welche Angaben er verlangt, welche EU-Vorschrift er umsetzt. Ohne unsere Markierungen ergibt sich wieder das Original, Byte für Byte."
+
+#: src/components/pages/HomePage.astro:166
+msgid "We wanted every claim to come with its evidence: the paragraph, its exact words, an English translation, and who reviewed it."
+msgstr "Wir wollten, dass jede Aussage ihren Beleg mitbringt: den Absatz, seinen genauen Wortlaut, eine englische Übersetzung und wer sie geprüft hat."
+
+#: src/layouts/Layout.astro:91
+msgid "Website law as open, checkable data: every statement links to the words of the law it comes from."
+msgstr "Website-Recht als offene, prüfbare Daten: Jede Aussage verlinkt auf den Wortlaut des Gesetzes, aus dem sie stammt."
+
+#: src/components/pages/HomePage.astro:122
+msgid "Website law, <0>traced to the word</0>"
+msgstr "Website-Recht, <0>bis aufs Wort belegt</0>"
+
+#: src/components/pages/MethodPage.astro:277
+msgid "What a provision means for a business is a rule, written by hand in its own Turtle files with the cases that illustrate it. Each rule names the provisions it is read from, the conditions under which it applies, and its review status. Rules stay <0>Draft</0> until a lawyer reviews them."
+msgstr "Was eine Vorschrift für ein Unternehmen bedeutet, ist eine Regel, von Hand in eigenen Turtle-Dateien geschrieben, zusammen mit den Fällen, die sie veranschaulichen. Jede Regel nennt die Vorschriften, aus denen sie gelesen ist, die Bedingungen, unter denen sie gilt, und ihren Prüfstatus. Regeln bleiben <0>Draft</0> (Entwurf), bis eine Anwältin oder ein Anwalt sie prüft."
+
+#: src/components/pages/DownloadPage.astro:163
+msgid "What is inside."
+msgstr "Was drin ist."
+
+#: src/components/pages/DownloadPage.astro:166
+msgid "What it is for."
+msgstr "Wofür es da ist."
+
+#: src/components/pages/AboutPage.astro:71
+msgid "What it is not"
+msgstr "Was es nicht ist"
+
+#: src/components/pages/MethodPage.astro:128
+msgid "What the law says is never typed in by hand: it is generated from the official text, and the generation is checked by a program."
+msgstr "Was das Gesetz sagt, wird nie von Hand eingetippt: Es wird aus dem amtlichen Text erzeugt, und die Erzeugung prüft ein Programm."
+
+#: src/components/pages/HomePage.astro:252
+msgid "What's inside"
+msgstr "Was drin ist"
+
+#: src/components/pages/MethodPage.astro:243
+msgid "Whatever has no usable official English is translated by machine and marked <0>translatedBy</0> as such; nothing in the graph is passed off as official that we wrote ourselves."
+msgstr "Was keine brauchbare amtliche englische Fassung hat, wird maschinell übersetzt und mit <0>translatedBy</0> als solches gekennzeichnet; nichts, was wir selbst geschrieben haben, wird im Graphen als amtlich ausgegeben."
+
+#: src/components/pages/MethodPage.astro:183
+msgid "Where a portal blocks automated access, a page saved by hand in a browser does instead: it is matched to its entry by the browser's <0>saved from url</0> marker."
+msgstr "Wo ein Portal automatischen Zugriff sperrt, dient stattdessen eine von Hand im Browser gespeicherte Seite: Sie wird ihrem Eintrag über die Markierung <0>saved from url</0> des Browsers zugeordnet."
+
+#: src/components/pages/MethodPage.astro:235
+msgid "Where a portal publishes other language versions, they are kept as originals too and each translated provision is checked against its own original and against the structure of the main text."
+msgstr "Wo ein Portal weitere Sprachfassungen veröffentlicht, werden sie ebenfalls als Originale aufbewahrt, und jede übersetzte Vorschrift wird gegen ihr eigenes Original und gegen die Struktur des Haupttexts geprüft."
+
+#: src/components/RepoTree.astro:19
+msgid "Where and when it was fetched, and its SHA-256"
+msgstr "Wo und wann es abgerufen wurde, und sein SHA-256"
+
+#: src/components/pages/MethodPage.astro:158
+msgid "Where everything lives"
+msgstr "Wo alles liegt"
+
+#: src/components/pages/SourcesPage.astro:148
+msgid "Where the portal publishes XML, we add our annotations to the official file and prove that removing them gives back the original, byte for byte. Where it publishes only HTML or PDF, we transcribe the text and check it word for word against the original."
+msgstr "Wo das Portal XML veröffentlicht, fügen wir unsere Annotationen in die amtliche Datei ein und weisen nach, dass ihr Entfernen das Original Byte für Byte zurückgibt. Wo es nur HTML oder PDF veröffentlicht, übertragen wir den Text und prüfen ihn Wort für Wort gegen das Original."
+
+#: src/components/pages/HomePage.astro:64
+msgid "Where we read the law, the reading is an annotation anyone can see and dispute, never hidden in prose."
+msgstr "Wo wir das Gesetz auslegen, ist die Auslegung eine Annotation, die jeder sehen und bestreiten kann, nie in Fließtext versteckt."
+
+#: src/components/pages/GlossaryPage.astro:50
+msgid "Wherever one of these terms first appears on a page, it is underlined: point at it for a short explanation, or click it to come here."
+msgstr "Wo einer dieser Begriffe auf einer Seite zum ersten Mal vorkommt, ist er unterstrichen: Zeigen Sie darauf für eine kurze Erklärung, oder klicken Sie, um hierher zu kommen."
+
+#: src/lib/navigation.ts:25
+msgid "Which information each country's law requires"
+msgstr "Welche Angaben das Recht jedes Landes verlangt"
+
+#: src/components/pages/MethodPage.astro:201
+msgid "Which provisions matter, and what each says, is marked up in XML. Two forms, depending on what the portal publishes:"
+msgstr "Welche Vorschriften zählen und was jede sagt, wird in XML ausgezeichnet. Zwei Formen, je nachdem, was das Portal veröffentlicht:"
+
+#: src/components/pages/GraphPage.astro:209
+msgid "Which text to show"
+msgstr "Welcher Text angezeigt wird"
+
+#: src/components/pages/AboutPage.astro:24
+msgid "Who builds legalgraph, why it is an open project, its licences and how to take part."
+msgstr "Wer legalgraph baut, warum es ein offenes Projekt ist, seine Lizenzen und wie man mitmacht."
+
+#: src/components/pages/HomePage.astro:297
+msgid "Who it's for"
+msgstr "Für wen"
+
+#: src/components/pages/MethodPage.astro:321
+msgid "Why a graph, and why Turtle"
+msgstr "Warum ein Graph, und warum Turtle"
+
+#: src/components/pages/AboutPage.astro:45
+msgid "Why a project of its own"
+msgstr "Warum ein eigenes Projekt"
+
+#: src/components/pages/HomePage.astro:154
+msgid "Why it exists"
+msgstr "Warum es das gibt"
+
+#: src/components/pages/GraphPage.astro:46
+msgid "Without a node to start from, the view shows every jurisdiction: the EU and the EEA with their members, and states or provinces with their country."
+msgstr "Ohne Ausgangsknoten zeigt die Ansicht alle Rechtsräume: die EU und den EWR mit ihren Mitgliedern, und Bundesstaaten oder Provinzen mit ihrem Land."
+
+#: src/components/pages/HomePage.astro:73
+msgid "Writers and journalists"
+msgstr "Autorinnen und Journalisten"
+
+#: src/components/pages/AboutPage.astro:41
+msgid "Writing about what those websites must show and do, we kept needing evidence our readers could check."
+msgstr "Wenn wir darüber schrieben, was diese Websites zeigen und tun müssen, fehlten uns immer wieder Belege, die unsere Leser prüfen konnten."
+
+#: src/components/pages/GraphPage.astro:95
+msgid "a node to select it. The panel on the right shows what it is, its properties and all its connections."
+msgstr "Sie auf einen Knoten, um ihn auszuwählen. Das Feld rechts zeigt, was er ist, seine Eigenschaften und alle seine Verbindungen."
+
+#: src/components/pages/GraphPage.astro:96
+msgid "a node, or select it and press Expand, to bring in its closest neighbours: the nodes it is directly connected to, up to 25 at a time."
+msgstr "Sie auf einen Knoten, oder wählen Sie ihn aus und drücken Sie Ausklappen, um seine nächsten Nachbarn hinzuzuholen: die Knoten, mit denen er direkt verbunden ist, bis zu 25 auf einmal."
+
+#: src/components/pages/SourcesPage.astro:207
+msgid "annotated"
+msgstr "annotiert"
+
+#: src/components/pages/DownloadPage.astro:131
+msgid "built on your machine"
+msgstr "auf Ihrem Rechner gebaut"
+
+#: src/components/HeroGraph.astro:194
+msgid "comparable"
+msgstr "vergleichbar"
+
+#: src/components/ExampleGraph.astro:38
+msgid "defines"
+msgstr "definiert"
+
+#: src/components/BlogList.astro:106 src/components/BlogList.astro:133
+#: src/components/pages/BlogPostPage.astro:39
+msgid "draft"
+msgstr "Entwurf"
+
+#: src/components/pages/GraphPage.astro:66
+msgid "equally authentic"
+msgstr "gleichermaßen verbindlich"
+
+#: src/components/ExampleGraph.astro:36
+msgid "established by"
+msgstr "folgt aus"
+
+#: src/components/pages/MethodPage.astro:97
+msgid "excerpt"
+msgstr "Auszug"
+
+#: src/components/pages/GraphPage.astro:67
+msgid "for information"
+msgstr "zur Information"
+
+#: src/components/PipelineDiagram.astro:33
+msgid "hash + date; re-checked upstream"
+msgstr "Hash + Datum; beim Portal nachgeprüft"
+
+#: src/components/ExampleGraph.astro:35
+msgid "implements"
+msgstr "setzt um"
+
+#: src/components/BlogList.astro:107 src/components/BlogList.astro:134
+msgid "in English"
+msgstr "auf Englisch"
+
+#: src/components/pages/HomePage.astro:25
+msgid "jurisdictions"
+msgstr "Rechtsordnungen"
+
+#: src/components/pages/GraphPage.astro:97
+msgid "keeps only the selected node and its neighbours in the view (and the laws they share), and removes everything else."
+msgstr "behält nur den ausgewählten Knoten und seine Nachbarn in der Ansicht (und die Gesetze, die sie teilen) und entfernt alles andere."
+
+#: src/components/pages/HomePage.astro:26
+msgid "laws, judgments and guidelines"
+msgstr "Gesetze, Urteile und Leitlinien"
+
+#: src/layouts/Layout.astro:66 src/layouts/Layout.astro:89
+msgid "legalgraph home"
+msgstr "legalgraph Startseite"
+
+#: src/components/pages/HomePage.astro:125
+msgid "legalgraph is an open knowledge graph of the laws that tell a website what to show and do: the imprint, the privacy policy, terms, cookie banners. Every statement in it links to the words of the law it comes from."
+msgstr "legalgraph ist ein offener Wissensgraph der Gesetze, die einer Website vorschreiben, was sie zeigen und tun muss: Impressum, Datenschutzerklärung, AGB, Cookie-Banner. Jede Aussage darin verlinkt auf den Wortlaut des Gesetzes, aus dem sie stammt."
+
+#: src/components/pages/AboutPage.astro:38
+msgid "legalgraph is founded and maintained by <0>Aimix GmbH</0>, a company that builds websites for small businesses."
+msgstr "legalgraph wurde von der <0>Aimix GmbH</0> gegründet und wird von ihr gepflegt, einem Unternehmen, das Websites für kleine Unternehmen baut."
+
+#: src/components/pages/AboutPage.astro:73
+msgid "legalgraph is structured research by researchers, not lawyers. It is not legal advice."
+msgstr "legalgraph ist strukturierte Recherche von Forschenden, nicht von Anwälten. Es ist keine Rechtsberatung."
+
+#: src/components/pages/AboutPage.astro:42
+msgid "legalgraph is that evidence, published as open data so anyone can use it, cite it and correct it."
+msgstr "legalgraph sind diese Belege, veröffentlicht als offene Daten, damit jeder sie nutzen, zitieren und korrigieren kann."
+
+#: src/layouts/Layout.astro:67 src/layouts/Layout.astro:95
+msgid "legalgraph on GitHub"
+msgstr "legalgraph auf GitHub"
+
+#: src/layouts/Layout.astro:42
+msgid "legalgraph: website law as open, checkable data"
+msgstr "legalgraph: Website-Recht als offene, prüfbare Daten"
+
+#: src/components/pages/HomePage.astro:222
+msgid "machine translation"
+msgstr "maschinelle Übersetzung"
+
+#: src/components/PipelineDiagram.astro:34
+msgid "marks removed = the original"
+msgstr "ohne Markierungen = das Original"
+
+#: src/components/pages/SourcesPage.astro:212
+msgid "official portal ↗"
+msgstr "amtliches Portal ↗"
+
+#: src/components/pages/GraphPage.astro:71
+msgid "official source"
+msgstr "amtliche Quelle"
+
+#: src/components/pages/HomePage.astro:29
+msgid "official source files"
+msgstr "amtliche Quelldateien"
+
+#: src/components/pages/GraphPage.astro:72
+msgid "open the provision"
+msgstr "Vorschrift öffnen"
+
+#: src/components/pages/GraphPage.astro:64
+#: src/components/pages/SourcesPage.astro:201
+msgid "original"
+msgstr "Original"
+
+#: src/components/ExampleGraph.astro:37
+msgid "part of"
+msgstr "Teil von"
+
+#: src/lib/filter-labels.ts:12
+msgid "per page"
+msgstr "pro Seite"
+
+#: src/components/pages/HomePage.astro:27
+msgid "provisions"
+msgstr "Vorschriften"
+
+#: src/components/pages/DownloadPage.astro:132
+msgid "query it in your browser with Apache Jena Fuseki (needs Docker)"
+msgstr "im Browser abfragen, mit Apache Jena Fuseki (braucht Docker)"
+
+#: src/components/ExampleGraph.astro:34
+msgid "requires"
+msgstr "verlangt"
+
+#: src/components/pages/GraphPage.astro:99
+msgid "returns to every jurisdiction; Fit brings everything shown back into view."
+msgstr "kehrt zu allen Rechtsräumen zurück; Einpassen holt alles Gezeigte wieder ins Bild."
+
+#: src/components/pages/HomePage.astro:28
+msgid "rules for businesses"
+msgstr "Regeln für Unternehmen"
+
+#: src/components/PipelineDiagram.astro:35
+msgid "same input, same bytes"
+msgstr "gleiche Eingabe, gleiche Bytes"
+
+#: src/components/pages/SourcesPage.astro:88
+msgid "source page"
+msgstr "Quellenseite"
+
+#: src/components/pages/GraphPage.astro:98
+msgid "starts over from the selected node with its nearest neighbours; Hide removes a node from the view."
+msgstr "beginnt neu beim ausgewählten Knoten mit seinen nächsten Nachbarn; Ausblenden entfernt einen Knoten aus der Ansicht."
+
+#: src/components/PipelineDiagram.astro:36
+msgid "syntax · terms · shapes · English"
+msgstr "Syntax · Begriffe · Shapes · Englisch"
+
+#: src/components/pages/GraphPage.astro:70
+msgid "text as of {date}"
+msgstr "Textstand {date}"
+
+#: src/components/pages/MethodPage.astro:194
+msgid "the DDG comes as XML inside a zip from gesetze-im-internet.de. Its index records the file, where it came from, when, and its fingerprint:"
+msgstr "Das DDG kommt als XML in einer Zip-Datei von gesetze-im-internet.de. Sein Index verzeichnet die Datei, woher sie kam, wann, und ihren Hashwert:"
+
+#: src/components/pages/MethodPage.astro:249
+msgid "the DDG has no official English, so its English is a machine translation, marked as one and a draft until a person reviews it. It carries a hash of the German it translates, so it goes stale if the law changes:"
+msgstr "Das DDG hat keine amtliche englische Fassung, also ist sein Englisch eine maschinelle Übersetzung, als solche gekennzeichnet und ein Entwurf, bis ein Mensch sie prüft. Sie trägt einen Hashwert des deutschen Texts, den sie übersetzt, und veraltet daher, wenn sich das Gesetz ändert:"
+
+#: src/components/pages/MethodPage.astro:266
+msgid "the mark on point 4 becomes <0>lgv:RegisterEntry</0> in the provision's list of required information. The entry also records the file and the exact element it came from, so the statement leads back to its words:"
+msgstr "Die Markierung an Nummer 4 wird zu <0>lgv:RegisterEntry</0> in der Liste der Pflichtangaben der Vorschrift. Der Eintrag verzeichnet auch die Datei und das genaue Element, aus dem er stammt, sodass die Aussage zu ihrem Wortlaut zurückführt:"
+
+#: src/components/pages/MethodPage.astro:220
+msgid "the paragraph gets an identifier and a citation, and point 4 gets one mark, <0>lga:requires=\"RegisterEntry\"</0>: this line requires the register entry. Everything else is the official file, untouched."
+msgstr "Der Absatz bekommt eine Kennung und eine Zitierung, und Nummer 4 bekommt eine Markierung, <0>lga:requires=\"RegisterEntry\"</0>: Diese Zeile verlangt die Registerangabe. Alles andere ist die amtliche Datei, unverändert."
+
+#: src/components/pages/MethodPage.astro:312
+msgid "the rule is <0>Impressum: register and registration number</0>, the provision is <1>§ 5 Abs. 1 DDG</1> with its German text and English side by side, and the <2>checklist</2> shows the rule to a business that picks Germany as its country and answers yes to the other two questions."
+msgstr "Die Regel ist <0>Impressum: register and registration number</0>, die Vorschrift ist <1>§ 5 Abs. 1 DDG</1> mit deutschem Text und Englisch nebeneinander, und die <2>Checkliste</2> zeigt die Regel einem Unternehmen, das Deutschland als sein Land wählt und die beiden anderen Fragen mit Ja beantwortet."
+
+#: src/components/pages/MethodPage.astro:283
+msgid "the rule says who must do what, and when. It applies when three things hold: the business is established in Germany, its website serves business purposes, and it is entered in a register. It rests on § 5(1) DDG and spells out the EU rule from the e-Commerce Directive:"
+msgstr "Die Regel sagt, wer was tun muss, und wann. Sie gilt, wenn drei Dinge zutreffen: Das Unternehmen ist in Deutschland niedergelassen, seine Website dient geschäftlichen Zwecken, und es ist in einem Register eingetragen. Sie stützt sich auf § 5 Abs. 1 DDG und konkretisiert die EU-Regel aus der E-Commerce-Richtlinie:"
+
+#: src/components/pages/DownloadPage.astro:129
+msgid "the tools (needs uv)"
+msgstr "die Werkzeuge (braucht uv)"
+
+#: src/components/pages/GraphPage.astro:68
+msgid "translation"
+msgstr "Übersetzung"
+
+#: src/components/pages/GraphPage.astro:65
+msgid "translation for information"
+msgstr "Übersetzung zur Information"
+
+#: src/components/pages/BlogPostPage.astro:35
+msgid "updated {date}"
+msgstr "aktualisiert am {date}"
+
+#: src/components/pages/DownloadPage.astro:130
+msgid "verify every law text, validate the graph, run the tests"
+msgstr "jeden Gesetzestext prüfen, den Graphen validieren, die Tests ausführen"
+
+#: src/components/PipelineDiagram.astro:29
+msgid "your own questions"
+msgstr "Ihre eigenen Fragen"
+
+#: src/components/pages/SourcesPage.astro:216
+msgid "{count} provisions in the graph"
+msgstr "{count} Vorschriften im Graphen"
+
+#: src/lib/filter-labels.ts:16
+msgid "{from}–{to} of {total}"
+msgstr "{from}–{to} von {total}"
+
+#: src/components/BlogList.astro:117 src/components/BlogList.astro:144
+#: src/components/pages/BlogPostPage.astro:36
+msgid "{minutes} min read"
+msgstr "{minutes} Min. Lesezeit"
+
+#: src/lib/filter-labels.ts:15
+msgid "{shown} of {total} match"
+msgstr "{shown} von {total} passen"
+
+#: src/components/pages/GraphPage.astro:42
+msgid "{shown} of {total} nodes shown"
+msgstr "{shown} von {total} Knoten angezeigt"
+
+#: src/components/pages/HomePage.astro:201
+msgid "“A German business website must show its VAT identification number, if it has one.” Here is the trail."
+msgstr "„Eine geschäftsmäßige deutsche Website muss ihre Umsatzsteuer-Identifikationsnummer angeben, wenn sie eine hat.“ So lässt sich das zurückverfolgen."
+
+#: src/components/pages/HomePage.astro:155
+msgid "“Where did you get that from?”"
+msgstr "„Woher haben Sie das?“"
+
+#: src/lib/filter-labels.ts:8
+msgid "‹ Previous"
+msgstr "‹ Zurück"
+
+#: src/components/pages/GraphPage.astro:61
+msgid "● in the view · click a name to go to it"
+msgstr "● in der Ansicht · Namen anklicken, um hinzugehen"

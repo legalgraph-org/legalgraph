@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Law of Ukraine on Consumer Rights Protection of 1991 (the law in force until the 2023 act takes effect),
+  Article 13(2) and (4), written in schemas/law.xsd from the portal's fragment.
+  The words are the Verkhovna Rada's (zakon.rada.gov.ua); only the structure is ours. Editorial notes on
+  amendments (in braces on the portal) are left out. `legalgraph sources verify` checks every paragraph word
+  for word against the downloaded fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="uk"
+     lga:act="UA-1023" lga:jurisdiction="UA" lga:act-type="Statute"
+     lga:url="https://zakon.rada.gov.ua/laws/show/1023-12">
+  <meta>
+    <title>Про захист прав споживачів</title>
+    <date>1991-05-12</date>
+  </meta>
+
+  <section num="Стаття 13" title="Право споживача у разі укладення договору на відстані" source="1023-12.fragment.html">
+    <paragraph num="2." lga:provision="UA-1023-art13-2" lga:citation="ст. 13 ч. 2 Закону «Про захист прав споживачів»" lga:url="https://zakon.rada.gov.ua/laws/show/1023-12#n295" lga:regulates="PreContractInformation">Перед укладенням договорів на відстані продавець (виконавець) повинен надати споживачеві інформацію про:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress ComplaintAddress">найменування продавця (виконавця), його місцезнаходження та порядок прийняття претензії;</item>
+        <item num="2)" lga:requires="MainCharacteristics">основні характеристики продукції;</item>
+        <item num="3)" lga:requires="TotalPrice DeliveryCosts PaymentAndDeliveryTerms">ціну, включаючи плату за доставку, та умови оплати;</item>
+        <item num="4)" lga:requires="LegalGuarantee RepairInformation">гарантійні зобов'язання та інші послуги, пов'язані з утриманням чи ремонтом продукції;</item>
+        <item num="5)" lga:requires="PaymentAndDeliveryTerms">інші умови поставки або виконання договору;</item>
+        <item num="6)" lga:requires="ContractDuration">мінімальну тривалість договору, якщо він передбачає періодичні поставки продукції або послуг;</item>
+        <item num="7)" lga:requires="CommunicationCosts">вартість електронних комунікаційних послуг, якщо вона відрізняється від граничного тарифу;</item>
+        <item num="8)">період прийняття пропозицій;</item>
+        <item num="9)" lga:requires="WithdrawalInformation">порядок розірвання договору.</item>
+      </list>
+      У разі ненадання такої інформації суб'єкт господарювання несе відповідальність згідно із статтями 15 і 23 цього Закону.</paragraph>
+    <paragraph num="4." lga:provision="UA-1023-art13-4" lga:citation="ст. 13 ч. 4 Закону «Про захист прав споживачів»" lga:url="https://zakon.rada.gov.ua/laws/show/1023-12#n295" lga:regulates="RightOfWithdrawal">Споживач має право розірвати укладений на відстані договір шляхом повідомлення продавця (виконавця) про це протягом чотирнадцяти днів з моменту підтвердження інформації або з моменту одержання товару чи першої поставки товару. Якщо відповідно до абзацу другого частини третьої цієї статті підтвердження інформації не вимагається, споживач може розірвати договір протягом чотирнадцяти днів з моменту його укладення. У разі продажу матеріальних речей їх повернення також свідчить про розірвання договору. Якщо підтвердження інформації не відповідає вимогам частини третьої цієї статті, строк, протягом якого споживач має право розірвати договір, становить дев'яносто днів з моменту одержання такої інформації, або у разі продажу матеріальних речей - з моменту одержання товару або першої поставки товару. Якщо протягом цього строку підтвердження інформації було виправлене, споживач має право розірвати договір протягом чотирнадцяти днів з моменту одержання виправленого підтвердження.</paragraph>
+  </section>
+</law>

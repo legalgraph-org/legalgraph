@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LG München I, Endurteil vom 20. Januar 2022 – 3 O 17493/20 (Google Fonts), the operative part
+  and the paragraphs the graph quotes, written in schemas/law.xsd from the gesetze-bayern.de page.
+  The words are the court's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-LGM-2022-0120" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612">
+  <meta>
+    <title>Landgericht München I, Endurteil vom 20. Januar 2022 – 3 O 17493/20</title>
+    <short>LG München I 3 O 17493/20</short>
+    <date>2022-01-20</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="lg-muenchen-3o17493-20.fragment.html">
+    <paragraph num="1." lga:provision="DE-LGM-2022-0120-tenor-1" lga:citation="LG München I 3 O 17493/20, Tenor 1" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612" lga:applies="EU-2016-679-art6-1">Die Beklagte wird verurteilt, es bei Meldung eines für jeden Fall der Zuwiderhandlung festzusetzenden Ordnungsgeldes bis zu 250.000,00 €, ersatzweise Ordnungshaft oder Ordnungshaft bis zu sechs Monaten zu unterlassen, bei einem Aufruf einer von der Beklagten betriebenen Internetseite durch den Kläger dessen IP-Adresse durch Bereitstellung einer Schriftart des Anbieters Google (Google Fonts) dem Anbieter dieser Schriftart offenzulegen.</paragraph>
+    <paragraph num="3." lga:provision="DE-LGM-2022-0120-tenor-3" lga:citation="LG München I 3 O 17493/20, Tenor 3" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612" lga:applies="EU-2016-679-art82-1">Die Beklagte wird verurteilt, an den Kläger 100,00 € zuzüglich Zinsen hieraus in Höhe von 5 Prozentpunkten über dem Basiszinssatz seit dem 28.01.2021 zu bezahlen.</paragraph>
+  </section>
+
+  <section num="I." title="Entscheidungsgründe" source="lg-muenchen-3o17493-20.fragment.html">
+    <paragraph num="5" lga:provision="DE-LGM-2022-0120-p5" lga:citation="LG München I 3 O 17493/20, Rn. 5" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612" lga:interprets="EU-2016-679-art4-1" lga:regulates="PersonalData">Die dynamische IP-Adresse stellt für einen Webseitenbetreiber ein personenbezogenes Datum dar, denn der Webseitenbetreiber verfügt abstrakt über rechtliche Mittel, die vernünftigerweise eingesetzt werden könnten, um mithilfe Dritter, und zwar der zuständigen Behörde und des Internetzugangsanbieters, die betreffende Person anhand der gespeicherten IP-Adressen bestimmen zu lassen (BGH, Urteil vom 16.05.2017 - VI ZR 135/13). Dabei reicht es aus, dass für die Beklagte die abstrakte Möglichkeit der Bestimmbarkeit der Personen hinter der IP-Adresse besteht. Darauf, ob die Beklagte oder Google die konkrete Möglichkeit hat, die IP-Adresse mit dem Kläger zu verknüpfen, kommt es nicht an.</paragraph>
+    <paragraph num="7" lga:provision="DE-LGM-2022-0120-p7" lga:citation="LG München I 3 O 17493/20, Rn. 7" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612" lga:interprets="EU-2016-679-art6-1" lga:regulates="LawfulBasisConsent">Die automatische Weitergabe der IP-Adresse durch die Beklagte an Google war ein nach dem Datenschutzrecht unzulässiger Eingriff in das allgemeine Persönlichkeitsrecht des Klägers, da der Kläger unstreitig in diesem Eingriff nicht gemäß § 13 Abs. 2 TMG a.F., Art. 6 Abs. 1 a) DSGVO eingewilligt hat.</paragraph>
+    <paragraph num="8" lga:provision="DE-LGM-2022-0120-p8" lga:citation="LG München I 3 O 17493/20, Rn. 8" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612" lga:interprets="EU-2016-679-art6-1" lga:regulates="LawfulBasisLegitimateInterests">3. Es liegt auch kein Rechtfertigungsgrund für den Eingriff in das allgemeine Persönlichkeitsrecht vor. Ein berechtigtes Interesse der Beklagten i.S.d. Art. 6 Abs. 1 f) DS-GVO, wie von ihr behauptet, liegt nicht vor, denn Google Fonts kann durch die Beklagte auch genutzt werden, ohne dass beim Aufruf der Webseite eine Verbindung zu einem Google-Server hergestellt wird und eine Übertragung der IP-Adresse der Webseitennutzer an Google stattfindet.</paragraph>
+  </section>
+
+  <section num="III." title="Schadensersatz" source="lg-muenchen-3o17493-20.fragment.html">
+    <paragraph num="12" lga:provision="DE-LGM-2022-0120-p12" lga:citation="LG München I 3 O 17493/20, Rn. 12" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612" lga:interprets="EU-2016-679-art82-1" lga:regulates="RightToCompensation">Dem Kläger steht ein Schadensersatzanspruch aus Art. 82 Abs. 1 DS-GVO zu. Der Begriff des Schadens i.S.d. Art. 82 DS-GVO ist nach dem Erwägungsgrund 146 S. 3 dabei weit auszulegen. Die Auslegung soll den Zielen dieser Verordnung in vollem Umfang entsprechen, auch dem Ziel der Sanktion und Prävention (BeckOK Datenschutzrecht, Wolff/Bring, 38. Edition, DS-GVO Art. 82, Rn. 24). Ausreichend ist gern. Art. 82 Abs. 1 DS-GVO dabei auch ein immaterieller Schaden. Ob eine Erheblichkeitsschwelle erreicht bzw. überschritten sein muss und so genannte Bagatellschäden auszuschließen sind, ist umstritten (vgl. BVerfG NJW 2021, 1005,Rz. 20 m.w.N.; Kohn ZD 2019, 498 (501); Paal MMR 2020, 14 (16)), kann aber im hiesigen Fall dahingestellt bleiben. Die Beklagte räumt ein, dass sie vor der Modifizierung ihrer Webseite bei den Besuchen des Klägers auf ihrer Webseite dessen IP-Adresse an Google übermittelt hat. Die Übermittlung der IP-Adresse erfolgte damit nicht nur einmalig. Der damit verbundene Eingriff in das allgemeine Persönlichkeitsrecht ist im Hinblick auf den Kontrollverlust des Klägers über ein personenbezogenes Datum an Google, ein Unternehmen, das bekanntermaßen Daten über seine Nutzer sammelt und das damit vom Kläger empfundene individuelle Unwohlsein so erheblich, dass ein Schadensersatzanspruch gerechtfertigt ist.</paragraph>
+  </section>
+</law>

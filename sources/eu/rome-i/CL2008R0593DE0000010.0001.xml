@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONS.ACT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://formex.publications.europa.eu/schema/formex-05.22-20110811.xd">
+<INFO.CONSLEG CONSLEG.DATE="20091204" CONSLEG.REF="2008R0593" DATE.LAST.MOD="20091124" END="NONE" END.DATE="99999999" LEG.VAL="REG" PROD.SEQ="000.001.0" START.DATE="20080724"/>
+<INFO.PROD PROD.DATE="20091204" PROD.SYSTEM="CONSLEG.NEW" PRODUCER="ES"/>
+<CONS.DOC><BIB.INSTANCE>
+<DOCUMENT.REF FILE="CL2008R0593DE0000010.0001.doc.xml"><LG.OJ>DE</LG.OJ>
+<PAGE.FIRST>1</PAGE.FIRST></DOCUMENT.REF>
+<DATE ISO="20080724">20080724</DATE>
+<LG.DOC>DE</LG.DOC>
+<PAGE.FIRST>1</PAGE.FIRST>
+<PAGE.SEQ>1</PAGE.SEQ>
+<PAGE.LAST>22</PAGE.LAST>
+<PAGE.TOTAL>22</PAGE.TOTAL></BIB.INSTANCE>
+<FAM.COMP LEG.VAL="REG"><BIB.DATA><BIB.INSTANCE.CONS><DOCUMENT.REF.CONS><COLL>L</COLL>
+<NO.OJ>177</NO.OJ>
+<YEAR>2008</YEAR>
+<LG.OJ>DE</LG.OJ>
+<PAGE.FIRST>6</PAGE.FIRST>
+<PAGE.SEQ>1</PAGE.SEQ>
+<VOLUME.REF>01</VOLUME.REF></DOCUMENT.REF.CONS><DATE ISO="20080704">20080704</DATE>
+<LG.DOC>DE</LG.DOC>
+<NO.SEQ>0002</NO.SEQ>
+<PAGE.FIRST>6</PAGE.FIRST>
+<PAGE.SEQ>1</PAGE.SEQ>
+<PAGE.LAST>16</PAGE.LAST>
+<PAGE.TOTAL>11</PAGE.TOTAL>
+<NO.DOC FORMAT="NY" TYPE="OJ"><NO.CURRENT>593</NO.CURRENT>
+<YEAR>2008</YEAR>
+<COM>EC</COM></NO.DOC></BIB.INSTANCE.CONS>
+<NO.CELEX>32008R0593</NO.CELEX>
+<DATE ISO="20080617">20080617</DATE>
+<TITLE><TI>
+<P><HT TYPE="UC">Verordnung (EG)</HT> Nr. 593/2008 <HT TYPE="UC">des Europäischen Parlaments und des Rates</HT></P><P>vom <DATE ISO="20080617">17. Juni 2008</DATE></P><P>über das auf vertragliche Schuldverhältnisse anzuwendende Recht (Rom I)</P></TI></TITLE></BIB.DATA>
+<GR.CORRIG><CORRIG RELEVANT="YES">
+<BIB.DATA><BIB.INSTANCE.CONS><DOCUMENT.REF.CONS><COLL>L</COLL>
+<NO.OJ>309</NO.OJ>
+<YEAR>2009</YEAR>
+<LG.OJ>DE</LG.OJ>
+<PAGE.FIRST>87</PAGE.FIRST>
+<PAGE.SEQ>1</PAGE.SEQ>
+<VOLUME.REF>01</VOLUME.REF></DOCUMENT.REF.CONS><DATE ISO="20091124">20091124</DATE>
+<LG.DOC>DE</LG.DOC>
+<NO.SEQ>0004</NO.SEQ>
+<PAGE.FIRST>87</PAGE.FIRST>
+<PAGE.SEQ>1</PAGE.SEQ>
+<PAGE.LAST>87</PAGE.LAST>
+<PAGE.TOTAL>1</PAGE.TOTAL></BIB.INSTANCE.CONS>
+<NO.CELEX>32008R0593R(02)</NO.CELEX>
+<TITLE><TI>
+<P>Berichtigung der Verordnung (EG) Nr. 593/2008 des Europäischen Parlaments und des Rates vom <DATE ISO="20080617">17. Juni 2008</DATE> über das auf vertragliche Schuldverhältnisse anzuwendende Recht (Rom I)</P><P>(<REF.DOC.OJ COLL="L" DATE.PUB="20080704" NO.OJ="177">Amtsblatt der Europäischen Union L 177 vom 4. Juli 2008</REF.DOC.OJ>)</P></TI></TITLE></BIB.DATA></CORRIG></GR.CORRIG></FAM.COMP><?PAGE NO='2'?>
+<TITLE><TI>
+<P><HT TYPE="UC">Verordnung (EG)</HT> Nr. 593/2008 <HT TYPE="UC">des Europäischen Parlaments und des Rates</HT></P><P>vom <DATE ISO="20080617">17. Juni 2008</DATE></P><P>über das auf vertragliche Schuldverhältnisse anzuwendende Recht (Rom I)</P></TI></TITLE>
+<PREAMBLE><PREAMBLE.INIT><P>DAS EUROPÄISCHE PARLAMENT UND DER RAT DER EUROPÄISCHEN UNION —</P></PREAMBLE.INIT>
+<GR.VISA><VISA>gestützt auf den Vertrag zur Gründung der Europäischen Gemeinschaft, insbesondere auf Artikel 61 Buchstabe c und Artikel 67 Absatz 5, zweiter Gedankenstrich,</VISA>
+<VISA>auf Vorschlag der Kommission,</VISA>
+<VISA>nach Stellungnahme des Europäischen Wirtschafts- und Sozialausschusses<NOTE NOTE.ID="E0001"><P><REF.DOC.OJ COLL="C" DATE.PUB="20061223" NO.OJ="318" PAGE.FIRST="56">ABl. C 318 vom 23.12.2006, S. 56</REF.DOC.OJ>.</P></NOTE>,</VISA>
+<VISA>gemäß dem Verfahren des Artikels 251 des Vertrags<NOTE NOTE.ID="E0002"><P>Stellungnahme des Europäischen Parlaments vom <DATE ISO="20071129">29. November 2007</DATE> (noch nicht im Amtsblatt veröffentlicht) und Beschluss des Rates vom <DATE ISO="20080605">5. Juni 2008</DATE>.</P></NOTE>,</VISA></GR.VISA>
+<GR.CONSID><GR.CONSID.INIT>in Erwägung nachstehender Gründe:</GR.CONSID.INIT>
+<CONSID><NP>
+<NO.P>(1)</NO.P><TXT>Die Gemeinschaft hat sich zum Ziel gesetzt, einen Raum der Freiheit, der Sicherheit und des Rechts zu erhalten und weiterzuentwickeln. Zur schrittweisen Schaffung dieses Raums muss die Gemeinschaft im Bereich der justiziellen Zusammenarbeit in Zivilsachen, die einen grenzüberschreitenden Bezug aufweisen, Maßnahmen erlassen, soweit sie für das reibungslose Funktionieren des Binnenmarkts erforderlich sind.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(2)</NO.P><TXT>Nach Artikel 65 Buchstabe b des Vertrags schließen diese Maßnahmen solche ein, die die Vereinbarkeit der in den Mitgliedstaaten geltenden Kollisionsnormen und Vorschriften zur Vermeidung von Kompetenzkonflikten fördern.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(3)</NO.P><TXT>Auf seiner Tagung vom <DATE ISO="19991015">15.</DATE> und <DATE ISO="19991016">16. Oktober 1999</DATE> in Tampere hat der Europäische Rat den Grundsatz der gegenseitigen Anerkennung von Urteilen und anderen Entscheidungen von Justizbehörden als Eckstein der justiziellen Zusammenarbeit in Zivilsachen unterstützt und den Rat und die Kommission ersucht, ein Maßnahmenprogramm zur Umsetzung dieses Grundsatzes anzunehmen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(4)</NO.P><TXT>Der Rat hat am <DATE ISO="20001130">30. November 2000</DATE> ein gemeinsames Maßnahmenprogramm der Kommission und des Rates zur Umsetzung des Grundsatzes der gegenseitigen Anerkennung gerichtlicher Entscheidungen in Zivil- und Handelssachen verabschiedet<NOTE NOTE.ID="E0003"><P><REF.DOC.OJ COLL="C" DATE.PUB="20010115" NO.OJ="012" PAGE.FIRST="1">ABl. C 12 vom 15.1.2001, S. 1</REF.DOC.OJ>.</P></NOTE>. Nach dem Programm können Maßnahmen zur Harmonisierung der Kollisionsnormen dazu beitragen, die gegenseitige Anerkennung gerichtlicher Entscheidungen zu vereinfachen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(5)</NO.P><TXT>In dem vom Europäischen Rat am <DATE ISO="20041105">5. November 2004</DATE> angenommenen Haager Programm<NOTE NOTE.ID="E0004"><P><REF.DOC.OJ COLL="C" DATE.PUB="20050303" NO.OJ="053" PAGE.FIRST="1">ABl. C 53 vom 3.3.2005, S. 1</REF.DOC.OJ>.</P></NOTE> wurde dazu aufgerufen, die Beratungen über die Regelung der Kollisionsnormen für vertragliche Schuldverhältnisse (<QUOT.START CODE="201E" ID="QS0001" REF.END="QE0001"/>Rom I<QUOT.END CODE="201C" ID="QE0001" REF.START="QS0001"/>) energisch voranzutreiben.</TXT></NP></CONSID>
+<?PAGE NO='3'?>
+<CONSID><NP>
+<NO.P>(6)</NO.P><TXT>Um den Ausgang von Rechtsstreitigkeiten vorhersehbarer zu machen und die Sicherheit in Bezug auf das anzuwendende Recht sowie den freien Verkehr gerichtlicher Entscheidungen zu fördern, müssen die in den Mitgliedstaaten geltenden Kollisionsnormen im Interesse eines reibungslos funktionierenden Binnenmarkts unabhängig von dem Staat, in dem sich das Gericht befindet, bei dem der Anspruch geltend gemacht wird, dasselbe Recht bestimmen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(7)</NO.P><TXT>Der materielle Anwendungsbereich und die Bestimmungen dieser Verordnung sollten mit der Verordnung (EG) Nr. 44/2001 des Rates vom <DATE ISO="20001222">22. Dezember 2000</DATE> über die gerichtliche Zuständigkeit und die Anerkennung und Vollstreckung von Entscheidungen in Zivil- und Handelssachen (<QUOT.START CODE="201E" ID="QS0002" REF.END="QE0002"/>Brüssel I<QUOT.END CODE="201C" ID="QE0002" REF.START="QS0002"/>)<NOTE NOTE.ID="E0005"><P><REF.DOC.OJ COLL="L" DATE.PUB="20010116" NO.OJ="012" PAGE.FIRST="1">ABl. L 12 vom 16.1.2001, S. 1</REF.DOC.OJ>. Zuletzt geändert durch die Verordnung (EG) Nr. 1791/2006 (<REF.DOC.OJ COLL="L" DATE.PUB="20061220" NO.OJ="363" PAGE.FIRST="1">ABl. L 363 vom 20.12.2006, S. 1</REF.DOC.OJ>).</P></NOTE> und der Verordnung (EG) Nr. 864/2007 des Europäischen Parlaments und des Rates vom <DATE ISO="20070711">11. Juli 2007</DATE> über das auf außervertragliche Schuldverhältnisse anzuwendende Recht (<QUOT.START CODE="201E" ID="QS0003" REF.END="QE0003"/>Rom II<QUOT.END CODE="201C" ID="QE0003" REF.START="QS0003"/>)<NOTE NOTE.ID="E0006"><P><REF.DOC.OJ COLL="L" DATE.PUB="20070731" NO.OJ="199" PAGE.FIRST="40">ABl. L 199 vom 31.7.2007, S. 40</REF.DOC.OJ>.</P></NOTE> im Einklang stehen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(8)</NO.P><TXT>Familienverhältnisse sollten die Verwandtschaft in gerader Linie, die Ehe, die Schwägerschaft und die Verwandtschaft in der Seitenlinie umfassen. Die Bezugnahme in Artikel 1 Absatz 2 auf Verhältnisse, die mit der Ehe oder anderen Familienverhältnissen vergleichbare Wirkungen entfalten, sollte nach dem Recht des Mitgliedstaats, in dem sich das angerufene Gericht befindet, ausgelegt werden.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(9)</NO.P><TXT>Unter Schuldverhältnisse aus Wechseln, Schecks, Eigenwechseln und anderen handelbaren Wertpapieren sollten auch Konnossemente fallen, soweit die Schuldverhältnisse aus dem Konnossement aus dessen Handelbarkeit entstehen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(10)</NO.P><TXT>Schuldverhältnisse, die aus Verhandlungen vor Abschluss eines Vertrags entstehen, fallen unter Artikel 12 der Verordnung (EG) Nr. 864/2007. Sie sollten daher vom Anwendungsbereich dieser Verordnung ausgenommen werden.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(11)</NO.P><TXT>Die freie Rechtswahl der Parteien sollte einer der Ecksteine des Systems der Kollisionsnormen im Bereich der vertraglichen Schuldverhältnisse sein.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(12)</NO.P><TXT>Eine Vereinbarung zwischen den Parteien, dass ausschließlich ein Gericht oder mehrere Gerichte eines Mitgliedstaats für Streitigkeiten aus einem Vertrag zuständig sein sollen, sollte bei der Feststellung, ob eine Rechtswahl eindeutig getroffen wurde, einer der zu berücksichtigenden Faktoren sein.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(13)</NO.P><TXT>Diese Verordnung hindert die Parteien nicht daran, in ihrem Vertrag auf ein nichtstaatliches Regelwerk oder ein internationales Übereinkommen Bezug zu nehmen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(14)</NO.P><TXT>Sollte die Gemeinschaft in einem geeigneten Rechtsakt Regeln des materiellen Vertragsrechts, einschließlich vertragsrechtlicher Standardbestimmungen, festlegen, so kann in einem solchen Rechtsakt vorgesehen werden, dass die Parteien entscheiden können, diese Regeln anzuwenden.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(15)</NO.P><TXT>Wurde eine Rechtswahl getroffen und sind alle anderen Elemente des Sachverhalts in einem anderen als demjenigen Staat belegen, dessen Recht gewählt wurde, so sollte die Rechtswahl nicht die<?PAGE NO='4'?> Anwendung derjenigen Bestimmungen des Rechts dieses anderen Staates berühren, von denen nicht durch Vereinbarung abgewichen werden kann. Diese Regel sollte unabhängig davon angewandt werden, ob die Rechtswahl zusammen mit einer Gerichtsstandsvereinbarung getroffen wurde oder nicht. Obwohl keine inhaltliche Änderung gegenüber Artikel 3 Absatz 3 des Übereinkommens von 1980 über das auf vertragliche Schuldverhältnisse anzuwendende Recht<NOTE NOTE.ID="E0007"><P><REF.DOC.OJ COLL="C" DATE.PUB="20051230" NO.OJ="334" PAGE.FIRST="1">ABl. C 334 vom 30.12.2005, S. 1</REF.DOC.OJ>.</P></NOTE> (<QUOT.START CODE="201E" ID="QS0004" REF.END="QE0004"/>Übereinkommen von Rom<QUOT.END CODE="201C" ID="QE0004" REF.START="QS0004"/>) beabsichtigt ist, ist der Wortlaut der vorliegenden Verordnung so weit wie möglich an Artikel 14 der Verordnung (EG) Nr. 864/2007 angeglichen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(16)</NO.P><TXT>Die Kollisionsnormen sollten ein hohes Maß an Berechenbarkeit aufweisen, um zum allgemeinen Ziel dieser Verordnung, nämlich zur Rechtssicherheit im europäischen Rechtsraum, beizutragen. Dennoch sollten die Gerichte über ein gewisses Ermessen verfügen, um das Recht bestimmen zu können, das zu dem Sachverhalt die engste Verbindung aufweist.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(17)</NO.P><TXT>Soweit es das mangels einer Rechtswahl anzuwendende Recht betrifft, sollten die Begriffe <QUOT.START CODE="201E" ID="QS0005" REF.END="QE0005"/>Erbringung von Dienstleistungen<QUOT.END CODE="201C" ID="QE0005" REF.START="QS0005"/> und <QUOT.START CODE="201E" ID="QS0006" REF.END="QE0006"/>Verkauf beweglicher Sachen<QUOT.END CODE="201C" ID="QE0006" REF.START="QS0006"/> so ausgelegt werden wie bei der Anwendung von Artikel 5 der Verordnung (EG) Nr. 44/2001, soweit der Verkauf beweglicher Sachen und die Erbringung von Dienstleistungen unter jene Verordnung fallen. Franchiseverträge und Vertriebsverträge sind zwar Dienstleistungsverträge, unterliegen jedoch besonderen Regeln.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(18)</NO.P><TXT>Hinsichtlich des mangels einer Rechtswahl anzuwendenden Rechts sollten unter multilateralen Systemen solche Systeme verstanden werden, in denen Handel betrieben wird, wie die geregelten Märkte und multilateralen Handelssysteme im Sinne des Artikels 4 der Richtlinie 2004/39/EG des Europäischen Parlaments und des Rates vom <DATE ISO="20040421">21. April 2004</DATE> über Märkte für Finanzinstrumente<NOTE NOTE.ID="E0008"><P><REF.DOC.OJ COLL="L" DATE.PUB="20040430" NO.OJ="145" PAGE.FIRST="1">ABl. L 145 vom 30.4.2004, S. 1</REF.DOC.OJ>. Zuletzt geändert durch die Richtlinie 2008/10/EG (<REF.DOC.OJ COLL="L" DATE.PUB="20080319" NO.OJ="076" PAGE.FIRST="33">ABl. L 76 vom 19.3.2008, S. 33</REF.DOC.OJ>).</P></NOTE>, und zwar ungeachtet dessen, ob sie sich auf eine zentrale Gegenpartei stützen oder nicht.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(19)</NO.P><TXT>Wurde keine Rechtswahl getroffen, so sollte das anzuwendende Recht nach der für die Vertragsart spezifizierten Regel bestimmt werden. Kann der Vertrag nicht einer der spezifizierten Vertragsarten zugeordnet werden oder sind die Bestandteile des Vertrags durch mehr als eine der spezifizierten Vertragsarten abgedeckt, so sollte der Vertrag dem Recht des Staates unterliegen, in dem die Partei, welche die für den Vertrag charakteristische Leistung zu erbringen hat, ihren gewöhnlichen Aufenthalt hat. Besteht ein Vertrag aus einem Bündel von Rechten und Verpflichtungen, die mehr als einer der spezifizierten Vertragsarten zugeordnet werden können, so sollte die charakteristische Leistung des Vertrags nach ihrem Schwerpunkt bestimmt werden.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(20)</NO.P><TXT>Weist ein Vertrag eine offensichtlich engere Verbindung zu einem anderen als dem in Artikel 4 Absätze 1 und 2 genannten Staat auf, so sollte eine Ausweichklausel vorsehen, dass das Recht dieses anderen Staats anzuwenden ist. Zur Bestimmung dieses Staates sollte unter anderem berücksichtigt werden, ob der betreffende Vertrag in einer sehr engen Verbindung zu einem oder mehreren anderen Verträgen steht.</TXT></NP></CONSID>
+<?PAGE NO='5'?>
+<CONSID><NP>
+<NO.P>(21)</NO.P><TXT>Kann das bei Fehlen einer Rechtswahl anzuwendende Recht weder aufgrund der Zuordnung des Vertrags zu einer der spezifizierten Vertragsarten noch als das Recht des Staates bestimmt werden, in dem die Partei, die die für den Vertrag charakteristische Leistung zu erbringen hat, ihren gewöhnlichen Aufenthalt hat, so sollte der Vertrag dem Recht des Staates unterliegen, zu dem er die engste Verbindung aufweist. Bei der Bestimmung dieses Staates sollte unter anderem berücksichtigt werden, ob der betreffende Vertrag in einer sehr engen Verbindung zu einem oder mehreren anderen Verträgen steht.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(22)</NO.P><TXT>In Bezug auf die Auslegung von <QUOT.START CODE="201E" ID="QS0007" REF.END="QE0007"/>Güterbeförderungsverträgen<QUOT.END CODE="201C" ID="QE0007" REF.START="QS0007"/> ist keine inhaltliche Abweichung von Artikel 4 Absatz 4 Satz 3 des Übereinkommens von Rom beabsichtigt. Folglich sollten als Güterbeförderungsverträge auch Charterverträge für eine einzige Reise und andere Verträge gelten, die in der Hauptsache der Güterbeförderung dienen. Für die Zwecke dieser Verordnung sollten der Begriff <QUOT.START CODE="201E" ID="QS0008" REF.END="QE0008"/>Absender<QUOT.END CODE="201C" ID="QE0008" REF.START="QS0008"/> eine Person bezeichnen, die mit dem Beförderer einen Beförderungsvertrag abschließt, und der Begriff <QUOT.START CODE="201E" ID="QS0009" REF.END="QE0009"/>Beförderer<QUOT.END CODE="201C" ID="QE0009" REF.START="QS0009"/> die Vertragspartei, die sich zur Beförderung der Güter verpflichtet, unabhängig davon, ob sie die Beförderung selbst durchführt.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(23)</NO.P><TXT>Bei Verträgen, bei denen die eine Partei als schwächer angesehen wird, sollte die schwächere Partei durch Kollisionsnormen geschützt werden, die für sie günstiger sind als die allgemeinen Regeln.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(24)</NO.P><TXT>Insbesondere bei Verbraucherverträgen sollte die Kollisionsnorm es ermöglichen, die Kosten für die Beilegung von Rechtsstreitigkeiten zu senken, die häufig einen geringen Streitwert haben, und der Entwicklung des Fernabsatzes Rechnung zu tragen. Um die Übereinstimmung mit der Verordnung (EG) Nr. 44/2001 zu wahren, ist zum einen als Voraussetzung für die Anwendung der Verbraucherschutznorm auf das Kriterium der ausgerichteten Tätigkeit zu verweisen und zum anderen auf die Notwendigkeit, dass dieses Kriterium in der Verordnung (EG) Nr. 44/2001 und der vorliegenden Verordnung einheitlich ausgelegt wird, wobei zu beachten ist, dass eine gemeinsame Erklärung des Rates und der Kommission zu Artikel 15 der Verordnung (EG) Nr. 44/2001 ausführt, <QUOT.START CODE="201E" ID="QS0010" REF.END="QE0010"/>dass es für die Anwendung von Artikel 15 Absatz 1 Buchstabe c nicht ausreicht, dass ein Unternehmen seine Tätigkeiten auf den Mitgliedstaat, in dem der Verbraucher seinen Wohnsitz hat, oder auf mehrere Staaten — einschließlich des betreffenden Mitgliedstaats —, ausrichtet, sondern dass im Rahmen dieser Tätigkeiten auch ein Vertrag geschlossen worden sein muss.<QUOT.END CODE="201C" ID="QE0010" REF.START="QS0010"/> Des Weiteren heißt es in dieser Erklärung, <QUOT.START CODE="201E" ID="QS0011" REF.END="QE0011"/>dass die Zugänglichkeit einer Website allein nicht ausreicht, um die Anwendbarkeit von Artikel 15 zu begründen; vielmehr ist erforderlich, dass diese Website auch den Vertragsabschluss im Fernabsatz anbietet und dass tatsächlich ein Vertragsabschluss im Fernabsatz erfolgt ist, mit welchem Mittel auch immer. Dabei sind auf einer Website die benutzte Sprache oder die Währung nicht von Bedeutung.<QUOT.END CODE="201C" ID="QE0011" REF.START="QS0011"/></TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(25)</NO.P><TXT>Die Verbraucher sollten dann durch Regelungen des Staates ihres gewöhnlichen Aufenthalts geschützt werden, von denen nicht durch Vereinbarung abgewichen werden kann, wenn der Vertragsschluss darauf zurückzuführen ist, dass der Unternehmer in<?PAGE NO='6'?> diesem bestimmten Staat eine berufliche oder gewerbliche Tätigkeit ausübt. Der gleiche Schutz sollte gewährleistet sein, wenn ein Unternehmer zwar keine beruflichen oder gewerblichen Tätigkeiten in dem Staat, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat, ausübt, seine Tätigkeiten aber — unabhängig von der Art und Weise, in der dies geschieht — auf diesen Staat oder auf mehrere Staaten, einschließlich dieses Staates, ausrichtet und der Vertragsschluss auf solche Tätigkeiten zurückzuführen ist.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(26)</NO.P><TXT>Für die Zwecke dieser Verordnung sollten Finanzdienstleistungen wie Wertpapierdienstleistungen und Anlagetätigkeiten und Nebendienstleistungen nach Anhang I Abschnitt A und Abschnitt B der Richtlinie 2004/39/EG, die ein Unternehmer für einen Verbraucher erbringt, sowie Verträge über den Verkauf von Anteilen an Organismen für gemeinsame Anlagen in Wertpapieren, selbst wenn sie nicht unter die Richtlinie 85/611/EWG des Rates vom <DATE ISO="19851220">20. Dezember 1985</DATE> zur Koordinierung der Rechts- und Verwaltungsvorschriften betreffend bestimmte Organismen für gemeinsame Anlagen in Wertpapieren (OGAW)<NOTE NOTE.ID="E0009"><P><REF.DOC.OJ COLL="L" DATE.PUB="19851231" NO.OJ="375" PAGE.FIRST="3">ABl. L 375 vom 31.12.1985, S. 3</REF.DOC.OJ>. Zuletzt geändert durch die Richtlinie 2008/18/EG des Europäischen Parlaments und des Rates (<REF.DOC.OJ COLL="L" DATE.PUB="20080319" NO.OJ="076" PAGE.FIRST="42">ABl. L 76 vom 19.3.2008, S. 42</REF.DOC.OJ>).</P></NOTE> fallen, Artikel 6 der vorliegenden Verordnung unterliegen. Daher sollten, wenn die Bedingungen für die Ausgabe oder das öffentliche Angebot bezüglich übertragbarer Wertpapiere oder die Zeichnung oder der Rückkauf von Anteilen an Organismen für gemeinsame Anlagen in Wertpapieren erwähnt werden, darunter alle Aspekte fallen, durch die sich der Emittent bzw. Anbieter gegenüber dem Verbraucher verpflichtet, nicht aber diejenigen Aspekte, die mit der Erbringung von Finanzdienstleistungen im Zusammenhang stehen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(27)</NO.P><TXT>Es sollten verschiedene Ausnahmen von der allgemeinen Kollisionsnorm für Verbraucherverträge vorgesehen werden. Eine solche Ausnahme, bei der die allgemeinen Regeln nicht gelten, sollten Verträge sein, die ein dingliches Recht an unbeweglichen Sachen oder die Miete oder Pacht unbeweglicher Sachen zum Gegenstand haben, mit Ausnahme von Verträgen über Teilzeitnutzungsrechte an Immobilien im Sinne der Richtlinie 94/47/EG des Europäischen Parlaments und des Rates vom <DATE ISO="19941026">26. Oktober 1994</DATE> zum Schutz der Erwerber im Hinblick auf bestimmte Aspekte von Verträgen über den Erwerb von Teilzeitnutzungsrechten an Immobilien<NOTE NOTE.ID="E0010"><P><REF.DOC.OJ COLL="L" DATE.PUB="19941029" NO.OJ="280" PAGE.FIRST="83">ABl. L 280 vom 29.10.1994, S. 83</REF.DOC.OJ>.</P></NOTE>.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(28)</NO.P><TXT>Es muss sichergestellt werden, dass Rechte und Verpflichtungen, die ein Finanzinstrument begründen, nicht der allgemeinen Regel für Verbraucherverträge unterliegen, da dies dazu führen könnte, dass für jedes der ausgegebenen Instrumente ein anderes Recht anzuwenden wäre, wodurch ihr Wesen verändert würde und ihr fungibler Handel und ihr fungibles Angebot verhindert würden. Entsprechend sollte auf das Vertragsverhältnis zwischen dem Emittenten bzw. dem Anbieter und dem Verbraucher bei Ausgabe oder Angebot solcher Instrumente nicht notwendigerweise die Anwendung des Rechts des Staates des gewöhnlichen Aufenthalts des Verbrauchers zwingend vorgeschrieben sein, da die Einheitlichkeit der Bedingungen einer Ausgabe oder eines Angebots sichergestellt werden muss. Gleiches sollte bei den multilateralen Systemen, die von Artikel 4 Absatz 1 Buchstabe h erfasst werden, gelten, in Bezug auf die gewährleistet sein sollte, dass das Recht des Staates des gewöhnlichen Aufenthalts des Verbrauchers nicht die Regeln berührt, die auf innerhalb solcher Systeme oder mit dem Betreiber solcher Systeme geschlossene Verträge anzuwenden sind.</TXT></NP></CONSID>
+<?PAGE NO='7'?>
+<CONSID><NP>
+<NO.P>(29)</NO.P><TXT>Werden für die Zwecke dieser Verordnung Rechte und Verpflichtungen, durch die die Bedingungen für die Ausgabe, das öffentliche Angebot oder das öffentliche Übernahmeangebot bezüglich übertragbarer Wertpapiere festgelegt werden, oder die Zeichnung oder der Rückkauf von Anteilen an Organismen für gemeinsame Anlagen in Wertpapieren genannt, so sollten darunter auch die Bedingungen für die Zuteilung von Wertpapieren oder Anteilen, für die Rechte im Falle einer Überzeichnung, für Ziehungsrechte und ähnliche Fälle im Zusammenhang mit dem Angebot sowie die in den Artikeln 10, 11, 12 und 13 geregelten Fälle fallen, so dass sichergestellt ist, dass alle relevanten Vertragsaspekte eines Angebots, durch das sich der Emittent bzw. Anbieter gegenüber dem Verbraucher verpflichtet, einem einzigen Recht unterliegen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(30)</NO.P><TXT>Für die Zwecke dieser Verordnung bezeichnen die Begriffe <QUOT.START CODE="201E" ID="QS0012" REF.END="QE0012"/>Finanzinstrumente<QUOT.END CODE="201C" ID="QE0012" REF.START="QS0012"/> und <QUOT.START CODE="201E" ID="QS0013" REF.END="QE0013"/>übertragbare Wertpapiere<QUOT.END CODE="201C" ID="QE0013" REF.START="QS0013"/> diejenigen Instrumente, die in Artikel 4 der Richtlinie 2004/39/EG genannt sind.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(31)</NO.P><TXT>Die Abwicklung einer förmlichen Vereinbarung, die als ein System im Sinne von Artikel 2 Buchstabe a der Richtlinie 98/26/EG des Europäischen Parlaments und des Rates vom <DATE ISO="19980519">19. Mai 1998</DATE> über die Wirksamkeit von Abrechnungen in Zahlungs- sowie Wertpapierliefer- und -abrechnungssystemen<NOTE NOTE.ID="E0011"><P><REF.DOC.OJ COLL="L" DATE.PUB="19980611" NO.OJ="166" PAGE.FIRST="45">ABl. L 166 vom 11.6.1998, S. 45</REF.DOC.OJ>.</P></NOTE> ausgestaltet ist, sollte von dieser Verordnung unberührt bleiben.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(32)</NO.P><TXT>Wegen der Besonderheit von Beförderungsverträgen und Versicherungsverträgen sollten besondere Vorschriften ein angemessenes Schutzniveau für zu befördernde Personen und Versicherungsnehmer gewährleisten. Deshalb sollte Artikel 6 nicht im Zusammenhang mit diesen besonderen Verträgen gelten.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(33)</NO.P><TXT>Deckt ein Versicherungsvertrag, der kein Großrisiko deckt, mehr als ein Risiko, von denen mindestens eines in einem Mitgliedstaat und mindestens eines in einem dritten Staat belegen ist, so sollten die besonderen Regelungen für Versicherungsverträge in dieser Verordnung nur für die Risiken gelten, die in dem betreffenden Mitgliedstaat bzw. den betreffenden Mitgliedstaaten belegen sind.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(34)</NO.P><TXT>Die Kollisionsnorm für Individualarbeitsverträge sollte die Anwendung von Eingriffsnormen des Staates, in den der Arbeitnehmer im Einklang mit der Richtlinie 96/71/EG des Europäischen Parlaments und des Rates vom <DATE ISO="19961216">16. Dezember 1996</DATE> über die Entsendung von Arbeitnehmern im Rahmen der Erbringung von Dienstleistungen<NOTE NOTE.ID="E0012"><P><REF.DOC.OJ COLL="L" DATE.PUB="19970121" NO.OJ="018" PAGE.FIRST="1">ABl. L 18 vom 21.1.1997, S. 1</REF.DOC.OJ>.</P></NOTE> entsandt wird, unberührt lassen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(35)</NO.P><TXT>Den Arbeitnehmern sollte nicht der Schutz entzogen werden, der ihnen durch Bestimmungen gewährt wird, von denen nicht oder nur zu ihrem Vorteil durch Vereinbarung abgewichen werden darf.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(36)</NO.P><TXT>Bezogen auf Individualarbeitsverträge sollte die Erbringung der Arbeitsleistung in einem anderen Staat als vorübergehend gelten, wenn von dem Arbeitnehmer erwartet wird, dass er nach seinem Arbeitseinsatz im Ausland seine Arbeit im Herkunftsstaat wieder aufnimmt. Der Abschluss eines neuen Arbeitsvertrags mit dem ursprünglichen Arbeitgeber oder einem Arbeitgeber, der zur selben Unternehmensgruppe gehört wie der ursprüngliche Arbeitgeber, sollte nicht ausschließen, dass der Arbeitnehmer als seine Arbeit vorübergehend in einem anderen Staat verrichtend gilt.</TXT></NP></CONSID>
+<?PAGE NO='8'?>
+<CONSID><NP>
+<NO.P>(37)</NO.P><TXT>Gründe des öffentlichen Interesses rechtfertigen es, dass die Gerichte der Mitgliedstaaten unter außergewöhnlichen Umständen die Vorbehaltsklausel (<QUOT.START CODE="201E" ID="QS0014" REF.END="QE0014"/>ordre public<QUOT.END CODE="201C" ID="QE0014" REF.START="QS0014"/>) und Eingriffsnormen anwenden können. Der Begriff <QUOT.START CODE="201E" ID="QS0015" REF.END="QE0015"/>Eingriffsnormen<QUOT.END CODE="201C" ID="QE0015" REF.START="QS0015"/> sollte von dem Begriff <QUOT.START CODE="201E" ID="QS0016" REF.END="QE0016"/>Bestimmungen, von denen nicht durch Vereinbarung abgewichen werden kann<QUOT.END CODE="201C" ID="QE0016" REF.START="QS0016"/>, unterschieden und enger ausgelegt werden.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(38)</NO.P><TXT>Im Zusammenhang mit der Übertragung der Forderung sollte mit dem Begriff <QUOT.START CODE="201E" ID="QS0017" REF.END="QE0017"/>Verhältnis<QUOT.END CODE="201C" ID="QE0017" REF.START="QS0017"/> klargestellt werden, dass Artikel 14 Absatz 1 auch auf die dinglichen Aspekte des Vertrags zwischen Zedent und Zessionar anwendbar ist, wenn eine Rechtsordnung dingliche und schuldrechtliche Aspekte trennt. Allerdings sollte mit dem Begriff <QUOT.START CODE="201E" ID="QS0018" REF.END="QE0018"/>Verhältnis<QUOT.END CODE="201C" ID="QE0018" REF.START="QS0018"/> nicht jedes beliebige möglicherweise zwischen dem Zedenten und dem Zessionar bestehende Verhältnis gemeint sein. Insbesondere sollte sich der Begriff nicht auf die der Übertragung einer Forderung vorgelagerten Fragen erstrecken. Vielmehr sollte er sich ausschließlich auf die Aspekte beschränken, die für die betreffende Übertragung einer Forderung unmittelbar von Bedeutung sind.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(39)</NO.P><TXT>Aus Gründen der Rechtssicherheit sollte der Begriff <QUOT.START CODE="201E" ID="QS0019" REF.END="QE0019"/>gewöhnlicher Aufenthalt<QUOT.END CODE="201C" ID="QE0019" REF.START="QS0019"/>, insbesondere im Hinblick auf Gesellschaften, Vereine und juristische Personen, eindeutig definiert werden. Im Unterschied zu Artikel 60 Absatz 1 der Verordnung (EG) Nr. 44/2001, der drei Kriterien zur Wahl stellt, sollte sich die Kollisionsnorm auf ein einziges Kriterium beschränken, da es für die Parteien andernfalls nicht möglich wäre, vorherzusehen, welches Recht auf ihren Fall anwendbar ist.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(40)</NO.P><TXT>Die Aufteilung der Kollisionsnormen auf zahlreiche Rechtsakte sowie Unterschiede zwischen diesen Normen sollten vermieden werden. Diese Verordnung sollte jedoch die Möglichkeit der Aufnahme von Kollisionsnormen für vertragliche Schuldverhältnisse in Vorschriften des Gemeinschaftsrechts über besondere Gegenstände nicht ausschließen.</TXT>
+<P>Diese Verordnung sollte die Anwendung anderer Rechtsakte nicht ausschließen, die Bestimmungen enthalten, die zum reibungslosen Funktionieren des Binnenmarkts beitragen sollen, soweit sie nicht in Verbindung mit dem Recht angewendet werden können, auf das die Regeln dieser Verordnung verweisen. Die Anwendung der Vorschriften im anzuwendenden Recht, die durch die Bestimmungen dieser Verordnung berufen wurden, sollte nicht die Freiheit des Waren- und Dienstleistungsverkehrs, wie sie in den Rechtsinstrumenten der Gemeinschaft wie der Richtlinie 2000/31/EG des Europäischen Parlaments und des Rates vom <DATE ISO="20000608">8. Juni 2000</DATE> über bestimmte rechtliche Aspekte der Dienste der Informationsgesellschaft, insbesondere des elektronischen Geschäftsverkehrs, im Binnenmarkt (<QUOT.START CODE="201E" ID="QS0020" REF.END="QE0020"/>Richtlinie über den elektronischen Geschäftsverkehr<QUOT.END CODE="201C" ID="QE0020" REF.START="QS0020"/>)<NOTE NOTE.ID="E0013"><P><REF.DOC.OJ COLL="L" DATE.PUB="20000717" NO.OJ="178" PAGE.FIRST="1">ABl. L 178 vom 17.7.2000, S. 1</REF.DOC.OJ>.</P></NOTE> ausgestaltet ist, beschränken.</P></NP></CONSID>
+<CONSID><NP>
+<NO.P>(41)</NO.P><TXT>Um die internationalen Verpflichtungen, die die Mitgliedstaaten eingegangen sind, zu wahren, darf sich die Verordnung nicht auf internationale Übereinkommen auswirken, denen ein oder mehrere Mitgliedstaaten zum Zeitpunkt der Annahme dieser Verordnung angehören. Um den Zugang zu den Rechtsakten zu<?PAGE NO='9'?> erleichtern, sollte die Kommission anhand der Angaben der Mitgliedstaaten ein Verzeichnis der betreffenden Übereinkommen im <HT TYPE="ITALIC">Amtsblatt der Europäischen Union</HT> veröffentlichen.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(42)</NO.P><TXT>Die Kommission wird dem Europäischen Parlament und dem Rat einen Vorschlag unterbreiten, nach welchen Verfahren und unter welchen Bedingungen die Mitgliedstaaten in Einzel- und Ausnahmefällen in eigenem Namen Übereinkünfte mit Drittländern über sektorspezifische Fragen aushandeln und abschließen dürfen, die Bestimmungen über das auf vertragliche Schuldverhältnisse anzuwendende Recht enthalten.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(43)</NO.P><TXT>Da das Ziel dieser Verordnung auf Ebene der Mitgliedstaaten nicht ausreichend verwirklicht werden kann und daher wegen des Umfangs und der Wirkungen der Verordnung besser auf Gemeinschaftsebene zu verwirklichen ist, kann die Gemeinschaft im Einklang mit dem in Artikel 5 des Vertrags niedergelegten Subsidiaritätsprinzip tätig werden. Entsprechend dem ebenfalls in diesem Artikel festgelegten Grundsatz der Verhältnismäßigkeit geht diese Verordnung nicht über das zur Erreichung ihres Ziels erforderliche Maß hinaus.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(44)</NO.P><TXT>Gemäß Artikel 3 des Protokolls über die Position des Vereinigten Königreichs und Irlands im Anhang zum Vertrag über die Europäische Union und im Anhang zum Vertrag zur Gründung der Europäischen Gemeinschaft beteiligt sich Irland an der Annahme und Anwendung dieser Verordnung.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(45)</NO.P><TXT>Gemäß den Artikeln 1 und 2 und unbeschadet des Artikels 4 des Protokolls über die Position des Vereinigten Königreichs und Irlands im Anhang zum Vertrag über die Europäische Union und zum Vertrag zur Gründung der Europäischen Gemeinschaft beteiligt sich das Vereinigte Königreich nicht an der Annahme dieser Verordnung, die für das Vereinigte Königreich nicht bindend oder anwendbar ist.</TXT></NP></CONSID>
+<CONSID><NP>
+<NO.P>(46)</NO.P><TXT>Gemäß den Artikeln 1 und 2 des Protokolls über die Position Dänemarks im Anhang zum Vertrag über die Europäische Union und dem Vertrag zur Gründung der Europäischen Gemeinschaft beteiligt sich Dänemark nicht an der Annahme dieser Verordnung, die für Dänemark nicht bindend oder anwendbar ist —</TXT></NP></CONSID></GR.CONSID>
+<PREAMBLE.FINAL><P>HABEN FOLGENDE VERORDNUNG ERLASSEN:</P></PREAMBLE.FINAL></PREAMBLE>
+<ENACTING.TERMS><DIVISION>
+<TITLE><TI>
+<P>KAPITEL I</P></TI>
+<STI><P>ANWENDUNGSBEREICH</P></STI></TITLE>
+<ARTICLE IDENTIFIER="001"><TI.ART>Artikel 1</TI.ART>
+<STI.ART><P>Anwendungsbereich</P></STI.ART>
+<PARAG IDENTIFIER="001.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA><P>Diese Verordnung gilt für vertragliche Schuldverhältnisse in Zivil- und Handelssachen, die eine Verbindung zum Recht verschiedener Staaten aufweisen.</P><P>Sie gilt insbesondere nicht für Steuer- und Zollsachen sowie verwaltungsrechtliche Angelegenheiten.</P></ALINEA></PARAG>
+<?PAGE NO='10'?>
+<PARAG IDENTIFIER="001.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA><P>Vom Anwendungsbereich dieser Verordnung ausgenommen sind:</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>der Personenstand sowie die Rechts-, Geschäfts- und Handlungsfähigkeit von natürlichen Personen, unbeschadet des Artikels 13;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>Schuldverhältnisse aus einem Familienverhältnis oder aus Verhältnissen, die nach dem auf diese Verhältnisse anzuwendenden Recht vergleichbare Wirkungen entfalten, einschließlich der Unterhaltspflichten;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>c)</NO.P><TXT>Schuldverhältnisse aus ehelichen Güterständen, aus Güterständen aufgrund von Verhältnissen, die nach dem auf diese Verhältnisse anzuwendenden Recht mit der Ehe vergleichbare Wirkungen entfalten, und aus Testamenten und Erbrecht;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>d)</NO.P><TXT>Verpflichtungen aus Wechseln, Schecks, Eigenwechseln und anderen handelbaren Wertpapieren, soweit die Verpflichtungen aus diesen anderen Wertpapieren aus deren Handelbarkeit entstehen;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>e)</NO.P><TXT>Schieds- und Gerichtsstandsvereinbarungen;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>f)</NO.P><TXT>Fragen betreffend das Gesellschaftsrecht, das Vereinsrecht und das Recht der juristischen Personen, wie die Errichtung durch Eintragung oder auf andere Weise, die Rechts- und Handlungsfähigkeit, die innere Verfassung und die Auflösung von Gesellschaften, Vereinen und juristischen Personen sowie die persönliche Haftung der Gesellschafter und der Organe für die Verbindlichkeiten einer Gesellschaft, eines Vereins oder einer juristischen Person;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>g)</NO.P><TXT>die Frage, ob ein Vertreter die Person, für deren Rechnung er zu handeln vorgibt, Dritten gegenüber verpflichten kann, oder ob ein Organ einer Gesellschaft, eines Vereins oder einer anderen juristischen Person diese Gesellschaft, diesen Verein oder diese juristische Person gegenüber Dritten verpflichten kann;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>h)</NO.P><TXT>die Gründung von <QUOT.START CODE="201E" ID="QS0021" REF.END="QE0021"/>Trusts<QUOT.END CODE="201C" ID="QE0021" REF.START="QS0021"/> sowie die dadurch geschaffenen Rechtsbeziehungen zwischen den Verfügenden, den Treuhändern und den Begünstigten;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>i)</NO.P><TXT>Schuldverhältnisse aus Verhandlungen vor Abschluss eines Vertrags;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>j)</NO.P><TXT>Versicherungsverträge aus von anderen Einrichtungen als den in Artikel 2 der Richtlinie 2002/83/EG des Europäischen Parlaments und des Rates vom <DATE ISO="20021105">5. November 2002</DATE> über Lebensversicherungen<NOTE NOTE.ID="E0014"><P><REF.DOC.OJ COLL="L" DATE.PUB="20021219" NO.OJ="345" PAGE.FIRST="1">ABl. L 345 vom 19.12.2002, S. 1</REF.DOC.OJ>. Zuletzt geändert durch die Richtlinie 2008/19/EG (<REF.DOC.OJ COLL="L" DATE.PUB="20080319" NO.OJ="076" PAGE.FIRST="44">ABl. L 76 vom 19.3.2008, S. 44</REF.DOC.OJ>).</P></NOTE> genannten Unternehmen durchgeführten Geschäften, deren Zweck darin besteht, den unselbstständig oder selbstständig tätigen Arbeitskräften eines Unternehmens oder einer Unternehmensgruppe oder den Angehörigen eines Berufes oder einer Berufsgruppe im Todes- oder Erlebensfall oder bei Arbeitseinstellung oder bei Minderung der Erwerbstätigkeit oder bei arbeitsbedingter Krankheit oder Arbeitsunfällen Leistungen zu gewähren.</TXT></NP></ITEM></LIST></ALINEA></PARAG>
+<PARAG IDENTIFIER="001.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Diese Verordnung gilt unbeschadet des Artikels 18 nicht für den Beweis und das Verfahren.</ALINEA></PARAG>
+<PARAG IDENTIFIER="001.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA>Im Sinne dieser Verordnung bezeichnet der Begriff <QUOT.START CODE="201E" ID="QS0022" REF.END="QE0022"/>Mitgliedstaat<QUOT.END CODE="201C" ID="QE0022" REF.START="QS0022"/> die Mitgliedstaaten, auf die diese Verordnung anwendbar ist. In Artikel 3 Absatz 4 und Artikel 7 bezeichnet der Begriff jedoch alle Mitgliedstaaten.</ALINEA></PARAG></ARTICLE>
+<?PAGE NO='11'?>
+<ARTICLE IDENTIFIER="002"><TI.ART>Artikel 2</TI.ART>
+<STI.ART><P>Universelle Anwendung</P></STI.ART>
+<ALINEA>Das nach dieser Verordnung bezeichnete Recht ist auch dann anzuwenden, wenn es nicht das Recht eines Mitgliedstaats ist.</ALINEA></ARTICLE></DIVISION>
+<DIVISION><TITLE>
+<TI><P>KAPITEL II</P></TI>
+<STI><P>EINHEITLICHE KOLLISIONSNORMEN</P></STI></TITLE>
+<ARTICLE IDENTIFIER="003"><TI.ART>Artikel 3</TI.ART>
+<STI.ART><P>Freie Rechtswahl</P></STI.ART>
+<PARAG IDENTIFIER="003.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Der Vertrag unterliegt dem von den Parteien gewählten Recht. Die Rechtswahl muss ausdrücklich erfolgen oder sich eindeutig aus den Bestimmungen des Vertrags oder aus den Umständen des Falles ergeben. Die Parteien können die Rechtswahl für ihren ganzen Vertrag oder nur für einen Teil desselben treffen.</ALINEA></PARAG>
+<PARAG IDENTIFIER="003.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Die Parteien können jederzeit vereinbaren, dass der Vertrag nach einem anderen Recht zu beurteilen ist als dem, das zuvor entweder aufgrund einer früheren Rechtswahl nach diesem Artikel oder aufgrund anderer Vorschriften dieser Verordnung für ihn maßgebend war. Die Formgültigkeit des Vertrags im Sinne des Artikels 11 und Rechte Dritter werden durch eine nach Vertragsschluss erfolgende Änderung der Bestimmung des anzuwendenden Rechts nicht berührt.</ALINEA></PARAG>
+<PARAG IDENTIFIER="003.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Sind alle anderen Elemente des Sachverhalts zum Zeitpunkt der Rechtswahl in einem anderen als demjenigen Staat belegen, dessen Recht gewählt wurde, so berührt die Rechtswahl der Parteien nicht die Anwendung derjenigen Bestimmungen des Rechts dieses anderen Staates, von denen nicht durch Vereinbarung abgewichen werden kann.</ALINEA></PARAG>
+<PARAG IDENTIFIER="003.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA>Sind alle anderen Elemente des Sachverhalts zum Zeitpunkt der Rechtswahl in einem oder mehreren Mitgliedstaaten belegen, so berührt die Wahl des Rechts eines Drittstaats durch die Parteien nicht die Anwendung der Bestimmungen des Gemeinschaftsrechts — gegebenenfalls in der von dem Mitgliedstaat des angerufenen Gerichts umgesetzten Form —, von denen nicht durch Vereinbarung abgewichen werden kann.</ALINEA></PARAG>
+<PARAG IDENTIFIER="003.005"><NO.PARAG>(5)</NO.PARAG>
+<ALINEA>Auf das Zustandekommen und die Wirksamkeit der Einigung der Parteien über das anzuwendende Recht finden die Artikel 10, 11 und 13 Anwendung.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="004"><TI.ART>Artikel 4</TI.ART>
+<STI.ART><P>Mangels Rechtswahl anzuwendendes Recht</P></STI.ART>
+<PARAG IDENTIFIER="004.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA><P>Soweit die Parteien keine Rechtswahl gemäß Artikel 3 getroffen haben, bestimmt sich das auf den Vertrag anzuwendende Recht unbeschadet der Artikel 5 bis 8 wie folgt:</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>Kaufverträge über bewegliche Sachen unterliegen dem Recht des Staates, in dem der Verkäufer seinen gewöhnlichen Aufenthalt hat.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>Dienstleistungsverträge unterliegen dem Recht des Staates, in dem der Dienstleister seinen gewöhnlichen Aufenthalt hat.</TXT></NP></ITEM>
+<?PAGE NO='12'?>
+<ITEM><NP>
+<NO.P>c)</NO.P><TXT>Verträge, die ein dingliches Recht an unbeweglichen Sachen sowie die Miete oder Pacht unbeweglicher Sachen zum Gegenstand haben, unterliegen dem Recht des Staates, in dem die unbewegliche Sache belegen ist.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>d)</NO.P><TXT>Ungeachtet des Buchstabens c unterliegt die Miete oder Pacht unbeweglicher Sachen für höchstens sechs aufeinander folgende Monate zum vorübergehenden privaten Gebrauch dem Recht des Staates, in dem der Vermieter oder Verpächter seinen gewöhnlichen Aufenthalt hat, sofern der Mieter oder Pächter eine natürliche Person ist und seinen gewöhnlichen Aufenthalt in demselben Staat hat.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>e)</NO.P><TXT>Franchiseverträge unterliegen dem Recht des Staates, in dem der Franchisenehmer seinen gewöhnlichen Aufenthalt hat.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>f)</NO.P><TXT>Vertriebsverträge unterliegen dem Recht des Staates, in dem der Vertriebshändler seinen gewöhnlichen Aufenthalt hat.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>g)</NO.P><TXT>Verträge über den Kauf beweglicher Sachen durch Versteigerung unterliegen dem Recht des Staates, in dem die Versteigerung abgehalten wird, sofern der Ort der Versteigerung bestimmt werden kann.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>h)</NO.P><TXT>Verträge, die innerhalb eines multilateralen Systems geschlossen werden, das die Interessen einer Vielzahl Dritter am Kauf und Verkauf von Finanzinstrumenten im Sinne von Artikel 4 Absatz 1 Nummer 17 der Richtlinie 2004/39/EG nach nicht diskretionären Regeln und nach Maßgabe eines einzigen Rechts zusammenführt oder das Zusammenführen fördert, unterliegen diesem Recht.</TXT></NP></ITEM></LIST></ALINEA></PARAG>
+<PARAG IDENTIFIER="004.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Fällt der Vertrag nicht unter Absatz 1 oder sind die Bestandteile des Vertrags durch mehr als einen der Buchstaben a bis h des Absatzes 1 abgedeckt, so unterliegt der Vertrag dem Recht des Staates, in dem die Partei, welche die für den Vertrag charakteristische Leistung zu erbringen hat, ihren gewöhnlichen Aufenthalt hat.</ALINEA></PARAG>
+<PARAG IDENTIFIER="004.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Ergibt sich aus der Gesamtheit der Umstände, dass der Vertrag eine offensichtlich engere Verbindung zu einem anderen als dem nach Absatz 1 oder 2 bestimmten Staat aufweist, so ist das Recht dieses anderen Staates anzuwenden.</ALINEA></PARAG>
+<PARAG IDENTIFIER="004.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA>Kann das anzuwendende Recht nicht nach Absatz 1 oder 2 bestimmt werden, so unterliegt der Vertrag dem Recht des Staates, zu dem er die engste Verbindung aufweist.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="005"><TI.ART>Artikel 5</TI.ART>
+<STI.ART><P>Beförderungsverträge</P></STI.ART>
+<PARAG IDENTIFIER="005.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Soweit die Parteien in Bezug auf einen Vertrag über die Beförderung von Gütern keine Rechtswahl nach Artikel 3 getroffen haben, ist das Recht des Staates anzuwenden, in dem der Beförderer seinen gewöhnlichen Aufenthalt hat, sofern sich in diesem Staat auch der Übernahmeort oder der Ablieferungsort oder der gewöhnliche Aufenthalt des Absenders befindet. Sind diese Voraussetzungen nicht erfüllt, so ist das Recht des Staates des von den Parteien vereinbarten Ablieferungsorts anzuwenden.</ALINEA></PARAG>
+<PARAG IDENTIFIER="005.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA><P>Soweit die Parteien in Bezug auf einen Vertrag über die Beförderung von Personen keine Rechtswahl nach Unterabsatz 2 getroffen haben, ist das anzuwendende Recht das Recht des Staates, in dem die zu befördernde Person ihren gewöhnlichen Aufenthalt hat, sofern sich in diesem Staat auch der Abgangsort oder der Bestimmungsort befindet. Sind diese Voraussetzungen nicht erfüllt, so ist das Recht des Staates anzuwenden, in dem der Beförderer seinen gewöhnlichen Aufenthalt hat.</P><?PAGE NO='13'?><P>Als auf einen Vertrag über die Beförderung von Personen anzuwendendes Recht können die Parteien im Einklang mit Artikel 3 nur das Recht des Staates wählen,</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>in dem die zu befördernde Person ihren gewöhnlichen Aufenthalt hat oder</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>in dem der Beförderer seinen gewöhnlichen Aufenthalt hat oder</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>c)</NO.P><TXT>in dem der Beförderer seine Hauptverwaltung hat oder</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>d)</NO.P><TXT>in dem sich der Abgangsort befindet oder</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>e)</NO.P><TXT>in dem sich der Bestimmungsort befindet.</TXT></NP></ITEM></LIST></ALINEA></PARAG>
+<PARAG IDENTIFIER="005.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Ergibt sich aus der Gesamtheit der Umstände, dass der Vertrag im Falle fehlender Rechtswahl eine offensichtlich engere Verbindung zu einem anderen als dem nach Absatz 1 oder 2 bestimmten Staat aufweist, so ist das Recht dieses anderen Staates anzuwenden.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="006"><TI.ART>Artikel 6</TI.ART>
+<STI.ART><P>Verbraucherverträge</P></STI.ART>
+<PARAG IDENTIFIER="006.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA><P>Unbeschadet der Artikel 5 und 7 unterliegt ein Vertrag, den eine natürliche Person zu einem Zweck, der nicht ihrer beruflichen oder gewerblichen Tätigkeit zugerechnet werden kann (<QUOT.START CODE="201E" ID="QS0023" REF.END="QE0023"/>Verbraucher<QUOT.END CODE="201C" ID="QE0023" REF.START="QS0023"/>), mit einer anderen Person geschlossen hat, die in Ausübung ihrer beruflichen oder gewerblichen Tätigkeit handelt (<QUOT.START CODE="201E" ID="QS0024" REF.END="QE0024"/>Unternehmer<QUOT.END CODE="201C" ID="QE0024" REF.START="QS0024"/>), dem Recht des Staates, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat, sofern der Unternehmer</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>seine berufliche oder gewerbliche Tätigkeit in dem Staat ausübt, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat, oder</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>eine solche Tätigkeit auf irgend einer Weise auf diesen Staat oder auf mehrere Staaten, einschließlich dieses Staates, ausrichtet</TXT></NP></ITEM></LIST><P>und der Vertrag in den Bereich dieser Tätigkeit fällt.</P></ALINEA></PARAG>
+<PARAG IDENTIFIER="006.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Ungeachtet des Absatzes 1 können die Parteien das auf einen Vertrag, der die Anforderungen des Absatzes 1 erfüllt, anzuwendende Recht nach Artikel 3 wählen. Die Rechtswahl darf jedoch nicht dazu führen, dass dem Verbraucher der Schutz entzogen wird, der ihm durch diejenigen Bestimmungen gewährt wird, von denen nach dem Recht, das nach Absatz 1 mangels einer Rechtswahl anzuwenden wäre, nicht durch Vereinbarung abgewichen werden darf.</ALINEA></PARAG>
+<PARAG IDENTIFIER="006.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Sind die Anforderungen des Absatzes 1 Buchstabe a oder b nicht erfüllt, so gelten für die Bestimmung des auf einen Vertrag zwischen einem Verbraucher und einem Unternehmer anzuwendenden Rechts die Artikel 3 und 4.</ALINEA></PARAG>
+<PARAG IDENTIFIER="006.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA><P>Die Absätze 1 und 2 gelten nicht für:</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>Verträge über die Erbringung von Dienstleistungen, wenn die dem Verbraucher geschuldeten Dienstleistungen ausschließlich in einem anderen als dem Staat erbracht werden müssen, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>Beförderungsverträge mit Ausnahme von Pauschalreiseverträgen im Sinne der Richtlinie 90/314/EWG des Rates vom <DATE ISO="19900613">13. Juni 1990</DATE> über Pauschalreisen<NOTE NOTE.ID="E0015"><P><REF.DOC.OJ COLL="L" DATE.PUB="19900623" NO.OJ="158" PAGE.FIRST="59">ABl. L 158 vom 23.6.1990, S. 59</REF.DOC.OJ>.</P></NOTE>;</TXT></NP></ITEM>
+<?PAGE NO='14'?>
+<ITEM><NP>
+<NO.P>c)</NO.P><TXT>Verträge, die ein dingliches Recht an unbeweglichen Sachen oder die Miete oder Pacht unbeweglicher Sachen zum Gegenstand haben, mit Ausnahme der Verträge über Teilzeitnutzungsrechte an Immobilien im Sinne der Richtlinie 94/47/EG;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>d)</NO.P><TXT>Rechte und Pflichten im Zusammenhang mit einem Finanzinstrument sowie Rechte und Pflichten, durch die die Bedingungen für die Ausgabe oder das öffentliche Angebot und öffentliche Übernahmeangebote bezüglich übertragbarer Wertpapiere und die Zeichnung oder den Rückkauf von Anteilen an Organismen für gemeinsame Anlagen in Wertpapieren festgelegt werden, sofern es sich dabei nicht um die Erbringung von Finanzdienstleistungen handelt;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>e)</NO.P><TXT>Verträge, die innerhalb der Art von Systemen geschlossen werden, auf die Artikel 4 Absatz 1 Buchstabe h Anwendung findet.</TXT></NP></ITEM></LIST></ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="007"><TI.ART>Artikel 7</TI.ART>
+<STI.ART><P>Versicherungsverträge</P></STI.ART>
+<PARAG IDENTIFIER="007.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Dieser Artikel gilt für Verträge nach Absatz 2, unabhängig davon, ob das gedeckte Risiko in einem Mitgliedstaat belegen ist, und für alle anderen Versicherungsverträge, durch die Risiken gedeckt werden, die im Gebiet der Mitgliedstaaten belegen sind. Er gilt nicht für Rückversicherungsverträge.</ALINEA></PARAG>
+<PARAG IDENTIFIER="007.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA><P>Versicherungsverträge, die Großrisiken im Sinne von Artikel 5 Buchstabe d der Ersten Richtlinie 73/239/EWG des Rates vom <DATE ISO="19730724">24. Juli 1973</DATE> zur Koordinierung der Rechts- und Verwaltungsvorschriften betreffend die Aufnahme und Ausübung der Tätigkeit der Direktversicherung (mit Ausnahme der Lebensversicherung)<NOTE NOTE.ID="E0016"><P><REF.DOC.OJ COLL="L" DATE.PUB="19730816" NO.OJ="228" PAGE.FIRST="3">ABl. L 228 vom 16.8.1973, S. 3</REF.DOC.OJ>. Zuletzt geändert durch die Richtlinie 2005/68/EG des Europäischen Parlaments und des Rates (<REF.DOC.OJ COLL="L" DATE.PUB="20061209" NO.OJ="323" PAGE.FIRST="1">ABl. L 323 vom 9.12.2006, S. 1</REF.DOC.OJ>).</P></NOTE> decken, unterliegen dem von den Parteien nach Artikel 3 der vorliegenden Verordnung gewählten Recht.</P><P>Soweit die Parteien keine Rechtswahl getroffen haben, unterliegt der Versicherungsvertrag dem Recht des Staats, in dem der Versicherer seinen gewöhnlichen Aufenthalt hat. Ergibt sich aus der Gesamtheit der Umstände, dass der Vertrag eine offensichtlich engere Verbindung zu einem anderen Staat aufweist, ist das Recht dieses anderen Staates anzuwenden.</P></ALINEA></PARAG>
+<PARAG IDENTIFIER="007.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA><P>Für Versicherungsverträge, die nicht unter Absatz 2 fallen, dürfen die Parteien nur die folgenden Rechte im Einklang mit Artikel 3 wählen:</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>das Recht eines jeden Mitgliedstaats, in dem zum Zeitpunkt des Vertragsschlusses das Risiko belegen ist;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>das Recht des Staates, in dem der Versicherungsnehmer seinen gewöhnlichen Aufenthalt hat;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>c)</NO.P><TXT>bei Lebensversicherungen das Recht des Mitgliedstaats, dessen Staatsangehörigkeit der Versicherungsnehmer besitzt;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>d)</NO.P><TXT>für Versicherungsverträge, bei denen sich die gedeckten Risiken auf Schadensfälle beschränken, die in einem anderen Mitgliedstaat als dem Mitgliedstaat, in dem das Risiko belegen ist, eintreten können, das Recht jenes Mitgliedstaats;</TXT></NP></ITEM>
+<?PAGE NO='15'?>
+<ITEM><NP>
+<NO.P>e)</NO.P><TXT>wenn der Versicherungsnehmer eines Vertrags im Sinne dieses Absatzes eine gewerbliche oder industrielle Tätigkeit ausübt oder freiberuflich tätig ist und der Versicherungsvertrag zwei oder mehr Risiken abdeckt, die mit dieser Tätigkeit in Zusammenhang stehen und in unterschiedlichen Mitgliedstaaten belegen sind, das Recht eines betroffenen Mitgliedstaats oder das Recht des Staates des gewöhnlichen Aufenthalts des Versicherungsnehmers.</TXT></NP></ITEM></LIST><P>Räumen in den Fällen nach den Buchstaben a, b oder e die betreffenden Mitgliedstaaten eine größere Wahlfreiheit bezüglich des auf den Versicherungsvertrag anwendbaren Rechts ein, so können die Parteien hiervon Gebrauch machen.</P><P>Soweit die Parteien keine Rechtswahl gemäß diesem Absatz getroffen haben unterliegt der Vertrag dem Recht des Mitgliedstaats, in dem zum Zeitpunkt des Vertragsschlusses das Risiko belegen ist.</P></ALINEA></PARAG>
+<PARAG IDENTIFIER="007.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA><P>Die folgenden zusätzlichen Regelungen gelten für Versicherungsverträge über Risiken, für die ein Mitgliedstaat eine Versicherungspflicht vorschreibt:</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>Der Versicherungsvertrag genügt der Versicherungspflicht nur, wenn er den von dem die Versicherungspflicht auferlegenden Mitgliedstaat vorgeschriebenen besonderen Bestimmungen für diese Versicherung entspricht. Widerspricht sich das Recht des Mitgliedstaats, in dem das Risiko belegen ist, und dasjenige des Mitgliedstaats, der die Versicherungspflicht vorschreibt, so hat das letztere Vorrang.</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>Ein Mitgliedstaat kann abweichend von den Absätzen 2 und 3 vorschreiben, dass auf den Versicherungsvertrag das Recht des Mitgliedstaats anzuwenden ist, der die Versicherungspflicht vorschreibt.</TXT></NP></ITEM></LIST></ALINEA></PARAG>
+<PARAG IDENTIFIER="007.005"><NO.PARAG>(5)</NO.PARAG>
+<ALINEA>Deckt der Vertrag in mehr als einem Mitgliedstaat belegene Risiken, so ist für die Zwecke von Absatz 3 Unterabsatz 3 und Absatz 4 der Vertrag als aus mehreren Verträgen bestehend anzusehen, von denen sich jeder auf jeweils nur einen Mitgliedstaat bezieht.</ALINEA></PARAG>
+<PARAG IDENTIFIER="007.006"><NO.PARAG>(6)</NO.PARAG>
+<ALINEA>Für die Zwecke dieses Artikels bestimmt sich der Staat, in dem das Risiko belegen ist, nach Artikel 2 Buchstabe d der Zweiten Richtlinie 88/357/EWG des Rates vom <DATE ISO="19880622">22. Juni 1988</DATE> zur Koordinierung der Rechts- und Verwaltungsvorschriften für die Direktversicherung (mit Ausnahme der Lebensversicherung) und zur Erleichterung der tatsächlichen Ausübung des freien Dienstleistungsverkehrs<NOTE NOTE.ID="E0017"><P><REF.DOC.OJ COLL="L" DATE.PUB="19880704" NO.OJ="172" PAGE.FIRST="1">ABl. L 172 vom 4.7.1988, S. 1</REF.DOC.OJ>. Zuletzt geändert durch die Richtlinie 2005/14/EG des Europäischen Parlaments und des Rates (<REF.DOC.OJ COLL="L" DATE.PUB="20050611" NO.OJ="149" PAGE.FIRST="14">ABl. L 149 vom 11.6.2005, S. 14</REF.DOC.OJ>).</P></NOTE>, und bei Lebensversicherungen ist der Staat, in dem das Risiko belegen ist, der Staat der Verpflichtung im Sinne von Artikel 1 Absatz 1 Buchstabe g der Richtlinie 2002/83/EG.</ALINEA></PARAG></ARTICLE>
+<?PAGE NO='16'?>
+<ARTICLE IDENTIFIER="008"><TI.ART>Artikel 8</TI.ART>
+<STI.ART><P>Individualarbeitsverträge</P></STI.ART>
+<PARAG IDENTIFIER="008.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Individualarbeitsverträge unterliegen dem von den Parteien nach Artikel 3 gewählten Recht. Die Rechtswahl der Parteien darf jedoch nicht dazu führen, dass dem Arbeitnehmer der Schutz entzogen wird, der ihm durch Bestimmungen gewährt wird, von denen nach dem Recht, das nach den Absätzen 2, 3 und 4 des vorliegenden Artikels mangels einer Rechtswahl anzuwenden wäre, nicht durch Vereinbarung abgewichen werden darf.</ALINEA></PARAG>
+<PARAG IDENTIFIER="008.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Soweit das auf den Arbeitsvertrag anzuwendende Recht nicht durch Rechtswahl bestimmt ist, unterliegt der Arbeitsvertrag dem Recht des Staates, in dem oder andernfalls von dem aus der Arbeitnehmer in Erfüllung des Vertrags gewöhnlich seine Arbeit verrichtet. Der Staat, in dem die Arbeit gewöhnlich verrichtet wird, wechselt nicht, wenn der Arbeitnehmer seine Arbeit vorübergehend in einem anderen Staat verrichtet.</ALINEA></PARAG>
+<PARAG IDENTIFIER="008.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Kann das anzuwendende Recht nicht nach Absatz 2 bestimmt werden, so unterliegt der Vertrag dem Recht des Staates, in dem sich die Niederlassung befindet, die den Arbeitnehmer eingestellt hat.</ALINEA></PARAG>
+<PARAG IDENTIFIER="008.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA>Ergibt sich aus der Gesamtheit der Umstände, dass der Vertrag eine engere Verbindung zu einem anderen als dem in Absatz 2 oder 3 bezeichneten Staat aufweist, ist das Recht dieses anderen Staates anzuwenden.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="009"><TI.ART>Artikel 9</TI.ART>
+<STI.ART><P>Eingriffsnormen</P></STI.ART>
+<PARAG IDENTIFIER="009.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Eine Eingriffsnorm ist eine zwingende Vorschrift, deren Einhaltung von einem Staat als so entscheidend für die Wahrung seines öffentlichen Interesses, insbesondere seiner politischen, sozialen oder wirtschaftlichen Organisation, angesehen wird, dass sie ungeachtet des nach Maßgabe dieser Verordnung auf den Vertrag anzuwendenden Rechts auf alle Sachverhalte anzuwenden ist, die in ihren Anwendungsbereich fallen.</ALINEA></PARAG>
+<PARAG IDENTIFIER="009.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Diese Verordnung berührt nicht die Anwendung der Eingriffsnormen des Rechts des angerufenen Gerichts.</ALINEA></PARAG>
+<PARAG IDENTIFIER="009.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Den Eingriffsnormen des Staates, in dem die durch den Vertrag begründeten Verpflichtungen erfüllt werden sollen oder erfüllt worden sind, kann Wirkung verliehen werden, soweit diese Eingriffsnormen die Erfüllung des Vertrags unrechtmäßig werden lassen. Bei der Entscheidung, ob diesen Eingriffsnormen Wirkung zu verleihen ist, werden Art und Zweck dieser Normen sowie die Folgen berücksichtigt, die sich aus ihrer Anwendung oder Nichtanwendung ergeben würden.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="010"><TI.ART>Artikel 10</TI.ART>
+<STI.ART><P>Einigung und materielle Wirksamkeit</P></STI.ART>
+<PARAG IDENTIFIER="010.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Das Zustandekommen und die Wirksamkeit des Vertrags oder einer seiner Bestimmungen beurteilen sich nach dem Recht, das nach dieser Verordnung anzuwenden wäre, wenn der Vertrag oder die Bestimmung wirksam wäre.</ALINEA></PARAG>
+<PARAG IDENTIFIER="010.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Ergibt sich jedoch aus den Umständen, dass es nicht gerechtfertigt wäre, die Wirkung des Verhaltens einer Partei nach dem in Absatz 1 bezeichneten Recht zu bestimmen, so kann sich diese Partei für die Behauptung, sie habe dem Vertrag nicht zugestimmt, auf das Recht des Staates ihres gewöhnlichen Aufenthalts berufen.</ALINEA></PARAG></ARTICLE>
+<?PAGE NO='17'?>
+<ARTICLE IDENTIFIER="011"><TI.ART>Artikel 11</TI.ART>
+<STI.ART><P>Form</P></STI.ART>
+<PARAG IDENTIFIER="011.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Ein Vertrag, der zwischen Personen geschlossen wird, die oder deren Vertreter sich zum Zeitpunkt des Vertragsschlusses in demselben Staat befinden, ist formgültig, wenn er die Formerfordernisse des auf ihn nach dieser Verordnung anzuwendenden materiellen Rechts oder die Formerfordernisse des Rechts des Staates, in dem er geschlossen wird, erfüllt.</ALINEA></PARAG>
+<PARAG IDENTIFIER="011.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Ein Vertrag, der zwischen Personen geschlossen wird, die oder deren Vertreter sich zum Zeitpunkt des Vertragsschlusses in verschiedenen Staaten befinden, ist formgültig, wenn er die Formerfordernisse des auf ihn nach dieser Verordnung anzuwendenden materiellen Rechts oder die Formerfordernisse des Rechts eines der Staaten, in denen sich eine der Vertragsparteien oder ihr Vertreter zum Zeitpunkt des Vertragsschlusses befindet, oder die Formerfordernisse des Rechts des Staates, in dem eine der Vertragsparteien zu diesem Zeitpunkt ihren gewöhnlichen Aufenthalt hatte, erfüllt.</ALINEA></PARAG>
+<PARAG IDENTIFIER="011.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Ein einseitiges Rechtsgeschäft, das sich auf einen geschlossenen oder zu schließenden Vertrag bezieht, ist formgültig, wenn es die Formerfordernisse des materiellen Rechts, das nach dieser Verordnung auf den Vertrag anzuwenden ist oder anzuwenden wäre, oder die Formerfordernisse des Rechts des Staates erfüllt, in dem dieses Rechtsgeschäft vorgenommen worden ist oder in dem die Person, die das Rechtsgeschäft vorgenommen hat, zu diesem Zeitpunkt ihren gewöhnlichen Aufenthalt hatte.</ALINEA></PARAG>
+<PARAG IDENTIFIER="011.004"><NO.PARAG>(4)</NO.PARAG>
+<ALINEA>Die Absätze 1, 2 und 3 des vorliegenden Artikels gelten nicht für Verträge, die in den Anwendungsbereich von Artikel 6 fallen. Für die Form dieser Verträge ist das Recht des Staates maßgebend, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat.</ALINEA></PARAG>
+<PARAG IDENTIFIER="011.005"><NO.PARAG>(5)</NO.PARAG>
+<ALINEA><P>Abweichend von den Absätzen 1 bis 4 unterliegen Verträge, die ein dingliches Recht an einer unbeweglichen Sache oder die Miete oder Pacht einer unbeweglichen Sache zum Gegenstand haben, den Formvorschriften des Staates, in dem die unbewegliche Sache belegen ist, sofern diese Vorschriften nach dem Recht dieses Staates</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>unabhängig davon gelten, in welchem Staat der Vertrag geschlossen wird oder welchem Recht dieser Vertrag unterliegt, und</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>von ihnen nicht durch Vereinbarung abgewichen werden darf.</TXT></NP></ITEM></LIST></ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="012"><TI.ART>Artikel 12</TI.ART>
+<STI.ART><P>Geltungsbereich des anzuwendenden Rechts</P></STI.ART>
+<PARAG IDENTIFIER="012.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA><P>Das nach dieser Verordnung auf einen Vertrag anzuwendende Recht ist insbesondere maßgebend für</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>seine Auslegung,</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>die Erfüllung der durch ihn begründeten Verpflichtungen,</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>c)</NO.P><TXT>die Folgen der vollständigen oder teilweisen Nichterfüllung dieser Verpflichtungen, in den Grenzen der dem angerufenen Gericht durch sein Prozessrecht eingeräumten Befugnisse, einschließlich der Schadensbemessung, soweit diese nach Rechtsnormen erfolgt,</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>d)</NO.P><TXT>die verschiedenen Arten des Erlöschens der Verpflichtungen sowie die Verjährung und die Rechtsverluste, die sich aus dem Ablauf einer Frist ergeben,</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>e)</NO.P><TXT>die Folgen der Nichtigkeit des Vertrags.</TXT></NP></ITEM></LIST></ALINEA></PARAG>
+<?PAGE NO='18'?>
+<PARAG IDENTIFIER="012.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>In Bezug auf die Art und Weise der Erfüllung und die vom Gläubiger im Falle mangelhafter Erfüllung zu treffenden Maßnahmen ist das Recht des Staates, in dem die Erfüllung erfolgt, zu berücksichtigen.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="013"><TI.ART>Artikel 13</TI.ART>
+<STI.ART><P>Rechts-, Geschäfts- und Handlungsunfähigkeit</P></STI.ART>
+<ALINEA>Bei einem zwischen Personen, die sich in demselben Staat befinden, geschlossenen Vertrag kann sich eine natürliche Person, die nach dem Recht dieses Staates rechts-, geschäfts- und handlungsfähig wäre, nur dann auf ihre sich nach dem Recht eines anderen Staates ergebende Rechts-, Geschäfts- und Handlungsunfähigkeit berufen, wenn die andere Vertragspartei bei Vertragsschluss diese Rechts-, Geschäfts- und Handlungsunfähigkeit kannte oder infolge von Fahrlässigkeit nicht kannte.</ALINEA></ARTICLE>
+<ARTICLE IDENTIFIER="014"><TI.ART>Artikel 14</TI.ART>
+<STI.ART><P>Übertragung der Forderung</P></STI.ART>
+<PARAG IDENTIFIER="014.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Das Verhältnis zwischen Zedent und Zessionar aus der Übertragung einer Forderung gegen eine andere Person (<QUOT.START CODE="201E" ID="QS0025" REF.END="QE0025"/>Schuldner<QUOT.END CODE="201C" ID="QE0025" REF.START="QS0025"/>) unterliegt dem Recht, das nach dieser Verordnung auf den Vertrag zwischen Zedent und Zessionar anzuwenden ist.</ALINEA></PARAG>
+<PARAG IDENTIFIER="014.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Das Recht, dem die übertragene Forderung unterliegt, bestimmt ihre Übertragbarkeit, das Verhältnis zwischen Zessionar und Schuldner, die Voraussetzungen, unter denen die Übertragung dem Schuldner entgegengehalten werden kann, und die befreiende Wirkung einer Leistung durch den Schuldner.</ALINEA></PARAG>
+<PARAG IDENTIFIER="014.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Der Begriff <QUOT.START CODE="201E" ID="QS0026" REF.END="QE0026"/>Übertragung<QUOT.END CODE="201C" ID="QE0026" REF.START="QS0026"/> in diesem Artikel umfasst die vollkommene Übertragung von Forderungen, die Übertragung von Forderungen zu Sicherungszwecken sowie von Pfandrechten oder anderen Sicherungsrechten an Forderungen.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="015"><TI.ART>Artikel 15</TI.ART>
+<STI.ART><P>Gesetzlicher Forderungsübergang</P></STI.ART>
+<ALINEA>Hat eine Person (<QUOT.START CODE="201E" ID="QS0027" REF.END="QE0027"/>Gläubiger<QUOT.END CODE="201C" ID="QE0027" REF.START="QS0027"/>) eine vertragliche Forderung gegen eine andere Person (<QUOT.START CODE="201E" ID="QS0028" REF.END="QE0028"/>Schuldner<QUOT.END CODE="201C" ID="QE0028" REF.START="QS0028"/>) und ist ein Dritter verpflichtet, den Gläubiger zu befriedigen, oder hat er den Gläubiger aufgrund dieser Verpflichtung befriedigt, so bestimmt das für die Verpflichtung des Dritten gegenüber dem Gläubiger maßgebende Recht, ob und in welchem Umfang der Dritte die Forderung des Gläubigers gegen den Schuldner nach dem für deren Beziehung maßgebenden Recht geltend zu machen berechtigt ist.</ALINEA></ARTICLE>
+<ARTICLE IDENTIFIER="016"><TI.ART>Artikel 16</TI.ART>
+<STI.ART><P>Mehrfache Haftung</P></STI.ART>
+<ALINEA>Hat ein Gläubiger eine Forderung gegen mehrere für dieselbe Forderung haftende Schuldner und ist er von einem der Schuldner ganz oder teilweise befriedigt worden, so ist für das Recht dieses Schuldners, von den übrigen Schuldnern Ausgleich zu verlangen, das Recht maßgebend, das auf die Verpflichtung dieses Schuldners gegenüber dem Gläubiger anzuwenden ist. Die übrigen Schuldner sind berechtigt, diesem Schuldner diejenigen Verteidigungsmittel entgegenzuhalten, die ihnen gegenüber dem Gläubiger zugestanden haben, soweit dies gemäß dem auf ihre Verpflichtung gegenüber dem Gläubiger anzuwendenden Recht zulässig wäre.</ALINEA></ARTICLE>
+<?PAGE NO='19'?>
+<ARTICLE IDENTIFIER="017"><TI.ART>Artikel 17</TI.ART>
+<STI.ART><P>Aufrechnung</P></STI.ART>
+<ALINEA>Ist das Recht zur Aufrechnung nicht vertraglich vereinbart, so gilt für die Aufrechnung das Recht, dem die Forderung unterliegt, gegen die aufgerechnet wird.</ALINEA></ARTICLE>
+<ARTICLE IDENTIFIER="018"><TI.ART>Artikel 18</TI.ART>
+<STI.ART><P>Beweis</P></STI.ART>
+<PARAG IDENTIFIER="018.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Das nach dieser Verordnung für das vertragliche Schuldverhältnis maßgebende Recht ist insoweit anzuwenden, als es für vertragliche Schuldverhältnisse gesetzliche Vermutungen aufstellt oder die Beweislast verteilt.</ALINEA></PARAG>
+<PARAG IDENTIFIER="018.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Zum Beweis eines Rechtsgeschäfts sind alle Beweisarten des Rechts des angerufenen Gerichts oder eines der in Artikel 11 bezeichneten Rechte, nach denen das Rechtsgeschäft formgültig ist, zulässig, sofern der Beweis in dieser Art vor dem angerufenen Gericht erbracht werden kann.</ALINEA></PARAG></ARTICLE></DIVISION>
+<DIVISION><TITLE>
+<TI><P>KAPITEL III</P></TI>
+<STI><P>SONSTIGE VORSCHRIFTEN</P></STI></TITLE>
+<ARTICLE IDENTIFIER="019"><TI.ART>Artikel 19</TI.ART>
+<STI.ART><P>Gewöhnlicher Aufenthalt</P></STI.ART>
+<PARAG IDENTIFIER="019.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA><P>Für die Zwecke dieser Verordnung ist der Ort des gewöhnlichen Aufenthalts von Gesellschaften, Vereinen und juristischen Personen der Ort ihrer Hauptverwaltung.</P><P>Der gewöhnliche Aufenthalt einer natürlichen Person, die im Rahmen der Ausübung ihrer beruflichen Tätigkeit handelt, ist der Ort ihrer Hauptniederlassung.</P></ALINEA></PARAG>
+<PARAG IDENTIFIER="019.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Wird der Vertrag im Rahmen des Betriebs einer Zweigniederlassung, Agentur oder sonstigen Niederlassung geschlossen oder ist für die Erfüllung gemäß dem Vertrag eine solche Zweigniederlassung, Agentur oder sonstigen Niederlassung verantwortlich, so steht der Ort des gewöhnlichen Aufenthalts dem Ort gleich, an dem sich die Zweigniederlassung, Agentur oder sonstige Niederlassung befindet.</ALINEA></PARAG>
+<PARAG IDENTIFIER="019.003"><NO.PARAG>(3)</NO.PARAG>
+<ALINEA>Für die Bestimmung des gewöhnlichen Aufenthalts ist der Zeitpunkt des Vertragsschlusses maßgebend.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="020"><TI.ART>Artikel 20</TI.ART>
+<STI.ART><P>Ausschluss der Rück- und Weiterverweisung</P></STI.ART>
+<ALINEA>Unter dem nach dieser Verordnung anzuwendenden Recht eines Staates sind die in diesem Staat geltenden Rechtsnormen unter Ausschluss derjenigen des Internationalen Privatrechts zu verstehen, soweit in dieser Verordnung nichts anderes bestimmt ist.</ALINEA></ARTICLE>
+<?PAGE NO='20'?>
+<ARTICLE IDENTIFIER="021"><TI.ART>Artikel 21</TI.ART>
+<STI.ART><P>Öffentliche Ordnung im Staat des angerufenen Gerichts</P></STI.ART>
+<ALINEA>Die Anwendung einer Vorschrift des nach dieser Verordnung bezeichneten Rechts kann nur versagt werden, wenn ihre Anwendung mit der öffentlichen Ordnung (<QUOT.START CODE="201E" ID="QS0029" REF.END="QE0029"/>ordre public<QUOT.END CODE="201C" ID="QE0029" REF.START="QS0029"/>) des Staates des angerufenen Gerichts offensichtlich unvereinbar ist.</ALINEA></ARTICLE>
+<ARTICLE IDENTIFIER="022"><TI.ART>Artikel 22</TI.ART>
+<STI.ART><P>Staaten ohne einheitliche Rechtsordnung</P></STI.ART>
+<PARAG IDENTIFIER="022.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Umfasst ein Staat mehrere Gebietseinheiten, von denen jede eigene Rechtsnormen für vertragliche Schuldverhältnisse hat, so gilt für die Bestimmung des nach dieser Verordnung anzuwendenden Rechts jede Gebietseinheit als Staat.</ALINEA></PARAG>
+<PARAG IDENTIFIER="022.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Ein Mitgliedstaat, in dem verschiedene Gebietseinheiten ihre eigenen Rechtsnormen für vertragliche Schuldverhältnisse haben, ist nicht verpflichtet, diese Verordnung auf Kollisionen zwischen den Rechtsordnungen dieser Gebietseinheiten anzuwenden.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="023"><TI.ART>Artikel 23</TI.ART>
+<STI.ART><P>Verhältnis zu anderen Gemeinschaftsrechtsakten</P></STI.ART>
+<ALINEA>Mit Ausnahme von Artikel 7 berührt diese Verordnung nicht die Anwendung von Vorschriften des Gemeinschaftsrechts, die in besonderen Bereichen Kollisionsnormen für vertragliche Schuldverhältnisse enthalten.</ALINEA></ARTICLE>
+<ARTICLE IDENTIFIER="024"><TI.ART>Artikel 24</TI.ART>
+<STI.ART><P>Beziehung zum Übereinkommen von Rom</P></STI.ART>
+<PARAG IDENTIFIER="024.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Diese Verordnung tritt in den Mitgliedstaaten an die Stelle des Übereinkommens von Rom, außer hinsichtlich der Hoheitsgebiete der Mitgliedstaaten, die in den territorialen Anwendungsbereich dieses Übereinkommens fallen und für die aufgrund der Anwendung von Artikel 299 des Vertrags diese Verordnung nicht gilt.</ALINEA></PARAG>
+<PARAG IDENTIFIER="024.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Soweit diese Verordnung die Bestimmungen des Übereinkommens von Rom ersetzt, gelten Bezugnahmen auf dieses Übereinkommen als Bezugnahmen auf diese Verordnung.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="025"><TI.ART>Artikel 25</TI.ART>
+<STI.ART><P>Verhältnis zu bestehenden internationalen Übereinkommen</P></STI.ART>
+<PARAG IDENTIFIER="025.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Diese Verordnung berührt nicht die Anwendung der internationalen Übereinkommen, denen ein oder mehrere Mitgliedstaaten zum Zeitpunkt der Annahme dieser Verordnung angehören und die Kollisionsnormen für vertragliche Schuldverhältnisse enthalten.</ALINEA></PARAG>
+<?PAGE NO='21'?>
+<PARAG IDENTIFIER="025.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Diese Verordnung hat jedoch in den Beziehungen zwischen den Mitgliedstaaten Vorrang vor den ausschließlich zwischen zwei oder mehreren Mitgliedstaaten geschlossenen Übereinkommen, soweit diese Bereiche betreffen, die in dieser Verordnung geregelt sind.</ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="026"><TI.ART>Artikel 26</TI.ART>
+<STI.ART><P>Verzeichnis der Übereinkommen</P></STI.ART>
+<PARAG IDENTIFIER="026.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA>Die Mitgliedstaaten übermitteln der Kommission bis spätestens <DATE ISO="20090617">17. Juni 2009</DATE> die Übereinkommen nach Artikel 25 Absatz 1. Kündigen die Mitgliedstaaten nach diesem Stichtag eines dieser Übereinkommen, so setzen sie die Kommission davon in Kenntnis.</ALINEA></PARAG>
+<PARAG IDENTIFIER="026.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA><P>Die Kommission veröffentlicht im <HT TYPE="ITALIC">Amtsblatt der Europäischen Union</HT> innerhalb von sechs Monaten nach Erhalt der in Absatz 1 genannten Übermittlung</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>ein Verzeichnis der in Absatz 1 genannten Übereinkommen;</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>die in Absatz 1 genannten Kündigungen.</TXT></NP></ITEM></LIST></ALINEA></PARAG></ARTICLE>
+<ARTICLE IDENTIFIER="027"><TI.ART>Artikel 27</TI.ART>
+<STI.ART><P>Überprüfungsklausel</P></STI.ART>
+<PARAG IDENTIFIER="027.001"><NO.PARAG>(1)</NO.PARAG>
+<ALINEA><P>Die Kommission legt dem Europäischen Parlament, dem Rat und dem Europäischen Wirtschafts- und Sozialausschuss bis spätestens <DATE ISO="20130617">17. Juni 2013</DATE> einen Bericht über die Anwendung dieser Verordnung vor. Diesem Bericht werden gegebenenfalls Vorschläge zur Änderung der Verordnung beigefügt. Der Bericht umfasst:</P><LIST TYPE="alpha"><ITEM>
+<NP><NO.P>a)</NO.P><TXT>eine Untersuchung über das auf Versicherungsverträge anzuwendende Recht und eine Abschätzung der Folgen etwaiger einzuführender Bestimmungen und</TXT></NP></ITEM>
+<ITEM><NP>
+<NO.P>b)</NO.P><TXT>eine Bewertung der Anwendung von Artikel 6, insbesondere hinsichtlich der Kohärenz des Gemeinschaftsrechts im Bereich des Verbraucherschutzes.</TXT></NP></ITEM></LIST></ALINEA></PARAG>
+<PARAG IDENTIFIER="027.002"><NO.PARAG>(2)</NO.PARAG>
+<ALINEA>Die Kommission legt dem Europäischen Parlament, dem Rat und dem Europäischen Wirtschafts- und Sozialausschuss bis <DATE ISO="20100617">17. Juni 2010</DATE> einen Bericht über die Frage vor, ob die Übertragung einer Forderung Dritten entgegengehalten werden kann, und über den Rang dieser Forderung gegenüber einem Recht einer anderen Person. Dem Bericht wird gegebenenfalls ein Vorschlag zur Änderung dieser Verordnung sowie eine Folgenabschätzung der einzuführenden Bestimmungen beigefügt.</ALINEA></PARAG></ARTICLE>
+<?PAGE NO='22'?>
+<ARTICLE IDENTIFIER="028"><TI.ART>Artikel 28</TI.ART>
+<STI.ART><P>Zeitliche Anwendbarkeit</P></STI.ART>
+<?CLG.MDFO ID="O000001M001000" IDREF="C000001M001000" ACTION="REPLACED" LEVEL="STRUCTURE" COMMAND="EXPLICIT" ACTIVE.DOC="32008R0593R(02)" ACTIVE.LOC="TO" MOD.LEVEL="1"?>
+<ALINEA>Diese Verordnung wird auf Verträge angewandt, die ab dem <DATE ISO="20091217">17. Dezember 2009</DATE> geschlossen werden.</ALINEA>
+<?CLG.MDFC ID="C000001M001000" IDREF="O000001M001000"?></ARTICLE></DIVISION>
+<DIVISION><TITLE>
+<TI><P>KAPITEL IV</P></TI>
+<STI><P>SCHLUSSBESTIMMUNGEN</P></STI></TITLE>
+<ARTICLE IDENTIFIER="029"><TI.ART>Artikel 29</TI.ART>
+<STI.ART><P>Inkrafttreten und Anwendbarkeit</P></STI.ART>
+<ALINEA><P>Diese Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im <HT TYPE="ITALIC">Amtsblatt der Europäischen Union</HT> in Kraft.</P><P>Sie gilt ab <DATE ISO="20091217">17. Dezember 2009</DATE>, mit Ausnahme des Artikels 26, der ab dem <DATE ISO="20090617">17. Juni 2009</DATE> gilt.</P></ALINEA></ARTICLE></DIVISION></ENACTING.TERMS>
+<FINAL><P>Diese Verordnung ist in allen ihren Teilen verbindlich und gilt gemäß dem Vertrag zur Gründung der Europäischen Gemeinschaft unmittelbar in den Mitgliedstaaten.</P></FINAL></CONS.DOC></CONS.ACT>

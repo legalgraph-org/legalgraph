@@ -1,0 +1,14 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:NL-BW3
+    lgo:amendmentCheck lg:NL-BW3-amendment-check .
+
+lg:NL-BW3-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/"^^xsd:anyURI ;
+    lgo:lastKnownAmendmentInForce "2025-07-01"^^xsd:date ;
+    rdfs:comment "wetten.overheid.nl shows the in-force version from 01.07.2025 (data-inwerking); the amending instrument's citation was not extracted. No source document in the graph."@en .

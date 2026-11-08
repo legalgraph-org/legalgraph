@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Law of Ukraine on Electronic Commerce, Article 7(1), written in schemas/law.xsd from the portal's fragment.
+  The words are the Verkhovna Rada's (zakon.rada.gov.ua); only the structure is ours. Editorial notes on
+  amendments (in braces on the portal) are left out. `legalgraph sources verify` checks every paragraph word
+  for word against the downloaded fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="uk"
+     lga:act="UA-675" lga:jurisdiction="UA" lga:act-type="Statute"
+     lga:url="https://zakon.rada.gov.ua/laws/show/675-19">
+  <meta>
+    <title>Про електронну комерцію</title>
+    <date>2015-09-03</date>
+  </meta>
+
+  <section num="Стаття 7" title="Правовий статус продавця (виконавця, постачальника) товарів, робіт, послуг в електронній комерції" source="675-19.fragment.html">
+    <paragraph num="1." lga:provision="UA-675-art7-1" lga:citation="ст. 7 ч. 1 Закону «Про електронну комерцію»" lga:url="https://zakon.rada.gov.ua/laws/show/675-19#n78" lga:regulates="ProviderIdentification">Продавець (виконавець, постачальник) товарів, робіт, послуг в електронній комерції під час своєї діяльності та у разі поширення комерційного електронного повідомлення зобов’язаний забезпечити прямий, простий, стабільний доступ інших учасників відносин у сфері електронної комерції до такої інформації:
+      <list>
+        <item num="" lga:requires="ProviderName">повне найменування юридичної особи або прізвище, ім’я, по батькові фізичної особи - підприємця;</item>
+        <item num="" lga:requires="GeographicAddress">місцезнаходження юридичної особи або місце реєстрації та місце фактичного проживання фізичної особи - підприємця;</item>
+        <item num="" lga:requires="EmailAddress">адреса електронної пошти та/або адреса інтернет-магазину;</item>
+        <item num="" lga:requires="TaxId">ідентифікаційний код для юридичної особи або реєстраційний номер облікової картки платника податків для фізичної особи - підприємця, або серія та номер паспорта для фізичної особи - підприємця, яка через свої релігійні переконання відмовилася від прийняття реєстраційного номера облікової картки платника податків та офіційно повідомила про це відповідний податковий орган і має відмітку в паспорті;</item>
+        <item num="" lga:requires="LicenceDetails">відомості про ліцензію (серія, номер, строк дії та дата видачі), якщо господарська діяльність підлягає ліцензуванню;</item>
+        <item num="" lga:requires="TotalPrice DeliveryCosts">щодо включення податків у розрахунок вартості товару, роботи, послуги та, у разі доставки товару, - інформація про вартість доставки;</item>
+        <item num="">інші відомості, що відповідно до законодавства підлягають оприлюдненню.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

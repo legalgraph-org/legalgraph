@@ -1,0 +1,43 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Cases of the EU courts: case numbers, and the rules of the graph each decision shows at work
+# (lgo:illustrates, chosen by the maintainers). Preliminary rulings of the Court of Justice answer
+# the referring court and have no outcome of their own; the national court decides the case.
+
+lg:CJEU-C-673-17 lgo:caseNumber "C-673/17" ;
+    lgo:illustrates lg:EU-R-cookie-consent , lg:EU-R-consent-conditions .
+
+lg:CJEU-C-604-22 lgo:caseNumber "C-604/22" ;
+    lgo:illustrates lg:EU-R-consent-conditions .
+
+lg:CJEU-C-61-19 lgo:caseNumber "C-61/19" ;
+    lgo:illustrates lg:EU-R-consent-conditions .
+
+lg:CJEU-C-40-17 lgo:caseNumber "C-40/17" ;
+    lgo:illustrates lg:EU-R-lawful-basis , lg:EU-R-consent-conditions .
+
+lg:CJEU-C-582-14 lgo:caseNumber "C-582/14" ;
+    lgo:illustrates lg:EU-R-lawful-basis .
+
+lg:CJEU-C-311-18 lgo:caseNumber "C-311/18" ;
+    lgo:illustrates lg:EU-R-privacy-information-transfers .
+
+lg:CJEU-T-553-23 lgo:caseNumber "T-553/23" ;
+    lgo:illustrates lg:EU-R-privacy-information-transfers .
+
+lg:CJEU-C-300-21 lgo:caseNumber "C-300/21" .
+
+lg:CJEU-C-191-15 lgo:caseNumber "C-191/15" ;
+    lgo:illustrates lg:EU-R-unfair-terms .
+
+lg:CJEU-C-210-16 lgo:caseNumber "C-210/16" ;
+    lgo:shortName "Wirtschaftsakademie" ;
+    rdfs:comment "The administrator of a Facebook fan page is a controller jointly with Facebook for the data processing of the page's visitors. With Fashion ID, the basis for Article 26 GDPR arrangements with platforms."@en .
+
+lg:CJEU-C-21-23 lgo:caseNumber "C-21/23" ;
+    lgo:shortName "Lindenapotheke" ;
+    rdfs:comment "The GDPR does not prevent national law from letting competitors sue over GDPR breaches as unfair commercial practices. This is why, in Germany, a competitor's Abmahnung can enforce privacy duties (§ 3a UWG)."@en .

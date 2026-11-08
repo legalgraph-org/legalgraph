@@ -1,0 +1,41 @@
+# Regulation (EU) No 1215/2012 on jurisdiction and the recognition and enforcement of
+# judgments (Brussels Ia), the text in force. Articles 17 to 19 protect the consumer in
+# jurisdiction clauses: the consumer may sue at home and can only be sued there, and a forum
+# clause is valid only in narrow cases — relevant to jurisdiction clauses in website terms.
+# English is annotated; German is a parallel language version.
+id: eu/brussels-ia
+title: Regulation (EU) No 1215/2012 on jurisdiction and the recognition and enforcement of judgments (Brussels Ia)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2012R1215EN0010010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02012R1215-20150226
+    url: https://publications.europa.eu/resource/celex/02012R1215-20150226
+    fetch: zip-member
+    member: CL2012R1215EN0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "The text in force; the provisions quoted have not been amended."
+    retrieved_on: 2026-11-02
+    sha256: ff4f52e598be9894ca0243de3c681f1d423e4eb987016959eab155ee4c797999
+  - file: CL2012R1215DE0010030.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02012R1215-20150226
+    url: https://publications.europa.eu/resource/celex/02012R1215-20150226
+    fetch: zip-member
+    member: CL2012R1215DE0010030.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 57ed731e21b97c0a0821863a50ffe64010a748a2619f2b1b5dabed0acdb7e1ea
+annotated: CL2012R1215EN0010010.0001.annotated.xml

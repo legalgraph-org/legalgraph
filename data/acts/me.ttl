@@ -1,0 +1,23 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ME: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:ME-ZET a lgo:LegalAct ;
+    eli:title "Zakon o elektronskoj trgovini"@cnr , "Law on Electronic Trade"@en ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:ME ;
+    lgo:sourceUrl "http://www.podaci.net/_gCGO/propis/Zakon_o_elektronskoj/Z-etrgov04v0480-1140.html"^^xsd:anyURI ;
+    rdfs:comment "Source is a commercial legal database, not the official gazette."@en ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:ME-ZET-cl7-1 a lgo:Provision ;
+    eli:is_part_of lg:ME-ZET ;
+    lgo:citation "Član 7 stav 1" ;
+    lgo:sourceUrl "http://www.podaci.net/_gCGO/propis/Zakon_o_elektronskoj/Z-etrgov04v0480-1140.html"^^xsd:anyURI ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:Draft .

@@ -1,0 +1,13 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:BE-WER
+    lgo:amendmentCheck lg:BE-WER-amendment-check .
+
+lg:BE-WER-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.ejustice.just.fgov.be/eli/wet/2013/05/29/2013009339/justel"^^xsd:anyURI ;
+    rdfs:comment "justel (ejustice.just.fgov.be) needs an interactive session; the latest amendment of the Code of Economic Law could not be checked."@en .

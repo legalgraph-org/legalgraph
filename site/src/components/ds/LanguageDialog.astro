@@ -1,0 +1,67 @@
+---
+// The page's one language dialog: a native popover (centred, light-dismiss, Esc closes; no JavaScript).
+// Every LanguageSwitcher on the page opens it. Options link to the page in each language.
+import type { LanguageOption } from "./language-switcher.types";
+
+interface Props {
+  id: string;
+  title: string;
+  subtitle: string;
+  closeLabel: string;
+  options: readonly LanguageOption[];
+}
+
+const { id, title, subtitle, closeLabel, options } = Astro.props;
+---
+
+<div
+  id={id}
+  popover="auto"
+  role="dialog"
+  aria-labelledby={`${id}-title`}
+  class="theme-light m-auto w-80 max-w-[90vw] rounded-2xl border p-6 shadow-2xl backdrop:bg-black/40"
+>
+  <div class="mb-6 flex items-center justify-between">
+    <h3 id={`${id}-title`} class="text-xl font-semibold">{title}</h3>
+    <button type="button" popovertarget={id} popovertargetaction="hide" aria-label={closeLabel} class="rounded-full p-1 hover:bg-muted">
+      <svg aria-hidden="true" class="size-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-width="2" d="M6 6l12 12M18 6 6 18"></path>
+      </svg>
+    </button>
+  </div>
+  <p class="mb-3 text-sm font-medium text-muted-foreground">{subtitle}</p>
+  <ul class="flex flex-col gap-1">
+    {
+      options.map((option) => (
+        <li>
+          <a
+            href={option.href}
+            hreflang={option.code}
+            lang={option.code}
+            aria-current={option.current ? "true" : undefined}
+            class:list={[
+              "no-underline flex items-center gap-3 rounded-lg border px-3 py-3 text-foreground hover:bg-muted",
+              option.current ? "border-border" : "border-transparent",
+            ]}
+          >
+            {option.flag && (
+              <span aria-hidden="true" class="text-xl">
+                {option.flag}
+              </span>
+            )}
+            <span class="font-medium">{option.name}</span>
+            {option.current && (
+              <svg aria-hidden="true" class="ml-auto size-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.6l7.3-7.3a1 1 0 0 1 1.4 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            )}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

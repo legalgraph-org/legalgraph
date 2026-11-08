@@ -1,0 +1,22 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Spain: the aviso legal of Article 10 LSSI.
+
+lg:ES-LSSI a lgo:LegalAct ;
+    eli:title "Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico"@es , "Law on Information Society Services and Electronic Commerce"@en ;
+    lgo:shortName "LSSI" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:ES ;
+    eli:date_document "2002-07-11"^^xsd:date ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con"^^xsd:anyURI ;
+    rdfs:seeAlso <https://www.boe.es/eli/es/l/2002/07/11/34> ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+# Article 10(1) (the aviso legal) and Article 22(1) and (2) (consent revocation, cookie rule)
+# are sourced from BOE's consolidated XML: see sources/es/lssi and data/extracted/es/lssi.ttl.

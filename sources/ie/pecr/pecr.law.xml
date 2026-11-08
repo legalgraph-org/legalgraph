@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  S.I. No. 336 of 2011, Regulation 5(3)–(5), written in schemas/law.xsd from the Irish Statute
+  Book fragment. The words are the official text's; only the structure is ours.
+  `legalgraph sources verify` checks every paragraph word for word against the fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="IE-SI-336-2011" lga:jurisdiction="IE" lga:act-type="StatutoryInstrument"
+     lga:url="https://www.irishstatutebook.ie/eli/2011/si/336/made/en">
+  <meta>
+    <title>European Communities (Electronic Communications Networks and Services) (Privacy and Electronic Communications) Regulations 2011</title>
+    <date>2011-07-01</date>
+  </meta>
+
+  <section num="5." title="Confidentiality of communications" source="si-336-2011.fragment.html">
+    <paragraph num="(3)" lga:provision="IE-SI-336-2011-r5-3" lga:citation="Reg. 5(3) S.I. 336/2011" lga:url="https://www.irishstatutebook.ie/eli/2011/si/336/made/en" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">A person shall not use an electronic communications network to store information, or to gain access to information already stored in the terminal equipment of a subscriber or user, unless
+      <list>
+        <item num="( a )">the subscriber or user has given his or her consent to that use, and</item>
+        <item num="( b )">the subscriber or user has been provided with clear and comprehensive information in accordance with the Data Protection Acts which—
+          <list>
+            <item num="(i)">is both prominently displayed and easily accessible, and</item>
+            <item num="(ii)">includes, without limitation, the purposes of the processing of the information.</item>
+          </list>
+        </item>
+      </list>
+    </paragraph>
+    <paragraph num="(4)" lga:provision="IE-SI-336-2011-r5-4" lga:citation="Reg. 5(4) S.I. 336/2011" lga:url="https://www.irishstatutebook.ie/eli/2011/si/336/made/en" lga:regulates="Consent">For the purpose of paragraph (3), the methods of providing information and giving consent should be as user-friendly as possible. Where it is technically possible and effective, having regard to the relevant provisions of the Data Protection Acts, the user’s consent to the storing of information or to gaining access to information already stored may be given by the use of appropriate browser settings or other technological application by means of which the user can be considered to have given his or her consent.</paragraph>
+    <paragraph num="(5)" lga:provision="IE-SI-336-2011-r5-5" lga:citation="Reg. 5(5) S.I. 336/2011" lga:url="https://www.irishstatutebook.ie/eli/2011/si/336/made/en" lga:defines="TransmissionOnlyAccess StrictlyNecessaryAccess">Paragraph (3) does not prevent any technical storage of, or access to, information for the sole purpose of carrying out the transmission of a communication over an electronic communications network or which is strictly necessary in order to provide an information society service explicitly requested by the subscriber or user.</paragraph>
+  </section>
+</law>

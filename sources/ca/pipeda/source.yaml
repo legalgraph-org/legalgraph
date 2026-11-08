@@ -1,0 +1,31 @@
+# Personal Information Protection and Electronic Documents Act (PIPEDA), S.C. 2000, c. 5: the
+# official consolidated bilingual XML from Justice Canada's laws-lois site. English is the
+# annotated text; French is the official parallel version (both are authentic — Canada publishes
+# statutes bilingually). Section 6.1 (valid consent), section 7 (collection without consent only
+# "if"), and Schedule 1 clauses 4.3 (knowledge and consent), 4.8.1 and 4.8.2 (Openness — the
+# privacy-policy duty and its contents) are annotated.
+id: ca/pipeda
+title: Personal Information Protection and Electronic Documents Act (S.C. 2000, c. 5)
+jurisdiction: CA
+language: en
+publisher: Department of Justice Canada, laws-lois.justice.gc.ca
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Reproduction of Federal Law Order (SI/97-5): federal enactments may be reproduced without charge or permission, if reproduced accurately and not presented as an official version"
+originals:
+  - file: P-8.6.en.xml
+    page: https://laws-lois.justice.gc.ca/eng/acts/P-8.6/
+    url: https://laws-lois.justice.gc.ca/eng/XML/P-8.6.xml
+    fetch: file
+    media_type: application/xml
+    retrieved_on: 2026-11-03
+    sha256: f19a69c256d4454b49516a9f78f10642361204534c1da37d0f64c7afbd24d6a1
+  - file: P-8.6.fr.xml
+    page: https://laws-lois.justice.gc.ca/fra/lois/P-8.6/
+    url: https://laws-lois.justice.gc.ca/fra/XML/P-8.6.xml
+    fetch: file
+    role: parallel
+    media_type: application/xml
+    retrieved_on: 2026-11-03
+    sha256: 21e42ed088bc0b27870c1eb0003776dc1b8bf5ee62c7a645d5d1df5efd110b62
+annotated: P-8.6.en.annotated.xml

@@ -1,0 +1,93 @@
+---
+// /about, in every language: who runs legalgraph, why it is separate from Aimix, how it is
+// licensed, how to take part.
+import T from "../../i18n/T.astro";
+import type { Translate } from "../../i18n/t";
+import { abbreviationMarker } from "../../lib/glossary";
+import Layout from "../../layouts/Layout.astro";
+import { pagePath } from "../../lib/routes";
+import Button from "../ds/Button.astro";
+import Article from "../ds/Article.astro";
+import Heading from "../ds/Heading.astro";
+import Section from "../ds/Section.astro";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const mark = await abbreviationMarker(t.locale);
+---
+
+<Layout
+  title={t("About")}
+  description={t("Who builds legalgraph, why it is an open project, its licences and how to take part.")}
+  t={t}
+  page="about"
+  bare
+>
+  <Section>
+    <Article label={t("On this page")} collapseLabel={t("Collapse")} expandLabel={t("Expand")} mark={mark} class="mx-auto max-w-5xl">
+      <Fragment slot="header">
+        <p class="eyebrow">{t("About")}</p>
+        <Heading level={1} class="mt-2!">{t("An open graph of website law")}</Heading>
+      </Fragment>
+      <div class="prose mt-8">
+        <p>
+          <T
+            msg={t("legalgraph is founded and maintained by <0>Aimix GmbH</0>, a company that builds websites for small businesses.")}
+            tags={[{ kind: "link", href: "https://aimix.io" }]}
+          />
+          {" "}{t("Writing about what those websites must show and do, we kept needing evidence our readers could check.")}
+          {" "}{t("legalgraph is that evidence, published as open data so anyone can use it, cite it and correct it.")}
+        </p>
+
+        <h2>{t("Why a project of its own")}</h2>
+        <p>
+          <T
+            msg={t("Every entity in the graph has a permanent address, such as <0>legalgraph.org/id/DE-DDG-s5-1</0>.")}
+            tags={[{ kind: "link", href: "/id/DE-DDG-s5-1" }]}
+          />
+          {" "}{t("Once other people's data, papers or tools point to an address, it must never change.")}
+          {" "}{t("Keeping the graph on its own domain, apart from any company's brand, keeps those addresses stable and lets lawyers, researchers and public bodies contribute to a neutral project.")}
+          {" "}{t("Aimix's own articles and products use the graph like anyone else.")}
+        </p>
+
+        <h2>{t("Licences")}</h2>
+        <ul>
+          <li>
+            <T
+              msg={t("Data and ontology: <0>CC BY 4.0</0>, © Aimix GmbH. Credit it as “legalgraph by Aimix GmbH (https://aimix.io), licensed under CC BY 4.0”.")}
+              tags={[{ kind: "link", href: "https://creativecommons.org/licenses/by/4.0/" }]}
+            />
+          </li>
+          <li>{t("Code: MIT.")}</li>
+          <li>
+            {t("Law texts are official works, reproduced unchanged, and are not covered by our licences.")}
+            {" "}{t("Court decisions and guidelines are reproduced under their publishers' terms, named on each source page.")}
+          </li>
+        </ul>
+
+        <h2>{t("What it is not")}</h2>
+        <p>
+          {t("legalgraph is structured research by researchers, not lawyers. It is not legal advice.")}
+          {" "}{t("Rules start as drafts and stay so until a lawyer reviews them; English translations made by machine are labelled and stay drafts until a person reviews them.")}
+          {" "}{t("Always check the official text before relying on an entry.")}
+        </p>
+
+        <h2>{t("Take part")}</h2>
+        <p>
+          {t("Found a wrong reading, an outdated text, or a law we should add?")}
+          {" "}{t("Every statement in the graph is an annotation on the law's own words, so a correction is a small, reviewable change.")}
+          {" "}{t("Corrections and additions are made on GitHub: report a problem as an issue, or propose a change as a pull request that follows the graph's ontology.")}
+          {" "}{t("Contributors who make substantial, careful contributions can be invited to join the maintainers.")}
+        </p>
+      </div>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <Button href={pagePath("blog/how-to-contribute", t.locale)}>{t("How to contribute")}</Button>
+        <Button href={pagePath("method", t.locale)} variant="outline">{t("How the graph is built")}</Button>
+        <Button href={pagePath("download", t.locale)} variant="outline">{t("Download the data")}</Button>
+      </div>
+    </Article>
+  </Section>
+</Layout>

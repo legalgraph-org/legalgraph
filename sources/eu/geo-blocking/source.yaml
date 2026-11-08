@@ -1,0 +1,36 @@
+# Geo-blocking Regulation ((EU) 2018/302): official XML (Formex 4) of the Official Journal, not amended.
+# English is annotated; German is a parallel language version.
+id: eu/geo-blocking
+title: Geo-blocking Regulation ((EU) 2018/302)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: LI2018060EN.01000101.xml
+    page: https://eur-lex.europa.eu/eli/reg/2018/302/oj/eng
+    url: https://publications.europa.eu/resource/celex/32018R0302
+    fetch: zip-member
+    member: LI2018060EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 69173a1b7781cce2f42c2594c31b54953be0484dba66a3d4734a1910b90dfca3
+  - file: LI2018060DE.01000101.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/reg/2018/302/oj/deu
+    url: https://publications.europa.eu/resource/celex/32018R0302
+    fetch: zip-member
+    member: LI2018060DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: ebeb540d5efd3865690677f3dd060278a5172070640570c45729617593790fc6
+annotated: LI2018060EN.01000101.annotated.xml

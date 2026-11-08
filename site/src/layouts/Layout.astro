@@ -1,0 +1,118 @@
+---
+// Every page: the navbar and footer (components/ds/), with legalgraph's
+// own colours (styles/tokens.css). Prose pages pass their translator `t` and `page` id: they exist
+// in every language (lib/routes.ts) and get hreflang links. Data pages pass neither: they exist
+// once, in English chrome, and the language dialog leads to each language's home.
+// Data pages render inside a 72rem column; prose pages pass `bare` and lay out their own bands.
+import "../styles/global.css";
+import Button from "../components/ds/Button.astro";
+import Container from "../components/ds/Container.astro";
+import Footer from "../components/ds/Footer.astro";
+import LanguageDialog from "../components/ds/LanguageDialog.astro";
+import GitHubLink from "../components/ds/GitHubLink.astro";
+import LanguageSwitcher from "../components/ds/LanguageSwitcher.astro";
+import Navbar from "../components/ds/Navbar.astro";
+import PageHeader from "../components/ds/PageHeader.astro";
+import T from "../i18n/T.astro";
+import { LOCALE_NAMES, LOCALE_TAGS, OG_LOCALES, SOURCE_LOCALE } from "../i18n/locales";
+import { useT, type Translate } from "../i18n/t";
+import { footerColumns, GITHUB_URL, LANGUAGE_DIALOG_ID, languageOptions, navItems } from "../lib/navigation";
+import { alternatesFor, pagePath, type PageId } from "../lib/routes";
+
+interface Props {
+  title: string;
+  description?: string;
+  /** No column: the page lays out its own full-width sections. */
+  bare?: boolean;
+  /** The translator of a prose page; data pages use English. */
+  t?: Translate;
+  /** The prose page being shown (lib/routes.ts); data pages have none. */
+  page?: PageId;
+  /** The tinted strip naming the page (PageHeader), above the column. */
+  header?: { title: string; description?: string; note?: string };
+}
+
+const { title, description: given, bare = false, page, header } = Astro.props;
+const t = Astro.props.t ?? useT(SOURCE_LOCALE);
+const description =
+  given ??
+  t("An open knowledge graph of the laws on what websites must show and do, with every statement traced to the official text.");
+const path = Astro.url.pathname.replace(/\.html$/, "") || "/";
+const site = Astro.site ?? new URL("https://legalgraph.org");
+const fullTitle = page === "home" ? t("legalgraph: website law as open, checkable data") : `${title} · legalgraph`;
+const alternates = page ? alternatesFor(page, site) : [];
+const home = pagePath("home", t.locale);
+---
+
+<!doctype html>
+<html lang={LOCALE_TAGS[t.locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="legalgraph" />
+    <meta property="og:locale" content={OG_LOCALES[t.locale]} />
+    <link rel="canonical" href={new URL(path, site)} />
+    {alternates.map((alternate) => <link rel="alternate" hreflang={alternate.hreflang} href={alternate.href} />)}
+    <slot name="head" />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Navbar homeHref={home} homeLabel={t("legalgraph home")} navLabel={t("Main navigation")} menuLabel={t("Menu")} items={navItems(t, path)}>
+      <GitHubLink slot="actions" href={GITHUB_URL} label={t("legalgraph on GitHub")} />
+      <LanguageSwitcher slot="actions" label={t("Language")} dialogId={LANGUAGE_DIALOG_ID} />
+      <Button slot="actions" href={pagePath("checklist", t.locale)} size="sm" class="max-sm:hidden">{t("Try the checklist")}</Button>
+    </Navbar>
+    {
+      bare ? (
+        <main class="flex-1">
+          <slot />
+        </main>
+      ) : (
+        <main class="flex-1">
+          {header && <PageHeader {...header} />}
+          <Container class="py-8">
+            <div class="mx-auto max-w-6xl">
+              <slot />
+            </div>
+          </Container>
+        </main>
+      )
+    }
+    <Footer
+      homeHref={home}
+      homeLabel={t("legalgraph home")}
+      navLabel={t("Footer navigation")}
+      tagline={t("Website law as open, checkable data: every statement links to the words of the law it comes from.")}
+      columns={footerColumns(t)}
+      copyright={`© ${new Date().getFullYear()} Aimix GmbH`}
+    >
+      <GitHubLink slot="social" href={GITHUB_URL} label={t("legalgraph on GitHub")} text="GitHub" />
+      <LanguageSwitcher slot="language" label={t("Language")} dialogId={LANGUAGE_DIALOG_ID} currentName={LOCALE_NAMES[t.locale]} />
+      <p slot="notice">
+        <T
+          msg={t("<0>Not legal advice.</0> Maintained by researchers, not lawyers. Check the official text before relying on any entry.")}
+          tags={[{ kind: "strong" }]}
+        />
+      </p>
+      <p slot="notice">
+        <T
+          msg={t("Data and ontology <0>CC BY 4.0</0>, code MIT. Law texts are official works, reproduced unchanged.")}
+          tags={[{ kind: "link", href: "https://creativecommons.org/licenses/by/4.0/" }]}
+        />
+      </p>
+    </Footer>
+    <LanguageDialog
+      id={LANGUAGE_DIALOG_ID}
+      title={t("Language")}
+      subtitle={page ? t("Choose a language") : t("This page is in English only. The site's own pages are also in:")}
+      closeLabel={t("Close")}
+      options={languageOptions(t, page)}
+    />
+  </body>
+</html>

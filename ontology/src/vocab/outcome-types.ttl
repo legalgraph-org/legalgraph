@@ -1,0 +1,43 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# What a decision ordered for a party (lgo:outcomeType).
+
+lgv:OutcomeTypes a skos:ConceptScheme ;
+    skos:prefLabel "Outcome types"@en .
+
+lgv:Fine a skos:Concept ;
+    skos:inScheme lgv:OutcomeTypes ;
+    skos:prefLabel "Fine"@en ;
+    skos:altLabel "Bußgeld"@de , "amende"@fr ;
+    skos:definition "A sum the party must pay to the state, imposed by an authority or a court for a breach."@en .
+
+lgv:Damages a skos:Concept ;
+    skos:inScheme lgv:OutcomeTypes ;
+    skos:prefLabel "Damages"@en ;
+    skos:altLabel "Schadensersatz"@de ;
+    skos:definition "Compensation the party must pay to the person who suffered harm, such as damages under Article 82 GDPR."@en .
+
+lgv:Injunction a skos:Concept ;
+    skos:inScheme lgv:OutcomeTypes ;
+    skos:prefLabel "Injunction"@en ;
+    skos:altLabel "Unterlassung"@de ;
+    skos:definition "An order to stop a practice (or not to repeat it), often obtained by a competitor or a consumer association."@en .
+
+lgv:ComplianceOrder a skos:Concept ;
+    skos:inScheme lgv:OutcomeTypes ;
+    skos:prefLabel "Order to comply"@en ;
+    skos:altLabel "injonction"@fr ;
+    skos:definition "An authority's order to bring a practice into line with the law within a deadline, often with a penalty for each day of delay."@en .
+
+lgv:Settlement a skos:Concept ;
+    skos:inScheme lgv:OutcomeTypes ;
+    skos:prefLabel "Settlement"@en ;
+    skos:definition "A payment or undertaking agreed with an enforcer and entered as a judgment or order, without a court deciding the merits."@en .
+
+lgv:FindingOfInfringement a skos:Concept ;
+    skos:inScheme lgv:OutcomeTypes ;
+    skos:prefLabel "Finding of infringement"@en ;
+    skos:altLabel "Feststellung"@de ;
+    skos:definition "The court or authority declares that the party broke the law, without a fine or an order (for example an authority upholding a data subject's complaint)."@en .

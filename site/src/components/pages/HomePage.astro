@@ -1,0 +1,354 @@
+---
+// The home page, in every language: what the graph is, why it exists, how a claim is traced to the
+// law, what's in it. The prose is translated (locales/*.po); names, citations and quotes come from
+// the graph and stay in their original language.
+import meta from "../../data/meta.json";
+import T from "../../i18n/T.astro";
+import type { Translate } from "../../i18n/t";
+import Layout from "../../layouts/Layout.astro";
+import { loadGraph } from "../../lib/data";
+import { GITHUB_URL } from "../../lib/navigation";
+import { pagePath } from "../../lib/routes";
+import ExampleGraph from "../ExampleGraph.astro";
+import HeroGraph from "../HeroGraph.astro";
+import Button from "../ds/Button.astro";
+import Heading from "../ds/Heading.astro";
+import Section from "../ds/Section.astro";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const graph = await loadGraph();
+const stats = [
+  [meta.counts.jurisdictions, t("jurisdictions"), pagePath("countries", t.locale)],
+  [meta.counts.acts, t("laws, judgments and guidelines"), pagePath("acts", t.locale)],
+  [meta.counts.provisions, t("provisions"), pagePath("provisions", t.locale)],
+  [meta.counts.obligations, t("rules for businesses"), pagePath("rules", t.locale)],
+  [graph.documents.size, t("official source files"), pagePath("sources", t.locale)],
+] as const;
+
+// The worked example: one line of § 5(1) DDG, in German and English, straight from the graph.
+const ddg = graph.provisions.get("DE-DDG-s5-1")!;
+const quote = ddg.data.quotes[0]!;
+const lines = quote.text.split("\n");
+const vatLine = lines.findIndex((line) => line.includes("Umsatzsteuer"));
+const vatGerman = lines[vatLine] ?? "";
+const vatEnglish = quote.translation?.text?.split("\n")[vatLine] ?? "";
+
+const steps = [
+  [
+    t("The law, as published"),
+    t("We download each law from its official portal and keep the file unchanged, with its fingerprint and date. A scheduled check downloads it again and fails if the portal's text has changed."),
+  ],
+  [
+    t("Read into data"),
+    t("We mark up the official text itself: which paragraph regulates what, which information it requires, which EU rule it implements. Stripping our marks gives back the original, byte for byte."),
+  ],
+  [
+    t("Turned into rules"),
+    t("Rules say what a provision means for a business, and when it applies. Each rule names the provisions it comes from, so its reading can be checked and disputed."),
+  ],
+  [
+    t("Answered for you"),
+    t("The checklist turns your answers (where you are established, what your website does) into the rules that apply, each with the law behind it."),
+  ],
+] as const;
+
+const principles = [
+  [t("Law text first"), t("Every statement traces to the exact words that justify it, as the official portal publishes them.")],
+  [t("Reproducible"), t("Every source records where it came from, when, and its hash. Anyone can fetch it again and compare.")],
+  [
+    t("Interpretation is visible"),
+    t("Where we read the law, the reading is an annotation anyone can see and dispute, never hidden in prose."),
+  ],
+  [
+    t("Honest English"),
+    t("Official translations are marked as such. Machine translations are labelled, stay drafts until a person reviews them, and go stale when the law changes."),
+  ],
+] as const;
+
+const audiences = [
+  [t("Writers and journalists"), t("Link a claim to the provision it rests on, so readers can check it."), pagePath("countries", t.locale), t("Browse by country")],
+  [t("Businesses"), t("See which rules apply to your website, and the law behind each."), pagePath("checklist", t.locale), t("Open the checklist")],
+  [
+    t("Developers"),
+    t("Use the graph in your own tools: Turtle, N-Triples, JSON-LD, and the rules as JSON."),
+    pagePath("download", t.locale),
+    t("Download the data"),
+  ],
+  [
+    t("Lawyers and researchers"),
+    t("Review a reading, propose a better one, compare countries line by line."),
+    pagePath("items", t.locale),
+    t("Compare countries"),
+  ],
+] as const;
+
+// The last card names three countries and counts the rest, so it grows with the graph.
+const otherCountries = [...graph.jurisdictions.values()].filter((j) => j.data.kind === "country").length - 3;
+const coverage = [
+  [
+    t("European Union"),
+    t("GDPR, ePrivacy, e-Commerce, Digital Services Act, AI Act, consumer rights, and the court rulings and guidelines that read them."),
+    "/id/EU",
+  ],
+  [
+    t("Germany"),
+    t("Impressum, cookies (TDDDG), consumer contracts, prices, packaging, youth protection, from the official law texts."),
+    "/id/DE",
+  ],
+  [
+    t("United Kingdom"),
+    t("UK GDPR, cookies (PECR), e-commerce and consumer contracts, trading disclosures, online safety."),
+    "/id/GB",
+  ],
+  [
+    t("USA, Canada, Ukraine and {count} more countries", { count: otherCountries }),
+    t("Privacy, consumer and e-commerce law beyond the EU, from California's CCPA to the Swiss Data Protection Act, and more with every contribution."),
+    pagePath("countries", t.locale),
+  ],
+] as const;
+---
+
+<Layout title={t("Home")} t={t} page="home" bare>
+  <!-- Hero -->
+  <Section class="bg-glow">
+    <div class="grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-12">
+      <div class="max-w-4xl">
+        <p class="eyebrow">{t("Open data · CC BY 4.0")}</p>
+        <Heading level={1} class="mt-3! [&_em]:text-brand-gradient [&_em]:not-italic">
+          <T msg={t("Website law, <0>traced to the word</0>")} tags={[{ kind: "em" }]} />
+        </Heading>
+        <p class="lead mt-6 max-w-3xl">
+          {t("legalgraph is an open knowledge graph of the laws that tell a website what to show and do: the imprint, the privacy policy, terms, cookie banners. Every statement in it links to the words of the law it comes from.")}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <Button href=pagePath("checklist", t.locale) size="lg">{t("Try the checklist")}</Button>
+          <Button href=pagePath("graph", t.locale) size="lg" variant="outline">{t("Explore the graph")}</Button>
+        </div>
+      </div>
+      <div class="mx-auto w-full max-w-md max-lg:hidden lg:max-w-none">
+        <HeroGraph t={t} />
+      </div>
+    </div>
+    <ul class="mt-14 grid grid-cols-2 gap-x-6 gap-y-6 border-t pt-8 sm:grid-cols-3 lg:grid-cols-5">
+      {
+        stats.map(([value, label, href]) => (
+          <li>
+            <a href={href} class="no-underline group block">
+              <span class="block text-h2 font-semibold text-foreground group-hover:text-primary">{value}</span>
+              <span class="text-sm text-muted-foreground">{label}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <!-- Why -->
+  <Section theme="muted">
+    <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+      <div>
+        <p class="eyebrow">{t("Why it exists")}</p>
+        <Heading level={2} class="mt-3!">{t("“Where did you get that from?”")}</Heading>
+      </div>
+      <div class="space-y-4 text-lead text-muted-foreground">
+        <p>
+          <T
+            msg={t("Articles and tools about website compliance are full of claims: <0>your imprint needs a VAT number</0>, <1>analytics needs consent</1>, <2>a subscription needs a cancel button</2>.")}
+            tags={[{ kind: "em" }, { kind: "em" }, { kind: "em" }]}
+          />
+          {" "}{t("Most of them cannot be checked. The source is paraphrased, out of date, or not given at all.")}
+        </p>
+        <p>
+          {t("We wanted every claim to come with its evidence: the paragraph, its exact words, an English translation, and who reviewed it.")}
+          {" "}{t("So we built the evidence first, as open data anyone can use, cite and correct.")}
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- How -->
+  <Section>
+    <div class="text-center">
+      <p class="eyebrow">{t("How it works")}</p>
+      <Heading level={2} class="mx-auto mt-3! max-w-3xl">{t("From the official text to an answer, without losing the thread")}</Heading>
+    </div>
+    <ol class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {
+        steps.map(([title, text], index) => (
+          <li class="card flex flex-col gap-3 p-6">
+            <span class="grid size-9 place-items-center rounded-full bg-primary/10 font-semibold text-primary">{index + 1}</span>
+            <span class="text-h3 font-semibold">{title}</span>
+            <span class="text-muted-foreground">{text}</span>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="mt-6 text-muted-foreground">
+      <T msg={t("The details, with the commands to check any of it yourself, are in the <0>method</0>.")} tags={[{ kind: "link", href: pagePath("method", t.locale) }]} />
+    </p>
+  </Section>
+
+  <!-- Example -->
+  <Section theme="muted">
+    <div class="text-center">
+      <p class="eyebrow">{t("An example")}</p>
+      <Heading level={2} class="mx-auto mt-3! max-w-3xl">{t("One claim, followed to its source")}</Heading>
+      <p class="lead mx-auto mt-4 max-w-3xl">
+        {t("“A German business website must show its VAT identification number, if it has one.” Here is the trail.")}
+      </p>
+    </div>
+    <!-- The diagram and the cards side by side where there is room, the diagram as tall as the cards. -->
+    <div class="mt-10 grid gap-6 xl:grid-cols-[1fr_1.2fr] xl:gap-8">
+      <ExampleGraph t={t} />
+      <ol class="space-y-3">
+        <li class="card p-5" data-example-nodes="DE-R-impressum-vat VatId">
+          <p class="text-sm text-muted-foreground">{t("The rule")}</p>
+          <p class="mt-1 font-semibold"><a href="/id/DE-R-impressum-vat">{graph.obligations.get("DE-R-impressum-vat")?.data.label}</a></p>
+          <p class="mt-1 text-sm text-muted-foreground">
+            {t("Applies when the business is established in Germany, runs a business website and has a VAT ID.")}
+          </p>
+        </li>
+        <li class="card p-5" data-example-nodes="DE-DDG-s5-1">
+          <p class="text-sm text-muted-foreground">{t("The words of the law")}</p>
+          <p class="mt-1 font-semibold"><a href="/id/DE-DDG-s5-1">{ddg.data.citation}</a></p>
+          <blockquote class="law-text mt-2 border-l-4 border-primary/40 pl-3" lang="de">{vatGerman}</blockquote>
+          {
+            vatEnglish && (
+              <p class="mt-2 text-sm text-muted-foreground" lang="en">
+                {vatEnglish} <span class="tag tone-draft">{t("machine translation")}</span>
+              </p>
+            )
+          }
+        </li>
+        <li class="card p-5" data-example-nodes="DE-DDG">
+          <p class="text-sm text-muted-foreground">{t("The official source")}</p>
+          <p class="mt-1 font-semibold">
+            <a href="/id/DE-DDG-source">{t("Digitale-Dienste-Gesetz, as published on gesetze-im-internet.de")}</a>
+          </p>
+          <p class="mt-1 text-sm text-muted-foreground">
+            {t("The downloaded file, its SHA-256, and the marked-up copy that proves the quote.")}
+          </p>
+        </li>
+        <li class="card p-5" data-example-nodes="EU-2000-31-art5-1 EU-R-service-provider-information-vat AT-ECG-s5-1 FR-LCEN-art19-1">
+          <p class="text-sm text-muted-foreground">{t("And beyond Germany")}</p>
+          <p class="mt-1">
+            <T
+              msg={t("The same duty comes from <0>Article 5 of the e-Commerce Directive</0>, so a business in Austria or France gets it too, with its own country's law named.")}
+              tags={[{ kind: "link", href: "/id/EU-R-service-provider-information-vat" }]}
+            />
+          </p>
+        </li>
+      </ol>
+    </div>
+  </Section>
+
+  <!-- Coverage -->
+  <Section>
+    <div class="text-center">
+      <p class="eyebrow">{t("What's inside")}</p>
+      <Heading level={2} class="mx-auto mt-3! max-w-3xl">{t("Europe first, and growing")}</Heading>
+    </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-2">
+      {
+        coverage.map(([title, text, href]) => (
+          <a href={href} class="card p-6">
+            <span class="text-h3 font-semibold">{title}</span>
+            <span class="mt-2 block text-muted-foreground">{text}</span>
+          </a>
+        ))
+      }
+    </div>
+    <p class="mt-6 text-muted-foreground">
+      <T msg={t("See <0>what each country's law asks a website to show</0>, side by side.")} tags={[{ kind: "link", href: pagePath("items", t.locale) }]} />
+    </p>
+  </Section>
+
+  <!-- Principles -->
+  <Section theme="dark">
+    <div class="text-center">
+      <p class="eyebrow">{t("Principles")}</p>
+      <Heading level={2} class="mx-auto mt-3! max-w-3xl">{t("Built to be checked, not trusted")}</Heading>
+    </div>
+    <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      {
+        principles.map(([title, text]) => (
+          <div class="border-t pt-5">
+            <p class="text-lg font-semibold">{title}</p>
+            <p class="mt-2 text-muted-foreground">{text}</p>
+          </div>
+        ))
+      }
+    </div>
+    <p class="mt-10 max-w-3xl text-muted-foreground [&_strong]:text-foreground">
+      <T
+        msg={t("<0>Researchers, not lawyers.</0> legalgraph publishes structured research, not legal advice. Rules are drafts until a lawyer reviews them, and every page says so.")}
+        tags={[{ kind: "strong" }]}
+      />
+    </p>
+  </Section>
+
+  <!-- Audiences -->
+  <Section>
+    <div class="text-center">
+      <p class="eyebrow">{t("Who it's for")}</p>
+      <Heading level={2} class="mx-auto mt-3! max-w-3xl">{t("Use it, cite it, correct it")}</Heading>
+    </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {
+        audiences.map(([title, text, href, action]) => (
+          <a href={href} class="card flex flex-col gap-2 p-6">
+            <span class="text-lg font-semibold">{title}</span>
+            <span class="flex-1 text-muted-foreground">{text}</span>
+            <span class="mt-2 font-medium text-primary">{action} →</span>
+          </a>
+        ))
+      }
+    </div>
+  </Section>
+
+  <!-- Open: contributing, and agents -->
+  <Section theme="muted">
+    <div class="text-center">
+      <p class="eyebrow">{t("Open, and growing")}</p>
+      <Heading level={2} class="mx-auto mt-3! max-w-3xl">{t("A graph anyone can extend")}</Heading>
+    </div>
+    <div class="mt-10 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
+      <div class="card flex flex-col gap-3 p-6">
+        <span class="text-h3 font-semibold">{t("More laws, more countries, more court decisions")}</span>
+        <p class="text-muted-foreground">
+          {t("The graph grows with its contributors. New data follows the graph's shared ontology, or adds the terms it needs, and arrives as a pull request on GitHub, where anyone can also raise an issue.")}
+          {" "}{t("Contributors who make substantial, careful contributions can join the maintainers who review and accept changes.")}
+        </p>
+        <p class="text-muted-foreground">
+          {t("The goal: enough of the law in one open place that a business owner can see which rules matter most for their business. Not legal advice, but awareness, because the law is public and knowing what it asks should be too.")}
+        </p>
+        <div class="mt-auto flex flex-wrap gap-3 pt-2">
+          <Button href={pagePath("blog/how-to-contribute", t.locale)}>{t("How to contribute")}</Button>
+          <Button href={GITHUB_URL} variant="outline">{t("Open on GitHub")}</Button>
+        </div>
+      </div>
+      <div class="card flex flex-col gap-3 p-6">
+        <span class="text-h3 font-semibold">{t("Ready for AI agents")}</span>
+        <p class="text-muted-foreground">
+          {t("An AI agent that reads the graph can tell a business which rules apply, quote the law behind each and link to it, instead of answering from memory: a first round of research that a person can check.")}
+        </p>
+        <a href={pagePath("download", t.locale)} class="mt-auto pt-2 font-medium text-primary">{t("Get the data")} →</a>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Call to action -->
+  <Section theme="brand" space="small">
+    <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+      <div>
+        <Heading level={2}>{t("See what applies to your website")}</Heading>
+        <p class="mt-2 text-muted-foreground">{t("A few questions, then the rules with the law behind each. Nothing leaves your browser.")}</p>
+      </div>
+      <Button href=pagePath("checklist", t.locale) size="lg" variant="solid">{t("Open the checklist")}</Button>
+    </div>
+  </Section>
+</Layout>

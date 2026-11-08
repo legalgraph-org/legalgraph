@@ -1,0 +1,32 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# The roles in which the law addresses someone (lgo:bearer).
+
+lgv:ActorRoles a skos:ConceptScheme ;
+    skos:prefLabel "Actor roles"@en .
+
+lgv:DigitalServiceProvider a lgo:ActorRole ;
+    skos:inScheme lgv:ActorRoles ;
+    skos:prefLabel "Provider of a digital service"@en , "Diensteanbieter"@de ;
+    skos:definition "Whoever offers a website, app or other information society service."@en .
+
+lgv:TelemediaProvider a lgo:ActorRole ;
+    skos:inScheme lgv:ActorRoles ;
+    skos:broader lgv:DigitalServiceProvider ;
+    skos:prefLabel "Provider of telemedia"@en , "Anbieter von Telemedien"@de ;
+    skos:definition "Whoever offers online media, in the terms of the German Interstate Media Treaty."@en .
+
+lgv:Trader a lgo:ActorRole ;
+    skos:inScheme lgv:ActorRoles ;
+    skos:prefLabel "Trader"@en , "Unternehmer"@de ;
+    skos:definition "A person acting for purposes of their trade, business, craft or profession, in dealings with consumers."@en .
+
+lgv:Advertiser a lgo:ActorRole ;
+    skos:inScheme lgv:ActorRoles ;
+    skos:prefLabel "Advertiser"@en ;
+    skos:definition "Whoever sends advertising, for example by email."@en .
+
+lgv:Controller a lgo:ActorRole .
+lgv:Processor a lgo:ActorRole .

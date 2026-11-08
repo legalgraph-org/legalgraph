@@ -1,0 +1,20 @@
+name: Ukrainian online shop with a newsletter
+description: >
+  A Kyiv-based seller (FOP or LLC) with an online shop for consumers in Ukraine and an email
+  newsletter. The e-commerce, state-language, 1991 consumer protection, advertising, e-communications
+  and personal data laws of Ukraine apply — the newsletter needs prior consent under the spam rules,
+  which are in force now. The 2023 consumer law rules stay off until it takes effect
+  (ConsumerLaw2023InForce); the media imprint does not apply to an ordinary shop.
+established_in: UA
+facts:
+  - SellsOnlineInUkraine
+  - ProcessesPersonalData
+  - SendsMarketingEmails
+obligations:
+  - UA-R-seller-information
+  - UA-R-website-in-ukrainian
+  - UA-R-service-information-in-ukrainian
+  - UA-R-ecommerce-information-in-ukrainian
+  - UA-R-pre-contract-information-1991
+  - UA-R-spam-consent
+  - UA-R-privacy-information

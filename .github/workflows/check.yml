@@ -1,0 +1,64 @@
+# Everything a pull request must pass (see CONTRIBUTING.md), on every push and pull request:
+# - graph: law texts against their originals, generated Turtle up to date, graph validation
+#   (syntax, undefined terms, SHACL shapes, English translations), Python lint and tests;
+# - site: the website's translations, unit tests, type check and a full build.
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  graph:
+    name: Graph and Python
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Install
+        run: uv sync --locked
+      - name: Law texts match their originals; generated Turtle is current
+        run: make sources
+      - name: Validate the graph
+        run: make validate
+      - name: Lint (ruff)
+        run: make lint
+      - name: Tests (pytest)
+        run: make test
+
+  site:
+    name: Website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: site/package.json
+      - name: Install
+        run: |
+          uv sync --locked
+          cd site && bun install --frozen-lockfile
+      - name: Generate the site's data from the graph
+        run: uv run legalgraph generate-site --data-only
+      - name: Translations complete (i18n-check)
+        run: make i18n-check
+      - name: Unit tests (vitest)
+        run: cd site && bun run test
+      - name: Type check (astro check)
+        run: cd site && bun run check
+      - name: Build
+        run: cd site && bun run build

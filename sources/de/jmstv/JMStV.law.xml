@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Jugendmedienschutz-Staatsvertrag (JMStV), § 5 Abs. 1 and § 7 Abs. 1-2, written in schemas/law.xsd from
+  the portal's fragments. The words are the portal's; only the structure is ours. Sentence numbers are
+  superscripts on the portal and are left out here.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-JMStV" lga:jurisdiction="DE" lga:act-type="StateTreaty"
+     lga:url="https://www.gesetze-bayern.de/Content/Document/JMStV">
+  <meta>
+    <title>Jugendmedienschutz-Staatsvertrag</title>
+    <short>JMStV</short>
+  </meta>
+
+  <section num="§ 5" title="Entwicklungsbeeinträchtigende Angebote" source="JMStV-5.fragment.html">
+    <paragraph num="(1)"
+               lga:provision="DE-JMStV-s5-1" lga:citation="§ 5 Abs. 1 JMStV"
+               lga:url="https://www.gesetze-bayern.de/Content/Document/JMStV-5"
+               lga:regulates="YouthProtection">Sofern Anbieter Angebote, die geeignet sind, die Entwicklung von Kindern oder Jugendlichen zu einer eigenverantwortlichen und gemeinschaftsfähigen Persönlichkeit zu beeinträchtigen, verbreiten oder zugänglich machen, haben sie dafür Sorge zu tragen, dass Kinder oder Jugendliche der betroffenen Altersstufen sie üblicherweise nicht wahrnehmen. Bei der Beurteilung der Entwicklungsbeeinträchtigung können auch außerhalb der medieninhaltlichen Wirkung liegende Umstände der jeweiligen Nutzung des Mediums berücksichtigt werden, wenn diese auf Dauer angelegter Bestandteil des Mediums sind und eine abweichende Gesamtbeurteilung rechtfertigen; hierzu zählen insbesondere nach konkreter Gefahrenprognose als erheblich einzustufende Risiken für die persönliche Integrität von Kindern und Jugendlichen, insbesondere Risiken durch Kommunikations- und Kontaktfunktionen, durch Kauffunktionen, durch glücksspielähnliche Mechanismen, durch Mechanismen zur Förderung eines exzessiven Mediennutzungsverhaltens, durch die Weitergabe von Bestands- und Nutzungsdaten ohne Einwilligung an Dritte sowie durch nicht altersgerechte Kaufappelle insbesondere durch werbende Verweise auf andere Medien. Die Altersstufen sind:
+      <list>
+        <item num="1.">ohne Altersbeschränkung,</item>
+        <item num="2.">ab 6 Jahren,</item>
+        <item num="3.">ab 12 Jahren,</item>
+        <item num="4.">ab 16 Jahren,</item>
+        <item num="5.">ab 18 Jahren.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="§ 7" title="Jugendschutzbeauftragte" source="JMStV-7.fragment.html">
+    <paragraph num="(1)"
+               lga:provision="DE-JMStV-s7-1" lga:citation="§ 7 Abs. 1 JMStV"
+               lga:url="https://www.gesetze-bayern.de/Content/Document/JMStV-7"
+               lga:regulates="ProviderIdentification" lga:requires="YouthProtectionOfficer">Wer länderübergreifendes zulassungspflichtiges Fernsehen veranstaltet, hat einen Jugendschutzbeauftragten zu bestellen. Gleiches gilt für geschäftsmäßige Anbieter von zulassungsfreien Fernsehangeboten nach § 54 des Medienstaatsvertrages oder allgemein zugänglichen Telemedien, wenn die Angebote entwicklungsbeeinträchtigende oder jugendgefährdende Inhalte enthalten. Der Anbieter hat wesentliche Informationen über den Jugendschutzbeauftragten leicht erkennbar, unmittelbar erreichbar und ständig verfügbar zu halten. Sie müssen insbesondere Namen und Daten enthalten, die eine schnelle elektronische Kontaktaufnahme ermöglichen.</paragraph>
+    <paragraph num="(2)"
+               lga:provision="DE-JMStV-s7-2" lga:citation="§ 7 Abs. 2 JMStV"
+               lga:url="https://www.gesetze-bayern.de/Content/Document/JMStV-7"
+               lga:regulates="YouthProtection">Anbieter von Telemedien mit weniger als 50 Mitarbeitern oder nachweislich weniger als zehn Millionen Zugriffen im Monatsdurchschnitt eines Jahres sowie Veranstalter, die nicht bundesweit verbreitetes Fernsehen veranstalten, können auf die Bestellung verzichten, wenn sie sich einer Einrichtung der Freiwilligen Selbstkontrolle anschließen und diese zur Wahrnehmung der Aufgaben des Jugendschutzbeauftragten verpflichten sowie entsprechend Absatz 3 beteiligen und informieren.</paragraph>
+  </section>
+</law>

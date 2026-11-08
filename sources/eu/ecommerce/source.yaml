@@ -1,0 +1,63 @@
+# e-Commerce Directive (2000/31/EC), consolidated version from Cellar (Formex 4); Articles 12 to 15 were
+# deleted by the Digital Services Act. The Official Journal text of 2000 has no XML; its HTML
+# from Cellar is the authentic reference (the PDF's two columns do not extract reliably).
+# The consolidated text is a documentation tool: `legalgraph sources verify` proves every line of a quoted
+# provision reads as in the authentic Official Journal text, or occurs word for word in an amending act
+# that lists its place (`amends`: only the places of the quoted provisions). English is annotated;
+# German is a parallel language version.
+id: eu/ecommerce
+title: e-Commerce Directive (2000/31/EC), consolidated version of 17 February 2024
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2000L0031EN0010010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217
+    url: https://publications.europa.eu/resource/celex/02000L0031-20240217
+    fetch: zip-member
+    member: CL2000L0031EN0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 17 February 2024, prepared by the Publications Office as a documentation tool. The authentic texts are Directive 2000/31/EC (OJ L 178, 17.7.2000) and its amending acts; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: 0eb1499632a61338ef6248e1bd60ce91613dda64f58f8bcd80b09752f4e11744
+  - file: CL2000L0031DE0010010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217
+    url: https://publications.europa.eu/resource/celex/02000L0031-20240217
+    fetch: zip-member
+    member: CL2000L0031DE0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: 93b1c30bb12fdfd0fa75a47fd7ad6a98c130059c665934e7b054d87552342b96
+  - file: OJ-L-178-2000-en.html
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 178, 17.7.2000, p. 1 (HTML)"
+    url: http://publications.europa.eu/resource/cellar/b244164f-dd29-48e9-9063-a86ef4ea7ad9.0005.01/DOC_1
+    fetch: file
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: ace6f4c0e50a12845be213ad6094ce38f06a5dd2784fdf07b91b7d2e19f0eaaf
+  - file: OJ-L-178-2000-de.html
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 178 vom 17.7.2000, S. 1 (HTML)"
+    url: http://publications.europa.eu/resource/cellar/b244164f-dd29-48e9-9063-a86ef4ea7ad9.0003.01/DOC_1
+    fetch: file
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 69256129430b32a55608b14c057f95953e85fbeb125cab11e431bbdd04fa01e6
+annotated: CL2000L0031EN0010010.0001.annotated.xml

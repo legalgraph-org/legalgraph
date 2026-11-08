@@ -1,0 +1,31 @@
+name: Small German shop that takes part in consumer arbitration
+description: >
+  A sole trader with five employees selling to consumers, who has agreed to take part in proceedings
+  before the Universalschlichtungsstelle. Small businesses are exempt from the statement of § 36(1)
+  no. 1 VSBG, but once they take part they must name the arbitration board. As a
+  microenterprise it is also exempt from the accessibility requirements of the BFSG.
+established_in: DE
+facts:
+  - CommercialDigitalService
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - Microenterprise
+  - TenOrFewerEmployees
+  - TakesPartInConsumerDisputeResolution
+  - ProcessesPersonalData
+obligations:
+  - DE-R-impressum
+  - DE-R-telemedia-identification
+  - DE-R-dispute-resolution-body
+  - DE-R-pre-contract-information
+  - DE-R-checkout-summary
+  - DE-R-withdrawal-function
+  - DE-R-total-price
+  - EU-R-geo-blocking
+  - EU-R-privacy-information
+  - EU-R-lawful-basis
+  - DE-R-unfair-terms
+  - DE-R-contract-terms-storable
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation

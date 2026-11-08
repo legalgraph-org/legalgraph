@@ -1,0 +1,34 @@
+name: UK online shop with reviews and a customer forum
+description: >
+  A UK company selling to consumers online, with product reviews and a customer community forum
+  that children might use. It shows prices and uses only strictly necessary cookies.
+established_in: GB
+facts:
+  - UkCompany
+  - CommercialDigitalService
+  - RegisteredInPublicRegister
+  - SellsToUkConsumers
+  - SellsOnlineToConsumers
+  - PublishesConsumerReviews
+  - RegulatedUserToUserService
+  - LikelyAccessedByChildren
+  - ProcessesPersonalData
+obligations:
+  - GB-R-company-website-disclosures
+  - GB-R-website-information
+  - GB-R-website-information-register
+  - GB-R-prices
+  - GB-R-ordering-information
+  - GB-R-pre-contract-information
+  - GB-R-order-button
+  - GB-R-no-pre-ticked-extras
+  - GB-R-material-information
+  - GB-R-fake-reviews
+  - GB-R-privacy-information
+  - GB-R-online-safety-illegal-content
+  - GB-R-online-safety-children
+  - GB-R-unfair-terms
+  - GB-R-lawful-basis
+  - GB-R-privacy-by-design
+  - GB-R-processing-record
+  - GB-R-storage-limitation

@@ -1,0 +1,43 @@
+# Закон України «Про захист прав споживачів» (No. 1023-XII of 1991): the consumer law in force until the 2023
+# act (ua/consumer-rights) takes effect. Published by the Verkhovna Rada on zakon.rada.gov.ua as HTML only. The
+# fragment holding the law text (div#article) is kept; the articles the graph uses are transcribed in
+# schemas/law.xsd and checked word for word against it. Article 13 covers distance contracts: pre-contract
+# information (part 2) and the 14-day right to terminate (part 4). The portal blocks quick successive requests
+# and foreign traffic: `pause` spaces out downloads, which may need a Ukrainian network — or save the page by
+# hand and run `legalgraph sources fetch --saved <file>`. The English original is the Rada's official
+# translation for information (last modified 12.05.2021); `verify` refuses provisions the portal's own notes
+# show as amended after that (part 2's item 7 was rewritten in 2022, so it gets a machine translation instead).
+id: ua/consumer-rights-1991
+title: Закон України «Про захист прав споживачів» (No. 1023-XII)
+jurisdiction: UA
+language: uk
+publisher: Verkhovna Rada of Ukraine, zakon.rada.gov.ua
+kind: authored-xml
+licence: official-work
+licence_basis: "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright"
+originals:
+  - file: 1023-12.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/1023-12/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: ad572d072a0acfa7dbffb5979f3a986bda14276b6c3019248282e2750c64e8e0
+  - file: 1023-12-en.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/en/1023-12/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    role: parallel
+    language: en
+    authentic: false
+    annotated: consumer-rights-1991.en.law.xml
+    as_of: 2021-05-12
+    notes: ["official translation published for information; last modified 2021-05-12, before later amendments"]
+    retrieved_on: 2026-11-02
+    sha256: 0bf43209500d129eb1a6dcab6a7831956d02f18e227e461b0d95f8ac009f1374
+annotated: consumer-rights-1991.law.xml

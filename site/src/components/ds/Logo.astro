@@ -1,0 +1,24 @@
+---
+// The legalgraph mark (three linked nodes: a provision, the law it comes from, what it requires)
+// on the brand gradient, and the wordmark in the colours of the theme around it.
+interface Props {
+  href: string;
+  /** Accessible name of the link. */
+  label: string;
+  class?: string;
+}
+
+const { href, label, class: extra } = Astro.props;
+---
+
+<a href={href} aria-label={label} class:list={["no-underline flex items-center gap-2", extra]}>
+  <span aria-hidden="true" class="grid size-7 place-items-center rounded-[7px]" style="background: var(--gradient-brand)">
+    <svg width="20" height="20" viewBox="0 0 20 20">
+      <path d="M4.5 15 10 4.5 15.5 15H4.5" fill="none" stroke="white" stroke-width="1.6" stroke-linejoin="round" />
+      <circle cx="10" cy="4.5" r="2.4" fill="white" />
+      <circle cx="4.5" cy="15" r="2.4" fill="white" />
+      <circle cx="15.5" cy="15" r="2.4" fill="white" />
+    </svg>
+  </span>
+  <span class="text-lg font-semibold tracking-tight text-foreground">legalgraph</span>
+</a>

@@ -1,0 +1,92 @@
+---
+// The home page's worked example as a small diagram: the rule, the provision it comes from, the law,
+// the information item it requires and where that item is defined, and the EU article behind it with
+// the Austrian and French provisions that implement it. Drawn at fixed positions so every label is
+// readable; nodes and edges come from the graph, so the diagram cannot say what the graph does not.
+// Hovering an element with data-example-nodes (the cards next to it) lights up its nodes; clicking a
+// node opens its page.
+import graphData from "../data/graph.json";
+import type { Translate } from "../i18n/t";
+import { graphPath } from "../lib/links";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+const positions: Record<string, { x: number; y: number }> = {
+  "DE-R-impressum-vat": { x: 0, y: -30 },
+  "EU-R-service-provider-information-vat": { x: 400, y: -30 },
+  "DE-DDG-s5-1": { x: 0, y: 140 },
+  "EU-2000-31-art5-1": { x: 400, y: 140 },
+  "DE-DDG": { x: 0, y: 290 },
+  VatId: { x: 200, y: 250 },
+  "DE-UStG-s27a-1": { x: 200, y: 390 },
+  "AT-ECG-s5-1": { x: 320, y: 330 },
+  "FR-LCEN-art19-1": { x: 490, y: 330 },
+};
+const ids = new Set(Object.keys(positions));
+// Austria and France are here to show the same article at work elsewhere; that they too require the
+// VAT number would only cross the lines of the German trail.
+const skipped = new Set(["AT-ECG-s5-1|requires|VatId", "FR-LCEN-art19-1|requires|VatId"]);
+const edgeLabels: Record<string, string> = {
+  requires: t("requires"),
+  implements: t("implements"),
+  "established by": t("established by"),
+  "part of": t("part of"),
+  defines: t("defines"),
+};
+const nodes = graphData.nodes.filter((node) => ids.has(node.id));
+const edges = graphData.edges
+  .filter((edge) => ids.has(edge.source) && ids.has(edge.target) && !skipped.has(`${edge.source}|${edge.label}|${edge.target}`))
+  .map((edge) => ({ ...edge, label: edgeLabels[edge.label] ?? edge.label }));
+const diagram = JSON.stringify({ nodes, edges, positions });
+---
+
+<figure class="card example-graph-card flex flex-col p-0">
+  <figcaption class="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-border px-4 py-2 text-sm">
+    <span class="text-muted-foreground">{t("The trail in the graph · click a node to open it")}</span>
+    <a href={graphPath("DE-R-impressum-vat", t.locale)}>{t("Explore the full graph →")}</a>
+  </figcaption>
+  <div class="example-graph h-80 sm:h-[26rem] xl:h-auto xl:min-h-[26rem] xl:flex-1" data-diagram={diagram} role="img" aria-label={t("Diagram of the example: the rule, § 5 DDG, the VAT identification number, and Article 5 of the e-Commerce Directive with the Austrian and French provisions that implement it.")}></div>
+</figure>
+
+<script>
+  import { GraphData, mountGraph, nodeHref, type GraphEdge, type GraphNode } from "../scripts/graph-view";
+
+  for (const container of document.querySelectorAll<HTMLElement>(".example-graph")) {
+    const { nodes, edges, positions } = JSON.parse(container.dataset.diagram!) as {
+      nodes: GraphNode[];
+      edges: GraphEdge[];
+      positions: Record<string, { x: number; y: number }>;
+    };
+    const data = new GraphData(nodes, edges);
+    const cy = mountGraph(container, { data, ids: new Set(Object.keys(positions)), positions, compact: true, annotated: true });
+    // Part of the page, not a map to explore: scrolling over it scrolls the page.
+    cy.userZoomingEnabled(false);
+    cy.userPanningEnabled(false);
+    cy.boxSelectionEnabled(false);
+    cy.on("tap", "node", (event) => {
+      const node = data.nodes.get(event.target.id());
+      if (node) window.location.href = nodeHref(node);
+    });
+    new ResizeObserver(() => cy.fit(undefined, 24)).observe(container);
+
+    const light = (ids: string[]) => {
+      cy.nodes().removeClass("focus");
+      cy.edges().removeClass("highlight");
+      const lit = cy.nodes().filter((node) => ids.includes(node.id()));
+      lit.addClass("focus");
+      lit.connectedEdges().addClass("highlight");
+    };
+    const section = container.closest("section") ?? document;
+    for (const element of section.querySelectorAll<HTMLElement>("[data-example-nodes]")) {
+      const ids = element.dataset.exampleNodes!.split(" ");
+      element.addEventListener("mouseenter", () => light(ids));
+      element.addEventListener("mouseleave", () => light([]));
+      element.addEventListener("focusin", () => light(ids));
+      element.addEventListener("focusout", () => light([]));
+    }
+  }
+</script>

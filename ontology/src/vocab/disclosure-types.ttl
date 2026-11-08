@@ -1,0 +1,76 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Kinds of disclosure a provision can regulate (lgo:regulates).
+
+lgv:DisclosureTypes a skos:ConceptScheme ;
+    skos:prefLabel "Disclosure types"@en .
+
+lgv:ProviderIdentification a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Provider identification notice"@en ;
+    skos:altLabel "Impressum"@de , "Imprint"@en , "Legal notice"@en , "Mentions légales"@fr , "Aviso legal"@es , "Note legali"@it ;
+    skos:definition "Who runs a website or online service and how to reach them: name, address, electronic contact and, depending on the business, register, VAT, supervisory and professional details. Required for information society services by Article 5 of the EU e-Commerce Directive and by national law beyond the EU."@en .
+
+lgv:EditorialResponsibility a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:broader lgv:ProviderIdentification ;
+    skos:prefLabel "Editorial responsibility statement"@en ;
+    skos:altLabel "Verantwortlicher nach § 18 Abs. 2 MStV"@de , "V.i.S.d.P."@de , "Directeur de la publication"@fr ;
+    skos:definition "The person responsible for journalistic or editorial content, named in addition to the provider."@en .
+
+lgv:CommercialCommunication a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Commercial communication transparency"@en ;
+    skos:definition "Advertising must be recognisable as such and name who it is made for; promotions and competitions must state their conditions."@en .
+
+lgv:ConsumerDisputeResolution a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Consumer dispute resolution notice"@en ;
+    skos:altLabel "Verbraucherstreitbeilegung"@de ;
+    skos:definition "Whether the business takes part in out-of-court consumer dispute resolution and, if so, before which body."@en .
+
+lgv:PriceTransparency a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Price transparency"@en ;
+    skos:definition "Where prices are shown, whether they include tax and delivery costs."@en .
+
+lgv:PrivacyInformation a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Privacy information"@en ;
+    skos:altLabel "Privacy notice"@en , "Privacy policy"@en , "Datenschutzerklärung"@de , "Datenschutzhinweise"@de , "Politique de confidentialité"@fr ;
+    skos:definition "What a controller must tell people about the processing of their personal data: who processes it, for what purposes and on which legal basis, who receives it, how long it is kept and which rights they have. Required by Articles 12 to 14 of the GDPR; on a website usually a privacy policy page."@en .
+
+lgv:PreContractInformation a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Pre-contractual information for consumers"@en ;
+    skos:altLabel "Vorvertragliche Informationen"@de , "Shop information"@en ;
+    skos:definition "What a trader must tell consumers before a distance contract: the product, who sells it, the total price and costs, delivery and payment, the legal guarantee and the right of withdrawal (Article 6 Consumer Rights Directive; Art. 246a EGBGB)."@en .
+
+lgv:AccessibilityInformation a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Accessibility information"@en ;
+    skos:altLabel "Barrierefreiheitserklärung"@de , "Accessibility statement"@en ;
+    skos:definition "How a service meets the accessibility requirements, made available to the public in an accessible form (Annex V European Accessibility Act; § 14 BFSG with Annex 3)."@en .
+
+lgv:AiTransparency a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "AI transparency"@en ;
+    skos:definition "Telling people that they are interacting with an AI system, or that content was generated or manipulated by AI (Article 50 AI Act)."@en .
+
+lgv:ProductSafetyInformation a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Product safety information in online offers"@en ;
+    skos:definition "Who made the product and who is responsible for it in the EU, how to identify it, and its warnings and safety information, shown with every online offer (Article 19 GPSR, since 13 December 2024)."@en .
+
+lgv:PoliticalAdvertisingTransparency a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Political advertising transparency"@en ;
+    skos:definition "A label on each political advertisement with its sponsor, the election or process it concerns and a transparency notice (Regulation (EU) 2024/900, since 10 October 2025)."@en .
+
+lgv:ContractConfirmation a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:prefLabel "Confirmation of the contract"@en ;
+    skos:altLabel "Auftragsbestätigung"@de , "Contract copy"@en ;
+    skos:definition "The written record of the concluded contract a consumer must receive — the confirmation of an order or a copy of the agreement delivered within the required period (Article 11 e-Commerce Directive; Ontario CPA s. 39)."@en .

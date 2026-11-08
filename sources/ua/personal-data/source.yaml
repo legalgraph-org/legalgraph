@@ -1,0 +1,23 @@
+# Закон України «Про захист персональних даних» (No. 2297-VI): published by the Verkhovna Rada on zakon.rada.gov.ua as HTML only. The fragment holding the
+# law text (div#article) is kept; the articles the graph uses are transcribed in schemas/law.xsd and
+# checked word for word against it. Article 12 is the duty to inform people when their data is collected. The portal blocks quick successive requests and
+# foreign traffic: `pause` spaces out downloads, which may need a Ukrainian network.
+id: ua/personal-data
+title: Закон України «Про захист персональних даних» (No. 2297-VI)
+jurisdiction: UA
+language: uk
+publisher: Verkhovna Rada of Ukraine, zakon.rada.gov.ua
+kind: authored-xml
+licence: official-work
+licence_basis: "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright"
+originals:
+  - file: 2297-17.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/2297-17/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 292611801c2bc24ca528fc13c904f5e7627bfd4365c81a8ec7ec044722c5eb1b
+annotated: personal-data.law.xml

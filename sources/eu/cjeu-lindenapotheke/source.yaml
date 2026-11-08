@@ -1,0 +1,42 @@
+# Judgment of the Court of Justice of the EU, Case C-21/23 (Lindenapotheke), 4 October 2024:
+# competitors may invoke GDPR breaches against each other under national unfair-competition
+# law — the GDPR does not exclude civil actions by competitors. This is the ruling behind the
+# "a German Abmahnung can enforce privacy duties" claim. ECLI:EU:C:2024:846. The language of
+# the case is German; English is the Court's translation, annotated for its operative part.
+id: eu/cjeu-lindenapotheke
+title: Judgment in Case C-21/23, Lindenapotheke
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: official-work
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: ECR_62023CJ0021_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62023CJ0021
+    url: https://publications.europa.eu/resource/celex/62023CJ0021
+    fetch: zip-member
+    member: ECR_62023CJ0021_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-04
+    sha256: 2f23219936e5c06eb76deb049589af063f34c5937ae42640460d40b2632ea5cd
+  - file: ECR_62023CJ0021_DE_01.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62023CJ0021
+    url: https://publications.europa.eu/resource/celex/62023CJ0021
+    fetch: zip-member
+    member: ECR_62023CJ0021_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-04
+    sha256: 13bef2a9eabe0cb2da23591d294e4906eb7d262fce0da9f521870b750a57808a
+annotated: ECR_62023CJ0021_EN_01.annotated.xml

@@ -1,0 +1,36 @@
+# CNIL délibération SAN-2025-004 du 1er septembre 2025 (restricted committee): ads displayed
+# between Gmail messages without consent (art. L. 34-5 CPCE) and trackers set at Google-account
+# creation without valid consent (loi 78-17 art. 82, read with the GDPR). Two fines totalling
+# €325m — Google LLC €200m, Google Ireland Limited €125m — plus an injunction. The French
+# decision is on legifrance (CNILTEXT000052182222, (stored here); the CNIL's own English
+# courtesy translation is stored here as a non-authentic version — the French text prevails.
+id: fr/cnil-san-2025-004
+title: CNIL délibération SAN-2025-004 du 1er septembre 2025 (Google)
+jurisdiction: FR
+language: fr
+publisher: Commission nationale de l'informatique et des libertés
+kind: authored-xml
+licence: licence-ouverte-2.0
+licence_basis: "CNIL site content is published under Licence Ouverte 2.0 (cnil.fr legal notice); the courtesy translation bears the same notice"
+originals:
+  - file: cnil_sanction_google_en.pdf
+    role: parallel
+    language: en
+    annotated: cnil-san-2025-004.en.law.xml
+    page: https://www.cnil.fr/fr/publicites-inserees-entre-les-courriels-et-cookies-la-cnil-sanctionne-google-dune-amende-de-325
+    url: https://www.cnil.fr/sites/default/files/2025-09/cnil_sanction_google_en.pdf
+    fetch: file
+    media_type: application/pdf
+    authentic: false
+    notes:
+      - "Courtesy translation of the French decision; the French version (legifrance CNILTEXT000052182222) prevails."
+    retrieved_on: 2026-11-03
+    sha256: 83ddfa42f7d9c1e9a335ade60b9956d4b7659d8c2b9e78f2eb35224b81466eb7
+  - file: san-2025-004.fragment.html
+    url: https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000052182222/
+    fetch: html-fragment
+    selector: ".cnil"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: aca9a62226b0b36aab7e03355a14707033272e9909cb362f85d4ad86aceb0ad0
+annotated: cnil-san-2025-004.law.xml

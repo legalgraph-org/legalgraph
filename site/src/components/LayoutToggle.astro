@@ -1,0 +1,53 @@
+---
+// Side by side / stacked switch for original-and-English pairs (.pair blocks). The choice applies to
+// every pair on the page and is remembered between pages.
+---
+
+<div class="flex gap-1 text-xs" role="group" aria-label="Layout of original and English">
+  <button type="button" data-layout="side" class="control">Side by side</button>
+  <button type="button" data-layout="stacked" class="control">Stacked</button>
+</div>
+
+<style is:global>
+  .pair-heads,
+  .pair-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25rem 1.5rem;
+  }
+  .pair-row {
+    padding: 0.35rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .pair-row > :nth-child(2) {
+    border-left: 3px solid color-mix(in oklab, var(--primary) 30%, var(--background));
+    padding-left: 0.75rem;
+  }
+  @media (min-width: 48rem) {
+    [data-view="side"] .pair-heads,
+    [data-view="side"] .pair-row {
+      grid-template-columns: 1fr 1fr;
+    }
+    [data-view="side"] .pair-row > :nth-child(2) {
+      border-left: 0;
+      padding-left: 0;
+    }
+  }
+</style>
+
+<script>
+  const KEY = "mlg-pair-layout";
+  const apply = (layout: string) => {
+    document.querySelectorAll<HTMLElement>(".pair").forEach((pair) => (pair.dataset.view = layout));
+    document
+      .querySelectorAll<HTMLButtonElement>("[data-layout]")
+      .forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.layout === layout)));
+  };
+  apply(localStorage.getItem(KEY) ?? "side");
+  document.querySelectorAll<HTMLButtonElement>("[data-layout]").forEach((button) =>
+    button.addEventListener("click", () => {
+      localStorage.setItem(KEY, button.dataset.layout!);
+      apply(button.dataset.layout!);
+    }),
+  );
+</script>

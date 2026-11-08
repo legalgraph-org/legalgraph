@@ -1,0 +1,30 @@
+name: Swiss online shop using a US analytics tool
+description: >
+  An AG established in Switzerland selling to customers in Switzerland and the EU, with US-based
+  analytics behind a consent banner. The Swiss Data Protection Act applies; so does the GDPR, because
+  it offers goods to people in the EU (and it would need an EU representative).
+established_in: CH
+markets: [EU]
+facts:
+  - EngagesProcessors
+  - ProcessesPersonalData
+  - TransfersOutsideSwitzerland
+  - NonEssentialDeviceAccess
+  - TransfersOutsideEEA
+obligations:
+  - CH-R-privacy-information
+  - CH-R-privacy-information-abroad
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-privacy-information-transfers
+  - EU-R-privacy-information-representative
+  - EU-R-lawful-basis
+  - EU-R-consent-conditions
+  - EU-R-representative
+  - EU-R-consent-separate
+  - EU-R-consent-no-tying
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
+  - EU-R-consent-specific

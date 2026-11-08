@@ -1,0 +1,25 @@
+# Codice in materia di protezione dei dati personali (D.Lgs. 196/2003), Art. 122: the Italian
+# cookie rule, implementing Article 5(3) ePrivacy. Normattiva serves the consolidated text as
+# HTML only; the fragment holding Article 122 is kept and the text is transcribed in
+# schemas/law.xsd, checked word for word against it. Comma 1 (informed consent and the technical
+# exceptions), comma 2 (consent may be given through browser or device settings) and comma 2-bis
+# (the prohibition on accessing stored information) are all in force.
+id: it/privacy-code
+title: Decreto legislativo 196/2003, Codice in materia di protezione dei dati personali
+jurisdiction: IT
+language: it
+publisher: Normattiva, Presidenza del Consiglio dei Ministri
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 5 Legge 633/1941: the texts of official acts of the State are not protected by copyright"
+originals:
+  - file: d196-2003-art122.fragment.html
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196~art122"
+    fetch: html-fragment
+    selector: ".bodyTesto"
+    media_type: text/html
+    notes:
+      - "Normattiva's consolidated text of Art. 122, updated for the amendments by D.Lgs. 101/2018 (commas 1, 2 and 2-bis). The text contains editorial placeholder markup '((…))' where the comma's wording refers to the Garante's criteria."
+    retrieved_on: 2026-11-02
+    sha256: c9a417a60bb022af8fc660d6c01d589f975161f3627316e24c0a860563c0db4e
+annotated: privacy-code.law.xml

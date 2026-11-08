@@ -1,0 +1,20 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Kinds of norm an obligation states (lgo:deonticType), after the LKIF norm module.
+
+lgv:DeonticTypes a skos:ConceptScheme ;
+    skos:prefLabel "Deontic types"@en .
+
+lgv:Must a skos:Concept ;
+    skos:inScheme lgv:DeonticTypes ;
+    skos:prefLabel "Obligation (must)"@en .
+
+lgv:MustNot a skos:Concept ;
+    skos:inScheme lgv:DeonticTypes ;
+    skos:prefLabel "Prohibition (must not)"@en .
+
+lgv:May a skos:Concept ;
+    skos:inScheme lgv:DeonticTypes ;
+    skos:prefLabel "Permission (may)"@en .

@@ -1,0 +1,23 @@
+---
+// A section's heading on a long page (method, downloads): the h2 in a card with a gradient frame,
+// led by a small badge that names the section (a step number, a format, a symbol); the styles are
+// in styles/patterns.css, shared with the articles' headings. The badge is decoration, outside the
+// h2, so the table of contents reads the heading's text alone. `featured`
+// fills the frame, for the section to read first. A page may add to it (the downloads page hangs
+// each one off a rail).
+interface Props {
+  id: string;
+  badge: string;
+  featured?: boolean;
+  class?: string;
+}
+
+const { id, badge, featured = false, class: extra } = Astro.props;
+---
+
+<header class:list={["section-head", featured && "is-featured", extra]}>
+  <span class="section-badge" aria-hidden="true">{badge}</span>
+  <h2 id={id} class="m-0! text-h3 leading-tight font-bold text-foreground">
+    <slot />
+  </h2>
+</header>

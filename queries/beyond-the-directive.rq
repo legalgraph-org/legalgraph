@@ -1,0 +1,17 @@
+# Information items a national provision requires beyond Article 5(1) of the e-Commerce
+# Directive it implements: where national Impressum law asks for more than the EU baseline.
+PREFIX lgo:  <https://legalgraph.org/ontology#>
+PREFIX eli:  <http://data.europa.eu/eli/ontology#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?jurisdiction ?citation ?item
+WHERE {
+    ?provision lgo:implements ?eu ;
+        lgo:citation ?citation ;
+        lgo:requiresDisclosureOf ?concept ;
+        eli:is_part_of/lgo:jurisdiction/lgo:isoCode ?jurisdiction .
+    FILTER NOT EXISTS { ?eu lgo:requiresDisclosureOf ?concept }
+    ?concept skos:prefLabel ?item .
+    FILTER (LANG(?item) = "en")
+}
+ORDER BY ?jurisdiction ?citation ?item

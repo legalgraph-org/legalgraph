@@ -1,0 +1,35 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# IT: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:IT-DLGS-70-2003 a lgo:LegalAct ;
+    eli:title "Decreto legislativo 9 aprile 2003, n. 70"@it , "Legislative Decree No. 70/2003 on electronic commerce"@en ;
+    lgo:shortName "D.Lgs. 70/2003" ;
+    lgo:actType lgv:Decree ;
+    lgo:jurisdiction lg:IT ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-09;70"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-DLGS-70-2003-art7 a lgo:Provision ;
+    eli:is_part_of lg:IT-DLGS-70-2003 ;
+    lgo:citation "Art. 7 D.Lgs. 70/2003" ;
+    lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-09;70"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-196-2003 a lgo:LegalAct ;
+    eli:title "Codice in materia di protezione dei dati personali"@it , "Personal Data Protection Code"@en ;
+    lgo:shortName "Codice privacy" ;
+    lgo:actType lgv:Decree ;
+    lgo:jurisdiction lg:IT ;
+    eli:date_document "2003-06-30"^^xsd:date ;
+    lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Article 122 is the Italian cookie rule: informed consent for storage and access on terminal equipment, consent may come through browser or device settings (comma 2), and accessing stored information is otherwise prohibited (2-bis). The Garante's 2021 cookie guidelines apply it."@en .

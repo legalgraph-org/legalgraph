@@ -1,0 +1,42 @@
+# Judgment of the Court of Justice of the EU, Case C-40/17 (Fashion ID): official XML (Formex 4) of the
+# European Court Reports from the Publications Office. The language of the case, German, is the
+# authentic version; the other language versions are translations made by the Court. The English
+# text is annotated (its operative part: the rulings, which bind national courts on how EU law is
+# to be read); German is kept as a parallel version.
+id: eu/cjeu-fashion-id
+title: Judgment in Case C-40/17, Fashion ID
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62017CJ0040_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62017CJ0040
+    url: https://publications.europa.eu/resource/celex/62017CJ0040
+    fetch: zip-member
+    member: ECR_62017CJ0040_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-02
+    sha256: 5f96bc8717bd944d5e07eb6a1835e9e788decf21cf888b824789cd5b05731dfe
+  - file: ECR_62017CJ0040_DE_01.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62017CJ0040
+    url: https://publications.europa.eu/resource/celex/62017CJ0040
+    fetch: zip-member
+    member: ECR_62017CJ0040_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 1e72605b1cdd201dd04deb16a35e14e75d9731c7a3953f71d8b79aae0c86d9d3
+annotated: ECR_62017CJ0040_EN_01.annotated.xml

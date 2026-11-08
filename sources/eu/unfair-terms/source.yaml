@@ -1,0 +1,42 @@
+# Council Directive 93/13/EEC on unfair terms in consumer contracts, consolidated version
+# applying from 28 May 2022 (the 2019/2161 modernisation), from the Publications Office
+# (Formex 4). Article 3 defines the unfair term that is not binding on the consumer, Article 4(2)
+# the core-terms exemption, Article 5 the plain-language rule; the Annex is the indicative grey
+# list. The consolidated text is a documentation tool: the authentic texts are the OJ
+# publications. English is annotated; German is a parallel language version.
+id: eu/unfair-terms
+title: Council Directive 93/13/EEC on unfair terms in consumer contracts, consolidated version of 28 May 2022
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL1993L0013EN0020010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01993L0013-20220528
+    url: https://publications.europa.eu/resource/celex/01993L0013-20220528
+    fetch: zip-member
+    member: CL1993L0013EN0020010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text, prepared by the Publications Office as a documentation tool. The authentic texts are the OJ publications of the act and its amending acts."
+    retrieved_on: 2026-11-02
+    sha256: 4e71c05514ca0e717be84998ed6f1598d0cac5434188b82ea014ccf3239dfca5
+  - file: CL1993L0013DE0020010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01993L0013-20220528
+    url: https://publications.europa.eu/resource/celex/01993L0013-20220528
+    fetch: zip-member
+    member: CL1993L0013DE0020010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: cfa276e716414319fc64bd8255a27fa45eb17de7fc0acdbc1892ddab300203d4
+annotated: CL1993L0013EN0020010.0001.annotated.xml

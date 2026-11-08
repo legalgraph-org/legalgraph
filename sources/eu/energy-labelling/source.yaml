@@ -1,0 +1,69 @@
+# Energy Labelling Regulation ((EU) 2017/1369), consolidated version from Cellar (Formex 4).
+# The consolidated text is a documentation tool: `legalgraph sources verify` proves every line of a quoted
+# provision reads as in the authentic Official Journal text, or occurs word for word in an amending act
+# that lists its place (`amends`: only the places of the quoted provisions). English is annotated;
+# German is a parallel language version.
+id: eu/energy-labelling
+title: Energy Labelling Regulation ((EU) 2017/1369), consolidated version of 1 May 2021
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2017R1369EN0010010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017R1369-20210501
+    url: https://publications.europa.eu/resource/celex/02017R1369-20210501
+    fetch: zip-member
+    member: CL2017R1369EN0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 1 May 2021, prepared by the Publications Office as a documentation tool. The authentic texts are Regulation (EU) 2017/1369 (OJ L 198, 28.7.2017) and its amending acts; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: a7e7fd1b189b56fbdd91d9deb4aea76cc42954ea8c1e1d41df7e3948ef324e33
+  - file: CL2017R1369DE0010010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02017R1369-20210501
+    url: https://publications.europa.eu/resource/celex/02017R1369-20210501
+    fetch: zip-member
+    member: CL2017R1369DE0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: 19bd915dbc797ee7246226f5541b624b0b3273edaa2857133dbd78256671c649
+  - file: L_2017198EN.01000101.xml
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 198, 28.7.2017, p. 1"
+    url: https://publications.europa.eu/resource/celex/32017R1369
+    fetch: zip-member
+    member: L_2017198EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 9b2bf0d070a7f8fa87f4b1e27f580c33042c9beb9a18034b59e81ad563404c35
+  - file: L_2017198DE.01000101.xml
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 198 vom 28.7.2017, S. 1"
+    url: https://publications.europa.eu/resource/celex/32017R1369
+    fetch: zip-member
+    member: L_2017198DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: cf9a4cc618e1fcde3198ca0333481d5e975a9d1088b4a0b095d8c7eb1a378e6d
+annotated: CL2017R1369EN0010010.0001.annotated.xml

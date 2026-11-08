@@ -1,0 +1,131 @@
+---
+import { actLabel, actTitle, loadGraph, type Document } from "../../lib/data";
+import LayoutToggle from "../LayoutToggle.astro";
+import Pointer from "../Pointer.astro";
+import { languageName } from "../../lib/links";
+import ReadingSection from "../ReadingSection.astro";
+import Refs from "../Refs.astro";
+import Header from "./Header.astro";
+
+interface Props {
+  document: Document;
+}
+
+const { document } = Astro.props;
+const d = document.data;
+const graph = await loadGraph();
+const act = graph.acts.get(d.act)!;
+const textDocument = d.versionOf ?? document.id;
+const provisions = [...graph.provisions.values()].filter((p) => p.data.document === textDocument).map((p) => p.id);
+const sourceId = d.path.replace(/^sources\//, "").split("/").slice(0, -1).join("/");
+const fileName = d.path.split("/").pop()!;
+const official = d.mediaType === "application/xml";
+// The language the annotations sit on: this document's, or for a parallel language version the
+// annotated text's.
+const lang = (d.versionOf ? graph.documents.get(d.versionOf)?.data.language : d.language) ?? "de";
+const other = d.versionOf ? graph.documents.get(d.versionOf) : d.versions.map((id) => graph.documents.get(id))[0];
+const RELATED_ROLES = { authentic: "Authentic text", amendment: "Amending acts", corrigendum: "Corrigenda" } as const;
+const RELATED_INTRO = d.related.some((r) => r.role === "authentic")
+  ? "This is a consolidated text, a documentation tool. `legalgraph sources verify` proves every quoted provision reads exactly as in the authentic Official Journal text, or differs only at a place an amending act or corrigendum below lists; amended wording must occur word for word in the amending act."
+  : "Corrections published in the Official Journal, with the places they correct. `legalgraph sources verify` fails if one corrects a provision the graph quotes. None does.";
+const subtitle = d.versionOf
+  ? `${fileName}, as published. The ${languageName(d.language ?? "")} language version, equally authentic: not annotated itself; each provision is read from the same place as in the annotated ${languageName(lang)} text, and \`legalgraph sources verify\` checks that both have the same structure.`
+  : official
+    ? `${fileName}, as published on the portal. The annotated copy adds lga: attributes only, proven byte-identical once they are removed.`
+    : `${fileName}, downloaded from the portal. The XML below is our transcription, checked word for word against it.`;
+---
+
+<Header
+  kind={official ? "Law text · official XML" : "Law text · transcribed from the official page"}
+  title={`${actLabel(act)}: ${actTitle(act)}`}
+  subtitle={subtitle}
+  id={document.id}
+  graph={false}
+/>
+
+<div class="grid gap-4 lg:grid-cols-2">
+  <dl class="card text-sm">
+    <dt>Text of</dt><dd><Refs ids={[d.act]} /></dd>
+    {d.language && <><dt>Language</dt><dd>{languageName(d.language)}{d.versionOf || d.versions.length ? " (language version)" : ""}</dd></>}
+    {other && <><dt>Other language version</dt><dd><a href={`/id/${other.id}`}>{languageName(other.data.language ?? "")}: {other.data.path.split("/").pop()}</a></dd></>}
+    <dt>Downloaded from</dt><dd class="break-all"><a href={d.sourceUrl}>{d.sourceUrl}</a></dd>
+    <dt>Downloaded on</dt><dd>{d.retrievedOn}{d.portalBuildDate && <span class="text-muted-foreground"> · portal build {d.portalBuildDate}</span>}</dd>
+    <dt>SHA-256 of the original</dt><dd class="font-mono text-xs break-all">{d.sha256}</dd>
+    {d.licence && <><dt>Kept and republished as</dt><dd>{d.licence}{d.licenceBasis && <span class="block text-muted-foreground">{d.licenceBasis}</span>}</dd></>}
+    <dt>Files</dt>
+    <dd>
+      <a href={`/${d.path}`}>original ({d.mediaType})</a>
+      {d.annotatedFile && <> · <a href={`/${d.annotatedFile}`}>annotated XML</a></>}
+      · <a href={`/sources/${sourceId}/source.yaml`}>source.yaml</a>
+    </dd>
+    <dt>Provisions in the graph</dt><dd><Refs ids={provisions} /></dd>
+  </dl>
+  <div class="space-y-4">
+    {
+      d.legalStatus.length > 0 && (
+        <section class="card text-sm">
+          <h2 class="!mt-0 text-base">Status according to the portal</h2>
+          <div class="pair" data-view="side">
+            <div class="pair-heads text-xs font-medium text-muted-foreground"><div>Original</div><div>English</div></div>
+            {d.legalStatus.map((note) => (
+              <div class="pair-row">
+                <p lang={note.lang}>{note.text}</p>
+                <p class="text-foreground/80">{note.english ?? "—"}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+    {
+      d.related.length > 0 && (
+        <section class="card text-sm">
+          <h2 class="!mt-0 text-base">Authentic texts and changes</h2>
+          <p class="mb-2 text-muted-foreground">
+            {RELATED_INTRO}
+          </p>
+          {(["authentic", "amendment", "corrigendum"] as const).map((role) => {
+            const entries = d.related.filter((r) => r.role === role);
+            return entries.length > 0 && (
+              <>
+                <h3 class="mt-3 text-sm font-semibold">{RELATED_ROLES[role]} ({entries.length})</h3>
+                <ul class="space-y-2">
+                  {entries.map((r) => (
+                    <li>
+                      <a href={`/${r.path}`}>{r.title}</a>{" "}
+                      <span class="text-muted-foreground">({languageName(r.language)}, {r.mediaType === "application/pdf" ? "PDF" : "XML"})</span>
+                      {r.corrects.length > 0 && <div class="text-xs text-muted-foreground">{role === "amendment" ? "amends" : "corrects"} {r.corrects.join(", ")}</div>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            );
+          })}
+        </section>
+      )
+    }
+    <section class="card text-sm">
+      <h2 class="!mt-0 text-base">Check it yourself</h2>
+      <p class="mb-2">Download the original again and compare, or run in the repository:</p>
+      <pre class="code-block">uv run legalgraph sources fetch --check {sourceId}
+uv run legalgraph sources verify {sourceId}</pre>
+      <p class="mt-2 flex items-center gap-2">Pointer: <Pointer id={document.id} graph={false} /></p>
+    </section>
+  </div>
+</div>
+
+<div class="mt-10 mb-3 flex flex-wrap items-end justify-between gap-2">
+  <div>
+    <h2 class="!my-0">Annotated sections ({d.sections.length})</h2>
+    <p class="text-sm text-muted-foreground">
+      The sections of {actLabel(act)} that the graph is built from. Highlighted paragraphs are provisions in the graph;
+      <span class="tag tone-requires">labels</span> under a line are the information items it
+      names, <span class="tag tone-defines">defines:</span> the concepts it defines. The rest
+      of the law is in the <a href={`/${d.path}`}>full file</a>.
+    </p>
+  </div>
+  <LayoutToggle />
+</div>
+<div class="space-y-6">
+  {d.sections.map((section) => <ReadingSection section={section} lang={lang} />)}
+</div>

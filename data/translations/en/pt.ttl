@@ -1,0 +1,25 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:PT-DL-7-2004-art10-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9f5aec42e83c3b36b589ea90684fa2fa16ae0234feec54ffb4163334f3bd4b17" ;
+    lgo:text """1 - Service providers must make permanently available online, in conditions that allow easy and direct access, complete identification details including, in particular:
+a) Name or company name;
+b) Geographic address at which they are established and electronic address, so as to allow direct communication;
+c) The provider's entries in public registers and the corresponding registration numbers;
+d) Tax identification number."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-DL-7-2004-art10-1-q1 .

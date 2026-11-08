@@ -1,0 +1,141 @@
+/*
+ * Design tokens, in three layers (after Lumos for Astro):
+ *
+ * 1. Swatches: the raw palette. Only the themes below use them.
+ * 2. Themes: `theme-light` (the default), `theme-dark` and `theme-brand` set the same few semantic
+ *    roles (background, surface, text, text-2, border, primary, accent). A component never asks
+ *    "am I in the footer?": it uses the roles, and the theme around it decides the colours.
+ *    `theme-invert` flips light and dark inside either.
+ * 3. Tailwind: `@theme inline` exposes the roles as utilities (bg-background, text-foreground,
+ *    text-muted-foreground, border-border, text-primary …). Type sizes and section spacing are fluid.
+ *
+ * Derived colours (secondary text, borders, tints) are mixed from the roles, not listed.
+ */
+
+:root {
+  /* Swatches */
+  --white: #ffffff;
+  --mist-50: #f6f9f9;
+  --mist-100: #eef3f4;
+  --ink-950: #0b1d26;
+  --navy-900: #0b2530;
+  --navy-800: #12313e;
+  --navy-700: #1a4050;
+  --teal-300: #5eead4;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  --teal-800: #115e59;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --amber-600: #b45309;
+  --emerald-600: #047857;
+  --violet-600: #6d28d9;
+  --sky-600: #0369a1;
+
+  /* Gradients, the same in every theme. */
+  --gradient-brand: linear-gradient(90deg, var(--teal-600), var(--blue-700));
+  --gradient-cta: linear-gradient(96deg, #0f9b8e -1%, var(--blue-600) 101%);
+  /* The tinted strip under the navbar that names a page (PageHeader). */
+  --gradient-header: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--teal-600) 11%, var(--white)),
+    color-mix(in oklab, var(--blue-700) 9%, var(--white))
+  );
+}
+
+:root,
+.theme-light,
+.theme-dark .theme-invert,
+.theme-brand .theme-invert {
+  color-scheme: light;
+  --background: var(--white);
+  --surface: var(--white);
+  --surface-2: var(--mist-100);
+  --text: var(--ink-950);
+  --text-2: color-mix(in oklab, var(--text) 66%, var(--background));
+  --border: color-mix(in oklab, var(--text) 12%, var(--background));
+  --border-strong: color-mix(in oklab, var(--text) 22%, var(--background));
+  --primary: var(--teal-700);
+  --on-primary: var(--white);
+  --accent: var(--amber-600);
+}
+
+.theme-dark,
+.theme-light .theme-invert {
+  color-scheme: dark;
+  --background: var(--navy-900);
+  --surface: var(--navy-800);
+  --surface-2: var(--navy-700);
+  --text: var(--white);
+  --text-2: color-mix(in oklab, var(--text) 68%, var(--background));
+  --border: color-mix(in oklab, var(--text) 18%, var(--background));
+  --border-strong: color-mix(in oklab, var(--text) 30%, var(--background));
+  --primary: var(--teal-300);
+  --on-primary: var(--navy-900);
+  --accent: #fbbf24;
+}
+
+.theme-brand {
+  color-scheme: dark;
+  --background: var(--teal-800);
+  --surface: color-mix(in oklab, var(--teal-800) 85%, var(--white));
+  --surface-2: color-mix(in oklab, var(--teal-800) 75%, var(--white));
+  --text: var(--white);
+  --text-2: color-mix(in oklab, var(--text) 78%, var(--background));
+  --border: color-mix(in oklab, var(--text) 22%, var(--background));
+  --border-strong: color-mix(in oklab, var(--text) 35%, var(--background));
+  --primary: var(--white);
+  --on-primary: var(--teal-800);
+  --accent: #fde68a;
+}
+
+[class*="theme-"] {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+@theme inline {
+  --font-sans: "DM Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--text);
+  --color-card: var(--surface);
+  --color-muted: var(--surface-2);
+  --color-muted-foreground: var(--text-2);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-ring: var(--primary);
+  --color-accent: var(--accent);
+
+  /* Meaning, not decoration: review states and annotation kinds (see .tag in patterns.css). */
+  --color-tone-checked: var(--emerald-600);
+  --color-tone-draft: var(--amber-600);
+  --color-tone-reviewed: var(--sky-600);
+  --color-tone-requires: var(--amber-600);
+  --color-tone-defines: var(--violet-600);
+
+  /* Fluid type: 360px → 1440px viewports. */
+  --text-h1: clamp(2rem, 1.55rem + 2vw, 3.25rem);
+  --text-h1--line-height: 1.08;
+  --text-h2: clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
+  --text-h2--line-height: 1.15;
+  --text-h3: clamp(1.2rem, 1.12rem + 0.35vw, 1.45rem);
+  --text-h3--line-height: 1.25;
+  --text-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lead--line-height: 1.55;
+
+  /* Vertical rhythm between page bands. */
+  --spacing-section: clamp(3rem, 2rem + 4.5vw, 6.5rem);
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.875rem;
+
+  --container-page: 1440px;
+  --container-prose: 46rem;
+}

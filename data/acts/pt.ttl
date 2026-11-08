@@ -1,0 +1,38 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Portugal: Article 10 of Decree-Law 7/2004.
+
+lg:PT-DL-7-2004 a lgo:LegalAct ;
+    eli:title "Decreto-Lei n.º 7/2004, de 7 de janeiro (Comércio electrónico)"@pt , "Decree-Law No. 7/2004 on electronic commerce"@en ;
+    lgo:shortName "DL 7/2004" ;
+    lgo:actType lgv:Decree ;
+    lgo:jurisdiction lg:PT ;
+    eli:date_document "2004-01-07"^^xsd:date ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1399&tabela=leis"^^xsd:anyURI ;
+    rdfs:comment "The source is the consolidated text published by the Lisbon District Prosecutor's Office (PGDL), not the Diário da República."@en ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:PT-DL-7-2004-art10-1 a lgo:Provision ;
+    eli:is_part_of lg:PT-DL-7-2004 ;
+    lgo:citation "Artigo 10.º, n.º 1, DL 7/2004" ;
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1399&tabela=leis"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RegisterEntry , lgv:TaxId ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:PT-DL-7-2004-art10-1-q1 a lgo:Quote ;
+    lgo:quoteOf lg:PT-DL-7-2004-art10-1 ;
+    lgo:text """1 - Os prestadores de serviços devem disponibilizar permanentemente em linha, em condições que permitam um acesso fácil e directo, elementos completos de identificação que incluam, nomeadamente:
+a) Nome ou denominação social;
+b) Endereço geográfico em que se encontra estabelecido e endereço electrónico, em termos de permitir uma comunicação directa;
+c) Inscrições do prestador em registos públicos e respectivos números de registo;
+d) Número de identificação fiscal."""@pt ;
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1399&tabela=leis"^^xsd:anyURI ;
+    lgo:officialLanguageVersion true .

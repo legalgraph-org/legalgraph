@@ -1,0 +1,129 @@
+---
+import { KIND_LABELS } from "../../lib/cases";
+import { loadGraph, type Act } from "../../lib/data";
+import { languageName } from "../../lib/links";
+import MiniGraph from "../MiniGraph.astro";
+import Outcomes from "../Outcomes.astro";
+import Pointer from "../Pointer.astro";
+import Refs from "../Refs.astro";
+import Status from "../Status.astro";
+import Header from "./Header.astro";
+
+interface Props {
+  act: Act;
+}
+
+const { act } = Astro.props;
+const a = act.data;
+const graph = await loadGraph();
+const provisions = a.provisions.map((id) => graph.provisions.get(id)!).filter(Boolean);
+const original = a.titles.find((title) => title.lang !== "en");
+const facts = [
+  ["Short name", a.shortName],
+  ["Case number", a.caseNumber],
+  ["Author", a.creator],
+  ["Type", a.actType],
+  ["Identifier", a.localId],
+  ["Dated", a.dateDocument],
+  ["Last amended", a.lastAmended],
+  ["In force from", a.firstInForce],
+  ["No longer in force", a.noLongerInForce],
+] as const;
+const links = [
+  ["Jurisdiction", [a.jurisdiction]],
+  ["Transposes", a.transposes],
+  ["Transposed by", a.transposedBy],
+  ["Repeals", a.repeals],
+  ["Repealed by", a.repealedBy],
+  ["Issued under", a.authorisedBy],
+  ["Follows", a.follows],
+  ["Followed by", a.followedBy],
+  ["Illustrates the rules", a.illustrates],
+  ["Source documents", a.documents],
+] as const;
+---
+
+<Header
+  kind={KIND_LABELS[a.kind] + (a.ecli ? ` · ${a.ecli}` : "")}
+  title={original?.text ?? a.titleEn ?? act.id}
+  subtitle={original && a.titleEn ? `${a.titleEn} (English title)` : null}
+  id={act.id}
+  status={a.reviewStatus}
+/>
+
+<div class="grid gap-6 lg:grid-cols-[1fr_22rem]">
+  <div class="space-y-4">
+    {a.comments.map((comment) => <p class="card bg-muted text-sm">{comment.text}</p>)}
+    {a.outcomes.length > 0 && (
+      <>
+        <h2 class="!mt-0">Outcome</h2>
+        <Outcomes outcomes={a.outcomes} />
+      </>
+    )}
+    {a.references.length > 0 && (
+      <section class="card space-y-3 text-sm">
+        <h2 class="!mt-0 text-base">Further reading</h2>
+        <p class="text-muted-foreground">Pages by others that report on this decision. Linked, not copied.</p>
+        {a.references.map((r) => (
+          <div>
+            <a href={r.url ?? "#"}>{r.title}</a>
+            <span class="text-muted-foreground"> · {r.publisher}{r.date && ` · ${r.date}`}</span>
+            {r.excerpt && (
+              <blockquote class="mt-1 border-l-2 pl-3 text-muted-foreground" lang={r.excerptLang ?? undefined}>
+                “{r.excerpt}” ({r.locator})
+              </blockquote>
+            )}
+          </div>
+        ))}
+      </section>
+    )}
+    <h2 class="!mt-0">Provisions ({provisions.length})</h2>
+    {provisions.length === 0 && <p class="text-muted-foreground">None recorded yet.</p>}
+    {
+      provisions.map((provision) => (
+        <article class="card space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <a href={`/id/${provision.id}`} class="font-medium">
+              {provision.data.citation}
+            </a>
+            <div class="flex flex-wrap items-center gap-2">
+              <Pointer id={provision.id} />
+              <Status status={provision.data.reviewStatus} />
+            </div>
+          </div>
+          {provision.data.quotes[0] && (
+            <p class="law-text line-clamp-3 text-foreground/80" lang={provision.data.quotes[0].lang}>
+              {provision.data.quotes[0].text}
+            </p>
+          )}
+          <p class="text-sm text-muted-foreground">
+            {[...provision.data.regulates, ...provision.data.enforces, ...provision.data.defines].length > 0 && (
+              <Refs ids={[...provision.data.regulates, ...provision.data.enforces, ...provision.data.defines]} />
+            )}
+          </p>
+        </article>
+      ))
+    }
+  </div>
+  <aside>
+    <dl class="card text-sm">
+      {a.titles.map((title) => (<><dt>Title ({languageName(title.lang)})</dt><dd>{title.text}</dd></>))}
+      {facts.filter(([, value]) => value).map(([label, value]) => (<><dt>{label}</dt><dd>{value}</dd></>))}
+      {
+        links
+          .filter(([, ids]) => ids.length > 0)
+          .map(([label, ids]) => (
+            <>
+              <dt>{label}</dt>
+              <dd>
+                <Refs ids={[...ids]} />
+              </dd>
+            </>
+          ))
+      }
+      {a.sourceUrl && (<><dt>Official text</dt><dd class="break-all"><a href={a.sourceUrl}>{a.sourceUrl}</a></dd></>)}
+    </dl>
+  </aside>
+</div>
+
+<div class="mt-6"><MiniGraph focus={act.id} /></div>

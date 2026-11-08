@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  California Privacy Protection Agency, Order of Decision of 7 March 2025 adopting the Stipulated
+  Final Order in the matter of American Honda Motor Co., Inc. (Case No. ENF23-V-HO-2), the
+  paragraphs the graph quotes, written in schemas/law.xsd from the Agency's PDF. The words are the
+  Agency's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CA-CPPA-2025-0307-honda" lga:jurisdiction="US-CA" lga:act-type="AuthorityDecision"
+     lga:url="https://cppa.ca.gov/enforcement/">
+  <meta>
+    <title>California Privacy Protection Agency, Order of Decision and Stipulated Final Order, In the Matter of American Honda Motor Co., Inc. (ENF23-V-HO-2), 7 March 2025</title>
+    <short>CPPA v. Honda</short>
+    <date>2025-03-07</date>
+  </meta>
+
+  <section num="VI." title="Cookie management tool" source="20250307_hmc_order.pdf">
+    <paragraph num="62." lga:provision="US-CA-CPPA-2025-0307-honda-p62" lga:citation="CPPA, Honda Stipulated Final Order, para. 62" lga:url="https://www.cppa.ca.gov/regulations/pdf/20250307_hmc_order.pdf" lga:interprets="US-CA-CCPA-1798-120-a" lga:regulates="RightToOptOutOfSale">A website banner that provides only two options when seeking Consumers’ consent to use their Personal Information—such as “Accept All” and “More Information,” or “Accept All” and “Preferences”—is not equal or symmetrical. Such a method is not equal or symmetrical because it allows Consumers to “Accept All” in one step, but requires Consumers to take additional steps to exercise their rights over their Personal Information. An equal or symmetrical choice, by contrast, could be between “Accept All” and “Decline All.” Id. at § 7004(a)(2)(C).</paragraph>
+  </section>
+
+  <section num="VII.A" title="Monetary provision" source="20250307_hmc_order.pdf">
+    <paragraph num="75." lga:provision="US-CA-CPPA-2025-0307-honda-p75" lga:citation="CPPA, Honda Stipulated Final Order, para. 75" lga:url="https://www.cppa.ca.gov/regulations/pdf/20250307_hmc_order.pdf" lga:applies="US-CA-CCPA-1798-120-a US-CA-CCPA-1798-135-a">In accordance with Civil Code § 1798.199.55, Honda shall pay an administrative fine in the amount of six hundred and thirty-two thousand and five hundred dollars ($632,500.00), of which $382,500 accounts for Honda’s conduct toward 119 Consumers who were required to provide more information than necessary to submit their Requests to Opt-out of Sale/Sharing and Requests to Limit, 20 Consumers who had their Requests to Opt-out of Sale/Sharing and Requests to Limit denied because Honda required the Consumer to Verify themselves before processing the request, and 14 Consumers who were required to confirm with Honda directly that they had given their Authorized Agents permission to submit their Request to Opt-out of Sale/Sharing and Request to Limit on their behalf.</paragraph>
+  </section>
+</law>

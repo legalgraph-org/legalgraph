@@ -1,0 +1,41 @@
+# Commission Implementing Decision (EU) 2023/1795 of 10 July 2023: adequacy of the EU-US Data
+# Privacy Framework, Official Journal text. Article 1 finds that organisations certified under
+# the framework ensure an adequate level of protection — the transfer basis for US vendors on
+# the framework list (the General Court upheld the decision in T-553/23 Latombe; an appeal is
+# reported pending). English is annotated; German is a parallel language version.
+id: eu/dpf-adequacy
+title: Commission Implementing Decision (EU) 2023/1795 on the adequate level of protection of personal data under the EU-US Data Privacy Framework
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_2023231EN.01011801.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1795
+    url: https://publications.europa.eu/resource/celex/32023D1795
+    fetch: zip-member
+    member: L_2023231EN.01011801.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Authentic Official Journal text, OJ L 231, 20.9.2023."
+    retrieved_on: 2026-11-02
+    sha256: 5cb2ac691ccceb8f5378f9c7225e6369bb6d7f0ddf1c487c9eecab65e371904c
+  - file: L_2023231DE.01011801.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023D1795
+    url: https://publications.europa.eu/resource/celex/32023D1795
+    fetch: zip-member
+    member: L_2023231DE.01011801.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 73ae22b80263f393c32c73548a8b4d9a1df3f03f01f2006e37938f0c73b9a6d1
+annotated: L_2023231EN.01011801.annotated.xml

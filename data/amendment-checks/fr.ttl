@@ -1,0 +1,40 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:FR-LIL
+    lgo:amendmentCheck lg:FR-LIL-amendment-check .
+
+lg:FR-LIL-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "LOI n°2026-534 du 25 juin 2026" ;
+    lgo:lastKnownAmendmentDate "2026-06-25"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Saved Légifrance page (in force at 04.11.2026) lists LOI n°2026-534 as the last modifying law; the quoted art. 82 was last modified by Ordonnance n°2018-1125."@en .
+
+lg:FR-LCEN
+    lgo:amendmentCheck lg:FR-LCEN-amendment-check .
+
+lg:FR-LCEN-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "LOI n°2026-813 du 24 août 2026" ;
+    lgo:lastKnownAmendmentDate "2026-08-24"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Saved Légifrance page (in force at 04.11.2026) lists LOI n°2026-813 as the last modifying law; the quoted arts. 17-19 were last modified earlier."@en .
+
+lg:FR-CONSO
+    lgo:amendmentCheck lg:FR-CONSO-amendment-check .
+
+lg:FR-CONSO-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006069565"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Ordonnance n°2026-2 du 5 janvier 2026" ;
+    lgo:lastKnownAmendmentDate "2026-01-05"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Fragment-level only: the quoted art. L221-5 was last modified by Ordonnance n°2026-2; the code is amended almost monthly and the act-level latest was not verified."@en .

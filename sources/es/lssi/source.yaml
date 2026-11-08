@@ -1,0 +1,26 @@
+# Ley 34/2002 LSSI (Ley de servicios de la sociedad de la información y de comercio electrónico):
+# the consolidated text from the BOE's official open-data API (datosabiertos). Article 10(1) is the
+# Spanish aviso legal (the ECD provider-information duty) and Article 22(2) is the Spanish cookie
+# rule implementing Article 5(3) of the ePrivacy Directive. The XML carries every version of each
+# article; only the version in force is annotated.
+id: es/lssi
+title: Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico
+jurisdiction: ES
+language: es
+publisher: Agencia Estatal Boletín Oficial del Estado (BOE)
+kind: official-xml
+licence: official-work
+licence_basis: "Art. 13 Ley de Propiedad Intelectual: legal and regulatory provisions are not the object of intellectual property"
+originals:
+  - file: BOE-A-2002-13758.xml
+    page: https://www.boe.es/eli/es/l/2002/07/11/34/con
+    url: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2002-13758
+    fetch: file
+    headers:
+      Accept: application/xml
+    media_type: application/xml
+    notes:
+      - "Consolidated text from the BOE open-data API, update timestamp 2025-12-18. Each article carries its version history inside <version> elements; annotations mark the version in force."
+    retrieved_on: 2026-11-02
+    sha256: 0ced6c95c66ca902b9631cc32dd92ea8c781254deb30953baa0f353ef6b0e7ec
+annotated: BOE-A-2002-13758.annotated.xml

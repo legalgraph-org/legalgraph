@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Proposal for a Digital Omnibus regulation, COM(2025) 837 final: the provisions on cookies and similar
+  technologies, written in schemas/law.xsd from the Commission's PDF. The words are the proposal's;
+  only the structure is ours. A proposal is not law.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="EU-COM-2025-837" lga:jurisdiction="EU" lga:act-type="Proposal"
+     lga:url="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0837">
+  <meta>
+    <title>Proposal for a Regulation amending Regulations (EU) 2016/679, (EU) 2018/1724, (EU) 2018/1725, (EU) 2023/2854 and Directives 2002/58/EC, (EU) 2022/2555 and (EU) 2022/2557 as regards the simplification of the digital legislative framework (Digital Omnibus)</title>
+    <short>Digital Omnibus (proposal)</short>
+    <date>2025-11-19</date>
+  </meta>
+
+  <section num="Proposed Article 88a GDPR" title="Processing of personal data in the terminal equipment of natural persons" source="COM-2025-837-en.pdf">
+    <paragraph num="(1)" lga:provision="EU-COM-2025-837-gdpr88a-1" lga:citation="Proposed Art. 88a(1) GDPR, COM(2025) 837"
+               lga:regulates="TerminalEquipmentAccess" lga:proposes-to-amend="EU-2016-679-art6-1 EU-2002-58-art5-3">Storing of personal data, or gaining of access to personal data already stored, in the terminal equipment of a natural person is only allowed when that person has given his or her consent, in accordance with this Regulation.</paragraph>
+    <paragraph num="(3)" lga:provision="EU-COM-2025-837-gdpr88a-3" lga:citation="Proposed Art. 88a(3) GDPR, COM(2025) 837"
+               lga:regulates="TerminalEquipmentAccess" lga:proposes-to-amend="EU-2002-58-art5-3">Storing of personal data, or gaining of access to personal data already stored, in the terminal equipment of a natural person without consent, and subsequent processing, shall be lawful to the extent it is necessary for any of the following:
+      <list>
+        <item num="(a)" lga:defines="TransmissionOnlyAccess">carrying out the transmission of an electronic communication over an electronic communications network;</item>
+        <item num="(b)" lga:defines="StrictlyNecessaryAccess">providing a service explicitly requested by the data subject;</item>
+        <item num="(c)">creating aggregated information about the usage of an online service to measure the audience of such a service, where it is carried out by the controller of that online service solely for its own use;</item>
+        <item num="(d)">maintaining or restoring the security of a service provided by the controller and requested by the data subject or the terminal equipment used for the provision of such service.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(4)" lga:provision="EU-COM-2025-837-gdpr88a-4" lga:citation="Proposed Art. 88a(4) GDPR, COM(2025) 837"
+               lga:regulates="Consent" lga:proposes-to-amend="EU-2016-679-art7-3">Where storing of personal data, or gaining of access to personal data already stored, in the terminal equipment of a natural person is based on consent, the following shall apply:
+      <list>
+        <item num="(a)">the data subject shall be able to refuse requests for consent in an easy and intelligible manner with a single-click button or equivalent means;</item>
+        <item num="(b)">if the data subject gives consent, the controller shall not make a new request for consent for the same purpose for the period during which the controller can lawfully rely on the consent of the data subject;</item>
+        <item num="(c)">if the data subject declines a request for consent, the controller shall not make a new request for consent for the same purpose for a period of at least six months.</item>
+      </list>
+      This paragraph also applies to the subsequent processing of personal data based on consent.</paragraph>
+  </section>
+
+  <section num="Proposed Article 88b GDPR" title="Automated and machine-readable indications of data subject’s choices with respect to processing of personal data in the terminal equipment of natural persons" source="COM-2025-837-en.pdf">
+    <paragraph num="(1)" lga:provision="EU-COM-2025-837-gdpr88b-1" lga:citation="Proposed Art. 88b(1) GDPR, COM(2025) 837"
+               lga:regulates="Consent">Controllers shall ensure that their online interfaces allow data subjects to:
+      <list>
+        <item num="(a)">Give consent through automated and machine-readable means, provided that the conditions for consent laid down in this Regulation are fulfilled;</item>
+        <item num="(b)">decline a request for consent and exercise the right to object pursuant to Article 21(2) through automated and machine-readable means.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="Article 5 of the proposal" title="Amendments to Directive 2002/58/EC (ePrivacy Directive)" source="COM-2025-837-en.pdf">
+    <paragraph num="2." lga:provision="EU-COM-2025-837-art5-2" lga:citation="Art. 5 point 2 COM(2025) 837 (ePrivacy Art. 5(3))"
+               lga:regulates="TerminalEquipmentAccess" lga:proposes-to-amend="EU-2002-58-art5-3">After Article 5(3), the following subparagraph is added:
+      <list>
+        <item num="">‘This paragraph shall not apply if the subscriber or user is a natural person, and the information stored or accessed constitutes or leads to the processing of personal data.’</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

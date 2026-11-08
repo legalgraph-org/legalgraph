@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The Rada's official English translation of the State Language Law, transcribed in schemas/law.xsd from
+  the English original (2704-19-en.fragment.html), as the parallel language version of language.law.xml.
+  Only the provisions the translation may stand for are here: Article 27(6) is missing because the portal's
+  own notes show it was rewritten by the Media Law of 13.12.2022, after this translation of 13.05.2021 —
+  `legalgraph sources verify` refuses to pass an English older than the text it translates. Only
+  lga:provision and lga:url annotate the provisions.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="UA-2704" lga:jurisdiction="UA" lga:act-type="Statute"
+     lga:url="https://zakon.rada.gov.ua/laws/show/en/2704-19">
+  <meta>
+    <title>On Supporting the Functioning of the Ukrainian Language as the State Language</title>
+    <date>2019-04-25</date>
+  </meta>
+
+  <section num="Article 27" title="The State language in the field of computer software and website user interfaces" source="2704-19-en.fragment.html">
+    <paragraph num="7." lga:provision="UA-2704-art27-7" lga:url="https://zakon.rada.gov.ua/laws/show/en/2704-19#n216">Mobile apps of government authorities, local self-government authorities, mass media registered in Ukraine, as well as those of economic entities that sell goods and services in Ukraine, must have a user interface version in the State language.</paragraph>
+  </section>
+
+  <section num="Article 30" title="The State language in the field of consumer services" source="2704-19-en.fragment.html">
+    <paragraph num="2." lga:provision="UA-2704-art30-2" lga:url="https://zakon.rada.gov.ua/laws/show/en/2704-19#n243">Enterprises, institutions and organisations of all patterns of ownership, individual entrepreneurs, other economic entities that serve consumers (except as stipulated in paragraph 3 of this Article) shall deliver services and provide information about goods (services), including via online shops and online catalogues, in the State language. Information in the State language may be duplicated in other languages.</paragraph>
+    <paragraph num="4." lga:provision="UA-2704-art30-4" lga:url="https://zakon.rada.gov.ua/laws/show/en/2704-19#n243">An electronic commerce entity registered in Ukraine shall be required to provide, in the course of its activities and where commercial electronic messages are disseminated, all the information referred to in the Law of Ukraine on Electronic Commerce, including that on the scope of the electronic contract, in the State language.</paragraph>
+  </section>
+</law>

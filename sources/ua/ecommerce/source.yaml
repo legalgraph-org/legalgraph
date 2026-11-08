@@ -1,0 +1,23 @@
+# Закон України «Про електронну комерцію» (No. 675-VIII): published by the Verkhovna Rada on zakon.rada.gov.ua as HTML only. The fragment holding the
+# law text (div#article) is kept; the articles the graph uses are transcribed in schemas/law.xsd and
+# checked word for word against it. Article 7 is Ukraine's counterpart of the Impressum. The portal blocks quick successive requests and
+# foreign traffic: `pause` spaces out downloads, which may need a Ukrainian network.
+id: ua/ecommerce
+title: Закон України «Про електронну комерцію» (No. 675-VIII)
+jurisdiction: UA
+language: uk
+publisher: Verkhovna Rada of Ukraine, zakon.rada.gov.ua
+kind: authored-xml
+licence: official-work
+licence_basis: "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright"
+originals:
+  - file: 675-19.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/675-19/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 4a232e9f6116b86cb2969c20c50c957bedb13385b2b9fa817ea8c9d64fce2d14
+annotated: ecommerce.law.xml

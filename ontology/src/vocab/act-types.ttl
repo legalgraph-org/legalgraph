@@ -1,0 +1,79 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Kinds of legal act (lgo:actType).
+
+lgv:ActTypes a skos:ConceptScheme ;
+    skos:prefLabel "Legal act types"@en .
+
+lgv:Directive a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Directive"@en , "Richtlinie"@de ;
+    skos:definition "An EU act that binds member states as to the result, leaving them to choose how; it takes effect through national law."@en .
+
+lgv:Regulation a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Regulation"@en , "Verordnung (EU)"@de ;
+    skos:definition "An EU act that applies directly in every member state."@en .
+
+lgv:Statute a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Statute"@en , "Gesetz"@de ;
+    skos:definition "A law passed by a national parliament."@en .
+
+lgv:Code a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Code"@en , "Gesetzbuch"@de ;
+    skos:definition "A systematic body of law, such as a civil code or a code of economic law."@en .
+
+lgv:Decree a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Decree"@en , "Dekret"@de ;
+    skos:definition "An act of the executive with the force of law, such as a decree-law or a legislative decree."@en .
+
+lgv:Decision a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Decision"@en , "Beschluss"@de ;
+    skos:definition "A binding EU act that may be addressed to specific addressees or apply generally, such as a Commission implementing or adequacy decision."@en .
+
+lgv:Ordinance a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Ordinance"@en , "Rechtsverordnung"@de ;
+    skos:altLabel "Rechtsverordnung"@de ;
+    skos:definition "Secondary legislation issued by a government or minister under an authorisation in a statute, such as a German Rechtsverordnung."@en .
+
+lgv:StatutoryInstrument a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Statutory instrument"@en , "Statutory Instrument"@de ;
+    skos:definition "Secondary legislation made by a minister under powers from a statute."@en .
+
+lgv:StateTreaty a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Interstate treaty"@en , "Staatsvertrag"@de ;
+    skos:altLabel "Staatsvertrag"@de ;
+    skos:definition "A treaty between the German Länder that each Land enacts as its own law, such as the Medienstaatsvertrag."@en .
+
+lgv:Judgment a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Judgment"@en , "Urteil"@de ;
+    skos:altLabel "Urteil"@de ;
+    skos:definition "A court's decision of a case; for the Court of Justice of the EU, its rulings on how EU law is to be interpreted bind national courts."@en .
+
+lgv:Guidelines a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Guidelines"@en , "Leitlinien"@de ;
+    skos:altLabel "Leitlinien"@de ;
+    skos:definition "Guidance adopted by a regulator, such as the European Data Protection Board, on how it reads the law."@en .
+
+lgv:Proposal a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Legislative proposal"@en , "Gesetzgebungsvorschlag"@de ;
+    skos:altLabel "Gesetzesvorschlag"@de ;
+    skos:definition "A proposal for legislation, such as a European Commission proposal: not law. Its provisions show what would change if it were adopted as proposed."@en .
+
+lgv:AuthorityDecision a skos:Concept ;
+    skos:inScheme lgv:ActTypes ;
+    skos:prefLabel "Authority decision"@en , "Behördenentscheidung"@de ;
+    skos:altLabel "Bescheid"@de , "délibération"@fr ;
+    skos:definition "A regulator's decision in an individual case, such as a fine imposed by a data protection authority."@en .

@@ -1,0 +1,127 @@
+# Consumer Rights Directive (2011/83/EU), consolidated version applying from 27 September 2026, from
+# the Publications Office (Formex 4). The consolidated text is a documentation tool: the authentic
+# texts are the Official Journal publication of the directive and of its amending acts, kept here
+# too. `legalgraph sources verify` proves every line of a quoted provision reads as in the 2011 text, or
+# occurs word for word in an amending act that lists its place (`amends`: here only the places of
+# the quoted provisions). English is annotated; German is a parallel language version.
+id: eu/crd
+title: Directive 2011/83/EU on consumer rights, consolidated version of 27 September 2026
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2011L0083EN0030010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927
+    url: https://publications.europa.eu/resource/celex/02011L0083-20260927
+    fetch: zip-member
+    member: CL2011L0083EN0030010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 27 September 2026, prepared by the Publications Office as a documentation tool. The authentic texts are Directive 2011/83/EU (OJ L 304, 22.11.2011) and its amending acts; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: 21c95f4f6bcbe34e91b0b867b3a7f59e7ff91bd016c70deb828b8cddd43f628c
+  - file: CL2011L0083DE0030010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927
+    url: https://publications.europa.eu/resource/celex/02011L0083-20260927
+    fetch: zip-member
+    member: CL2011L0083DE0030010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: c74469f44d3d65cad34dfdfc905b24296bc59151c92f84443a67bb251c168011
+  - file: L_2011304EN.01006401.xml
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 304, 22.11.2011, p. 64"
+    url: https://publications.europa.eu/resource/celex/32011L0083
+    fetch: zip-member
+    member: L_2011304EN.01006401.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 06f78b59df2ba85b72f23e9610ed87f0f5b9e8472407def7e160c0271788f7c1
+  - file: L_2011304DE.01006401.xml
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 304 vom 22.11.2011, S. 64"
+    url: https://publications.europa.eu/resource/celex/32011L0083
+    fetch: zip-member
+    member: L_2011304DE.01006401.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: ddccb204bbcb4bca0dc77768f90ea5c77d5ffb391d95b2bdfa0088cbe3193b9c
+  - file: L_202302673EN.000101.fmx.xml
+    role: amendment
+    language: en
+    title: "Directive (EU) 2023/2673, OJ L, 28.11.2023"
+    url: https://publications.europa.eu/resource/celex/32023L2673
+    fetch: zip-member
+    member: L_202302673EN.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    amends: ["Art. 11a"]
+    retrieved_on: 2026-11-02
+    sha256: e7fce63b61fa084d93af88a5aa072dda3d2fc2ca21a1bc3b34874bccdefd0e40
+  - file: L_202302673DE.000101.fmx.xml
+    role: amendment
+    language: de
+    title: "Richtlinie (EU) 2023/2673, ABl. L vom 28.11.2023"
+    url: https://publications.europa.eu/resource/celex/32023L2673
+    fetch: zip-member
+    member: L_202302673DE.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    amends: ["Art. 11a"]
+    retrieved_on: 2026-11-02
+    sha256: d4a8637df8173824a55522b77ff4bd23da6859782115ac510cc25fef1752e15f
+  - file: L_202400825EN.000101.fmx.xml
+    role: amendment
+    language: en
+    title: "Directive (EU) 2024/825, OJ L, 6.3.2024"
+    url: https://publications.europa.eu/resource/celex/32024L0825
+    fetch: zip-member
+    member: L_202400825EN.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    amends: ["Art. 8(2)"]
+    retrieved_on: 2026-11-02
+    sha256: 8501a83f7a7b77a960abdfc87a370a1a46dea6efaf3d6f2261abd146e497263d
+  - file: L_202400825DE.000101.fmx.xml
+    role: amendment
+    language: de
+    title: "Richtlinie (EU) 2024/825, ABl. L vom 6.3.2024"
+    url: https://publications.europa.eu/resource/celex/32024L0825
+    fetch: zip-member
+    member: L_202400825DE.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    amends: ["Art. 8(2)"]
+    retrieved_on: 2026-11-02
+    sha256: 2065a9089ebab068095b86dc15dc322d85f490468b02d3f1724009546ee2771f
+
+annotated: CL2011L0083EN0030010.0001.annotated.xml

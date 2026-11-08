@@ -1,0 +1,18 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Austria: cookie consent under § 165(3) TKG 2021, the transposition of ePrivacy art. 5(3).
+
+lg:AT-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Austria's transposition covers the confidentiality of communications data stored or accessed on the user's device; the same two ePrivacy exceptions apply (transmission and strict necessity)."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:AT-TKG-2021-s165-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

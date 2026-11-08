@@ -1,0 +1,42 @@
+# Judgment of the Court of Justice of the EU, Case C-673/17 (Planet49): official XML (Formex 4) of the
+# European Court Reports from the Publications Office. The language of the case, German, is the
+# authentic version; the other language versions are translations made by the Court. The English
+# text is annotated (its operative part: the rulings, which bind national courts on how EU law is
+# to be read); German is kept as a parallel version.
+id: eu/cjeu-planet49
+title: Judgment in Case C-673/17, Planet49
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62017CJ0673_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62017CJ0673
+    url: https://publications.europa.eu/resource/celex/62017CJ0673
+    fetch: zip-member
+    member: ECR_62017CJ0673_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-02
+    sha256: 0c8688ee716af9ccc75d53a24db80560c3f0de6314b6d19d1c356e31db7a4cf6
+  - file: ECR_62017CJ0673_DE_01.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62017CJ0673
+    url: https://publications.europa.eu/resource/celex/62017CJ0673
+    fetch: zip-member
+    member: ECR_62017CJ0673_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: eed41b73991e28ee37370b16569bc660b626434f90edcb0467e3a49da8dc01e3
+annotated: ECR_62017CJ0673_EN_01.annotated.xml

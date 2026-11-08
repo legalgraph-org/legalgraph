@@ -1,0 +1,47 @@
+name: German marketplace with ads and a chatbot
+description: >
+  A GmbH with 120 employees running an online marketplace where third-party traders sell to
+  consumers, showing targeted ads to users and offering an AI support chatbot. It does not sell
+  itself, sets marketing cookies with consent and transfers data to a US cloud provider.
+established_in: DE
+facts:
+  - EngagesProcessors
+  - CommercialDigitalService
+  - LegalPerson
+  - RegisteredInPublicRegister
+  - HasVatId
+  - OperatesMarketplace
+  - ShowsAdvertisementsOnPlatform
+  - UsesChatbot
+  - ProcessesPersonalData
+  - NonEssentialDeviceAccess
+  - TransfersOutsideEEA
+  - TwentyOrMoreProcessPersonalData
+obligations:
+  - DE-R-impressum
+  - DE-R-impressum-legal-person
+  - DE-R-impressum-register
+  - DE-R-impressum-vat
+  - DE-R-telemedia-identification
+  - DE-R-telemedia-representative
+  - DE-R-cookie-consent
+  - DE-R-data-protection-officer
+  - EU-R-privacy-information
+  - EU-R-privacy-information-dpo
+  - EU-R-privacy-information-transfers
+  - EU-R-privacy-information-consent
+  - EU-R-lawful-basis
+  - EU-R-consent-conditions
+  - EU-R-data-protection-officer-contact
+  - EU-R-dsa-points-of-contact
+  - EU-R-dsa-terms
+  - EU-R-dsa-advertising
+  - EU-R-dsa-trader-traceability
+  - EU-R-ai-chatbot
+  - EU-R-consent-separate
+  - EU-R-consent-no-tying
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
+  - EU-R-consent-specific

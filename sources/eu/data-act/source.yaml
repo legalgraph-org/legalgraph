@@ -1,0 +1,39 @@
+# Regulation (EU) 2023/2854 (Data Act): fair access to and use of data. Chapter VI (arts. 23-29)
+# is what matters for a platform holding a customer's evidence: providers of data-processing
+# services must remove obstacles to switching — including effective and functional data export —
+# and may not charge switching fees once the transitional period ends (12 January 2027).
+# Official Journal text, English with the German parallel.
+id: eu/data-act
+title: Regulation (EU) 2023/2854 (Data Act)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union, eur-lex.europa.eu
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Official Journal content may be reused under Commission Decision 2011/833/EU with attribution"
+originals:
+  - file: L_202302854EN.000101.xml
+    page: https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng
+    url: https://publications.europa.eu/resource/celex/32023R2854
+    fetch: zip-member
+    member: L_202302854EN.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-06
+    sha256: cc581a4212c7efdd1a2f7499bd2ced2e640c72a77ba31863288f6d4f38f8b719
+  - file: L_202302854DE.000101.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/reg/2023/2854/oj/deu
+    url: https://publications.europa.eu/resource/celex/32023R2854
+    fetch: zip-member
+    member: L_202302854DE.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-06
+    sha256: 72a4670c0ac2ef22502340811e70fb62bbc50edfe2a848be527f9f543f12b04a
+annotated: L_202302854EN.000101.annotated.xml

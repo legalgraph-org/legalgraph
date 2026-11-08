@@ -1,0 +1,195 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:UA-1023-art13-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8d957388e88a771ba8ec05b0251d6a07e8eea92645afb693728463cf69b9de67" ;
+    lgo:text """2. Before entering into distance contracts, the seller (contractor) must provide the consumer with information about:
+1) the name of the seller (contractor), its location and the procedure for filing complaints;
+2) the main characteristics of the products;
+3) the price, including the delivery charge, and the payment terms;
+4) warranty obligations and other services related to the maintenance or repair of the products;
+5) other terms of delivery or performance of the contract;
+6) the minimum duration of the contract, if it provides for periodic deliveries of products or services;
+7) the cost of electronic communication services, if it differs from the maximum tariff;
+8) the period of acceptance of offers;
+9) the procedure for terminating the contract.
+If such information is not provided, the economic entity bears responsibility under Articles 15 and 23 of this Law."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-1023-art13-2-q1 .
+
+lg:UA-1089-art120-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3d2e0ea1a7e9e49e01d05dbb1e5417b348c01994029c296bde47c4361dd9b93e" ;
+    lgo:text "1. Deliberate mass sending of electronic, text and/or multimedia messages to end users' email addresses or terminal equipment without their consent (request) (spam) is prohibited, except for messages of the electronic communications service provider connected with the provision by it of electronic communications and/or information services, as well as personal messages of end users which are not of a mass nature and are sent for non-commercial purposes by end users of electronic communications services."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-1089-art120-1-q1 .
+
+lg:UA-1089-art120-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "78d159982f77fef9d455dc07cc2316071d5bb2a59bb5f1411a648fe9cded1c1d" ;
+    lgo:text "2. End users may use telephone numbers or other network identifiers of the subscriber, obtained by any persons in the course of selling goods or providing services, for sending advertising with the aim of selling goods or services only on condition of the end user's consent, including in electronic form, and provided the end user is given the possibility to refuse, free of charge, at any time and in a simple and clear form, the use of their data."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-1089-art120-2-q1 .
+
+lg:UA-2297-art12-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "44e9cf2206d1fc8405ffd33b9e940e6be7985742c89c841cc543bc6161dfb497" ;
+    lgo:text """2. The personal data subject shall be informed of the owner (controller) of the personal data, the composition and content of the personal data collected, their rights as defined by this Law, the purpose of collecting the personal data and the persons to whom their personal data are transferred:
+at the time the personal data are collected, if the personal data are collected from the personal data subject;
+in other cases, within thirty working days from the day the personal data were collected, except in cases established by law."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-2297-art12-2-q1 .
+
+lg:UA-270-art14-3-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "656f791943ffca5b9880a88bd2fd2a002e095b65ff0b8d4dddc4cfdd70fda4ec" ;
+    lgo:text "2. The dissemination of advertising in the form of spam, including the making of mass calls using any communications technologies, without the consumer's prior written consent, including in electronic form, is prohibited. The dissemination of advertising using the consumer's telephone numbers or other network identifiers may be carried out only with the consumer's prior written consent, including in electronic form, and provided the consumer is given the possibility to refuse, free of charge, at any time and in a simple and clear form, the use of their data, including the receipt of advertising using the consumer's telephone numbers or other network identifiers. Compliance with this prohibition is monitored by the central executive authority that implements state policy in the field of state control over compliance with consumer protection legislation."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-270-art14-3-2-q1 .
+
+lg:UA-2704-art27-6-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f170b36cce0df9f4e8141509ecfad17558ebbd83586e73ad7c4fd5af8e57a074" ;
+    lgo:text "6 . Internet representations (including websites and social network pages) of government authorities, local self-government authorities, enterprises, institutions and organisations of state and communal ownership, media registered in Ukraine, as well as economic entities that sell goods and services in Ukraine and are registered in Ukraine, shall be made in the State language. Alongside the version of internet representations (including websites, social network pages) made in the State language, versions in other languages may exist. The State-language version of an internet representation must contain no less information in scope and content than the other-language versions, and must load by default for users in Ukraine. For foreign economic entities that sell goods and services in Ukraine and have subsidiaries, branches or representative offices in Ukraine, the State-language version of the website must contain information sufficient in scope and content for clear navigation and disclosure of the purpose of the owner's activity. The State-language version of such a website must load by default for users in Ukraine. This rule does not apply to internet representations of the print media referred to in part five of Article 25 of this Law, nor to online media published exclusively in Crimean Tatar, other languages of the indigenous peoples of Ukraine, English, or another official language of the European Union, regardless of whether they contain texts in the State language, including scientific publications, the language rule for which is determined by Article 22 of this Law."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-2704-art27-6-q1 .
+
+lg:UA-2849-art2-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9b85cfac2765163b97e3bc57219c2fa848709922c647e64e14aa494cbdbd1122" ;
+    lgo:text """2. The dissemination of mass information is outside the scope of this Law:
+1) by natural persons who do not act as media (are not media entities);
+2) by individual entrepreneurs or legal entities on their own websites, where the dissemination of mass information is not the entity's main activity and the mass information it disseminates is connected with the entity's business in fields other than the field of this Law;
+3) in the form of communications (including electronic, text and multimedia communications, postal items and other messages) sent to a defined circle of users, in particular by means of electronic communications;
+4) in the form of online games distributed via the internet, except where access to programmes is provided through online games, including by integrating audiovisual media services into the interface (environment) of online games;
+5) on the official websites of state authorities and local self-government authorities intended for publishing the information provided for by the Law of Ukraine \"On Access to Public Information\";
+6) in collective reception systems operated as provided by Article 20 of this Law;
+7) in technological electronic communications networks and other closed-type and special-purpose electronic communications networks not designed for mass reception of programmes, in particular in a system in which the equipment for transmitting and receiving information belongs to a single entity and the content of the information distributed in such networks directly concerns that entity's business and is addressed to employees or other persons connected with the entity. This exception does not apply to catering establishments, hotels or the business of providing residential premises for temporary accommodation, or to public transport undertakings, provided that the said entities offer full or partial access to media services without selecting and organising them into packages of television and radio channels."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-2849-art2-2-q1 .
+
+lg:UA-2849-art37-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8c0c21e3c314d075ca7d6f20eabf341993225afcd9ec65d86f05f5b57dd0b68f" ;
+    lgo:text """5. Registered online media entities are required to publish and regularly update the following imprint data on their website (in their online profile):
+1) the official (registered) name of the online medium;
+2) the entity's postal address, telephone number and email address;
+3) the online medium's identifier in the Register."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-2849-art37-5-q1 .
+
+lg:UA-3153-art17-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "be2210074a3b37583989e08c2664ea3f81e9329262359358b56e426dfb41f903" ;
+    lgo:text """1. Before concluding an off-premises contract or a distance contract, the seller shall provide the consumer, in a clear and comprehensible form, with the following information, which forms an integral part of the contract:
+1) the name and consumer properties of the goods or the main characteristics of the work (service);
+2) general information about the business entity sufficient to identify it:
+a) for legal entities: the full name of the legal entity (separate subdivision), the registered address of the legal entity and its actual location, the identification code under the EDRPOU and the individual tax number according to the register of value added tax payers (if any), details of the permit document or licence (where required by law);
+b) for individual entrepreneurs: surname, first name and patronymic (if any), registered address, the registration number of the taxpayer's account card or the series and number of the passport (for individuals who, because of their religious beliefs, refuse to accept a taxpayer registration number and have officially notified the relevant supervisory authority and have a mark in their passport), details of the permit document or licence (where required by law);
+c) telephone number, email address or other means of communication;
+d) the name and location of the business entities responsible for accepting and handling claims under warranty obligations and/or a commercial guarantee, if this information differs from that given in subparagraphs \"a\" and \"b\" of this point;
+3) the price of the products or the way it is calculated, and information on whether taxes are included in the calculation of the cost of the products. The way the price is calculated is given only where, for various objective reasons, the final price of the products cannot be determined before the goods are supplied, the work is performed or the services are provided. Where a contract is concluded for an indefinite period or contains a subscription for the supply of certain products, the price includes the total costs per billing period. Where such a contract provides for payment at a fixed price, the total price includes the total monthly costs for one month;
+4) a price automatically personalised for the particular consumer;
+5) additional costs of carriage, delivery of the goods or food product, postal services or any other costs;
+6) the procedure for paying for the products, and the time limit and procedure for delivering the goods or food product or performing the work or providing the services;
+7) the cost of electronic communication services, if it differs from the cost at the tariffs (tariff plans) under the contract on the basis of which the consumer receives electronic communication services;
+8) the procedure by which the business entity handles consumer complaints;
+9) the procedure and conditions for exercising the consumer's right to withdraw from the contract and return the goods or food product, where the contract provides for that right, the procedure and method of refunding money for returned goods, possible costs to the consumer of returning the goods on withdrawal from the contract, and the conditions under which the consumer cannot withdraw from the contract;
+10) information on the business entity's warranty obligations and on a commercial guarantee, if one is given;
+11) the procedure and conditions for after-sales servicing of the products, where the contract provides for it;
+12) how to consult a code of conduct, if there is one;
+13) the duration of the contract, and the procedure and conditions for terminating the contract;
+14) the minimum duration of the consumer's obligations under the contract, if any;
+15) the existence and conditions of advance payment or other financial guarantees provided by the consumer at the request of the business entity;
+16) the functionality of the digital content of the products, including technical protection measures;
+17) information on the interoperability or compatibility of the digital content with hardware or software, where goods with digital content are purchased;
+18) the possibility of using an out-of-court dispute resolution mechanism to which the business entity has signed up, and the ways in which the consumer can apply to the out-of-court dispute resolution body."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-3153-art17-1-q1 .
+
+lg:UA-3153-art18-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f7402264a307c95f37ebf680fbc68a0b4f36f61da52d0aef35587683f53d71d5" ;
+    lgo:text """3. In order to receive information about products from an e-commerce entity, the consumer may consent to that entity sending relevant commercial electronic messages to the consumer's electronic address about products the consumer has not decided to purchase.
+Commercial electronic messages may not be sent without consent to receive them given by the person to whom such messages are addressed, and without the possibility to refuse further sending of such messages, including by automated means. This possibility must be provided with every commercial electronic message sent.
+Information about the person's possibility to refuse further commercial electronic messages must be contained in each such commercial electronic message and be presented in a way that makes this information more prominent than the text of the commercial electronic message. A commercial electronic message must contain a technical means for the person to whom it is addressed to refuse further such messages."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-3153-art18-3-q1 .
+
+lg:UA-3153-art21-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9183e31bacbec8dcb811d53ff75d0b89b01f970994e72cd6e988fd620b36cbd0" ;
+    lgo:text """2. To ensure the requirements of this Law are met, the business entity shall place on its website an application form for withdrawing from the contract and instructions on the withdrawal procedure, the standard forms of which are approved by the competent authority.
+If the consumer has submitted an application to withdraw from the contract through the business entity's website, the business entity must notify the consumer without delay that the application has been received."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-3153-art21-2-q1 .
+
+lg:UA-3153-ix-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7d6c3c5fa0aa741b460873dcf398fb251798c10df95263bc91aa31c28a7c93fa" ;
+    lgo:text "1. This Law shall take effect one year after the day of its publication, but not earlier than the day of termination or lifting of martial law introduced by the Decree of the President of Ukraine of 24 February 2022 No. 64/2022 \"On the introduction of martial law in Ukraine\", approved by the Law of Ukraine of 24 February 2022 No. 2102-IX"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-3153-ix-1-q1 .
+
+lg:UA-675-art7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "542e2baba7e7efa2c90bbb4de7a37860f89d2fec6a8424a1a1427095f8b955ea" ;
+    lgo:text """1. A seller (performer, supplier) of goods, works or services in electronic commerce, in the course of its activity and when sending a commercial electronic message, must ensure that other participants in electronic commerce relations have direct, simple and stable access to the following information:
+the full name of the legal entity, or the surname, first name and patronymic of the individual entrepreneur;
+the location of the legal entity, or the place of registration and actual place of residence of the individual entrepreneur;
+email address and/or the address of the online shop;
+the identification code of the legal entity, or the registration number of the taxpayer's account card of the individual entrepreneur, or the series and number of the passport of an individual entrepreneur who, because of their religious beliefs, has refused to accept a taxpayer registration number, has officially notified the relevant tax authority and has a mark in their passport;
+licence details (series, number, period of validity and date of issue), if the business activity is subject to licensing;
+whether taxes are included in the calculation of the cost of the goods, works or services and, where goods are delivered, information on the cost of delivery;
+other information that must be made public under the law."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:UA-675-art7-1-q1 .

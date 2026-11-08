@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OLG Köln, Urteil vom 19. Januar 2024 – 6 U 80/23 (ECLI:DE:OLGK:2024:0119.6U80.23.00), the
+  paragraphs the graph quotes, written in schemas/law.xsd from the NRW courts' page.
+  The words are the court's; only the structure is ours. `legalgraph sources verify` checks
+  each paragraph against the page's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-OLGK-2024-0119" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html">
+  <meta>
+    <title>Oberlandesgericht Köln, Urteil vom 19. Januar 2024 – 6 U 80/23</title>
+    <date>2024-01-19</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="6_U_80_23_Urteil_20240119.html">
+    <paragraph num="1." lga:provision="DE-OLGK-2024-0119-tenor-1" lga:citation="OLG Köln 6 U 80/23, Tenor 1"
+      lga:url="https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html"
+      lga:applies="DE-TDDDG-s25-1">Die Beklagte wird verurteilt, es bei Meidung eines für jeden Fall der Zuwiderhandlung festzusetzenden Ordnungsgeldes bis 250.000,00 €, ersatzweise Ordnungshaft, oder Ordnungshaft bis zu sechs Monaten, wobei die Ordnungshaft an ihrem jeweiligen gesetzlichen Vertreter zu vollziehen ist und insgesamt zwei Jahre nicht übersteigen darf, zu unterlassen im Rahmen geschäftlicher Handlungen gegenüber Verbrauchern in Telemedien über Formulare (Cookie-Banner) Verbraucher zur Abgabe einer Einwilligungserklärung aufzufordern, um zu Zwecken der Werbung und/oder Marktforschung Informationen auf dem Endgerät des Nutzers zu speichern oder auf Informationen zuzugreifen, die bereits im Endgerät der Nutzer hinterlegt sind, sofern die Speicherung oder der Endgerätezugriff für den Betrieb des Telemediums nicht unbedingt erforderlich ist,</paragraph>
+  </section>
+
+  <section num="II." title="Entscheidungsgründe" source="6_U_80_23_Urteil_20240119.html">
+    <paragraph num="46" lga:provision="DE-OLGK-2024-0119-p46" lga:citation="OLG Köln 6 U 80/23, Rn. 46"
+      lga:url="https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html"
+      lga:interprets="DE-TDDDG-s25-1" lga:regulates="Consent">Der geänderte Antrag ist auch hinreichend bestimmt. Die Forderung nach einer „gleichwertigen“ Ablehnungsoption begegnet insoweit keinen Bedenken. Der Begriff der Gleichwertigkeit ist im Sinne von § 25 Abs. 1 TTDSG zu verstehen. Demgemäß muss die Ablehnung wie auch die Einwilligung auf der Grundlage von klaren und umfassenden Informationen erfolgen.</paragraph>
+    <paragraph num="51" lga:provision="DE-OLGK-2024-0119-p51" lga:citation="OLG Köln 6 U 80/23, Rn. 51"
+      lga:url="https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html"
+      lga:interprets="DE-TDDDG-s25-1 EU-2016-679-art4-11" lga:regulates="Consent">Durch eine Gestaltung der Cookie-Banner wie in der vom Kläger in Bezug genommenen konkreten Verletzungsform wird dem Verbraucher weder auf der ersten noch auf der zweiten Ebene eine gleichwertige, mithin auf klaren und umfassenden Informationen beruhende, Ablehnungsoption angeboten, weshalb er – wie vom Landgericht zutreffend ausgeführt – zur Abgabe der Einwilligung hingelenkt und von der Ablehnung der Cookies abgehalten wird, so dass die erteilte Einwilligung nicht als freiwillig und hinreichend aufgeklärt im Sinne von § 25 Abs. 1 TTDSG, Art. 4 Nr. 11 DSGVO angesehen werden kann. Die erste Ebene enthält überhaupt keine Ablehnungsoption für den Verbraucher. Vielmehr kann dieser durch den Button „Einstellungen“ lediglich auf die zweite Ebene gelangen. Hier hat der Verbraucher dann die Auswahl zwischen dem Button „Alles Akzeptieren“ und dem Button „Speichern“. Wie vom Landgericht zutreffend ausgeführt, erschließt sich dem Durchschnittsnutzer aber bereits nicht, welche Funktion sich konkret hinter dem jeweiligen Button verbirgt bzw. mit welchem Button er nunmehr tatsächlich die Ablehnung der Cookies erreichen kann. Die Beklagte hat in erster Instanz selbst wiederholt ausgeführt, dass für den Verbraucher eine echte Wahlmöglichkeit gegeben sein müsse. Dies ist indes bei der hier aufgezeigten Gestaltung der Cookie-Banner gerade nicht der Fall.</paragraph>
+    <paragraph num="54" lga:provision="DE-OLGK-2024-0119-p54" lga:citation="OLG Köln 6 U 80/23, Rn. 54"
+      lga:url="https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html"
+      lga:interprets="DE-TDDDG-s25-1 EU-2016-679-art4-11" lga:regulates="Consent">Dieser hinreichend bestimmte Antrag hat in der Sache ebenfalls Erfolg. Die Gestaltung der Cookie-Banner mit dem verlinkten Button „Akzeptieren &amp; Schließen X“ in der rechten oberen Ecke verstößt gegen die Grundsätze von Transparenz und Freiwilligkeit der Einwilligung und führt zu deren Unwirksamkeit. Insoweit kann wiederum auf die zutreffenden Ausführungen des Landgerichts verwiesen werden. Das „X“-Symbol ist Nutzern bekannt als Möglichkeit, um ein Fenster zu schließen, nicht aber, um in die Verwendung von Cookies und anderen Technologien durch den Websitebetreiber einzuwilligen. Dass hiermit eine Einwilligung erklärt wird, wird dem durchschnittlichen Nutzer nicht bewusst sein. Zwar steht unmittelbar neben dem „X“-Symbol „Akzeptieren &amp; Schließen“. Die Verknüpfung dieser beiden Funktionen ist aber irreführend und intransparent für die Nutzer. Auch wird für die Nutzer nicht ohne weiteres erkennbar, dass es sich bei „Akzeptieren &amp; Schließen“ und dem „X“-Symbol um ein und denselben Button handelt. Vor diesem Hintergrund kann die Einwilligung mithilfe des „X“-Symbols weder als unmissverständlich oder eindeutig bestätigend, noch als freiwillig im Sinne von § 25 Abs. 1 TTDSG, Art 4 Nr. 11 DSGVO bewertet werden.</paragraph>
+  </section>
+</law>

@@ -1,0 +1,23 @@
+# BGH, Urteil vom 10.02.2011 — I ZR 164/09 (Double-opt-in-Verfahren, aka Telefonaktion II):
+# consent under § 7(2) UWG is EU-law-compatible opt-in; but proof of consent needs the concrete
+# declaration of every single consumer — stored and printable — so a confirmation mail in a
+# double-opt-in procedure alone neither proves consent nor lightens the advertiser's burden.
+# The authority for "double opt-in is how consent is evidenced, not evidence itself".
+# ECLI:DE:BGH:2011:100211UIZR164.09.0. The PDF is the BGH's own publication.
+id: de/bgh-double-opt-in
+title: BGH, Urteil vom 10.02.2011 — I ZR 164/09 (Double-opt-in-Verfahren)
+jurisdiction: DE
+language: de
+publisher: Bundesgerichtshof, bundesgerichtshof.de
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei"
+originals:
+  - file: I_ZR_164-09.pdf
+    page: https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2011/2011029.html
+    url: "https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2009/I_ZR_164-09.pdf?__blob=publicationFile&v=1"
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-06
+    sha256: e58c214136612558517b1e6bb749db2e616159054add7add947872797fc41231
+annotated: bgh-double-opt-in.law.xml

@@ -1,0 +1,95 @@
+# GDPR recitals, from the authentic Official Journal text (consolidated texts leave recitals out).
+# Recitals are not binding; they explain how the articles are to be read. The files are the ones in
+# ../gdpr/, listed again so this index can be checked on its own; the corrigenda are listed so
+# `legalgraph sources verify` can prove none of them corrects a quoted recital.
+id: eu/gdpr-recitals
+title: General Data Protection Regulation (Regulation (EU) 2016/679), recitals
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+document: EU-2016-679-oj
+originals:
+  - file: ../gdpr/L_2016119EN.01000101.xml
+    page: https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+    url: https://publications.europa.eu/resource/celex/32016R0679
+    fetch: zip-member
+    member: L_2016119EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: fce6e6ea8724e66a1c4f98c584cafdc9dfbae26aa83c44b43423b8c7f6aa0295
+  - file: ../gdpr/L_2016119DE.01000101.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu
+    url: https://publications.europa.eu/resource/celex/32016R0679
+    fetch: zip-member
+    member: L_2016119DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 64aca27ead020cf06c40730251ac627359bfb12096b8f723de881d01c3810ab3
+  - file: ../gdpr/L_2018127EN.01000201.xml
+    role: corrigendum
+    language: en
+    title: "Corrigendum, OJ L 127, 23.5.2018, p. 2"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2802%29
+    fetch: zip-member
+    member: L_2018127EN.01000201.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    corrects: ["Recital 71", "Art. 37(1)", "Art. 41(3)", "Art. 41(5)", "Art. 42(7)", "Art. 43(3)", "Art. 43(6)", "Art. 57(1)", "Art. 64(1)", "Art. 64(6)", "Art. 64(7)", "Art. 64(8)", "Art. 65(1)", "Art. 69(2)", "Art. 70(1)"]
+    retrieved_on: 2026-11-02
+    sha256: 4891cbff10e8319f12add13600538c2a06a03ec8ecfb19ed0636252568798f3d
+  - file: ../gdpr/L_2016314DE.01007201.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L 314 vom 22.11.2016, S. 72"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2801%29
+    fetch: zip-member
+    member: L_2016314DE.01007201.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Art. 28(7)", "Art. 30(5)", "Art. 33(1)"]
+    retrieved_on: 2026-11-02
+    sha256: fa5e8a2d766bff9ba09bc6933a1e6d779a196bd702e8c218711de4958cfd1acb
+  - file: ../gdpr/L_2018127DE.01000201.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L 127 vom 23.5.2018, S. 2"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2802%29
+    fetch: zip-member
+    member: L_2018127DE.01000201.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Recital 47", "Recital 50", "Recital 71", "Recital 140", "Recital 145", "Art. 4(18)", "Art. 15(4)", "Art. 20(4)", "Art. 25(1)", "Art. 25(2)", "Art. 26", "Art. 28(3)", "Art. 32(1)", "Art. 37(1)", "Art. 40(3)", "Art. 41(3)", "Art. 41(5)", "Art. 42(7)", "Art. 43(3)", "Art. 43(6)", "Art. 44", "Art. 57(1)", "Art. 58(1)", "Art. 58(2)", "Art. 64", "Art. 65(1)", "Art. 69(2)", "Art. 70(1)", "Art. 77(1)", "Art. 79(2)", "Art. 83(1)", "Art. 83(2)", "Art. 88(1)", "Art. 88(2)"]
+    retrieved_on: 2026-11-02
+    sha256: 45870f1e08f68883cfcdbc8ad499e8b5a741df84b5b783070ed9607cddb6e1ee
+  - file: ../gdpr/L_2021074DE.01003501.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L 74 vom 4.3.2021, S. 35"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2803%29
+    fetch: zip-member
+    member: L_2021074DE.01003501.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Art. 30(2)", "Art. 33(5)", "Art. 34(3)"]
+    retrieved_on: 2026-11-02
+    sha256: bb6be601ca89286290df7011b764a7803b92ca119804348965cb2413976c0b25
+annotated: L_2016119EN.01000101.annotated.xml

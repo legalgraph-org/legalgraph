@@ -1,0 +1,49 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Ukraine: additions to data/extracted/ua/ (the texts come from zakon.rada.gov.ua). Ukrainian is the only
+# authentic language; the English of every quote is a translation (data/translations/en/ua.ttl).
+
+lg:UA-675
+    eli:title "Law of Ukraine on Electronic Commerce"@en ;
+    lgo:shortName "Law on Electronic Commerce" ;
+    rdfs:comment "Article 7(1) is Ukraine's counterpart of the Impressum: every seller in e-commerce must give direct, simple and stable access to its name, address, email or web shop address, tax or registration code, licence details, and whether prices include taxes and the delivery cost."@en .
+
+lg:UA-3153
+    eli:title "Law of Ukraine on Consumer Rights Protection"@en ;
+    lgo:shortName "Consumer Rights Protection Law 2023" ;
+    lgo:succeeds lg:UA-1023 ;
+    rdfs:comment "Adopted on 10 June 2023 to align with EU consumer law (Consumer Rights Directive); it will replace the law of 1991 (No. 1023-XII). NOT YET IN FORCE: under Section IX(1) it takes effect one year after publication but not before martial law ends, so until then the 1991 law applies. Section IX(3) expressly repeals 1023-XII and its entering-into-force resolution from the day this law takes effect. Article 17 lists pre-contract information for distance contracts; Article 21 gives a 14-day right of withdrawal and requires a withdrawal form on the website."@en .
+
+lg:UA-2297
+    eli:title "Law of Ukraine on Personal Data Protection"@en ;
+    lgo:shortName "Law on Personal Data Protection" ;
+    rdfs:comment "Ukraine's data protection law of 2010. A GDPR-aligned replacement has been in parliament; check its status before relying on this text."@en .
+
+lg:UA-1023
+    eli:title "Law of Ukraine on Consumer Rights Protection (1991)"@en ;
+    lgo:shortName "Consumer Rights Protection Law 1991" ;
+    rdfs:comment "The consumer law of 1991, in force until the 2023 act (UA-3153) takes effect (one year after its publication and not before martial law ends). Article 13 covers distance contracts: part 2 lists the pre-contract information a seller must give, part 4 grants a 14-day right to terminate."@en .
+
+lg:UA-2704
+    eli:title "Law of Ukraine on Ensuring the Functioning of Ukrainian as the State Language"@en ;
+    lgo:shortName "State Language Law" ;
+    rdfs:comment "Article 27(6) requires websites and social-media pages of businesses registered in Ukraine to be in Ukrainian, no thinner than other language versions and loaded by default for users in Ukraine; foreign businesses with a subsidiary, branch or representative office in Ukraine need a sufficient Ukrainian version, also loaded by default. Article 27(7) extends the duty to mobile apps. Article 30 requires consumer service and product information, including in online shops and all information the e-commerce law requires, in Ukrainian."@en .
+
+lg:UA-2849
+    eli:title "Law of Ukraine on Media"@en ;
+    lgo:shortName "Media Law" ;
+    rdfs:comment "Article 37(5) is the online-media imprint: registered online media publish their official name, postal address, phone, email and register identifier on their website. Article 2(2)(2) keeps websites outside the media law when publishing mass information is not the business's main activity."@en .
+
+lg:UA-270
+    eli:title "Law of Ukraine on Advertising"@en ;
+    lgo:shortName "Advertising Law" ;
+    rdfs:comment "Article 14-3 (added in 2023): advertising by spam, or using the consumer's phone number or other network identifier, needs the consumer's prior consent and a free way to refuse the use of their data at any time."@en .
+
+lg:UA-1089
+    eli:title "Law of Ukraine on Electronic Communications"@en ;
+    lgo:shortName "Electronic Communications Law" ;
+    rdfs:comment "Article 120 protects end users from spam: deliberate mass electronic messaging without consent is banned, and contact identifiers collected during a sale may be used for advertising only with the customer's consent and a free way to refuse."@en .

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EDPB Guidelines 05/2020 on consent (version 1.1, adopted 4 May 2020), the paragraphs the graph
+  quotes, written in schemas/law.xsd from the EDPB's PDF. The words are the EDPB's; only the
+  structure is ours. `legalgraph sources verify` checks each paragraph against the PDF's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="EDPB-GL-2020-05" lga:jurisdiction="EU" lga:act-type="Guidelines"
+     lga:url="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en">
+  <meta>
+    <title>Guidelines 05/2020 on consent under Regulation 2016/679</title>
+    <short>EDPB Guidelines 05/2020</short>
+    <date>2020-05-04</date>
+  </meta>
+
+  <section num="3.1.2" title="Conditionality" source="edpb_guidelines_202005_consent_en.pdf">
+    <paragraph num="39."
+               lga:provision="EDPB-GL-2020-05-p39" lga:citation="EDPB Guidelines 05/2020, para. 39"
+               lga:interprets="EU-2016-679-art4-11 EU-2016-679-art7-4 EU-2002-58-art5-3">In order for consent to be freely given, access to services and functionalities must not be made conditional on the consent of a user to the storing of information, or gaining of access to information already stored, in the terminal equipment of a user (so called cookie walls)<note num="27"/>.</paragraph>
+  </section>
+
+  <section num="3.3.1" title="Minimum content requirements for consent to be ‘informed’" source="edpb_guidelines_202005_consent_en.pdf">
+    <paragraph num="64."
+               lga:provision="EDPB-GL-2020-05-p64" lga:citation="EDPB Guidelines 05/2020, para. 64"
+               lga:interprets="EU-2016-679-art4-11 EU-2016-679-art7-3">For consent to be informed, it is necessary to inform the data subject of certain elements that are crucial to make a choice. Therefore, the EDPB is of the opinion that at least the following information is required for obtaining valid consent:
+      <list>
+        <item num="i." lga:requires="ControllerIdentity">the controller’s identity,<note num="32"/></item>
+        <item num="ii." lga:requires="ProcessingPurposes">the purpose of each of the processing operations for which consent is sought,<note num="33"/></item>
+        <item num="iii." lga:requires="CategoriesOfPersonalData">what (type of) data will be collected and used,<note num="34"/></item>
+        <item num="iv." lga:requires="ConsentWithdrawalRight">the existence of the right to withdraw consent,<note num="35"/></item>
+        <item num="v." lga:requires="AutomatedDecisionMaking">information about the use of the data for automated decision-making in accordance with Article 22 (2)(c)<note num="36"/> where relevant, and</item>
+        <item num="vi." lga:requires="ThirdCountryTransfer"><page num="16"/>on the possible risks of data transfers due to absence of an adequacy decision and of appropriate safeguards as described in Article 46.<note num="37"/></item>
+      </list></paragraph>
+  </section>
+
+  <section num="3.4" title="Unambiguous indication of wishes" source="edpb_guidelines_202005_consent_en.pdf">
+    <paragraph num="79."
+               lga:provision="EDPB-GL-2020-05-p79" lga:citation="EDPB Guidelines 05/2020, para. 79"
+               lga:interprets="EU-2016-679-art4-11 EU-2016-679-rec32">Without prejudice to existing (national) contract law, consent can be obtained through a recorded oral statement, although due note must be taken of the information available to the data subject, prior to the indication of consent. The use of pre-ticked opt-in boxes is invalid under the GDPR. Silence or inactivity on the part of the data subject, as well as merely proceeding with a service cannot be regarded as an active indication of choice.</paragraph>
+    <paragraph num="86."
+               lga:provision="EDPB-GL-2020-05-p86" lga:citation="EDPB Guidelines 05/2020, para. 86"
+               lga:interprets="EU-2016-679-art4-11 EU-2016-679-rec32 EU-2016-679-art7-3">Example 16: Based on recital 32, actions such as scrolling or swiping through a webpage or similar user activity will not under any circumstances satisfy the requirement of a clear and affirmative action: such actions may be difficult to distinguish from other activity or interaction by a user and therefore determining that an unambiguous consent has been obtained will also not be possible. Furthermore, in such a case, it will be difficult to provide a way for the user to withdraw consent in a manner that is as easy as granting it.</paragraph>
+  </section>
+
+  <section num="5.1" title="Demonstrate consent" source="edpb_guidelines_202005_consent_en.pdf">
+    <paragraph num="104."
+               lga:provision="EDPB-GL-2020-05-p104" lga:citation="EDPB Guidelines 05/2020, para. 104"
+               lga:interprets="EU-2016-679-art7-1">In Article 7(1), the GDPR clearly outlines the explicit obligation of the controller to demonstrate a data subject's consent. The burden of proof will be on the controller, according to Article 7(1).</paragraph>
+    <paragraph num="105."
+               lga:provision="EDPB-GL-2020-05-p105" lga:citation="EDPB Guidelines 05/2020, para. 105"
+               lga:interprets="EU-2016-679-rec42">Recital 42 states: “Where processing is based on the data subject's consent, the controller should be able to demonstrate that the data subject has given consent to the processing operation.”</paragraph>
+    <paragraph num="106."
+               lga:provision="EDPB-GL-2020-05-p106" lga:citation="EDPB Guidelines 05/2020, para. 106"
+               lga:interprets="EU-2016-679-art7-1">Controllers are free to develop methods to comply with this provision in a way that is fitting in their daily operations. At the same time, the duty to demonstrate that valid consent has been obtained by a controller, should not in itself lead to excessive amounts of additional data processing. This means that controllers should have enough data to show a link to the processing (to show consent was obtained) but they shouldn’t be collecting any more information than necessary.</paragraph>
+    <paragraph num="107."
+               lga:provision="EDPB-GL-2020-05-p107" lga:citation="EDPB Guidelines 05/2020, para. 107"
+               lga:interprets="EU-2016-679-art7-1 EU-2016-679-art17-3">It is up to the controller to prove that valid consent was obtained from the data subject. The GDPR does not prescribe exactly how this must be done. However, the controller must be able to prove that a data subject in a given case has consented. As long as a data processing activity in question lasts, the<page num="23"/> obligation to demonstrate consent exists. After the processing activity ends, proof of consent should be kept no longer then strictly necessary for compliance with a legal obligation or for the establishment, exercise or defence of legal claims, in accordance with Article 17(3)(b) and (e).</paragraph>
+    <paragraph num="108."
+               lga:provision="EDPB-GL-2020-05-p108" lga:citation="EDPB Guidelines 05/2020, para. 108"
+               lga:interprets="EU-2016-679-art7-1 EU-2016-679-art5-2">For instance, the controller may keep a record of consent statements received, so he can show how consent was obtained, when consent was obtained and the information provided to the data subject at the time shall be demonstrable. The controller shall also be able to show that the data subject was informed and the controller´s workflow met all relevant criteria for a valid consent. The rationale behind this obligation in the GDPR is that controllers must be accountable with regard to obtaining valid consent from data subjects and the consent mechanisms they have put in place. For example, in an online context, a controller could retain information on the session in which consent was expressed, together with documentation of the consent workflow at the time of the session, and a copy of the information that was presented to the data subject at that time. It would not be sufficient to merely refer to a correct configuration of the respective website.</paragraph>
+    <paragraph num="109."
+               lga:provision="EDPB-GL-2020-05-p109" lga:citation="EDPB Guidelines 05/2020, para. 109"
+               lga:interprets="EU-2016-679-art7-1">Example 21: A hospital sets up a scientific research programme, called project X, for which dental records of real patients are necessary. Participants are recruited via telephone calls to patients that voluntarily agreed to be on a list of candidates that may be approached for this purpose. The controller seeks explicit consent from the data subjects for the use of their dental record. Consent is obtained during a phone call by recording an oral statement of the data subject in which the data subject confirms that they agree to the use of their data for the purposes of project X.</paragraph>
+    <paragraph num="110."
+               lga:provision="EDPB-GL-2020-05-p110" lga:citation="EDPB Guidelines 05/2020, para. 110"
+               lga:interprets="EU-2016-679-art7-3">There is no specific time limit in the GDPR for how long consent will last. How long consent lasts will depend on the context, the scope of the original consent and the expectations of the data subject. If the processing operations change or evolve considerably then the original consent is no longer valid. If this is the case, then new consent needs to be obtained.</paragraph>
+    <paragraph num="111."
+               lga:provision="EDPB-GL-2020-05-p111" lga:citation="EDPB Guidelines 05/2020, para. 111"
+               lga:interprets="EU-2016-679-art7-3">The EDPB recommends as a best practice that consent should be refreshed at appropriate intervals. Providing all the information again helps to ensure the data subject remains well informed about how their data is being used and how to exercise their rights.<note num="51"/></paragraph>
+  </section>
+
+  <section num="5.2" title="Withdrawal of consent" source="edpb_guidelines_202005_consent_en.pdf">
+    <paragraph num="114."
+               lga:provision="EDPB-GL-2020-05-p114" lga:citation="EDPB Guidelines 05/2020, para. 114"
+               lga:interprets="EU-2016-679-art7-3">However, when consent is obtained via electronic means through only one mouse-click, swipe, or keystroke, data subjects must, in practice, be able to withdraw that consent equally as easily. Where<page num="24"/> consent is obtained through use of a service-specific user interface (for example, via a website, an app, a log-on account, the interface of an IoT device or by e-mail), there is no doubt a data subject must be able to withdraw consent via the same electronic interface, as switching to another interface for the sole reason of withdrawing consent would require undue effort. Furthermore, the data subject should be able to withdraw his/her consent without detriment. This means, inter alia, that a controller must make withdrawal of consent possible free of charge or without lowering service levels.<note num="53"/></paragraph>
+  </section>
+</law>

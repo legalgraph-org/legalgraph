@@ -1,0 +1,95 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Cases of German courts and authorities: case numbers, outcomes and the rules each decision shows
+# at work. Every outcome names the point of the decision that states it (lgo:statedIn), so the
+# party and any amount can be checked against the quoted words. Parties are named as the decision
+# names them; published German decisions often redact them, and so do we.
+
+lg:DE-OLGK-2024-0119 lgo:caseNumber "6 U 80/23" ;
+    lgo:hasOutcome lg:DE-OLGK-2024-0119-outcome-1 ;
+    lgo:illustrates lg:DE-R-cookie-consent .
+
+lg:DE-OLGK-2024-0119-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Injunction ;
+    lgo:against "The operator of an advertising-funded news portal (name redacted in the published judgment)" ;
+    lgo:statedIn lg:DE-OLGK-2024-0119-tenor-1 ;
+    lgo:forBreachOf lg:DE-TDDDG-s25-1 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "On the claim of a consumer association: the operator must stop asking for cookie consent with a banner that offers no equivalent way to refuse, or with an 'Akzeptieren & Schließen X' link, on pain of a penalty of up to €250,000 for each breach. It also had to pay the association €260 for its warning letter (Tenor 2)."@en .
+
+lg:DE-LGM-2022-0120 lgo:caseNumber "3 O 17493/20" ;
+    lgo:hasOutcome lg:DE-LGM-2022-0120-outcome-1 , lg:DE-LGM-2022-0120-outcome-2 ;
+    lgo:illustrates lg:EU-R-lawful-basis ;
+    rdfs:comment "A website loaded Google Fonts from Google's servers, so each visit sent the visitor's IP address to Google in the US, without consent and without a legitimate interest, since the fonts can be hosted locally. The court granted an injunction and €100 damages. It started a wave of warning letters; see LG München I 4 O 13063/22 for where that wave met its limits."@en .
+
+lg:DE-LGM-2022-0120-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Injunction ;
+    lgo:against "The website operator (not named in the published judgment)" ;
+    lgo:statedIn lg:DE-LGM-2022-0120-tenor-1 ;
+    lgo:forBreachOf lg:EU-2016-679-art6-1 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:DE-LGM-2022-0120-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:Damages ;
+    lgo:against "The website operator (not named in the published judgment)" ;
+    lgo:amount 100.0 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:DE-LGM-2022-0120-tenor-3 ;
+    lgo:forBreachOf lg:EU-2016-679-art6-1 ;
+    lgo:sanctionedUnder lg:EU-2016-679-art82-1 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:DE-LGM-2023-0330 lgo:caseNumber "4 O 13063/22" ;
+    lgo:illustrates lg:EU-R-lawful-basis ;
+    rdfs:comment "The other side of the Google Fonts wave: a private person had a crawler visit websites with Google Fonts and then sent warning letters (by his own account at least 100,000) asking €170 each. On the website operator's action, the court declared he had neither an injunction nor a damages claim: a crawler's visit affects no one personally, and provoking a breach to claim from it is an abuse of rights (§ 242 BGB). It did not decide whether dynamic Google Fonts breached the GDPR."@en .
+
+lg:DE-BGH-2020-0528 lgo:caseNumber "I ZR 7/16" ;
+    lgo:ecli "ECLI:DE:BGH:2020:280520UIZR7.16.0" ;
+    lgo:follows lg:CJEU-C-673-17 ;
+    lgo:illustrates lg:DE-R-cookie-consent ;
+    rdfs:comment "Planet49 in Germany: after the Court of Justice's ruling in the same case, the Federal Court of Justice read the German law then in force (§ 15(3) TMG) in line with Article 5(3) of the ePrivacy Directive: cookies for advertising profiles need consent, and a pre-ticked box is none. The consumer association's injunction against the operator of the online lottery was upheld."@en .
+
+lg:DE-BGH-2011-0210 lgo:caseNumber "I ZR 164/09" ;
+    lgo:ecli "ECLI:DE:BGH:2011:100211UIZR164.09.0" ;
+    lgo:hasOutcome lg:DE-BGH-2011-0210-outcome-1 ;
+    lgo:illustrates lg:DE-R-email-marketing-consent ;
+    rdfs:comment "The leading ruling on proving consent: a confirmation mail in a double-opt-in procedure neither proves consent nor eases the advertiser's burden — every consumer's concrete declaration must be fully documented, stored and printable (Leitsatz b-c). For email advertising the same procedure does suffice to show the address owner's consent (Rn. 37). The health insurer lost its appeal: cold calls from a call centre working off such addresses stayed unlawful."@en .
+
+lg:DE-BGH-2011-0210-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Injunction ;
+    lgo:against "A health insurer (name abbreviated in the published judgment)" ;
+    lgo:statedIn lg:DE-BGH-2011-0210-tenor-1 ;
+    lgo:forBreachOf lg:DE-UWG-s7-2 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The injunction the consumer association won below stands: the BGH dismissed the insurer's appeal and left the costs of the appeal with it. The insurer had bought consumer contact data collected through online competitions and had a call centre phone the consumers. Telephone advertising needed prior express consent, and the addresses used had no documented consent behind them."@en .
+
+lg:DE-LGST-2021-0512 lgo:caseNumber "22 S 87/20" ;
+    lgo:ecli "ECLI:DE:LGSTEND:2021:0512.22S87.20.00" ;
+    lgo:follows lg:DE-BGH-2011-0210 ;
+    lgo:hasOutcome lg:DE-LGST-2021-0512-outcome-1 , lg:DE-LGST-2021-0512-outcome-2 ;
+    lgo:illustrates lg:DE-R-email-marketing-consent ;
+    rdfs:comment "The limit of the confirmation mail: a double-opt-in confirmation is lawful because it verifies the address owner's consent (BGH I ZR 164/09), but only as long as it carries nothing but the confirmation request. A logo, a 'Welcome to' greeting and a contact prompt already made it advertising — sent without express consent it was an unlawful interference with the recipient's business."@en .
+
+lg:DE-LGST-2021-0512-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Injunction ;
+    lgo:against "A newsletter sender (the defendant company)" ;
+    lgo:statedIn lg:DE-LGST-2021-0512-tenor-1 ;
+    lgo:forBreachOf lg:DE-UWG-s7-2 ;
+    lgo:sanctionedUnder lg:DE-BGB-s823-1 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The claimant was a business, not a competitor, so the court did not grant the injunction under the UWG itself but under §§ 1004(1) sentence 2, 823(1) BGB: an interference with the established business, measured by the standards of § 7 UWG (Rn. 4, 10–11; § 1004 BGB is not in the graph)."@en .
+
+lg:DE-LGST-2021-0512-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:Damages ;
+    lgo:against "A newsletter sender (the defendant company)" ;
+    lgo:amount 179.27 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:DE-LGST-2021-0512-tenor-2 ;
+    lgo:forBreachOf lg:DE-UWG-s7-2 ;
+    lgo:sanctionedUnder lg:DE-BGB-s823-1 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The claimant's lawyer's fees for the warning letter, awarded as damages under §§ 823(1), 249 BGB (Rn. 23)."@en .

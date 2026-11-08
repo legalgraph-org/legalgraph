@@ -1,0 +1,22 @@
+# EDPB Guidelines 05/2020 on consent under Regulation 2016/679, version 1.1: published only as PDF.
+# The paragraphs the graph quotes are transcribed in schemas/law.xsd (edpb-consent.law.xml) and
+# `legalgraph sources verify` checks each, letter for letter, against the PDF's text. Reuse is allowed,
+# also commercially, if the EDPB is credited and the meaning is not altered
+# (https://edpb.europa.eu/copyright_en). Guidance does not bind courts; it shows how the
+# supervisory authorities read the GDPR.
+id: eu/edpb-consent
+title: EDPB Guidelines 05/2020 on consent under Regulation 2016/679
+jurisdiction: EU
+language: en
+publisher: European Data Protection Board
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "EDPB legal notice: reproduction is authorised provided the source is acknowledged"
+originals:
+  - file: edpb_guidelines_202005_consent_en.pdf
+    url: https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-02
+    sha256: d45afa0c7f062e9b0d9f5d2abbcfeb8a59d44e6c29c7e65693da9f2a5ea8fcb7
+annotated: edpb-consent.law.xml

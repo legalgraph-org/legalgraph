@@ -1,0 +1,22 @@
+# Online Safety Act 2023: the revised (current) text as legislation.gov.uk publishes it, in its official XML (Crown
+# Legislation Markup Language). Duties of user-to-user services with links to the UK: illegal content
+# (section 10) and children's safety (section 12).
+id: gb/online-safety
+title: Online Safety Act 2023
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: ukpga-2023-50.xml
+    page: https://www.legislation.gov.uk/ukpga/2023/50
+    url: https://www.legislation.gov.uk/ukpga/2023/50/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-07
+    sha256: 6a1699770c0ee7672153b79867e9e4184b58d1ddef8dc38f00683dddb8e01c70
+annotated: ukpga-2023-50.annotated.xml

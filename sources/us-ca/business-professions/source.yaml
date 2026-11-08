@@ -1,0 +1,53 @@
+# Cal. Business & Professions Code — two blocks. §§ 22575–22579 (CalOPPA): every commercial
+# website collecting personal information from California residents posts a privacy policy
+# covering what is collected, how it is used, the change procedure and a do-not-track
+# disclosure. § 17602 (automatic purchase renewals): clear renewal terms, affirmative consent,
+# a retainable acknowledgment, pre-renewal notices, a cost-free cancellation mechanism — and
+# termination online, at will. leginfo is behind Incapsula; the pages are browser-saved print
+# views.
+id: us-ca/business-professions
+title: California Business and Professions Code §§ 17602, 22575–22579
+jurisdiction: US-CA
+language: en
+publisher: California Legislative Information, leginfo.legislature.ca.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))"
+originals:
+  - file: bpc-17602.fragment.html
+    page: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&lawCode=BPC
+    url: https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&article=9.&sectionNum=17602.&op_statues=2024&op_chapter=515&op_section=2
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-03
+    sha256: e75876d7c8ad465f0e4c92ce5f117bd9d973939b6ae8f4f6511cf619bb2b2fd8
+  - file: bpc-22575.fragment.html
+    url: https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22575.
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: cc624232e309acdfb8fe0d09c7e4752b80ff00c39143ebced44f0acc603f1b38
+  - file: bpc-22576.fragment.html
+    url: https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22576.
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: 866c0fb91adf2765fdb659465dc7527986b32ac5ebffffd3061d40aacc1ed3af
+  - file: bpc-22577.fragment.html
+    url: https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22577.
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: b568350df1019d611777fc3ef065953ce4f590a29e38d604b1b2515463f728d3
+  - file: bpc-22579.fragment.html
+    url: https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22579.
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: 072af189c85d7afe102d5901d644e582148bd7b6e4b984e0bd66ef5a1bc0ff19
+annotated: bpc.law.xml

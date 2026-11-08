@@ -1,0 +1,20 @@
+# Bundesdatenschutzgesetz (BDSG, 2018): official XML from gesetze-im-internet.de. Germany's
+# supplement to the GDPR, using its opening clauses; § 38 sets when a data protection officer is
+# required beyond Article 37(1) GDPR.
+id: de/bdsg
+title: Bundesdatenschutzgesetz
+jurisdiction: DE
+language: de
+publisher: Bundesministerium der Justiz, gesetze-im-internet.de
+kind: official-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright"
+originals:
+  - file: BJNR209710017.xml
+    url: https://www.gesetze-im-internet.de/bdsg_2018/xml.zip
+    fetch: zip-member
+    member: BJNR209710017.xml
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 444722e79997741b67ec4bd0641dd223893a26731e0d79914ca4f64045793410
+annotated: BJNR209710017.annotated.xml

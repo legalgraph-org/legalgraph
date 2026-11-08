@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  15 U.S.C. § 7704(a)(5) (CAN-SPAM Act), written in schemas/law.xsd from the govinfo.gov page of the
+  2024 edition of the United States Code. The words are the Code's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CAN-SPAM" lga:jurisdiction="US" lga:act-type="Statute"
+     lga:url="https://www.ftc.gov/legal-library/browse/statutes/controlling-assault-non-solicited-pornography-marketing-act-2003-can-spam-act">
+  <meta>
+    <title>Controlling the Assault of Non-Solicited Pornography and Marketing Act of 2003</title>
+    <short>CAN-SPAM Act</short>
+    <date>2003-12-16</date>
+  </meta>
+  <section num="15 U.S.C. § 7704(a)(5)" title="Inclusion of identifier, opt-out, and physical address in commercial electronic mail" source="USCODE-2024-title15-chap103-sec7704.htm">
+    <paragraph num="(A)" lga:provision="US-CAN-SPAM-7704-a-5-A" lga:citation="15 U.S.C. § 7704(a)(5)(A)"
+               lga:url="https://www.law.cornell.edu/uscode/text/15/7704"
+               lga:regulates="ElectronicDirectMarketing">It is unlawful for any person to initiate the transmission of any commercial electronic mail message to a protected computer unless the message provides—
+      <list>
+        <item num="(i)" lga:requires="AdvertisementMarking">clear and conspicuous identification that the message is an advertisement or solicitation;</item>
+        <item num="(ii)">clear and conspicuous notice of the opportunity under paragraph (3) to decline to receive further commercial electronic mail messages from the sender; and</item>
+        <item num="(iii)" lga:requires="GeographicAddress">a valid physical postal address of the sender.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

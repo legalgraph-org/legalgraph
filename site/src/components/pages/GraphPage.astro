@@ -1,0 +1,636 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import type { Translate } from "../../i18n/t";
+import NodeSymbol from "../NodeSymbol.astro";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+const types = [
+  ["organisation", t("EU / EEA")],
+  ["country", t("Country")],
+  ["act", t("Legal act")],
+  ["provision", t("Provision")],
+  ["disclosure", t("Disclosure type")],
+  ["item", t("Information item")],
+  ["concept", t("Legal concept")],
+  ["decision", t("Decision")],
+  ["guidance", t("Guidance")],
+  ["rule", t("Rule")],
+];
+
+// The words the script below writes (the panel, the status line, the text of a provision), in the
+// page's language. Relation names and property names come from the graph and stay in English.
+const labels = {
+  locale: t.locale,
+  types: {
+    organisation: t("EU / EEA"),
+    country: t("Country"),
+    act: t("Legal act"),
+    provision: t("Provision"),
+    disclosure: t("Disclosure type"),
+    item: t("Information item"),
+    concept: t("Legal concept"),
+    decision: t("Court or authority decision"),
+    rule: t("Rule (obligation)"),
+    guidance: t("Guidance"),
+  } as Record<string, string>,
+  // The script fills these in; {braces} are kept for it, so they are passed through as values.
+  shown: t("{shown} of {total} nodes shown", { shown: "{shown}", total: "{total}" }),
+  details: t("Details"),
+  manualTitle: t("Exploring the graph"),
+  manual: [
+    t("Without a node to start from, the view shows every jurisdiction: the EU and the EEA with their members, and states or provinces with their country."),
+    t("Find a node with the search above, or click one in the view."),
+    t("<0>Double-click</0> a node, or press <1>Expand</1>, to bring in its neighbours."),
+    t("<0>Focus</0> starts over from the node you selected."),
+    t("A dashed node is a law that several provisions in the view are part of."),
+  ],
+  expand: t("Expand"),
+  expandCount: t("Expand ({count} of {total})", { count: "{count}", total: "{total}" }),
+  focus: t("Focus"),
+  hide: t("Hide"),
+  openPage: t("Open page →"),
+  properties: t("Properties"),
+  type: t("Type"),
+  relationships: t("Relationships ({count})", { count: "{count}" }),
+  connections: t("Connections"),
+  connectionsHint: t("● in the view · click a name to go to it"),
+  inView: t("In the view"),
+  laws: t("Laws"),
+  original: t("original"),
+  forInformation: t("translation for information"),
+  equallyAuthentic: t("equally authentic"),
+  informationOnly: t("for information"),
+  translation: t("translation"),
+  translationSuffix: ` ${t("(translation)")}`,
+  textAsOf: t("text as of {date}", { date: "{date}" }),
+  officialSource: t("official source"),
+  openProvision: t("open the provision"),
+  // How a translation was made and whether a person has checked it (graph-text/*.json), as shown.
+  values: {
+    "Machine translation": t("Machine translation"),
+    "Human translation": t("Human translation"),
+    "Official translation": t("Official translation"),
+    Draft: t("Draft"),
+    Reviewed: t("Reviewed"),
+  } as Record<string, string>,
+};
+---
+
+<Layout
+  t={t}
+  page="graph"
+  title={t("Graph")}
+  header={{ title: t("Graph"), description: t("Countries, laws, provisions, rules and what they require, as one network.") }}
+>
+  <!-- How to use the view: folded, so it does not push the graph down for those who know. -->
+  <details class="card mb-4 px-4 py-3 text-sm [&[open]>summary]:mb-2">
+    <summary class="cursor-pointer font-medium">{t("How to use the graph")}</summary>
+    <ul class="list-disc space-y-1.5 pl-5 text-muted-foreground">
+      <li>{t("The view starts with every jurisdiction: the EU and the EEA with their members, and states or provinces with their country.")}</li>
+      <li><strong class="text-foreground">{t("Click")}</strong> {t("a node to select it. The panel on the right shows what it is, its properties and all its connections.")}</li>
+      <li><strong class="text-foreground">{t("Double-click")}</strong> {t("a node, or select it and press Expand, to bring in its closest neighbours: the nodes it is directly connected to, up to 25 at a time.")}</li>
+      <li><strong class="text-foreground">{t("Trim")}</strong> {t("keeps only the selected node and its neighbours in the view (and the laws they share), and removes everything else.")}</li>
+      <li><strong class="text-foreground">{t("Focus")}</strong> {t("starts over from the selected node with its nearest neighbours; Hide removes a node from the view.")}</li>
+      <li><strong class="text-foreground">{t("Start over")}</strong> {t("returns to every jurisdiction; Fit brings everything shown back into view.")}</li>
+      <li>{t("Drag a node to move it, drag the background to pan, scroll to zoom. The checkboxes above hide or show each kind of node. Hover a line to see the relation.")}</li>
+    </ul>
+  </details>
+
+  <!-- Two rows: the legend and the search, then the view and its panel, so both pairs line up. Every
+       block has its own cell, so hiding the search (folded) leaves the view where it is. -->
+  <!-- data-panel="folded" hides the right column (search, buttons, details) and widens the view. -->
+  <div id="graph-layout" data-panel="open" data-labels={JSON.stringify(labels)} class="group/layout grid gap-x-4 gap-y-3 transition-[grid-template-columns] duration-300 ease-out motion-reduce:transition-none lg:grid-cols-[minmax(0,1fr)_22rem] data-[panel=folded]:lg:grid-cols-[minmax(0,1fr)_3rem]">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 self-center text-sm lg:col-start-1 lg:row-start-1">
+      <div class="flex flex-wrap gap-x-4 gap-y-2">
+        {
+          types.map(([type, label]) => (
+            <label class="inline-flex items-center gap-1.5">
+              <input type="checkbox" checked data-type={type} />
+              <NodeSymbol type={type!} />
+              {label}
+            </label>
+          ))
+        }
+      </div>
+    </div>
+    <div class="flex flex-col gap-2 self-end group-data-[panel=folded]/layout:hidden lg:col-start-2 lg:row-start-1">
+      <!-- The view's buttons, sharing the search box's width. -->
+      <div class="grid grid-cols-3 gap-2 text-sm">
+        <button id="graph-fit" type="button" class="control py-1.5" title={t("Fit the view to what is shown")}>{t("Fit")}</button>
+        <button
+          id="graph-trim"
+          type="button"
+          disabled
+          class="control py-1.5 disabled:opacity-50"
+          title={t("Keep only the selected node, its neighbours in the view, and the laws they share")}
+        >
+          {t("Trim")}
+        </button>
+        <button id="graph-reset" type="button" class="control py-1.5">{t("Start over")}</button>
+      </div>
+      <div class="relative">
+      <label for="graph-search" class="sr-only">{t("Find a node")}</label>
+      <input
+        id="graph-search"
+        list="graph-nodes"
+        type="text"
+        autocomplete="off"
+        placeholder={t("Find a node, e.g. § 5 Abs. 1 DDG")}
+        class="control h-10 w-full rounded-lg py-1.5 pr-9 pl-3"
+      />
+      <button
+        id="graph-clear"
+        type="button"
+        aria-label={t("Clear the search")}
+        hidden
+        class="absolute top-1/2 right-2 grid size-6 -translate-y-1/2 place-items-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground"
+      >
+        <svg aria-hidden="true" class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-width="2" d="M6 6l12 12M18 6 6 18"></path>
+        </svg>
+      </button>
+      <datalist id="graph-nodes"></datalist>
+      </div>
+    </div>
+    <div class="relative lg:col-start-1 lg:row-start-2">
+      <div id="graph" class="card h-[70vh] p-0"></div>
+      <p id="graph-status" class="pointer-events-none absolute bottom-3 left-4 text-xs text-muted-foreground">{t("Loading the graph…")}</p>
+    </div>
+    <!-- The details panel. Folded, it shrinks to a rail at the view's right edge; the rail opens it again. -->
+    <aside
+      id="graph-side"
+      class="card relative h-[70vh] overflow-hidden p-0 text-sm group-data-[panel=folded]/layout:max-lg:h-auto lg:col-start-2 lg:row-start-2"
+    >
+      <button
+        id="graph-fold"
+        type="button"
+        aria-controls="graph-panel"
+        aria-expanded="true"
+        aria-label={t("Hide the details panel")}
+        title={t("Hide the details panel")}
+        class="absolute top-2.5 right-2.5 z-10 grid size-8 place-items-center rounded-md text-muted-foreground hover:bg-muted hover:text-foreground group-data-[panel=folded]/layout:hidden"
+      >
+        <!-- Lucide panel-right-close -->
+        <svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="18" height="18" x="3" y="3" rx="2" /><path d="M15 3v18" /><path d="m8 9 3 3-3 3" />
+        </svg>
+      </button>
+      <button
+        id="graph-unfold"
+        type="button"
+        aria-controls="graph-panel"
+        aria-label={t("Show the details panel")}
+        title={t("Show the details panel")}
+        class="hidden h-full w-full items-center gap-3 p-2.5 text-muted-foreground hover:bg-muted hover:text-foreground group-data-[panel=folded]/layout:flex max-lg:flex-row lg:flex-col"
+      >
+        <!-- Lucide panel-right-open -->
+        <svg aria-hidden="true" class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="18" height="18" x="3" y="3" rx="2" /><path d="M15 3v18" /><path d="m10 15-3-3 3-3" />
+        </svg>
+        <span id="graph-rail-dot" class="size-2.5 shrink-0 rounded-full bg-border-strong"></span>
+        <span id="graph-rail-label" class="truncate text-xs font-medium tracking-wide uppercase lg:[writing-mode:vertical-rl]">{t("Details")}</span>
+      </button>
+      <div id="graph-panel" aria-live="polite" class="h-full overflow-auto p-4 pr-12 group-data-[panel=folded]/layout:hidden"></div>
+    </aside>
+    <!-- The text of the selected provision, under the view at full width: original, counterpart, or both. -->
+    <section id="graph-text" hidden class="card p-5 lg:col-span-2 lg:row-start-3">
+      <div class="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <p class="text-xs font-semibold tracking-wide text-muted-foreground uppercase">{t("Text of the law")}</p>
+          <h2 id="graph-text-title" class="mt-1! mb-0! text-lg font-semibold"></h2>
+          <p id="graph-text-law" class="mt-0.5 text-sm"></p>
+          <p id="graph-text-meta" class="mt-1 text-sm text-muted-foreground"></p>
+        </div>
+        <div id="graph-text-modes" role="group" aria-label={t("Which text to show")} class="inline-flex rounded-lg border border-border-strong p-0.5 text-sm">
+          <button type="button" data-mode="original" class="rounded-md px-3 py-1"></button>
+          <button type="button" data-mode="counterpart" class="rounded-md px-3 py-1"></button>
+          <button type="button" data-mode="side" class="rounded-md px-3 py-1">{t("Side by side")}</button>
+        </div>
+      </div>
+      <div id="graph-text-body" class="mt-5"></div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import type { Core } from "cytoscape";
+
+  import {
+    TYPE_LABELS,
+    addSharedParents,
+    expand,
+    focusOn,
+    jurisdictionIds,
+    showJurisdictions,
+    trimTo,
+    hiddenNeighbours,
+    loadGraphData,
+    loadProperties,
+    loadText,
+    type ProvisionText,
+    mountGraph,
+    nodeColor,
+    nodeCurie,
+    nodeIri,
+    nodeHref,
+    nodeTurtle,
+    type GraphData,
+    type GraphNode,
+  } from "../../scripts/graph-view";
+
+  // How many neighbours a focus or an expansion brings in at once; more are a click away.
+  const FOCUS_LIMIT = 30;
+  const EXPAND_LIMIT = 25;
+
+  const container = document.getElementById("graph")!;
+  const panel = document.getElementById("graph-panel")!;
+  const status = document.getElementById("graph-status")!;
+  const search = document.getElementById("graph-search") as HTMLInputElement;
+  const clear = document.getElementById("graph-clear") as HTMLButtonElement;
+  const datalist = document.getElementById("graph-nodes")!;
+
+  const escape = (text: string) =>
+    text.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+
+  // The page's words in its language (labels in the frontmatter); {name} placeholders filled in.
+  const L = JSON.parse(document.getElementById("graph-layout")!.dataset.labels!);
+  const fill = (template: string, values: Record<string, string | number>) =>
+    template.replace(/\{(\w+)\}/g, (match, name: string) => (name in values ? String(values[name]) : match));
+  const typeLabel = (type: string) => L.types[type] ?? TYPE_LABELS[type] ?? type;
+  // <0>…</0> marks in a translated sentence: the first is strong, the second emphasised.
+  const marked = (text: string) =>
+    escape(text)
+      .replace(/&lt;0&gt;(.*?)&lt;\/0&gt;/g, '<strong class="text-foreground">$1</strong>')
+      .replace(/&lt;1&gt;(.*?)&lt;\/1&gt;/g, "<em>$1</em>");
+
+  const data: GraphData = await loadGraphData();
+  const requested = new URLSearchParams(location.search).get("focus");
+  // Without ?focus= the view starts with every jurisdiction (see showJurisdictions), not one country.
+  let focus: string | undefined = requested && data.nodes.has(requested) ? requested : undefined;
+  let cy: Core = mountGraph(container, {
+    data,
+    ids: focus ? data.around(focus, FOCUS_LIMIT) : jurisdictionIds(data),
+    focus,
+    onSelect: show,
+  });
+
+  function updateStatus() {
+    const hidden = new Set(
+      [...document.querySelectorAll<HTMLInputElement>("[data-type]")].filter((box) => !box.checked).map((box) => box.dataset.type),
+    );
+    cy.nodes().forEach((node) => {
+      node.toggleClass("hidden", hidden.has(node.data("type")));
+    });
+    status.textContent = fill(L.shown, { shown: cy.nodes().length, total: data.nodes.size });
+  }
+
+  const railDot = document.getElementById("graph-rail-dot")!;
+  const railLabel = document.getElementById("graph-rail-label")!;
+  const heading = (text: string) => `<h3 class="mt-5 mb-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">${text}</h3>`;
+
+  /** The node's plain properties, as a property graph shows them; fetched the first time. */
+  async function fillProperties(node: GraphNode) {
+    const own = (await loadProperties())[node.id] ?? [];
+    const target = document.getElementById("graph-node-properties");
+    if (!target || target.dataset.node !== node.id) return; // another node was selected meanwhile
+    const value = (text: string) =>
+      /^https?:\/\//.test(text) ? `<a href="${escape(text)}" class="break-all">${escape(text)}</a>` : escape(text);
+    const rows: [string, string][] = [
+      [escape(L.type), escape(typeLabel(node.type))],
+      ["IRI", `<a href="${nodeHref(node)}" class="break-all">${escape(nodeIri(node))}</a>`],
+      ...own.map(([key, text]): [string, string] => [escape(key), value(text)]),
+    ];
+    target.innerHTML = rows.map(([key, text]) => `<dt>${key}</dt><dd class="mb-0 min-w-0">${text}</dd>`).join("");
+  }
+
+  // --- The reading panel -------------------------------------------------------------------
+  const textPanel = document.getElementById("graph-text")!;
+  const textTitle = document.getElementById("graph-text-title")!;
+  const textMeta = document.getElementById("graph-text-meta")!;
+  const textBody = document.getElementById("graph-text-body")!;
+  const modeButtons = [...document.querySelectorAll<HTMLButtonElement>("#graph-text-modes [data-mode]")];
+  type Mode = "original" | "counterpart" | "side";
+  let mode: Mode = (localStorage.getItem("graph-text-mode") as Mode | null) ?? "side";
+  let shownText: { id: string; text: ProvisionText } | undefined;
+  const languageNames = new Intl.DisplayNames([L.locale], { type: "language" });
+  const language = (code: string) => languageNames.of(code) ?? code;
+
+  function renderText() {
+    if (!shownText) return;
+    const { original, counterpart } = shownText.text;
+    const effective: Mode = counterpart ? mode : "original";
+    modeButtons.forEach((button) => {
+      const active = button.dataset.mode === effective;
+      button.setAttribute("aria-pressed", String(active));
+      button.className = `rounded-md px-3 py-1 ${active ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground"}`;
+    });
+    document.getElementById("graph-text-modes")!.hidden = !counterpart;
+    const left = original.text.split("\n");
+    const right = counterpart?.text.split("\n") ?? [];
+    const column = (lines: string[], lang: string) =>
+      `<div class="law-text space-y-2" lang="${escape(lang)}">${lines.map((line) => `<p>${escape(line)}</p>`).join("")}</div>`;
+    const head = (text: string) => `<p class="mb-2 text-xs font-medium text-muted-foreground">${text}</p>`;
+    const originalHead = `${escape(language(original.lang))} · ${original.official ? L.original : L.forInformation}`;
+    const counterpartHead = counterpart
+      ? counterpart.kind === "version"
+        ? `${escape(language(counterpart.lang))} · ${counterpart.official ? L.equallyAuthentic : L.informationOnly}`
+        : `${escape(language(counterpart.lang))} · ${escape(counterpart.method ? (L.values[counterpart.method] ?? counterpart.method) : L.translation)} <span class="tag ${counterpart.status === "Reviewed" ? "tone-reviewed" : "tone-draft"}">${escape(counterpart.status ? (L.values[counterpart.status] ?? counterpart.status) : "")}</span>`
+      : "";
+    if (effective === "original") {
+      textBody.innerHTML = head(originalHead) + column(left, original.lang);
+    } else if (effective === "counterpart") {
+      textBody.innerHTML = head(counterpartHead) + column(right, counterpart!.lang);
+    } else if (left.length === right.length) {
+      // The law's line structure is kept in both texts, so lines pair up row by row.
+      textBody.innerHTML = `
+        <div class="grid gap-x-8 md:grid-cols-2">${head(originalHead)}${`<div class="max-md:hidden">${head(counterpartHead)}</div>`}</div>
+        ${left
+          .map(
+            (line, index) => `
+          <div class="grid gap-x-8 gap-y-1 border-t py-2 md:grid-cols-2">
+            <p class="law-text" lang="${escape(original.lang)}">${escape(line)}</p>
+            <p class="law-text text-foreground/80" lang="${escape(counterpart!.lang)}">${escape(right[index] ?? "")}</p>
+          </div>`,
+          )
+          .join("")}`;
+    } else {
+      textBody.innerHTML = `<div class="grid gap-8 md:grid-cols-2"><div>${head(originalHead)}${column(left, original.lang)}</div><div>${head(counterpartHead)}${column(right, counterpart!.lang)}</div></div>`;
+    }
+  }
+
+  async function showText(node: GraphNode | undefined) {
+    const text = node?.type === "provision" ? await loadText(node.id) : undefined;
+    if (node && cy.nodes(":selected").first().id() !== node.id) return; // another node was selected meanwhile
+    if (!node || !text) {
+      textPanel.hidden = true;
+      shownText = undefined;
+      return;
+    }
+    shownText = { id: node.id, text };
+    textTitle.textContent = text.citation;
+    const law = data.lawOf(node.id);
+    document.getElementById("graph-text-law")!.innerHTML = law ? lawNames(law.name) : "";
+    const { original } = text;
+    textMeta.innerHTML = [
+      original.retrievedOn && escape(fill(L.textAsOf, { date: original.retrievedOn })),
+      original.sourceUrl && `<a href="${escape(original.sourceUrl)}">${escape(L.officialSource)}</a>`,
+      `<a href="${nodeHref(node)}">${escape(L.openProvision)}</a>`,
+    ]
+      .filter(Boolean)
+      .join(" · ");
+    const counterpart = text.counterpart;
+    modeButtons.find((b) => b.dataset.mode === "original")!.textContent = language(original.lang);
+    modeButtons.find((b) => b.dataset.mode === "counterpart")!.textContent = counterpart
+      ? `${language(counterpart.lang)}${counterpart.kind === "translation" ? L.translationSuffix : ""}`
+      : "";
+    textPanel.hidden = false;
+    renderText();
+  }
+
+  modeButtons.forEach((button) =>
+    button.addEventListener("click", () => {
+      mode = button.dataset.mode as Mode;
+      localStorage.setItem("graph-text-mode", mode);
+      renderText();
+    }),
+  );
+
+  const trimButton = document.getElementById("graph-trim") as HTMLButtonElement;
+
+  /** A law's full names: in its own language and, if different, in English. */
+  function lawNames(name: { title: string; lang: string; english: string | null }) {
+    return `<span lang="${escape(name.lang)}">${escape(name.title)}</span>${
+      name.english ? ` <span class="text-muted-foreground">· ${escape(name.english)}</span>` : ""
+    }`;
+  }
+  const lawTooltip = (id: string) => {
+    const law = data.lawOf(id);
+    return law ? [law.name.short, law.name.title, law.name.english].filter(Boolean).join(" · ") : "";
+  };
+
+  function show(node: GraphNode | undefined) {
+    trimButton.disabled = !node;
+    panel.scrollTop = 0;
+    void showText(node);
+    railDot.style.background = node ? nodeColor(node) : "";
+    railLabel.textContent = node ? node.label : L.details;
+    if (!node) {
+      panel.innerHTML = `
+        <p class="font-medium">${escape(L.manualTitle)}</p>
+        <ul class="mt-2 list-disc space-y-1 pl-4 text-muted-foreground">
+          ${(L.manual as string[]).map((item) => `<li>${marked(item)}</li>`).join("")}
+        </ul>`;
+      return;
+    }
+    const connections = data.connections(node.id);
+    const missing = hiddenNeighbours(cy, data, node.id);
+    const kinds = new Map<string, number>();
+    for (const { edge, outgoing } of connections) {
+      const key = `${outgoing ? "" : "← "}${edge.label}${outgoing ? " →" : ""}`;
+      kinds.set(key, (kinds.get(key) ?? 0) + 1);
+    }
+    const rows = connections
+      .map(
+        ({ edge, other, outgoing }) =>
+          `<li><span class="text-muted-foreground">${outgoing ? "" : "← "}${escape(edge.label)}${outgoing ? " →" : ""}</span>
+           <button type="button" class="text-left text-primary underline decoration-primary/30" data-goto="${escape(other.id)}" title="${escape(lawTooltip(other.id))}">${escape(other.title)}</button>${
+             cy.getElementById(other.id).empty() ? "" : ' <span class="text-muted-foreground" title="${escape(L.inView)}">●</span>'
+           }</li>`,
+      )
+      .join("");
+    panel.innerHTML = `
+      <p class="flex items-center gap-2 text-xs uppercase tracking-wide text-muted-foreground">
+        <span class="inline-block size-2.5 rounded-full" style="background:${nodeColor(node)}"></span>${escape(typeLabel(node.type))}
+      </p>
+      <h2 class="mt-1 mb-1 text-base font-semibold">${escape(node.title)}</h2>
+      ${(() => {
+        const law = data.lawOf(node.id);
+        if (!law) return "";
+        const own = law.id === node.id;
+        return `<p class="mb-1 text-sm">${own ? "" : `<span class="font-medium">${escape(law.name.short ?? "")}</span>${law.name.short ? " · " : ""}`}${lawNames(law.name)}</p>`;
+      })()}
+      <p class="mb-3 font-mono text-xs text-muted-foreground">${escape(nodeCurie(node))} · <a href="${nodeTurtle(node)}">ttl</a></p>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" class="control" data-action="expand" ${missing ? "" : "disabled"}>${escape(missing ? fill(L.expandCount, { count: Math.min(missing, EXPAND_LIMIT), total: missing }) : L.expand)}</button>
+        <button type="button" class="control" data-action="focus" ${node.id === focus ? "disabled" : ""}>${escape(L.focus)}</button>
+        <button type="button" class="control" data-action="hide" ${node.id === focus ? "disabled" : ""}>${escape(L.hide)}</button>
+        <a href="${nodeHref(node)}" class="control no-underline">${escape(L.openPage)}</a>
+      </div>
+      ${heading(escape(L.properties))}
+      <dl id="graph-node-properties" data-node="${escape(node.id)}" class="grid grid-cols-[minmax(5.5rem,max-content)_minmax(0,1fr)] gap-x-3 gap-y-1.5">
+        <dt>${escape(L.type)}</dt><dd class="mb-0">${escape(typeLabel(node.type))}</dd>
+      </dl>
+      ${heading(escape(fill(L.relationships, { count: connections.length })))}
+      <ul class="flex flex-wrap gap-1.5">
+        ${[...kinds]
+          .sort((a, b) => b[1] - a[1])
+          .map(([kind, count]) => `<li class="tag pill">${escape(kind)} <span class="ml-1 text-muted-foreground">${count}</span></li>`)
+          .join("")}
+      </ul>
+      ${heading(escape(L.connections))}
+      <p class="mb-2 text-xs text-muted-foreground">${escape(L.connectionsHint)}</p>
+      <ul class="space-y-1">${rows}</ul>
+      ${(() => {
+        // The abbreviations used above, spelled out: every law the connections belong to.
+        const laws = new Map<string, { short: string | null; title: string; lang: string; english: string | null }>();
+        for (const { other } of connections) {
+          const law = data.lawOf(other.id);
+          if (law && law.name.short) laws.set(law.id, law.name);
+        }
+        if (!laws.size) return "";
+        return `${heading(escape(L.laws))}
+          <dl class="space-y-1.5">${[...laws.values()]
+            .sort((a, b) => (a.short ?? "").localeCompare(b.short ?? ""))
+            .map((name) => `<div><dt class="inline font-medium text-foreground">${escape(name.short ?? "")}</dt> <dd class="mb-0 inline">${lawNames(name)}</dd></div>`)
+            .join("")}</dl>`;
+      })()}`;
+    void fillProperties(node);
+    panel.querySelector('[data-action="expand"]')?.addEventListener("click", () => grow(node.id));
+    panel.querySelector('[data-action="focus"]')?.addEventListener("click", () => refocus(node.id));
+    panel.querySelector('[data-action="hide"]')?.addEventListener("click", () => {
+      cy.getElementById(node.id).remove();
+      show(undefined);
+      updateStatus();
+    });
+    panel.querySelectorAll<HTMLButtonElement>("[data-goto]").forEach((button) =>
+      button.addEventListener("click", () => goTo(button.dataset.goto!)),
+    );
+  }
+
+  /** Brings in more of a node's neighbours, around it; the rest of the view stays put. */
+  function grow(id: string) {
+    cy.getElementById(id).removeClass("context");
+    if (expand(cy, data, id, EXPAND_LIMIT) === 0) return;
+    updateStatus();
+    const node = cy.getElementById(id);
+    cy.animate({ fit: { eles: node.closedNeighborhood(), padding: 40 }, duration: 250 });
+    if (node.selected()) show(data.nodes.get(id));
+  }
+
+  /** Starts over from a node: it and its nearest neighbours only. */
+  function refocus(id: string) {
+    focus = id;
+    focusOn(cy, data, id, FOCUS_LIMIT);
+    cy.getElementById(id).select();
+    const url = new URL(location.href);
+    url.searchParams.set("focus", id);
+    history.replaceState(null, "", url);
+    updateStatus();
+  }
+
+  /** A connection in the panel: select it if it is in the view, otherwise bring it in next to the selected node. */
+  function goTo(id: string) {
+    let target = cy.getElementById(id);
+    if (target.empty()) {
+      const from = cy.nodes(":selected").first();
+      if (from.nonempty()) {
+        cy.add({ group: "nodes", data: { ...data.nodes.get(id)! }, position: { x: from.position("x") + 80, y: from.position("y") + 40 } });
+        for (const { edge } of data.connections(id)) {
+          const key = `${edge.source}|${edge.label}|${edge.target}`;
+          if (cy.getElementById(edge.source).nonempty() && cy.getElementById(edge.target).nonempty() && cy.getElementById(key).empty()) {
+            cy.add({ group: "edges", data: { id: key, ...edge } });
+          }
+        }
+        addSharedParents(cy, data);
+        target = cy.getElementById(id);
+        updateStatus();
+      } else {
+        refocus(id);
+        return;
+      }
+    }
+    cy.nodes().unselect();
+    target.select();
+    cy.animate({ center: { eles: target }, duration: 250 });
+  }
+
+  cy.on("dbltap", "node", (event) => grow(event.target.id()));
+  if (focus) cy.getElementById(focus).select();
+  else {
+    showJurisdictions(cy, data);
+    show(undefined);
+  }
+  updateStatus();
+
+  datalist.innerHTML = [...data.nodes.values()]
+    .sort((a, b) => a.title.localeCompare(b.title))
+    .map((node) => `<option value="${escape(node.title)}">${escape(typeLabel(node.type))}</option>`)
+    .join("");
+  // A suggestion picked (or a title typed in full) starts over from that node, at once; "change"
+  // would not fire again for the same text after Start over.
+  const byTitle = new Map([...data.nodes.values()].map((node) => [node.title, node]));
+  search.addEventListener("input", () => {
+    clear.hidden = search.value === "";
+    const node = byTitle.get(search.value);
+    if (node && node.id !== focus) refocus(node.id);
+  });
+  clear.addEventListener("click", () => {
+    search.value = "";
+    clear.hidden = true;
+    search.focus();
+  });
+  document.querySelectorAll<HTMLInputElement>("[data-type]").forEach((box) => box.addEventListener("change", updateStatus));
+  document.getElementById("graph-fit")!.addEventListener("click", () => cy.fit(cy.nodes(":visible"), 30));
+  // Trim: the selected node becomes the focus, and only what is around it in the view stays.
+  trimButton.addEventListener("click", () => {
+    const selected = cy.nodes(":selected").first();
+    if (selected.empty()) return;
+    focus = selected.id();
+    trimTo(cy, data, focus);
+    const url = new URL(location.href);
+    url.searchParams.set("focus", focus);
+    history.replaceState(null, "", url);
+    updateStatus();
+    show(data.nodes.get(focus));
+  });
+  // Folding the panel gives the view the whole width; the choice is remembered on this browser.
+  const layout = document.getElementById("graph-layout")!;
+  const fold = document.getElementById("graph-fold")!;
+  const unfold = document.getElementById("graph-unfold")!;
+  const refit = () => {
+    cy.resize();
+    cy.animate({ fit: { eles: cy.nodes(":visible"), padding: 30 }, duration: 200 });
+  };
+  // The grid column slides (a CSS transition); the view follows when it has settled.
+  layout.addEventListener("transitionend", (event) => {
+    if (event.target === layout) refit();
+  });
+  function setFolded(folded: boolean) {
+    layout.dataset.panel = folded ? "folded" : "open";
+    fold.setAttribute("aria-expanded", String(!folded));
+    localStorage.setItem("graph-panel", folded ? "folded" : "open");
+    (folded ? unfold : fold).focus();
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches || innerWidth < 1024) requestAnimationFrame(refit);
+  }
+  fold.addEventListener("click", () => setFolded(true));
+  unfold.addEventListener("click", () => setFolded(false));
+  if (localStorage.getItem("graph-panel") === "folded") {
+    layout.dataset.panel = "folded";
+    fold.setAttribute("aria-expanded", "false");
+    requestAnimationFrame(refit);
+  }
+
+  document.getElementById("graph-reset")!.addEventListener("click", () => {
+    search.value = "";
+    clear.hidden = true;
+    focus = undefined;
+    showJurisdictions(cy, data);
+    const url = new URL(location.href);
+    url.searchParams.delete("focus");
+    history.replaceState(null, "", url);
+    updateStatus();
+    show(undefined);
+  });
+</script>
+
+<style>
+  /* Chrome draws its own arrow in an input with suggestions; the clear button takes its place. */
+  #graph-search::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+</style>

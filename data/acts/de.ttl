@@ -1,0 +1,122 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Germany: the Impressum (§ 5 DDG, § 18 MStV, § 2 DL-InfoV), editorial responsibility (§ 18 MStV),
+# the consumer dispute resolution notice (§§ 36, 37 VSBG), the numbers they refer to (§ 27a UStG,
+# § 139c AO) and enforcement through unfair competition law (§§ 3a, 5a, 5b UWG).
+#
+# All German acts are extracted from the law texts in sources/de/ (see data/extracted/de/).
+# This file only adds what those texts do not say: English titles, dates and explanations.
+
+# --- DDG (additions to data/extracted/de/ddg.ttl) ----------------------------
+
+lg:DE-DDG
+    eli:title "Digital Services Act (Germany)"@en ;
+    eli:first_date_entry_in_force "2024-05-14"^^xsd:date ;
+    rdfs:comment "Replaced the Telemediengesetz (TMG) on 14 May 2024; the Impressum duty moved from § 5 TMG to § 5 DDG with the same content."@en .
+
+# --- VSBG (additions to data/extracted/de/vsbg.ttl) --------------------------
+
+lg:DE-VSBG
+    eli:title "Consumer Dispute Resolution Act"@en .
+
+lg:DE-VSBG-s36-3
+    rdfs:comment "Small-business exemption from the statement in § 36 Abs. 1 Nr. 1."@en .
+
+# --- MStV (additions to data/extracted/de/mstv.ttl) ---------------------------
+
+lg:DE-MStV
+    eli:title "Interstate Media Treaty"@en ;
+    rdfs:comment "Enacted by each Land; the source is the Bavarian publication."@en .
+
+lg:DE-MStV-s18-1
+    rdfs:comment "Reaches beyond § 5 DDG: it covers any online service not used only for personal or family purposes, paid or not."@en .
+
+# --- Other acts (additions to data/extracted/de/) ------------------------------
+
+lg:DE-UStG
+    eli:title "Value Added Tax Act"@en .
+
+lg:DE-AO
+    eli:title "Fiscal Code"@en .
+
+lg:DE-UWG
+    eli:title "Act against Unfair Competition"@en .
+
+lg:DE-UWG-s3a
+    rdfs:comment "Breach of a statutory rule that regulates market conduct is unfair competition. Courts treat the Impressum duty and the consumer dispute resolution notice as such rules, which is why competitors can enforce them with a warning letter (Abmahnung)."@en .
+
+lg:DE-UWG-s5b-1
+    rdfs:comment "In an invitation to purchase, the trader's identity and address are material information; leaving them out is misleading by omission under § 5a UWG."@en .
+
+lg:DE-GewO
+    eli:title "Trade Regulation Act"@en .
+
+lg:DE-DLInfoV
+    eli:title "Ordinance on Information Obligations for Service Providers"@en ;
+    rdfs:comment "Implements the information duties of the Services Directive (2006/123/EC). Applies to most service providers in addition to § 5 DDG, also offline."@en .
+
+# --- TDDDG (additions to data/extracted/de/tdddg.ttl) ------------------------
+
+lg:DE-TDDDG
+    eli:title "Telecommunications Digital Services Data Protection Act"@en ;
+    eli:first_date_entry_in_force "2021-12-01"^^xsd:date ;
+    rdfs:comment "Called TTDSG until 13 May 2024, when it was renamed alongside the DDG; gesetze-im-internet.de still publishes it under the abbreviation ttdsg. § 25 is Germany's cookie rule."@en .
+
+lg:DE-TDDDG-s25-1
+    rdfs:comment "Applies to anyone who stores or reads information on a user's device, whether or not the information is personal data. For personal data processed afterwards, the GDPR applies in addition."@en .
+
+# --- BDSG (additions to data/extracted/de/bdsg.ttl) ---------------------------
+
+lg:DE-BDSG
+    eli:title "Federal Data Protection Act"@en ;
+    eli:first_date_entry_in_force "2018-05-25"^^xsd:date .
+
+lg:DE-BDSG-s38-1
+    rdfs:comment "Germany uses the opening clause of Article 37(4) GDPR: a data protection officer is required from 20 people regularly processing personal data by automated means, in addition to the cases of Article 37(1)."@en .
+
+# --- Consumer contracts, prices, accessibility (additions to data/extracted/de/) ---------
+
+lg:DE-BGB eli:title "Civil Code"@en .
+lg:DE-EGBGB eli:title "Introductory Act to the Civil Code"@en .
+lg:DE-PAngV eli:title "Price Indication Ordinance"@en .
+lg:DE-BFSG eli:title "Accessibility Strengthening Act"@en ;
+    rdfs:comment "Transposes the European Accessibility Act; applies to services for consumers provided after 28 June 2025, including e-commerce. Microenterprises providing services are exempt (§ 3 Abs. 3)."@en .
+
+lg:DE-BGB-s356a-1
+    rdfs:comment "In force since 19 June 2026 (transposing Article 11a of the Consumer Rights Directive, inserted by Directive (EU) 2023/2673)."@en .
+
+# --- DSK guidance (additions to data/extracted/de/dsk-digitale-dienste.ttl) -------------
+
+lg:DE-DSK-OH-DD
+    eli:title "Guidance of the supervisory authorities for providers of digital services"@en ;
+    rdfs:comment "Version 1.2, November 2024, by the Conference of the German federal and state data protection authorities (DSK): how they enforce § 25 TDDDG and the GDPR on websites, including consent banners. Not binding on courts."@en .
+
+# --- Youth protection, electrical equipment, packaging (additions to data/extracted/de/) -------
+
+lg:DE-JMStV eli:title "Interstate Treaty on the Protection of Minors in the Media"@en ;
+    rdfs:comment "Like the MStV, a treaty between the Länder, enforced by the state media authorities through the KJM. Applies to broadcasting and telemedia, including websites."@en .
+lg:DE-ElektroG eli:title "Electrical and Electronic Equipment Act"@en .
+lg:DE-VerpackDG eli:title "Act implementing the EU Packaging Regulation"@en ;
+    rdfs:comment "Replaced the Packaging Act (VerpackG) on 12 August 2026, when the EU Packaging and Packaging Waste Regulation (EU) 2025/40 began to apply. Registration with the Zentrale Stelle Verpackungsregister (LUCID) continues; there is no duty to show the registration number on the website."@en .
+
+lg:DE-EinwV
+    lgo:shortName "EinwV" ;
+    eli:first_date_entry_in_force "2025-04-01"^^xsd:date ;
+    rdfs:seeAlso <https://www.gesetze-im-internet.de/einwv/> ;
+    rdfs:comment "The consent-management ordinance under § 26 TDDDG: what a cookie banner or CMP must do to be an approved consent-management service — the user told who stores/accesses information, what, for which purposes and how long (§ 3(2)), a transparent and revocable interface (§ 4), and operators that integrate a recognised service must honour its settings (§ 19(1)). Germany's first CMP approvals under it were still pending."@en .
+
+lg:DE-OLGK-2024-0119 a lgo:CourtDecision ;
+    eli:title "Oberlandesgericht Köln, Urteil vom 19. Januar 2024 – 6 U 80/23"@de , "Higher Regional Court of Cologne, judgment of 19 January 2024 – 6 U 80/23"@en ;
+    lgo:shortName "OLG Köln 6 U 80/23" ;
+    lgo:actType lgv:Judgment ;
+    lgo:jurisdiction lg:DE ;
+    eli:date_document "2024-01-19"^^xsd:date ;
+    lgo:ecli "ECLI:DE:OLGK:2024:0119.6U80.23.00" ;
+    lgo:sourceUrl "https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "§ 25(1) TTDSG requires an equivalent reject option: a banner whose first level has no reject option and whose second level offers only 'Alles Akzeptieren' and 'Speichern' steers users into consent, so the consent is neither voluntary nor informed. An 'Akzeptieren & Schließen X' button that merges the close symbol with consent is deceptive; consent given through it is invalid."@en .

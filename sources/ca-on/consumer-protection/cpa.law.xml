@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ontario Consumer Protection Act, 2002, Part IV ss. 38-40, written in schemas/law.xsd from the
+  e-Laws consolidated fragment. The words are the King's Printer's (including the amendment
+  notes in parentheses); only the structure is ours. `legalgraph sources verify` checks every
+  paragraph word for word against the fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="CA-ON-CPA" lga:jurisdiction="CA-ON" lga:act-type="Statute"
+     lga:url="https://www.ontario.ca/laws/statute/02c30">
+  <meta>
+    <title>Consumer Protection Act, 2002, S.O. 2002, c. 30, Sched. A</title>
+    <date>2002-12-18</date>
+  </meta>
+
+  <section num="38" title="Disclosure of information (internet agreements)" source="02c30.fragment.html">
+    <paragraph num="(1)" lga:provision="CA-ON-CPA-s38-1" lga:citation="CPA 2002 (Ont.) s. 38(1)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK47" lga:regulates="PreContractInformation" lga:requires="PrescribedContractInformation">Before a consumer enters into an internet agreement, the supplier shall disclose the prescribed information to the consumer. 2002, c. 30, Sched. A, s. 38 (1).</paragraph>
+    <paragraph num="(2)" lga:provision="CA-ON-CPA-s38-2" lga:citation="CPA 2002 (Ont.) s. 38(2)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK47" lga:regulates="PreContractInformation">The supplier shall provide the consumer with an express opportunity to accept or decline the agreement and to correct errors immediately before entering into it. 2002, c. 30, Sched. A, s. 38 (2).</paragraph>
+    <paragraph num="(3)" lga:provision="CA-ON-CPA-s38-3" lga:citation="CPA 2002 (Ont.) s. 38(3)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK47" lga:regulates="PreContractInformation">In addition to the requirements set out in section 5, disclosure under this section shall be accessible and shall be available in a manner that ensures that,
+      <list>
+        <item num="(a)">the consumer has accessed the information; and</item>
+        <item num="(b)">the consumer is able to retain and print the information. 2002, c. 30, Sched. A, s. 38 (3).</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="39" title="Copy of internet agreement" source="02c30.fragment.html">
+    <paragraph num="(1)" lga:provision="CA-ON-CPA-s39-1" lga:citation="CPA 2002 (Ont.) s. 39(1)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK48" lga:regulates="ContractConfirmation" lga:requires="ContractCopy">A supplier shall deliver to a consumer who enters into an internet agreement a copy of the agreement in writing within the prescribed period after the consumer enters into the agreement. 2002, c. 30, Sched. A, s. 39 (1).</paragraph>
+    <paragraph num="(2)" lga:provision="CA-ON-CPA-s39-2" lga:citation="CPA 2002 (Ont.) s. 39(2)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK48" lga:regulates="ContractConfirmation">The copy of the internet agreement shall include such information as may be prescribed. 2002, c. 30, Sched. A, s. 39 (2).</paragraph>
+  </section>
+
+  <section num="40" title="Cancellation of internet agreement" source="02c30.fragment.html">
+    <paragraph num="(1)" lga:provision="CA-ON-CPA-s40-1" lga:citation="CPA 2002 (Ont.) s. 40(1)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK49" lga:enforces="PreContractInformation">A consumer may cancel an internet agreement at any time from the date the agreement is entered into until seven days after the consumer receives a copy of the agreement if,
+      <list>
+        <item num="(a)">the supplier did not disclose to the consumer the information required under subsection 38 (1); or</item>
+        <item num="(b)">the supplier did not provide to the consumer an express opportunity to accept or decline the agreement or to correct errors immediately before entering into it. 2002, c. 30, Sched. A, s. 40 (1).</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="CA-ON-CPA-s40-2" lga:citation="CPA 2002 (Ont.) s. 40(2)" lga:url="https://www.ontario.ca/laws/statute/02c30#BK49" lga:enforces="PreContractInformation">A consumer may cancel an internet agreement within 30 days after the date the agreement is entered into, if the supplier does not comply with a requirement under section 39. 2004, c. 19, s. 7 (7).</paragraph>
+  </section>
+</law>

@@ -1,0 +1,42 @@
+# Judgment of the Court of Justice of the EU, Case C-210/16 (Wirtschaftsakademie
+# Schleswig-Holstein), 5 June 2018: a Facebook fan-page administrator shares responsibility for
+# the fan page's data processing with Facebook — a joint-controller ruling (now art. 26 GDPR).
+# ECLI:EU:C:2018:388. The language of the case is German; the English text is the Court's
+# translation, annotated for its operative part; German is the parallel version.
+id: eu/cjeu-wirtschaftsakademie
+title: Judgment in Case C-210/16, Wirtschaftsakademie Schleswig-Holstein
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: official-work
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: ECR_62016CJ0210_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62016CJ0210
+    url: https://publications.europa.eu/resource/celex/62016CJ0210
+    fetch: zip-member
+    member: ECR_62016CJ0210_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-04
+    sha256: dcda7fad2f218d28b545cd2ee110890565dbb2c57a6670f43655d126f470ad1a
+  - file: ECR_62016CJ0210_DE_01.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62016CJ0210
+    url: https://publications.europa.eu/resource/celex/62016CJ0210
+    fetch: zip-member
+    member: ECR_62016CJ0210_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-04
+    sha256: 59d63c85a08375c33c9e900458512d8544c85d9b4e52fccc4072d6ac0046d871
+annotated: ECR_62016CJ0210_EN_01.annotated.xml

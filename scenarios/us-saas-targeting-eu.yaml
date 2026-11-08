@@ -1,0 +1,30 @@
+name: US software company selling to customers in the EU
+description: >
+  A company established only in the United States that sells a subscription to customers in the EU,
+  tracks product usage, and relies on consent for marketing cookies. German law does not apply to it;
+  the GDPR does (Article 3(2)), so it needs a representative in the EU.
+established_in: US
+markets: [EU]
+facts:
+  - ActsAsProcessor
+  - MonitorsBehaviourInTheUnion
+  - ProcessesPersonalData
+  - ReliesOnConsent
+  - TransfersOutsideEEA
+  - EngagesProcessors
+obligations:
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-privacy-information-transfers
+  - EU-R-privacy-information-representative
+  - EU-R-lawful-basis
+  - EU-R-consent-conditions
+  - EU-R-representative
+  - EU-R-consent-separate
+  - EU-R-consent-no-tying
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
+  - EU-R-consent-specific
+  - EU-R-processor-end-of-service

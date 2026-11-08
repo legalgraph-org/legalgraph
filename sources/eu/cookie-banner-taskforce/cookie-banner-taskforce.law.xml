@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Report of the work undertaken by the Cookie Banner Taskforce (adopted 17 January 2023), the
+  paragraphs the graph quotes, written in schemas/law.xsd from the EDPB's PDF. The words are the
+  EDPB's; only the structure is ours. `legalgraph sources verify` checks each paragraph against
+  the PDF's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="EDPB-CBT-2023" lga:jurisdiction="EU" lga:act-type="Guidelines"
+     lga:url="https://www.edpb.europa.eu/our-work-tools/our-documents/other/report-work-undertaken-cookie-banner-taskforce_en">
+  <meta>
+    <title>Report of the work undertaken by the Cookie Banner Taskforce</title>
+    <short>Cookie Banner Taskforce report</short>
+    <date>2023-01-17</date>
+  </meta>
+
+  <section num="3." title="Type A practice – “No reject button on the first layer”" source="edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+    <paragraph num="7."
+               lga:provision="EDPB-CBT-2023-p7" lga:citation="Cookie Banner Taskforce report, para. 7"
+               lga:interprets="EU-2002-58-art5-3">As a preliminary remark, the task force members recalled that by default, no cookies which require consent can be set without a consent and that consent must be expressed by a positive action on the part of the user.</paragraph>
+    <paragraph num="8."
+               lga:provision="EDPB-CBT-2023-p8" lga:citation="Cookie Banner Taskforce report, para. 8"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">When authorities were asked whether they would consider that a banner which does not provide for accept and refuse/reject/not consent options on any layer with a consent button is an infringement of the ePrivacy Directive, a vast majority of authorities considered that the absence of refuse/reject/not consent options on any layer with a consent button of the cookie consent banner is not in line with the requirements for a valid consent and thus constitutes an infringement. Few authorities considered that they cannot retain an infringement in this case as article 5(3) of the ePrivacy Directive does not explicitly mentioned a “reject option” to the deposit of cookies.</paragraph>
+  </section>
+
+  <section num="4." title="Type B practice – “Pre-ticked boxes”" source="edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+    <paragraph num="10."
+               lga:provision="EDPB-CBT-2023-p10" lga:citation="Cookie Banner Taskforce report, para. 10"
+               lga:interprets="EU-2002-58-art5-3 EU-2016-679-rec32" lga:regulates="Consent">The taskforce members confirmed that pre-ticked boxes to opt-in do not lead to valid consent as referred to either in the GDPR (see in particular recital 32 “Silence, pre-ticked boxes or inactivity should not therefore constitute consent.”) or in Article 5(3) of the ePrivacy Directive.</paragraph>
+  </section>
+
+  <section num="5." title="Type C practice – Deceptive “Link Design”" source="edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+    <paragraph num="13."
+               lga:provision="EDPB-CBT-2023-p13" lga:citation="Cookie Banner Taskforce report, para. 13"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">The members agreed that for the consent to be valid, the user should be able to understand what they consent to and how to do so. In order for a valid consent to be freely given, the taskforce members agreed that in any case a website owner must not design cookie banners in a way that gives users the impression that they have to give a consent to access the website content, nor that clearly pushes the user to give consent (one way could be on the contrary to allow the continuation of the navigation without cookies from the first level in particular for example).</paragraph>
+    <paragraph num="14."
+               lga:provision="EDPB-CBT-2023-p14" lga:citation="Cookie Banner Taskforce report, para. 14"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">The taskforce members agreed that the following examples do not lead to valid consents (non-exhaustive list):
+      <list>
+        <item num="">the only alternative action offered (other than granting consent) consists of a link behind wording such as ‘refuse’ or ‘continue without accepting’ embedded in a paragraph of text in<page num="6"/> the cookie banner, in the absence of sufficient visual support to draw an average user’s attention to this alternative action;</item>
+        <item num="">the only alternative action offered (other than granting consent) consists of a link behind wording such as ‘refuse’ or ‘continue without accepting’ placed outside the cookie banner where the buttons to accept cookies are presented, in the absence of sufficient visual support to draw the users’ attention to this alternative action outside the frame;</item>
+      </list></paragraph>
+  </section>
+
+  <section num="6." title="Type D &amp; E practices: “Deceptive button colours” &amp; “deceptive button contrast”" source="edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+    <paragraph num="18."
+               lga:provision="EDPB-CBT-2023-p18" lga:citation="Cookie Banner Taskforce report, para. 18"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">Based on concrete examples, the taskforce members took the view that at least this practice could be manifestly misleading for users:
+      <list>
+        <item num="">an alternative action is offered (other than granting consent) in the form of a button where the contrast between the text and the button background is so minimal that the text is unreadable to virtually any user.</item>
+      </list></paragraph>
+  </section>
+
+  <section num="7." title="Type H practice: “Legitimate interest claimed, list of purposes”" source="edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+    <paragraph num="24."
+               lga:provision="EDPB-CBT-2023-p24" lga:citation="Cookie Banner Taskforce report, para. 24"
+               lga:interprets="EU-2002-58-art5-3 EU-2016-679-art6-1" lga:regulates="Consent">In this regard, the taskforce members took the view that non-compliance found concerning Art. 5 (3) in the ePrivacy directive (in particular when no valid consent is obtained where required), means that the subsequent processing cannot be compliant with the GDPR<note num="5"/>. Also, the TF members confirmed that the legal basis for the placement/reading of cookies pursuant to Article 5 (3) cannot be the legitimate interests of the controller.</paragraph>
+  </section>
+
+  <section num="9." title="Type K practice: “No withdraw icon”" source="edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+    <paragraph num="32."
+               lga:provision="EDPB-CBT-2023-p32" lga:citation="Cookie Banner Taskforce report, para. 32"
+               lga:interprets="EU-2002-58-art5-3 EU-2016-679-art7-3" lga:regulates="Consent" lga:requires="ConsentWithdrawalMechanism">Website owners should put in place easily accessible solutions allowing users to withdraw their consent at any time, such as an icon (small hovering and permanently visible icon) or a link placed on a visible and standardized place.</paragraph>
+    <paragraph num="34."
+               lga:provision="EDPB-CBT-2023-p34" lga:citation="Cookie Banner Taskforce report, para. 34"
+               lga:interprets="EU-2002-58-art5-3 EU-2016-679-art7-3" lga:regulates="Consent">In addition to the requirements for the collection of consent to be valid in accordance with the GDPR and under Article 5(3) ePrivacy Directive, three additional cumulative conditions are mandatory (i) the possibility to withdraw consent, (ii) the ability to withdraw consent at any time, (iii) withdrawal of consent must be as easy as to give consent.</paragraph>
+  </section>
+</law>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Schema for law texts written by the maintainers when the official text is only published as
+  HTML or PDF. It mirrors the structure a lawyer reads (section, paragraph, numbered items) and
+  nothing else. The words must be exactly those of the official text: `legalgraph sources verify` checks
+  that every paragraph's text occurs in the downloaded original.
+
+  Annotations for the graph are attributes in the lga: namespace, as on official XML.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="https://legalgraph.org/ns/law#"
+           targetNamespace="https://legalgraph.org/ns/law#"
+           elementFormDefault="qualified">
+
+  <xs:element name="law">
+    <xs:annotation><xs:documentation>One legal act, or the parts of it the graph uses.</xs:documentation></xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="meta" type="Meta"/>
+        <xs:element name="section" type="Section" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="lang" type="xs:language" use="required"/>
+      <xs:anyAttribute namespace="https://legalgraph.org/ns/annotation#" processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Meta">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="short" type="xs:string" minOccurs="0"/>
+      <xs:element name="date" type="xs:date" minOccurs="0">
+        <xs:annotation><xs:documentation>Date of the act (eli:date_document).</xs:documentation></xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Section">
+    <xs:annotation><xs:documentation>A section or article, e.g. § 18. `source` names the original file in source.yaml its text comes from.</xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="paragraph" type="Paragraph" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="num" type="xs:string" use="required"/>
+    <xs:attribute name="title" type="xs:string"/>
+    <xs:attribute name="source" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="Paragraph" mixed="true">
+    <xs:annotation><xs:documentation>A paragraph (Absatz), e.g. (1). Text with optional numbered lists and footnote marks.</xs:documentation></xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="list" type="List"/>
+      <xs:element name="note" type="Note"/>
+      <xs:element name="page" type="Page"/>
+    </xs:choice>
+    <xs:attribute name="num" type="xs:string"/>
+    <xs:anyAttribute namespace="https://legalgraph.org/ns/annotation#" processContents="skip"/>
+  </xs:complexType>
+
+  <xs:complexType name="List">
+    <xs:sequence>
+      <xs:element name="item" type="Item" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Item" mixed="true">
+    <xs:annotation><xs:documentation>A numbered item (Nummer, Buchstabe), e.g. 1. or a).</xs:documentation></xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="list" type="List"/>
+      <xs:element name="note" type="Note"/>
+      <xs:element name="page" type="Page"/>
+    </xs:choice>
+    <xs:attribute name="num" type="xs:string" use="required"/>
+    <xs:anyAttribute namespace="https://legalgraph.org/ns/annotation#" processContents="skip"/>
+  </xs:complexType>
+
+  <xs:complexType name="Note">
+    <xs:annotation><xs:documentation>A footnote mark in the original, e.g. 27. Not part of the quoted text; the word check compares the text on either side of it.</xs:documentation></xs:annotation>
+    <xs:attribute name="num" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="Page">
+    <xs:annotation><xs:documentation>Where a page of a PDF original ends inside the text, e.g. 15. Its header and footer are not part of the text; the word check compares the text on either side.</xs:documentation></xs:annotation>
+    <xs:attribute name="num" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:schema>

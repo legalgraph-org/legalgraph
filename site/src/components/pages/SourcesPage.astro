@@ -1,0 +1,229 @@
+---
+// /sources, in every language: the law texts the graph is built from, one card per law (or
+// judgment, or guideline) with its full title, its version, and its files in each language.
+// Filterable by jurisdiction, type, format and language, and searchable. Hashes and download dates
+// are on each source page and in sources/<…>/source.yaml in the repository. Titles, citations and
+// status notes come from the graph and stay in their language; the page's own words, the language
+// names and the dates are in the reader's.
+import { formatDate } from "../../i18n/format";
+import T from "../../i18n/T.astro";
+import type { Translate } from "../../i18n/t";
+import { abbreviationMarker } from "../../lib/glossary";
+import Layout from "../../layouts/Layout.astro";
+import { loadGraph, type Act, type Document } from "../../lib/data";
+import { filterLabels } from "../../lib/filter-labels";
+import { GITHUB_URL } from "../../lib/navigation";
+import { pagePath } from "../../lib/routes";
+import FilterList from "../ds/FilterList.astro";
+import Marked from "../ds/Marked.astro";
+import { tagId, type FilterGroup } from "../ds/filter-list.types";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const graph = await loadGraph();
+const mark = await abbreviationMarker(t.locale);
+const languageNames = new Intl.DisplayNames([t.locale], { type: "language" });
+const languageName = (code: string) => (code ? (languageNames.of(code) ?? code) : "");
+// Jurisdictions and act types in the reader's language: a country (or the EU) by its standard name,
+// an act type by its label in that language; otherwise as the graph names them.
+const regionNames = new Intl.DisplayNames([t.locale], { type: "region" });
+const jurisdictionName = (id: string) => {
+  const jurisdiction = graph.jurisdictions.get(id);
+  const label = jurisdiction?.data.label ?? id;
+  const code = jurisdiction?.data.code ?? id;
+  return t.locale !== "en" && /^[A-Z]{2}$/.test(code) ? (regionNames.of(code) ?? label) : label;
+};
+const typeName = (id: string) => {
+  const concept = graph.concepts.get(id);
+  return concept?.data.labels.find((label) => label.lang === t.locale)?.text ?? concept?.data.label ?? id;
+};
+
+// A source document's main text and its other language versions, by act.
+const byAct = new Map<string, Document[]>();
+for (const document of graph.documents.values()) {
+  byAct.set(document.data.act, [...(byAct.get(document.data.act) ?? []), document]);
+}
+
+const transcribed = (document: Document) => (document.data.annotatedFile ?? "").endsWith(".law.xml");
+const date = (iso: string | null) => (iso ? formatDate(t.locale, new Date(iso)) : undefined);
+// gesetze-im-internet.de stamps each file with the build of its text: 20260817215513 → 17 August 2026.
+const builtOn = (stamp: string | null) =>
+  stamp && /^\d{8}/.test(stamp) ? date(`${stamp.slice(0, 4)}-${stamp.slice(4, 6)}-${stamp.slice(6, 8)}`) : undefined;
+// What the date of a text is, by the kind of text.
+const dated = (kind: Act["data"]["kind"], when: string) =>
+  ({
+    act: t("Dated {date}", { date: when }),
+    decision: t("Delivered {date}", { date: when }),
+    enforcement: t("Decided {date}", { date: when }),
+    guidance: t("Published {date}", { date: when }),
+  })[kind];
+const OFFICIAL_XML = t("Official XML");
+const TRANSCRIBED = t("Transcribed from HTML or PDF");
+const entries = [...byAct.entries()].map(([actId, documents]) => {
+  const act = graph.acts.get(actId)! as Act;
+  const main = documents.find((d) => !d.data.versionOf) ?? documents[0]!;
+  const versions = [main, ...documents.filter((d) => d !== main)];
+  const original = act.data.titles[0]?.text ?? act.data.titleEn ?? actId;
+  const english = act.data.titleEn && act.data.titleEn !== original ? act.data.titleEn : undefined;
+  const heading = act.data.shortName ?? act.data.localId ?? (english ?? original);
+  const jurisdiction = graph.jurisdictions.get(act.data.jurisdiction);
+  const type = typeName(act.data.actType);
+  // Status notes from the portal or the index (last amendment, consolidation date): their first sentence.
+  const status = main.data.legalStatus.map((s) => (s.english ?? s.text).split(/(?<=\.)\s+(?=[A-ZÄÖÜ])/)[0]!);
+  const version = [
+    date(act.data.dateDocument) && dated(act.data.kind, date(act.data.dateDocument)!),
+    ...status,
+    builtOn(main.data.portalBuildDate) && t("Text as of {date}", { date: builtOn(main.data.portalBuildDate)! }),
+  ].filter(Boolean) as string[];
+  const format = transcribed(main) ? TRANSCRIBED : OFFICIAL_XML;
+  const languages = [...new Set(versions.map((v) => v.data.language ?? ""))];
+  // Files by language; a law split into several files (one per section) lists them by file name.
+  const files = languages.map((language) => {
+    const own = versions.filter((v) => (v.data.language ?? "") === language);
+    return {
+      language,
+      pages: own.map((v) => ({ id: v.id, label: own.length > 1 ? v.data.path.split("/").pop()!.replace(/\.[a-z]+$/, "") : t("source page") })),
+      originals: own.length === 1 ? [`/${own[0]!.data.path}`] : [],
+      annotated: [...new Set(own.map((v) => v.data.annotatedFile).filter(Boolean))] as string[],
+    };
+  });
+  const tags = [
+    `j-${tagId(act.data.jurisdiction)}`,
+    `t-${tagId(act.data.actType)}`,
+    `f-${transcribed(main) ? "transcribed" : "xml"}`,
+    ...languages.map((l) => `l-${tagId(l)}`),
+  ];
+  const search = [heading, original, english, act.data.localId, jurisdiction?.data.label, jurisdictionName(act.data.jurisdiction), type, ...status]
+    .filter(Boolean)
+    .join(" ")
+    .toLocaleLowerCase();
+  return { act, files, original, english, heading, jurisdiction, type, version, format, languages, tags, search };
+});
+// The EU first, then the countries alphabetically; within each, by name.
+const order = (e: (typeof entries)[number]) => (e.act.data.jurisdiction === "EU" ? "" : (e.jurisdiction?.data.label ?? ""));
+entries.sort((a, b) => order(a).localeCompare(order(b)) || a.heading.localeCompare(b.heading));
+
+const count = (prefix: string, value: string) => entries.filter((e) => e.tags.includes(`${prefix}-${tagId(value)}`)).length;
+const option = (prefix: string, value: string, label: string) => ({ id: `${prefix}-${tagId(value)}`, label, count: count(prefix, value) });
+const distinct = <T,>(values: T[]) => [...new Set(values)];
+const groups: FilterGroup[] = [
+  {
+    title: t("Jurisdiction"),
+    options: distinct(entries.map((e) => e.act.data.jurisdiction))
+      .map((j) => option("j", j, jurisdictionName(j)))
+      .sort((a, b) => a.label.localeCompare(b.label, t.locale)),
+  },
+  {
+    title: t("Type"),
+    options: distinct(entries.map((e) => e.act.data.actType))
+      .map((type) => option("t", type, typeName(type)))
+      .sort((a, b) => b.count - a.count),
+  },
+  { title: t("Format"), options: [option("f", "xml", OFFICIAL_XML), option("f", "transcribed", TRANSCRIBED)] },
+  {
+    title: t("Language"),
+    options: distinct(entries.flatMap((e) => e.languages))
+      .map((l) => option("l", l, languageName(l)))
+      .sort((a, b) => b.count - a.count),
+  },
+];
+---
+
+<Layout
+  title={t("Law texts")}
+  description={t("The laws, judgments and guidelines the graph is built from, as their official portals publish them.")}
+  t={t}
+  page="sources"
+  header={{
+    title: t("Law texts"),
+    description: t("The laws, judgments and guidelines the graph is built from, as their official portals publish them. Every statement in the graph traces back to one of these texts."),
+  }}
+>
+  <div class="mb-8 max-w-3xl space-y-2 text-muted-foreground">
+    <Marked mark={mark}>
+      <p>
+      {t("Where the portal publishes XML, we add our annotations to the official file and prove that removing them gives back the original, byte for byte. Where it publishes only HTML or PDF, we transcribe the text and check it word for word against the original.")}
+      {" "}
+      <T msg={t("<0>How the text is checked</0>.")} tags={[{ kind: "link", href: pagePath("method", t.locale) }]} />
+      {" "}{t("Fingerprints and download dates are on each source page and in the repository.")}
+      </p>
+    </Marked>
+  </div>
+
+  <FilterList
+    id="sources"
+    groups={groups}
+    total={entries.length}
+    allLabel={t("All texts")}
+    searchLabel={t("Search the law texts")}
+    searchPlaceholder={t("Search by name, title or version, e.g. DDG, Datenschutz, consolidated")}
+    emptyText={t("No text matches your search.")}
+    pageSize={10}
+    labels={filterLabels(t)}
+  >
+    {
+      entries.map((e) => (
+        <article class="filter-entry card p-5" data-tags={e.tags.join(" ")} data-search={e.search}>
+          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <h2 class="mt-0! mb-0! text-lg font-semibold">
+              <a href={`/id/${e.act.id}`} class="no-underline text-foreground hover:text-primary">{e.heading}</a>
+            </h2>
+            <span class="text-sm text-muted-foreground">
+              {jurisdictionName(e.act.data.jurisdiction)} · {e.type}
+            </span>
+          </div>
+          {e.heading !== e.original && <p class="mt-1">{e.original}</p>}
+          {e.english && <p class="mt-0.5 text-sm text-muted-foreground" lang="en">{e.english}</p>}
+          {
+            e.version.length > 0 && (
+              <p class="mt-3 text-sm">
+                <span class="text-muted-foreground">{t("Version:")} </span>
+                {e.version.join(" · ")}
+              </p>
+            )
+          }
+          <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+            {e.files.map((f) => (
+              <span>
+                <span class="text-muted-foreground">{languageName(f.language)}: </span>
+                {f.pages.map((p, index) => (
+                  <>
+                    {index > 0 && " · "}
+                    <a href={`/id/${p.id}`}>{p.label}</a>
+                  </>
+                ))}
+                {f.originals.map((href) => (
+                  <>
+                    {" · "}
+                    <a href={href}>{t("original")}</a>
+                  </>
+                ))}
+                {f.annotated.map((href) => (
+                  <>
+                    {" · "}
+                    <a href={`/${href}`}>{t("annotated")}</a>
+                  </>
+                ))}
+              </span>
+            ))}
+            {e.act.data.sourceUrl && <a href={e.act.data.sourceUrl}>{t("official portal ↗")}</a>}
+          </div>
+          <p class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="tag">{e.format}</span>
+            <span class="tag">{t("{count} provisions in the graph", { count: e.act.data.provisions.length })}</span>
+          </p>
+        </article>
+      ))
+    }
+  </FilterList>
+
+  <p id="downloads" class="mt-10 text-muted-foreground">
+    <T
+      msg={t("The graph built from these texts is on the <0>downloads page</0>, in Turtle, N-Triples and JSON-LD, and in full, with every original and the code, on <1>GitHub</1>.")}
+      tags={[{ kind: "link", href: pagePath("download", t.locale) }, { kind: "link", href: GITHUB_URL }]}
+    />
+  </p>
+</Layout>

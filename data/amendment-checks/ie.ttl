@@ -1,0 +1,27 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:IE-SI-336-2011
+    lgo:amendmentCheck lg:IE-SI-336-2011-amendment-check .
+
+lg:IE-SI-336-2011-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.irishstatutebook.ie/eli/2011/si/336"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. No. 305/2023" ;
+    lgo:lastKnownAmendmentDate "2023-11-16"^^xsd:date ;
+    lgo:sourceIsCurrent false ;
+    rdfs:comment "S.I. No. 305/2023 amended regs 20/30(6)/31; the committed fragment is the 2011 as-made text."@en .
+
+lg:IE-SI-2003-68
+    lgo:amendmentCheck lg:IE-SI-2003-68-amendment-check .
+
+lg:IE-SI-2003-68-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.irishstatutebook.ie/eli/2003/si/68"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. No. 490/2004" ;
+    lgo:lastKnownAmendmentDate "2004-07-26"^^xsd:date ;
+    rdfs:comment "Amended only by S.I. No. 490/2004 (reg. 21(2)). No source document in the graph."@en .

@@ -1,0 +1,41 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:IT-196-2003-art122-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e824407695d61f87aa7d5f08c37f50586660f068ab50c4cdf297fb3ca1ca33cb" ;
+    lgo:text "The storage of information in the terminal equipment of a contractor or user, or access to information already stored, is permitted only on condition that the contractor or user has given consent after having been informed by ((...)) simplified means ((...)) . This does not prevent any technical storage or access to information already stored where aimed solely at carrying out the transmission of a communication over an electronic communications network, or to the extent strictly necessary for the provider of an information society service explicitly requested by the contractor or user to provide that service. For the purpose of determining the simplified means referred to in the first sentence, the Garante also takes into account proposals made by the most representative national associations of consumers and of the economic categories concerned, also in order to ensure the use of methods that guarantee the effective awareness of the contractor or user."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-196-2003-art122-1-q1 .
+
+lg:IT-196-2003-art122-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "20034837e0fefb8946233c9d1fbaaa39783aa068ffe1bf06b1fb7cb23511e806" ;
+    lgo:text "For the purpose of giving the consent referred to in paragraph 1, specific configurations of computer programs or devices may be used that are easy and clear to use for the contractor or user."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-196-2003-art122-2-q1 .
+
+lg:IT-196-2003-art122-2bis-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2d53b459d610e1da2bbe6adeff54ba5ae61f698c66a491f732af00e8f89da655" ;
+    lgo:text "Save as provided in paragraph 1, the use of an electronic communications network to access information stored in the terminal equipment of a contractor or user, to store information, or to monitor the user's operations is prohibited."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-196-2003-art122-2bis-q1 .

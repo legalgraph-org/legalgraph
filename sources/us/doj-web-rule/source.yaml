@@ -1,0 +1,20 @@
+# 28 CFR § 35.200, the Department of Justice's 2024 rule on web and mobile accessibility for state and
+# local governments under Title II of the ADA: the official annual edition of the Code of Federal
+# Regulations (as of 1 July 2025) in its XML from govinfo.gov.
+id: us/doj-web-rule
+title: 28 CFR § 35.200 (web and mobile accessibility, ADA Title II)
+jurisdiction: US
+language: en
+publisher: U.S. Government Publishing Office, govinfo.gov
+kind: official-xml
+licence: public-domain
+licence_basis: "17 U.S.C. § 105: works of the US federal government are not protected by copyright"
+originals:
+  - file: CFR-2025-title28-vol1-sec35-200.xml
+    page: https://www.ecfr.gov/current/title-28/chapter-I/part-35/subpart-H/section-35.200
+    url: https://www.govinfo.gov/content/pkg/CFR-2025-title28-vol1/xml/CFR-2025-title28-vol1-sec35-200.xml
+    fetch: file
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 78c60f71cef3688882f00ddb6b78313832ebcebe452ac1badbe1d667f98c295f
+annotated: CFR-2025-title28-vol1-sec35-200.annotated.xml

@@ -1,0 +1,20 @@
+# Which provisions create the provider identification duty (Impressum) in each jurisdiction,
+# how far each was checked, and which information items each names.
+PREFIX lgo:  <https://legalgraph.org/ontology#>
+PREFIX lgv:  <https://legalgraph.org/vocab/>
+PREFIX eli:  <http://data.europa.eu/eli/ontology#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?jurisdiction ?citation ?status (GROUP_CONCAT(DISTINCT COALESCE(?item, "-"); separator=", ") AS ?items)
+WHERE {
+    ?provision lgo:regulates lgv:ProviderIdentification ;
+        lgo:citation ?citation ;
+        lgo:reviewStatus/skos:prefLabel ?status ;
+        eli:is_part_of/lgo:jurisdiction/lgo:isoCode ?jurisdiction .
+    OPTIONAL {
+        ?provision lgo:requiresDisclosureOf/skos:prefLabel ?item .
+        FILTER (LANG(?item) = "en")
+    }
+}
+GROUP BY ?jurisdiction ?citation ?status
+ORDER BY ?jurisdiction ?citation

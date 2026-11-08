@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LG München I, Endurteil vom 30. März 2023 – 4 O 13063/22 (Google Fonts, Abmahnwelle), the
+  operative part and the paragraphs the graph quotes, written in schemas/law.xsd from the
+  gesetze-bayern.de page. The words are the court's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-LGM-2023-0330" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-6354">
+  <meta>
+    <title>Landgericht München I, Endurteil vom 30. März 2023 – 4 O 13063/22</title>
+    <short>LG München I 4 O 13063/22</short>
+    <date>2023-03-30</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="lg-muenchen-4o13063-22.fragment.html">
+    <paragraph num="2." lga:provision="DE-LGM-2023-0330-tenor-2" lga:citation="LG München I 4 O 13063/22, Tenor 2" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-6354" lga:applies="EU-2016-679-art82-1">Es wird festgestellt, dass der Beklagte keinen Anspruch gegen den Kläger auf Zahlung eines Schmerzensgeldes aufgrund des Einbindens von Google-Schriftarten auf der Website… hat, wie behauptet mit Schreiben des Beklagten an den Kläger vom 20.10.2022.</paragraph>
+  </section>
+
+  <section num="I." title="Kein Unterlassungsanspruch" source="lg-muenchen-4o13063-22.fragment.html">
+    <paragraph num="26" lga:provision="DE-LGM-2023-0330-p26" lga:citation="LG München I 4 O 13063/22, Rn. 26" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-6354" lga:interprets="EU-2016-679-art6-1" lga:regulates="LawfulBasis">a) Im Ausgangspunkt teilt das Gericht noch die Auffassung des Beklagten, dass wenn die dynamische Einbindung von Google-Fonts gegen die DSGVO verstößt und seine IP-Adresse ohne zwingenden technischen Grund und ohne Einwilligung seinerseits in die USA an die Fa. Google übertragen wird, dies eine Verletzung des informationellen Selbstbestimmungsrechts darstellen kann.</paragraph>
+  </section>
+
+  <section num="II." title="Kein Schmerzensgeldanspruch" source="lg-muenchen-4o13063-22.fragment.html">
+    <paragraph num="35" lga:provision="DE-LGM-2023-0330-p35" lga:citation="LG München I 4 O 13063/22, Rn. 35" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-6354" lga:interprets="EU-2016-679-art82-1" lga:regulates="RightToCompensation">1. Es fehlt bereits an den Voraussetzungen eines Anspruchs aus Art. 82 DSGVO. Dieser setzt einen, gegebenenfalls auch immateriellen, Schaden des Anspruchsstellers voraus. Ein solcher Schaden lag hier aber offensichtlich nicht vor. In der Rechtsprechung ist umstritten, inwieweit Angstgefühle oder Verunsicherung für sich genommen ausreichend sind, um einen Anspruch auf Schadensersatz aus Art. 82 DSGVO zu begründen. Auf diese Frage kommt es hier jedoch nicht an, weil der Beklagte tatsächlich solche Gefühle auf Grund des Einsatzes eines automatisierten Programms gar nicht gehabt haben kann: Wer gar nicht weiß, welche Websites „in seinem Namen“ besucht werden, kann sich überhaupt nicht individuell Gedanken dazu machen, dass ihm aus der Übertragung seiner IP-Adresse Unannehmlichkeiten entstehen könnten.</paragraph>
+    <paragraph num="36" lga:provision="DE-LGM-2023-0330-p36" lga:citation="LG München I 4 O 13063/22, Rn. 36" lga:url="https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-6354" lga:interprets="EU-2016-679-art82-1" lga:regulates="RightToCompensation">2. Im Übrigen wäre ein etwaig doch gegebenener Schadensersatzanspruch aus Art. 82 DSGVO oder aus § 823 Abs. 1 BGB oder aus anderer Rechtgrundlage auch wegen Rechtsmissbrauch, § 242 BGB ausgeschlossen. Der Beklagte ließ gezielt durch den Crawler Websites aufsuchen, gerade um behauptete Verletzungen seines allgemeinen Persönlichkeitsrechts zu begründen. Es ist aber nicht Sinn und Zweck des allgemeinen Persönlichkeitsrechts oder der Datenschutzvorgaben nach der DSGVO, Personen eine Erwerbsquelle zu verschaffen wegen behaupteter Verletzungen ihres allgemeinen Persönlichkeitsrechts. Wer einen Verstoß gegen sein Persönlichkeitsrecht gezielt provoziert, um daraus hernach Ansprüche zu begründen, verstößt gegen das Verbot selbstwidersprüchlichen Verhaltens.</paragraph>
+  </section>
+</law>

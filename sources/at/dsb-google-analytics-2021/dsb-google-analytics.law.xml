@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Datenschutzbehörde (Austria), Teilbescheid GZ D155.027, 2021-0.586.257 of 22 December 2021
+  (Google Analytics), point 2 of the operative part (Spruch), written in schemas/law.xsd from the
+  authority's pseudonymised PDF. The words are the authority's; only the structure is ours. The
+  decision predates the EU-US Data Privacy Framework (adequacy decision of 10 July 2023).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-DSB-2021-D155027" lga:jurisdiction="AT" lga:act-type="AuthorityDecision"
+     lga:url="https://dsb.gv.at/entscheidungen.html">
+  <meta>
+    <title>Datenschutzbehörde, Teilbescheid D155.027, 2021-0.586.257 vom 22. Dezember 2021 (Google Analytics)</title>
+    <short>DSB D155.027 Google Analytics</short>
+    <date>2021-12-22</date>
+  </meta>
+
+  <section num="Spruch" title="Spruch" source="d155.027_ga.pdf">
+    <paragraph num="2." lga:provision="AT-DSB-2021-D155027-spruch-2" lga:citation="DSB D155.027, Spruchpunkt 2" lga:url="https://dsb.gv.at/sites/site0344/media/downloads/d155.027_ga.pdf" lga:applies="EU-2016-679-art44 EU-2016-679-art46-1" lga:regulates="InternationalTransfer">Der Beschwerde gegen die Erstbeschwerdegegnerin wird stattgegeben und es wird festgestellt, dass
+      <list>
+        <item num="a)">die Erstbeschwerdegegnerin als Verantwortliche durch Implementierung des Tools „Google Analytics“ auf ihrer Website unter www.xyz.at zumindest am 14. August 2020 personenbezogene Daten des Beschwerdeführers (dies sind zumindest einzigartige Nutzer-Identifikations-Nummern, IP-Adresse und Browserparameter) an den Zweitbeschwerdegegner übermittelt hat,</item>
+        <item num="b)">die Standarddatenschutzklauseln, die die Erstbeschwerdegegnerin mit dem Zweitbeschwerdegegner abgeschlossen hat, kein angemessenes Schutzniveau gemäß Art. 44 DSGVO bieten, da
+          <list>
+            <item num="i)">der Zweitbeschwerdegegner als Anbieter elektronischer Kommunikationsdienste im Sinne von 50 U.S. Code § 1881(b)(4) zu<page num="2"/> qualifizieren ist und als solcher der Überwachung durch US-Geheimdienste gemäß 50 U.S. Code § 1881a („FISA 702”) unterliegt, und</item>
+            <item num="ii)">die Maßnahmen, die zusätzlich zu den in Spruchpunkt 2.b) genannten Standarddatenschutzklauseln getroffenen wurden, nicht effektiv sind, da diese die Überwachungs- und Zugriffsmöglichkeiten durch US-Nachrichtendienste nicht beseitigen,</item>
+          </list>
+        </item>
+        <item num="c)">im vorliegenden Fall kein anderes Instrument gemäß Kapitel V der DSGVO für die in Spruchpunkt 2.a) angeführte Datenübermittlung herangezogen werden kann und die Erstbeschwerdegegnerin deshalb für die im Rahmen der in Spruchpunkt 2.a) angeführte Datenübermittlung kein angemessenes Schutzniveau gemäß Art. 44 DSGVO gewährleistet hat.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

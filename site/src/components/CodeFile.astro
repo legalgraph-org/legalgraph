@@ -1,0 +1,48 @@
+---
+// A code excerpt with the file it comes from: a header naming the path in the repository (linked
+// to it on GitHub, so a reader can open the whole file), then the code on the dark band. The
+// `highlight` strings are marked wherever they occur, to point at the part the text is about.
+import { GITHUB_URL } from "../lib/navigation";
+
+interface Props {
+  /** Path in the repository, e.g. "sources/de/ddg/source.yaml". */
+  path: string;
+  code: string;
+  highlight?: readonly string[];
+  /** A short note after the path, e.g. "excerpt", in the page's language. */
+  note?: string;
+}
+
+const { path, code, highlight = [], note } = Astro.props;
+// Split the code into plain and marked parts, longest highlight first so none is cut by another.
+const marks = [...highlight].sort((a, b) => b.length - a.length);
+const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const parts = marks.length ? code.split(new RegExp(`(${marks.map(escape).join("|")})`)) : [code];
+---
+
+<figure class="code-file my-2 overflow-hidden rounded-lg">
+  <figcaption class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 px-3 py-2 font-mono text-xs">
+    <a href={`${GITHUB_URL}/blob/main/${path}`} class="text-inherit no-underline hover:underline">{path}</a>
+    {note && <span class="opacity-70">{note}</span>}
+  </figcaption>
+  <pre class="code-block m-0! rounded-none!"><code>{parts.map((part) => (marks.includes(part) ? <mark>{part}</mark> : part))}</code></pre>
+</figure>
+
+<style>
+  .code-file figcaption {
+    background: color-mix(in oklab, var(--navy-900) 88%, var(--white));
+    color: color-mix(in oklab, var(--white) 80%, transparent);
+  }
+  /* Long lines wrap, so the excerpt reads without scrolling sideways. */
+  .code-file pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .code-file mark {
+    border-radius: 3px;
+    background: color-mix(in oklab, var(--teal-300) 30%, transparent);
+    color: var(--white);
+    padding: 0 2px;
+    outline: 1px solid color-mix(in oklab, var(--teal-300) 70%, transparent);
+  }
+</style>

@@ -1,0 +1,119 @@
+---
+// A long list with filters on the left and a search box on top. The
+// filters are radios and CSS (filter-list.types.ts), so they work without JavaScript; the search box
+// appears with the script below and narrows the list as you type. Entries are the slot's children
+// with class "filter-entry", data-tags (option ids, space-separated) and data-search (lowercase text).
+// With `pageSize`, the script shows the list in pages (as the glossary does); without JavaScript
+// every entry shows.
+import type { FilterLabels } from "../../scripts/filter-list";
+import { filterCss, filterInputId, type FilterGroup } from "./filter-list.types";
+
+interface Props {
+  /** Unique on the page: prefixes the radio ids. */
+  id: string;
+  groups: readonly FilterGroup[];
+  total: number;
+  allLabel: string;
+  searchLabel: string;
+  searchPlaceholder: string;
+  emptyText: string;
+  /** Entries per page; without it, the whole list shows. */
+  pageSize?: number;
+  /** The words the list writes, in the page's language; English where left out. */
+  labels?: Partial<FilterLabels> & { filter?: string; pages?: string };
+}
+
+const { id, groups, total, allLabel, searchLabel, searchPlaceholder, emptyText, pageSize, labels = {} } = Astro.props;
+const { filter = "Filter", pages = "Pages", ...scriptLabels } = labels;
+const css = filterCss(id, groups);
+const name = `${id}-filter`;
+---
+
+<style is:inline set:html={css}></style>
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-[240px_1fr] lg:gap-10" data-filter-list={id} data-page-size={pageSize} data-labels={JSON.stringify(scriptLabels)}>
+  <aside>
+    <fieldset class="lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-2">
+      <legend class="mb-3 text-sm font-semibold">{filter}</legend>
+      <ul class="space-y-1 text-sm max-lg:columns-2 max-lg:gap-6">
+        <li class="break-inside-avoid">
+          <input type="radio" name={name} id={filterInputId(id, "all")} data-option="" checked class="filter-input sr-only" />
+          <label for={filterInputId(id, "all")} class="filter-option font-medium">
+            {allLabel} <span class="filter-count">{total}</span>
+          </label>
+        </li>
+        {
+          groups.map((group) => (
+            <li class="break-inside-avoid pt-3">
+              <p class="px-2 pb-1 text-xs font-semibold tracking-wide text-muted-foreground uppercase">{group.title}</p>
+              <ul class="space-y-0.5 border-l pl-2">
+                {group.options.map((option) => (
+                  <li>
+                    <input type="radio" name={name} id={filterInputId(id, option.id)} data-option={option.id} class="filter-input sr-only" />
+                    <label for={filterInputId(id, option.id)} class="filter-option">
+                      {option.label} <span class="filter-count">{option.count}</span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
+    </fieldset>
+  </aside>
+
+  <div>
+    <div class="mb-6" data-filter-search-box hidden>
+      <label for={`${id}-search`} class="sr-only">{searchLabel}</label>
+      <input
+        id={`${id}-search`}
+        type="search"
+        autocomplete="off"
+        placeholder={searchPlaceholder}
+        class="w-full rounded-xl border border-border-strong bg-card px-4 py-3 text-base shadow-xs focus:border-primary focus:outline-none"
+        data-filter-search
+      />
+      <p class="mt-2 text-sm text-muted-foreground" data-filter-status aria-live="polite"></p>
+    </div>
+    <p class="card text-center text-muted-foreground" data-filter-empty hidden>{emptyText}</p>
+    <div class="space-y-4" data-filter-entries>
+      <slot />
+    </div>
+    {pageSize && <nav class="mt-8 flex flex-wrap items-center justify-between gap-3" aria-label={pages} data-filter-pager hidden></nav>}
+  </div>
+</div>
+
+<script>
+  import { startFilterLists } from "../../scripts/filter-list";
+
+  startFilterLists();
+</script>
+
+<style>
+  .filter-option {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border-radius: var(--radius-md);
+    padding: 0.2rem 0.5rem;
+    color: var(--text-2);
+    cursor: pointer;
+  }
+  .filter-option:hover {
+    color: var(--text);
+  }
+  .filter-count {
+    font-size: 0.75rem;
+    color: color-mix(in oklab, var(--text-2) 75%, var(--background));
+  }
+  .filter-input:checked + .filter-option {
+    background: color-mix(in oklab, var(--primary) 10%, var(--background));
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .filter-input:focus-visible + .filter-option {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+  }
+</style>

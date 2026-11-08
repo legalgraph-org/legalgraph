@@ -1,0 +1,37 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Estonia: § 4 of the Information Society Services Act.
+
+lg:EE-ISSA a lgo:LegalAct ;
+    eli:title "Infoühiskonna teenuse seadus"@et , "Information Society Services Act"@en ;
+    lgo:shortName "InfoTS" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:EE ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.riigiteataja.ee/et/akt/104072024024"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:EE-ISSA-s4-1 a lgo:Provision ;
+    eli:is_part_of lg:EE-ISSA ;
+    lgo:citation "§ 4 lõige 1 InfoTS" ;
+    lgo:sourceUrl "https://www.riigiteataja.ee/et/akt/104072024024"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification , lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:RegisterEntry , lgv:GeographicAddress , lgv:EmailAddress ,
+        lgv:RapidContact , lgv:VatId ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:EE-ISSA-s4-1-q1 a lgo:Quote ;
+    lgo:quoteOf lg:EE-ISSA-s4-1 ;
+    lgo:text """(1) Teenuse osutaja on kohustatud tegema teenuse kasutajale vahetult ja püsivalt kättesaadavaks vähemalt järgmise teabe:
+1) teenuse osutaja nime, registrikoodi ja vastava registri nime, teenuse osutaja aadressi ja muud kontaktandmed, sealhulgas elektronposti aadressi;
+2) registreeringu numbri, kui vastaval tegevusalal tegutsemiseks on seadusega sätestatud majandustegevuse registris registreerimise nõue, või tegevusloa numbri;
+3) viidete puhul teenuse tasu suurusele teabe selle kohta, kas need sisaldavad makse ja tarnekulusid;
+4) käibemaksukohustuslasena registreerimise numbri, kui teenuse osutaja on käibemaksukohustuslane."""@et ;
+    lgo:sourceUrl "https://www.riigiteataja.ee/et/akt/104072024024"^^xsd:anyURI ;
+    lgo:officialLanguageVersion true .

@@ -1,0 +1,30 @@
+# Lov 23. mai 2003 nr. 35 om visse sider av elektronisk handel mv. (ehandelsloven): the Norwegian
+# transposition of the e-Commerce Directive. § 8 is the provider-information duty (name, address,
+# email, register, VAT status, licences, professional titles and rules); § 11 is the pre-order
+# disclosure (conduct codes, contract steps, archival, error correction, terms and languages).
+# Lovdata serves the consolidated act as HTML; the per-section fragments are kept and the text is
+# transcribed in schemas/law.xsd, checked word for word against them.
+id: no/ecommerce
+title: Lov om visse sider av elektronisk handel mv. (ehandelsloven)
+jurisdiction: NO
+language: "no"
+publisher: Lovdata, lovdata.no
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 14 åndsverkloven: laws and regulations are not protected by copyright"
+originals:
+  - file: ehl-s8.fragment.html
+    url: https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A78
+    fetch: html-fragment
+    selector: "#PARAGRAF_8"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 107183a8f66428faab0e76c889512126aab4a350008689178e1b983e095cf50a
+  - file: ehl-s11.fragment.html
+    url: https://lovdata.no/dokument/NL/lov/2003-05-23-35/%C2%A711
+    fetch: html-fragment
+    selector: "#PARAGRAF_11"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 9f965437ad87ccdebbfaeed9dc27d56c113f3c7b7516aede1d84fc498ea2bab5
+annotated: ehl.law.xml

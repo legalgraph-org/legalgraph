@@ -1,0 +1,42 @@
+# Judgment in Case C-604/22, IAB Europe: official XML (Formex 4) of the European Court Reports from the Publications
+# Office. IAB Europe v Belgian DPA: a consent-standard framework can make its operator a (joint) controller, and the consent string it generates is personal data — the judgment behind CMP/consent-string obligations. The language of the case, Dutch, is the authentic version; the English
+# text is a translation made by the Court. The operative part — the rulings, which bind
+# national courts on how EU law is to be read — is annotated; Dutch is kept as a parallel
+# version.
+id: eu/cjeu-iab-europe
+title: Judgment in Case C-604/22, IAB Europe
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62022CJ0604_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62022CJ0604
+    url: https://publications.europa.eu/resource/celex/62022CJ0604
+    fetch: zip-member
+    member: ECR_62022CJ0604_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: Dutch. This English text is the Court's translation; the authentic version is the Dutch one."
+    retrieved_on: 2026-11-02
+    sha256: d840b875f5bbcef65c7839732b849b3036ed859f3215e190805182537a177967
+  - file: ECR_62022CJ0604_NL_01.xml
+    role: parallel
+    language: dutch
+    page: https://eur-lex.europa.eu/legal-content/DU/TXT/?uri=CELEX:62022CJ0604
+    url: https://publications.europa.eu/resource/celex/62022CJ0604
+    fetch: zip-member
+    member: ECR_62022CJ0604_NL_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: nld
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 7b2052428ed12370bcda43e1bb1c92e9bbafdff2c27c3b9188c8a318596a7575
+annotated: ECR_62022CJ0604_EN_01.annotated.xml

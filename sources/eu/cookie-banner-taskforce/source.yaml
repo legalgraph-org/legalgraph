@@ -1,0 +1,21 @@
+# Report of the work undertaken by the Cookie Banner Taskforce (adopted 17 January 2023):
+# published only as PDF. The paragraphs the graph quotes are transcribed in schemas/law.xsd and
+# `legalgraph sources verify` checks each, letter for letter, against the PDF's text. The report
+# is the common supervisory-authority position on reject buttons, pre-ticked boxes, deceptive
+# design, legitimate-interest claims and consent withdrawal for cookie banners.
+id: eu/cookie-banner-taskforce
+title: Report of the work undertaken by the Cookie Banner Taskforce
+jurisdiction: EU
+language: en
+publisher: European Data Protection Board
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "EDPB legal notice: reproduction is authorised provided the source is acknowledged"
+originals:
+  - file: edpb_20230118_report_cookie_banner_taskforce_en.pdf
+    url: https://www.edpb.europa.eu/system/files/2023-01/edpb_20230118_report_cookie_banner_taskforce_en.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-03
+    sha256: 2e658eba202c54a07b51797703769591b77046ff032039ff6f47db3003db9ab8
+annotated: cookie-banner-taskforce.law.xml

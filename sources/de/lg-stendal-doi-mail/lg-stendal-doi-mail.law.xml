@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-LGST-2021-0512" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771">
+  <meta>
+    <title>Landgericht Stendal, Urteil vom 12. Mai 2021 – 22 S 87/20 (Werbung in der Bestätigungsmail)</title>
+    <short>LG Stendal 22 S 87/20</short>
+    <date>2021-05-12</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="22-s-87-20.fragment.html">
+    <paragraph lga:provision="DE-LGST-2021-0512-tenor-1" lga:citation="LG Stendal 22 S 87/20, Tenor 1"
+      lga:url="https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771"
+      lga:applies="DE-UWG-s7-2">Die Beklagte hat es bei Vermeidung eines vom Gericht für jeden Fall der Zuwiderhandlung festzusetzenden Ordnungsgeldes, und für den Fall, dass dieses nicht beigetrieben werden kann, einer Ordnungshaft oder einer Ordnungshaft bis zu sechs Monaten, zu vollziehen an der Geschäftsführung, (Ordnungsgeld im Einzelfall höchstens 250.000,00 Euro, Ordnungshaft insgesamt höchstens 2 Jahre), zu unterlassen, an den Kläger, insbesondere zur Aufnahme eines geschäftlichen Kontakts, Werbeschreiben per E-Mail zu senden und/oder senden zu lassen, ohne dass der Kläger zuvor ausdrücklich in die Versendung eingewilligt hat.</paragraph>
+    <paragraph lga:provision="DE-LGST-2021-0512-tenor-2" lga:citation="LG Stendal 22 S 87/20, Tenor 2" lga:applies="DE-UWG-s7-2"
+      lga:url="https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771">Der Beklagte wird verurteilt, an den Kläger 179,27 Euro nebst 5 Prozentpunkten Zinsen über dem Basiszinssatz seit dem 18. Juni 2020 zu zahlen.</paragraph>
+  </section>
+
+  <section num="Leitsatz" title="Leitsatz" source="22-s-87-20.fragment.html">
+    <paragraph lga:provision="DE-LGST-2021-0512-ls" lga:citation="LG Stendal 22 S 87/20, Leitsatz"
+      lga:url="https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771"
+      lga:interprets="DE-UWG-s7-2">Enthält eine im Rahmen des Double-Opt-In-Verfahrens versendete Newsletter-Bestätigungs-E-Mail über die reine Aufforderung zur Bestätigung hinaus aufgrund der Verwendung des Logos sowie der Sätze „Welcome to XXX “ und „Hast du Fragen zum Newsletter? Kontaktiere uns über: info@XXX.de“ einen werbenden Inhalt, stellt sie einen rechtwidrigen Eingriff in den eingerichteten und ausgeübten Gewerbebetrieb dar.</paragraph>
+  </section>
+
+  <section num="Gründe" title="Entscheidungsgründe" source="22-s-87-20.fragment.html">
+    <paragraph lga:provision="DE-LGST-2021-0512-rn16" lga:citation="LG Stendal 22 S 87/20, Rn. 16"
+      lga:url="https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771"
+      lga:interprets="DE-UWG-s7-2">Danach ist die streitgegenständliche E-Mail, soweit mit ihr zu einer Bestätigung einer Anmeldung auf der Website der Beklagten aufgefordert wird, zulässig. Da die E-Mail über die reine Aufforderung zur Bestätigung hinaus aufgrund der Verwendung des Logos sowie der Sätze „Welcome to ZzZzZzZzZ“ und „Hast du Fragen zum Newsletter? Kontaktiere uns über: info@ ZzZzZzZzZ.de “ einen werbenden Inhalt hat, stellt sie aber einen rechtwidrigen Eingriff in den eingerichteten und ausgeübten Gewerbebetrieb der Beklagten dar.</paragraph>
+    <paragraph lga:provision="DE-LGST-2021-0512-rn18" lga:citation="LG Stendal 22 S 87/20, Rn. 18"
+      lga:url="https://www.landesrecht.sachsen-anhalt.de/bsst/document/NJRE001485771"
+      lga:interprets="DE-UWG-s7-2">Das Logo und der einladende Spruch „Welcome to ZzZzZzZzZ“ sind geeignet, anders als durch eine bloße Absenderangabe auf die Marke „ZzZzZzZzZ“ einprägsam aufmerksam zu machen und ein Absatz förderndes Kundeninteresse zu erzeugen. Dies hat der Geschäftsführer der Beklagten persönlich angehört indirekt bestätigt, indem er erklärt hat, durch das Weglassen des Logos und des Spruchs „Welcome to ZzZzZzZzZ“ sei die Nachfrage nach den Newslettern zurückgegangen. Aber auch der Zusatz „Hast Du Fragen zum Newsletter? Kontaktiere uns über info@ ZzZzZzZzZ.de “ wirkt mittelbar Absatz fördernd, da mit ihm ein Service, der das Ziel der Kundengewinnung hat, angeboten wird.</paragraph>
+  </section>
+</law>

@@ -1,0 +1,140 @@
+---
+// Coverage per jurisdiction, filterable by membership (EU, EEA) and by how far the graph covers it,
+// and searchable by name, code and what the notice is called there.
+import FilterList from "../ds/FilterList.astro";
+import type { FilterGroup } from "../ds/filter-list.types";
+import Pointer from "../Pointer.astro";
+import Layout from "../../layouts/Layout.astro";
+import type { Translate } from "../../i18n/t";
+import { tagId } from "../ds/filter-list.types";
+import { loadGraph } from "../../lib/data";
+import { pagePath } from "../../lib/routes";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+const graph = await loadGraph();
+const rulesIn = new Map<string, number>();
+for (const rule of graph.obligations.values()) {
+  rulesIn.set(rule.data.appliesIn, (rulesIn.get(rule.data.appliesIn) ?? 0) + 1);
+}
+
+const entries = [...graph.jurisdictions.values()].map((j) => {
+  const acts = j.data.acts.map((id) => graph.acts.get(id)!).filter(Boolean);
+  const provisions = acts.flatMap((act) => act.data.provisions.map((id) => graph.provisions.get(id)!)).filter(Boolean);
+  const rules = rulesIn.get(j.id) ?? 0;
+  const checked = provisions.filter((p) => p.data.reviewStatus === "SourceChecked").length;
+  const fromSources = acts.filter((a) => a.data.documents.length > 0).length;
+  const member = j.data.kind === "organisation" ? "organisation" : j.data.memberOf.includes("EU") ? "eu" : j.data.memberOf.includes("EEA") ? "eea" : "other";
+  const coverage = rules > 0 ? "rules" : provisions.length > 0 ? "provisions" : "none";
+  const notices = j.data.noticeNames.map((n) => n.text);
+  return {
+    j,
+    acts: acts.length,
+    provisions: provisions.length,
+    checked,
+    fromSources,
+    rules,
+    notices,
+    tags: [`m-${member}`, `c-${coverage}`],
+    search: [j.data.label, j.data.code, ...notices].join(" ").toLocaleLowerCase(),
+  };
+});
+entries.sort((a, b) => b.rules - a.rules || b.provisions - a.provisions || a.j.data.label.localeCompare(b.j.data.label));
+
+const count = (id: string) => entries.filter((e) => e.tags.includes(id)).length;
+const option = (id: string, label: string) => ({ id, label, count: count(id) });
+const groups: FilterGroup[] = [
+  {
+    title: "Membership",
+    options: [
+      option("m-eu", "EU member states"),
+      option("m-eea", "EEA, not in the EU"),
+      option("m-other", "Other countries"),
+      option("m-organisation", "EU and EEA themselves"),
+    ].filter((o) => o.count > 0),
+  },
+  {
+    title: "Coverage",
+    options: [
+      option("c-rules", "With rules"),
+      option("c-provisions", "Provisions only"),
+      option("c-none", "Not covered yet"),
+    ].filter((o) => o.count > 0),
+  },
+];
+---
+
+<Layout
+  t={t}
+  page="countries"
+  title="Countries"
+  header={{
+    title: "Countries",
+    description: "Every jurisdiction in the graph, with how much of its website law is in it.",
+  }}
+>
+  <p class="mb-8 max-w-3xl text-muted-foreground">
+    <em>Source checked</em> provisions are compared with the official text; laws <em>from law text</em> are extracted from
+    the downloaded text itself. Rules say what the provisions mean for a business.
+  </p>
+  <FilterList
+    id="countries"
+    groups={groups}
+    total={entries.length}
+    allLabel="All jurisdictions"
+    searchLabel="Search the jurisdictions"
+    searchPlaceholder="Search by name, code or notice, e.g. Austria, FR, mentions légales"
+    emptyText="No jurisdiction matches your search."
+  >
+    <div class="grid gap-4 md:grid-cols-2">
+      {
+        entries.map(({ j, acts, provisions, checked, fromSources, rules, notices, tags, search }) => (
+          <article
+            class:list={["filter-entry card p-5", provisions === 0 && "opacity-75"]}
+            data-tags={tags.join(" ")}
+            data-search={search}
+          >
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <a href={`/id/${j.id}`} class="text-base font-semibold">
+                {j.data.label}
+              </a>
+              <span class="text-sm text-muted-foreground">{j.data.memberOf.join(" · ") || j.data.code}</span>
+            </div>
+            {notices.length > 0 && <p class="mt-1 text-sm text-muted-foreground">Notice: {notices.join(", ")}</p>}
+            <dl class="mt-3 grid grid-cols-3 gap-x-4 gap-y-1 text-sm sm:grid-cols-5">
+              {(
+                [
+                  ["Laws", acts, pagePath("acts", t.locale)],
+                  ["From text", fromSources, undefined],
+                  ["Provisions", provisions, pagePath("provisions", t.locale)],
+                  ["Checked", checked, undefined],
+                  ["Rules", rules, pagePath("rules", t.locale)],
+                ] as const
+              ).map(([name, value, list]) => (
+                <div>
+                  <dt class="text-xs whitespace-nowrap">{name}</dt>
+                  <dd class="mb-0 font-semibold">
+                    {list && value > 0 ? (
+                      <a href={`${list}?filter=j-${tagId(j.id)}`} title={`${name}: ${j.data.label}`}>
+                        {value}
+                      </a>
+                    ) : (
+                      value
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <div class="mt-3">
+              <Pointer id={j.id} />
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </FilterList>
+</Layout>

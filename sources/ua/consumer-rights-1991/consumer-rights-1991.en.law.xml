@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The Rada's official English translation of the 1991 consumer law, transcribed in schemas/law.xsd from
+  the English original (1023-12-en.fragment.html), as the parallel language version of
+  consumer-rights-1991.law.xml. Only the provisions the translation may stand for are here: Article 13(2)
+  is missing because the portal's own notes show its item 7 was rewritten on 16.08.2022, after this
+  translation of 12.05.2021 — `legalgraph sources verify` refuses to pass an English older than the text it
+  translates. Only lga:provision and lga:url annotate the provisions.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="UA-1023" lga:jurisdiction="UA" lga:act-type="Statute"
+     lga:url="https://zakon.rada.gov.ua/laws/show/en/1023-12">
+  <meta>
+    <title>On Consumer Rights Protection</title>
+    <date>1991-05-12</date>
+  </meta>
+
+  <section num="Article 13" title="Consumer rights in case of entering into a distance agreement" source="1023-12-en.fragment.html">
+    <paragraph num="4." lga:provision="UA-1023-art13-4" lga:url="https://zakon.rada.gov.ua/laws/show/en/1023-12#n295">A consumer shall have the right to terminate a distance agreement by notifying a seller (contractor) thereof within fourteen days after the confirmation of information or after receiving the goods or after the first supply of goods. If according to paragraph 2, part 3 of this Article no confirmation of information is required, a consumer may terminate the agreement within fourteen days after entering into such an agreement. In case of selling tangible things, return thereof shall evidence the termination of the agreement. If confirmation of the information fails to meet the requirements of part 3 of this Article, the period within which a consumer has the right to terminate the agreement shall be ninety days after receiving such information, or in case of selling tangible things — after receiving the goods or after the first supply of goods. If the confirmation of information has been rectified within this period, a consumer shall have the right to terminate the agreement within fourteen days after receiving a relevant rectified confirmation.</paragraph>
+  </section>
+</law>

@@ -1,0 +1,16 @@
+---
+import { useT } from "../../../src/i18n/t";
+
+const t = useT(Astro.params.locale);
+const title = t("Frontmatter message");
+const labels = { menu: t("Menu"), close: t("Close") };
+---
+
+<h1>{title}</h1>
+<p title={t.ctx("pricing", "Free")}>{t("In the template")}</p>
+<ul>{["a", "b"].map((item) => <li>{t('Nested in a map')}{item}</li>)}</ul>
+<p>{t(`Backtick without placeholders`)}</p>
+<p>{t(`Spread   over
+  whitespace`)}</p>
+<Child t={t} />
+<nav x-data={JSON.stringify(labels)}></nav>

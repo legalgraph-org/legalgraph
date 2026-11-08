@@ -1,0 +1,100 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:UA-1023
+    lgo:amendmentCheck lg:UA-1023-amendment-check .
+
+lg:UA-1023-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/1023-12"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 720-IX в. 17.06.2020" ;
+    lgo:lastKnownAmendmentDate "2020-06-17"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text. zakon.rada.gov.ua blocks programmatic access; the full act-level amendment list could not be re-read today."@en .
+
+lg:UA-3153
+    lgo:amendmentCheck lg:UA-3153-amendment-check .
+
+lg:UA-3153-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/3153-20"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 4718-IX в. 16.12.2025" ;
+    lgo:lastKnownAmendmentDate "2025-12-16"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Already amended before it is even in force: under Section IX(1) it applies one year after publication and not before martial law ends; martial law continues as of 07.11.2026, so it is still not in force."@en .
+
+lg:UA-270
+    lgo:amendmentCheck lg:UA-270-amendment-check .
+
+lg:UA-270-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/270/96-вр"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 768-IX в. 14.07.2020" ;
+    lgo:lastKnownAmendmentDate "2020-07-14"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text; portal unreachable for a full check."@en .
+
+lg:UA-675
+    lgo:amendmentCheck lg:UA-675-amendment-check .
+
+lg:UA-675-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/675-19"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 2801-IX в. 01.12.2022" ;
+    lgo:lastKnownAmendmentDate "2022-12-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text; portal unreachable."@en .
+
+lg:UA-1089
+    lgo:amendmentCheck lg:UA-1089-amendment-check .
+
+lg:UA-1089-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/1089-20"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 4903-IX в. 09.06.2026" ;
+    lgo:lastKnownAmendmentDate "2026-06-09"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text; portal unreachable."@en .
+
+lg:UA-2297
+    lgo:amendmentCheck lg:UA-2297-amendment-check .
+
+lg:UA-2297-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/2297-17"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 4240-IX в. 12.02.2025" ;
+    lgo:lastKnownAmendmentDate "2025-02-12"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text; portal unreachable."@en .
+
+lg:UA-2704
+    lgo:amendmentCheck lg:UA-2704-amendment-check .
+
+lg:UA-2704-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/2704-19"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 5008-IX в. 12.10.2026" ;
+    lgo:lastKnownAmendmentDate "2026-10-12"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text; portal unreachable."@en .
+
+lg:UA-2849
+    lgo:amendmentCheck lg:UA-2849-amendment-check .
+
+lg:UA-2849-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://zakon.rada.gov.ua/laws/show/2849-20"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Закон № 4699-IX в. 03.12.2025" ;
+    lgo:lastKnownAmendmentDate "2025-12-03"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending law cited in the quoted text; portal unreachable."@en .

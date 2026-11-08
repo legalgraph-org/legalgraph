@@ -1,0 +1,20 @@
+# Gesetz gegen den unlauteren Wettbewerb: official XML from gesetze-im-internet.de (Federal Ministry of Justice).
+# The original is the file inside the zip, byte for byte. The annotated copy adds lga: attributes only;
+# `legalgraph sources verify` proves it, `legalgraph sources fetch --check` re-downloads and compares.
+id: de/uwg
+title: Gesetz gegen den unlauteren Wettbewerb
+jurisdiction: DE
+language: de
+publisher: Bundesministerium der Justiz, gesetze-im-internet.de
+kind: official-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright"
+originals:
+  - file: BJNR141400004.xml
+    url: https://www.gesetze-im-internet.de/uwg_2004/xml.zip
+    fetch: zip-member
+    member: BJNR141400004.xml
+    media_type: application/xml
+    retrieved_on: 2026-11-07
+    sha256: be8d5e1d93d4fcbe236a891082296d257eed6c4c08ef6a7d307fde68c2b6cf00
+annotated: BJNR141400004.annotated.xml

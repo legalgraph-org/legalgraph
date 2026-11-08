@@ -1,0 +1,422 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# United Kingdom, read from data/extracted/gb/. Draft until a lawyer reviews it.
+
+lg:GB-R-company-website-disclosures a lgo:Obligation ;
+    rdfs:label "Company details on the website"@en ;
+    rdfs:comment "Applies to companies only: sole traders and partnerships trading under a business name have similar duties in the same Regulations (Part 7) that are not quoted here yet."@en ;
+    lgo:establishedBy lg:GB-SI-2015-17-r24-2 , lg:GB-SI-2015-17-r25-1 , lg:GB-SI-2015-17-r25-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:UkCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:RegisterEntry , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-cookies a lgo:Obligation ;
+    rdfs:label "No cookies or similar unless an exception applies (usually consent)"@en ;
+    rdfs:comment "Schedule A1 lists the exceptions: transmission only and strictly necessary storage or access (paragraphs 3 and 4), and since 5 February 2026 analytics to improve the service or website and adapting its appearance or functionality, if users are told clearly and can object free of charge (paragraphs 5 and 6). Consent itself is paragraph 2."@en ;
+    lgo:establishedBy lg:GB-SI-2003-2426-r6-1 , lg:GB-SI-2003-2426-schA1-p2-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Who runs the website (Electronic Commerce Regulations 2002) ---------------------
+
+lg:GB-R-website-information a lgo:Obligation ;
+    rdfs:label "Service provider details: name, address, email"@en ;
+    rdfs:comment "The UK counterpart of the Impressum, for anyone providing an information society service (in practice any commercial website), companies or not."@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-website-information-register a lgo:Obligation ;
+    rdfs:label "Service provider details: register and number"@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-website-information-authorisation a lgo:Obligation ;
+    rdfs:label "Service provider details: supervisory authority"@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-website-information-profession a lgo:Obligation ;
+    rdfs:label "Service provider details: professional body, title and rules"@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-website-information-vat a lgo:Obligation ;
+    rdfs:label "Service provider details: VAT number"@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-prices a lgo:Obligation ;
+    rdfs:label "Prices: say whether tax and delivery are included"@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r6-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:ShowsPricesToConsumers ;
+    lgo:partOfDisclosure lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:TotalPrice , lgv:DeliveryCosts ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-ordering-information a lgo:Obligation ;
+    rdfs:label "Online ordering: steps, filing, error correction, languages"@en ;
+    lgo:establishedBy lg:GB-SI-2002-2013-r9-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:EstablishedInTheUnitedKingdom , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:OrderingProcessInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+
+# --- Selling to UK consumers (Consumer Contracts Regulations 2013, DMCC Act 2024) --------
+
+lg:GB-R-pre-contract-information a lgo:Obligation ;
+    rdfs:label "Pre-contract information for distance sales to UK consumers"@en ;
+    rdfs:comment "Items marked where applicable in Schedule 2 depend on the product; the checklist lists them all."@en ;
+    lgo:establishedBy lg:GB-SI-2013-3134-r13-1 , lg:GB-SI-2013-3134-sch2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress , lgv:TotalPrice , lgv:DeliveryCosts , lgv:SubscriptionCosts , lgv:PaymentAndDeliveryTerms , lgv:WithdrawalInformation , lgv:ReturnCosts , lgv:LegalGuarantee , lgv:CommercialGuarantee , lgv:ContractDuration , lgv:DigitalProductInformation , lgv:CodesOfConduct , lgv:ComplaintAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-order-button a lgo:Obligation ;
+    rdfs:label "Order button: ‘order with obligation to pay’"@en ;
+    lgo:establishedBy lg:GB-SI-2013-3134-r14-4 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:LabelOrderButton ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-no-pre-ticked-extras a lgo:Obligation ;
+    rdfs:label "No extra payments without express consent (no pre-ticked boxes)"@en ;
+    lgo:establishedBy lg:GB-SI-2013-3134-r40-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:ObtainExpressConsentForExtras ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-material-information a lgo:Obligation ;
+    rdfs:label "Material information and the total price in every invitation to purchase (no drip pricing)"@en ;
+    rdfs:comment "The total price must include all mandatory fees and charges, so they may not be added later in the checkout (drip pricing). In force since 6 April 2025, enforced directly by the CMA with fines of up to 10% of global turnover."@en ;
+    lgo:establishedBy lg:GB-DMCC-2024-s230-2 , lg:GB-DMCC-2024-s230-4 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:ShowsPricesToConsumers ;
+    lgo:partOfDisclosure lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:TotalPrice , lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:DeliveryCosts , lgv:WithdrawalInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-fake-reviews a lgo:Obligation ;
+    rdfs:label "No fake reviews; reasonable steps against them"@en ;
+    lgo:establishedBy lg:GB-DMCC-2024-sch20-p13 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:PublishesConsumerReviews ;
+    lgo:requiresAction lgv:PreventFakeReviews ;
+    lgo:reviewStatus lgv:Draft .
+
+
+# --- UK GDPR -------------------------------------------------------------------
+
+lg:GB-R-privacy-information a lgo:Obligation ;
+    rdfs:label "Privacy information (UK GDPR): who, why, on which basis, to whom, how long, which rights"@en ;
+    rdfs:comment "The complaint right is to the ICO. Conditional items (data protection officer, legitimate interests, transfers, consent, automated decisions) follow the same points as under the EU GDPR."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art13-1 , lg:GB-UK-GDPR-art13-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:CollectsDataFromDataSubjects ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ControllerIdentity , lgv:ProcessingPurposes , lgv:LegalBasisOfProcessing , lgv:Recipients , lgv:RetentionPeriod , lgv:DataSubjectRights , lgv:ComplaintRight , lgv:ProvisionRequirement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-privacy-information-legitimate-interests a lgo:Obligation ;
+    rdfs:label "Privacy information (UK GDPR): legitimate interests"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art13-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:CollectsDataFromDataSubjects , lgv:ReliesOnLegitimateInterests ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:LegitimateInterests ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-privacy-information-consent a lgo:Obligation ;
+    rdfs:label "Privacy information (UK GDPR): right to withdraw consent"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art13-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:CollectsDataFromDataSubjects , lgv:ReliesOnConsent ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalRight ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-privacy-information-dpo a lgo:Obligation ;
+    rdfs:label "Privacy information (UK GDPR): data protection officer"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art13-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:CollectsDataFromDataSubjects , lgv:HasDataProtectionOfficer ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:DataProtectionOfficerContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-uk-representative a lgo:Obligation ;
+    rdfs:label "Designate a representative in the UK"@en ;
+    rdfs:comment "For controllers outside the UK that target or monitor people in it. Article 27(2) exempts occasional, low-risk processing; not modelled yet."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art27-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies ;
+    lgo:unless lgv:EstablishedInTheUnitedKingdom ;
+    lgo:requiresAction lgv:DesignateRepresentativeInTheUk ;
+    lgo:reviewStatus lgv:Draft .
+
+
+lg:GB-R-lawful-basis a lgo:Obligation ;
+    rdfs:label "A lawful basis for every processing (UK GDPR)"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art6-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies ;
+    lgo:requiresAction lgv:HaveLawfulBasis ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-consent-conditions a lgo:Obligation ;
+    rdfs:label "Consent that can be proven and withdrawn as easily as given (UK GDPR)"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art7-1 , lg:GB-UK-GDPR-art7-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:DemonstrateConsent , lgv:MakeWithdrawalAsEasyAsConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-consent-separate a lgo:Obligation ;
+    rdfs:label "Ask for consent apart from other matters (UK GDPR)"@en ;
+    rdfs:comment "Same rule as under the EU GDPR: a marketing-consent checkbox fused into accepting terms fails Art. 7(2) UK GDPR just as it fails Art. 7(2) GDPR."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art7-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:KeepConsentRequestSeparate ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-consent-no-tying a lgo:Obligation ;
+    rdfs:label "No service conditioned on unnecessary consent (UK GDPR)"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art7-4 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:ConditionServiceOnConsent ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-storage-limitation a lgo:Obligation ;
+    rdfs:label "Keep personal data no longer than the purpose needs (UK GDPR)"@en ;
+    rdfs:comment "Retention periods and deletion: identifying data only while the purpose lasts; the UK GDPR sets no period for evidence of consent. In practice it is often kept while the processing runs and then for the time claims could still be brought (six years in England and Wales under the Limitation Act 1980, not in the graph yet); that is a reading, not a rule of the UK GDPR."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art5-1-e ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies ;
+    lgo:requiresAction lgv:KeepDataNoLongerThanNecessary ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-privacy-by-design a lgo:Obligation ;
+    rdfs:label "Data protection by design and by default (UK GDPR)"@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art25-1 , lg:GB-UK-GDPR-art25-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies ;
+    lgo:requiresAction lgv:DesignForDataProtection ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-processing-record a lgo:Obligation ;
+    rdfs:label "Keep a record of processing activities (UK GDPR)"@en ;
+    rdfs:comment "Purposes, categories, recipients, transfers and retention periods, in writing — the small-employer exemption in art. 30(5) UK GDPR does not apply where processing is not occasional, so a website business is covered."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art30-1 , lg:GB-UK-GDPR-art30-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies ;
+    lgo:requiresAction lgv:KeepProcessingRecord ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-processing-agreement a lgo:Obligation ;
+    rdfs:label "A data processing agreement with every processor (UK GDPR)"@en ;
+    rdfs:comment "Each processor needs a contract with the Article 28(3) UK GDPR terms — instructions, confidentiality, security, sub-processor control, assistance with data-subject rights, deletion or return at the end of the service."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art28-1 , lg:GB-UK-GDPR-art28-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:EngagesProcessors ;
+    lgo:requiresAction lgv:HaveProcessingAgreement ;
+    lgo:reviewStatus lgv:Draft .
+
+
+# --- Online Safety Act 2023 ------------------------------------------------------------
+
+
+lg:GB-R-online-safety-illegal-content a lgo:Obligation ;
+    rdfs:label "Illegal content: risk assessment, prevention and swift take-down"@en ;
+    rdfs:comment "Applies to any service where users share content with other users and which has links with the UK, including small forums and comment sections; Ofcom's codes of practice describe the measures."@en ;
+    lgo:establishedBy lg:GB-OSA-2023-s9-2 , lg:GB-OSA-2023-s10-2 , lg:GB-OSA-2023-s10-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:RegulatedUserToUserService ;
+    lgo:requiresAction lgv:AssessAndMitigateIllegalContent ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-online-safety-children a lgo:Obligation ;
+    rdfs:label "Protect children, with age checks for the most harmful content"@en ;
+    lgo:establishedBy lg:GB-OSA-2023-s12-3 , lg:GB-OSA-2023-s12-4 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:RegulatedUserToUserService , lgv:LikelyAccessedByChildren ;
+    lgo:requiresAction lgv:ProtectChildrenOnline ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Unfair terms in consumer contracts (Consumer Rights Act 2015, Part 2) --------------------
+
+lg:GB-R-unfair-terms a lgo:Obligation ;
+    rdfs:label "No unfair terms in consumer contracts"@en ;
+    rdfs:comment "The UK version: an unfair term is not binding on the consumer (s. 62) and must be transparent and prominent (s. 68); Schedule 2 is the grey list. Before Brexit this implemented Directive 93/13/EEC."@en ;
+    lgo:establishedBy lg:GB-CRA-2015-s62-1 , lg:GB-CRA-2015-s68-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers ;
+    lgo:requiresAction lgv:ImposeUnfairTerms ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Subscription contracts (DMCC Act 2024, Part 4 Chapter 2) --------------------------------
+# Enacted but not yet in force: commencement was announced for January 2027 and the secondary
+# legislation fixing the prescribed information is still outstanding. The rules are modelled
+# now so the graph already describes the duty; scenario answers need a commenced law.
+
+lg:GB-R-subscription-precontract a lgo:Obligation ;
+    rdfs:label "Subscription contracts: key pre-contract information"@en ;
+    rdfs:comment "Before a consumer enters a subscription contract: the key pre-contract information (s. 256) given as s. 257 prescribes for distance contracts — in force from the commencement of Part 4 Chapter 2, expected 2027."@en ;
+    lgo:establishedBy lg:GB-DMCC-2024-s256-1 , lg:GB-DMCC-2024-s257-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:OffersAutomaticRenewal ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:SubscriptionTermsDisclosure , lgv:CancellationInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-subscription-easy-exit a lgo:Obligation ;
+    rdfs:label "Subscription contracts: exit as easy as entry"@en ;
+    rdfs:comment "A consumer must be able to end the contract in a straightforward way — a single online communication where the contract was made online. Not yet in force."@en ;
+    lgo:establishedBy lg:GB-DMCC-2024-s260-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:OffersAutomaticRenewal ;
+    lgo:requiresAction lgv:MakeExitAsEasyAsEntry ;
+    lgo:requiresDisclosureOf lgv:CancellationMechanism , lgv:OnlineCancellation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-subscription-cooling-off a lgo:Obligation ;
+    rdfs:label "Subscription contracts: initial and renewal cooling-off rights"@en ;
+    rdfs:comment "The consumer may cancel during the initial cooling-off period and each renewal cooling-off period (s. 264), with the refunds s. 265 prescribes. Not yet in force."@en ;
+    lgo:establishedBy lg:GB-DMCC-2024-s264-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:OffersAutomaticRenewal ;
+    lgo:requiresAction lgv:AllowCoolingOffCancellation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-subscription-reminders a lgo:Obligation ;
+    rdfs:label "Subscription contracts: reminder notice before each renewal"@en ;
+    rdfs:comment "Before each renewal cooling-off period, a reminder notice stating the payment due and how to cancel — the DMCC answer to subscriptions that quietly roll over. Not yet in force."@en ;
+    lgo:establishedBy lg:GB-DMCC-2024-s266-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:SellsToUkConsumers , lgv:OffersAutomaticRenewal ;
+    lgo:requiresAction lgv:SendRenewalReminder ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-consent-specific a lgo:Obligation ;
+    rdfs:label "One purpose per consent (UK GDPR)"@en ;
+    rdfs:comment "Consent is only valid for the purpose it was given for: granular, separate choices rather than one bundled tick (Art. 4(11), 7(2) UK GDPR — identical wording to the EU GDPR)."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art4-1-11 , lg:GB-UK-GDPR-art7-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:ReliesOnConsent ;
+    lgo:requiresAction lgv:ObtainConsentPerPurpose ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GB-R-processor-end-of-service a lgo:Obligation ;
+    rdfs:label "Delete or return personal data when the service ends (UK GDPR)"@en ;
+    rdfs:comment "The processor's own duty at contract end under art. 28(3)(g) UK GDPR: the controller chooses deletion or return, copies go unless the law requires storage. A processor that decides purposes and means itself is treated as a controller of that processing (art. 28(10) UK GDPR)."@en ;
+    lgo:establishedBy lg:GB-UK-GDPR-art28-3-g , lg:GB-UK-GDPR-art28-10 ;
+    lgo:bearer lgv:Processor ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GB ;
+    lgo:appliesWhen lgv:UkGdprApplies , lgv:ActsAsProcessor ;
+    lgo:requiresAction lgv:ReturnOrDeleteAtEndOfService ;
+    lgo:reviewStatus lgv:Draft .

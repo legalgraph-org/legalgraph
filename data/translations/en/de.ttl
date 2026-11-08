@@ -1,0 +1,1482 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:DE-AO-s139c-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6dacd6c5d86d5a6930156f6e5d785afe1e54af3be58a6bc308d606f83113a6a1" ;
+    lgo:text "(1) The economic identification number is assigned at the request of the competent tax authority. It begins with the letters „DE“. Each economic identification number may be assigned only once."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-AO-s139c-1-q1 .
+
+lg:DE-AO-source-legalStatus-32a0a7807429-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "32a0a7807429d973ef65e11c593fa340db4414d539e82a54ac2503730ef906cd" ;
+    lgo:text "last amended by Art. 6 of the Act of 22 October 2026 (BGBl. I No. 320)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-AO-source .
+
+lg:DE-AO-source-legalStatus-86603be9ef3f-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "86603be9ef3f1556f548afc8783c1f00f58d67b38bb72bf88c868cc15960b980" ;
+    lgo:text "Republished in a new version by notice of 23 January 2025 (BGBl. I No. 24);"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-AO-source .
+
+lg:DE-BDSG-s38-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0b1f8a42a22bfb280b8f5827f0460a02ec8517e435f6f553be87b0b8f16f10a5" ;
+    lgo:text "(1) In addition to points (b) and (c) of Article 37(1) of Regulation (EU) 2016/679, the controller and the processor shall designate a data protection officer if, as a rule, they constantly employ at least 20 persons in the automated processing of personal data. If the controller or the processor carries out processing that is subject to a data protection impact assessment under Article 35 of Regulation (EU) 2016/679, or processes personal data commercially for the purpose of transfer, anonymised transfer or market or opinion research, they shall designate a data protection officer regardless of the number of persons employed in the processing."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BDSG-s38-1-q1 .
+
+lg:DE-BDSG-source-legalStatus-244798a30c8b-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "244798a30c8bb782f27e02230e8b7701ee0efb27e57dbae6b1999f76bc80e928" ;
+    lgo:text "Last amended by Art. 3 of the Act of 12 May 2026 (BGBl. I No. 139)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BDSG-source .
+
+lg:DE-BDSG-source-legalStatus-39672363d769-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "39672363d76908ae2752f9679726f80e99d0d6c07bf8881778f3769f86fab141" ;
+    lgo:text "Amendment by Art. 3 of the Act of 3 July 2026 (BGBl. I No. 199) included in the text; documentation not yet complete"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BDSG-source .
+
+lg:DE-BDSG-source-legalStatus-e0c7d5eaf9aa-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e0c7d5eaf9aa039d6b952b27d5ef8b147c205a6102a0c123359cb5b10c296bbb" ;
+    lgo:text "Replaces Act 204-3 of 20 December 1990, BGBl. I p. 2954, 2955 (BDSG 1990)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BDSG-source .
+
+lg:DE-BFSG-s14-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c0bd7d83188c9b674095fa217f52025db10ccee6e046ed2ddd3faeeba8b08f96" ;
+    lgo:text """(1) The service provider may offer or provide its service only if
+1. the service meets the accessibility requirements of the ordinance to be issued under § 3(2), and
+2. it has drawn up the information under Annex 3 number 1 and made that information available to the public in an accessible form; the requirements of the ordinance to be issued under § 3(2) govern how it is made available."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BFSG-s14-1-q1 .
+
+lg:DE-BFSG-s3-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fc0359e6d5b79caad370e6a66e4746826f53ec7acc0604d716c6e8280eb53907" ;
+    lgo:text "(1) Products that an economic operator makes available on the market, and services that it offers or provides, must be accessible. Products and services are accessible if persons with disabilities can find, access and use them in the generally usual way, without particular difficulty and in principle without outside help. The specific accessibility requirements for products and services under this paragraph are laid down in the ordinance to be issued under paragraph 2."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BFSG-s3-1-q1 .
+
+lg:DE-BFSG-s3-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7fbeafa491c87f7dd92e447acb9d69fe13dd61075693e7658459eece6b8c5bf4" ;
+    lgo:text "(3) Paragraph 1 does not apply to microenterprises that offer or provide services. The Federal Ministry of Labour and Social Affairs, in agreement with the Federal Ministry for Economic Affairs and Energy, shall draw up guidelines for microenterprises to make it easier for them to apply this Act. The Federal Ministry of Labour and Social Affairs may use third parties in drawing up the guidelines under sentence 2."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BFSG-s3-3-q1 .
+
+lg:DE-BFSG-source-legalStatus-ee017f0a4a4d-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ee017f0a4a4d9a8f0b9c388e630883a9459e5a5f6790bc403336112b6721f60f" ;
+    lgo:text "Last amended by Art. 32 of the Act of 6 May 2024 (BGBl. I No. 149)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BFSG-source .
+
+lg:DE-BGB-s195-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b124d671d9c94f510ea1391e4f058d9bbe44213a09e7084f514fc0ee617bd046" ;
+    lgo:text "The regular limitation period is three years."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s195-q1 .
+
+lg:DE-BGB-s199-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3d70d4eff89c8b4ad60a59c007a4a447528beb6df6ea9f7ab486da69dcc54f7f" ;
+    lgo:text """(1) Unless another start of limitation is specified, the regular limitation period begins at the end of the year in which
+1. the claim arose and
+2. the obligee obtains knowledge of the circumstances giving rise to the claim and the identity of the obligor, or would have obtained it without gross negligence."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s199-1-q1 .
+
+lg:DE-BGB-s305-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f93783819689092afdaccebbef4fe2c5533a43bc2b3f978bfa5d0b7eddbf4c02" ;
+    lgo:text """(2) Standard business terms become part of a contract only if the user, when the contract is concluded,
+1. refers the other party to them expressly or, where an express reference is possible only with disproportionate difficulty because of the way the contract is concluded, by a clearly visible notice at the place where the contract is concluded, and
+2. gives the other party the opportunity, in a reasonable manner that also takes appropriate account of a physical disability of the other party recognisable to the user, to take note of their content,
+and if the other party agrees to their application."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s305-2-q1 .
+
+lg:DE-BGB-s307-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "848c37ca636906f7ae548ecf425eb77bc4111d81f734c5bfb3cf5dbb490caa52" ;
+    lgo:text "(1) Provisions in standard business terms are ineffective if, contrary to the requirement of good faith, they unreasonably disadvantage the user's contractual partner. An unreasonable disadvantage may also arise from the provision not being clear and comprehensible."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s307-1-q1 .
+
+lg:DE-BGB-s309-9-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8e0b37ecdbdb5634c1ecf49e38973ce77e694dd2652f2606c1ca5c792259a810" ;
+    lgo:text """in a contractual relationship whose subject is the regular supply of goods or the regular provision of services or work by the user,
+a) a term of the contract binding the other party for longer than two years,
+b) a tacit extension of the contractual relationship binding the other party, unless the contractual relationship is extended only for an indefinite period and the other party is given the right to terminate the extended contractual relationship at any time with a notice period of no more than one month, or
+c) a notice period, to the detriment of the other party, longer than one month before the end of the originally intended term of the contract;
+this does not apply to contracts for the supply of items sold as belonging together or to insurance contracts;"""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s309-9-q1 .
+
+lg:DE-BGB-s312i-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "af40e0dfad7e7e7f144c6aa0d2f17316304258dfb98a5f326f4d875ce0596018" ;
+    lgo:text """(1) If a trader uses digital services within the meaning of § 1(4) no. 1 of the Digital Services Act (DDG) for the purpose of concluding a contract for the supply of goods or the provision of services (contract in electronic commerce), the trader must
+1. provide the customer with appropriate, effective and accessible technical means by which the customer can identify and correct input errors before placing the order,
+2. communicate to the customer clearly and comprehensibly, in good time before the order is placed, the information specified in Article 246c of the Introductory Act to the Civil Code,
+3. confirm receipt of the customer's order without undue delay by electronic means, and
+4. enable the customer to retrieve the contract terms, including the standard business terms, when the contract is concluded and to store them in a reproducible form.
+The order and the acknowledgement of receipt within the meaning of sentence 1 no. 3 are deemed to have been received when the parties to whom they are addressed can retrieve them under normal circumstances."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s312i-1-q1 .
+
+lg:DE-BGB-s312j-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "03cff08dbcffcbc224b15bb2423b8c3aa9b313a1fd080f068698d7f264fdf081" ;
+    lgo:text "(2) In a consumer contract in electronic commerce that obliges the consumer to pay, the trader must provide the consumer with the information under Article 246a § 1(1) sentence 1 numbers 1, 5 to 8, 11a, 14 and 15 of the Introductory Act to the Civil Code clearly, comprehensibly and in a prominent manner immediately before the consumer places the order."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s312j-2-q1 .
+
+lg:DE-BGB-s312j-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5e42a5a75af61021ce1bef76f5c8d2da551ab832790a7ca892e92269e35b7a09" ;
+    lgo:text "(3) The trader shall design the ordering process for a contract under paragraph 2 so that, by placing the order, the consumer expressly confirms that they undertake an obligation to pay. If the order is placed by means of a button, the trader's obligation under sentence 1 is fulfilled only if the button is labelled in an easily legible manner with nothing other than the words \"zahlungspflichtig bestellen\" (order with obligation to pay) or with a corresponding unambiguous wording."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s312j-3-q1 .
+
+lg:DE-BGB-s312k-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "07f750a0bcf32d1df836f56f0dd3deb4a4f476874239c6f47825825e6836c76a" ;
+    lgo:text """(1) If consumers are enabled via a website to conclude a contract in electronic commerce aimed at establishing a continuing obligation that obliges a trader to provide a service for payment, the trader has the obligations under this provision. This does not apply
+1. to contracts for whose termination the law prescribes exclusively a stricter form than text form, and
+2. in relation to websites concerning financial services, or to contracts for financial services."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s312k-1-q1 .
+
+lg:DE-BGB-s312k-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f782ccde3eb34583e427423026e91c50420156a31755150d04f681941c9fd875" ;
+    lgo:text """(2) The trader must ensure that the consumer can make a declaration of ordinary or extraordinary termination of a contract under subsection 1 sentence 1 that can be concluded on the website, by means of a termination button on the website. The termination button must be legibly labelled with nothing other than the words “cancel contracts here” (“Verträge hier kündigen”) or with a corresponding unambiguous wording. It must lead the consumer directly to a confirmation page that
+1. asks the consumer for, and enables the consumer to give, information
+a) on the type of termination and, in the case of extraordinary termination, the reason for termination,
+b) on the consumer's unambiguous identification,
+c) on the unambiguous designation of the contract,
+d) on the time at which the termination is to end the contractual relationship,
+e) on the rapid electronic transmission of the termination confirmation to the consumer, and
+2. contains a confirmation button by which the consumer can make the declaration of termination and which is legibly labelled with nothing other than the words “cancel now” (“jetzt kündigen”) or with a corresponding unambiguous wording.
+The buttons and the confirmation page must be permanently available and directly and easily accessible."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s312k-2-q1 .
+
+lg:DE-BGB-s356a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "66acac8e25c09ca5b6f770275b586b7354e2a5915db211c26b78462708c723e0" ;
+    lgo:text "(1) For distance contracts concluded via an online interface, the trader shall ensure that the consumer can submit a notice of withdrawal on the online interface by using a withdrawal function. The withdrawal function must be labelled in an easily legible manner with \"Vertrag widerrufen\" (withdraw from contract) or another equivalent unambiguous wording. Throughout the withdrawal period it must be continuously available on the online interface, prominently placed and easily accessible to the consumer."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s356a-1-q1 .
+
+lg:DE-BGB-s823-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7599a813d82ab70eab7ce51a9a43561c7429fe296fc7b1c5318c9a57edf8c80c" ;
+    lgo:text "(1) A person who, intentionally or negligently, unlawfully injures the life, body, health, freedom, property or another right of another person is liable to make compensation to the other party for the damage arising from this."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-s823-1-q1 .
+
+lg:DE-BGB-source-legalStatus-7448dda50bbd-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7448dda50bbda99af7a47f1175ceef2bfcd776685ce249a24b2d5ecd3b85a3fd" ;
+    lgo:text "Republished by notice of 2 January 2002, BGBl. I p. 42, 2909; 2003, p. 738;"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-source .
+
+lg:DE-BGB-source-legalStatus-9b92821f64ce-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9b92821f64cef85f78f56790cadbb393a9b115d10727f3186ab6e4b9ef15e434" ;
+    lgo:text "last amended by Art. 6 of the Act of 23 July 2026 (BGBl. I No. 226)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGB-source .
+
+lg:DE-BGH-2011-0210-ls-a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e9733904dfa17071fca43db839b13347aec30f84e69dfe6c64f1ac6a2f555680" ;
+    lgo:text "a) Section 7(2) No. 2 UWG, under which telephone advertising to consumers is generally permissible only with their prior express consent (so-called 'opt-in'), is compatible with Union law."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-ls-a-q1 .
+
+lg:DE-BGH-2011-0210-ls-b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6c4f597eb8e3873ad95ac0039d78bc4cd19d6fbf962904db97cc812555d18794" ;
+    lgo:text "b) Proof of consent requires the advertiser to fully document each individual consumer's concrete declaration of consent; in the case of an electronically transmitted declaration of consent, this requires its storage and the possibility of printing it out at any time."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-ls-b-q1 .
+
+lg:DE-BGH-2011-0210-ls-c-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "26c6c588ee8fc089fe24efc03f3ab92ebece7556c9f9d22ebde56cf8e1022c29" ;
+    lgo:text "c) A confirmation mail in an electronic double-opt-in procedure neither proves the consumer's consent to advertising calls nor, by itself, leads to an easing of the burden of proof in the advertiser's favour."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-ls-c-q1 .
+
+lg:DE-BGH-2011-0210-ls-d-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fbbccbbbb403df469e8396456fb97382cdc2f127f4694213506c090d6222c7b2" ;
+    lgo:text "d) If, even after confirming his e-mail address in the double-opt-in procedure, the consumer wishes to rely on not having given the consent to e-mail advertising sent under that address, he bears the burden of pleading this."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-ls-d-q1 .
+
+lg:DE-BGH-2011-0210-ls-e-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dfbda08641f71157a1336137d2927f6b19799d063e464d210354fdda8c8e86c5" ;
+    lgo:text "e) If the consumer can show that the confirmation transmitted by e-mail does not originate from him, the advertising mail was anticompetitive even if the e-mail address was obtained in a double-opt-in procedure (following BGH, judgment of 11 March 2004 - I ZR 81/01, GRUR 2004, 517 - E-Mail-Werbung I)."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-ls-e-q1 .
+
+lg:DE-BGH-2011-0210-rn30-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "38554ac9cba7db0e641db798b80a600331ddbe3bab15d82129dd610af03ffc00" ;
+    lgo:text "a) The defendant bears the burden of pleading and proof for the consent (cf. BGH, judgment of 11 March 2004 - I ZR 81/01, GRUR 2004, 517, 519 = WRP 2004, 731 - E-Mail-Werbung I). It must exist concretely in the person of the person called. The appellate court was therefore right to hold that it is not enough that the defendant, on its own account, generally does not have advertising calls made unsolicited."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-rn30-q1 .
+
+lg:DE-BGH-2011-0210-rn31-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2b5ba745378d2a148c294b36f8297915b03cd65421a38bfc0301cc78ec1a52a4" ;
+    lgo:text "Proof of consent requires the advertiser to fully document each individual consumer's concrete declaration of consent. In the case of an electronically transmitted declaration of consent, this requires its storage and the possibility of printing it out at any time. Storage is readily possible and reasonable for the advertiser. Procedures in which it is unclear whether a declaration of consent actually originates from the consumer called are unsuitable for the required proof."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-rn31-q1 .
+
+lg:DE-BGH-2011-0210-rn36-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "92cffe263bc4728c15d50d07c75b87dc94e45388b8c536efb25320fe2a6236b3" ;
+    lgo:text "In any event, an electronically conducted double-opt-in procedure cannot replace an actually missing consent of consumers to advertising calls."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-rn36-q1 .
+
+lg:DE-BGH-2011-0210-rn37-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7a6f81d5912bf14417612abcf279028acb9f40003a446a2bb43dc5ef30f388ac" ;
+    lgo:text "If an application to participate is received electronically, its sender can be asked by e-mail to confirm his wish to participate. Upon receipt of the requested confirmation, it may be assumed that the application actually originates from the stated e-mail address. If the consumer has confirmed by ticking a box in the application form that he agrees to receive advertising, it is in principle sufficiently documented that he expressly consented to e-mail advertising to that e-mail address (cf. LG Berlin, K & R 2007, 430, 431; LG Essen, GRUR 2009, 353, 354 with agreeing note Klinger; LG München I, K & R 2009, 824). Under the Senate's case law, the advertiser has with such a procedure sufficiently ensured that e-mail advertising is not sent on the basis of false entries (cf. BGH, GRUR 2004, 517, 519 - E-Mail-Werbung I)."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-rn37-q1 .
+
+lg:DE-BGH-2011-0210-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f02259f2b89b3cb89fec57435188d00d21112d0d1c644b4d96c014226b939147" ;
+    lgo:text "The appeal on points of law against the judgment of the 14th Civil Senate of the Higher Regional Court of Dresden of 22 September 2009 is dismissed."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210-tenor-1-q1 .
+
+lg:DE-BGH-2011-0210-title-2033f6c2021c-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2033f6c2021cd4876eb1f13dca17cdacfe8323bcf32e163b14caf4af31a8f27d" ;
+    lgo:text "Federal Court of Justice, judgment of 10 February 2011 - I ZR 164/09 (Double-opt-in procedure)"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2011-0210 .
+
+lg:DE-BGH-2020-0528-ls-a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "547e8860673cbabe124c082fc22cd29928a5dcba21156c63982837e7878c6474" ;
+    lgo:text "a) There is no effective consent to telephone advertising within the meaning of § 7(2) no. 2, first alternative, UWG if, when giving consent, the consumer is confronted with an elaborate procedure for deselecting partner companies listed in a list, which may lead the consumer to refrain from exercising that choice and to leave the choice of advertising partners to the trader instead. If, not having read the list and without exercising the right to choose, the consumer does not know the products or services of which traders the consent covers, there is no consent for the specific case."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2020-0528-ls-a-q1 .
+
+lg:DE-BGH-2020-0528-ls-b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "12f913a9ec1f22862749e740ac9c7ce0ec9e8e74633c4762c4a9dab79d965efb" ;
+    lgo:text "b) In view of Article 5(3), first sentence, of Directive 2002/58/EC, § 15(3), first sentence, TMG is to be interpreted in conformity with the Directive as meaning that the service provider may use cookies to create user profiles for advertising or market research only with the user's consent. A consent to be declared electronically by the user, which permits the retrieval of information stored on the user's device by means of cookies through a pre-ticked checkbox, does not satisfy this consent requirement."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2020-0528-ls-b-q1 .
+
+lg:DE-BGH-2020-0528-title-556234141f67-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "556234141f67b1acf81f43006c91070ad381a9b994c6c45f49a9467f4d7d7804" ;
+    lgo:text "Federal Court of Justice, judgment of 28 May 2020 – I ZR 7/16 (Cookie consent II)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2020-0528 .
+
+lg:DE-DDG-s33-2-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7aef8f13fa2c31dd346570fb1b8ebb255c891ec97cd56b2fb9294aa9bde2c644" ;
+    lgo:text "contrary to § 5(1), does not keep information available, or keeps it incorrectly or incompletely,"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DDG-s33-2-1-q1 .
+
+lg:DE-DDG-s33-6-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b568a53ae11447534d35b25ec175a732d546cab29bd3242e715329688fc41815" ;
+    lgo:text "in the other cases of subsection 2, with a fine of up to fifty thousand euros."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DDG-s33-6-3-q1 .
+
+lg:DE-DDG-s5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "367824e95ce12941d55fda628507cca2353b858350384184fa08c93676ea77fa" ;
+    lgo:text """(1) For digital services offered on a business basis, usually for remuneration, service providers shall keep the following information permanently available, easily recognisable and directly accessible:
+1. the name and the address at which they are established, and for legal persons additionally the legal form, the authorised representative and, where information on the company's capital is given, the share capital and, if not all contributions payable in cash have been paid in, the total amount of outstanding contributions,
+2. details that enable rapid electronic contact and direct communication with them, including the electronic mail address,
+3. where the service is offered or provided in the course of an activity that requires official authorisation, details of the competent supervisory authority,
+4. the commercial register or similar register in which they are entered, and the corresponding register number,
+5. where the service is offered or provided in the exercise of a profession within the meaning of Article 1(d) of Council Directive 89/48/EEC of 21 December 1988 on a general system for the recognition of higher-education diplomas awarded on completion of professional education and training of at least three years' duration (OJ L 19, 24.1.1989, p. 16), or within the meaning of Article 1(f) of Council Directive 92/51/EEC of 18 June 1992 on a second general system for the recognition of professional education and training to supplement Directive 89/48/EEC (OJ L 209, 24.7.1992, p. 25; OJ L 17, 25.1.1995, p. 20), as last amended by Directive 2006/100/EC (OJ L 363, 20.12.2006, p. 141), details of
+a) the chamber to which the service providers belong,
+b) the statutory professional title and the state in which the professional title was conferred,
+c) the designation of the professional rules and how these rules can be accessed,
+6. where they hold a VAT identification number under § 27a(1), first, second or third sentence, of the Value Added Tax Act or an economic identification number under § 139c(1) of the Fiscal Code, that number,
+7. for public limited companies, partnerships limited by shares and limited liability companies that are being wound up or in liquidation, a statement to that effect,
+8. for providers of audiovisual media services, a statement of
+a) the Member State that is, or is deemed to be, their country of establishment, and
+b) the competent regulatory and supervisory authorities."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DDG-s5-1-q1 .
+
+lg:DE-DDG-s6-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dfc775ba615a1ebd0abc36d8408e2d125b2f47033c1973496e6ccfdf8d0d501d" ;
+    lgo:text """(1) In commercial communications that are digital services or parts of digital services, service providers shall at least observe that
+1. commercial communications must be clearly recognisable as such,
+2. the natural or legal person on whose behalf commercial communications are made must be clearly identifiable,
+3. promotional offers such as discounts, premiums and gifts must be clearly recognisable as such, and the conditions for taking advantage of them must be easily accessible and stated clearly and unambiguously, and
+4. prize competitions or games with an advertising character must be clearly recognisable as such, and the conditions of participation must be easily accessible and stated clearly and unambiguously."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DDG-s6-1-q1 .
+
+lg:DE-DDG-source-legalStatus-d18f1e2aac9c-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d18f1e2aac9ca51409a8f14b72b0f0da03a7c61b519f305a0bf7e252db857f78" ;
+    lgo:text "Amendment by Art. 1 of the Act of 12 May 2026 (BGBl. I No. 138) incorporated in the text; documentation not yet complete"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DDG-source .
+
+lg:DE-DDG-source-legalStatus-e38b4fd94f97-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e38b4fd94f97f3b9c7eabb7ab16515b8e2db420362cb558b9f0e283066f9f5b6" ;
+    lgo:text "Last amended by Art. 26(2) of the Act of 25 March 2026 (BGBl. I No. 81)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DDG-source .
+
+lg:DE-DLInfoV-s2-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8d370ed17f2f65a0fe9a39e1c6d41ccc200be87def0c5644c46ccbc332d1c413" ;
+    lgo:text """(1) Without prejudice to further requirements under other legal provisions, a service provider must make the following information available to a service recipient in a clear and comprehensible form before a written contract is concluded or, if no written contract is concluded, before the service is provided:
+1. its surname and first name, and for partnerships with legal capacity and legal persons the company name stating the legal form,
+2. the address of its establishment or, if there is no establishment, an address for service of process, and further details enabling the service recipient to contact it quickly and directly, in particular a telephone number and an e-mail address or fax number,
+3. if it is entered in one, the commercial register, register of cooperatives, register of civil-law partnerships, partnership register or register of associations, stating the registry court and the registration number,
+4. for activities requiring a permit, the name and address of the competent authority or of the point of single contact,
+5. if it holds a VAT identification number under § 27a of the Value Added Tax Act, that number,
+6. if the service is provided in the exercise of a regulated profession within the meaning of Article 3(1)(a) of Directive 2005/36/EC of the European Parliament and of the Council of 7 September 2005 on the recognition of professional qualifications (OJ L 255, 30.9.2005, p. 22), the statutory professional title, the state in which it was conferred and, if it belongs to a chamber, professional association or similar body, its name,
+7. any general terms and conditions it uses,
+8. any contract clauses it uses on the law applicable to the contract or on the place of jurisdiction,
+9. any guarantees that go beyond the statutory warranty rights,
+10. the essential characteristics of the service, unless they are already apparent from the context,
+11. if professional liability insurance exists, details of it, in particular the name and address of the insurer and the territorial scope of cover."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DLInfoV-s2-1-q1 .
+
+lg:DE-DLInfoV-source-legalStatus-db47b870273c-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "db47b870273c408ff46a28a5f9802c51fd173e7c4e3176deca1e20692a32d9ad" ;
+    lgo:text "Last amended by Art. 3 of the Act of 12 May 2026 (BGBl. I No. 138)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DLInfoV-source .
+
+lg:DE-DSK-OH-DD-rn137-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "00d90a9a80693ed004736064a808d7d105216b2d119177df510688f1f312ac80" ;
+    lgo:text "(137) If a button to refuse consent is offered next to the button to give consent, its label must be unambiguous, so that users know they are not giving consent. This can be achieved with a short and concise label. A button \"Settings or refuse\" that leads to a further layer of the banner is not sufficient here."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DSK-OH-DD-rn137-q1 .
+
+lg:DE-DSK-OH-DD-rn50-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a801dc1c10c8ae486fa1d7b7e65e429a16f996a422a9435596c26ddee1b29616" ;
+    lgo:text "(50) In order to be able to prove that end users have given an unambiguous and clearly affirmative action, they must therefore be offered at least such choices whose communicative effect is equivalent. If one choice is presented precisely and has an immediate effect (e.g. an \"Accept all\" button), while the other option is kept vague and does not allow the true contrary will to be expressed with the same effort, there is a deficit of effect and information. Such a deficit is likely to lead end users to make their decision not according to their clear will, but only according to which option ends the consent request clearly faster. If users are not offered equivalent options to give or refuse consent, the requirements for valid consent are regularly not met."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DSK-OH-DD-rn50-q1 .
+
+lg:DE-DSK-OH-DD-rn53-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bc85f669ef7dc66dd975d046a6f815f27b071cfd981a129db7656dbf6bd07e1b" ;
+    lgo:text "(53) In principle, consent banners may have several layers, giving more detailed information only on a second layer of the banner, which users reach through a button or link. However, if there is already a button on the first layer of the banner with which consent can be given for various purposes, specific information on all the individual purposes must also be given on this first layer. It would be too vague merely to give generic, general or vague information on the purposes there, such as “We use cookies to offer you a better user experience”."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DSK-OH-DD-rn53-q1 .
+
+lg:DE-DSK-OH-DD-rn58-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "18929ce73b7e6ef045fd76955b45c693250e05e8447645bc53c268a1b6121ada" ;
+    lgo:text "(58) Voluntariness is also noticeably affected if refusing all accesses that require consent means measurable additional effort for end users. Such additional effort is created, for example, if refusal is possible only on a second layer of the banner, and thus only with more clicks (compared with consenting). As a rule, the additional effort does not merely consist in end users having to click once more than when consenting. Rather, they must also read and understand the further information and setting options they are confronted with on a second layer of the consent dialogue, and then choose the right one among the further options. The additional effort created generally cannot be objectively justified either (e.g. by technical obstacles), but is artificially constructed. This can be inferred not least from the fact that end users are by now offered an equally simple option to refuse on a great many websites."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DSK-OH-DD-rn58-q1 .
+
+lg:DE-DSK-OH-DD-rn78-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "daf97181d0b87194a697cd1736a34d40cac6c0fe9922fc42a1eb8c7c50a80b3e" ;
+    lgo:text "(78) The criterion “strictly necessary” is defined in more detail neither in the TDDDG nor in the ePrivacy Directive. The explanatory memorandum to the TDDDG, however, assumes technical necessity, which suggests a strict understanding. This means that, even for services expressly requested by end users, the exception covers only those accesses to the terminal equipment that are technically necessary to provide precisely the requested service. For the criterion of necessity within the meaning of the provision relates exclusively to the functionality of the digital service as such. An exception from the consent requirement therefore cannot be justified by storing information on, or accessing information in, the terminal equipment being economically necessary for the business model in which the digital service is embedded."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DSK-OH-DD-rn78-q1 .
+
+lg:DE-EGBGB-a246a-s1-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6ac30f91d2737a89cac73710b44aef2b29307b6fafcbf9c26fa2fa25fab37e00" ;
+    lgo:text """(1) Under § 312d(1) of the Civil Code, the trader is obliged to provide the consumer with the following information:
+1. the main characteristics of the goods or services, to the extent appropriate to the means of communication and to the goods and services,
+2. its identity, for example its trading name, and the geographic address at which it is established, and, where applicable, the identity and address of the trader on whose behalf it acts,
+3. its telephone number, its email address and, where applicable, other online means of communication it provides, if these enable the consumer to keep their correspondence with the trader, including its date and time, on a durable medium,
+4. in addition to the information under numbers 2 and 3, the business address of the trader and, where applicable, of the trader on whose behalf it acts, to which the consumer can address any complaint, if this address differs from the address under number 2,
+5. the total price of the goods or services, including all taxes and charges, or, where the nature of the goods or services is such that the price cannot reasonably be calculated in advance, the manner in which the price is calculated,
+6. where applicable, the notice that the price was personalised on the basis of automated decision-making,
+7. where applicable, all additional freight, delivery or postal charges and any other costs on top of the total price under number 5, or, where these costs cannot reasonably be calculated in advance, the fact that such additional costs may be payable,
+8. in the case of a contract of indeterminate duration or a subscription contract, the total price; this comprises the total costs per billing period and, where such a contract is charged at a fixed rate, also the total monthly costs; where the total costs cannot reasonably be calculated in advance, the manner in which the price is calculated,
+9. the cost of using the means of distance communication used to conclude the contract, where the consumer is charged more than the basic cost of using that means of distance communication,
+10. the arrangements for payment, delivery and performance, including environmentally friendly delivery options where available, the date by which the trader undertakes to deliver the goods or perform the services and, where applicable, the trader's complaint handling policy,
+11. the existence of a legal guarantee of conformity for goods and its main elements, including its minimum duration of two years, in a prominent manner using the harmonised notice in Annex I to Implementing Regulation (EU) 2025/1960 as in force on 25 September 2025,
+11a. where the producer grants the consumer a commercial guarantee of durability at no additional cost covering the entire goods for a period of more than two years and provides this information to the trader, the information that such a guarantee applies to the goods, its duration and a reference to the existence of the legal guarantee of conformity, in a prominent manner using the harmonised label in Annex II to Implementing Regulation (EU) 2025/1960 as in force on 25 September 2025,
+11b. a reminder of the existence of the legal guarantee of conformity for digital content and digital services,
+11c. for goods with digital elements, digital content and digital services, the minimum period, expressed as a period of time or a date, for which the producer or provider supplies software updates, where the producer or provider makes this information available to the trader,
+12. where applicable, the existence and conditions of after-sales assistance, after-sales services and guarantees,
+13. where applicable, relevant codes of conduct within the meaning of Article 2(f) of Directive 2005/29/EC of the European Parliament and of the Council of 11 May 2005 concerning unfair business-to-consumer commercial practices in the internal market and amending Council Directive 84/450/EEC, Directives 97/7/EC, 98/27/EC and 2002/65/EC of the European Parliament and of the Council and Regulation (EC) No 2006/2004 of the European Parliament and of the Council (OJ L 149, 11.6.2005, p. 22; L 253, 25.9.2009, p. 18), as last amended by Directive (EU) 2019/2161 (OJ L 328, 18.12.2019, p. 7), and how copies of them can be obtained,
+14. where applicable, the duration of the contract or the conditions for terminating contracts of indeterminate duration or automatically extended contracts,
+15. where applicable, the minimum duration of the consumer's obligations under the contract,
+16. where applicable, the fact that the trader may require the consumer to provide a deposit or other financial guarantees, and the conditions for them,
+17. where applicable, the functionality of goods with digital elements or digital products, including applicable technical protection measures,
+18. where applicable and relevant, the compatibility and interoperability of goods with digital elements or digital products, insofar as the trader knows or can be expected to know this information,
+19. where applicable, the possibility for the consumer to use an out-of-court complaint and redress mechanism to which the trader is subject, and the conditions for access to it,
+20. where applicable, the repairability score of the goods established on the basis of harmonised requirements set at Union level, and
+21. where number 20 does not apply and the producer makes this information available to the trader, information on the availability, estimated cost and procedure for ordering spare parts necessary to maintain the conformity of the goods, on the availability of repair and maintenance instructions and on repair restrictions.
+If the contract is concluded at a public auction, the corresponding information of the auctioneer may be provided instead of the information under sentence 1 numbers 2 to 4."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EGBGB-a246a-s1-1-q1 .
+
+lg:DE-EGBGB-a246a-s1-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "523c9fb586851278b998798b5aca0bcd7eddcb17273ecfc0108a81daf32b20f9" ;
+    lgo:text """(2) If the consumer has a right of withdrawal under § 312g(1) of the Civil Code, the trader is obliged to inform the consumer
+1. of the conditions, time limits and procedure for exercising the right of withdrawal under § 355(1) of the Civil Code and of the model withdrawal form in Annex 2, and, where applicable, of the existence and placement of the withdrawal function under § 356a of the Civil Code,
+2. where applicable, that the consumer has to bear the cost of returning the goods in the event of withdrawal and, for distance contracts, additionally of the cost of returning the goods if, by their nature, they cannot normally be returned by post, and
+3. that, if the consumer exercises the right of withdrawal after having expressly requested the trader to begin performance before the end of the withdrawal period, the consumer owes the trader a reasonable amount under § 357a(2) of the Civil Code
+a) for services provided up to the withdrawal for which the contract provides payment of a price, or
+b) for supplies of water, gas or electricity not in a limited volume or set quantity, or of district heating, made up to the withdrawal.
+The trader may fulfil these information obligations by transmitting, in text form, the model withdrawal notice in Annex 1, correctly completed."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EGBGB-a246a-s1-2-q1 .
+
+lg:DE-EGBGB-a246a-s1-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f2281d0775b4ae68c8dbbfcaa72570ac16e09d7d6a8603ceb160cdbbac83907d" ;
+    lgo:text """(3) The trader must also inform the consumer if
+1. the consumer has no right of withdrawal under § 312g(2) numbers 1, 2, 5 and 7 to 13 of the Civil Code, that the consumer cannot withdraw their declaration of intent, or
+2. the consumer's right of withdrawal may expire early under § 312g(2) numbers 3, 4 and 6 and § 356(5) and (6) of the Civil Code, of the circumstances under which the consumer loses a right of withdrawal that initially existed."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EGBGB-a246a-s1-3-q1 .
+
+lg:DE-EGBGB-a246c-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d313fe73a00e2fdcf0d42889ac45c27779ec5509f8ef5332648aa20547268145" ;
+    lgo:text """In contracts in electronic commerce, the trader must inform the customer
+1. about the individual technical steps leading to the conclusion of the contract,
+2. whether the text of the contract will be stored by the trader after the contract is concluded and whether it will be accessible to the customer,
+3. how the customer can identify and correct input errors before making the contractual declaration with the technical means provided under § 312i(1) sentence 1 no. 1 of the Civil Code,
+4. about the languages available for concluding the contract, and
+5. about all relevant codes of conduct to which the trader submits, and about the possibility of electronic access to these rules."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EGBGB-a246c-q1 .
+
+lg:DE-EGBGB-source-legalStatus-57af71c53cd8-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "57af71c53cd879daba68ac7a699d62827f1b1427303d4686b6609135198fd8bd" ;
+    lgo:text "Republished by notice of 21 September 1994, BGBl. I p. 2494; 1997, p. 1061;"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EGBGB-source .
+
+lg:DE-EGBGB-source-legalStatus-f508f07a4698-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f508f07a4698afd1927461802f49bc8d5df071c795fb1350245e8bc61cd94161" ;
+    lgo:text "last amended by Art. 16 of the Act of 22 October 2026 (BGBl. I No. 321)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EGBGB-source .
+
+lg:DE-EinwV-s19-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b3540c5a6e3ae22aa493ec85c5ebd1175496e470205d9a990f3b1fce0498db61" ;
+    lgo:text "(1) Providers of digital services that integrate a recognised consent-management service must respect the settings of the end users. Providers who have not obtained consent from an end user through the integrated recognised consent-management service and the end user's settings must, when prompting that end user for consent, at the same time point out the end user's settings held by the recognised consent-management service."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s19-1-q1 .
+
+lg:DE-EinwV-s3-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4d529684bfd62a0f72b5e53db8d7320ef1d699ad4951d2f802c09df66e3c49af" ;
+    lgo:text """(2) The recognised consent-management service may manage only those consents for which the provider of digital services has informed the end user, before consent is given, at least of
+1. the provider or providers of digital services or the third parties that store information on the end user's terminal equipment or can access information already stored on it,
+2. the specific information that is to be stored on the end user's terminal equipment and the information already stored there that is to be accessed,
+3. the purposes for which information is to be stored on the end user's terminal equipment and for which information already stored there is to be accessed,
+4. the periods for which information is to be stored on the end user's terminal equipment and during which information already stored there is to be accessed,
+5. the revocability of the consent at any time, and that the lawfulness of the accesses and storages carried out on the basis of the consent within the meaning of § 25(1) of the Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz before the revocation is not affected by the revocation.
+Further information duties of providers of digital services remain unaffected."""@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s3-2-q1 .
+
+lg:DE-EinwV-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5f12f7b8d61427c830c2490bb4746242266ce4eef8627ec1af6ddd8f2061b9c6" ;
+    lgo:text """(1) A consent-management procedure is user-friendly if
+1. the consent-management service's user interface is designed so transparently and comprehensibly that the end user can make a free and informed decision, and
+2. the end user's settings, including the date and time at which the settings were made, together with the information provided at that time, can be viewed by the end user at any time and the end user's settings can be changed and, where applicable, withdrawn by the end user at any time."""@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s4-1-q1 .
+
+lg:DE-EinwV-s4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1c8b9e08f763ac5f2e0c9ca2d7ffefe9b927af9639d98bcf4ece5f96a23a693f" ;
+    lgo:text "(2) A request by the recognised consent-management service to review the end user's settings may be made no earlier than after one year, unless the end user has provided for a different setting."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s4-2-q1 .
+
+lg:DE-EinwV-title-53d210b15674-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "53d210b1567478ee08126dff7e8c6e63a962e0cf5fcc8ab7e7ea6516b6aca580" ;
+    lgo:text "Ordinance on consent-management services under the Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz"@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV .
+
+lg:DE-ElektroG-s18-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "19c1934bce4294a9d7d204541748bdf57df0a038fcaf015fd6337c786e81ff74" ;
+    lgo:text """(3) Distributors obliged to take back old devices under § 17(1) sentence 1 or (1a) shall, from the time they offer electrical or electronic equipment, inform private households by means of clearly visible and legible written or pictorial signs placed directly in view of the flow of customers about the following:
+1. the obligation of end users under § 10(1) sentence 1,
+2. the obligation of end users to remove old batteries under § 10(1) sentence 2 and the risks of handling lithium batteries,
+3. the obligation to remove lamps under § 10(1) sentence 2,
+4. the obligation of distributors to take back old devices free of charge under § 17(1) and (2),
+5. the options they have created for returning old devices,
+6. the end users' own responsibility for deleting personal data on the old devices to be disposed of, and
+7. the meaning of the symbol in Annex 3.
+Distributors who offer electrical or electronic equipment using means of distance communication shall, from the time they offer it, publish the information under sentence 1 for private households in a clearly visible and easy-to-find manner in the media of presentation they use, or enclose it in writing with the delivery of the goods."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-ElektroG-s18-3-q1 .
+
+lg:DE-ElektroG-s6-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "482b20a2a4ac3e4f787950d6679262db75e51a73a7e838af2fdee80295ad0cd0" ;
+    lgo:text "(3) Every producer is obliged to state its registration number when offering equipment and on invoices."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-ElektroG-s6-3-q1 .
+
+lg:DE-ElektroG-source-legalStatus-6338e0283e0f-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6338e0283e0f93d4177792423d06296567417cf716803e1678f3f4a4ac0d020b" ;
+    lgo:text "Last amended by Art. 1 of the Act of 25 November 2025 (BGBl. I No. 286)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-ElektroG-source .
+
+lg:DE-ElektroG-source-legalStatus-8d8ab2b3fa39-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8d8ab2b3fa39f4fecd20e87aca6d2ff1d12bae6b199c43fde9003e8a28202d56" ;
+    lgo:text "Replaces Act 2129-43 of 16 March 2005, BGBl. I p. 762 (ElektroG)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-ElektroG-source .
+
+lg:DE-GewO-s6c-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ea76a8ea5dd17c940c60de764b6b1cde909366f71866762f9d7c523ec232e63c" ;
+    lgo:text "The Federal Government is empowered to issue, by ordinance with the consent of the Bundesrat and in order to implement Directive 2006/123/EC, rules on information, in particular its content, scope and form, that a service provider must make or makes available to service recipients. The ordinance may also contain rules on the manner in which the information is to be made available."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-GewO-s6c-q1 .
+
+lg:DE-GewO-source-legalStatus-d1a1ff7fa673-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d1a1ff7fa6736c26065870001d9976d858da660801d68c0aece7d7cf7f46b980" ;
+    lgo:text "Republished in a new version by notice of 22 February 1999 (BGBl. I p. 202)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-GewO-source .
+
+lg:DE-GewO-source-legalStatus-d3f390406d39-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d3f390406d3940118a1e21fc0723d0b149a5bcfbbe8bddd49a9ca1d0b7de8f7b" ;
+    lgo:text "Last amended by Art. 1 of the Act of 20 July 2026 (BGBl. I No. 215)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-GewO-source .
+
+lg:DE-JMStV-s5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "854d6412336910b42177b6f92d1461873bd84d62ddde911fe2d4beb8027f892d" ;
+    lgo:text """(1) Where providers distribute or make accessible offers that are likely to impair the development of children or adolescents into self-reliant and socially competent personalities, they must ensure that children or adolescents of the age groups concerned do not normally perceive them. In assessing the impairment of development, circumstances of the respective use of the medium that lie outside the effect of the media content may also be taken into account if they are a permanent part of the medium and justify a different overall assessment; these include in particular risks to the personal integrity of children and adolescents that are to be classified as significant on the basis of a concrete risk prognosis, in particular risks from communication and contact functions, from purchase functions, from gambling-like mechanisms, from mechanisms promoting excessive media use, from the transfer of inventory and usage data to third parties without consent, and from purchase appeals not appropriate to the age, in particular through advertising references to other media. The age groups are:
+1. without age restriction,
+2. from 6 years,
+3. from 12 years,
+4. from 16 years,
+5. from 18 years."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-JMStV-s5-1-q1 .
+
+lg:DE-JMStV-s7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "209fbe76e619d79e462ce7faea4434067ee7ef4d3c36bc7f37b5d36b683d0711" ;
+    lgo:text "(1) Anyone who broadcasts licensed television across the Länder shall appoint a youth protection officer. The same applies to commercial providers of television services not requiring a licence under § 54 of the Interstate Media Treaty or of generally accessible telemedia if the offers contain content that impairs development or is harmful to minors. The provider shall keep essential information about the youth protection officer easily recognisable, directly accessible and permanently available. It must include in particular the name and details enabling rapid electronic contact."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-JMStV-s7-1-q1 .
+
+lg:DE-JMStV-s7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d832e7f7d30e598221d2c8060066511052fbe96541e8c706d7bbe62fe1dd1bb5" ;
+    lgo:text "(2) Providers of telemedia with fewer than 50 employees or with demonstrably fewer than ten million visits per month on average over a year, and broadcasters whose television is not distributed nationwide, may refrain from the appointment if they join a voluntary self-regulation body, oblige it to perform the tasks of the youth protection officer and involve and inform it in accordance with paragraph 3."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-JMStV-s7-2-q1 .
+
+lg:DE-LGM-2022-0120-p12-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b7091463a7964661db0b19abe78f1cd8197d5f05762e2c619fe3fc978e5cfa24" ;
+    lgo:text "12 The claimant has a claim for damages under Article 82(1) GDPR. Under recital 146, sentence 3, the concept of damage within the meaning of Article 82 GDPR is to be interpreted broadly. The interpretation should fully reflect the objectives of this Regulation, including the objective of sanction and prevention (BeckOK Datenschutzrecht, Wolff/Brink, 38th edition, Article 82 GDPR, para. 24). Under Article 82(1) GDPR, non-material damage is also sufficient. Whether a threshold of significance must be reached or exceeded, and so-called trivial damage excluded, is disputed (cf. BVerfG NJW 2021, 1005, para. 20 with further references; Kohn ZD 2019, 498 (501); Paal MMR 2020, 14 (16)), but can be left open in the present case. The defendant admits that, before modifying its website, it transmitted the claimant's IP address to Google when the claimant visited its website. The IP address was therefore transmitted more than once. The associated interference with the claimant's general right of personality is so significant, in view of the claimant's loss of control over a personal datum to Google, a company known to collect data about its users, and the individual discomfort the claimant thereby felt, that a claim for damages is justified."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120-p12-q1 .
+
+lg:DE-LGM-2022-0120-p5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1db0aa31af69465ac16e8936dd2da4f89fd2a57203d71a8a7fbe76c630cec360" ;
+    lgo:text "5 For a website operator, the dynamic IP address is personal data, because the website operator abstractly has legal means which could reasonably be used to have the person concerned identified from the stored IP addresses with the help of third parties, namely the competent authority and the internet access provider (BGH, judgment of 16.05.2017 – VI ZR 135/13). It suffices that the defendant has the abstract possibility of identifying the persons behind the IP address. Whether the defendant or Google has the concrete possibility of linking the IP address to the claimant is irrelevant."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120-p5-q1 .
+
+lg:DE-LGM-2022-0120-p7-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d05d53595b99f51d9ca544d65601980613d0230484b7de96089c1f753c0ae83e" ;
+    lgo:text "7 The automatic transmission of the IP address by the defendant to Google was an interference with the claimant's general right of personality that was inadmissible under data protection law, since it is undisputed that the claimant did not consent to this interference under § 13(2) TMG (old version) or Article 6(1)(a) GDPR."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120-p7-q1 .
+
+lg:DE-LGM-2022-0120-p8-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6bd7e743b793cc7b6a4fbe55479083c6e9278b30ea9c6eb148923e0a1cdbd414" ;
+    lgo:text "8 3. Nor is there any justification for the interference with the general right of personality. There is no legitimate interest of the defendant within the meaning of Article 6(1)(f) GDPR, as it claimed, because the defendant can also use Google Fonts without a connection to a Google server being established when the website is accessed and without the IP address of the website's users being transmitted to Google."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120-p8-q1 .
+
+lg:DE-LGM-2022-0120-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6c403ea1b4c281013abd96fe16efdaf84c4d6d95ed7abb368ee839cd44eba04c" ;
+    lgo:text "1. The defendant is ordered, on pain of a coercive fine of up to €250,000.00 to be set for each case of infringement, alternatively coercive detention, or coercive detention of up to six months, to refrain from disclosing the claimant's IP address to the provider of the font Google (Google Fonts) by providing that font when the claimant accesses a website operated by the defendant."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120-tenor-1-q1 .
+
+lg:DE-LGM-2022-0120-tenor-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "287f6f04b9f14a7f2a5315baa07de4789f3dea38cf41fd9bc5bbe173e851d9f9" ;
+    lgo:text "3. The defendant is ordered to pay the claimant €100.00 plus interest at 5 percentage points above the base rate since 28.01.2021."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120-tenor-3-q1 .
+
+lg:DE-LGM-2022-0120-title-c449f241d356-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c449f241d356d587f4f7d8d3c3da3bece8143003a054abc88e1e6d1c4280183d" ;
+    lgo:text "Regional Court of Munich I, final judgment of 20 January 2022 – 3 O 17493/20"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2022-0120 .
+
+lg:DE-LGM-2023-0330-p26-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3c50451e1c3aa58cc440ca126fb4e09824095f63eece52d29b90e30eac556117" ;
+    lgo:text "26 a) As a starting point, the court still shares the defendant's view that if the dynamic embedding of Google Fonts breaches the GDPR, and his IP address is transmitted to Google in the USA without a compelling technical reason and without his consent, this may constitute an infringement of the right to informational self-determination."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2023-0330-p26-q1 .
+
+lg:DE-LGM-2023-0330-p35-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a807677810e0ce600f528f047bfededfb1a30bea13521605c21bc6b477a65072" ;
+    lgo:text "35 1. The requirements of a claim under Article 82 GDPR are not met in the first place. Such a claim requires damage, possibly non-material, suffered by the claimant. Obviously there was no such damage here. Case law is divided on the extent to which feelings of fear or unease are sufficient in themselves to establish a claim for damages under Article 82 GDPR. That question does not matter here, however, because the defendant cannot actually have had such feelings, given the use of an automated program: someone who does not even know which websites are visited “in his name” cannot have any individual thoughts about the inconvenience that the transmission of his IP address might cause him."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2023-0330-p35-q1 .
+
+lg:DE-LGM-2023-0330-p36-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e705c337c921842b96efc43b249024d519496e927bdbaf63ea27df1df3e06300" ;
+    lgo:text "36 2. Moreover, any claim for damages that might nevertheless exist under Article 82 GDPR, § 823(1) BGB or any other legal basis would also be excluded as an abuse of rights, § 242 BGB. The defendant deliberately had the crawler visit websites precisely in order to establish alleged infringements of his general right of personality. It is not, however, the meaning and purpose of the general right of personality or of the data protection requirements of the GDPR to provide persons with a source of income on account of alleged infringements of their general right of personality. Anyone who deliberately provokes an infringement of his right of personality in order to derive claims from it afterwards acts against the prohibition of self-contradictory conduct."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2023-0330-p36-q1 .
+
+lg:DE-LGM-2023-0330-tenor-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "327bf7dfa725a9c5ab994125c5d53e0658e016f583dfafa4f68336bec15264e7" ;
+    lgo:text "2. It is declared that the defendant has no claim against the claimant to payment of compensation for pain and suffering on account of the embedding of Google fonts on the website…, as asserted in the defendant's letter to the claimant of 20.10.2022."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2023-0330-tenor-2-q1 .
+
+lg:DE-LGM-2023-0330-title-654be4bae02d-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "654be4bae02d88cb0473687bda737860d778a176c868482789f2dee36b4c38d9" ;
+    lgo:text "Regional Court of Munich I, final judgment of 30 March 2023 – 4 O 13063/22"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGM-2023-0330 .
+
+lg:DE-LGST-2021-0512-ls-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fc0ef764e97bcc86b4b5573d6f618e5c592409fdfb5aa1f959d7484f2446386b" ;
+    lgo:text "Where a newsletter confirmation e-mail sent as part of a double-opt-in procedure contains advertising content beyond the mere request for confirmation — by the use of a logo and the phrases 'Welcome to XXX' and 'Hast du Fragen zum Newsletter? Kontaktiere uns über: info@XXX.de' — it constitutes an unlawful interference with an established and operating business."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGST-2021-0512-ls-q1 .
+
+lg:DE-LGST-2021-0512-rn16-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "63fd5137e22da456fee8de1e83166ce6b2d72400842380528fae872439fb55d7" ;
+    lgo:text "The e-mail in dispute is therefore permissible insofar as it requests confirmation of a registration on the defendant's website. However, because the e-mail has advertising content going beyond the mere request for confirmation — by the use of the logo and the phrases 'Welcome to ZzZzZzZzZ' and 'Hast du Fragen zum Newsletter? Kontaktiere uns über: info@ZzZzZzZzZ.de' — it constitutes an unlawful interference with the defendant's established and operating business."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGST-2021-0512-rn16-q1 .
+
+lg:DE-LGST-2021-0512-rn18-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "072b52ca2a0496be96d9219f98002e16404a694fcfabadd7e4722a986bd5ff86" ;
+    lgo:text "The logo and the inviting slogan 'Welcome to ZzZzZzZzZ' are capable, unlike a mere indication of the sender, of making the brand 'ZzZzZzZzZ' memorably noticeable and of generating sales-promoting customer interest. The defendant's managing director indirectly confirmed this in the personal hearing by stating that omitting the logo and the slogan 'Welcome to ZzZzZzZzZ' had reduced the demand for the newsletters. But the addition 'Hast Du Fragen zum Newsletter? Kontaktiere uns über info@ZzZzZzZzZ.de' also works indirectly sales-promoting, because it offers a service aimed at acquiring customers."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGST-2021-0512-rn18-q1 .
+
+lg:DE-LGST-2021-0512-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "89f3eb3d4fad0b18738efc3238738da800ad9cbe666d7ecb561cf68772788c40" ;
+    lgo:text "The defendant, on penalty of a coercive fine to be set by the court for each case of default and, where it cannot be enforced, of a coercive detention or a coercive detention of up to six months, to be served on its managing director (coercive fine up to EUR 250,000.00 in each case, coercive detention up to two years in total), is ordered to refrain from sending or having sent advertising letters by e-mail to the claimant, in particular for the purpose of establishing a business relationship, without the claimant having previously expressly consented to the sending."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGST-2021-0512-tenor-1-q1 .
+
+lg:DE-LGST-2021-0512-tenor-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9be6335bd4dab10d464e2bcf459bc2295b3e556e90d01a5e56d0047fd1a54795" ;
+    lgo:text "The defendant is ordered to pay the claimant EUR 179.27 plus 5 percentage points interest above the base rate since 18 June 2020."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGST-2021-0512-tenor-2-q1 .
+
+lg:DE-LGST-2021-0512-title-1666ce386aa1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1666ce386aa1832202aa968532dd3fc0367c8a7cdd124a68d4f7f430e91d41aa" ;
+    lgo:text "Regional Court of Stendal, judgment of 12 May 2021 - 22 S 87/20 (advertising in the confirmation e-mail)"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-LGST-2021-0512 .
+
+lg:DE-MStV-s18-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b19ce8b8d13760f113df0c70289d05a2ad03b41b7040412aba2810b0b17e579a" ;
+    lgo:text """(1) Providers of telemedia that do not serve exclusively personal or family purposes shall keep the following information easily recognisable, directly accessible and permanently available:
+1. name and address and
+2. for legal persons, also the name and address of the authorised representative."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-MStV-s18-1-q1 .
+
+lg:DE-MStV-s18-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6cc2aa103f4c626e90b23c31c85261a154c5221d0776780c9dffb753104b555d" ;
+    lgo:text """(2) Providers of telemedia with journalistic-editorial offerings, in which in particular the content of periodical printed matter is reproduced in whole or in part in text or images, shall, in addition to the information required under §§ 5 and 6 of the Digital Services Act, name a responsible person, stating that person's name and address. If several responsible persons are named, it must be made clear for which part of the service each named person is responsible. Only a person may be named as responsible person who
+1. is permanently resident in Germany,
+2. has not lost the capacity to hold public office by court decision,
+3. has unlimited legal capacity and
+4. can be prosecuted without restriction.
+Sentence 3 nos. 3 and 4 does not apply to young persons responsible for telemedia intended for young persons."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-MStV-s18-2-q1 .
+
+lg:DE-OLGK-2024-0119-p46-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9660dddd45e53ed33aa3e6fd58d7cad81c3d5087ebc9e0d6e12484a9d3c5812d" ;
+    lgo:text "The amended application is also sufficiently definite. The demand for an “equivalent” option to reject raises no concerns in that regard. The concept of equivalence is to be understood in the sense of § 25(1) TTDSG. Accordingly, the refusal, like the consent, must be based on clear and comprehensive information."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2024-0119-p46-q1 .
+
+lg:DE-OLGK-2024-0119-p51-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7e49a076f06bacfd6db2a08c199d71e396a13377f417909a69c101167618e549" ;
+    lgo:text "With a cookie banner designed as in the specific violation alleged by the claimant, the consumer is offered an equivalent option to reject — one based on clear and comprehensive information — neither on the first nor on the second level, which is why he is, as the Regional Court correctly held, steered towards giving consent and deterred from refusing the cookies, so that the consent given cannot be regarded as voluntary and adequately informed within the meaning of § 25(1) TTDSG, Article 4(11) GDPR. The first level contains no option at all for the consumer to refuse. He can reach the second level only via the “Settings” button. There the consumer then has the choice between the button “Accept all” and the button “Save”. As the Regional Court correctly held, the average user cannot work out which function actually lies behind each button or which button now actually lets him reject the cookies. The defendant itself repeatedly stated in the first instance that the consumer must have a genuine choice. That is precisely not the case with the cookie-banner design shown here."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2024-0119-p51-q1 .
+
+lg:DE-OLGK-2024-0119-p54-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d6799c641d4cb201b636cd9ccfc2ccda34cf8acecc60394d4efc9f5b0a713b54" ;
+    lgo:text "This sufficiently definite application also succeeds on the merits. The design of the cookie banner with the linked button “Accept &amp; close X” in the top right-hand corner breaches the principles of transparency and voluntariness of consent and makes it invalid. The Regional Court's correct reasoning can be invoked again here. Users know the “X” symbol as a way to close a window, not as a way to consent to the website operator's use of cookies and other technologies. The average user will not be aware that this declares consent. It is true that “Accept &amp; close” stands immediately next to the “X” symbol. But linking these two functions is misleading and non-transparent for users. It is also not readily apparent to users that “Accept &amp; close” and the “X” symbol are one and the same button. Against this background, consent given by means of the “X” symbol can be regarded neither as unambiguous or clearly affirmative, nor as voluntary within the meaning of § 25(1) TTDSG, Article 4(11) GDPR."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2024-0119-p54-q1 .
+
+lg:DE-OLGK-2024-0119-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b6a1fe86bd0203830a14f542d74f59ccffb0a08e8e86de6b3f141326cbc42395" ;
+    lgo:text "1. The defendant is ordered, on pain of a coercive fine of up to €250,000.00 to be set for each case of infringement, alternatively coercive detention, or coercive detention of up to six months, the coercive detention to be enforced against its respective legal representative and not to exceed two years in total, to refrain, in the course of commercial practices towards consumers in telemedia, from asking consumers by means of forms (cookie banners) to give a declaration of consent in order to store information on the user's terminal equipment, or to access information already stored in the users' terminal equipment, for purposes of advertising and/or market research, where the storage or access is not strictly necessary for the operation of the telemedium,"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2024-0119-tenor-1-q1 .
+
+lg:DE-PAngV-s11-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9fc2968a67054a135e4bca14e35110ae024256ed21182581dd4b01e5f0b88c8e" ;
+    lgo:text "(1) Anyone obliged to state a total price shall, in every announcement of a price reduction for goods, state to consumers the lowest total price it applied to consumers within the last 30 days before applying the price reduction."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-s11-1-q1 .
+
+lg:DE-PAngV-s3-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c4eaa314269ec4a4e992993c8f1c4b52130938bb38c6cff850ebea8d7136b834" ;
+    lgo:text "(1) Any trader who offers goods or services to consumers, or who, as a provider of goods or services, advertises to consumers stating prices, shall state the total prices."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-s3-1-q1 .
+
+lg:DE-PAngV-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0141103f41fa455c73e31e4f3f746deab356b2cf5c787aa7eff9b89119c905f4" ;
+    lgo:text "(1) Any trader who offers consumers goods in prepackages, open packages or as sales units without packaging by weight, volume, length or area, or who, as a provider of such goods, advertises to consumers stating prices, shall state the unit price, in addition to the total price, unambiguously, clearly recognisably and legibly. The unit price need not be stated if it is identical to the total price."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-s4-1-q1 .
+
+lg:DE-PAngV-source-legalStatus-bfc9113e340d-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bfc9113e340da93245ebaf127ce13d98b23219f957efda767a72656c7ee2d2eb" ;
+    lgo:text "Replaces Ordinance 720-17-1 of 14 March 1985, BGBl. I p. 580 (PAngV)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-source .
+
+lg:DE-TDDDG-s1-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5558b243240b7642adaefe5f8cd6cc08ced23c51e40c3898b5dd6b2c165c17e9" ;
+    lgo:text "(3) This Act applies to all undertakings and persons that have an establishment within the territorial scope of this Act, or provide services or take part in providing them, or make goods available on the market there. § 3 of the Digital Services Act (DDG) remains unaffected."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-s1-3-q1 .
+
+lg:DE-TDDDG-s25-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6c7611d846311026d95816464a63d25154195305eb8b9c63b02ce0bbbe4548e3" ;
+    lgo:text "(1) Storing information in the end user's terminal equipment, or accessing information already stored in the terminal equipment, is permitted only if the end user has consented on the basis of clear and comprehensive information. The information of the end user and the consent shall be given in accordance with Regulation (EU) 2016/679."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-s25-1-q1 .
+
+lg:DE-TDDDG-s25-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6ecdb5f51db1ae3e89aa918e662695a56e39e8107a1161a0cc8b1c77ffb1c0c8" ;
+    lgo:text """(2) Consent under paragraph 1 is not required
+1. if the sole purpose of storing information in the end user's terminal equipment, or the sole purpose of accessing information already stored in the end user's terminal equipment, is to carry out the transmission of a message over a public telecommunications network, or
+2. if storing information in the end user's terminal equipment, or accessing information already stored in the end user's terminal equipment, is strictly necessary for the provider of a digital service to be able to provide a digital service expressly requested by the user."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-s25-2-q1 .
+
+lg:DE-TDDDG-s26-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "83dd5d5ccc8015a8acfb922c6e22144159493fe2e3948c078a7c41da0ecef3bc" ;
+    lgo:text """(1) Services for managing consents given under § 25(1) that
+1. have user-friendly and competition-compliant procedures and technical applications for obtaining and managing consent,
+2. have no economic self-interest in the giving of consent or in the data managed, and are independent of undertakings that may have such an interest,
+3. process the personal data and the information on consent decisions for no purposes other than consent management, and
+4. submit a security concept that allows the quality and reliability of the service and the technical applications to be assessed and shows that the service meets, both technically and organisationally, the legal requirements for data protection and data security arising in particular from Regulation (EU) 2016/679,
+may be recognised by an independent body in accordance with the statutory instrument under subsection 2."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-s26-1-q1 .
+
+lg:DE-TDDDG-s28-1-13-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e77a1fdc02303881aa6c8aa02fad4197ad2a6d3042bc0c67dd4f626a72c1032f" ;
+    lgo:text "stores information or accesses information contrary to § 25(1) sentence 1."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-s28-1-13-q1 .
+
+lg:DE-TDDDG-s28-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "65c58480b99053c98683449d2c0144cc0be0a4a1eec179cf1305c13d4c1da483" ;
+    lgo:text "(2) The administrative offence may be punished, in the cases of subsection 1 numbers 2, 3, 9, 11, 12 and 13, with a fine of up to three hundred thousand euros; in the cases of subsection 1 numbers 4 and 5, with a fine of up to one hundred thousand euros; in the cases of subsection 1 number 8, with a fine of up to fifty thousand euros; and in the other cases with a fine of up to ten thousand euros."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-s28-2-q1 .
+
+lg:DE-TDDDG-source-legalStatus-ed6f2bd42558-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ed6f2bd42558c4623ae3637d9cdf485c484a0ab69fc60292ab6e3ecb47a549e6" ;
+    lgo:text "Last amended by Art. 3 of the Act of 10 March 2026 (BGBl. I No. 64)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-TDDDG-source .
+
+lg:DE-UStG-s27a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c74b220b9efcff352452e4219be647dce6f52162d4fb54e6ba818c05c7188aa0" ;
+    lgo:text "(1) The Federal Central Tax Office issues a VAT identification number on application to entrepreneurs within the meaning of § 2. The Federal Central Tax Office also issues a VAT identification number to legal persons that are not entrepreneurs or that do not acquire goods for their business, if they need it for intra-Community acquisitions. In the case of a fiscal unity, a separate VAT identification number is issued on application for each legal person. The application for a VAT identification number under sentences 1 to 3 must be made in writing. The application must state the name, address and tax number under which the applicant is registered for VAT."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UStG-s27a-1-q1 .
+
+lg:DE-UStG-source-legalStatus-6cc485885509-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6cc4858855090e58cf93fec8cba1dcee2edb2ad77b355548fc7cce0cb5f19bb8" ;
+    lgo:text "Republished in a new version by notice of 21 February 2005 (BGBl. I p. 386);"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UStG-source .
+
+lg:DE-UStG-source-legalStatus-eea3aeb59f7f-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "eea3aeb59f7f51022b6b05ac58b653b08b33245ce32a73343cef006c6b39395f" ;
+    lgo:text "last amended by Art. 5 of the Act of 29 June 2026 (BGBl. I No. 197)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UStG-source .
+
+lg:DE-UWG-anhang-23b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a1e89bd97ad3e7bad1214b79aa4940221693b51b0969f577a23b9da52bfa0a65" ;
+    lgo:text "Misleading about the authenticity of consumer reviews: stating that reviews of goods or services come from consumers who actually purchased or used them, without having taken reasonable and proportionate steps to check whether the reviews actually come from such consumers;"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-anhang-23b-q1 .
+
+lg:DE-UWG-anhang-23c-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0a3691b63dde4528a347d2639ce723b087b49383a6cafb331eddf8366e901e0b" ;
+    lgo:text "Fake consumer reviews: submitting or commissioning fake reviews or endorsements by consumers, and misrepresenting reviews or endorsements by consumers in social media, for the purpose of sales promotion;"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-anhang-23c-q1 .
+
+lg:DE-UWG-s11-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b98f825c0f400d07cecc7e872e6ced466846d38257b5dd601fd05c0ca57ccff0" ;
+    lgo:text "(1) Claims under sections 8, 9(1) and 13(3) become time-barred after six months, and the claim under section 9(2), first sentence becomes time-barred after one year."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-06"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s11-1-q1 .
+
+lg:DE-UWG-s3a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0e430d516a8f35e2d547ea2eca686b04006909e173e0baccb33fd61bfe597cd0" ;
+    lgo:text "A person acts unfairly who infringes a statutory provision that is also intended to regulate market conduct in the interest of market participants, where the infringement is liable to appreciably harm the interests of consumers, other market participants or competitors."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s3a-q1 .
+
+lg:DE-UWG-s5a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "25e43291704b2866f72d30e396b8460cdbc7897b7dce147fdee4e64babd5cfeb" ;
+    lgo:text """(1) A person also acts unfairly who misleads a consumer or other market participant by withholding material information
+1. that the consumer or other market participant needs, according to the circumstances, to take an informed transactional decision, and
+2. whose withholding is liable to cause the consumer or other market participant to take a transactional decision that they would not otherwise have taken."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s5a-1-q1 .
+
+lg:DE-UWG-s5b-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5acb8a3cbbd77958d03b401039ac4894e32fea926bedd0f32c2d5bba03a35e1f" ;
+    lgo:text """(1) If goods or services are offered with reference to their characteristics and price, in a manner appropriate to the means of communication used, such that an average consumer can conclude the transaction, the following information is deemed material within the meaning of § 5a(1), unless it is already apparent from the circumstances:
+1. all main characteristics of the goods or services, to the extent appropriate to the goods or services and the means of communication used,
+2. the identity and address of the trader and, where applicable, the identity and address of the trader on whose behalf it acts,
+3. the total price or, where the nature of the goods or services means that the price cannot be calculated in advance, the manner in which the price is calculated, and where applicable all additional freight, delivery and postal charges or, where these charges cannot be calculated in advance, the fact that such additional charges may be payable,
+4. arrangements for payment, delivery and performance, where they depart from the requirements of professional diligence,
+5. the existence of a right of withdrawal or cancellation, and
+6. for goods or services offered on an online marketplace, whether the provider of the goods or services is a trader, according to its own declaration to the operator of the online marketplace."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s5b-1-q1 .
+
+lg:DE-UWG-s7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a1a9831384f50aa249f4b608432d6cd8778999b1b317b7646f90d9af67e0a276" ;
+    lgo:text """(2) An unreasonable nuisance is always to be assumed
+1. in the case of advertising by telephone call to a consumer without the consumer's prior express consent, or to another market participant without at least that participant's presumed consent,
+2. in the case of advertising using an automated calling machine, a fax machine or electronic mail without the prior express consent of the addressee, or
+3. in the case of advertising with a message
+a) in which the identity of the sender on whose behalf the message is transmitted is disguised or concealed, or
+b) which infringes § 6(1) of the Digital Services Act (Germany) or in which the recipient is asked to visit a website that infringes that provision, or
+c) for which there is no valid address to which the recipient can send a request to stop such messages without incurring costs other than the transmission costs at basic rates."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s7-2-q1 .
+
+lg:DE-UWG-s7-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "22934c6871b1ffadc7c4405703d1709c5d99a7580784030fe1f96aa48e9747fe" ;
+    lgo:text """(3) By way of derogation from paragraph 2 number 2, advertising by electronic mail is not to be considered an unreasonable nuisance if
+1. a trader has obtained the customer's electronic mail address from the customer in connection with the sale of goods or a service,
+2. the trader uses the address for direct marketing of its own similar goods or services,
+3. the customer has not objected to this use, and
+4. when the address is collected and each time it is used, the customer is clearly and unambiguously informed that they may object to the use at any time without incurring costs other than the transmission costs at basic rates."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s7-3-q1 .
+
+lg:DE-UWG-source-legalStatus-0a5eb3944ee7-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0a5eb3944ee778368cefc286a5937550b1efd811b7caf7d26ef4c6d552254db1" ;
+    lgo:text "Republished in a new version by notice of 3 March 2010 (BGBl. I p. 254);"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-source .
+
+lg:DE-VSBG-s36-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "cbf542f0b3b2d9997a477221ad5453dc3673d63cbbed4e3c89ee16d19a20874c" ;
+    lgo:text """(1) A trader who maintains a website or uses general terms and conditions shall, in an easily accessible, clear and comprehensible manner,
+1. inform the consumer to what extent the trader is willing or obliged to take part in dispute resolution proceedings before a consumer conciliation body, and
+2. refer to the competent consumer conciliation body if the trader has undertaken to take part in dispute resolution proceedings before a consumer conciliation body or is obliged by law to take part; the reference must include the address and website of the consumer conciliation body and a declaration by the trader that it will take part in dispute resolution proceedings before that consumer conciliation body."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VSBG-s36-1-q1 .
+
+lg:DE-VSBG-s36-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e14e6e7455a82a15734292d0d44458ba68d4bc34e9bb1db926b350b31779eeea" ;
+    lgo:text """(2) The information under subsection (1) must
+1. appear on the trader's website, if the trader maintains a website,
+2. be given together with its general terms and conditions, if the trader uses general terms and conditions."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VSBG-s36-2-q1 .
+
+lg:DE-VSBG-s36-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d1207d2c0d52b81b0c951d5277bf8af22ed16b90c76e19236d54ee0e5eb7418e" ;
+    lgo:text "(3) A trader who employed ten or fewer persons on 31 December of the previous year is exempt from the information duty under subsection (1) number 1."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VSBG-s36-3-q1 .
+
+lg:DE-VSBG-s37-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d8123b021fa26d4501eb3f31983e81be0aaf81810e582510240a7a9b67b80306" ;
+    lgo:text "(1) The trader shall refer the consumer to a consumer conciliation body competent for it, stating its address and website, if a dispute about a consumer contract could not be settled between the trader and the consumer. The trader shall at the same time state whether it is willing or obliged to take part in dispute resolution proceedings before that consumer conciliation body. If the trader is willing or obliged to take part in the dispute resolution proceedings of one or more consumer conciliation bodies, it shall name that body or those bodies."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VSBG-s37-1-q1 .
+
+lg:DE-VSBG-source-legalStatus-15a0594d5cf4-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "15a0594d5cf495192b63738605f07dcdc8ca2612c63c72e31d7ce98cde5f778e" ;
+    lgo:text "Last amended by Art. 16 of the Act of 8 December 2025 (BGBl. I No. 318)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VSBG-source .
+
+lg:DE-VerpackDG-s6-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "52bdc32b7fc352fe08678b3cf6817f32ed89417f1495079c9a872d6aa8bfcb60" ;
+    lgo:text "(1) Producers are obliged to register with the Central Agency Packaging Register, in the cases of Article 3(1) point 15(a) to (d) of Regulation (EU) 2025/40 as amended on 19 December 2024 before first making packaging available, or in the case of Article 3(1) point 15(e) of that Regulation before unpacking. Producers shall notify the Central Agency Packaging Register without delay of changes to registration data and of the permanent cessation of their activity as producer. The obligation under sentence 2 includes in particular notifying changes to or the ending of the appointment of the authorised representative for extended producer responsibility."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VerpackDG-s6-1-q1 .
+
+lg:DE-VerpackDG-source-legalStatus-a8838e03deb7-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a8838e03deb7a2bd681cafc35df2a2f6c36b67ddd4088963dd81a7ad5e8a1657" ;
+    lgo:text "Amendment by Art. 4 of the Act of 13 July 2026 (BGBl. I No. 207) included in the text; documentation not yet complete"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-VerpackDG-source .
+lg:DE-PAngV-source-legalStatus-9fdf9eeaae96-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9fdf9eeaae96809685c16ffeddbbf283b367c9bad3c7048541e7495a7e009a83" ;
+    lgo:text "Last amended by Art. 3 of the Act of 19 October 2026 (BGBl. I No. 314)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-08"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-source .
+
+lg:DE-UWG-source-legalStatus-a201b7937610-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a201b7937610a9dae44c77e8d262f3fbd620c95343d5cebcadeea1b88a0c2768" ;
+    lgo:text "Last amended by Art. 6 of the Act of 22 October 2026 (BGBl. I No. 322)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-08"^^xsd:date ;
+    lgo:translatedProperty lgo:legalStatus ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-source .
+

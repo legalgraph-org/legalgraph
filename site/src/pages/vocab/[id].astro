@@ -1,0 +1,101 @@
+---
+// One page per vocabulary concept (lgv:): disclosure types, information items, act types, …
+import MiniGraph from "../../components/MiniGraph.astro";
+import Pointer from "../../components/Pointer.astro";
+import Refs from "../../components/Refs.astro";
+import Header from "../../components/views/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import { loadGraph } from "../../lib/data";
+import { languageName } from "../../lib/links";
+
+export async function getStaticPaths() {
+  const graph = await loadGraph();
+  return [...graph.concepts.keys()].map((id) => ({ params: { id } }));
+}
+
+const graph = await loadGraph();
+const concept = graph.concepts.get(Astro.params.id)!;
+const c = concept.data;
+const kindLabel = {
+  item: "Information item",
+  disclosure: "Disclosure type",
+  concept: c.scheme ?? "Legal concept",
+  condition: "Condition",
+  action: "Action",
+  role: "Actor role",
+  term: c.scheme ?? "Term",
+}[c.kind];
+const sections = [
+  ["Required by", c.requiredBy],
+  ["Regulated by", c.regulatedBy],
+  ["Enforced by", c.enforcedBy],
+  ["Defined by", c.definedBy],
+  ["Explained by (recitals)", c.explainedBy],
+] as const;
+const byJurisdiction = (ids: readonly string[]) => {
+  const groups = new Map<string, string[]>();
+  for (const id of ids) {
+    const provision = graph.provisions.get(id);
+    const key = provision?.data.jurisdiction ?? "";
+    groups.set(key, [...(groups.get(key) ?? []), id]);
+  }
+  return [...groups.entries()].sort(([a], [b]) =>
+    (graph.jurisdictions.get(a)?.data.label ?? a).localeCompare(graph.jurisdictions.get(b)?.data.label ?? b),
+  );
+};
+---
+
+<Layout title={c.label}>
+  <Header kind={kindLabel} title={c.label} subtitle={c.definition} id={concept.id} space="vocab" graph={c.kind === "term" ? false : concept.id} />
+
+  <div class="grid gap-6 lg:grid-cols-[1fr_22rem]">
+    <div>
+      {
+        sections
+          .filter(([, ids]) => ids.length > 0)
+          .map(([label, ids]) => (
+            <section>
+              <h2>
+                {label} ({ids.length} provisions)
+              </h2>
+              <table class="table card">
+                <thead>
+                  <tr><th>Jurisdiction</th><th>Provisions</th></tr>
+                </thead>
+                <tbody>
+                  {byJurisdiction(ids).map(([jurisdiction, provisionIds]) => (
+                    <tr>
+                      <td class="whitespace-nowrap"><Refs ids={[jurisdiction]} /></td>
+                      <td>
+                        {provisionIds.map((id) => (
+                          <div class="mb-1 flex flex-wrap items-center gap-2">
+                            <Refs ids={[id]} /> <Pointer id={id} />
+                          </div>
+                        ))}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
+          ))
+      }
+    </div>
+    <aside>
+      <dl class="card text-sm">
+        {c.scheme && (<><dt>Scheme</dt><dd>{c.scheme}</dd></>)}
+        {c.labels.length > 0 && (<><dt>Labels</dt><dd>{c.labels.map((l) => `${l.text} (${languageName(l.lang)})`).join(" · ")}</dd></>)}
+        {c.altLabels.length > 0 && (<><dt>Also called</dt><dd>{c.altLabels.map((l) => `${l.text} (${languageName(l.lang)})`).join(" · ")}</dd></>)}
+        {c.question && (<><dt>Checklist question</dt><dd>{c.question}</dd></>)}
+        {c.basedOn.length > 0 && (<><dt>Taken from</dt><dd><Refs ids={c.basedOn} inline={false} /></dd></>)}
+        {c.holdsWhenAny.length > 0 && (<><dt>Also holds when any of</dt><dd><Refs ids={c.holdsWhenAny} inline={false} /></dd></>)}
+        {c.holdsWhenAll.length > 0 && (<><dt>Holds when all of</dt><dd><Refs ids={c.holdsWhenAll} inline={false} /></dd></>)}
+        {c.usedBy.length > 0 && (<><dt>Used by rules</dt><dd><Refs ids={c.usedBy} inline={false} /></dd></>)}
+        {c.broader.length > 0 && (<><dt>Broader</dt><dd><Refs ids={c.broader} /></dd></>)}
+        {c.narrower.length > 0 && (<><dt>Narrower</dt><dd><Refs ids={c.narrower} /></dd></>)}
+      </dl>
+    </aside>
+  </div>
+
+  {c.kind !== "term" && <div class="mt-6"><MiniGraph focus={concept.id} /></div>}
+</Layout>

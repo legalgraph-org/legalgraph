@@ -1,0 +1,18 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# CZ: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:CZ-480-2004 a lgo:LegalAct ;
+    eli:title "Zákon č. 480/2004 Sb., o některých službách informační společnosti"@cs , "Act No. 480/2004 Coll. on certain information society services"@en ;
+    lgo:shortName "480/2004 Sb." ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CZ ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://www.zakonyprolidi.cz/cs/2004-480"^^xsd:anyURI ;
+    rdfs:comment "Provision for the provider identification duty not yet identified."@en ;
+    lgo:reviewStatus lgv:Draft .

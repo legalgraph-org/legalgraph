@@ -1,0 +1,42 @@
+# Judgment of the Court of Justice of the EU, Case C-582/14 (Breyer): official XML (Formex 4) of the
+# European Court Reports from the Publications Office. The language of the case, German, is the
+# authentic version; the other language versions are translations made by the Court. The English
+# text is annotated (its operative part: the rulings, which bind national courts on how EU law is
+# to be read); German is kept as a parallel version.
+id: eu/cjeu-breyer
+title: Judgment in Case C-582/14, Breyer
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: ECR_62014CJ0582_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62014CJ0582
+    url: https://publications.europa.eu/resource/celex/62014CJ0582
+    fetch: zip-member
+    member: ECR_62014CJ0582_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-02
+    sha256: aaaa2286849ba7584e2c7b40f5b5d2eb4b6c233f92caef9aa14a2b4a78bd3cfe
+  - file: ECR_62014CJ0582_DE_01.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62014CJ0582
+    url: https://publications.europa.eu/resource/celex/62014CJ0582
+    fetch: zip-member
+    member: ECR_62014CJ0582_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 54b2ce8f8f48e7f1aef88ea2c16a6c37e8dbd8a896de5d3d4f382aa2bb667f9f
+annotated: ECR_62014CJ0582_EN_01.annotated.xml

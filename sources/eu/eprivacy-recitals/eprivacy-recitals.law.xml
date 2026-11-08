@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Directive 2002/58/EC, recitals 24 and 25, written in schemas/law.xsd from the Official Journal PDF
+  (OJ L 201, 31.7.2002, p. 37). The words are the Official Journal's; only the structure is ours.
+  `legalgraph sources verify` checks each recital against the PDF's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="EU-2002-58" lga:jurisdiction="EU" lga:act-type="Directive"
+     lga:url="https://eur-lex.europa.eu/eli/dir/2002/58/oj">
+  <meta>
+    <title>Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector (Directive on privacy and electronic communications)</title>
+    <short>ePrivacy Directive</short>
+    <date>2002-07-12</date>
+  </meta>
+
+  <section num="Recitals" source="l_20120020731en00370047.pdf">
+    <paragraph num="(24)"
+               lga:provision="EU-2002-58-rec24" lga:citation="Recital 24 Directive 2002/58/EC"
+               lga:explains="TerminalEquipmentAccess">Terminal equipment of users of electronic communications networks and any information stored on such equipment are part of the private sphere of the users requiring protection under the European Convention for the Protection of Human Rights and Fundamental Freedoms. So-called spyware, web bugs, hidden identifiers and other similar devices can enter the user’s terminal without their knowledge in order to gain access to information, to store hidden information or to trace the activities of the user and may seriously intrude upon the privacy of these users. The use of such devices should be allowed only for legitimate purposes, with the knowledge of the users concerned.</paragraph>
+    <paragraph num="(25)"
+               lga:provision="EU-2002-58-rec25" lga:citation="Recital 25 Directive 2002/58/EC"
+               lga:explains="TerminalEquipmentAccess">However, such devices, for instance so-called ‘cookies’, can be a legitimate and useful tool, for example, in analysing the effectiveness of website design and advertising, and in verifying the identity of users engaged in on-line transactions. Where such devices, for instance cookies, are intended for a legitimate purpose, such as to facilitate the provision of information society services, their use should be allowed on condition that users are provided with clear and precise information in accordance with Directive 95/46/EC about the purposes of cookies or similar devices so as to ensure that users are made aware of information being placed on the terminal equipment they are using. Users should have the opportunity to refuse to have a cookie or similar device stored on their terminal equipment. This is particularly important where users other than the original user have access to the terminal equipment and thereby to any data containing privacy-sensitive information stored on such equipment. Information and the right to refuse may be offered once for the use of various devices to be installed on the user’s terminal equipment during the same connection and also covering any further use that may be made of those devices during subsequent connections. The methods for giving information, offering a right to refuse or requesting consent should be made as user-friendly as possible. Access to specific website content may still be made conditional on the well-informed acceptance of a cookie or similar device, if it is used for a legitimate purpose.</paragraph>
+  </section>
+</law>

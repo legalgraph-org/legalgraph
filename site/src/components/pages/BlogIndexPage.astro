@@ -1,0 +1,56 @@
+---
+// /blog, in every language: the articles, each in the reader's language where translated: a centred
+// introduction, then the list (BlogList.astro).
+import T from "../../i18n/T.astro";
+import type { Translate } from "../../i18n/t";
+import Layout from "../../layouts/Layout.astro";
+import { articles } from "../../lib/content";
+import { pagePath } from "../../lib/routes";
+import BlogList from "../BlogList.astro";
+import Heading from "../ds/Heading.astro";
+import Section from "../ds/Section.astro";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+const posts = await articles(t.locale);
+---
+
+<Layout
+  title={t("Articles")}
+  description={t("Articles on what websites must show and do, each linking its claims to the law.")}
+  t={t}
+  page="blog"
+  bare
+>
+  <div class="bg-muted">
+    <Section space="small">
+      <div class="mx-auto max-w-3xl pt-6 text-center">
+        <p class="inline-flex rounded-full bg-background px-4 py-1.5 text-sm font-medium text-muted-foreground shadow-xs">
+          {t("Read it, then check it")}
+        </p>
+        <Heading level={1} class="mt-5!">{t("Reading the law behind websites")}</Heading>
+        <p class="lead mx-auto mt-4 max-w-2xl">
+          {t("Explanations of what a website must show and do, and why.")}
+          {" "}{t("Every claim links to the provision in the graph it comes from, so you can check it against the words of the law.")}
+        </p>
+      </div>
+    </Section>
+    <Section space="small" class="pb-section!">
+      {
+        posts.length ? (
+          <BlogList t={t} posts={posts} />
+        ) : (
+          <p class="card mx-auto max-w-2xl text-muted-foreground">
+            <T
+              msg={t("No articles yet. Until then, the <0>method</0> explains how the graph is built, and the <1>checklist</1> shows what it can do.")}
+              tags={[{ kind: "link", href: pagePath("method", t.locale) }, { kind: "link", href: pagePath("checklist", t.locale) }]}
+            />
+          </p>
+        )
+      }
+    </Section>
+  </div>
+</Layout>

@@ -1,0 +1,22 @@
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# How a translation was made (lgo:translationMethod).
+
+lgv:TranslationMethods a skos:ConceptScheme ;
+    skos:prefLabel "Translation methods"@en .
+
+lgv:MachineTranslation a skos:Concept ;
+    skos:inScheme lgv:TranslationMethods ;
+    skos:prefLabel "Machine translation"@en ;
+    skos:definition "Produced by a machine translation system or language model, named in lgo:translatedBy."@en .
+
+lgv:HumanTranslation a skos:Concept ;
+    skos:inScheme lgv:TranslationMethods ;
+    skos:prefLabel "Human translation"@en ;
+    skos:definition "Written or rewritten by a person."@en .
+
+lgv:OfficialTranslation a skos:Concept ;
+    skos:inScheme lgv:TranslationMethods ;
+    skos:prefLabel "Official translation"@en ;
+    skos:definition "Published by the legislator or a government body, usually for information only and not legally binding."@en .

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  People v. Sephora USA, Inc., San Francisco Superior Court, Final Judgment and Permanent
+  Injunction of 24 August 2022 (stipulated), the paragraphs the graph quotes, written in
+  schemas/law.xsd from the filed judgment the Attorney General publishes. The words are the
+  court's; only the structure is ours. The PDF is a scan: verify compares letters only.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CA-SFSC-2022-0824-sephora" lga:jurisdiction="US-CA" lga:act-type="Judgment"
+     lga:url="https://oag.ca.gov/privacy/privacy-enforcement-actions">
+  <meta>
+    <title>People of the State of California v. Sephora USA, Inc., Final Judgment and Permanent Injunction (San Francisco Superior Court, 24 August 2022)</title>
+    <short>People v. Sephora</short>
+    <date>2022-08-24</date>
+  </meta>
+
+  <section num="III." title="Injunctive provisions" source="pea-sephora-filed-judgment.pdf">
+    <paragraph num="11." lga:provision="US-CA-SFSC-2022-0824-sephora-p11" lga:citation="People v. Sephora, Final Judgment, para. 11" lga:url="https://oag.ca.gov/system/files/media/pea-sephora-filed-judgment.pdf" lga:applies="US-CA-CCPA-1798-135-a">To the extent DEFENDANT SELLS the PERSONAL INFORMATION of CONSUMERS, including through SALES USING ONLINE TRACKING TECHNOLOGY, DEFENDANT shall provide notice to CONSUMERS as required by Civil Code section 1798.135, subdivision (a) that clearly states that it SELLS their PERSONAL INFORMATION, and that CONSUMERS have the right to opt-out of all SALES.</paragraph>
+    <paragraph num="12." lga:provision="US-CA-SFSC-2022-0824-sephora-p12" lga:citation="People v. Sephora, Final Judgment, para. 12" lga:url="https://oag.ca.gov/system/files/media/pea-sephora-filed-judgment.pdf" lga:applies="US-CA-CCPA-1798-120-a" lga:regulates="OptOutPreferenceSignal">DEFENDANT shall process CONSUMER requests to opt out signaled via the Global Privacy Control or the "GPC."</paragraph>
+  </section>
+
+  <section num="IV." title="Monetary provisions" source="pea-sephora-filed-judgment.pdf">
+    <paragraph num="17." lga:provision="US-CA-SFSC-2022-0824-sephora-p17" lga:citation="People v. Sephora, Final Judgment, para. 17" lga:url="https://oag.ca.gov/system/files/media/pea-sephora-filed-judgment.pdf" lga:applies="US-CA-CCPA-1798-120-a US-CA-CCPA-1798-135-a">DEFENDANT shall pay the Attorney General the amount of $1.2 million.</paragraph>
+  </section>
+</law>

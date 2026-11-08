@@ -1,0 +1,25 @@
+# Malta's Electronic Commerce Act (Cap. 426), Article 8C: the ECD Article 5 transposition —
+# provider name, geographic address, rapid contact including email, register, supervisory
+# authority, professional body, title and rules, VAT identification, plus (h) how users can opt
+# out of unsolicited commercial communications. Legislation.mt publishes the consolidated act as
+# PDF; the paragraphs the graph quotes are transcribed in schemas/law.xsd and checked letter for
+# letter against the PDF's text.
+id: mt/ecommerce
+title: Electronic Commerce Act (Cap. 426)
+jurisdiction: MT
+language: en
+publisher: Legislation Unit, legislation.mt
+kind: authored-xml
+licence: official-work
+licence_basis: "Copyright Act (Cap. 415), art. 2: \"literary work\" \"save as provided in article 12 of the Statute Law Revision Act, 1980, does not include any written law, law report or judicial decisions\"; in any case the Re-Use of Public Sector Information Act (Cap. 546), art. 7, makes public sector documents re-usable for commercial and non-commercial purposes, and legislation is not among its art. 3 exclusions"
+originals:
+  - file: cap426.pdf
+    page: https://legislation.mt/eli/cap/426/eng
+    url: https://legislation.mt/getpdf/65e082ac798bab1ea87f83dc
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated to Act I of 2024; the ELI page links this getpdf id. 8C was added by Act XXXV of 2016."
+    retrieved_on: 2026-11-03
+    sha256: 216a4f92caf1d90178d18c9be0c5d6ea6614450840888cf1b308d2c42918d3a0
+annotated: ecommerce.law.xml

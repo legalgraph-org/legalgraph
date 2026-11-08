@@ -1,0 +1,16 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Properties whose non-English literals must also be given in English: an @en literal on the same
+# subject, or an lgo:Translation with lgo:translatedProperty. Names that are used as-is in every language (skos:altLabel, lgo:customaryNoticeName)
+# are deliberately not listed. Quotes (lgo:text) are translated through lgo:Translation instead.
+
+eli:title lgo:englishRequired true .
+rdfs:label lgo:englishRequired true .
+rdfs:comment lgo:englishRequired true .
+skos:prefLabel lgo:englishRequired true .
+skos:definition lgo:englishRequired true .
+lgo:legalStatus lgo:englishRequired true .

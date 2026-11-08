@@ -1,0 +1,23 @@
+# Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, art. 82
+# (consolidated version): every subscriber or user of electronic-communications services must be
+# informed and must consent before information is stored on or read from their terminal — the
+# national rule every CNIL cookie sanction rests on (SAN-2021-023/024, SAN-2025-004/005), and the
+# French transposition of ePrivacy art. 5(3). legifrance needs a browser; the fragment is the
+# saved code page's article.
+id: fr/loi-78-17
+title: Loi n° 78-17 du 6 janvier 1978 (Informatique et Libertés)
+jurisdiction: FR
+language: fr
+publisher: Légifrance, legifrance.gouv.fr
+kind: authored-xml
+licence: licence-ouverte-2.0
+licence_basis: "legifrance content is published under Licence Ouverte 2.0 (legal notice)"
+originals:
+  - file: art-82.fragment.html
+    url: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460?fonds=ALL&init=true&page=1&query=loi+78-17&searchField=ALL"
+    fetch: html-fragment
+    selector: 'article:has(a[id="linkLEGIARTI000037813978-1-3-2"])'
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: d7e75eef3e6a9252c65e8cc5a79e0a81e26cb1476197da06334ca6439a0f0c15
+annotated: loi-78-17.law.xml

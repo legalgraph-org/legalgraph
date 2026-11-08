@@ -1,0 +1,43 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Canada: PIPEDA (federal private-sector privacy law) and CASL (the federal anti-spam law).
+# Both are sourced from Justice Canada's bilingual consolidated XML: English annotated, French
+# parallel.
+
+lg:CA-PIPEDA a lgo:LegalAct ;
+    eli:title "Personal Information Protection and Electronic Documents Act"@en , "Loi sur la protection des renseignements personnels et les documents électroniques"@fr ;
+    lgo:shortName "PIPEDA" ;
+    eli:id_local "S.C. 2000, c. 5" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CA ;
+    eli:date_document "2000-04-13"^^xsd:date ;
+    lgo:sourceUrl "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Canada's federal private-sector privacy law. Section 6.1 makes consent valid only where the individual can reasonably be expected to understand the nature, purpose and consequences; Schedule 1 clause 4.3 requires knowledge and consent for collection, use and disclosure; clause 4.8 (Openness) is the Canadian privacy-policy duty."@en .
+
+lg:CA-CASL a lgo:LegalAct ;
+    eli:title "An Act to promote the efficiency and adaptability of the Canadian economy by regulating certain activities that discourage reliance on electronic means of carrying out commercial activities"@en , "Loi visant à promouvoir l'efficacité et la capacité d'adaptation de l'économie canadienne en réglementant certaines pratiques qui découragent l'exercice des activités commerciales par voie électronique"@fr ;
+    lgo:shortName "CASL" ;
+    eli:id_local "S.C. 2010, c. 23" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CA ;
+    eli:date_document "2010-12-15"^^xsd:date ;
+    lgo:sourceUrl "https://laws-lois.justice.gc.ca/eng/acts/E-1.6/"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Canada's Anti-Spam Legislation: s. 6(1) prohibits sending commercial electronic messages without consent (express or implied); s. 6(2) requires sender identification, contact details and an unsubscribe mechanism in every message; s. 10 sets out what a consent request must say; s. 11 requires the unsubscribe mechanism to work by electronic means at no cost."@en .
+
+lg:CA-ON-CPA a lgo:LegalAct ;
+    eli:title "Consumer Protection Act, 2002"@en , "Loi de 2002 sur la protection du consommateur"@fr ;
+    lgo:shortName "Ontario CPA" ;
+    eli:id_local "S.O. 2002, c. 30, Sched. A" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CA-ON ;
+    eli:date_document "2002-12-18"^^xsd:date ;
+    lgo:sourceUrl "https://www.ontario.ca/laws/statute/02c30"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Part IV: internet agreements. s. 38 requires the prescribed information, an express opportunity to accept, decline and correct, and retainable disclosure before the consumer enters; s. 39 requires a written copy within the prescribed period; s. 40 gives 7/30-day cancellation for breach. The prescribed lists live in O. Reg. 17/05 — a separate source still to pull."@en .

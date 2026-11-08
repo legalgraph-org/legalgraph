@@ -1,0 +1,15 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:SE-SFS-2002-562
+    lgo:amendmentCheck lg:SE-SFS-2002-562-amendment-check .
+
+lg:SE-SFS-2002-562-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra-informations_sfs-2002-562"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "SFS 2025:989" ;
+    lgo:lastKnownAmendmentDate "2025-06-25"^^xsd:date ;
+    rdfs:comment "riksdagen fulltext: 'Ändrad: t.o.m. SFS 2025:989'. No source document in the graph."@en .

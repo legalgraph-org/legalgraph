@@ -1,0 +1,16 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# MD: draft. Act and citation from research notes; not yet checked against the official text.
+
+lg:MD-ECOM a lgo:LegalAct ;
+    eli:title "Law on Electronic Commerce"@en ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:MD ;
+    lgo:sourceUrl "https://www.legis.md/cautare/getResults?doc_id=99326&lang=ro"^^xsd:anyURI ;
+    rdfs:comment "Provision not yet identified."@en ;
+    lgo:reviewStatus lgv:Draft .

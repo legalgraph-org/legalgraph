@@ -1,0 +1,28 @@
+# Закон України «Про рекламу» (No. 270/96-ВР): published by the Verkhovna Rada on zakon.rada.gov.ua as
+# HTML only. The fragment holding the law text (div#article) is kept; Article 14-3 (advertising by
+# spam, or using phone numbers or other network identifiers, needs the consumer's prior consent and a
+# free way to refuse) is transcribed in schemas/law.xsd and checked word for word against it.
+# The portal blocks quick successive requests and foreign traffic: `pause` spaces out downloads, which
+# may need a Ukrainian network — or save the page by hand and run `legalgraph sources fetch --saved
+# <file>`. The Rada publishes an official English translation, but it was last modified 19.07.2021,
+# before Article 14-3 was added in 2023 — the provision the graph uses has no official English, so its
+# quote gets a machine translation.
+id: ua/advertising
+title: Закон України «Про рекламу» (No. 270/96-ВР)
+jurisdiction: UA
+language: uk
+publisher: Verkhovna Rada of Ukraine, zakon.rada.gov.ua
+kind: authored-xml
+licence: official-work
+licence_basis: "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright"
+originals:
+  - file: 270-96.fragment.html
+    url: https://zakon.rada.gov.ua/laws/show/270/96-вр/print
+    fetch: html-fragment
+    selector: "#article"
+    text_ignore: ["em"]
+    pause: 20
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: 802cfa6d53216d8d747a7f8a451066b9c9d92947a8de0012f51d6e7e078b4ee5
+annotated: advertising.law.xml

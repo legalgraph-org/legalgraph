@@ -1,0 +1,23 @@
+# S.I. No. 336 of 2011 (Privacy and Electronic Communications Regulations): the Irish cookie rule.
+# Regulation 5(3) requires consent plus clear comprehensive information for storage or access on
+# terminal equipment, (4) lets consent come through browser settings, (5) keeps the technical
+# exceptions — the Irish transposition of Article 5(3) ePrivacy. The Irish Statute Book serves the
+# text as HTML; the fragment holding the instrument is kept and the text is transcribed in
+# schemas/law.xsd, checked word for word against it.
+id: ie/pecr
+title: European Communities (Electronic Communications Networks and Services) (Privacy and Electronic Communications) Regulations 2011
+jurisdiction: IE
+language: en
+publisher: Irish Statute Book, Office of the Attorney General
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "Oireachtas (Open Data) PSI Licence, which incorporates CC BY 4.0, as stated at irishstatutebook.ie/open-data.html, under S.I. 376/2021 transposing Directive (EU) 2019/1024; copyright in enactments vests in the Houses of the Oireachtas (Copyright and Related Rights Act 2000, s. 192)"
+originals:
+  - file: si-336-2011.fragment.html
+    url: https://www.irishstatutebook.ie/eli/2011/si/336/made/en/print
+    fetch: html-fragment
+    selector: "#act"
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: a7bc900ab5e9718c76daeefd8e6bdf0160d46e1a94838729fc87834bde83c7ad
+annotated: pecr.law.xml

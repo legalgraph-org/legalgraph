@@ -1,0 +1,154 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Ukraine, read from data/extracted/ua/ (Ukrainian originals; the English is a machine translation or,
+# where the Rada publishes an official one, that translation). Draft until a lawyer reviews it. The rules
+# from the Consumer Rights Protection law of 2023 (UA-3153) hold only once it is in force: the condition
+# ConsumerLaw2023InForce (unticked, it applies after martial law ends) switches them on and the rules of
+# the 1991 law (UA-1023) off.
+
+lg:UA-R-seller-information a lgo:Obligation ;
+    rdfs:label "Seller information in e-commerce (Ukraine)"@en ;
+    rdfs:comment "Ukraine's counterpart of the Impressum: direct, simple and stable access to the seller's details, on the website and in every commercial email. Licence details only if the activity is licensed; the delivery cost only if goods are delivered."@en ;
+    lgo:establishedBy lg:UA-675-art7-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:TaxId , lgv:LicenceDetails ,
+        lgv:TotalPrice , lgv:DeliveryCosts ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-pre-contract-information a lgo:Obligation ;
+    rdfs:label "Pre-contractual information for distance contracts (Ukraine)"@en ;
+    rdfs:comment "Modelled on the EU Consumer Rights Directive; applies once the 2023 consumer law takes effect — until then Article 13(2) of the 1991 law governs. Items marked “if any” in the law (VAT number, licence, guarantee, code of conduct, dispute resolution) depend on the business; the checklist lists them all for the seller to check."@en ;
+    lgo:establishedBy lg:UA-3153-art17-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:ConsumerLaw2023InForce ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:TaxId , lgv:VatId ,
+        lgv:RegisterEntry , lgv:PhoneNumber , lgv:EmailAddress , lgv:ComplaintAddress , lgv:TotalPrice , lgv:PersonalisedPricing ,
+        lgv:DeliveryCosts , lgv:PaymentAndDeliveryTerms , lgv:CommunicationCosts , lgv:WithdrawalInformation , lgv:ReturnCosts ,
+        lgv:LegalGuarantee , lgv:CommercialGuarantee , lgv:CodesOfConduct , lgv:ContractDuration , lgv:Deposit ,
+        lgv:DigitalProductInformation , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-withdrawal-form a lgo:Obligation ;
+    rdfs:label "Withdrawal form and instructions on the website (Ukraine)"@en ;
+    lgo:establishedBy lg:UA-3153-art21-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:ConsumerLaw2023InForce ;
+    lgo:requiresAction lgv:PublishWithdrawalFormOnWebsite ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-email-marketing a lgo:Obligation ;
+    rdfs:label "Consent for commercial emails, and a prominent way to unsubscribe (Ukraine)"@en ;
+    rdfs:comment "Unlike the EU, the law has no exception for existing customers. Applies once the 2023 consumer law takes effect."@en ;
+    lgo:establishedBy lg:UA-3153-art18-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:SendsMarketingEmails , lgv:ConsumerLaw2023InForce ;
+    lgo:requiresAction lgv:ObtainConsentForEmailMarketing , lgv:OfferUnsubscribe , lgv:ShowUnsubscribeProminently ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-privacy-information a lgo:Obligation ;
+    rdfs:label "Privacy information at collection (Ukraine)"@en ;
+    rdfs:comment "At the time of collection, or within thirty working days when the data come from elsewhere. A GDPR-style replacement of the 2010 law is before parliament."@en ;
+    lgo:establishedBy lg:UA-2297-art12-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:EstablishedInUkraine , lgv:ProcessesPersonalData ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ControllerIdentity , lgv:CategoriesOfPersonalData , lgv:DataSubjectRights , lgv:ProcessingPurposes ,
+        lgv:Recipients ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-website-in-ukrainian a lgo:Obligation ;
+    rdfs:label "Website in Ukrainian, loaded by default for users in Ukraine"@en ;
+    rdfs:comment "Article 27(6) of the State Language Law (which took effect three years after the act, mid-2022): for businesses registered in Ukraine the Ukrainian version must hold no less information than other language versions and load by default for users in Ukraine; for foreign businesses with a subsidiary, branch or representative office in Ukraine it must at least allow clear navigation and disclosure of the business's purpose, also loaded by default."@en ;
+    lgo:establishedBy lg:UA-2704-art27-6 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:EstablishedOrPresentInUkraine ;
+    lgo:requiresAction lgv:ServeWebsiteInUkrainian ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-app-in-ukrainian a lgo:Obligation ;
+    rdfs:label "Mobile app with a Ukrainian interface version (Ukraine)"@en ;
+    lgo:establishedBy lg:UA-2704-art27-7 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:OffersMobileApp ;
+    lgo:requiresAction lgv:ProvideUkrainianAppInterface ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-service-information-in-ukrainian a lgo:Obligation ;
+    rdfs:label "Service and product information in Ukrainian (Ukraine)"@en ;
+    rdfs:comment "Article 30(2): businesses serving consumers serve them and provide product information, including via online shops and catalogues, in Ukrainian; it may be duplicated in other languages."@en ;
+    lgo:establishedBy lg:UA-2704-art30-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine ;
+    lgo:requiresAction lgv:ProvideInformationInUkrainian ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-ecommerce-information-in-ukrainian a lgo:Obligation ;
+    rdfs:label "E-commerce information in Ukrainian (Ukraine)"@en ;
+    rdfs:comment "Article 30(4): an e-commerce entity registered in Ukraine provides all information the e-commerce law requires, including on the subject of the electronic contract, in Ukrainian — also in commercial electronic messages."@en ;
+    lgo:establishedBy lg:UA-2704-art30-4 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:EstablishedInUkraine ;
+    lgo:requiresAction lgv:ProvideInformationInUkrainian ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-pre-contract-information-1991 a lgo:Obligation ;
+    rdfs:label "Pre-contractual information for distance contracts under the 1991 law (Ukraine)"@en ;
+    rdfs:comment "Article 13(2) of the 1991 consumer law, in force until the 2023 act (UA-3153) takes effect: a shorter list than its EU-modelled successor — seller identity and complaints, product characteristics, price including delivery and payment, warranty and maintenance, other delivery terms, minimum contract duration, communication costs, offer validity and the termination procedure."@en ;
+    lgo:establishedBy lg:UA-1023-art13-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine ;
+    lgo:unless lgv:ConsumerLaw2023InForce ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:ComplaintAddress , lgv:MainCharacteristics ,
+        lgv:TotalPrice , lgv:DeliveryCosts , lgv:PaymentAndDeliveryTerms , lgv:LegalGuarantee , lgv:RepairInformation ,
+        lgv:ContractDuration , lgv:CommunicationCosts , lgv:WithdrawalInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-online-media-imprint a lgo:Obligation ;
+    rdfs:label "Online media imprint (Ukraine)"@en ;
+    rdfs:comment "Article 37(5) of the Media Law: registered online media publish and regularly update name, postal address, phone, email and register identifier on their website. Websites whose main activity is not the dissemination of mass information are outside the media law (Article 2(2)(2))."@en ;
+    lgo:establishedBy lg:UA-2849-art37-5 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:RegisteredOnlineMediaInUkraine ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:UA-R-spam-consent a lgo:Obligation ;
+    rdfs:label "Consent before marketing calls, texts or emails, and a free way to refuse (Ukraine)"@en ;
+    rdfs:comment "The e-communications law (Article 120) bans deliberate mass electronic messaging without consent and lets businesses use contact identifiers collected during a sale for advertising only with the customer's consent — electronic consent counts — and a free way to refuse at any time; the advertising law (Article 14-3, added 2023) bans advertising by spam or via the consumer's phone number or network identifier without the consumer's prior written consent. These apply already; when the 2023 consumer law takes effect, its own commercial-message rules come on top."@en ;
+    lgo:establishedBy lg:UA-1089-art120-1 , lg:UA-1089-art120-2 , lg:UA-270-art14-3-2 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:UA ;
+    lgo:appliesWhen lgv:SellsOnlineInUkraine , lgv:SendsMarketingEmails ;
+    lgo:requiresAction lgv:ObtainConsentForEmailMarketing , lgv:OfferUnsubscribe ;
+    lgo:reviewStatus lgv:Draft .

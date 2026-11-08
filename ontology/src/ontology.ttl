@@ -1,0 +1,713 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix eli:     <http://data.europa.eu/eli/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# legalgraph ontology: the classes and properties of legalgraph.
+# Layers (see README): jurisdictions, legislation (ELI / FRBR-inspired), disclosure duties.
+# Normative layer (obligations, conditions) arrives in a later version.
+
+<https://legalgraph.org/ontology> a owl:Ontology ;
+    rdfs:label "legalgraph ontology"@en ;
+    dcterms:title "legalgraph ontology"@en ;
+    dcterms:description "Classes and properties for modelling the laws that govern what businesses must disclose on websites and in marketing: jurisdictions, legal acts, provisions, verbatim quotes and the disclosure duties they create."@en ;
+    dcterms:creator "Aimix GmbH (https://aimix.io)" ;
+    dcterms:rightsHolder "Aimix GmbH" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-10-30"^^xsd:date ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/ontology> .
+
+# ---------------------------------------------------------------------------
+# Jurisdictions
+# ---------------------------------------------------------------------------
+
+lgo:Jurisdiction a owl:Class ;
+    rdfs:label "Jurisdiction"@en ;
+    rdfs:comment "A territory or legal order whose bodies enact law: a country, or a supranational organisation such as the EU."@en .
+
+lgo:Country a owl:Class ;
+    rdfs:subClassOf lgo:Jurisdiction ;
+    rdfs:label "Country"@en .
+
+lgo:Subdivision a owl:Class ;
+    rdfs:subClassOf lgo:Jurisdiction ;
+    rdfs:label "Subdivision"@en ;
+    rdfs:comment "A state, province or region of a country with its own legislation, such as California. Identified by its ISO 3166-2 code (US-CA)."@en .
+
+lgo:subdivisionOf a owl:ObjectProperty ;
+    rdfs:label "subdivision of"@en ;
+    rdfs:domain lgo:Subdivision ;
+    rdfs:range lgo:Country .
+
+lgo:SupranationalOrganisation a owl:Class ;
+    rdfs:subClassOf lgo:Jurisdiction ;
+    rdfs:label "Supranational organisation"@en ;
+    rdfs:comment "An organisation whose law binds or is adopted by its members, such as the European Union or the European Economic Area."@en .
+
+lgo:isoCode a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "ISO code"@en ;
+    rdfs:comment "ISO 3166-1 alpha-2 code of a country (XK for Kosovo, user-assigned), or a common short code for an organisation (EU, EEA)."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range xsd:string .
+
+lgo:memberOf a owl:ObjectProperty ;
+    rdfs:label "member of"@en ;
+    rdfs:comment "The country is a member of the organisation, or bound by its law through an agreement (for example EEA states through the EEA Agreement)."@en ;
+    rdfs:domain lgo:Country ;
+    rdfs:range lgo:SupranationalOrganisation .
+
+lgo:officialLanguage a owl:DatatypeProperty ;
+    rdfs:label "official language"@en ;
+    rdfs:comment "BCP 47 code of a language in which the jurisdiction publishes binding law text."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range xsd:language .
+
+# ---------------------------------------------------------------------------
+# Legislation (ELI-aligned; FRBR Work level for acts, subdivisions for provisions)
+# ---------------------------------------------------------------------------
+
+lgo:LegalAct a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:subClassOf eli:LegalResource ;
+    rdfs:label "Legal act"@en ;
+    rdfs:comment "A law, regulation, directive, code or treaty, taken as a work across its versions (FRBR Work). Versions and language expressions arrive in a later version."@en .
+
+lgo:Provision a owl:Class ;
+    rdfs:subClassOf eli:LegalResourceSubdivision ;
+    rdfs:label "Provision"@en ;
+    rdfs:comment "An article, section, paragraph or point of a legal act, as cited (for example § 5 Abs. 1 DDG)."@en .
+
+lgo:Quote a owl:Class ;
+    rdfs:label "Quote"@en ;
+    rdfs:comment "A verbatim excerpt of a provision, in the language of the source, with where and when it was taken from."@en .
+
+lgo:jurisdiction a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "jurisdiction"@en ;
+    rdfs:comment "The jurisdiction that enacted the act, or whose court or authority issued the decision or guidance."@en ;
+    rdfs:domain lgo:LegalDocument ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:actType a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "act type"@en ;
+    rdfs:comment "Kind of document, from the act-type scheme (directive, regulation, statute, judgment, guidelines ...)."@en ;
+    rdfs:domain lgo:LegalDocument ;
+    rdfs:range skos:Concept .
+
+lgo:shortName a owl:DatatypeProperty ;
+    rdfs:label "short name"@en ;
+    rdfs:comment "The abbreviation or short title the act is cited by (DDG, LCEN, LSSI)."@en ;
+    rdfs:domain lgo:LegalDocument ;
+    rdfs:range xsd:string .
+
+lgo:sourceUrl a owl:DatatypeProperty ;
+    rdfs:label "source URL"@en ;
+    rdfs:comment "Where the text can be read. For acts and provisions an official publication is preferred; a Draft resource may point to a secondary source."@en ;
+    rdfs:range xsd:anyURI .
+
+lgo:succeeds a owl:ObjectProperty ;
+    rdfs:label "succeeds"@en ;
+    rdfs:comment "This act or provision took over the duties of the earlier one (for example § 5 DDG succeeds § 5 TMG). Weaker than eli:repeals: it says where the duty went, not how the old law ended."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource .
+
+lgo:citation a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "citation"@en ;
+    rdfs:comment "How the provision is cited in its own jurisdiction (§ 5 Abs. 1 DDG; Art. 5(1) Directive 2000/31/EC)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range xsd:string .
+
+lgo:implements a owl:ObjectProperty ;
+    rdfs:label "implements"@en ;
+    rdfs:comment "The national provision implements the EU (or EEA) provision. The provision-level counterpart of eli:transposes."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:quoteOf a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "quote of"@en ;
+    rdfs:domain lgo:Quote ;
+    rdfs:range lgo:Provision .
+
+lgo:text a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "text"@en ;
+    rdfs:comment "The text of a quote (verbatim, in the source language) or of a translation, language-tagged. Omissions are marked with […]. No rdfs:domain: it is used on both lgo:Quote and lgo:Translation."@en ;
+    rdfs:range rdf:langString .
+
+lgo:retrievedOn a owl:DatatypeProperty ;
+    rdfs:label "retrieved on"@en ;
+    rdfs:comment "For a quote: the date of the consolidated version it was taken from, or the day it was read. For a source document: the day it was downloaded."@en ;
+    rdfs:range xsd:date .
+
+lgo:languageVersionOf a owl:ObjectProperty ;
+    rdfs:label "language version of"@en ;
+    rdfs:comment "The same text in another official language, equally authentic: a quote of the German text of an EU regulation is a language version of the quote of its English text, and the documents they come from likewise. Not a translation: neither is derived from the other."@en .
+
+lgo:officialLanguageVersion a owl:DatatypeProperty ;
+    rdfs:label "official language version"@en ;
+    rdfs:comment "False when the quote comes from a translation published for information only (for example the English text of Swiss federal law)."@en ;
+    rdfs:domain lgo:Quote ;
+    rdfs:range xsd:boolean .
+
+# ---------------------------------------------------------------------------
+# Disclosure duties
+# ---------------------------------------------------------------------------
+
+lgo:DisclosureType a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Disclosure type"@en ;
+    rdfs:comment "A kind of public statement a business must make, such as the provider identification notice (Impressum, legal notice, mentions légales)."@en .
+
+lgo:InformationItem a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Information item"@en ;
+    rdfs:comment "A piece of information a disclosure must contain, such as the operator's name, geographic address or VAT ID."@en .
+
+lgo:LegalConcept a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Legal concept"@en ;
+    rdfs:comment "A term or legal construct an act defines or sets conditions for, other than a disclosure or an information item: personal data, consent, a lawful basis for processing, a criterion of an act's scope."@en .
+
+lgo:regulates a owl:ObjectProperty ;
+    rdfs:label "regulates"@en ;
+    rdfs:comment "The provision creates or shapes a duty of this disclosure type, or sets the conditions of this legal concept (for example Article 7 GDPR, the conditions for consent)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( lgo:DisclosureType lgo:LegalConcept ) ] .
+
+lgo:requiresDisclosureOf a owl:ObjectProperty ;
+    rdfs:label "requires disclosure of"@en ;
+    rdfs:comment "The provision names this information item, or the obligation requires it to be disclosed. Conditions (for example only if VAT-registered) sit on obligations (lgo:Obligation)."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( lgo:Provision lgo:Obligation ) ] ;
+    rdfs:range lgo:InformationItem .
+
+lgo:defines a owl:ObjectProperty ;
+    rdfs:label "defines"@en ;
+    rdfs:comment "The provision establishes or defines this information item or legal concept, which provisions elsewhere refer to (for example § 27a UStG, the VAT identification number; Article 4(11) GDPR, consent). When the annotation sits on a numbered item, the item holds the defining words."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( lgo:InformationItem lgo:LegalConcept ) ] .
+
+lgo:enforces a owl:ObjectProperty ;
+    rdfs:label "enforces"@en ;
+    rdfs:comment "The provision is a legal basis for enforcing duties of this disclosure type, for example by competitors' warning letters under unfair competition law."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:DisclosureType .
+
+lgo:authorises a owl:ObjectProperty ;
+    rdfs:label "authorises"@en ;
+    rdfs:comment "The provision empowers the issuing of this act, for example a statute's authorisation for an ordinance (the inverse of eli:based_on)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:LegalAct .
+
+# ---------------------------------------------------------------------------
+# Relations between provisions, and sources that interpret them
+# ---------------------------------------------------------------------------
+
+lgo:explains a owl:ObjectProperty ;
+    rdfs:label "explains"@en ;
+    rdfs:comment "A recital (not binding in itself) explains this concept, guiding how the act's provisions on it are read (for example Recital 30 GDPR: cookie identifiers and IP addresses can be personal data)."@en ;
+    rdfs:domain lgo:Provision .
+
+lgo:interprets a owl:ObjectProperty ;
+    rdfs:label "interprets"@en ;
+    rdfs:comment "A court's ruling, an authority's decision or a regulator's guidance states how this provision is to be understood. Rulings of the Court of Justice of the EU bind national courts; guidance does not bind courts but shows how authorities enforce. Where a decision read a repealed provision, this names the provision in force that continues it (see lgo:readUnder)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:specifies a owl:ObjectProperty ;
+    rdfs:label "specifies"@en ;
+    rdfs:comment "The provision fills in a provision of another act that leaves room for it, such as a national rule made under an opening clause of a regulation (§ 38 BDSG under Article 37 GDPR)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:takesPrecedenceOver a owl:ObjectProperty ;
+    rdfs:label "takes precedence over"@en ;
+    rdfs:comment "Where both apply, this provision governs (lex specialis): § 25 TDDDG decides whether information may be stored on or read from a device; the GDPR governs the processing of personal data that follows."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:refersTo a owl:ObjectProperty ;
+    rdfs:label "refers to"@en ;
+    rdfs:comment "The provision's text points to this provision. Within an EU act read mechanically from the text; across acts written in the annotation."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:proposesToAmend a owl:ObjectProperty ;
+    rdfs:label "proposes to amend"@en ;
+    rdfs:comment "A provision of a legislative proposal would replace, add to or delete this provision if adopted as proposed. Proposals are not law; their status is on the proposal."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:LegalDocument a owl:Class ;
+    rdfs:label "Legal document"@en ;
+    rdfs:comment "A document provisions are quoted from: legislation, a court decision, an authority decision or guidance. Only published sources: the graph holds no readings of its own."@en .
+
+lgo:CourtDecision a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:label "Court decision"@en ;
+    rdfs:comment "A judgment. Its points (for example of the operative part) are provisions that interpret provisions of legislation."@en .
+
+lgo:Guidance a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:label "Guidance"@en ;
+    rdfs:comment "Guidelines or opinions of a regulator (the European Data Protection Board, a national authority): how the authorities read the law. Not binding on courts."@en .
+
+lgo:ecli a owl:DatatypeProperty ;
+    rdfs:label "ECLI"@en ;
+    rdfs:comment "European Case Law Identifier of a court decision, e.g. ECLI:EU:C:2019:801."@en ;
+    rdfs:domain lgo:CourtDecision ;
+    rdfs:range xsd:string .
+
+# ---------------------------------------------------------------------------
+# Cases and enforcement: what happened when the law was applied
+# ---------------------------------------------------------------------------
+# A court decision or an authority decision shows the law at work. Its points (provisions) say how
+# it read the law (lgo:interprets) or that it applied a provision to the facts (lgo:applies). Its
+# outcomes say what followed for a party: a fine, damages, an injunction. Each outcome names the
+# point of the decision that states it (lgo:statedIn), so the amount and the party can be checked
+# against the quoted words, and the provisions behind it (lgo:forBreachOf, lgo:sanctionedUnder).
+# lgo:illustrates ties a decision to the rules of the graph it shows in practice. Typed links
+# between decisions and provisions follow the spirit of CiTO (https://purl.org/spar/cito), kept
+# small: interprets, applies, follows.
+
+lgo:AuthorityDecision a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:label "Authority decision"@en ;
+    rdfs:comment "A regulator's decision in an individual case, such as a fine or an order by a data protection authority (a CNIL sanction, a decision of the Austrian data protection authority). Binding on the party it is addressed to, subject to appeal; it shows how the authority enforces the law."@en .
+
+lgo:caseNumber a owl:DatatypeProperty ;
+    rdfs:label "case number"@en ;
+    rdfs:comment "The reference the court or authority gives the case, as written by it: C-40/17, 6 U 80/23, SAN-2021-023."@en ;
+    rdfs:range xsd:string .
+
+lgo:applies a owl:ObjectProperty ;
+    rdfs:label "applies"@en ;
+    rdfs:comment "The decision applies this provision to the facts of the case: for example, an authority finds a breach of § 25 TDDDG, or a court awards damages under Article 82 GDPR. Where it also says how the provision is to be read, use lgo:interprets."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision ;
+    rdfs:seeAlso <http://purl.org/spar/cito/usesMethodIn> .
+
+lgo:follows a owl:ObjectProperty ;
+    rdfs:label "follows"@en ;
+    rdfs:comment "The decision builds on an earlier decision and decides in line with it, such as a national court applying a ruling of the Court of Justice of the EU in the same case."@en ;
+    rdfs:range lgo:LegalDocument ;
+    rdfs:seeAlso <http://purl.org/spar/cito/agreesWith> .
+
+lgo:illustrates a owl:ObjectProperty ;
+    rdfs:label "illustrates"@en ;
+    rdfs:comment "The decision shows this rule of the graph applied, or its meaning settled, in a real case. Chosen by the maintainers: a link from case to rule, not a statement of the decision itself."@en ;
+    rdfs:range lgo:Obligation .
+
+lgo:Outcome a owl:Class ;
+    rdfs:label "Outcome"@en ;
+    rdfs:comment "What a decision ordered for one party: a fine of a stated amount, damages, an injunction, an order to comply. A preliminary ruling of the Court of Justice has no outcome of its own: it answers the referring court."@en .
+
+lgo:hasOutcome a owl:ObjectProperty ;
+    rdfs:label "has outcome"@en ;
+    rdfs:range lgo:Outcome .
+
+lgo:outcomeType a owl:ObjectProperty ;
+    rdfs:label "outcome type"@en ;
+    rdfs:comment "A concept from vocab/outcome-types.ttl."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range skos:Concept .
+
+lgo:against a owl:DatatypeProperty ;
+    rdfs:label "against"@en ;
+    rdfs:comment "The party the outcome is addressed to, as the decision names it. Only companies and public bodies: decisions against private individuals are not recorded with their names."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range xsd:string .
+
+lgo:amount a owl:DatatypeProperty ;
+    rdfs:label "amount"@en ;
+    rdfs:comment "The sum of a fine or of damages, in lgo:currency, as the decision states it."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range xsd:decimal .
+
+lgo:currency a owl:DatatypeProperty ;
+    rdfs:label "currency"@en ;
+    rdfs:comment "ISO 4217 code, e.g. EUR."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range xsd:string .
+
+lgo:forBreachOf a owl:ObjectProperty ;
+    rdfs:label "for breach of"@en ;
+    rdfs:comment "The provision the party breached, as the decision finds."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range lgo:Provision .
+
+lgo:sanctionedUnder a owl:ObjectProperty ;
+    rdfs:label "sanctioned under"@en ;
+    rdfs:comment "The provision that empowers the sanction or grants the claim: Article 83 GDPR for a fine, Article 82 GDPR for damages, § 8 UWG for an injunction."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range lgo:Provision .
+
+lgo:statedIn a owl:ObjectProperty ;
+    rdfs:label "stated in"@en ;
+    rdfs:comment "The point of the decision (a quoted provision of it) where the outcome is stated, so the party and the amount can be checked against its words."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range lgo:Provision .
+
+lgo:penalises a owl:ObjectProperty ;
+    rdfs:label "penalises"@en ;
+    rdfs:comment "A penalty provision makes a breach of this provision an offence or sets the fine for it: § 28(1) no. 13 TDDDG penalises § 25(1) TDDDG; Article 83(5) GDPR penalises Articles 5 to 7."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:continues a owl:ObjectProperty ;
+    rdfs:label "continues"@en ;
+    rdfs:comment "The provision carries on the rule of an earlier, repealed provision in the same or equivalent terms (Article 4(7) GDPR continues Article 2(d) of Directive 95/46/EC), so decisions on the earlier one still guide how it is read."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:readUnder a owl:ObjectProperty ;
+    rdfs:label "read under"@en ;
+    rdfs:comment "The decision interpreted this repealed provision. Its lgo:interprets names the provision in force that continues it (lgo:continues)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:licence a owl:ObjectProperty ;
+    rdfs:label "licence"@en ;
+    rdfs:comment "The terms under which the source document is kept and republished: a concept from vocab/licences.ttl."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range skos:Concept .
+
+lgo:licenceBasis a owl:DatatypeProperty ;
+    rdfs:label "licence basis"@en ;
+    rdfs:comment "Why the licence applies, with the provision or notice it rests on: '§ 5 Abs. 1 UrhG: court decisions are official works without copyright'."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+# Material that may not be kept: someone else's writing (news, law-firm articles, databases). The
+# graph records the link and at most one short verbatim excerpt.
+
+lgo:ExternalReference a owl:Class ;
+    rdfs:label "External reference"@en ;
+    rdfs:comment "A page by someone else that supports a statement in the graph but may not be copied: a news report, a law firm's summary, an enforcement database. Kept as a link with at most one short excerpt."@en .
+
+lgo:supports a owl:ObjectProperty ;
+    rdfs:label "supports"@en ;
+    rdfs:comment "The reference backs up this decision, outcome or provision."@en ;
+    rdfs:domain lgo:ExternalReference .
+
+lgo:excerpt a owl:DatatypeProperty ;
+    rdfs:label "excerpt"@en ;
+    rdfs:comment "One short verbatim passage of the reference (a sentence or two), quoted with its locator."@en ;
+    rdfs:domain lgo:ExternalReference ;
+    rdfs:range rdf:langString .
+
+lgo:excerptLocator a owl:DatatypeProperty ;
+    rdfs:label "excerpt locator"@en ;
+    rdfs:comment "Where the excerpt is found in the reference: a paragraph number or heading."@en ;
+    rdfs:domain lgo:ExternalReference ;
+    rdfs:range xsd:string .
+
+lgo:linkOnlyReason a owl:DatatypeProperty ;
+    rdfs:label "why link only"@en ;
+    rdfs:comment "Why the reference is linked rather than kept: 'law-firm database; third-party work'."@en ;
+    rdfs:domain lgo:ExternalReference ;
+    rdfs:range xsd:string .
+
+# ---------------------------------------------------------------------------
+# Rules: who must do what, when (the normative layer)
+# ---------------------------------------------------------------------------
+# An obligation applies to a business when all its lgo:appliesWhen conditions hold and none of its
+# lgo:unless conditions does. Conditions are facts about the business ("sells to consumers", "sets
+# cookies"); a derived condition holds when any (lgo:holdsWhenAny) or all (lgo:holdsWhenAll) of
+# others do. Where the business is established, and where it offers its services, are answers of their
+# own (a jurisdiction, not yes/no): conditions tied to a jurisdiction (lgo:establishedIn, lgo:offersIn)
+# hold for it and every jurisdiction within it. Obligations and conditions point to the provisions they
+# come from, so every rule can be traced back to the words of the law. Rules are interpretation: they
+# start as Draft.
+
+lgo:Obligation a owl:Class ;
+    rdfs:label "Obligation"@en ;
+    rdfs:comment "A duty, prohibition or permission that one or more provisions establish for a kind of actor, under conditions: for example, a German business website must name the provider, address and email (§ 5 DDG)."@en .
+
+lgo:Condition a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Condition"@en ;
+    rdfs:comment "A fact about a business or its website on which obligations depend. Legal concepts the law itself defines (established in the Union, large-scale monitoring) are conditions too."@en .
+
+lgo:ActorRole a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Actor role"@en ;
+    rdfs:comment "The role in which the law addresses someone: provider of a digital service, controller, trader."@en .
+
+lgo:Action a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Action"@en ;
+    rdfs:comment "Something an obligation requires a business to do other than disclose information: obtain consent before setting cookies, designate a data protection officer."@en .
+
+lgo:establishedBy a owl:ObjectProperty ;
+    rdfs:label "established by"@en ;
+    rdfs:comment "The provision the obligation comes from."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Provision .
+
+lgo:bearer a owl:ObjectProperty ;
+    rdfs:label "bearer"@en ;
+    rdfs:comment "Who the obligation addresses."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:ActorRole .
+
+lgo:deonticType a owl:ObjectProperty ;
+    rdfs:label "deontic type"@en ;
+    rdfs:comment "Obligation (must), prohibition (must not) or permission (may), from vocab/deontic-types.ttl."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range skos:Concept .
+
+lgo:appliesIn a owl:ObjectProperty ;
+    rdfs:label "applies in"@en ;
+    rdfs:comment "The jurisdiction whose law the obligation belongs to."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:appliesWhen a owl:ObjectProperty ;
+    rdfs:label "applies when"@en ;
+    rdfs:comment "A condition that must hold for the obligation to apply; all of them must."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Condition .
+
+lgo:unless a owl:ObjectProperty ;
+    rdfs:label "unless"@en ;
+    rdfs:comment "An exemption: the obligation does not apply if this condition holds."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Condition .
+
+lgo:requiresAction a owl:ObjectProperty ;
+    rdfs:label "requires action"@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Action .
+
+lgo:partOfDisclosure a owl:ObjectProperty ;
+    rdfs:label "part of disclosure"@en ;
+    rdfs:comment "The notice the required information belongs in (Impressum, privacy information)."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:DisclosureType .
+
+lgo:refines a owl:ObjectProperty ;
+    rdfs:label "refines"@en ;
+    rdfs:comment "The national obligation spells out the more general one for its jurisdiction, usually because its provision implements the directive the general one rests on (§ 5 DDG and Article 5 of the e-Commerce Directive). Where both apply, a checklist shows the national one."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Obligation .
+
+lgo:holdsWhenAny a owl:ObjectProperty ;
+    rdfs:label "holds when any of"@en ;
+    rdfs:comment "The condition also holds when any of these does (established or present in Ukraine ⇐ established in Ukraine)."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Condition .
+
+lgo:holdsWhenAll a owl:ObjectProperty ;
+    rdfs:label "holds when all of"@en ;
+    rdfs:comment "The condition also holds when all of these do."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Condition .
+
+lgo:establishedIn a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "established in"@en ;
+    rdfs:comment "The condition holds for a business established in this jurisdiction or in one within it: a member (Austria in the EU) or a subdivision (California in the United States). A checklist asks once where the business is established instead of a yes/no question per country."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:offersIn a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "offers in"@en ;
+    rdfs:comment "The condition holds for a business that offers goods or services to people in this jurisdiction or in one within it. A checklist asks once where the business's customers or users are."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:basedOn a owl:ObjectProperty ;
+    rdfs:label "based on"@en ;
+    rdfs:comment "The provision whose words the condition is taken from."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Provision .
+
+lgo:question a owl:DatatypeProperty ;
+    rdfs:label "question"@en ;
+    rdfs:comment "How a checklist asks for the condition, as a yes/no question."@en ;
+    rdfs:domain lgo:Condition .
+
+lgo:customaryNoticeName a owl:DatatypeProperty ;
+    rdfs:label "customary notice name"@en ;
+    rdfs:comment "What the provider identification notice is usually called in the jurisdiction (Impressum, mentions légales, aviso legal)."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range rdf:langString .
+
+# ---------------------------------------------------------------------------
+# Curation
+# ---------------------------------------------------------------------------
+
+lgo:reviewStatus a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "review status"@en ;
+    rdfs:comment "How far the resource has been checked, from the review-status scheme."@en ;
+    rdfs:range skos:Concept .
+
+# ---------------------------------------------------------------------------
+# Localisation: English translations of non-English text
+# ---------------------------------------------------------------------------
+# Non-English text gets an English lgo:Translation node, so translations carry their own provenance
+# (who or what translated, when, reviewed or not, a hash of the source text) and can be reviewed and
+# contributed to without touching the law. Quotes are always translated this way. For short literals
+# on properties marked lgo:englishRequired, a hand-written @en sibling literal also counts.
+
+lgo:Translation a owl:Class ;
+    rdfs:label "Translation"@en ;
+    rdfs:comment "A translation into another language (English for now) of a quote or of a short literal, with its provenance. Never a substitute for the source: the source-language text is what the law says."@en .
+
+lgo:translationOf a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "translation of"@en ;
+    rdfs:comment "What is translated: a quote (its lgo:text), or with lgo:translatedProperty a literal of any resource."@en ;
+    rdfs:domain lgo:Translation .
+
+lgo:translatedProperty a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "translated property"@en ;
+    rdfs:comment "For a translation of a short literal (a title, a status note): the property whose value is translated. The value is identified by lgo:sourceTextSha256."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range rdf:Property .
+
+lgo:translationMethod a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "translation method"@en ;
+    rdfs:comment "How the translation was made, from the translation-method scheme (machine, human, official)."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range skos:Concept .
+
+lgo:translatedBy a owl:DatatypeProperty ;
+    rdfs:label "translated by"@en ;
+    rdfs:comment "The model identifier for a machine translation, the person or organisation otherwise."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:string .
+
+lgo:translatedOn a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "translated on"@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:date .
+
+lgo:reviewedBy a owl:DatatypeProperty ;
+    rdfs:label "reviewed by"@en ;
+    rdfs:comment "Who checked the translation against the source text."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:string .
+
+lgo:sourceTextSha256 a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "source text SHA-256"@en ;
+    rdfs:comment "SHA-256 (hex) of the UTF-8 source text the translation was made from. When the quote changes the hash no longer matches and the translation is stale."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:string .
+
+lgo:englishRequired a owl:AnnotationProperty ;
+    rdfs:label "English required"@en ;
+    rdfs:comment "Set to true on a property whose non-English literals must have an @en sibling on the same subject."@en .
+
+# ---------------------------------------------------------------------------
+# Provenance: the official source documents the graph is extracted from
+# ---------------------------------------------------------------------------
+# Where an official machine-readable text exists (for example the XML of gesetze-im-internet.de),
+# the graph repo keeps the file byte-identical, plus an annotated copy, and extracts acts,
+# provisions and quotes from it mechanically. These terms point each extracted resource back to
+# the exact file and element it came from.
+
+lgo:SourceDocument a owl:Class ;
+    rdfs:label "Source document"@en ;
+    rdfs:comment "An official text of a legal act as downloaded: the file from the portal byte for byte, or, for HTML pages that change with every request, the fragment holding the law text, cut out by a fixed rule. Its SHA-256 lets anyone check it against a fresh download."@en .
+
+lgo:sourceDocument a owl:ObjectProperty ;
+    rdfs:label "source document"@en ;
+    rdfs:comment "The source document an act, provision or quote was extracted from."@en ;
+    rdfs:range lgo:SourceDocument .
+
+lgo:sourceElement a owl:DatatypeProperty ;
+    rdfs:label "source element"@en ;
+    rdfs:comment "XPath of the element in the source document the resource was extracted from."@en ;
+    rdfs:range xsd:string .
+
+lgo:repositoryPath a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "repository path"@en ;
+    rdfs:comment "Path of the file in the graph repository, relative to its root."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:sha256 a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "SHA-256"@en ;
+    rdfs:comment "SHA-256 (hex) of the file's bytes."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:annotatedFile a owl:DatatypeProperty ;
+    rdfs:label "annotated file"@en ;
+    rdfs:comment "Repository path of the annotated XML the graph was extracted from: a copy of an official XML file with annotations added, or an XML file written by the maintainers when the official text is only HTML or PDF. lgo:sourceElement XPaths point into this file."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:mediaType a owl:DatatypeProperty ;
+    rdfs:label "media type"@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:portalBuildDate a owl:DatatypeProperty ;
+    rdfs:label "portal build date"@en ;
+    rdfs:comment "The build stamp the portal put into the file (gesetze-im-internet.de: builddate), as given."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:legalStatus a owl:DatatypeProperty ;
+    rdfs:label "legal status note"@en ;
+    rdfs:comment "The portal's note on how current the consolidated text is (gesetze-im-internet.de: standangabe), as given."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range rdf:langString .
+
+# ---------------------------------------------------------------------------
+# Currency: the latest amendment we know of, and when we last looked
+# ---------------------------------------------------------------------------
+# An act's quotes are only as current as the text they were taken from. An amendment check records
+# what was found the last time an official source was consulted for changes to the act, mostly by a
+# script: the latest amendment known to us, and the day of that check. It claims no more: the act may
+# have been amended since, which only the next check can tell. Without a check, the graph says
+# nothing about how current an act is. Who or what made a check is in the repository's history.
+
+lgo:AmendmentCheck a owl:Class ;
+    rdfs:label "Amendment check"@en ;
+    rdfs:comment "The last time an act was checked for amendments: when, against which official source, and the latest amendment found. Who or what made the check is in the repository's history. The amendment is the last one known to the graph, not necessarily the last one there is. A check that names no amendment found none since the act was adopted."@en .
+
+lgo:amendmentCheck a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "amendment check"@en ;
+    rdfs:comment "The act's latest amendment check. Earlier checks are replaced; their history is in the repository."@en ;
+    rdfs:domain lgo:LegalAct ;
+    rdfs:range lgo:AmendmentCheck .
+
+lgo:checkedOn a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "checked on"@en ;
+    rdfs:comment "The day the official source was consulted."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:date .
+
+lgo:lastKnownAmendment a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amendment"@en ;
+    rdfs:comment "The latest amendment found, cited as the official source cites it (Art. 1 G v. 20.7.2026 BGBl. 2026 I Nr. 215; Directive (EU) 2024/825)."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:string .
+
+lgo:lastKnownAmendmentDate a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amendment date"@en ;
+    rdfs:comment "The date of the amending act (its signature or adoption, as the official source dates it)."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:date .
+
+lgo:lastKnownAmendmentInForce a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amendment in force"@en ;
+    rdfs:comment "When the amendment takes effect, if the source says; it can lie in the future."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:date .
+
+lgo:lastKnownAmendingAct a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amending act"@en ;
+    rdfs:comment "The amending act itself, when it is in the graph."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range lgo:LegalAct .
+
+lgo:sourceIsCurrent a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "source is current"@en ;
+    rdfs:comment "True when the source document the graph quotes already contains the last known amendment; false when it predates it, so the text should be downloaded again and the quotes compared."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:boolean .

@@ -1,0 +1,21 @@
+# OLG Köln, Urteil vom 19. Januar 2024 – 6 U 80/23: cookie-banner design must offer an equivalent
+# reject option, and an "Akzeptieren & Schließen X" button that merges close and consent makes the
+# consent void for lack of transparency and voluntariness (§ 25 Abs. 1 TTDSG, Art. 4 Nr. 11 DSGVO).
+# The NRW courts' database publishes the decision as an HTML page only; the page is kept whole and
+# the paragraphs the graph quotes are transcribed in schemas/law.xsd, checked word for word.
+id: de/olg-koeln-6u80-23
+title: OLG Köln, Urteil vom 19.01.2024 – 6 U 80/23
+jurisdiction: DE
+language: de
+publisher: Oberlandesgericht Köln, nrwe.justiz.nrw.de
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: court decisions are official works without copyright"
+originals:
+  - file: 6_U_80_23_Urteil_20240119.html
+    url: https://nrwe.justiz.nrw.de/olgs/koeln/j2024/6_U_80_23_Urteil_20240119.html
+    fetch: file
+    media_type: text/html
+    retrieved_on: 2026-11-03
+    sha256: 93935541a9e8f646a095f96be6b94f096d2d77f575cb10938901e86e988e0f3f
+annotated: olg-koeln-6u80-23.law.xml

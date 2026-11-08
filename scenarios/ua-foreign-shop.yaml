@@ -1,0 +1,15 @@
+name: Foreign online shop with a Kyiv branch
+description: >
+  A seller established outside Ukraine with a branch office in Kyiv, selling online to consumers in
+  Ukraine. Article 27(6) of the State Language Law applies through the branch: a Ukrainian website
+  version sufficient for clear navigation, loaded by default. The e-commerce and 1991 consumer law
+  rules apply to distance selling into Ukraine; the e-commerce-information rule of Article 30(4)
+  needs registration in Ukraine, so it does not.
+facts:
+  - HasPresenceInUkraine
+  - SellsOnlineInUkraine
+obligations:
+  - UA-R-seller-information
+  - UA-R-website-in-ukrainian
+  - UA-R-service-information-in-ukrainian
+  - UA-R-pre-contract-information-1991

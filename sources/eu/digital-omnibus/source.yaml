@@ -1,0 +1,24 @@
+# Commission proposal for a Digital Omnibus regulation, COM(2025) 837 final, 19 November 2025
+# (procedure 2025/0360(COD)), as published in Cellar: PDF only. The provisions the graph quotes (the
+# proposed GDPR Articles 88a and 88b on cookies and similar technologies, and the proposed addition to
+# Article 5(3) of the ePrivacy Directive) are transcribed in schemas/law.xsd and `legalgraph sources verify`
+# checks each line, letter for letter, against the PDF. A proposal is not law: see the status note.
+id: eu/digital-omnibus
+title: Proposal for a Digital Omnibus Regulation, COM(2025) 837
+jurisdiction: EU
+language: en
+publisher: European Commission, via the Publications Office (Cellar)
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: COM-2025-837-en.pdf
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0837
+    url: http://publications.europa.eu/resource/cellar/ebf17714-c56e-11f0-8da2-01aa75ed71a1.0001.02/DOC_1
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Commission proposal of 19 November 2025, not law. As of late October 2026: the Council adopted its negotiating position around 21 October 2026, trilogues had not begun, and reports indicate the Council's text deletes the proposed Articles 88a and 88b, keeping the cookie rule in Article 5(3) of the ePrivacy Directive. Sources: eudigitalpolicy.eu, euinternetpolicy.wordpress.com (23 October 2026), praxikon.com."
+    retrieved_on: 2026-11-02
+    sha256: 0d954aa0795001f0cc178be3d17421630ddd83ad1fb17972d9b709483fcfc8c2
+annotated: digital-omnibus.law.xml

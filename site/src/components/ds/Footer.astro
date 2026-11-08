@@ -1,0 +1,61 @@
+---
+// The dark footer band: logo and
+// tagline, link columns, then one row: the copyright, a "language" slot (the language switcher)
+// on the footer's centre line, and a "notice" slot (licences, not legal advice).
+// Under the tagline, a "social" slot (the repository link).
+// theme-dark recolours everything inside, so it uses the same roles as the rest of the page.
+import Container from "./Container.astro";
+import Logo from "./Logo.astro";
+import type { FooterColumn } from "./footer.types";
+
+interface Props {
+  homeHref: string;
+  homeLabel: string;
+  tagline: string;
+  columns: readonly FooterColumn[];
+  copyright: string;
+  navLabel: string;
+}
+
+const { homeHref, homeLabel, tagline, columns, copyright, navLabel } = Astro.props;
+---
+
+<footer class="theme-dark">
+  <Container>
+    <div class="grid grid-cols-1 gap-12 pt-16 pb-6 lg:grid-cols-12">
+      <div class="flex flex-col gap-3 lg:col-span-4">
+        <Logo href={homeHref} label={homeLabel} />
+        <p class="max-w-sm text-base text-muted-foreground">{tagline}</p>
+        <div class="-ml-2 flex items-center gap-1">
+          <slot name="social" />
+        </div>
+      </div>
+      <nav aria-label={navLabel} class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:col-span-8">
+        {
+          columns.map((column) => (
+            <div class="flex flex-col gap-4">
+              <p class="text-lg text-muted-foreground">{column.title}</p>
+              <ul class="flex flex-col gap-1">
+                {column.links.map((link) => (
+                  <li>
+                    <a href={link.href} class="inline-block py-1.5 text-sm text-foreground hover:text-primary">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </nav>
+    </div>
+    <!-- Two equal outer columns, so the language switcher sits on the footer's centre line. -->
+    <div class="grid grid-cols-1 justify-items-start gap-3 border-t pt-6 pb-8 text-sm text-muted-foreground lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-12">
+      <p class="text-base">{copyright}</p>
+      <slot name="language" />
+      <div class="lg:justify-self-end space-y-1 [&_a]:text-foreground [&_strong]:text-foreground [&_a]:underline [&_a]:underline-offset-2">
+        <slot name="notice" />
+      </div>
+    </div>
+  </Container>
+</footer>

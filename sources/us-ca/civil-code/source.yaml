@@ -1,0 +1,22 @@
+# Cal. Civil Code § 1789.3: the electronic-commercial-service provider notice — name, address,
+# telephone number, charges, complaint procedures and the Department of Consumer Affairs
+# complaint unit, given at contracting time and annually. leginfo is behind Incapsula; the page
+# is the browser-saved print view (the pipeline reads the same fragment as the live page).
+id: us-ca/civil-code
+title: California Civil Code § 1789.3
+jurisdiction: US-CA
+language: en
+publisher: California Legislative Information, leginfo.legislature.ca.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))"
+originals:
+  - file: civ-1789-3.fragment.html
+    page: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1789.3.&lawCode=CIV
+    url: https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=CIV&article=1.&sectionNum=1789.3.&op_statues=1986&op_chapter=508&op_section=1
+    fetch: html-fragment
+    selector: "#codeLawSectionNoHead"
+    media_type: text/html
+    retrieved_on: 2026-11-03
+    sha256: 975ab5c4d6111828ffed8e20f6eeab6127385b950ca8bc6cced1b61a374071c9
+annotated: civil-code.law.xml

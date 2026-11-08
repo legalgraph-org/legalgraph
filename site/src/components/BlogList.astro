@@ -1,0 +1,187 @@
+---
+// The article index: on the left a search box, the categories and quick links to every article; on the right the featured article large, then
+// the rest as cards. The categories are radios filtered in CSS and the search box appears with the
+// script, both from FilterList (filter-list.types.ts, scripts/filter-list.ts), so they behave alike.
+import type { CollectionEntry } from "astro:content";
+import { filterCss, filterInputId, tagId } from "./ds/filter-list.types";
+import type { Translate } from "../i18n/t";
+import { formatDate, readingMinutes, type Localized } from "../lib/content";
+import { pagePath } from "../lib/routes";
+
+interface Props {
+  t: Translate;
+  posts: readonly Localized<CollectionEntry<"blog">>[];
+}
+
+const { t, posts } = Astro.props;
+const LIST = "blog";
+const categoryOf = (post: (typeof posts)[number]) => post.entry.data.category;
+const categories = [...new Set(posts.map(categoryOf).filter(Boolean))] as string[];
+const groups = [
+  {
+    title: t("Categories"),
+    options: categories.map((category) => ({
+      id: `c-${tagId(category)}`,
+      label: category,
+      count: posts.filter((post) => categoryOf(post) === category).length,
+    })),
+  },
+];
+const featured = posts.find((post) => post.entry.data.featured) ?? posts[0];
+const rest = posts.filter((post) => post !== featured);
+
+const href = (post: (typeof posts)[number]) => pagePath(`blog/${post.slug}`, t.locale);
+const minutes = (post: (typeof posts)[number]) => readingMinutes(post.entry);
+const tags = (post: (typeof posts)[number]) => (categoryOf(post) ? `c-${tagId(categoryOf(post)!)}` : "");
+const search = (post: (typeof posts)[number]) =>
+  [post.entry.data.title, post.entry.data.description, post.entry.data.author, categoryOf(post)]
+    .filter(Boolean)
+    .join(" ")
+    .toLocaleLowerCase();
+const name = `${LIST}-filter`;
+---
+
+<style is:inline set:html={filterCss(LIST, groups)}></style>
+<div class="grid grid-cols-1 gap-10 lg:grid-cols-[260px_minmax(0,1fr)]" data-filter-list={LIST}>
+  <aside class="space-y-6">
+    <div class="card p-4" data-filter-search-box hidden>
+      <label for="blog-search" class="text-sm font-semibold">{t("Search articles")}</label>
+      <input
+        id="blog-search"
+        type="search"
+        autocomplete="off"
+        placeholder={t("Title, topic or law")}
+        class="mt-3 w-full rounded-full border border-border-strong bg-background px-4 py-2 text-sm focus:border-primary focus:outline-none"
+        data-filter-search
+      />
+    </div>
+    {
+      categories.length > 0 && (
+        <fieldset class="card p-4">
+          <legend class="sr-only">{t("Categories")}</legend>
+          <p class="mb-3 text-sm font-semibold" aria-hidden="true">{t("Categories")}</p>
+          <ul class="space-y-1 text-sm">
+            <li>
+              <input type="radio" name={name} id={filterInputId(LIST, "all")} data-option="" checked class="filter-input sr-only" />
+              <label for={filterInputId(LIST, "all")} class="filter-option">
+                {t("All articles")} <span class="filter-count">{posts.length}</span>
+              </label>
+            </li>
+            {groups[0]!.options.map((option) => (
+              <li>
+                <input type="radio" name={name} id={filterInputId(LIST, option.id)} data-option={option.id} class="filter-input sr-only" />
+                <label for={filterInputId(LIST, option.id)} class="filter-option">
+                  {option.label} <span class="filter-count">{option.count}</span>
+                </label>
+              </li>
+            ))}
+          </ul>
+        </fieldset>
+      )
+    }
+    <nav class="card p-4 max-lg:hidden" aria-label={t("Quick links")}>
+      <p class="mb-3 text-sm font-semibold">{t("Quick links")}</p>
+      <ul class="space-y-2 text-sm">
+        {
+          posts.map((post) => (
+            <li>
+              <a href={href(post)} class="block text-muted-foreground no-underline hover:text-foreground">
+                {post.entry.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="space-y-6" data-filter-entries>
+    <p class="card text-center text-muted-foreground" data-filter-empty hidden>{t("No article matches your search.")}</p>
+    {
+      featured && (
+        <article class="filter-entry card relative p-6 lg:p-8" data-tags={tags(featured)} data-search={search(featured)}>
+          <p class="flex flex-wrap items-center gap-3 text-xs tracking-wide text-muted-foreground uppercase">
+            <span class="rounded-full bg-primary/10 px-2.5 py-1 font-semibold text-primary">{categoryOf(featured) ?? t("Featured")}</span>
+            <span>{formatDate(t.locale, featured.entry.data.published)}</span>
+            {featured.entry.data.draft && <span class="tag tone-draft normal-case">{t("draft")}</span>}
+            {!featured.translated && <span class="tag normal-case">{t("in English")}</span>}
+          </p>
+          <h2 class="mt-4! mb-0! text-h2 font-semibold">
+            <a href={href(featured)} class="text-foreground no-underline after:absolute after:inset-0 hover:text-primary">
+              {featured.entry.data.title}
+            </a>
+          </h2>
+          <p class="lead mt-3">{featured.entry.data.description}</p>
+          <p class="mt-6 flex items-center justify-between text-sm text-muted-foreground">
+            <span class="font-semibold text-primary">{t("Read the article")} →</span>
+            <span>{t("{minutes} min read", { minutes: minutes(featured) })}</span>
+          </p>
+        </article>
+      )
+    }
+    {
+      rest.length > 0 && (
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {rest.map((post, index) => (
+            <article
+              class:list={["filter-entry card relative flex flex-col p-5", rest.length % 2 === 1 && index === rest.length - 1 && "md:col-span-2"]}
+              data-tags={tags(post)}
+              data-search={search(post)}
+            >
+              <p class="flex flex-wrap items-center gap-2 text-xs tracking-wide text-muted-foreground uppercase">
+                {categoryOf(post) ?? t("Articles")}
+                {post.entry.data.draft && <span class="tag tone-draft normal-case">{t("draft")}</span>}
+                {!post.translated && <span class="tag normal-case">{t("in English")}</span>}
+              </p>
+              <h3 class="mt-3! mb-0! text-lg font-semibold">
+                <a href={href(post)} class="text-foreground no-underline after:absolute after:inset-0 hover:text-primary">
+                  {post.entry.data.title}
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm text-muted-foreground">{post.entry.data.description}</p>
+              <p class="mt-4 flex items-center justify-between text-xs text-muted-foreground">
+                <span>{formatDate(t.locale, post.entry.data.published)}</span>
+                <span>{t("{minutes} min read", { minutes: minutes(post) })}</span>
+              </p>
+            </article>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<script>
+  import { startFilterLists } from "../scripts/filter-list";
+
+  startFilterLists();
+</script>
+
+<style>
+  .filter-option {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border-left: 2px solid transparent;
+    padding: 0.2rem 0.5rem 0.2rem 0.75rem;
+    color: var(--text-2);
+    cursor: pointer;
+  }
+  .filter-option:hover {
+    color: var(--text);
+  }
+  .filter-count {
+    font-size: 0.75rem;
+    color: color-mix(in oklab, var(--text-2) 75%, var(--background));
+  }
+  .filter-input:checked + .filter-option {
+    border-left-color: var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .filter-input:focus-visible + .filter-option {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+  }
+</style>

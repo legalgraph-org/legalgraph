@@ -1,0 +1,129 @@
+# General Data Protection Regulation: official XML (Formex 4) from the Publications Office of the EU.
+# Cellar serves each text as a zip for its CELEX number; the original is the XML file inside it,
+# byte for byte (the zip itself is rebuilt on every request).
+# The annotated text is the consolidated version, which works the corrigenda in. Consolidated texts
+# are a documentation tool, so the authentic Official Journal texts are kept too (role: authentic),
+# with the corrigenda and the places they correct (`corrects`, copied from each corrigendum):
+# `legalgraph sources verify` proves every quoted provision reads exactly as in the Official Journal, or
+# differs only at a place a corrigendum of that language lists. EU acts are equally authentic in every
+# official language: English is annotated, German is kept as a parallel language version.
+id: eu/gdpr
+title: General Data Protection Regulation (Regulation (EU) 2016/679)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2016R0679EN0000020.0001.xml
+    page: https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+    url: https://publications.europa.eu/resource/celex/02016R0679-20160504
+    fetch: zip-member
+    member: CL2016R0679EN0000020.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text prepared by the Publications Office, with the corrigenda of 2016, 2018 and 2021 worked in: a documentation tool. The authentic text is the Official Journal publication (OJ L 119, 4.5.2016) with its corrigenda; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: 28524c5589d9c80dee357fe96498302b4fefb29b3cc9ada7dcad52c967e3f15c
+  - file: CL2016R0679DE0000030.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu
+    url: https://publications.europa.eu/resource/celex/02016R0679-20160504
+    fetch: zip-member
+    member: CL2016R0679DE0000030.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung mit den Berichtigungen (documentation tool; the authentic text is the Official Journal publication with its corrigenda)."
+    retrieved_on: 2026-11-02
+    sha256: bf2ca89192b2f865fb6b6131221a3a3064d0c61d65d4c403393fcf9559a59310
+  - file: L_2016119EN.01000101.xml
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 119, 4.5.2016, p. 1"
+    url: https://publications.europa.eu/resource/celex/32016R0679
+    fetch: zip-member
+    member: L_2016119EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: fce6e6ea8724e66a1c4f98c584cafdc9dfbae26aa83c44b43423b8c7f6aa0295
+  - file: L_2016119DE.01000101.xml
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 119 vom 4.5.2016, S. 1"
+    url: https://publications.europa.eu/resource/celex/32016R0679
+    fetch: zip-member
+    member: L_2016119DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 64aca27ead020cf06c40730251ac627359bfb12096b8f723de881d01c3810ab3
+  - file: L_2018127EN.01000201.xml
+    role: corrigendum
+    language: en
+    title: "Corrigendum, OJ L 127, 23.5.2018, p. 2"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2802%29
+    fetch: zip-member
+    member: L_2018127EN.01000201.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    corrects: ["Recital 71", "Art. 37(1)", "Art. 41(3)", "Art. 41(5)", "Art. 42(7)", "Art. 43(3)", "Art. 43(6)", "Art. 57(1)", "Art. 64(1)", "Art. 64(6)", "Art. 64(7)", "Art. 64(8)", "Art. 65(1)", "Art. 69(2)", "Art. 70(1)"]
+    retrieved_on: 2026-11-02
+    sha256: 4891cbff10e8319f12add13600538c2a06a03ec8ecfb19ed0636252568798f3d
+  - file: L_2016314DE.01007201.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L 314 vom 22.11.2016, S. 72"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2801%29
+    fetch: zip-member
+    member: L_2016314DE.01007201.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Art. 28(7)", "Art. 30(5)", "Art. 33(1)"]
+    retrieved_on: 2026-11-02
+    sha256: fa5e8a2d766bff9ba09bc6933a1e6d779a196bd702e8c218711de4958cfd1acb
+  - file: L_2018127DE.01000201.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L 127 vom 23.5.2018, S. 2"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2802%29
+    fetch: zip-member
+    member: L_2018127DE.01000201.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Recital 47", "Recital 50", "Recital 71", "Recital 140", "Recital 145", "Art. 4(18)", "Art. 15(4)", "Art. 20(4)", "Art. 25(1)", "Art. 25(2)", "Art. 26", "Art. 28(3)", "Art. 32(1)", "Art. 37(1)", "Art. 40(3)", "Art. 41(3)", "Art. 41(5)", "Art. 42(7)", "Art. 43(3)", "Art. 43(6)", "Art. 44", "Art. 57(1)", "Art. 58(1)", "Art. 58(2)", "Art. 64", "Art. 65(1)", "Art. 69(2)", "Art. 70(1)", "Art. 77(1)", "Art. 79(2)", "Art. 83(1)", "Art. 83(2)", "Art. 88(1)", "Art. 88(2)"]
+    retrieved_on: 2026-11-02
+    sha256: 45870f1e08f68883cfcdbc8ad499e8b5a741df84b5b783070ed9607cddb6e1ee
+  - file: L_2021074DE.01003501.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L 74 vom 4.3.2021, S. 35"
+    url: https://publications.europa.eu/resource/celex/32016R0679R%2803%29
+    fetch: zip-member
+    member: L_2021074DE.01003501.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Art. 30(2)", "Art. 33(5)", "Art. 34(3)"]
+    retrieved_on: 2026-11-02
+    sha256: bb6be601ca89286290df7011b764a7803b92ca119804348965cb2413976c0b25
+annotated: CL2016R0679EN0000020.0001.annotated.xml

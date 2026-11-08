@@ -1,0 +1,62 @@
+---
+// The content of one navbar menu: groups of entries. Used in the desktop dropdown and, without the
+// card frame, inside the mobile menu.
+import type { NavMenu } from "./navbar.types";
+
+interface Props {
+  menu: NavMenu;
+  compact?: boolean;
+}
+
+const { menu, compact = false } = Astro.props;
+---
+
+<div class:list={[compact ? "flex flex-col gap-3" : "grid gap-4 p-4", !compact && menu.groups.length > 1 && "sm:grid-cols-2"]}>
+  {
+    menu.groups.map((group) => (
+      <div>
+        {group.title && (
+          <p class="mb-2 px-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">{group.title}</p>
+        )}
+        <ul class="flex flex-col gap-1">
+          {group.entries.map((entry) => {
+            const Tag = entry.href ? "a" : "div";
+            return (
+              <li>
+                <Tag
+                  href={entry.href}
+                  aria-current={entry.current ? "page" : undefined}
+                  aria-disabled={entry.href ? undefined : "true"}
+                  class:list={[
+                    "no-underline flex items-start gap-3 rounded-lg p-2",
+                    entry.href ? "hover:bg-muted" : "cursor-not-allowed opacity-60",
+                  ]}
+                >
+                  {entry.icon && (
+                    <span
+                      aria-hidden="true"
+                      class="flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-base text-primary"
+                    >
+                      {entry.icon}
+                    </span>
+                  )}
+                  <span class="flex min-w-0 flex-1 flex-col">
+                    <span class="flex items-center gap-2 text-sm font-semibold text-foreground">
+                      {entry.label}
+                      {entry.badge && (
+                        <span class="rounded bg-muted px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground">
+                          {entry.badge}
+                        </span>
+                      )}
+                    </span>
+                    {entry.description && <span class="text-xs text-muted-foreground">{entry.description}</span>}
+                  </span>
+                </Tag>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))
+  }
+</div>

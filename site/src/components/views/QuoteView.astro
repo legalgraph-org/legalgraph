@@ -1,0 +1,27 @@
+---
+import type { Quote } from "../../content.config";
+import type { Provision } from "../../lib/data";
+import { languageName } from "../../lib/links";
+import QuoteBlock from "../QuoteBlock.astro";
+import Header from "./Header.astro";
+
+interface Props {
+  id: string;
+  quote: Quote;
+  provision: Provision;
+}
+
+const { id, quote, provision } = Astro.props;
+const version = quote.versions.find((v) => v.id === id);
+const isTranslation = id !== quote.id && !version;
+---
+
+<Header
+  kind={isTranslation ? "Translation" : version ? `Quote · ${languageName(version.lang)} language version` : "Quote"}
+  title={`${isTranslation ? "English translation of the quote" : "Quote"} from ${provision.data.citation}`}
+  id={id}
+  graph={provision.id}
+  status={isTranslation ? quote.translation?.status : provision.data.reviewStatus}
+/>
+<p class="mb-4">Provision: <a href={`/id/${provision.id}`}>{provision.data.citation}</a></p>
+<QuoteBlock quote={quote} />

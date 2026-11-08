@@ -1,0 +1,54 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:US-CA-CIV-1789-3
+    lgo:amendmentCheck lg:US-CA-CIV-1789-3-amendment-check .
+
+lg:US-CA-CIV-1789-3-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1789.3.&lawCode=CIV"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Stats. 1986, Ch. 508" ;
+    lgo:lastKnownAmendmentDate "1986-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "leginfo section note: amended by Stats. 1986, Ch. 508, Sec. 1."@en .
+
+lg:US-CA-CCPA
+    lgo:amendmentCheck lg:US-CA-CCPA-amendment-check .
+
+lg:US-CA-CCPA-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Stats. 2025, Ch. 67 (AB 1170)" ;
+    lgo:lastKnownAmendmentDate "2025-10-08"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2026-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Latest amending chapter found in the quoted sections: Stats. 2025, Ch. 67 (AB 1170), effective 01.01.2026."@en .
+
+lg:US-CA-CCR-11-CCPA
+    lgo:amendmentCheck lg:US-CA-CCR-11-CCPA-amendment-check .
+
+lg:US-CA-CCR-11-CCPA-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://cppa.ca.gov/regulations/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "CCPA Regulations effective 01.01.2026" ;
+    lgo:lastKnownAmendmentDate "2026-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "CPPA lists the CCPA Regulations effective 01.01.2026; the committed PDF is that consolidated text (ccpa_statute_eff_20260101.pdf), re-fetched 08.11.2026."@en .
+
+lg:US-CA-BPC
+    lgo:amendmentCheck lg:US-CA-BPC-amendment-check .
+
+lg:US-CA-BPC-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&lawCode=BPC"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Stats. 2024, Ch. 515 (AB 2863)" ;
+    lgo:lastKnownAmendmentDate "2024-09-27"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2025-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "§17602 amended by Stats. 2024, Ch. 515 (AB 2863), effective 01.01.2025."@en .

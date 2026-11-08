@@ -1,0 +1,28 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CA-PIPEDA
+    lgo:amendmentCheck lg:CA-PIPEDA-amendment-check .
+
+lg:CA-PIPEDA-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "last amended on 2025-03-04" ;
+    lgo:lastKnownAmendmentDate "2025-03-04"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "laws-lois.justice.gc.ca states: last amended on 2025-03-04."@en .
+
+lg:CA-CASL
+    lgo:amendmentCheck lg:CA-CASL-amendment-check .
+
+lg:CA-CASL-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://laws-lois.justice.gc.ca/eng/acts/E-1.6/"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "last amended on 2026-01-01" ;
+    lgo:lastKnownAmendmentDate "2026-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "laws-lois.justice.gc.ca states: last amended on 2026-01-01."@en .

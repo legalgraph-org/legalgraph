@@ -1,0 +1,16 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lg:AT-DSB-2021-D155027 lgo:caseNumber "D155.027, 2021-0.586.257" ;
+    lgo:hasOutcome lg:AT-DSB-2021-D155027-outcome-1 ;
+    lgo:illustrates lg:EU-R-privacy-information-transfers ;
+    rdfs:comment "The first of the noyb 'Google Analytics' complaints decided: after Schrems II, standard contractual clauses with Google did not protect visitors' data (identifiers, IP address, browser parameters) from US surveillance, so the website's transfer breached Article 44 GDPR. The complaint against Google itself was dismissed. Since 10 July 2023, transfers to certified US companies rely on the EU-US Data Privacy Framework instead."@en .
+
+lg:AT-DSB-2021-D155027-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:FindingOfInfringement ;
+    lgo:against "The website operator (pseudonymised in the published decision)" ;
+    lgo:statedIn lg:AT-DSB-2021-D155027-spruch-2 ;
+    lgo:forBreachOf lg:EU-2016-679-art44 ;
+    lgo:reviewStatus lgv:SourceChecked .

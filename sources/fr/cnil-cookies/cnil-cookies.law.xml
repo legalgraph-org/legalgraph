@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CNIL recommandation « cookies et autres traceurs » (délibération n° 2020-092 du 17 septembre
+  2020), the paragraphs the graph quotes, written in schemas/law.xsd from the CNIL’s PDF.
+  The words are the CNIL’s; only the structure is ours. `legalgraph sources verify` checks each
+  paragraph against the PDF’s text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="FR-CNIL-2020-092" lga:jurisdiction="FR" lga:act-type="Guidelines"
+     lga:url="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies">
+  <meta>
+    <title>Recommandation « cookies et autres traceurs »</title>
+    <short>CNIL recommandation cookies 2020</short>
+    <date>2020-09-17</date>
+  </meta>
+
+  <section num="2." title="Information, consentement et refus" source="recommandation-cookies-et-autres-traceurs.pdf">
+    <paragraph num="9."
+               lga:provision="FR-CNIL-2020-092-p9" lga:citation="CNIL recommandation cookies, para. 9"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">Au sein de la présente recommandation, l’absence de consentement des utilisateurs est désignée par le terme « refus ». Toute inaction ou action des utilisateurs autre qu’un acte positif signifiant son consentement doit être interprétée comme un refus de<page num="3"/> consentir ; dans ce cas, aucune opération de lecture ou d’écriture soumise au consentement ne peut légalement avoir lieu.</paragraph>
+  </section>
+
+  <section num="2.1" title="Information sur les finalités des traceurs" source="recommandation-cookies-et-autres-traceurs.pdf">
+    <paragraph num="12."
+               lga:provision="FR-CNIL-2020-092-p12" lga:citation="CNIL recommandation cookies, para. 12"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent" lga:requires="ProcessingPurposes">Comme rappelé dans les lignes directrices, les finalités des traceurs doivent être présentées aux utilisateurs avant que ceux-ci ne se voient offrir la possibilité de consentir ou de refuser. Elles doivent être formulées de manière intelligible, dans un langage adapté et suffisamment clair pour permettre aux utilisateurs de comprendre précisément ce à quoi ils consentent.</paragraph>
+  </section>
+
+  <section num="2.3" title="Modalités de recueil du consentement et du refus" source="recommandation-cookies-et-autres-traceurs.pdf">
+    <paragraph num="27."
+               lga:provision="FR-CNIL-2020-092-p27" lga:citation="CNIL recommandation cookies, para. 27"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">A ce titre, la Commission souligne qu’il est possible de proposer des boutons d’acceptation et de refus globaux au stade du premier niveau d’information, via par exemple la présentation de boutons intitulés « tout accepter » et « tout refuser », « j’autorise » et « je n’autorise pas », « j’accepte tout » et « je n’accepte rien » et permettant de consentir ou de refuser, en une seule action, à plusieurs finalités.</paragraph>
+    <paragraph num="32."
+               lga:provision="FR-CNIL-2020-092-p32" lga:citation="CNIL recommandation cookies, para. 32"
+               lga:interprets="EU-2002-58-art5-3" lga:regulates="Consent">Par exemple, au stade du premier niveau d’information, les utilisateurs peuvent avoir le choix entre deux boutons présentés au même niveau et sur le même format, sur lesquels sont inscrits respectivement « tout accepter » et « tout refuser », « autoriser » et « interdire », ou « consentir » et « ne pas consentir », ou toute autre formulation équivalente et suffisamment claire. La Commission considère que cette modalité constitue un moyen simple et clair pour permettre à l’utilisateur d’exprimer son refus aussi facilement que son consentement.</paragraph>
+  </section>
+
+  <section num="3." title="Retrait du consentement" source="recommandation-cookies-et-autres-traceurs.pdf">
+    <paragraph num="44."
+               lga:provision="FR-CNIL-2020-092-p44" lga:citation="CNIL recommandation cookies, para. 44"
+               lga:interprets="EU-2002-58-art5-3 EU-2016-679-art7-3" lga:regulates="Consent" lga:requires="ConsentWithdrawalMechanism">En tout état de cause, la Commission recommande que le mécanisme permettant de gérer et de retirer son consentement soit placé dans une zone qui attire l'attention des utilisateurs ou dans des zones où ils s'attendent à le trouver, et que les visuels utilisés soient les plus explicites possibles.</paragraph>
+  </section>
+
+  <section num="4." title="Preuve du consentement" source="recommandation-cookies-et-autres-traceurs.pdf">
+    <paragraph num="46."
+               lga:provision="FR-CNIL-2020-092-p46" lga:citation="CNIL recommandation cookies, para. 46"
+               lga:interprets="EU-2002-58-art5-3 EU-2016-679-art7-1" lga:regulates="Consent">Les responsables du ou des traitements doivent être en mesure de démontrer, à tout moment, que les utilisateurs ont donné leur consentement. Pour ce faire, des mécanismes permettant de démontrer que le consentement des utilisateurs a été valablement recueilli doivent être mis en place.</paragraph>
+  </section>
+</law>

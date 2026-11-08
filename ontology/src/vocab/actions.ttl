@@ -1,0 +1,261 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# What obligations require a business to do, other than disclose information (lgo:requiresAction).
+
+lgv:Actions a skos:ConceptScheme ;
+    skos:prefLabel "Actions"@en .
+
+lgv:ObtainConsentBeforeDeviceAccess a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Obtain consent before setting cookies or reading the device"@en ;
+    skos:definition "Ask for and receive the user's consent, after clear and comprehensive information, before storing or reading any information on their device that is not strictly necessary: in practice, no non-essential cookies, pixels or similar before the user agrees in the consent banner."@en .
+
+lgv:HaveLawfulBasis a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Have a lawful basis for each processing purpose"@en ;
+    skos:definition "Rely, for each purpose, on one of the six lawful bases of Article 6(1) GDPR, and document which."@en .
+
+lgv:DemonstrateConsent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Be able to demonstrate consent"@en ;
+    skos:definition "Keep records showing that and how each person consented."@en .
+
+lgv:MakeWithdrawalAsEasyAsConsent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Make withdrawing consent as easy as giving it"@en ;
+    skos:definition "Offer a way to withdraw consent that takes no more effort than giving it, and tell people before they consent that they can."@en .
+
+lgv:DesignateDataProtectionOfficer a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Designate a data protection officer"@en .
+
+lgv:PublishDataProtectionOfficerContact a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Publish the data protection officer's contact details and notify the supervisory authority"@en .
+
+lgv:DesignateRepresentativeInTheUnion a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Designate a representative in the EU in writing"@en .
+
+lgv:ObtainConsentForEmailMarketing a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Obtain prior express consent before sending advertising emails"@en ;
+    skos:definition "Send advertising by email (or SMS, fax, automated calls) only to people who have expressly agreed beforehand; double opt-in is the usual way to prove it."@en .
+
+lgv:OfferObjectionInEveryEmail a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Tell customers they can object, when collecting the address and in every email"@en .
+
+lgv:ProvideValidUnsubscribeAddress a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Identify the sender and provide a valid address to unsubscribe in every advertising email"@en .
+
+lgv:LabelOrderButton a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Label the order button “zahlungspflichtig bestellen” (order with obligation to pay)"@en .
+
+lgv:ShowKeyInformationBeforeOrder a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Show the key information prominently directly before the order"@en ;
+    skos:definition "Main characteristics, total price, delivery costs, subscription costs, durability guarantee and contract duration, clearly and prominently, right before the order button."@en .
+
+lgv:ProvideWithdrawalFunction a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Provide a withdrawal function labelled “Vertrag widerrufen” (withdraw from contract)"@en ;
+    skos:definition "Continuously available during the withdrawal period, prominent and easy to access, with a confirmation step labelled “Widerruf bestätigen” and an acknowledgement of receipt on a durable medium."@en .
+
+lgv:MakeServiceAccessible a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Make the website or app accessible to persons with disabilities"@en .
+
+lgv:DesignatePointsOfContact a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Designate and publish electronic points of contact for authorities and users"@en .
+
+lgv:LabelAdvertisements a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Mark each advertisement, its advertiser and its targeting parameters"@en .
+
+lgv:VerifyTraders a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Obtain and check traders' identity and contact details before they may sell"@en .
+
+lgv:DiscloseAiInteraction a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Tell people they are interacting with an AI system"@en .
+
+lgv:DiscloseAiGeneratedContent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Disclose that published images, audio, video or text were generated or manipulated by AI"@en .
+
+lgv:OfferUnsubscribe a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Offer a way to unsubscribe in every commercial email, and honour it"@en .
+
+lgv:DesignateRepresentativeInSwitzerland a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Designate a representative in Switzerland and publish its name and address"@en .
+
+lgv:ProvideRequestMethods a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Offer two or more ways to submit privacy requests, including a toll-free number (online-only: email), and accept them through the website"@en .
+
+lgv:ObtainExpressConsentForExtras a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Get express consent for any extra payment; no pre-ticked boxes"@en .
+
+lgv:PreventFakeReviews a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Do not post or commission fake reviews; take reasonable steps to prevent and remove fake and undisclosed incentivised reviews"@en .
+
+lgv:AssessAndMitigateIllegalContent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Assess the risk of illegal content and use proportionate measures to prevent and swiftly remove it"@en .
+
+lgv:ProtectChildrenOnline a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Protect children from harmful content, with age verification or estimation for the most harmful content"@en .
+
+lgv:DesignateRepresentativeInTheUk a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Designate a representative in the UK in writing"@en .
+
+lgv:ShowPriorPrice a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Show the lowest price of the last 30 days with every announced price reduction"@en .
+
+lgv:NoGeoBlocking a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Do not block, redirect or treat customers differently because of their nationality or residence in the EU"@en .
+
+lgv:DisplayEnergyLabel a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Display the energy label and product information sheet in online offers"@en .
+
+lgv:ProtectMinorsFromHarmfulContent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Make content unsuitable for minors inaccessible to the age groups concerned (age label, technical means or times)"@en .
+
+lgv:RegisterAsProducer a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Register as a producer before selling (LUCID packaging register; stiftung ear for electrical equipment)"@en .
+
+lgv:PublishWithdrawalFormOnWebsite a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Publish a withdrawal form and withdrawal instructions on the website, and acknowledge each withdrawal sent through it"@en ;
+    skos:definition "Ukraine: the standard forms are approved by the competent authority."@en .
+
+lgv:ShowUnsubscribeProminently a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "In every commercial email, show the way to unsubscribe more prominently than the message text"@en .
+
+lgv:ServeWebsiteInUkrainian a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Serve the website in Ukrainian by default"@en ;
+    skos:definition "The Ukrainian version of the website (and social network pages) holds no less information than other language versions and loads by default for users in Ukraine; for foreign businesses with a presence in Ukraine, a Ukrainian version sufficient for clear navigation and the business's purpose, also loaded by default (Article 27(6) State Language Law)."@en .
+
+lgv:ProvideUkrainianAppInterface a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Provide a Ukrainian interface version of the mobile app"@en .
+
+lgv:ProvideInformationInUkrainian a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Provide consumer, product and e-commerce information in Ukrainian"@en ;
+    skos:definition "Serve consumers and provide information about goods and services, including via online shops and catalogues, in Ukrainian; all information the e-commerce law requires likewise in Ukrainian, also in commercial electronic messages (Article 30(2),(4) State Language Law)."@en .
+
+lgv:ObtainConsent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Obtain the individual's consent"@en ;
+    skos:definition "Ask for and record consent before collecting, using or disclosing personal information, in a form the individual can reasonably be expected to understand (PIPEDA s. 6.1, Schedule 1 cl. 4.3)."@en .
+
+lgv:ObtainParentalConsent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Obtain verifiable parental consent"@en ;
+    skos:definition "Before collecting personal information from a child online, get consent from a parent or guardian that can reasonably be verified — including the separate opt-in for disclosure to third parties (COPPA Rule § 312.5)."@en .
+
+lgv:ObtainAffirmativeConsent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Obtain affirmative consent to the terms"@en ;
+    skos:definition "Get the consumer's affirmative consent to the agreement containing the renewal terms before charging — silence or a pre-ticked box is not enough (Cal. B&P Code § 17602(a)(2))."@en .
+
+lgv:AllowCorrectionBeforeContract a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Let the consumer accept, decline and correct before concluding"@en ;
+    skos:definition "Give an express opportunity to accept or decline the agreement and to correct errors immediately before it is concluded (Ontario CPA s. 38(2); e-Commerce Directive art. 11(1))."@en .
+
+lgv:ImposeUnfairTerms a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Impose unfair terms on consumers"@en ;
+    skos:definition "Use standard terms that, contrary to good faith, cause a significant imbalance to the consumer's detriment — prohibited, not merely voidable (Directive 93/13/EEC art. 3; CRA 2015 s. 62)."@en .
+
+lgv:MakeExitAsEasyAsEntry a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Make ending a subscription as easy as entering it"@en ;
+    skos:definition "Arrange for the consumer to end a subscription contract in a way which is straightforward — online by a single communication where the contract was made online (s. 260 DMCC Act 2024; the same standard as § 312k BGB and Cal. B&P Code § 17602(d))."@en .
+
+lgv:AllowCoolingOffCancellation a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Honour the cooling-off cancellation"@en ;
+    skos:definition "Let the consumer cancel a subscription contract during the initial and each renewal cooling-off period, and refund as the Act requires (ss. 264–265 DMCC Act 2024)."@en .
+
+lgv:SendRenewalReminder a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Send the reminder notice before renewal payments"@en ;
+    skos:definition "Before each renewal cooling-off period of a subscription contract, give the consumer a reminder notice setting out the payment due and how to cancel (s. 266 DMCC Act 2024)."@en .
+
+lgv:KeepConsentRequestSeparate a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Present a consent request apart from other matters"@en ;
+    skos:definition "When consent is sought inside a declaration that also covers other matters — terms of business, a purchase — the request is presented in a clearly distinguishable manner, in an intelligible and easily accessible form, using clear and plain language (Art. 7(2) GDPR). A marketing-consent checkbox must not be fused into accepting the terms."@en .
+
+lgv:ConditionServiceOnConsent a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Make a service conditional on unnecessary consent"@en ;
+    skos:definition "Condition the performance of a contract or the provision of a service on consent to processing that is not necessary for that contract or service — prohibited because it makes the consent not freely given (Art. 7(4) GDPR; the cookie-wall question)."@en .
+
+lgv:ProvideContractTermsInStorableForm a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Provide contract terms in storable, reproducible form"@en ;
+    skos:definition "Make the contract terms, including the general terms and conditions, available at the moment the contract is concluded in a way the customer can call up, store and reproduce (e-Commerce Directive art. 10(3); § 312i(1) Nr. 4 BGB for contracts concluded online)."@en .
+
+lgv:HaveProcessingAgreement a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Put a data processing agreement in place"@en ;
+    skos:definition "Contractually bind every processor to the Article 28(3) terms: documented instructions, confidentiality, security, sub-processor control, assistance with data-subject rights and compliance, and deletion or return of all personal data at the end of the service — the controller's choice (Art. 28(3) GDPR)."@en .
+
+lgv:KeepProcessingRecord a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Keep a record of processing activities"@en ;
+    skos:definition "Maintain a written record of processing — purposes, categories of data and people, recipients, third-country transfers, retention periods and safeguards (Art. 30 GDPR). The small-business exemption in Art. 30(5) does not cover regular website processing."@en .
+
+lgv:KeepDataNoLongerThanNecessary a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Keep personal data no longer than the purpose needs"@en ;
+    skos:definition "Set retention periods and delete: personal data may be kept in identifying form only as long as the processing purpose requires (Art. 5(1)(e) GDPR)."@en .
+
+lgv:DesignForDataProtection a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Build data protection into the service"@en ;
+    skos:definition "Implement data protection by design and by default: technical and organisational measures chosen at design time, and defaults that process only what the purpose needs (Art. 25 GDPR)."@en .
+
+lgv:CollectBeyondPurpose a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Collect or use personal information beyond the disclosed purpose"@en ;
+    skos:definition "Collect, use, retain or share personal information beyond what is reasonably necessary and proportionate for the purpose the consumer was told — prohibited: processing must stay within the consumer's reasonable expectations (Cal. Code Regs. tit. 11, § 7002; the CCPA's data-minimisation rule)."@en .
+
+lgv:ObtainConsentPerPurpose a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Take consent for each purpose separately"@en ;
+    skos:definition "One purpose per consent: separate, granular choices rather than one bundled tick (Art. 4(11), 7(2) GDPR; Recital 43). A single checkbox for newsletter plus profiling plus partner offers is not specific."@en .
+
+lgv:ReturnOrDeleteAtEndOfService a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Return or delete the data at the end of the service"@en ;
+    skos:definition "When the processing contract ends, the processor deletes or returns all personal data at the controller's choice and deletes existing copies, unless law requires storage (Art. 28(3)(g) GDPR). A processor that decides purposes and means itself is treated as a controller of that processing (Art. 28(10))."@en .
+
+lgv:KeepConsentEvidencePerAddress a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Keep double opt-in evidence for each address"@en ;
+    skos:definition "Document and store each individual recipient's concrete declaration of consent — the registration, the confirmation mail and its confirmation — so consent is provable per address (BGH, I ZR 164/09: the burden lies on the advertiser)."@en .

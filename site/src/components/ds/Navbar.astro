@@ -1,0 +1,103 @@
+---
+// The site header. No JavaScript:
+// desktop menus open on hover and on keyboard focus (:focus-within), the mobile menu is a native
+// <details>. Links are real links, so crawlers and no-JS readers see every destination. The
+// "actions" slot holds the call to action.
+import Container from "./Container.astro";
+import Logo from "./Logo.astro";
+import NavMenuPanel from "./NavMenuPanel.astro";
+import { panelWidthClass, type NavItem } from "./navbar.types";
+
+interface Props {
+  homeHref: string;
+  homeLabel: string;
+  navLabel: string;
+  menuLabel: string;
+  items: readonly NavItem[];
+}
+
+const { homeHref, homeLabel, navLabel, menuLabel, items } = Astro.props;
+const linkClass =
+  "no-underline inline-flex h-10 items-center gap-1.5 px-3 text-[15px] text-foreground transition-colors hover:text-primary aria-[current=page]:font-semibold aria-[current=page]:text-primary";
+---
+
+<header class="sticky top-0 z-40 border-b bg-background/90 backdrop-blur">
+  <Container class="flex h-16 items-center justify-between gap-4">
+    <Logo href={homeHref} label={homeLabel} />
+
+    <nav aria-label={navLabel} class="hidden items-center gap-1 lg:flex">
+      {
+        items.map((item) =>
+          item.kind === "link" ? (
+            <a href={item.href} aria-current={item.current ? "page" : undefined} class={linkClass}>
+              {item.label}
+            </a>
+          ) : (
+            <div class="group relative">
+              <button type="button" aria-haspopup="true" aria-current={item.current ? "page" : undefined} class={linkClass}>
+                {item.label}
+                <svg aria-hidden="true" class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="invisible absolute top-full left-0 z-50 pt-2 opacity-0 transition-opacity group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                <div class:list={["rounded-2xl border bg-background shadow-2xl", panelWidthClass(item.width)]}>
+                  <NavMenuPanel menu={item} />
+                </div>
+              </div>
+            </div>
+          ),
+        )
+      }
+    </nav>
+
+    <div class="flex items-center gap-2.5">
+      <slot name="actions" />
+      <details class="group/mobile lg:hidden">
+        <summary
+          aria-label={menuLabel}
+          class="flex size-10 list-none items-center justify-center rounded-md hover:bg-muted [&::-webkit-details-marker]:hidden"
+        >
+          <svg aria-hidden="true" class="size-6 group-open/mobile:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg aria-hidden="true" class="hidden size-6 group-open/mobile:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-width="2" d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        </summary>
+        <nav
+          aria-label={navLabel}
+          class="absolute inset-x-0 top-full max-h-[calc(100vh-4rem)] overflow-y-auto border-b bg-background shadow-lg"
+        >
+          <Container class="flex flex-col gap-1 py-4">
+            {
+              items.map((item) =>
+                item.kind === "link" ? (
+                  <a
+                    href={item.href}
+                    aria-current={item.current ? "page" : undefined}
+                    class="no-underline rounded-md px-2 py-3 text-base font-medium text-foreground hover:bg-muted"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <details class="group/item" open={item.current}>
+                    <summary class="flex list-none items-center justify-between rounded-md px-2 py-3 text-base font-medium hover:bg-muted [&::-webkit-details-marker]:hidden">
+                      {item.label}
+                      <svg aria-hidden="true" class="size-4 transition-transform group-open/item:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="px-2 pb-3">
+                      <NavMenuPanel menu={item} compact />
+                    </div>
+                  </details>
+                ),
+              )
+            }
+          </Container>
+        </nav>
+      </details>
+    </div>
+  </Container>
+</header>

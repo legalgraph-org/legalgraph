@@ -1,0 +1,22 @@
+# LG München I, Endurteil vom 20.01.2022 — 3 O 17493/20 (GRUR-RS 2022, 612): a website that
+# embeds Google Fonts dynamically passes the visitor's IP address to Google without consent —
+# an infringement of the right to informational self-determination; €100 damages under art. 82
+# GDPR plus injunction. The leading German ruling on third-party requests without consent.
+# gesetze-bayern is JS-rendered; the page is a browser save.
+id: de/lg-muenchen-3o17493-20
+title: LG München I, Endurteil vom 20.01.2022 — 3 O 17493/20 (Google Fonts)
+jurisdiction: DE
+language: de
+publisher: Bayerisches Staatsministerium der Justiz, gesetze-bayern.de (BAYERN.RECHT)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei"
+originals:
+  - file: lg-muenchen-3o17493-20.fragment.html
+    url: "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2022-N-612?hl=true"
+    fetch: html-fragment
+    selector: "#content"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: 9a4eb27954664219d1fe86d9a0d1b6ccad3a55829625c2f0b8dda437bd0051cf
+annotated: lg-muenchen-3o17493-20.law.xml

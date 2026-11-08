@@ -1,0 +1,272 @@
+---
+// The checklist: answer yes/no questions about a business and see which rules apply, evaluated in the
+// browser with the same logic as `legalgraph checklist` (src/legalgraph/rules.py): a rule applies
+// when all its conditions hold and none of its exemptions does; derived conditions follow from others.
+// Where the business is established and where it offers its services are picked as jurisdictions; a
+// national rule that spells out a general one replaces it, and a rule resting on a directive names the
+// national provision of the country of establishment.
+import Layout from "../../layouts/Layout.astro";
+import type { Translate } from "../../i18n/t";
+import checklist from "../../data/checklist.json";
+import { loadGraph, resolve } from "../../lib/data";
+
+interface Props {
+  t: Translate;
+}
+
+const { t } = Astro.props;
+
+const graph = await loadGraph();
+// Groups of questions, in the order a business would think about them.
+const GROUPS: [string, string[]][] = [
+  ["Where the business is", ["MonitorsBehaviourInTheUnion"]],
+  ["The website", ["CommercialDigitalService", "NonPrivateTelemedia", "JournalisticEditorialContent", "AudiovisualMediaService"]],
+  [
+    "The business",
+    ["LegalPerson", "RegisteredInPublicRegister", "ActivityRequiresAuthorisation", "RegulatedProfession", "HasVatId", "HasEconomicIdNumber", "InLiquidation", "SellsToConsumers", "TenOrFewerEmployees", "TakesPartInConsumerDisputeResolution"],
+  ],
+  [
+    "Personal data",
+    ["ProcessesPersonalData", "CollectsDataFromDataSubjects", "ObtainsDataFromOtherSources", "ReliesOnConsent", "ReliesOnLegitimateInterests", "TransfersOutsideEEA", "UsesAutomatedDecisionMaking", "VoluntaryDataProtectionOfficer", "TwentyOrMoreProcessPersonalData", "ImpactAssessmentOrDataTrading", "PublicAuthorityProcessing", "LargeScaleMonitoring", "LargeScaleSpecialCategories"],
+  ],
+  ["Selling online", ["SellsOnlineToConsumers", "SellsProductsOnline", "ShowsPricesToConsumers", "AnnouncesPriceReductions", "SellsGoodsByQuantity", "SellsEnergyLabelledProducts", "PublishesConsumerReviews", "PlacesPackagingOnMarket", "ProducesElectricalEquipment", "LargeElectricalSeller", "Microenterprise"]],
+  ["Youth protection", ["YouthImpairingContent", "SmallTelemediaWithSelfRegulation"]],
+  ["Cookies and email", ["AccessesTerminalEquipment", "NonEssentialDeviceAccess", "SendsMarketingEmails", "EmailsOnlyExistingCustomers"]],
+  ["Platforms and AI", ["ProvidesIntermediaryService", "OperatesOnlinePlatform", "ShowsAdvertisementsOnPlatform", "OperatesMarketplace", "SmallPlatformExempt", "UsesChatbot", "PublishesAiGeneratedMedia", "PublishesPoliticalAdvertising"]],
+  ["Switzerland", ["EffectsInSwitzerland", "TransfersOutsideSwitzerland", "RegularHighRiskProcessingOfSwissResidents"]],
+  ["Ukraine", ["SellsOnlineInUkraine"]],
+  ["United Kingdom and United States", ["UkCompany", "MonitorsBehaviourInTheUk", "SellsToUkConsumers", "RegulatedUserToUserService", "LikelyAccessedByChildren", "PlaceOfPublicAccommodation", "SendsCommercialEmailInTheUs", "CcpaBusiness", "SellsOrSharesPersonalData", "UsesSensitiveDataForOtherPurposes", "HonoursOptOutPreferenceSignal"]],
+];
+const asked = checklist.conditions.filter((c) => c.question);
+const grouped = new Set(GROUPS.flatMap(([, ids]) => ids));
+const other = asked.filter((c) => !grouped.has(c.id)).map((c) => c.id);
+const groups = other.length ? [...GROUPS, ["Other", other] as [string, string[]]] : GROUPS;
+const byId = new Map(asked.map((c) => [c.id, c]));
+
+const rules = [...graph.obligations.values()].map((o) => ({ id: o.id, ...o.data }));
+const ids = new Set(
+  rules.flatMap((r) => [r.id, ...r.items, ...r.actions, ...r.establishedBy, ...Object.values(r.implementedBy).flat(), ...r.appliesWhen, ...r.unless, r.appliesIn, r.disclosure ?? ""]),
+);
+const places = new Map(checklist.jurisdictions.map((j) => [j.id, j.label]));
+// Countries and their subdivisions can be a place of establishment; organisations such as the EU can't.
+const establishments = checklist.jurisdictions.filter((j) => !["EU", "EEA"].includes(j.id));
+checklist.conditions.forEach((c) => ids.add(c.id));
+const labels = Object.fromEntries(
+  [...ids].filter(Boolean).map((id) => {
+    const resource = resolve(graph, id);
+    return [id, { label: resource.label, href: resource.href }];
+  }),
+);
+const payload = JSON.stringify({ conditions: checklist.conditions, rules, labels, places: Object.fromEntries(places) });
+---
+
+<Layout
+  t={t}
+  page="checklist"
+  title="Checklist"
+  description="Which website obligations apply to a business: answer a few questions, see the rules and the law behind them."
+  header={{
+    title: "Checklist",
+    description: "Which website obligations apply to a business: answer a few questions, see the rules and the law behind them.",
+  }}
+>
+  <p class="mt-1 mb-4 max-w-3xl text-muted-foreground">
+    Tick what is true for the business. The rules that apply appear on the right, each with what to disclose or do and
+    the provisions it comes from. Everything runs in your browser; nothing is sent anywhere.{" "}
+    <strong>Not legal advice:</strong> the rules are drafts, read from the law by researchers.
+  </p>
+  <div class="mb-4 flex flex-wrap items-center gap-2 text-sm">
+    <span class="text-muted-foreground">Examples:</span>
+    {checklist.scenarios.map((s) => (
+      <button
+        type="button"
+        class="control"
+        data-scenario={s.facts.join(" ")}
+        data-established={s.establishedIn ?? ""}
+        data-markets={s.markets.join(" ")}
+        title={s.description}
+      >
+        {s.name}
+      </button>
+    ))}
+    <button type="button" class="control" data-scenario="">Clear</button>
+  </div>
+  <div class="grid gap-6 lg:grid-cols-[1fr_1fr]">
+    <form id="facts" class="space-y-5">
+      {groups.map(([title, members], index) => (
+        <fieldset class="card space-y-2">
+          <legend class="px-1 text-sm font-semibold">{title}</legend>
+          {index === 0 && (
+            <>
+              <label class="flex flex-wrap items-center gap-2 text-sm">
+                <span>Where is the business established?</span>
+                <select name="established_in" class="control px-1">
+                  <option value="">Not answered</option>
+                  {establishments.map((j) => <option value={j.id}>{j.label}</option>)}
+                </select>
+              </label>
+              <p class="text-sm">
+                Does it offer goods or services, paid or free, to people in:
+                {checklist.markets.map((id) => (
+                  <label class="ml-2 inline-flex items-center gap-1">
+                    <input type="checkbox" name="market" value={id} />
+                    {places.get(id) ?? id}
+                  </label>
+                ))}
+              </p>
+            </>
+          )}
+          {members.filter((id) => byId.has(id)).map((id) => (
+            <label class="flex items-start gap-2 text-sm">
+              <input type="checkbox" name={id} class="mt-1" />
+              <span>
+                {byId.get(id)!.question}
+                <span class="derived ml-1 hidden rounded bg-primary/10 px-1 text-xs text-primary">follows from your answers</span>
+              </span>
+            </label>
+          ))}
+        </fieldset>
+      ))}
+    </form>
+    <!-- The results scroll on their own beside the questions (which scroll with the page), so the
+         last rule is reachable however long the form is. -->
+    <div>
+      <div class="space-y-3 lg:sticky lg:top-20 lg:max-h-[calc(100dvh-6rem)] lg:overflow-y-auto lg:overscroll-y-contain lg:pr-2 lg:pb-2">
+        <p id="summary" class="text-sm text-muted-foreground"></p>
+        <div id="results" class="space-y-3"></div>
+      </div>
+    </div>
+  </div>
+  <script id="checklist-data" type="application/json" set:html={payload} />
+</Layout>
+
+<script>
+  interface Condition { id: string; anyOf: string[]; allOf: string[]; establishedIn: string | null; offersIn: string | null; within: string[] }
+  interface Rule {
+    id: string; label: string; comment: string | null; appliesIn: string; appliesWhen: string[]; unless: string[];
+    items: string[]; actions: string[]; disclosure: string | null; establishedBy: string[]; reviewStatus: string;
+    refines: string[]; implementedBy: Record<string, string[]>;
+  }
+  const data = JSON.parse(document.getElementById("checklist-data")!.textContent!) as {
+    conditions: Condition[]; rules: Rule[]; labels: Record<string, { label: string; href: string }>; places: Record<string, string>;
+  };
+  const form = document.getElementById("facts") as HTMLFormElement;
+  const results = document.getElementById("results")!;
+  const summary = document.getElementById("summary")!;
+  const establishedIn = form.querySelector<HTMLSelectElement>("select[name=established_in]")!;
+  const marketInputs = [...form.querySelectorAll<HTMLInputElement>("input[name=market]")];
+  const factInputs = () => [...form.querySelectorAll<HTMLInputElement>("input[type=checkbox]:not([name=market])")];
+
+  // The same fixpoint as rules.holding(): facts and the conditions tied to where the business is
+  // established or offers its services, plus derived conditions until nothing changes.
+  function holding(facts: Set<string>, established: string, markets: Set<string>): Set<string> {
+    const holds = new Set(facts);
+    for (const c of data.conditions) {
+      if (c.establishedIn && established && c.within.includes(established)) holds.add(c.id);
+      if (c.offersIn && c.within.some((j) => markets.has(j))) holds.add(c.id);
+    }
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const c of data.conditions) {
+        if (holds.has(c.id)) continue;
+        if ((c.anyOf.length && c.anyOf.some((x) => holds.has(x))) || (c.allOf.length && c.allOf.every((x) => holds.has(x)))) {
+          holds.add(c.id);
+          changed = true;
+        }
+      }
+    }
+    return holds;
+  }
+
+  const link = (id: string) => {
+    const entry = data.labels[id] ?? { label: id, href: "#" };
+    const a = document.createElement("a");
+    a.href = entry.href;
+    a.textContent = entry.label;
+    return a;
+  };
+  const list = (title: string, ids: string[]) => {
+    const p = document.createElement("p");
+    p.className = "text-sm";
+    const span = document.createElement("span");
+    span.className = "text-muted-foreground";
+    span.textContent = `${title} `;
+    p.append(span);
+    ids.forEach((id, index) => {
+      if (index) p.append(", ");
+      p.append(link(id));
+    });
+    return p;
+  };
+
+  function update(): void {
+    const facts = new Set(factInputs().filter((i) => i.checked && !i.dataset.derived).map((i) => i.name));
+    const established = establishedIn.value;
+    const markets = new Set(marketInputs.filter((i) => i.checked).map((i) => i.value));
+    const holds = holding(facts, established, markets);
+    factInputs().forEach((input) => {
+      const derived = holds.has(input.name) && !facts.has(input.name);
+      input.dataset.derived = derived ? "1" : "";
+      if (derived) input.checked = true;
+      else if (!facts.has(input.name)) input.checked = false;
+      input.closest("label")!.querySelector(".derived")!.classList.toggle("hidden", !derived);
+    });
+    const found = data.rules.filter((r) => r.appliesWhen.every((c) => holds.has(c)) && !r.unless.some((c) => holds.has(c)));
+    const refined = new Set(found.flatMap((r) => r.refines));
+    const applying = found.filter((r) => !refined.has(r.id));
+    applying.sort((a, b) => (a.appliesIn + (a.disclosure ?? "~")).localeCompare(b.appliesIn + (b.disclosure ?? "~")));
+    summary.textContent = facts.size || established || markets.size
+      ? `${applying.length} rule${applying.length === 1 ? "" : "s"} apply.`
+      : "Answer the questions to see which rules apply.";
+    results.replaceChildren(
+      ...applying.map((rule) => {
+        const card = document.createElement("article");
+        card.className = "card space-y-1";
+        const head = document.createElement("div");
+        head.className = "flex flex-wrap items-baseline justify-between gap-2";
+        const title = link(rule.id);
+        title.className = "font-medium";
+        const where = document.createElement("span");
+        where.className = "text-xs text-muted-foreground";
+        where.textContent = `${data.labels[rule.appliesIn]?.label ?? rule.appliesIn}${rule.reviewStatus === "Draft" ? " · draft" : ""}`;
+        head.append(title, where);
+        card.append(head);
+        if (rule.items.length) card.append(list("Disclose:", rule.items));
+        if (rule.actions.length) card.append(list("Do:", rule.actions));
+        const national = established ? (rule.implementedBy[established] ?? []) : [];
+        if (national.length) card.append(list(`In ${data.places[established] ?? established}:`, national));
+        card.append(list("From:", rule.establishedBy));
+        return card;
+      }),
+    );
+    const query = [...[...facts].sort(), ...(established ? [`in:${established}`] : []), ...[...markets].sort().map((m) => `market:${m}`)].join(",");
+    history.replaceState(null, "", query ? `#${query}` : location.pathname);
+  }
+
+  form.addEventListener("change", (event) => {
+    const input = event.target as HTMLInputElement;
+    if (input.dataset.derived) {
+      input.dataset.derived = "";  // ticking a derived box makes it an answer of its own
+    }
+    update();
+  });
+  document.querySelectorAll<HTMLButtonElement>("[data-scenario]").forEach((button) =>
+    button.addEventListener("click", () => {
+      const facts = new Set((button.dataset.scenario ?? "").split(" ").filter(Boolean));
+      factInputs().forEach((input) => {
+        input.checked = facts.has(input.name);
+        input.dataset.derived = "";
+      });
+      establishedIn.value = button.dataset.established ?? "";
+      const markets = new Set((button.dataset.markets ?? "").split(" ").filter(Boolean));
+      marketInputs.forEach((input) => (input.checked = markets.has(input.value)));
+      update();
+    }),
+  );
+  const initial = new Set(decodeURIComponent(location.hash.slice(1)).split(",").filter(Boolean));
+  factInputs().forEach((input) => (input.checked = initial.has(input.name)));
+  establishedIn.value = [...initial].find((t) => t.startsWith("in:"))?.slice(3) ?? "";
+  marketInputs.forEach((input) => (input.checked = initial.has(`market:${input.value}`)));
+  update();
+</script>

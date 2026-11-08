@@ -1,0 +1,83 @@
+# General Product Safety Regulation ((EU) 2023/988), consolidated version from Cellar (Formex 4).
+# The consolidated text is a documentation tool: `legalgraph sources verify` proves every line of a quoted
+# provision reads as in the authentic Official Journal text, or occurs word for word in an amending act
+# that lists its place (`amends`: only the places of the quoted provisions). English is annotated;
+# German is a parallel language version.
+id: eu/gpsr
+title: General Product Safety Regulation ((EU) 2023/988), consolidated version of 29 May 2026
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2023R0988EN0010010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0988-20260529
+    url: https://publications.europa.eu/resource/celex/02023R0988-20260529
+    fetch: zip-member
+    member: CL2023R0988EN0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "Consolidated text applying from 29 May 2026, prepared by the Publications Office as a documentation tool. The authentic texts are Regulation (EU) 2023/988 (OJ L 135, 23.5.2023) and its amending acts; each quoted provision is checked against them."
+    retrieved_on: 2026-11-02
+    sha256: 91d5e4792ca936a7636c92b22e02fef4e2fc508c4e4c9070480a683c4c9ebc78
+  - file: CL2023R0988DE0010010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02023R0988-20260529
+    url: https://publications.europa.eu/resource/celex/02023R0988-20260529
+    fetch: zip-member
+    member: CL2023R0988DE0010010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    notes:
+      - "Konsolidierte Fassung (documentation tool, not the authentic text)."
+    retrieved_on: 2026-11-02
+    sha256: d13dc02dbbdf8ed7fc873e78af765e51ff26898070551e4945c6bc04d87f0836
+  - file: L_2023135EN.01000101.xml
+    role: authentic
+    language: en
+    title: "Official Journal, OJ L 135, 23.5.2023, p. 1"
+    url: https://publications.europa.eu/resource/celex/32023R0988
+    fetch: zip-member
+    member: L_2023135EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: c0f63e83fdf9bcc178c6c3fecd066a518468511efcb09b98f7b9849b39a5e035
+  - file: L_2023135DE.01000101.xml
+    role: authentic
+    language: de
+    title: "Amtsblatt, ABl. L 135 vom 23.5.2023, S. 1"
+    url: https://publications.europa.eu/resource/celex/32023R0988
+    fetch: zip-member
+    member: L_2023135DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 80f8904103bc96a98118b9628f5d7c8e92f69a2c1f514afecb67f8646504adf2
+  - file: L_202390192DE.000101.fmx.xml
+    role: corrigendum
+    language: de
+    title: "Berichtigung, ABl. L, 19.12.2023 (E-Mail-Adresse → elektronische Adresse, gesamter Text)"
+    url: https://publications.europa.eu/resource/celex/32023R0988R%2801%29
+    fetch: zip-member
+    member: L_202390192DE.000101.fmx.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    corrects: ["Whole text"]
+    retrieved_on: 2026-11-02
+    sha256: 2fbee74d741a72eae9ea904c0efe7587065072966d175ff9e3260fa558e4d78a
+annotated: CL2023R0988EN0010010.0001.annotated.xml

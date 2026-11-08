@@ -1,0 +1,23 @@
+# Digital Markets, Competition and Consumers Act 2024: the revised (current) text as legislation.gov.uk publishes it, in its official XML (Crown
+# Legislation Markup Language). Part 4 replaced the Consumer Protection from Unfair Trading
+# Regulations 2008 from 6 April 2025: material information and total prices (section 230) and the ban
+# on fake reviews (Schedule 20, paragraph 13).
+id: gb/dmcc
+title: Digital Markets, Competition and Consumers Act 2024
+jurisdiction: GB
+language: en
+publisher: The National Archives, legislation.gov.uk
+kind: official-xml
+licence: ogl-3.0
+licence_basis: "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)"
+originals:
+  - file: ukpga-2024-13.xml
+    page: https://www.legislation.gov.uk/ukpga/2024/13
+    url: https://www.legislation.gov.uk/ukpga/2024/13/data.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."
+    retrieved_on: 2026-11-07
+    sha256: 840cf845f6d66ecbb12b6541bb40f405ab67a0c345189397a054179e3bfd29c6
+annotated: ukpga-2024-13.annotated.xml

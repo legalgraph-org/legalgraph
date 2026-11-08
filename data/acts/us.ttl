@@ -1,0 +1,36 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# United States: additions to data/extracted/us/ and data/extracted/us-ca/.
+
+lg:US-ADA
+    rdfs:comment "Title III prohibits discrimination by places of public accommodation. The statute does not mention websites; courts are divided on whether a website must be accessible on its own or only when connected to a physical place, and the Department of Justice's guidance (2022) treats websites of businesses open to the public as covered. No regulation sets a web standard for private businesses."@en .
+
+lg:US-CFR-28-35
+    eli:title "28 CFR Part 35: Nondiscrimination on the basis of disability in state and local government services"@en ;
+    lgo:shortName "28 CFR Part 35" ;
+    eli:date_document "2024-04-24"^^xsd:date ;
+    rdfs:comment "The Department of Justice's 2024 rule under ADA Title II: websites and apps of state and local governments must meet WCAG 2.1 Level AA from 24 April 2026 (large entities) or 26 April 2027. It does not apply to private businesses, but is the only US regulation naming a web standard."@en .
+
+lg:US-CAN-SPAM
+    rdfs:comment "Opt-out, not opt-in: commercial email may be sent without prior consent, but must identify itself as advertising, offer an unsubscribe and give a postal address."@en .
+
+lg:US-CA-CCPA
+    rdfs:comment "Applies to for-profit businesses doing business in California that meet a threshold of § 1798.140(d) (annual revenue above USD 25 million adjusted for inflation, about USD 26.6 million in 2025; personal information of 100,000 or more consumers or households; or half their revenue from selling or sharing it). The CPPA's regulations (California Code of Regulations, title 11, §§ 7000 ff.) add detail on notices, privacy policies and opt-out preference signals; they are not quoted here yet."@en .
+
+lg:US-CFR-16-312
+    eli:title "16 CFR Part 312: Children's Online Privacy Protection Rule"@en ;
+    lgo:shortName "COPPA Rule" ;
+    rdfs:seeAlso <https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312> ;
+    rdfs:comment "The FTC's rule under the Children's Online Privacy Protection Act (15 U.S.C. 6501-6505), amended in 2025: § 312.4 requires a prominent link to a children's privacy notice on the home page and where data is collected, and § 312.5 requires verifiable parental consent, with a separate opt-in for disclosure to third parties."@en .
+
+lg:US-CA-CIV-1789-3
+    lgo:shortName "Electronic commercial service notice" ;
+    rdfs:comment "California's answer to the Impressum for online services: the provider must give consumers its name, address and telephone number, the charges for the service, and complaint procedures — at contracting and every year thereafter."@en .
+
+lg:US-CA-BPC
+    lgo:shortName "Cal. Bus. & Prof. Code" ;
+    rdfs:comment "Two parts of the code concern websites. CalOPPA (§§ 22575 to 22579, in force since 1 July 2004): any operator of a commercial website or online service collecting personally identifiable information from California residents must conspicuously post a privacy policy, saying what it collects and shares, how it responds to Do Not Track signals and whether other parties track users across sites; a violation needs a failure to post within 30 days of notice, or a knowing or negligent breach (§ 22576). § 17602: the subscription rules behind California's 'cancel online' law: clear renewal terms, affirmative consent, a retainable acknowledgment, renewal notices and — where the offer was accepted online — termination online at will through a prominent link, button or termination email (d)(1), the same duty as Germany's § 312k BGB."@en .

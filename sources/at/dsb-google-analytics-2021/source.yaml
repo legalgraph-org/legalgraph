@@ -1,0 +1,22 @@
+# Austrian Data Protection Authority (Datenschutzbehörde), Teilbescheid GZ D155.027,
+# 2021-0.586.257 of 22 December 2021: a website's use of Google Analytics transferred personal
+# data to the US unlawfully — Standard Contractual Clauses gave no adequate protection after
+# Schrems II. The decision that triggered the noyb "101 complaints" wave against Google
+# Analytics across Europe. The PDF is the DSB's own pseudonymised publication on dsb.gv.at.
+id: at/dsb-google-analytics-2021
+title: DSB decision GZ D155.027 (Google Analytics transfer to the US), 22 December 2021
+jurisdiction: AT
+language: de
+publisher: Datenschutzbehörde, dsb.gv.at
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): official works including administrative decisions are free of copyright; the DSB publishes the pseudonymised decision itself"
+originals:
+  - file: d155.027_ga.pdf
+    page: https://dsb.gv.at/entscheidungen.html
+    url: https://dsb.gv.at/sites/site0344/media/downloads/d155.027_ga.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-03
+    sha256: 91f309b7a35b827c9526bee4c61f46cd3b3a0de038f4d6e8bd2c4ce0f4f32c93
+annotated: dsb-google-analytics.law.xml

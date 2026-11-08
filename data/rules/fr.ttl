@@ -1,0 +1,45 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# France: the consumer-information duties of the Code de la consommation. L221-5 implements CRD
+# art. 6 (itself not yet annotated — Cellar re-letters the consolidated list), L221-13 the
+# confirmation of art. 8(7), L221-14 the order button of art. 8(2).
+
+lg:FR-R-pre-contract-information a lgo:Obligation ;
+    rdfs:label "Pre-contractual information for consumers: the eleven-point list"@en ;
+    rdfs:comment "Before any consumer contract — not only distance selling — the trader provides the L221-5 list: characteristics, price, delivery, identity, termination, dispute resolution, guarantees, the mediator option, withdrawal, return costs, costs of early performance, no-withdrawal cases and personalised pricing."@en ;
+    lgo:establishedBy lg:FR-CONSO-L221-5-1 , lg:FR-CONSO-L221-5-1b , lg:FR-CONSO-L221-5-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:TotalPrice , lgv:PaymentAndDeliveryTerms , lgv:ProviderName ,
+        lgv:CancellationInformation , lgv:DisputeResolutionBody , lgv:CodesOfConduct , lgv:LegalGuarantee ,
+        lgv:DigitalProductInformation , lgv:WithdrawalInformation , lgv:ReturnCosts , lgv:NoWithdrawalRight ,
+        lgv:PersonalisedPricing ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:FR-R-contract-confirmation a lgo:Obligation ;
+    rdfs:label "Confirmation of the contract on a durable medium"@en ;
+    lgo:establishedBy lg:FR-CONSO-L221-13 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ContractConfirmation ;
+    lgo:requiresDisclosureOf lgv:ContractCopy ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:FR-R-order-button a lgo:Obligation ;
+    rdfs:label "Order button: « commande avec obligation de paiement »"@en ;
+    rdfs:comment "Online shops also state the payment methods and any delivery restrictions at the start of ordering — France's version of the CRD art. 8(2) duty."@en ;
+    lgo:establishedBy lg:FR-CONSO-L221-14 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:LabelOrderButton ;
+    lgo:reviewStatus lgv:Draft .

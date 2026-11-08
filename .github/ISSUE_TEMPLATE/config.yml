@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to contribute
+    url: https://github.com/legalgraph-org/legalgraph/blob/main/CONTRIBUTING.md
+    about: How the graph is built, and how to add to it.

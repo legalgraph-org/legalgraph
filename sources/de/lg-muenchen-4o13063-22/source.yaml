@@ -1,0 +1,23 @@
+# LG München I, Endurteil vom 30.03.2023 — 4 O 13063/22 (GRUR-RS 2023, 6354): dynamic Google-Fonts
+# embedding transfers the visitor's IP address to Google in the US — potentially a violation of
+# informational self-determination under GDPR, but a claim needs real personal affectedness;
+# fear or unease alone is contested, and a claimant who does not even know which sites loaded
+# the fonts in their name cannot claim harm. The counterpart to 3 O 17493/20 (which granted
+# €100 damages). gesetze-bayern is JS-rendered; the page is a browser save.
+id: de/lg-muenchen-4o13063-22
+title: LG München I, Endurteil vom 30.03.2023 — 4 O 13063/22 (Google Fonts)
+jurisdiction: DE
+language: de
+publisher: Bayerisches Staatsministerium der Justiz, gesetze-bayern.de (BAYERN.RECHT)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei"
+originals:
+  - file: lg-muenchen-4o13063-22.fragment.html
+    url: "https://www.gesetze-bayern.de/Content/Document/Y-300-Z-GRURRS-B-2023-N-6354?hl=true"
+    fetch: html-fragment
+    selector: "#content"
+    media_type: text/html
+    retrieved_on: 2026-11-04
+    sha256: 1a54df5b59b9bffad7304c29bdf43c5b066bfb7eac6bc87ca2f092b675571c4e
+annotated: lg-muenchen-4o13063-22.law.xml

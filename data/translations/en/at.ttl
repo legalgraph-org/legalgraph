@@ -1,0 +1,104 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:AT-DSB-2021-D155027-spruch-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2e222b93aa4b3f097553b009612401aff8fa2cc73c6ae74c9649b2805cfc2384" ;
+    lgo:text """2. The complaint against the first respondent is upheld, and it is found that
+a) the first respondent, as controller, by implementing the tool “Google Analytics” on its website at www.xyz.at, transferred personal data of the complainant (at least unique user identification numbers, IP address and browser parameters) to the second respondent at least on 14 August 2020,
+b) the standard data protection clauses which the first respondent concluded with the second respondent do not offer an adequate level of protection under Article 44 GDPR, because
+i) the second respondent is to be qualified as a provider of electronic communication services within the meaning of 50 U.S. Code § 1881(b)(4) and as such is subject to surveillance by US intelligence services under 50 U.S. Code § 1881a (“FISA 702”), and
+ii) the measures taken in addition to the standard data protection clauses referred to in point 2.b) are not effective, since they do not eliminate the possibilities of surveillance and access by US intelligence services,
+c) in the present case, no other instrument under Chapter V of the GDPR can be relied on for the data transfer referred to in point 2.a), and the first respondent therefore did not ensure an adequate level of protection under Article 44 GDPR for the data transfer referred to in point 2.a)."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSB-2021-D155027-spruch-2-q1 .
+
+lg:AT-DSB-2021-D155027-title-49f5ed5f102f-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "49f5ed5f102f66e6afc3eeeabd167c1296219ae918cf28015ab4c7178b3a5888" ;
+    lgo:text "Austrian Data Protection Authority, partial decision D155.027, 2021-0.586.257 of 22 December 2021 (Google Analytics)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-04"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSB-2021-D155027 .
+
+lg:AT-ECG-s5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "aab19ee867798a2f050ff02ca93f2c9b88c3f79596f45cabefc695032b2a62f0" ;
+    lgo:text """(1) A service provider shall make at least the following information permanently, easily and directly accessible to users:
+1. its name or company name;
+2. the geographic address at which it is established;
+3. details enabling users to contact it rapidly and directly, including its electronic mail address;
+4. where applicable, the company register number and the company register court;
+5. where the activity is subject to official supervision, the supervisory authority responsible for it;
+6. for a service provider subject to trade or professional regulations, the chamber, professional association or similar body of which it is a member, the professional title and the Member State in which it was conferred, as well as a reference to the applicable trade or professional regulations and how to access them;
+7. where applicable, the VAT identification number."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-ECG-s5-1-q1 .
+
+lg:AT-ECG-s5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bc38f72afa5cfa2c6ff4f425c7136408d031c09b1018d25deb0cd15707aad107" ;
+    lgo:text "(2) Where prices are stated in information-society services, they must be shown in such a way that an averagely attentive observer can easily read and attribute them. It must be clearly recognisable whether the prices are stated inclusive of value-added tax and all other duties and surcharges (gross prices) or not. It must also be stated whether shipping costs are included."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-ECG-s5-2-q1 .
+
+lg:AT-TKG-2021-s165-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "01c2b129dabd4f9c135e3f518266cd84da164d60c146f95efc4bd39a5f2625e6" ;
+    lgo:text "(3) Operators of public communications services and providers of an information-society service within the meaning of § 3 Z 1 of the E-Commerce Act, BGBl. I No. 152/2001, are required to inform the user which personal data they will process, on which legal basis and for which purposes this is done and for how long the data will be stored. The collection of this data is only permissible if the user has actively consented to it on the basis of clear and comprehensive information. This does not prevent technical storage or access where its sole purpose is to carry out the transmission of a message over a communications network or, where strictly necessary, so that the provider of an information-society service expressly requested by the user can provide that service. The user must also be informed of the possible uses arising from the search functions embedded in the electronic versions of the directories. This information must be given in an appropriate form, in particular in the framework of general terms and conditions and no later than at the start of the legal relationship."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-TKG-2021-s165-3-q1 .
+
+lg:AT-UGB-s14-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "52a8883244c74c9da587f794e743446defe92c52f4557e15086eec36071597e0" ;
+    lgo:text "(1) Entrepreneurs registered in the companies register (Firmenbuch) must state, on all business letters and order forms, whether on paper or otherwise addressed to a specific recipient, as well as on their websites, the company's name, its legal form, its seat and its companies-register number, where applicable a note that the entrepreneur is in liquidation, and the companies-register court. In the case of a general partnership or limited partnership in which no partner with unlimited liability is a natural person, those particulars must also be given on the partnership's business letters, order forms and websites for the partners with unlimited liability. Sole proprietors must also state their name where it differs from the company name."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-UGB-s14-1-q1 .
+
+lg:AT-UGB-s14-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7dc3933949ab1eec8be51f7a960cbc4256fb531199913d0ca6d8d004979eed4b" ;
+    lgo:text "(2) Where a corporation states its capital on business letters, order forms and websites, the share capital (Grund- und Stammkapital) must always be given and, in the case of a joint-stock company where the issue price of the shares has not been fully paid, or a limited-liability company where not all cash contributions have been paid in, the total amount of the outstanding contributions."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-UGB-s14-2-q1 .
+
+lg:AT-UGB-s14-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2b7b07cddd315fe46d8e0d7ecf917d5ca07ec199f7a353f0e1cda665da4347e1" ;
+    lgo:text "(3) On business letters, order forms and websites used by a domestic branch of an entrepreneur whose principal establishment or seat is abroad, the company name, the branch's companies-register number and the companies-register court must also be stated, in addition to the particulars under paragraphs 1 and 2."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-UGB-s14-3-q1 .

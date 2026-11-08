@@ -1,0 +1,41 @@
+# Regulation (EC) No 593/2008 on the law applicable to contractual obligations (Rome I),
+# Official Journal text — unamended for the provisions quoted. Article 6(2) says a choice of
+# law in consumer contracts cannot deprive the consumer of the protection of their home
+# country's mandatory rules: the provision against choice-of-law clauses that strip consumer
+# rights. English is annotated; German is a parallel language version.
+id: eu/rome-i
+title: Regulation (EC) No 593/2008 on the law applicable to contractual obligations (Rome I)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: CL2008R0593EN0000010.0001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02008R0593-20080724
+    url: https://publications.europa.eu/resource/celex/02008R0593-20080724
+    fetch: zip-member
+    member: CL2008R0593EN0000010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    notes:
+      - "The text in force; the regulation's provisions quoted have not been amended."
+    retrieved_on: 2026-11-02
+    sha256: a1e87ea50c2c7398bec9aa4f6baf526025aebdb7458461715f2ecf9437c1feae
+  - file: CL2008R0593DE0000010.0001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02008R0593-20080724
+    url: https://publications.europa.eu/resource/celex/02008R0593-20080724
+    fetch: zip-member
+    member: CL2008R0593DE0000010.0001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-02
+    sha256: 925e0af2f3cd500bb99e7ca83356570976ea1a067fae4af6d83ed5b6344a1911
+annotated: CL2008R0593EN0000010.0001.annotated.xml

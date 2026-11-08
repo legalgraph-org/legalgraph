@@ -1,0 +1,51 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:ES-LSSI-art10-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bee324fd9db959c10b79f46973351bde5809a74a0a8c490fde6f629003c5cdd8" ;
+    lgo:text "1. Without prejudice to the information requirements established in the rules in force, the provider of information society services is obliged to make available the means that allow both the recipients of the service and the competent bodies to access, by electronic means, permanently, easily, directly and free of charge, the following information:"@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-q1 .
+
+lg:ES-LSSI-art22-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7adf82d4393bae7b82d978bc7ff89ede2860001d897c7843950eb01abe8a0b32" ;
+    lgo:text "1. The recipient may revoke at any time the consent given to the receipt of commercial communications by simply notifying the sender of their wish to do so."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art22-1-q1 .
+
+lg:ES-LSSI-art22-2-e-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "05a16dce70de03fbac21096d0569cf5d37818b050d635586a4235b1658ec24ea" ;
+    lgo:text "The foregoing does not prevent the possible storage or access of a technical nature solely for the purpose of transmitting a communication over an electronic communications network or, to the extent strictly necessary, for the provision of an information society service expressly requested by the recipient."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art22-2-e-q1 .
+
+lg:ES-LSSI-art22-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "67d6f4bacd65ff1591edb3f510dae239209ca9214cd20073ca5c89b18940bacd" ;
+    lgo:text "2. Service providers may use data storage and retrieval devices on recipients' terminal equipment, provided that the recipients have given their consent after having been provided with clear and complete information about their use, in particular about the purposes of the processing of the data, in accordance with Ley Orgánica 15/1999 of 13 December on the protection of personal data."@en ;
+    lgo:translatedBy "SWE-2" ;
+    lgo:translatedOn "2026-11-02"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art22-2-q1 .

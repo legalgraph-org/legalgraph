@@ -1,0 +1,105 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:GB-CRA-2015
+    lgo:amendmentCheck lg:GB-CRA-2015-amendment-check .
+
+lg:GB-CRA-2015-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/ukpga/2015/15"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/386" ;
+    lgo:lastKnownAmendmentDate "2026-03-26"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2026-09-30"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Applied 30.9.2026 by S.I. 2026/386 (Data (Use and Access) Act 2025 consequential amendments); 2026 c. 18 changes are still outstanding."@en .
+
+lg:GB-DMCC-2024
+    lgo:amendmentCheck lg:GB-DMCC-2024-amendment-check .
+
+lg:GB-DMCC-2024-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/ukpga/2024/13"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/386" ;
+    lgo:lastKnownAmendmentDate "2026-03-26"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2026-09-30"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Applied 30.9.2026 by S.I. 2026/386; outstanding changes by 2026 c. 18 still pending."@en .
+
+lg:GB-OSA-2023
+    lgo:amendmentCheck lg:GB-OSA-2023-amendment-check .
+
+lg:GB-OSA-2023-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/ukpga/2023/50"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/386" ;
+    lgo:lastKnownAmendmentDate "2026-03-26"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2026-09-30"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Applied 30.9.2026 by S.I. 2026/386; outstanding change by 2026 c. 20 still pending."@en .
+
+lg:GB-UK-GDPR
+    lgo:amendmentCheck lg:GB-UK-GDPR-amendment-check .
+
+lg:GB-UK-GDPR-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/eur/2016/679"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/1015" ;
+    lgo:lastKnownAmendmentDate "2026-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "No outstanding effects; latest amending instrument cited in the text is S.I. 2026/1015 (dc:modified 2026-10-05)."@en .
+
+lg:GB-SI-2002-2013
+    lgo:amendmentCheck lg:GB-SI-2002-2013-amendment-check .
+
+lg:GB-SI-2002-2013-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/uksi/2002/2013"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/407" ;
+    lgo:lastKnownAmendmentDate "2026-01-01"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "No outstanding effects; latest amendment cited is S.I. 2026/407 (dc:modified 2026-05-08)."@en .
+
+lg:GB-SI-2003-2426
+    lgo:amendmentCheck lg:GB-SI-2003-2426-amendment-check .
+
+lg:GB-SI-2003-2426-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/uksi/2003/2426"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/386" ;
+    lgo:lastKnownAmendmentDate "2026-03-26"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2026-09-30"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Applied 30.9.2026 by S.I. 2026/386; the quoted regs 6 and Sch. A1 are unaffected."@en .
+
+lg:GB-SI-2013-3134
+    lgo:amendmentCheck lg:GB-SI-2013-3134-amendment-check .
+
+lg:GB-SI-2013-3134-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/uksi/2013/3134"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "2024 c. 13 (DMCC Act)" ;
+    lgo:lastKnownAmendmentDate "2024-05-24"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Up to date to 07.11.2026; changes by the DMCC Act 2024 recorded but not yet applied."@en .
+
+lg:GB-SI-2015-17
+    lgo:amendmentCheck lg:GB-SI-2015-17-amendment-check .
+
+lg:GB-SI-2015-17-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceUrl "https://www.legislation.gov.uk/uksi/2015/17"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "S.I. 2026/833" ;
+    lgo:lastKnownAmendmentDate "2026-07-15"^^xsd:date ;
+    lgo:lastKnownAmendmentInForce "2026-07-16"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Modified by S.I. 2026/833 (British Steel property-transfer regulations), in force 16.7.2026."@en .

@@ -1,0 +1,63 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Switzerland, read from data/extracted/ch/dsg.ttl (Data Protection Act). Draft until a lawyer reviews it.
+
+lg:CH-R-privacy-information a lgo:Obligation ;
+    rdfs:label "Privacy information: controller, purposes, recipients (Swiss DSG)"@en ;
+    rdfs:comment "Applies to anyone processing data of people in Switzerland, wherever established. The Swiss minimum is shorter than the GDPR's; a privacy policy written for the GDPR usually covers it, if it names the countries data goes to."@en ;
+    lgo:establishedBy lg:CH-DSG-art19-1 , lg:CH-DSG-art19-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:EffectsInSwitzerland , lgv:ProcessesPersonalData ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ControllerIdentity , lgv:ProcessingPurposes , lgv:Recipients ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CH-R-privacy-information-other-sources a lgo:Obligation ;
+    rdfs:label "Privacy information: categories of data obtained elsewhere (Swiss DSG)"@en ;
+    lgo:establishedBy lg:CH-DSG-art19-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:EffectsInSwitzerland , lgv:ObtainsDataFromOtherSources ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:CategoriesOfPersonalData ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CH-R-privacy-information-abroad a lgo:Obligation ;
+    rdfs:label "Privacy information: countries data is disclosed to, and the safeguards (Swiss DSG)"@en ;
+    lgo:establishedBy lg:CH-DSG-art19-4 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:EffectsInSwitzerland , lgv:ProcessesPersonalData , lgv:TransfersOutsideSwitzerland ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:ThirdCountryTransfer ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CH-R-automated-decisions a lgo:Obligation ;
+    rdfs:label "Inform about automated individual decisions (Swiss DSG)"@en ;
+    lgo:establishedBy lg:CH-DSG-art21-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:EffectsInSwitzerland , lgv:UsesAutomatedDecisionMaking ;
+    lgo:partOfDisclosure lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:AutomatedDecisionMaking ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CH-R-representative a lgo:Obligation ;
+    rdfs:label "Representative in Switzerland for foreign controllers"@en ;
+    lgo:establishedBy lg:CH-DSG-art14-1 , lg:CH-DSG-art14-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:EffectsInSwitzerland , lgv:RegularHighRiskProcessingOfSwissResidents ;
+    lgo:unless lgv:EstablishedInSwitzerland ;
+    lgo:requiresAction lgv:DesignateRepresentativeInSwitzerland ;
+    lgo:requiresDisclosureOf lgv:ControllerRepresentative ;
+    lgo:reviewStatus lgv:Draft .

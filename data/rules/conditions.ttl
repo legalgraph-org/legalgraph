@@ -1,0 +1,118 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+
+# Where each condition comes from: the provisions whose words define it (lgo:basedOn). The
+# conditions themselves, with their questions, are in the ontology (vocab/conditions.ttl).
+
+# Conditions answered by where the business is established, or where it offers its services: they
+# hold for that jurisdiction and every jurisdiction within it (Austria is in the EU and the EEA).
+
+lgv:EstablishedInGermany lgo:establishedIn lg:DE .
+lgv:EstablishedInTheUnion lgo:establishedIn lg:EU .
+lgv:EstablishedInTheEea lgo:establishedIn lg:EEA .
+lgv:EstablishedInTheUnitedKingdom lgo:establishedIn lg:GB .
+lgv:EstablishedInSwitzerland lgo:establishedIn lg:CH .
+lgv:EstablishedInUkraine lgo:establishedIn lg:UA .
+lgv:OffersGoodsOrServicesInTheUnion lgo:offersIn lg:EU .
+lgv:OffersGoodsOrServicesInTheUk lgo:offersIn lg:GB .
+
+lgv:EstablishedInTheUnion lgo:basedOn lg:EU-2016-679-art3-1 .
+lgv:OffersGoodsOrServicesInTheUnion lgo:basedOn lg:EU-2016-679-art3-2 .
+lgv:MonitorsBehaviourInTheUnion lgo:basedOn lg:EU-2016-679-art3-2 .
+lgv:GdprTerritorialScope lgo:basedOn lg:EU-2016-679-art3-1 , lg:EU-2016-679-art3-2 .
+lgv:CommercialDigitalService lgo:basedOn lg:DE-DDG-s5-1 .
+lgv:NonPrivateTelemedia lgo:basedOn lg:DE-MStV-s18-1 .
+lgv:JournalisticEditorialContent lgo:basedOn lg:DE-MStV-s18-2 .
+lgv:AudiovisualMediaService lgo:basedOn lg:DE-DDG-s5-1 .
+lgv:LegalPerson lgo:basedOn lg:DE-DDG-s5-1 , lg:DE-MStV-s18-1 .
+lgv:RegisteredInPublicRegister lgo:basedOn lg:DE-DDG-s5-1 .
+lgv:ActivityRequiresAuthorisation lgo:basedOn lg:DE-DDG-s5-1 .
+lgv:RegulatedProfession lgo:basedOn lg:DE-DDG-s5-1 .
+lgv:HasVatId lgo:basedOn lg:DE-DDG-s5-1 , lg:DE-UStG-s27a-1 .
+lgv:HasEconomicIdNumber lgo:basedOn lg:DE-DDG-s5-1 , lg:DE-AO-s139c-1 .
+lgv:InLiquidation lgo:basedOn lg:DE-DDG-s5-1 .
+lgv:SellsToConsumers lgo:basedOn lg:DE-VSBG-s36-1 .
+lgv:TenOrFewerEmployees lgo:basedOn lg:DE-VSBG-s36-3 .
+lgv:TakesPartInConsumerDisputeResolution lgo:basedOn lg:DE-VSBG-s36-1 .
+lgv:ProcessesPersonalData lgo:basedOn lg:EU-2016-679-art4-1 , lg:EU-2016-679-art4-2 , lg:EU-2016-679-rec30 .
+lgv:CollectsDataFromDataSubjects lgo:basedOn lg:EU-2016-679-art13-1 .
+lgv:ObtainsDataFromOtherSources lgo:basedOn lg:EU-2016-679-art14-1 .
+lgv:ReliesOnConsent lgo:basedOn lg:EU-2016-679-art6-1 .
+lgv:ReliesOnLegitimateInterests lgo:basedOn lg:EU-2016-679-art6-1 .
+lgv:TransfersOutsideEEA lgo:basedOn lg:EU-2016-679-art13-1 .
+lgv:UsesAutomatedDecisionMaking lgo:basedOn lg:EU-2016-679-art13-2 .
+lgv:PublicAuthorityProcessing lgo:basedOn lg:EU-2016-679-art37-1 .
+lgv:LargeScaleMonitoring lgo:basedOn lg:EU-2016-679-art37-1 .
+lgv:LargeScaleSpecialCategories lgo:basedOn lg:EU-2016-679-art37-1 .
+lgv:DataProtectionOfficerRequiredByGdpr lgo:basedOn lg:EU-2016-679-art37-1 .
+lgv:TwentyOrMoreProcessPersonalData lgo:basedOn lg:DE-BDSG-s38-1 .
+lgv:ImpactAssessmentOrDataTrading lgo:basedOn lg:DE-BDSG-s38-1 .
+lgv:DataProtectionOfficerRequiredInGermany lgo:basedOn lg:DE-BDSG-s38-1 .
+lgv:AccessesTerminalEquipment lgo:basedOn lg:DE-TDDDG-s25-1 , lg:EU-2002-58-art5-3 .
+lgv:NonEssentialDeviceAccess lgo:basedOn lg:DE-TDDDG-s25-2 .
+lgv:SendsMarketingEmails lgo:basedOn lg:DE-UWG-s7-2 , lg:UA-3153-art18-3 , lg:UA-1089-art120-2 , lg:UA-270-art14-3-2 .
+lgv:EmailsOnlyExistingCustomers lgo:basedOn lg:DE-UWG-s7-3 .
+lgv:SellsOnlineToConsumers lgo:basedOn lg:DE-BGB-s312j-2 , lg:DE-BGB-s356a-1 , lg:EU-2011-83-art8-2 .
+lgv:ShowsPricesToConsumers lgo:basedOn lg:DE-PAngV-s3-1 .
+lgv:SellsGoodsByQuantity lgo:basedOn lg:DE-PAngV-s4-1 .
+lgv:Microenterprise lgo:basedOn lg:DE-BFSG-s3-3 , lg:EU-2019-882-art4-5 .
+lgv:ProvidesIntermediaryService lgo:basedOn lg:EU-2022-2065-art11-1 , lg:EU-2022-2065-art12-1 .
+lgv:OperatesOnlinePlatform lgo:basedOn lg:EU-2022-2065-art26-1 .
+lgv:ShowsAdvertisementsOnPlatform lgo:basedOn lg:EU-2022-2065-art26-1 .
+lgv:OperatesMarketplace lgo:basedOn lg:EU-2022-2065-art30-1 .
+lgv:UsesChatbot lgo:basedOn lg:EU-2024-1689-art50-1 .
+lgv:PublishesAiGeneratedMedia lgo:basedOn lg:EU-2024-1689-art50-4 .
+lgv:SmallPlatformExempt lgo:basedOn lg:EU-2022-2065-art19-1 , lg:EU-2022-2065-art29-1 .
+lgv:EstablishedInTheUnitedKingdom lgo:basedOn lg:GB-SI-2015-17-r24-2 .
+lgv:UkCompany lgo:basedOn lg:GB-SI-2015-17-r24-2 , lg:GB-SI-2015-17-r25-1 .
+lgv:CcpaBusiness lgo:basedOn lg:US-CA-CCPA-1798-140-d-1 .
+lgv:SellsOrSharesPersonalData lgo:basedOn lg:US-CA-CCPA-1798-135-a .
+lgv:PlaceOfPublicAccommodation lgo:basedOn lg:US-ADA-12182-a .
+lgv:SendsCommercialEmailInTheUs lgo:basedOn lg:US-CAN-SPAM-7704-a-5-A .
+lgv:EffectsInSwitzerland lgo:basedOn lg:CH-DSG-art3-1 .
+lgv:TransfersOutsideSwitzerland lgo:basedOn lg:CH-DSG-art19-4 .
+lgv:RegularHighRiskProcessingOfSwissResidents lgo:basedOn lg:CH-DSG-art14-1 .
+lgv:EstablishedInSwitzerland lgo:basedOn lg:CH-DSG-art14-1 .
+lgv:HonoursOptOutPreferenceSignal lgo:basedOn lg:US-CA-CCPA-1798-135-b-1 .
+lgv:UsesSensitiveDataForOtherPurposes lgo:basedOn lg:US-CA-CCPA-1798-121-a .
+lgv:EstablishedInTheUnitedKingdom lgo:basedOn lg:GB-UK-GDPR-art3-1 .
+lgv:OffersGoodsOrServicesInTheUk lgo:basedOn lg:GB-UK-GDPR-art3-2 .
+lgv:MonitorsBehaviourInTheUk lgo:basedOn lg:GB-UK-GDPR-art3-2 .
+lgv:UkGdprTerritorialScope lgo:basedOn lg:GB-UK-GDPR-art3-1 , lg:GB-UK-GDPR-art3-2 .
+lgv:SellsToUkConsumers lgo:basedOn lg:GB-SI-2013-3134-r13-1 , lg:GB-DMCC-2024-s230-2 .
+lgv:PublishesConsumerReviews lgo:basedOn lg:GB-DMCC-2024-sch20-p13 .
+lgv:LikelyAccessedByChildren lgo:basedOn lg:GB-OSA-2023-s12-3 .
+lgv:RegulatedUserToUserService lgo:basedOn lg:GB-OSA-2023-s4-2 , lg:GB-OSA-2023-s4-5 .
+lgv:SellsProductsOnline lgo:basedOn lg:EU-2023-988-art19 .
+lgv:SellsEnergyLabelledProducts lgo:basedOn lg:EU-2017-1369-art5-1 .
+lgv:PublishesPoliticalAdvertising lgo:basedOn lg:EU-2024-900-art11-1 .
+lgv:AnnouncesPriceReductions lgo:basedOn lg:EU-1998-6-art6a-1 .
+lgv:AnnouncesPriceReductions lgo:basedOn lg:DE-PAngV-s11-1 .
+lgv:YouthImpairingContent lgo:basedOn lg:DE-JMStV-s5-1 , lg:DE-JMStV-s7-1 .
+lgv:SmallTelemediaWithSelfRegulation lgo:basedOn lg:DE-JMStV-s7-2 .
+lgv:ProducesElectricalEquipment lgo:basedOn lg:DE-ElektroG-s6-3 .
+lgv:LargeElectricalSeller lgo:basedOn lg:DE-ElektroG-s18-3 .
+lgv:PlacesPackagingOnMarket lgo:basedOn lg:DE-VerpackDG-s6-1 .
+lgv:EstablishedInUkraine lgo:basedOn lg:UA-2297-art12-2 , lg:UA-2704-art27-6 , lg:UA-2704-art30-4 .
+lgv:SellsOnlineInUkraine lgo:basedOn lg:UA-675-art7-1 , lg:UA-3153-art17-1 , lg:UA-2704-art27-6 , lg:UA-2704-art27-7 ,
+    lg:UA-2704-art30-2 , lg:UA-1023-art13-2 .
+lgv:HasPresenceInUkraine lgo:basedOn lg:UA-2704-art27-6 .
+lgv:EstablishedOrPresentInUkraine lgo:basedOn lg:UA-2704-art27-6 .
+lgv:OffersMobileApp lgo:basedOn lg:UA-2704-art27-7 .
+lgv:RegisteredOnlineMediaInUkraine lgo:basedOn lg:UA-2849-art2-2 , lg:UA-2849-art37-5 .
+lgv:ConsumerLaw2023InForce lgo:basedOn lg:UA-3153-ix-1 .
+
+lgv:EstablishedInCanada lgo:establishedIn lg:CA .
+lgv:EstablishedInFrance lgo:establishedIn lg:FR .
+lgv:EstablishedInAustria lgo:establishedIn lg:AT .
+lgv:SellsToConsumersInOntario lgo:offersIn lg:CA-ON ;
+    lgo:basedOn lg:CA-ON-CPA-s38-1 .
+lgv:SellsToConsumersInCalifornia lgo:offersIn lg:US-CA ;
+    lgo:basedOn lg:US-CA-CIV-s1789-3 , lg:US-CA-BPC-s17602-a1 .
+lgv:OffersAutomaticRenewal lgo:basedOn lg:US-CA-BPC-s17602-a1 , lg:GB-DMCC-2024-s254-1 .
+lgv:DirectedToChildrenUnder13 lgo:basedOn lg:US-CFR-16-312-4-a .
+lgv:EngagesProcessors lgo:basedOn lg:EU-2016-679-art28-1 , lg:GB-UK-GDPR-art28-1 , lg:US-CA-CCPA-1798-140-ag-1 .
+lgv:ActsAsProcessor lgo:basedOn lg:EU-2016-679-art28-3 .
+lgv:HostsFormsForOthers lgo:basedOn lg:EU-2016-679-art28-3 .
+lgv:Microenterprise lgo:basedOn lg:EU-2019-882-art3-23 .

@@ -1,0 +1,31 @@
+---
+// Headings in three sizes: h1 48px
+// bold, h2 48px semibold on wide screens, shrinking with the viewport; text-wrap: balance.
+interface Props {
+  level?: 1 | 2 | 3;
+  /** The brand gradient. */
+  gradient?: boolean;
+  align?: "center" | "left";
+  class?: string;
+}
+
+const { level = 2, gradient = false, align = "left", class: extra } = Astro.props;
+const Tag = `h${level}` as const;
+const SIZES = {
+  1: "text-[clamp(30px,6vw,52px)] leading-[1.1] font-bold tracking-tight",
+  2: "text-[clamp(24px,4.5vw,40px)] leading-[1.15] font-semibold tracking-tight",
+  3: "text-[clamp(19px,2.5vw,24px)] leading-tight font-semibold",
+} as const;
+---
+
+<Tag
+  class:list={[
+    SIZES[level],
+    "mt-0! mb-0! text-balance",
+    gradient ? "text-brand-gradient" : "text-foreground",
+    align === "center" && "mx-auto max-w-3xl text-center",
+    extra,
+  ]}
+>
+  <slot />
+</Tag>

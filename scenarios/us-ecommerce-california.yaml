@@ -1,0 +1,39 @@
+name: US online retailer selling to Californians and Europeans
+description: >
+  A Delaware company with a large online shop selling to US consumers, above the CCPA thresholds,
+  using third-party advertising pixels, sending marketing email, and also shipping to customers in
+  the EU (without an establishment there) with analytics cookies after consent.
+established_in: US
+markets: [EU, US-CA]
+facts:
+  - PlaceOfPublicAccommodation
+  - CcpaBusiness
+  - SellsOrSharesPersonalData
+  - SendsCommercialEmailInTheUs
+  - ProcessesPersonalData
+  - NonEssentialDeviceAccess
+  - TransfersOutsideEEA
+obligations:
+  - US-R-ada-accessibility
+  - US-R-can-spam
+  - US-CA-R-notice-at-collection
+  - US-CA-R-do-not-sell
+  - US-CA-R-privacy-policy
+  - US-CA-R-request-methods
+  - US-CA-R-ecommerce-service-notice
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-privacy-information-transfers
+  - EU-R-privacy-information-representative
+  - EU-R-lawful-basis
+  - EU-R-consent-conditions
+  - EU-R-representative
+  - EU-R-consent-separate
+  - EU-R-consent-no-tying
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
+  - US-CA-R-minimal-collection
+  - US-CA-R-service-provider-contract
+  - EU-R-consent-specific

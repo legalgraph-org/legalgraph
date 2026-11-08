@@ -1,0 +1,27 @@
+---
+// The language toggle: a button that opens the page's LanguageDialog through the popover API (no JavaScript). In the
+// colours of the theme around it, so the same toggle works in the navbar and the dark footer.
+interface Props {
+  /** Accessible name of the toggle, e.g. "Language". */
+  label: string;
+  /** id of the page's LanguageDialog. */
+  dialogId: string;
+  /** Shown next to the globe (footer), e.g. "English". The navbar shows the globe only. */
+  currentName?: string;
+}
+
+const { label, dialogId, currentName } = Astro.props;
+---
+
+<button
+  type="button"
+  popovertarget={dialogId}
+  aria-label={currentName ? undefined : label}
+  class="flex h-10 items-center gap-2 rounded-md px-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+>
+  <svg aria-hidden="true" class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" stroke-width="1.75"></circle>
+    <path stroke-width="1.75" d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+  </svg>
+  {currentName && <span>{currentName}</span>}
+</button>

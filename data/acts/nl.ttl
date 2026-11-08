@@ -1,0 +1,39 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Netherlands: Article 3:15d of the Civil Code.
+
+lg:NL-BW3 a lgo:LegalAct ;
+    eli:title "Burgerlijk Wetboek Boek 3"@nl , "Dutch Civil Code, Book 3"@en ;
+    lgo:shortName "BW" ;
+    eli:id_local "BWBR0005291" ;
+    lgo:actType lgv:Code ;
+    lgo:jurisdiction lg:NL ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:NL-BW3-art15d-1 a lgo:Provision ;
+    eli:is_part_of lg:NL-BW3 ;
+    lgo:citation "Artikel 3:15d lid 1 BW" ;
+    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/2020-01-01/#Boek3_Titeldeel1_Afdeling1A_Artikel15d"^^xsd:anyURI ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ,
+        lgv:RegisterEntry , lgv:SupervisoryAuthority , lgv:ProfessionalBody , lgv:ProfessionalTitle ,
+        lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:NL-BW3-art15d-1-q1 a lgo:Quote ;
+    lgo:quoteOf lg:NL-BW3-art15d-1 ;
+    lgo:text """Degene die een dienst van de informatiemaatschappij verleent, maakt de volgende gegevens gemakkelijk, rechtstreeks en permanent toegankelijk voor degenen die gebruik maken van deze dienst, in het bijzonder om informatie te verkrijgen of toegankelijk te maken:
+a. zijn identiteit en adres van vestiging;
+b. gegevens die een snel contact en een rechtstreekse en effectieve communicatie met hem mogelijk maken, met inbegrip van zijn elektronische postadres;
+c. voor zover hij in een handelsregister of een vergelijkbaar openbaar register is ingeschreven: het register waar hij is ingeschreven en zijn inschrijvingsnummer, of een vergelijkbaar middel ter identificatie in dat register;
+[…]"""@nl ;
+    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/2020-01-01/#Boek3_Titeldeel1_Afdeling1A_Artikel15d"^^xsd:anyURI ;
+    lgo:officialLanguageVersion true .

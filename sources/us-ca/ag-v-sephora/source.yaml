@@ -1,0 +1,21 @@
+# People v. Sephora USA, Inc., San Francisco Superior Court, final judgment and permanent
+# injunction of 24 August 2022: the first CCPA enforcement — $1.2m for failing to honour
+# Global Privacy Control opt-out signals and to disclose the sale of personal information.
+# The filed judgment PDF is published by the California Attorney General on oag.ca.gov.
+id: us-ca/ag-v-sephora
+title: People v. Sephora USA, Inc. (Cal. Super. Ct. 2022)
+jurisdiction: US-CA
+language: en
+publisher: California Attorney General, oag.ca.gov
+kind: authored-xml
+licence: public-domain
+licence_basis: "Judicial opinions and filed judgments are not copyrightable (government edicts doctrine; 17 U.S.C. § 105); California official publications may be used without fee"
+originals:
+  - file: pea-sephora-filed-judgment.pdf
+    page: https://oag.ca.gov/privacy/privacy-enforcement-actions
+    url: https://oag.ca.gov/system/files/media/pea-sephora-filed-judgment.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-04
+    sha256: 88c326e97d32b1679514e266c6da4b9980c550f009a19c2714f6f93a0e4af997
+annotated: ag-v-sephora.law.xml

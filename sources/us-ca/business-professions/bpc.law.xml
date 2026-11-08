@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  California Business and Professions Code §§ 17602 and 22575–22576, written in schemas/law.xsd from the saved
+  leginfo print view. The words are the Legislature's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="US-CA-BPC" lga:jurisdiction="US-CA" lga:act-type="Statute"
+     lga:url="https://leginfo.legislature.ca.gov/faces/codes.xhtml">
+  <meta>
+    <title>California Business and Professions Code (§ 17602 Automatic Purchase Renewals; §§ 22575–22579 Internet Privacy Requirements)</title>
+    <date>2025-01-01</date>
+  </meta>
+
+  <section num="17602" title="Automatic purchase renewals" source="bpc-17602.fragment.html">
+    <paragraph num="(1)" lga:provision="US-CA-BPC-s17602-a1" lga:citation="Cal. Bus. &amp; Prof. Code § 17602(a)(1)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&amp;lawCode=BPC" lga:regulates="PreContractInformation" lga:requires="SubscriptionTermsDisclosure">Fail to present the automatic renewal offer terms or continuous service offer terms in a clear and conspicuous manner before the subscription or purchasing agreement is fulfilled and in visual proximity, or, in the case of an offer conveyed by voice, in temporal proximity, to the request for consent to the offer. If the offer also includes a free gift or trial, the offer shall include a clear and conspicuous explanation of the price that will be charged after the trial ends or the manner in which the subscription or purchasing agreement pricing will change upon conclusion of the trial.</paragraph>
+    <paragraph num="(2)" lga:provision="US-CA-BPC-s17602-a2" lga:citation="Cal. Bus. &amp; Prof. Code § 17602(a)(2)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&amp;lawCode=BPC" lga:regulates="Consent">Charge the consumer’s credit or debit card, or the consumer’s account with a third party, for an automatic renewal or continuous service without first obtaining the consumer’s affirmative consent to the agreement containing the automatic renewal offer terms or continuous service offer terms, including the terms of an automatic renewal offer or continuous service offer that is made at a promotional or discounted price for a limited period of time.</paragraph>
+    <paragraph num="(3)" lga:provision="US-CA-BPC-s17602-a3" lga:citation="Cal. Bus. &amp; Prof. Code § 17602(a)(3)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&amp;lawCode=BPC" lga:regulates="ContractConfirmation" lga:requires="CancellationInformation">Fail to provide an acknowledgment that includes the automatic renewal offer terms or continuous service offer terms, cancellation policy, and information regarding how to cancel in a manner that is capable of being retained by the consumer. If the automatic renewal offer or continuous service offer includes a free gift or trial, the business shall also disclose in the acknowledgment how to cancel, and allow the consumer to cancel, the automatic renewal or continuous service before the consumer pays for the goods or services.</paragraph>
+    <paragraph num="(1)" lga:provision="US-CA-BPC-s17602-c1" lga:citation="Cal. Bus. &amp; Prof. Code § 17602(c)(1)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&amp;lawCode=BPC" lga:regulates="SubscriptionCancellation" lga:requires="CancellationMechanism">A business that makes an automatic renewal offer or continuous service offer shall provide a toll-free telephone number, email address, a postal address if the seller directly bills the consumer, or it shall provide another cost-effective, timely, and easy-to-use mechanism for cancellation that shall be described in the acknowledgment specified in paragraph (3) of subdivision (a).</paragraph>
+    <paragraph num="(1)" lga:provision="US-CA-BPC-s17602-d1" lga:citation="Cal. Bus. &amp; Prof. Code § 17602(d)(1)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17602.&amp;lawCode=BPC" lga:regulates="SubscriptionCancellation" lga:requires="OnlineCancellation">In addition to the requirements of subdivision (b), a business that allows a consumer to accept an automatic renewal or continuous service offer online shall allow a consumer to terminate the automatic renewal or continuous service exclusively online, at will, and without engaging any further steps that obstruct or delay the consumer’s ability to terminate the automatic renewal or continuous service immediately. The business shall provide a method of termination that is online in the form of either of the following:
+      <list>
+        <item num="(A)">A prominently located direct link or button which may be located within either a customer account or profile, or within either device or user settings.</item>
+        <item num="(B)">By an immediately accessible termination email formatted and provided by the business that a consumer can send to the business without additional information.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="22575" title="Internet privacy requirements (CalOPPA): privacy policy" source="bpc-22575.fragment.html">
+    <paragraph num="(a)" lga:provision="US-CA-BPC-s22575-a" lga:citation="Cal. Bus. &amp; Prof. Code § 22575(a)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22575.&amp;lawCode=BPC" lga:regulates="PrivacyInformation">An operator of a commercial Web site or online service that collects personally identifiable information through the Internet about individual consumers residing in California who use or visit its commercial Web site or online service shall conspicuously post its privacy policy on its Web site, or in the case of an operator of an online service, make that policy available in accordance with paragraph (5) of subdivision (b) of Section 22577. An operator shall be in violation of this subdivision only if the operator fails to post its policy within 30 days after being notified of noncompliance.</paragraph>
+    <paragraph num="(b)" lga:provision="US-CA-BPC-s22575-b" lga:citation="Cal. Bus. &amp; Prof. Code § 22575(b)" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22575.&amp;lawCode=BPC" lga:regulates="PrivacyInformation">The privacy policy required by subdivision (a) shall do all of the following:
+      <list>
+        <item num="(1)" lga:requires="CategoriesOfPersonalData Recipients">Identify the categories of personally identifiable information that the operator collects through the Web site or online service about individual consumers who use or visit its commercial Web site or online service and the categories of third-party persons or entities with whom the operator may share that personally identifiable information.</item>
+        <item num="(2)" lga:requires="DataSubjectRights">If the operator maintains a process for an individual consumer who uses or visits its commercial Web site or online service to review and request changes to any of his or her personally identifiable information that is collected through the Web site or online service, provide a description of that process.</item>
+        <item num="(3)" lga:requires="PolicyChangeProcess">Describe the process by which the operator notifies consumers who use or visit its commercial Web site or online service of material changes to the operator’s privacy policy for that Web site or online service.</item>
+        <item num="(4)" lga:requires="PolicyEffectiveDate">Identify its effective date.</item>
+        <item num="(5)" lga:requires="DoNotTrackResponse">Disclose how the operator responds to Web browser “do not track” signals or other mechanisms that provide consumers the ability to exercise choice regarding the collection of personally identifiable information about an individual consumer’s online activities over time and across third-party Web sites or online services, if the operator engages in that collection.</item>
+        <item num="(6)" lga:requires="ThirdPartyTracking">Disclose whether other parties may collect personally identifiable information about an individual consumer’s online activities over time and across different Web sites when a consumer uses the operator’s Web site or service.</item>
+        <item num="(7)">An operator may satisfy the requirement of paragraph (5) by providing a clear and conspicuous hyperlink in the operator’s privacy policy to an online location containing a description, including the effects, of any program or protocol the operator follows that offers the consumer that choice.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="22576" title="Internet privacy requirements (CalOPPA): violation" source="bpc-22576.fragment.html">
+    <paragraph num="22576." lga:provision="US-CA-BPC-s22576" lga:citation="Cal. Bus. &amp; Prof. Code § 22576" lga:url="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22576.&amp;lawCode=BPC" lga:penalises="US-CA-BPC-s22575-a US-CA-BPC-s22575-b">An operator of a commercial Web site or online service that collects personally identifiable information through the Web site or online service from individual consumers who use or visit the commercial Web site or online service and who reside in California shall be in violation of this section if the operator fails to comply with the provisions of Section 22575 or with the provisions of its posted privacy policy in either of the following ways:
+      <list>
+        <item num="(a)">Knowingly and willfully.</item>
+        <item num="(b)">Negligently and materially.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

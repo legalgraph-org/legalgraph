@@ -1,0 +1,21 @@
+# CNIL délibération 2020-092 du 17 septembre 2020: the cookie-consent recommendation, published
+# only as PDF. The paragraphs the graph quotes are transcribed in schemas/law.xsd and checked
+# letter for letter against the PDF's text: refusal means no tracker operations (¶9), purposes
+# before choice (¶12), accept-all/refuse-all at the same level (¶27), refusal as easy as consent
+# (¶32-33), withdrawal controls in a visible place (¶44) and proof of consent (¶46).
+id: fr/cnil-cookies
+title: CNIL Recommandation "cookies et autres traceurs" (délibération n° 2020-092 du 17 septembre 2020)
+jurisdiction: FR
+language: fr
+publisher: Commission nationale de l'informatique et des libertés
+kind: authored-xml
+licence: official-work
+licence_basis: "A deliberation of the CNIL (an independent administrative authority) published in the Journal officiel: official texts carry no copyright in France"
+originals:
+  - file: recommandation-cookies-et-autres-traceurs.pdf
+    url: https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-03
+    sha256: 8292e7bde1ef467de37f74e9653a637bc9e8c9ca8392f6b43d8accc7980fad1d
+annotated: cnil-cookies.law.xml

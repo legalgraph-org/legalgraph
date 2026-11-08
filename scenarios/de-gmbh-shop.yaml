@@ -1,0 +1,58 @@
+name: German GmbH with an online shop
+description: >
+  A GmbH entered in the commercial register, selling to consumers through its shop, with 30
+  employees of whom 25 work with customer data, selling food and cosmetics by weight and volume, a VAT ID, only strictly necessary cookies (cart,
+  login), and advertising emails to existing customers only. It does not take part in consumer
+  arbitration.
+established_in: DE
+facts:
+  - EngagesProcessors
+  - CommercialDigitalService
+  - LegalPerson
+  - RegisteredInPublicRegister
+  - HasVatId
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - SellsGoodsByQuantity
+  - SellsProductsOnline
+  - PlacesPackagingOnMarket
+  - AnnouncesPriceReductions
+  - PublishesConsumerReviews
+  - ProcessesPersonalData
+  - ReliesOnLegitimateInterests
+  - TwentyOrMoreProcessPersonalData
+  - SendsMarketingEmails
+  - EmailsOnlyExistingCustomers
+obligations:
+  - DE-R-impressum
+  - DE-R-impressum-legal-person
+  - DE-R-impressum-register
+  - DE-R-impressum-vat
+  - DE-R-telemedia-identification
+  - DE-R-telemedia-representative
+  - DE-R-dispute-resolution-statement
+  - DE-R-email-marketing-existing-customers
+  - DE-R-email-marketing-sender
+  - DE-R-data-protection-officer
+  - DE-R-pre-contract-information
+  - DE-R-checkout-summary
+  - DE-R-withdrawal-function
+  - DE-R-total-price
+  - DE-R-unit-price
+  - DE-R-accessibility
+  - EU-R-product-safety-information
+  - EU-R-geo-blocking
+  - DE-R-packaging-registration
+  - DE-R-prior-price
+  - DE-R-fake-reviews
+  - EU-R-privacy-information
+  - EU-R-privacy-information-dpo
+  - EU-R-privacy-information-legitimate-interests
+  - EU-R-lawful-basis
+  - EU-R-data-protection-officer-contact
+  - DE-R-unfair-terms
+  - DE-R-contract-terms-storable
+  - EU-R-privacy-by-design
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - EU-R-processing-agreement
