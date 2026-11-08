@@ -10,16 +10,16 @@ import { unprefixedRedirects } from "./src/lib/routes.ts";
 // Every page in the site's own languages has its language in the URL (/en/method, /de/method); the
 // old unprefixed English addresses redirect to /en. Articles are listed from their files, drafts left
 // out. Astro serves the redirects in development and writes them as pages; _redirects makes them
-// permanent (301) on Cloudflare Pages.
+// permanent (301) where the site is served (dist/_redirects).
 const blogSlugs = readdirSync("src/content/blog")
   .filter((file) => /^[^.]+\.md$/.test(file))
   .filter((file) => !/^draft:\s*true$/m.test(readFileSync(`src/content/blog/${file}`, "utf8")))
   .map((file) => file.replace(/\.md$/, ""));
 const redirects = unprefixedRedirects(blogSlugs);
 
-// Static site for Cloudflare Pages. build.format "file" writes /id/DE-DDG.html, which Pages serves
-// as /id/DE-DDG; the Turtle for the same resource sits next to it as /id/DE-DDG.ttl, and
-// functions/ serves it instead of the page to clients that ask for Turtle (content negotiation).
+// Static site. build.format "file" writes /id/DE-DDG.html, which is served as /id/DE-DDG; the
+// Turtle for the same resource sits next to it as /id/DE-DDG.ttl, and worker/ serves it instead of
+// the page to clients that ask for Turtle (content negotiation).
 // SITE_URL overrides the public origin (e.g. for a preview deployment).
 //
 // The sitemap lists every page, for search engines and Google Search Console; each page in the site's

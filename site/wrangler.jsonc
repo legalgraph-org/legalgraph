@@ -1,0 +1,22 @@
+{
+  "name": "legalgraph",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-15",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // dist/404.html for any path without a file.
+    "not_found_handling": "404-page",
+    // Only resource identifiers need the Worker (content negotiation); everything else is static.
+    "run_worker_first": ["/id/*", "/vocab/*"]
+  },
+  "routes": [{ "pattern": "legalgraph.org", "custom_domain": true }],
+  "workers_dev": true,
+  "preview_urls": true,
+  // Errors only. Per-request (invocation) logs stay off: the privacy policy says we keep no request
+  // logs of our own. The Worker writes no logs itself, so what is kept is its errors.
+  "observability": {
+    "logs": { "enabled": true, "invocation_logs": false, "head_sampling_rate": 1, "persist": true },
+    "traces": { "enabled": false }
+  }
+}

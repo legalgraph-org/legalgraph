@@ -17,7 +17,7 @@ E-Mail: [contact@aimix.io](mailto:contact@aimix.io)
 
 ## Wenn Sie die Website besuchen
 
-Die Website besteht aus statischen Seiten, die über Cloudflare Pages ausgeliefert werden. Jedes Mal, wenn Ihr Browser eine Seite anfordert, erhält der Server zwangsläufig technische Angaben zur Anfrage:
+Die Website besteht aus statischen Seiten, die über Cloudflare ausgeliefert werden. Jedes Mal, wenn Ihr Browser eine Seite anfordert, erhält der Server zwangsläufig technische Angaben zur Anfrage:
 
 - Ihre IP-Adresse,
 - Datum und Uhrzeit,

@@ -17,7 +17,7 @@ Email: [contact@aimix.io](mailto:contact@aimix.io)
 
 ## When you visit the site
 
-The site is a set of static pages served by Cloudflare Pages. Every time your browser asks for a page, the server necessarily receives technical information about the request:
+The site is a set of static pages served by Cloudflare. Every time your browser asks for a page, the server necessarily receives technical information about the request:
 
 - your IP address,
 - the date and time,

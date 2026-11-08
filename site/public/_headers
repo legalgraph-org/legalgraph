@@ -1,9 +1,8 @@
-/*.ttl
-  Content-Type: text/turtle; charset=utf-8
+/*
   Access-Control-Allow-Origin: *
 
-/downloads/*
-  Access-Control-Allow-Origin: *
+/*.ttl
+  Content-Type: text/turtle; charset=utf-8
 
 /sources/*.xml
   Content-Type: application/xml; charset=utf-8

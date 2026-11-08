@@ -36,19 +36,12 @@ gettext: `brew install gettext`). `make i18n-check` fails on any missing or fuzz
 `make site` runs it first. Articles and legal pages are Markdown per language (`name.md`,
 `name.de.md`).
 
-## Deploying to Cloudflare Pages
+## Content negotiation
 
-`site/dist` is a static site; `site/functions/` adds content negotiation, so `/id/DE-DDG` returns
-the HTML page to browsers and Turtle to clients sending `Accept: text/turtle`. From CI, after
-`make check`:
-
-```sh
-uv run legalgraph generate-site
-cd site && SITE_URL=https://legalgraph.org bunx wrangler pages deploy dist --project-name <project>
-```
-
-Run `wrangler` from `site/` so it picks up `functions/`. The identifiers live on legalgraph.org
-(`https://legalgraph.org/id/DE-DDG`), so the site must be served from that domain's root for each
+`site/dist` is a static site. Requests under `/id/` and `/vocab/` go through
+[site/worker/index.js](../site/worker/index.js) first: `/id/DE-DDG` returns the HTML page to
+browsers and Turtle to clients sending `Accept: text/turtle`. The identifiers live on legalgraph.org
+(`https://legalgraph.org/id/DE-DDG`), so the site is served from that domain's root for each
 identifier to resolve to its page.
 
 ## Search engines

@@ -1,6 +1,6 @@
 // Identifiers and paths. Each resource's page lives at the path of its identifier, so once the
 // site runs on the graph's domain, every identifier resolves to its own page (and, with
-// `Accept: text/turtle`, to its Turtle; see functions/).
+// `Accept: text/turtle`, to its Turtle; see worker/).
 export const ID_BASE = "https://legalgraph.org/id/";
 export const VOCAB_BASE = "https://legalgraph.org/vocab/";
 

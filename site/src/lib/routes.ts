@@ -37,7 +37,7 @@ export function pagePath(page: PageId, locale: SupportedLocale): string {
 /**
  * Where the old, unprefixed English addresses (/, /method, /blog/<slug> …) go now: their /en page.
  * astro.config.mjs turns these into redirects, for the dev server and as permanent (301) redirects
- * on Cloudflare Pages (_redirects).
+ * where the site is served (_redirects).
  */
 export function unprefixedRedirects(blogSlugs: readonly string[]): Record<string, string> {
   const pages: PageId[] = [...PAGES, ...blogSlugs.map((slug) => `blog/${slug}` as const)];

@@ -455,7 +455,7 @@ def site_data(sources: Sources) -> None:
 @click.option("--data-only", is_flag=True, help="Write the data files only; skip the Astro build.")
 @click.pass_obj
 def generate_site(sources: Sources, data_only: bool) -> None:
-    """Build the browsable site into site/dist, ready for Cloudflare Pages (needs bun)."""
+    """Build the browsable site into site/dist, ready to serve (needs bun)."""
     site_data(sources)
     if data_only:
         return
