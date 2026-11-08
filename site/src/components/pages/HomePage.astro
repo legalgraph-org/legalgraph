@@ -125,8 +125,8 @@ const coverage = [
           {t("legalgraph is an open knowledge graph of the laws that tell a website what to show and do: the imprint, the privacy policy, terms, cookie banners. Every statement in it links to the words of the law it comes from.")}
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <Button href=pagePath("checklist", t.locale) size="lg">{t("Try the checklist")}</Button>
-          <Button href=pagePath("graph", t.locale) size="lg" variant="outline">{t("Explore the graph")}</Button>
+          <Button href={pagePath("checklist", t.locale)} size="lg">{t("Try the checklist")}</Button>
+          <Button href={pagePath("graph", t.locale)} size="lg" variant="outline">{t("Explore the graph")}</Button>
         </div>
       </div>
       <div class="mx-auto w-full max-w-md max-lg:hidden lg:max-w-none">
@@ -348,7 +348,7 @@ const coverage = [
         <Heading level={2}>{t("See what applies to your website")}</Heading>
         <p class="mt-2 text-muted-foreground">{t("A few questions, then the rules with the law behind each. Nothing leaves your browser.")}</p>
       </div>
-      <Button href=pagePath("checklist", t.locale) size="lg" variant="solid">{t("Open the checklist")}</Button>
+      <Button href={pagePath("checklist", t.locale)} size="lg" variant="solid">{t("Open the checklist")}</Button>
     </div>
   </Section>
 </Layout>
