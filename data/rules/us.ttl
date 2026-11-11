@@ -192,3 +192,49 @@ lg:US-CA-R-minimal-collection a lgo:Obligation ;
     lgo:appliesWhen lgv:CcpaBusiness , lgv:ProcessesPersonalData ;
     lgo:requiresAction lgv:CollectBeyondPurpose ;
     lgo:reviewStatus lgv:Draft .
+
+# --- California: consumer requests and opt-out signals (CCPA + CCR) ----------------------------
+
+lg:US-CA-R-opt-out-signals a lgo:Obligation ;
+    rdfs:label "Honour opt-out preference signals such as Global Privacy Control"@en ;
+    rdfs:comment "A business that sells or shares personal information must process a valid opt-out preference signal as a request to opt out of sale/sharing — for the browser or device, any associated consumer profile, and the consumer where known (§ 7025(b), (c)(1))."@en ;
+    lgo:establishedBy lg:US-CA-CCR-11-7025-b , lg:US-CA-CCR-11-7025-c-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:SellsOrSharesPersonalData ;
+    lgo:requiresAction lgv:ProcessOptOutPreferenceSignal ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-request-deadline a lgo:Obligation ;
+    rdfs:label "Answer consumer requests within 45 days"@en ;
+    rdfs:comment "Disclosure, correction and deletion requests are answered within 45 days of a verifiable request, extendable once by 45 days with notice inside the first period (§ 1798.130(a)(2))."@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-130-a-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness ;
+    lgo:requiresAction lgv:AnswerCcpaRequestWithin45Days ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-request-records a lgo:Obligation ;
+    rdfs:label "Keep request records for 24 months"@en ;
+    rdfs:comment "A ticket or log of each consumer request — date, nature, method, response, basis for denial — kept for at least 24 months, secured and used for no other purpose."@en ;
+    lgo:establishedBy lg:US-CA-CCR-11-7101-a ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness ;
+    lgo:requiresAction lgv:KeepCcpaRequestRecords ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:US-CA-R-reask-after-opt-out a lgo:Obligation ;
+    rdfs:label "Wait 12 months before asking an opted-out consumer again"@en ;
+    rdfs:comment "After a consumer opts out of sale/sharing (or limits sensitive-information use), wait at least 12 months before asking them to authorise it again."@en ;
+    lgo:establishedBy lg:US-CA-CCPA-1798-135-c-4 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:CcpaBusiness , lgv:SellsOrSharesPersonalData ;
+    lgo:requiresAction lgv:Wait12MonthsBeforeReasking ;
+    lgo:reviewStatus lgv:Draft .

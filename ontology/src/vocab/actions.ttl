@@ -259,3 +259,85 @@ lgv:KeepConsentEvidencePerAddress a lgo:Action ;
     skos:inScheme lgv:Actions ;
     skos:prefLabel "Keep double opt-in evidence for each address"@en ;
     skos:definition "Document and store each individual recipient's concrete declaration of consent — the registration, the confirmation mail and its confirmation — so consent is provable per address (BGH, I ZR 164/09: the burden lies on the advertiser)."@en .
+
+# --- Data subject requests and breach duties (GDPR) -----------------------------------------
+
+lgv:AnswerDataSubjectRequestWithinOneMonth a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Answer data subject requests within one month"@en , "Anfragen von Betroffenen binnen eines Monats beantworten"@de ;
+    skos:definition "Every request under the data subject rights is answered within one month, extendable by two further months for complex or numerous requests, telling the person about the extension within the first month (Article 12(3) GDPR)."@en .
+
+lgv:ProvideAccessToPersonalData a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Give access and a copy of the personal data"@en , "Auskunft und Kopie der personenbezogenen Daten geben"@de ;
+    skos:definition "On request, confirm whether a person's data are processed and give a copy plus the listed information; the copy may not affect the rights and freedoms of others (Articles 15(1), (3) and (4) GDPR)."@en .
+
+lgv:RectifyPersonalData a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Rectify or complete inaccurate personal data"@en , "Unrichtige personenbezogene Daten berichtigen"@de ;
+    skos:definition "On request, correct inaccurate personal data without undue delay and complete incomplete data, including by a supplementary statement (Article 16 GDPR)."@en .
+
+lgv:ErasePersonalData a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Erase personal data when the right applies"@en , "Personenbezogene Daten löschen, wenn das Recht greift"@de ;
+    skos:definition "On request, erase the person's data without undue delay where an Article 17(1) ground applies — withdrawn consent, no longer needed, successful objection and the others; not where an Article 17(3) exception applies, such as legal claims."@en .
+
+lgv:RestrictProcessingOfPersonalData a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Restrict processing when the right applies"@en , "Verarbeitung einschränken, wenn das Recht greift"@de ;
+    skos:definition "On request, restrict processing while an Article 18(1) ground runs — contested accuracy, unlawful processing the person wants kept, needed data for legal claims, a pending objection; restricted data may only be stored, or used with consent or for claims (Article 18(2))."@en .
+
+lgv:ProvideDataInPortableFormat a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Provide the data in a portable format"@en , "Daten in übertragbarem Format bereitstellen"@de ;
+    skos:definition "On request, hand over the data the person provided, processed on consent or contract and by automated means, in a structured, commonly used and machine-readable format, or transmit them directly where feasible (Article 20(1) GDPR)."@en .
+
+lgv:StopProcessingOnObjection a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Stop processing on objection unless compelling grounds"@en , "Verarbeitung nach Widerspruch einstellen"@de ;
+    skos:definition "On objection, stop processing on the public-task or legitimate-interests basis unless compelling legitimate grounds override, or it is needed for legal claims (Article 21(1) GDPR)."@en .
+
+lgv:StopDirectMarketingOnObjection a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Stop direct marketing on objection"@en , "Werbung nach Widerspruch einstellen"@de ;
+    skos:definition "On objection to direct marketing, stop processing the person's data for it — no weighing of interests, and the right must be pointed out clearly at the first contact (Article 21(2) and (3) GDPR)."@en .
+
+lgv:NotifyRecipientsOfDataSubjectAction a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Tell recipients about rectification, erasure or restriction"@en , "Empfänger über Berichtigung, Löschung oder Einschränkung informieren"@de ;
+    skos:definition "Tell each recipient to whom the data were disclosed about a rectification, erasure or restriction, unless impossible or disproportionate, and tell the person who the recipients are on request (Article 19 GDPR)."@en .
+
+lgv:SecurePersonalData a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Secure personal data"@en , "Personenbezogene Daten sichern"@de ;
+    skos:definition "Appropriate technical and organisational measures for a level of security appropriate to the risk: pseudonymisation, confidentiality, availability, resilience and regular testing (Article 32 GDPR)."@en .
+
+lgv:NotifyBreachToSupervisoryAuthority a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Notify a personal data breach to the authority within 72 hours"@en , "Datenschutzverletzung der Aufsichtsbehörde binnen 72 Stunden melden"@de ;
+    skos:definition "Notify a personal data breach to the supervisory authority within 72 hours where feasible, unless the breach is unlikely to risk people's rights and freedoms (Article 33 GDPR)."@en .
+
+lgv:InformDataSubjectsOfBreach a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Tell the people affected about a high-risk breach"@en , "Betroffene über eine Verletzung mit hohem Risiko informieren"@de ;
+    skos:definition "Tell the affected people about a breach without undue delay when it is likely to result in a high risk to their rights and freedoms (Article 34 GDPR)."@en .
+
+lgv:ProcessOptOutPreferenceSignal a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Process opt-out preference signals"@en ;
+    skos:definition "Treat a valid opt-out preference signal such as Global Privacy Control as the consumer's request to opt out of sale and sharing, for the browser or device and any associated consumer profile (Cal. Code Regs. tit. 11, § 7025)."@en .
+
+lgv:AnswerCcpaRequestWithin45Days a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Answer CCPA requests within 45 days"@en ;
+    skos:definition "Deliver the requested information, correct or delete within 45 days of a verifiable consumer request, extendable once by 45 days with notice (Cal. Civ. Code § 1798.130(a)(2))."@en .
+
+lgv:KeepCcpaRequestRecords a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Keep CCPA request records for 24 months"@en ;
+    skos:definition "Keep a ticket or log of consumer requests and responses for at least 24 months, secured, used for no other purpose (Cal. Code Regs. tit. 11, § 7101)."@en .
+
+lgv:Wait12MonthsBeforeReasking a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Wait 12 months before asking an opted-out consumer again"@en ;
+    skos:definition "After an opt-out, wait at least 12 months before asking the consumer to authorise the sale or sharing of their personal information again (Cal. Civ. Code § 1798.135(c)(4))."@en .

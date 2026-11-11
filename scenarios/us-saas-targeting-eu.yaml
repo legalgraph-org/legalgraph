@@ -28,3 +28,11 @@ obligations:
   - EU-R-processing-agreement
   - EU-R-consent-specific
   - EU-R-processor-end-of-service
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction

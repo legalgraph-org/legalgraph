@@ -49,6 +49,15 @@ obligations:
   - DE-R-checkout-summary
   - DE-R-accessibility
   - DE-R-total-price
+  - AT-R-media-owner-disclosure
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction
 national:
   EU-R-service-provider-information: [AT-ECG-s5-1]
   EU-R-service-provider-information-register: [AT-ECG-s5-1]

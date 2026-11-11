@@ -513,3 +513,13 @@ lgv:DataMinimisation a lgo:LegalConcept ;
     skos:inScheme lgv:DataProtectionConcepts ;
     skos:prefLabel "Data minimisation"@en , "Datenminimierung"@de ;
     skos:definition "Personal data must be adequate, relevant and limited to what the purposes require (Art. 5(1)(c) GDPR)."@en .
+
+lgv:SecurityOfProcessing a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Security of processing"@en , "Sicherheit der Verarbeitung"@de ;
+    skos:definition "Appropriate technical and organisational measures for a level of security appropriate to the risk (Article 32 GDPR)."@en .
+
+lgv:PersonalDataBreach a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Personal data breach"@en , "Verletzung des Schutzes personenbezogener Daten"@de ;
+    skos:definition "A breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of or access to personal data (Article 4(12) GDPR); it must be notified to the supervisory authority and, in high-risk cases, to the people affected (Articles 33, 34 GDPR)."@en .

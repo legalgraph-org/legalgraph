@@ -135,6 +135,12 @@ lgv:CommercialDigitalService a lgo:Condition ;
     skos:definition "A website or app offered in a business-like way, usually for payment: selling, advertising, affiliate links or promoting a business all count."@en ;
     lgo:question "Does the website serve business purposes (selling, advertising, affiliate links, promoting a business)?"@en .
 
+lgv:InfluencesPublicOpinion a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Content that can influence public opinion"@en ;
+    skos:definition "Content beyond the owner's personal life or self-presentation that can influence public opinion: news, commentary, a blog on public topics. Austrian media law asks such media for the full disclosure; others give only name, business purpose and residence or seat (§ 25 Abs. 5 MedienG)."@en ;
+    lgo:question "Does the website go beyond presenting yourself or your business, with content that can influence public opinion, such as news, commentary or a blog on public topics?"@en .
+
 lgv:NonPrivateTelemedia a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     skos:prefLabel "Website not purely personal or family"@en ;

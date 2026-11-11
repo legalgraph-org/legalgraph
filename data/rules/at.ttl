@@ -50,3 +50,32 @@ lg:AT-R-unfair-terms a lgo:Obligation ;
     lgo:appliesWhen lgv:SellsToConsumersInAustria ;
     lgo:requiresAction lgv:ImposeUnfairTerms ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Media owner disclosure (§ 25 MedienG) ------------------------------------------------------
+# Austrian media law asks every website, as a periodical electronic medium, to disclose its owner.
+# Sites limited to the owner's personal life or self-presentation give name, business purpose and
+# residence or seat only (Abs. 5); the others give the full disclosure of Abs. 2 and 4 as well.
+
+lg:AT-R-media-owner-disclosure a lgo:Obligation ;
+    rdfs:label "Media owner disclosure: name, business purpose, residence or seat"@en ;
+    rdfs:comment "Every website of an owner established in Austria, private ones included: § 25 MedienG applies to periodical electronic media, and Abs. 5 keeps the disclosure this short for sites limited to the owner's personal life or self-presentation. It may be published together with the e-Commerce imprint of § 5 ECG (Abs. 1)."@en ;
+    lgo:establishedBy lg:AT-MEDIENG-s25-1 , lg:AT-MEDIENG-s25-5 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria ;
+    lgo:partOfDisclosure lgv:MediaOwnerDisclosure ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:BusinessPurpose , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:AT-R-media-owner-disclosure-full a lgo:Obligation ;
+    rdfs:label "Media owner disclosure in full: representatives, ownership and editorial line"@en ;
+    rdfs:comment "For websites whose content can influence public opinion beyond the owner's personal life or self-presentation: the representatives of the media owner, who owns it directly or indirectly, and a statement of its basic direction (Blattlinie)."@en ;
+    lgo:establishedBy lg:AT-MEDIENG-s25-2 , lg:AT-MEDIENG-s25-4 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria , lgv:InfluencesPublicOpinion ;
+    lgo:partOfDisclosure lgv:MediaOwnerDisclosure ;
+    lgo:requiresDisclosureOf lgv:AuthorisedRepresentative , lgv:OwnershipStructure , lgv:EditorialLine ;
+    lgo:reviewStatus lgv:Draft .

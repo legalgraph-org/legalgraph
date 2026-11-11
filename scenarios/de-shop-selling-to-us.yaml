@@ -57,3 +57,12 @@ obligations:
   - US-CA-R-ecommerce-service-notice
   - US-CA-R-auto-renewal-consent
   - US-CA-R-cancel-online
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-objection-marketing
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction

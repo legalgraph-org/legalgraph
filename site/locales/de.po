@@ -114,13 +114,17 @@ msgstr "Ein paar Fragen, dann die Regeln, jede mit dem Gesetz dahinter. Nichts v
 msgid "A graph anyone can extend"
 msgstr "Ein Graph, den jeder erweitern kann"
 
+#: src/lib/navigation.ts:44
+msgid "A guest article: from the dataset to a product"
+msgstr "Ein Gastartikel: vom Datensatz zum Produkt"
+
 #: src/components/pages/MethodPage.astro:238
 msgid "A translation gets an <0>as_of</0> date: where the portal's own notes show the text it translates was amended later, the check fails — an official translation older than the law must not stand in for it."
 msgstr "Eine Übersetzung bekommt ein Datum <0>as_of</0>: Zeigen die Hinweise des Portals, dass der übersetzte Text später geändert wurde, schlägt die Prüfung fehl – eine amtliche Übersetzung, die älter ist als das Gesetz, darf nicht an seine Stelle treten."
 
 #: src/components/pages/AboutPage.astro:23
-#: src/components/pages/AboutPage.astro:32 src/lib/navigation.ts:53
-#: src/lib/navigation.ts:64
+#: src/components/pages/AboutPage.astro:32 src/lib/navigation.ts:70
+#: src/lib/navigation.ts:82
 msgid "About"
 msgstr "Über"
 
@@ -205,8 +209,8 @@ msgid "Applies when the business is established in Germany, runs a business webs
 msgstr "Gilt, wenn das Unternehmen in Deutschland niedergelassen ist, eine geschäftsmäßige Website betreibt und eine USt-IdNr. hat."
 
 #: src/components/BlogList.astro:132
-#: src/components/pages/BlogIndexPage.astro:22 src/lib/navigation.ts:53
-#: src/lib/navigation.ts:65
+#: src/components/pages/BlogIndexPage.astro:22 src/lib/navigation.ts:69
+#: src/lib/navigation.ts:83
 msgid "Articles"
 msgstr "Artikel"
 
@@ -242,6 +246,10 @@ msgstr "Nach Ländern stöbern"
 msgid "Build a checklist into an article or a tool from the graph, instead of retyping it. The site's own checklist runs on this file."
 msgstr "Bauen Sie eine Checkliste aus dem Graphen in einen Artikel oder ein Werkzeug ein, statt sie abzutippen. Die Checkliste dieser Website läuft auf dieser Datei."
 
+#: src/lib/navigation.ts:44
+msgid "Built on legalgraph"
+msgstr "Auf legalgraph gebaut"
+
 #: src/components/pages/HomePage.astro:274
 msgid "Built to be checked, not trusted"
 msgstr "Gebaut, um geprüft zu werden, nicht um ihm zu vertrauen"
@@ -257,6 +265,10 @@ msgstr "Unternehmen und Steuern"
 #: src/components/pages/HomePage.astro:74
 msgid "Businesses"
 msgstr "Unternehmen"
+
+#: src/lib/navigation.ts:43
+msgid "By Aimix: your imprint as a template, built on this graph"
+msgstr "Von Aimix: Ihr Impressum als Vorlage, gebaut auf diesem Graphen"
 
 #: src/components/BlogList.astro:22 src/components/BlogList.astro:61
 #: src/components/BlogList.astro:62
@@ -376,7 +388,7 @@ msgstr "Gerichtsentscheidungen und Leitlinien werden zu den Bedingungen ihrer He
 msgid "Court or authority decision"
 msgstr "Gerichts- oder Behördenentscheidung"
 
-#: src/lib/navigation.ts:53 src/lib/navigation.ts:60
+#: src/lib/navigation.ts:67 src/lib/navigation.ts:78
 msgid "Data"
 msgstr "Daten"
 
@@ -567,7 +579,7 @@ msgstr "Ausklappen ({count} von {total})"
 msgid "Explanations of what a website must show and do, and why."
 msgstr "Erklärungen dazu, was eine Website zeigen und tun muss, und warum."
 
-#: src/lib/navigation.ts:53 src/lib/navigation.ts:59
+#: src/lib/navigation.ts:66 src/lib/navigation.ts:77
 msgid "Explore"
 msgstr "Entdecken"
 
@@ -747,11 +759,15 @@ msgstr "Menschliche Übersetzung"
 msgid "If the graph is useful to you, <0>star the repository</0>: it is how others find the project, and how we see who relies on it. Corrections and questions are welcome there as issues."
 msgstr "Wenn Ihnen der Graph nützt, <0>geben Sie dem Repository einen Stern</0>: So finden andere das Projekt, und so sehen wir, wer sich darauf stützt. Korrekturen und Fragen sind dort als Issues willkommen."
 
+#: src/lib/navigation.ts:43
+msgid "Impressum template generator"
+msgstr "Impressum-Vorlagen-Generator"
+
 #: src/components/pages/HomePage.astro:99
 msgid "Impressum, cookies (TDDDG), consumer contracts, prices, packaging, youth protection, from the official law texts."
 msgstr "Impressum, Cookies (TDDDG), Verbraucherverträge, Preise, Verpackung, Jugendschutz, aus den amtlichen Gesetzestexten."
 
-#: src/components/HeroGraph.astro:101 src/lib/navigation.ts:72
+#: src/components/HeroGraph.astro:101 src/lib/navigation.ts:90
 msgid "Imprint"
 msgstr "Impressum"
 
@@ -852,7 +868,7 @@ msgstr "Gesetze, Urteile, Leitlinien, wie das Portal sie veröffentlicht: XML, H
 msgid "Lawyers and researchers"
 msgstr "Juristen und Forschende"
 
-#: src/components/pages/LegalPageView.astro:28 src/lib/navigation.ts:71
+#: src/components/pages/LegalPageView.astro:28 src/lib/navigation.ts:89
 msgid "Legal"
 msgstr "Rechtliches"
 
@@ -1032,7 +1048,7 @@ msgstr "Portale"
 msgid "Principles"
 msgstr "Grundsätze"
 
-#: src/lib/navigation.ts:72
+#: src/lib/navigation.ts:90
 msgid "Privacy"
 msgstr "Datenschutz"
 
@@ -1044,7 +1060,7 @@ msgstr "Datenschutzerklärung"
 msgid "Privacy, consumer and e-commerce law beyond the EU, from California's CCPA to the Swiss Data Protection Act, and more with every contribution."
 msgstr "Datenschutz-, Verbraucher- und E-Commerce-Recht über die EU hinaus, vom kalifornischen CCPA bis zum Schweizer Datenschutzgesetz, und mehr mit jedem Beitrag."
 
-#: src/lib/navigation.ts:62
+#: src/lib/navigation.ts:80
 msgid "Project"
 msgstr "Projekt"
 
@@ -1227,6 +1243,10 @@ msgstr "Nebeneinander"
 msgid "So we built the evidence first, as open data anyone can use, cite and correct."
 msgstr "Also haben wir zuerst die Belege gebaut, als offene Daten, die jeder nutzen, zitieren und korrigieren kann."
 
+#: src/lib/navigation.ts:68
+msgid "Solutions"
+msgstr "Lösungen"
+
 #: src/components/pages/DownloadPage.astro:140
 msgid "Star and clone on GitHub"
 msgstr "Auf GitHub markieren und klonen"
@@ -1256,7 +1276,7 @@ msgstr "Mitmachen"
 msgid "Technical standards"
 msgstr "Technische Standards"
 
-#: src/lib/navigation.ts:72
+#: src/lib/navigation.ts:90
 msgid "Terms of use"
 msgstr "Nutzungsbedingungen"
 

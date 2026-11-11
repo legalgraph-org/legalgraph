@@ -163,6 +163,70 @@ lg:DE-UWG-s7-2
     lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]" ;
     lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/__7.html"^^xsd:anyURI .
 
+lg:DE-UWG-s7-2-1
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-UWG ;
+    lgo:citation "§ 7 Abs. 2 Nr. 1 UWG" ;
+    lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-UWG-source ;
+    lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]/DL[1]/DD[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI .
+
+lg:DE-UWG-s7-2-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-UWG-s7-2-1 ;
+    lgo:retrievedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceDocument lg:DE-UWG-source ;
+    lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]/DL[1]/DD[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI ;
+    lgo:text "bei Werbung mit einem Telefonanruf gegenüber einem Verbraucher ohne dessen vorherige ausdrückliche Einwilligung oder gegenüber einem sonstigen Marktteilnehmer ohne dessen zumindest mutmaßliche Einwilligung,"@de .
+
+lg:DE-UWG-s7-2-2
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-UWG ;
+    lgo:citation "§ 7 Abs. 2 Nr. 2 UWG" ;
+    lgo:implements lg:EU-2002-58-art13-1 ;
+    lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-UWG-source ;
+    lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]/DL[1]/DD[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI .
+
+lg:DE-UWG-s7-2-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-UWG-s7-2-2 ;
+    lgo:retrievedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceDocument lg:DE-UWG-source ;
+    lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]/DL[1]/DD[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI ;
+    lgo:text "bei Werbung unter Verwendung einer automatischen Anrufmaschine, eines Faxgerätes oder elektronischer Post, ohne dass eine vorherige ausdrückliche Einwilligung des Adressaten vorliegt, oder"@de .
+
+lg:DE-UWG-s7-2-3
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-UWG ;
+    lgo:citation "§ 7 Abs. 2 Nr. 3 UWG" ;
+    lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-UWG-source ;
+    lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]/DL[1]/DD[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI .
+
+lg:DE-UWG-s7-2-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-UWG-s7-2-3 ;
+    lgo:retrievedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceDocument lg:DE-UWG-source ;
+    lgo:sourceElement "/dokumente/norm[14]/textdaten[1]/text[1]/Content[1]/P[2]/DL[1]/DD[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/uwg_2004/"^^xsd:anyURI ;
+    lgo:text """bei Werbung mit einer Nachricht,
+a) bei der die Identität des Absenders, in dessen Auftrag die Nachricht übermittelt wird, verschleiert oder verheimlicht wird oder
+b) bei der gegen § 6 Absatz 1 des Digitale-Dienste-Gesetzes verstoßen wird oder in der der Empfänger aufgefordert wird, eine Website aufzurufen, die gegen diese Vorschrift verstößt, oder
+c) bei der keine gültige Adresse vorhanden ist, an die der Empfänger eine Aufforderung zur Einstellung solcher Nachrichten richten kann, ohne dass hierfür andere als die Übermittlungskosten nach den Basistarifen entstehen."""@de .
+
 lg:DE-UWG-s7-2-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;

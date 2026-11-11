@@ -35,6 +35,7 @@ lgv:SellsToConsumersInSpain lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-a
 lgv:SellsToConsumersInIreland lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
 lgv:SellsToConsumersInItaly lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
 lgv:TdddgApplies lgo:basedOn lg:DE-TDDDG-s1-3 .
+lgv:InfluencesPublicOpinion lgo:basedOn lg:AT-MEDIENG-s25-5 .
 # Unfair competition follows the market concerned (Article 6(1) Rome II); the BFSG covers services
 # provided to consumers (§ 1(3) BFSG, Article 2(2) European Accessibility Act).
 lgv:CompetesOnTheGermanMarket lgo:basedOn lg:EU-2007-864-art6-1 .

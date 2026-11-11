@@ -36,6 +36,7 @@ EU-2005-29: {kind: cellar, arg: "32005L0029"}
 EU-2006-123: {kind: cellar, arg: "32006L0123"}
 EU-2007-864: {kind: cellar, arg: "32007R0864"}
 EU-2008-593: {kind: cellar, arg: "32008R0593"}
+EU-2015-1535: {kind: cellar, arg: "32015L1535"}
 EU-2009-136: {kind: cellar, arg: "32009L0136"}
 EU-2011-83: {kind: cellar, arg: "32011L0083"}
 EU-2012-1215: {kind: cellar, arg: "32012R1215"}
@@ -84,6 +85,7 @@ FR-CONSO: {exempt: "legifrance.gouv.fr blocks programmatic access"}
 AT-ECG: {kind: ris, arg: "20001703"}
 AT-FAGG: {kind: ris, arg: "20008847"}
 AT-KSCHG: {kind: ris, arg: "10002462"}
+AT-MEDIENG: {kind: ris, arg: "10000719"}
 AT-TKG-2021: {kind: ris, arg: "20011678"}
 AT-UGB: {kind: ris, arg: "10001702"}
 

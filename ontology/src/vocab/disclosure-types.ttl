@@ -20,6 +20,13 @@ lgv:EditorialResponsibility a lgo:DisclosureType ;
     skos:altLabel "Verantwortlicher nach § 18 Abs. 2 MStV"@de , "V.i.S.d.P."@de , "Directeur de la publication"@fr ;
     skos:definition "The person responsible for journalistic or editorial content, named in addition to the provider."@en .
 
+lgv:MediaOwnerDisclosure a lgo:DisclosureType ;
+    skos:inScheme lgv:DisclosureTypes ;
+    skos:broader lgv:ProviderIdentification ;
+    skos:prefLabel "Media owner disclosure"@en ;
+    skos:altLabel "Offenlegung"@de ;
+    skos:definition "Austrian media law's disclosure of who owns a periodical medium, including a website: the media owner, its business purpose and seat, its owners and, for most media, its editorial line. Sites limited to the owner's personal life or self-presentation give only name and residence or seat (§ 25 MedienG)."@en .
+
 lgv:CommercialCommunication a lgo:DisclosureType ;
     skos:inScheme lgv:DisclosureTypes ;
     skos:prefLabel "Commercial communication transparency"@en ;

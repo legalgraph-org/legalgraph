@@ -262,3 +262,6 @@ lg:EU-2023-2854
     eli:id_local "32023R2854" ;
     rdfs:seeAlso <http://data.europa.eu/eli/reg/2023/2854/oj> ;
     rdfs:comment "Applies from 12 September 2025. Chapter VI governs switching between data-processing services: providers must remove obstacles to switching, including to exporting the customer's data (arts. 23, 25); until 12 January 2027 they may charge for switching no more than the costs directly linked to it, and from that date not at all (art. 29)."@en .
+
+lg:CJEU-C-487-21 lgo:shortName "Austrian DSB v CRIF" ;
+    rdfs:comment "The Article 15(3) copy must be a faithful and intelligible reproduction of all the person's data, including copies of extracts of documents or databases where needed for the person to exercise their rights effectively — always with the rights and freedoms of others in mind. 'Information' in the third sentence covers only the data the copy must contain."@en .

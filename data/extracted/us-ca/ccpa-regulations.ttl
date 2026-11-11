@@ -138,6 +138,26 @@ lg:US-CA-CCR-11-7026-a-q1
     lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"^^xsd:anyURI ;
     lgo:text "(a) A business that sells or shares personal information shall provide two or more designated methods for submitting requests to opt-out of sale/sharing. A business shall consider the methods by which it interacts with consumers, the manner in which the business collects the personal information that it makes available to third parties, available technology, and ease of use by the consumer when determining which methods consumers may use to submit requests to opt-out of sale/sharing. At least one method offered shall reflect the manner in which the business primarily interacts with the consumer. Illustrative examples follow."@en .
 
+lg:US-CA-CCR-11-7101-a
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-CCR-11-CCPA ;
+    lgo:citation "Cal. Code Regs. tit. 11, § 7101(a)" ;
+    lgo:regulates lgv:PrivacyInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-CCR-11-CCPA-source ;
+    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
+    lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"^^xsd:anyURI .
+
+lg:US-CA-CCR-11-7101-a-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-CCR-11-7101-a ;
+    lgo:retrievedOn "2026-11-08"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-CCR-11-CCPA-source ;
+    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
+    lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"^^xsd:anyURI ;
+    lgo:text "(a) A business shall maintain records of consumer requests made pursuant to the CCPA and how it responded to the requests for at least 24 months. The business shall implement and maintain reasonable security procedures and practices in maintaining these records."@en .
+
 lg:US-CA-CCR-11-CCPA
     a lgo:LegalAct ;
     eli:date_document "2026-01-01"^^xsd:date ;

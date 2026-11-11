@@ -65,3 +65,11 @@ obligations:
   - GB-R-processing-record
   - GB-R-storage-limitation
   - GB-R-unfair-terms
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction

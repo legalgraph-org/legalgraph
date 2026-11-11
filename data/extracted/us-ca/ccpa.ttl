@@ -132,6 +132,29 @@ lg:US-CA-CCPA-1798-130-a-1-q1
 (A) Make available to consumers two or more designated methods for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively, including, at a minimum, a toll-free telephone number. A business that operates exclusively online and has a direct relationship with a consumer from whom it collects personal information shall only be required to provide an email address for submitting requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or for requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively.
 (B) If the business maintains an internet website, make the internet website available to consumers to submit requests for information required to be disclosed pursuant to Sections 1798.110 and 1798.115, or requests for deletion or correction pursuant to Sections 1798.105 and 1798.106, respectively."""@en .
 
+lg:US-CA-CCPA-1798-130-a-2
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-CCPA ;
+    lgo:citation "Cal. Civ. Code § 1798.130(a)(2)" ;
+    lgo:regulates lgv:PrivacyInformation ;
+    lgo:requiresDisclosureOf lgv:DataSubjectRights ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-CCPA-source-4 ;
+    lgo:sourceElement "/law/section[4]/paragraph[2]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.130"^^xsd:anyURI .
+
+lg:US-CA-CCPA-1798-130-a-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-CCPA-1798-130-a-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-CCPA-source-4 ;
+    lgo:sourceElement "/law/section[4]/paragraph[2]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.130"^^xsd:anyURI ;
+    lgo:text """(2)
+(A) Disclose and deliver the required information to a consumer free of charge, correct inaccurate personal information, or delete a consumer’s personal information, based on the consumer’s request, within 45 days of receiving a verifiable consumer request from the consumer. The business shall promptly take steps to determine whether the request is a verifiable consumer request, but this shall not extend the business’ duty to disclose and deliver the information, to correct inaccurate personal information, or to delete personal information within 45 days of receipt of the consumer’s request. The time period to provide the required information, to correct inaccurate personal information, or to delete personal information may be extended once by an additional 45 days when reasonably necessary, provided the consumer is provided notice of the extension within the first 45-day period. The disclosure of the required information shall be made in writing and delivered through the consumer’s account with the business, if the consumer maintains an account with the business, or by mail or electronically at the consumer’s option if the consumer does not maintain an account with the business, in a readily useable format that allows the consumer to transmit this information from one entity to another entity without hindrance. The business may require authentication of the consumer that is reasonable in light of the nature of the personal information requested, but shall not require the consumer to create an account with the business in order to make a verifiable consumer request provided that if the consumer, has an account with the business, the business may require the consumer to use that account to submit a verifiable consumer request.
+(B) The disclosure of the required information shall cover the 12-month period preceding the business’ receipt of the verifiable consumer request provided that, upon the adoption of a regulation pursuant to paragraph (8) of subdivision (a) of Section 1798.185, a consumer may request that the business disclose the required information beyond the 12-month period, and the business shall be required to provide that information unless doing so proves impossible or would involve a disproportionate effort. A consumer’s right to request required information beyond the 12-month period, and a business’ obligation to provide that information, shall only apply to personal information collected on or after January 1, 2022. Nothing in this subparagraph shall require a business to keep personal information for any length of time."""@en .
+
 lg:US-CA-CCPA-1798-130-a-5
     a lgo:Provision ;
     eli:is_part_of lg:US-CA-CCPA ;
@@ -140,7 +163,7 @@ lg:US-CA-CCPA-1798-130-a-5
     lgo:requiresDisclosureOf lgv:CategoriesOfPersonalData , lgv:DataSubjectRights , lgv:ProcessingPurposes , lgv:Recipients , lgv:RequestMethods , lgv:SoldOrSharedCategories , lgv:SourceOfPersonalData ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-CCPA-source-4 ;
-    lgo:sourceElement "/law/section[4]/paragraph[2]" ;
+    lgo:sourceElement "/law/section[4]/paragraph[3]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.130"^^xsd:anyURI .
 
 lg:US-CA-CCPA-1798-130-a-5-q1
@@ -149,7 +172,7 @@ lg:US-CA-CCPA-1798-130-a-5-q1
     lgo:quoteOf lg:US-CA-CCPA-1798-130-a-5 ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:US-CA-CCPA-source-4 ;
-    lgo:sourceElement "/law/section[4]/paragraph[2]" ;
+    lgo:sourceElement "/law/section[4]/paragraph[3]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.130"^^xsd:anyURI ;
     lgo:text """(5) Disclose the following information in its online privacy policy or policies if the business has an online privacy policy or policies and in any California-specific description of consumers’ privacy rights, or if the business does not maintain those policies, on its internet website, and update that information at least once every 12 months:
 (A) A description of a consumer’s rights pursuant to Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125 and two or more designated methods for submitting requests, except as provided in subparagraph (A) of paragraph (1) of subdivision (a).
@@ -194,7 +217,7 @@ lg:US-CA-CCPA-1798-135-b-1
     lgo:defines lgv:OptOutPreferenceSignal ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-CCPA-source-5 ;
-    lgo:sourceElement "/law/section[6]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[7]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.135"^^xsd:anyURI .
 
 lg:US-CA-CCPA-1798-135-b-1-q1
@@ -203,9 +226,29 @@ lg:US-CA-CCPA-1798-135-b-1-q1
     lgo:quoteOf lg:US-CA-CCPA-1798-135-b-1 ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:US-CA-CCPA-source-5 ;
-    lgo:sourceElement "/law/section[6]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[7]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.135"^^xsd:anyURI ;
     lgo:text "(1) A business shall not be required to comply with subdivision (a) if the business allows consumers to opt out of the sale or sharing of their personal information and to limit the use of their sensitive personal information through an opt-out preference signal sent with the consumer’s consent by a platform, technology, or mechanism, based on technical specifications set forth in regulations adopted pursuant to paragraph (19) of subdivision (a) of Section 1798.185, to the business indicating the consumer’s intent to opt out of the business’ sale or sharing of the consumer’s personal information or to limit the use or disclosure of the consumer’s sensitive personal information, or both."@en .
+
+lg:US-CA-CCPA-1798-135-c-4
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-CCPA ;
+    lgo:citation "Cal. Civ. Code § 1798.135(c)(4)" ;
+    lgo:regulates lgv:PrivacyInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-CCPA-source-5 ;
+    lgo:sourceElement "/law/section[6]/paragraph[1]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.135"^^xsd:anyURI .
+
+lg:US-CA-CCPA-1798-135-c-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-CCPA-1798-135-c-4 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-CCPA-source-5 ;
+    lgo:sourceElement "/law/section[6]/paragraph[1]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.135"^^xsd:anyURI ;
+    lgo:text "(4) For consumers who exercise their right to opt out of the sale or sharing of their personal information or limit the use or disclosure of their sensitive personal information, refrain from selling or sharing the consumer’s personal information or using or disclosing the consumer’s sensitive personal information and wait for at least 12 months before requesting that the consumer authorize the sale or sharing of the consumer’s personal information or the use and disclosure of the consumer’s sensitive personal information for additional purposes, or as authorized by regulations."@en .
 
 lg:US-CA-CCPA-1798-140-ag-1
     a lgo:Provision ;
@@ -214,7 +257,7 @@ lg:US-CA-CCPA-1798-140-ag-1
     lgo:defines lgv:ServiceProviderContract ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-CCPA-source-6 ;
-    lgo:sourceElement "/law/section[7]/paragraph[2]" ;
+    lgo:sourceElement "/law/section[8]/paragraph[2]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140"^^xsd:anyURI .
 
 lg:US-CA-CCPA-1798-140-ag-1-q1
@@ -223,7 +266,7 @@ lg:US-CA-CCPA-1798-140-ag-1-q1
     lgo:quoteOf lg:US-CA-CCPA-1798-140-ag-1 ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:US-CA-CCPA-source-6 ;
-    lgo:sourceElement "/law/section[7]/paragraph[2]" ;
+    lgo:sourceElement "/law/section[8]/paragraph[2]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140"^^xsd:anyURI ;
     lgo:text """(ag) (1) “Service provider” means a person that processes personal information on behalf of a business and that receives from or on behalf of the business consumer’s personal information for a business purpose pursuant to a written contract, provided that the contract prohibits the person from:
 (A) Selling or sharing the personal information.
@@ -238,7 +281,7 @@ lg:US-CA-CCPA-1798-140-d-1
     lgo:defines lgv:CcpaBusinessDefinition ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-CCPA-source-6 ;
-    lgo:sourceElement "/law/section[7]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[8]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140"^^xsd:anyURI .
 
 lg:US-CA-CCPA-1798-140-d-1-q1
@@ -247,7 +290,7 @@ lg:US-CA-CCPA-1798-140-d-1-q1
     lgo:quoteOf lg:US-CA-CCPA-1798-140-d-1 ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:US-CA-CCPA-source-6 ;
-    lgo:sourceElement "/law/section[7]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[8]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140"^^xsd:anyURI ;
     lgo:text """(d) “Business” means:
 (1) A sole proprietorship, partnership, limited liability company, corporation, association, or other legal entity that is organized or operated for the profit or financial benefit of its shareholders or other owners, that collects consumers’ personal information, or on the behalf of which such information is collected and that alone, or jointly with others, determines the purposes and means of the processing of consumers’ personal information, that does business in the State of California, and that satisfies one or more of the following thresholds:
@@ -262,7 +305,7 @@ lg:US-CA-CCPA-1798-155-a
     lgo:penalises lg:US-CA-CCPA-1798-100-a , lg:US-CA-CCPA-1798-120-a , lg:US-CA-CCPA-1798-135-a , lg:US-CA-CCPA-1798-140-ag-1 ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-CCPA-source-7 ;
-    lgo:sourceElement "/law/section[8]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[9]/paragraph[1]" ;
     lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf"^^xsd:anyURI .
 
 lg:US-CA-CCPA-1798-155-a-q1
@@ -271,7 +314,7 @@ lg:US-CA-CCPA-1798-155-a-q1
     lgo:quoteOf lg:US-CA-CCPA-1798-155-a ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:US-CA-CCPA-source-7 ;
-    lgo:sourceElement "/law/section[8]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[9]/paragraph[1]" ;
     lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf"^^xsd:anyURI ;
     lgo:text "(a) Any business, service provider, contractor, or other person that violates this title shall be liable for an administrative fine of not more than two thousand five hundred dollars ($2,500) * for each violation or seven thousand five hundred dollars ($7,500)* for each intentional violation or violations involving the personal information of consumers whom the business, service provider, contractor, or other person has actual knowledge are under 16 years of age, as adjusted pursuant to subdivision (d) of Section 1798.199.95, inan administrative enforcement action brought by the California Privacy Protection Agency."@en .
 
@@ -282,7 +325,7 @@ lg:US-CA-CCPA-1798-199-90-a
     lgo:penalises lg:US-CA-CCPA-1798-100-a , lg:US-CA-CCPA-1798-120-a , lg:US-CA-CCPA-1798-135-a , lg:US-CA-CCPA-1798-140-ag-1 ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-CCPA-source-7 ;
-    lgo:sourceElement "/law/section[9]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[10]/paragraph[1]" ;
     lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf"^^xsd:anyURI .
 
 lg:US-CA-CCPA-1798-199-90-a-q1
@@ -291,7 +334,7 @@ lg:US-CA-CCPA-1798-199-90-a-q1
     lgo:quoteOf lg:US-CA-CCPA-1798-199-90-a ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:US-CA-CCPA-source-7 ;
-    lgo:sourceElement "/law/section[9]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[10]/paragraph[1]" ;
     lgo:sourceUrl "https://cppa.ca.gov/regulations/pdf/ccpa_statute.pdf"^^xsd:anyURI ;
     lgo:text "(a) Any business, service provider, contractor, or other person that violates this title shall be subject to an injunction and liable for a civil penalty of not more than two thousand five hundred dollars ($2,500)* for each violation or seven thousand five hundred dollars ($7,500)* for each intentional violation and each violation involving the personal information of minor consumers, as adjusted pursuant subdivision (d) of Section 1798.199.95, which shall be assessed and recovered in a civil action brought in the name of the people of the State of California by the Attorney General. The court may consider the good faith cooperation of the business, service provider, contractor, or other person in determining the amount of the civil penalty."@en .
 

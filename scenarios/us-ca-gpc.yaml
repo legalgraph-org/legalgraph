@@ -13,3 +13,7 @@ obligations:
   - US-CA-R-privacy-policy
   - US-CA-R-request-methods
   - US-CA-R-minimal-collection
+  - US-CA-R-opt-out-signals
+  - US-CA-R-reask-after-opt-out
+  - US-CA-R-request-deadline
+  - US-CA-R-request-records

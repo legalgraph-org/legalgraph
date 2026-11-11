@@ -36,6 +36,18 @@ function data(t: Translate): Entry[] {
   ];
 }
 
+/** Products others build on the graph, and the article on how; the products live on their own sites. */
+function solutions(t: Translate): Entry[] {
+  const aimix = `https://aimix.io/${t.locale === "de" ? "de" : "en"}`;
+  return [
+    { label: t("Impressum template generator"), href: `${aimix}/impressum-template-generator`, icon: "✎", description: t("By Aimix: your imprint as a template, built on this graph") },
+    { label: t("Built on legalgraph"), href: pagePath(`blog/${BUILT_ON_SLUG}`, t.locale), icon: "→", description: t("A guest article: from the dataset to a product") },
+  ];
+}
+
+/** The guest article the Solutions menu points to. */
+const BUILT_ON_SLUG = "built-on-legalgraph-impressum-generator";
+
 function isCurrent(href: string, path: string): boolean {
   const target = href.split("#")[0]!;
   return target === "/" ? path === "/" : path === target || path.startsWith(`${target}/`);
@@ -50,7 +62,13 @@ export function navItems(t: Translate, path: string): NavItem[] {
     const href = pagePath(page, t.locale);
     return { kind: "link", label, href, current: isCurrent(href, path) };
   };
-  return [menu(t("Explore"), explore(t)), menu(t("Data"), data(t)), link(t("Articles"), "blog"), link(t("About"), "about")];
+  return [
+    menu(t("Explore"), explore(t)),
+    menu(t("Data"), data(t)),
+    menu(t("Solutions"), solutions(t)),
+    link(t("Articles"), "blog"),
+    link(t("About"), "about"),
+  ];
 }
 
 export function footerColumns(t: Translate): FooterColumn[] {

@@ -29,3 +29,11 @@ obligations:
   - EU-R-privacy-by-design
   - EU-R-processing-record
   - EU-R-storage-limitation
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction

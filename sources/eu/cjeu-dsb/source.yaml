@@ -1,0 +1,39 @@
+# CJEU C-487/21, Österreichische Datenschutzbehörde and CRIF GmbH, judgment of 4 May 2023: what the
+# "copy" under Article 15(3) GDPR covers. Official XML of the English court reports version (the
+# authentic version is German, kept as the parallel original); the annotated copy carries the
+# ruling as lga: provisions.
+id: eu/cjeu-dsb
+title: "CJEU C-487/21, Österreichische Datenschutzbehörde (4 May 2023)"
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+authentic: de
+originals:
+  - file: ECR_62021CJ0487_EN_01.xml
+    page: https://curia.europa.eu/juris/liste.jsf?num=C-487/21
+    url: https://publications.europa.eu/resource/celex/62021CJ0487
+    fetch: zip-member
+    member: ECR_62021CJ0487_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: b4a8c607978d57845e4d0bccd7d4f346592563c27ce4bc661962ddec6ce08a8a
+  - file: ECR_62021CJ0487_DE_01.xml
+    role: parallel
+    language: de
+    page: https://curia.europa.eu/juris/liste.jsf?num=C-487/21&language=de
+    url: https://publications.europa.eu/resource/celex/62021CJ0487
+    fetch: zip-member
+    member: ECR_62021CJ0487_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: b31501fac1e98173a0a965bb27d89c783f5b92be304e9155e60681d5e1f95c42
+annotated: ECR_62021CJ0487_EN_01.annotated.xml

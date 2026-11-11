@@ -167,3 +167,34 @@ lg:EU-2016-679-rec43-q1-de
     lgo:sourceElement "/ACT/PREAMBLE[1]/GR.CONSID[1]/CONSID[43]" ;
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu"^^xsd:anyURI ;
     lgo:text "(43) Um sicherzustellen, dass die Einwilligung freiwillig erfolgt ist, sollte diese in besonderen Fällen, wenn zwischen der betroffenen Person und dem Verantwortlichen ein klares Ungleichgewicht besteht, insbesondere wenn es sich bei dem Verantwortlichen um eine Behörde handelt, und es deshalb in Anbetracht aller Umstände in dem speziellen Fall unwahrscheinlich ist, dass die Einwilligung freiwillig gegeben wurde, keine gültige Rechtsgrundlage liefern. Die Einwilligung gilt nicht als freiwillig erteilt, wenn zu verschiedenen Verarbeitungsvorgängen von personenbezogenen Daten nicht gesondert eine Einwilligung erteilt werden kann, obwohl dies im Einzelfall angebracht ist, oder wenn die Erfüllung eines Vertrags, einschließlich der Erbringung einer Dienstleistung, von der Einwilligung abhängig ist, obwohl diese Einwilligung für die Erfüllung nicht erforderlich ist."@de .
+
+lg:EU-2016-679-rec63
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2016-679 ;
+    lgo:citation "Recital 63 GDPR" ;
+    lgo:explains lgv:RightOfAccess ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2016-679-oj ;
+    lgo:sourceElement "/ACT/PREAMBLE[1]/GR.CONSID[1]/CONSID[63]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"^^xsd:anyURI .
+
+lg:EU-2016-679-rec63-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2016-679-rec63 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2016-679-oj ;
+    lgo:sourceElement "/ACT/PREAMBLE[1]/GR.CONSID[1]/CONSID[63]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"^^xsd:anyURI ;
+    lgo:text "(63) A data subject should have the right of access to personal data which have been collected concerning him or her, and to exercise that right easily and at reasonable intervals, in order to be aware of, and verify, the lawfulness of the processing. This includes the right for data subjects to have access to data concerning their health, for example the data in their medical records containing information such as diagnoses, examination results, assessments by treating physicians and any treatment or interventions provided. Every data subject should therefore have the right to know and obtain communication in particular with regard to the purposes for which the personal data are processed, where possible the period for which the personal data are processed, the recipients of the personal data, the logic involved in any automatic personal data processing and, at least when based on profiling, the consequences of such processing. Where possible, the controller should be able to provide remote access to a secure system which would provide the data subject with direct access to his or her personal data. That right should not adversely affect the rights or freedoms of others, including trade secrets or intellectual property and in particular the copyright protecting the software. However, the result of those considerations should not be a refusal to provide all information to the data subject. Where the controller processes a large quantity of information concerning the data subject, the controller should be able to request that, before the information is delivered, the data subject specify the information or processing activities to which the request relates."@en .
+
+lg:EU-2016-679-rec63-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2016-679-rec63-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2016-679-rec63 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2016-679-oj-de ;
+    lgo:sourceElement "/ACT/PREAMBLE[1]/GR.CONSID[1]/CONSID[63]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu"^^xsd:anyURI ;
+    lgo:text "(63) Eine betroffene Person sollte ein Auskunftsrecht hinsichtlich der sie betreffenden personenbezogenen Daten, die erhoben worden sind, besitzen und dieses Recht problemlos und in angemessenen Abständen wahrnehmen können, um sich der Verarbeitung bewusst zu sein und deren Rechtmäßigkeit überprüfen zu können. Dies schließt das Recht betroffene Personen auf Auskunft über ihre eigenen gesundheitsbezogenen Daten ein, etwa Daten in ihren Patientenakten, die Informationen wie beispielsweise Diagnosen, Untersuchungsergebnisse, Befunde der behandelnden Ärzte und Angaben zu Behandlungen oder Eingriffen enthalten. Jede betroffene Person sollte daher ein Anrecht darauf haben zu wissen und zu erfahren, insbesondere zu welchen Zwecken die personenbezogenen Daten verarbeitet werden und, wenn möglich, wie lange sie gespeichert werden, wer die Empfänger der personenbezogenen Daten sind, nach welcher Logik die automatische Verarbeitung personenbezogener Daten erfolgt und welche Folgen eine solche Verarbeitung haben kann, zumindest in Fällen, in denen die Verarbeitung auf Profiling beruht. Nach Möglichkeit sollte der Verantwortliche den Fernzugang zu einem sicheren System bereitstellen können, der der betroffenen Person direkten Zugang zu ihren personenbezogenen Daten ermöglichen würde. Dieses Recht sollte die Rechte und Freiheiten anderer Personen, etwa Geschäftsgeheimnisse oder Rechte des geistigen Eigentums und insbesondere das Urheberrecht an Software, nicht beeinträchtigen. Dies darf jedoch nicht dazu führen, dass der betroffenen Person jegliche Auskunft verweigert wird. Verarbeitet der Verantwortliche eine große Menge von Informationen über die betroffene Person, so sollte er verlangen können, dass die betroffene Person präzisiert, auf welche Information oder welche Verarbeitungsvorgänge sich ihr Auskunftsersuchen bezieht, bevor er ihr Auskunft erteilt."@de .

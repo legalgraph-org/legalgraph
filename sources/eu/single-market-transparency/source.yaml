@@ -1,0 +1,39 @@
+# Directive (EU) 2015/1535 (Single Market Transparency Directive), Official Journal text (Formex 4)
+# from Cellar. Held for the definition of an information society service in Article 1(1)(b), "any
+# service normally provided for remuneration, at a distance, by electronic means and at the individual
+# request of a recipient of services", which the e-Commerce Directive's Article 2(a) uses: it points to
+# Directive 98/34/EC, and Article 10 reads references to that repealed directive as references to this one.
+id: eu/single-market-transparency
+title: Directive (EU) 2015/1535 (Single Market Transparency Directive)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_2015241EN.01000101.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015L1535
+    url: https://publications.europa.eu/resource/celex/32015L1535
+    fetch: zip-member
+    member: L_2015241EN.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-11
+    sha256: d4faf6f0ffac0b8f0ceb021e7bbc46c89efbe0167df4a4bf934644819bba80e7
+  - file: L_2015241DE.01000101.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32015L1535
+    url: https://publications.europa.eu/resource/celex/32015L1535
+    fetch: zip-member
+    member: L_2015241DE.01000101.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-11
+    sha256: 87e552f39e53fe77e70c1acd26732053b59c0b5edcf65d42e12cc3dbc273ba44
+annotated: L_2015241EN.01000101.annotated.xml

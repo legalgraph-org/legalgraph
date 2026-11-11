@@ -50,3 +50,11 @@ obligations:
   - FR-R-contract-confirmation
   - FR-R-pre-contract-information
   - FR-R-order-button
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction

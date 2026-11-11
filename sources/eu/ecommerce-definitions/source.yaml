@@ -1,0 +1,25 @@
+# e-Commerce Directive (2000/31/EC): recital 18 and the definitions in Article 2(a) and (c), from the
+# authentic Official Journal text (HTML, in ../ecommerce/). Recitals are left out of consolidated texts,
+# and the consolidated XML's definition list cannot be compared line by line with the Official Journal,
+# so these are transcribed in schemas/law.xsd and `legalgraph sources verify` checks each, word for
+# word, against the HTML. Recital 18 explains that services financed by advertising rather than by
+# the recipient are information society services too; Article 2(a) points to the definition now in
+# Directive (EU) 2015/1535 (../single-market-transparency/).
+id: eu/ecommerce-definitions
+title: e-Commerce Directive (2000/31/EC), recital 18 and Article 2(a), (c)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+document: EU-2000-31-oj
+originals:
+  - file: ../ecommerce/OJ-L-178-2000-en.html
+    title: "Official Journal, OJ L 178, 17.7.2000, p. 1 (HTML)"
+    url: http://publications.europa.eu/resource/cellar/b244164f-dd29-48e9-9063-a86ef4ea7ad9.0005.01/DOC_1
+    fetch: file
+    media_type: text/html
+    retrieved_on: 2026-11-02
+    sha256: ace6f4c0e50a12845be213ad6094ce38f06a5dd2784fdf07b91b7d2e19f0eaaf
+annotated: ecommerce-definitions.law.xml

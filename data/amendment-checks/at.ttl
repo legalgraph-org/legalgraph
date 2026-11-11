@@ -38,3 +38,39 @@ lg:AT-TKG-2021-amendment-check
     lgo:lastKnownAmendmentDate "2025-12-30"^^xsd:date ;
     lgo:sourceIsCurrent false ;
     rdfs:comment "RIS lists BGBl. I Nr. 94/2025 as the eighth and last amendment (§ 188 changed, in force 01.10.2026); the committed original is the 2021 promulgation BGBl."@en .
+
+lg:AT-FAGG
+    lgo:amendmentCheck lg:AT-FAGG-amendment-check .
+
+lg:AT-FAGG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-11"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008847"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "BGBl. I Nr. 59/2026" ;
+    lgo:lastKnownAmendmentDate "2026-07-28"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "RIS consolidated version (Fassung vom 11.11.2026) lists BGBl. I Nr. 59/2026 (issued 28.07.2026) as the latest amendment."@en .
+
+lg:AT-KSCHG
+    lgo:amendmentCheck lg:AT-KSCHG-amendment-check .
+
+lg:AT-KSCHG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-11"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002462"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "BGBl. I Nr. 60/2026" ;
+    lgo:lastKnownAmendmentDate "2026-07-29"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "RIS consolidated version (Fassung vom 11.11.2026) lists BGBl. I Nr. 60/2026 (issued 29.07.2026) as the latest amendment."@en .
+
+lg:AT-MEDIENG
+    lgo:amendmentCheck lg:AT-MEDIENG-amendment-check .
+
+lg:AT-MEDIENG-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-11"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10000719"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "BGBl. I Nr. 21/2026" ;
+    lgo:lastKnownAmendmentDate "2026-04-23"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "RIS consolidated version (Fassung vom 11.11.2026) lists BGBl. I Nr. 21/2026 (issued 23.04.2026, amending the Mediengesetz) as the latest amendment."@en .

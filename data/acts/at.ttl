@@ -49,3 +49,7 @@ lg:AT-FAGG
 lg:AT-KSCHG
     lgo:shortName "KSchG" ;
     rdfs:comment "The Austrian consumer-protection act; § 6 is the blacklist of contract terms that are never effective against consumers (§ 879 ABGB is the general clause)."@en .
+
+lg:AT-MEDIENG
+    lgo:shortName "MedienG" ;
+    rdfs:comment "The Austrian media act. § 25 is the media-owner disclosure (Offenlegung): it applies to websites as periodical electronic media, in full for most and reduced to name and residence or seat for sites limited to the owner's personal life or self-presentation (Abs. 5). It sits beside the e-Commerce imprint of § 5 ECG and may be published together with it (Abs. 1)."@en .

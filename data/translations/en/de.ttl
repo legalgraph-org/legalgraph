@@ -1633,6 +1633,39 @@ lg:DE-UWG-s5b-1-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-UWG-s5b-1-q1 .
 
+lg:DE-UWG-s7-2-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f96f7606a424f85522f23345ebe62ef26a94e7228d394b828680e4132cbe98c5" ;
+    lgo:text "1. when advertising by telephone call to a consumer without that consumer's prior express consent, or to another market participant without at least their presumed consent,"@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s7-2-1-q1 .
+
+lg:DE-UWG-s7-2-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e95befa35fe62b477393fb93846c941b3161bdbe407c972c8b15a27db25d498f" ;
+    lgo:text "2. when advertising using an automated calling machine, a fax machine or electronic mail, without the addressee's prior express consent, or"@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s7-2-2-q1 .
+
+lg:DE-UWG-s7-2-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "797448304e454c44c675992d24fcb7f3673521a3b3ca00d771b68dd82650122d" ;
+    lgo:text """3. when advertising by means of a message
+a) where the identity of the sender on whose behalf the message is transmitted is disguised or concealed, or
+b) where § 6(1) of the Digital Services Act is breached or the recipient is invited to visit a website that breaches that provision, or
+c) where no valid address exists to which the recipient can send a request to cease such messages, without incurring costs other than the transmission costs at the basic rates."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-UWG-s7-2-3-q1 .
+
 lg:DE-UWG-s7-2-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

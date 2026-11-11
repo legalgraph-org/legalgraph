@@ -159,6 +159,57 @@ lg:AT-KSCHG-title-ac92bd9b0018-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-KSCHG .
 
+lg:AT-MEDIENG-s25-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c676391f66e4f194d452683b9d132d1bd0454286bc8a55afe7425ba0b54ca45d" ;
+    lgo:text "(1) The media owner of every periodical medium shall publish the information specified in paragraphs 2 to 4. For periodical media works, the imprint shall also state the web address at which this information can be found easily, directly and permanently, or the information shall be appended to each issue of the medium. For broadcasting programmes, all this information shall either be made permanently available on an easily found teletext page or be published in the Official Gazette of the \"Wiener Zeitung\" within one month of the start of broadcasting and in the first month of each calendar year. On a website, this information shall be made available so that it can be found easily, directly and permanently. For recurring electronic media, either the web address at which this information can be found easily, directly and permanently shall be stated, or the information shall be appended to each issue of the medium. Where the media owner is a service provider within the meaning of § 3 no. 2 ECG, BGBl. I No. 152/2001, the disclosure may be made available together with the information under § 5 ECG."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-MEDIENG-s25-1-q1 .
+
+lg:AT-MEDIENG-s25-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ded360f2b85900ad9d1bf75f786ff69f9fdbbf4e0f66fe617e10e012296c1ea4" ;
+    lgo:text "(2) The following shall be stated: the media owner with name or company name, business purpose, place of residence or seat (establishment), and the names of the media owner's representative bodies and, where there is a supervisory board, its members. In addition, for all persons holding a direct or indirect interest in a media owner, their respective ownership, participation, share and voting-right holdings shall be stated. Any silent partnerships in the media owner and in the persons holding a direct or indirect interest in it within the meaning of the preceding sentence shall also be stated, and trust relationships shall be disclosed at every level. Where foundations hold a direct or indirect interest, the founder and the respective beneficiaries of the foundation shall also be disclosed. Where the media owner is an association, or an association holds a direct or indirect interest in the media owner, the association's board and purpose shall be stated. Persons holding a direct or indirect interest, trustors, founders and beneficiaries of a foundation are obliged, at the request of the media owner, to provide it with the information it needs to fulfil its disclosure obligation."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-MEDIENG-s25-2-q1 .
+
+lg:AT-MEDIENG-s25-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "228eecbdc55165239c343351dd7dd0b3176478299b61ea60b08988886f740035" ;
+    lgo:text "(4) A statement on the basic direction of a periodical print work (editorial line) or of any other periodical medium shall also be published. Within the meaning of § 2, changes and additions to the basic direction take effect only once they have been published."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-MEDIENG-s25-4-q1 .
+
+lg:AT-MEDIENG-s25-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a5d616fb4d9b47ab5d49c78aa28142c3b0cac43c3bca17b50c1ff219dc91b136" ;
+    lgo:text "(5) For a medium within the meaning of § 1(1) no. 5a(b) and (c) whose information content does not go beyond presenting the media owner's personal life or presenting the media owner, and is not capable of influencing public opinion, only the name or company name, where applicable the business purpose, and the place of residence or seat of the media owner shall be stated. Paragraphs 3 and 4 do not apply to such media."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-MEDIENG-s25-5-q1 .
+
+lg:AT-MEDIENG-title-9fae080ed736-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9fae080ed7363236b6a9c889dda3f436ec91c3e469d5cef69eb8d4959d7a492c" ;
+    lgo:text "Federal Act of 12 June 1981 on the Press and Other Journalistic Media (Media Act – MedienG)"@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-MEDIENG .
+
 lg:AT-TKG-2021-s165-3-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

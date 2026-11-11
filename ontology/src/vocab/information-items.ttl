@@ -90,6 +90,20 @@ lgv:ResponsibleEditor a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
     skos:prefLabel "Person responsible for editorial content"@en , "Verantwortlicher (redaktionell)"@de .
 
+lgv:BusinessPurpose a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Business purpose"@en , "Unternehmensgegenstand"@de .
+
+lgv:OwnershipStructure a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Ownership and voting rights"@en , "Eigentums- und Beteiligungsverhältnisse"@de ;
+    skos:definition "Who holds the provider directly or indirectly, with their shares and voting rights, silent partnerships and trusts."@en .
+
+lgv:EditorialLine a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Editorial line"@en , "Blattlinie"@de ;
+    skos:definition "A statement of the basic direction of a periodical medium."@en .
+
 lgv:HostingProvider a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
     skos:prefLabel "Hosting provider"@en , "Hébergeur"@fr .

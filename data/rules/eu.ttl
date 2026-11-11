@@ -21,7 +21,7 @@ lg:EU-R-service-provider-information a lgo:Obligation ;
     lgo:establishedBy lg:EU-2000-31-art5-1 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
@@ -32,7 +32,7 @@ lg:EU-R-service-provider-information-register a lgo:Obligation ;
     lgo:establishedBy lg:EU-2000-31-art5-1 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:RegisterEntry ;
@@ -43,7 +43,7 @@ lg:EU-R-service-provider-information-authorisation a lgo:Obligation ;
     lgo:establishedBy lg:EU-2000-31-art5-1 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
@@ -54,7 +54,7 @@ lg:EU-R-service-provider-information-profession a lgo:Obligation ;
     lgo:establishedBy lg:EU-2000-31-art5-1 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
@@ -65,7 +65,7 @@ lg:EU-R-service-provider-information-vat a lgo:Obligation ;
     lgo:establishedBy lg:EU-2000-31-art5-1 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:CommercialDigitalService , lgv:HasVatId ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:VatId ;
@@ -80,7 +80,7 @@ lg:EU-R-contract-terms-storable a lgo:Obligation ;
     lgo:establishedBy lg:EU-2000-31-art10-3 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:ProvideContractTermsInStorableForm ;
     lgo:requiresDisclosureOf lgv:GeneralTermsAndClauses ;
@@ -94,7 +94,7 @@ lg:EU-R-pre-contract-information a lgo:Obligation ;
     lgo:establishedBy lg:EU-2011-83-art6-1 ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:SellsToConsumersInTheEea , lgv:SellsOnlineToConsumers ;
     lgo:partOfDisclosure lgv:PreContractInformation ;
     lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress ,
@@ -408,7 +408,7 @@ lg:EU-R-cookie-consent a lgo:Obligation ;
     lgo:establishedBy lg:EU-2002-58-art5-3 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:MustNot ;
-    lgo:appliesIn lg:EU ;
+    lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:ActiveInTheEea , lgv:NonEssentialDeviceAccess ;
     lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
     lgo:reviewStatus lgv:Draft .
@@ -492,4 +492,105 @@ lg:EU-R-processor-end-of-service a lgo:Obligation ;
     lgo:appliesIn lg:EU ;
     lgo:appliesWhen lgv:GdprApplies , lgv:ActsAsProcessor ;
     lgo:requiresAction lgv:ReturnOrDeleteAtEndOfService ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Data subject rights (Chapter III GDPR) ---------------------------------------------------
+
+lg:EU-R-access-request a lgo:Obligation ;
+    rdfs:label "Answer access requests with a copy of the personal data"@en ;
+    rdfs:comment "Within one month (two more for complex requests) a person gets confirmation, a copy of their data and the Article 15(1) information; the copy must not affect the rights and freedoms of others (Article 15(4)), which include trade secrets (recital 63) but do not justify refusing all information."@en ;
+    lgo:establishedBy lg:EU-2016-679-art15-1 , lg:EU-2016-679-art12-3 , lg:EU-2016-679-art15-4 , lg:EU-2016-679-rec63 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:ProvideAccessToPersonalData , lgv:AnswerDataSubjectRequestWithinOneMonth ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-rectification a lgo:Obligation ;
+    rdfs:label "Rectify inaccurate personal data"@en ;
+    rdfs:comment "Correct wrong data without undue delay and complete incomplete data; recipients told about the data must be informed (Article 19)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art16 , lg:EU-2016-679-art19 , lg:EU-2016-679-art12-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:RectifyPersonalData , lgv:AnswerDataSubjectRequestWithinOneMonth , lgv:NotifyRecipientsOfDataSubjectAction ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-erasure a lgo:Obligation ;
+    rdfs:label "Erase personal data when the right applies"@en ;
+    rdfs:comment "Erase without undue delay where a ground in Article 17(1) applies — e.g. consent withdrawn or no longer needed — unless an exception in Article 17(3) applies, such as legal claims; recipients must be informed (Article 19)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art17-1 , lg:EU-2016-679-art17-3 , lg:EU-2016-679-art19 , lg:EU-2016-679-art12-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:ErasePersonalData , lgv:AnswerDataSubjectRequestWithinOneMonth , lgv:NotifyRecipientsOfDataSubjectAction ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-restriction a lgo:Obligation ;
+    rdfs:label "Restrict processing when the right applies"@en ;
+    rdfs:comment "While a ground in Article 18(1) runs — contested accuracy, unlawful processing the person wants kept, data needed for legal claims, a pending objection — processing is limited to storage plus the listed exceptions (Article 18(2)); recipients must be informed (Article 19)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art18-1 , lg:EU-2016-679-art18-2 , lg:EU-2016-679-art19 , lg:EU-2016-679-art12-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:RestrictProcessingOfPersonalData , lgv:AnswerDataSubjectRequestWithinOneMonth , lgv:NotifyRecipientsOfDataSubjectAction ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-portability a lgo:Obligation ;
+    rdfs:label "Provide the person's data in a portable format"@en ;
+    rdfs:comment "The data the person provided, processed on consent or contract by automated means, in a structured, commonly used and machine-readable format; transmitted directly where feasible. Only what the person provided is covered — a business's own notes are not, though they are personal data for access under Article 15."@en ;
+    lgo:establishedBy lg:EU-2016-679-art20-1 , lg:EU-2016-679-art12-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:ProvideDataInPortableFormat , lgv:AnswerDataSubjectRequestWithinOneMonth ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-objection a lgo:Obligation ;
+    rdfs:label "Stop processing on objection unless compelling grounds"@en ;
+    rdfs:comment "Processing on the public-task or legitimate-interests basis stops on objection unless compelling legitimate grounds override or legal claims need it."@en ;
+    lgo:establishedBy lg:EU-2016-679-art21-1 , lg:EU-2016-679-art12-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:StopProcessingOnObjection , lgv:AnswerDataSubjectRequestWithinOneMonth ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-objection-marketing a lgo:Obligation ;
+    rdfs:label "Stop direct marketing on objection"@en ;
+    rdfs:comment "Objection to direct marketing always wins — no weighing of interests; the right must be pointed out clearly and separately at the first contact (Article 21(4))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art21-2 , lg:EU-2016-679-art21-3 , lg:EU-2016-679-art21-4 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies , lgv:SendsMarketingEmails ;
+    lgo:requiresAction lgv:StopDirectMarketingOnObjection ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-data-security a lgo:Obligation ;
+    rdfs:label "Secure personal data"@en ;
+    rdfs:comment "Technical and organisational measures appropriate to the risk: pseudonymisation, confidentiality, availability, resilience and regular testing."@en ;
+    lgo:establishedBy lg:EU-2016-679-art32-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:SecurePersonalData ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-breach-notification a lgo:Obligation ;
+    rdfs:label "Notify a personal data breach within 72 hours, tell the people affected"@en ;
+    rdfs:comment "The supervisory authority gets a notification within 72 hours where feasible unless the breach is unlikely to risk rights and freedoms (Article 33); the people affected are told without undue delay when the risk is high (Article 34)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art33-1 , lg:EU-2016-679-art34-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:NotifyBreachToSupervisoryAuthority , lgv:InformDataSubjectsOfBreach ;
     lgo:reviewStatus lgv:Draft .

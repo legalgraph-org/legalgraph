@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Directive 2000/31/EC, recital 18 and Article 2(a) and (c), written in schemas/law.xsd from the
+  Official Journal HTML (OJ L 178, 17.7.2000, p. 1). The words are the Official Journal's; only the
+  structure is ours. `legalgraph sources verify` checks each against the HTML's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="EU-2000-31" lga:jurisdiction="EU" lga:act-type="Directive"
+     lga:url="https://eur-lex.europa.eu/eli/dir/2000/31/oj">
+  <meta>
+    <title>Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal Market ('Directive on electronic commerce')</title>
+    <short>e-Commerce Directive</short>
+    <date>2000-06-08</date>
+  </meta>
+
+  <section num="Recitals" source="OJ-L-178-2000-en.html">
+    <paragraph num="(18)"
+               lga:provision="EU-2000-31-rec18" lga:citation="Recital 18 Directive 2000/31/EC"
+               lga:explains="InformationSocietyService">Information society services span a wide range of economic activities which take place on-line; these activities can, in particular, consist of selling goods on-line; activities such as the delivery of goods as such or the provision of services off-line are not covered; information society services are not solely restricted to services giving rise to on-line contracting but also, in so far as they represent an economic activity, extend to services which are not remunerated by those who receive them, such as those offering on-line information or commercial communications, or those providing tools allowing for search, access and retrieval of data; information society services also include services consisting of the transmission of information via a communication network, in providing access to a communication network or in hosting information provided by a recipient of the service; television broadcasting within the meaning of Directive EEC/89/552 and radio broadcasting are not information society services because they are not provided at individual request; by contrast, services which are transmitted point to point, such as video-on-demand or the provision of commercial communications by electronic mail are information society services; the use of electronic mail or equivalent individual communications for instance by natural persons acting outside their trade, business or profession including their use for the conclusion of contracts between such persons is not an information society service; the contractual relationship between an employee and his employer is not an information society service; activities which by their very nature cannot be carried out at a distance and by electronic means, such as the statutory auditing of company accounts or medical advice requiring the physical examination of a patient are not information society services.</paragraph>
+  </section>
+
+  <section num="Article 2" title="Definitions" source="OJ-L-178-2000-en.html">
+    <paragraph num="(a)"
+               lga:provision="EU-2000-31-art2-a" lga:citation="Art. 2(a) Directive 2000/31/EC"
+               lga:defines="InformationSocietyService" lga:refers-to="EU-2015-1535-art1-1-b">"information society services": services within the meaning of Article 1(2) of Directive 98/34/EC as amended by Directive 98/48/EC;</paragraph>
+    <paragraph num="(c)"
+               lga:provision="EU-2000-31-art2-c" lga:citation="Art. 2(c) Directive 2000/31/EC"
+               lga:regulates="CountryOfOrigin">"established service provider": a service provider who effectively pursues an economic activity using a fixed establishment for an indefinite period. The presence and use of the technical means and technologies required to provide the service do not, in themselves, constitute an establishment of the provider;</paragraph>
+  </section>
+</law>

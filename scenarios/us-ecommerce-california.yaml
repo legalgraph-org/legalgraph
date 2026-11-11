@@ -45,3 +45,15 @@ obligations:
   - EU-R-cookie-consent
   - EU-R-geo-blocking
   - EU-R-unfair-terms
+  - EU-R-access-request
+  - EU-R-breach-notification
+  - EU-R-data-security
+  - EU-R-erasure
+  - EU-R-objection
+  - EU-R-portability
+  - EU-R-rectification
+  - EU-R-restriction
+  - US-CA-R-opt-out-signals
+  - US-CA-R-reask-after-opt-out
+  - US-CA-R-request-deadline
+  - US-CA-R-request-records

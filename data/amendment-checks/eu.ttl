@@ -270,3 +270,23 @@ lg:EU-COM-2025-837-amendment-check
     lgo:checkedOn "2026-11-07"^^xsd:date ;
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0837"^^xsd:anyURI ;
     rdfs:comment "Not an enacted act: a COM proposal (Digital Omnibus); proposals are not amended. Kept as a pending-legalisation marker."@en .
+
+lg:EU-2007-864
+    lgo:amendmentCheck lg:EU-2007-864-amendment-check .
+
+lg:EU-2007-864-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-11"^^xsd:date ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32007R0864"^^xsd:anyURI ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "No amendment since adoption (Cellar shows no AMENDED_BY relation)."@en .
+
+lg:EU-2015-1535
+    lgo:amendmentCheck lg:EU-2015-1535-amendment-check .
+
+lg:EU-2015-1535-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-11"^^xsd:date ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015L1535"^^xsd:anyURI ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "No amendment since adoption (Cellar shows no AMENDED_BY relation)."@en .

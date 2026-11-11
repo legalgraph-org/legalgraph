@@ -187,3 +187,15 @@ def test_national_rules_replace_a_general_one_only_where_they_cover_it(loaded) -
     general = obligations["EU-R-pre-contract-information"]
     assert rules.places(general, "DE", {"AT", "GB"}) == ["AT", "DE"]
     assert rules.places(obligations["EU-R-service-provider-information"], "DE", {"AT"}) == ["DE"]
+
+
+def test_austrian_media_law_asks_every_website_and_more_of_opinion_media(loaded) -> None:
+    """§ 25 MedienG: name, business purpose and residence or seat for every website of an owner in
+    Austria, private ones included (Abs. 5); representatives, ownership and editorial line as well for
+    media that can influence public opinion."""
+    conditions, obligations = loaded
+    private = {o.id for o in rules.applicable(conditions, obligations, set(), "AT")}
+    assert "AT-R-media-owner-disclosure" in private and "AT-R-media-owner-disclosure-full" not in private
+    opinion = {o.id for o in rules.applicable(conditions, obligations, {"InfluencesPublicOpinion"}, "AT")}
+    assert {"AT-R-media-owner-disclosure", "AT-R-media-owner-disclosure-full"} <= opinion
+    assert "AT-R-media-owner-disclosure" not in {o.id for o in rules.applicable(conditions, obligations, set(), "DE")}

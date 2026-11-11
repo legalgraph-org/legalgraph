@@ -55,3 +55,6 @@ lg:CJEU-C-298-07 lgo:caseNumber "C-298/07" ;
 
 lg:CJEU-C-649-17 lgo:caseNumber "C-649/17" ;
     lgo:illustrates lg:EU-R-pre-contract-information .
+
+lg:CJEU-C-487-21 lgo:caseNumber "C-487/21" ;
+    lgo:illustrates lg:EU-R-access-request .
