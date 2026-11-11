@@ -4,9 +4,11 @@ description: >
   Austria and Germany through its shop, with analytics cookies after consent. Austria's cookie rule is § 165(3) TKG 2021 — the ePrivacy
   duty as transposed. Its imprint follows
   the e-Commerce Directive as transposed in Austria (§ 5 ECG), not German law: the Directive's
-  country-of-origin principle points to the place of establishment.
+  country-of-origin principle points to the place of establishment. Its consumer contracts follow the
+  customer's country (Article 6 Rome I): German law for its German customers, including the German
+  cookie rule, which applies to whoever provides services in Germany (§ 1(3) TDDDG).
 established_in: AT
-markets: [EU]
+markets: [AT, DE]
 facts:
   - EngagesProcessors
   - CommercialDigitalService
@@ -23,6 +25,7 @@ obligations:
   - EU-R-service-provider-information
   - EU-R-service-provider-information-register
   - EU-R-service-provider-information-vat
+  - AT-R-pre-contract-information
   - EU-R-privacy-information
   - EU-R-privacy-information-consent
   - EU-R-lawful-basis
@@ -30,7 +33,7 @@ obligations:
   - EU-R-product-safety-information
   - EU-R-geo-blocking
   - AT-R-cookie-consent
-  - EU-R-unfair-terms
+  - AT-R-unfair-terms
   - EU-R-consent-separate
   - EU-R-consent-no-tying
   - EU-R-contract-terms-storable
@@ -39,6 +42,13 @@ obligations:
   - EU-R-storage-limitation
   - EU-R-processing-agreement
   - EU-R-consent-specific
+  - DE-R-pre-contract-information
+  - DE-R-unfair-terms
+  - DE-R-cookie-consent
+  - DE-R-withdrawal-function
+  - DE-R-checkout-summary
+  - DE-R-accessibility
+  - DE-R-total-price
 national:
   EU-R-service-provider-information: [AT-ECG-s5-1]
   EU-R-service-provider-information-register: [AT-ECG-s5-1]

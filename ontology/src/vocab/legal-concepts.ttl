@@ -207,6 +207,17 @@ lgv:RelationshipWithEPrivacy a lgo:LegalConcept ;
 lgv:ElectronicCommunicationsConcepts a skos:ConceptScheme ;
     skos:prefLabel "Electronic communications concepts"@en .
 
+lgv:InformationSocietyService a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:prefLabel "Information society service"@en , "Dienst der Informationsgesellschaft"@de ;
+    skos:altLabel "Online service"@en ;
+    skos:definition "Any service normally provided for remuneration, at a distance, by electronic means and at the individual request of the recipient (Art. 2(a) E-Commerce Directive; Directive 2015/1535 Art. 1(1)(b)): websites, online shops, apps, platforms."@en .
+
+lgv:CountryOfOrigin a lgo:LegalConcept ;
+    skos:inScheme lgv:ElectronicCommunicationsConcepts ;
+    skos:prefLabel "Country-of-origin principle"@en , "Herkunftslandprinzip"@de ;
+    skos:definition "An online service follows the law of the EU or EEA state where its provider is established, within the fields the e-Commerce Directive coordinates (Art. 3), such as the information a provider must give about itself. Other member states may not restrict it for those reasons, save for the listed exceptions; consumer contract law and data protection law are among the fields left outside."@en .
+
 lgv:TerminalEquipmentAccess a lgo:LegalConcept ;
     skos:inScheme lgv:ElectronicCommunicationsConcepts ;
     skos:prefLabel "Storing or reading information on a user's device"@en , "Zugriff auf die Endeinrichtung"@de ;

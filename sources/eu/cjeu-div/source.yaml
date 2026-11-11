@@ -1,0 +1,26 @@
+# Case C-298/07, Bundesverband der Verbraucherzentralen und Verbraucherverbaende v deutsche internet
+# versicherung AG, judgment of 16 October 2008 (Fourth Chamber): Article 5(1)(c) of the E-Commerce
+# Directive requires "details which allow the service provider to be contacted rapidly and communicated
+# with in a direct and effective manner" — not necessarily a telephone number; an online enquiry form
+# answered by email suffices (save the rare no-network-access case). EUR-Lex offers no Formex XML for
+# this 2008 judgment; the operative part is transcribed from the official ECR PDF.
+id: eu/cjeu-div
+title: Judgment in Case C-298/07, BVK v deutsche internet versicherung
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (EUR-Lex)
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: C-298-07_div_EN.pdf
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62007CJ0298
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62007CJ0298
+    fetch: file
+    media_type: application/pdf
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one. EUR-Lex offers no Formex XML for this 2008 judgment."
+    retrieved_on: 2026-11-08
+    sha256: 0bd1e1d0f18335faaef53ea5896ffa9d59bab462b5f68fce93a1666d61659f93
+annotated: div.law.xml

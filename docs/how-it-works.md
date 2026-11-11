@@ -65,9 +65,19 @@ Conditions are facts about a business ("sells to consumers online", "sets non-es
 each with a yes/no question and the provision whose words define it; some follow from others. Where
 the business is established, and where it offers its services, are answered once as a jurisdiction:
 "established in Austria" makes "established in the EU" and "in the EEA" hold (`lgo:establishedIn`,
-`lgo:offersIn`). A rule resting on a directive names the national provision of the country of
-establishment (found through `lgo:implements`), and a national rule that spells it out
-(`lgo:refines`, § 5 DDG for Article 5 of the e-Commerce Directive) takes its place.
+`lgo:offersIn`); a business also offers its services where it is established.
+
+Some rules follow where the business is established, others where its customers are. Provider
+information follows the establishment: the e-Commerce Directive's country-of-origin principle (Article
+3) sends an Austrian shop to Austrian law wherever it sells. Consumer contracts follow the consumer: a
+contract is governed by the law of the country the business directs its sales to (Article 6 Rome I),
+so a US or UK shop selling to German consumers gets German consumer-contract rules, and a German shop
+selling to the UK gets the UK's. A rule follows the markets when one of its conditions is tied to them
+(`lgo:offersIn`, directly or through derived conditions). A rule resting on a directive names the
+national provisions of the places it is followed in (found through `lgo:implements`); national rules
+that spell it out (`lgo:refines`, § 5 DDG for Article 5 of the e-Commerce Directive) take its place
+when they cover all of them. The scenarios `us-shop-selling-to-eu`, `gb-shop-selling-to-eu`,
+`de-shop-selling-to-gb` and `de-shop-selling-to-us` show the cross-border cases.
 
 Rules are our interpretation: they are **Draft** until a lawyer reviews them.
 

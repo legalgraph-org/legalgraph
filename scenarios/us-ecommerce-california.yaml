@@ -2,10 +2,14 @@ name: US online retailer selling to Californians and Europeans
 description: >
   A Delaware company with a large online shop selling to US consumers, above the CCPA thresholds,
   using third-party advertising pixels, sending marketing email, and also shipping to customers in
-  the EU (without an establishment there) with analytics cookies after consent.
+  the EU (without an establishment there) with analytics cookies after consent. Selling to EU
+  consumers brings the EU consumer-contract rules (Article 6 Rome I), the cookie rule and the
+  Geo-blocking Regulation, which also binds traders from outside the EU.
 established_in: US
 markets: [EU, US-CA]
 facts:
+  - SellsToConsumers
+  - SellsOnlineToConsumers
   - PlaceOfPublicAccommodation
   - CcpaBusiness
   - SellsOrSharesPersonalData
@@ -37,3 +41,7 @@ obligations:
   - US-CA-R-minimal-collection
   - US-CA-R-service-provider-contract
   - EU-R-consent-specific
+  - EU-R-pre-contract-information
+  - EU-R-cookie-consent
+  - EU-R-geo-blocking
+  - EU-R-unfair-terms

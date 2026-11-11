@@ -1,0 +1,23 @@
+# Fern- und Auswärtsgeschäfte-Gesetz (§ 4 Abs. 1): the Austrian transposition provisions. RIS serves the consolidated text as HTML only;
+# the fragment holding the section is kept and the text is transcribed in schemas/law.xsd, checked
+# word for word against it.
+id: at/fagg
+title: Fern- und Auswärtsgeschäfte-Gesetz (§ 4 Abs. 1)
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: fagg-4.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008847"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_5_TextContainer_5"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Consolidated version (Fassung vom 10.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."
+    retrieved_on: 2026-11-08
+    sha256: 87cd93013183dab88562aa9fc764b5046e99c584437edaa9d22e012ae536ccda
+annotated: fagg.law.xml

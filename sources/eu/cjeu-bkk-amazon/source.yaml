@@ -1,0 +1,45 @@
+# Judgment in Case C-649/17, Bundesverband der Verbraucherzentralen (BKK v Amazon EU Sàrl), 10 July 2019:
+# Article 6(1)(c) of the Consumer Rights Directive does not let national law demand a telephone number
+# in all circumstances: a trader need only communicate the means of contact it actually has (ruling 1)
+# and may offer other means than those listed if they allow direct and effective communication
+# (ruling 2); whether Amazon's callback service met that standard was left to the national court.
+# The ruling reads the wording before Directive (EU) 2019/2161; since 28 May 2022 the provision lists
+# the trader's telephone number and email address. The language of the case, German, is the authentic
+# version; the English text is the Court's translation. Both operative paragraphs are annotated.
+id: eu/cjeu-bkk-amazon
+title: Judgment in Case C-649/17, BKK v Amazon EU
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: ECR_62017CJ0649_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62017CJ0649
+    url: https://publications.europa.eu/resource/celex/62017CJ0649
+    fetch: zip-member
+    member: ECR_62017CJ0649_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-08
+    sha256: bb2e2933f99ba22ae0fe440dc16b1e5bc0e12a709d087a4249c2dab0b80fbebd
+  - file: ECR_62017CJ0649_DE_01.xml
+    role: parallel
+    language: german
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62017CJ0649
+    url: https://publications.europa.eu/resource/celex/62017CJ0649
+    fetch: zip-member
+    member: ECR_62017CJ0649_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: 9653afdaa95ef0ee95c5c6a2e586925cbcc13b4b785882155c245f3fc9809e34
+annotated: ECR_62017CJ0649_EN_01.annotated.xml

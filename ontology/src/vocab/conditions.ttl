@@ -24,7 +24,99 @@ lgv:EstablishedInTheEea a lgo:Condition ;
     skos:prefLabel "Established in the European Economic Area"@en ;
     skos:definition "Established in an EU member state, or in Iceland, Liechtenstein or Norway, where internal-market law such as the e-Commerce Directive applies through the EEA Agreement."@en .
 
-lgv:OffersGoodsOrServicesInTheUnion a lgo:Condition .
+lgv:OffersGoodsOrServicesInTheUnion a lgo:Condition ;
+    lgo:holdsWhenAny lgv:OffersGoodsOrServicesInGermany , lgv:OffersGoodsOrServicesInFrance ,
+        lgv:OffersGoodsOrServicesInAustria , lgv:OffersGoodsOrServicesInSpain ,
+        lgv:OffersGoodsOrServicesInIreland , lgv:OffersGoodsOrServicesInItaly .
+
+lgv:OffersGoodsOrServicesInTheEea a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in the European Economic Area"@en ;
+    lgo:holdsWhenAny lgv:OffersGoodsOrServicesInTheUnion .
+
+lgv:OffersGoodsOrServicesInGermany a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in Germany"@en .
+
+lgv:OffersGoodsOrServicesInFrance a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in France"@en .
+
+lgv:OffersGoodsOrServicesInAustria a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in Austria"@en .
+
+lgv:OffersGoodsOrServicesInSpain a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in Spain"@en .
+
+lgv:OffersGoodsOrServicesInIreland a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in Ireland"@en .
+
+lgv:OffersGoodsOrServicesInItaly a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Offers goods or services in Italy"@en .
+
+lgv:SellsToConsumersInAustria a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in Austria"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInAustria , lgv:SellsToConsumers .
+
+lgv:SellsToConsumersInSpain a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in Spain"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInSpain , lgv:SellsToConsumers .
+
+lgv:SellsToConsumersInIreland a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in Ireland"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInIreland , lgv:SellsToConsumers .
+
+lgv:SellsToConsumersInItaly a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in Italy"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInItaly , lgv:SellsToConsumers .
+
+lgv:SellsToConsumersInTheEea a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in the EEA"@en ;
+    skos:definition "Deals with consumers in a country of the EEA: a consumer contract is governed by the law of the consumer's country when the business directs its activities there (Article 6 Rome I), wherever the business is established."@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInTheEea , lgv:SellsToConsumers ;
+    lgo:holdsWhenAny lgv:SellsToConsumersInGermany , lgv:SellsToConsumersInFrance , lgv:SellsToConsumersInAustria , lgv:SellsToConsumersInSpain , lgv:SellsToConsumersInIreland , lgv:SellsToConsumersInItaly .
+
+lgv:SellsToConsumersInGermany a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in Germany"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInGermany , lgv:SellsToConsumers .
+
+lgv:SellsToConsumersInFrance a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Sells to consumers in France"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInFrance , lgv:SellsToConsumers .
+
+lgv:TdddgApplies a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "The German TDDDG applies"@en ;
+    skos:definition "Established in Germany, or providing services there: § 1(3) TDDDG makes the German cookie rule apply to both."@en ;
+    lgo:holdsWhenAny lgv:EstablishedInGermany , lgv:OffersGoodsOrServicesInGermany .
+
+lgv:CompetesOnTheGermanMarket a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Competes for customers in Germany"@en ;
+    skos:definition "Offers goods or services to people in Germany. Unfair-competition rules (price display, reviews, advertising email) follow the market where competitors meet and consumers' interests are affected (Article 6(1) Rome II), wherever the business is established."@en ;
+    lgo:holdsWhenAny lgv:OffersGoodsOrServicesInGermany .
+
+lgv:BfsgApplies a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "The German Accessibility Act (BFSG) applies"@en ;
+    skos:definition "Provides services to consumers in Germany: the BFSG covers the listed services provided to consumers (§ 1(3) BFSG, Article 2(2) European Accessibility Act), wherever the provider is established."@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInGermany , lgv:SellsToConsumers .
+
+lgv:ActiveInTheEea a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in or offering services in the EEA"@en ;
+    lgo:holdsWhenAny lgv:EstablishedInTheEea , lgv:OffersGoodsOrServicesInTheEea , lgv:TdddgApplies .
 
 lgv:MonitorsBehaviourInTheUnion a lgo:Condition ;
     lgo:question "Does the business track or profile the online behaviour of people in the EU?"@en .
@@ -366,7 +458,8 @@ lgv:UkGdprTerritorialScope a lgo:Condition ;
 lgv:SellsToUkConsumers a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     skos:prefLabel "Sells to consumers in the UK online"@en ;
-    lgo:question "Does the business sell online to consumers in the UK?"@en .
+    lgo:question "Does the business sell online to consumers in the UK?"@en ;
+    lgo:holdsWhenAll lgv:OffersGoodsOrServicesInTheUk , lgv:SellsToConsumers .
 
 lgv:AnnouncesPriceReductions a lgo:Condition ;
     skos:inScheme lgv:Conditions ;

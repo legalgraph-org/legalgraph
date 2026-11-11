@@ -215,6 +215,26 @@ def test_an_amended_provision_must_occur_in_the_amending_act(all_sources: list[S
     assert any("EU-2002-58-art5-3:" in error and "does not occur word for word" in error for error in errors), errors
 
 
+def test_a_list_point_from_an_amending_act_ignores_only_its_final_punctuation(
+    all_sources: list[Source], tmp_path: Path
+) -> None:
+    # The amending act quotes Art. 6(1)(c) ending in "acting." where the consolidated list point ends
+    # in "acting;": that difference is tolerated, a changed word is not.
+    source = by_id(all_sources, "eu/crd")
+    assert sources.verify(source) == []
+    amendment = next(o for o in source.amendments if o.file.name == "L_2019328EN.01000701.xml")
+    copy = tmp_path / amendment.file.name
+    original = amendment.file.read_bytes()
+    assert b"telephone number and email address" in original
+    copy.write_bytes(original.replace(b"telephone number and email address", b"telephone number or email address", 1))
+    changed = [
+        replace(o, file=copy, sha256=sources.sha256(copy.read_bytes())) if o is amendment else o
+        for o in source.originals
+    ]
+    errors = sources.verify(replace(source, originals=changed))
+    assert any("EU-2011-83-art6-1-c:" in error and "does not occur word for word" in error for error in errors), errors
+
+
 def test_mechanical_references_within_an_eu_act(all_sources: list[Source]) -> None:
     extracted = sources.extract(by_id(all_sources, "eu/gdpr"))
     block = extracted[extracted.index("lg:EU-2016-679-art13-1\n") :]

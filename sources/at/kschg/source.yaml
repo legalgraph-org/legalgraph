@@ -1,0 +1,23 @@
+# Konsumentenschutzgesetz (§ 6): the Austrian transposition provisions. RIS serves the consolidated text as HTML only;
+# the fragment holding the section is kept and the text is transcribed in schemas/law.xsd, checked
+# word for word against it.
+id: at/kschg
+title: Konsumentenschutzgesetz (§ 6)
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: kschg-6.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002462"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_11_TextContainer_11"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Consolidated version (Fassung vom 10.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."
+    retrieved_on: 2026-11-08
+    sha256: dda57a3b6b9306e42ed7551e7d2bb3c6dbe2eb2dc0dbe27a00dd572232f1c3f5
+annotated: kschg.law.xml

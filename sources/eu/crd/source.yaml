@@ -78,7 +78,7 @@ originals:
       Accept: "application/zip;mtype=fmx4"
       Accept-Language: eng
     media_type: application/xml
-    amends: ["Art. 11a"]
+    amends: ["Art. 6(1)", "Art. 11a"]
     retrieved_on: 2026-11-02
     sha256: e7fce63b61fa084d93af88a5aa072dda3d2fc2ca21a1bc3b34874bccdefd0e40
   - file: L_202302673DE.000101.fmx.xml
@@ -92,7 +92,7 @@ originals:
       Accept: "application/zip;mtype=fmx4"
       Accept-Language: deu
     media_type: application/xml
-    amends: ["Art. 11a"]
+    amends: ["Art. 6(1)", "Art. 11a"]
     retrieved_on: 2026-11-02
     sha256: d4a8637df8173824a55522b77ff4bd23da6859782115ac510cc25fef1752e15f
   - file: L_202400825EN.000101.fmx.xml
@@ -106,7 +106,7 @@ originals:
       Accept: "application/zip;mtype=fmx4"
       Accept-Language: eng
     media_type: application/xml
-    amends: ["Art. 8(2)"]
+    amends: ["Art. 6(1)", "Art. 8(2)"]
     retrieved_on: 2026-11-02
     sha256: 8501a83f7a7b77a960abdfc87a370a1a46dea6efaf3d6f2261abd146e497263d
   - file: L_202400825DE.000101.fmx.xml
@@ -120,8 +120,37 @@ originals:
       Accept: "application/zip;mtype=fmx4"
       Accept-Language: deu
     media_type: application/xml
-    amends: ["Art. 8(2)"]
+    amends: ["Art. 6(1)", "Art. 8(2)"]
     retrieved_on: 2026-11-02
     sha256: 2065a9089ebab068095b86dc15dc322d85f490468b02d3f1724009546ee2771f
+
+  - file: L_2019328EN.01000701.xml
+    role: amendment
+    language: en
+    title: "Directive (EU) 2019/2161, OJ L 328, 18.12.2019"
+    url: https://publications.europa.eu/resource/celex/32019L2161
+    fetch: zip-member
+    member: L_2019328EN.01000701.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    amends: ["Art. 6(1)(c)"]
+    retrieved_on: 2026-11-08
+    sha256: 6465dbb90ff70f8416e0b1c8e7c341fcd7c1d738749670dd791d77a2914ef2eb
+  - file: L_2019328DE.01000701.xml
+    role: amendment
+    language: de
+    title: "Richtlinie (EU) 2019/2161, ABl. L 328 vom 18.12.2019"
+    url: https://publications.europa.eu/resource/celex/32019L2161
+    fetch: zip-member
+    member: L_2019328DE.01000701.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    amends: ["Art. 6(1)(c)"]
+    retrieved_on: 2026-11-08
+    sha256: f14598ee49a81452a00767449e05a6cc1f4a333d4d058c38075fc50fb39958c9
 
 annotated: CL2011L0083EN0030010.0001.annotated.xml

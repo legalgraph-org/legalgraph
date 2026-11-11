@@ -1,0 +1,67 @@
+name: UK online shop selling to consumers in the UK and Germany
+description: >
+  A UK limited company selling online to consumers at home and in Germany, with analytics cookies
+  after consent. UK law follows its establishment (website information, company disclosures, cookies
+  under PECR) and its UK customers (consumer contracts, UK GDPR). For its German customers it gets
+  German consumer-contract law (Article 6 Rome I), the German cookie rule (§ 1(3) TDDDG) and the
+  GDPR with an EU representative: since Brexit the UK is a third country.
+established_in: GB
+markets: [DE]
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - ProcessesPersonalData
+  - CollectsDataFromDataSubjects
+  - ReliesOnConsent
+  - NonEssentialDeviceAccess
+  - EngagesProcessors
+  - UkCompany
+  - RegisteredInPublicRegister
+  - TransfersOutsideEEA
+obligations:
+  - DE-R-pre-contract-information
+  - DE-R-checkout-summary
+  - DE-R-accessibility
+  - DE-R-total-price
+  - DE-R-cookie-consent
+  - DE-R-unfair-terms
+  - DE-R-withdrawal-function
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-privacy-information-representative
+  - EU-R-privacy-information-transfers
+  - EU-R-consent-conditions
+  - EU-R-consent-no-tying
+  - EU-R-consent-separate
+  - EU-R-consent-specific
+  - EU-R-geo-blocking
+  - EU-R-lawful-basis
+  - EU-R-privacy-by-design
+  - EU-R-processing-agreement
+  - EU-R-processing-record
+  - EU-R-representative
+  - EU-R-storage-limitation
+  - GB-R-ordering-information
+  - GB-R-pre-contract-information
+  - GB-R-material-information
+  - GB-R-prices
+  - GB-R-privacy-information
+  - GB-R-privacy-information-consent
+  - GB-R-company-website-disclosures
+  - GB-R-website-information
+  - GB-R-website-information-register
+  - GB-R-consent-conditions
+  - GB-R-consent-no-tying
+  - GB-R-consent-separate
+  - GB-R-consent-specific
+  - GB-R-cookies
+  - GB-R-lawful-basis
+  - GB-R-no-pre-ticked-extras
+  - GB-R-order-button
+  - GB-R-privacy-by-design
+  - GB-R-processing-agreement
+  - GB-R-processing-record
+  - GB-R-storage-limitation
+  - GB-R-unfair-terms

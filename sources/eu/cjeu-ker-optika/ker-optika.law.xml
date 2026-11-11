@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Judgment of the Court (Third Chamber), Case C-108/09 Ker-Optika, 2 December 2010,
+  written in schemas/law.xsd from the official ECR PDF. The words are the Court's;
+  only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="CJEU-C-108-09" lga:jurisdiction="EU" lga:act-type="Judgment"
+     lga:url="https://curia.europa.eu/juris/liste.jsf?num=C-108/09">
+  <meta>
+    <title>Judgment of the Court (Third Chamber) of 2 December 2010, Case C-108/09, Ker-Optika bt v ÀNTSZ Dél-dunántúli Regionális Intézete</title>
+    <short>Ker-Optika</short>
+    <date>2010-12-02</date>
+  </meta>
+
+  <section num="ruling" title="On those grounds, the Court (Third Chamber) hereby rules" source="C-108-09_Ker-Optika_EN.pdf">
+    <paragraph num="" lga:provision="CJEU-C-108-09-ruling" lga:citation="C-108/09 Ker-Optika, ruling"
+      lga:url="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62009CJ0108"
+      lga:interprets="EU-2000-31-art3-2" lga:regulates="CountryOfOrigin">The national rules relating to the selling of contact lenses fall within the scope of Directive 2000/31/EC of the European Parliament and the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal market (‘Directive on electronic commerce’), since they concern the act of selling such lenses via the Internet. On the other hand, the national rules relating to the supply of contact lenses are not covered by that directive. Articles 34 TFEU and 36 TFEU, and Directive 2000/31, must be interpreted as precluding national legislation which authorises the selling of contact lenses only in shops which specialise in medical devices.</paragraph>
+  </section>
+</law>

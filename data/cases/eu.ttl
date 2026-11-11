@@ -41,3 +41,17 @@ lg:CJEU-C-210-16 lgo:caseNumber "C-210/16" ;
 lg:CJEU-C-21-23 lgo:caseNumber "C-21/23" ;
     lgo:shortName "Lindenapotheke" ;
     rdfs:comment "The GDPR does not prevent national law from letting competitors sue over GDPR breaches as unfair commercial practices. This is why, in Germany, a competitor's Abmahnung can enforce privacy duties (§ 3a UWG)."@en .
+
+lg:CJEU-C-509-09 lgo:caseNumber "C-509/09" .
+
+lg:CJEU-C-376-22 lgo:caseNumber "C-376/22" .
+
+lg:CJEU-C-108-09 lgo:caseNumber "C-108/09" .
+
+lg:CJEU-C-62-19 lgo:caseNumber "C-62/19" .
+
+lg:CJEU-C-298-07 lgo:caseNumber "C-298/07" ;
+    lgo:illustrates lg:EU-R-service-provider-information .
+
+lg:CJEU-C-649-17 lgo:caseNumber "C-649/17" ;
+    lgo:illustrates lg:EU-R-pre-contract-information .

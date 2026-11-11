@@ -67,6 +67,7 @@ lg:FR-CONSO-L221-5-1
     a lgo:Provision ;
     eli:is_part_of lg:FR-CONSO ;
     lgo:citation "C. consom. art. L221-5 I" ;
+    lgo:implements lg:EU-2011-83-art6-1 ;
     lgo:regulates lgv:PreContractInformation ;
     lgo:requiresDisclosureOf lgv:CancellationInformation , lgv:CodesOfConduct , lgv:DigitalProductInformation , lgv:DisputeResolutionBody , lgv:LegalGuarantee , lgv:MainCharacteristics , lgv:NoWithdrawalRight , lgv:PaymentAndDeliveryTerms , lgv:PersonalisedPricing , lgv:ProviderName , lgv:ReturnCosts , lgv:TotalPrice , lgv:WithdrawalInformation ;
     lgo:reviewStatus lgv:SourceChecked ;

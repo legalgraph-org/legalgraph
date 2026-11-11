@@ -5,10 +5,16 @@ none of its lgo:unless conditions does. Facts are the conditions known to hold (
 conditions' questions); a derived condition also holds when any (lgo:holdsWhenAny) or all
 (lgo:holdsWhenAll) of its conditions do. Where the business is established and where it offers its
 services are jurisdictions: a condition tied to one (lgo:establishedIn, lgo:offersIn) holds for it and
-every jurisdiction within it. A national obligation that refines a general one (lgo:refines) replaces
-it where both apply; for a general one resting on a directive, the national provisions implementing it
-are found by the business's place of establishment. Everything a checklist says points to the
-obligation and the provisions it comes from.
+every jurisdiction within it. A business also offers its services where it is established.
+
+A rule follows either the business's establishment (the e-Commerce Directive's country-of-origin
+principle: provider information, contract terms) or its markets, when one of its conditions is tied to
+where the business offers its services (consumer contracts follow the consumer's country, Article 6
+Rome I). National obligations that refine a general one (lgo:refines) replace it when every place the
+general one is followed in lies within their jurisdictions: a German shop selling only in Germany gets
+the German rule, one also selling to Italy keeps the EU rule beside it. For a general
+rule resting on a directive, the national provisions implementing it are named for those places.
+Everything a checklist says points to the obligation and the provisions it comes from.
 
 Scenarios (scenarios/*.yaml) are example businesses with the obligations they must get: the tests
 check the rules against them, and they double as worked examples.
@@ -75,6 +81,10 @@ class Obligation:
     refines: list[str] = field(default_factory=list)
     # Provisions implementing those it is established by, by the jurisdiction of their act.
     implemented_by: dict[str, list[str]] = field(default_factory=dict)
+    # The jurisdiction it applies in and every jurisdiction within it.
+    within: frozenset[str] = frozenset()
+    # Whether it follows the business's markets rather than its establishment.
+    market_based: bool = False
 
     def national(self, jurisdiction: str | None) -> list[str]:
         """The provisions of this jurisdiction that implement the obligation's provisions."""
@@ -119,6 +129,17 @@ def implementations(graph: Graph, provisions: list[str]) -> dict[str, list[str]]
     return {j: sorted(p) for j, p in sorted(found.items())}
 
 
+def tied_to_markets(conditions: dict[str, Condition], condition: str, seen: frozenset[str] = frozenset()) -> bool:
+    """Whether a condition depends on where the business offers its services, directly or through the
+    conditions it is derived from."""
+    current = conditions.get(condition)
+    if current is None or condition in seen:
+        return False
+    if current.offered_in:
+        return True
+    return any(tied_to_markets(conditions, c, seen | {condition}) for c in current.any_of + current.all_of)
+
+
 def load(graph: Graph) -> tuple[dict[str, Condition], dict[str, Obligation]]:
     """Conditions and obligations from a graph holding the data and the ontology."""
     conditions = {}
@@ -155,7 +176,10 @@ def load(graph: Graph) -> tuple[dict[str, Condition], dict[str, Obligation]]:
             status=local(graph.value(node, LGO.reviewStatus)),
             refines=names(graph, node, LGO.refines),
             implemented_by=implementations(graph, names(graph, node, LGO.establishedBy)),
+            within=contained(graph, graph.value(node, LGO.appliesIn)),
         )
+    for obligation in obligations.values():
+        obligation.market_based = any(tied_to_markets(conditions, c) for c in obligation.applies_when)
     return conditions, obligations
 
 
@@ -166,6 +190,11 @@ def establishment(conditions: dict[str, Condition], facts: set[str], established
         return established_in
     places = [conditions[f] for f in facts if f in conditions and conditions[f].established_in]
     return min(places, key=lambda c: len(c.within)).established_in if places else None
+
+
+def offered_in(established_in: str | None, markets: set[str] | frozenset[str]) -> set[str]:
+    """Where the business offers its services: its markets and the place it is established in."""
+    return set(markets) | ({established_in} if established_in else set())
 
 
 def holding(
@@ -180,6 +209,7 @@ def holding(
     if unknown:
         raise RulesError(f"Unknown condition(s): {', '.join(sorted(unknown))}")
     established_in = establishment(conditions, facts, established_in)
+    markets = offered_in(established_in, markets)
     holds = set(facts)
     for condition in conditions.values():
         if condition.established_in and established_in in condition.within:
@@ -207,18 +237,39 @@ def applicable(
     established_in: str | None = None,
     markets: set[str] | frozenset[str] = frozenset(),
 ) -> list[Obligation]:
-    """The obligations that apply; one refined by another that applies too is left out."""
+    """The obligations that apply. One refined by others that apply too is left out when every place it
+    is followed in lies within their jurisdictions."""
     holds = holding(conditions, facts, established_in, markets)
+    established_in = establishment(conditions, facts, established_in)
     found = [
         o
         for o in obligations.values()
         if all(c in holds for c in o.applies_when) and not any(c in holds for c in o.unless)
     ]
-    refined = {r for o in found for r in o.refines}
+
+    def replaced(general: Obligation) -> bool:
+        refining = [o for o in found if general.id in o.refines]
+        covered = set().union(*(o.within for o in refining))
+        return bool(refining) and set(places(general, established_in, markets)) <= covered
+
     return sorted(
-        (o for o in found if o.id not in refined),
+        (o for o in found if not replaced(o)),
         key=lambda o: (o.applies_in, o.disclosure or "~", o.id),
     )
+
+
+def places(obligation: Obligation, established_in: str | None, markets: set[str] | frozenset[str]) -> list[str]:
+    """Where the business follows the obligation, within the obligation's own jurisdiction: its markets
+    for a market-based one, else the place it is established in."""
+    where = offered_in(established_in, markets) if obligation.market_based else {established_in} - {None}
+    return sorted(p for p in where if p in obligation.within)
+
+
+def national(
+    obligation: Obligation, established_in: str | None, markets: set[str] | frozenset[str]
+) -> dict[str, list[str]]:
+    """The national provisions implementing the obligation, for each place the business follows it in."""
+    return {p: obligation.national(p) for p in places(obligation, established_in, markets) if obligation.national(p)}
 
 
 def asked(conditions: dict[str, Condition]) -> list[Condition]:

@@ -9,7 +9,7 @@ jurisdiction: EU
 language: en
 publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
 kind: official-xml
-licence: official-work
+licence: reuse-with-attribution
 licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
 originals:
   - file: ECR_62016CJ0210_EN_01.xml

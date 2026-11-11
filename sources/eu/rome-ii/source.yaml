@@ -1,0 +1,38 @@
+# Rome II Regulation (EC) No 864/2007 on the law applicable to non-contractual obligations, Official
+# Journal text (Formex 4) from Cellar. Held for Article 6: the conflicts rule that lets the German
+# market rules for unfair competition (price display, fake reviews, marketing email) follow the
+# market where consumers' collective interests are affected, not the seller's establishment.
+id: eu/rome-ii
+title: Regulation (EC) No 864/2007 (Rome II)
+jurisdiction: EU
+language: en
+publisher: Publications Office of the European Union (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged"
+originals:
+  - file: L_2007199EN.01004001.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32007R0864
+    url: https://publications.europa.eu/resource/celex/32007R0864
+    fetch: zip-member
+    member: L_2007199EN.01004001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: 125a297f2466f2439b7b4c0609cb74985a950a31f45a245e1374b38fc87173ae
+  - file: L_2007199DE.01004001.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32007R0864
+    url: https://publications.europa.eu/resource/celex/32007R0864
+    fetch: zip-member
+    member: L_2007199DE.01004001.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: dd2d61845e80b4d0fc25b1747efa4a204267413ec426e0ce732f0b7e07ce1918
+annotated: L_2007199EN.01004001.annotated.xml

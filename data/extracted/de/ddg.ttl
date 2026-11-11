@@ -22,6 +22,48 @@ lg:DE-DDG
     lgo:sourceDocument lg:DE-DDG-source ;
     lgo:sourceUrl "https://www.gesetze-im-internet.de/ddg/"^^xsd:anyURI .
 
+lg:DE-DDG-s3-1
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DDG ;
+    lgo:citation "§ 3 Abs. 1 DDG" ;
+    lgo:implements lg:EU-2000-31-art3-1 ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-DDG-source ;
+    lgo:sourceElement "/dokumente/norm[5]/textdaten[1]/text[1]/Content[1]/P[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ddg/__3.html"^^xsd:anyURI .
+
+lg:DE-DDG-s3-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-DDG-s3-1 ;
+    lgo:retrievedOn "2026-10-31"^^xsd:date ;
+    lgo:sourceDocument lg:DE-DDG-source ;
+    lgo:sourceElement "/dokumente/norm[5]/textdaten[1]/text[1]/Content[1]/P[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ddg/__3.html"^^xsd:anyURI ;
+    lgo:text "(1) Diensteanbieter und ihre digitalen Dienste, die nach § 2 in Deutschland niedergelassen sind, unterliegen den Anforderungen des deutschen Rechts auch dann, wenn die digitalen Dienste innerhalb des Geltungsbereichs der Richtlinie 2000/31/EG und der Richtlinie 2010/13/EU in einem anderen Mitgliedstaat geschäftsmäßig angeboten oder verbreitet werden, soweit nicht die Verordnung (EU) 2022/2065 unmittelbar gilt."@de .
+
+lg:DE-DDG-s3-2
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DDG ;
+    lgo:citation "§ 3 Abs. 2 DDG" ;
+    lgo:implements lg:EU-2000-31-art3-2 ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-DDG-source ;
+    lgo:sourceElement "/dokumente/norm[5]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ddg/__3.html"^^xsd:anyURI .
+
+lg:DE-DDG-s3-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-DDG-s3-2 ;
+    lgo:retrievedOn "2026-10-31"^^xsd:date ;
+    lgo:sourceDocument lg:DE-DDG-source ;
+    lgo:sourceElement "/dokumente/norm[5]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/ddg/__3.html"^^xsd:anyURI ;
+    lgo:text "(2) Der freie Verkehr von digitalen Diensten, die innerhalb des Geltungsbereichs der Richtlinien 2000/31/EG und 2010/13/EU in Deutschland von Diensteanbietern, die in einem anderen Mitgliedstaat niedergelassen sind, geschäftsmäßig angeboten oder verbreitet werden, wird vorbehaltlich der Absätze 5 bis 7 nicht eingeschränkt."@de .
+
 lg:DE-DDG-s33-2-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-DDG ;

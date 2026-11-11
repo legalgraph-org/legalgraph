@@ -209,10 +209,9 @@ def checklist(
             click.echo(f"  disclose: {label(str(rules.LGV), item)}")
         for action in obligation.actions:
             click.echo(f"  do: {label(str(rules.LGV), action)}")
-        national = obligation.national(established_in)
-        if national:
+        for place, national in rules.national(obligation, established_in, offered).items():
             in_force = ", ".join(citations.get(f"{rules.LG}{p}", p) for p in national)
-            click.echo(f"  in {places[established_in]}: {in_force}")
+            click.echo(f"  in {places[place]}: {in_force}")
         sources_text = ", ".join(citations.get(f"{rules.LG}{p}", p) for p in obligation.established_by)
         click.echo(click.style(f"  {sources_text} · lg:{obligation.id}", dim=True))
     if not found:

@@ -20,6 +20,59 @@ lg:EU-2019-882
     lgo:sourceDocument lg:EU-2019-882-source , lg:EU-2019-882-source-de ;
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj"^^xsd:anyURI .
 
+lg:EU-2019-882-art2-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2019-882 ;
+    lgo:citation "Art. 2(2) European Accessibility Act" ;
+    lgo:regulates lgv:Accessibility ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2019-882-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng"^^xsd:anyURI .
+
+lg:EU-2019-882-art2-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2019-882-art2-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2019-882-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng"^^xsd:anyURI ;
+    lgo:text """2. Without prejudice to Article 32, this Directive applies to the following services provided to consumers after 28 June 2025:
+(a) electronic communications services with the exception of transmission services used for the provision of machine-to-machine services;
+(b) services providing access to audiovisual media services;
+(c) the following elements of air, bus, rail and waterborne passenger transport services, except for urban, suburban and regional transport services for which only the elements under point (v) apply:
+(i) websites;
+(ii) mobile device-based services including mobile applications;
+(iii) electronic tickets and electronic ticketing services;
+(iv) delivery of transport service information, including real-time travel information; this shall, with regard to information screens, be limited to interactive screens located within the territory of the Union; and
+(v) interactive self-service terminals located within the territory of the Union, except those installed as integrated parts of vehicles, aircrafts, ships and rolling stock used in the provision of any part of such passenger transport services;
+(d) consumer banking services;
+(e) e-books and dedicated software; and
+(f) e-commerce services."""@en .
+
+lg:EU-2019-882-art2-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2019-882-art2-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2019-882-art2-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2019-882-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/deu"^^xsd:anyURI ;
+    lgo:text """(2) Unbeschadet ihres Artikels 32 gilt diese Richtlinie für folgende Dienstleistungen, die für Verbraucher nach dem 28. Juni 2025 erbracht werden:
+a) elektronische Kommunikationsdienste mit Ausnahme von Übertragungsdiensten zur Bereitstellung von Diensten der Maschine-Maschine-Kommunikation;
+b) Dienste, die den Zugang zu audiovisuellen Mediendiensten ermöglichen;
+c) folgende Elemente von Personenverkehrsdiensten im Luft-, Bus-, Schienen- und Schiffsverkehr mit Ausnahme von Stadt-, Vorort- und Regionalverkehrsdiensten, für die nur die Elemente unter Ziffer v gelten:
+i) Websites;
+ii) auf Mobilgeräten angebotene Dienstleistungen, einschließlich mobiler Anwendungen;
+iii) elektronische Tickets und elektronische Ticketdienste;
+iv) die Bereitstellung von Informationen in Bezug auf den Verkehrsdienst, einschließlich Reiseinformationen in Echtzeit, wobei dies in Bezug auf Informationsbildschirme auf interaktive Bildschirme im Hoheitsgebiet der Union beschränkt ist; und
+v) interaktive Selbstbedienungsterminals im Hoheitsgebiet der Union, mit Ausnahme der Terminals, die als integrierte Bestandteile von Fahrzeugen, Luftfahrzeugen, Schiffen und Schienenfahrzeugen eingebaut sind und für die Erbringung von solchen Personenverkehrsdiensten verwendet werden;
+d) Bankdienstleistungen für Verbraucher;
+e) E-Books und hierfür bestimmte Software; und
+f) Dienstleistungen im elektronischen Geschäftsverkehr."""@de .
+
 lg:EU-2019-882-art3-23
     a lgo:Provision ;
     eli:is_part_of lg:EU-2019-882 ;

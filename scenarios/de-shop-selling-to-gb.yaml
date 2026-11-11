@@ -1,0 +1,65 @@
+name: German online shop selling to consumers in Germany and the UK
+description: >
+  A GmbH selling online to consumers at home and in the UK. German law follows its establishment
+  (Impressum, contract terms, dispute resolution statement) and its German customers. For its UK
+  customers it gets UK consumer-contract rules and the UK GDPR, with a UK representative, because it
+  offers goods to people in the UK.
+established_in: DE
+markets: [GB]
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - ProcessesPersonalData
+  - CollectsDataFromDataSubjects
+  - ReliesOnConsent
+  - NonEssentialDeviceAccess
+  - EngagesProcessors
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - DE-R-accessibility
+  - DE-R-dispute-resolution-statement
+  - DE-R-contract-terms-storable
+  - DE-R-pre-contract-information
+  - DE-R-total-price
+  - DE-R-impressum
+  - DE-R-impressum-legal-person
+  - DE-R-impressum-register
+  - DE-R-impressum-vat
+  - DE-R-telemedia-identification
+  - DE-R-telemedia-representative
+  - DE-R-checkout-summary
+  - DE-R-cookie-consent
+  - DE-R-unfair-terms
+  - DE-R-withdrawal-function
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-consent-conditions
+  - EU-R-consent-no-tying
+  - EU-R-consent-separate
+  - EU-R-consent-specific
+  - EU-R-geo-blocking
+  - EU-R-lawful-basis
+  - EU-R-privacy-by-design
+  - EU-R-processing-agreement
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - GB-R-pre-contract-information
+  - GB-R-material-information
+  - GB-R-privacy-information
+  - GB-R-privacy-information-consent
+  - GB-R-consent-conditions
+  - GB-R-consent-no-tying
+  - GB-R-consent-separate
+  - GB-R-consent-specific
+  - GB-R-lawful-basis
+  - GB-R-no-pre-ticked-extras
+  - GB-R-order-button
+  - GB-R-privacy-by-design
+  - GB-R-processing-agreement
+  - GB-R-processing-record
+  - GB-R-storage-limitation
+  - GB-R-uk-representative
+  - GB-R-unfair-terms

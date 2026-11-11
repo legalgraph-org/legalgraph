@@ -41,3 +41,11 @@ lg:AT-TKG-2021 a lgo:LegalAct ;
     lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "§ 165(3) is the Austrian cookie rule: information-society services must tell the user which personal data they process, the legal basis, purposes and retention, and may collect it only with active consent on clear comprehensive information; the technical-necessity exception follows."@en .
+
+lg:AT-FAGG
+    lgo:shortName "FAGG" ;
+    rdfs:comment "Austria's transposition of the Consumer Rights Directive's information duties for distance contracts: § 4 Abs. 1 is the pre-contractual information list (Article 6(1))."@en .
+
+lg:AT-KSCHG
+    lgo:shortName "KSchG" ;
+    rdfs:comment "The Austrian consumer-protection act; § 6 is the blacklist of contract terms that are never effective against consumers (§ 879 ABGB is the general clause)."@en .

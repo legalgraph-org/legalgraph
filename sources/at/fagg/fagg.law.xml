@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Fern- und Auswärtsgeschäfte-Gesetz (FAGG), § 4 Abs. 1, written in schemas/law.xsd from the RIS
+  consolidated fragment. The words are the Federal Chancellery's (ris.bka.gv.at, Fassung vom
+  10.11.2026); only the structure is ours. `legalgraph sources verify` checks every paragraph
+  word for word against the downloaded fragment.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-FAGG" lga:jurisdiction="AT" lga:act-type="Statute"
+     lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33">
+  <meta>
+    <title>Bundesgesetz über Fernabsatz- und außerhalb von Geschäftsräumen geschlossene Verträge (Fern- und Auswärtsgeschäfte-Gesetz – FAGG)</title>
+    <date>2014-05-28</date>
+  </meta>
+
+  <section num="§ 4" title="Inhalt der Informationspflicht; Rechtsfolgen" source="fagg-4.fragment.html">
+    <paragraph num="(1)" lga:provision="AT-FAGG-s4-1" lga:citation="§ 4 Abs. 1 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P4" lga:regulates="PreContractInformation" lga:implements="EU-2011-83-art6-1">Bevor der Verbraucher durch einen Vertrag oder seine Vertragserklärung gebunden ist, muss ihn der Unternehmer in klarer und verständlicher Weise über Folgendes informieren:
+      <list>
+        <item num="1." lga:requires="MainCharacteristics">die wesentlichen Eigenschaften der Ware oder Dienstleistung in dem für das Kommunikationsmittel und die Ware oder Dienstleistung angemessenen Umfang,</item>
+        <item num="2." lga:requires="ProviderName GeographicAddress PhoneNumber EmailAddress">den Namen oder die Firma des Unternehmers, die Anschrift seiner Niederlassung sowie seine Telefonnummer und E-Mail-Adresse, unter denen der Verbraucher den Unternehmer schnell erreichen und ohne besonderen Aufwand mit ihm in Verbindung treten kann,</item>
+        <item num="3." lga:requires="RapidContact ComplaintAddress ProviderName GeographicAddress">gegebenenfalls
+          <list>
+            <item num="a)" lga:requires="RapidContact">andere vom Unternehmer bereitgestellte Online-Kommunikationsmittel, die gewährleisten, dass der Verbraucher etwaige schriftliche Korrespondenz mit dem Unternehmer, einschließlich des Datums und der Uhrzeit dieser Korrespondenz, auf einem dauerhaften Datenträger speichern kann, und mit denen der Verbraucher den Unternehmer schnell erreichen und ohne besonderen Aufwand mit ihm in Verbindung treten kann,</item>
+            <item num="b)" lga:requires="ComplaintAddress">die von der Niederlassung des Unternehmers abweichende Geschäftsanschrift, an die sich der Verbraucher mit jeder Beschwerde wenden kann, und</item>
+            <item num="c)" lga:requires="ProviderName GeographicAddress ComplaintAddress">den Namen oder die Firma und die Anschrift der Niederlassung jener Person, in deren Auftrag der Unternehmer handelt, sowie die allenfalls abweichende Geschäftsanschrift dieser Person, an die sich der Verbraucher mit jeder Beschwerde wenden kann,</item>
+          </list>
+        </item>
+        <item num="4." lga:requires="TotalPrice DeliveryCosts">den Gesamtpreis der Ware oder Dienstleistung einschließlich aller Steuern und Abgaben, wenn aber der Preis aufgrund der Beschaffenheit der Ware oder Dienstleistung vernünftigerweise nicht im Voraus berechnet werden kann, die Art der Preisberechnung und gegebenenfalls alle zusätzlichen Fracht-, Liefer-, Versand- oder sonstigen Kosten oder, wenn diese Kosten vernünftigerweise nicht im Voraus berechnet werden können, das allfällige Anfallen solcher zusätzlichen Kosten,</item>
+        <item num="4a." lga:requires="PersonalisedPricing">gegebenenfalls den Hinweis, dass der Preis auf der Grundlage einer automatisierten Entscheidungsfindung personalisiert worden ist,</item>
+        <item num="5." lga:requires="SubscriptionCosts">bei einem unbefristeten Vertrag oder einem Abonnementvertrag die für jeden Abrechnungszeitraum anfallenden Gesamtkosten, wenn für einen solchen Vertrag Festbeträge in Rechnung gestellt werden, die monatlichen Gesamtkosten, wenn aber die Gesamtkosten vernünftigerweise nicht im Voraus berechnet werden können, die Art der Preisberechnung,</item>
+        <item num="6." lga:requires="CommunicationCosts">die Kosten für den Einsatz der für den Vertragsabschluss genutzten Fernkommunikationsmittel, sofern diese nicht nach dem Grundtarif berechnet werden,</item>
+        <item num="7." lga:requires="PaymentAndDeliveryTerms">die Zahlungs-, Liefer- und Leistungsbedingungen, einschließlich, sofern verfügbar, umweltfreundlicher Liefermöglichkeiten, den Zeitraum, innerhalb dessen nach der Zusage des Unternehmers die Ware geliefert oder die Dienstleistung erbracht wird, sowie ein allenfalls vorgesehenes Verfahren beim Umgang des Unternehmers mit Beschwerden,</item>
+        <item num="8." lga:requires="WithdrawalInformation">bei Bestehen eines Rücktrittsrechts die Bedingungen, die Fristen und die Vorgangsweise für die Ausübung dieses Rechts, dies unter Zurverfügungstellung des Muster-Widerrufsformulars gemäß Anhang I Teil B und gegebenenfalls Informationen über das Bestehen und die Platzierung der Rücktrittsfunktion nach § 13a,</item>
+        <item num="9." lga:requires="ReturnCosts">gegebenenfalls die den Verbraucher im Fall seines Rücktritts vom Vertrag gemäß § 15 treffende Pflicht zur Tragung der Kosten für die Rücksendung der Ware sowie bei Fernabsatzverträgen über Waren, die wegen ihrer Beschaffenheit üblicherweise nicht auf dem Postweg versendet werden, die Höhe der Rücksendungskosten,</item>
+        <item num="10." lga:requires="WithdrawalInformation">gegebenenfalls die den Verbraucher im Fall seines Rücktritts vom Vertrag gemäß § 16 treffende Pflicht zur Zahlung eines anteiligen Betrags für die bereits erbrachten Leistungen,</item>
+        <item num="11." lga:requires="NoWithdrawalRight">gegebenenfalls über das Nichtbestehen eines Rücktrittsrechts nach § 18 oder über die Umstände, unter denen der Verbraucher sein Rücktrittsrecht verliert,</item>
+        <item num="12." lga:requires="LegalGuarantee">das Bestehen eines gesetzlichen Gewährleistungsrechts für Waren und seine wichtigsten Elemente, einschließlich seiner Mindestdauer von zwei Jahren gemäß der Richtlinie (EU) 2019/771 über bestimmte vertragsrechtliche Aspekte des Warenkaufs, zur Änderung der Verordnung (EU) 2017/2394 und der Richtlinie 2009/22/EG sowie zur Aufhebung der Richtlinie 1999/44/EG, ABl. Nr. L 136 vom 22.05.2019 S. 28, in hervorgehobener Weise unter Verwendung der harmonisierten Mitteilung laut Anhang II ,</item>
+        <item num="12a." lga:requires="CommercialGuarantee">wenn der Hersteller dem Verbraucher eine gewerbliche Haltbarkeitsgarantie ohne zusätzliche Kosten für die gesamte Ware und mit einer Dauer von mehr als zwei Jahren gewährt und diese Informationen dem Unternehmer zur Verfügung stellt, die Information, dass für diese Ware eine solche Garantie gilt, deren Dauer und einen Hinweis auf das Bestehen des gesetzlichen Gewährleistungsrechts, in hervorgehobener Weise unter Verwendung der harmonisierten Kennzeichnung laut Anhang III ,</item>
+        <item num="12b." lga:requires="LegalGuarantee">das Bestehen des gesetzlichen Gewährleistungsrechts für digitale Leistungen,</item>
+        <item num="12c." lga:requires="CommercialGuarantee">gegebenenfalls das Bestehen und die Bedingungen von Kundendienstleistungen und von gewerblichen Garantien,</item>
+        <item num="12d." lga:requires="SoftwareUpdatePeriod">für Waren mit digitalen Elementen und für digitale Leistungen den Mindestzeitraum, ausgedrückt als Zeitraum oder durch Angabe eines Datums, in dem der Hersteller oder der Anbieter Softwareaktualisierungen bereitstellt, sofern der Hersteller oder der Anbieter dem Unternehmer die Informationen zur Verfügung stellt,</item>
+        <item num="13." lga:requires="CodesOfConduct">gegebenenfalls bestehende einschlägige Verhaltenskodizes gemäß § 1 Abs. 4 Z 4 UWG und darüber, wie der Verbraucher eine Ausfertigung davon erhalten kann,</item>
+        <item num="14." lga:requires="ContractDuration">gegebenenfalls die Laufzeit des Vertrags oder die Bedingungen für die Kündigung unbefristeter Verträge oder sich automatisch verlängernder Verträge,</item>
+        <item num="15." lga:requires="ContractDuration">gegebenenfalls die Mindestdauer der Verpflichtungen, die der Verbraucher mit dem Vertrag eingeht,</item>
+        <item num="16." lga:requires="Deposit">gegebenenfalls das Recht des Unternehmers, vom Verbraucher die Stellung einer Kaution oder anderer finanzieller Sicherheiten zu verlangen, sowie deren Bedingungen,</item>
+        <item num="17." lga:requires="DigitalProductInformation">gegebenenfalls die Funktionalität von Waren mit digitalen Elementen (§ 2 Z 4 VGG) und von digitalen Leistungen einschließlich anwendbarer technischer Schutzmaßnahmen,</item>
+        <item num="18." lga:requires="DigitalProductInformation">gegebenenfalls – soweit wesentlich – die Kompatibilität und Interoperabilität von Waren mit digitalen Elementen und von digitalen Leistungen, soweit sie dem Unternehmer bekannt sind oder vernünftigerweise bekannt sein müssen,</item>
+        <item num="19." lga:requires="DisputeResolutionStatement">gegebenenfalls die Möglichkeit des Zugangs zu einem außergerichtlichen Beschwerde- und Rechtsbehelfsverfahren, dem der Unternehmer unterworfen ist, und die Voraussetzungen für diesen Zugang,</item>
+        <item num="20." lga:requires="RepairInformation">gegebenenfalls den Reparierbarkeitswert der Waren,</item>
+        <item num="21." lga:requires="RepairInformation">wenn die Z 20 nicht anwendbar ist und sofern der Hersteller dem Unternehmer die Informationen zur Verfügung stellt, Informationen über die Verfügbarkeit, die geschätzten Kosten und das Verfahren für die Bestellung von Ersatzteilen, die für den Erhalt der Vertragsmäßigkeit der Waren erforderlich sind, über die Verfügbarkeit von Reparatur- und Wartungsanleitungen sowie über Reparatureinschränkungen.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

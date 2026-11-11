@@ -91,6 +91,7 @@ lg:DE-BGB-s307-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-BGB ;
     lgo:citation "§ 307 Abs. 1 BGB" ;
+    lgo:implements lg:EU-1993-13-art3-1 , lg:EU-1993-13-art5 ;
     lgo:regulates lgv:UnfairTerms ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:DE-BGB-source ;
@@ -111,6 +112,7 @@ lg:DE-BGB-s309-9
     a lgo:Provision ;
     eli:is_part_of lg:DE-BGB ;
     lgo:citation "§ 309 Nr. 9 BGB" ;
+    lgo:implements lg:EU-1993-13-annex ;
     lgo:regulates lgv:UnfairTerms ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:DE-BGB-source ;

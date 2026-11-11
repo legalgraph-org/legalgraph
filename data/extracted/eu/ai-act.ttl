@@ -20,6 +20,51 @@ lg:EU-2024-1689
     lgo:sourceDocument lg:EU-2024-1689-source , lg:EU-2024-1689-source-de ;
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"^^xsd:anyURI .
 
+lg:EU-2024-1689-art2-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2024-1689 ;
+    lgo:citation "Art. 2(1) AI Act" ;
+    lgo:regulates lgv:AiTransparency ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2024-1689-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"^^xsd:anyURI .
+
+lg:EU-2024-1689-art2-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2024-1689-art2-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2024-1689-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"^^xsd:anyURI ;
+    lgo:text """1. This Regulation applies to:
+(a) providers placing on the market or putting into service AI systems or placing on the market general-purpose AI models in the Union, irrespective of whether those providers are established or located within the Union or in a third country;
+(b) deployers of AI systems that have their place of establishment or are located within the Union;
+(c) providers and deployers of AI systems that have their place of establishment or are located in a third country, where the output produced by the AI system is used in the Union;
+(d) importers and distributors of AI systems;
+(e) product manufacturers placing on the market or putting into service an AI system together with their product and under their own name or trademark;
+(f) authorised representatives of providers, which are not established in the Union;
+(g) affected persons that are located in the Union."""@en .
+
+lg:EU-2024-1689-art2-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2024-1689-art2-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2024-1689-art2-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2024-1689-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02024R1689-20260727"^^xsd:anyURI ;
+    lgo:text """(1) Diese Verordnung gilt für
+a) Anbieter, die in der Union KI-Systeme in Verkehr bringen oder in Betrieb nehmen oder KI-Modelle mit allgemeinem Verwendungszweck in Verkehr bringen, unabhängig davon, ob diese Anbieter in der Union oder in einem Drittland niedergelassen sind;
+b) Betreiber von KI-Systemen, die ihren Sitz in der Union haben oder in der Union befinden;
+c) Anbieter und Betreiber von KI-Systemen, die ihren Sitz in einem Drittland haben oder sich in einem Drittland befinden, wenn die vom KI-System hervorgebrachte Ausgabe in der Union verwendet wird;
+d) Einführer und Händler von KI-Systemen;
+e) Produkthersteller, die KI-Systeme zusammen mit ihrem Produkt unter ihrem eigenen Namen oder ihrer Handelsmarke in Verkehr bringen oder in Betrieb nehmen;
+f) Bevollmächtigte von Anbietern, die nicht in der Union niedergelassen sind;
+g) betroffene Personen, die sich in der Union befinden."""@de .
+
 lg:EU-2024-1689-art50-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2024-1689 ;

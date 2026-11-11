@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Judgment of the Court (Fourth Chamber), Case C-298/07, Bundesverband der Verbraucherzentralen
+  und Verbraucherverbaende - Verbraucherzentrale Bundesverband e.V. v deutsche internet
+  versicherung AG, 16 October 2008, written in schemas/law.xsd from the official ECR PDF.
+  The words are the Court's; only the structure is ours.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="CJEU-C-298-07" lga:jurisdiction="EU" lga:act-type="Judgment"
+     lga:url="https://curia.europa.eu/juris/liste.jsf?num=C-298/07">
+  <meta>
+    <title>Judgment of the Court (Fourth Chamber) of 16 October 2008, Case C-298/07, Bundesverband der Verbraucherzentralen und Verbraucherverbaende v deutsche internet versicherung AG</title>
+    <short>deutsche internet versicherung</short>
+    <date>2008-10-16</date>
+  </meta>
+
+  <section num="ruling 1" title="On those grounds, the Court (Fourth Chamber) hereby rules" source="C-298-07_div_EN.pdf">
+    <paragraph num="1." lga:provision="CJEU-C-298-07-ruling-1" lga:citation="C-298/07 deutsche internet versicherung, ruling 1"
+      lga:url="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62007CJ0298"
+      lga:interprets="EU-2000-31-art5-1" lga:regulates="ProviderIdentification">Article 5(1)(c) of Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the internal market (‘Directive on electronic commerce’) must be interpreted as meaning that a service provider is required to supply to recipients of the service, before the conclusion of a contract with them, in addition to its electronic mail address, other information which allows the service provider to be contacted rapidly and communicated with in a direct and effective manner. That information does not necessarily have to be a telephone number. That information may be in the form of an electronic enquiry template through which the recipients of the service can contact the service provider via the Internet, to whom the service provider replies by electronic mail except in situations where a recipient of the service, who, after contacting the service provider electronically, finds himself without access to the electronic network, requests the latter to provide access to another, non-electronic, means of communication.</paragraph>
+  </section>
+</law>

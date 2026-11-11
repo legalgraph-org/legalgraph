@@ -63,6 +63,102 @@ lg:AT-ECG-s5-2-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-ECG-s5-2-q1 .
 
+lg:AT-FAGG-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "15456e6a8c4abe283ac83ea2daf1a7a1ed329a7e95e088b5f80798f16146be41" ;
+    lgo:text """(1) Before the consumer is bound by a contract or his contractual offer, the trader shall inform him in a clear and understandable manner of the following:
+1. the main characteristics of the goods or services, to the extent appropriate to the means of communication and to the goods or services,
+2. the name or business name of the trader, the address of his establishment, and his telephone number and email address by which the consumer can reach the trader quickly and contact him without particular difficulty,
+3. where applicable
+a) other online means of communication provided by the trader which ensure that the consumer can store any written correspondence with the trader, including the date and time of such correspondence, on a durable medium, and by which the consumer can reach the trader quickly and contact him without particular difficulty,
+b) the business address of the trader differing from the address of his establishment, to which the consumer can address any complaint, and
+c) the name or business name and the address of the establishment of the person on whose behalf the trader acts, and the business address of that person, if different, to which the consumer can address any complaint,
+4. the total price of the goods or services including all taxes and charges, or, where the nature of the goods or services is such that the price cannot reasonably be calculated in advance, the manner in which the price is calculated, and, where applicable, all additional freight, delivery, postal or other charges or, where those charges cannot reasonably be calculated in advance, the fact that such additional charges may be payable,
+4a. where applicable, the notice that the price was personalised on the basis of automated decision-making,
+5. in the case of a contract of indeterminate duration or a subscription contract, the total costs incurred for each billing period and, where such contracts are charged at a fixed rate, the total monthly costs, or, where the total costs cannot reasonably be calculated in advance, the manner in which the price is calculated,
+6. the costs of using the means of distance communication used to conclude the contract, where they are not charged at the basic rate,
+7. the arrangements for payment, delivery and performance, including environmentally friendly delivery options where available, the period within which the trader undertakes to deliver the goods or perform the service, and any procedure provided for handling complaints by the trader,
+8. where a right of withdrawal exists, the conditions, time limits and procedure for exercising that right, including provision of the model withdrawal form in Part B of Annex I and, where applicable, information on the existence and placement of the withdrawal function under § 13a,
+9. where applicable, the consumer's obligation to bear the costs of returning the goods in the event of withdrawal from the contract under § 15 and, for distance contracts for goods which, by their nature, cannot normally be returned by post, the amount of the return costs,
+10. where applicable, the consumer's obligation to pay a proportionate amount for services already performed in the event of withdrawal from the contract under § 16,
+11. where applicable, the fact that there is no right of withdrawal under § 18, or the circumstances under which the consumer loses his right of withdrawal,
+12. the existence of a legal guarantee of conformity for goods and its main elements, including its minimum duration of two years under Directive (EU) 2019/771 on certain aspects concerning contracts for the sale of goods, amending Regulation (EU) 2017/2394 and Directive 2009/22/EC and repealing Directive 1999/44/EC, OJ L 136 of 22.05.2019, p. 28, in a prominent manner using the harmonised notice in Annex II,
+12a. where the producer grants the consumer a commercial guarantee of durability at no additional cost covering the entire goods for a period of more than two years and makes this information available to the trader, the information that such a guarantee applies to the goods, its duration, and a reference to the existence of the legal guarantee of conformity, in a prominent manner using the harmonised label in Annex III,
+12b. the existence of the legal guarantee of conformity for digital content and digital services,
+12c. where applicable, the existence and conditions of after-sales services and commercial guarantees,
+12d. for goods with digital elements and for digital content and digital services, the minimum period, expressed as a period of time or by stating a date, during which the producer or provider supplies software updates, where the producer or provider makes this information available to the trader,
+13. where applicable, relevant codes of conduct within the meaning of § 1(4) Z 4 UWG and how the consumer can obtain a copy of them,
+14. where applicable, the duration of the contract or the conditions for terminating contracts of indeterminate duration or automatically renewed contracts,
+15. where applicable, the minimum duration of the consumer's obligations under the contract,
+16. where applicable, the trader's right to require the consumer to provide a deposit or other financial guarantees, and the conditions for them,
+17. where applicable, the functionality of goods with digital elements (§ 2 Z 4 VGG) and of digital content and digital services, including applicable technical protection measures,
+18. where applicable and relevant, the compatibility and interoperability of goods with digital elements and of digital content and digital services, insofar as the trader knows or can reasonably be expected to know this information,
+19. where applicable, the possibility of access to an out-of-court complaint and redress mechanism to which the trader is subject, and the conditions for such access,
+20. where applicable, the repairability score of the goods,
+21. where item 20 does not apply and where the producer makes this information available to the trader, information on the availability, estimated cost and procedure for ordering spare parts necessary to maintain the conformity of the goods, on the availability of repair and maintenance instructions, and on repair restrictions."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s4-1-q1 .
+
+lg:AT-FAGG-title-5c4f27a2951a-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5c4f27a2951a812a2c1dc317564c921a004f2e0b66fc675f0c65dc34774817f5" ;
+    lgo:text "Federal Act on distance and off-premises contracts (Fern- und Auswärtsgeschäfte-Gesetz – FAGG)"@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG .
+
+lg:AT-KSCHG-s6-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "934f0c8fdcfddd95c2757336b5e70a6ced50964478ae4775dd3ae1f874e53db1" ;
+    lgo:text """(1) For the consumer, the following contractual provisions within the meaning of § 879 ABGB are in any event not binding, under which
+1. the trader reserves an unreasonably long or insufficiently specific period during which he may accept or reject a contractual offer of the consumer or during which the consumer is bound to the contract;
+2. particular conduct of the consumer is treated as the making or non-making of a declaration, unless the consumer is specifically advised at the beginning of the period provided for this purpose of the significance of his conduct and has a reasonable period to make an express declaration;
+3. a declaration of the trader of legal significance for the consumer which has not reached him is treated as having reached him, unless it concerns the effectiveness of a declaration sent to the consumer's last notified address where the consumer has not notified the trader of a change of address;
+4. a notification or declaration to be made by the consumer to the trader or to a third party must comply with a form stricter than written form or with particular requirements of receipt;
+5. the trader is entitled on request to remuneration higher than that fixed at the conclusion of the contract, unless the contract also provides for a reduction in remuneration where the agreed conditions for a change in remuneration are met, the circumstances determining the change are described in the contract and are objectively justified, and the occurrence of the change does not depend on the trader's will.
+6. the consumer's right under § 1052 ABGB to withhold his performance until the counter-performance is effected or secured is excluded or restricted where the trader does not perform in accordance with the contract or where performance is endangered by his poor financial circumstances of which the consumer neither knew nor ought to have known at the time of the conclusion of the contract, for example by making the right of retention conditional on the trader acknowledging defects in his performance;
+7. a right of retention to which the consumer is entitled by law is excluded or restricted;
+8. the consumer's right to discharge his liabilities by set-off is excluded or restricted in the event of the trader's insolvency, or counterclaims which are legally connected with the consumer's liability and which have been judicially established or acknowledged by the trader are excluded or restricted;
+9. a duty of the trader to compensate for personal injury is excluded or restricted, or a duty of the trader to compensate for other damage is excluded or restricted where he or a person for whom he is responsible has caused the damage intentionally or by gross negligence;
+10. the trader, or a body or person within his sphere of influence, is authorised to decide with binding effect on the consumer whether the services provided to the consumer by the trader conform to the agreement;
+11. a burden of proof is imposed on the consumer which he does not bear by law;
+12. the consumer's rights to an item taken over by the trader for processing lapse within an unreasonably short period;
+13. the interest payable in the event of the consumer's default exceeds the rate of interest agreed for payment in accordance with the contract by more than five percentage points per year;
+14. the right to invoke a mistake made by him, or the absence or lapse of the basis of the transaction, is excluded or restricted in advance, for example also by an agreement that statements of the trader do not concern the main subject matter or an essential characteristic of it (§ 871(1) ABGB);
+15. after the occurrence of default he undertakes to pay collection or enforcement costs, unless those costs are separately and itemised in the agreement, or insofar as those costs were not necessary for the appropriate collection or enforcement of the claim."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-KSCHG-s6-1-q1 .
+
+lg:AT-KSCHG-s6-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "08a14972abf4dbbe4c3de4815293dd821aa467bd865aa141a9d063ba65cb2e38" ;
+    lgo:text "(3) A contractual provision contained in general terms and conditions or standard contract forms is ineffective if it is worded unclearly or unintelligibly."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-KSCHG-s6-3-q1 .
+
+lg:AT-KSCHG-title-ac92bd9b0018-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ac92bd9b00185f3e2018f6ec4cf9d7cf31bc443d78e375807b1fcfb958866ea2" ;
+    lgo:text "Federal Act of 8 March 1979 laying down provisions for the protection of consumers (Konsumentenschutzgesetz – KSchG)"@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-11"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-KSCHG .
+
 lg:AT-TKG-2021-s165-3-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

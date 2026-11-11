@@ -368,6 +368,12 @@ lgo:readUnder a owl:ObjectProperty ;
     rdfs:domain lgo:Provision ;
     rdfs:range lgo:Provision .
 
+lgo:amendedBy a owl:ObjectProperty ;
+    rdfs:label "amended by"@en ;
+    rdfs:comment "This act amended the provision's text, so a decision or guidance interpreting it may have read an earlier wording. Where the whole provision was replaced, lgo:continues and lgo:readUnder say so instead."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:LegalAct .
+
 lgo:licence a owl:ObjectProperty ;
     rdfs:label "licence"@en ;
     rdfs:comment "The terms under which the source document is kept and republished: a concept from vocab/licences.ttl."@en ;
@@ -418,7 +424,10 @@ lgo:linkOnlyReason a owl:DatatypeProperty ;
 # cookies"); a derived condition holds when any (lgo:holdsWhenAny) or all (lgo:holdsWhenAll) of
 # others do. Where the business is established, and where it offers its services, are answers of their
 # own (a jurisdiction, not yes/no): conditions tied to a jurisdiction (lgo:establishedIn, lgo:offersIn)
-# hold for it and every jurisdiction within it. Obligations and conditions point to the provisions they
+# hold for it and every jurisdiction within it; a business also offers its services where it is
+# established. An obligation with a condition tied to where the business offers its services follows
+# its markets (consumer contracts follow the consumer's country, Article 6 Rome I); the others follow
+# its establishment. Obligations and conditions point to the provisions they
 # come from, so every rule can be traced back to the words of the law. Rules are interpretation: they
 # start as Draft.
 

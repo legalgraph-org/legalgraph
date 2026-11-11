@@ -14,7 +14,7 @@ lg:FR-R-pre-contract-information a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:FR ;
-    lgo:appliesWhen lgv:EstablishedInFrance , lgv:SellsToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInFrance ;
     lgo:partOfDisclosure lgv:PreContractInformation ;
     lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:TotalPrice , lgv:PaymentAndDeliveryTerms , lgv:ProviderName ,
         lgv:CancellationInformation , lgv:DisputeResolutionBody , lgv:CodesOfConduct , lgv:LegalGuarantee ,
@@ -28,7 +28,7 @@ lg:FR-R-contract-confirmation a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:FR ;
-    lgo:appliesWhen lgv:EstablishedInFrance , lgv:SellsToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInFrance ;
     lgo:partOfDisclosure lgv:ContractConfirmation ;
     lgo:requiresDisclosureOf lgv:ContractCopy ;
     lgo:reviewStatus lgv:Draft .
@@ -40,6 +40,6 @@ lg:FR-R-order-button a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:FR ;
-    lgo:appliesWhen lgv:EstablishedInFrance , lgv:SellsOnlineToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInFrance , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:LabelOrderButton ;
     lgo:reviewStatus lgv:Draft .

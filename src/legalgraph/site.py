@@ -412,6 +412,10 @@ def obligations(graph: Graph) -> list[dict[str, Any]]:
             "establishedBy": o.established_by,
             "refines": o.refines,
             "implementedBy": o.implemented_by,
+            # Whether it follows the business's markets rather than its establishment, and the
+            # jurisdictions it applies in (rules.places).
+            "marketBased": o.market_based,
+            "within": sorted(o.within),
             "bearer": names(graph, LG[o.id], LGO.bearer),
             "deonticType": name(graph.value(LG[o.id], LGO.deonticType)),
             "reviewStatus": o.status,
@@ -458,6 +462,8 @@ def checklist_data(graph: Graph) -> dict[str, Any]:
                 "facts": sorted(s.facts),
                 "establishedIn": s.established_in,
                 "markets": sorted(s.markets),
+                # What the scenario must get: the site's tests check lib/checklist-rules.ts against it.
+                "obligations": sorted(s.expected),
             }
             for s in rules.load_scenarios()
         ],

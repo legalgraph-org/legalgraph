@@ -58,7 +58,7 @@ lg:CJEU-C-210-16-source
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-wirtschaftsakademie/ECR_62016CJ0210_EN_01.annotated.xml" ;
     lgo:legalStatus "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."@en ;
-    lgo:licence lgv:OfficialWork ;
+    lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;
     lgo:mediaType "application/xml" ;
     lgo:repositoryPath "sources/eu/cjeu-wirtschaftsakademie/ECR_62016CJ0210_EN_01.xml" ;
@@ -70,7 +70,7 @@ lg:CJEU-C-210-16-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:languageVersionOf lg:CJEU-C-210-16-source ;
-    lgo:licence lgv:OfficialWork ;
+    lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;
     lgo:mediaType "application/xml" ;
     lgo:repositoryPath "sources/eu/cjeu-wirtschaftsakademie/ECR_62016CJ0210_DE_01.xml" ;

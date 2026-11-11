@@ -20,6 +20,37 @@ lg:EU-2018-302
     lgo:sourceDocument lg:EU-2018-302-source , lg:EU-2018-302-source-de ;
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2018/302/oj"^^xsd:anyURI .
 
+lg:EU-2018-302-art1-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2018-302 ;
+    lgo:citation "Art. 1(2) Geo-blocking Regulation" ;
+    lgo:regulates lgv:GeoBlocking ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2018-302-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/ARTICLE[1]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2018/302/oj/eng"^^xsd:anyURI .
+
+lg:EU-2018-302-art1-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2018-302-art1-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2018-302-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/ARTICLE[1]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2018/302/oj/eng"^^xsd:anyURI ;
+    lgo:text "2. This Regulation does not apply to purely internal situations, where all the relevant elements of the transaction are confined within one single Member State."@en .
+
+lg:EU-2018-302-art1-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2018-302-art1-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2018-302-art1-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2018-302-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/ARTICLE[1]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2018/302/oj/deu"^^xsd:anyURI ;
+    lgo:text "(2) Diese Verordnung gilt nicht für rein inländische Sachverhalte, bei denen sich alle wesentlichen Bestandteile der Transaktion auf einen einzigen Mitgliedstaat beschränken."@de .
+
 lg:EU-2018-302-art3-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2018-302 ;

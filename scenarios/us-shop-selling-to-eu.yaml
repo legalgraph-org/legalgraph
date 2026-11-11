@@ -1,0 +1,52 @@
+name: US online shop selling to consumers in Germany and France
+description: >
+  A US company without an establishment in the EU, selling online to consumers in Germany and
+  France, with analytics cookies after consent and US hosting. Its consumer contracts follow German
+  and French law (Article 6 Rome I), so it gets the German order button, withdrawal function and
+  pre-contract list, and the French ones; the EU pre-contract rule stays for France, where the graph
+  has no refining rule. The GDPR applies because it offers goods to people in the EU, with an EU
+  representative. The German cookie rule applies because it provides services in Germany (§ 1(3)
+  TDDDG). Provider information (Impressum) follows the e-Commerce Directive, which covers providers
+  established in the EEA, so the graph gives none.
+established_in: US
+markets: [DE, FR]
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - ProcessesPersonalData
+  - CollectsDataFromDataSubjects
+  - ReliesOnConsent
+  - NonEssentialDeviceAccess
+  - EngagesProcessors
+  - TransfersOutsideEEA
+obligations:
+  - DE-R-pre-contract-information
+  - DE-R-checkout-summary
+  - DE-R-accessibility
+  - DE-R-total-price
+  - DE-R-cookie-consent
+  - DE-R-unfair-terms
+  - DE-R-withdrawal-function
+  - EU-R-pre-contract-information
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-privacy-information-representative
+  - EU-R-privacy-information-transfers
+  - EU-R-consent-conditions
+  - EU-R-consent-no-tying
+  - EU-R-consent-separate
+  - EU-R-consent-specific
+  - EU-R-cookie-consent
+  - EU-R-geo-blocking
+  - EU-R-lawful-basis
+  - EU-R-privacy-by-design
+  - EU-R-processing-agreement
+  - EU-R-processing-record
+  - EU-R-representative
+  - EU-R-storage-limitation
+  - EU-R-unfair-terms
+  - FR-R-contract-confirmation
+  - FR-R-pre-contract-information
+  - FR-R-order-button

@@ -16,6 +16,29 @@ lgv:EstablishedInSwitzerland lgo:establishedIn lg:CH .
 lgv:EstablishedInUkraine lgo:establishedIn lg:UA .
 lgv:OffersGoodsOrServicesInTheUnion lgo:offersIn lg:EU .
 lgv:OffersGoodsOrServicesInTheUk lgo:offersIn lg:GB .
+lgv:OffersGoodsOrServicesInTheEea lgo:offersIn lg:EEA .
+lgv:OffersGoodsOrServicesInGermany lgo:offersIn lg:DE .
+lgv:OffersGoodsOrServicesInFrance lgo:offersIn lg:FR .
+lgv:OffersGoodsOrServicesInAustria lgo:offersIn lg:AT .
+lgv:OffersGoodsOrServicesInSpain lgo:offersIn lg:ES .
+lgv:OffersGoodsOrServicesInIreland lgo:offersIn lg:IE .
+lgv:OffersGoodsOrServicesInItaly lgo:offersIn lg:IT .
+
+# Consumer contracts follow the consumer's country when the business directs its activities there, and a
+# choice of another law cannot take that protection away (Article 6(1) and (2) Rome I). The German
+# cookie rule applies to whoever provides services in Germany (§ 1(3) TDDDG).
+lgv:SellsToConsumersInTheEea lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:SellsToConsumersInGermany lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:SellsToConsumersInFrance lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:SellsToConsumersInAustria lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:SellsToConsumersInSpain lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:SellsToConsumersInIreland lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:SellsToConsumersInItaly lgo:basedOn lg:EU-2008-593-art6-1 , lg:EU-2008-593-art6-2 .
+lgv:TdddgApplies lgo:basedOn lg:DE-TDDDG-s1-3 .
+# Unfair competition follows the market concerned (Article 6(1) Rome II); the BFSG covers services
+# provided to consumers (§ 1(3) BFSG, Article 2(2) European Accessibility Act).
+lgv:CompetesOnTheGermanMarket lgo:basedOn lg:EU-2007-864-art6-1 .
+lgv:BfsgApplies lgo:basedOn lg:DE-BFSG-s1-3 , lg:EU-2019-882-art2-2 .
 
 lgv:EstablishedInTheUnion lgo:basedOn lg:EU-2016-679-art3-1 .
 lgv:OffersGoodsOrServicesInTheUnion lgo:basedOn lg:EU-2016-679-art3-2 .

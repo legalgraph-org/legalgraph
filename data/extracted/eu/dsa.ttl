@@ -82,6 +82,38 @@ lg:EU-2022-2065-art12-1-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
     lgo:text "(1) Die Anbieter von Vermittlungsdiensten benennen eine zentrale Kontaktstelle, die es den Nutzern ermöglicht, direkt und schnell mit ihnen zu kommunizieren, und zwar auf elektronischem Wege und in einer benutzerfreundlichen Weise, indem sie den Nutzern auch die Wahl des Kommunikationsmittels überlassen, das nicht ausschließlich auf automatisierten Instrumenten beruhen darf."@de .
 
+lg:EU-2022-2065-art13-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 13(1) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art2-1 ;
+    lgo:regulates lgv:RepresentativeInTheUnion ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[1]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art13-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art13-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[1]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of intermediary services which do not have an establishment in the Union but which offer services in the Union shall designate, in writing, a legal or natural person to act as their legal representative in one of the Member States where the provider offers its services."@en .
+
+lg:EU-2022-2065-art13-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art13-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art13-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[1]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Die Anbieter von Vermittlungsdiensten, die keine Niederlassung in der Union haben, aber Dienstleistungen in der Union anbieten, benennen schriftlich eine juristische oder natürliche Person, die in einem der Mitgliedstaaten, in denen sie ihre Dienste anbieten, als ihr gesetzlicher Vertreter fungiert."@de .
+
 lg:EU-2022-2065-art14-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2022-2065 ;
@@ -146,6 +178,37 @@ lg:EU-2022-2065-art19-1-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
     lgo:text """(1) Der vorliegende Abschnitt gilt mit Ausnahme von Artikel 24 Absatz 3 nicht für Anbieter von Online-Plattformen, bei denen es sich um Kleinst- oder Kleinunternehmen gemäß der Empfehlung 2003/361/EG handelt.
 Wenn Unternehmen den Status eines Kleinst- oder Kleinunternehmens gemäß der Empfehlung 2003/361/EG verlieren, findet der vorliegende Abschnitt mit Ausnahme von Artikel 24 Absatz 3 auch in den 12 Monaten nach dem Verlust dieses Status gemäß Artikel 4 Absatz 2 der Empfehlung keine Anwendung auf Anbieter von Online-Plattformen, es sei denn, sie sind sehr große Online-Plattformen im Sinne des Artikels 33."""@de .
+
+lg:EU-2022-2065-art2-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 2(1) DSA" ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art2-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art2-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. This Regulation shall apply to intermediary services offered to recipients of the service that have their place of establishment or are located in the Union, irrespective of where the providers of those intermediary services have their place of establishment."@en .
+
+lg:EU-2022-2065-art2-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art2-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art2-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Diese Verordnung gilt für Vermittlungsdienste, die für Nutzer mit Niederlassungsort oder Sitz in der Union angeboten werden, ungeachtet des Niederlassungsortes des Anbieters dieser Vermittlungsdienste."@de .
 
 lg:EU-2022-2065-art26-1
     a lgo:Provision ;

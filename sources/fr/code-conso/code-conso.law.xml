@@ -15,7 +15,7 @@
   </meta>
 
   <section num="L221-5" title="Obligation d'information précontractuelle" source="l221-5.fragment.html">
-    <paragraph num="" lga:provision="FR-CONSO-L221-5-1" lga:citation="C. consom. art. L221-5 I" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000053310511" lga:regulates="PreContractInformation">I.-Préalablement à la conclusion d'un contrat de vente de biens ou de fourniture de services, de contenu numérique ou de services numériques, le professionnel fournit au consommateur, de manière lisible et compréhensible, les informations suivantes :
+    <paragraph num="" lga:provision="FR-CONSO-L221-5-1" lga:implements="EU-2011-83-art6-1" lga:citation="C. consom. art. L221-5 I" lga:url="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069565/#LEGIARTI000053310511" lga:regulates="PreContractInformation">I.-Préalablement à la conclusion d'un contrat de vente de biens ou de fourniture de services, de contenu numérique ou de services numériques, le professionnel fournit au consommateur, de manière lisible et compréhensible, les informations suivantes :
       <list>
         <item num="1°" lga:requires="MainCharacteristics">Les caractéristiques essentielles du bien, du service, du service numérique ou du contenu numérique ;</item>
         <item num="2°" lga:requires="TotalPrice">Le prix du bien, du service, du service numérique ou du contenu numérique, en application des articles L. 112-1 à L. 112-4 ;</item>

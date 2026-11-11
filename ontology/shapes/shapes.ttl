@@ -161,6 +161,9 @@ lgs:ProvisionShape a sh:NodeShape ;
         sh:path lgo:readUnder ;
         sh:class lgo:Provision ;
     ] , [
+        sh:path lgo:amendedBy ;
+        sh:class lgo:LegalAct ;
+    ] , [
         sh:path lgo:implements ;
         sh:class lgo:Provision ;
     ] , [

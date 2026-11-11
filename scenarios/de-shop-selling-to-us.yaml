@@ -1,0 +1,59 @@
+name: German subscription shop selling to consumers in California
+description: >
+  A GmbH selling subscriptions online at home and to consumers in California, and sending marketing
+  email to US addresses. German and EU law follow its establishment and German customers. California
+  adds its online-seller notice and the automatic renewal law; CAN-SPAM covers the commercial email.
+  Below the CCPA thresholds, the CCPA does not apply.
+established_in: DE
+markets: [US-CA]
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - SellsToConsumers
+  - SellsOnlineToConsumers
+  - ProcessesPersonalData
+  - CollectsDataFromDataSubjects
+  - ReliesOnConsent
+  - NonEssentialDeviceAccess
+  - EngagesProcessors
+  - RegisteredInPublicRegister
+  - HasVatId
+  - OffersAutomaticRenewal
+  - SendsMarketingEmails
+  - SendsCommercialEmailInTheUs
+obligations:
+  - DE-R-accessibility
+  - DE-R-dispute-resolution-statement
+  - DE-R-contract-terms-storable
+  - DE-R-pre-contract-information
+  - DE-R-total-price
+  - DE-R-impressum
+  - DE-R-impressum-legal-person
+  - DE-R-impressum-register
+  - DE-R-impressum-vat
+  - DE-R-telemedia-identification
+  - DE-R-telemedia-representative
+  - DE-R-checkout-summary
+  - DE-R-cookie-consent
+  - DE-R-email-marketing-consent
+  - DE-R-email-marketing-sender
+  - DE-R-unfair-terms
+  - DE-R-withdrawal-function
+  - EU-R-privacy-information
+  - EU-R-privacy-information-consent
+  - EU-R-consent-conditions
+  - EU-R-consent-no-tying
+  - EU-R-consent-separate
+  - EU-R-consent-specific
+  - EU-R-geo-blocking
+  - EU-R-lawful-basis
+  - EU-R-privacy-by-design
+  - EU-R-processing-agreement
+  - EU-R-processing-record
+  - EU-R-storage-limitation
+  - US-R-can-spam
+  - US-CA-R-auto-renewal-acknowledgment
+  - US-CA-R-auto-renewal-terms
+  - US-CA-R-ecommerce-service-notice
+  - US-CA-R-auto-renewal-consent
+  - US-CA-R-cancel-online

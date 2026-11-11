@@ -53,10 +53,989 @@ lg:EU-2011-83-art11a-1-q1-de
     lgo:text """(1) Bei Fernabsatzverträgen, die über eine Online-Benutzeroberfläche geschlossen werden, stellt der Unternehmer sicher, dass der Verbraucher den Vertrag auch widerrufen kann, indem er eine Widerrufsfunktion benutzt.
 Die Widerrufsfunktion wird gut lesbar mit den Worten „Vertrag widerrufen“ oder einer entsprechenden eindeutigen Formulierung gekennzeichnet. Die Widerrufsfunktion ist während der gesamten Widerrufsfrist durchgehend verfügbar. Sie ist auf der Online-Benutzeroberfläche hervorgehoben platziert und für den Verbraucher leicht zugänglich."""@de .
 
+lg:EU-2011-83-art25-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 25(1) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[6]/ARTICLE[4]/ALINEA[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art25-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art25-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[6]/ARTICLE[4]/ALINEA[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "If the law applicable to the contract is the law of a Member State, consumers may not waive the rights conferred on them by the national measures transposing this Directive."@en .
+
+lg:EU-2011-83-art25-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art25-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art25-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[6]/ARTICLE[4]/ALINEA[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "Ist auf den Vertrag das Recht eines Mitgliedstaats anwendbar, so können Verbraucher auf die Rechte, die ihnen mit den einzelstaatlichen Maßnahmen zur Umsetzung dieser Richtlinie eingeräumt werden, nicht verzichten."@de .
+
+lg:EU-2011-83-art25-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 25(2) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[6]/ARTICLE[4]/ALINEA[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art25-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art25-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[6]/ARTICLE[4]/ALINEA[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "Any contractual terms which directly or indirectly waive or restrict the rights resulting from this Directive shall not be binding on the consumer."@en .
+
+lg:EU-2011-83-art25-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art25-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art25-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[6]/ARTICLE[4]/ALINEA[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "Vertragsklauseln, die einen Verzicht auf die sich aus dieser Richtlinie ergebenden Rechte oder deren Einschränkung unmittelbar oder mittelbar bewirken, sind für den Verbraucher nicht bindend."@de .
+
+lg:EU-2011-83-art6-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:CodesOfConduct , lgv:CommercialGuarantee , lgv:CommunicationCosts , lgv:ComplaintAddress , lgv:ContractDuration , lgv:Deposit , lgv:DigitalProductInformation , lgv:DisputeResolutionStatement , lgv:EmailAddress , lgv:GeographicAddress , lgv:LegalGuarantee , lgv:MainCharacteristics , lgv:NoWithdrawalRight , lgv:PaymentAndDeliveryTerms , lgv:PersonalisedPricing , lgv:PhoneNumber , lgv:ProviderName , lgv:RepairInformation , lgv:ReturnCosts , lgv:SoftwareUpdatePeriod , lgv:TotalPrice , lgv:WithdrawalInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-a
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(a) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-a-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-a ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(a) the main characteristics of the goods or services, to the extent appropriate to the medium and to the goods or services;"@en .
+
+lg:EU-2011-83-art6-1-a-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-a-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-a ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "a) die wesentlichen Eigenschaften der Waren oder Dienstleistungen, in dem für das Kommunikationsmittel und die Waren oder Dienstleistungen angemessenen Umfang;"@de .
+
+lg:EU-2011-83-art6-1-b
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(b) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ProviderName ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-b-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-b ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(b) the identity of the trader, such as his trading name;"@en .
+
+lg:EU-2011-83-art6-1-b-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-b-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-b ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "b) die Identität des Unternehmers, beispielsweise seinen Handelsnamen;"@de .
+
+lg:EU-2011-83-art6-1-c
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(c) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:EmailAddress , lgv:GeographicAddress , lgv:PhoneNumber ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-c-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-c ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(c) the geographical address at which the trader is established as well as the trader’s telephone number and email address; in addition, where the trader provides other means of online communication which guarantee that the consumer can keep any written correspondence, including the date and time of such correspondence, with the trader on a durable medium, the information shall also include details of those other means; all those means of communication provided by the trader shall enable the consumer to contact the trader quickly and communicate with him efficiently; where applicable, the trader shall also provide the geographical address and identity of the trader on whose behalf he is acting;"@en .
+
+lg:EU-2011-83-art6-1-c-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-c-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-c ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "c) die Anschrift des Ortes, an dem der Unternehmer niedergelassen ist, sowie seine Telefonnummer und E-Mail-Adresse; wenn der Unternehmer andere Online-Kommunikationsmittel bereitstellt, die gewährleisten, dass der Verbraucher etwaige schriftliche Korrespondenz mit dem Unternehmer, einschließlich des Datums und der Uhrzeit dieser Korrespondenz, auf einem dauerhaften Datenträger speichern kann, so umfassen die Informationen darüber hinaus auch Angaben zu diesen anderen Kommunikationsmitteln; sämtliche dieser vom Unternehmer bereitgestellten Kommunikationsmittel stellen sicher, dass der Verbraucher schnell Kontakt zum Unternehmer aufnehmen und effizient mit ihm kommunizieren kann; gegebenenfalls gibt der Unternehmer auch die Anschrift und die Identität des Unternehmers an, in dessen Auftrag er handelt;"@de .
+
+lg:EU-2011-83-art6-1-d
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(d) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-d-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-d ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(d) if different from the address provided in accordance with point (c), the geographical address of the place of business of the trader, and, where applicable, that of the trader on whose behalf he is acting, where the consumer can address any complaints;"@en .
+
+lg:EU-2011-83-art6-1-d-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-d-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-d ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "d) falls diese von der gemäß Buchstabe c angegebenen Anschrift abweicht, die Geschäftsanschrift des Unternehmers und gegebenenfalls die Geschäftsanschrift des Unternehmers, in dessen Auftrag er handelt, an die sich der Verbraucher mit jeder Beschwerde wenden kann;"@de .
+
+lg:EU-2011-83-art6-1-e
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(e) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:TotalPrice ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-e-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-e ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(e) the total price of the goods or services inclusive of taxes, or where the nature of the goods or services is such that the price cannot reasonably be calculated in advance, the manner in which the price is to be calculated, as well as, where applicable, all additional freight, delivery or postal charges and any other costs or, where those charges cannot reasonably be calculated in advance, the fact that such additional charges may be payable. In the case of a contract of indeterminate duration or a contract containing a subscription, the total price shall include the total costs per billing period. Where such contracts are charged at a fixed rate, the total price shall also mean the total monthly costs. Where the total costs cannot be reasonably calculated in advance, the manner in which the price is to be calculated shall be provided;"@en .
+
+lg:EU-2011-83-art6-1-e-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-e-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-e ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "e) den Gesamtpreis der Waren oder Dienstleistungen einschließlich aller Steuern und Abgaben, oder in den Fällen, in denen der Preis aufgrund der Beschaffenheit der Waren oder Dienstleistungen vernünftigerweise nicht im Voraus berechnet werden kann, die Art der Preisberechnung sowie gegebenenfalls alle zusätzlichen Fracht-, Liefer- oder Versandkosten und alle sonstigen Kosten, oder in den Fällen, in denen diese Kosten vernünftigerweise nicht im Voraus berechnet werden können, die Tatsache, dass solche zusätzliche Kosten anfallen können. Im Falle eines unbefristeten Vertrags oder eines Abonnement-Vertrags umfasst der Gesamtpreis die pro Abrechnungszeitraum anfallenden Gesamtkosten. Wenn für einen solchen Vertrag Festbeträge in Rechnung gestellt werden, umfasst der Gesamtpreis ebenfalls die monatlichen Gesamtkosten. Wenn die Gesamtkosten vernünftigerweise nicht im Voraus berechnet werden können, ist die Art der Preisberechnung anzugeben;"@de .
+
+lg:EU-2011-83-art6-1-ea
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(ea) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:PersonalisedPricing ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[6]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-ea-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-ea ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[6]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(ea) where applicable, that the price was personalised on the basis of automated decision-making;"@en .
+
+lg:EU-2011-83-art6-1-ea-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-ea-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-ea ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[6]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "ea) gegebenenfalls den Hinweis, dass der Preis auf der Grundlage einer automatisierten Entscheidungsfindung personalisiert worden ist;"@de .
+
+lg:EU-2011-83-art6-1-f
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(f) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:CommunicationCosts ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[7]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-f-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-f ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[7]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(f) the cost of using the means of distance communication for the conclusion of the contract where that cost is calculated other than at the basic rate;"@en .
+
+lg:EU-2011-83-art6-1-f-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-f-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-f ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[7]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "f) die Kosten für den Einsatz der für den Vertragsabschluss genutzten Fernkommunikationstechnik, sofern diese nicht nach dem Grundtarif berechnet werden;"@de .
+
+lg:EU-2011-83-art6-1-g
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(g) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ComplaintAddress , lgv:PaymentAndDeliveryTerms ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[8]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-g-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-g ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[8]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(g) the arrangements for payment, delivery, including environmentally friendly delivery options where available, performance, the time by which the trader undertakes to deliver the goods or to perform the services and, where applicable, the trader’s complaint handling policy;"@en .
+
+lg:EU-2011-83-art6-1-g-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-g-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-g ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[8]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "g) die Zahlungs-, Liefer- und Leistungsbedingungen, einschließlich, sofern verfügbar, umweltfreundlicher Liefermöglichkeiten, den Termin, bis zu dem sich der Unternehmer verpflichtet, die Waren zu liefern oder die Dienstleistung zu erbringen und gegebenenfalls das Verfahren des Unternehmers zum Umgang mit Beschwerden;"@de .
+
+lg:EU-2011-83-art6-1-h
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(h) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:WithdrawalInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[9]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-h-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-h ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[9]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(h) where a right of withdrawal exists, the conditions, time limit and procedures for exercising that right in accordance with Article 11(1), as well as the model withdrawal form set out in Annex I(B), and, where applicable, information about the existence and placement of the withdrawal function referred to in Article 11a;"@en .
+
+lg:EU-2011-83-art6-1-h-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-h-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-h ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[9]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "h) im Falle des Bestehens eines Widerrufsrechts die Bedingungen, Fristen und Verfahren für die Ausübung dieses Rechts gemäß Artikel 11 Absatz 1 sowie das Muster-Widerrufsformular gemäß Anhang I Teil B und gegebenenfalls Informationen über das Bestehen und die Platzierung der Widerrufsfunktion nach Artikel 11a;"@de .
+
+lg:EU-2011-83-art6-1-i
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(i) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ReturnCosts ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[10]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-i-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-i ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[10]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(i) where applicable, that the consumer will have to bear the cost of returning the goods in case of withdrawal and, for distance contracts, if the goods, by their nature, cannot normally be returned by post, the cost of returning the goods;"@en .
+
+lg:EU-2011-83-art6-1-i-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-i-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-i ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[10]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "i) gegebenenfalls den Hinweis, dass der Verbraucher im Widerrufsfall die Kosten für die Rücksendung der Waren zu tragen hat und bei Fernabsatzverträgen die Kosten für die Rücksendung der Waren, wenn die Waren aufgrund ihrer Beschaffenheit nicht auf dem normalen Postweg zurückgesendet werden können;"@de .
+
+lg:EU-2011-83-art6-1-j
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(j) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:WithdrawalInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[11]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-j-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-j ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[11]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(j) that, if the consumer exercises the right of withdrawal after having made a request in accordance with Article 7(3) or Article 8(8), the consumer shall be liable to pay the trader reasonable costs in accordance with Article 14(3);"@en .
+
+lg:EU-2011-83-art6-1-j-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-j-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-j ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[11]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "j) den Hinweis, dass, falls der Verbraucher das Widerrufsrecht nach Erklärung eines Verlangens gemäß Artikel 7 Absatz 3 oder Artikel 8 Absatz 8 ausübt, der Verbraucher verpflichtet ist, dem Unternehmer einen angemessenen Betrag gemäß Artikel 14 Absatz 3 zu leisten;"@de .
+
+lg:EU-2011-83-art6-1-k
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(k) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:NoWithdrawalRight ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[12]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-k-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-k ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[12]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(k) where a right of withdrawal is not provided for in accordance with Article 16, the information that the consumer will not benefit from a right of withdrawal or, where applicable, the circumstances under which the consumer loses his right of withdrawal;"@en .
+
+lg:EU-2011-83-art6-1-k-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-k-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-k ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[12]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "k) in Fällen, in denen gemäß Artikel 16 kein Widerrufsrecht besteht, den Hinweis, dass der Verbraucher nicht über ein Widerrufsrecht verfügt, oder gegebenenfalls die Umstände, unter denen der Verbraucher sein Widerrufsrecht verliert;"@de .
+
+lg:EU-2011-83-art6-1-l
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(l) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:LegalGuarantee ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[13]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-l-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-l ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[13]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(l) a reminder of the existence of the legal guarantee of conformity for goods and its main elements, including its minimum duration of two years as provided in Directive (EU) 2019/771, in a prominent manner, using the harmonised notice referred to in Article 22a of this Directive;"@en .
+
+lg:EU-2011-83-art6-1-l-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-l-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-l ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[13]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "l) das Bestehen eines gesetzlichen Gewährleistungsrechts für Waren und seine wichtigsten Elemente, einschließlich seiner Mindestdauer von zwei Jahren gemäß der Richtlinie (EU) 2019/771, in hervorgehobener Weise unter Verwendung der in Artikel 22a dieser Richtlinie genannten harmonisierten Mitteilung;"@de .
+
+lg:EU-2011-83-art6-1-la
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(la) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:CommercialGuarantee ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[14]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-la-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-la ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[14]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(la) where the producer offers the consumer a commercial guarantee of durability at no additional cost, covering the entire good and with a duration of more than two years, and makes that information available to the trader, the information that that good benefits from such a guarantee, its duration and a reminder of the existence of the legal guarantee of conformity, in a prominent manner, using the harmonised label referred to in Article 22a;"@en .
+
+lg:EU-2011-83-art6-1-la-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-la-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-la ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[14]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "la) wenn der Hersteller dem Verbraucher eine gewerbliche Haltbarkeitsgarantie ohne zusätzliche Kosten für die gesamte Ware und mit einer Dauer von mehr als zwei Jahren gewährt und diese Informationen dem Unternehmer zur Verfügung stellt, die Information, dass für diese Ware eine solche Garantie gilt, deren Dauer und einen Hinweis auf das Bestehen des gesetzlichen Gewährleistungsrechts, in hervorgehobener Weise unter Verwendung der in Artikel 22a genannten harmonisierten Kennzeichnung;"@de .
+
+lg:EU-2011-83-art6-1-lb
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(lb) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:DigitalProductInformation , lgv:LegalGuarantee ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[15]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-lb-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-lb ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[15]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(lb) a reminder of the existence of the legal guarantee of conformity for digital content and digital services;"@en .
+
+lg:EU-2011-83-art6-1-lb-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-lb-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-lb ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[15]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "lb) einen Hinweis auf das Bestehen des gesetzlichen Gewährleistungsrechts für digitale Inhalte und digitale Dienstleistungen;"@de .
+
+lg:EU-2011-83-art6-1-lc
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(lc) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:SoftwareUpdatePeriod ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[16]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-lc-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-lc ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[16]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(lc) for goods with digital elements, for digital content and for digital services, where the producer or the provider makes the information available to the trader, the minimum period, whether expressed as a period of time or by reference to a date, during which the producer or the provider provides software updates;"@en .
+
+lg:EU-2011-83-art6-1-lc-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-lc-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-lc ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[16]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "lc) für Waren mit digitalen Elementen, für digitale Inhalte und für digitale Dienstleistungen den Mindestzeitraum, ausgedrückt als Zeitraum oder durch Angabe eines Datums, in dem der Hersteller oder der Anbieter Softwareaktualisierungen bereitstellt, sofern der Hersteller oder der Anbieter dem Unternehmer die Informationen zur Verfügung stellt;"@de .
+
+lg:EU-2011-83-art6-1-m
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(m) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:CommercialGuarantee ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[17]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-m-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-m ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[17]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(m) where applicable, the existence and the conditions of after sale customer assistance, after-sales services and commercial guarantees;"@en .
+
+lg:EU-2011-83-art6-1-m-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-m-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-m ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[17]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "m) gegebenenfalls den Hinweis auf das Bestehen und die Bedingungen von Kundendienst, Kundendienstleistungen und gewerblichen Garantien;"@de .
+
+lg:EU-2011-83-art6-1-n
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(n) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:CodesOfConduct ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[18]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-n-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-n ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[18]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(n) the existence of relevant codes of conduct, as defined in point (f) of Article 2 of Directive 2005/29/EC, and how copies of them can be obtained, where applicable;"@en .
+
+lg:EU-2011-83-art6-1-n-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-n-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-n ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[18]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "n) gegebenenfalls den Hinweis auf bestehende einschlägige Verhaltenskodizes gemäß Artikel 2 Buchstabe f der Richtlinie 2005/29/EG und darauf, wie Exemplare davon erhalten werden können;"@de .
+
+lg:EU-2011-83-art6-1-o
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(o) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ContractDuration ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[19]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-o-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-o ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[19]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(o) the duration of the contract, where applicable, or, if the contract is of indeterminate duration or is to be extended automatically, the conditions for terminating the contract;"@en .
+
+lg:EU-2011-83-art6-1-o-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-o-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-o ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[19]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "o) gegebenenfalls die Laufzeit des Vertrags oder die Bedingungen der Kündigung unbefristeter Verträge oder sich automatisch verlängernder Verträge;"@de .
+
+lg:EU-2011-83-art6-1-p
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(p) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ContractDuration ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[20]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-p-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-p ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[20]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(p) where applicable, the minimum duration of the consumer’s obligations under the contract;"@en .
+
+lg:EU-2011-83-art6-1-p-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-p-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-p ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[20]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "p) gegebenenfalls die Mindestdauer der Verpflichtungen, die der Verbraucher mit dem Vertrag eingeht;"@de .
+
+lg:EU-2011-83-art6-1-q
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(q) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:Deposit ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[21]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-q-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-q ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[21]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(q) where applicable, the existence and the conditions of deposits or other financial guarantees to be paid or provided by the consumer at the request of the trader;"@en .
+
+lg:EU-2011-83-art6-1-q-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-q-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-q ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[21]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "q) gegebenenfalls den Hinweis auf die Tatsache, dass der Unternehmer vom Verbraucher die Stellung einer Kaution oder die Leistung anderer finanzieller Sicherheiten verlangen kann, sowie deren Bedingungen;"@de .
+
+lg:EU-2011-83-art6-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text """1. Before the consumer is bound by a distance or off-premises contract, or any corresponding offer, the trader shall provide the consumer with the following information in a clear and comprehensible manner:
+(a) the main characteristics of the goods or services, to the extent appropriate to the medium and to the goods or services;
+(b) the identity of the trader, such as his trading name;
+(c) the geographical address at which the trader is established as well as the trader’s telephone number and email address; in addition, where the trader provides other means of online communication which guarantee that the consumer can keep any written correspondence, including the date and time of such correspondence, with the trader on a durable medium, the information shall also include details of those other means; all those means of communication provided by the trader shall enable the consumer to contact the trader quickly and communicate with him efficiently; where applicable, the trader shall also provide the geographical address and identity of the trader on whose behalf he is acting;
+(d) if different from the address provided in accordance with point (c), the geographical address of the place of business of the trader, and, where applicable, that of the trader on whose behalf he is acting, where the consumer can address any complaints;
+(e) the total price of the goods or services inclusive of taxes, or where the nature of the goods or services is such that the price cannot reasonably be calculated in advance, the manner in which the price is to be calculated, as well as, where applicable, all additional freight, delivery or postal charges and any other costs or, where those charges cannot reasonably be calculated in advance, the fact that such additional charges may be payable. In the case of a contract of indeterminate duration or a contract containing a subscription, the total price shall include the total costs per billing period. Where such contracts are charged at a fixed rate, the total price shall also mean the total monthly costs. Where the total costs cannot be reasonably calculated in advance, the manner in which the price is to be calculated shall be provided;
+(ea) where applicable, that the price was personalised on the basis of automated decision-making;
+(f) the cost of using the means of distance communication for the conclusion of the contract where that cost is calculated other than at the basic rate;
+(g) the arrangements for payment, delivery, including environmentally friendly delivery options where available, performance, the time by which the trader undertakes to deliver the goods or to perform the services and, where applicable, the trader’s complaint handling policy;
+(h) where a right of withdrawal exists, the conditions, time limit and procedures for exercising that right in accordance with Article 11(1), as well as the model withdrawal form set out in Annex I(B), and, where applicable, information about the existence and placement of the withdrawal function referred to in Article 11a;
+(i) where applicable, that the consumer will have to bear the cost of returning the goods in case of withdrawal and, for distance contracts, if the goods, by their nature, cannot normally be returned by post, the cost of returning the goods;
+(j) that, if the consumer exercises the right of withdrawal after having made a request in accordance with Article 7(3) or Article 8(8), the consumer shall be liable to pay the trader reasonable costs in accordance with Article 14(3);
+(k) where a right of withdrawal is not provided for in accordance with Article 16, the information that the consumer will not benefit from a right of withdrawal or, where applicable, the circumstances under which the consumer loses his right of withdrawal;
+(l) a reminder of the existence of the legal guarantee of conformity for goods and its main elements, including its minimum duration of two years as provided in Directive (EU) 2019/771, in a prominent manner, using the harmonised notice referred to in Article 22a of this Directive;
+(la) where the producer offers the consumer a commercial guarantee of durability at no additional cost, covering the entire good and with a duration of more than two years, and makes that information available to the trader, the information that that good benefits from such a guarantee, its duration and a reminder of the existence of the legal guarantee of conformity, in a prominent manner, using the harmonised label referred to in Article 22a;
+(lb) a reminder of the existence of the legal guarantee of conformity for digital content and digital services;
+(lc) for goods with digital elements, for digital content and for digital services, where the producer or the provider makes the information available to the trader, the minimum period, whether expressed as a period of time or by reference to a date, during which the producer or the provider provides software updates;
+(m) where applicable, the existence and the conditions of after sale customer assistance, after-sales services and commercial guarantees;
+(n) the existence of relevant codes of conduct, as defined in point (f) of Article 2 of Directive 2005/29/EC, and how copies of them can be obtained, where applicable;
+(o) the duration of the contract, where applicable, or, if the contract is of indeterminate duration or is to be extended automatically, the conditions for terminating the contract;
+(p) where applicable, the minimum duration of the consumer’s obligations under the contract;
+(q) where applicable, the existence and the conditions of deposits or other financial guarantees to be paid or provided by the consumer at the request of the trader;
+(r) where applicable, the functionality, including applicable technical protection measures, of goods with digital elements, digital content and digital services;
+(s) where applicable, any relevant compatibility and interoperability of goods with digital elements, digital content and digital services that the trader is aware of or can reasonably be expected to have been aware of;
+(t) where applicable, the possibility of having recourse to an out-of-court complaint and redress mechanism, to which the trader is subject, and the methods for having access to it;
+(u) where applicable, the reparability score for the goods;
+(v) where point (u) is not applicable and provided that the producer makes the information available to the trader, information about the availability and estimated cost of, and procedure for ordering, spare parts that are necessary to keep the goods in conformity, about the availability of repair and maintenance instructions and about repair restrictions."""@en .
+
+lg:EU-2011-83-art6-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text """(1) Bevor der Verbraucher durch einen Vertrag im Fernabsatz oder einen außerhalb von Geschäftsräumen geschlossenen Vertrag oder ein entsprechendes Vertragsangebot gebunden ist, informiert der Unternehmer den Verbraucher in klarer und verständlicher Weise über Folgendes:
+a) die wesentlichen Eigenschaften der Waren oder Dienstleistungen, in dem für das Kommunikationsmittel und die Waren oder Dienstleistungen angemessenen Umfang;
+b) die Identität des Unternehmers, beispielsweise seinen Handelsnamen;
+c) die Anschrift des Ortes, an dem der Unternehmer niedergelassen ist, sowie seine Telefonnummer und E-Mail-Adresse; wenn der Unternehmer andere Online-Kommunikationsmittel bereitstellt, die gewährleisten, dass der Verbraucher etwaige schriftliche Korrespondenz mit dem Unternehmer, einschließlich des Datums und der Uhrzeit dieser Korrespondenz, auf einem dauerhaften Datenträger speichern kann, so umfassen die Informationen darüber hinaus auch Angaben zu diesen anderen Kommunikationsmitteln; sämtliche dieser vom Unternehmer bereitgestellten Kommunikationsmittel stellen sicher, dass der Verbraucher schnell Kontakt zum Unternehmer aufnehmen und effizient mit ihm kommunizieren kann; gegebenenfalls gibt der Unternehmer auch die Anschrift und die Identität des Unternehmers an, in dessen Auftrag er handelt;
+d) falls diese von der gemäß Buchstabe c angegebenen Anschrift abweicht, die Geschäftsanschrift des Unternehmers und gegebenenfalls die Geschäftsanschrift des Unternehmers, in dessen Auftrag er handelt, an die sich der Verbraucher mit jeder Beschwerde wenden kann;
+e) den Gesamtpreis der Waren oder Dienstleistungen einschließlich aller Steuern und Abgaben, oder in den Fällen, in denen der Preis aufgrund der Beschaffenheit der Waren oder Dienstleistungen vernünftigerweise nicht im Voraus berechnet werden kann, die Art der Preisberechnung sowie gegebenenfalls alle zusätzlichen Fracht-, Liefer- oder Versandkosten und alle sonstigen Kosten, oder in den Fällen, in denen diese Kosten vernünftigerweise nicht im Voraus berechnet werden können, die Tatsache, dass solche zusätzliche Kosten anfallen können. Im Falle eines unbefristeten Vertrags oder eines Abonnement-Vertrags umfasst der Gesamtpreis die pro Abrechnungszeitraum anfallenden Gesamtkosten. Wenn für einen solchen Vertrag Festbeträge in Rechnung gestellt werden, umfasst der Gesamtpreis ebenfalls die monatlichen Gesamtkosten. Wenn die Gesamtkosten vernünftigerweise nicht im Voraus berechnet werden können, ist die Art der Preisberechnung anzugeben;
+ea) gegebenenfalls den Hinweis, dass der Preis auf der Grundlage einer automatisierten Entscheidungsfindung personalisiert worden ist;
+f) die Kosten für den Einsatz der für den Vertragsabschluss genutzten Fernkommunikationstechnik, sofern diese nicht nach dem Grundtarif berechnet werden;
+g) die Zahlungs-, Liefer- und Leistungsbedingungen, einschließlich, sofern verfügbar, umweltfreundlicher Liefermöglichkeiten, den Termin, bis zu dem sich der Unternehmer verpflichtet, die Waren zu liefern oder die Dienstleistung zu erbringen und gegebenenfalls das Verfahren des Unternehmers zum Umgang mit Beschwerden;
+h) im Falle des Bestehens eines Widerrufsrechts die Bedingungen, Fristen und Verfahren für die Ausübung dieses Rechts gemäß Artikel 11 Absatz 1 sowie das Muster-Widerrufsformular gemäß Anhang I Teil B und gegebenenfalls Informationen über das Bestehen und die Platzierung der Widerrufsfunktion nach Artikel 11a;
+i) gegebenenfalls den Hinweis, dass der Verbraucher im Widerrufsfall die Kosten für die Rücksendung der Waren zu tragen hat und bei Fernabsatzverträgen die Kosten für die Rücksendung der Waren, wenn die Waren aufgrund ihrer Beschaffenheit nicht auf dem normalen Postweg zurückgesendet werden können;
+j) den Hinweis, dass, falls der Verbraucher das Widerrufsrecht nach Erklärung eines Verlangens gemäß Artikel 7 Absatz 3 oder Artikel 8 Absatz 8 ausübt, der Verbraucher verpflichtet ist, dem Unternehmer einen angemessenen Betrag gemäß Artikel 14 Absatz 3 zu leisten;
+k) in Fällen, in denen gemäß Artikel 16 kein Widerrufsrecht besteht, den Hinweis, dass der Verbraucher nicht über ein Widerrufsrecht verfügt, oder gegebenenfalls die Umstände, unter denen der Verbraucher sein Widerrufsrecht verliert;
+l) das Bestehen eines gesetzlichen Gewährleistungsrechts für Waren und seine wichtigsten Elemente, einschließlich seiner Mindestdauer von zwei Jahren gemäß der Richtlinie (EU) 2019/771, in hervorgehobener Weise unter Verwendung der in Artikel 22a dieser Richtlinie genannten harmonisierten Mitteilung;
+la) wenn der Hersteller dem Verbraucher eine gewerbliche Haltbarkeitsgarantie ohne zusätzliche Kosten für die gesamte Ware und mit einer Dauer von mehr als zwei Jahren gewährt und diese Informationen dem Unternehmer zur Verfügung stellt, die Information, dass für diese Ware eine solche Garantie gilt, deren Dauer und einen Hinweis auf das Bestehen des gesetzlichen Gewährleistungsrechts, in hervorgehobener Weise unter Verwendung der in Artikel 22a genannten harmonisierten Kennzeichnung;
+lb) einen Hinweis auf das Bestehen des gesetzlichen Gewährleistungsrechts für digitale Inhalte und digitale Dienstleistungen;
+lc) für Waren mit digitalen Elementen, für digitale Inhalte und für digitale Dienstleistungen den Mindestzeitraum, ausgedrückt als Zeitraum oder durch Angabe eines Datums, in dem der Hersteller oder der Anbieter Softwareaktualisierungen bereitstellt, sofern der Hersteller oder der Anbieter dem Unternehmer die Informationen zur Verfügung stellt;
+m) gegebenenfalls den Hinweis auf das Bestehen und die Bedingungen von Kundendienst, Kundendienstleistungen und gewerblichen Garantien;
+n) gegebenenfalls den Hinweis auf bestehende einschlägige Verhaltenskodizes gemäß Artikel 2 Buchstabe f der Richtlinie 2005/29/EG und darauf, wie Exemplare davon erhalten werden können;
+o) gegebenenfalls die Laufzeit des Vertrags oder die Bedingungen der Kündigung unbefristeter Verträge oder sich automatisch verlängernder Verträge;
+p) gegebenenfalls die Mindestdauer der Verpflichtungen, die der Verbraucher mit dem Vertrag eingeht;
+q) gegebenenfalls den Hinweis auf die Tatsache, dass der Unternehmer vom Verbraucher die Stellung einer Kaution oder die Leistung anderer finanzieller Sicherheiten verlangen kann, sowie deren Bedingungen;
+r) gegebenenfalls die Funktionalität von Waren mit digitalen Elementen, digitalen Inhalten und digitalen Dienstleistungen, einschließlich anwendbarer technischer Schutzmaßnahmen;
+s) gegebenenfalls — soweit wesentlich — die Kompatibilität und Interoperabilität von Waren mit digitalen Elementen, digitalen Inhalten und digitalen Dienstleistungen, soweit diese dem Unternehmer bekannt sind oder vernünftigerweise bekannt sein müssen;
+t) gegebenenfalls die Möglichkeit des Zugangs zu einem außergerichtlichen Beschwerde- und Rechtsbehelfsverfahren, dem der Unternehmer unterworfen ist, und die Voraussetzungen für diesen Zugang;
+u) gegebenenfalls den Reparierbarkeitswert der Waren;
+v) wenn Buchstabe u nicht anwendbar ist und sofern der Hersteller dem Unternehmer die Informationen zur Verfügung stellt, Informationen über die Verfügbarkeit, die geschätzten Kosten und das Verfahren für die Bestellung von Ersatzteilen, die für den Erhalt der Vertragsmäßigkeit der Waren erforderlich sind, über die Verfügbarkeit von Reparatur- und Wartungsanleitungen sowie über Reparatureinschränkungen."""@de .
+
+lg:EU-2011-83-art6-1-r
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(r) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:DigitalProductInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[22]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-r-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-r ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[22]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(r) where applicable, the functionality, including applicable technical protection measures, of goods with digital elements, digital content and digital services;"@en .
+
+lg:EU-2011-83-art6-1-r-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-r-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-r ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[22]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "r) gegebenenfalls die Funktionalität von Waren mit digitalen Elementen, digitalen Inhalten und digitalen Dienstleistungen, einschließlich anwendbarer technischer Schutzmaßnahmen;"@de .
+
+lg:EU-2011-83-art6-1-s
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(s) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:DigitalProductInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[23]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-s-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-s ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[23]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(s) where applicable, any relevant compatibility and interoperability of goods with digital elements, digital content and digital services that the trader is aware of or can reasonably be expected to have been aware of;"@en .
+
+lg:EU-2011-83-art6-1-s-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-s-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-s ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[23]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "s) gegebenenfalls — soweit wesentlich — die Kompatibilität und Interoperabilität von Waren mit digitalen Elementen, digitalen Inhalten und digitalen Dienstleistungen, soweit diese dem Unternehmer bekannt sind oder vernünftigerweise bekannt sein müssen;"@de .
+
+lg:EU-2011-83-art6-1-t
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(t) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[24]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-t-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-t ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[24]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(t) where applicable, the possibility of having recourse to an out-of-court complaint and redress mechanism, to which the trader is subject, and the methods for having access to it;"@en .
+
+lg:EU-2011-83-art6-1-t-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-t-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-t ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[24]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "t) gegebenenfalls die Möglichkeit des Zugangs zu einem außergerichtlichen Beschwerde- und Rechtsbehelfsverfahren, dem der Unternehmer unterworfen ist, und die Voraussetzungen für diesen Zugang;"@de .
+
+lg:EU-2011-83-art6-1-u
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(u) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:RepairInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[25]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-u-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-u ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[25]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(u) where applicable, the reparability score for the goods;"@en .
+
+lg:EU-2011-83-art6-1-u-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-u-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-u ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[25]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "u) gegebenenfalls den Reparierbarkeitswert der Waren;"@de .
+
+lg:EU-2011-83-art6-1-v
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2011-83 ;
+    lgo:citation "Art. 6(1)(v) Directive 2011/83/EU" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:RepairInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[26]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI .
+
+lg:EU-2011-83-art6-1-v-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-v ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[26]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "(v) where point (u) is not applicable and provided that the producer makes the information available to the trader, information about the availability and estimated cost of, and procedure for ordering, spare parts that are necessary to keep the goods in conformity, about the availability of repair and maintenance instructions and about repair restrictions."@en .
+
+lg:EU-2011-83-art6-1-v-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2011-83-art6-1-v-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2011-83-art6-1-v ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2011-83-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[3]/ARTICLE[1]/PARAG[1]/ALINEA[1]/LIST[1]/ITEM[26]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011L0083-20260927"^^xsd:anyURI ;
+    lgo:text "v) wenn Buchstabe u nicht anwendbar ist und sofern der Hersteller dem Unternehmer die Informationen zur Verfügung stellt, Informationen über die Verfügbarkeit, die geschätzten Kosten und das Verfahren für die Bestellung von Ersatzteilen, die für den Erhalt der Vertragsmäßigkeit der Waren erforderlich sind, über die Verfügbarkeit von Reparatur- und Wartungsanleitungen sowie über Reparatureinschränkungen."@de .
+
 lg:EU-2011-83-art8-2
     a lgo:Provision ;
     eli:is_part_of lg:EU-2011-83 ;
     lgo:citation "Art. 8(2) Directive 2011/83/EU" ;
+    lgo:refersTo lg:EU-2011-83-art6-1 ;
     lgo:regulates lgv:OrderButton ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:EU-2011-83-source ;
@@ -90,6 +1069,7 @@ lg:EU-2011-83-art8-7
     a lgo:Provision ;
     eli:is_part_of lg:EU-2011-83 ;
     lgo:citation "Art. 8(7) CRD" ;
+    lgo:refersTo lg:EU-2011-83-art6-1 ;
     lgo:regulates lgv:ContractConfirmation ;
     lgo:requiresDisclosureOf lgv:ContractCopy ;
     lgo:reviewStatus lgv:SourceChecked ;

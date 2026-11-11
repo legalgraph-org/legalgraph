@@ -187,7 +187,7 @@ lg:DE-R-cookie-consent a lgo:Obligation ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:NonEssentialDeviceAccess ;
+    lgo:appliesWhen lgv:TdddgApplies , lgv:NonEssentialDeviceAccess ;
     lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
     lgo:reviewStatus lgv:Draft .
 
@@ -199,7 +199,7 @@ lg:DE-R-email-marketing-consent a lgo:Obligation ;
     lgo:bearer lgv:Advertiser ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SendsMarketingEmails ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:SendsMarketingEmails ;
     lgo:unless lgv:EmailsOnlyExistingCustomers ;
     lgo:requiresAction lgv:ObtainConsentForEmailMarketing , lgv:KeepConsentEvidencePerAddress ;
     lgo:reviewStatus lgv:Draft .
@@ -210,7 +210,7 @@ lg:DE-R-email-marketing-existing-customers a lgo:Obligation ;
     lgo:bearer lgv:Advertiser ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SendsMarketingEmails , lgv:EmailsOnlyExistingCustomers ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:SendsMarketingEmails , lgv:EmailsOnlyExistingCustomers ;
     lgo:requiresAction lgv:OfferObjectionInEveryEmail ;
     lgo:reviewStatus lgv:Draft .
 
@@ -220,7 +220,7 @@ lg:DE-R-email-marketing-sender a lgo:Obligation ;
     lgo:bearer lgv:Advertiser ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SendsMarketingEmails ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:SendsMarketingEmails ;
     lgo:requiresAction lgv:ProvideValidUnsubscribeAddress ;
     lgo:reviewStatus lgv:Draft .
 
@@ -241,11 +241,12 @@ lg:DE-R-data-protection-officer a lgo:Obligation ;
 lg:DE-R-pre-contract-information a lgo:Obligation ;
     rdfs:label "Pre-contractual information for online sales to consumers"@en ;
     rdfs:comment "Items marked “where applicable” in the law depend on the product; the checklist lists them all for the trader to check."@en ;
+    lgo:refines lg:EU-R-pre-contract-information ;
     lgo:establishedBy lg:DE-EGBGB-a246a-s1-1 , lg:DE-EGBGB-a246a-s1-2 ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInGermany , lgv:SellsOnlineToConsumers ;
     lgo:partOfDisclosure lgv:PreContractInformation ;
     lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress ,
         lgv:TotalPrice , lgv:DeliveryCosts , lgv:PaymentAndDeliveryTerms , lgv:LegalGuarantee , lgv:WithdrawalInformation ,
@@ -260,7 +261,7 @@ lg:DE-R-checkout-summary a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInGermany , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:ShowKeyInformationBeforeOrder , lgv:LabelOrderButton ;
     lgo:reviewStatus lgv:Draft .
 
@@ -270,7 +271,7 @@ lg:DE-R-withdrawal-function a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInGermany , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:ProvideWithdrawalFunction ;
     lgo:reviewStatus lgv:Draft .
 
@@ -294,7 +295,7 @@ lg:DE-R-total-price a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ShowsPricesToConsumers ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:ShowsPricesToConsumers ;
     lgo:partOfDisclosure lgv:PriceTransparency ;
     lgo:requiresDisclosureOf lgv:TotalPrice ;
     lgo:reviewStatus lgv:Draft .
@@ -305,7 +306,7 @@ lg:DE-R-unit-price a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ShowsPricesToConsumers , lgv:SellsGoodsByQuantity ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:ShowsPricesToConsumers , lgv:SellsGoodsByQuantity ;
     lgo:partOfDisclosure lgv:PriceTransparency ;
     lgo:requiresDisclosureOf lgv:UnitPrice ;
     lgo:reviewStatus lgv:Draft .
@@ -319,7 +320,7 @@ lg:DE-R-accessibility a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
+    lgo:appliesWhen lgv:BfsgApplies , lgv:SellsOnlineToConsumers ;
     lgo:unless lgv:Microenterprise ;
     lgo:partOfDisclosure lgv:AccessibilityInformation ;
     lgo:requiresAction lgv:MakeServiceAccessible ;
@@ -334,7 +335,7 @@ lg:DE-R-prior-price a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:Must ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:ShowsPricesToConsumers , lgv:AnnouncesPriceReductions ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:ShowsPricesToConsumers , lgv:AnnouncesPriceReductions ;
     lgo:partOfDisclosure lgv:PriceTransparency ;
     lgo:requiresDisclosureOf lgv:PriorPrice ;
     lgo:requiresAction lgv:ShowPriorPrice ;
@@ -346,7 +347,7 @@ lg:DE-R-fake-reviews a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:MustNot ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:PublishesConsumerReviews ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:PublishesConsumerReviews ;
     lgo:requiresAction lgv:PreventFakeReviews ;
     lgo:reviewStatus lgv:Draft .
 
@@ -421,6 +422,6 @@ lg:DE-R-unfair-terms a lgo:Obligation ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:MustNot ;
     lgo:appliesIn lg:DE ;
-    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInGermany ;
     lgo:requiresAction lgv:ImposeUnfairTerms ;
     lgo:reviewStatus lgv:Draft .

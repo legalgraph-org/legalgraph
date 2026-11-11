@@ -34,6 +34,7 @@ EU-2000-31: {kind: cellar, arg: "32000L0031"}
 EU-2002-58: {kind: cellar, arg: "32002L0058"}
 EU-2005-29: {kind: cellar, arg: "32005L0029"}
 EU-2006-123: {kind: cellar, arg: "32006L0123"}
+EU-2007-864: {kind: cellar, arg: "32007R0864"}
 EU-2008-593: {kind: cellar, arg: "32008R0593"}
 EU-2009-136: {kind: cellar, arg: "32009L0136"}
 EU-2011-83: {kind: cellar, arg: "32011L0083"}
@@ -43,6 +44,7 @@ EU-2016-679: {kind: cellar, arg: "32016R0679"}
 EU-2017-1132: {kind: cellar, arg: "32017L1132"}
 EU-2017-1369: {kind: cellar, arg: "32017R1369"}
 EU-2018-302: {kind: cellar, arg: "32018R0302"}
+EU-2019-2161: {kind: cellar, arg: "32019L2161"}
 EU-2019-882: {kind: cellar, arg: "32019L0882"}
 EU-2022-2065: {kind: cellar, arg: "32022R2065"}
 EU-2023-1795: {kind: cellar, arg: "32023D1795"}
@@ -80,6 +82,8 @@ FR-CONSO: {exempt: "legifrance.gouv.fr blocks programmatic access"}
 
 # --- AT: RIS GeltendeFassung ----------------------------------------------------
 AT-ECG: {kind: ris, arg: "20001703"}
+AT-FAGG: {kind: ris, arg: "20008847"}
+AT-KSCHG: {kind: ris, arg: "10002462"}
 AT-TKG-2021: {kind: ris, arg: "20011678"}
 AT-UGB: {kind: ris, arg: "10001702"}
 

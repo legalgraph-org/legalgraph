@@ -16,3 +16,37 @@ lg:AT-R-cookie-consent a lgo:Obligation ;
     lgo:appliesWhen lgv:EstablishedInAustria , lgv:NonEssentialDeviceAccess ;
     lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Pre-contractual information for distance contracts (§ 4 Abs. 1 FAGG) -------------------
+
+lg:AT-R-pre-contract-information a lgo:Obligation ;
+    rdfs:label "Pre-contractual information for online sales to consumers"@en ;
+    rdfs:comment "Items marked “where applicable” in the law depend on the product; the checklist lists them all for the trader to check. § 4 Abs. 1 FAGG is Austria's transposition of Article 6(1) of the Consumer Rights Directive, the phone number included."@en ;
+    lgo:refines lg:EU-R-pre-contract-information ;
+    lgo:establishedBy lg:AT-FAGG-s4-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:SellsToConsumersInAustria , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress ,
+        lgv:RapidContact , lgv:ComplaintAddress , lgv:TotalPrice , lgv:DeliveryCosts , lgv:PersonalisedPricing ,
+        lgv:SubscriptionCosts , lgv:CommunicationCosts , lgv:PaymentAndDeliveryTerms , lgv:WithdrawalInformation ,
+        lgv:ReturnCosts , lgv:NoWithdrawalRight , lgv:LegalGuarantee , lgv:CommercialGuarantee , lgv:SoftwareUpdatePeriod ,
+        lgv:CodesOfConduct , lgv:ContractDuration , lgv:Deposit , lgv:DigitalProductInformation ,
+        lgv:DisputeResolutionStatement , lgv:RepairInformation ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Unfair terms in consumer contracts (§ 6 KSchG) -----------------------------------------
+
+lg:AT-R-unfair-terms a lgo:Obligation ;
+    rdfs:label "No unfair terms in standard consumer contracts"@en ;
+    rdfs:comment "§ 6 Abs. 1 is the statutory blacklist of terms that are never effective against consumers, tied to the general clause of § 879 ABGB; Abs. 3 voids unclear or unintelligible terms in standard conditions and contract forms."@en ;
+    lgo:refines lg:EU-R-unfair-terms ;
+    lgo:establishedBy lg:AT-KSCHG-s6-1 , lg:AT-KSCHG-s6-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:SellsToConsumersInAustria ;
+    lgo:requiresAction lgv:ImposeUnfairTerms ;
+    lgo:reviewStatus lgv:Draft .

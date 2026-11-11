@@ -1,0 +1,40 @@
+# Case C-62/19, Star Taxi App SRL, 3 December 2020: A taxi-booking smartphone app is an information society service; the country-of-origin principle shields EU-established providers of such services. The operative part — the rulings,
+# which bind national courts on how EU law is to be read — is annotated; the language of the case is
+# kept as a parallel version.
+id: eu/cjeu-star-taxi
+title: Judgment in Case C-62/19, Star Taxi App SRL, 3 December 2020
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: ECR_62019CJ0062_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62019CJ0062
+    url: https://publications.europa.eu/resource/celex/62019CJ0062
+    fetch: zip-member
+    member: ECR_62019CJ0062_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: Romanian. This English text is the Court's translation; the authentic version is the case-language one."
+    retrieved_on: 2026-11-08
+    sha256: a8a5512818c898cf3fa89e37eab4df8e838ccab9cbc43e75e80cec0278140ad8
+  - file: ECR_62019CJ0062_RO_01.xml
+    role: parallel
+    language: romanian
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62019CJ0062
+    url: https://publications.europa.eu/resource/celex/62019CJ0062
+    fetch: zip-member
+    member: ECR_62019CJ0062_RO_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: ron
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: 7ab839f000c9208638e82fd189969e96f3496ef9c073c3f37daade5e8f4eda46
+annotated: ECR_62019CJ0062_EN_01.annotated.xml

@@ -1,0 +1,25 @@
+# Case C-108/09, Ker-Optika bt v ANTSZ, judgment of 2 December 2010 (Third Chamber): Hungary could not
+# confine online contact-lens sales to medical supply shops — the rules on internet selling fall within
+# the E-Commerce Directive, and destination-state restrictions fail (operative ruling). The official
+# ECR PDF is the only machine text EUR-Lex offers for this 2010 judgment (no Formex XML); the operative
+# part is transcribed in schemas/law.xsd, checked word for word against the PDF.
+id: eu/cjeu-ker-optika
+title: Judgment in Case C-108/09, Ker-Optika
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (EUR-Lex)
+kind: authored-xml
+licence: reuse-with-attribution
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: C-108-09_Ker-Optika_EN.pdf
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62009CJ0108
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62009CJ0108
+    fetch: file
+    media_type: application/pdf
+    authentic: false
+    notes:
+      - "Language of the case: Hungarian. This English text is the Court's translation; the authentic version is the Hungarian one. EUR-Lex offers no Formex XML for this 2010 judgment."
+    retrieved_on: 2026-11-08
+    sha256: 9525a1fdafd4c18cb0dbf80504a6c25bd99fdb14b399dd453f408fe8e4d3a79a
+annotated: ker-optika.law.xml

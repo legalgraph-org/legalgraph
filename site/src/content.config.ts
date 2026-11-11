@@ -243,6 +243,10 @@ const obligations = defineCollection({
     refines: ids,
     // National provisions implementing those it is established by, by jurisdiction.
     implementedBy: z.record(z.string(), ids),
+    // Whether it follows the business's markets rather than its establishment, and the
+    // jurisdictions it applies in (rules.places in the CLI).
+    marketBased: z.boolean(),
+    within: ids,
     bearer: ids,
     deonticType: z.string(),
     reviewStatus: z.string(),

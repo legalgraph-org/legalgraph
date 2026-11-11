@@ -20,6 +20,99 @@ lg:EU-2000-31
     lgo:sourceDocument lg:EU-2000-31-source , lg:EU-2000-31-source-de ;
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2000/31/oj"^^xsd:anyURI .
 
+lg:EU-2000-31-annex
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2000-31 ;
+    lgo:citation "Annex to Directive 2000/31/EC" ;
+    lgo:refersTo lg:EU-2000-31-art3-1 , lg:EU-2000-31-art3-3 ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/CONS.ANNEX[1]/CONTENTS[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI .
+
+lg:EU-2000-31-annex-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-annex ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/CONS.ANNEX[1]/CONTENTS[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text """As provided for in Article 3(3), Article 3(1) and (2) do not apply to:
+copyright, neighbouring rights, rights referred to in Directive 87/54/EEC and Directive 96/9/EC as well as industrial property rights,
+the emission of electronic money by institutions in respect of which Member States have applied one of the derogations provided for in Article 8(1) of Directive 2000/46/EC,
+Article 44(2) of Directive 85/611/EEC,
+Article 30 and Title IV of Directive 92/49/EEC, Title IV of Directive 92/96/EEC, Articles 7 and 8 of Directive 88/357/EEC and Article 4 of Directive 90/619/EEC,
+the freedom of the parties to choose the law applicable to their contract,
+contractual obligations concerning consumer contacts,
+formal validity of contracts creating or transferring rights in real estate where such contracts are subject to mandatory formal requirements of the law of the Member State where the real estate is situated,
+the permissibility of unsolicited commercial communications by electronic mail."""@en .
+
+lg:EU-2000-31-annex-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2000-31-annex-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-annex ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/CONS.ANNEX[1]/CONTENTS[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text """Bereiche gemäß Artikel 3 Absatz 3, auf die Artikel 3 Absätze 1 und 2 keine Anwendung findet:
+Urheberrecht, verwandte Schutzrechte, Rechte im Sinne der Richtlinie 87/54/EWG und der Richtlinie 96/9/EG sowie gewerbliche Schutzrechte;
+Ausgabe elektronischen Geldes durch Institute, auf die die Mitgliedstaaten eine der in Artikel 8 Absatz 1 der Richtlinie 2000/46/EG vorgesehenen Ausnahmen angewendet haben;
+Artikel 44 Absatz 2 der Richtlinie 85/611/EWG;
+Artikel 30 und Titel IV der Richtlinie 92/49/EWG, Titel IV der Richtlinie 92/96/EWG sowie die Artikel 7 und 8 der Richtlinie 88/357/EWG und Artikel 4 der Richtlinie 90/619/EWG;
+Freiheit der Rechtswahl für Vertragsparteien;
+vertragliche Schuldverhältnisse in bezug auf Verbraucherverträge;
+formale Gültigkeit von Verträgen, die Rechte an Immobilien begründen oder übertragen, sofern diese Verträge nach dem Recht des Mitgliedstaates, in dem sich die Immobilie befindet, zwingenden Formvorschriften unterliegen;
+Zulässigkeit nicht angeforderter kommerzieller Kommunikation mittels elektronischer Post."""@de .
+
+lg:EU-2000-31-art1-5
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2000-31 ;
+    lgo:citation "Art. 1(5) Directive 2000/31/EC" ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[1]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI .
+
+lg:EU-2000-31-art1-5-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art1-5 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[1]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text """5. This Directive shall not apply to:
+(a) the field of taxation;
+(b) questions relating to information society services covered by Directives 95/46/EC and 97/66/EC;
+(c) questions relating to agreements or practices governed by cartel law;
+(d) the following activities of information society services:
+the activities of notaries or equivalent professions to the extent that they involve a direct and specific connection with the exercise of public authority,
+the representation of a client and defence of his interests before the courts,
+gambling activities which involve wagering a stake with monetary value in games of chance, including lotteries and betting transactions."""@en .
+
+lg:EU-2000-31-art1-5-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2000-31-art1-5-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art1-5 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[1]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text """(5) Diese Richtlinie findet keine Anwendung auf
+a) den Bereich der Besteuerung,
+b) Fragen betreffend die Dienste der Informationsgesellschaft, die von den Richtlinien 95/46/EG und 97/66/EG erfaßt werden,
+c) Fragen betreffend Vereinbarungen oder Verhaltensweisen, die dem Kartellrecht unterliegen,
+d) die folgenden Tätigkeiten der Dienste der Informationsgesellschaft:
+Tätigkeiten von Notaren oder Angehörigen gleichwertiger Berufe, soweit diese eine unmittelbare und besondere Verbindung zur Ausübung öffentlicher Befugnisse aufweisen;
+Vertretung eines Mandanten und Verteidigung seiner Interessen vor Gericht;
+Gewinnspiele mit einem einen Geldwert darstellenden Einsatz bei Glücksspielen, einschließlich Lotterien und Wetten."""@de .
+
 lg:EU-2000-31-art10-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2000-31 ;
@@ -156,6 +249,100 @@ lg:EU-2000-31-art11-2-q1-de
     lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[2]/DIVISION[3]/ARTICLE[3]/PARAG[2]" ;
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
     lgo:text "(2) Die Mitgliedstaaten stellen sicher, daß — außer im Fall abweichender Vereinbarungen zwischen Parteien, die nicht Verbraucher sind — der Diensteanbieter dem Nutzer angemessene, wirksame und zugängliche technische Mittel zur Verfügung stellt, mit denen er Eingabefehler vor Abgabe der Bestellung erkennen und korrigieren kann."@de .
+
+lg:EU-2000-31-art3-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2000-31 ;
+    lgo:citation "Art. 3(1) Directive 2000/31/EC" ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI .
+
+lg:EU-2000-31-art3-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art3-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text "1. Each Member State shall ensure that the information society services provided by a service provider established on its territory comply with the national provisions applicable in the Member State in question which fall within the coordinated field."@en .
+
+lg:EU-2000-31-art3-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2000-31-art3-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art3-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text "(1) Jeder Mitgliedstaat trägt dafür Sorge, daß die Dienste der Informationsgesellschaft, die von einem in seinem Hoheitsgebiet niedergelassenen Diensteanbieter erbracht werden, den in diesem Mitgliedstaat geltenden innerstaatlichen Vorschriften entsprechen, die in den koordinierten Bereich fallen."@de .
+
+lg:EU-2000-31-art3-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2000-31 ;
+    lgo:citation "Art. 3(2) Directive 2000/31/EC" ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI .
+
+lg:EU-2000-31-art3-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art3-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text "2. Member States may not, for reasons falling within the coordinated field, restrict the freedom to provide information society services from another Member State."@en .
+
+lg:EU-2000-31-art3-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2000-31-art3-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art3-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text "(2) Die Mitgliedstaaten dürfen den freien Verkehr von Diensten der Informationsgesellschaft aus einem anderen Mitgliedstaat nicht aus Gründen einschränken, die in den koordinierten Bereich fallen."@de .
+
+lg:EU-2000-31-art3-3
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2000-31 ;
+    lgo:citation "Art. 3(3) Directive 2000/31/EC" ;
+    lgo:refersTo lg:EU-2000-31-annex ;
+    lgo:regulates lgv:CountryOfOrigin ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI .
+
+lg:EU-2000-31-art3-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art3-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text "3. Paragraphs 1 and 2 shall not apply to the fields referred to in the Annex."@en .
+
+lg:EU-2000-31-art3-3-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2000-31-art3-3-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2000-31-art3-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2000-31-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/ARTICLE[3]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02000L0031-20240217"^^xsd:anyURI ;
+    lgo:text "(3) Die Absätze 1 und 2 finden keine Anwendung auf die im Anhang genannten Bereiche."@de .
 
 lg:EU-2000-31-art5-1
     a lgo:Provision ;

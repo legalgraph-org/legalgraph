@@ -1,0 +1,40 @@
+# Case C-376/22, Google Ireland and Others v Kommunikationsbehörde Austria (KommAustria), 9 November 2023: Austria could not apply its communication-platforms obligations to providers established in Ireland: the Directive's home-Member-State control principle and the 'given service' requirement of Article 3(4). The operative part — the rulings,
+# which bind national courts on how EU law is to be read — is annotated; the language of the case is
+# kept as a parallel version.
+id: eu/cjeu-kommaustria
+title: Judgment in Case C-376/22, Google Ireland and Others v Kommunikationsbehörde Austria (KommAustria), 9 November 2023
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: ECR_62022CJ0376_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62022CJ0376
+    url: https://publications.europa.eu/resource/celex/62022CJ0376
+    fetch: zip-member
+    member: ECR_62022CJ0376_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the case-language one."
+    retrieved_on: 2026-11-08
+    sha256: 48432bdcd93b8fdf0c2ba381071a171119c08ea70a268d880ce7a7bf26fc1997
+  - file: ECR_62022CJ0376_DE_01.xml
+    role: parallel
+    language: german
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62022CJ0376
+    url: https://publications.europa.eu/resource/celex/62022CJ0376
+    fetch: zip-member
+    member: ECR_62022CJ0376_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-08
+    sha256: 078b024d09bd62fb03fede49e3c648be9b7bc9b52a611767d9e1f221ef769fae
+annotated: ECR_62022CJ0376_EN_01.annotated.xml

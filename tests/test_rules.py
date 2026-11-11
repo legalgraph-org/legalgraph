@@ -119,3 +119,71 @@ def test_every_rule_traces_to_the_law(loaded) -> None:
         for condition in obligation.applies_when + obligation.unless:
             current = conditions[condition]
             assert current.based_on or current.any_of or current.all_of or current.established_in, condition
+
+
+def test_the_shop_needs_a_phone_number_the_impressum_does_not(loaded) -> None:
+    """C-298/07 and C-649/17: the provider-information duty wants rapid direct contact, the
+    pre-contract list has named the telephone number since Directive (EU) 2019/2161."""
+    _, obligations = loaded
+    for rule in ("EU-R-service-provider-information", "DE-R-impressum"):
+        assert "RapidContact" in obligations[rule].items
+        assert "PhoneNumber" not in obligations[rule].items
+    for rule in ("EU-R-pre-contract-information", "DE-R-pre-contract-information"):
+        assert "PhoneNumber" in obligations[rule].items
+
+
+def test_item_level_provisions_back_the_phone_question(loaded, graph) -> None:
+    """The item that asks for the phone number can be quoted on its own: point (c) of the
+    Consumer Rights Directive's Article 6(1) and Nr. 3 of Art. 246a § 1(1) EGBGB."""
+    from rdflib import URIRef
+
+    from legalgraph import LG, LGO, LGV
+
+    for provision in ("EU-2011-83-art6-1-c", "DE-EGBGB-a246a-s1-1-3"):
+        assert (LG[provision], LGO.requiresDisclosureOf, LGV.PhoneNumber) in graph
+    # The ruling on the shop information interprets the shop provision, which the Omnibus
+    # Directive amended after the ruling: the graph says so, not just a comment.
+    for ruling in ("CJEU-C-649-17-ruling-1", "CJEU-C-649-17-ruling-2"):
+        assert (LG[ruling], LGO.interprets, LG["EU-2011-83-art6-1-c"]) in graph
+    assert (LG["EU-2011-83-art6-1-c"], LGO.amendedBy, LG["EU-2019-2161"]) in graph
+    assert (LG["EU-2019-2161"], URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), LGO.LegalAct) in graph
+
+
+def test_consumer_contracts_follow_the_consumers_country(loaded) -> None:
+    """Article 6 Rome I: a shop from outside the EU selling to German consumers gets German
+    consumer-contract rules; provider information still follows the establishment (e-Commerce
+    Directive), so it gets no Impressum."""
+    conditions, obligations = loaded
+    shop = {"SellsToConsumers", "SellsOnlineToConsumers", "CommercialDigitalService", "NonEssentialDeviceAccess"}
+    us = {o.id for o in rules.applicable(conditions, obligations, shop, "US", {"DE"})}
+    assert {"DE-R-pre-contract-information", "DE-R-checkout-summary", "DE-R-withdrawal-function"} <= us
+    assert "DE-R-cookie-consent" in us  # § 1(3) TDDDG: providing services in Germany is enough
+    assert "DE-R-impressum" not in us and "EU-R-service-provider-information" not in us
+    home = {o.id for o in rules.applicable(conditions, obligations, shop, "US")}
+    assert "DE-R-pre-contract-information" not in home and "EU-R-pre-contract-information" not in home
+
+
+def test_a_business_also_sells_where_it_is_established(loaded) -> None:
+    conditions, _ = loaded
+    assert "SellsToConsumersInGermany" in rules.holding(conditions, {"SellsToConsumers"}, "DE")
+    assert "SellsToConsumersInGermany" in rules.holding(conditions, {"SellsToConsumers"}, "DE", {"GB"})
+
+
+def test_national_rules_replace_a_general_one_only_where_they_cover_it(loaded) -> None:
+    """A German shop selling only at home gets the German pre-contract rule; one also selling to
+    Austria gets the Austrian rule for its Austrian customers, and keeps the EU rule only for
+    markets with no national rule in the graph (Spain). A market outside the EU rule's own
+    jurisdiction (the UK) does not keep it."""
+    conditions, obligations = loaded
+    shop = {"SellsToConsumers", "SellsOnlineToConsumers"}
+
+    def ids(markets: set[str]) -> set[str]:
+        return {o.id for o in rules.applicable(conditions, obligations, shop, "DE", markets)}
+
+    assert "EU-R-pre-contract-information" not in ids(set())
+    assert "AT-R-pre-contract-information" in ids({"AT"})
+    assert {"EU-R-pre-contract-information", "DE-R-pre-contract-information"} <= ids({"ES"})
+    assert "EU-R-pre-contract-information" not in ids({"GB"})
+    general = obligations["EU-R-pre-contract-information"]
+    assert rules.places(general, "DE", {"AT", "GB"}) == ["AT", "DE"]
+    assert rules.places(obligations["EU-R-service-provider-information"], "DE", {"AT"}) == ["DE"]

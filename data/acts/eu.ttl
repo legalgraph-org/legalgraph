@@ -198,6 +198,14 @@ lg:EU-2023-1795
     rdfs:seeAlso <http://data.europa.eu/eli/dec_impl/2023/1795/oj> ;
     rdfs:comment "Adequacy for transfers to US organisations on the Data Privacy Framework List — the transfer basis for US vendors since 10 July 2023. Upheld by the General Court in T-553/23 Latombe on 3 September 2025; an appeal is reported pending."@en .
 
+# --- Regulation (EC) No 864/2007 (Rome II; data/extracted/eu/rome-ii.ttl) -----------------------------
+
+lg:EU-2007-864
+    lgo:shortName "Rome II" ;
+    eli:id_local "32007R0864" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2007/864/oj> ;
+    rdfs:comment "Its Article 6(1) makes unfair-competition claims follow the law of the country where competitive relations or consumers' collective interests are affected — the market, not the seller's establishment."@en .
+
 # --- Judgments (additions to data/extracted/eu/cjeu-*.ttl) ---
 
 lg:CJEU-C-604-22 lgo:shortName "IAB Europe" ;
@@ -210,6 +218,40 @@ lg:CJEU-C-300-21 lgo:shortName "Österreichische Post" ;
     rdfs:comment "Article 82 GDPR damages need no threshold of seriousness and no damage is presumed, but once damage is shown the amount follows national rules — the reason unlawfully transferred data (e.g. Google Fonts) can carry a price."@en .
 lg:CJEU-T-553-23 lgo:shortName "Latombe" ;
     rdfs:comment "The General Court dismissed the action and upheld the EU-US Data Privacy Framework adequacy decision on 3 September 2025. An appeal to the Court of Justice is reported pending (C-703/25 P), so the decision stands but is under review."@en .
+
+lg:CJEU-C-509-09 lgo:shortName "eDate Advertising and Martinez" ;
+    rdfs:comment "Article 3 of the E-Commerce Directive is not a conflicts-of-laws rule, but in the coordinated field a provider must not be made subject to stricter requirements than its home Member State's — the country-of-origin principle applied."@en .
+
+lg:CJEU-C-376-22 lgo:shortName "Google and Others v KommAustria" ;
+    rdfs:comment "Austria could not apply its communication-platforms law to providers established in Ireland: general measures against a whole category of services are not 'measures against a given information society service' under Article 3(4), so the derogation route fails and home-state control stands."@en .
+
+lg:CJEU-C-108-09 lgo:shortName "Ker-Optika" ;
+    rdfs:comment "Hungary could not confine online contact-lens sales to medical-supply shops: rules on internet selling fall within the E-Commerce Directive, and a destination state's restrictions on online sales from another Member State fail (Articles 34/36 TFEU and the Directive)."@en .
+
+lg:CJEU-C-62-19 lgo:shortName "Star Taxi App" ;
+    rdfs:comment "A taxi-booking app is an information society service (ruling 1); but Article 3(2)/(4) of the E-Commerce Directive applies only with a cross-border element — the country-of-origin principle does not reach purely internal situations (ruling 3)."@en .
+
+# --- Directive (EU) 2019/2161 (Omnibus; the act that amended CRD Art. 6(1)(c) after C-649/17) ---------
+
+lg:EU-2019-2161 a lgo:LegalAct ;
+    eli:title "Directive (EU) 2019/2161 of the European Parliament and of the Council of 27 November 2019 amending Council Directive 93/13/EEC and Directives 98/6/EC, 2005/29/EC and 2011/83/EU of the European Parliament and of the Council as regards the better enforcement and modernisation of Union consumer protection rules"@en ;
+    lgo:shortName "Omnibus Directive" ;
+    eli:id_local "32019L2161" ;
+    lgo:actType lgv:Directive ;
+    lgo:jurisdiction lg:EU ;
+    eli:date_document "2019-11-27"^^xsd:date ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L2161"^^xsd:anyURI ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2019/2161/oj> ;
+    rdfs:comment "Its Article 4 replaced point (c) of Article 6(1) of the Consumer Rights Directive, so since 28 May 2022 the pre-contract information lists 'the trader's telephone number and email address'."@en ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-2011-83-art6-1-c lgo:amendedBy lg:EU-2019-2161 .
+
+lg:CJEU-C-298-07 lgo:shortName "deutsche internet versicherung" ;
+    rdfs:comment "Article 5(1)(c) of the E-Commerce Directive requires rapid, direct and effective contact — but not necessarily a telephone number: an online enquiry form answered by email suffices (save the rare case where the consumer is left without internet access and asks for another channel)."@en .
+
+lg:CJEU-C-649-17 lgo:shortName "BKK v Amazon EU" ;
+    rdfs:comment "Article 6(1)(c) of the Consumer Rights Directive does not let national law demand a telephone number in all circumstances: a trader need only communicate the means it actually has (ruling 1), and may offer other means than those listed if they allow direct and effective communication (ruling 2); whether Amazon's callback service met that standard was left to the national court. The ruling reads the wording before Directive (EU) 2019/2161; since 28 May 2022 the provision lists \"the trader's telephone number and email address\"."@en .
 
 lg:CJEU-C-210-16-ruling-1 lgo:readUnder lg:EU-1995-46-art2-d .
 

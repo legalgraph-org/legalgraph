@@ -22,6 +22,37 @@ lg:DE-BFSG
     lgo:sourceDocument lg:DE-BFSG-source ;
     lgo:sourceUrl "https://www.gesetze-im-internet.de/bfsg/"^^xsd:anyURI .
 
+lg:DE-BFSG-s1-3
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-BFSG ;
+    lgo:citation "§ 1 Abs. 3 BFSG" ;
+    lgo:implements lg:EU-2019-882-art2-2 ;
+    lgo:regulates lgv:Accessibility ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-BFSG-source ;
+    lgo:sourceElement "/dokumente/norm[4]/textdaten[1]/text[1]/Content[1]/P[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/bfsg/__1.html"^^xsd:anyURI .
+
+lg:DE-BFSG-s1-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-BFSG-s1-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-BFSG-source ;
+    lgo:sourceElement "/dokumente/norm[4]/textdaten[1]/text[1]/Content[1]/P[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/bfsg/__1.html"^^xsd:anyURI ;
+    lgo:text """(3) Dieses Gesetz gilt für folgende Dienstleistungen, die für Verbraucher nach dem 28. Juni 2025 erbracht werden:
+1. Telekommunikationsdienste mit Ausnahme von Übertragungsdiensten zur Bereitstellung von Diensten der Maschine-Maschine-Kommunikation;
+2. folgende Elemente von Personenbeförderungsdiensten im Luft-, Bus-, Schienen- und Schiffsverkehr mit Ausnahme von Stadt-, Vorort- und Regionalverkehrsdiensten, für die nur die Elemente unter Buchstabe e gelten:
+a) Webseiten;
+b) auf Mobilgeräten angebotene Dienstleistungen, einschließlich mobiler Anwendungen;
+c) elektronische Tickets und elektronische Ticketdienste;
+d) die Bereitstellung von Informationen in Bezug auf den Verkehrsdienst, einschließlich Reiseinformationen in Echtzeit, bei Informationsbildschirmen allerdings nur dann, wenn es sich um interaktive Bildschirme im Hoheitsgebiet der Europäischen Union handelt, und
+e) interaktive Selbstbedienungsterminals im Hoheitsgebiet der Europäischen Union, mit Ausnahme der Terminals, die als integrierte Bestandteile von Fahrzeugen, Luftfahrzeugen, Schiffen und Schienenfahrzeugen eingebaut sind und für die Erbringung von solchen Personenbeförderungsdiensten verwendet werden;
+3. Bankdienstleistungen für Verbraucher;
+4. E-Books und hierfür bestimmte Software und
+5. Dienstleistungen im elektronischen Geschäftsverkehr."""@de .
+
 lg:DE-BFSG-s14-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-BFSG ;

@@ -5,9 +5,11 @@
 
 # EU: obligations of the GDPR and other regulations that apply directly, read from
 # data/extracted/eu/. Directives address member states, so a rule resting on a directive stands for
-# the national rules transposing it: the checklist names the national provision for the country where
-# the business is established (the provisions with lgo:implements), and a national rule that spells
-# it out (lgo:refines) takes its place. Interpretation, so Draft until a lawyer reviews it.
+# the national rules transposing it: the checklist names the national provisions of the places the
+# business follows it in (the provisions with lgo:implements), and national rules that spell it out
+# (lgo:refines) take its place where they cover them. Rules on consumer contracts follow the
+# consumer's country (Article 6 Rome I), the others the country of establishment. Interpretation, so
+# Draft until a lawyer reviews it.
 
 # --- Service provider information (Article 5(1) e-Commerce Directive) --------------------
 # The country of establishment's law applies (Article 3(1)), so these follow where the business is
@@ -85,6 +87,22 @@ lg:EU-R-contract-terms-storable a lgo:Obligation ;
     lgo:reviewStatus lgv:Draft .
 
 # --- Privacy information (Articles 12 and 13 GDPR) -------------------------------------
+
+lg:EU-R-pre-contract-information a lgo:Obligation ;
+    rdfs:label "Pre-contractual information for online sales to consumers"@en ;
+    rdfs:comment "Items marked “where applicable” in the law depend on the product; the checklist lists them all for the trader to check. Before the contract a trader selling online to consumers gives the whole Article 6(1) list, including the trader's telephone number since Directive (EU) 2019/2161 (in force 28 May 2022). It follows the consumer's country, not the trader's: a consumer contract is governed by the law of the country the business directs its sales to (Article 6 Rome I)."@en ;
+    lgo:establishedBy lg:EU-2011-83-art6-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:SellsToConsumersInTheEea , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:MainCharacteristics , lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress ,
+        lgv:ComplaintAddress , lgv:TotalPrice , lgv:PersonalisedPricing , lgv:CommunicationCosts , lgv:PaymentAndDeliveryTerms ,
+        lgv:WithdrawalInformation , lgv:ReturnCosts , lgv:NoWithdrawalRight , lgv:LegalGuarantee , lgv:CommercialGuarantee ,
+        lgv:SoftwareUpdatePeriod , lgv:CodesOfConduct , lgv:ContractDuration , lgv:Deposit , lgv:DigitalProductInformation ,
+        lgv:DisputeResolutionStatement , lgv:RepairInformation ;
+    lgo:reviewStatus lgv:Draft .
 
 lg:EU-R-privacy-information a lgo:Obligation ;
     rdfs:label "Privacy information: who, why, on which basis, to whom, how long, which rights"@en ;
@@ -386,12 +404,12 @@ lg:EU-R-political-advertising a lgo:Obligation ;
 
 lg:EU-R-cookie-consent a lgo:Obligation ;
     rdfs:label "Consent before storing or accessing information on the user's device"@en ;
-    rdfs:comment "The ePrivacy ground rule for cookies, pixels and similar — exempt only: transmission over a network and what is strictly necessary for a service the user asked for. How it is read: no pre-ticked boxes (CJEU Planet49; IAB Europe C-604/22), refusing as easy as accepting (EDPB Cookie Banner Taskforce; CNIL 2020-092), purposes stated before the choice."@en ;
+    rdfs:comment "The ePrivacy ground rule for cookies, pixels and similar — exempt only: transmission over a network and what is strictly necessary for a service the user asked for. How it is read: no pre-ticked boxes (CJEU Planet49; IAB Europe C-604/22), refusing as easy as accepting (EDPB Cookie Banner Taskforce; CNIL 2020-092), purposes stated before the choice. The rule protects the user's device, so it is read as applying wherever the users are as well as where the business is; Germany says so in § 1(3) TDDDG."@en ;
     lgo:establishedBy lg:EU-2002-58-art5-3 ;
     lgo:bearer lgv:DigitalServiceProvider ;
     lgo:deonticType lgv:MustNot ;
     lgo:appliesIn lg:EU ;
-    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:NonEssentialDeviceAccess ;
+    lgo:appliesWhen lgv:ActiveInTheEea , lgv:NonEssentialDeviceAccess ;
     lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
     lgo:reviewStatus lgv:Draft .
 
@@ -399,12 +417,12 @@ lg:EU-R-cookie-consent a lgo:Obligation ;
 
 lg:EU-R-unfair-terms a lgo:Obligation ;
     rdfs:label "No unfair terms in consumer contracts"@en ;
-    rdfs:comment "A non-negotiated term is not binding where, contrary to good faith, it causes a significant imbalance to the consumer's detriment — the Annex is the indicative grey list. The CJEU read it in Amazon (C-191/15) on choice of law."@en ;
+    rdfs:comment "A non-negotiated term is not binding where, contrary to good faith, it causes a significant imbalance to the consumer's detriment — the Annex is the indicative grey list. The CJEU read it in Amazon (C-191/15) on choice of law. It follows the consumer's country, not the trader's: a consumer contract is governed by the law of the country the business directs its sales to (Article 6 Rome I)."@en ;
     lgo:establishedBy lg:EU-1993-13-art3-1 ;
     lgo:bearer lgv:Trader ;
     lgo:deonticType lgv:MustNot ;
     lgo:appliesIn lg:EU ;
-    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsToConsumers ;
+    lgo:appliesWhen lgv:SellsToConsumersInTheEea ;
     lgo:requiresAction lgv:ImposeUnfairTerms ;
     lgo:reviewStatus lgv:Draft .
 

@@ -1,10 +1,9 @@
 ---
 // The checklist: answer yes/no questions about a business and see which rules apply, evaluated in the
-// browser with the same logic as `legalgraph checklist` (src/legalgraph/rules.py): a rule applies
-// when all its conditions hold and none of its exemptions does; derived conditions follow from others.
-// Where the business is established and where it offers its services are picked as jurisdictions; a
-// national rule that spells out a general one replaces it, and a rule resting on a directive names the
-// national provision of the country of establishment.
+// browser with the same logic as `legalgraph checklist` (lib/checklist-rules.ts mirrors
+// src/legalgraph/rules.py). Where the business is established and where it offers its services are
+// picked as jurisdictions; a rule resting on a directive names the national provisions of the places
+// the business follows it in.
 import Layout from "../../layouts/Layout.astro";
 import type { Translate } from "../../i18n/t";
 import checklist from "../../data/checklist.json";
@@ -141,11 +140,11 @@ const payload = JSON.stringify({ conditions: checklist.conditions, rules, labels
 </Layout>
 
 <script>
-  interface Condition { id: string; anyOf: string[]; allOf: string[]; establishedIn: string | null; offersIn: string | null; within: string[] }
-  interface Rule {
-    id: string; label: string; comment: string | null; appliesIn: string; appliesWhen: string[]; unless: string[];
-    items: string[]; actions: string[]; disclosure: string | null; establishedBy: string[]; reviewStatus: string;
-    refines: string[]; implementedBy: Record<string, string[]>;
+  import { applicable, holding, places, type Condition, type Rule as RuleLogic } from "../../lib/checklist-rules";
+
+  interface Rule extends RuleLogic {
+    label: string; comment: string | null; appliesIn: string; items: string[]; actions: string[];
+    disclosure: string | null; establishedBy: string[]; reviewStatus: string; implementedBy: Record<string, string[]>;
   }
   const data = JSON.parse(document.getElementById("checklist-data")!.textContent!) as {
     conditions: Condition[]; rules: Rule[]; labels: Record<string, { label: string; href: string }>; places: Record<string, string>;
@@ -156,28 +155,6 @@ const payload = JSON.stringify({ conditions: checklist.conditions, rules, labels
   const establishedIn = form.querySelector<HTMLSelectElement>("select[name=established_in]")!;
   const marketInputs = [...form.querySelectorAll<HTMLInputElement>("input[name=market]")];
   const factInputs = () => [...form.querySelectorAll<HTMLInputElement>("input[type=checkbox]:not([name=market])")];
-
-  // The same fixpoint as rules.holding(): facts and the conditions tied to where the business is
-  // established or offers its services, plus derived conditions until nothing changes.
-  function holding(facts: Set<string>, established: string, markets: Set<string>): Set<string> {
-    const holds = new Set(facts);
-    for (const c of data.conditions) {
-      if (c.establishedIn && established && c.within.includes(established)) holds.add(c.id);
-      if (c.offersIn && c.within.some((j) => markets.has(j))) holds.add(c.id);
-    }
-    let changed = true;
-    while (changed) {
-      changed = false;
-      for (const c of data.conditions) {
-        if (holds.has(c.id)) continue;
-        if ((c.anyOf.length && c.anyOf.some((x) => holds.has(x))) || (c.allOf.length && c.allOf.every((x) => holds.has(x)))) {
-          holds.add(c.id);
-          changed = true;
-        }
-      }
-    }
-    return holds;
-  }
 
   const link = (id: string) => {
     const entry = data.labels[id] ?? { label: id, href: "#" };
@@ -204,7 +181,7 @@ const payload = JSON.stringify({ conditions: checklist.conditions, rules, labels
     const facts = new Set(factInputs().filter((i) => i.checked && !i.dataset.derived).map((i) => i.name));
     const established = establishedIn.value;
     const markets = new Set(marketInputs.filter((i) => i.checked).map((i) => i.value));
-    const holds = holding(facts, established, markets);
+    const holds = holding(data.conditions, facts, established, markets);
     factInputs().forEach((input) => {
       const derived = holds.has(input.name) && !facts.has(input.name);
       input.dataset.derived = derived ? "1" : "";
@@ -212,9 +189,7 @@ const payload = JSON.stringify({ conditions: checklist.conditions, rules, labels
       else if (!facts.has(input.name)) input.checked = false;
       input.closest("label")!.querySelector(".derived")!.classList.toggle("hidden", !derived);
     });
-    const found = data.rules.filter((r) => r.appliesWhen.every((c) => holds.has(c)) && !r.unless.some((c) => holds.has(c)));
-    const refined = new Set(found.flatMap((r) => r.refines));
-    const applying = found.filter((r) => !refined.has(r.id));
+    const applying = applicable(data.conditions, data.rules, facts, established, markets);
     applying.sort((a, b) => (a.appliesIn + (a.disclosure ?? "~")).localeCompare(b.appliesIn + (b.disclosure ?? "~")));
     summary.textContent = facts.size || established || markets.size
       ? `${applying.length} rule${applying.length === 1 ? "" : "s"} apply.`
@@ -234,8 +209,10 @@ const payload = JSON.stringify({ conditions: checklist.conditions, rules, labels
         card.append(head);
         if (rule.items.length) card.append(list("Disclose:", rule.items));
         if (rule.actions.length) card.append(list("Do:", rule.actions));
-        const national = established ? (rule.implementedBy[established] ?? []) : [];
-        if (national.length) card.append(list(`In ${data.places[established] ?? established}:`, national));
+        for (const place of places(rule, established, markets)) {
+          const national = rule.implementedBy[place] ?? [];
+          if (national.length) card.append(list(`In ${data.places[place] ?? place}:`, national));
+        }
         card.append(list("From:", rule.establishedBy));
         return card;
       }),

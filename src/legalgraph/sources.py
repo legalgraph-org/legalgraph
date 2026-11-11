@@ -922,10 +922,13 @@ def verify_consolidation(source: Source, root: ET.Element) -> list[str]:
             amendments = [o for o in explained if o.role == "amendment"]
             if amendments and not any(o.role == "corrigendum" for o in explained):
                 # Quoted in an amending act, the text's own quotation marks become inner ones
-                # (‘…’ turns into “…”), so quotation marks are compared as one character.
+                # (‘…’ turns into “…”), so quotation marks are compared as one character, and
+                # the final punctuation of a list point differs the same way as against the
+                # authentic text (the amending quote may end where the list's ';' belongs to
+                # the instrument's own wording).
                 bodies = [plain_quotes(collapse(render(ET.fromstring(o.file.read_bytes())))) for o in amendments]
                 for line in changed:
-                    if not any(plain_quotes(collapse(line)) in body for body in bodies):
+                    if not any(plain_quotes(collapse(trim(line))) in body for body in bodies):
                         names = ", ".join(o.file.name for o in amendments)
                         errors.append(
                             f"{original.file.name}: {label}: “{line[:60]}…” does not occur word for word in {names}"

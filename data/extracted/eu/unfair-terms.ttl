@@ -186,6 +186,37 @@ lg:EU-1993-13-art5-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01993L0013-20220528"^^xsd:anyURI ;
     lgo:text "Sind alle dem Verbraucher in Verträgen unterbreiteten Klauseln oder einige dieser Klauseln schriftlich niedergelegt, so müssen sie stets klar und verständlich abgefaßt sein. Bei Zweifeln über die Bedeutung einer Klausel gilt die für den Verbraucher günstigste Auslegung. Diese Auslegungsregel gilt nicht im Rahmen der in Artikel 7 Absatz 2 vorgesehenen Verfahren."@de .
 
+lg:EU-1993-13-art6-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-1993-13 ;
+    lgo:citation "Art. 6(2) Directive 93/13/EEC" ;
+    lgo:regulates lgv:UnfairTerms ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-1993-13-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[6]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01993L0013-20220528"^^xsd:anyURI .
+
+lg:EU-1993-13-art6-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1993-13-art6-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1993-13-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[6]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01993L0013-20220528"^^xsd:anyURI ;
+    lgo:text "2. Member States shall take the necessary measures to ensure that the consumer does not lose the protection granted by this Directive by virtue of the choice of the law of a non-Member country as the law applicable to the contract if the latter has a close connection with the territory of the Member States."@en .
+
+lg:EU-1993-13-art6-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-1993-13-art6-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1993-13-art6-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1993-13-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[6]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01993L0013-20220528"^^xsd:anyURI ;
+    lgo:text "(2) Die Mitgliedstaaten treffen die erforderlichen Maßnahmen, damit der Verbraucher den durch diese Richtlinie gewährten Schutz nicht verliert, wenn das Recht eines Drittlands als das auf den Vertrag anzuwendende Recht gewählt wurde und der Vertrag einen engen Zusammenhang mit dem Gebiet der Mitgliedstaaten aufweist."@de .
+
 lg:EU-1993-13-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
