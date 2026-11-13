@@ -14,9 +14,16 @@ lg:ES-LSSI a lgo:LegalAct ;
     lgo:jurisdiction lg:ES ;
     eli:date_document "2002-07-11"^^xsd:date ;
     eli:transposes lg:EU-2000-31 ;
+    eli:transposes lg:EU-2002-58 ;
     lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con"^^xsd:anyURI ;
     rdfs:seeAlso <https://www.boe.es/eli/es/l/2002/07/11/34> ;
     lgo:reviewStatus lgv:SourceChecked .
 
 # Article 10(1) (the aviso legal) and Article 22(1) and (2) (consent revocation, cookie rule)
 # are sourced from BOE's consolidated XML: see sources/es/lssi and data/extracted/es/lssi.ttl.
+
+lg:ES-LEY7-2017
+    lgo:shortName "Ley 7/2017" ;
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659> ;
+    rdfs:comment "Art. 40 is the trader ADR information duty: name the competent accredited ADR entity with its website, clearly and accessibly on the trader's website and in general contract terms; art. 40(5) adds the EU ODR platform link for online sellers (Reg. 524/2013 art. 14)."@en .

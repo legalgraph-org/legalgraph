@@ -3,6 +3,18 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:EU-2013-11
+    lgo:amendmentCheck lg:EU-2013-11-amendment-check .
+
+lg:EU-2013-11-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-11"^^xsd:date ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013L0011"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "Directive (EU) 2025/2647" ;
+    lgo:lastKnownAmendmentDate "2025-12-16"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Directive 2025/2647 replaces Article 13(2) and (3); member states apply it from 20 September 2028, so the 2013 text still governs until then."@en .
+
 lg:EU-1993-13
     lgo:amendmentCheck lg:EU-1993-13-amendment-check .
 

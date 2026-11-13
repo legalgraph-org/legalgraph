@@ -1,0 +1,16 @@
+name: Croatian d.o.o. with a company website
+description: >
+  A d.o.o. in the court register, liable to VAT, with a website presenting its services. Članak 6
+  ZET asks VAT payers for their tax number (OIB) in place of the Directive's VAT number.
+established_in: HR
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - HR-R-company-website
+  - HR-R-impressum
+  - HR-R-impressum-register
+  - HR-R-impressum-vat

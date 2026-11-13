@@ -5,36 +5,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# Ireland: Regulation 7 of S.I. No. 68/2003.
+# Ireland: Regulation 7 of S.I. No. 68/2003 (additions to data/extracted/ie/).
 
-lg:IE-SI-2003-68 a lgo:LegalAct ;
-    eli:title "European Communities (Directive 2000/31/EC) Regulations 2003"@en ;
+lg:IE-SI-2003-68
     lgo:shortName "S.I. No. 68/2003" ;
-    lgo:actType lgv:StatutoryInstrument ;
-    lgo:jurisdiction lg:IE ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print"^^xsd:anyURI ;
     rdfs:seeAlso <https://www.irishstatutebook.ie/eli/2003/si/68/made/en/> ;
-    lgo:reviewStatus lgv:SourceChecked .
-
-lg:IE-SI-2003-68-reg7-1 a lgo:Provision ;
-    eli:is_part_of lg:IE-SI-2003-68 ;
-    lgo:citation "Regulation 7(1) S.I. No. 68/2003" ;
-    lgo:sourceUrl "https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
-    lgo:reviewStatus lgv:SourceChecked .
-
-lg:IE-SI-2003-68-reg7-1-q1 a lgo:Quote ;
-    lgo:quoteOf lg:IE-SI-2003-68-reg7-1 ;
-    lgo:text """7. (1) The following information shall be provided by a relevant service provider in a manner which is easily, directly and permanently accessible to the recipients of the service and to the Director:
-(a) the name of the service provider,
-(b) the geographic address at which the service provider is established,
-(c) the details of the service provider, including his or her electronic mail address, which allows him or her to be contacted rapidly and communicated with in a direct and effective manner,
-[…]"""@en ;
-    lgo:sourceUrl "https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print"^^xsd:anyURI ;
-    lgo:officialLanguageVersion true .
+    rdfs:comment "Regulation 7(1)(d) is Ireland's own addition: the website must show, prominently and wherever users are asked for information, how natural persons can register their choice about unsolicited commercial communications."@en .
 
 lg:IE-SI-336-2011 a lgo:LegalAct ;
     eli:title "European Communities (Electronic Communications Networks and Services) (Privacy and Electronic Communications) Regulations 2011"@en ;
@@ -46,3 +23,17 @@ lg:IE-SI-336-2011 a lgo:LegalAct ;
     lgo:sourceUrl "https://www.irishstatutebook.ie/eli/2011/si/336/made/en"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Regulation 5(3)-(5) is the Irish cookie rule: consent plus clear and comprehensive information for storage or access on terminal equipment, consent may come through browser settings, and the technical-necessity exception."@en .
+
+# Ireland: section 151 of the Companies Act 2014 (additions to data/extracted/ie/).
+
+lg:IE-CA-2014
+    lgo:shortName "CA 2014" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.irishstatutebook.ie/eli/2014/act/38/enacted/en> ;
+    rdfs:comment "Section 151(4) is the Irish company-law website duty: the name-and-legal-form, place-of-registration-and-number and registered-office particulars of subsection (2) must appear prominently and accessibly on any company website, and any stated share capital must be the issued paid-up capital."@en .
+
+lg:IE-SI-343-2015
+    lgo:shortName "SI 343/2015" ;
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print> ;
+    rdfs:comment "Reg. 18 transposes art. 13 of the ADR Directive: traders committed or obliged to use ADR name the entity with its website on their own website and in general terms; (5) makes breach a summary offence."@en .

@@ -1,0 +1,27 @@
+# Valsts valodas likums (State Language Law): 21. pants is the Latvian
+# language-in-public-information duty. Part 1 requires public information to
+# be in the state language for state, municipal and majority-state-owned
+# bodies, and for private entities performing public functions; parts 2–4
+# extend it to product labelling/manuals, imported goods' translations, and
+# signs/notices addressed to the public that touch legitimate public
+# interests (consumer rights included, per 8. pants(2)); part 7 requires the
+# Latvian text to take the primary place and not be narrower than the foreign
+# text.
+id: lv/vvl
+title: Valsts valodas likums (21. pants)
+jurisdiction: LV
+language: lv
+publisher: likumi.lv (Latvijas Vēstnesis)
+kind: authored-xml
+licence: official-work
+licence_basis: "Autortiesību likums 6. pants: legal acts are not protected by copyright"
+originals:
+  - file: vvl-21.fragment.html
+    url: "https://likumi.lv/ta/id/14740-valsts-valodas-likums"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the likumi.lv consolidated full-text page: 21. pants (the trailing '22' is the next section's number heading). Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: b3281490cdb5cc5410dd0fafc3ad9d038f88d299dc87b3e277a23602a8b04fa1
+annotated: vvl.law.xml

@@ -75,6 +75,7 @@ lg:AT-FAGG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/at/fagg/fagg.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated version (Fassung vom 10.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works" ;

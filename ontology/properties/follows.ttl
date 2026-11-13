@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:follows a owl:ObjectProperty ;
+    rdfs:label "follows"@en ;
+    rdfs:comment "The decision builds on an earlier decision and decides in line with it, such as a national court applying a ruling of the Court of Justice of the EU in the same case."@en ;
+    rdfs:range lgo:LegalDocument ;
+    rdfs:seeAlso <http://purl.org/spar/cito/agreesWith> .

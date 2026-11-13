@@ -52,11 +52,19 @@ class Sources:
 
     @property
     def ontology_files(self) -> list[Path]:
-        return turtle_files(self.ontology_dir / "src")
+        """The ontology itself: its header, classes, shared properties, vocabularies and annotations."""
+        rules = self.ontology_dir / "rules"
+        return [path for path in turtle_files(self.ontology_dir) if not path.is_relative_to(rules)]
 
     @property
     def shape_files(self) -> list[Path]:
-        return turtle_files(self.ontology_dir / "shapes")
+        """SHACL shapes the graph must conform to."""
+        return turtle_files(self.ontology_dir / "rules" / "validation")
+
+    @property
+    def reasoning_files(self) -> list[Path]:
+        """SHACL rules that add inferred triples before validation."""
+        return turtle_files(self.ontology_dir / "rules" / "reasoning")
 
 
 def load_all(sources: Sources) -> tuple[Graph, Graph, Graph, list[ParseError]]:

@@ -1,0 +1,73 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+# An obligation applies to a business when all its lgo:appliesWhen conditions hold and none of its
+# lgo:unless conditions does. Conditions are facts about the business ("sells to consumers", "sets
+# cookies"); a derived condition holds when any (lgo:holdsWhenAny) or all (lgo:holdsWhenAll) of
+# others do. Where the business is established, and where it offers its services, are answers of their
+# own (a jurisdiction, not yes/no): conditions tied to a jurisdiction (lgo:establishedIn, lgo:offersIn)
+# hold for it and every jurisdiction within it; a business also offers its services where it is
+# established. An obligation with a condition tied to where the business offers its services follows
+# its markets (consumer contracts follow the consumer's country, Article 6 Rome I); the others follow
+# its establishment. Obligations and conditions point to the provisions they
+# come from, so every rule can be traced back to the words of the law. Rules are interpretation: they
+# start as Draft.
+
+lgo:Obligation a owl:Class ;
+    rdfs:label "Obligation"@en ;
+    rdfs:comment "A duty, prohibition or permission that one or more provisions establish for a kind of actor, under conditions: for example, a German business website must name the provider, address and email (§ 5 DDG)."@en .
+
+lgo:establishedBy a owl:ObjectProperty ;
+    rdfs:label "established by"@en ;
+    rdfs:comment "The provision the obligation comes from."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Provision .
+
+lgo:bearer a owl:ObjectProperty ;
+    rdfs:label "bearer"@en ;
+    rdfs:comment "Who the obligation addresses."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:ActorRole .
+
+lgo:deonticType a owl:ObjectProperty ;
+    rdfs:label "deontic type"@en ;
+    rdfs:comment "Obligation (must), prohibition (must not) or permission (may), from vocab/deontic-types.ttl."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range skos:Concept .
+
+lgo:appliesIn a owl:ObjectProperty ;
+    rdfs:label "applies in"@en ;
+    rdfs:comment "The jurisdiction whose law the obligation belongs to."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:appliesWhen a owl:ObjectProperty ;
+    rdfs:label "applies when"@en ;
+    rdfs:comment "A condition that must hold for the obligation to apply; all of them must."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Condition .
+
+lgo:unless a owl:ObjectProperty ;
+    rdfs:label "unless"@en ;
+    rdfs:comment "An exemption: the obligation does not apply if this condition holds."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Condition .
+
+lgo:requiresAction a owl:ObjectProperty ;
+    rdfs:label "requires action"@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Action .
+
+lgo:partOfDisclosure a owl:ObjectProperty ;
+    rdfs:label "part of disclosure"@en ;
+    rdfs:comment "The notice the required information belongs in (Impressum, privacy information)."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:DisclosureType .
+
+lgo:refines a owl:ObjectProperty ;
+    rdfs:label "refines"@en ;
+    rdfs:comment "The national obligation spells out the more general one for its jurisdiction, usually because its provision implements the directive the general one rests on (§ 5 DDG and Article 5 of the e-Commerce Directive). Where both apply, a checklist shows the national one."@en ;
+    rdfs:domain lgo:Obligation ;
+    rdfs:range lgo:Obligation .

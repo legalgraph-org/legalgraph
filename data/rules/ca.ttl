@@ -101,3 +101,19 @@ lg:CA-ON-R-agreement-copy a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ContractConfirmation ;
     lgo:requiresDisclosureOf lgv:ContractCopy ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Quebec: merchant disclosure before a distance contract (CPA s. 54.4) -------------------
+
+lg:CA-QC-R-distance-contract-information a lgo:Obligation ;
+    rdfs:label "Distance contracts: merchant details and contract terms before contracting"@en ;
+    rdfs:comment "Before a distance contract, the merchant discloses its name and other trading names, address, telephone (and fax and technological address where available), a detailed description of the goods or services, prices with associated and third-party charges, total amount and payment terms, currency where not Canadian dollars, performance date, delivery details, cancellation/return/refund conditions and any other restrictions — prominently and in a comprehensible manner. Items marked “if applicable” depend on the contract; the Act reaches merchants contracting with Quebec consumers wherever they are established. Distance contracts are broader than online sales (they include other means of distance communication); the website checklist covers the online case."@en ;
+    lgo:establishedBy lg:CA-QC-CPA-s54-4 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CA-QC ;
+    lgo:appliesWhen lgv:SellsToConsumersInQuebec , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:EmailAddress , lgv:GeographicAddress , lgv:LegalGuarantee ,
+        lgv:MainCharacteristics , lgv:PaymentAndDeliveryTerms , lgv:PhoneNumber , lgv:ProviderName ,
+        lgv:RepairInformation , lgv:TotalPrice , lgv:WithdrawalInformation ;
+    lgo:reviewStatus lgv:Draft .

@@ -1,0 +1,130 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Slovakia: provider information under § 4 zákona č. 22/2004 Z. z. o elektronickom
+# obchode. The Slovak catalogue adds a telephone number and, for VAT payers, the DIČ (the
+# tax identification number, not the IČ DPH VAT number); profession details attach to commercial communication (ods. 2).
+
+lg:SK-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, seat, e-mail and phone"@en ;
+    rdfs:comment "Every service provider gives at least its name or business name and seat (or name and residence for a natural person), e-mail address and telephone number, and the name and address of its supervisory body (§ 4 ods. 1 zákona č. 22/2004 Z. z.); the register and entry number are in SK-R-impressum-register. Slovakia requires a phone number — unlike the Directive's floor."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:SK-EOB-s4-1 , lg:SK-EOB-s4-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:PhoneNumber , lgv:RapidContact , lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SK-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register and entry number"@en ;
+    rdfs:comment "§ 4 ods. 1 lists the register and the entry number without a qualifier, but they can only be given by a provider entered in one, so the rule applies to registered providers, like the EU rule it refines."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:SK-EOB-s4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SK-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: tax identification number (DIČ) for VAT payers"@en ;
+    rdfs:comment "Slovakia transposes the Directive's VAT-number item as the daňové identifikačné číslo (DIČ) of a VAT payer, not the IČ DPH."@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:SK-EOB-s4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:TaxId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SK-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "Profession items attach to commercial communication, not to every page: the professional organisation, academic title and member state, and a reference to the professional rules with permanent access to them (§ 4 ods. 2)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:SK-EOB-s4-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:SK-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "§ 5(1)(l) of Act 108/2024 Z. z.: before the contract, the consumer is told of the right to ask the trader for redress, with a link to the website listing the competent ADR entities."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:SK-ZOS-108-s5-1-l ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SK-R-adr-information-every-trader a lgo:Obligation ;
+    rdfs:label "Name the competent consumer ADR entity, whether or not the business takes part"@en ;
+    rdfs:comment "§ 5(1)(l) of Act 108/2024 Z. z. is pre-contractual information every trader gives consumers, not only one committed to ADR: the right to ask for redress and a link to the website of the competent ADR entities."@en ;
+    lgo:establishedBy lg:SK-ZOS-108-s5-1-l ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:SellsToConsumers ;
+    lgo:unless lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SK-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "§ 11(2) of Act 391/2015 Z. z.: when the trader rejects a request for redress, it names the competent ADR entities on a durable medium. No statement on taking part is required."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:SK-ARS-391-s11-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:SK-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: name, seat, legal form, IČO, register and capital"@en ;
+    rdfs:comment "Every entrepreneur states its business name, seat, legal form and identification number, the register and entry number, and for a company the share capital and how much is paid up, on its website as on its business documents (§ 3a(1) and (3) Obchodného zákonníka). The rule covers limited-liability companies, as the EU rule it refines does."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:SK-OBCH-s3a-1 , lg:SK-OBCH-s3a-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:LegalForm , lgv:RegisterEntry , lgv:ShareCapital ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Media imprint ---
+
+lg:SK-R-news-portal-imprint a lgo:Obligation ;
+    rdfs:label "News web portal: title, publication and update dates, operator and register number"@en ;
+    rdfs:comment "The operator of a news web portal marks it with its title and the dates of publication and update of each item, and gives its own details and the portal's number in the register of publications (§ 5(3) with § 5(1)(d) and (h) of Act 265/2022 Z. z.). Applied here to editorial content; whether a site is a news web portal is the act's own definition."@en ;
+    lgo:establishedBy lg:SK-PUB-265-s5-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SK ;
+    lgo:appliesWhen lgv:EstablishedInSlovakia , lgv:JournalisticEditorialContent ;
+    lgo:partOfDisclosure lgv:MediaOwnerDisclosure ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .

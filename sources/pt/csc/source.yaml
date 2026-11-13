@@ -1,0 +1,27 @@
+# Código das Sociedades Comerciais (Decreto-Lei n.º 262/86), artigo 171.º
+# "Menções em actos externos": the Portuguese company-law disclosure duty.
+# N.º 1 lists firma, tipo, sede, conservatória do registo, matrícula and
+# NIPC, and liquidation where applicable, on contracts, correspondence,
+# publications, advertisements AND sítios na Internet; n.º 2 is the capital
+# clause for quotas/SA/comandita companies; n.º 3 covers foreign branches.
+# The PGDL consolidated text is paged by 100-article blocks; the fragment
+# holding artigo 171.º is kept (page 2, ficha 201).
+id: pt/csc
+title: Código das Sociedades Comerciais, Decreto-Lei n.º 262/86 (artigo 171.º)
+jurisdiction: PT
+language: pt
+publisher: Procuradoria-Geral Distrital de Lisboa (pgdlisboa.pt)
+kind: authored-xml
+licence: official-work
+licence_basis: "Código do Direito de Autor e dos Direitos Conexos art. 5: official texts are not protected — diplomas oficiais não são protegidos por direito de autor"
+originals:
+  - file: csc-171.fragment.html
+    url: "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&tabela=leis&pagina=2&ficha=201"
+    official: false
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the PGDL consolidated view (page 2, articles 101-200): the 'Artigo 171.º' block through the end of its version notes. Downloaded 2026-11-12; the page is ISO-8859-1, fragment re-encoded to UTF-8 with text unchanged."
+    retrieved_on: 2026-11-12
+    sha256: d590e06489ccacd3b4ed57a1ec492ad52a35ec7568c43e58dc60f8dcbf3ce146
+annotated: csc.law.xml

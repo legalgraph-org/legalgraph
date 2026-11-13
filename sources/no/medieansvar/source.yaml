@@ -1,0 +1,26 @@
+# Lov om redaksjonell uavhengighet og ansvar i redaktørstyrte journalistiske
+# medier (medieansvarsloven, lov 2020-05-29-59), § 5: the editor's
+# information duty for media covered by the act — media that regularly
+# produce and publish journalism, current-affairs material, public debate
+# or other content of general interest, which includes news websites.
+# (1) states who the editor is in the medium; (2) gives media users access
+# to the medium's name, address, email address and other details enabling
+# direct contact.
+id: no/medieansvar
+title: Lov om redaksjonell uavhengighet og ansvar i redaktørstyrte journalistiske medier (medieansvarsloven) (§ 5)
+jurisdiction: "NO"
+language: "no"
+publisher: Lovdata (lovdata.no)
+kind: authored-xml
+licence: official-work
+licence_basis: "Åndsverksloven § 9 — official texts of legislation are not copyright works in Norway"
+originals:
+  - file: medie-5.fragment.html
+    url: "https://lovdata.no/dokument/NL/lov/2020-05-29-59/hele"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the Lovdata consolidated text: div PARAGRAF_5, § 5 in full. Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: 6c4fbcba1e84707a73351e68b88bf5a7b605c211eeac338422b96e397edd5308
+annotated: medie.law.xml

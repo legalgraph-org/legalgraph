@@ -1,0 +1,17 @@
+name: Swedish AB with a company website
+description: >
+  An AB in the Companies Registration Office register with a VAT registration number and a website
+  presenting its services. 8 § lag (2002:562) follows the Directive's list, with the
+  organisationsnummer as the register identifier.
+established_in: SE
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - SE-R-company-website
+  - SE-R-impressum
+  - SE-R-impressum-register
+  - SE-R-impressum-vat

@@ -1,0 +1,197 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CZ-480-2004-s7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7acfc55b9875511b22ac1f54817ff10b022eb8af9b831e7a3b082a483789065e" ;
+    lgo:text "(1) Commercial communications may be disseminated by electronic means only under the conditions laid down by this Act."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s7-1-q1 .
+
+lg:CZ-480-2004-s7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3df335430136dc5c0acb4442ecfcb5992a7a28f314ac159533850fbe9375b480" ;
+    lgo:text "(2) Electronic contact details may be used for the purpose of disseminating commercial communications by electronic means only in relation to users who have given their prior consent."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s7-2-q1 .
+
+lg:CZ-480-2004-s7-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b0829d8c41467e3bf54927b39ea849b1a54885009718a7a9d46ba97f25c2a19e" ;
+    lgo:text "(3) Notwithstanding paragraph 2, where a natural or legal person obtains from its customer the customer's electronic contact details for electronic mail in connection with the sale of a product or service in accordance with the requirements for the protection of personal data laid down by a special legal regulation 5 ) or by a directly applicable European Union regulation 6 ) , that natural or legal person may use those electronic contact details for the purpose of disseminating commercial communications concerning its own similar products or services, provided that the customer has a clear and unambiguous opportunity to refuse, simply and free of charge or at the expense of that natural or legal person, such use of his electronic contact details including when each individual message is sent, where he has not originally refused such use."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s7-3-q1 .
+
+lg:CZ-480-2004-s7-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9e13abdfa7511b0b857dfb9ef628e5982939a03908c7afcb8983a7a8c43b63cf" ;
+    lgo:text """(4) The sending of electronic mail for the purpose of disseminating a commercial communication is prohibited where
+a) it is not clearly and unambiguously identified as a commercial communication,
+b) it disguises or conceals the identity of the sender on whose behalf the communication is made, or
+c) it is sent without a valid address to which the recipient may directly and effectively send a request that the sender cease sending commercial communications to him."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s7-4-q1 .
+
+lg:CZ-480-2004-s8-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e5540596bbd2cb73102865c2d27ec8002ff8e9e107e2be489a67e071b0175f07" ;
+    lgo:text "(1) Persons carrying on regulated activities may disseminate commercial communications by electronic means within the activities forming the subject of the regulated activity, in accordance with § 7 and in accordance with the relevant rules issued by business, professional and consumer associations regulating in particular independence, dignity, the honour of the profession and an honourable approach to customers."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s8-1-q1 .
+
+lg:CZ-480-2004-s8-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e5c659459dd4fbc4fa5155e6e7b51ffc3cdcd64aea9d94d886712df687247e64" ;
+    lgo:text "(2) Persons carrying on regulated activities who are not members of professional self-governing chambers established by law shall, when disseminating commercial communications by electronic means within the activities forming the subject of the regulated activity, proceed in accordance with § 7."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s8-2-q1 .
+
+lg:CZ-480-2004-s8-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6b28471575d243b04e9b51d049b41bc70a4c62e1a468e349ca659039922abf4d" ;
+    lgo:text "(3) The commercial communications of persons carrying on regulated activities must contain the name of the professional self-governing chamber established by law in which the person carrying on the regulated activity is entered, a reference to the professional rules applicable in the European Union member state in which the person carrying on the regulated activity is established, and the means of permanent public access to information about the relevant professional self-governing chamber established by law of which the person carrying on the regulated activity is a member."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-480-2004-s8-3-q1 .
+
+lg:CZ-OZ-s435-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7d959d20db5aad5a56fa48c8c425979f10a4fcb3b2f4c6a73ce404d5dd920eba" ;
+    lgo:text "(1) Every entrepreneur must state its name and registered office on business documents and within information made available to the public by means of remote access. An entrepreneur entered in the Commercial Register shall also state on its business document the particulars of that entry, including the section and insert; an entrepreneur entered in another public register shall state the particulars of its entry in that register; an entrepreneur not entered in a public register shall state the particulars of its entry in other records. Where an identifying number has been assigned to the entrepreneur, it shall also state it."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-OZ-s435-1-q1 .
+
+lg:CZ-OZ-s435-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "319e47af6e81f1f6b861ad8462af456fc8199c1e42f8f9957f6e3f0fbcc2f9f0" ;
+    lgo:text "(2) Other information may also be stated on the document referred to in paragraph 1, provided it is not capable of misleading third parties."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-OZ-s435-2-q1 .
+
+lg:CZ-OZ-title-08f43db170d2-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "08f43db170d29dd18f9fa37110aacd6b93c247553f3c39be3fae94c9eac7f26d" ;
+    lgo:text "Act No. 89/2012 Coll., the Civil Code"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-OZ .
+
+lg:CZ-ZOK-s7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "703d8fa72346a4cacb9aa3f86d2596bf17a5fb4d0d0717dd780c8ee304621499" ;
+    lgo:text "(1) Where a capital company or a cooperative also states its registered capital on its business documents, that statement must relate only to the subscribed and paid-up part of the registered capital."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOK-s7-1-q1 .
+
+lg:CZ-ZOK-s7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6a1144c980a841b915e4694bfa9109c4494edc435f92aa7396deb601f01546b8" ;
+    lgo:text "(2) A joint-stock company shall, without undue delay after its formation and thereafter continuously, publish in a manner allowing remote access free of charge to the public, such that the information is accessible in a simple way by entering an electronic address (hereinafter \"website\"), the particulars which it is required to state on its business documents and the other particulars laid down by this Act."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOK-s7-2-q1 .
+
+lg:CZ-ZOK-s7-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7338e1a365b920a7b0ffe62b2f3f050176f296598846854b37d1aae512b719a3" ;
+    lgo:text "(3) Where a limited liability company establishes a website, the provision of paragraph 2 applies mutatis mutandis."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOK-s7-3-q1 .
+
+lg:CZ-ZOK-s7-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fe5fc600ab5a9de1268250fd192c09417484c41c69024d6b4060f174ff972382" ;
+    lgo:text "(4) Paragraphs 1 to 3 apply mutatis mutandis to a branch of a foreign capital company or a foreign cooperative, or to its branch office. A statement of the foreign person's entry in a register of entrepreneurs in the state whose law governs the foreign person is not required, unless that law mandates or permits entry in such a register."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOK-s7-4-q1 .
+
+lg:CZ-ZOK-title-9b777932f791-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9b777932f791941fd33f1d21e848766bdecc6735fa229506511c8bf12ef31724" ;
+    lgo:text "Act No. 90/2012 Coll., on Business Corporations"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOK .
+
+lg:CZ-ZOS-634-s14-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "88c9123343411338bc9f0190d4f72c4d6ceb7ef2d315dd3170d28519aa888575" ;
+    lgo:text "(1) The seller shall inform the consumer in a clear, comprehensible and easily accessible manner about the out-of-court consumer dispute resolution entity that is materially competent for the given type of offered, sold, provided or intermediated product or service. The information must also include the internet address of that entity. If the seller operates a website, it shall also state this information on that website. If a contract concluded between the seller and the consumer refers to business terms, the seller shall also state the information under the first and second sentences in those business terms."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOS-634-s14-1-q1 .
+
+lg:CZ-ZOS-634-s14-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3fea08dcadd7d5707fa8f229c490a8b2107e36b0ad533d8f0b197c0b7edcac29" ;
+    lgo:text "(2) In the case of a dispute between the consumer and the seller that could not be settled directly between the parties, the seller shall provide the consumer with the information specified in paragraph 1 in paper form or on another durable medium."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOS-634-s14-2-q1 .
+
+lg:CZ-ZOS-634-title-17d8806f044a-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "17d8806f044a72ddf6c2858268fe81387c00195cd33e8a8dfb9123279e02b7f4" ;
+    lgo:text "Act No. 634/1992 Coll., on consumer protection"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZOS-634 .

@@ -43,14 +43,13 @@ lg:FR-LCEN-art1-1-I-q1 a lgo:Quote ;
 
 lg:FR-CNIL-2020-092 a lgo:Guidance ;
     eli:title "Délibération n° 2020-092 du 17 septembre 2020 portant adoption d'une recommandation proposant des modalités pratiques de mise en conformité en cas de recours aux « cookies et autres traceurs »"@fr , "Deliberation 2020-092: CNIL recommendation on cookies and other trackers"@en ;
-    lgo:shortName "CNIL cookie recommendation" ;
     lgo:actType lgv:Guidelines ;
     lgo:jurisdiction lg:FR ;
     eli:date_document "2020-09-17"^^xsd:date ;
-    lgo:sourceUrl "https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "The CNIL's practical standard for consent collection: inaction is refusal; purposes stated before choice; refuse as easy as accept at the same level; a visible withdrawal mechanism; and controllers must be able to prove consent. It complements the CNIL's 2020-091 guidelines applying Article 82 of the Loi Informatique et Libertés."@en .
 
 lg:FR-CONSO
     eli:title "French Consumer Code"@en ;
+    eli:transposes lg:EU-2011-83 ;
     rdfs:comment "Articles L221-5 (the pre-contract list, transposing CRD art. 6), L221-13 (durable-medium confirmation, art. 8(7)) and L221-14 (electronic contracts: the « commande avec obligation de paiement » button, payment methods and delivery restrictions). The 2026 ordonnance version is annotated; LCEN art. 19 provider details remain a separate saved source."@en .

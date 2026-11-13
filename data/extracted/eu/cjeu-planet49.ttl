@@ -118,6 +118,7 @@ lg:CJEU-C-673-17-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-planet49/ECR_62017CJ0673_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -130,6 +131,7 @@ lg:CJEU-C-673-17-source
 lg:CJEU-C-673-17-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-C-673-17-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

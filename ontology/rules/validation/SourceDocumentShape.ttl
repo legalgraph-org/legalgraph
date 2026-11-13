@@ -1,0 +1,24 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:SourceDocumentShape a sh:NodeShape ;
+    sh:targetClass lgo:SourceDocument ;
+    sh:property [
+        sh:path lgo:repositoryPath ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] , [
+        sh:path lgo:sha256 ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:pattern "^[0-9a-f]{64}$" ;
+    ] , [
+        sh:path lgo:sourceUrl ;
+        sh:minCount 1 ;
+        sh:datatype xsd:anyURI ;
+    ] , [
+        sh:path lgo:retrievedOn ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] .

@@ -1,0 +1,24 @@
+# European Communities (Directive 2000/31/EC) Regulations 2003 (S.I. No. 68/2003):
+# Ireland's transposition of the e-Commerce Directive. Regulation 7 is the
+# provider-information duty; item (d) goes beyond the Directive — the website must
+# prominently show how natural persons can register their choice about unsolicited
+# commercial communications. The Irish Statute Book print view is a flat table with
+# no per-article wrapper, so the fragment holding regulation 7 is kept verbatim.
+id: ie/si-2003-68
+title: European Communities (Directive 2000/31/EC) Regulations 2003 (regulation 7)
+jurisdiction: IE
+language: en
+publisher: Irish Statute Book (Office of the Attorney General)
+kind: authored-xml
+licence: official-work
+licence_basis: "Irish Statute Book: Acts of the Oireachtas and statutory instruments are official texts; PSI re-use of legislation is free under copyright law"
+originals:
+  - file: ie-7.fragment.html
+    url: "https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the print view between anchors article7 and article8: the page is a flat table with no per-article element, so no CSS selector can isolate regulation 7. Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: 4f1f65e47f700527d04d774ca5b075bf77dc3c764b68d555c3755b65376bd676
+annotated: si-2003-68.law.xml

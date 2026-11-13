@@ -106,6 +106,7 @@ lg:FR-CNIL-SAN-2021-023-source
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/cnil-san-2021-023/cnil-san-2021-023.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:LicenceOuverte2 ;
     lgo:licenceBasis "legifrance and CNIL content is published under Licence Ouverte 2.0 (legal notices of both sites)" ;
     lgo:mediaType "text/html" ;

@@ -1,0 +1,18 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+# Every jurisdiction lies within itself, the organisations it is a member of and the country it is a
+# subdivision of, and within whatever those lie within. Shapes and queries can then ask
+# "?a lgo:within ?b" instead of walking lgo:memberOf and lgo:subdivisionOf themselves.
+
+lgs:WithinJurisdictionRule a sh:NodeShape ;
+    sh:targetClass lgo:Jurisdiction ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            CONSTRUCT { $this lgo:within ?outer . }
+            WHERE { $this (lgo:memberOf|lgo:subdivisionOf)* ?outer . }
+        """ ;
+    ] .

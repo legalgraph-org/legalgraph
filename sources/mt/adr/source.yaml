@@ -1,0 +1,25 @@
+# Malta's Consumer Alternative Dispute Resolution (General) Regulations
+# (S.L. 378.18, made under the Consumer Affairs Act Cap. 378): regulation 14
+# is the trader ADR information duty — Directive 2013/11 Art. 13 in full:
+# (1) ADR entity + its website address on the trader's website and in general
+# terms and conditions; (2) the after-complaint duty on paper or another
+# durable medium.
+id: mt/adr
+title: Consumer Alternative Dispute Resolution (General) Regulations (S.L. 378.18)
+jurisdiction: MT
+language: en
+publisher: Legislation Unit, legislation.mt
+kind: authored-xml
+licence: official-work
+licence_basis: "Copyright Act (Cap. 415), art. 2: written law is not a literary work; Re-Use of Public Sector Information Act (Cap. 546), art. 7"
+originals:
+  - file: sl378-18.pdf
+    page: https://legislation.mt/eli/sl/378.18/eng
+    url: https://legislation.mt/eli/sl/378.18/eng/pdf
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated English text; regulation 14 is in Part III (Information and Cooperation). English is an authentic language of Maltese law."
+    retrieved_on: 2026-11-13
+    sha256: 52a1855395bd586920cfdba07d9c2bab840f96ff716dc377537372b2677e73bc
+annotated: adr.law.xml

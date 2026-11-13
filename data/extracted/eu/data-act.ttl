@@ -128,6 +128,7 @@ lg:EU-2023-2854-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/data-act/L_202302854EN.000101.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Official Journal content may be reused under Commission Decision 2011/833/EU with attribution" ;
     lgo:mediaType "application/xml" ;
@@ -139,6 +140,7 @@ lg:EU-2023-2854-source
 lg:EU-2023-2854-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2023-2854-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Official Journal content may be reused under Commission Decision 2011/833/EU with attribution" ;

@@ -125,6 +125,7 @@ lg:DE-DSK-OH-DD-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/dsk-digitale-dienste/oh-digitale-dienste.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 2 UrhG: an official work published in the official interest for general information; reproduced unchanged with its source" ;
     lgo:mediaType "application/pdf" ;

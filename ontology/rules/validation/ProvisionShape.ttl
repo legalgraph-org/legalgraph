@@ -1,0 +1,96 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:ProvisionShape a sh:NodeShape ;
+    sh:targetClass lgo:Provision ;
+    sh:property [
+        sh:path eli:is_part_of ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class lgo:LegalDocument ;
+        sh:message "A provision is part of exactly one legal act, court decision or guidance document." ;
+    ] , [
+        sh:path lgo:citation ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] , [
+        sh:path lgo:enforces ;
+        sh:class lgo:DisclosureType ;
+    ] , [
+        sh:path lgo:regulates ;
+        sh:or ( [ sh:class lgo:DisclosureType ] [ sh:class lgo:LegalConcept ] ) ;
+        sh:message "lgo:regulates points to a disclosure type or a legal concept." ;
+    ] , [
+        sh:path lgo:defines ;
+        sh:or ( [ sh:class lgo:InformationItem ] [ sh:class lgo:LegalConcept ] ) ;
+        sh:message "lgo:defines points to an information item or a legal concept." ;
+    ] , [
+        sh:path lgo:authorises ;
+        sh:class lgo:LegalAct ;
+    ] , [
+        sh:path lgo:requiresDisclosureOf ;
+        sh:class lgo:InformationItem ;
+    ] , [
+        sh:path lgo:explains ;
+        sh:class lgo:LegalConcept ;
+    ] , [
+        sh:path lgo:interprets ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:specifies ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:takesPrecedenceOver ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:refersTo ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:applies ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:penalises ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:continues ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:readUnder ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:amendedBy ;
+        sh:class lgo:LegalAct ;
+    ] , [
+        sh:path lgo:implements ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:reviewStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:SourceChecked lgv:Draft ) ;
+    ] ;
+    sh:or (
+        [ sh:path lgo:regulates ; sh:minCount 1 ]
+        [ sh:path lgo:enforces ; sh:minCount 1 ]
+        [ sh:path lgo:defines ; sh:minCount 1 ]
+        [ sh:path lgo:authorises ; sh:minCount 1 ]
+        [ sh:path lgo:explains ; sh:minCount 1 ]
+        [ sh:path lgo:interprets ; sh:minCount 1 ]
+        [ sh:path lgo:specifies ; sh:minCount 1 ]
+        [ sh:path lgo:applies ; sh:minCount 1 ]
+        [ sh:path lgo:penalises ; sh:minCount 1 ]
+        [ sh:path [ sh:inversePath lgo:continues ] ; sh:minCount 1 ]
+    ) ;
+    sh:sparql [
+        sh:message "A provision marked SourceChecked needs at least one quote." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            PREFIX lgv: <https://legalgraph.org/vocab/>
+            SELECT $this WHERE {
+                $this lgo:reviewStatus lgv:SourceChecked .
+                FILTER NOT EXISTS { ?quote lgo:quoteOf $this }
+            }
+        """ ;
+    ] .

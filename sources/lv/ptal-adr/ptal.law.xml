@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Patērētāju tiesību aizsardzības likums, 19.1 pants, written in
+  schemas/law.xsd from the likumi.lv consolidated text. The words are the
+  Latvian legislature's; only the structure is ours. 19.1 pants transposes
+  Directive 2013/11 Art. 13: (1) names the out-of-court dispute resolvers on
+  the PTAC-published list competent for the sector, with website addresses;
+  (2) clear and accessible provision on the trader's website or in contract
+  terms; (3) the after-complaint analogue — on refusing the consumer's
+  claim, the same information in writing or on a durable medium (LV's
+  trigger is refusal during the dispute, not just failure to settle).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="lv"
+     lga:act="LV-PTAL" lga:jurisdiction="LV" lga:act-type="Statute"
+     lga:url="https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums">
+  <meta>
+    <title>Patērētāju tiesību aizsardzības likums</title>
+    <date>1999-03-18</date>
+  </meta>
+
+  <section num="19.1 pants" source="ptal-19-1.fragment.html">
+    <paragraph num="(1)" lga:provision="LV-PTAL-art19-1-1" lga:citation="19.1 panta pirmā daļa Patērētāju tiesību aizsardzības likuma" lga:url="https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Pārdevējs vai pakalpojuma sniedzējs informē patērētāju par vienu vai vairākiem Patērētāju tiesību aizsardzības centra mājaslapā internetā publicētajā ārpustiesas strīdu risinātāju sarakstā iekļautiem strīdu risinātājiem, kuri risina strīdus attiecīgajā jomā, norādot arī ārpustiesas strīdu risinātāja mājaslapas adresi.</paragraph>
+    <paragraph num="(2)" lga:provision="LV-PTAL-art19-1-2" lga:citation="19.1 panta otrā daļa Patērētāju tiesību aizsardzības likuma" lga:url="https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Šā panta pirmajā daļā minēto informāciju pārdevējs vai pakalpojuma sniedzējs sniedz skaidrā, saprotamā un viegli pieejamā veidā savā mājaslapā internetā (ja tāda ir) vai ietver līguma noteikumos (ja tādi ir).</paragraph>
+    <paragraph num="(3)" lga:provision="LV-PTAL-art19-1-3" lga:citation="19.1 panta trešā daļa Patērētāju tiesību aizsardzības likuma" lga:url="https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody">Ja strīda izskatīšanas laikā pārdevējs vai pakalpojuma sniedzējs atsakās izpildīt patērētāja prasījumu, tas sniedz patērētājam šā panta pirmajā daļā minēto informāciju rakstveidā vai izmantojot citu pastāvīgu informācijas nesēju.</paragraph>
+  </section>
+</law>

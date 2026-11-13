@@ -1,0 +1,21 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+# A national rule can only replace a general one inside the general rule's territory: a German rule
+# may refine an EU one, never the other way round. Uses lgo:within from
+# rules/reasoning/WithinJurisdictionRule.ttl.
+
+lgs:RefinementWithinShape a sh:NodeShape ;
+    sh:targetSubjectsOf lgo:refines ;
+    sh:sparql [
+        sh:message "A refining obligation applies within the jurisdiction of the obligation it refines." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            SELECT $this ?value WHERE {
+                $this lgo:refines ?value ; lgo:appliesIn ?inner .
+                ?value lgo:appliesIn ?outer .
+                FILTER NOT EXISTS { ?inner lgo:within ?outer }
+            }
+        """ ;
+    ] .

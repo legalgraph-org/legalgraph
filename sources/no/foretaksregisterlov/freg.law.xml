@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Foretaksregisterloven (lov 2025-06-20-106), § 7-2, written in schemas/law.xsd from the
+  Lovdata consolidated text. The words are the Storting's; only the structure is ours.
+  Ledd 1 applies to every enterprise's nettsider, brev og forretningsdokumenter in any
+  medium — organisasjonsnummer plus foretaksnavn/navn (the MVA marking is only for
+  salgsdokumenter of VAT-registered enterprises). Ledd 2 adds register, organisasjonsform,
+  hovedkontor and under-avvikling status for AS and ASA. Ledd 3 covers branches of
+  foreign enterprises; ledd 4 refers EEIGs to Regulation 2137/85 art. 25.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="no"
+     lga:act="NO-FREG" lga:jurisdiction="NO" lga:act-type="Statute"
+     lga:url="https://lovdata.no/dokument/NL/lov/2025-06-20-106">
+  <meta>
+    <title>Lov om Foretaksregisteret (foretaksregisterloven)</title>
+    <date>2025-06-20</date>
+  </meta>
+
+  <section num="§ 7-2" title="Krav til identifikasjon av foretaket på dokumenter mv." source="freg-7-2.fragment.html">
+    <paragraph num="(1)" lga:provision="NO-FREG-s7-2-1" lga:citation="§ 7-2 første ledd foretaksregisterloven" lga:url="https://lovdata.no/dokument/NL/lov/2025-06-20-106/%C2%A77-2" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="RegisterEntry ProviderName VatStatus">Et foretaks nettsider, brev og forretningsdokumenter skal, uavhengig av hvilket medium de finnes på, inneholde foretakets organisasjonsnummer og foretaksnavn eller navn. For foretak som er registrert i Merverdiavgiftsregisteret, skal salgsdokumenter i tillegg inneholde bokstavene MVA plassert bak organisasjonsnummeret.</paragraph>
+    <paragraph num="(2)" lga:provision="NO-FREG-s7-2-2" lga:citation="§ 7-2 andre ledd foretaksregisterloven" lga:url="https://lovdata.no/dokument/NL/lov/2025-06-20-106/%C2%A77-2" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="RegisterEntry LegalForm GeographicAddress LiquidationStatus">Et aksjeselskaps og et allmennaksjeselskaps nettsider, brev og forretningsdokumenter skal, uavhengig av hvilket medium de finnes på, i tillegg angi det register der selskapet er registrert, organisasjonsform, hovedkontor og eventuelt at selskapet er under avvikling.</paragraph>
+    <paragraph num="(3)" lga:provision="NO-FREG-s7-2-3" lga:citation="§ 7-2 tredje ledd foretaksregisterloven" lga:url="https://lovdata.no/dokument/NL/lov/2025-06-20-106/%C2%A77-2" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">For filial av utenlandsk foretak, jf. § 3-8 , skal filialens brev, kunngjøringer og andre dokumenter i tillegg angi det registeret filialen er registrert i. Det skal også gis opplysninger som nevnt i andre ledd om det utenlandske foretaket.</paragraph>
+    <paragraph num="(4)" lga:provision="NO-FREG-s7-2-4" lga:citation="§ 7-2 fjerde ledd foretaksregisterloven" lga:url="https://lovdata.no/dokument/NL/lov/2025-06-20-106/%C2%A77-2" lga:regulates="ProviderIdentification">For europeisk økonomisk foretaksgruppe skal foretakets dokumenter inneholde opplysninger som nevnt i forordning (EØF) nr. 2137/85 artikkel 25, jf. EØFG-loven § 1 .</paragraph>
+  </section>
+</law>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  S.L. 378.18 regulation 14, written in schemas/law.xsd from the
+  legislation.mt consolidated PDF. The words are Malta's; only the structure
+  is ours. Regulation 14 transposes Directive 2013/11 Art. 13 in full:
+  (1) ADR entity + website address on the trader's website and in the
+  general terms and conditions; (2) after an unsettled direct complaint the
+  trader provides the same information plus whether it will use the ADR
+  entity, on paper or another durable medium.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="MT-SL-378-18" lga:jurisdiction="MT" lga:act-type="Regulation"
+     lga:url="https://legislation.mt/eli/sl/378.18/eng">
+  <meta>
+    <title>Consumer Alternative Dispute Resolution (General) Regulations</title>
+    <date>2017-02-14</date>
+  </meta>
+
+  <section num="reg. 14" source="sl378-18.pdf">
+    <paragraph num="(1)" lga:provision="MT-SL-378-18-r14-1" lga:citation="reg. 14(1) S.L. 378.18" lga:url="https://legislation.mt/eli/sl/378.18/eng" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">A trader shall inform consumers about the ADR entity by which he is covered, when he commits to or is obliged to use such an entity to resolve disputes with consumers:
+      <list>
+        <item num="Provided that" lga:requires="DisputeResolutionBody">such information shall include the website address of the relevant ADR entity and shall be provided in a clear, comprehensible and easily accessible way on the trader’s website, where one exists, and, if applicable, in the general terms and conditions of sales or service contracts between the trader and the consumer.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="MT-SL-378-18-r14-2" lga:citation="reg. 14(2) S.L. 378.18" lga:url="https://legislation.mt/eli/sl/378.18/eng" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">Where a dispute between a consumer and a trader cannot be settled further to a complaint submitted directly by the consumer to the trader, the trader shall provide the consumer with the information referred to in sub-regulation (1) specifying whether he makes use of the relevant ADR entity to settle the dispute:
+      <list>
+        <item num="Provided that" lga:requires="DisputeResolutionBody">such information shall be provided on paper or on another durable medium.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

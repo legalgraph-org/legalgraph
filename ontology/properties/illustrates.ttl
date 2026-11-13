@@ -1,0 +1,8 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:illustrates a owl:ObjectProperty ;
+    rdfs:label "illustrates"@en ;
+    rdfs:comment "The decision shows this rule of the graph applied, or its meaning settled, in a real case. Chosen by the maintainers: a link from case to rule, not a statement of the decision itself."@en ;
+    rdfs:range lgo:Obligation .

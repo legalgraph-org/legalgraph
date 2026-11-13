@@ -1,0 +1,14 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Romania (additions to data/extracted/ro/).
+
+lg:RO-LCE
+    lgo:shortName "L. 365/2002" ;
+    eli:id_local "M.Of. nr. 483 din 5 iulie 2002" ;
+    eli:transposes lg:EU-2000-31 ;
+    rdfs:comment "Articolul 5 transposes Article 5 of the e-Commerce Directive, wider than the Directive's catalogue: phone and fax numbers, the fiscal registration code and price items are mandatory for every provider."@en .

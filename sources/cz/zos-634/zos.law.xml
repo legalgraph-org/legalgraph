@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 634/1992 Sb., § 14, written in schemas/law.xsd from the
+  zakonyprolidi.cz consolidated text. The words are the Czech legislature's;
+  only the structure is ours. § 14 transposes Directive 2013/11 Art. 13:
+  (1) the trader informs consumers, clearly and accessibly, about the
+  out-of-court consumer-dispute entity competent for the product or service
+  type, including its internet address — on the trader's own website and in
+  the business terms the contract refers to; (2) after an unsettled dispute
+  the trader supplies the odst. 1 information in paper form or on another
+  durable medium.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="cs"
+     lga:act="CZ-ZOS-634" lga:jurisdiction="CZ" lga:act-type="Statute"
+     lga:url="https://www.zakonyprolidi.cz/cs/1992-634">
+  <meta>
+    <title>Zákon č. 634/1992 Sb., o ochraně spotřebitele</title>
+    <date>1992-12-16</date>
+  </meta>
+
+  <section num="§ 14" source="zos-14.fragment.html">
+    <paragraph num="(1)" lga:provision="CZ-ZOS-634-s14-1" lga:citation="§ 14 odst. 1 zákona č. 634/1992 Sb." lga:url="https://www.zakonyprolidi.cz/cs/1992-634" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Prodávající informuje spotřebitele jasným, srozumitelným a snadno dostupným způsobem o subjektu mimosoudního řešení spotřebitelských sporů, který je pro daný typ nabízeného, prodávaného, poskytovaného nebo zprostředkovaného výrobku nebo služby věcně příslušný. Informace musí zahrnovat též internetovou adresu tohoto subjektu. Jestliže prodávající provozuje internetové stránky, uvede tyto informace i na těchto internetových stránkách. Pokud smlouva uzavřená mezi prodávajícím a spotřebitelem odkazuje na obchodní podmínky, uvede informace podle věty první a druhé rovněž v těchto obchodních podmínkách.</paragraph>
+    <paragraph num="(2)" lga:provision="CZ-ZOS-634-s14-2" lga:citation="§ 14 odst. 2 zákona č. 634/1992 Sb." lga:url="https://www.zakonyprolidi.cz/cs/1992-634" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody">V případě sporu mezi spotřebitelem a prodávajícím, který se nepodařilo mezi stranami urovnat přímo, poskytne prodávající spotřebiteli informace uvedené v odstavci 1 v listinné podobě nebo na jiném trvalém nosiči dat.</paragraph>
+  </section>
+</law>

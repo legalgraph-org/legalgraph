@@ -1,0 +1,171 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:BE-CSA-2-20-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4d01ae267e61581caaad9793780e3da989a63e7a64b5c4608d835ae30605ef8c" ;
+    lgo:text """Art. 2:20. All deeds, invoices, announcements, notices, letters, orders, websites and other documents, whether in electronic form or not, emanating from a legal person must state the following particulars:
+1° the name of the legal person;
+2° the legal form, in full or abbreviated;
+3° the precise indication of the seat of the legal person;
+4° the enterprise number;
+5° the word “register of legal persons” or the abbreviation “RPR”, followed by the indication of the court of the seat of the legal person;
+6° where applicable, the e-mail address and the website of the legal person;
+7° where applicable, the fact that the legal person is in liquidation."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-CSA-2-20-q1 .
+
+lg:BE-CSA-2-21-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e773543a406be69f1c7aae84588fa4ad1d7289fb22a7bfe552d4e5d69e3e5953" ;
+    lgo:text "Art. 2:21. Where, in the case of a public limited company, a European company or a European cooperative society, the websites or the documents referred to in Article 2:20 mention the capital of the company, this must be the paid-up capital as shown in the latest balance sheet. If it appears from this that the paid-up capital is impaired, the net assets as shown in the latest balance sheet must be stated. Where a higher amount has been stated than determined in accordance with the first paragraph and the company fails to fulfil its obligations, the third party concerned has the right to claim compensation for the damage suffered from the person who acted on behalf of the company in the deed or website."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-CSA-2-21-q1 .
+
+lg:BE-CSA-2-22-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ab402c7c98dd10d0bf6051cdebe8ab69814e3b1f0afb4350167c4aaba1e171c2" ;
+    lgo:text "Art. 2:22. A person who, on behalf of a legal person, contributes to a deed or website that does not comply with the rules referred to in Article 2:20 may, according to the circumstances, be held liable for the obligations entered into therein by the legal person."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-CSA-2-22-q1 .
+
+lg:BE-CSA-title-07097aebdcac-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "07097aebdcaceca0bc890b0fccda1c617baa89ff5ab2dffb851ac4a77345009a" ;
+    lgo:text "Code of Companies and Associations"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-CSA .
+
+lg:BE-CSA-title-f15553d58a0e-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f15553d58a0ebc985146bea038a37011c8023f240c1a5909c58c77136d916043" ;
+    lgo:text "Code of Companies and Associations"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-CSA .
+
+lg:BE-WER-III-25-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7555a2cfb676f732aadd7960d684db6a1df56653e0833dfa7845a9f5718383e5" ;
+    lgo:text "All deeds, invoices, announcements, notices, letters, orders and other documents issued by registered enterprises must always state the enterprise number."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-III-25-1-q1 .
+
+lg:BE-WER-III-25-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8823e0ff2fda857b41fdaa60854a6e5e1b2445e4a77cbb7800dd58d782753330" ;
+    lgo:text "These documents must also state the domiciliation and the number of at least one payment account held by the registered enterprise with a credit institution established in the European Economic Area and to which Directive (EU) 2015/2366 of the European Parliament and of the Council of 25 November 2015 on payment services in the internal market, amending Directives 2002/65/EC, 2009/110/EC and 2013/36/EU and Regulation (EU) No 1093/2010, and repealing Directive 2007/64/EC, applies."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-III-25-2-q1 .
+
+lg:BE-WER-III-25-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2da910969b610ae04cec87ebc6dd5bcc08a6853b60b5ffa40568af313ff53467" ;
+    lgo:text "The market stalls used for the pursuit of the economic activity of the registered enterprise, as well as the vehicles used mainly in the pursuit of ambulant activities, or, in the case of employers, in the context of a civil or utility construction activity or an activity of cleaning the interior of buildings, shall visibly bear the enterprise number. The King may, by decree adopted after deliberation in the Council of Ministers, amend the activities referred to in the third paragraph for which the vehicles used visibly bear the enterprise number."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-III-25-3-q1 .
+
+lg:BE-WER-XII-6-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "df4918f13934b28de4f2856c2d1635051c7c038884e62d9a995d32de188c1b5b" ;
+    lgo:text """§ 1. Without prejudice to other statutory and regulatory information requirements, every information society service provider shall ensure that the recipients of the service and the competent authorities have easy, direct and permanent access to at least the following information:
+1° his name or trade name;
+2° the geographic address at which the service provider is established;
+3° further details enabling rapid contact and direct and effective communication with him, including his electronic mail address;
+4° where applicable, the enterprise number;
+5° where an activity is subject to an authorisation scheme, the particulars of the competent supervisory authority;
+6° as regards regulated professions:
+a)the professional association or organisation with which the service provider is registered,
+b) the professional title and the state where it was granted,
+c) a reference to the applicable professional rules and the means of access to them;
+7° where the service provider carries on an activity subject to value added tax, the identification number referred to in Article 50 of the Value Added Tax Code;
+8° the codes of conduct to which he has subscribed, where applicable, and information on how those codes can be consulted electronically."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-XII-6-1-q1 .
+
+lg:BE-WER-XII-6-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "629737eae3f7391ff5e60d3106cb915b752b5bad528af46295aa352b49d1f25e" ;
+    lgo:text "§ 2. Without prejudice to other statutory and regulatory provisions on price indication, information society services that refer to prices must state them clearly and unambiguously and, in particular, indicate whether tax and delivery costs are included."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-XII-6-2-q1 .
+
+lg:BE-WER-XVI-4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fb2fb6a48bcb03993c7e712d67d3ab1b085345ad36fda5c3660e59d095811268" ;
+    lgo:text "§ 1. Where a trader is required to use out-of-court resolution of consumer disputes by a statutory or regulatory provision, by a code of conduct it has endorsed, as a result of membership of a trade association, a professional organisation or a professional order, or on the basis of a provision in its own general or special conditions of sale, it shall inform the consumer thereof in a clear, comprehensible and easily accessible manner."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-XVI-4-1-q1 .
+
+lg:BE-WER-XVI-4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5173bf06ce517949ebf62c1ec7b2bf0d106113186738c66635f865812e3ce590" ;
+    lgo:text "§ 2. The information referred to in the previous paragraph indicates how detailed information can be obtained about the characteristics and the conditions of application of this out-of-court resolution of consumer disputes and mentions the contact details and the website address of the qualified entity concerned. Where applicable, this information is repeated on the website and in the general conditions of sale of the trader."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-XVI-4-2-q1 .
+
+lg:BE-WER-XVI-4-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dd474cae484bfd207c2d179b18da3f00bf48b9374d1a61787511fbfbc5494761" ;
+    lgo:text "§ 3. Where a consumer dispute is not resolved within a reasonable period pursuant to article XVI.3, the trader shall provide the consumer on its own initiative with the information referred to in paragraphs 1 and 2 and shall state whether it is bound to, or willing to, have recourse to out-of-court resolution of the consumer dispute, mentioning the details of the competent entity. It shall also be stated whether this entity is a qualified entity. Where the entity is not qualified, the details of the Consumer Ombudsman Service, referred to in article XVI.5, shall be provided. This information is provided in writing or on another durable medium."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-XVI-4-3-q1 .
+
+lg:BE-WER-XVI-4-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "66cd709fa80703c0e52a7284c01c87bab5d2cbc96d1645da02ceaac23304bf04" ;
+    lgo:text "§ 4. The trader has the duty to demonstrate that the requirements laid down in articles XVI.2 to XVI.4, §§ 1 to 3, and in Article 14 of Regulation (EU) No 524/2013 of the European Parliament and of the Council of 21 May 2013 on online dispute resolution for consumer disputes and amending Regulation (EC) No 2006/2004 and Directive 2009/22/EC are met and that the information provided is accurate."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-WER-XVI-4-4-q1 .

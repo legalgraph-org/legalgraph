@@ -1,0 +1,17 @@
+name: Portuguese Lda. with a company website
+description: >
+  An Lda. in the commercial register with a VAT number and a website presenting its services.
+  Artigo 10.º DL 7/2004 asks every provider for its NIF; Portugal has no separate VAT-number line,
+  so the EU VAT rule still applies.
+established_in: PT
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - PT-R-company-website
+  - EU-R-service-provider-information-vat
+  - PT-R-impressum
+  - PT-R-impressum-register

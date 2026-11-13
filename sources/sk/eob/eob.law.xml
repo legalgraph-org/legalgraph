@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 22/2004 Z. z. o elektronickom obchode, § 4, written in schemas/law.xsd from the
+  Slov-Lex static consolidated text (version in force from 28 June 2025). The words are the
+  National Council's; only the structure is ours. The Slovak catalogue adds a telephone
+  number and the DIČ (VAT id) where the provider is a VAT payer; footnote references in the
+  source are not part of the provision's words.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-EOB" lga:jurisdiction="SK" lga:act-type="Statute"
+     lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2004/22/">
+  <meta>
+    <title>Zákon č. 22/2004 Z. z. o elektronickom obchode a o zmene a doplnení zákona č. 128/2002 Z. z. o štátnej kontrole vnútorného trhu vo veciach ochrany spotrebiteľa a o zmene a doplnení niektorých zákonov v znení zákona č. 284/2002 Z. z.</title>
+    <date>2003-12-03</date>
+  </meta>
+
+  <section num="§ 4" title="Všeobecné informačné povinnosti" source="eob-4.fragment.html">
+    <paragraph num="(1)" lga:provision="SK-EOB-s4-1" lga:citation="§ 4 ods. 1 zákona č. 22/2004 Z. z." lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2004/22/" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Poskytovateľ služieb je povinný príjemcovi služby na elektronickom zariadení poskytnúť najmä tieto informácie:
+      <list>
+        <item num="a)" lga:requires="ProviderName GeographicAddress">názov, obchodné meno a sídlo poskytovateľa služieb, ak ide o právnickú osobu, alebo meno, priezvisko, miesto podnikania a adresu bydliska poskytovateľa služieb, ak ide o fyzickú osobu,</item>
+        <item num="b)" lga:requires="TaxId">daňové identifikačné číslo, ak je platiteľom dane z pridanej hodnoty,</item>
+        <item num="c)" lga:requires="EmailAddress PhoneNumber RapidContact">adresu elektronickej pošty a telefónne číslo,</item>
+        <item num="d)" lga:requires="RegisterEntry">označenie registra, ktorý ho zapísal, a číslo zápisu,</item>
+        <item num="e)" lga:requires="SupervisoryAuthority">názov a adresu orgánu dozoru alebo dohľadu, ktorému činnosť poskytovateľa služieb podlieha.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="SK-EOB-s4-2" lga:citation="§ 4 ods. 2 zákona č. 22/2004 Z. z." lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2004/22/" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Pri komerčnej komunikácii osôb podľa § 3 ods. 7 musí poskytovateľ služieb príjemcovi služby na elektronickom zariadení poskytnúť okrem údajov podľa odseku 1 aj názov a sídlo príslušnej samosprávnej stavovskej organizácie zriadenej osobitným predpisom, v ktorej je osoba vykonávajúca regulované povolanie zapísaná, jej akademický titul a členský štát nadobudnutia akademického titulu, odkaz na príslušné pravidlá výkonu povolania a poskytovania služieb ustanovené samosprávnou stavovskou organizáciou a spôsob trvalého prístupu k informáciám o príslušnej samosprávnej stavovskej organizácii.</paragraph>
+    <paragraph num="(3)" lga:provision="SK-EOB-s4-3" lga:citation="§ 4 ods. 3 zákona č. 22/2004 Z. z." lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2004/22/" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Informácie podľa odseku 1 a 2 musia byť príjemcovi služby ľahko a trvalo prístupné a rozlíšiteľné od komerčnej komunikácie.</paragraph>
+  </section>
+</law>

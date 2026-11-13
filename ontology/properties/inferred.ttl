@@ -1,0 +1,7 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:inferred a owl:AnnotationProperty ;
+    rdfs:label "inferred"@en ;
+    rdfs:comment "Set to true on a property that only the rules in rules/reasoning/ produce. The data never states it; validation reports it if it does."@en .

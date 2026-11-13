@@ -1,0 +1,56 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgs:ObligationShape a sh:NodeShape ;
+    sh:targetClass lgo:Obligation ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "An obligation needs an English rdfs:label." ;
+    ] , [
+        sh:path lgo:establishedBy ;
+        sh:minCount 1 ;
+        sh:class lgo:Provision ;
+        sh:message "An obligation names the provision(s) it comes from." ;
+    ] , [
+        sh:path lgo:bearer ;
+        sh:minCount 1 ;
+        sh:class lgo:ActorRole ;
+    ] , [
+        sh:path lgo:deonticType ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Must lgv:MustNot lgv:May ) ;
+    ] , [
+        sh:path lgo:appliesIn ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class lgo:Jurisdiction ;
+    ] , [
+        sh:path lgo:appliesWhen ;
+        sh:minCount 1 ;
+        sh:class lgo:Condition ;
+    ] , [
+        sh:path lgo:unless ;
+        sh:class lgo:Condition ;
+    ] , [
+        sh:path lgo:partOfDisclosure ;
+        sh:maxCount 1 ;
+        sh:class lgo:DisclosureType ;
+    ] , [
+        sh:path lgo:requiresAction ;
+        sh:class lgo:Action ;
+    ] , [
+        sh:path lgo:refines ;
+        sh:class lgo:Obligation ;
+    ] , [
+        sh:path lgo:reviewStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Draft lgv:Reviewed ) ;
+    ] ;
+    sh:or (
+        [ sh:path lgo:requiresDisclosureOf ; sh:minCount 1 ]
+        [ sh:path lgo:requiresAction ; sh:minCount 1 ]
+    ) .

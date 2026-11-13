@@ -1,0 +1,23 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+# A provision that implements a provision of a directive makes its act a transposition of that
+# directive: the act should say so with eli:transposes. A warning while the existing gaps are filled.
+
+lgs:TransposingActShape a sh:NodeShape ;
+    sh:targetSubjectsOf lgo:implements ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        sh:message "The act of a provision that implements another act's provision should state eli:transposes for that act." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            PREFIX eli: <http://data.europa.eu/eli/ontology#>
+            SELECT $this ?value WHERE {
+                $this lgo:implements ?implemented ; eli:is_part_of ?act .
+                ?implemented eli:is_part_of ?value .
+                FILTER (?act != ?value)
+                FILTER NOT EXISTS { ?act eli:transposes ?value }
+            }
+        """ ;
+    ] .

@@ -90,6 +90,7 @@ lg:DE-JMStV-source-1
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/jmstv/JMStV.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;
     lgo:mediaType "text/html" ;
@@ -102,6 +103,7 @@ lg:DE-JMStV-source-2
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/jmstv/JMStV.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;
     lgo:mediaType "text/html" ;

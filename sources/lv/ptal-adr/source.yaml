@@ -1,0 +1,28 @@
+# Patērētāju tiesību aizsardzības likums, 19.1 pants: the Latvian trader ADR
+# information duty — Directive 2013/11 Art. 13 transposition. (1) the seller
+# or service provider informs the consumer about one or more out-of-court
+# dispute resolvers on the PTAC-published list competent for the sector,
+# including the resolver's website address; (2) the information is given
+# clearly and accessibly on the trader's own website (if any) or in contract
+# terms; (3) is the after-complaint analogue — when the trader refuses the
+# consumer's claim during the dispute it gives the (1) information in writing
+# or on another durable medium; (4) preserves other statutory information
+# requirements.
+id: lv/ptal-adr
+title: Patērētāju tiesību aizsardzības likums (19.1 pants)
+jurisdiction: LV
+language: lv
+publisher: likumi.lv (Latvijas Vēstnesis)
+kind: authored-xml
+licence: official-work
+licence_basis: "Autortiesību likums 6. pants: legal acts are not protected by copyright"
+originals:
+  - file: ptal-19-1.fragment.html
+    url: "https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the likumi.lv consolidated full-text page: the 19.1 pants paragraph block (the trailing '40' and redakcija note are the version footer of the section). Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: 5b1f7b50ad14110ef4a785ff8a99b711180be857292e27280e42ba7355a256b4
+annotated: ptal.law.xml

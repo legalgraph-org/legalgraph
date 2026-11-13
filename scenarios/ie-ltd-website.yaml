@@ -1,0 +1,18 @@
+name: Irish private company with a company website
+description: >
+  A private company limited by shares in the CRO register with a VAT number and a website
+  presenting its services. Regulation 7(1) of S.I. No. 68/2003 also asks every provider to show how
+  people can register their choice about unsolicited commercial communications.
+established_in: IE
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - IE-R-company-website
+  - IE-R-impressum
+  - IE-R-impressum-marketing-choice
+  - IE-R-impressum-register
+  - IE-R-impressum-vat

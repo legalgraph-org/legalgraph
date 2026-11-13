@@ -103,6 +103,7 @@ lg:US-CFR-16-312-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us/coppa/CFR-2026-title16-vol1-part312.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "2026 annual edition of Title 16 (revised as of 1 January 2026): includes the 2025 amendments (published 22 April 2025, in force 23 June 2025, most duties enforceable from 22 April 2026)."@en ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "17 U.S.C. § 105: works of the US federal government are not protected by copyright" ;

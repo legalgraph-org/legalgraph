@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Personen- und Gesellschaftsrecht (PGR), Art. 120a, written in schemas/law.xsd from the
+  Lilex consolidated PDF (Fassung vom 01.09.2026). The words are the Landtag's; only the
+  structure is ours. Abs. 1 lists the five disclosures for Briefe, Bestellscheine and
+  Webseiten of AG, KGaA and GmbH; Abs. 2 is the capital clause; Abs. 3 the branch
+  particulars. PDF comparison is on letters only, so the PDF's footnote marks are not part
+  of the compared text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="LI-PGR" lga:jurisdiction="LI" lga:act-type="Statute"
+     lga:url="https://www.gesetze.li/konso/1926004000">
+  <meta>
+    <title>Personen- und Gesellschaftsrecht (PGR)</title>
+    <date>1926-01-20</date>
+  </meta>
+
+  <section num="Art. 120a" title="Angaben auf Briefen, Bestellscheinen und Webseiten" source="pgr.pdf">
+    <paragraph num="1)" lga:provision="LI-PGR-art120a-1" lga:citation="Art. 120a Abs. 1 PGR" lga:url="https://www.gesetze.li/konso/1926004000" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Auf allen Briefen und Bestellscheinen, unabhängig davon, ob sie auf Papier oder auf sonstige Weise erstellt werden, sowie den Webseiten, die von Aktiengesellschaften, Kommanditaktiengesellschaften oder Gesellschaften mit beschränkter Haftung verwendet werden, müssen angegeben werden:
+      <list>
+        <item num="1." lga:requires="ProviderName LegalForm">die Firma und die jeweilige Rechtsform;</item>
+        <item num="2." lga:requires="GeographicAddress">der statutarische Sitz der Gesellschaft;</item>
+        <item num="3." lga:requires="LiquidationStatus">gegebenenfalls die Tatsache, dass sich die Gesellschaft in Liquidation befindet;</item>
+        <item num="4." lga:requires="RegisterEntry">die notwendigen Angaben zur Identifizierung des Registers, in dem die Gesellschaft eingetragen ist; und</item>
+        <item num="5." lga:requires="RegisterEntry">die Nummer, unter der die Gesellschaft im Register eingetragen ist.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2)" lga:provision="LI-PGR-art120a-2" lga:citation="Art. 120a Abs. 2 PGR" lga:url="https://www.gesetze.li/konso/1926004000" lga:regulates="ProviderIdentification" lga:requires="ShareCapital">Ist auf diesen Briefen, Bestellscheinen und Webseiten der Gesellschaft das Gesellschaftskapital angeführt, so ist das gezeichnete und eingezahlte Kapital anzugeben.</paragraph>
+    <paragraph num="3)" lga:provision="LI-PGR-art120a-3" lga:citation="Art. 120a Abs. 3 PGR" lga:url="https://www.gesetze.li/konso/1926004000" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">Auf allen Briefen, Bestellscheinen und Webseiten, die von einer Zweigniederlassung einer Gesellschaft im Sinne von Abs. 1 mit Sitz im Ausland verwendet werden, müssen zusätzlich zu den Angaben über die Gesellschaft angegeben werden:
+      <list>
+        <item num="1.">die notwendigen Angaben zur Identifizierung des Registers, in dem die Zweigniederlassung eingetragen ist; und</item>
+        <item num="2.">die Nummer, unter der die Zweigniederlassung selbst eingetragen ist.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

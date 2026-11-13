@@ -5,21 +5,23 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# CY: draft. Act and citation from research notes; not yet checked against the official text.
+# Cyprus: άρθρο 8 of Ν.156(Ι)/2004 (additions to data/extracted/cy/).
 
-lg:CY-156-I-2004 a lgo:LegalAct ;
+lg:CY-156-I-2004
     eli:title "E-Commerce Law 156(I)/2004"@en ;
     lgo:shortName "156(I)/2004" ;
-    lgo:actType lgv:Statute ;
-    lgo:jurisdiction lg:CY ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "http://www.cylaw.org/nomoi/enop/non-ind/2004_1_156/full.html"^^xsd:anyURI ;
-    lgo:reviewStatus lgv:Draft .
+    rdfs:seeAlso <http://www.cylaw.org/nomoi/enop/non-ind/2004_1_156/full.html> ;
+    rdfs:comment "Cyprus adds telephone and telefax numbers to the Directive's contact item (γ). The source is the consolidated text on cylaw.org, the Cyprus Bar Association's legislation service."@en .
 
-lg:CY-156-I-2004-art8-1 a lgo:Provision ;
-    eli:is_part_of lg:CY-156-I-2004 ;
-    lgo:citation "Article 8(1) Law 156(I)/2004" ;
-    lgo:sourceUrl "http://www.cylaw.org/nomoi/enop/non-ind/2004_1_156/full.html"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:reviewStatus lgv:Draft .
+lg:CY-CAP113
+    eli:title "Companies Law, Cap. 113"@en ;
+    lgo:shortName "Cap. 113" ;
+    eli:transposes lg:EU-2017-1132 ;
+    eli:id_local "Cap. 113" ;
+    rdfs:comment "Άρθρο 103(1Α) extends the (γ) document items (name, registration number, private/public status, registered office, paid-up capital if stated, liquidation status) verbatim to a company's website; (5) makes a website without them an offence."@en .
+
+lg:CY-NOMOS-85-2017
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.cylaw.org/nomoi/enop/ind/2017_1_85/full.html> ;
+    rdfs:comment "Άρθρο 14 is the trader ADR information duty transposing Directive 2013/11 Art. 13 in full, including the (3) after-complaint duty on paper or another durable medium."@en .

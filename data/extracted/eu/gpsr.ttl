@@ -64,6 +64,7 @@ lg:EU-2023-988-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/gpsr/CL2023R0988EN0010010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text applying from 29 May 2026, prepared by the Publications Office as a documentation tool. The authentic texts are Regulation (EU) 2023/988 (OJ L 135, 23.5.2023) and its amending acts; each quoted provision is checked against them."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -76,6 +77,7 @@ lg:EU-2023-988-source
 lg:EU-2023-988-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2023-988-source ;
     lgo:legalStatus "Konsolidierte Fassung (documentation tool, not the authentic text)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

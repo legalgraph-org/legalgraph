@@ -1,0 +1,32 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:QuoteShape a sh:NodeShape ;
+    sh:targetClass lgo:Quote ;
+    sh:property [
+        sh:path lgo:quoteOf ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:text ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:minLength 20 ;
+        sh:message "A quote needs exactly one language-tagged text." ;
+    ] , [
+        sh:path lgo:sourceUrl ;
+        sh:minCount 1 ;
+        sh:datatype xsd:anyURI ;
+        sh:message "A quote needs the URL it was taken from." ;
+    ] , [
+        sh:path lgo:retrievedOn ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path lgo:officialLanguageVersion ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:boolean ;
+    ] .

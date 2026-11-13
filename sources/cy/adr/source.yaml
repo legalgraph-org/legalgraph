@@ -1,0 +1,27 @@
+# Ο περί της Εναλλακτικής Επίλυσης Καταναλωτικών Διαφορών Νόμος του 2017
+# (85(I)/2017), άρθρο 14: the Cypriot trader ADR information duty —
+# Directive 2013/11 Art. 13 transposition in full: (1) ADR entities + their
+# website address for traders committed to or obliged to use them; (2)
+# clear, comprehensible and easily accessible provision on the trader's
+# website and, where applicable, in general terms and conditions;
+# (3) the after-complaint duty on paper or another durable medium; (4)
+# applied in addition to Regulation 524/2013 art. 14.
+id: cy/adr
+title: Ο περί της Εναλλακτικής Επίλυσης Καταναλωτικών Διαφορών Νόμος του 2017 (85(I)/2017), άρθρο 14
+jurisdiction: CY
+language: el
+publisher: cylaw.org (Pancyprian Bar Association consolidated text)
+kind: authored-xml
+licence: official-work
+licence_basis: "official texts of legislation are not subject to copyright protection"
+originals:
+  - file: cy-14.fragment.html
+    url: "https://www.cylaw.org/nomoi/enop/ind/2017_1_85/section-scce3ee223-3c55-42d0-92bf-504ecc7c2375.html"
+    official: false
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the cylaw section page (full-section-text div): άρθρο 14 in full. Downloaded 2026-11-13; the page is windows-1253, re-encoded to UTF-8 for the fragment."
+    retrieved_on: 2026-11-13
+    sha256: 5c19bfab7ff67ab5d62aafdcb00f3439a719e08a0e89541551a82ea3819dadf5
+annotated: adr.law.xml

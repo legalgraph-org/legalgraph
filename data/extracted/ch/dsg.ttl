@@ -416,6 +416,7 @@ lg:CH-DSG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/ch/dsg/fedlex-data-admin-ch-eli-cc-2022-491-20250707-de-xml-1.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Art. 5 Abs. 1 URG (Switzerland): laws and ordinances are not protected by copyright" ;
     lgo:mediaType "application/xml" ;
@@ -427,6 +428,7 @@ lg:CH-DSG-source
 lg:CH-DSG-source-en
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CH-DSG-source ;
     lgo:legalStatus "English translation published by the Federal Chancellery for information. It has no legal force; only the German, French and Italian texts are authentic."@en ;
     lgo:licence lgv:OfficialWork ;

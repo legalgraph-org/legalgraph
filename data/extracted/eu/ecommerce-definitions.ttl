@@ -66,6 +66,7 @@ lg:EU-2000-31-oj
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/ecommerce-definitions/ecommerce-definitions.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
     lgo:mediaType "text/html" ;

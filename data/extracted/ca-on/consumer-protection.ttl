@@ -170,6 +170,7 @@ lg:CA-ON-CPA-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/ca-on/consumer-protection/cpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Ontario e-Laws: the statutes and regulations of Ontario may be reproduced without permission, if reproduced accurately and not presented as an official version" ;
     lgo:mediaType "text/html" ;

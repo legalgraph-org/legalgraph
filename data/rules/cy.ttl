@@ -1,0 +1,112 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Cyprus: provider information under section 8(1) of Law 156(I)/2004, the transposition of
+# Article 5 of the e-Commerce Directive. Cyprus adds a telephone and a telefax number to the
+# contact details of point (c); the rest follows the Directive.
+
+lg:CY-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address, e-mail and telephone"@en ;
+    rdfs:comment "The provider's name, the geographic address where it is established, and contact details including its electronic address, telephone and telefax numbers (section 8(1)(a)-(c) Law 156(I)/2004). Cyprus requires a phone number, unlike the Directive's floor."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:CY-156-I-2004-art8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:PhoneNumber , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CY-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register and registration number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:CY-156-I-2004-art8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CY-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: supervisory authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:CY-156-I-2004-art8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CY-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:CY-156-I-2004-art8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CY-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:CY-156-I-2004-art8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:CY-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website"@en ;
+    rdfs:comment "A company with a website shows on it the items of section 103(1)(c): name, registration number, whether it is private or public, registered office, paid-up capital where capital is mentioned, and liquidation where it applies (section 103(1A) Cap. 113). Failing that is an offence (103(5))."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:CY-CAP113-art103-1a , lg:CY-CAP113-art103-1-c ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:RegisterEntry , lgv:LegalForm , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:CY-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Article 14(1)-(2) of Law 85(I)/2017: the ADR entities covering the trader, with their website address, on its website and in its general terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:CY-NOMOS-85-2017-art14-1 , lg:CY-NOMOS-85-2017-art14-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CY-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Article 14(3) of Law 85(I)/2017: the ADR entity information and whether the trader will use it, on paper or another durable medium."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:CY-NOMOS-85-2017-art14-3-a , lg:CY-NOMOS-85-2017-art14-3-b ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CY ;
+    lgo:appliesWhen lgv:EstablishedInCyprus , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

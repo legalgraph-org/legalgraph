@@ -342,6 +342,7 @@ lg:US-CA-CCPA-source-1
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -354,6 +355,7 @@ lg:US-CA-CCPA-source-2
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -366,6 +368,7 @@ lg:US-CA-CCPA-source-3
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -378,6 +381,7 @@ lg:US-CA-CCPA-source-4
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -390,6 +394,7 @@ lg:US-CA-CCPA-source-5
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -402,6 +407,7 @@ lg:US-CA-CCPA-source-6
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -414,6 +420,7 @@ lg:US-CA-CCPA-source-7
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ccpa/ccpa.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "application/pdf" ;

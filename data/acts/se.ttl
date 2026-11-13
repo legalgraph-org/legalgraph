@@ -5,37 +5,24 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# Sweden: § 8 of the e-commerce act (SFS 2002:562).
+# Sweden: § 8 of the e-commerce act (SFS 2002:562) (additions to data/extracted/se/).
 
-lg:SE-SFS-2002-562 a lgo:LegalAct ;
-    eli:title "Lag (2002:562) om elektronisk handel och andra informationssamhällets tjänster"@sv , "Act on Electronic Commerce and Other Information Society Services"@en ;
+lg:SE-SFS-2002-562
+    eli:title "Act on Electronic Commerce and Other Information Society Services"@en ;
     lgo:shortName "e-handelslagen" ;
     eli:id_local "SFS 2002:562" ;
-    lgo:actType lgv:Statute ;
-    lgo:jurisdiction lg:SE ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"^^xsd:anyURI ;
-    lgo:reviewStatus lgv:SourceChecked .
+    rdfs:comment "8 § asks for the organisationsnummer rather than a named register and adds nothing beyond the Directive's floor; the availability sentence and the lag 2025:989 broadcasting carve-out are separate unnumbered paragraphs."@en .
 
-lg:SE-SFS-2002-562-s8 a lgo:Provision ;
-    eli:is_part_of lg:SE-SFS-2002-562 ;
-    lgo:citation "8 § lag (2002:562)" ;
-    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RegisterEntry ,
-        lgv:VatId , lgv:SupervisoryAuthority , lgv:ProfessionalTitle , lgv:ProfessionalBody , lgv:ProfessionalRules ;
-    lgo:reviewStatus lgv:SourceChecked .
 
-lg:SE-SFS-2002-562-s8-q1 a lgo:Quote ;
-    lgo:quoteOf lg:SE-SFS-2002-562-s8 ;
-    lgo:text """8 § När en tjänsteleverantör tillhandahåller informationssamhällets tjänster ska leverantören ge information om sitt namn, sin adress i etableringsstaten och sin e-postadress samt i förekommande fall
-1. organisationsnummer,
-2. registreringsnummer för mervärdesskatt, och
-3. behörig tillståndsmyndighet.
-Om en tjänsteleverantör bedriver reglerad yrkesverksamhet ska informationen även omfatta uppgifter om
-1. yrkestitel och den stat där denna erhållits,
-2. den yrkesorganisation eller liknande där tjänsteleverantören är registrerad, och
-3. de bestämmelser som är tillämpliga på yrkesverksamheten och sättet att få tillgång till dem."""@sv ;
-    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"^^xsd:anyURI ;
-    lgo:officialLanguageVersion true .
+lg:SE-ABL
+    lgo:shortName "ABL" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/aktiebolagslag-2005551_sfs-2005-551/> ;
+    rdfs:comment "28 kap. 5 § is the Swedish company-law website duty: företagsnamn, styrelsens säte and organisationsnummer on brev, fakturor, orderblanketter och webbplatser, plus the liquidation fact. Andra stycket is the Bolagsverket dispensation to withhold the name and show company type instead."@en .
+
+lg:SE-ARL
+    lgo:shortName "ARL" ;
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/> ;
+    rdfs:comment "10 § requires a trader committed to ADR to name the ADR board with its web and postal address on consumer-facing websites and in contract terms; 11 § is the durable-medium pointer when a consumer claim is rejected; 12 § points to art. 14 of the EU ODR regulation."@en .

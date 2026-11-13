@@ -24,6 +24,7 @@ lg:GB-SI-2015-17-r24-2
     a lgo:Provision ;
     eli:is_part_of lg:GB-SI-2015-17 ;
     lgo:citation "reg. 24(2) Trading Disclosures Regulations 2015" ;
+    lgo:implements lg:EU-2017-1132-art26-1 ;
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProviderName ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -45,6 +46,7 @@ lg:GB-SI-2015-17-r25-1
     a lgo:Provision ;
     eli:is_part_of lg:GB-SI-2015-17 ;
     lgo:citation "reg. 25(1) Trading Disclosures Regulations 2015" ;
+    lgo:implements lg:EU-2017-1132-art26-1 ;
     lgo:regulates lgv:ProviderIdentification ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:GB-SI-2015-17-source ;
@@ -68,6 +70,7 @@ lg:GB-SI-2015-17-r25-2
     a lgo:Provision ;
     eli:is_part_of lg:GB-SI-2015-17 ;
     lgo:citation "reg. 25(2) Trading Disclosures Regulations 2015" ;
+    lgo:implements lg:EU-2017-1132-art26-1 ;
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:GeographicAddress , lgv:LegalForm , lgv:RegisterEntry ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -95,6 +98,7 @@ lg:GB-SI-2015-17-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/gb/tdr/uksi-2015-17.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."@en ;
     lgo:licence lgv:OpenGovernmentLicence3 ;
     lgo:licenceBasis "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)" ;

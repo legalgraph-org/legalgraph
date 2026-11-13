@@ -1,0 +1,53 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:TranslationShape a sh:NodeShape ;
+    sh:targetClass lgo:Translation ;
+    sh:property [
+        sh:path lgo:translationOf ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+    ] , [
+        sh:path lgo:translatedProperty ;
+        sh:maxCount 1 ;
+    ] , [
+        sh:path lgo:text ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:languageIn ( "en" ) ;
+        sh:message "A translation needs exactly one @en text." ;
+    ] , [
+        sh:path lgo:translationMethod ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:MachineTranslation lgv:HumanTranslation lgv:OfficialTranslation ) ;
+    ] , [
+        sh:path lgo:translatedBy ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+    ] , [
+        sh:path lgo:translatedOn ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path lgo:sourceTextSha256 ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:pattern "^[0-9a-f]{64}$" ;
+    ] , [
+        sh:path lgo:reviewStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Draft lgv:Reviewed ) ;
+    ] ;
+    sh:sparql [
+        sh:message "A Reviewed translation needs lgo:reviewedBy." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            PREFIX lgv: <https://legalgraph.org/vocab/>
+            SELECT $this WHERE {
+                $this lgo:reviewStatus lgv:Reviewed .
+                FILTER NOT EXISTS { $this lgo:reviewedBy ?reviewer }
+            }
+        """ ;
+    ] .

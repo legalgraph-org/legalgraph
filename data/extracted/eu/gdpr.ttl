@@ -2387,6 +2387,7 @@ lg:EU-2016-679-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/gdpr/CL2016R0679EN0000020.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text prepared by the Publications Office, with the corrigenda of 2016, 2018 and 2021 worked in: a documentation tool. The authentic text is the Official Journal publication (OJ L 119, 4.5.2016) with its corrigenda; each quoted provision is checked against them."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -2399,6 +2400,7 @@ lg:EU-2016-679-source
 lg:EU-2016-679-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2016-679-source ;
     lgo:legalStatus "Konsolidierte Fassung mit den Berichtigungen (documentation tool; the authentic text is the Official Journal publication with its corrigenda)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

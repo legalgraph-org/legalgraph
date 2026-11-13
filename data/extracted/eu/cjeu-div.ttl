@@ -46,6 +46,7 @@ lg:CJEU-C-298-07-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-div/div.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: German. This English text is the Court's translation; the authentic version is the German one. EUR-Lex offers no Formex XML for this 2008 judgment."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;

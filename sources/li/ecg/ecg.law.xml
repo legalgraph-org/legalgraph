@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  E-Commerce-Gesetz (ECG), Art. 5, written in schemas/law.xsd from the Lilex consolidated PDF.
+  The words are the Liechtenstein administration's (gesetze.li, Fassung vom 01.01.2016); only the
+  structure is ours. `legalgraph sources verify` checks every paragraph letter for letter against
+  the PDF's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="LI-ECG" lga:jurisdiction="LI" lga:act-type="Statute"
+     lga:url="https://www.gesetze.li/konso/2003133000">
+  <meta>
+    <title>Gesetz vom 16. April 2003 über den elektronischen Geschäftsverkehr (E-Commerce-Gesetz; ECG)</title>
+    <date>2003-04-16</date>
+  </meta>
+
+  <section num="Art. 5" title="Allgemeine Informationen" source="ecg.pdf">
+    <paragraph num="1)" lga:provision="LI-ECG-art5-1" lga:citation="Art. 5 Abs. 1 ECG" lga:url="https://www.gesetze.li/konso/2003133000" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Ein Diensteanbieter hat den Nutzern ständig zumindest folgende Informationen leicht und unmittelbar zugänglich zur Verfügung zu stellen:
+      <list>
+        <item num="a)" lga:requires="ProviderName">seinen Namen oder seine Firma;</item>
+        <item num="b)" lga:requires="GeographicAddress">die geografische Anschrift, unter der er niedergelassen ist;</item>
+        <item num="c)" lga:requires="EmailAddress RapidContact">Angaben, auf Grund deren die Nutzer mit ihm rasch und unmittelbar in Verbindung treten können, einschliesslich seiner elektronischen Postadresse;</item>
+        <item num="d)" lga:requires="RegisterEntry">sofern vorhanden, die Handelsregisternummer;</item>
+        <item num="e)" lga:requires="SupervisoryAuthority">soweit die Tätigkeit einer behördlichen Aufsicht unterliegt, die für ihn zuständige Aufsichtsbehörde;</item>
+        <item num="f)" lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">bei einem Diensteanbieter, der gewerbe- oder berufsrechtlichen Vorschriften unterliegt, die Kammer, den Berufsverband oder eine ähnliche Einrichtung, der er angehört, die Berufsbezeichnung und den Vertragsstaat, in dem diese verliehen worden ist, sowie einen Hinweis auf die anwendbaren gewerbe- oder berufsrechtlichen Vorschriften und den Zugang zu diesen;</item>
+        <item num="g)" lga:requires="VatId">sofern vorhanden, die Mehrwertsteuer-Nummer.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2)" lga:provision="LI-ECG-art5-2" lga:citation="Art. 5 Abs. 2 ECG" lga:url="https://www.gesetze.li/konso/2003133000" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Sofern in Diensten der Informationsgesellschaft Preise angeführt werden, sind diese so auszuzeichnen, dass sie ein durchschnittlich aufmerksamer Betrachter leicht lesen und zuordnen kann. Es muss eindeutig erkennbar sein, ob die Preise einschliesslich der Mehrwertsteuer sowie aller sonstigen Abgaben und Zuschläge ausgezeichnet sind (Bruttopreise) oder nicht. Darüber hinaus ist auch anzugeben, ob Versandkosten enthalten sind.</paragraph>
+  </section>
+</law>

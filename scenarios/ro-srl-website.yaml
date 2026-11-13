@@ -1,0 +1,17 @@
+name: Romanian SRL with a company website
+description: >
+  An SRL in the trade register with a VAT ID and a website presenting its services. Art. 5 Legea
+  365/2002 asks every provider for a phone number and the fiscal registration code as well; Romania
+  has no separate VAT-ID line, so the EU VAT rule still applies.
+established_in: RO
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - EU-R-company-website-disclosure
+  - EU-R-service-provider-information-vat
+  - RO-R-impressum
+  - RO-R-impressum-register

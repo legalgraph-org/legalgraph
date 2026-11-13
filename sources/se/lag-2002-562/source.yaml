@@ -1,0 +1,23 @@
+# Lag (2002:562) om elektronisk handel och andra informationssamhällets tjänster:
+# Sweden's transposition of the e-Commerce Directive. 8 § is the
+# provider-information duty. The Riksdag's SFS page renders each section as a
+# flat anchor (<a name="P8">), with no per-section element a CSS selector can
+# isolate, so the fragment holding 8 § is kept verbatim.
+id: se/lag-2002-562
+title: Lag (2002:562) om elektronisk handel och andra informationssamhällets tjänster (8 §)
+jurisdiction: SE
+language: sv
+publisher: Sveriges riksdag (riksdagen.se)
+kind: authored-xml
+licence: official-work
+licence_basis: "Lagen (1960:729) 9 §: lagar, förordningar och andra föreskrifter är inte föremål för upphovsrätt — official texts are not subject to copyright"
+originals:
+  - file: se-8.fragment.html
+    url: "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated SFS page between anchors P8 and P9: sections are flat anchors, not nested elements. Downloaded 2026-11-12; text as amended by lag 2025:989."
+    retrieved_on: 2026-11-12
+    sha256: 4d93f0d02d0a531e4c8d7451e68154b69687b8f12e97e065234dda65568b053d
+annotated: lag-2002-562.law.xml

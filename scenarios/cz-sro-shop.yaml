@@ -1,0 +1,22 @@
+name: Czech s.r.o. selling to consumers from its website
+description: >
+  An s.r.o. in the commercial register with a VAT ID, selling to consumers and not committed to
+  ADR. Czech law names the competent ADR entity for every seller (§ 14 zákona č. 634/1992 Sb.), and
+  the website carries the company particulars of § 435 OZ and § 7 ZOK. Czechia has no sourced
+  provider-information provision yet, so the EU rules for Article 5 of the e-Commerce Directive apply.
+established_in: CZ
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+  - SellsToConsumers
+obligations:
+  - CZ-R-company-website
+  - CZ-R-adr-information-every-trader
+  - CZ-R-adr-information-after-complaint
+  - EU-R-service-provider-information
+  - EU-R-service-provider-information-register
+  - EU-R-service-provider-information-vat
+  - EU-R-unfair-terms

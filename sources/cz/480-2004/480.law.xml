@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 480/2004 Sb., §§ 7–8, written in schemas/law.xsd from the
+  zakonyprolidi.cz consolidated text. The words are the Czech legislature's;
+  only the structure is ours. § 7 is the commercial-communications regime;
+  § 8(3) is the regulated-profession items of Directive 2000/31/EC Art. 5(1)(f)
+  as they apply to commercial communications. The act contains no general
+  provider-information list — Czech identification duties are § 435 OZ.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="cs"
+     lga:act="CZ-480-2004" lga:jurisdiction="CZ" lga:act-type="Statute"
+     lga:url="https://www.zakonyprolidi.cz/cs/2004-480">
+  <meta>
+    <title>Zákon č. 480/2004 Sb., o některých službách informační společnosti</title>
+    <date>2004-09-14</date>
+  </meta>
+
+  <section num="§ 7" source="480.esbirka.html">
+    <paragraph num="(1)" lga:provision="CZ-480-2004-s7-1" lga:citation="§ 7 odst. 1 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="CommercialCommunication">Obchodní sdělení lze šířit elektronickými prostředky jen za podmínek stanovených tímto zákonem.</paragraph>
+    <paragraph num="(2)" lga:provision="CZ-480-2004-s7-2" lga:citation="§ 7 odst. 2 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="ElectronicDirectMarketing">Podrobnosti elektronického kontaktu lze za účelem šíření obchodních sdělení elektronickými prostředky využít pouze ve vztahu k uživatelům, kteří k tomu dali předchozí souhlas.</paragraph>
+    <paragraph num="(3)" lga:provision="CZ-480-2004-s7-3" lga:citation="§ 7 odst. 3 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="ElectronicDirectMarketing">Nehledě na odstavec 2, pokud fyzická nebo právnická osoba získá od svého zákazníka podrobnosti jeho elektronického kontaktu pro elektronickou poštu v souvislosti s prodejem výrobku nebo služby podle požadavků ochrany osobních údajů upravených zvláštním právním předpisem 5 ) nebo přímo použitelným předpisem Evropské unie 6 ) , může tato fyzická či právnická osoba využít tyto podrobnosti elektronického kontaktu pro potřeby šíření obchodních sdělení týkajících se jejích vlastních obdobných výrobků nebo služeb za předpokladu, že zákazník má jasnou a zřetelnou možnost jednoduchým způsobem, zdarma nebo na účet této fyzické nebo právnické osoby odmítnout souhlas s takovýmto využitím svého elektronického kontaktu i při zasílání každé jednotlivé zprávy, pokud původně toto využití neodmítl.</paragraph>
+    <paragraph num="(4)" lga:provision="CZ-480-2004-s7-4" lga:citation="§ 7 odst. 4 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="CommercialCommunication" lga:implements="EU-2000-31-art6">Zaslání elektronické pošty za účelem šíření obchodního sdělení je zakázáno, pokud
+      <list>
+        <item num="a)">tato není zřetelně a jasně označena jako obchodní sdělení,</item>
+        <item num="b)" lga:requires="ProviderName">skrývá nebo utajuje totožnost odesílatele, jehož jménem se komunikace uskutečňuje, nebo</item>
+        <item num="c)" lga:requires="UnsubscribeMechanism">je zaslána bez platné adresy, na kterou by mohl adresát přímo a účinně zaslat informaci o tom, že si nepřeje, aby mu byly obchodní informace odesílatelem nadále zasílány.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="§ 8" source="480.esbirka.html">
+    <paragraph num="(1)" lga:provision="CZ-480-2004-s8-1" lga:citation="§ 8 odst. 1 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="CommercialCommunication">Osoby vykonávající regulované činnosti mohou za použití elektronických prostředků v rámci činností, které jsou obsahem regulované činnosti, šířit obchodní sdělení, a to v souladu s § 7 a v souladu s příslušnými pravidly vydávanými obchodními, profesními a spotřebitelskými sdruženími, která upravují zejména nezávislost, důstojnost, čest povolání a poctivý přístup k zákazníkům.</paragraph>
+    <paragraph num="(2)" lga:provision="CZ-480-2004-s8-2" lga:citation="§ 8 odst. 2 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="CommercialCommunication">Osoby vykonávající regulované činnosti, jež nejsou členy profesních samosprávných komor zřízených zákonem, při šíření obchodních sdělení za použití elektronických prostředků v rámci činností, které jsou obsahem regulované činnosti, postupují v souladu s § 7.</paragraph>
+    <paragraph num="(3)" lga:provision="CZ-480-2004-s8-3" lga:citation="§ 8 odst. 3 zákona č. 480/2004 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2004-480" lga:regulates="CommercialCommunication" lga:requires="ProfessionalBody ProfessionalRules">Obchodní sdělení osob vykonávajících regulované činnosti musí obsahovat název profesní samosprávné komory zřízené zákonem, u níž je osoba vykonávající regulovanou činnost zapsána, odkaz na profesní pravidla uplatňovaná v členském státu Evropské unie, v němž je osoba vykonávající regulovanou činnost usazena, a způsob trvalého veřejného přístupu k informacím o příslušné profesní samosprávné komoře zřízené zákonem, jejímž je osoba vykonávající regulovanou činnost členem.</paragraph>
+  </section>
+</law>

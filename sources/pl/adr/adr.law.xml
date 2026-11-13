@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ustawa o pozasądowym rozwiązywaniu sporów konsumenckich, art. 31, written in
+  schemas/law.xsd from the ISAP consolidated text. The words are the Polish
+  legislature's; only the structure is ours. Art. 31 is the trader ADR
+  information duty: the competent ADR entity (at least its website address)
+  on the trader's own website and in contract templates.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pl"
+     lga:act="PL-ADR" lga:jurisdiction="PL" lga:act-type="Statute"
+     lga:url="https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html">
+  <meta>
+    <title>Ustawa z dnia 23 września 2016 r. o pozasądowym rozwiązywaniu sporów konsumenckich</title>
+    <date>2016-11-01</date>
+  </meta>
+
+  <section num="art. 31" source="adr.fragment.html">
+    <paragraph num="1." lga:provision="PL-ADR-art31-1" lga:citation="art. 31 ust. 1 ustawy o pozasądowym rozwiązywaniu sporów konsumenckich" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Przedsiębiorca, który zobowiązał się albo jest obowiązany na podstawie odrębnych przepisów do korzystania z pozasądowego rozwiązywania sporów z konsumentami, informuje konsumentów o podmiocie uprawnionym, który jest właściwy dla tego przedsiębiorcy.</paragraph>
+    <paragraph num="2." lga:provision="PL-ADR-art31-2" lga:citation="art. 31 ust. 2 ustawy o pozasądowym rozwiązywaniu sporów konsumenckich" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Informacja, o której mowa w ust. 1, obejmująca co najmniej adres strony internetowej podmiotu uprawnionego, jest udostępniana w sposób zrozumiały i łatwo dostępny dla konsumenta, w tym:
+      <list>
+        <item num="1)" lga:requires="DisputeResolutionBody">na stronie internetowej przedsiębiorcy, jeżeli przedsiębiorca taką prowadzi;</item>
+        <item num="2)" lga:requires="DisputeResolutionBody">we wzorcach umów zawieranych z konsumentami, o ile przedsiębiorca takie stosuje.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="art. 32" source="adr-32.fragment.html">
+    <paragraph num="1." lga:provision="PL-ADR-art32-1" lga:citation="art. 32 ust. 1 ustawy o pozasądowym rozwiązywaniu sporów konsumenckich" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionStatement">W przypadku gdy w następstwie złożonej przez konsumenta reklamacji spór nie został rozwiązany, przedsiębiorca przekazuje konsumentowi na papierze lub innym trwałym nośniku oświadczenie o:
+      <list>
+        <item num="1)" lga:requires="DisputeResolutionStatement">zamiarze wystąpienia z wnioskiem o wszczęcie postępowania w sprawie pozasądowego rozwiązywania sporów konsumenckich albo zgodzie na udział w takim postępowaniu albo</item>
+        <item num="2)" lga:requires="DisputeResolutionStatement">odmowie wzięcia udziału w postępowaniu w sprawie pozasądowego rozwiązywania sporów konsumenckich.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2." lga:provision="PL-ADR-art32-2" lga:citation="art. 32 ust. 2 ustawy o pozasądowym rozwiązywaniu sporów konsumenckich" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody">W przypadku, o którym mowa w ust. 1 pkt 1, przedsiębiorca wraz z oświadczeniem przekazuje informację o podmiocie uprawnionym właściwym dla danego przedsiębiorcy.</paragraph>
+    <paragraph num="3." lga:provision="PL-ADR-art32-3" lga:citation="art. 32 ust. 3 ustawy o pozasądowym rozwiązywaniu sporów konsumenckich" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html" lga:regulates="ConsumerDisputeResolution">Jeżeli przedsiębiorca nie złożył żadnego oświadczenia, uznaje się, że wyraża zgodę na udział w postępowaniu w sprawie pozasądowego rozwiązywania sporów konsumenckich.</paragraph>
+  </section>
+</law>

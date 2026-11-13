@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Wetboek van economisch recht, art. XII.6, written in schemas/law.xsd from the
+  Justel consolidated text (Dutch version). The words are the legislator's; only
+  the structure is ours. Belgium asks for the ondernemingsnummer rather than a
+  named register (4°) and keeps the Directive's codes-of-conduct item (8°) that
+  several transpositions drop. The insertion footnote "(1) Ingevoegd bij
+  W 2013-12-15/51" sits in the fragment after the article text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="nl"
+     lga:act="BE-WER" lga:jurisdiction="BE" lga:act-type="Code"
+     lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel">
+  <meta>
+    <title>Wetboek van economisch recht</title>
+    <date>2013-02-28</date>
+  </meta>
+
+  <section num="Art. XII.6" title="Informatieverplichtingen" source="be-xii6.fragment.html">
+    <paragraph num="§ 1." lga:provision="BE-WER-XII-6-1" lga:citation="art. XII.6, § 1 WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Onverminderd de overige wettelijke en reglementaire informatievoorschriften zorgt elke dienstverlener van de informatiemaatschappij ervoor dat de afnemers van de dienst en de bevoegde autoriteiten gemakkelijk, rechtstreeks en permanent toegang krijgen tenminste tot de volgende informatie :
+      <list>
+        <item num="1°" lga:requires="ProviderName">zijn naam of handelsnaam;</item>
+        <item num="2°" lga:requires="GeographicAddress">het geografische adres waar de dienstverlener is gevestigd;</item>
+        <item num="3°" lga:requires="EmailAddress RapidContact">nadere gegevens die een snel contact en een rechtstreekse en effectieve communicatie met hem mogelijk maken, met inbegrip van zijn elektronisch postadres;</item>
+        <item num="4°" lga:requires="RegisterEntry">desgevallend het ondernemingsnummer;</item>
+        <item num="5°" lga:requires="SupervisoryAuthority">wanneer een activiteit aan een vergunningsstelsel is onderworpen, de gegevens over de bevoegde toezichthoudende autoriteit;</item>
+        <item num="6°" lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">wat gereglementeerde beroepen betreft :
+          <list>
+            <item num="" lga:requires="ProfessionalBody">a)de beroepsvereniging of beroepsorganisatie waarbij de dienstverlener is ingeschreven,</item>
+            <item num="b)" lga:requires="ProfessionalTitle">de beroepstitel en de staat waar die is toegekend,</item>
+            <item num="c)" lga:requires="ProfessionalRules">een verwijzing naar de van toepassing zijnde beroepsregels en de wijze van toegang ertoe;</item>
+          </list>
+        </item>
+        <item num="7°" lga:requires="VatId">wanneer de dienstverlener een aan de belasting over de toegevoegde waarde onderworpen activiteit uitoefent, het identificatienummer zoals bedoeld in artikel 50 van het Wetboek van de belasting over de toegevoegde waarde;</item>
+        <item num="8°" lga:requires="CodesOfConduct">de gedragscodes die hij desgevallend heeft onderschreven, alsook de informatie over de manier waarop die codes langs elektronische weg kunnen worden geraadpleegd.</item>
+      </list>
+    </paragraph>
+    <paragraph num="§ 2." lga:provision="BE-WER-XII-6-2" lga:citation="art. XII.6, § 2 WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Onverminderd de overige wettelijke en reglementaire voorschriften op het gebied van prijsaanduiding moeten de diensten van de informatiemaatschappij die naar prijzen verwijzen, deze duidelijk en ondubbelzinnig aangeven en meer in het bijzonder vermelden of belasting en leveringskosten inbegrepen zijn.</paragraph>
+  </section>
+  <section num="art. XVI.4" source="be-xvi4.fragment.html">
+    <paragraph num="§ 1." lga:provision="BE-WER-XVI-4-1" lga:citation="art. XVI.4, § 1 WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1">Wanneer een onderneming door een wettelijke of reglementaire bepaling, door een gedragscode die ze heeft onderschreven, als gevolg van het lidmaatschap van een handelsvereniging, een beroepsorganisatie of een beroepsorde of op grond van een bepaling uit haar eigen algemene of bijzondere verkoopsvoorwaarden gehouden is tot buitengerechtelijke regeling van consumentengeschillen, brengt zij de consument hiervan op de hoogte op een heldere, begrijpelijke en makkelijk toegankelijke manier.</paragraph>
+    <paragraph num="§ 2." lga:provision="BE-WER-XVI-4-2" lga:citation="art. XVI.4, § 2 WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">De inlichtingen bedoeld in de vorige paragraaf geven aan hoe gedetailleerde informatie kan worden verkregen over de kenmerken en de toepassingsvoorwaarden van deze buitengerechtelijke regeling van consumentengeschillen en vermelden de contactgegevens en het adres van de website van de betrokken gekwalificeerde entiteit. Desgevallend worden deze inlichtingen hernomen op de website en in de algemene verkoopsvoorwaarden van de onderneming.</paragraph>
+    <paragraph num="§ 3." lga:provision="BE-WER-XVI-4-3" lga:citation="art. XVI.4, § 3 WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">Wanneer een consumentengeschil binnen een redelijke termijn geen oplossing krijgt in toepassing van artikel XVI.3, verstrekt de onderneming op eigen initiatief aan de consument de inlichtingen bedoeld in de paragrafen 1 en 2 en vermeldt hierbij of zij gebonden is tot dan wel bereid is beroep te doen op een buitenrechtelijke regeling van het consumentengeschil met vermelding van de coördinaten van de bevoegde entiteit. Er wordt tevens meegedeeld of deze entiteit een gekwalificeerde entiteit is. [ 2 Wanneer de entiteit niet gekwalificeerd is, worden de coördinaten van de Consumentenombudsdienst, bedoeld in artikel XVI.5, meegedeeld.] 2 Deze inlichtingen worden schriftelijk of op een andere duurzame gegevensdrager verstrekt.</paragraph>
+    <paragraph num="§ 4." lga:provision="BE-WER-XVI-4-4" lga:citation="art. XVI.4, § 4 WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ConsumerDisputeResolution">De onderneming heeft de plicht aan te tonen dat er aan de eisen voorzien in de artikelen [ 3 XVI.2 tot XVI.4, §§ 1 tot 3, en in artikel 14 van de Verordening (EU) nr. 524/2013 van het Europees Parlement en de Raad van 21 mei 2013 betreffende onlinebeslechting van consumentengeschillen en tot wijziging van Verordening (EG) nr. 2006/2004 en Richtlijn 2009/22/EG] 3 is voldaan en dat de verstrekte informatie juist is.</paragraph>
+  </section>
+  <section num="art. III.25" source="be-iii25.fragment.html">
+    <!-- National identifier duty (L4): outgoing documents carry the
+         ondernemingsnummer and at least one EEA payment-account number; the
+         payment-account item has no vocabulary entry (same as HR 21(4) bank
+         accounts), reported for the rules agent. Amendment markers [n]
+         are quoted verbatim as in the justel original. -->
+    <paragraph lga:provision="BE-WER-III-25-1" lga:citation="art. III.25, eerste lid WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">Alle akten, facturen, aankondigingen, bekendmakingen, brieven, orders en andere stukken uitgaande van [ 3 inschrijvingsplichtige ondernemingen] 3 dienen steeds het ondernemingsnummer te vermelden.</paragraph>
+    <paragraph lga:provision="BE-WER-III-25-2" lga:citation="art. III.25, tweede lid WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ProviderIdentification" lga:requires="PaymentAccount">Deze documenten moeten eveneens de domiciliëring en het nummer vermelden van ten minste één betaalrekening waarvan de inschrijvingsplichtige onderneming houdster is bij een kredietinstelling gevestigd in de Europese Economische Ruimte en waarop de Richtlijn (EU) 2015/2366 van het Europees Parlement en de Raad van 25 november 2015 betreffende betalingsdiensten in de interne markt, houdende wijziging van de Richtlijnen 2002/65/EG, 2009/110/EG en 2013/36/EU en Verordening (EU) nr. 1093/2010 en houdende intrekking van Richtlijn 2007/64/EG van toepassing is.</paragraph>
+    <paragraph lga:provision="BE-WER-III-25-3" lga:citation="art. III.25, derde lid WER" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">De voor de uitoefening van [ 3 de economische activiteit van de inschrijvingsplichtige onderneming] 3 gebruikte [ 3 ...] 3 marktkramen, evenals de vervoermiddelen, die hoofdzakelijk worden gebruikt in het kader van de uitoefening [ 3 van ambulante activiteiten] 3 , of, in het geval van werkgevers, in het kader van een activiteit van burgerlijke of utiliteitsbouw of een activiteit van reinigen van het interieur van gebouwen, dragen op zichtbare wijze het ondernemingsnummer. De Koning kan, bij een besluit vastgesteld na overleg in de ministerraad, de in het kader van het derde lid vermelde activiteiten waarvoor de gebruikte vervoermiddelen op zichtbare wijze het ondernemingsnummer dragen, wijzigen.</paragraph>
+  </section>
+</law>

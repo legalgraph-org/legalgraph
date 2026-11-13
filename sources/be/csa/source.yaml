@@ -1,0 +1,27 @@
+# Wetboek van vennootschappen en verenigingen (WVV/CSA), wet van 23 maart 2019.
+# Art. 2:20 is the company-law disclosure duty: every deed, invoice, letter,
+# order form, WEBSITE and other document of a legal person must carry its name,
+# legal form, seat, enterprise number, "rechtspersonenregister"/RPR + the court
+# of the seat, and where applicable its e-mail address, website and liquidation
+# status. Art. 2:21 is the capital-on-websites rule for NV/SE/SCE; art. 2:22 the
+# personal-liability clause. The consolidated text is served by Justel; the
+# fragment between the Art.2:20 and Art.2:22/1 anchors is kept verbatim
+# (re-encoded to UTF-8: the page serves windows-1252).
+id: be/csa
+title: Wetboek van vennootschappen en verenigingen (art. 2:20–2:22)
+jurisdiction: BE
+language: nl
+publisher: Belgisch Staatsblad / Justel, ejustice.just.fgov.be
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 8 van de wet van 30 juni 1994 betreffende het auteursrecht: officiële akten zijn niet auteursrechtelijk beschermd"
+originals:
+  - file: be-2-20.fragment.html
+    url: "https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated Justel page between the 'Art.2:20' and 'Art.2:22/1' anchors, re-encoded to UTF-8 (the page serves windows-1252). Downloaded 2026-11-12. Consolidation updated to 02-04-2026."
+    retrieved_on: 2026-11-12
+    sha256: f5910dc32b8a8fe09f94caf20c9fa07cd470292250597a1a3b5715703e282584
+annotated: csa.law.xml

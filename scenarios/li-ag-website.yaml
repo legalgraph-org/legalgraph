@@ -1,0 +1,17 @@
+name: Liechtenstein AG with a company website
+description: >
+  An AG in the Liechtenstein commercial register with a VAT ID and a website presenting its
+  services. Its imprint follows Art. 5 ECG (LGBl. 2003 Nr. 133), a close copy of the Austrian § 5
+  ECG, so the national rules replace the EU family one to one.
+established_in: LI
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - LI-R-company-website
+  - LI-R-impressum
+  - LI-R-impressum-register
+  - LI-R-impressum-vat

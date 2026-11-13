@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 265/2022 Z. z. o vydavateľoch publikácií a o registri v oblasti
+  médií a audiovízie (zákon o publikáciách), § 5, written in
+  schemas/law.xsd from the static.slov-lex.sk version mirror. The words are
+  the Slovak legislature's; only the structure is ours. § 5(3) is the duty
+  that reaches websites: an operator of a news web portal (spravodajský
+  webový portál) must mark the portal with the publication's name and the
+  communication's publication and update dates, and carry the operator
+  data of § 5(1)(d) (name, seat and organisation number, or business name,
+  place of business and organisation number, or name, surname and permanent
+  address) plus the publication's evidenčné číslo of § 5(1)(h). § 5(2)
+  extends the § 5(1) item list to electronic periodical publications. § 5(4)
+  is the press-agency analogue. Publication name, periodicity, issue date,
+  serial number, price and ISSN have no vocabulary counterpart and are left
+  untagged. The act is in force from 1 November 2025.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-PUB-265" lga:jurisdiction="SK" lga:act-type="Statute"
+     lga:url="https://static.slov-lex.sk/static/SK/ZZ/2022/265/20251101.html">
+  <meta>
+    <title>Zákon o vydavateľoch publikácií a o registri v oblasti médií a audiovízie a o zmene a doplnení niektorých zákonov (zákon o publikáciách)</title>
+    <date>2022-06-22</date>
+  </meta>
+
+  <section num="§ 5" source="pub265-5.fragment.html">
+    <paragraph num="(1)" lga:provision="SK-PUB-265-s5-1" lga:citation="§ 5 ods. 1 zákona č. 265/2022 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2022/265/20251101.html" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress RegisterEntry">Vydavateľ periodickej publikácie je povinný zabezpečiť, aby každé vydanie periodickej tlače obsahovalo
+      <list>
+        <item num="a)">názov periodickej publikácie,</item>
+        <item num="b)">názov regionálnej alebo jazykovej mutácie periodickej publikácie a označenie, že ide o regionálne alebo jazykové vydanie periodickej publikácie, ak je periodická publikácia vydávaná alebo sprístupňovaná verejnosti v zmenenej podobe z hľadiska územného rozsahu alebo jazyka vydávania,</item>
+        <item num="c)">periodicitu,</item>
+        <item num="d)">údaje o vydavateľovi periodickej publikácie, a to
+          <list>
+            <item num="1.">názov, sídlo a identifikačné číslo organizácie, ak je vydavateľ periodickej publikácie právnickou osobou,</item>
+            <item num="2.">obchodné meno, miesto podnikania a identifikačné číslo organizácie, ak je vydavateľ periodickej publikácie fyzickou osobou – podnikateľom,</item>
+            <item num="3.">meno, priezvisko a adresu trvalého pobytu na území Slovenskej republiky, ak je vydavateľ periodickej publikácie fyzickou osobou,</item>
+          </list>
+        </item>
+        <item num="e)">dátum vydania, poradové číslo v kalendárnom roku a ročník vydania periodickej publikácie,</item>
+        <item num="f)">cenu výtlačku alebo inej kópie periodickej publikácie,</item>
+        <item num="g)">medzinárodné štandardné číslo seriálu (ISSN), ak bolo pridelené,</item>
+        <item num="h)">evidenčné číslo periodickej publikácie; to neplatí počas konania o zápis do zoznamu podľa § 3 .</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="SK-PUB-265-s5-2" lga:citation="§ 5 ods. 2 zákona č. 265/2022 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2022/265/20251101.html" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress RegisterEntry">Vydavateľ periodickej publikácie je povinný zabezpečiť, aby každé vydanie elektronickej periodickej publikácie obsahovalo informácie podľa odseku 1 alebo aby boli tieto informácie uvedené v sprievodnom texte, ktorý je s elektronickou periodickou publikáciou spojený a ľahko prístupný verejnosti.</paragraph>
+    <paragraph num="(3)" lga:provision="SK-PUB-265-s5-3" lga:citation="§ 5 ods. 3 zákona č. 265/2022 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2022/265/20251101.html" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress RegisterEntry">Prevádzkovateľ spravodajského webového portálu je povinný zabezpečiť, aby spravodajský webový portál bol označený názvom, dátumom zverejnenia komunikátu, dátumom aktualizácie zverejneného komunikátu, a aby obsahoval údaje o prevádzkovateľovi spravodajského webového portálu v rozsahu podľa odseku 1 písm. d) a údaj podľa odseku 1 písm. h).</paragraph>
+    <paragraph num="(4)" lga:provision="SK-PUB-265-s5-4" lga:citation="§ 5 ods. 4 zákona č. 265/2022 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2022/265/20251101.html" lga:regulates="MediaOwnerDisclosure">Tlačová agentúra je povinná zabezpečiť, aby bol agentúrny servis označený názvom tlačovej agentúry a dátumom zverejnenia.</paragraph>
+  </section>
+</law>

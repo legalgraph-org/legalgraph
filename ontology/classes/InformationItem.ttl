@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:InformationItem a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Information item"@en ;
+    rdfs:comment "A piece of information a disclosure must contain, such as the operator's name, geographic address or VAT ID."@en .

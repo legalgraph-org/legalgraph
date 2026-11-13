@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Kodeks spółek handlowych website duties, written in schemas/law.xsd from the
+  ISAP consolidated text (obwieszczenie, Dz.U. 2024 poz. 18). The words are the
+  legislator's; only the structure is ours. Since 1 January 2023 each company
+  form carries the same list on letters and on the company's website: firm name,
+  seat and address, registry court and register number, NIP, and capital —
+  sp. z o.o. adds the unpaid-capital note for template-formed companies and a
+  group-of-companies designation; PSA and SA add the group designation.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pl"
+     lga:act="PL-KSH" lga:jurisdiction="PL" lga:act-type="Statute"
+     lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html">
+  <meta>
+    <title>Ustawa z dnia 15 września 2000 r. — Kodeks spółek handlowych</title>
+    <date>2024-01-05</date>
+  </meta>
+
+  <section num="Art. 127" title="Firma spółki komandytowo-akcyjnej" source="ksh-127.fragment.html">
+    <paragraph num="§ 5." lga:provision="PL-KSH-art127-5" lga:citation="art. 127 § 5 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Pisma i zamówienia handlowe składane przez spółkę komandytowo-akcyjną w formie papierowej i elektronicznej, a także informacje na stronach internetowych spółki powinny zawierać:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress">firmę spółki, jej siedzibę i adres;</item>
+        <item num="2)" lga:requires="RegisterEntry">oznaczenie sądu rejestrowego, w którym przechowywana jest dokumentacja spółki oraz numer pod którym spółka jest wpisana do rejestru;</item>
+        <item num="3)" lga:requires="TaxId">numer identyfikacji podatkowej (NIP);</item>
+        <item num="4)" lga:requires="ShareCapital">wysokość kapitału zakładowego i kapitału wpłaconego.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="Art. 206" title="Obowiązki informacyjne spółki z o.o." source="ksh-206.fragment.html">
+    <paragraph num="§ 1." lga:provision="PL-KSH-art206-1" lga:citation="art. 206 § 1 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Pisma i zamówienia handlowe składane przez spółkę w formie papierowej i elektronicznej, a także informacje na stronach internetowych spółki, powinny zawierać:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress">firmę spółki, jej siedzibę i adres;</item>
+        <item num="2)" lga:requires="RegisterEntry">oznaczenie sądu rejestrowego, w którym przechowywana jest dokumentacja spółki oraz numer pod którym spółka jest wpisana do rejestru;</item>
+        <item num="3)" lga:requires="TaxId">numer identyfikacji podatkowej (NIP);</item>
+        <item num="4)" lga:requires="ShareCapital">wysokość kapitału zakładowego, a dla spółki, której umowę zawarto przy wykorzystaniu wzorca umowy, do czasu pokrycia kapitału zakładowego, także informację, że wymagane wkłady na kapitał zakładowy nie zostały wniesione;</item>
+        <item num="5)">oznaczenie grupy spółek, jeżeli spółka do niej należy.</item>
+      </list>
+    </paragraph>
+    <paragraph num="§ 3." lga:provision="PL-KSH-art206-3" lga:citation="art. 206 § 3 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification">Przepis § 1 stosuje się odpowiednio do oddziału spółki z ograniczoną odpowiedzialnością mającej siedzibę za granicą.</paragraph>
+  </section>
+
+  <section num="Art. 300(61)" title="Obowiązki informacyjne prostej spółki akcyjnej" source="ksh-300-61.fragment.html">
+    <paragraph num="§ 1." lga:provision="PL-KSH-art300-61-1" lga:citation="art. 300(61) § 1 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Pisma i zamówienia handlowe składane przez spółkę w formie papierowej i elektronicznej, a także informacje na stronach internetowych spółki powinny zawierać:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress">firmę spółki, jej siedzibę i adres;</item>
+        <item num="2)" lga:requires="RegisterEntry">oznaczenie sądu rejestrowego, w którym przechowywana jest dokumentacja spółki, oraz numer, pod którym spółka jest wpisana do rejestru;</item>
+        <item num="3)" lga:requires="TaxId">numer identyfikacji podatkowej (NIP);</item>
+        <item num="4)" lga:requires="ShareCapital">wysokość kapitału akcyjnego;</item>
+        <item num="5)">oznaczenie grupy spółek, jeżeli spółka do niej należy.</item>
+      </list>
+    </paragraph>
+    <paragraph num="§ 2." lga:provision="PL-KSH-art300-61-2" lga:citation="art. 300(61) § 2 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification">W pismach i zamówieniach handlowych składanych przez spółkę w formie papierowej zamiast wysokości kapitału akcyjnego z dnia sporządzenia pisma albo zamówienia handlowego spółka może wykazać kapitał akcyjny według stanu na ostatni dzień poprzedniego roku obrotowego ze wskazaniem tego dnia. Jeżeli spółka nie była zobowiązana do sporządzenia sprawozdania finansowego na ostatni dzień poprzedniego roku obrotowego, wykazuje wysokość kapitału akcyjnego na dzień wpisu spółki do rejestru.</paragraph>
+  </section>
+
+  <section num="Art. 374" title="Obowiązki informacyjne spółki akcyjnej" source="ksh-374.fragment.html">
+    <paragraph num="§ 1." lga:provision="PL-KSH-art374-1" lga:citation="art. 374 § 1 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Pisma i zamówienia handlowe składane przez spółkę w formie papierowej i elektronicznej, a także informacje na stronach internetowych spółki powinny zawierać:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress">firmę spółki, jej siedzibę i adres;</item>
+        <item num="2)" lga:requires="RegisterEntry">oznaczenie sądu rejestrowego, w którym przechowywana jest dokumentacja spółki oraz numer pod którym spółka jest wpisana do rejestru;</item>
+        <item num="3)" lga:requires="TaxId">numer identyfikacji podatkowej (NIP);</item>
+        <item num="4)" lga:requires="ShareCapital">wysokość kapitału zakładowego i kapitału wpłaconego;</item>
+        <item num="5)">oznaczenie grupy spółek, jeżeli spółka do niej należy.</item>
+      </list>
+    </paragraph>
+    <paragraph num="§ 4." lga:provision="PL-KSH-art374-4" lga:citation="art. 374 § 4 KSH" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html" lga:regulates="ProviderIdentification">Przepis § 1 stosuje się odpowiednio do oddziału spółki akcyjnej mającej siedzibę za granicą.</paragraph>
+  </section>
+</law>

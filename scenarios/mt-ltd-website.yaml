@@ -1,0 +1,17 @@
+name: Maltese limited company with a company website
+description: >
+  A limited liability company in the Malta Business Registry with a VAT ID and a website presenting
+  its services. Article 8C(1) Cap. 426 follows the Directive's list; it sends no marketing e-mail,
+  so the opt-out item (h) does not apply.
+established_in: MT
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - MT-R-company-website
+  - MT-R-impressum
+  - MT-R-impressum-register
+  - MT-R-impressum-vat

@@ -161,6 +161,7 @@ lg:NO-EHL-source-1
     a lgo:SourceDocument ;
     dcterms:language "no"^^xsd:language ;
     lgo:annotatedFile "sources/no/ecommerce/ehl.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 14 åndsverkloven: laws and regulations are not protected by copyright" ;
     lgo:mediaType "text/html" ;
@@ -173,6 +174,7 @@ lg:NO-EHL-source-2
     a lgo:SourceDocument ;
     dcterms:language "no"^^xsd:language ;
     lgo:annotatedFile "sources/no/ecommerce/ehl.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 14 åndsverkloven: laws and regulations are not protected by copyright" ;
     lgo:mediaType "text/html" ;

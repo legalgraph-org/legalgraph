@@ -1,0 +1,215 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:LI-ECG-art5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ee9fa1903695be467f0eeeb8feab082cf0ff66e020506ab8699273d79aafc681" ;
+    lgo:text """1) A service provider shall make the following information easily, directly and permanently accessible to users at all times:
+a) its name or business name;
+b) the geographic address at which it is established;
+c) details allowing users to contact it rapidly and communicate with it directly, including its email address;
+d) where applicable, the commercial register number;
+e) where the activity is subject to official supervision, the supervisory authority competent for it;
+f) for a service provider subject to trade or professional regulations, the chamber, professional association or similar body to which it belongs, the professional title and the contracting state in which it was granted, and a reference to the applicable trade or professional regulations and how to access them;
+g) where applicable, the VAT number."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-ECG-art5-1-q1 .
+
+lg:LI-ECG-art5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "34cd2ac8b6f7b19ce1e171310ed8d6f68768c693f6d6ab182fc1682feea02b5b" ;
+    lgo:text "2) Where prices are quoted in information society services, they must be presented so that an averagely attentive observer can easily read and attribute them. It must be clearly discernible whether the prices are quoted inclusive of VAT and all other duties and surcharges (gross prices) or not. It must also be stated whether shipping costs are included."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-ECG-art5-2-q1 .
+
+lg:LI-ECG-title-813436c1dfc4-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "813436c1dfc43e49f74cb0e31e7b2ae3499a8e95c07e8a431097c1109b0a19e5" ;
+    lgo:text "Act of 16 April 2003 on electronic commerce (E-Commerce Act; ECG)"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-ECG .
+
+lg:LI-MEDIENG-art11-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8554ca62e9202b94ce52e4a3862315cd79a111e62dba1c2478611682e3eb9887" ;
+    lgo:text """1) Every medium distributed in Liechtenstein must contain the following information:
+a) the name or firm of the media owner and the editorial seat;
+b) for media products also the name or firm of the manufacturer and the place of manufacture."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art11-1-q1 .
+
+lg:LI-MEDIENG-art11-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "28e81e612395a9b9b9787c6571e8a3387378cae945343b202e80a5d41de4dc74" ;
+    lgo:text """2) Every periodical medium distributed in Liechtenstein must additionally contain the following information:
+a) the postal address and electronic contact details of the media owner and the editorial office;
+b) the name, postal address and electronic contact details of the publisher;
+c) where applicable, the competent regulatory or supervisory authorities."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art11-2-q1 .
+
+lg:LI-MEDIENG-art11-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fbbe8cde85a8da18d69acca3806ac096311d80d5445645e2422ee4cc467099e3" ;
+    lgo:text "3) Periodic media that regularly take over parts of the journalistic-editorial content of another medium ready-made must also indicate the person responsible for the part taken over."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art11-3-q1 .
+
+lg:LI-MEDIENG-art11-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b4a1e9994f620d99b7201924206b8ccdfb7e64462e72883753a484550f47dc48" ;
+    lgo:text "4) For broadcasting programmes, the information under paragraphs 1 to 3 must be published on the broadcaster's website so that it is constantly easy and direct to find. In addition, the person responsible for the content must be announced at the beginning or end of each broadcast."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art11-4-q1 .
+
+lg:LI-MEDIENG-art12-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "10dcffebe312818ebb4550b8b90f95425054006bde509bba1cf4652ae7fb38cc" ;
+    lgo:text "1) The media owner of every periodical medium must publish the information referred to in paragraphs 2 to 4. For periodical media products this publication is to be made in the first issue after the beginning of the calendar year, following the imprint. For electronic media this information must be published in the medium itself or in an attributable on-demand audiovisual media service or video-sharing platform service so that it is constantly easy and direct to find."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art12-1-q1 .
+
+lg:LI-MEDIENG-art12-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5a7607f3b9fe660b2ce04f6fd12815fd4df88b6c558607661ad8cfa2dc5c9861" ;
+    lgo:text "2) To be indicated are the media owner with name or firm, business purpose, residence or seat (establishment) and the names of the organs authorised to represent the media owner. Furthermore, for all persons directly or indirectly participating in a media owner, the respective ownership, participation, share and voting rights relationships must be indicated. Moreover, any silent participations in the media owner and in persons directly or indirectly participating in it within the meaning of the preceding sentence must be indicated and trust relationships disclosed for every level. In the case of direct or indirect participation of foundations, the founder and the respective beneficiaries of the foundation must also be disclosed. If the media owner is an association or an association participates directly or indirectly in the media owner, its board and the association's purpose must be indicated for the association. Directly or indirectly participating persons, trustees, founders and beneficiaries of a foundation are obliged, upon request by the media owner, to communicate to it the information required for the fulfilment of its disclosure obligation."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art12-2-q1 .
+
+lg:LI-MEDIENG-art12-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "740e3b18f260c304df404d21dad27ac905f2731af0f0389c05f82398bcc56bff" ;
+    lgo:text "3) If a person to be indicated under the preceding provisions is at the same time the owner of another media undertaking or another media agency or participates in such undertakings in the manner and to the extent specified in paragraph 2, the firm, the business purpose and the seat of that undertaking must also be stated."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art12-3-q1 .
+
+lg:LI-MEDIENG-art12-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "df1aedb99fbbc017716647d26cf88469d361abe43ab7326b33c96d9f6abeec36" ;
+    lgo:text "4) Furthermore, a statement on the fundamental direction of the periodical medium must be published. Within the meaning of Art. 20, changes and additions to the fundamental direction only take effect once they have been published."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art12-4-q1 .
+
+lg:LI-MEDIENG-art12-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "cdd77db4a6a73c6a00a0ee421da9de423391689528970af789d4b8b3cdcfc80c" ;
+    lgo:text """5) A media service provider must additionally indicate:
+a) the state whose jurisdiction it is subject to; and
+b) the competent regulatory and supervisory authorities."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art12-5-q1 .
+
+lg:LI-MEDIENG-art12-6-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "18c79afa4b0c3258955144138ff6088d51c8e21fc400a29cae0bab4f47f59da2" ;
+    lgo:text "6) For an on-demand audiovisual media service that has no informational content capable of influencing public opinion formation, paragraph 2 applies with the proviso that only the name or firm, where applicable the business purpose, and the residence or seat of the media service provider together with electronic contact details must be indicated. Paragraphs 3 to 5 do not apply to such services."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG-art12-6-q1 .
+
+lg:LI-MEDIENG-title-96b7f75e7233-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "96b7f75e72332a32356eeb6eed2a0904a1a3f43fa0808aa38d8f1ade1145d67b" ;
+    lgo:text "Media Act (Mediengesetz) of 19 October 2005"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-MEDIENG .
+
+lg:LI-PGR-art120a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "00d7ad889c16eb92f60e3fa9a3bfb804d86834acdc772b3a72b671c499b062d5" ;
+    lgo:text """1) On all letters and order forms, regardless of whether they are drawn up on paper or in another manner, and on the websites used by public limited companies, partnerships limited by shares or limited liability companies, the following must be stated:
+1. the company name and the respective legal form;
+2. the registered seat of the company;
+3. where applicable, the fact that the company is in liquidation;
+4. the particulars required to identify the register in which the company is entered; and
+5. the number under which the company is entered in the register."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-PGR-art120a-1-q1 .
+
+lg:LI-PGR-art120a-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "06cc1afc5fe4e048a6c2ade48c446898bf3ee8d8b911476ab37e35b1cba30232" ;
+    lgo:text "2) Where the company capital is stated on these letters, order forms and websites of the company, the subscribed and paid-up capital must be indicated."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-PGR-art120a-2-q1 .
+
+lg:LI-PGR-art120a-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c2463f092a35b0a74a2a2bad137186ccca7cd2c747f62d19f51669872d56bf02" ;
+    lgo:text """3) On all letters, order forms and websites used by a branch of a company within the meaning of para. 1 having its seat abroad, the following must be stated in addition to the particulars concerning the company:
+1. the particulars required to identify the register in which the branch is entered; and
+2. the number under which the branch itself is entered."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-PGR-art120a-3-q1 .
+
+lg:LI-PGR-title-fe90bec09677-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fe90bec0967796fb07164b05848fdc484d8474dde2c16f7643d7a468d8de090a" ;
+    lgo:text "Persons and Companies Act (PGR)"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-PGR .

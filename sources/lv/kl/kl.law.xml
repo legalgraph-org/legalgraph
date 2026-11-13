@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Komerclikums 17. pants, written in schemas/law.xsd from the likumi.lv
+  consolidated text. The words are the Saeima's; only the structure is ours.
+  (1) covers letters, invoices and other documents in paper or electronic form,
+  "kā arī komersanta mājaslapā" — and the merchant's website. (2) adds branch
+  particulars; (3) was repealed with effect 1.7.2023.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="lv"
+     lga:act="LV-KL" lga:jurisdiction="LV" lga:act-type="Statute"
+     lga:url="https://likumi.lv/ta/id/5490-komerclikums">
+  <meta>
+    <title>Komerclikums</title>
+    <date>2000-04-13</date>
+  </meta>
+
+  <section num="17.pants." title="Komersanta rekvizīti" source="kl-17.fragment.html">
+    <paragraph num="(1)" lga:provision="LV-KL-art17-1" lga:citation="Komerclikuma 17. panta 1. daļa" lga:url="https://likumi.lv/ta/id/5490-komerclikums" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Komersanta darījumu vēstulēs, rēķinos un citos dokumentos papīra vai elektroniskā formā, kā arī komersanta mājaslapā norāda:
+      <list>
+        <item num="1)" lga:requires="ProviderName">komersanta firmu;</item>
+        <item num="2)" lga:requires="RegisterEntry">komersanta reģistrācijas numuru komercreģistrā;</item>
+        <item num="3)" lga:requires="GeographicAddress">komersanta juridisko adresi;</item>
+        <item num="4)" lga:requires="LiquidationStatus">attiecīgos gadījumos — ziņas par to, ka komersants ir likvidācijas vai maksātnespējas procesā.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="LV-KL-art17-2" lga:citation="Komerclikuma 17. panta 2. daļa" lga:url="https://likumi.lv/ta/id/5490-komerclikums" lga:regulates="ProviderIdentification">Ja komersants atvēris filiāli, tās dokumentos papīra vai elektroniskā formā papildus šā panta pirmajā daļā minētajām ziņām norāda:
+      <list>
+        <item num="1)" lga:requires="ProviderName">filiāles firmu, ja tā atšķiras no komersanta firmas;</item>
+        <item num="2)" lga:requires="RegisterEntry">filiāles reģistrācijas numuru komercreģistrā;</item>
+        <item num="3)" lga:requires="GeographicAddress">filiāles juridisko adresi.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

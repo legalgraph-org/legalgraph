@@ -10,19 +10,152 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-lg:SE-SFS-2002-562-s8-q1-en
+lg:SE-ABL-k28-s5-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "19b9050c8a8de8d72934278944f183031fbc6a42268c9448fc1374326deb663e" ;
-    lgo:text """Section 8 When a service provider provides information society services, the provider shall give information about its name, its address in the state of establishment and its e-mail address and, where applicable,
+    lgo:sourceTextSha256 "e9de0bd7faebfaa0e528ca980b94fce5dbf66e2832f9882445d76d5a19fda1f5" ;
+    lgo:text "A limited company's letters, invoices, order forms and websites shall state the company's business name, the place where the board of directors has its seat, and the company's organisation number under the Act (1974:174) on identification codes for legal persons etc. If the company has gone into liquidation, this shall also be stated."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ABL-k28-s5-1-q1 .
+
+lg:SE-ABL-k28-s5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "74ddbfdf1b7c1858a6bf05a162cb1f8317b68e9d719b34bf94c5bafdf1e5e4ed" ;
+    lgo:text "Where there are special reasons, the Swedish Companies Registration Office may permit a limited company not to state the company's business name on its websites. In that case, information shall instead be provided that the company is a limited company and of the company category. Such a permit shall be limited to a specified period and may be made subject to conditions."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ABL-k28-s5-2-q1 .
+
+lg:SE-ABL-title-53e9a1ef4761-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "53e9a1ef47613ceda7c47d713ef5e55fa019799c30f01a3ce9b9c5e6eb8e8749" ;
+    lgo:text "Companies Act (2005:551)"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ABL .
+
+lg:SE-ARL-s10-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1db42180cebed3da7c409176877518159bf54779c31c886058f2f144acb702d6" ;
+    lgo:text "A trader who has undertaken to resolve a dispute with a consumer through alternative dispute resolution shall provide clear, comprehensible and easily accessible information about the alternative dispute resolution board or boards to which the undertaking relates."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL-s10-1-q1 .
+
+lg:SE-ARL-s10-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5e5c59f1dad6fd160227abe1880398a48a972c2b443374168669ce9158f043b5" ;
+    lgo:text """The information shall be provided
+1. on the trader's websites that are directed at consumers, if any, and
+2. in any written contract terms between the trader and consumers."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL-s10-2-q1 .
+
+lg:SE-ARL-s10-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0b1a38064aa16ddaeba89a1be7bddad01683a6a58429033fd52767856432fd7b" ;
+    lgo:text "The information shall contain the web address and postal address of the dispute resolution board concerned."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL-s10-3-q1 .
+
+lg:SE-ARL-s11-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "33a1ce04a429f59f1b82cbbe48317bc5d3106a54f21a713317e8f591865f5f1e" ;
+    lgo:text "A trader who wholly or partly objects to a claim by a consumer arising from a contract between them shall at the same time inform the consumer of the alternative dispute resolution board to which the consumer may turn to have the claim examined. The trader shall also inform the consumer whether the trader intends to participate in the dispute resolution procedure."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL-s11-1-q1 .
+
+lg:SE-ARL-s11-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b0b0ff89d1ea9a5003f91fa708b2d9afe6724f78533675704f531e062d97d1a9" ;
+    lgo:text "The information referred to in the first paragraph shall be clear and comprehensible, contain the web address and postal address of the dispute resolution board concerned, and be given in a document or in some other readable and durable form accessible to the consumer."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL-s11-2-q1 .
+
+lg:SE-ARL-s12-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3ee6b64afd800b023e80eb1fddc4747d575241fb0f2df0eb33699d2e5eb79a7f" ;
+    lgo:text "12 § Provisions on consumer information to be provided by traders are found in Article 14 of the EU dispute resolution regulation."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL-s12-q1 .
+
+lg:SE-ARL-title-47cb2fac27ba-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "47cb2fac27ba6596d47d82fa32d84ad9b56ae8c5fea8c5a20c64554c524c2c2f" ;
+    lgo:text "Act (2015:671) on alternative dispute resolution in consumer relations"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-ARL .
+
+lg:SE-SFS-2002-562-s8-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "30d97cc93bb70a0eac0785eee6c912255601a0c6bae25e2421208b803930c22d" ;
+    lgo:text """When a service provider provides information society services, the provider shall give information about its name, its address in the state of establishment and its e-mail address and, where applicable,
 1. its corporate identity number,
 2. its VAT registration number, and
-3. the competent licensing authority.
-If a service provider carries on a regulated professional activity, the information shall also include details of
+3. the competent licensing authority."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-SFS-2002-562-s8-1-q1 .
+
+lg:SE-SFS-2002-562-s8-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f8e8078052695426e5da9273ef370461b8936893808b229acc466344f04b60f2" ;
+    lgo:text """If a service provider carries on a regulated professional activity, the information shall also include details of
 1. the professional title and the state in which it was obtained,
 2. the professional body or similar organisation with which the service provider is registered, and
 3. the rules that apply to the professional activity and how to access them."""@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:SE-SFS-2002-562-s8-q1 .
+    lgo:translationOf lg:SE-SFS-2002-562-s8-2-q1 .
+
+lg:SE-SFS-2002-562-s8-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "133147985ade34bebbdec1392d6228b43d849a404a1e38ac9e3165bcea79091e" ;
+    lgo:text "The information shall be available to service recipients and authorities in an easy, direct and permanent manner."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-SFS-2002-562-s8-3-q1 .
+
+lg:SE-SFS-2002-562-s8-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ecf2c06f81c52503784a37d4db29599338bc64b1a601c7a080bd1d3c48a255c1" ;
+    lgo:text "For providers of on-demand television and providers that provide on-demand radio and have an assignment under the Public Service Act (2025:986), Chapter 2, Section 1 of the Radio and Television Act (2010:696) also applies. Act (2025:989)."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-SFS-2002-562-s8-4-q1 .

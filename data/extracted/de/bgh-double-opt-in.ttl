@@ -210,6 +210,7 @@ lg:DE-BGH-2011-0210-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/bgh-double-opt-in/bgh-double-opt-in.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei" ;
     lgo:mediaType "application/pdf" ;

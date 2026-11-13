@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WVV/CSA art. 2:20–2:22, written in schemas/law.xsd from the Justel
+  consolidated text. The words are the legislator's; only the structure is
+  ours. Every deed, invoice, letter, order form, website and other document of
+  a Belgian legal person must carry name, legal form, seat, enterprise number,
+  "RPR" plus the court of the seat — and where applicable its e-mail address,
+  website and liquidation status. For NV/SE/SCE, capital shown on the website
+  must be the paid-up capital per the last balance sheet.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="nl"
+     lga:act="BE-CSA" lga:jurisdiction="BE" lga:act-type="Code"
+     lga:url="https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel">
+  <meta>
+    <title>Wetboek van vennootschappen en verenigingen</title>
+    <date>2019-03-23</date>
+  </meta>
+
+  <section num="Art. 2:20–2:22" title="Enige in de stukken op te nemen vermeldingen" source="be-2-20.fragment.html">
+    <paragraph num="Art. 2:20 ." lga:provision="BE-CSA-2-20" lga:citation="art. 2:20 WVV" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Alle akten, facturen, aankondigingen, bekendmakingen, brieven, orders, websites en andere stukken, al dan niet in elektronische vorm, uitgaande van een rechtspersoon moeten de volgende gegevens vermelden:
+      <list>
+        <item num="1°" lga:requires="ProviderName">de naam van de rechtspersoon;</item>
+        <item num="2°" lga:requires="LegalForm">de rechtsvorm, voluit of afgekort;</item>
+        <item num="3°" lga:requires="GeographicAddress">de nauwkeurige aanduiding van de zetel van de rechtspersoon;</item>
+        <item num="4°" lga:requires="RegisterEntry">het ondernemingsnummer;</item>
+        <item num="5°" lga:requires="RegisterEntry">het woord "rechtspersonenregister" of de afkorting "RPR", gevolgd door de vermelding van de rechtbank van de zetel van de rechtspersoon;</item>
+        <item num="6°" lga:requires="EmailAddress">in voorkomend geval, het e-mailadres en de website van de rechtspersoon;</item>
+        <item num="7°" lga:requires="LiquidationStatus">in voorkomend geval, het feit dat de rechtspersoon in vereffening is.</item>
+      </list>
+    </paragraph>
+    <paragraph num="Art. 2:21 ." lga:provision="BE-CSA-2-21" lga:citation="art. 2:21 WVV" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ShareCapital">Indien bij een naamloze vennootschap, een Europese vennootschap of een Europese coöperatieve vennootschap, de websites of de in artikel 2:20 bedoelde stukken het kapitaal van de vennootschap vermelden, dient dit het gestorte kapitaal te zijn, zoals dit blijkt uit de laatste balans. Indien hieruit blijkt dat het gestorte kapitaal is aangetast, dient melding te worden gemaakt van het nettoactief zoals dit blijkt uit de laatste balans. Ingeval een hoger bedrag is opgegeven dan overeenkomstig het eerste lid is bepaald en de vennootschap in gebreke blijft haar verplichtingen na te komen, heeft de betrokken derde het recht om van de persoon die namens de vennootschap in de akte of website is opgetreden, het herstel te vorderen van de daardoor geleden schade.</paragraph>
+    <paragraph num="Art. 2:22 ." lga:provision="BE-CSA-2-22" lga:citation="art. 2:22 WVV" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel" lga:penalises="BE-CSA-2-20">Hij die namens een rechtspersoon meewerkt aan een akte of website die niet voldoet aan de in artikel 2:20 bedoelde voorschriften kan, naar gelang van de omstandigheden, aansprakelijk worden gesteld voor de daarin door de rechtspersoon aangegane verbintenissen.</paragraph>
+  </section>
+</law>

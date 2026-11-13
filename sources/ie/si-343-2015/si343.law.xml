@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  S.I. No. 343/2015, reg. 18, written in schemas/law.xsd from the Irish
+  Statute Book made text. The words are the Irish legislature's; only the
+  structure is ours. Reg. 18 transposes Art. 13 of the ADR Directive: a
+  trader committed or obliged to use ADR names the entity with its website
+  address on its own website and in contract terms; (3)–(4) is the durable-
+  medium pointer; (5)–(6) make breach a summary offence.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="IE-SI-343-2015" lga:jurisdiction="IE" lga:act-type="Statute"
+     lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print">
+  <meta>
+    <title>European Union (Alternative Dispute Resolution for Consumer Disputes) Regulations 2015</title>
+    <date>2015-08-04</date>
+  </meta>
+
+  <section num="reg. 18" source="si-18.fragment.html">
+    <paragraph num="(1)" lga:provision="IE-SI-343-2015-r18-1" lga:citation="reg. 18(1) S.I. 343/2015" lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">A trader established in the State that has committed or is obliged to use an ADR entity to resolve disputes with consumers shall inform a consumer of the ADR entity or entities which cover that trader’s sector including the website address of the relevant ADR entities.</paragraph>
+    <paragraph num="(2)" lga:provision="IE-SI-343-2015-r18-2" lga:citation="reg. 18(2) S.I. 343/2015" lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">A trader shall provide the information referred to in paragraph (1) in a clear, comprehensible and easily accessible way—
+      <list>
+        <item num="( a )" lga:requires="DisputeResolutionBody">on the trader’s website, where one exists, and,</item>
+        <item num="( b )" lga:requires="DisputeResolutionBody">if applicable, in the general terms and conditions of sales or service contracts between the trader and a consumer.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(3)" lga:provision="IE-SI-343-2015-r18-3" lga:citation="reg. 18(3) S.I. 343/2015" lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">If a dispute between a consumer and a trader could not be settled further to a complaint submitted directly by the consumer to the trader, the trader shall provide the consumer with the information referred to in paragraph (1) and shall specify whether he or she will make use of the relevant ADR entity to settle the dispute.</paragraph>
+    <paragraph num="(4)" lga:provision="IE-SI-343-2015-r18-4" lga:citation="reg. 18(4) S.I. 343/2015" lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print" lga:regulates="ConsumerDisputeResolution">The trader shall provide the information referred to in paragraph (3) in writing or on another durable medium.</paragraph>
+    <paragraph num="(5)" lga:provision="IE-SI-343-2015-r18-5" lga:citation="reg. 18(5) S.I. 343/2015" lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print" lga:regulates="ConsumerDisputeResolution" lga:penalises="IE-SI-343-2015-r18-1 IE-SI-343-2015-r18-2 IE-SI-343-2015-r18-3 IE-SI-343-2015-r18-4">A trader who contravenes a provision of this Regulation shall be liable on summary conviction to a class A fine or to imprisonment for a term not exceeding 12 months, or to both.</paragraph>
+    <paragraph num="(6)" lga:provision="IE-SI-343-2015-r18-6" lga:citation="reg. 18(6) S.I. 343/2015" lga:url="https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print" lga:regulates="ConsumerDisputeResolution">Sections 77, 78, 80 and 84 of the Act of 2007 shall apply to an offence under these Regulations as they apply to an offence under that Act and, accordingly, references in those sections to an offence under that Act shall be construed as including references to an offence under these Regulations.</paragraph>
+  </section>
+</law>

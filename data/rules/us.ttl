@@ -100,6 +100,20 @@ lg:US-CA-R-ecommerce-service-notice a lgo:Obligation ;
     lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:TotalPrice , lgv:ComplaintAddress ;
     lgo:reviewStatus lgv:Draft .
 
+# --- California: online vendor disclosure (B&P Code § 17538(d)) ------------------------------
+
+lg:US-CA-R-online-vendor-disclosure a lgo:Obligation ;
+    rdfs:label "Online vendor: legal name and street address before payment"@en ;
+    rdfs:comment "A vendor doing business through the Internet must disclose its return and refund policy, legal name and complete street address before accepting payment from a buyer in California (§ 17538(d)(1)); (d)(2) sets on-screen placement rules and (d)(3) allows a private mailbox instead of the street address. The return/refund policy has no checklist item yet."@en ;
+    lgo:establishedBy lg:US-CA-BPC-s17538-d1 , lg:US-CA-BPC-s17538-d2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:US-CA ;
+    lgo:appliesWhen lgv:SellsToConsumersInCalifornia , lgv:SellsOnlineToConsumers ;
+    lgo:partOfDisclosure lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
 # --- California: automatic purchase renewals (B&P Code § 17602) ----------------------------
 
 lg:US-CA-R-auto-renewal-terms a lgo:Obligation ;

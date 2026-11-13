@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o trgovačkim društvima (NN 111/93, pročišćeni NN 152/2011), članak 21
+  stavci 4–6, written in schemas/law.xsd from the Narodne novine consolidated
+  text. The words are the Hrvatski sabor's; only the structure is ours.
+  St. 4 ends with the explicit website sentence; st. 5 is the capital-company
+  add-on list; st. 6 covers partnerships' member names.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="hr"
+     lga:act="HR-ZTD" lga:jurisdiction="HR" lga:act-type="Statute"
+     lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/full/2011_12_152_3144.html">
+  <meta>
+    <title>Zakon o trgovačkim društvima</title>
+    <date>1993-11-23</date>
+  </meta>
+
+  <section num="Članak 21." title="Upotreba tvrtke" source="ztd-21.fragment.html">
+    <paragraph num="(4)" lga:provision="HR-ZTD-art21-4" lga:citation="članak 21 stavak 4 ZTD" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/full/2011_12_152_3144.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName GeographicAddress RegisterEntry PaymentAccount">Na poslovnom papiru trgovca (pismima, računima i dr.) moraju se otisnuti njegova tvrtka, sjedište, sud kod kojega je upisan u sudski registar i broj pod kojim je to učinjeno, tvrtka i sjedište pravnih osoba kod kojih se vode njegovi računi i brojevi tih računa. Isto vrijedi i za sadržaj internetske stranice društva.</paragraph>
+    <paragraph num="(5)" lga:provision="HR-ZTD-art21-5" lga:citation="članak 21 stavak 5 ZTD" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/full/2011_12_152_3144.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">Na poslovnom papiru i internetskoj stranici društva kapitala moraju se uz podatke iz stavka 4. ovoga članka navesti:
+      <list>
+        <item num="1." lga:requires="ShareCapital">iznos temeljnoga kapitala društva s naznakom je li u cijelosti uplaćen, a ako nije, s naznakom koji dio toga kapitala nije uplaćen i</item>
+        <item num="2.">ukupan broj izdanih dionica, a izdaje li društvo dionice s nominalnim iznosom ti iznosi ako se radi o poslovnom papiru dioničkog društva,</item>
+        <item num="3." lga:requires="AuthorisedRepresentative">prezimena i najmanje jedno ime članova uprave društva, a kod dioničkog društva članova uprave, odnosno izvršnih direktora i predsjednika nadzornog odnosno upravnog odbora.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(6)" lga:provision="HR-ZTD-art21-6" lga:citation="članak 21 stavak 6 ZTD" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/full/2011_12_152_3144.html" lga:regulates="ProviderIdentification">Na poslovnom papiru javnoga trgovačkoga društva i komanditnoga društva moraju se otisnuti i imena svih članova trgovačkoga društva koji osobno odgovaraju za obveze društva. Na poslovnom papiru gospodarskoga interesnog udruženja mora se navesti i podatak o skupnoj ovlasti za zastupanje, ako su članovi uprave ovlašteni tako zastupati udruženje.</paragraph>
+  </section>
+</law>

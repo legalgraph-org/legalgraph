@@ -1,0 +1,25 @@
+# S.I. No. 343/2015 — European Union (Alternative Dispute Resolution for
+# Consumer Disputes) Regulations 2015: reg. 18 is the trader information duty
+# transposing Art. 13 of the ADR Directive — a trader committed or obliged to
+# use ADR must name the ADR entity with its website address on the trader's
+# own website (where one exists) and in general terms and conditions; reg.
+# 18(3)–(4) is the durable-medium pointer after a failed complaint, and (5)–(6)
+# make breach a summary offence.
+id: ie/si-343-2015
+title: S.I. No. 343/2015 — EU (Alternative Dispute Resolution for Consumer Disputes) Regulations 2015 (reg. 18)
+jurisdiction: IE
+language: en
+publisher: Irish Statute Book (Office of the Attorney General)
+kind: authored-xml
+licence: official-work
+licence_basis: "Copyright and Related Rights Act 2000, s. 192: Acts of the Oireachtas and statutory instruments are not protected by copyright"
+originals:
+  - file: si-18.fragment.html
+    url: "https://www.irishstatutebook.ie/eli/2015/si/343/made/en/print"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the print view: regulation 18 ('Consumer information by traders'), made text. Amended by S.I. No. 368/2015 (Part 3A co-operation provisions, not affecting reg. 18)."
+    retrieved_on: 2026-11-13
+    sha256: 99d12f6898c171af3427a6728c832fcdd20e73c0f544af01a4a1c64a1f8489ff
+annotated: si343.law.xml

@@ -40,8 +40,10 @@ EU-2015-1535: {kind: cellar, arg: "32015L1535"}
 EU-2009-136: {kind: cellar, arg: "32009L0136"}
 EU-2011-83: {kind: cellar, arg: "32011L0083"}
 EU-2012-1215: {kind: cellar, arg: "32012R1215"}
+EU-2013-11: {kind: cellar, arg: "32013L0011"}
 EU-2013-524: {kind: cellar, arg: "32013R0524"}
 EU-2016-679: {kind: cellar, arg: "32016R0679"}
+EU-2025-2647: {kind: cellar, arg: "32025L2647"}
 EU-2017-1132: {kind: cellar, arg: "32017L1132"}
 EU-2017-1369: {kind: cellar, arg: "32017R1369"}
 EU-2018-302: {kind: cellar, arg: "32018R0302"}
@@ -107,30 +109,72 @@ US-CA-CCR-11-CCPA: {kind: cppa, arg: "https://cppa.ca.gov/regulations/"}
 CA-PIPEDA: {kind: laws_lois, arg: "P-8.6"}
 CA-CASL: {kind: laws_lois, arg: "E-1.6"}
 CA-ON-CPA: {exempt: "ontario e-Laws is JavaScript-rendered"}
+CA-QC-CPA: {exempt: "legisquebec.gouv.qc.ca is JavaScript-rendered"}
 
 # --- IT / IE / ES / NO / MT / NL / PT / SE ----------------------------------------
 IT-196-2003: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2003-06-30;196"}
 IT-DLGS-70-2003: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2003-04-09;70"}
 IE-SI-2003-68: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
 IE-SI-336-2011: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
+IE-CA-2014: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
 ES-LSSI: {kind: boe, arg: BOE-A-2002-13758}
 NO-EHL: {kind: lovdata, arg: 2003-05-23-35}
+NO-FREG: {kind: lovdata, arg: 2025-06-20-106}
 MT-CAP426: {kind: legislation_mt, arg: cap/426}
+MT-CAP386: {kind: legislation_mt, arg: cap/386}
 NL-BW3: {kind: wetten, arg: BWBR0005291}
 PT-DL-7-2004: {kind: pgdl, arg: "1399"}
+PT-CSC: {kind: pgdl, arg: "524"}
 SE-SFS-2002-562: {kind: riksdagen, arg: lag-2002562-om-elektronisk-handel-och-andra-informations_sfs-2002-562}
+SE-ABL: {kind: riksdagen, arg: aktiebolagslag-2005551_sfs-2005-551}
 
 # --- smaller jurisdictions --------------------------------------------------------
 CZ-480-2004: {exempt: "e-sbirka.cz is JavaScript-rendered"}
+CZ-OZ: {exempt: "e-sbirka.cz is JavaScript-rendered"}
+CZ-ZOK: {exempt: "e-sbirka.cz is JavaScript-rendered"}
 LV-ISSL: {exempt: "likumi.lv version dates are JavaScript-rendered"}
+LV-KL: {exempt: "likumi.lv version dates are JavaScript-rendered"}
 HR-ZET: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
+HR-ZTD: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
 SI-ZEPT: {exempt: "pisrs.si is JavaScript-rendered"}
 TR-6563: {kind: mevzuat, arg: "1.5.6563"}
 CY-156-I-2004: {exempt: "cylaw.org gives no version data"}
+CY-CAP113: {exempt: "cylaw.org gives no version data"}
 BE-WER: {exempt: "justel needs an interactive session"}
+BE-CSA: {exempt: "justel consolidated text is fetched per-act; no amendment feed"}
 EE-ISSA: {exempt: "riigiteataja.ee is a JavaScript application"}
 LT-IVPI: {exempt: "e-tar.lt returns HTTP 403"}
 LU-LOI-2000-08-14: {exempt: "legilux.public.lu is a JavaScript application"}
+LI-ECG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
+LI-PGR: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
+PL-ASDE: {kind: isap, arg: "DU/2002/1204"}
+PL-KSH: {kind: isap, arg: "DU/2024/18"}
+RO-LCE: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
+SK-EOB: {exempt: "static.slov-lex.sk version index is scrapable but has no amendment-diff feed; slov-lex.sk proper is JavaScript-rendered"}
 MD-ECOM: {exempt: "legis.md returns HTTP 403"}
 ME-ZET: {exempt: "podaci.net gives no version data"}
 XK-04-L-094: {exempt: "gzk.rks-gov.net returned an error page"}
+
+# --- L4–L8 round -----------------------------------------------------------
+AT-ASTG: {exempt: "ris.bka.gv.at ELI per-section URL; no consolidated-version stamp API"}
+ES-LEY7-2017: {exempt: "boe.es consolidated text; changes listed on the act page"}
+IE-SI-343-2015: {exempt: "irishstatutebook made text; amendments by later SIs"}
+PL-ADR: {exempt: "api.sejm.gov.pl serves the consolidated text"}
+PL-PP: {exempt: "api.sejm.gov.pl serves the consolidated text"}
+PL-UJP: {exempt: "api.sejm.gov.pl serves the consolidated text"}
+SE-ARL: {exempt: "riksdagen.se serves the consolidated text"}
+PT-LEI-144-2015: {kind: pgdl, arg: "nid=2425"}
+LV-VVL: {exempt: "likumi.lv serves the consolidated text"}
+CZ-ZOS-634: {exempt: "e-sbirka.cz is JavaScript-rendered; zakonyprolidi mirror used"}
+LV-PTAL: {exempt: "likumi.lv serves the consolidated text"}
+MT-SL-378-18: {kind: legislation_mt, arg: sl/378.18}
+NO-MFL: {kind: lovdata, arg: 2009-01-09-2}
+SK-ARS-391: {exempt: "slov-lex static mirror serves a dated text"}
+SK-ZOS-108: {exempt: "slov-lex static mirror serves a dated text"}
+CY-NOMOS-85-2017: {exempt: "cylaw.org gives no version data"}
+SK-JAZYK-270: {exempt: "slov-lex static mirror serves a dated text"}
+SK-PUB-265: {exempt: "slov-lex static mirror serves a dated text"}
+LV-PRESI: {exempt: "likumi.lv serves the consolidated text"}
+NO-MEDIE: {kind: lovdata, arg: 2020-05-29-59}
+LI-MEDIENG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
+SK-OBCH: {exempt: "slov-lex static mirror serves a dated text"}

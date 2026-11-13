@@ -1,0 +1,27 @@
+# Obchodný zákonník (513/1991 Zb.), § 3a: Slovakia's company-law disclosure
+# duty. § 3a(1) lists the data every entrepreneur must give on business
+# documents (business name, seat or place of business, legal form of a legal
+# person, IČO if assigned, register designation and entry number, and the
+# paid-up share capital if capital is stated); § 3a(3) extends the same data
+# to the entrepreneur's website. Earlier rounds recorded Slovakia as having
+# no company-law website list — § 3a(3) is that list.
+id: sk/obchodny-zakonnik
+title: Obchodný zákonník (513/1991 Zb.), § 3a
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: obch-3a.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html"
+    fetch: html-fragment
+    selector: "#paragraf-3a"
+    text_ignore: ["a[href^='#poznamky']"]
+    media_type: text/html
+    notes:
+      - "Consolidated version in force from 17 August 2026 (latest; the version index at /static/SK/ZZ/1991/513/ lists every point-in-time text)."
+    retrieved_on: 2026-11-13
+    sha256: 09e6cad53c30b6f008c91e23520b000f66a2f24c4e90f7b6b835c09e44c6013c
+annotated: obch.law.xml

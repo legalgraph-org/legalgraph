@@ -1,0 +1,17 @@
+name: Belgian BV/SRL with a company website
+description: >
+  A BV/SRL in the Crossroads Bank for Enterprises with a VAT ID and a website presenting its
+  services. Art. XII.6, § 1 WER follows the Directive's list and asks for the enterprise number as
+  the register identifier.
+established_in: BE
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - BE-R-impressum
+  - BE-R-impressum-register
+  - BE-R-impressum-vat
+  - BE-R-company-website

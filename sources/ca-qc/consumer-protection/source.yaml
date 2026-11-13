@@ -1,0 +1,45 @@
+# Quebec Consumer Protection Act, CQLR c. P-40.1, s. 54.4: before a distance contract is entered
+# into, the merchant must disclose its name and other business names, address, telephone, fax and
+# technological address, a detailed description of the goods or services, prices and charges,
+# total amount and payment terms, performance date, delivery details and cancellation, rescission,
+# return, exchange and refund conditions — presented prominently and, for a written offer,
+# retainable and printable. Légis Québec serves the consolidated act as a client-side
+# application; the fragments are cut from Wayback Machine captures of the French page of
+# 2025-11-07 (authentic) and the English page of 2025-10-12 (the Éditeur officiel's translation,
+# non-authentic parallel). French prevails under the Charter of the French language.
+id: ca-qc/consumer-protection
+title: Consumer Protection Act (Quebec), CQLR c. P-40.1, s. 54.4
+jurisdiction: CA-QC
+language: fr
+publisher: Éditeur officiel du Québec, Légis Québec
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 2 of the Copyright Act (R.S.C. 1985, c. C-42): the text of a statute is not copyrightable; Quebec official texts are Crown/State works"
+originals:
+  - file: cpa-54-4.fragment.html
+    # A Wayback Machine capture of the official page: a mirror's copy until checked against it.
+    official: false
+    url: https://www.legisquebec.gouv.qc.ca/fr/document/cs/P-40.1
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated French page: the s. 54.4 section div (SubsectionFirst through the HistoricalNote). The legisquebec consolidation markup duplicates citations in class=\"Hidden\" spans beside integrity:added spans; the Hidden spans are removed in this cut. 'En vig.: 2026-10-05' amendment markers are kept."
+      - "legisquebec.gouv.qc.ca renders the text client-side and does not serve it to plain HTTP clients; the capture is web.archive.org/web/20251107183335 of the same URL."
+    retrieved_on: 2025-11-07
+    sha256: 9400369366a25f7069d9b43e08a52a3bc877760265195492c4656302566720e0
+  - file: cpa-54-4-en.fragment.html
+    # A Wayback Machine capture of the official page: a mirror's copy until checked against it.
+    official: false
+    role: parallel
+    language: en
+    authentic: false
+    annotated: cpa.en.law.xml
+    url: https://www.legisquebec.gouv.qc.ca/en/document/cs/P-40.1
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated English page: the s. 54.4 section div (SubsectionFirst through the HistoricalNote). The legisquebec consolidation markup duplicates citations in class=\"Hidden\" spans beside integrity:added spans; the Hidden spans are removed in this cut. 'In force: 2026-10-05' amendment markers are kept."
+      - "English translation published by the Éditeur officiel du Québec; the French text prevails. legisquebec.gouv.qc.ca renders the text client-side and does not serve it to plain HTTP clients; the capture is web.archive.org/web/20251012142536 of the same URL."
+    retrieved_on: 2025-10-12
+    sha256: 4eb03665fffb9f7c35fc1f812855e849f83a9dc7a9eca04488994c2e1d196b50
+annotated: cpa.law.xml

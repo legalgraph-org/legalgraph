@@ -6,12 +6,14 @@ description: >
 established_in: CH
 markets: [EU]
 facts:
+  - CommercialDigitalService
   - EngagesProcessors
   - ProcessesPersonalData
   - TransfersOutsideSwitzerland
   - NonEssentialDeviceAccess
   - TransfersOutsideEEA
 obligations:
+  - CH-R-provider-identification
   - CH-R-privacy-information
   - CH-R-privacy-information-abroad
   - EU-R-privacy-information

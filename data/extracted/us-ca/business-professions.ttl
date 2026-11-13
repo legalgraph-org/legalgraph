@@ -13,12 +13,97 @@
 lg:US-CA-BPC
     a lgo:LegalAct ;
     eli:date_document "2025-01-01"^^xsd:date ;
-    eli:title "California Business and Professions Code (§ 17602 Automatic Purchase Renewals; §§ 22575–22579 Internet Privacy Requirements)"@en ;
+    eli:title "California Business and Professions Code (§ 17538(d) Internet Vendor Disclosure; § 17602 Automatic Purchase Renewals; §§ 22575–22579 Internet Privacy Requirements)"@en ;
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:US-CA ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:US-CA-BPC-source-1 , lg:US-CA-BPC-source-2 , lg:US-CA-BPC-source-3 , lg:US-CA-BPC-source-4 , lg:US-CA-BPC-source-5 ;
+    lgo:sourceDocument lg:US-CA-BPC-source-1 , lg:US-CA-BPC-source-2 , lg:US-CA-BPC-source-3 , lg:US-CA-BPC-source-4 , lg:US-CA-BPC-source-5 , lg:US-CA-BPC-source-6 ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes.xhtml"^^xsd:anyURI .
+
+lg:US-CA-BPC-s17538-d
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-BPC ;
+    lgo:citation "Cal. Bus. & Prof. Code § 17538(d)" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI .
+
+lg:US-CA-BPC-s17538-d-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-BPC-s17538-d ;
+    lgo:retrievedOn "2026-10-03"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI ;
+    lgo:text "(d) A vendor conducting business through the Internet or any other electronic means of communication shall do all of the following when the transaction involves a buyer located in this state:"@en .
+
+lg:US-CA-BPC-s17538-d1
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-BPC ;
+    lgo:citation "Cal. Bus. & Prof. Code § 17538(d)(1)" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:GeographicAddress , lgv:ProviderName ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI .
+
+lg:US-CA-BPC-s17538-d1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-BPC-s17538-d1 ;
+    lgo:retrievedOn "2026-10-03"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI ;
+    lgo:text "(1) Before accepting any payment or processing any debit or credit charge or funds transfer, the vendor shall disclose to the buyer in writing or by electronic means of communication, such as e-mail or an on-screen notice, the vendor’s return and refund policy, the legal name under which the business is conducted and, except as provided in paragraph (3), the complete street address from which the business is actually conducted."@en .
+
+lg:US-CA-BPC-s17538-d2
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-BPC ;
+    lgo:citation "Cal. Bus. & Prof. Code § 17538(d)(2)" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:requiresDisclosureOf lgv:GeographicAddress , lgv:ProviderName ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[3]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI .
+
+lg:US-CA-BPC-s17538-d2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-BPC-s17538-d2 ;
+    lgo:retrievedOn "2026-10-03"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[3]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI ;
+    lgo:text """(2) If the disclosure of the vendor’s legal name and address information required by this subdivision is made by on-screen notice, all of the following shall apply:
+(A) The disclosure of the legal name and address information shall appear on any of the following: (i) the first screen displayed when the vendor’s electronic site is accessed, (ii) on the screen on which goods or services are first offered, (iii) on the screen on which a buyer may place the order for goods or services, (iv) on the screen on which the buyer may enter payment information, such as a credit card account number, or (v) for nonbrowser-based technologies, in a manner that gives the user a reasonable opportunity to review that information. The communication of that disclosure shall not be structured to be smaller or less legible than the text of the offer of the goods or services.
+(B) The disclosure of the legal name and address information shall be accompanied by an adjacent statement describing how the buyer may receive the information at the buyer’s e-mail address. The vendor shall provide the disclosure information to the buyer at the buyer’s e-mail address within five days of receiving the buyer’s request.
+(C) Until the vendor complies with subdivision (a) in connection with all buyers of the vendor’s goods or services, the vendor shall make available to a buyer and any person or entity who may enforce this section pursuant to Section 17535 on-screen access to the information required to be disclosed under this subdivision."""@en .
+
+lg:US-CA-BPC-s17538-d3
+    a lgo:Provision ;
+    eli:is_part_of lg:US-CA-BPC ;
+    lgo:citation "Cal. Bus. & Prof. Code § 17538(d)(3)" ;
+    lgo:regulates lgv:PreContractInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[4]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI .
+
+lg:US-CA-BPC-s17538-d3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:US-CA-BPC-s17538-d3 ;
+    lgo:retrievedOn "2026-10-03"^^xsd:date ;
+    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[4]" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI ;
+    lgo:text "(3) The complete street address need not be disclosed as required by paragraph (1) if the vendor utilizes a private mailbox receiving service and all of the following conditions are met: (A) the vendor satisfies the conditions described in paragraph (2) of subdivision (b) of Section 17538.5, (B) the vendor discloses the actual street address of the private mailbox receiving service in the manner prescribed by this subdivision for the disclosure of the vendor’s actual street address, and (C) the vendor and the private mailbox receiving service comply with all of the requirements of subdivisions (c) to (f), inclusive, of Section 17538.5."@en .
 
 lg:US-CA-BPC-s17602-a1
     a lgo:Provision ;
@@ -66,7 +151,7 @@ lg:US-CA-BPC-s17602-a3
     eli:is_part_of lg:US-CA-BPC ;
     lgo:citation "Cal. Bus. & Prof. Code § 17602(a)(3)" ;
     lgo:regulates lgv:ContractConfirmation ;
-    lgo:requiresDisclosureOf lgv:CancellationInformation ;
+    lgo:requiresDisclosureOf lgv:CancellationInformation , lgv:SubscriptionTermsDisclosure ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:US-CA-BPC-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[3]" ;
@@ -132,8 +217,8 @@ lg:US-CA-BPC-s22575-a
     lgo:citation "Cal. Bus. & Prof. Code § 22575(a)" ;
     lgo:regulates lgv:PrivacyInformation ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
-    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceDocument lg:US-CA-BPC-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22575.&lawCode=BPC"^^xsd:anyURI .
 
 lg:US-CA-BPC-s22575-a-q1
@@ -141,8 +226,8 @@ lg:US-CA-BPC-s22575-a-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:US-CA-BPC-s22575-a ;
     lgo:retrievedOn "2026-11-04"^^xsd:date ;
-    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
-    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceDocument lg:US-CA-BPC-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22575.&lawCode=BPC"^^xsd:anyURI ;
     lgo:text "(a) An operator of a commercial Web site or online service that collects personally identifiable information through the Internet about individual consumers residing in California who use or visit its commercial Web site or online service shall conspicuously post its privacy policy on its Web site, or in the case of an operator of an online service, make that policy available in accordance with paragraph (5) of subdivision (b) of Section 22577. An operator shall be in violation of this subdivision only if the operator fails to post its policy within 30 days after being notified of noncompliance."@en .
 
@@ -153,8 +238,8 @@ lg:US-CA-BPC-s22575-b
     lgo:regulates lgv:PrivacyInformation ;
     lgo:requiresDisclosureOf lgv:CategoriesOfPersonalData , lgv:DataSubjectRights , lgv:DoNotTrackResponse , lgv:PolicyChangeProcess , lgv:PolicyEffectiveDate , lgv:Recipients , lgv:ThirdPartyTracking ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
-    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceDocument lg:US-CA-BPC-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[2]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22575.&lawCode=BPC"^^xsd:anyURI .
 
 lg:US-CA-BPC-s22575-b-q1
@@ -162,8 +247,8 @@ lg:US-CA-BPC-s22575-b-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:US-CA-BPC-s22575-b ;
     lgo:retrievedOn "2026-11-04"^^xsd:date ;
-    lgo:sourceDocument lg:US-CA-BPC-source-2 ;
-    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceDocument lg:US-CA-BPC-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[2]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22575.&lawCode=BPC"^^xsd:anyURI ;
     lgo:text """(b) The privacy policy required by subdivision (a) shall do all of the following:
 (1) Identify the categories of personally identifiable information that the operator collects through the Web site or online service about individual consumers who use or visit its commercial Web site or online service and the categories of third-party persons or entities with whom the operator may share that personally identifiable information.
@@ -180,8 +265,8 @@ lg:US-CA-BPC-s22576
     lgo:citation "Cal. Bus. & Prof. Code § 22576" ;
     lgo:penalises lg:US-CA-BPC-s22575-a , lg:US-CA-BPC-s22575-b ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:US-CA-BPC-source-3 ;
-    lgo:sourceElement "/law/section[3]/paragraph[1]" ;
+    lgo:sourceDocument lg:US-CA-BPC-source-4 ;
+    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22576.&lawCode=BPC"^^xsd:anyURI .
 
 lg:US-CA-BPC-s22576-q1
@@ -189,8 +274,8 @@ lg:US-CA-BPC-s22576-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:US-CA-BPC-s22576 ;
     lgo:retrievedOn "2026-11-04"^^xsd:date ;
-    lgo:sourceDocument lg:US-CA-BPC-source-3 ;
-    lgo:sourceElement "/law/section[3]/paragraph[1]" ;
+    lgo:sourceDocument lg:US-CA-BPC-source-4 ;
+    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22576.&lawCode=BPC"^^xsd:anyURI ;
     lgo:text """22576. An operator of a commercial Web site or online service that collects personally identifiable information through the Web site or online service from individual consumers who use or visit the commercial Web site or online service and who reside in California shall be in violation of this section if the operator fails to comply with the provisions of Section 22575 or with the provisions of its posted privacy policy in either of the following ways:
 (a) Knowingly and willfully.
@@ -200,6 +285,7 @@ lg:US-CA-BPC-source-1
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/business-professions/bpc.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -212,6 +298,21 @@ lg:US-CA-BPC-source-2
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/business-professions/bpc.law.xml" ;
+    lgo:authenticity lgv:NotVerified ;
+    lgo:legalStatus "Subdivision (d) only — the online-seller disclosure duty. Subdivisions (a)–(c) and (e)–(f) (the mail-order ship-or-refund regime and definitions) are not cut."@en , "leginfo.legislature.ca.gov is behind Incapsula; this fragment is cut from the Wayback Machine capture of 2026-10-03 (web.archive.org/web/20261003031916) of the official page."@en ;
+    lgo:licence lgv:PublicDomain ;
+    lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/us-ca/business-professions/bpc-17538-d.fragment.html" ;
+    lgo:retrievedOn "2026-10-03"^^xsd:date ;
+    lgo:sha256 "3f8ef41c935c2018a52a02512a5c08a1ed2f26a9d17abd4952a4c1c2f82903b5" ;
+    lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.&lawCode=BPC"^^xsd:anyURI .
+
+lg:US-CA-BPC-source-3
+    a lgo:SourceDocument ;
+    dcterms:language "en"^^xsd:language ;
+    lgo:annotatedFile "sources/us-ca/business-professions/bpc.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -220,10 +321,11 @@ lg:US-CA-BPC-source-2
     lgo:sha256 "cc624232e309acdfb8fe0d09c7e4752b80ff00c39143ebced44f0acc603f1b38" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22575."^^xsd:anyURI .
 
-lg:US-CA-BPC-source-3
+lg:US-CA-BPC-source-4
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/business-professions/bpc.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -232,10 +334,11 @@ lg:US-CA-BPC-source-3
     lgo:sha256 "866c0fb91adf2765fdb659465dc7527986b32ac5ebffffd3061d40aacc1ed3af" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22576."^^xsd:anyURI .
 
-lg:US-CA-BPC-source-4
+lg:US-CA-BPC-source-5
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/business-professions/bpc.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;
@@ -244,10 +347,11 @@ lg:US-CA-BPC-source-4
     lgo:sha256 "b568350df1019d611777fc3ef065953ce4f590a29e38d604b1b2515463f728d3" ;
     lgo:sourceUrl "https://leginfo.legislature.ca.gov/faces/printCodeSectionWindow.xhtml?lawCode=BPC&sectionNum=22577."^^xsd:anyURI .
 
-lg:US-CA-BPC-source-5
+lg:US-CA-BPC-source-6
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/business-professions/bpc.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Government edicts doctrine: the text of statutes is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020))" ;
     lgo:mediaType "text/html" ;

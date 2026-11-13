@@ -1,0 +1,41 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Slovakia (additions to data/extracted/sk/).
+
+lg:SK-EOB
+    lgo:shortName "ZEO" ;
+    eli:id_local "Z. z. č. 22/2004" ;
+    eli:transposes lg:EU-2000-31 ;
+    rdfs:comment "§ 4 transposes Article 5 of the e-Commerce Directive and adds a telephone number and the DIČ where the provider is a VAT payer; regulated-profession items apply to commercial communication (ods. 2)."@en .
+
+lg:SK-ARS-391
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://static.slov-lex.sk/static/SK/ZZ/2015/391/20260101.html> ;
+    rdfs:comment "§ 11(2) is the after-complaint ADR information duty: a trader that answers a consumer's remedy request negatively must inform about the competent ADR entities on a durable medium. The act has no proactive website/contract-terms paragraph."@en .
+
+lg:SK-ZOS-108
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://static.slov-lex.sk/static/SK/ZZ/2024/108/20260101.html> ;
+    rdfs:comment "§ 5(1)(l) of the 2024 consumer-protection act requires a pre-contract notice about the consumer's remedy-request right plus a link to the website listing the competent ADR entity — Slovakia's closest analogue of Directive 2013/11 Art. 13(1)-(2), applying to every trader at contract conclusion."@en .
+
+lg:SK-JAZYK-270
+    rdfs:seeAlso <https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html> ;
+    rdfs:comment "§ 8(1) requires consumer information (labelling, instructions, warranty terms, other consumer information) in Slovak within the scope of the special regulations — territorial, not establishment-based; reaches websites only through those special regulations. § 8(5)-(6): contracts may exist in another EU language but Slovak prevails on conflict; public signs/advertisements put Slovak first."@en .
+
+lg:SK-PUB-265
+    lgo:shortName "zákon o publikáciách" ;
+    eli:id_local "z. č. 265/2022 Z. z." ;
+    rdfs:seeAlso <https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2022/265/> ;
+    rdfs:comment "§ 5(3) is the news-web-portal imprint duty: the portal must be marked with its title, publication and update dates of each communiqué, plus the operator data of § 5(1)(d) and the publication registration number of § 5(1)(h). § 5(2) reaches electronic periodical publications. Print-only parts are not modelled."@en .
+
+lg:SK-OBCH
+    lgo:shortName "Obchodný zákonník" ;
+    eli:id_local "z. č. 513/1991 Zb." ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/> ;
+    rdfs:comment "§ 3a(1) lists the data every entrepreneur must give on business documents (obchodné meno, sídlo alebo miesto podnikania, právna forma, IČO, register designation and entry number, paid-up share capital if capital is stated); § 3a(3) extends the same data to the entrepreneur's website. Earlier rounds recorded Slovakia as having no company-law website list — § 3a(3) is that list."@en .

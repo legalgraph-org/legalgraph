@@ -15,3 +15,14 @@ lg:MT-CAP426 a lgo:LegalAct ;
     lgo:sourceUrl "https://legislation.mt/eli/cap/426/eng"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Article 8C (added by Act XXXV of 2016) transposes Article 5 ECD and adds item (h): the provider must show, prominently and wherever users give data, how they can opt out of unsolicited commercial communications."@en .
+
+lg:MT-CAP386
+    lgo:shortName "Companies Act (Cap. 386)" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://legislation.mt/eli/cap/386/eng> ;
+    rdfs:comment "Article 6 is the Maltese company-law website duty: name, kind of partnership, registered office and registration number on business letters, order forms in any medium and the partnership's internet website(s); Part XI oversea companies add branch particulars and winding-up; sub-article (8) the issued-plus-paid-up capital clause."@en .
+
+lg:MT-SL-378-18
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://legislation.mt/eli/sl/378.18/eng> ;
+    rdfs:comment "Regulation 14 is the trader ADR information duty transposing Directive 2013/11 Art. 13 in full; Cap. 378 Part VI delegates the details to these regulations."@en .

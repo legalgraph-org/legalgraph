@@ -87,6 +87,7 @@ lg:DE-OLGK-2024-0119-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/olg-koeln-6u80-23/olg-koeln-6u80-23.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: court decisions are official works without copyright" ;
     lgo:mediaType "text/html" ;

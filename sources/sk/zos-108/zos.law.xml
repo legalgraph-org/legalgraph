@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 108/2024 Z. z., § 5(1) písm. l), written in schemas/law.xsd from
+  the static.slov-lex.sk version mirror. The words are the Slovak
+  legislature's; only the structure is ours. Item l) of the § 5(1)
+  pre-contract information list requires a notice about the consumer's
+  right to submit a remedy request under the special act (391/2015 Z. z.)
+  together with a link to the website publishing information about the
+  competent ADR entity. It is Slovakia's closest analogue of Directive
+  2013/11 Art. 13(1)–(2) — it applies to every trader at contract
+  conclusion, not only to traders committed to ADR.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-ZOS-108" lga:jurisdiction="SK" lga:act-type="Statute"
+     lga:url="https://static.slov-lex.sk/static/SK/ZZ/2024/108/20260101.html">
+  <meta>
+    <title>Zákon č. 108/2024 Z. z. o ochrane spotrebiteľa</title>
+    <date>2024-03-22</date>
+  </meta>
+
+  <section num="§ 5" source="zos-5.fragment.html">
+    <paragraph num="l)" lga:provision="SK-ZOS-108-s5-1-l" lga:citation="§ 5 ods. 1 písm. l) zákona č. 108/2024 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2024/108/20260101.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">poučenie o práve spotrebiteľa podať obchodníkovi žiadosť o nápravu podľa osobitného predpisu 27 ) s uvedením odkazu na webové sídlo, na ktorom sú zverejnené informácie o príslušnom subjekte alternatívneho riešenia sporov. 28 )</paragraph>
+  </section>
+</law>

@@ -1,0 +1,29 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+lgs:ConditionShape a sh:NodeShape ;
+    sh:targetClass lgo:Condition ;
+    sh:property [
+        sh:path lgo:basedOn ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:holdsWhenAny ;
+        sh:class lgo:Condition ;
+    ] , [
+        sh:path lgo:holdsWhenAll ;
+        sh:class lgo:Condition ;
+    ] , [
+        sh:path lgo:establishedIn ;
+        sh:maxCount 1 ;
+        sh:class lgo:Jurisdiction ;
+    ] , [
+        sh:path lgo:offersIn ;
+        sh:maxCount 1 ;
+        sh:class lgo:Jurisdiction ;
+    ] , [
+        sh:path lgo:question ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+    ] .

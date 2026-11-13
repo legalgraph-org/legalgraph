@@ -25,6 +25,7 @@ lg:DE-VSBG-s36-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-VSBG ;
     lgo:citation "§ 36 Abs. 1 VSBG" ;
+    lgo:implements lg:EU-2013-11-art13-1 , lg:EU-2013-11-art13-2 ;
     lgo:regulates lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -48,6 +49,7 @@ lg:DE-VSBG-s36-2
     a lgo:Provision ;
     eli:is_part_of lg:DE-VSBG ;
     lgo:citation "§ 36 Abs. 2 VSBG" ;
+    lgo:implements lg:EU-2013-11-art13-2 ;
     lgo:regulates lgv:ConsumerDisputeResolution ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:DE-VSBG-source ;
@@ -90,6 +92,7 @@ lg:DE-VSBG-s37-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-VSBG ;
     lgo:citation "§ 37 Abs. 1 VSBG" ;
+    lgo:implements lg:EU-2013-11-art13-3 ;
     lgo:regulates lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -111,6 +114,7 @@ lg:DE-VSBG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/vsbg/BJNR025410016.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Zuletzt geändert durch Art. 16 G v. 8.12.2025 I Nr. 318"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

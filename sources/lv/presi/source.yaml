@@ -1,0 +1,25 @@
+# Likums "Par presi un citiem masu informācijas līdzekļiem", 5.1 pants:
+# the media-service-provider transparency duty inserted by the
+# 11.06.2026 amendment (in force 27.06.2026). The provider must make the
+# Article 6(1) European Media Freedom Act information easily and directly
+# accessible to recipients of its services and keep it updated, for
+# example on its website — it reaches websites expressly. The article
+# references EMFA art. 6(1) for the item list rather than restating it.
+id: lv/presi
+title: Likums "Par presi un citiem masu informācijas līdzekļiem" (5.1 pants)
+jurisdiction: LV
+language: lv
+publisher: Likumi.lv, Saeima (likumi.lv)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 likuma 'Par autortiesību un blakustiesību likuma' — official texts of legislation are not copyright works in Latvia"
+originals:
+  - file: presi-51.fragment.html
+    url: "https://likumi.lv/ta/id/64879-par-presi-un-citiem-masu-informacijas-lidzekliem"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from likumi.lv consolidated text: div TV213 for 5.1 pants (data-num=5_1), including the amendment-note paragraph removed to match the established fragment convention. Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: bb02ba2b9b03ef7f4afd94b7de0cce3368a092612e89d7d8c631d675318572be
+annotated: presi.law.xml

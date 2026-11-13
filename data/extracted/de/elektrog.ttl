@@ -75,6 +75,7 @@ lg:DE-ElektroG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/elektrog/BJNR173910015.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Ersetzt G 2129-43 v. 16.3.2005 I 762 (ElektroG)"@de , "Zuletzt geändert durch Art. 1 G v. 25.11.2025 I Nr. 286"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

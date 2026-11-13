@@ -122,6 +122,7 @@ lg:DE-BFSG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/bfsg/BJNR297010021.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Zuletzt geändert durch Art. 32 G v. 6.5.2024 I Nr. 149"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

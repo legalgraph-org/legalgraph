@@ -21,6 +21,7 @@ facts:
 obligations:
   - DE-R-accessibility
   - DE-R-dispute-resolution-statement
+  - DE-R-dispute-resolution-after-complaint
   - DE-R-contract-terms-storable
   - DE-R-pre-contract-information
   - DE-R-total-price

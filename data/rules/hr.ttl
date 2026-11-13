@@ -1,0 +1,85 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Croatia: provider information under članak 6 stavak 1 of the Electronic Commerce Act (ZET),
+# the transposition of Article 5 of the e-Commerce Directive. For VAT payers Croatia asks for the
+# tax number (porezni broj, the OIB) in place of the Directive's VAT number.
+
+lg:HR-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, seat and fast electronic contact"@en ;
+    rdfs:comment "Name and surname or business name, the seat of the craft or legal person, and other details for quick and easy contact, including an electronic address for direct contact (članak 6 stavak 1 ZET)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:HR-ZET-art6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:HR-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: court or public register number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:HR-ZET-art6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:HR-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent supervisory body"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:HR-ZET-art6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:HR-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:HR-ZET-art6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:HR-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: tax number (OIB) for VAT payers"@en ;
+    rdfs:comment "Croatia transposes the Directive's VAT-number item as the tax number (porezni broj) of a provider liable to VAT."@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:HR-ZET-art6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:TaxId ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:HR-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website, with capital and management board"@en ;
+    rdfs:comment "The website carries the business-paper particulars: firm name, seat, registry court and registration number, and the banks holding the company's accounts with the account numbers (članak 21(4) ZTD). Capital companies add the share capital and how much is paid up, and the names of the management board members (21(5))."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:HR-ZTD-art21-4 , lg:HR-ZTD-art21-5 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry , lgv:ShareCapital , lgv:AuthorisedRepresentative , lgv:PaymentAccount ;
+    lgo:reviewStatus lgv:Draft .

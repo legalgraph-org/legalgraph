@@ -1,0 +1,16 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix eli:     <http://data.europa.eu/eli/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:LegalAct a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:subClassOf eli:LegalResource ;
+    rdfs:label "Legal act"@en ;
+    rdfs:comment "A law, regulation, directive, code or treaty, taken as a work across its versions (FRBR Work). Versions and language expressions arrive in a later version."@en .
+
+lgo:amendmentCheck a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "amendment check"@en ;
+    rdfs:comment "The act's latest amendment check. Earlier checks are replaced; their history is in the repository."@en ;
+    rdfs:domain lgo:LegalAct ;
+    rdfs:range lgo:AmendmentCheck .

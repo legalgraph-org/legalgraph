@@ -1,0 +1,19 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:Quote a owl:Class ;
+    rdfs:label "Quote"@en ;
+    rdfs:comment "A verbatim excerpt of a provision, in the language of the source, with where and when it was taken from."@en .
+
+lgo:quoteOf a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "quote of"@en ;
+    rdfs:domain lgo:Quote ;
+    rdfs:range lgo:Provision .
+
+lgo:officialLanguageVersion a owl:DatatypeProperty ;
+    rdfs:label "official language version"@en ;
+    rdfs:comment "False when the quote comes from a translation published for information only (for example the English text of Swiss federal law)."@en ;
+    rdfs:domain lgo:Quote ;
+    rdfs:range xsd:boolean .

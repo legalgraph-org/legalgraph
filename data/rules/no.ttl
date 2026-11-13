@@ -1,0 +1,141 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Norway: provider information under § 8 ehandelsloven, the EEA transposition of Article 5 of the
+# e-Commerce Directive. Norway asks whether the business is liable for VAT (with its organisation
+# number) rather than for a VAT identification number, and its profession duty is narrower: title,
+# state and the professional rules, but no professional body.
+
+lg:NO-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address, e-mail and direct contact"@en ;
+    rdfs:comment "Name, address, e-mail address and other details that allow direct contact, given simply and directly accessible (§ 8 første og tredje ledd ehandelsloven)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:NO-EHL-s8-1 , lg:NO-EHL-s8-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NO-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register and organisation number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:NO-EHL-s8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NO-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: whether the business is liable for VAT"@en ;
+    rdfs:comment "§ 8 første ledd a asks whether the business is liable for VAT (merverdiavgiftspliktig), next to its organisation number, rather than for a VAT identification number."@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:NO-EHL-s8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatStatus ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NO-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: approvals and approving authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:NO-EHL-s8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NO-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: professional title and professional rules"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:NO-EHL-s8-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:NO-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: organisation number, register, form and head office"@en ;
+    rdfs:comment "Every enterprise shows its organisation number and name on its website (§ 7-2 first paragraph foretaksregisterloven, in force 1 January 2026). AS and ASA add the register, the form of organisation, the head office and any winding-up (second paragraph). The MVA suffix is for sales documents, not the website."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:NO-FREG-s7-2-1 , lg:NO-FREG-s7-2-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:RegisterEntry , lgv:LegalForm , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:NO-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "§ 10 a markedsføringsloven (Norway's transposition of the ADR Directive): the complaint bodies that can handle a case between the parties, with their websites, at least in the general terms and on the trader's website."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:NO-MFL-s10a-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NO-R-adr-information-every-trader a lgo:Obligation ;
+    rdfs:label "Name the competent consumer ADR entity, whether or not the business takes part"@en ;
+    rdfs:comment "§ 10 a markedsføringsloven binds every trader dealing with consumers, not only those committed to ADR."@en ;
+    lgo:establishedBy lg:NO-MFL-s10a-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:SellsToConsumers ;
+    lgo:unless lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NO-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "§ 10 a second paragraph: when it is clear the parties will not settle, the complaint-body information in writing or on another durable medium. No statement on taking part is required."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:NO-MFL-s10a-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Media imprint ---
+
+lg:NO-R-editor-identification a lgo:Obligation ;
+    rdfs:label "Media: name the editor and how to reach the medium"@en ;
+    rdfs:comment "The editor makes sure the medium states who the editor is, and that users have the medium's name, address, e-mail address and other details for direct contact (§ 5 medieansvarsloven). The act covers editor-controlled online media."@en ;
+    lgo:establishedBy lg:NO-MEDIE-s5-1 , lg:NO-MEDIE-s5-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:JournalisticEditorialContent ;
+    lgo:partOfDisclosure lgv:EditorialResponsibility ;
+    lgo:requiresDisclosureOf lgv:ResponsibleEditor , lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .

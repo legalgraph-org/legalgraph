@@ -10,26 +10,40 @@ advice.
 ## Layout
 
 ```
-src/
-  ontology.ttl             classes and properties (OWL)
+ontology.ttl               the ontology's header (owl:Ontology, version)
+classes/<ClassName>.ttl    one file per class, with the properties whose domain it is
+properties/<name>.ttl      one file per property without a single class as its domain
+vocab/
+  act-types.ttl            directive, regulation, statute, code, decree, judgment, guidelines …
+  disclosure-types.ttl     Impressum, privacy information, pre-contractual information, accessibility, AI transparency …
+  information-items.ttl    name, address, VAT ID, purposes, legal basis, retention, total price …
+  legal-concepts.ttl       personal data, consent, lawful bases, scope criteria, cookies, order button …
+  conditions.ttl           facts rules depend on, each with a checklist question
+  actions.ttl              what rules require beyond disclosure (obtain consent, label the order button …)
+  actor-roles.ttl          provider of a digital service, controller, trader, advertiser
+  deontic-types.ttl        must, must not, may
+  review-status.ttl        Source checked / Draft / Reviewed
+  translation-methods.ttl  machine, human, official translation
+annotations/
   localisation.ttl         which properties need an English (@en) value
-  vocab/
-    act-types.ttl          directive, regulation, statute, code, decree, judgment, guidelines …
-    disclosure-types.ttl   Impressum, privacy information, pre-contractual information, accessibility, AI transparency …
-    information-items.ttl  name, address, VAT ID, purposes, legal basis, retention, total price …
-    legal-concepts.ttl     personal data, consent, lawful bases, scope criteria, cookies, order button …
-    conditions.ttl         facts rules depend on, each with a checklist question
-    actions.ttl            what rules require beyond disclosure (obtain consent, label the order button …)
-    actor-roles.ttl        provider of a digital service, controller, trader, advertiser
-    deontic-types.ttl      must, must not, may
-    review-status.ttl      Source checked / Draft / Reviewed
-    translation-methods.ttl machine, human, official translation
-shapes/
-  shapes.ttl               SHACL shapes every graph must conform to
+rules/
+  reasoning/<Name>.ttl     SHACL rules (sh:rule) that add inferred triples before validation
+  validation/<Name>.ttl    SHACL shapes every graph must conform to, one per file
 ```
 
+The files in `classes/` are the list of classes. `legalgraph hygiene` keeps the layout: each class
+alone in a file named after it, each property next to its class, each shape or rule in a file named
+after it, and no other folders.
+
+Validation runs in two steps. First the rules in `rules/reasoning/` add what follows from the graph,
+for example `lgo:within` (a jurisdiction lies within itself and whatever it is a member or
+subdivision of); a property marked `lgo:inferred true` only ever comes from these rules, never from
+the data. Then the shapes in `rules/validation/` check the data together with the inferred triples.
+A shape with `sh:severity sh:Warning` reports a gap without failing validation, for example an act
+whose provisions implement a directive but that does not state `eli:transposes` for it.
+
 The ontology describes the model; it holds no facts about specific laws. Those live in `data/` of
-this repository. Its version is `owl:versionInfo` in `src/ontology.ttl`.
+this repository. Its version is `owl:versionInfo` in `ontology.ttl`.
 
 ## Model
 

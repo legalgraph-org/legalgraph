@@ -1,0 +1,13 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:Country a owl:Class ;
+    rdfs:subClassOf lgo:Jurisdiction ;
+    rdfs:label "Country"@en .
+
+lgo:memberOf a owl:ObjectProperty ;
+    rdfs:label "member of"@en ;
+    rdfs:comment "The country is a member of the organisation, or bound by its law through an agreement (for example EEA states through the EEA Agreement)."@en ;
+    rdfs:domain lgo:Country ;
+    rdfs:range lgo:SupranationalOrganisation .

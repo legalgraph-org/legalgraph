@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Legea 365/2002 privind comerţul electronic, articolul 5, written in schemas/law.xsd from the
+  Portal Legislativ consolidated text (DetaliiDocumentAfis/37075). The words are the Chamber of
+  Deputies'; only the structure is ours. Romania's catalogue is wider than the Directive:
+  phone and fax numbers, the fiscal registration code and price items are mandatory for
+  everyone, not "where applicable".
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="ro"
+     lga:act="RO-LCE" lga:jurisdiction="RO" lga:act-type="Statute"
+     lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075">
+  <meta>
+    <title>Legea nr. 365 din 7 iunie 2002 privind comerţul electronic</title>
+    <date>2002-06-07</date>
+  </meta>
+
+  <section num="Articolul 5" title="Informaţii generale" source="lce-5.fragment.html">
+    <paragraph num="(1)" lga:provision="RO-LCE-art5-1" lga:citation="art. 5 alin. (1) Legea 365/2002" lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Furnizorul de servicii are obligaţia de a pune la dispoziţie destinatarilor şi autorităţilor publice mijloace care să permită accesul facil, direct, permanent şi gratuit cel puţin la următoarele informaţii:
+      <list>
+        <item num="a)" lga:requires="ProviderName">numele sau denumirea furnizorului de servicii;</item>
+        <item num="b)" lga:requires="GeographicAddress">domiciliul sau sediul furnizorului de servicii;</item>
+        <item num="c)" lga:requires="PhoneNumber EmailAddress RapidContact">numerele de telefon, fax, adresa de posta electronică şi orice alte date necesare contactarii furnizorului de servicii în mod direct şi efectiv;</item>
+        <item num="d)" lga:requires="RegisterEntry">numărul de înmatriculare sau alte mijloace similare de identificare, în cazul în care furnizorul de servicii este înscris în registrul comerţului sau în alt registru public similar;</item>
+        <item num="e)" lga:requires="TaxId">codul de înregistrare fiscală;</item>
+        <item num="f)" lga:requires="SupervisoryAuthority">datele de identificare ale autorităţii competente, în cazul în care activitatea furnizorului de servicii este supusă unui regim de autorizare;</item>
+        <item num="g)" lga:requires="ProfessionalTitle ProfessionalBody ProfessionalRules">titlul profesional şi statul în care a fost acordat, corpul profesional sau orice alt organism similar din care face parte, indicarea reglementărilor aplicabile profesiei respective în statul în care furnizorul de servicii este stabilit, precum şi a mijloacelor de acces la acestea, în cazul în care furnizorul de servicii este membru al unei profesii liberale;</item>
+        <item num="h)" lga:requires="TotalPrice">tarifele aferente serviciilor oferite, care trebuie indicate cu respectarea normelor privind comercializarea produselor şi serviciilor de piaţa, cu precizarea scutirii, includerii sau neincluderii taxei pe valoarea adăugată, precum şi a cuantumului acesteia;</item>
+        <item num="i)" lga:requires="DeliveryCosts">includerea sau neincluderea în preţ a cheltuielilor de livrare, precum şi valoarea acestora, dacă este cazul;</item>
+        <item num="j)">orice alte informaţii pe care furnizorul de servicii este obligat să le pună la dispoziţie destinatarilor, în conformitate cu prevederile legale în vigoare.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="RO-LCE-art5-2" lga:citation="art. 5 alin. (2) Legea 365/2002" lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075" lga:regulates="ProviderIdentification">Obligaţia prevăzută la alin. (1) se considera îndeplinită în cazul în care furnizorul unui serviciu afişează aceste informaţii într-o formă clara, vizibil şi permanent, în interiorul paginii de web prin intermediul căreia este oferit serviciul respectiv, în condiţiile menţionate la alin. (1).</paragraph>
+  </section>
+</law>

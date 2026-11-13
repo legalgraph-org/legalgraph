@@ -9,6 +9,7 @@ facts:
   - EngagesProcessors
   - CommercialDigitalService
   - LegalPerson
+  - LimitedLiabilityCompany
   - RegisteredInPublicRegister
   - HasVatId
   - SellsToConsumers
@@ -31,6 +32,7 @@ obligations:
   - DE-R-telemedia-identification
   - DE-R-telemedia-representative
   - DE-R-dispute-resolution-statement
+  - DE-R-dispute-resolution-after-complaint
   - DE-R-email-marketing-existing-customers
   - DE-R-email-marketing-sender
   - DE-R-data-protection-officer
@@ -40,6 +42,7 @@ obligations:
   - DE-R-total-price
   - DE-R-unit-price
   - DE-R-accessibility
+  - EU-R-company-website-disclosure
   - EU-R-product-safety-information
   - EU-R-geo-blocking
   - DE-R-packaging-registration

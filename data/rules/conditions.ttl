@@ -10,7 +10,8 @@
 
 lgv:EstablishedInGermany lgo:establishedIn lg:DE .
 lgv:EstablishedInTheUnion lgo:establishedIn lg:EU .
-lgv:EstablishedInTheEea lgo:establishedIn lg:EEA .
+lgv:EstablishedInTheEea lgo:establishedIn lg:EEA ;
+    lgo:basedOn lg:EU-2000-31-art3-1 .
 lgv:EstablishedInTheUnitedKingdom lgo:establishedIn lg:GB .
 lgv:EstablishedInSwitzerland lgo:establishedIn lg:CH .
 lgv:EstablishedInUkraine lgo:establishedIn lg:UA .
@@ -22,6 +23,7 @@ lgv:OffersGoodsOrServicesInFrance lgo:offersIn lg:FR .
 lgv:OffersGoodsOrServicesInAustria lgo:offersIn lg:AT .
 lgv:OffersGoodsOrServicesInSpain lgo:offersIn lg:ES .
 lgv:OffersGoodsOrServicesInIreland lgo:offersIn lg:IE .
+lgv:OffersGoodsOrServicesInSwitzerland lgo:offersIn lg:CH .
 lgv:OffersGoodsOrServicesInItaly lgo:offersIn lg:IT .
 
 # Consumer contracts follow the consumer's country when the business directs its activities there, and a
@@ -58,7 +60,7 @@ lgv:HasEconomicIdNumber lgo:basedOn lg:DE-DDG-s5-1 , lg:DE-AO-s139c-1 .
 lgv:InLiquidation lgo:basedOn lg:DE-DDG-s5-1 .
 lgv:SellsToConsumers lgo:basedOn lg:DE-VSBG-s36-1 .
 lgv:TenOrFewerEmployees lgo:basedOn lg:DE-VSBG-s36-3 .
-lgv:TakesPartInConsumerDisputeResolution lgo:basedOn lg:DE-VSBG-s36-1 .
+lgv:TakesPartInConsumerDisputeResolution lgo:basedOn lg:EU-2013-11-art13-1 , lg:DE-VSBG-s36-1 .
 lgv:ProcessesPersonalData lgo:basedOn lg:EU-2016-679-art4-1 , lg:EU-2016-679-art4-2 , lg:EU-2016-679-rec30 .
 lgv:CollectsDataFromDataSubjects lgo:basedOn lg:EU-2016-679-art13-1 .
 lgv:ObtainsDataFromOtherSources lgo:basedOn lg:EU-2016-679-art14-1 .
@@ -129,14 +131,35 @@ lgv:ConsumerLaw2023InForce lgo:basedOn lg:UA-3153-ix-1 .
 
 lgv:EstablishedInCanada lgo:establishedIn lg:CA .
 lgv:EstablishedInFrance lgo:establishedIn lg:FR .
+lgv:EstablishedInLiechtenstein lgo:establishedIn lg:LI .
+lgv:EstablishedInPoland lgo:establishedIn lg:PL .
+lgv:EstablishedInRomania lgo:establishedIn lg:RO .
+lgv:EstablishedInCzechia lgo:establishedIn lg:CZ .
+lgv:EstablishedInSlovakia lgo:establishedIn lg:SK .
+lgv:EstablishedInMalta lgo:establishedIn lg:MT .
+lgv:EstablishedInNorway lgo:establishedIn lg:NO .
+lgv:EstablishedInSpain lgo:establishedIn lg:ES .
+lgv:EstablishedInBelgium lgo:establishedIn lg:BE .
+lgv:EstablishedInCyprus lgo:establishedIn lg:CY .
+lgv:EstablishedInCroatia lgo:establishedIn lg:HR .
+lgv:EstablishedInIreland lgo:establishedIn lg:IE .
+lgv:EstablishedInLatvia lgo:establishedIn lg:LV .
+lgv:EstablishedInPortugal lgo:establishedIn lg:PT .
+lgv:EstablishedInSweden lgo:establishedIn lg:SE .
 lgv:EstablishedInAustria lgo:establishedIn lg:AT .
 lgv:SellsToConsumersInOntario lgo:offersIn lg:CA-ON ;
     lgo:basedOn lg:CA-ON-CPA-s38-1 .
+lgv:SellsToConsumersInQuebec lgo:offersIn lg:CA-QC ;
+    lgo:basedOn lg:CA-QC-CPA-s54-4 .
 lgv:SellsToConsumersInCalifornia lgo:offersIn lg:US-CA ;
-    lgo:basedOn lg:US-CA-CIV-s1789-3 , lg:US-CA-BPC-s17602-a1 .
+    lgo:basedOn lg:US-CA-CIV-s1789-3 , lg:US-CA-BPC-s17538-d , lg:US-CA-BPC-s17602-a1 .
+lgv:CompetesOnTheSwissMarket lgo:basedOn lg:CH-UWG-art3-1-s .
 lgv:OffersAutomaticRenewal lgo:basedOn lg:US-CA-BPC-s17602-a1 , lg:GB-DMCC-2024-s254-1 .
 lgv:DirectedToChildrenUnder13 lgo:basedOn lg:US-CFR-16-312-4-a .
 lgv:EngagesProcessors lgo:basedOn lg:EU-2016-679-art28-1 , lg:GB-UK-GDPR-art28-1 , lg:US-CA-CCPA-1798-140-ag-1 .
 lgv:ActsAsProcessor lgo:basedOn lg:EU-2016-679-art28-3 .
 lgv:HostsFormsForOthers lgo:basedOn lg:EU-2016-679-art28-3 .
 lgv:Microenterprise lgo:basedOn lg:EU-2019-882-art3-23 .
+
+lgv:LimitedLiabilityCompany lgo:basedOn lg:EU-2017-1132-art26-1 .
+lgv:StatesShareCapital lgo:basedOn lg:EU-2017-1132-art26-1-2 .

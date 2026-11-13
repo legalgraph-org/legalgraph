@@ -1,0 +1,17 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:LicencedSourceShape a sh:NodeShape ;
+    sh:targetClass lgo:SourceDocument ;
+    sh:property [
+        sh:path lgo:licence ;
+        sh:maxCount 1 ;
+        sh:in ( lgv:PublicDomain lgv:OfficialWork lgv:LicenceOuverte2 lgv:OpenGovernmentLicence3 lgv:ReuseWithAttribution ) ;
+    ] , [
+        sh:path lgo:licenceBasis ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] .

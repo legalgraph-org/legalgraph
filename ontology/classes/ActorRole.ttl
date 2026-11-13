@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:ActorRole a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Actor role"@en ;
+    rdfs:comment "The role in which the law addresses someone: provider of a digital service, controller, trader."@en .

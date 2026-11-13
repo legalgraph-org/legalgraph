@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Obchodný zákonník (513/1991 Zb.), § 3a, written in schemas/law.xsd from the
+  Slov-Lex consolidated text (static mirror). The words are the legislature's;
+  only the structure is ours. § 3a(1) lists the data every entrepreneur must
+  give on business documents; (3) extends the same data to the entrepreneur's
+  website — Slovakia's company-law website duty, the equivalent of the Czech
+  § 435 OZ list. (2) is the official-correspondence clause and carries no
+  website content; it is included for completeness of the provision.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-OBCH" lga:jurisdiction="SK" lga:act-type="Code"
+     lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/">
+  <meta>
+    <title>Obchodný zákonník</title>
+    <date>1991-11-20</date>
+  </meta>
+
+  <section num="§ 3a" source="obch-3a.fragment.html">
+    <paragraph num="(1)" lga:provision="SK-OBCH-s3a-1" lga:citation="§ 3a ods. 1 Obchodného zákonníka" lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/" lga:regulates="ProviderIdentification" lga:requires="ProviderName GeographicAddress LegalForm RegisterEntry ShareCapital">Každý podnikateľ je povinný na svojich obchodných listoch a objednávkach vyhotovených v písomnej alebo elektronickej forme (ďalej len „obchodné dokumenty“) uvádzať obchodné meno, sídlo alebo miesto podnikania, právnu formu právnickej osoby a identifikačné číslo, ak je pridelené. Podnikatelia zapísaní v obchodnom registri alebo v inej evidencii podnikateľov uvádzajú aj označenie registra, ktorý podnikateľa zapísal, a číslo zápisu. Ak podnikateľ na svojich obchodných dokumentoch uvádza výšku základného imania, musí uviesť aj rozsah jeho splatenia.</paragraph>
+    <paragraph num="(2)" lga:provision="SK-OBCH-s3a-2" lga:citation="§ 3a ods. 2 Obchodného zákonníka" lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/" lga:regulates="ProviderIdentification">Údaje podľa odseku 1 je podnikateľ povinný uvádzať aj v písomnom úradnom styku.</paragraph>
+    <paragraph num="(3)" lga:provision="SK-OBCH-s3a-3" lga:citation="§ 3a ods. 3 Obchodného zákonníka" lga:url="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName GeographicAddress LegalForm RegisterEntry ShareCapital">Údaje podľa odseku 1 je podnikateľ povinný uvádzať aj na svojom webovom sídle, ak ho má zriadené.</paragraph>
+  </section>
+</law>

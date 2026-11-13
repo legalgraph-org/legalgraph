@@ -1,0 +1,26 @@
+# Zákon č. 108/2024 Z. z. o ochrane spotrebiteľa, § 5(1)(l): part of the
+# pre-contract information list — the trader must give the consumer a notice
+# about the right to submit a remedy request under the special act
+# (391/2015) together with a link to the website where information about
+# the competent ADR entity is published. It is the closest Slovak analogue
+# of Directive 2013/11 Art. 13(1)–(2); it is not a standalone website duty
+# (the whole list applies at contract conclusion, so it reaches websites
+# only through the general e-commerce/CRD route).
+id: sk/zos-108
+title: Zákon č. 108/2024 Z. z. o ochrane spotrebiteľa (§ 5)
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: zos-5.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/2024/108/20260101.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the static.slov-lex.sk version mirror: div paragraf-5.odsek-1, the full § 5(1) pre-contract information list (items a)-x)); item l) is the ADR notice. Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: c73e50e26edf3c32f0604dc9f49f37df54062c673f73619ba0679cbf6cb68c79
+annotated: zos.law.xml

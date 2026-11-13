@@ -169,6 +169,7 @@ lg:DE-DDG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/ddg/BJNR0950B0024.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Zuletzt geändert durch Art. 26 Abs. 2 G v. 25.3.2026 I Nr. 81"@de , "Änderung durch Art. 1 G v. 12.5.2026 I Nr. 138 textlich nachgewiesen, dokumentarisch noch nicht abschließend bearbeitet"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

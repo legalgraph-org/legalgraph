@@ -1,0 +1,89 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Spain: the aviso legal under Artículo 10.1 LSSI (Ley 34/2002), the transposition of Article 5 of
+# the e-Commerce Directive. Spain asks every provider for its tax identification number (NIF,
+# letter e) as well. There is no separate VAT-number line, so the EU VAT rule still reaches VAT
+# payers, as in Poland and Romania. Letter g) (codes of conduct the provider adheres to) has no
+# rule yet: the graph has no condition for adhering to a code of conduct.
+
+lg:ES-R-impressum a lgo:Obligation ;
+    rdfs:label "Aviso legal: name, address, e-mail, direct contact and NIF"@en ;
+    rdfs:comment "Every information society service provider gives permanent, easy, direct and free electronic access to its name or company name, its residence or domicile (or a permanent establishment in Spain), its e-mail address and other details for direct and effective communication, and its tax identification number (Artículo 10.1.a and e LSSI)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:ES-LSSI-art10-1 , lg:ES-LSSI-art10-1-a , lg:ES-LSSI-art10-1-e ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:ES ;
+    lgo:appliesWhen lgv:EstablishedInSpain , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact , lgv:TaxId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:ES-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Aviso legal: register entry"@en ;
+    rdfs:comment "The details of the entry in the Registro Mercantil, or in another public register in which the provider is entered (Artículo 10.1.b LSSI)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:ES-LSSI-art10-1-b ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:ES ;
+    lgo:appliesWhen lgv:EstablishedInSpain , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:ES-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Aviso legal: authorisation and supervising body"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:ES-LSSI-art10-1-c ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:ES ;
+    lgo:appliesWhen lgv:EstablishedInSpain , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:ES-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Aviso legal: regulated profession details"@en ;
+    rdfs:comment "The professional association and membership number, the qualification and the state that issued it, and the professional rules and how to consult them (Artículo 10.1.d LSSI)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:ES-LSSI-art10-1-d , lg:ES-LSSI-art10-1-d-1 , lg:ES-LSSI-art10-1-d-2 , lg:ES-LSSI-art10-1-d-3 , lg:ES-LSSI-art10-1-d-4 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:ES ;
+    lgo:appliesWhen lgv:EstablishedInSpain , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:ES-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Art. 40.1-2 Ley 7/2017: a trader adhering to an accredited entity, or bound by a rule or code of conduct to accept it, identifies the entity in full with its website, on its website and in its general contract terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:ES-LEY7-2017-art40-1 , lg:ES-LEY7-2017-art40-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:ES ;
+    lgo:appliesWhen lgv:EstablishedInSpain , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:ES-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Art. 40.3 Ley 7/2017: whether the trader adheres to or is bound to use an ADR entity; if not, at least one competent entity, and whether it will take part."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:ES-LEY7-2017-art40-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:ES ;
+    lgo:appliesWhen lgv:EstablishedInSpain , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

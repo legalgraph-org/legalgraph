@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lei n.º 144/2015, art. 18 (versão consolidada DL 102/2017), written in
+  schemas/law.xsd from the pgdl consolidated text. The words are the
+  Portuguese legislature's; only the structure is ours. Art. 18 transposes
+  Art. 13 of the ADR Directive: suppliers bound to an ADR entity name it with
+  its website on their own site and in written/adhesion contracts or another
+  durable medium.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pt"
+     lga:act="PT-LEI-144-2015" lga:jurisdiction="PT" lga:act-type="Statute"
+     lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&amp;tabela=leis">
+  <meta>
+    <title>Lei n.º 144/2015 — mecanismos de resolução extrajudicial de litígios de consumo</title>
+    <date>2015-09-08</date>
+  </meta>
+
+  <section num="art. 18" source="lei18.fragment.html">
+    <paragraph num="1 -" lga:provision="PT-LEI-144-2015-art18-1" lga:citation="art. 18.º n.º 1 Lei 144/2015" lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&amp;tabela=leis" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Sem prejuízo dos deveres a que se encontrem sectorialmente vinculados por força da legislação especial que se lhes aplique, os fornecedores de bens ou prestadores de serviços estabelecidos em território nacional devem informar os consumidores relativamente às entidades de RAL a que se encontram vinculados, por adesão ou por imposição legal decorrente de arbitragem necessária, e indicar o sítio eletrónico na Internet das mesmas.</paragraph>
+    <paragraph num="2 -" lga:provision="PT-LEI-144-2015-art18-2" lga:citation="art. 18.º n.º 2 Lei 144/2015" lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&amp;tabela=leis" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">As informações a que se refere o número anterior devem ser prestadas de forma clara, compreensível e facilmente acessível no sítio eletrónico na Internet dos fornecedores de bens ou prestadores de serviços, caso exista, bem como nos contratos de compra e venda ou de prestação de serviços entre o fornecedor de bens ou prestador de serviços e o consumidor, quando estes assumam a forma escrita ou constituam contratos de adesão, ou ainda noutro suporte duradouro.</paragraph>
+  </section>
+</law>

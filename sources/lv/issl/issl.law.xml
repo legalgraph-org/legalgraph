@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Informācijas sabiedrības pakalpojumu likums, 4. pants, written in schemas/law.xsd
+  from the likumi.lv consolidated text. The words are the Saeima's; only the
+  structure is ours. Latvia's list merges the Directive's name/address/register
+  items into one point and adds no extra duties; (2) is the price-clarity clause.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="lv"
+     lga:act="LV-ISSL" lga:jurisdiction="LV" lga:act-type="Statute"
+     lga:url="https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums">
+  <meta>
+    <title>Informācijas sabiedrības pakalpojumu likums</title>
+    <date>2004-05-04</date>
+  </meta>
+
+  <section num="4.pants" title="Vispārēji sniedzamā informācija" source="issl-4.fragment.html">
+    <paragraph num="(1)" lga:provision="LV-ISSL-art4-1" lga:citation="4. pants (1) ISSL" lga:url="https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Pakalpojuma sniedzējs uzskatāmi, tieši un pastāvīgi pieejamā veidā sniedz šādu informāciju:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress RegisterEntry">pakalpojuma sniedzēja firma (nosaukums) vai vārds un uzvārds, juridiskā adrese vai deklarētā dzīvesvieta un reģistrācijas numurs (ja tāds ir);</item>
+        <item num="2)" lga:requires="EmailAddress RapidContact">pakalpojuma sniedzēja kontaktinformācija, kas nodrošina iespēju ātri sazināties tiešā veidā, ieskaitot elektroniskā pasta adresi;</item>
+        <item num="3)" lga:requires="SupervisoryAuthority">ja attiecīgās darbības veikšanai nepieciešama speciālā atļauja (licence), — informācija par iestādi, kas izsniegusi speciālo atļauju (licenci);</item>
+        <item num="4)" lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">attiecībā uz reglamentēto profesionālo darbību — informācija par profesionālo organizāciju, kas izsniegusi profesionālo kvalifikāciju apliecinošus dokumentus, profesijai vai kvalifikācijai atbilstošais nosaukums un valsts, kurā tas piešķirts, kā arī atsauce uz reģistrācijas valstī piemērojamiem profesionālajiem noteikumiem un veids, kādā tie pieejami;</item>
+        <item num="5)" lga:requires="VatId">ja attiecīgā darbība apliekama ar pievienotās vērtības nodokli, — reģistrācijas numurs Valsts ieņēmumu dienesta ar pievienotās vērtības nodokli apliekamo personu reģistrā.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="LV-ISSL-art4-2" lga:citation="4. pants (2) ISSL" lga:url="https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Ja tiek norādīta cena, tad pakalpojuma sniedzējs to norāda tā, lai cena būtu nepārprotama un skaidri salasāma, un sniedz informāciju par to, vai cenā ir ietverti maksājamie nodokļi un preces piegādes izmaksas.</paragraph>
+  </section>
+</law>

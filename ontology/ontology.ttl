@@ -1,0 +1,19 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# legalgraph ontology: the classes and properties of legalgraph.
+# Layers (see README): jurisdictions, legislation (ELI / FRBR-inspired), disclosure duties.
+# Normative layer (obligations, conditions) arrives in a later version.
+
+<https://legalgraph.org/ontology> a owl:Ontology ;
+    rdfs:label "legalgraph ontology"@en ;
+    dcterms:title "legalgraph ontology"@en ;
+    dcterms:description "Classes and properties for modelling the laws that govern what businesses must disclose on websites and in marketing: jurisdictions, legal acts, provisions, verbatim quotes and the disclosure duties they create."@en ;
+    dcterms:creator "Aimix GmbH (https://aimix.io)" ;
+    dcterms:rightsHolder "Aimix GmbH" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-10-30"^^xsd:date ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/ontology> .

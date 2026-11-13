@@ -14,5 +14,32 @@ lg:CZ-480-2004 a lgo:LegalAct ;
     lgo:jurisdiction lg:CZ ;
     eli:transposes lg:EU-2000-31 ;
     lgo:sourceUrl "https://www.zakonyprolidi.cz/cs/2004-480"^^xsd:anyURI ;
-    rdfs:comment "Provision for the provider identification duty not yet identified."@en ;
-    lgo:reviewStatus lgv:Draft .
+    rdfs:comment "§ 5 is the hosting safe harbour, not provider information — the act has no ECD Art. 5 list. § 7 is the commercial-communications regime (opt-in, soft opt-in, marking, sender, opt-out); § 8(3) is the Art. 5(1)(f) profession fragment for commercial communications. Czech identification duties live in § 435 OZ."@en .
+
+# CZ finding (checked against the consolidated text of 480/2004 Sb., all of §§ 1–13):
+# the act transposes the e-Commerce Directive (its footnote 1 cites 2000/31/ES) but has NO
+# Article 5 provider-information article — §§ 3–5 are intermediary liability, § 7 commercial
+# communications, § 8 regulated professions, §§ 9–13 internal market, supervision and
+# sanctions. Czechia has no dedicated ECD Art. 5 provision: the website identification duty
+# is the general civil-law § 435 OZ (name, seat, register entry, IČ on information made
+# public by remote access), and the Directive's VAT-number and supervisory-authority items
+# have no general Czech website equivalent.
+
+# CZ: § 435 občanský zákoník and § 7 ZOK (additions to data/extracted/cz/).
+
+lg:CZ-OZ
+    lgo:shortName "OZ" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.zakonyprolidi.cz/cs/2012-89> ;
+    rdfs:comment "§ 435(1) is the general Czech disclosure duty: name and seat on business letters and in information made public by remote access (the website), the register-entry particulars for registered entrepreneurs, and the assigned identifying number (IČ). § 435(2) permits extra particulars that cannot mislead."@en .
+
+lg:CZ-ZOK
+    lgo:shortName "ZOK" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.zakonyprolidi.cz/cs/2012-90> ;
+    rdfs:comment "§ 7(2) is the company-law website duty: a joint-stock company must continuously publish, free of charge, on its internet pages the business-letter particulars plus others this act requires; § 7(3) applies it to an s.r.o. that sets up a website, § 7(4) to foreign-capital-company branches. § 7(1) requires any stated capital to be the subscribed paid-in part."@en .
+
+lg:CZ-ZOS-634
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.zakonyprolidi.cz/cs/1992-634> ;
+    rdfs:comment "§ 14 is the trader ADR information duty: (1) the competent out-of-court dispute entity plus its internet address on the trader's website and in the business terms the contract refers to; (2) the after-complaint duty on paper or another durable medium."@en .

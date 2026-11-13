@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:LegalConcept a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Legal concept"@en ;
+    rdfs:comment "A term or legal construct an act defines or sets conditions for, other than a disclosure or an information item: personal data, consent, a lawful basis for processing, a criterion of an act's scope."@en .

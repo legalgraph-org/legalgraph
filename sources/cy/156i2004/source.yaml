@@ -1,0 +1,25 @@
+# Ν.156(Ι)/2004 — Cyprus's e-commerce act transposing Directive 2000/31/EC.
+# Άρθρο 8 is the provider-information duty; item (γ) adds telephone and
+# telefax numbers. The consolidated text on cylaw.org (the Cyprus Bar
+# Association's legislation service, published with KINOΠ/CyLii) serves each
+# article in its own section page; the fragment holding άρθρο 8 is kept
+# verbatim.
+id: cy/156i2004
+title: Ο περί Ορισμένων Πτυχών των Υπηρεσιών της Κοινωνίας της Πληροφορίας και ειδικά του Ηλεκτρονικού Εμπορίου Νόμος του 2004 (άρθρο 8)
+jurisdiction: CY
+language: el
+publisher: Cylaw (ΚΙΝOΠ/CyLii — Παγκύπριος Δικηγορικός Σύλλογος)
+kind: authored-xml
+licence: official-work
+licence_basis: "Νόμος 59/1976 περί Δικαιώματος Πνευματικής Ιδιοκτησίας άρθρο 7: official texts of legislation are not subject to copyright"
+originals:
+  - file: cy-8.fragment.html
+    url: "http://www.cylaw.org/nomoi/enop/ind/2004_1_156/section-sc8ba9ea15-3279-e714-0c87-d88830158b22.html"
+    official: false
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated section page between the '8.-(1)' article start and the page footer, re-encoded to UTF-8 (the page serves windows-1253). Downloaded 2026-11-12. cylaw.org is the Cyprus Bar Association's legislation service hosting the consolidated official texts."
+    retrieved_on: 2026-11-12
+    sha256: 3ae2be4b500bf435ed57b4270816ef19f9da8a8628023abb65fe8388faee6aca
+annotated: 156i2004.law.xml

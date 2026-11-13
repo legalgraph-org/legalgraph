@@ -1,0 +1,27 @@
+# Personen- und Gesellschaftsrecht (PGR), LGBl. 1926 Nr. 4, Art. 120a: the
+# Liechtenstein company-law disclosure duty (Umsetzung of the Publizitäts-
+# richtlinien 68/151/EWG, 2003/58/EG). Briefe, Bestellscheine and Webseiten
+# of an AG, KGaA or GmbH must show firma+Rechtsform, statutarischer Sitz,
+# Liquidation, the register identification and the register number; Abs. 2 is
+# the paid-in capital clause; Abs. 3 covers foreign-seated branches. Lilex
+# publishes the consolidated act as PDF; each quoted line is checked letter
+# for letter against it (PDF compare is on letters only).
+id: li/pgr
+title: Personen- und Gesellschaftsrecht (PGR), Art. 120a
+jurisdiction: LI
+language: de
+publisher: Liechtensteinische Landesverwaltung, Lilex (gesetze.li)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 5 URG (LGBl. 1999 Nr. 160): laws, ordinances and other official instruments are not protected by copyright"
+originals:
+  - file: pgr.pdf
+    page: https://www.gesetze.li/konso/1926004000
+    url: https://www.gesetze.li/konso/pdf/1926004000?version=136
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated text, Fassung vom 01.09.2026 (version 136, latest), Lilex systematic number 216.0. Art. 120a is on pages 93-94 of the PDF."
+    retrieved_on: 2026-11-12
+    sha256: 5851b543646ab11f235bd220478f60f06a90c6fa6c3795e7eb1af27ab46ebdcc
+annotated: pgr.law.xml

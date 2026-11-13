@@ -60,6 +60,7 @@ lg:EU-2017-1369-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/energy-labelling/CL2017R1369EN0010010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text applying from 1 May 2021, prepared by the Publications Office as a documentation tool. The authentic texts are Regulation (EU) 2017/1369 (OJ L 198, 28.7.2017) and its amending acts; each quoted provision is checked against them."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -72,6 +73,7 @@ lg:EU-2017-1369-source
 lg:EU-2017-1369-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2017-1369-source ;
     lgo:legalStatus "Konsolidierte Fassung (documentation tool, not the authentic text)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

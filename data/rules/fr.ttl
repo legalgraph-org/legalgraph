@@ -43,3 +43,88 @@ lg:FR-R-order-button a lgo:Obligation ;
     lgo:appliesWhen lgv:SellsToConsumersInFrance , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:LabelOrderButton ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Provider information (Article 19 LCEN) ---------------------------------------------
+# Article 19 transposes Article 5 of the e-Commerce Directive for anyone doing e-commerce in the
+# sense of Article 14 (supplying goods or services at a distance by electronic means). France asks
+# more than the Directive: a telephone number from everyone, and share capital and the registered
+# office alongside the register number.
+
+lg:FR-R-impressum a lgo:Obligation ;
+    rdfs:label "Mentions légales: name, address, e-mail and telephone"@en ;
+    rdfs:comment "Name (or business name), the address where the provider is established, its e-mail address and telephone details that allow it to be contacted effectively (Article 19, 1° and 2° LCEN). France requires a phone number, unlike the Directive's floor."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:FR-LCEN-art19-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:PhoneNumber , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:FR-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Mentions légales: RCS or trade register number, share capital and registered office"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:FR-LCEN-art19-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry , lgv:ShareCapital , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:FR-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Mentions légales: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:FR-LCEN-art19-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:FR-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Mentions légales: authority that granted the authorisation"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:FR-LCEN-art19-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:FR-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Mentions légales: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:FR-LCEN-art19-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Publisher identification (Article 1-1, I LCEN) -------------------------------------
+# A separate duty for anyone publishing an online public communication service, commercial or
+# not: identity and telephone, the publication director, and the host. Individuals publishing in
+# a non-professional capacity may keep their identity off the site and give it to the host
+# instead (Article 1-1, II), so the rule is gated on a commercial service.
+
+lg:FR-R-publisher-identification a lgo:Obligation ;
+    rdfs:label "Online publisher: publication director and host"@en ;
+    rdfs:comment "Publishers of an online public communication service give their name, address and telephone number (with register number, share capital and registered office where entered in the RCS or the trades register), the name of the publication director and, where there is one, the editor-in-chief, and the name, address and telephone number of the hosting provider (Article 1-1, I LCEN)."@en ;
+    lgo:establishedBy lg:FR-LCEN-art1-1-I ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ResponsibleEditor , lgv:HostingProvider ;
+    lgo:reviewStatus lgv:Draft .

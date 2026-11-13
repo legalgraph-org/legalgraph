@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lag (2015:671) om alternativ tvistlösning i konsumentförhållanden, 10–12 §§,
+  written in schemas/law.xsd from the riksdagen consolidated text. The words
+  are the Swedish legislature's; only the structure is ours. 10 § transposes
+  Art. 13(1)–(2) of the ADR Directive: a trader committed to ADR names the
+  ADR board with its web and postal address on consumer-facing websites and
+  in written contract terms; 11 § is the durable-medium pointer when a claim
+  is rejected; 12 § points to Art. 14 of the EU ODR Regulation. Swedish
+  sections are split per stycke: 10 § has three (the duty, the channels,
+  the content) and 11 § has two (the duty, the form).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sv"
+     lga:act="SE-ARL" lga:jurisdiction="SE" lga:act-type="Statute"
+     lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/">
+  <meta>
+    <title>Lag (2015:671) om alternativ tvistlösning i konsumentförhållanden</title>
+    <date>2015-11-12</date>
+  </meta>
+
+  <section num="10 §" source="arl.fragment.html">
+    <paragraph lga:provision="SE-ARL-s10-1" lga:citation="10 § första stycket lagen om alternativ tvistlösning" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">En näringsidkare som har åtagit sig att lösa tvist med en konsument genom alternativ tvistlösning ska lämna klar, begriplig och lättillgänglig information om den eller de nämnder för alternativ tvistlösning som åtagandet avser.</paragraph>
+    <paragraph lga:provision="SE-ARL-s10-2" lga:citation="10 § andra stycket lagen om alternativ tvistlösning" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Informationen ska lämnas
+      <list>
+        <item num="1." lga:requires="DisputeResolutionBody">på näringsidkarens eventuella webbplatser som riktar sig till konsumenter, och</item>
+        <item num="2." lga:requires="DisputeResolutionBody">i eventuella skriftliga avtalsvillkor mellan näringsidkaren och konsumenter.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="SE-ARL-s10-3" lga:citation="10 § tredje stycket lagen om alternativ tvistlösning" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Informationen ska innehålla den berörda tvistlösningsnämndens webbadress och postadress.</paragraph>
+  </section>
+  <section num="11 §" source="arl.fragment.html">
+    <paragraph lga:provision="SE-ARL-s11-1" lga:citation="11 § första stycket lagen om alternativ tvistlösning" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">En näringsidkare som helt eller delvis motsätter sig ett krav från en konsument på grund av ett avtal mellan dem, ska samtidigt ge konsumenten information om den nämnd för alternativ tvistlösning som konsumenten kan vända sig till för att få sitt krav prövat. Näringsidkaren ska även informera konsumenten om huruvida näringsidkaren avser att medverka vid tvistlösningsförfarandet.</paragraph>
+    <paragraph lga:provision="SE-ARL-s11-2" lga:citation="11 § andra stycket lagen om alternativ tvistlösning" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/" lga:regulates="ConsumerDisputeResolution" lga:requires="DisputeResolutionBody">Informationen enligt första stycket ska vara klar och begriplig, innehålla den berörda tvistlösningsnämndens webbadress och postadress samt ges i en handling eller i någon annan läsbar och varaktig form som är tillgänglig för konsumenten.</paragraph>
+  </section>
+  <section num="12 §" source="arl.fragment.html">
+    <paragraph lga:provision="SE-ARL-s12" lga:citation="12 § lagen om alternativ tvistlösning" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/" lga:regulates="ConsumerDisputeResolution">Bestämmelser om konsumentinformation som ska lämnas av näringsidkare finns i artikel 14 i EU:s  tvistlösningsförordning.</paragraph>
+  </section>
+</law>

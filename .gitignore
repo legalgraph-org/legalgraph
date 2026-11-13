@@ -4,3 +4,5 @@ __pycache__/
 .ruff_cache/
 dist/
 .env
+# The renderer's dependencies (make render-install)
+tools/render/node_modules/

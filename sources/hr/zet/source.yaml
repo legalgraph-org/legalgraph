@@ -1,0 +1,22 @@
+# Zakon o elektroničkoj trgovini (NN 173/03): Croatia's transposition of the
+# e-Commerce Directive. Članak 6 is the provider-information duty. Narodne
+# novine serves the published act as one flat Word-export page with no
+# per-article element, so the fragment holding članak 6 is kept verbatim.
+id: hr/zet
+title: Zakon o elektroničkoj trgovini (članak 6)
+jurisdiction: HR
+language: hr
+publisher: Narodne novine d.d. (narodne-novine.nn.hr)
+kind: authored-xml
+licence: official-work
+licence_basis: "Zakon o autorskom pravu čl. 8 st. 1: službeni tekstovi zakonodavnih, upravnih i sudskih akata nisu predmet autorskog prava — official texts of legislation are not subject to copyright"
+originals:
+  - file: hr-6.fragment.html
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the NN 173/2003 publication page between the Članak 6 paragraph and the next chapter heading: the page is a flat Word export with no per-article wrapper. Downloaded 2026-11-12. The text shown is the 2003 publication; later amendments (NN 67/08, 36/09, 130/11, 30/14, 32/19, 67/25 — consolidation in force 17.04.2025) leave članak 6 verbatim."
+    retrieved_on: 2026-11-12
+    sha256: f88c245c3c16b7987cf2f5e76ae746031b6566fa9aa81b88bd7deaa41c4642a2
+annotated: zet.law.xml

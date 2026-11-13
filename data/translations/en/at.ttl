@@ -10,6 +10,47 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:AT-ASTG-s19-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "cc38124e9d22f41b08497794a9e018a1911be0dd4e9cecee8377d28bff905e03" ;
+    lgo:text "(1) An entrepreneur shall inform consumers about the alternative dispute resolution body or bodies by which it is covered, provided that it has committed or is obliged to use those bodies for the settlement of disputes with consumers. This information shall include details of the website address of the alternative dispute resolution body or bodies concerned."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-ASTG-s19-1-q1 .
+
+lg:AT-ASTG-s19-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2ff43da78a691ef442a7de95a6a189d57c4f2ebac3b1448e721c4d2ceecd0698" ;
+    lgo:text "(2) The entrepreneur shall provide the information referred to in paragraph 1, where available, on its website and, where applicable, in its general terms and conditions in a clear, comprehensible and easily accessible manner."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-ASTG-s19-2-q1 .
+
+lg:AT-ASTG-s19-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5b2cb44dd9758c8bcbcec21788c5b9ea42c5ad19c42f93c74b3fdb12a345f999" ;
+    lgo:text "(3) Where the entrepreneur and the consumer are unable to reach agreement in a dispute, the entrepreneur shall inform the consumer, on paper or another durable medium, of the alternative dispute resolution body or bodies competent for it. The entrepreneur shall also state whether it will participate in a procedure."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-ASTG-s19-3-q1 .
+
+lg:AT-ASTG-title-d32926411ac1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d32926411ac18d5e5777ab77bd5da7fd6c9d16cf4973d5803e6e68aa4973723f" ;
+    lgo:text "Federal Act on Alternative Dispute Resolution in Consumer Matters (AStG)"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-ASTG .
+
 lg:AT-DSB-2021-D155027-spruch-2-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

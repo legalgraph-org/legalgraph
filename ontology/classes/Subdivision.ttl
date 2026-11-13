@@ -1,0 +1,13 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:Subdivision a owl:Class ;
+    rdfs:subClassOf lgo:Jurisdiction ;
+    rdfs:label "Subdivision"@en ;
+    rdfs:comment "A state, province or region of a country with its own legislation, such as California. Identified by its ISO 3166-2 code (US-CA)."@en .
+
+lgo:subdivisionOf a owl:ObjectProperty ;
+    rdfs:label "subdivision of"@en ;
+    rdfs:domain lgo:Subdivision ;
+    rdfs:range lgo:Country .

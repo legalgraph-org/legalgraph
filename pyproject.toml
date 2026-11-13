@@ -10,6 +10,7 @@ dependencies = [
     "beautifulsoup4==4.15.0",
     "click==8.5.0",
     "lxml==6.1.3",
+    "pydantic==2.14.3",
     "pypdf==6.1.3",
     "pyshacl==0.40.2",
     "python-dotenv==1.2.4",
@@ -41,22 +42,43 @@ exclude = [".venv", "__pycache__", ".git", ".pytest_cache", ".ruff_cache"]
 
 [tool.ruff.lint]
 select = [
-    # pycodestyle
-    "E",
-    # Pyflakes
-    "F",
-    # pyupgrade
-    "UP",
-    # flake8-bugbear
-    "B",
-    # flake8-simplify
-    "SIM",
-    # isort
-    "I",
-    # flake8-tidy-imports
-    "TID",
+    "E", "W",  # pycodestyle
+    "F",       # Pyflakes
+    "UP",      # pyupgrade
+    "B",       # flake8-bugbear
+    "SIM",     # flake8-simplify
+    "I",       # isort
+    "TID",     # flake8-tidy-imports
+    "C90",     # mccabe: cyclomatic complexity
+    "PL",      # Pylint: too many branches, returns, arguments, statements; import placement
+    "N",       # pep8-naming
+    "RET",     # flake8-return
+    "C4",      # flake8-comprehensions
+    "PIE",     # flake8-pie
+    "PERF",    # Perflint
+    "PTH",     # flake8-use-pathlib
+    "ARG",     # flake8-unused-arguments
+    "RUF",     # Ruff-specific
+    "T20",     # no print(): the CLI writes through click
+    "ERA",     # no commented-out code
 ]
-extend-select = ["E501"]
+ignore = [
+    "PLR2004",                     # magic values: the parsers compare against portal formats by design
+    "RUF001", "RUF002", "RUF003",  # law texts and their comments use typographic quotes and dashes
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["ARG001"]  # pytest fixtures are requested by parameter name
+
+# A function with more paths than this is split into named steps.
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.pylint]
+max-args = 6
+max-branches = 12
+max-returns = 6
+max-statements = 50
 
 # First-party imports must be absolute, e.g. `from legalgraph.load import Sources`.
 [tool.ruff.lint.flake8-tidy-imports]

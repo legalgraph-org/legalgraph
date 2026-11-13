@@ -56,6 +56,7 @@ lg:CJEU-C-311-18-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-schrems-ii/ECR_62018CJ0311_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: English. This English text is the authentic version."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -68,6 +69,7 @@ lg:CJEU-C-311-18-source
 lg:CJEU-C-311-18-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-C-311-18-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

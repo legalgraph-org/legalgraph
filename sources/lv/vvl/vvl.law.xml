@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Valsts valodas likums, 21. pants, written in schemas/law.xsd from the
+  likumi.lv consolidated text. The words are the Latvian legislature's; only
+  the structure is ours. 21. pants requires public information in the state
+  language for public bodies and private entities performing public
+  functions, state language on product labelling and manuals, translations
+  for imported goods, and the state language in public-facing notices that
+  touch legitimate public interests (including consumer rights, per
+  8. pants(2)); (7) requires the Latvian text to take the primary place.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="lv"
+     lga:act="LV-VVL" lga:jurisdiction="LV" lga:act-type="Statute"
+     lga:url="https://likumi.lv/ta/id/14740-valsts-valodas-likums">
+  <meta>
+    <title>Valsts valodas likums</title>
+    <date>1999-12-21</date>
+  </meta>
+
+  <section num="21. pants" source="vvl-21.fragment.html">
+    <paragraph num="(1)" lga:provision="LV-VVL-art21-1" lga:citation="21. panta pirmā daļa Valsts valodas likuma" lga:url="https://likumi.lv/ta/id/14740-valsts-valodas-likums" lga:regulates="StateLanguageUse">Valsts un pašvaldību iestāžu, tiesu un tiesu sistēmai piederīgo iestāžu, valsts un pašvaldību uzņēmumu, kā arī uzņēmējsabiedrību, kurās lielākā kapitāla daļa pieder valstij vai pašvaldībai, sabiedrības informēšanai paredzētā informācija sniedzama tikai valsts valodā, izņemot šā panta piektajā daļā noteiktos gadījumus. Šis noteikums attiecināms arī uz privātām iestādēm, organizācijām, uzņēmumiem (uzņēmējsabiedrībām), kā arī pašnodarbinātajām personām, kuras, pamatojoties uz likumu vai citu normatīvo aktu, veic noteiktas publiskas funkcijas, ja informācijas sniegšana saistīta ar attiecīgo funkciju izpildi.</paragraph>
+    <paragraph num="(2)" lga:provision="LV-VVL-art21-2" lga:citation="21. panta otrā daļa Valsts valodas likuma" lga:url="https://likumi.lv/ta/id/14740-valsts-valodas-likums" lga:regulates="StateLanguageUse">Latvijā ražoto preču etiķetēs un marķējumā ietvertajai informācijai, lietošanas instrukcijām, uzrakstiem uz saražotās produkcijas, tās iesaiņojuma vai konteinera jābūt valsts valodā. Ja līdztekus valsts valodai lietota arī svešvaloda, tekstam valsts valodā ierādāma galvenā vieta, un formas vai satura ziņā tas nedrīkst būt mazāks vai šaurāks par tekstu svešvalodā. Šie noteikumi neattiecas uz eksportam paredzētajām precēm.</paragraph>
+    <paragraph num="(3)" lga:provision="LV-VVL-art21-3" lga:citation="21. panta trešā daļa Valsts valodas likuma" lga:url="https://likumi.lv/ta/id/14740-valsts-valodas-likums" lga:regulates="StateLanguageUse">Ikvienai importētai precei, kuras marķējumā, lietošanas instrukcijā, garantijas dokumentos vai tehniskajā pasē ietvertā informācija ir svešvalodā, pievienojams šīs informācijas tulkojums valsts valodā.</paragraph>
+    <paragraph num="(4)" lga:provision="LV-VVL-art21-4" lga:citation="21. panta ceturtā daļa Valsts valodas likuma" lga:url="https://likumi.lv/ta/id/14740-valsts-valodas-likums" lga:regulates="StateLanguageUse">Uzrakstos, izkārtnēs, afišās, plakātos, paziņojumos vai citos ziņojumos ietvertā informācija, ja tā skar likumīgas sabiedriskās intereses un paredzēta sabiedrības informēšanai sabiedrībai pieejamās vietās, sniedzama valsts valodā, izņemot šā panta piektajā daļā noteiktos gadījumus.</paragraph>
+    <paragraph num="(7)" lga:provision="LV-VVL-art21-7" lga:citation="21. panta septītā daļa Valsts valodas likuma" lga:url="https://likumi.lv/ta/id/14740-valsts-valodas-likums" lga:regulates="StateLanguageUse">Ja līdztekus valsts valodai informācijā lietota arī svešvaloda, tekstam valsts valodā ierādāma galvenā vieta, un formas vai satura ziņā tas nedrīkst būt mazāks vai šaurāks par tekstu svešvalodā.</paragraph>
+  </section>
+</law>

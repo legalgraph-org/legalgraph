@@ -1,0 +1,52 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:RO-LCE-art5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bf62dfbaf4414c6ea070410464c783d35eb68002bf0482b496e853e569532c05" ;
+    lgo:text """(1) A service provider shall make available to recipients and to public authorities means allowing easy, direct, permanent and free access to at least the following information:
+a) the service provider's name or business name;
+b) the service provider's domicile or seat;
+c) telephone and fax numbers, e-mail address and any other data needed to contact the service provider directly and effectively;
+d) the registration number or other similar means of identification, where the service provider is entered in the trade register or another similar public register;
+e) the fiscal registration code;
+f) the identification data of the competent authority, where the service provider's activity is subject to an authorisation regime;
+g) the professional title and the state in which it was conferred, the professional body or any other similar organisation of which the provider is a member, an indication of the rules applicable to that profession in the state in which the service provider is established and the means of access to them, where the service provider is a member of a liberal profession;
+h) the rates for the services offered, which must be indicated in compliance with the rules on the marketing of market goods and services, specifying exemption from, inclusion or non-inclusion of value added tax and its amount;
+i) the inclusion or non-inclusion of delivery costs in the price and their amount, where applicable;
+j) any other information which the service provider is obliged to make available to recipients in accordance with the legal provisions in force."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LCE-art5-1-q1 .
+
+lg:RO-LCE-art5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "618c6f5014663c13af8c5bcd7b3d35d291a82d93e9c5b2287de40cdca59a7855" ;
+    lgo:text "(2) The obligation provided in paragraph (1) is considered fulfilled where the provider of a service displays this information in a clear, visible and permanent form inside the web page through which the service is offered, under the conditions mentioned in paragraph (1)."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LCE-art5-2-q1 .
+
+lg:RO-LCE-title-3da1099a81bd-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3da1099a81bdcdad0edf5b46a5a4f52a109eeca137447f76f73ee6b5537ea7a5" ;
+    lgo:text "Law no. 365 of 7 June 2002 on electronic commerce"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LCE .

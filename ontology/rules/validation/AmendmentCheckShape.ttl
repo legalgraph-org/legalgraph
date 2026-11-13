@@ -1,0 +1,53 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:AmendmentCheckShape a sh:NodeShape ;
+    sh:targetClass lgo:AmendmentCheck ;
+    sh:property [
+        sh:path [ sh:inversePath lgo:amendmentCheck ] ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "An amendment check belongs to exactly one legal act." ;
+    ] , [
+        sh:path lgo:checkedOn ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "An amendment check needs the day it was made (lgo:checkedOn)." ;
+    ] , [
+        sh:path lgo:sourceUrl ;
+        sh:minCount 1 ;
+        sh:datatype xsd:anyURI ;
+        sh:message "An amendment check needs the official source it was made against (lgo:sourceUrl)." ;
+    ] , [
+        sh:path lgo:lastKnownAmendment ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] , [
+        sh:path lgo:lastKnownAmendmentDate ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path lgo:lastKnownAmendmentInForce ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path lgo:lastKnownAmendingAct ;
+        sh:maxCount 1 ;
+        sh:class lgo:LegalAct ;
+    ] , [
+        sh:path lgo:sourceIsCurrent ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:boolean ;
+    ] ;
+    sh:sparql [
+        sh:message "An amendment check that names an amendment needs its date (lgo:lastKnownAmendmentDate), and one that dates it needs its citation." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            SELECT $this WHERE {
+                { $this lgo:lastKnownAmendment ?a . FILTER NOT EXISTS { $this lgo:lastKnownAmendmentDate ?d } }
+                UNION
+                { $this lgo:lastKnownAmendmentDate ?d . FILTER NOT EXISTS { $this lgo:lastKnownAmendment ?a } }
+            }
+        """ ;
+    ] .

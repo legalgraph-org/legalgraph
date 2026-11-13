@@ -140,6 +140,7 @@ lg:DE-BGB-s312i-1
     lgo:implements lg:EU-2000-31-art10-3 , lg:EU-2000-31-art11-1 , lg:EU-2000-31-art11-2 ;
     lgo:refersTo lg:DE-EGBGB-a246c ;
     lgo:regulates lgv:OrderPlacement , lgv:TermsAndConditions ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAvailability ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:DE-BGB-source ;
     lgo:sourceElement "/dokumente/norm[384]/textdaten[1]/text[1]/Content[1]/P[1]" ;
@@ -297,6 +298,7 @@ lg:DE-BGB-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/bgb/BJNR001950896.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Neugefasst durch Bek. v. 2.1.2002 I 42, 2909; 2003, 738;"@de , "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

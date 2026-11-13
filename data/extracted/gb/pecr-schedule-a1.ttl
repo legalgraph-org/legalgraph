@@ -177,6 +177,7 @@ lg:GB-SI-2003-2426-schedule-A1-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/gb/pecr-schedule-a1/uksi-2003-2426-schedule-A1.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."@en ;
     lgo:licence lgv:OpenGovernmentLicence3 ;
     lgo:licenceBasis "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)" ;

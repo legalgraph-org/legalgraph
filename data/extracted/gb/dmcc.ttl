@@ -101,6 +101,7 @@ lg:GB-DMCC-2024-s256-1
     eli:is_part_of lg:GB-DMCC-2024 ;
     lgo:citation "s. 256(1) DMCC Act 2024" ;
     lgo:regulates lgv:TermsAndConditions ;
+    lgo:requiresDisclosureOf lgv:CancellationInformation , lgv:SubscriptionTermsDisclosure ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:GB-DMCC-2024-source ;
     lgo:sourceElement "/Legislation/Primary[1]/Body[1]/Part[4]/Chapter[2]/Pblock[2]/P1group[1]/P1[1]/P1para[1]/P2[1]" ;
@@ -123,6 +124,7 @@ lg:GB-DMCC-2024-s257-1
     eli:is_part_of lg:GB-DMCC-2024 ;
     lgo:citation "s. 257(1) DMCC Act 2024" ;
     lgo:regulates lgv:TermsAndConditions ;
+    lgo:requiresDisclosureOf lgv:PaymentAndDeliveryTerms ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:GB-DMCC-2024-source ;
     lgo:sourceElement "/Legislation/Primary[1]/Body[1]/Part[4]/Chapter[2]/Pblock[2]/P1group[2]/P1[1]/P1para[1]/P2[1]" ;
@@ -143,6 +145,7 @@ lg:GB-DMCC-2024-s260-1
     eli:is_part_of lg:GB-DMCC-2024 ;
     lgo:citation "s. 260(1) DMCC Act 2024" ;
     lgo:regulates lgv:TermsAndConditions ;
+    lgo:requiresDisclosureOf lgv:CancellationMechanism , lgv:OnlineCancellation ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:GB-DMCC-2024-source ;
     lgo:sourceElement "/Legislation/Primary[1]/Body[1]/Part[4]/Chapter[2]/Pblock[2]/P1group[5]/P1[1]/P1para[1]/P2[1]" ;
@@ -275,6 +278,7 @@ lg:GB-DMCC-2024-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/gb/dmcc/ukpga-2024-13.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."@en ;
     lgo:licence lgv:OpenGovernmentLicence3 ;
     lgo:licenceBasis "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)" ;

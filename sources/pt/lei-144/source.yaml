@@ -1,0 +1,25 @@
+# Lei n.º 144/2015, de 8 de setembro: the Portuguese ADR framework. Art. 18
+# transposes Art. 13 of the ADR Directive 2013/11/EU — suppliers of goods or
+# services established in Portugal who are bound to an ADR entity (by adhesion
+# or by mandatory arbitration) must inform consumers of that entity and its
+# website, clearly and accessibly on their own website where it exists, and
+# in written or adhesion contracts or another durable medium.
+id: pt/lei-144
+title: Lei n.º 144/2015 (art. 18)
+jurisdiction: PT
+language: pt
+publisher: Procuradoria-Geral Distrital de Lisboa (pgdlisboa.pt)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 5º Código do Direito de Autor e dos Direitos Conexos: official texts are not protected"
+originals:
+  - file: lei18.fragment.html
+    url: "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&tabela=leis"
+    official: false
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the pgdl consolidated page: art. 18 (as amended by DL 102/2017). Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: d034e26c2012c7151fdae6c513c4088499e81cdf1f688d0b821e263f0b626ae8
+annotated: lei144.law.xml

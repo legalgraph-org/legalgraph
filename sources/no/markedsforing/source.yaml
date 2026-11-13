@@ -1,0 +1,28 @@
+# Markedsføringsloven § 10 a: the Norwegian trader ADR information duty —
+# Directive 2013/11 Art. 13 transposition (the ADR directive was
+# incorporated via the EEA agreement and implemented in the Marketing Act,
+# not a standalone act). First ledd: clear and understandable information
+# about registered complaint bodies (godkjenningsloven § 25 list) with
+# their websites, at minimum in general contract terms and on the trader's
+# own website, easily accessible. Second ledd: the after-complaint duty —
+# when a dispute arises and the parties cannot settle amicably, the first
+# ledd information is given in writing or on another durable medium.
+id: no/markedsforing
+title: Lov om kontroll med markedsføring og avtalevilkår mv. (markedsføringsloven), § 10 a
+jurisdiction: "NO"
+language: "no"
+publisher: Lovdata, lovdata.no
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 14 åndsverkloven: laws and regulations are not protected by copyright"
+originals:
+  - file: mfl-10a.fragment.html
+    url: "https://lovdata.no/dokument/NL/lov/2009-01-09-2/KAPITTEL_2"
+    fetch: html-fragment
+    selector: "#PARAGRAF_10a"
+    media_type: text/html
+    notes:
+      - "§ 10 a was added by lov 17 juni 2016 nr. 29 (in force 1 July 2016; third ledd 25 August 2017), amended by lover 23 juni 2020 nr. 98 and 20 juni 2025 nr. 41 — the consolidated text is current."
+    retrieved_on: 2026-11-13
+    sha256: 728b6f3615dd9b3e1e08fa58d5a662034fed2ccbc3b95b1d428cb23eba851674
+annotated: mfl.law.xml

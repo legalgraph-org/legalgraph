@@ -1,0 +1,19 @@
+name: French SARL with a company website
+description: >
+  A SARL in the RCS with a VAT ID and a website presenting its services. Article 19 LCEN asks for a
+  telephone number, and for share capital and the registered office with the RCS number; as the
+  publisher of an online service it also names its publication director and its host (Article 1-1,
+  I LCEN).
+established_in: FR
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - EU-R-company-website-disclosure
+  - FR-R-impressum
+  - FR-R-impressum-register
+  - FR-R-impressum-vat
+  - FR-R-publisher-identification

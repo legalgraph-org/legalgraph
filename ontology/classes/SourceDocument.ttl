@@ -1,0 +1,77 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:licence a owl:ObjectProperty ;
+    rdfs:label "licence"@en ;
+    rdfs:comment "The terms under which the source document is kept and republished: a concept from vocab/licences.ttl."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range skos:Concept .
+
+lgo:licenceBasis a owl:DatatypeProperty ;
+    rdfs:label "licence basis"@en ;
+    rdfs:comment "Why the licence applies, with the provision or notice it rests on: '§ 5 Abs. 1 UrhG: court decisions are official works without copyright'."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+# Where an official machine-readable text exists (for example the XML of gesetze-im-internet.de),
+# the graph repo keeps the file byte-identical, plus an annotated copy, and extracts acts,
+# provisions and quotes from it mechanically. These terms point each extracted resource back to
+# the exact file and element it came from.
+
+lgo:SourceDocument a owl:Class ;
+    rdfs:label "Source document"@en ;
+    rdfs:comment "An official text of a legal act as downloaded: the file from the portal byte for byte, or, for HTML pages that change with every request, the fragment holding the law text, cut out by a fixed rule. Its SHA-256 lets anyone check it against a fresh download."@en .
+
+lgo:repositoryPath a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "repository path"@en ;
+    rdfs:comment "Path of the file in the graph repository, relative to its root."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:sha256 a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "SHA-256"@en ;
+    rdfs:comment "SHA-256 (hex) of the file's bytes."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:annotatedFile a owl:DatatypeProperty ;
+    rdfs:label "annotated file"@en ;
+    rdfs:comment "Repository path of the annotated XML the graph was extracted from: a copy of an official XML file with annotations added, or an XML file written by the maintainers when the official text is only HTML or PDF. lgo:sourceElement XPaths point into this file."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:mediaType a owl:DatatypeProperty ;
+    rdfs:label "media type"@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:portalBuildDate a owl:DatatypeProperty ;
+    rdfs:label "portal build date"@en ;
+    rdfs:comment "The build stamp the portal put into the file (gesetze-im-internet.de: builddate), as given."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range xsd:string .
+
+lgo:legalStatus a owl:DatatypeProperty ;
+    rdfs:label "legal status note"@en ;
+    rdfs:comment "The portal's note on how current the consolidated text is (gesetze-im-internet.de: standangabe), as given."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range rdf:langString .
+
+# Sourcing and checking are separate steps: a text may be taken from the official publication, or from
+# a mirror that is easier to read, and then checked word for word against the official one.
+
+lgo:authenticity a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "authenticity"@en ;
+    rdfs:comment "Why the document's words can be trusted as the law's: it is the official publication, or a mirror's text checked word for word against the official one (lgo:verifiedAgainst), or a mirror's text not checked yet. A concept from vocab/authenticity.ttl."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range skos:Concept .
+
+lgo:verifiedAgainst a owl:ObjectProperty ;
+    rdfs:label "verified against"@en ;
+    rdfs:comment "The official publication every quoted line of this (mirror) document was found in, word for word, by `legalgraph sources verify`."@en ;
+    rdfs:domain lgo:SourceDocument ;
+    rdfs:range lgo:SourceDocument .

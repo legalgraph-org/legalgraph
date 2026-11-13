@@ -14,7 +14,6 @@ lg:AT-ECG a lgo:LegalAct ;
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:AT ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20001703"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked .
 
 # § 5 ECG is now sourced from RIS's consolidated text: see sources/at/ecg and
@@ -26,8 +25,8 @@ lg:AT-UGB a lgo:LegalAct ;
     lgo:shortName "UGB" ;
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:AT ;
+    eli:transposes lg:EU-2017-1132 ;
     eli:date_document "2005-12-30"^^xsd:date ;
-    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "§ 14 is the Austrian imprint duty for companies in the Firmenbuch: Firma, Rechtsform, Sitz, Firmenbuchnummer, winding-up and Firmenbuchgericht on business letters, order forms and websites, and capital details where capital is stated (§ 14(2))."@en .
 
@@ -44,12 +43,20 @@ lg:AT-TKG-2021 a lgo:LegalAct ;
 
 lg:AT-FAGG
     lgo:shortName "FAGG" ;
+    eli:transposes lg:EU-2011-83 ;
     rdfs:comment "Austria's transposition of the Consumer Rights Directive's information duties for distance contracts: § 4 Abs. 1 is the pre-contractual information list (Article 6(1))."@en .
 
 lg:AT-KSCHG
     lgo:shortName "KSchG" ;
+    eli:transposes lg:EU-1993-13 ;
     rdfs:comment "The Austrian consumer-protection act; § 6 is the blacklist of contract terms that are never effective against consumers (§ 879 ABGB is the general clause)."@en .
 
 lg:AT-MEDIENG
     lgo:shortName "MedienG" ;
     rdfs:comment "The Austrian media act. § 25 is the media-owner disclosure (Offenlegung): it applies to websites as periodical electronic media, in full for most and reduced to name and residence or seat for sites limited to the owner's personal life or self-presentation (Abs. 5). It sits beside the e-Commerce imprint of § 5 ECG and may be published together with it (Abs. 1)."@en .
+
+lg:AT-ASTG
+    lgo:shortName "AStG" ;
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.ris.bka.gv.at/eli/bgbl/i/2015/105/P19/NOR40173800> ;
+    rdfs:comment "§ 19 transposes art. 13 of the ADR Directive: a trader committed or obliged to use a consumer ADR body names it with its website on its own website and in its terms; Abs. 3 is the durable-medium pointer after a failed settlement attempt."@en .

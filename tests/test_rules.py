@@ -1,6 +1,7 @@
 import pytest
+from rdflib import URIRef
 
-from legalgraph import rules
+from legalgraph import LG, LGO, LGV, rules, scenarios
 from legalgraph.load import DEFAULT_DATA_DIR, DEFAULT_ONTOLOGY_DIR, Sources, load_all, new_graph
 
 
@@ -19,8 +20,8 @@ def loaded(graph) -> tuple[dict[str, rules.Condition], dict[str, rules.Obligatio
     return rules.load(graph)
 
 
-@pytest.mark.parametrize("scenario", rules.load_scenarios(), ids=lambda s: s.path.stem)
-def test_scenarios_get_exactly_their_obligations(graph, loaded, scenario: rules.Scenario) -> None:
+@pytest.mark.parametrize("scenario", scenarios.load_scenarios(), ids=lambda s: s.path.stem)
+def test_scenarios_get_exactly_their_obligations(graph, loaded, scenario: scenarios.Scenario) -> None:
     conditions, obligations = loaded
     places = rules.jurisdictions(graph)
     assert {scenario.established_in} - {None} | scenario.markets <= set(places)
@@ -135,10 +136,6 @@ def test_the_shop_needs_a_phone_number_the_impressum_does_not(loaded) -> None:
 def test_item_level_provisions_back_the_phone_question(loaded, graph) -> None:
     """The item that asks for the phone number can be quoted on its own: point (c) of the
     Consumer Rights Directive's Article 6(1) and Nr. 3 of Art. 246a § 1(1) EGBGB."""
-    from rdflib import URIRef
-
-    from legalgraph import LG, LGO, LGV
-
     for provision in ("EU-2011-83-art6-1-c", "DE-EGBGB-a246a-s1-1-3"):
         assert (LG[provision], LGO.requiresDisclosureOf, LGV.PhoneNumber) in graph
     # The ruling on the shop information interprets the shop provision, which the Omnibus

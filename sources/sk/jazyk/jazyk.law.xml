@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 270/1995 Z. z. o štátnom jazyku, § 8, written in schemas/law.xsd
+  from the static.slov-lex.sk version mirror. The words are the Slovak
+  legislature's; only the structure is ours. § 8(1) requires consumer
+  information (product labelling, instructions, warranty terms and other
+  consumer information) in the state language within the scope of the
+  special regulations — it reaches website content only through those
+  special regulations, and applies by place of sale/provision on Slovak
+  territory (territorial, not establishment-based). § 8(5) lets contracts
+  exist in another EU official language but the Slovak text prevails on
+  conflict in proceedings. § 8(6) puts the state language first in public
+  signs, advertisements and notices.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-JAZYK-270" lga:jurisdiction="SK" lga:act-type="Statute"
+     lga:url="https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html">
+  <meta>
+    <title>Zákon Národnej rady Slovenskej republiky č. 270/1995 Z. z. o štátnom jazyku Slovenskej republiky</title>
+    <date>1995-11-15</date>
+  </meta>
+
+  <section num="§ 8" source="jazyk-8.fragment.html">
+    <paragraph num="(1)" lga:provision="SK-JAZYK-270-s8-1" lga:citation="§ 8 ods. 1 zákona č. 270/1995 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html" lga:regulates="StateLanguageUse">V záujme ochrany spotrebiteľa je používanie štátneho jazyka povinné pri označovaní obsahu domáceho či dovážaného tovaru, v návodoch na používanie výrobkov, najmä potravín, liečiv, spotrebnej elektroniky a drogériového tovaru, v podmienkach záruky a v iných informáciách pre spotrebiteľa v rozsahu a za podmienok určených osobitnými predpismi. 13 )</paragraph>
+    <paragraph num="(5)" lga:provision="SK-JAZYK-270-s8-5" lga:citation="§ 8 ods. 5 zákona č. 270/1995 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html" lga:regulates="StateLanguageUse">V konaní pred orgánmi a právnickými osobami podľa § 3 ods. 1 o zmluvách upravujúcich záväzkové vzťahy sa uznáva popri znení v štátnom jazyku aj znenie zmlúv v inom oficiálnom jazyku Európskej únie. V prípade vzniku nejasností alebo rozporov platí znenie zmluvy v štátnom jazyku.</paragraph>
+    <paragraph num="(6)" lga:provision="SK-JAZYK-270-s8-6" lga:citation="§ 8 ods. 6 zákona č. 270/1995 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html" lga:regulates="StateLanguageUse">Všetky nápisy, reklamy a oznamy určené na informovanie verejnosti, najmä v predajniach, na športoviskách, v reštauračných zariadeniach, na uliciach, pri cestách a nad nimi, na letiskách, autobusových staniciach a železničných staniciach, vo vozidlách verejnej dopravy sa uvádzajú v štátnom jazyku. Ak obsahujú text v iných jazykoch, inojazyčné texty nasledujú až po texte v štátnom jazyku a musia byť obsahovo totožné s textom v štátnom jazyku. Inojazyčný text sa uvádza rovnakým alebo menším písmom ako text v štátnom jazyku. V nápisoch a oznamoch určených na informovanie verejnosti v jazyku národnostnej menšiny a v štátnom jazyku v obciach, kde sa v úradnom styku používa jazyk tejto národnostnej menšiny podľa osobitného predpisu, 11g ) a v reklame sa poradie textov neurčuje.</paragraph>
+    <paragraph num="(7)" lga:provision="SK-JAZYK-270-s8-7" lga:citation="§ 8 ods. 7 zákona č. 270/1995 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html" lga:regulates="StateLanguageUse">Povinnosť stanovená v odseku 6 sa nevzťahuje na obchodné meno, ochrannú známku, názov inštitúcie zapísaný alebo zaradený do registrov alebo zoznamov podľa zákonov platných v Slovenskej republike alebo v inom členskom štáte Európskej únie alebo v zmluvnom štáte Dohody o Európskom hospodárskom priestore a na použitie mena a priezviska, ktoré sú súčasťou nápisu, reklamy a oznamu určeného na informovanie verejnosti, a na niektoré zaužívané výrazy v cudzom jazyku, ktoré sa zvyčajne používajú spolu s obchodnou značkou v texte reklám, sú známe najširšej verejnosti a sú súčasťou reklamy.</paragraph>
+  </section>
+</law>

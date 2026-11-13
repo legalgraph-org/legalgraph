@@ -1,0 +1,26 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Liechtenstein (additions to data/extracted/li/).
+
+lg:LI-ECG
+    lgo:shortName "ECG" ;
+    eli:id_local "LGBl. 2003 Nr. 133" ;
+    eli:transposes lg:EU-2000-31 ;
+    rdfs:comment "Article 5 transposes Article 5 of the e-Commerce Directive for the EEA — a close copy of the Austrian § 5 ECG, including the prices paragraph."@en .
+
+lg:LI-PGR
+    lgo:shortName "PGR" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.gesetze.li/konso/1926004000> ;
+    rdfs:comment "Art. 120a is the Liechtenstein company-law disclosure duty (Publizitätsrichtlinien): firma+Rechtsform, statutarischer Sitz, Liquidation status, register identification and register number on Briefe, Bestellscheine and Webseiten of AG, KGaA and GmbH; Abs. 2 the paid-in capital clause; Abs. 3 foreign-branch particulars."@en .
+
+lg:LI-MEDIENG
+    lgo:shortName "MedienG" ;
+    eli:id_local "LGBl. 2005 Nr. 250, LR-Nr. 449.1" ;
+    rdfs:seeAlso <https://www.gesetze.li/konso/2005250000> ;
+    rdfs:comment "Art. 11 is the media Impressum: every medium distributed in Liechtenstein — electronic media included — must give the media owner's name/firm and editorial seat, and periodical media also address, electronic contact data, publisher details and regulators. Art. 12 is the Offenlegung: ownership, editorial-line and regulator data must stay constantly easily and directly accessible in the medium itself."@en .

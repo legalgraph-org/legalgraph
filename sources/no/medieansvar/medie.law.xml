@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lov om redaksjonell uavhengighet og ansvar i redaktørstyrte journalistiske
+  medier (medieansvarsloven, lov 2020-05-29-59), § 5, written in
+  schemas/law.xsd from the Lovdata consolidated text. The words are the
+  Storting's; only the structure is ours. The act covers media that
+  regularly produce and publish journalism, current-affairs material,
+  public debate or other content of general interest — a news website
+  qualifies, so § 5 reaches websites: the editor must ensure the medium
+  states who the editor is, and that media users can reach the medium's
+  name, address, email address and other details enabling direct contact.
+  Paragraph numbers are ours (the source leaves the two avsnitt unnumbered).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="no"
+     lga:act="NO-MEDIE" lga:jurisdiction="NO" lga:act-type="Statute"
+     lga:url="https://lovdata.no/dokument/NL/lov/2020-05-29-59">
+  <meta>
+    <title>Lov om redaksjonell uavhengighet og ansvar i redaktørstyrte journalistiske medier (medieansvarsloven)</title>
+    <date>2020-05-29</date>
+  </meta>
+
+  <section num="§ 5" title="Opplysningsplikt" source="medie-5.fragment.html">
+    <paragraph lga:provision="NO-MEDIE-s5-1" lga:citation="§ 5 første avsnitt medieansvarsloven" lga:url="https://lovdata.no/dokument/NL/lov/2020-05-29-59/%C2%A75" lga:regulates="EditorialResponsibility" lga:requires="ResponsibleEditor">Redaktøren skal sørge for at det er opplyst i mediet hvem som er redaktør.</paragraph>
+    <paragraph lga:provision="NO-MEDIE-s5-2" lga:citation="§ 5 annet avsnitt medieansvarsloven" lga:url="https://lovdata.no/dokument/NL/lov/2020-05-29-59/%C2%A75" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress EmailAddress RapidContact">Redaktøren skal sørge for at mediebrukerne har tilgang til navn, adresse, elektronisk postadresse og øvrige opplysninger som gjør det mulig å komme i direkte kontakt med mediet.</paragraph>
+  </section>
+</law>

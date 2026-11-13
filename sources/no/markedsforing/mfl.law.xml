@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Markedsføringsloven § 10 a, written in schemas/law.xsd from the lovdata
+  consolidated text. The words are the Norwegian legislature's; only the
+  structure is ours. § 10 a transposes Directive 2013/11 Art. 13: første
+  ledd names the registered complaint bodies (godkjenningsloven § 25) with
+  their websites, at minimum in general contract terms and on the trader's
+  own website; annet ledd is the after-complaint duty — when a dispute
+  arises that the parties cannot settle amicably, the same information is
+  given in writing or on another durable medium (the third ledd defines
+  varig medium).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="no"
+     lga:act="NO-MFL" lga:jurisdiction="NO" lga:act-type="Statute"
+     lga:url="https://lovdata.no/dokument/NL/lov/2009-01-09-2">
+  <meta>
+    <title>Lov om kontroll med markedsføring og avtalevilkår mv. (markedsføringsloven)</title>
+    <date>2009-01-09</date>
+  </meta>
+
+  <section num="§ 10 a" source="mfl-10a.fragment.html">
+    <paragraph lga:provision="NO-MFL-s10a-1" lga:citation="markedsføringsloven § 10 a første ledd" lga:url="https://lovdata.no/dokument/NL/lov/2009-01-09-2" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1 EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Næringsdrivende skal på en klar og forståelig måte gi informasjon til forbrukere om klageorgan som kan behandle en sak mellom partene, og som er innmeldt i henhold til godkjenningsloven § 25 . Informasjonen skal vise til klageorganenes hjemmesider på Internett. Informasjonen skal som et minimum gis i de generelle avtalevilkårene, hvor slike foreligger, og på den næringsdrivendes hjemmeside på Internett, hvor slik finnes. Informasjonen skal være lett tilgjengelig på hjemmesiden.</paragraph>
+    <paragraph lga:provision="NO-MFL-s10a-2" lga:citation="markedsføringsloven § 10 a annet ledd" lga:url="https://lovdata.no/dokument/NL/lov/2009-01-09-2" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody">Næringsdrivende skal informere forbrukeren i henhold til første ledd når det oppstår sak mellom partene, og det er klart at partene selv ikke kommer til en minnelig løsning. Informasjonen skal gis skriftlig eller på annet varig medium.</paragraph>
+    <paragraph lga:provision="NO-MFL-s10a-3" lga:citation="markedsføringsloven § 10 a tredje ledd" lga:url="https://lovdata.no/dokument/NL/lov/2009-01-09-2" lga:regulates="ConsumerDisputeResolution">Med varig medium forstås enhver innretning som gjør forbrukerne i stand til å lagre opplysninger på en slik måte at opplysningene i fremtiden er tilgjengelig i uendret form.</paragraph>
+  </section>
+</law>

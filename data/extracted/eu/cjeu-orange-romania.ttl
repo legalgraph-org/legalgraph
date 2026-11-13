@@ -56,6 +56,7 @@ lg:CJEU-C-61-19-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-orange-romania/ECR_62019CJ0061_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: Romanian. This English text is the Court's translation; the authentic version is the Romanian one."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -68,6 +69,7 @@ lg:CJEU-C-61-19-source
 lg:CJEU-C-61-19-source-romanian
     a lgo:SourceDocument ;
     dcterms:language "romanian"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-C-61-19-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

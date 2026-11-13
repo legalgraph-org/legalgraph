@@ -1,0 +1,14 @@
+{
+  "name": "legalgraph-render",
+  "private": true,
+  "description": "Renders official law pages that build their text with JavaScript, for `legalgraph sources fetch` (fetch: rendered)",
+  "type": "module",
+  "packageManager": "bun@1.4.3",
+  "scripts": {
+    "render": "bun render.ts",
+    "install-browser": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "1.57.0"
+  }
+}

@@ -47,6 +47,28 @@ lg:EU-2024-1689
     rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/oj> ;
     rdfs:comment "Article 50 (transparency for chatbots and AI-generated content) applies from 2 August 2026; for marking AI outputs of systems already on the market, a grace period runs to 2 December 2026."@en .
 
+# --- Directive 2013/11/EU (consumer ADR; additions to data/extracted/eu/adr.ttl) -----------
+
+lg:EU-2013-11
+    lgo:shortName "Consumer ADR Directive" ;
+    eli:id_local "32013L0011" ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2013/11/oj> ;
+    rdfs:comment "Article 13 makes traders committed or obliged to use alternative dispute resolution name the ADR entity, with its website address, on their own website and in their general terms, and to point consumers to it again after a complaint the trader cannot settle. Directive (EU) 2025/2647 of 16 December 2025 replaces Article 13(2) and (3) — website placement must be “prominent”, the terms-and-conditions placement is no longer “if applicable” — and widens the scope to disputes with traders outside the EU; member states apply it from 20 September 2028, so the 2013 text is still what national law implements."@en .
+
+lg:EU-2025-2647 a lgo:LegalAct ;
+    eli:title "Directive (EU) 2025/2647 of the European Parliament and of the Council of 16 December 2025 amending Directive 2013/11/EU on alternative dispute resolution for consumer disputes and amending Directives (EU) 2015/2302, (EU) 2019/2161 and (EU) 2020/1828 following the discontinuation of the European Online Dispute Resolution Platform"@en ;
+    lgo:shortName "ADR reform" ;
+    eli:id_local "32025L2647" ;
+    lgo:actType lgv:Directive ;
+    lgo:jurisdiction lg:EU ;
+    eli:date_document "2025-12-16"^^xsd:date ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2025/2647/oj"^^xsd:anyURI ;
+    rdfs:seeAlso <http://data.europa.eu/eli/dir/2025/2647/oj> ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-2013-11-art13-2 lgo:amendedBy lg:EU-2025-2647 .
+lg:EU-2013-11-art13-3 lgo:amendedBy lg:EU-2025-2647 .
+
 # --- Online dispute resolution (ODR): repealed ------------------------------
 
 lg:EU-2013-524 a lgo:LegalAct ;

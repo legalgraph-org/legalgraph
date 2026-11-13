@@ -1,0 +1,12 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+lgs:CourtDecisionShape a sh:NodeShape ;
+    sh:targetClass lgo:CourtDecision ;
+    sh:property [
+        sh:path lgo:ecli ;
+        sh:maxCount 1 ;
+        sh:pattern "^ECLI:[A-Z]{2}:[A-Z0-9]+:[0-9]{4}:[A-Za-z0-9.]+$" ;
+        sh:message "An ECLI, where the court publishes one, is a European Case Law Identifier. (Courts outside the EU, and some German courts' published decisions, have none.)" ;
+    ] .

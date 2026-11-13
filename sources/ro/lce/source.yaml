@@ -1,0 +1,26 @@
+# Legea nr. 365 din 7 iunie 2002 privind comerţul electronic: Romania's e-commerce act.
+# Articolul 5 is the provider-information duty (e-Commerce Directive art. 5) — wider than the
+# Directive: it adds phone and fax numbers and the fiscal registration code. legislatie.just.ro
+# serves the consolidated text on its print view (DetaliiDocumentAfis); the fragment holding
+# articolul 5 is kept and the text is transcribed in schemas/law.xsd, checked word for word
+# against it.
+id: ro/lce
+title: Legea nr. 365 din 7 iunie 2002 privind comerţul electronic (articolul 5)
+jurisdiction: RO
+language: ro
+publisher: Portal Legislativ (legislatie.just.ro), Camera Deputaţilor
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 9 din Legea nr. 8/1996: official texts of a political, legislative, administrative or judicial nature are not protected by copyright"
+originals:
+  - file: lce-5.fragment.html
+    url: "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"
+    fetch: html-fragment
+    selector: "#id_artA87"
+    text_ignore: [".S_LIT_SHORT", ".TAG_COLLAPSED"]
+    media_type: text/html
+    notes:
+      - "Consolidated form (M.Of. nr. 959 din 29 noiembrie 2006 republicare, forma consolidată). The main view (DetaliiDocument) rejects automated requests; the print view serves the same text."
+    retrieved_on: 2026-11-12
+    sha256: cc333a809f2267ab43273bf58b6df655f72d809cfd1d76f297389a4b4dba56b1
+annotated: lce.law.xml

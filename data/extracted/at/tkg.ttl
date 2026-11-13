@@ -45,6 +45,7 @@ lg:AT-TKG-2021-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/at/tkg/BGBLA_2021_I_190.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Authentic BGBl. promulgation of 28 October 2021. § 165(3) is verbatim in the consolidated version (Fassung vom 02.11.2026); later TKG amendments did not touch it."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works" ;

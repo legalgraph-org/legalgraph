@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:text a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "text"@en ;
+    rdfs:comment "The text of a quote (verbatim, in the source language) or of a translation, language-tagged. Omissions are marked with […]. No rdfs:domain: it is used on both lgo:Quote and lgo:Translation."@en ;
+    rdfs:range rdf:langString .

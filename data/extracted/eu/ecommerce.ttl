@@ -158,6 +158,7 @@ lg:EU-2000-31-art10-3
     eli:is_part_of lg:EU-2000-31 ;
     lgo:citation "Art. 10(3) Directive 2000/31/EC" ;
     lgo:regulates lgv:TermsAndConditions ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAvailability ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:EU-2000-31-source ;
     lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[2]/DIVISION[3]/ARTICLE[2]/PARAG[3]" ;
@@ -470,6 +471,7 @@ lg:EU-2000-31-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/ecommerce/CL2000L0031EN0010010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text applying from 17 February 2024, prepared by the Publications Office as a documentation tool. The authentic texts are Directive 2000/31/EC (OJ L 178, 17.7.2000) and its amending acts; each quoted provision is checked against them."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -482,6 +484,7 @@ lg:EU-2000-31-source
 lg:EU-2000-31-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2000-31-source ;
     lgo:legalStatus "Konsolidierte Fassung (documentation tool, not the authentic text)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:caseNumber a owl:DatatypeProperty ;
+    rdfs:label "case number"@en ;
+    rdfs:comment "The reference the court or authority gives the case, as written by it: C-40/17, 6 U 80/23, SAN-2021-023."@en ;
+    rdfs:range xsd:string .

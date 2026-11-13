@@ -1,0 +1,16 @@
+name: Latvian SIA with a company website
+description: >
+  An SIA in the Register of Enterprises with a VAT registration number and a website presenting its
+  services. Section 4(1) ISSL follows the Directive's list.
+established_in: LV
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - LV-R-company-website
+  - LV-R-impressum
+  - LV-R-impressum-register
+  - LV-R-impressum-vat

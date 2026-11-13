@@ -94,6 +94,7 @@ lg:FR-LIL-source
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/loi-78-17/loi-78-17.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:LicenceOuverte2 ;
     lgo:licenceBasis "legifrance content is published under Licence Ouverte 2.0 (legal notice)" ;
     lgo:mediaType "text/html" ;

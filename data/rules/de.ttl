@@ -175,6 +175,20 @@ lg:DE-R-dispute-resolution-body a lgo:Obligation ;
     lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
     lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DE-R-dispute-resolution-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to the arbitration board after an unsettled complaint"@en ;
+    rdfs:comment "§ 37 VSBG applies to every trader, whether or not it takes part in consumer arbitration: after a complaint that cannot be settled it names the competent board and says whether it is willing or obliged to take part."@en ;
+    lgo:establishedBy lg:DE-VSBG-s37-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
     lgo:reviewStatus lgv:Draft .
 
 # --- Cookies (§ 25 TDDDG) -------------------------------------------------------------
@@ -286,7 +300,7 @@ lg:DE-R-contract-terms-storable a lgo:Obligation ;
     lgo:appliesWhen lgv:EstablishedInGermany , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:ProvideContractTermsInStorableForm , lgv:AllowCorrectionBeforeContract ;
     lgo:partOfDisclosure lgv:ContractConfirmation ;
-    lgo:requiresDisclosureOf lgv:GeneralTermsAndClauses , lgv:ContractCopy ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAvailability ;
     lgo:reviewStatus lgv:Draft .
 
 lg:DE-R-total-price a lgo:Obligation ;

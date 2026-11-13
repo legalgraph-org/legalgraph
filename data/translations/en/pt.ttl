@@ -10,6 +10,47 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:PT-CSC-art171-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a9a59113cd1690805bd2b73e906ba7998f6caf4ab082b35df7afc5ec6e8fb575" ;
+    lgo:text "1 - Without prejudice to other mentions required by special laws, in all contracts, correspondence, publications, advertisements, Internet sites and in general in all external activity, companies must clearly indicate, in addition to the firm name, the type, the seat, the registry office where they are registered, their registration number and corporate identification number and, where applicable, the mention that the company is in liquidation."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-CSC-art171-1-q1 .
+
+lg:PT-CSC-art171-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f9329053da009c350aaf6a0fe4032c9d1fd620f20cbeb4ffc9a3a32c674cd630" ;
+    lgo:text "2 - Private limited companies, public limited companies and partnerships limited by shares must also indicate the share capital, the amount of paid-up capital, if different, and the amount of own capital according to the last approved balance sheet, whenever the latter is equal to or less than half of the share capital."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-CSC-art171-2-q1 .
+
+lg:PT-CSC-art171-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "eac7ea65222952529026354f0d0eaf2cda2d0cc4c99b23c1c8499468cd02e212" ;
+    lgo:text "3 - The provisions of paragraph 1 apply to branches of companies having their seat abroad, and these must, in addition to the elements referred to therein, also indicate the registry office where they are registered and their registration number in that registry office."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-CSC-art171-3-q1 .
+
+lg:PT-CSC-title-6df0195790fc-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6df0195790fcc481b85cf81ac9d424d1fb0c685160f8461e2f2e790e57657361" ;
+    lgo:text "Commercial Companies Code"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-CSC .
+
 lg:PT-DL-7-2004-art10-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -23,3 +64,64 @@ d) Tax identification number."""@en ;
     lgo:translatedOn "2026-10-31"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:PT-DL-7-2004-art10-1-q1 .
+
+lg:PT-DL-7-2004-art10-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bb9c8adedfc3759d7f22d8f4daa642a9bc7e3f48af3d1240fd3e2e5a0244bdcd" ;
+    lgo:text "2 - If the provider carries on an activity subject to a prior authorisation scheme, it must make available the information relating to the entity that granted it."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-DL-7-2004-art10-2-q1 .
+
+lg:PT-DL-7-2004-art10-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "468944c5b73e0d4ce9a0c9474664ccee3d6a361a65da9b59f86b11b7b63ffe87" ;
+    lgo:text "3 - If the provider exercises a regulated profession, it must also indicate the professional title and the member state in which it was granted, the professional body with which it is registered, and refer to the professional rules governing access to and exercise of that profession."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-DL-7-2004-art10-3-q1 .
+
+lg:PT-DL-7-2004-art10-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ba84a9af02636df921d5b59f7e5051e46d85dc94583e77911a5d81d318c3e140" ;
+    lgo:text "4 - If the services provided entail costs for the recipients beyond the costs of telecommunications services, including fiscal charges or delivery expenses, these must be the subject of clear information prior to the use of the services."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-DL-7-2004-art10-4-q1 .
+
+lg:PT-LEI-144-2015-art18-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1336535d86bd20732da9276f52696809b241a3331263fca0a52a593b6abf00f3" ;
+    lgo:text "1 - Without prejudice to the duties to which they are sectorally bound by virtue of special legislation applicable to them, suppliers of goods or providers of services established in the national territory must inform consumers of the ADR entities to which they are bound, by adhesion or by legal imposition arising from mandatory arbitration, and indicate their website on the Internet."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-LEI-144-2015-art18-1-q1 .
+
+lg:PT-LEI-144-2015-art18-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d4e3986279ff829c53cfa84d8f8544f1392c18e2df6f7018356ab241e8d6baff" ;
+    lgo:text "2 - The information referred to in the preceding paragraph must be provided in a clear, comprehensible and easily accessible manner on the website of the supplier of goods or provider of services, where it exists, and in the contracts of sale or provision of services between the supplier of goods or provider of services and the consumer, when these are in written form or constitute adhesion contracts, or on another durable medium."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-LEI-144-2015-art18-2-q1 .
+
+lg:PT-LEI-144-2015-title-ddd5e8829542-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ddd5e88295425627182c0654c1f0d95a50a37473ca509ec22d924b23d39353e6" ;
+    lgo:text "Law No. 144/2015 — mechanisms for the out-of-court resolution of consumer disputes"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-LEI-144-2015 .

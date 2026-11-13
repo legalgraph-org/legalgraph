@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  S.I. No. 68/2003, regulation 7, written in schemas/law.xsd from the Irish Statute Book
+  print view. The words are the Oireachtas'; only the structure is ours. Item (d) is
+  Ireland's own addition: the website must show, prominently and wherever personal data
+  is asked for, how natural persons can register their choice on unsolicited commercial
+  communications.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="IE-SI-2003-68" lga:jurisdiction="IE" lga:act-type="StatutoryInstrument"
+     lga:url="https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print">
+  <meta>
+    <title>European Communities (Directive 2000/31/EC) Regulations 2003</title>
+    <date>2003-03-31</date>
+  </meta>
+
+  <section num="Regulation 7" title="General information to be provided" source="ie-7.fragment.html">
+    <paragraph num="(1)" lga:provision="IE-SI-2003-68-r7-1" lga:citation="Regulation 7(1) S.I. No. 68/2003" lga:url="https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">The following information shall be provided by a relevant service provider in a manner which is easily, directly and permanently accessible to the recipients of the service and to the Director:
+      <list>
+        <item num="(a)" lga:requires="ProviderName">the name of the service provider,</item>
+        <item num="(b)" lga:requires="GeographicAddress">the geographic address at which the service provider is established,</item>
+        <item num="(c)" lga:requires="EmailAddress RapidContact">the details of the service provider, including his or her electronic mail address, which allows him or her to be contacted rapidly and communicated with in a direct and effective manner,</item>
+        <item num="(d)" lga:requires="UnsubscribeMechanism">details of how natural persons can register their choice regarding unsolicited commercial communications; these should be prominently displayed on the service provider’s website and at every point where natural persons are asked to provide information at the service provider’s website (for example a registration form);</item>
+        <item num="(e)" lga:requires="RegisterEntry">where the service provider is registered in a trade or similar public register, the trade or other such register in which the service provider is entered and his or her registration number, or equivalent means of identification in that register,</item>
+        <item num="(f)" lga:requires="SupervisoryAuthority">where the activity is subject to an authorisation scheme, the particulars of the relevant supervisory authority,</item>
+        <item num="(g)" lga:requires="ProfessionalTitle ProfessionalBody ProfessionalRules">where the service provider is a member of a regulated profession —
+          <list>
+            <item num="(i)" lga:requires="ProfessionalBody">any professional body or similar institution with which the service provider is registered,</item>
+            <item num="(ii)" lga:requires="ProfessionalTitle">the professional title of the provider and the Member State where it has been granted, and</item>
+            <item num="(iii)" lga:requires="ProfessionalRules">a reference to the applicable professional rules in the Member State of establishment and the means to access them,</item>
+          </list>
+        </item>
+        <item num="(h)" lga:requires="VatId">where the service provider undertakes an activity that is subject to value-added tax, the registration number assigned to that provider in accordance with section 9 of the Value-Added Tax Act 1972 (No. 22 of 1972),</item>
+        <item num="(i)" lga:requires="TotalPrice">in addition to the requirements of the Consumer Information Act 1978 (No. 1 of 1978), any orders for the time being in force under that Act the European Communities (Misleading Advertising) Regulations 1988 ( S.I. No. 134 of 1988 ) and of any other enactment, where the relevant service refers to prices, those prices are to be indicated clearly and unambiguously and, in particular, must indicate whether they are inclusive of tax and delivery costs.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="IE-SI-2003-68-r7-2" lga:citation="Regulation 7(2) S.I. No. 68/2003" lga:url="https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print" lga:penalises="IE-SI-2003-68-r7-1">A person who fails to comply with paragraph (1) shall be guilty of an offence.</paragraph>
+    <paragraph num="(3)" lga:provision="IE-SI-2003-68-r7-3" lga:citation="Regulation 7(3) S.I. No. 68/2003" lga:url="https://www.irishstatutebook.ie/eli/2003/si/68/made/en/print" lga:enforces="ProviderIdentification">An offence under this Regulation may be prosecuted by the Director.</paragraph>
+  </section>
+</law>

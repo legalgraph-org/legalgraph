@@ -1,0 +1,59 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:OutcomeShape a sh:NodeShape ;
+    sh:targetClass lgo:Outcome ;
+    sh:property [
+        sh:path lgo:outcomeType ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Fine lgv:Damages lgv:Injunction lgv:ComplianceOrder lgv:Settlement lgv:FindingOfInfringement ) ;
+    ] , [
+        sh:path lgo:against ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+    ] , [
+        sh:path lgo:amount ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:decimal ;
+    ] , [
+        sh:path lgo:currency ;
+        sh:maxCount 1 ;
+        sh:pattern "^[A-Z]{3}$" ;
+    ] , [
+        sh:path lgo:statedIn ;
+        sh:minCount 1 ;
+        sh:class lgo:Provision ;
+        sh:message "An outcome names the point of the decision that states it, so it can be checked against the quoted words." ;
+    ] , [
+        sh:path lgo:forBreachOf ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:sanctionedUnder ;
+        sh:class lgo:Provision ;
+    ] , [
+        sh:path lgo:reviewStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:SourceChecked lgv:Draft ) ;
+    ] ;
+    sh:sparql [
+        sh:message "An amount needs a currency." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            SELECT $this WHERE { $this lgo:amount ?a . FILTER NOT EXISTS { $this lgo:currency ?c } }
+        """ ;
+    ] , [
+        sh:message "An outcome is stated in a point of the decision that has it." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            PREFIX eli: <http://data.europa.eu/eli/ontology#>
+            SELECT $this WHERE {
+                ?decision lgo:hasOutcome $this .
+                $this lgo:statedIn ?point .
+                FILTER NOT EXISTS { ?point eli:is_part_of ?decision }
+            }
+        """ ;
+    ] .

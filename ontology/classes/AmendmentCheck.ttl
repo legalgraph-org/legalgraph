@@ -1,0 +1,50 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# An act's quotes are only as current as the text they were taken from. An amendment check records
+# what was found the last time an official source was consulted for changes to the act, mostly by a
+# script: the latest amendment known to us, and the day of that check. It claims no more: the act may
+# have been amended since, which only the next check can tell. Without a check, the graph says
+# nothing about how current an act is. Who or what made a check is in the repository's history.
+
+lgo:AmendmentCheck a owl:Class ;
+    rdfs:label "Amendment check"@en ;
+    rdfs:comment "The last time an act was checked for amendments: when, against which official source, and the latest amendment found. Who or what made the check is in the repository's history. The amendment is the last one known to the graph, not necessarily the last one there is. A check that names no amendment found none since the act was adopted."@en .
+
+lgo:checkedOn a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "checked on"@en ;
+    rdfs:comment "The day the official source was consulted."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:date .
+
+lgo:lastKnownAmendment a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amendment"@en ;
+    rdfs:comment "The latest amendment found, cited as the official source cites it (Art. 1 G v. 20.7.2026 BGBl. 2026 I Nr. 215; Directive (EU) 2024/825)."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:string .
+
+lgo:lastKnownAmendmentDate a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amendment date"@en ;
+    rdfs:comment "The date of the amending act (its signature or adoption, as the official source dates it)."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:date .
+
+lgo:lastKnownAmendmentInForce a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amendment in force"@en ;
+    rdfs:comment "When the amendment takes effect, if the source says; it can lie in the future."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:date .
+
+lgo:lastKnownAmendingAct a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "last known amending act"@en ;
+    rdfs:comment "The amending act itself, when it is in the graph."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range lgo:LegalAct .
+
+lgo:sourceIsCurrent a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "source is current"@en ;
+    rdfs:comment "True when the source document the graph quotes already contains the last known amendment; false when it predates it, so the text should be downloaded again and the quotes compared."@en ;
+    rdfs:domain lgo:AmendmentCheck ;
+    rdfs:range xsd:boolean .

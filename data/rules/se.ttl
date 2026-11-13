@@ -1,0 +1,112 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Sweden: provider information under 8 § of lag (2002:562) om elektronisk handel, the
+# transposition of Article 5 of the e-Commerce Directive. It follows the Directive's list.
+
+lg:SE-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and e-mail"@en ;
+    rdfs:comment "Name, address in the state of establishment and e-mail address, available to recipients and authorities in an easy, direct and permanent manner (8 § första och tredje stycket lag (2002:562))."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:SE-SFS-2002-562-s8-1 , lg:SE-SFS-2002-562-s8-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SE-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: corporate identity number"@en ;
+    rdfs:comment "Where applicable, the organisationsnummer (8 § första stycket 1)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:SE-SFS-2002-562-s8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SE-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT registration number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:SE-SFS-2002-562-s8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SE-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:SE-SFS-2002-562-s8-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SE-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:SE-SFS-2002-562-s8-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:SE-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: name, board seat and organisation number"@en ;
+    rdfs:comment "An aktiebolag gives its company name, the place where the board has its seat and its organisation number on its websites, and states when it is in liquidation (28 kap. 5 § ABL). Bolagsverket can for special reasons let a company leave out the name for a limited time (second paragraph)."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:SE-ABL-k28-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:SE-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "10 § lagen (2015:671) om alternativ tvistlösning: a trader that has committed to ADR names the board or boards, with web and postal address, on its consumer-facing websites and in written terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:SE-ARL-s10-1 , lg:SE-ARL-s10-2 , lg:SE-ARL-s10-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SE-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "11 § lagen (2015:671) om alternativ tvistlösning: a trader that rejects a consumer claim in whole or in part names the competent board, with web and postal address, and says whether it will take part, in writing or another durable form."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:SE-ARL-s11-1 , lg:SE-ARL-s11-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

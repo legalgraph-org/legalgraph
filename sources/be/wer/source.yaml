@@ -1,0 +1,39 @@
+# Wetboek van economisch recht (Code of Economic Law), art. XII.6: Belgium's
+# transposition of the e-Commerce Directive's provider-information duty, inserted
+# by W 2013-12-15/51 (in force 31.05.2014). Justel serves the consolidated code as
+# one page with flat <A NAME='Art.XII.…'> anchors, so the fragment holding
+# art. XII.6 is kept verbatim.
+id: be/wer
+title: Wetboek van economisch recht (art. XII.6)
+jurisdiction: BE
+language: nl
+publisher: Justel — Belgisch Staatsblad (ejustice.just.fgov.be)
+kind: authored-xml
+licence: official-work
+licence_basis: "Belgian law: official texts of legislation are not subject to copyright (art. XI.175/1 WER and long-standing practice of the Belgisch Staatsblad)"
+originals:
+  - file: be-xii6.fragment.html
+    url: "https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated Wetboek page (Dutch version, lg_txt=n) between anchors Art.XII.6 and Art.XII.7: articles are flat anchors, not nested elements. Downloaded 2026-11-12. The 'Ingevoegd bij W 2013-12-15/51' footnote marks the insertion; it sits inside the [ ]1 markers in the page and is part of the kept original."
+    retrieved_on: 2026-11-12
+    sha256: abc943b557cfa0ef70c27da335f4b479ace5fcfb08fce972b02718d4c839eef8
+  - file: be-xvi4.fragment.html
+    url: "https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated Wetboek page (Dutch version, lg_txt=n) between anchors Art.XVI.4 and Art.XVI.5: the trader consumer-dispute information duty (Art. 13 ADR Directive). Downloaded 2026-11-13. The 'Ingevoegd bij W 2014-04-04/41' footnote marks sit inside the [ ]1 markers in the page and are part of the kept original."
+    retrieved_on: 2026-11-13
+    sha256: f6dc9859b198337c917debaac3caea3fcd020a830ff89f0a152666335f2f25b3
+  - file: be-iii25.fragment.html
+    url: "https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut between the art. III.25 and art. III.26 anchors of the justel consolidated WER: outgoing documents must carry the ondernemingsnummer and at least one EEA payment-account number; market stalls and ambulant-activity vehicles show the number visibly. Inline [n] amendment markers retained."
+    retrieved_on: 2026-11-13
+    sha256: 26f09738afc3d12ed11b556bebe64fd09dcecacf3732c7aa116bf001cc02572d
+annotated: wer.law.xml

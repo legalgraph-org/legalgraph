@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ν.156(Ι)/2004, άρθρο 8, written in schemas/law.xsd from the cylaw.org
+  consolidated text. The words are the legislator's; only the structure is
+  ours. Cyprus adds telephone and telefax numbers to the contact item (γ).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="el"
+     lga:act="CY-156-I-2004" lga:jurisdiction="CY" lga:act-type="Statute"
+     lga:url="http://www.cylaw.org/nomoi/enop/ind/2004_1_156/section-sc8ba9ea15-3279-e714-0c87-d88830158b22.html">
+  <meta>
+    <title>Ο περί Ορισμένων Πτυχών των Υπηρεσιών της Κοινωνίας της Πληροφορίας και ειδικά του Ηλεκτρονικού Εμπορίου Νόμος του 2004</title>
+    <date>2004-04-30</date>
+  </meta>
+
+  <section num="Άρθρο 8" title="Γενικές πληροφορίες που πρέπει να παρέχονται" source="cy-8.fragment.html">
+    <paragraph num="8.-(1)" lga:provision="CY-156-I-2004-art8-1" lga:citation="άρθρο 8(1) Ν.156(Ι)/2004" lga:url="http://www.cylaw.org/nomoi/enop/ind/2004_1_156/section-sc8ba9ea15-3279-e714-0c87-d88830158b22.html" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Ο φορέας παροχής υπηρεσιών, εκτός από άλλες προϋποθέσεις πληροφόρησης που προβλέπει το δίκαιο της Ευρωπαϊκής Κοινότητας και, αναλόγως, η συναφής ισχύουσα νομοθεσία προσφέρει στους αποδέκτες του και στην Αρμόδια Αρχή εύκολη, άμεση και συνεχή πρόσβαση στις ακόλουθες πληροφορίες:
+      <list>
+        <item num="(α)" lga:requires="ProviderName">Την επωνυμία του φορέα παροχής της υπηρεσίας·</item>
+        <item num="(β)" lga:requires="GeographicAddress">την γεωγραφική διεύθυνση στην οποία ο φορέας είναι εγκατεστημένος·</item>
+        <item num="(γ)" lga:requires="EmailAddress RapidContact PhoneNumber">στοιχεία που να επιτρέπουν την ταχεία επαφή και την άμεση και ουσιαστική επικοινωνία με τον φορέα παροχής της υπηρεσίας, συμπεριλαμβανομένης της ηλεκτρονικής του διεύθυνσης, του αριθμού τηλεφώνου και τηλεμοιοτύπου·</item>
+        <item num="(δ)" lga:requires="RegisterEntry">εφόσον ο φορέας είναι εγγεγραμμένος σε εμπορικό μητρώο ή άλλο παρόμοιο δημόσιο μητρώο, το οικείο μητρώο και τον αριθμό εγγραφής του σε αυτό, ή ισοδύναμο τρόπο αναγνώρισης στο μητρώο αυτό·</item>
+        <item num="(ε)" lga:requires="SupervisoryAuthority">εφόσον η δραστηριότητα υπόκειται σε καθεστώς έγκρισης, τα στοιχεία της σχετικής εποπτικής αρχής·</item>
+        <item num="(στ)" lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">όσον αφορά τα νομοθετικώς κατοχυρωμένα επαγγέλματα:
+          <list>
+            <item num="(i)">την επαγγελματική ένωση ή παρόμοιο όργανο στο οποίο είναι εγγεγραμμένος ο φορέας παροχής υπηρεσιών,</item>
+            <item num="(ii)">τον επαγγελματικό τίτλο και το κράτος μέλος που τον έχει χορηγήσει,</item>
+            <item num="(iii)">μνεία των επαγγελματικών κανόνων που ισχύουν στο κράτος μέλος εγκατάστασης, καθώς και του τρόπου πρόσβασης σ' αυτούς·</item>
+          </list>
+        </item>
+        <item num="(ζ)" lga:requires="VatId">εφόσον η δραστηριότητα που ασκεί ο φορέας υπόκειται σε ΦΠΑ, τον αριθμό αναγνώρισης που αναφέρεται στην εκάστοτε ισχύουσα νομοθεσία περί φόρου προστιθέμενης αξίας που στοχεύει στην εναρμόνιση με το άρθρο 22 παράγραφος 1, της Έκτης Οδηγίας 77/388/ΕΟΚ του Συμβουλίου της 17ης Μαΐου 1977, «περί εναρμονίσεως των νομοθεσιών των κρατών μελών, των σχετικών με τους φόρους κύκλου εργασιών - Κοινό σύστημα φόρου προστιθεμένης αξίας: ομοιόμορφη φορολογική βάση» (ΕΕ.. L 145, 13/06/1977 σ.1) .</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="CY-156-I-2004-art8-2" lga:citation="άρθρο 8(2) Ν.156(Ι)/2004" lga:url="http://www.cylaw.org/nomoi/enop/ind/2004_1_156/section-sc8ba9ea15-3279-e714-0c87-d88830158b22.html" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Στη περίπτωση που οι υπηρεσίες της κοινωνίας της πληροφορίας αναφέρονται σε τιμές, αυτές πρέπει να αναγράφονται σαφώς και επακριβώς και, ειδικότερα, να αναφέρουν εάν περιλαμβάνουν φόρο και έξοδα αποστολής.</paragraph>
+  </section>
+</law>

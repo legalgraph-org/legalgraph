@@ -1,0 +1,24 @@
+# E-Commerce-Gesetz (ECG), LGBl. 2003 Nr. 133: Liechtenstein's transposition of the e-Commerce
+# Directive for the EEA. Article 5 is the provider-information duty — a close copy of the Austrian
+# § 5 ECG (the Liechtenstein act was modelled on it). Lilex (gesetze.li) publishes the
+# consolidated act only as PDF; the quoted paragraphs are transcribed in schemas/law.xsd and
+# `legalgraph sources verify` checks each line, letter for letter, against the PDF's text.
+id: li/ecg
+title: E-Commerce-Gesetz (ECG), LGBl. 2003 Nr. 133
+jurisdiction: LI
+language: de
+publisher: Liechtensteinische Landesverwaltung, Lilex (gesetze.li)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 5 URG (LGBl. 1999 Nr. 160): laws, ordinances and other official instruments are not protected by copyright"
+originals:
+  - file: ecg.pdf
+    page: https://www.gesetze.li/konso/2003133000
+    url: https://www.gesetze.li/konso/pdf/2003133000?version=4
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated text, Fassung vom 01.01.2016 (latest version; last amendment LGBl. 2015 Nr. 278), Lilex systematic number 215.211.7."
+    retrieved_on: 2026-11-11
+    sha256: 8566f86e2094c3754119a177682031782d8026cd6bff3d4999332572bd05e826
+annotated: ecg.law.xml

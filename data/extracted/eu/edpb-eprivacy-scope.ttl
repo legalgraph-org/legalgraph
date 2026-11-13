@@ -165,6 +165,7 @@ lg:EDPB-GL-2023-02-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/edpb-eprivacy-scope/edpb-eprivacy-scope.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EDPB legal notice: reproduction is authorised provided the source is acknowledged" ;
     lgo:mediaType "application/pdf" ;

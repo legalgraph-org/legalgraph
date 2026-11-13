@@ -1,0 +1,35 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Material that may not be kept: someone else's writing (news, law-firm articles, databases). The
+# graph records the link and at most one short verbatim excerpt.
+
+lgo:ExternalReference a owl:Class ;
+    rdfs:label "External reference"@en ;
+    rdfs:comment "A page by someone else that supports a statement in the graph but may not be copied: a news report, a law firm's summary, an enforcement database. Kept as a link with at most one short excerpt."@en .
+
+lgo:supports a owl:ObjectProperty ;
+    rdfs:label "supports"@en ;
+    rdfs:comment "The reference backs up this decision, outcome or provision."@en ;
+    rdfs:domain lgo:ExternalReference .
+
+lgo:excerpt a owl:DatatypeProperty ;
+    rdfs:label "excerpt"@en ;
+    rdfs:comment "One short verbatim passage of the reference (a sentence or two), quoted with its locator."@en ;
+    rdfs:domain lgo:ExternalReference ;
+    rdfs:range rdf:langString .
+
+lgo:excerptLocator a owl:DatatypeProperty ;
+    rdfs:label "excerpt locator"@en ;
+    rdfs:comment "Where the excerpt is found in the reference: a paragraph number or heading."@en ;
+    rdfs:domain lgo:ExternalReference ;
+    rdfs:range xsd:string .
+
+lgo:linkOnlyReason a owl:DatatypeProperty ;
+    rdfs:label "why link only"@en ;
+    rdfs:comment "Why the reference is linked rather than kept: 'law-firm database; third-party work'."@en ;
+    rdfs:domain lgo:ExternalReference ;
+    rdfs:range xsd:string .

@@ -93,6 +93,7 @@ lg:EU-2008-593-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/rome-i/CL2008R0593EN0000010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "The text in force; the regulation's provisions quoted have not been amended."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -105,6 +106,7 @@ lg:EU-2008-593-source
 lg:EU-2008-593-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2008-593-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

@@ -10,6 +10,177 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:ES-LEY7-2017-art40-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "97b96008f5f2cd7a4892b6b2de93787ae61d6cb7829b2598f34444425ed2c652" ;
+    lgo:text "1. A trader that is adhered to an accredited entity in Spain or in any European Union member state, or is bound by a rule or code of conduct to accept its involvement in the resolution of its disputes, shall inform consumers of the possibility of having recourse to that entity."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LEY7-2017-art40-1-q1 .
+
+lg:ES-LEY7-2017-art40-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5b3dde511727c8c765d2a2b5c9a3d9cd65d75337cc6e047f485ed55cee9ab605" ;
+    lgo:text "2. That information shall include the full identification of the competent accredited entity, including the address of its website. This information shall be provided in a clear, identifiable and comprehensible manner and with easy access on its website, and must also appear in the general conditions of the contracts of sale or of provision of services that the trader offers to the consumer. If the trader does not have a website or there is no documentation relating to the general conditions, this information shall be supplied in any manner that allows the consumer to be aware of it, in particular through its own information leaflets, posters with the information in a place accessible to the consumer or any other commercial communication."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LEY7-2017-art40-2-q1 .
+
+lg:ES-LEY7-2017-art40-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "49d09819c6955daadb6317fca5323bdb12b4c7ecb5a6e330acf1295f1cf6c593" ;
+    lgo:text "3. Where a complaint submitted directly by the consumer to the trader could not be resolved, the trader shall provide the consumer with information as to whether it is adhered to an entity for the alternative resolution of consumer disputes or is obliged by a rule or code of conduct to participate in proceedings before a specific entity. If this is not the case, it shall provide the consumer with information relating, at least, to an entity that is competent to hear the complaint, indicating whether it will participate in the proceedings before the entity or entities indicated. This information shall conform, as to its content and the manner of providing it, to what is laid down in paragraph 2 and shall be provided on paper or on any other durable medium at the time of the response to the complaint or within a maximum period of one month from its submission if the trader has not expressly responded to it."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LEY7-2017-art40-3-q1 .
+
+lg:ES-LEY7-2017-art40-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7342eb282a4b2538e5355237375113ac161732b429b49cd3f935802e6ff74d09" ;
+    lgo:text "4. The information provided for in the preceding paragraphs shall be provided by the trader, without prejudice to any other additional information obligation that may be required in the field of out-of-court resolution of consumer disputes in accordance with the applicable rules."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LEY7-2017-art40-4-q1 .
+
+lg:ES-LEY7-2017-art40-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "42111d996ab720327218691f668e1486d507eb509540a2da72d752fc4fc56af9" ;
+    lgo:text "5. Traders who conclude online contracts of sale or of provision of services, as well as e-commerce platforms or online marketplaces, shall include on their website a link allowing identifiable and easy access to the European Union online dispute resolution platform referred to in Regulation (EU) No 524/2013 of the European Parliament and of the Council of 21 May 2013."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LEY7-2017-art40-5-q1 .
+
+lg:ES-LEY7-2017-title-0f988039ccc7-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0f988039ccc756ef676bae41d6a97a4a9802a78e1a7724408fe97132e7f6fae5" ;
+    lgo:text "Law 7/2017 of 2 November on alternative dispute resolution in consumer matters"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LEY7-2017 .
+
+lg:ES-LSSI-art10-1-a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ec9a6540ca8eb263817bcaf4f6e7fd7016fc46819443be13593c125e7ba29acd" ;
+    lgo:text "a) Its name or company name; its residence or domicile or, failing that, the address of one of its permanent establishments in Spain; its email address and any other data that allows direct and effective communication with it to be established."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-a-q1 .
+
+lg:ES-LSSI-art10-1-b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "125db9e5c5ac7053b9b0ac36c72d5d2c80e44651a148474fb123510e66b4073d" ;
+    lgo:text "b) The details of its entry in the Commercial Register in which it is entered, where applicable, or in any other public register in which it is entered for the acquisition of legal personality or solely for the purposes of publicity."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-b-q1 .
+
+lg:ES-LSSI-art10-1-c-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a69cf9490739a035870a3badb28d7894ba3bf9450b7c894dd1befbecb984139d" ;
+    lgo:text "c) Where its activity is subject to a prior administrative authorisation scheme, the details of that authorisation and the identifying details of the competent body responsible for its supervision."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-c-q1 .
+
+lg:ES-LSSI-art10-1-d-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "460ae341c54806d925d1aabac26437ad03af05b90940f7132d230415a9c06b3e" ;
+    lgo:text "1. The details of the professional association to which it belongs, where applicable, and its membership number."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-d-1-q1 .
+
+lg:ES-LSSI-art10-1-d-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "16d29cb7d118aca5e177b7e908f97968871740cb29394dcc860f3e353c1bc6f7" ;
+    lgo:text "2. The official academic or professional qualification it holds."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-d-2-q1 .
+
+lg:ES-LSSI-art10-1-d-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5c837d5c5d310dbb72977770ee3027104d22576b25781019977c360cd76088f1" ;
+    lgo:text "3. The State of the European Union or of the European Economic Area in which that qualification was issued and, where applicable, the corresponding approval or recognition."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-d-3-q1 .
+
+lg:ES-LSSI-art10-1-d-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2e78a71f93d15e44d5bf387a1d4cc24955dc20bd6f4781862040b494d2ac72e4" ;
+    lgo:text "4. The professional rules applicable to the exercise of its profession and the means, including electronic means, by which they can be consulted."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-d-4-q1 .
+
+lg:ES-LSSI-art10-1-d-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f072ee2afa30ddf37a32ab6982f7365bcfd0713305c9e4b970697aadf360159e" ;
+    lgo:text "d) If it practises a regulated profession, it must state:"@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-d-q1 .
+
+lg:ES-LSSI-art10-1-e-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "297c8e3cac05b3240c20f962ca6b9864cd50b239b4c7f511a005b1a9f1828771" ;
+    lgo:text "e) The tax identification number that corresponds to it."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-e-q1 .
+
+lg:ES-LSSI-art10-1-f-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b3b724d9a113d22a375ecd429783d7261b0783a95e8feb41e4e5a8de87599048" ;
+    lgo:text "f) Where the information society service refers to prices, clear and accurate information shall be given on the price of the product or service, stating whether or not it includes the applicable taxes and, where applicable, the delivery costs."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-f-q1 .
+
+lg:ES-LSSI-art10-1-g-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dc1baa9d76606675a05bd7ed371e4cb79b77f88fa0fc2da81a1f349e942e6e59" ;
+    lgo:text "g) The codes of conduct to which it adheres, where applicable, and how to consult them electronically."@en ;
+    lgo:translatedBy "Claude Opus 5.5" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:ES-LSSI-art10-1-g-q1 .
+
 lg:ES-LSSI-art10-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

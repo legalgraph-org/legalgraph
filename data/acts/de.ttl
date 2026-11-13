@@ -22,7 +22,8 @@ lg:DE-DDG
 # --- VSBG (additions to data/extracted/de/vsbg.ttl) --------------------------
 
 lg:DE-VSBG
-    eli:title "Consumer Dispute Resolution Act"@en .
+    eli:title "Consumer Dispute Resolution Act"@en ;
+    eli:transposes lg:EU-2013-11 .
 
 lg:DE-VSBG-s36-3
     rdfs:comment "Small-business exemption from the statement in § 36 Abs. 1 Nr. 1."@en .
@@ -45,7 +46,9 @@ lg:DE-AO
     eli:title "Fiscal Code"@en .
 
 lg:DE-UWG
-    eli:title "Act against Unfair Competition"@en .
+    eli:title "Act against Unfair Competition"@en ;
+    eli:transposes lg:EU-2005-29 ;
+    eli:transposes lg:EU-2002-58 .
 
 lg:DE-UWG-s3a
     rdfs:comment "Breach of a statutory rule that regulates market conduct is unfair competition. Courts treat the Impressum duty and the consumer dispute resolution notice as such rules, which is why competitors can enforce them with a warning letter (Abmahnung)."@en .
@@ -81,9 +84,17 @@ lg:DE-BDSG-s38-1
 
 # --- Consumer contracts, prices, accessibility (additions to data/extracted/de/) ---------
 
-lg:DE-BGB eli:title "Civil Code"@en .
-lg:DE-EGBGB eli:title "Introductory Act to the Civil Code"@en .
-lg:DE-PAngV eli:title "Price Indication Ordinance"@en .
+lg:DE-BGB
+    eli:title "Civil Code"@en ;
+    eli:transposes lg:EU-1993-13 ;
+    eli:transposes lg:EU-2000-31 .
+lg:DE-EGBGB
+    eli:title "Introductory Act to the Civil Code"@en ;
+    eli:transposes lg:EU-2011-83 ;
+    eli:transposes lg:EU-2000-31 .
+lg:DE-PAngV
+    eli:title "Price Indication Ordinance"@en ;
+    eli:transposes lg:EU-1998-6 .
 lg:DE-BFSG eli:title "Accessibility Strengthening Act"@en ;
     rdfs:comment "Transposes the European Accessibility Act; applies to services for consumers provided after 28 June 2025, including e-commerce. Microenterprises providing services are exempt (§ 3 Abs. 3)."@en .
 

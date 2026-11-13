@@ -1,0 +1,26 @@
+# Malta's Companies Act (Cap. 386), article 6: the company-law website duty —
+# business letters, order forms in any medium AND the internet website or
+# websites of a commercial partnership must carry name, kind of partnership,
+# registered office and registration number (art. 6(1)); Part XI overseas
+# companies add constitution country, Malta branch address and winding-up
+# (art. 6(2)); partnership-name and liquidator rules follow; art. 6(8) is the
+# issued-plus-paid-up capital clause; art. 6(9)-(10) the penalty.
+id: mt/companies
+title: Companies Act (Cap. 386), article 6
+jurisdiction: MT
+language: en
+publisher: Legislation Unit, legislation.mt
+kind: authored-xml
+licence: official-work
+licence_basis: "Copyright Act (Cap. 415), art. 2: \"literary work\" \"save as provided in article 12 of the Statute Law Revision Act, 1980, does not include any written law, law report or judicial decisions\"; in any case the Re-Use of Public Sector Information Act (Cap. 546), art. 7, makes public sector documents re-usable"
+originals:
+  - file: cap386.pdf
+    page: https://legislation.mt/eli/cap/386/eng
+    url: https://legislation.mt/getpdf/6a1836349844fb1e280ec744
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated English text; article 6 is on pages 16-17 of the PDF. The ELI page links this getpdf id."
+    retrieved_on: 2026-11-12
+    sha256: 6bb38fa1139cf51ee2670adbbdea2fa32dac0bc145351a5ec6dabdbe810eca56
+annotated: cap386.law.xml

@@ -1,0 +1,8 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:Guidance a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:label "Guidance"@en ;
+    rdfs:comment "Guidelines or opinions of a regulator (the European Data Protection Board, a national authority): how the authorities read the law. Not binding on courts."@en .

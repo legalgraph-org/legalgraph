@@ -1,0 +1,64 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Czechia. No provider-information rule yet: the e-Commerce Directive's Art. 5 list has no sourced
+# Czech provision (480/2004 Sb. covers commercial communications only). Draft until a lawyer
+# reviews it.
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:CZ-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: name, seat and register entry"@en ;
+    rdfs:comment "Every entrepreneur gives its name and seat in information made public by remote access, and a registered one its register entry with section and insert and its identification number (§ 435(1) občanský zákoník). An s.r.o. with a website, and every a.s., publishes there the particulars of its business documents (§ 7(2)-(3) ZOK). The Czech firm name carries the legal form."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:CZ-OZ-s435-1 , lg:CZ-ZOK-s7-2 , lg:CZ-ZOK-s7-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CZ ;
+    lgo:appliesWhen lgv:EstablishedInCzechia , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:CZ-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "§ 14(1) of Act 634/1992 Sb. on consumer protection: the ADR entity competent for the product or service, with its website address, also on the seller's website if it runs one."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:CZ-ZOS-634-s14-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CZ ;
+    lgo:appliesWhen lgv:EstablishedInCzechia , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CZ-R-adr-information-every-trader a lgo:Obligation ;
+    rdfs:label "Name the competent consumer ADR entity, whether or not the business takes part"@en ;
+    rdfs:comment "§ 14(1) of Act 634/1992 Sb. binds every seller, not only one committed to ADR: it names the ADR entity competent for the product or service, with its website address, on its website if it has one."@en ;
+    lgo:establishedBy lg:CZ-ZOS-634-s14-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CZ ;
+    lgo:appliesWhen lgv:EstablishedInCzechia , lgv:SellsToConsumers ;
+    lgo:unless lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:CZ-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "§ 14(2) of Act 634/1992 Sb.: when a dispute cannot be settled directly, the seller gives the ADR information on paper or another durable medium. No statement on taking part is required."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:CZ-ZOS-634-s14-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CZ ;
+    lgo:appliesWhen lgv:EstablishedInCzechia , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .

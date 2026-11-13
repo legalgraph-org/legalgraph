@@ -1,0 +1,125 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Malta: provider information under Article 8C(1) of the Electronic Commerce Act (Cap. 426).
+# Points (a)-(g) follow Article 5 of the e-Commerce Directive word for word, so the national
+# rules refine the EU family one to one; point (h) is Malta's own: senders of unsolicited
+# commercial communications show how users can opt out, prominently on the website.
+
+lg:MT-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and fast electronic contact"@en ;
+    rdfs:comment "The provider's name, the geographic address where it is established and details, including an e-mail address, for rapid, direct and effective contact (Article 8C(1)(a)-(c) Cap. 426)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:MT-CAP426-art8C-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:MT-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register and registration number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:MT-CAP426-art8C-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:MT-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: supervisory authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:MT-CAP426-art8C-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:MT-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:MT-CAP426-art8C-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:MT-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:MT-CAP426-art8C-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:MT-R-impressum-marketing-opt-out a lgo:Obligation ;
+    rdfs:label "Provider information: how to opt out of unsolicited commercial communications"@en ;
+    rdfs:comment "A provider that sends unsolicited commercial communications shows how users can register their choice about receiving them, prominently on its website and wherever users are asked for information (Article 8C(1)(h) Cap. 426)."@en ;
+    lgo:establishedBy lg:MT-CAP426-art8C-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:CommercialDigitalService , lgv:SendsMarketingEmails ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:UnsubscribeMechanism ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:MT-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website"@en ;
+    rdfs:comment "A commercial partnership mentions its name, kind of partnership, registered office and registration number on its websites as on letters and order forms (article 6(1) Cap. 386)."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:MT-CAP386-art6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:GeographicAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:MT-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Regulation 14(1) S.L. 378.18: the ADR entity covering the trader, with its website address, on the trader's website and in its general terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:MT-SL-378-18-r14-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:MT-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Regulation 14(2) S.L. 378.18: the ADR entity information and whether the trader uses it, on paper or another durable medium."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:MT-SL-378-18-r14-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

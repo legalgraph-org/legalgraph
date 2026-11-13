@@ -67,6 +67,7 @@ lg:US-CA9-2019-0115-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us/robles-v-dominos/robles-v-dominos.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Judicial opinions are not copyrightable (government edicts doctrine; 17 U.S.C. § 105)" ;
     lgo:mediaType "application/pdf" ;

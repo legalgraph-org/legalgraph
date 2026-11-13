@@ -45,6 +45,7 @@ lg:US-ADA-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us/ada/ada.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "17 U.S.C. § 105: works of the US federal government are not protected by copyright" ;
     lgo:mediaType "text/html" ;

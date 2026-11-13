@@ -272,6 +272,7 @@ lg:DE-UWG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/uwg/BJNR141400004.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Neugefasst durch Bek. v. 3.3.2010 I 254;"@de , "Zuletzt geändert durch Art. 6 G v. 22.10.2026 I Nr. 322"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

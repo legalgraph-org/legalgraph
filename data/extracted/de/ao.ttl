@@ -45,6 +45,7 @@ lg:DE-AO-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/ao/BJNR006130976.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Neugefasst durch Bek. v. 23.1.2025 I Nr. 24;"@de , "zuletzt geändert durch Art. 6 G v. 22.10.2026 I Nr. 320"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

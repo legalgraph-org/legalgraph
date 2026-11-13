@@ -1,0 +1,112 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix eli:     <http://data.europa.eu/eli/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:Provision a owl:Class ;
+    rdfs:subClassOf eli:LegalResourceSubdivision ;
+    rdfs:label "Provision"@en ;
+    rdfs:comment "An article, section, paragraph or point of a legal act, as cited (for example § 5 Abs. 1 DDG)."@en .
+
+lgo:citation a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "citation"@en ;
+    rdfs:comment "How the provision is cited in its own jurisdiction (§ 5 Abs. 1 DDG; Art. 5(1) Directive 2000/31/EC)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range xsd:string .
+
+lgo:implements a owl:ObjectProperty ;
+    rdfs:label "implements"@en ;
+    rdfs:comment "The national provision implements the EU (or EEA) provision. The provision-level counterpart of eli:transposes."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:regulates a owl:ObjectProperty ;
+    rdfs:label "regulates"@en ;
+    rdfs:comment "The provision creates or shapes a duty of this disclosure type, or sets the conditions of this legal concept (for example Article 7 GDPR, the conditions for consent)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( lgo:DisclosureType lgo:LegalConcept ) ] .
+
+lgo:defines a owl:ObjectProperty ;
+    rdfs:label "defines"@en ;
+    rdfs:comment "The provision establishes or defines this information item or legal concept, which provisions elsewhere refer to (for example § 27a UStG, the VAT identification number; Article 4(11) GDPR, consent). When the annotation sits on a numbered item, the item holds the defining words."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( lgo:InformationItem lgo:LegalConcept ) ] .
+
+lgo:enforces a owl:ObjectProperty ;
+    rdfs:label "enforces"@en ;
+    rdfs:comment "The provision is a legal basis for enforcing duties of this disclosure type, for example by competitors' warning letters under unfair competition law."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:DisclosureType .
+
+lgo:authorises a owl:ObjectProperty ;
+    rdfs:label "authorises"@en ;
+    rdfs:comment "The provision empowers the issuing of this act, for example a statute's authorisation for an ordinance (the inverse of eli:based_on)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:LegalAct .
+
+lgo:explains a owl:ObjectProperty ;
+    rdfs:label "explains"@en ;
+    rdfs:comment "A recital (not binding in itself) explains this concept, guiding how the act's provisions on it are read (for example Recital 30 GDPR: cookie identifiers and IP addresses can be personal data)."@en ;
+    rdfs:domain lgo:Provision .
+
+lgo:interprets a owl:ObjectProperty ;
+    rdfs:label "interprets"@en ;
+    rdfs:comment "A court's ruling, an authority's decision or a regulator's guidance states how this provision is to be understood. Rulings of the Court of Justice of the EU bind national courts; guidance does not bind courts but shows how authorities enforce. Where a decision read a repealed provision, this names the provision in force that continues it (see lgo:readUnder)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:specifies a owl:ObjectProperty ;
+    rdfs:label "specifies"@en ;
+    rdfs:comment "The provision fills in a provision of another act that leaves room for it, such as a national rule made under an opening clause of a regulation (§ 38 BDSG under Article 37 GDPR)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:takesPrecedenceOver a owl:ObjectProperty ;
+    rdfs:label "takes precedence over"@en ;
+    rdfs:comment "Where both apply, this provision governs (lex specialis): § 25 TDDDG decides whether information may be stored on or read from a device; the GDPR governs the processing of personal data that follows."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:refersTo a owl:ObjectProperty ;
+    rdfs:label "refers to"@en ;
+    rdfs:comment "The provision's text points to this provision. Within an EU act read mechanically from the text; across acts written in the annotation."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:proposesToAmend a owl:ObjectProperty ;
+    rdfs:label "proposes to amend"@en ;
+    rdfs:comment "A provision of a legislative proposal would replace, add to or delete this provision if adopted as proposed. Proposals are not law; their status is on the proposal."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:applies a owl:ObjectProperty ;
+    rdfs:label "applies"@en ;
+    rdfs:comment "The decision applies this provision to the facts of the case: for example, an authority finds a breach of § 25 TDDDG, or a court awards damages under Article 82 GDPR. Where it also says how the provision is to be read, use lgo:interprets."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision ;
+    rdfs:seeAlso <http://purl.org/spar/cito/usesMethodIn> .
+
+lgo:penalises a owl:ObjectProperty ;
+    rdfs:label "penalises"@en ;
+    rdfs:comment "A penalty provision makes a breach of this provision an offence or sets the fine for it: § 28(1) no. 13 TDDDG penalises § 25(1) TDDDG; Article 83(5) GDPR penalises Articles 5 to 7."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:continues a owl:ObjectProperty ;
+    rdfs:label "continues"@en ;
+    rdfs:comment "The provision carries on the rule of an earlier, repealed provision in the same or equivalent terms (Article 4(7) GDPR continues Article 2(d) of Directive 95/46/EC), so decisions on the earlier one still guide how it is read."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:readUnder a owl:ObjectProperty ;
+    rdfs:label "read under"@en ;
+    rdfs:comment "The decision interpreted this repealed provision. Its lgo:interprets names the provision in force that continues it (lgo:continues)."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:Provision .
+
+lgo:amendedBy a owl:ObjectProperty ;
+    rdfs:label "amended by"@en ;
+    rdfs:comment "This act amended the provision's text, so a decision or guidance interpreting it may have read an earlier wording. Where the whole provision was replaced, lgo:continues and lgo:readUnder say so instead."@en ;
+    rdfs:domain lgo:Provision ;
+    rdfs:range lgo:LegalAct .

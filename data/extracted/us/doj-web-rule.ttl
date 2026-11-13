@@ -62,6 +62,7 @@ lg:US-CFR-28-35-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us/doj-web-rule/CFR-2025-title28-vol1-sec35-200.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "17 U.S.C. § 105: works of the US federal government are not protected by copyright" ;
     lgo:mediaType "application/xml" ;

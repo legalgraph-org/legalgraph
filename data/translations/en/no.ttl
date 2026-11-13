@@ -79,3 +79,126 @@ lg:NO-EHL-s8-3-q1-en
     lgo:translatedOn "2026-11-02"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:NO-EHL-s8-3-q1 .
+
+lg:NO-FREG-s7-2-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8bc537e89a607f2fcce8f4640bbcc0264973b1476810167fcc000b54508bd036" ;
+    lgo:text "(1) An enterprise's websites, letters and business documents shall, irrespective of the medium on which they appear, contain the enterprise's organisation number and business name or name. For enterprises registered in the VAT Register, sales documents shall in addition contain the letters MVA placed after the organisation number."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-FREG-s7-2-1-q1 .
+
+lg:NO-FREG-s7-2-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4588ebef9ed5f0db14f08ed20569bd5917435234f2bd428707f4b39047dd2f27" ;
+    lgo:text "(2) The websites, letters and business documents of a private limited company and a public limited company shall, irrespective of the medium on which they appear, in addition state the register in which the company is registered, the organisational form, the head office and, where applicable, that the company is in liquidation."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-FREG-s7-2-2-q1 .
+
+lg:NO-FREG-s7-2-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a7dc7d9d2d5ed294edd9699f5f44b0ef0a938e14507206d49ec8eb5b8332b10a" ;
+    lgo:text "(3) For a branch of a foreign enterprise, cf. section 3-8, the branch's letters, announcements and other documents shall in addition state the register in which the branch is registered. The foreign enterprise shall also provide the information mentioned in the second paragraph."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-FREG-s7-2-3-q1 .
+
+lg:NO-FREG-s7-2-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1573927597332ced9c9b1376587b66d31dd0365aecd60a7b038186093e2ccb13" ;
+    lgo:text "(4) For a European economic interest grouping, the enterprise's documents shall contain the information mentioned in Regulation (EEC) No 2137/85 Article 25, cf. the EEIG Act section 1."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-FREG-s7-2-4-q1 .
+
+lg:NO-FREG-title-15f8038860e9-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "15f8038860e91fcc1998398bf1acbb5a502cc153b352b37fdb44a05e8ff57787" ;
+    lgo:text "Act relating to the Register of Business Enterprises (Foretaksregisterloven)"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-FREG .
+
+lg:NO-MEDIE-s5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "09ee116974b4f09cdf0a151fb6c93a96d5b196b5bc99225821d40778b5f4c711" ;
+    lgo:text "The editor shall ensure that it is stated in the medium who the editor is."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MEDIE-s5-1-q1 .
+
+lg:NO-MEDIE-s5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2a5149cd4a1bd9b649194c596dc3b9e8eec7a16543a32a495a5dade4ea8e4616" ;
+    lgo:text "The editor shall ensure that media users have access to the name, address, email address and other information that makes it possible to contact the medium directly."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MEDIE-s5-2-q1 .
+
+lg:NO-MEDIE-title-0c52edc711f8-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0c52edc711f860e76e1c0868055869f892635878ab1f582e68bdfa2e24988679" ;
+    lgo:text "Act on editorial independence and responsibility in editor-controlled journalistic media (the Media Liability Act)"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MEDIE .
+
+lg:NO-MFL-s10a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "537e5ea7644db850e5d018bbc58c849c1569265705953e71650c60f4a9818398" ;
+    lgo:text "Traders shall, in a clear and understandable manner, provide consumers with information about complaint bodies that can handle a case between the parties and that are registered pursuant to the Approval Act section 25. The information shall refer to the complaint bodies' websites on the internet. The information shall as a minimum be given in the general contract terms, where such exist, and on the trader's website on the internet, where such exists. The information shall be easily accessible on the website."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MFL-s10a-1-q1 .
+
+lg:NO-MFL-s10a-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "341162a334a4c310eb9dc165dde2568e54005f7a98742ae5c6602f6da87616dd" ;
+    lgo:text "Traders shall inform the consumer pursuant to the first paragraph when a case arises between the parties and it is clear that the parties will not reach an amicable settlement themselves. The information shall be given in writing or on another durable medium."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MFL-s10a-2-q1 .
+
+lg:NO-MFL-s10a-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b88deb6965570902da3129787aa81ac78e5f38fa90dcd31bc62728835f4e6b99" ;
+    lgo:text "By durable medium is meant any device that enables consumers to store information in such a way that it is accessible in the future in unaltered form."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MFL-s10a-3-q1 .
+
+lg:NO-MFL-title-ef95d355bb6a-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ef95d355bb6a213e38156be474a8c88bd05f256afc762c938ce09d574becae66" ;
+    lgo:text "Act on control of marketing and contract terms, etc. (the Marketing Act)"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-MFL .

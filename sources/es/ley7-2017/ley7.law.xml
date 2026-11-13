@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ley 7/2017, art. 40, written in schemas/law.xsd from the BOE consolidated
+  text. The words are the Spanish legislature's; only the structure is ours.
+  Art. 40 transposes Art. 13 of the ADR Directive 2013/11/EU and adds the EU
+  ODR platform link (Reg. 524/2013 Art. 14) for online sellers in apart. 5.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="es"
+     lga:act="ES-LEY7-2017" lga:jurisdiction="ES" lga:act-type="Statute"
+     lga:url="https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659">
+  <meta>
+    <title>Ley 7/2017, de 2 de noviembre, relativa a la resolución alternativa de litigios en materia de consumo</title>
+    <date>2017-11-05</date>
+  </meta>
+
+  <section num="art. 40" source="ley40.fragment.html">
+    <paragraph num="1." lga:provision="ES-LEY7-2017-art40-1" lga:citation="art. 40.1 Ley 7/2017" lga:url="https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">El empresario que esté adherido a una entidad acreditada en España o en cualquier Estado miembro de la Unión Europea o venga obligado por una norma o código de conducta a aceptar su intervención en la resolución de sus litigios, deberá informar a los consumidores de la posibilidad de recurrir a dicha entidad.</paragraph>
+    <paragraph num="2." lga:provision="ES-LEY7-2017-art40-2" lga:citation="art. 40.2 Ley 7/2017" lga:url="https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">La información anterior deberá incluir la identificación completa de la entidad acreditada competente, incluyendo la dirección de su página web. Esta información se ofrecerá de manera clara, e identificable, comprensible y mediante un acceso fácil en su página web, debiendo constar también en las condiciones generales de los contratos de compraventa o de prestación de servicios que el empresario ofrezca al consumidor. Si el empresario no dispusiera de sitio web o no existiera documentación relativa a las condiciones generales, el suministro de esta información se efectuará de cualquier manera que permita al consumidor su conocimiento, en particular a través de folletos informativos propios, carteles con la información en lugar accesible al consumidor o cualquier otra comunicación comercial.</paragraph>
+    <paragraph num="3." lga:provision="ES-LEY7-2017-art40-3" lga:citation="art. 40.3 Ley 7/2017" lga:url="https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">Cuando una reclamación presentada directamente por el consumidor al empresario no haya podido ser resuelta, éste deberá facilitar al consumidor la información relativa a si se encuentra adherido a una entidad de resolución alternativa de litigios de consumo o si está obligado por una norma o código de conducta a participar en el procedimiento ante una concreta entidad. De no ser así, deberá facilitarle la información relativa, al menos, a una entidad que sea competente para conocer de la reclamación, haciendo la indicación de si participará en el procedimiento ante la entidad o entidades indicadas. Esta información se adecuará en cuanto a su contenido y forma de prestarla a lo previsto en el apartado 2 y será facilitada en papel o en cualquier otro soporte duradero en el momento de la contestación de la reclamación o en el plazo máximo de un mes desde su interposición si el empresario no hubiera contestado la misma de forma expresa.</paragraph>
+    <paragraph num="4." lga:provision="ES-LEY7-2017-art40-4" lga:citation="art. 40.4 Ley 7/2017" lga:url="https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659" lga:regulates="ConsumerDisputeResolution">La información prevista en los apartados anteriores será proporcionada por el empresario, sin perjuicio de cualquier otra obligación de información adicional que sea exigible en materia de resolución extrajudicial de litigios de consumo de conformidad con la normativa que resulte de aplicación.</paragraph>
+    <paragraph num="5." lga:provision="ES-LEY7-2017-art40-5" lga:citation="art. 40.5 Ley 7/2017" lga:url="https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659" lga:regulates="ConsumerDisputeResolution" lga:requires="DisputeResolutionBody">El empresario que celebre contratos de compraventa o de prestación de servicios en línea, así como las plataformas de comercio electrónico o mercados en línea, deberán incluir en su sitio web un enlace que permita un acceso identificable y fácil a la plataforma de resolución de litigios en línea de la Unión Europea a la que se refiere el Reglamento (UE) n.º 524/2013 del Parlamento Europeo y del Consejo, de 21 de mayo de 2013 .</paragraph>
+  </section>
+</law>

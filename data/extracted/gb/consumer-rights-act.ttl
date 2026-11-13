@@ -157,6 +157,7 @@ lg:GB-CRA-2015-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/gb/consumer-rights-act/ukpga-2015-15.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."@en ;
     lgo:licence lgv:OpenGovernmentLicence3 ;
     lgo:licenceBasis "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)" ;

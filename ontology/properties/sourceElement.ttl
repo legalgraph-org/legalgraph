@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:sourceElement a owl:DatatypeProperty ;
+    rdfs:label "source element"@en ;
+    rdfs:comment "XPath of the element in the source document the resource was extracted from."@en ;
+    rdfs:range xsd:string .

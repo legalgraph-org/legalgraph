@@ -45,6 +45,7 @@ lg:DE-VerpackDG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/verpackdg/BJNR0CF0B0026.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Änderung durch Art. 4 G v. 13.7.2026 I Nr. 207 textlich nachgewiesen, dokumentarisch noch nicht abschließend bearbeitet"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

@@ -66,6 +66,7 @@ lg:US-CA-CPPA-2025-0307-honda-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/cppa-honda-2025/cppa-honda-2025.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Agency decision of a state authority is an official work; California official publications may be used without fee (Government Code § 6253)" ;
     lgo:mediaType "application/pdf" ;

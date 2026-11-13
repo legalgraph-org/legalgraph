@@ -87,6 +87,7 @@ lg:CJEU-C-62-19-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-star-taxi/ECR_62019CJ0062_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: Romanian. This English text is the Court's translation; the authentic version is the case-language one."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;
@@ -99,6 +100,7 @@ lg:CJEU-C-62-19-source
 lg:CJEU-C-62-19-source-romanian
     a lgo:SourceDocument ;
     dcterms:language "romanian"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-C-62-19-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;

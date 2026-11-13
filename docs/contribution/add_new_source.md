@@ -60,7 +60,7 @@ licence_basis: "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are offi
 originals:
   - file: MStV-18.fragment.html
     url: https://www.gesetze-bayern.de/Content/Document/MStV-18
-    fetch: html-fragment         # zip-member | html-fragment | file
+    fetch: html-fragment         # zip-member | html-fragment | rendered | file
     selector: div.cont           # html-fragment: CSS selector of the element holding the law text
     text_ignore: ["sup.satznr"]  # html-fragment: elements left out when comparing words (here: sentence numbers)
     media_type: text/html
@@ -80,6 +80,8 @@ Optional fields of an original:
 - `notes`: shown with the document, for example "consolidated text, a documentation tool".
 - `authentic: false`: a text that is a translation published for information (a CJEU judgment
   outside the language of the case).
+- `official: false`: a copy from a mirror rather than the official publication (below).
+- `wait`: for `fetch: rendered`, the element to wait for before the fragment is cut.
 
 A source may set `document:` to name its source document when `<act>-source` is already taken (the
 GDPR's recitals come from a second source).
@@ -92,6 +94,24 @@ GDPR's recitals come from a second source).
   (`html.parser`) serialises it. Portal pages differ on every request (session tokens, timestamps);
   the fragment with the law text does not.
 - **`file`**: the response as served, byte for byte (PDF and anything else).
+- **`rendered`**: for portals that build the law text with JavaScript (single-page apps such as the
+  Czech e-Sbírka): the page is rendered in headless Chromium (`tools/render`, bun and Playwright; run
+  `make render-install` once on your machine), then the element matching `selector` is kept as for
+  `html-fragment`. Set `wait` to the element that holds the text once rendered, and `text_ignore` to
+  hidden duplicates (e-Sbírka renders each defined term twice, once hidden for its tooltip). A render's
+  markup changes from one run to the next, its words do not: `fetch --check` compares the words.
+  Not for portals behind a bot challenge: those are saved by hand (below), never worked around.
+
+### Mirrors, and checking them against the official text
+
+Sourcing and checking are separate steps. A text may be taken from the official publication, or from
+a mirror that is easier to read; a mirror's original says `official: false`. Add the official
+publication as a second original with `role: authentic` (downloaded, or `rendered` where the portal
+needs it), and `sources verify` checks every annotated line word for word against it as well. The
+graph records the outcome on each source document (`lgo:authenticity`): `Official` for an official
+text, `VerifiedAgainstOfficial` (with `lgo:verifiedAgainst` naming the official document) for a mirror
+checked that way, `NotVerified` for a mirror not checked yet. Example: `sources/cz/oz/` (the
+zakonyprolidi.cz mirror, checked against e-Sbírka).
 
 ### Portals that block downloads
 

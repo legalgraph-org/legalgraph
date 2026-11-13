@@ -1,0 +1,44 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:Condition a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Condition"@en ;
+    rdfs:comment "A fact about a business or its website on which obligations depend. Legal concepts the law itself defines (established in the Union, large-scale monitoring) are conditions too."@en .
+
+lgo:holdsWhenAny a owl:ObjectProperty ;
+    rdfs:label "holds when any of"@en ;
+    rdfs:comment "The condition also holds when any of these does (established or present in Ukraine ⇐ established in Ukraine)."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Condition .
+
+lgo:holdsWhenAll a owl:ObjectProperty ;
+    rdfs:label "holds when all of"@en ;
+    rdfs:comment "The condition also holds when all of these do."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Condition .
+
+lgo:establishedIn a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "established in"@en ;
+    rdfs:comment "The condition holds for a business established in this jurisdiction or in one within it: a member (Austria in the EU) or a subdivision (California in the United States). A checklist asks once where the business is established instead of a yes/no question per country."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:offersIn a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "offers in"@en ;
+    rdfs:comment "The condition holds for a business that offers goods or services to people in this jurisdiction or in one within it. A checklist asks once where the business's customers or users are."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:basedOn a owl:ObjectProperty ;
+    rdfs:label "based on"@en ;
+    rdfs:comment "The provision whose words the condition is taken from."@en ;
+    rdfs:domain lgo:Condition ;
+    rdfs:range lgo:Provision .
+
+lgo:question a owl:DatatypeProperty ;
+    rdfs:label "question"@en ;
+    rdfs:comment "How a checklist asks for the condition, as a yes/no question."@en ;
+    rdfs:domain lgo:Condition .

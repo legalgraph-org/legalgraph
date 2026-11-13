@@ -86,6 +86,7 @@ lg:UA-1023-source
     a lgo:SourceDocument ;
     dcterms:language "uk"^^xsd:language ;
     lgo:annotatedFile "sources/ua/consumer-rights-1991/consumer-rights-1991.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright" ;
     lgo:mediaType "text/html" ;
@@ -97,6 +98,7 @@ lg:UA-1023-source
 lg:UA-1023-source-en
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:UA-1023-source ;
     lgo:legalStatus "official translation published for information; last modified 2021-05-12, before later amendments"@en ;
     lgo:licence lgv:OfficialWork ;

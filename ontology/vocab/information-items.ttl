@@ -1,0 +1,514 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Pieces of information a disclosure can require (lgo:requiresDisclosureOf).
+# Named after Article 5(1) of Directive 2000/31/EC where it has an equivalent.
+
+lgv:InformationItems a skos:ConceptScheme ;
+    skos:prefLabel "Information items"@en .
+
+lgv:ProviderName a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Name of the provider"@en , "Name"@de ;
+    skos:definition "The name of the natural person, or the company name of the legal person, running the service."@en .
+
+lgv:GeographicAddress a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Geographic address"@en , "Anschrift"@de ;
+    skos:definition "The address where the provider is established. A PO box is not a geographic address."@en .
+
+lgv:EmailAddress a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Email address"@en , "E-Mail-Adresse"@de .
+
+lgv:RapidContact a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Rapid direct contact details"@en ;
+    skos:definition "Details beyond email that allow fast, direct and effective communication, such as a phone number or contact form."@en .
+
+lgv:PhoneNumber a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Phone number"@en , "Telefonnummer"@de .
+
+lgv:LegalForm a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Legal form"@en , "Rechtsform"@de .
+
+lgv:AuthorisedRepresentative a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Authorised representative"@en , "Vertretungsberechtigter"@de .
+
+lgv:ShareCapital a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Share capital"@en , "Stamm- oder Grundkapital"@de .
+
+lgv:PaymentAccount a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Payment account"@en , "Zahlungskonto"@de ;
+    skos:definition "A payment or bank account of the business with the institution that holds it, where national law asks for it on business documents or the website (e.g. BE art. III.25 WER, HR čl. 21(4) ZTD)."@en .
+
+lgv:RegisterEntry a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Register and registration number"@en , "Register und Registernummer"@de .
+
+lgv:VatId a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "VAT identification number"@en , "Umsatzsteuer-Identifikationsnummer"@de .
+
+lgv:EconomicIdNumber a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Economic identification number"@en , "Wirtschafts-Identifikationsnummer"@de ;
+    skos:definition "The German business identification number under § 139c of the Fiscal Code (Abgabenordnung)."@en .
+
+lgv:TaxId a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Tax identification number"@en ;
+    skos:definition "A national tax or business identification number other than the VAT ID, such as the Spanish or Portuguese NIF, or the Ukrainian EDRPOU code (companies) or RNOKPP (individual entrepreneurs)."@en .
+
+lgv:SupervisoryAuthority a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Supervisory authority"@en , "Aufsichtsbehörde"@de ;
+    skos:definition "Where the activity needs an authorisation: the authority that supervises it."@en .
+
+lgv:ProfessionalBody a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Professional body"@en , "Kammer"@de .
+
+lgv:ProfessionalTitle a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Professional title and granting state"@en , "Berufsbezeichnung"@de .
+
+lgv:ProfessionalRules a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Professional rules and how to access them"@en , "Berufsrechtliche Regelungen"@de .
+
+lgv:LiquidationStatus a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Liquidation status"@en , "Abwicklung oder Liquidation"@de .
+
+lgv:AudiovisualRegulator a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Audiovisual media services seat state and regulators"@en .
+
+lgv:ResponsibleEditor a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Person responsible for editorial content"@en , "Verantwortlicher (redaktionell)"@de .
+
+lgv:BusinessPurpose a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Business purpose"@en , "Unternehmensgegenstand"@de .
+
+lgv:OwnershipStructure a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Ownership and voting rights"@en , "Eigentums- und Beteiligungsverhältnisse"@de ;
+    skos:definition "Who holds the provider directly or indirectly, with their shares and voting rights, silent partnerships and trusts."@en .
+
+lgv:EditorialLine a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Editorial line"@en , "Blattlinie"@de ;
+    skos:definition "A statement of the basic direction of a periodical medium."@en .
+
+lgv:HostingProvider a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Hosting provider"@en , "Hébergeur"@fr .
+
+lgv:DisputeResolutionStatement a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Dispute resolution statement"@en ;
+    skos:definition "Whether the business is willing or obliged to take part in consumer dispute resolution."@en .
+
+lgv:DisputeResolutionBody a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Competent dispute resolution body"@en , "Verbraucherschlichtungsstelle"@de .
+
+lgv:ProfessionalLiabilityInsurance a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Professional liability insurance"@en , "Berufshaftpflichtversicherung"@de ;
+    skos:definition "Name and address of the insurer and the territorial scope of cover."@en .
+
+# --- Privacy information (Articles 13 and 14 GDPR) ---------------------------
+# Named after the points of Article 13; Article 14 adds the categories of data and their source.
+
+lgv:ControllerIdentity a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Identity and contact details of the controller"@en , "Name und Kontaktdaten des Verantwortlichen"@de ;
+    skos:related lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress ;
+    skos:definition "Who decides why and how personal data are processed, and how to reach them. On a website often the same person as the provider named in the Impressum."@en .
+
+lgv:ControllerRepresentative a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Controller's representative in the Union"@en , "Vertreter des Verantwortlichen"@de ;
+    skos:definition "Where applicable: the representative a controller established outside the Union designates in the Union (Article 27 GDPR), with contact details."@en .
+
+lgv:DataProtectionOfficerContact a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Contact details of the data protection officer"@en , "Kontaktdaten des Datenschutzbeauftragten"@de ;
+    skos:definition "Where a data protection officer is designated (Article 37 GDPR; in Germany also § 38 BDSG), how to reach them."@en .
+
+lgv:ProcessingPurposes a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Purposes of the processing"@en , "Zwecke der Verarbeitung"@de ;
+    skos:definition "What the personal data are processed for."@en .
+
+lgv:LegalBasisOfProcessing a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Legal basis for the processing"@en , "Rechtsgrundlage der Verarbeitung"@de ;
+    skos:related lgv:LawfulBasis ;
+    skos:definition "Which lawful basis of Article 6(1) GDPR (or Article 9(2) for special categories) each purpose relies on."@en .
+
+lgv:LegitimateInterests a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Legitimate interests pursued"@en , "Berechtigte Interessen"@de ;
+    skos:related lgv:LawfulBasisLegitimateInterests ;
+    skos:definition "Where processing relies on point (f) of Article 6(1) GDPR: the interests of the controller or a third party it serves."@en .
+
+lgv:CategoriesOfPersonalData a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Categories of personal data"@en , "Kategorien personenbezogener Daten"@de ;
+    skos:definition "Which kinds of personal data are processed. The GDPR requires this only where the data were not collected from the person (Article 14); Ukrainian law requires it in every case."@en .
+
+lgv:Recipients a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Recipients of the personal data"@en , "Empfänger"@de ;
+    skos:definition "Who receives the data, or which categories of recipients, if any: hosting and analytics providers, payment services, authorities."@en .
+
+lgv:ThirdCountryTransfer a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Transfers to third countries"@en , "Übermittlung in Drittländer"@de ;
+    skos:definition "Where applicable: that data are transferred outside the EU/EEA, whether an adequacy decision exists and, if not, the safeguards and how to obtain a copy."@en .
+
+lgv:RetentionPeriod a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Storage period"@en , "Speicherdauer"@de ;
+    skos:definition "How long the personal data will be stored, or the criteria used to determine it."@en .
+
+lgv:DataSubjectRights a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Rights of the data subject"@en , "Betroffenenrechte"@de ;
+    skos:definition "The rights the law gives people over their data. Under the GDPR: access, rectification, erasure, restriction, objection and data portability (Articles 15 to 21)."@en .
+
+lgv:ConsentWithdrawalRight a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Right to withdraw consent"@en , "Recht auf Widerruf der Einwilligung"@de ;
+    skos:related lgv:Consent ;
+    skos:definition "Where processing relies on consent: that it can be withdrawn at any time, without affecting the lawfulness of earlier processing."@en .
+
+lgv:ComplaintRight a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Right to lodge a complaint with a supervisory authority"@en , "Beschwerderecht bei einer Aufsichtsbehörde"@de .
+
+lgv:ProvisionRequirement a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Whether providing the data is required"@en ;
+    skos:definition "Whether the person must provide the data (by law, by contract or to conclude a contract) and what happens if they do not."@en .
+
+lgv:SourceOfPersonalData a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Source of the personal data"@en , "Quelle der Daten"@de ;
+    skos:definition "Where data not collected from the person come from, and whether from publicly accessible sources (Article 14 GDPR)."@en .
+
+lgv:AutomatedDecisionMaking a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Automated decision-making and profiling"@en , "Automatisierte Entscheidungsfindung"@de ;
+    skos:definition "Whether decisions are made solely by automated means, including profiling (Article 22 GDPR), with meaningful information about the logic involved and its consequences."@en .
+
+# --- Pre-contractual information for consumers (Art. 246a § 1 EGBGB, Article 6 CRD) --------
+
+lgv:MainCharacteristics a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Main characteristics of the goods or services"@en , "Wesentliche Eigenschaften"@de .
+
+lgv:ComplaintAddress a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Address for complaints, if different"@en .
+
+lgv:TotalPrice a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Total price including taxes"@en , "Gesamtpreis"@de .
+
+lgv:UnitPrice a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Unit price (per kilogram, litre, metre…)"@en , "Grundpreis"@de .
+
+lgv:PersonalisedPricing a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "That the price was personalised by automated decision-making"@en .
+
+lgv:DeliveryCosts a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Delivery and other additional costs"@en , "Versandkosten"@de .
+
+lgv:SubscriptionCosts a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Total costs per billing period of a subscription"@en .
+
+lgv:CommunicationCosts a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Costs of the means of distance communication, if above the basic rate"@en .
+
+lgv:PaymentAndDeliveryTerms a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Payment, delivery and performance terms, delivery date, complaint handling"@en .
+
+lgv:LegalGuarantee a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The legal guarantee of conformity"@en , "Gesetzliches Gewährleistungsrecht"@de ;
+    skos:definition "A reminder that the seller is liable by law for goods that do not conform to the contract. In the EU the liability lasts at least two years (Directive (EU) 2019/771)."@en .
+
+lgv:CommercialGuarantee a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Commercial guarantees, durability guarantee and after-sales services"@en .
+
+lgv:SoftwareUpdatePeriod a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Minimum period of software updates (goods with digital elements, digital products)"@en .
+
+lgv:CodesOfConduct a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Relevant codes of conduct"@en .
+
+lgv:ContractDuration a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Duration of the contract, termination and minimum commitment"@en .
+
+lgv:Deposit a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Deposits or other financial guarantees required"@en .
+
+lgv:DigitalProductInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Functionality, compatibility and interoperability of digital products"@en .
+
+lgv:RepairInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Repairability score or spare parts availability"@en .
+
+lgv:WithdrawalInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Right of withdrawal: conditions, time limit, procedure and form"@en , "Widerrufsbelehrung"@de ;
+    skos:definition "How the consumer can withdraw from a distance contract, or that there is no right of withdrawal. In the EU this includes the model withdrawal form and, from 19 June 2026, the withdrawal function."@en .
+
+lgv:ReturnCosts a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Who bears the cost of returning the goods"@en .
+
+lgv:NoWithdrawalRight a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "That there is no right of withdrawal, or when it expires early"@en .
+
+# --- Other items ------------------------------------------------------------------
+
+lgv:AccessibilityStatement a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "How the service meets the accessibility requirements"@en ;
+    skos:definition "A general description of the service, the information needed to understand how it works and how it meets the accessibility requirements (Annex 3 BFSG; Annex V European Accessibility Act)."@en .
+
+lgv:ContentModerationRules a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Restrictions on users' content and how content is moderated"@en .
+
+lgv:AdvertisementMarking a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "That the information is an advertisement"@en .
+
+lgv:Advertiser a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "On whose behalf the advertisement is presented, and who paid for it"@en .
+
+lgv:AdTargetingParameters a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The main parameters used to target the advertisement, and how to change them"@en .
+
+# --- California (CCPA) -------------------------------------------------------------
+
+lgv:DoNotSellLink a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "“Do Not Sell or Share My Personal Information” link"@en ;
+    skos:definition "A clear and conspicuous link on the homepage to a page where consumers can opt out of the sale or sharing of their personal information (Cal. Civ. Code § 1798.135(a)(1))."@en .
+
+lgv:LimitSensitiveDataLink a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "“Limit the Use of My Sensitive Personal Information” link"@en .
+
+lgv:RequestMethods a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Methods for submitting privacy requests"@en ;
+    skos:definition "Two or more designated methods, including a toll-free number; businesses operating exclusively online with a direct relationship to the consumer need only an email address (Cal. Civ. Code § 1798.130(a)(1))."@en .
+
+lgv:SoldOrSharedCategories a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Categories of personal information sold or shared in the last 12 months (or that none were)"@en .
+
+lgv:OrderingProcessInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Steps to conclude the contract, filing, error correction and languages"@en ;
+    skos:definition "Before an online order: the technical steps to conclude the contract, whether it will be filed and accessible, how to correct input errors, and the languages offered (Article 10 e-Commerce Directive; UK e-Commerce Regulations, reg. 9)."@en .
+
+# --- Product safety, prices, energy labels, political ads ---------------------------
+
+lgv:ManufacturerIdentity a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Manufacturer's name and postal and electronic address"@en .
+
+lgv:ResponsiblePersonInTheUnion a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Responsible economic operator in the EU, if the manufacturer is outside it"@en .
+
+lgv:ProductIdentification a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Information identifying the product (picture, type, other identifier)"@en .
+
+lgv:SafetyWarnings a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Warnings and safety information on the product"@en .
+
+lgv:PriorPrice a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Prior price: the lowest price in the 30 days before a price reduction"@en .
+
+lgv:EnergyLabel a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Energy label and product information sheet"@en .
+
+lgv:PoliticalAdSponsor a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Political advertisement label, sponsor and transparency notice"@en .
+
+lgv:YouthProtectionOfficer a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Youth protection officer: name and fast electronic contact"@en , "Jugendschutzbeauftragter"@de .
+
+lgv:WeeeRegistrationNumber a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "WEEE registration number (electrical equipment)"@en , "WEEE-Reg.-Nr."@de .
+
+lgv:WeeeTakeBackInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Information on returning old electrical devices"@en ;
+    skos:definition "Separate collection, removing batteries and lamps, the seller's take-back duty and options, deleting personal data, and the crossed-out wheeled bin symbol (§ 18 ElektroG)."@en .
+
+lgv:LicenceDetails a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Licence details (series, number, validity, date of issue)"@en , "Відомості про ліцензію"@uk .
+
+lgv:AiInteractionNotice a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "That the user is interacting with an AI system"@en ;
+    skos:definition "People must be informed they are interacting with an AI system (chatbot, AI assistant), unless obvious to a reasonably well-informed user (Article 50(1) AI Act)."@en .
+
+lgv:AiGeneratedContentLabel a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "That the content was generated or manipulated by AI"@en ;
+    skos:definition "Disclosure that image, audio, video or public-interest text content was artificially generated or manipulated — deep fakes visibly labelled (Article 50(4) AI Act)."@en .
+
+lgv:GeneralTermsAndClauses a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "That the business uses general terms and clauses"@en ;
+    skos:definition "Whether the business uses standard terms and conditions — a disclosure item in its own right under Article 22(1)(f) of the Services Directive."@en .
+
+lgv:GoverningLawClauses a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Contract clauses on the applicable law and the competent courts"@en ;
+    skos:definition "Whether the terms choose a governing law or a forum — a disclosure item under Article 22(1)(g) of the Services Directive; for consumers, Article 6(2) Rome I and Articles 17 to 19 Brussels Ia limit what such clauses can do."@en .
+
+lgv:CookiePurposes a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The purposes of the storage or access"@en ;
+    skos:definition "Why information is stored on or read from the user's device — analytics, advertising, functionality — which consent requests must itemise."@en .
+
+lgv:CookieDuration a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "How long information is stored or accessed"@en ;
+    skos:definition "The storage periods for information placed on the device and the periods during which stored information is accessed — required in consent requests and notices about device storage."@en .
+
+lgv:ThirdPartyAccess a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Who stores or accesses information on the device"@en ;
+    skos:definition "The operators and third parties who store information on the user's device or read it back — the vendor list behind a consent request."@en .
+
+lgv:ConsentWithdrawalMechanism a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The way to take consent back"@en ;
+    skos:definition "An easily accessible control — for example a hovering icon or a link in a standard place — that lets the user withdraw consent as easily as it was given, at any time."@en .
+
+
+lgv:UnsubscribeMechanism a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The way to say stop"@en ;
+    skos:definition "A functioning unsubscribe or opt-out control in every commercial electronic message — free to use, sent to an electronic address or a web page, effective for the stated period — under CASL s. 6(2)(c) and 11 and CAN-SPAM s. 7704(a)(3)-(4)."@en .
+
+lgv:ContractCopy a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "A copy of the contract"@en ;
+    skos:definition "The concluded agreement itself, delivered to the consumer in writing or in another retainable form within the period the law sets — not a summary but the contract as agreed."@en .
+
+lgv:PrescribedContractInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The prescribed pre-contract disclosure"@en ;
+    skos:definition "The statutory list of particulars a consumer must see before entering the agreement, prescribed by the act or its regulation — Ontario CPA s. 38(1) points to the list in O. Reg. 17/05."@en .
+
+lgv:VatStatus a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Whether the business is VAT-registered"@en ;
+    skos:definition "That the business is liable for value-added tax — Norway's § 8 requires it where an organumber but no full VAT identification number exists."@en .
+
+lgv:ContractArchiving a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Whether the concluded contract is archived and accessible"@en ;
+    skos:definition "Whether the provider files the concluded contract and whether the customer can later retrieve it — a pre-order disclosure under Article 10(1)(c) of the e-Commerce Directive."@en .
+
+lgv:ErrorCorrectionMeans a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The means to spot and fix input errors before ordering"@en ;
+    skos:definition "Which technical tools let the customer identify and correct entry errors before placing an order — a pre-order disclosure under Article 10(1)(d) of the e-Commerce Directive."@en .
+
+lgv:ContractLanguages a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The languages the contract can be concluded in"@en ;
+    skos:definition "Which languages are available for the agreement — a pre-order disclosure under Article 10(1)(e) of the e-Commerce Directive."@en .
+
+lgv:GeneralTermsAvailability a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Contract terms in a storable, reproducible form"@en ;
+    skos:definition "General terms and conditions made available so the customer can store and reproduce them — Article 10(3) of the e-Commerce Directive."@en .
+
+lgv:SubscriptionTermsDisclosure a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The automatic-renewal terms before agreeing"@en ;
+    skos:definition "The automatic renewal or continuous service terms, shown clearly and conspicuously before the subscription is fulfilled, including what a trial costs afterwards."@en .
+
+lgv:CancellationInformation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "The cancellation policy and how to cancel"@en ;
+    skos:definition "The cancellation policy and the steps to cancel, in an acknowledgment the consumer can keep."@en .
+
+lgv:CancellationMechanism a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "A free, easy way to cancel"@en ;
+    skos:definition "A toll-free number, email, postal address or equally cost-effective, timely and easy-to-use way to end an automatic renewal — described in the acknowledgment."@en .
+
+lgv:OnlineCancellation a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Cancelling online as easily as subscribing"@en ;
+    skos:definition "When the consumer accepted the renewal online: termination exclusively online, at will, through a prominently placed link or button or an immediately accessible termination email — no further obstructing steps (Cal. B&P Code § 17602(d); § 312k BGB)."@en .
+
+lgv:DoNotTrackResponse a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Response to Do Not Track signals"@en ;
+    skos:definition "How the website responds to browsers' Do Not Track signals or similar choices about tracking across sites over time (California, Bus. & Prof. Code § 22575(b)(5))."@en .
+
+lgv:ThirdPartyTracking a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Tracking by other parties"@en ;
+    skos:definition "Whether other parties may collect information about a user's activities over time and across websites when they use the site (California, Bus. & Prof. Code § 22575(b)(6))."@en .
+
+lgv:PolicyChangeProcess a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "How changes to the privacy policy are notified"@en ;
+    skos:definition "The process by which the operator tells users about material changes to its privacy policy (California, Bus. & Prof. Code § 22575(b)(3))."@en .
+
+lgv:PolicyEffectiveDate a lgo:InformationItem ;
+    skos:inScheme lgv:InformationItems ;
+    skos:prefLabel "Effective date of the privacy policy"@en ;
+    skos:definition "The date from which the privacy policy applies (California, Bus. & Prof. Code § 22575(b)(4))."@en .

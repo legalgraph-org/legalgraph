@@ -1,0 +1,25 @@
+# Zákon č. 391/2015 Z. z. o alternatívnom riešení spotrebiteľských sporov,
+# § 11: the Slovak after-complaint ADR duty — Directive 2013/11 Art. 13(3)
+# transposition. When the trader answers the consumer's remedy request
+# under (1) negatively, (2) obliges it to inform the consumer about the
+# competent ADR entities on a durable medium. Slovakia has no separate
+# proactive website/contract-terms paragraph in this act; the pre-contract
+# notice sits in zákon 108/2024 Z. z. § 5(1)(l) (sources/sk/zos-108).
+id: sk/ars
+title: Zákon č. 391/2015 Z. z. o alternatívnom riešení spotrebiteľských sporov (§ 11)
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: ars-11.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/2015/391/20260101.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the static.slov-lex.sk version mirror (text in force 1 January 2026): div paragraf-11, §§ 11(1)-(3). Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: 8232aaf2358c579dfe79566b158e81a8fe32efb8626c2fe86e50da98d4c239ff
+annotated: ars.law.xml

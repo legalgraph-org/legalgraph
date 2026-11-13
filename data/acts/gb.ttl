@@ -1,12 +1,14 @@
 @prefix lgo:  <https://legalgraph.org/ontology#> .
 @prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 # United Kingdom: additions to data/extracted/gb/ (the texts come from legislation.gov.uk).
 
 lg:GB-SI-2015-17
     lgo:shortName "Trading Disclosures Regulations 2015" ;
-    rdfs:comment "Made under the Companies Act 2006. Companies must show their registered name, number, part of the UK where registered and registered office on their websites: the UK's nearest equivalent to the Impressum, for companies only."@en .
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:comment "Made under the Companies Act 2006. Companies must show their registered name, number, part of the UK where registered and registered office on their websites: the UK's nearest equivalent to the Impressum, for companies only. Sole traders and partnerships have no matching trading-disclosure duty here — Part 6 covers companies, Part 5 restricts business names without a disclosure list, and the Business Names Act 1985 is repealed; they are covered by regulation 6 of the Electronic Commerce Regulations 2002 instead."@en .
 
 lg:GB-SI-2003-2426
     lgo:shortName "PECR" ;
@@ -14,10 +16,12 @@ lg:GB-SI-2003-2426
 
 lg:GB-SI-2002-2013
     lgo:shortName "Electronic Commerce Regulations 2002" ;
+    eli:transposes lg:EU-2000-31 ;
     rdfs:comment "Implemented the e-Commerce Directive and remains UK law after Brexit. Regulation 6 is the UK's general provider-information duty for websites, covering sole traders and partnerships too."@en .
 
 lg:GB-SI-2013-3134
     lgo:shortName "Consumer Contracts Regulations 2013" ;
+    eli:transposes lg:EU-2011-83 ;
     rdfs:comment "Implemented the Consumer Rights Directive; amended since Brexit only by UK legislation. There is no UK equivalent of the EU withdrawal button."@en .
 
 lg:GB-DMCC-2024

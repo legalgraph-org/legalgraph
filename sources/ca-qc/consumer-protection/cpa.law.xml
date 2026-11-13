@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Quebec Consumer Protection Act, s. 54.4, written in schemas/law.xsd from the Légis Québec
+  consolidated fragment (French version — the authentic text; the English version is the
+  Éditeur officiel's translation, kept as cpa.en.law.xml). The words are the Éditeur officiel
+  du Québec's; only the structure is ours. `legalgraph sources verify` checks every paragraph
+  word for word against the fragment. legisquebec.gouv.qc.ca is a client-side application; the
+  fragment is cut from the Wayback Machine capture of 2025-11-07.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="CA-QC-CPA" lga:jurisdiction="CA-QC" lga:act-type="Statute"
+     lga:url="https://www.legisquebec.gouv.qc.ca/fr/document/cs/P-40.1">
+  <meta>
+    <title>Loi sur la protection du consommateur, CQLR c. P-40.1</title>
+    <date>1978-12-22</date>
+  </meta>
+
+  <section num="54.4" title="Divulgation par le commerçant avant la conclusion d'un contrat à distance" source="cpa-54-4.fragment.html">
+    <paragraph lga:provision="CA-QC-CPA-s54-4" lga:citation="Loi sur la protection du consommateur (Qué.) a. 54.4" lga:url="https://www.legisquebec.gouv.qc.ca/fr/document/cs/P-40.1" lga:regulates="PreContractInformation">Avant la conclusion du contrat à distance, le commerçant doit divulguer au consommateur les renseignements suivants:
+      <list>
+        <item num="a )" lga:requires="ProviderName">son nom et tout autre nom qu’il utilise dans l’exploitation de son entreprise;</item>
+        <item num="b )" lga:requires="GeographicAddress">son adresse;</item>
+        <item num="c )" lga:requires="PhoneNumber EmailAddress">son numéro de téléphone ainsi que, le cas échéant, son numéro de télécopieur et son adresse technologique;</item>
+        <item num="d )" lga:requires="MainCharacteristics">une description détaillée de chaque bien ou service faisant l’objet du contrat, y compris ses caractéristiques et ses spécifications techniques;</item>
+        <item num="d .1 )">le cas échéant, l’information exigée par le paragraphe c du deuxième alinéa de l’article 236.1 et par l’article 236.3;<note num="en-vigueur-2026-10-05"/></item>
+        <item num="d .2 )" lga:requires="LegalGuarantee">le cas échéant, la durée de la garantie de bon fonctionnement prévue à l’article 38.1;</item>
+        <item num="d .3 )" lga:requires="RepairInformation">le cas échéant, les pièces de rechange, les services de réparation et les renseignements nécessaires à l’entretien ou à la réparation dont la disponibilité est garantie par le commerçant ou le fabricant, en application du premier alinéa de l’article 39;</item>
+        <item num="e )" lga:requires="TotalPrice">un état détaillé du prix de chaque bien ou service faisant l’objet du contrat, des frais connexes qu’il exige, de même que du coût de tout droit exigible en vertu d’une loi;</item>
+        <item num="f )" lga:requires="DeliveryCosts">une description de tous les frais supplémentaires qui pourraient être exigibles par un tiers et dont le montant ne peut être raisonnablement calculé, notamment les droits de douane et les frais de courtage;</item>
+        <item num="g )" lga:requires="TotalPrice PaymentAndDeliveryTerms">le total des sommes que le consommateur doit débourser en vertu du contrat et, le cas échéant, le montant des versements périodiques, le tarif applicable pour l’utilisation d’un bien ou d’un service accessoire de même que les modalités de paiement;</item>
+        <item num="h )">la devise dans laquelle les montants exigibles sont payables, lorsque cette devise est autre que canadienne;</item>
+        <item num="i )" lga:requires="PaymentAndDeliveryTerms">la date ou les délais d’exécution de son obligation principale;</item>
+        <item num="j )" lga:requires="PaymentAndDeliveryTerms">le cas échéant, le mode de livraison, le nom du transporteur et le lieu de livraison;</item>
+        <item num="k )" lga:requires="WithdrawalInformation">le cas échéant, les conditions d’annulation, de résiliation, de retour, d’échange ou de remboursement;</item>
+        <item num="l )">toutes les autres restrictions ou conditions applicables au contrat.</item>
+      </list>
+      Le commerçant doit présenter ces renseignements de manière évidente et intelligible et les porter expressément à la connaissance du consommateur; lorsqu’il s’agit d’une offre écrite, il doit présenter ces renseignements de façon à ce que le consommateur puisse aisément les conserver et les imprimer sur support papier. 2006, c. 56, a. 5 ; 2018, c. 14 , a. 11 ; 2023, c. 21 , a. 7 ; N.I. 2025-03-24 ; 2023, c. 21 , a. 7 .</paragraph>
+  </section>
+</law>

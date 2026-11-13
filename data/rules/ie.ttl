@@ -1,0 +1,125 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Ireland: provider information under Regulation 7(1) of S.I. No. 68/2003, the transposition
+# of Article 5 of the e-Commerce Directive. Ireland adds point (d): how people can register their
+# choice about unsolicited commercial communications, prominently on the website. Unlike Malta's
+# point (h), it is not limited to providers that send such communications.
+
+lg:IE-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and fast electronic contact"@en ;
+    rdfs:comment "The provider's name, the geographic address where it is established and details, including an e-mail address, for rapid, direct and effective contact (Regulation 7(1)(a)-(c) S.I. No. 68/2003)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:IE-SI-2003-68-r7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IE-R-impressum-marketing-choice a lgo:Obligation ;
+    rdfs:label "Provider information: how to register a choice about unsolicited commercial communications"@en ;
+    rdfs:comment "Details of how natural persons can register their choice regarding unsolicited commercial communications, prominently on the website and wherever they are asked for information on it (Regulation 7(1)(d) S.I. No. 68/2003). The text does not limit this to providers that send such communications."@en ;
+    lgo:establishedBy lg:IE-SI-2003-68-r7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:UnsubscribeMechanism ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IE-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register and registration number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:IE-SI-2003-68-r7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IE-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: supervisory authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:IE-SI-2003-68-r7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IE-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:IE-SI-2003-68-r7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IE-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT registration number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:IE-SI-2003-68-r7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:IE-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website"@en ;
+    rdfs:comment "A company with a website displays prominently its name and legal form, place of registration and registered number, and registered office address (section 151(4) with (2)(a) to (c) Companies Act 2014). Where the website mentions share capital, it must be the paid-up issued capital."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:IE-CA-2014-s151-4 , lg:IE-CA-2014-s151-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:RegisterEntry , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:IE-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Regulation 18(1)-(2) S.I. 343/2015: the ADR entity or entities covering the trader's sector with their website address, on the trader's website and in its general terms. Breach is an offence (18(5))."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:IE-SI-343-2015-r18-1 , lg:IE-SI-343-2015-r18-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IE-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Regulation 18(3)-(4) S.I. 343/2015: the ADR entity information and whether the trader will use it, in writing or on another durable medium."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:IE-SI-343-2015-r18-3 , lg:IE-SI-343-2015-r18-4 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IE ;
+    lgo:appliesWhen lgv:EstablishedInIreland , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

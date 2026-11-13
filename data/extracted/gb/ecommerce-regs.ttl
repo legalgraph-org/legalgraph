@@ -81,6 +81,7 @@ lg:GB-SI-2002-2013-r6-2
     lgo:citation "reg. 6(2) Electronic Commerce Regulations 2002" ;
     lgo:implements lg:EU-2000-31-art5-2 ;
     lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:TotalPrice ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:GB-SI-2002-2013-source ;
     lgo:sourceElement "/Legislation/Secondary[1]/Body[1]/P1group[6]/P1[1]/P1para[1]/P2[2]" ;
@@ -127,6 +128,7 @@ lg:GB-SI-2002-2013-r9-3
     lgo:citation "reg. 9(3) Electronic Commerce Regulations 2002" ;
     lgo:implements lg:EU-2000-31-art10-3 ;
     lgo:regulates lgv:TermsAndConditions ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAvailability ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:GB-SI-2002-2013-source ;
     lgo:sourceElement "/Legislation/Secondary[1]/Body[1]/P1group[9]/P1[1]/P1para[1]/P2[3]" ;
@@ -146,6 +148,7 @@ lg:GB-SI-2002-2013-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/gb/ecommerce-regs/uksi-2002-2013.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Revised version as published by legislation.gov.uk, with amendments up to the date in its metadata (dc:modified)."@en ;
     lgo:licence lgv:OpenGovernmentLicence3 ;
     lgo:licenceBasis "Crown copyright, reused under the Open Government Licence v3.0 (legislation.gov.uk)" ;

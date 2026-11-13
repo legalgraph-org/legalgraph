@@ -1,0 +1,186 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:LV-ISSL-art4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "12fa8dbde25ee0867499a65e14793b5f37ed327c1bf9e1322d528797653010bc" ;
+    lgo:text """(1) A service provider shall provide the following information in a clear, direct and permanently accessible manner:
+1) the firm name (name) or given name and surname, the legal address or declared place of residence and the registration number (if any) of the service provider;
+2) the contact information of the service provider that allows rapid communication in a direct manner, including the e-mail address;
+3) where a special permit (licence) is required for the relevant activity, — information about the institution that issued the special permit (licence);
+4) in respect of regulated professional activity — information about the professional organisation that issued the documents attesting the professional qualification, the title corresponding to the profession or qualification and the state in which it was awarded, as well as a reference to the professional rules applicable in the state of registration and the means by which they can be accessed;
+5) where the relevant activity is subject to value added tax, — the registration number in the State Revenue Service register of persons liable to value added tax."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-ISSL-art4-1-q1 .
+
+lg:LV-ISSL-art4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6c3a77c97a52eacbf0a37943f1e0ae6d4b2638e4e3bfd3dfa280c483779ee8df" ;
+    lgo:text "(2) Where a price is indicated, the service provider shall indicate it in a manner that makes the price unambiguous and clearly legible, and shall provide information on whether the price includes the taxes payable and the costs of delivery of the goods."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-ISSL-art4-2-q1 .
+
+lg:LV-KL-art17-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "68c21c7a80da7ee859b082d1b69af016c78e0dc4469bd2be6806cf6c549513ba" ;
+    lgo:text """In a merchant's transaction letters, invoices and other documents in paper or electronic form, as well as on the merchant's website, the following shall be indicated:
+1) the merchant's firm name;
+2) the merchant's registration number in the commercial register;
+3) the merchant's legal address;
+4) where applicable — information that the merchant is in the process of liquidation or insolvency."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-KL-art17-1-q1 .
+
+lg:LV-KL-art17-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1c886b1731fe6ea955d781886d53e2b8492b5615556a385ada47fef9928ef082" ;
+    lgo:text """If a merchant has opened a branch, its documents in paper or electronic form shall, in addition to the information referred to in the first paragraph of this section, indicate:
+1) the branch's firm name, if it differs from the merchant's firm name;
+2) the branch's registration number in the commercial register;
+3) the branch's legal address."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-KL-art17-2-q1 .
+
+lg:LV-PRESI-art5-1-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "31e16acf659c6e5aa9f7f2ffe99b304932a2cf4ee975a37cd4b528e0ebc702cd" ;
+    lgo:text "A media service provider makes the information referred to in Article 6(1) of the European Media Freedom Act easily and directly available to recipients of its services and keeps it up to date, for example on its website, in a press publication or in an electronic media service programme or service."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-PRESI-art5-1-1-q1 .
+
+lg:LV-PRESI-title-af6e19d64972-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "af6e19d64972923da7369253b5f476cdb5e7661c0d709438104535f061fc76b1" ;
+    lgo:text "Law of the Republic of Latvia “On the Press and Other Mass Media Means”"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-PRESI .
+
+lg:LV-PTAL-art19-1-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7f69fece4963d0083b64d720cb28a7858637c5952c9336faee90a53b5497fe60" ;
+    lgo:text "(1) The seller or service provider shall inform the consumer about one or more out-of-court dispute resolvers included in the list of out-of-court dispute resolvers published on the website of the Consumer Rights Protection Centre which resolve disputes in the relevant field, also indicating the website address of the out-of-court dispute resolver."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-PTAL-art19-1-1-q1 .
+
+lg:LV-PTAL-art19-1-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "07824f22d11aae0cef350248031ae69c9a1d4b79bc5cd2a161336c757b058e3a" ;
+    lgo:text "(2) The seller or service provider shall provide the information referred to in the first paragraph of this section in a clear, comprehensible and easily accessible manner on its website on the internet (if any) or shall include it in the contract terms (if any)."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-PTAL-art19-1-2-q1 .
+
+lg:LV-PTAL-art19-1-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "624de1e888665c68e91e54f245477ff03f7c3a81e8553462e58f24d047760a48" ;
+    lgo:text "(3) If, during the examination of a dispute, the seller or service provider refuses to satisfy the consumer's claim, it shall provide the consumer with the information referred to in the first paragraph of this section in writing or using another durable information medium."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-PTAL-art19-1-3-q1 .
+
+lg:LV-PTAL-title-6c2350aabe7c-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6c2350aabe7c640276074af17b763d26a8080849282101a5262b7c5c79648024" ;
+    lgo:text "Consumer Rights Protection Law"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-PTAL .
+
+lg:LV-VVL-art21-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8ac0fa4414dbda27316e675642634809f67f011f3e6017d8efc6d3ea9f2c9a41" ;
+    lgo:text "(1) Information intended for informing the public by state and local government institutions, institutions belonging to the courts and the court system, state and local government enterprises, as well as capital companies in which the majority of capital is owned by the state or a local government, shall be provided only in the state language, except in the cases specified in the fifth part of this section. This rule also applies to private institutions, organisations, enterprises (capital companies), and self-employed persons who, pursuant to law or other normative act, perform specific public functions, where the provision of information is connected with the performance of those functions."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-VVL-art21-1-q1 .
+
+lg:LV-VVL-art21-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "574971fd04507d6435d4026849c1d0c44e8e394324f54aa34b99c6829a2fa724" ;
+    lgo:text "(2) Information contained on the labels and marking of goods produced in Latvia, instructions for use, and inscriptions on manufactured products, their packaging or containers shall be in the state language. If a foreign language is also used alongside the state language, the state-language text shall take the primary place and in form or content shall not be smaller or narrower than the foreign-language text. These rules do not apply to goods intended for export."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-VVL-art21-2-q1 .
+
+lg:LV-VVL-art21-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f3091ceb5830b262491155d6ed898af9feb008641f4dda5418c5e3bc886cb7f2" ;
+    lgo:text "(3) Every imported good whose marking, instructions for use, warranty documents or technical passport contains information in a foreign language shall be accompanied by a translation of that information into the state language."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-VVL-art21-3-q1 .
+
+lg:LV-VVL-art21-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2357d69b0a4014caaf424736a491a51ec763955f3d99e0c3dcfd34f33592c35d" ;
+    lgo:text "(4) Information contained in inscriptions, signs, posters, placards, notices or other announcements which touches legitimate public interests and is intended for informing the public in places accessible to the public shall be provided in the state language, except in the cases specified in the fifth part of this section."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-VVL-art21-4-q1 .
+
+lg:LV-VVL-art21-7-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d04e7d32cb6884e889bd4df3aed4b3661aeebd7cfbcbce9f95397149b883fd43" ;
+    lgo:text "(7) If a foreign language is also used in information alongside the state language, the state-language text shall take the primary place and in form or content shall not be smaller or narrower than the foreign-language text."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-VVL-art21-7-q1 .
+
+lg:LV-VVL-title-da855430f024-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "da855430f02411c5504c31d01493505415e35d7d99345e0327c6201a6981e9a1" ;
+    lgo:text "State Language Law"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-VVL .

@@ -1,0 +1,15 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:CourtDecision a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:label "Court decision"@en ;
+    rdfs:comment "A judgment. Its points (for example of the operative part) are provisions that interpret provisions of legislation."@en .
+
+lgo:ecli a owl:DatatypeProperty ;
+    rdfs:label "ECLI"@en ;
+    rdfs:comment "European Case Law Identifier of a court decision, e.g. ECLI:EU:C:2019:801."@en ;
+    rdfs:domain lgo:CourtDecision ;
+    rdfs:range xsd:string .

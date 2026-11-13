@@ -1,0 +1,27 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+# Every source document says why its words can be trusted; a verified mirror names the official
+# publication it was checked against.
+
+lgs:AuthenticityShape a sh:NodeShape ;
+    sh:targetClass lgo:SourceDocument ;
+    sh:property [
+        sh:path lgo:authenticity ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Official lgv:VerifiedAgainstOfficial lgv:NotVerified ) ;
+        sh:message "A source document states its authenticity: Official, VerifiedAgainstOfficial or NotVerified." ;
+    ] ;
+    sh:sparql [
+        sh:message "A document verified against the official publication names it (lgo:verifiedAgainst)." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            PREFIX lgv: <https://legalgraph.org/vocab/>
+            SELECT $this WHERE {
+                $this lgo:authenticity lgv:VerifiedAgainstOfficial .
+                FILTER NOT EXISTS { $this lgo:verifiedAgainst ?official }
+            }
+        """ ;
+    ] .

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Likums "Par presi un citiem masu informācijas līdzekļiem", 5.1 pants,
+  written in schemas/law.xsd from the likumi.lv consolidated text. The
+  words are the Saeima's; only the structure is ours. The inserted 5.1
+  pants (in force 27 June 2026, added by the 11.06.2026 amendment) makes a
+  media service provider give recipients the Article 6(1) European Media
+  Freedom Act information easily and directly accessible and keep it
+  updated, for example on its website — it reaches websites expressly.
+  The provision itself does not enumerate the items; they are those of
+  EMFA art. 6(1) (provider identification, ownership and control
+  structure, funding sources, editorial independence and contact
+  details). OwnershipStructure is tagged; the rest have no vocabulary
+  counterpart yet. Art. 18 (izlaidumdati) is the imprint list for each
+  press issue — print only, with print-shop, print-run and price items —
+  and is not a website duty.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="lv"
+     lga:act="LV-PRESI" lga:jurisdiction="LV" lga:act-type="Statute"
+     lga:url="https://likumi.lv/ta/id/64879-par-presi-un-citiem-masu-informacijas-lidzekliem">
+  <meta>
+    <title>Latvijas Republikas likums "Par presi un citiem masu informācijas līdzekļiem"</title>
+    <date>1990-12-20</date>
+  </meta>
+
+  <section num="5.1 pants" source="presi-51.fragment.html">
+    <paragraph lga:provision="LV-PRESI-art5-1-1" lga:citation="5.1 pants 'Par presi un citiem masu informācijas līdzekļiem'" lga:url="https://likumi.lv/ta/id/64879-par-presi-un-citiem-masu-informacijas-lidzekliem" lga:regulates="MediaOwnerDisclosure" lga:requires="OwnershipStructure">Mediju pakalpojumu sniedzējs Eiropas Mediju brīvības akta 6. panta 1. punktā minēto informāciju savu pakalpojumu saņēmējiem dara viegli un tieši pieejamu un atjaunina, piemēram, savā tīmekļvietnē, preses izdevumā vai elektroniskā plašsaziņas līdzekļa programmā vai pakalpojumā.</paragraph>
+  </section>
+</law>

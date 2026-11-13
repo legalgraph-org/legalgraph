@@ -1,0 +1,36 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Poland (additions to data/extracted/pl/).
+
+lg:PL-ASDE
+    lgo:shortName "u.s.d.e." ;
+    eli:id_local "Dz.U. 2002 nr 144 poz. 1204" ;
+    eli:transposes lg:EU-2000-31 ;
+    rdfs:comment "Article 5 transposes Article 5 of the e-Commerce Directive, narrower than the Directive's catalogue: name, address and electronic addresses for every provider, licence and regulated-profession items only where they apply."@en .
+
+lg:PL-KSH
+    lgo:shortName "KSH" ;
+    eli:id_local "Dz.U. 2024 poz. 18" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:comment "Since the 13 October 2022 reform the website duty in art. 127 § 5 (SKA), art. 206 § 1 (sp. z o.o.), art. 300(61) § 1 (PSA) and art. 374 § 1 (SA) covers letters and the company's website alike: firm name, seat and address, registry court and register number, NIP and capital — beyond Directive 2017/1132 art. 26 it adds the tax number (NIP), paid-in capital, the unpaid-capital note for template-formed sp. z o.o., and the group-of-companies designation."@en .
+
+lg:PL-ADR
+    lgo:shortName "u.p.r.s.k." ;
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html> ;
+    rdfs:comment "Art. 31 transposes art. 13 of the ADR Directive: a trader committed or obliged to use consumer ADR informs consumers about the competent entity, at least its website address, on the trader's website (if it has one) and in contract templates it uses."@en .
+
+lg:PL-PP
+    lgo:shortName "prasowe" ;
+    rdfs:seeAlso <https://api.sejm.gov.pl/eli/acts/DU/1984/24/text.html> ;
+    rdfs:comment "Art. 27 is the press imprint: publisher name and address, editorial office address and editor-in-chief's name, place and date of issue. Art. 7(2) defines prasa broadly to cover all mass-communication means created by technical progress that disseminate periodical publications."@en .
+
+lg:PL-UJP
+    lgo:shortName "język polski" ;
+    rdfs:seeAlso <https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html> ;
+    rdfs:comment "Art. 7 requires Polish in legal transactions on Polish territory between Polish parties — including naming of goods and services, offers, advertising, manuals, property information, warranty terms, invoices; foreign-language descriptions/offers/ads must simultaneously carry a Polish version."@en .

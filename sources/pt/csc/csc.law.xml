@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Código das Sociedades Comerciais, artigo 171.º, written in schemas/law.xsd from the PGDL
+  consolidated text. The words are the legislator's; only the structure is ours. N.º 1
+  covers "contratos, correspondência, publicações, anúncios, sítios na Internet" — the
+  website duty: firma, tipo, sede, conservatória+matrícula and NIPC, plus liquidation;
+  n.º 2 the capital and net-assets particulars for quotas/SA/comandita; n.º 3 foreign
+  branches. The PGDL page numbers its paragraphs "1 -", "2 -", "3 -".
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pt"
+     lga:act="PT-CSC" lga:jurisdiction="PT" lga:act-type="Statute"
+     lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&amp;tabela=leis">
+  <meta>
+    <title>Código das Sociedades Comerciais</title>
+    <date>1986-09-02</date>
+  </meta>
+
+  <section num="Artigo 171.º" title="Menções em actos externos" source="csc-171.fragment.html">
+    <paragraph num="1 -" lga:provision="PT-CSC-art171-1" lga:citation="artigo 171.º n.º 1 Código das Sociedades Comerciais" lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&amp;tabela=leis" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName LegalForm GeographicAddress RegisterEntry TaxId LiquidationStatus">Sem prejuízo de outras menções exigidas por leis especiais, em todos os contratos, correspondência, publicações, anúncios, sítios na Internet e de um modo geral em toda a actividade externa, as sociedades devem indicar claramente, além da firma, o tipo, a sede, a conservatória do registo onde se encontrem matriculadas, o seu número de matrícula e de identificação de pessoa colectiva e, sendo caso disso, a menção de que a sociedade se encontra em liquidação.</paragraph>
+    <paragraph num="2 -" lga:provision="PT-CSC-art171-2" lga:citation="artigo 171.º n.º 2 Código das Sociedades Comerciais" lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&amp;tabela=leis" lga:regulates="ProviderIdentification" lga:requires="ShareCapital">As sociedades por quotas, anónimas e em comandita por acções devem ainda indicar o capital social, o montante do capital realizado, se for diverso, e o montante do capital próprio segundo o último balanço aprovado, sempre que este for igual ou inferior a metade do capital social.</paragraph>
+    <paragraph num="3 -" lga:provision="PT-CSC-art171-3" lga:citation="artigo 171.º n.º 3 Código das Sociedades Comerciais" lga:url="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&amp;tabela=leis" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">O disposto no n.º 1 é aplicável às sucursais de sociedades com sede no estrangeiro, devendo estas, para além dos elementos aí referidos, indicar ainda a conservatória do registo onde se encontram matriculadas e o respectivo número de matrícula nessa conservatória.</paragraph>
+  </section>
+</law>

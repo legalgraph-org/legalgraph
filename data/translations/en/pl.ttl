@@ -1,0 +1,353 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:PL-ADR-art31-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2b24ee655aef4bffb112aa2f652c39d9e2930560e8187d3c4c3ef4b66c34173a" ;
+    lgo:text "1. A trader who has committed itself or is obliged under separate provisions to use out-of-court resolution of consumer disputes shall inform consumers of the competent authorised entity."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ADR-art31-1-q1 .
+
+lg:PL-ADR-art31-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e2a3caa470e5b9bd785b395be2092160b27af6bc86f96b6d3d7e333b67f5661f" ;
+    lgo:text """2. The information referred to in paragraph 1, covering at least the website address of the authorised entity, is made available in a manner understandable and easily accessible to the consumer, including:
+1) on the trader's website, if the trader maintains one;
+2) in the contract templates concluded with consumers, if the trader uses such."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ADR-art31-2-q1 .
+
+lg:PL-ADR-art32-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ba7f24445d5ebb6ca688ebd5e7a03bc30a48778f6a301bb9afe2bff500bde2a6" ;
+    lgo:text """1. Where, following a complaint submitted by the consumer, the dispute has not been resolved, the trader shall provide the consumer on paper or another durable medium with a statement of:
+1) the intention to submit a request to initiate out-of-court consumer dispute resolution proceedings or consent to participate in such proceedings, or
+2) the refusal to participate in out-of-court consumer dispute resolution proceedings."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ADR-art32-1-q1 .
+
+lg:PL-ADR-art32-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "910e75fbd7c3cf22a49ad806b430321fdd6b63f161110b7a3934d87619ee9f2f" ;
+    lgo:text "2. In the case referred to in paragraph 1 point 1, the trader shall, together with the statement, provide information about the competent authorised entity for that trader."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ADR-art32-2-q1 .
+
+lg:PL-ADR-art32-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a7f763e296130ac230d0264a327bedee8f4afae98b604e0b1a7f4b73bb8b4808" ;
+    lgo:text "3. If the trader has not made any statement, it is deemed to consent to participate in out-of-court consumer dispute resolution proceedings."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ADR-art32-3-q1 .
+
+lg:PL-ADR-title-c4832111f0b1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c4832111f0b19b8b268999dc5c3c904b90b6f379767912aa19a996d1fa8eb47f" ;
+    lgo:text "Act of 23 September 2016 on out-of-court resolution of consumer disputes"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ADR .
+
+lg:PL-ASDE-art5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0c25841f164142ed8fe41577fa648edb79110e309de7c71034a681c193cb8d6e" ;
+    lgo:text "1. A service provider gives the basic information specified in sections 2-5 in a manner that is clear, unambiguous and directly accessible through the ICT system used by the service recipient."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ASDE-art5-1-q1 .
+
+lg:PL-ASDE-art5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "66fc330d3cb7e1ed278e4b42da458a3b172b75cf11ad6920a3adefb40cadc631" ;
+    lgo:text """2. A service provider gives:
+1) electronic addresses,
+2) its given name, surname, place of residence and address, or its name or business name together with its seat and address."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ASDE-art5-2-q1 .
+
+lg:PL-ASDE-art5-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a89eba94356a1b2de2e518e500eb399e539a89e1d298b184dae713c238f12ef8" ;
+    lgo:text "3. Where the service provider is an entrepreneur, it also gives information on the competent authorisation and the authorising body, where the provision of the service requires such an authorisation under separate provisions."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ASDE-art5-3-q1 .
+
+lg:PL-ASDE-art5-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e2eb8595d03e505010b29e53ed9f67231ae6b770cf59e4c30972fa31587358cb" ;
+    lgo:text """5. Where the service provider is a natural person whose right to exercise a profession is subject to requirements laid down in separate acts, it also gives:
+1) where a representative has been appointed, the representative's given name, surname, place of residence and address, or its name or business name together with its seat and address,
+2) the professional body to which it belongs,
+3) the professional title it uses and the state in which it was conferred,
+4) its number in the public register in which it is entered, together with the name of the register and the authority maintaining it,
+5) information on the existence of professional ethics rules applicable to the profession and on how they can be accessed."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ASDE-art5-5-q1 .
+
+lg:PL-ASDE-title-520ac656c921-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "520ac656c921a75a9665d06c4bd09c0c8c9c52c2b1ef48d050e7bdb5a50cdcf8" ;
+    lgo:text "Act of 18 July 2002 on the provision of services by electronic means"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-ASDE .
+
+lg:PL-KSH-art127-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a2abb706c994337e245d2e70337903d765bd7430893a5a47968bc97af79f468e" ;
+    lgo:text """§ 5. Letters and commercial orders issued by a limited joint-stock partnership in paper and electronic form, as well as information on the company's websites, shall contain:
+1) the company's name, its registered office and address;
+2) the designation of the registry court in which the company's documentation is kept and the number under which the company is entered in the register;
+3) the tax identification number (NIP);
+4) the amount of the share capital and the paid-up capital."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art127-5-q1 .
+
+lg:PL-KSH-art206-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "40142020c9f3ba3e7f5ed2360361087b6f699b34c5e25c65ca7e54e1670f53f6" ;
+    lgo:text """§ 1. Letters and commercial orders issued by the company in paper and electronic form, as well as information on the company's websites, shall contain:
+1) the company's name, its registered office and address;
+2) the designation of the registry court in which the company's documentation is kept and the number under which the company is entered in the register;
+3) the tax identification number (NIP);
+4) the amount of the share capital, and for a company whose articles of association were concluded using a template, until the share capital is covered, also the information that the required contributions to the share capital have not been made;
+5) the designation of the group of companies, if the company belongs to one."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art206-1-q1 .
+
+lg:PL-KSH-art206-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f3541df70679c567a65d18007ec87356753062710dea0f4cc1a73b2cd9b9497c" ;
+    lgo:text "§ 3. The provision of § 1 applies mutatis mutandis to a branch of a limited liability company having its seat abroad."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art206-3-q1 .
+
+lg:PL-KSH-art300-61-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f3b6833005425b4aba118e0f32e84c7cd476099d7e7d9dcb17e933e08ac5912f" ;
+    lgo:text """§ 1. Letters and commercial orders issued by the company in paper and electronic form, as well as information on the company's websites, shall contain:
+1) the company's name, its registered office and address;
+2) the designation of the registry court in which the company's documentation is kept, and the number under which the company is entered in the register;
+3) the tax identification number (NIP);
+4) the amount of the share capital;
+5) the designation of the group of companies, if the company belongs to one."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art300-61-1-q1 .
+
+lg:PL-KSH-art300-61-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "daf12bd2624e90e917e551700ec93996951f4c121929fcb681e2dcfd3eb28837" ;
+    lgo:text "§ 2. In letters and commercial orders issued by the company in paper form, instead of the amount of the share capital as at the date the letter or commercial order was drawn up, the company may show the share capital as at the last day of the previous financial year, indicating that day. If the company was not obliged to prepare financial statements as at the last day of the previous financial year, it shall show the amount of the share capital as at the date of the company's entry in the register."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art300-61-2-q1 .
+
+lg:PL-KSH-art374-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d490bd5afb4b1c12088bce8c88319f307a39ab0741e0a3c920182ac7085ad6af" ;
+    lgo:text """§ 1. Letters and commercial orders issued by the company in paper and electronic form, as well as information on the company's websites, shall contain:
+1) the company's name, its registered office and address;
+2) the designation of the registry court in which the company's documentation is kept and the number under which the company is entered in the register;
+3) the tax identification number (NIP);
+4) the amount of the share capital and the paid-up capital;
+5) the designation of the group of companies, if the company belongs to one."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art374-1-q1 .
+
+lg:PL-KSH-art374-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ccf9002ba0ac869ccfe7afc86db9fc58bc39280ef23e95c7188f4c4ba804cddc" ;
+    lgo:text "§ 4. The provision of § 1 applies mutatis mutandis to a branch of a joint-stock company having its seat abroad."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH-art374-4-q1 .
+
+lg:PL-KSH-title-e12b806c1491-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e12b806c14911a35290dfdba7a52ae4d0ac069d8c49e1820a86af6999d38829f" ;
+    lgo:text "Act of 15 September 2000 — Commercial Companies Code"@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-KSH .
+
+lg:PL-PP-art27-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a10a7db3f17463fd75485d73724c19f4b8a18297f626263c3340ac459c3c56a3" ;
+    lgo:text """1. On each copy of periodical publications, agency services and other similar press publications, the following shall be given in a visible and customary place:
+1) the name and address of the publisher or other competent body,
+2) the address of the editorial office and the name of the editor-in-chief,
+3) the place and date of issue,
+4) the name of the establishment producing the given press publication,
+5) the symbol of the authority granting the publication permit, in the cases specified in the provisions on the control of publications and performances,
+6) the international standard identifier,
+7) the current numbering."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PP-art27-1-q1 .
+
+lg:PL-PP-art27-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "595f89ac966fd93da735cc72f79593172d5e28ee6baedbcbcd9517b79b7950b8" ;
+    lgo:text "2. Paragraph 1 applies mutatis mutandis to radio and television recordings and newsreels."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PP-art27-2-q1 .
+
+lg:PL-PP-art7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8d6dd6beb985154271a467770e8dfe05677c8677968eda9aee487f1f2192173f" ;
+    lgo:text """2. Within the meaning of the Act:
+1) the press means periodical publications which do not form a closed, homogeneous whole, appearing not less frequently than once a year, bearing a permanent title or name, a current number and a date, and in particular: newspapers and magazines, agency services, regular telex transmissions, bulletins, radio and television programmes and newsreels; the press also includes all existing and emerging means of mass communication created by technical progress, including plant radio and television broadcasting stations, disseminating periodical publications by means of print, vision, sound or other distribution techniques; the press also covers groups of people and individual persons engaged in journalistic activity,
+2) a newspaper is a general-information periodical publication or a transmission by means of sound and of sound and vision, appearing more frequently than once a week,
+3) a magazine is a periodical publication appearing not more frequently than once a week and not less frequently than once a year; this provision applies mutatis mutandis to a transmission by means of sound and of sound and vision other than that specified in point 2,
+4) press material is any published text or image of an informative, journalistic, documentary or other character submitted for publication in the press, regardless of the means of transmission, kind, form, purpose or authorship,
+5) a journalist is a person engaged in editing, creating or preparing press materials, being in an employment relationship with an editorial office or engaged in such activity on behalf of and with the authorisation of an editorial office,
+6) an editor is a journalist who decides or co-decides on the publication of press materials,
+7) an editor-in-chief is a person having the authority to decide on the overall activity of the editorial office,
+8) an editorial office is a unit organising the process of preparing (collecting, evaluating and processing) materials for publication in the press."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PP-art7-2-q1 .
+
+lg:PL-PP-title-94151b76fc03-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "94151b76fc03c68d83e30afe2d7d325566f711f921b62b13a6570e8094c8b72c" ;
+    lgo:text "Act of 26 January 1984 — Press Law"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PP .
+
+lg:PL-UJP-art7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e96de778f1913720545952db919e557fea9322bb5ec777de00309d396ba2a6a0" ;
+    lgo:text "1. The Polish language is used in legal transactions on the territory of the Republic of Poland between Polish entities and where one of the parties is a Polish entity. This concerns in particular the naming of goods and services, offers, advertising, operating instructions, information on the properties of goods and services, warranty terms, invoices, bills and receipts."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-UJP-art7-1-q1 .
+
+lg:PL-UJP-art7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "94a289e1e928eef8324e532662eefc7ab9e88f39f7836cca00c77b9cabbb6ef9" ;
+    lgo:text """2. A Polish entity within the meaning of the Act is:
+1) a natural person residing on the territory of the Republic of Poland,
+2) a legal person or an organisational unit without legal personality — carrying on activity on the territory of the Republic of Poland."""@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-UJP-art7-2-q1 .
+
+lg:PL-UJP-art7-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9d2e639cec1d9657f65589058b5af6d3662efa7b8cde5b1a18dfe89357798e4b" ;
+    lgo:text "3. The use in legal transactions on the territory of the Republic of Poland of exclusively foreign-language designations, with the exception of proper names, is prohibited."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-UJP-art7-3-q1 .
+
+lg:PL-UJP-art7-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c24ee9ccb37730e494398e8d2af05bfdcf23d18023e54c60ccfe25eb03151495" ;
+    lgo:text "4. Foreign-language descriptions of goods and services and foreign-language offers and advertising introduced into the legal transactions referred to in paragraph 1 must simultaneously have a Polish-language version."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-UJP-art7-4-q1 .
+
+lg:PL-UJP-art7-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f69efe75a85544308aaf861613d99b5127a3f1e7b2bbc5949b8492eb7c940783" ;
+    lgo:text "5. Compliance with the duties referred to in paragraphs 1, 3 and 4 is supervised by the Trade Inspection and the Office of Competition and Consumer Protection."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-UJP-art7-5-q1 .
+
+lg:PL-UJP-title-25f9f608ffb9-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "25f9f608ffb9f8741ddfb194ba54d921af18789cd3a1a87ee7886f8d2548410a" ;
+    lgo:text "Act of 7 October 1999 on the Polish language"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-UJP .

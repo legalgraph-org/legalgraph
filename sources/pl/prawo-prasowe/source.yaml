@@ -1,0 +1,25 @@
+# Prawo prasowe (Dz.U. 1984 nr 5 poz. 24, consolidated): the press-law imprint
+# duty. Art. 7(2) defines "prasa" broadly — all mass-communication means
+# including any medium created by technical progress that disseminates
+# periodical publications — and art. 27 requires every copy/edition to show,
+# in a visible and customary place, the publisher's name and address, the
+# editorial office address and the editor-in-chief's name, place and date of
+# publication. For online "prasa" the customary place is the site itself.
+id: pl/prawo-prasowe
+title: Ustawa z dnia 26 stycznia 1984 r. — Prawo prasowe (art. 7, art. 27)
+jurisdiction: PL
+language: pl
+publisher: ISAP, Kancelaria Sejmu (api.sejm.gov.pl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 4 ustawy o prawie autorskim i prawach pokrewnych: normative texts and official documents are not protected by copyright"
+originals:
+  - file: press.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/1984/24/text.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the ISAP consolidated text: art. 7 (definition of prasa) and art. 27 (imprint items). Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: 20f2c328e210be521a4070e19f60dc661b6e20631e9ceb794f0cf01bae480797
+annotated: prasowe.law.xml

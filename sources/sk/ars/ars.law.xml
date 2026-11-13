@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 391/2015 Z. z., § 11, written in schemas/law.xsd from the
+  static.slov-lex.sk version mirror. The words are the Slovak legislature's;
+  only the structure is ours. § 11(2) transposes Directive 2013/11 Art. 13(3):
+  when the trader answers the consumer's remedy request negatively it must
+  inform the consumer about the competent ADR entities on a durable medium.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-ARS-391" lga:jurisdiction="SK" lga:act-type="Statute"
+     lga:url="https://static.slov-lex.sk/static/SK/ZZ/2015/391/20260101.html">
+  <meta>
+    <title>Zákon č. 391/2015 Z. z. o alternatívnom riešení spotrebiteľských sporov</title>
+    <date>2015-11-11</date>
+  </meta>
+
+  <section num="§ 11" source="ars-11.fragment.html">
+    <paragraph num="(1)" lga:provision="SK-ARS-391-s11-1" lga:citation="§ 11 ods. 1 zákona č. 391/2015 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2015/391/20260101.html" lga:regulates="ConsumerDisputeResolution">Spotrebiteľ má právo podať obchodníkovi žiadosť o nápravu, ak medzi spotrebiteľom a obchodníkom vznikne spor z uplatnenia práv zo zodpovednosti za vady alebo ak sa spotrebiteľ domnieva, že obchodník porušil iné práva spotrebiteľa.</paragraph>
+    <paragraph num="(2)" lga:provision="SK-ARS-391-s11-2" lga:citation="§ 11 ods. 2 zákona č. 391/2015 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2015/391/20260101.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody">Obchodník informuje spotrebiteľa na trvanlivom médiu o príslušných subjektoch alternatívneho riešenia sporov, ak obchodník odpovedal zamietavo na žiadosť podľa odseku 1.</paragraph>
+    <paragraph num="(3)" lga:provision="SK-ARS-391-s11-3" lga:citation="§ 11 ods. 3 zákona č. 391/2015 Z. z." lga:url="https://static.slov-lex.sk/static/SK/ZZ/2015/391/20260101.html" lga:regulates="ConsumerDisputeResolution">Spotrebiteľ má právo podať návrh na začatie alternatívneho riešenia sporu (ďalej len „návrh“) subjektu alternatívneho riešenia sporov, ak obchodník na žiadosť podľa odseku 1 odpovedal zamietavo alebo na ňu neodpovedal do 30 dní odo dňa jej odoslania.</paragraph>
+  </section>
+</law>

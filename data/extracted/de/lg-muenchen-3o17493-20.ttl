@@ -109,6 +109,7 @@ lg:DE-LGM-2022-0120-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/lg-muenchen-3o17493-20/lg-muenchen-3o17493-20.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei" ;
     lgo:mediaType "text/html" ;

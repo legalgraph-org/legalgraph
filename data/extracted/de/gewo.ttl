@@ -45,6 +45,7 @@ lg:DE-GewO-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/gewo/BJNR002450869.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Neugefasst durch Bek. v. 22.2.1999 I 202"@de , "Zuletzt geändert durch Art. 1 G v. 20.7.2026 I Nr. 215"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

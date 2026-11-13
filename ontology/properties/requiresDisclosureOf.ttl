@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:requiresDisclosureOf a owl:ObjectProperty ;
+    rdfs:label "requires disclosure of"@en ;
+    rdfs:comment "The provision names this information item, or the obligation requires it to be disclosed. Conditions (for example only if VAT-registered) sit on obligations (lgo:Obligation)."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( lgo:Provision lgo:Obligation ) ] ;
+    rdfs:range lgo:InformationItem .

@@ -1,0 +1,18 @@
+name: Polish sp. z o.o. with a company website
+description: >
+  A sp. z o.o. in the KRS with a VAT ID and a website presenting its services. Art. 5 u.s.d.e. asks
+  for name, seat, address and electronic addresses but has no register or VAT line, so the EU
+  register and VAT rules still apply. Art. 206 KSH adds the company-law website particulars:
+  registry court and KRS number, NIP and share capital.
+established_in: PL
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - PL-R-company-website
+  - EU-R-service-provider-information-register
+  - EU-R-service-provider-information-vat
+  - PL-R-impressum

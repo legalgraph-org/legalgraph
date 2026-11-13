@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ο περί Εταιρειών Νόμος (ΚΕΦ.113), άρθρο 103, written in schemas/law.xsd from
+  the cylaw.org consolidated text. The words are the Cypriot legislature's; only
+  the structure is ours. Εδάφιο (1Α) extends the (γ) items verbatim to the
+  company's διαδικτυακός τόπος; (5) is the website-specific offence.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="el"
+     lga:act="CY-CAP113" lga:jurisdiction="CY" lga:act-type="Statute"
+     lga:url="https://www.cylaw.org/nomoi/enop/ind/0_113/section-sc8fb0032d-10c6-40ae-b047-57a9d29088d1.html">
+  <meta>
+    <title>Ο περί Εταιρειών Νόμος</title>
+    <date>1959-12-16</date>
+  </meta>
+
+  <section num="103.-" title="Δημοσίευση ονόματος από εταιρεία και αναγραφή στοιχείων σε εμπορικά έγγραφα." source="cap113-103.fragment.html">
+    <paragraph num="(γ)" lga:provision="CY-CAP113-art103-1-c" lga:citation="άρθρο 103(1)(γ) ΚΕΦ.113" lga:url="https://www.cylaw.org/nomoi/enop/ind/0_113/section-sc8fb0032d-10c6-40ae-b047-57a9d29088d1.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">έχει γραμμένα με ευανάγνωστους χαρακτήρες πάνω σε όλες τις εμπορικές επιστολές της εταιρείας και όλες τις ειδοποιήσεις και άλλες επίσημες δημοσιεύσεις της εταιρείας και επί όλων των συναλλαγματικών, γραμματίων σε διαταγή, οπισθογραφήσεων, επιταγών και εντολών για χρήματα ή αγαθά που φέρονται ότι υπογράφτηκαν από ή εκ μέρους της εταιρείας και  πάνω σε όλα τα δέματα, τιμολόγια, αποδείξεις και εγγυητικές επιστολές της εταιρείας
+      <list>
+        <item num="(i)" lga:requires="ProviderName">το όνομα της εταιρείας·</item>
+        <item num="(ii)" lga:requires="RegisterEntry">τον αριθμό εγγραφής της εταιρείας·</item>
+        <item num="(iii)" lga:requires="LegalForm">κατά πόσο πρόκειται για ιδιωτική ή δημόσια εταιρεία·</item>
+        <item num="(iv)" lga:requires="GeographicAddress">το εγγεγραμμένο γραφείο της εταιρείας·</item>
+        <item num="(ν)" lga:requires="ShareCapital">εάν στα έγγραφα γίνεται μνεία του κεφαλαίου της εταιρείας, η ένδειξη πρέπει να αναφέρει το παραχωρηθέν και πληρωθέν κεφάλαιο·</item>
+        <item num="(vi)" lga:requires="LiquidationStatus">εάν συντρέχει λόγος, την κατάσταση εκκαθαρίσεως στην οποία ευρίσκεται η εταιρεία·</item>
+      </list>
+    </paragraph>
+    <paragraph num="(1Α)" lga:provision="CY-CAP113-art103-1a" lga:citation="άρθρο 103(1Α) ΚΕΦ.113" lga:url="https://www.cylaw.org/nomoi/enop/ind/0_113/section-sc8fb0032d-10c6-40ae-b047-57a9d29088d1.html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName RegisterEntry LegalForm GeographicAddress ShareCapital LiquidationStatus">Στην περίπτωση που εταιρεία διαθέτει διαδικτυακό τόπο, ο εν λόγω διαδικτυακός τόπος περιλαμβάνει τα στοιχεία (i) μέχρι (vi) της παραγράφου (γ) του εδαφίου (1).</paragraph>
+    <paragraph num="(5)" lga:provision="CY-CAP113-art103-5" lga:citation="άρθρο 103(5) ΚΕΦ.113" lga:url="https://www.cylaw.org/nomoi/enop/ind/0_113/section-sc8fb0032d-10c6-40ae-b047-57a9d29088d1.html" lga:penalises="CY-CAP113-art103-1a">Σε περίπτωση που, ο διαδικτυακός τόπος της εταιρείας δεν περιλαμβάνει τα στοιχεία (i) μέχρι (vi) της παραγράφου (γ) του εδαφίου (1), η εν λόγω εταιρεία και κάθε αξιωματούχος που ευθύνεται για παράλειψη υπόκειται σε πρόστιμο που δεν υπερβαίνει τις πεντακόσιες λίρες.</paragraph>
+  </section>
+</law>

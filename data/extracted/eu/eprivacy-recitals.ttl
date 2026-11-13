@@ -25,6 +25,7 @@ lg:EU-2002-58-oj
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/eprivacy-recitals/eprivacy-recitals.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
     lgo:mediaType "application/pdf" ;

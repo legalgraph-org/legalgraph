@@ -1,0 +1,45 @@
+# Kodeks spółek handlowych (KSH), obwieszczenie Dz.U. 2024 poz. 18: the company-law
+# website duties. Since the 13 October 2022 holding-company reform, commercial letters
+# AND information on the company's websites must carry firm name, seat and address,
+# the registry court and register number, NIP, and share capital (sp. z o.o. adds the
+# unpaid-capital note for template-formed companies; SKA/PSA/SA add paid-in capital or
+# the group-of-companies designation). ISAP serves the consolidated text as HTML
+# through the official ELI API; one fragment per article is kept.
+id: pl/ksh
+title: Ustawa z dnia 15 września 2000 r. — Kodeks spółek handlowych (art. 127 § 5, art. 206 § 1 i § 3, art. 300^61 § 1 i § 2, art. 374 § 1 i § 4)
+jurisdiction: PL
+language: pl
+publisher: ISAP, Kancelaria Sejmu (api.sejm.gov.pl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 4 ustawy o prawie autorskim i prawach pokrewnych: normative texts and official documents are not protected by copyright"
+originals:
+  - file: ksh-127.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html"
+    fetch: html-fragment
+    selector: "#titl_II-bran_IV-chpt_1-arti_127"
+    media_type: text/html
+    retrieved_on: 2026-11-12
+    sha256: d32dd039db13944208d7adef1f836f9fea794b66bb5d695b47de792ae5ed4765
+  - file: ksh-206.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html"
+    fetch: html-fragment
+    selector: "#titl_III-bran_I-chpt_3-schp_1-arti_206"
+    media_type: text/html
+    retrieved_on: 2026-11-12
+    sha256: 4ab829b57df7701e4b190e6b5ae0e9415508cd522c8d6aa3050be89670eca26d
+  - file: ksh-300-61.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html"
+    fetch: html-fragment
+    selector: "#titl_III-bran_IA-chpt_3-schp_1-arti_300_61"
+    media_type: text/html
+    retrieved_on: 2026-11-12
+    sha256: 5a1e7df178c691cfa9b6745543e80c3ada072a7bfe84b8dae855950bf2424f7d
+  - file: ksh-374.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2024/18/text.html"
+    fetch: html-fragment
+    selector: "#titl_III-bran_II-chpt_3-schp_1-arti_374"
+    media_type: text/html
+    retrieved_on: 2026-11-12
+    sha256: 2f0dac573cbb48fad546362f3b5b13f50c9e87c06eeff67b883a17e0bb8ac1b6
+annotated: ksh.law.xml

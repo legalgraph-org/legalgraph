@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:sourceUrl a owl:DatatypeProperty ;
+    rdfs:label "source URL"@en ;
+    rdfs:comment "Where the text can be read. For acts and provisions an official publication is preferred; a Draft resource may point to a secondary source."@en ;
+    rdfs:range xsd:anyURI .

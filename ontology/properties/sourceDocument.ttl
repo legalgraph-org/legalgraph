@@ -1,0 +1,8 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+lgo:sourceDocument a owl:ObjectProperty ;
+    rdfs:label "source document"@en ;
+    rdfs:comment "The source document an act, provision or quote was extracted from."@en ;
+    rdfs:range lgo:SourceDocument .

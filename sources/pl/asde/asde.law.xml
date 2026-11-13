@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ustawa o świadczeniu usług drogą elektroniczną, art. 5, written in schemas/law.xsd from the
+  ISAP consolidated text (api.sejm.gov.pl, WDU20021441204). The words are the Sejm's; only the
+  structure is ours. `legalgraph sources verify` checks every paragraph letter for letter
+  against the downloaded fragment. Polish implementation is narrower than the Directive:
+  name, address and electronic addresses for everyone; licence and regulated-profession items
+  where they apply. No register or VAT line.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pl"
+     lga:act="PL-ASDE" lga:jurisdiction="PL" lga:act-type="Statute"
+     lga:url="https://api.sejm.gov.pl/eli/acts/DU/2002/1204">
+  <meta>
+    <title>Ustawa z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną</title>
+    <date>2002-07-18</date>
+  </meta>
+
+  <section num="Art. 5" source="asde-5.fragment.html">
+    <paragraph num="1." lga:provision="PL-ASDE-art5-1" lga:citation="art. 5 ust. 1 u.s.d.e." lga:url="https://api.sejm.gov.pl/eli/acts/DU/2002/1204" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Usługodawca podaje, w sposób wyraźny, jednoznaczny i bezpośrednio dostępny poprzez system teleinformatyczny, którym posługuje się usługobiorca, informacje podstawowe określone w ust. 2-5.</paragraph>
+    <paragraph num="2." lga:provision="PL-ASDE-art5-2" lga:citation="art. 5 ust. 2 u.s.d.e." lga:url="https://api.sejm.gov.pl/eli/acts/DU/2002/1204" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Usługodawca podaje:
+      <list>
+        <item num="1)" lga:requires="EmailAddress RapidContact">adresy elektroniczne,</item>
+        <item num="2)" lga:requires="ProviderName GeographicAddress">imię, nazwisko, miejsce zamieszkania i adres albo nazwę lub firmę oraz siedzibę i adres.</item>
+      </list>
+    </paragraph>
+    <paragraph num="3." lga:provision="PL-ASDE-art5-3" lga:citation="art. 5 ust. 3 u.s.d.e." lga:url="https://api.sejm.gov.pl/eli/acts/DU/2002/1204" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1" lga:requires="SupervisoryAuthority">Jeżeli usługodawcą jest przedsiębiorca, podaje on również informacje dotyczące właściwego zezwolenia i organu zezwalającego, w razie gdy świadczenie usługi wymaga, na podstawie odrębnych przepisów, takiego zezwolenia.</paragraph>
+    <paragraph num="5." lga:provision="PL-ASDE-art5-5" lga:citation="art. 5 ust. 5 u.s.d.e." lga:url="https://api.sejm.gov.pl/eli/acts/DU/2002/1204" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Jeżeli usługodawcą jest osoba fizyczna, której prawo do wykonywania zawodu jest uzależnione od spełnienia określonych w odrębnych ustawach wymagań, podaje również:
+      <list>
+        <item num="1)">w przypadku ustanowienia pełnomocnika, jego imię, nazwisko, miejsce zamieszkania i adres albo jego nazwę lub firmę oraz siedzibę i adres,</item>
+        <item num="2)" lga:requires="ProfessionalBody">samorząd zawodowy, do którego należy,</item>
+        <item num="3)" lga:requires="ProfessionalTitle">tytuł zawodowy, którego używa, oraz państwo, w którym został on przyznany,</item>
+        <item num="4)" lga:requires="RegisterEntry">numer w rejestrze publicznym, do którego jest wpisany wraz ze wskazaniem nazwy rejestru i organu prowadzącego rejestr,</item>
+        <item num="5)" lga:requires="ProfessionalRules">informację o istnieniu właściwych dla danego zawodu zasad etyki zawodowej oraz o sposobie dostępu do tych zasad.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

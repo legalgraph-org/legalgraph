@@ -1,0 +1,25 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# --- Cases and enforcement ---------------------------------------------------
+
+lgs:CaseLinksShape a sh:NodeShape ;
+    sh:targetSubjectsOf lgo:hasOutcome , lgo:illustrates , lgo:follows ;
+    sh:or ( [ sh:class lgo:CourtDecision ] [ sh:class lgo:AuthorityDecision ] ) ;
+    sh:message "Only court and authority decisions have outcomes, illustrate rules or follow other decisions." ;
+    sh:property [
+        sh:path lgo:hasOutcome ;
+        sh:class lgo:Outcome ;
+    ] , [
+        sh:path lgo:illustrates ;
+        sh:class lgo:Obligation ;
+    ] , [
+        sh:path lgo:follows ;
+        sh:or ( [ sh:class lgo:CourtDecision ] [ sh:class lgo:AuthorityDecision ] ) ;
+    ] , [
+        sh:path lgo:caseNumber ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] .

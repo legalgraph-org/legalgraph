@@ -79,3 +79,46 @@ lg:AT-R-media-owner-disclosure-full a lgo:Obligation ;
     lgo:partOfDisclosure lgv:MediaOwnerDisclosure ;
     lgo:requiresDisclosureOf lgv:AuthorisedRepresentative , lgv:OwnershipStructure , lgv:EditorialLine ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:AT-R-company-website a lgo:Obligation ;
+    rdfs:label "Firmenbuch details on the website"@en ;
+    rdfs:comment "Firmenbuch-registered traders give the firm name, legal form, seat, Firmenbuch number and court on their websites (§ 14(1) UGB). The section reaches every registered trader, not only companies; the rule covers limited-liability companies, as the EU rule it refines does."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:AT-UGB-s14-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:GeographicAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:AT-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "§ 19(1)-(2) AStG: the ADR body or bodies covering the trader, with their website address, on the trader's website and in its general terms, where it has them."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:AT-ASTG-s19-1 , lg:AT-ASTG-s19-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:AT-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "§ 19(3) AStG: on paper or another durable medium, the competent ADR body, and whether the trader will take part."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:AT-ASTG-s19-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

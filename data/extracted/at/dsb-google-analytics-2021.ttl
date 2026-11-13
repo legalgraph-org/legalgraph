@@ -25,6 +25,7 @@ lg:AT-DSB-2021-D155027-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/at/dsb-google-analytics-2021/dsb-google-analytics.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 7 Abs. 1 UrhG (Austria): official works including administrative decisions are free of copyright; the DSB publishes the pseudonymised decision itself" ;
     lgo:mediaType "application/pdf" ;

@@ -1,0 +1,115 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Belgium: provider information under art. XII.6, § 1 of the Code of Economic Law (WER/CDE),
+# the transposition of Article 5 of the e-Commerce Directive. Point 4° asks for the enterprise
+# number (ondernemingsnummer / numéro d'entreprise) where applicable, Belgium's register
+# identifier. Point 8° (codes of conduct subscribed to) has no rule yet: the graph has no
+# condition for adhering to a code of conduct.
+
+lg:BE-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and fast electronic contact"@en ;
+    rdfs:comment "Name or trade name, the geographic address where the provider is established and details for rapid, direct and effective contact, including an e-mail address (art. XII.6, § 1, 1°-3° WER)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:BE-WER-XII-6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BE-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: enterprise number"@en ;
+    rdfs:comment "Where applicable, the enterprise number from the Crossroads Bank for Enterprises (art. XII.6, § 1, 4° WER)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:BE-WER-XII-6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BE-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: supervisory authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:BE-WER-XII-6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BE-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:BE-WER-XII-6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BE-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:BE-WER-XII-6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:CommercialDigitalService , lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:BE-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: name, form, seat, enterprise number and RPR"@en ;
+    rdfs:comment "Every legal person states its name, legal form, seat, enterprise number and \"RPR\" with the court of its seat on its website as on its deeds and letters, and its e-mail address and website where it has them (art. 2:20 WVV/CSA). Anyone who takes part in a non-compliant website for the company can be held liable for its commitments (art. 2:22)."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:BE-CSA-2-20 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:GeographicAddress , lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:BE-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Art. XVI.4 §§ 1-2 WER: how to get details of the out-of-court scheme, and the contact details and website of the qualified entity, repeated on the website and in the general terms. The trader bears the burden of proving it complied (§ 4)."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:BE-WER-XVI-4-1 , lg:BE-WER-XVI-4-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BE-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Art. XVI.4 § 3 WER: when a dispute isn't resolved within a reasonable time, the trader gives the entity's details on its own initiative, says whether it is bound or willing to use it, and whether the entity is qualified."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:BE-WER-XVI-4-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BE ;
+    lgo:appliesWhen lgv:EstablishedInBelgium , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

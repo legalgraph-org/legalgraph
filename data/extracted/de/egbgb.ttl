@@ -679,6 +679,7 @@ lg:DE-EGBGB-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/egbgb/BJNR006049896.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Neugefasst durch Bek. v. 21.9.1994 I 2494; 1997, 1061;"@de , "zuletzt geändert durch Art. 16 G v. 22.10.2026 I Nr. 321"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

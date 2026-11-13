@@ -79,6 +79,7 @@ lg:MT-CAP426-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/mt/ecommerce/ecommerce.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated to Act I of 2024; the ELI page links this getpdf id. 8C was added by Act XXXV of 2016."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Copyright Act (Cap. 415), art. 2: \"literary work\" \"save as provided in article 12 of the Statute Law Revision Act, 1980, does not include any written law, law report or judicial decisions\"; in any case the Re-Use of Public Sector Information Act (Cap. 546), art. 7, makes public sector documents re-usable for commercial and non-commercial purposes, and legislation is not among its art. 3 exclusions" ;

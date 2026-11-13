@@ -5,22 +5,19 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# BE: draft. Act and citation from research notes; not yet checked against the official text.
+# Belgium: art. XII.6 WER (additions to data/extracted/be/).
 
-lg:BE-WER a lgo:LegalAct ;
+lg:BE-WER
     eli:title "Wetboek van economisch recht"@nl , "Code de droit économique"@fr , "Code of Economic Law"@en ;
     lgo:shortName "WER / CDE" ;
-    lgo:actType lgv:Code ;
-    lgo:jurisdiction lg:BE ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://economie.fgov.be/sites/default/files/Files/Entreprises/guidelines-informatieverplichtingen-in-het-kader-van-e-commerce.pdf"^^xsd:anyURI ;
-    rdfs:comment "Source is the FPS Economy guidance on e-commerce information duties, not the act itself."@en ;
-    lgo:reviewStatus lgv:Draft .
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:comment "Art. XII.6 (inserted by W 2013-12-15/51, in force 31.05.2014) asks for the ondernemingsnummer rather than a named register (4°) and keeps the Directive's codes-of-conduct item (8°)."@en .
 
-lg:BE-WER-art-XII-6-1 a lgo:Provision ;
-    eli:is_part_of lg:BE-WER ;
-    lgo:citation "Art. XII.6, § 1 WER" ;
-    lgo:sourceUrl "https://economie.fgov.be/sites/default/files/Files/Entreprises/guidelines-informatieverplichtingen-in-het-kader-van-e-commerce.pdf"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:reviewStatus lgv:Draft .
+lg:BE-CSA
+    eli:title "Wetboek van vennootschappen en verenigingen"@nl ;
+    eli:title "Code des sociétés et des associations"@fr ;
+    lgo:shortName "WVV/CSA" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel> ;
+    rdfs:comment "Art. 2:20 applies the company-law disclosure list to websites as well as deeds, invoices, letters and order forms. It goes beyond Directive 2017/1132 art. 26: the enterprise number is always required, and the e-mail address and the company's own website are required when the document shows them. Art. 2:21 makes a quoted capital the paid-up capital per the last balance sheet."@en .

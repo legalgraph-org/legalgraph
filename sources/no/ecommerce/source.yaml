@@ -6,7 +6,7 @@
 # transcribed in schemas/law.xsd, checked word for word against them.
 id: no/ecommerce
 title: Lov om visse sider av elektronisk handel mv. (ehandelsloven)
-jurisdiction: NO
+jurisdiction: "NO"
 language: "no"
 publisher: Lovdata, lovdata.no
 kind: authored-xml

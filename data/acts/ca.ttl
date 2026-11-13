@@ -41,3 +41,14 @@ lg:CA-ON-CPA a lgo:LegalAct ;
     lgo:sourceUrl "https://www.ontario.ca/laws/statute/02c30"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Part IV: internet agreements. s. 38 requires the prescribed information, an express opportunity to accept, decline and correct, and retainable disclosure before the consumer enters; s. 39 requires a written copy within the prescribed period; s. 40 gives 7/30-day cancellation for breach. The prescribed lists live in O. Reg. 17/05 — a separate source still to pull."@en .
+
+lg:CA-QC-CPA a lgo:LegalAct ;
+    eli:title "Consumer Protection Act (Quebec), CQLR c. P-40.1"@en , "Loi sur la protection du consommateur, CQLR c. P-40.1"@fr ;
+    lgo:shortName "Quebec CPA" ;
+    eli:id_local "CQLR c. P-40.1" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CA-QC ;
+    eli:date_document "1978-12-22"^^xsd:date ;
+    lgo:sourceUrl "https://www.legisquebec.gouv.qc.ca/fr/document/cs/P-40.1"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Quebec's consumer protection statute (LQ 1978, c. 9, assented 22 December 1978; in the Civil Code of Quebec revision as c. P-40.1). s. 54.4 is the province's merchant-disclosure duty for distance contracts: name and other business names, address, telephone/fax/technological address, detailed description, itemized prices and charges, total amount and payment terms, performance date, delivery details, and cancellation/rescission/return/exchange/refund conditions — presented prominently, and for a written offer retainable and printable. Under s. 2 the Act applies to every consumer-merchant contract for goods or services; s. 54.4 reaches distance contracts (s. 54.1), so an online seller contracting with a Quebec consumer must give this information before the contract is formed."@en .

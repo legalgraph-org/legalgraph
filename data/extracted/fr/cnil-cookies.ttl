@@ -153,6 +153,7 @@ lg:FR-CNIL-2020-092-source
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/cnil-cookies/cnil-cookies.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "A deliberation of the CNIL (an independent administrative authority) published in the Journal officiel: official texts carry no copyright in France" ;
     lgo:mediaType "application/pdf" ;

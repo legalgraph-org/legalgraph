@@ -1,4 +1,4 @@
-.PHONY: help install sources validate test lint check stats quotes export translations upstream site serve site-check i18n-extract i18n-check export-full sparql
+.PHONY: help install sources validate test lint hygiene check stats quotes export translations upstream render-install site serve site-check i18n-extract i18n-check export-full sparql
 
 help: ## Show targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F ':.*## ' '{printf "  %-12s %s\n", $$1, $$2}'
@@ -10,17 +10,20 @@ sources: ## Verify annotated law texts against the originals; check generated Tu
 	uv run legalgraph sources verify
 	uv run legalgraph sources extract --check
 
-validate: ## Turtle syntax, undefined terms, SHACL shapes, English translations
+validate: ## Turtle syntax, undefined terms, reasoning + SHACL shapes, English translations
 	uv run legalgraph validate
 
 test: ## Run the test suite
 	uv run pytest
 
-lint: ## Ruff lint and format check
+lint: ## Ruff lint (incl. cyclomatic complexity) and format check
 	uv run ruff check src tests
 	uv run ruff format --check src tests
 
-check: sources validate lint test ## Everything a pull request must pass
+hygiene: ## Project conventions ruff cannot check: file length, ontology layout (legalgraph hygiene --rules)
+	uv run legalgraph hygiene
+
+check: sources validate lint hygiene test ## Everything a pull request must pass
 
 stats: ## Count resources by class
 	uv run legalgraph stats
@@ -41,6 +44,9 @@ sparql: export-full ## Query the graph in Apache Jena Fuseki on http://localhost
 
 translations: ## Report text that lacks a current English translation
 	uv run legalgraph translations check
+
+render-install: ## Once per host: the renderer for portals that build their text with JavaScript (bun, Chromium)
+	cd tools/render && bun install --frozen-lockfile && bun run install-browser
 
 upstream: ## Has any official text changed on its portal? (network)
 	uv run legalgraph sources fetch --check

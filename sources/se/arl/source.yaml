@@ -1,0 +1,24 @@
+# Lag (2015:671) om alternativ tvistlösning i konsumentförhållanden: the
+# Swedish ADR act. 10 § requires a trader committed to ADR to inform consumers
+# clearly and accessibly on any consumer-facing websites and in written
+# contract terms, including the ADR body's web and postal address; 11 § is
+# the durable-medium pointer when a consumer's claim is rejected; 12 § points
+# to Art. 14 of the EU ODR Regulation.
+id: se/arl
+title: Lag (2015:671) om alternativ tvistlösning i konsumentförhållanden (10–12 §§)
+jurisdiction: SE
+language: sv
+publisher: Riksdagen (Sveriges riksdag, Svensk författningssamling)
+kind: authored-xml
+licence: official-work
+licence_basis: "9 § upphovsrättslagen: statutes and public authority decisions are not protected by copyright"
+originals:
+  - file: arl.fragment.html
+    url: "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the riksdagen full-text page: the 'Information till konsumenter' heading through 12 §. Current text includes Lag (2024:54) amendments."
+    retrieved_on: 2026-11-13
+    sha256: fd36673a54823d7edf91bcb02d1006a709fcdcbe725b25108497ead55766ed02
+annotated: arl.law.xml

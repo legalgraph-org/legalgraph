@@ -56,6 +56,7 @@ lg:CJEU-T-553-23-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-latombe/ECR_62023TJ0553_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: French. This English text is the Court's translation; the authentic version is the French one."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -68,6 +69,7 @@ lg:CJEU-T-553-23-source
 lg:CJEU-T-553-23-source-french
     a lgo:SourceDocument ;
     dcterms:language "french"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-T-553-23-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

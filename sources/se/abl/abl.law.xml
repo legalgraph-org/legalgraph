@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Aktiebolagslagen (2005:551) 28 kap. 5 §, written in schemas/law.xsd from the Riksdag
+  consolidated SFS text. The words are the Riksdag's; only the structure is ours.
+  Första stycket lists the duty — företagsnamn, styrelsens säte (the registered
+  municipality) and organisationsnummer on brev, fakturor, orderblanketter och
+  webbplatser, plus the liquidation fact. Andra stycket is a Bolagsverket dispensation:
+  withholding the name is allowed on condition that the company type is shown instead.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sv"
+     lga:act="SE-ABL" lga:jurisdiction="SE" lga:act-type="Statute"
+     lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/aktiebolagslag-2005551_sfs-2005-551/">
+  <meta>
+    <title>Aktiebolagslag (2005:551)</title>
+    <date>2005-06-09</date>
+  </meta>
+
+  <section num="28 kap. 5 §" title="Uppgifter om företagsnamn m.m. i brev, fakturor och orderblanketter samt på webbplatser" source="abl-28-5.fragment.html">
+    <paragraph lga:provision="SE-ABL-k28-s5-1" lga:citation="28 kap. 5 § första stycket aktiebolagslagen" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/aktiebolagslag-2005551_sfs-2005-551/" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName GeographicAddress RegisterEntry LiquidationStatus">Ett aktiebolags brev, fakturor, orderblanketter och  webbplatser ska ange bolagets företagsnamn, den ort där  styrelsen har sitt säte samt bolagets organisationsnummer  enligt lagen (1974:174) om identitetsbeteckning för juridiska  personer m.fl. Om bolaget har gått i likvidation, ska också  detta anges.</paragraph>
+    <paragraph lga:provision="SE-ABL-k28-s5-2" lga:citation="28 kap. 5 § andra stycket aktiebolagslagen" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/aktiebolagslag-2005551_sfs-2005-551/" lga:regulates="ProviderIdentification">Om det finns särskilda skäl, får Bolagsverket tillåta att ett  aktiebolag inte lämnar uppgift om bolagets företagsnamn på  sina webbplatser. I så fall ska uppgifter i stället lämnas om  att bolaget är ett aktiebolag och om bolagskategori. Ett  sådant tillstånd ska begränsas till viss tid och får förenas  med villkor. </paragraph>
+  </section>
+</law>

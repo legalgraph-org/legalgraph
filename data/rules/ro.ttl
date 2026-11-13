@@ -1,0 +1,59 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Romania: provider information under art. 5 Legea 365/2002. The Romanian catalogue is
+# wider than the Directive — phone and fax numbers and the fiscal registration code are
+# mandatory for every provider, plus price items under h)-i). The fiscal code (lit. e) is
+# required of everyone, so it sits in the base rule; Romania has no separate VAT-ID line, so
+# the EU VAT rule still reaches VAT payers, as in Poland.
+
+lg:RO-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address, phone, electronic contact and fiscal code"@en ;
+    rdfs:comment "Every service provider gives easy, direct, permanent and free access to its name, domicile or seat, telephone and fax numbers, e-mail address and any other data needed for direct and effective contact, and its fiscal registration code (art. 5 alin. (1) lit. a-c and e Legea 365/2002). Romania requires a phone number and the fiscal code from every provider — unlike the Directive's floor."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:RO-LCE-art5-1 , lg:RO-LCE-art5-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:PhoneNumber , lgv:EmailAddress , lgv:RapidContact , lgv:TaxId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:RO-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:RO-LCE-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:RO-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:RO-LCE-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:RO-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:RO-LCE-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .

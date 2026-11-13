@@ -1,0 +1,17 @@
+name: Slovak s.r.o. with a company website
+description: >
+  An s.r.o. in the commercial register, a VAT payer, with a website presenting its services. § 4 of
+  Act 22/2004 asks for a phone number and, for VAT payers, the DIČ (tax identification number) in
+  place of the Directive's VAT number.
+established_in: SK
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - SK-R-company-website
+  - SK-R-impressum
+  - SK-R-impressum-register
+  - SK-R-impressum-vat

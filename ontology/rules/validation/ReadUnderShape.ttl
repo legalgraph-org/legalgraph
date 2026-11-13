@@ -1,0 +1,16 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+lgs:ReadUnderShape a sh:NodeShape ;
+    sh:targetSubjectsOf lgo:readUnder ;
+    sh:sparql [
+        sh:message "A point read under a repealed provision interprets the provision that continues it." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            SELECT $this WHERE {
+                $this lgo:readUnder ?old .
+                FILTER NOT EXISTS { $this lgo:interprets ?new . ?new lgo:continues ?old }
+            }
+        """ ;
+    ] .

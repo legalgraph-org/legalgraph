@@ -1,0 +1,138 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CY-156-I-2004-art8-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4ee28172f458000abbb68a43df218a7a0e21cbec660fe621f462fd09858051f7" ;
+    lgo:text """8.-(1) The service provider, in addition to other information requirements provided for by the law of the European Community and, accordingly, the relevant legislation in force, provides its recipients and the Competent Authority with easy, direct and continuous access to the following information:
+(a) The name of the service provider;
+(b) the geographic address at which the provider is established;
+(c) particulars allowing rapid contact and direct and effective communication with the service provider, including its electronic address, telephone number and telefax;
+(d) where the provider is registered in a commercial or other similar public register, the relevant register and its registration number therein, or an equivalent means of identification in that register;
+(e) where the activity is subject to an authorisation scheme, the particulars of the relevant supervisory authority;
+(f) as regards the legally regulated professions:
+(i) the professional association or similar body with which the service provider is registered,
+(ii) the professional title and the member state that granted it,
+(iii) a reference to the professional rules applicable in the member state of establishment and the means of access to them;
+(g) where the activity exercised by the provider is subject to VAT, the identification number referred to in the value added tax legislation in force from time to time aimed at harmonisation with Article 22(1) of the Sixth Council Directive 77/388/EEC of 17 May 1977 \"on the harmonisation of the laws of the Member States relating to turnover taxes - Common system of value added tax: uniform basis of assessment\" (OJ L 145, 13/06/1977 p.1)."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-156-I-2004-art8-1-q1 .
+
+lg:CY-156-I-2004-art8-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "50476c9cf8a738edb3a04baed3001765a04b497bb7f20a7c5b991598529d32be" ;
+    lgo:text "(2) Where information society services refer to prices, these must be indicated clearly and accurately and, in particular, state whether they include tax and delivery costs."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-156-I-2004-art8-2-q1 .
+
+lg:CY-CAP113-art103-1-c-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "31476655567408d55f3c34d461794eb1c7ce06d3130a2bd5df7dcd816105f7c2" ;
+    lgo:text """has written in legible characters on all business letters of the company and all notices and other official publications of the company and on all bills of exchange, promissory notes, endorsements, cheques and orders for money or goods purporting to be signed by or on behalf of the company and on all parcels, invoices, receipts and letters of credit of the company
+(i) the name of the company;
+(ii) the registration number of the company;
+(iii) whether it is a private or public company;
+(iv) the registered office of the company;
+(v) if the capital of the company is mentioned in the documents, the indication must refer to the authorised and paid-up capital;
+(vi) where applicable, the state of liquidation in which the company finds itself;"""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-CAP113-art103-1-c-q1 .
+
+lg:CY-CAP113-art103-1a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1fa85e3de72e5ed01aa91f70c7f11008d5a2468c71c165dd4d18bdd252dc9d34" ;
+    lgo:text "Where a company has a website, that website includes the particulars (i) to (vi) of paragraph (γ) of subsection (1)."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-CAP113-art103-1a-q1 .
+
+lg:CY-CAP113-art103-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b6ad1fc046d7297d268884b061e7436a80be50f7d28468f21a03d5937365ba32" ;
+    lgo:text "Where the company's website does not include the particulars (i) to (vi) of paragraph (γ) of subsection (1), that company and every officer who is in default is liable to a fine not exceeding five hundred pounds."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-CAP113-art103-5-q1 .
+
+lg:CY-NOMOS-85-2017-art14-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c5d6066ac35b4b0873e1bb6df841033998b3206bb8af23e43e15c3b9c679edd4" ;
+    lgo:text "(1) Traders established in the Republic shall inform consumers about the alternative dispute resolution entity or entities by which those traders are covered, when those traders commit to or are obliged to use those entities to resolve disputes with consumers. This information shall include the website address of the competent alternative dispute resolution entity or entities."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-NOMOS-85-2017-art14-1-q1 .
+
+lg:CY-NOMOS-85-2017-art14-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "33c25cfe3ffd50efe76b2f8c2ba44cd61ce2acb68ded3caec321a92833ac93b5" ;
+    lgo:text "(2) The information referred to in paragraph (1) shall be displayed in a clear, comprehensible and easily accessible manner on the trader's website, where one exists, and, where applicable, in the general terms and conditions of sales or service contracts between the trader and the consumer."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-NOMOS-85-2017-art14-2-q1 .
+
+lg:CY-NOMOS-85-2017-art14-3-a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5801340dd76d5ad97501b63760e67be655d6f19769feae1307908b56261bb35b" ;
+    lgo:text "(3)(α) Where a dispute between a consumer and a trader established in the Republic cannot be settled by a complaint submitted directly by the consumer to the trader, the trader shall provide the consumer with the information referred to in paragraph (1), specifying whether it will make use of the relevant alternative dispute resolution entities to settle the dispute."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-NOMOS-85-2017-art14-3-a-q1 .
+
+lg:CY-NOMOS-85-2017-art14-3-b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4cff9d0a5b1e741a17c7e407dd92a5c2c8a2c285540d7f5da8eda923b36fb85d" ;
+    lgo:text "(β) The information referred to in paragraph (α) shall be provided on paper or on another durable medium."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-NOMOS-85-2017-art14-3-b-q1 .
+
+lg:CY-NOMOS-85-2017-art14-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bd96ab74def8a5cf0c9db6f07af74b53f308a1082b2b0cb625da296cc5ce448c" ;
+    lgo:text "(4) The provisions of this article shall apply in addition to the provisions on the provision of information to consumers by traders of article 14 of Regulation (EU) No 524/2013."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-NOMOS-85-2017-art14-4-q1 .
+
+lg:CY-NOMOS-85-2017-title-a407bddc26fc-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a407bddc26fcf15168c39d5a2d49b8eed9ec59edd0d8a8cd9b6a88f9bc349514" ;
+    lgo:text "Law on Alternative Consumer Dispute Resolution of 2017"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CY-NOMOS-85-2017 .

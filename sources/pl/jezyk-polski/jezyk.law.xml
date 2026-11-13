@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ustawa o języku polskim, art. 7, written in schemas/law.xsd from the ISAP
+  consolidated text. The words are the Polish legislature's; only the
+  structure is ours. Art. 7 is the Polish-language duty in legal transactions:
+  naming of goods and services, offers, advertising, manuals, information on
+  properties, warranty terms, invoices and receipts must be in Polish, and
+  foreign-language descriptions/offers/advertising must simultaneously have a
+  Polish version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pl"
+     lga:act="PL-UJP" lga:jurisdiction="PL" lga:act-type="Statute"
+     lga:url="https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html">
+  <meta>
+    <title>Ustawa z dnia 7 października 1999 r. o języku polskim</title>
+    <date>1999-11-12</date>
+  </meta>
+
+  <section num="art. 7" source="lang.fragment.html">
+    <paragraph num="1." lga:provision="PL-UJP-art7-1" lga:citation="art. 7 ust. 1 ustawy o języku polskim" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html" lga:regulates="StateLanguageUse">Języka polskiego używa się w obrocie prawnym na terytorium Rzeczypospolitej Polskiej pomiędzy podmiotami polskimi oraz gdy jedną ze stron jest podmiot polski. Dotyczy to w szczególności nazewnictwa towarów i usług, ofert, reklamy, instrukcji obsługi, informacji o właściwościach towarów i usług, warunków gwarancji, faktur, rachunków i pokwitowań.</paragraph>
+    <paragraph num="2." lga:provision="PL-UJP-art7-2" lga:citation="art. 7 ust. 2 ustawy o języku polskim" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html" lga:regulates="StateLanguageUse">Podmiotem polskim w rozumieniu ustawy jest:
+      <list>
+        <item num="1)">osoba fizyczna mająca miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej,</item>
+        <item num="2)">osoba prawna lub jednostka organizacyjna nie posiadająca osobowości prawnej - prowadząca działalność na terytorium Rzeczypospolitej Polskiej.</item>
+      </list>
+    </paragraph>
+    <paragraph num="3." lga:provision="PL-UJP-art7-3" lga:citation="art. 7 ust. 3 ustawy o języku polskim" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html" lga:regulates="StateLanguageUse">Posługiwanie się w obrocie prawnym na terytorium Rzeczypospolitej Polskiej wyłącznie obcojęzycznymi określeniami, z wyjątkiem nazw własnych, jest zakazane.</paragraph>
+    <paragraph num="4." lga:provision="PL-UJP-art7-4" lga:citation="art. 7 ust. 4 ustawy o języku polskim" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html" lga:regulates="StateLanguageUse">Obcojęzyczne opisy towarów i usług oraz obcojęzyczne oferty i reklamy wprowadzane do obrotu prawnego, o którym mowa w ust. 1, muszą jednocześnie mieć polską wersję językową.</paragraph>
+    <paragraph num="5." lga:provision="PL-UJP-art7-5" lga:citation="art. 7 ust. 5 ustawy o języku polskim" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html" lga:regulates="StateLanguageUse">Kontrolę wykonywania obowiązków, o których mowa w ust. 1, 3 i 4, sprawuje Inspekcja Handlowa oraz Urząd Ochrony Konkurencji i Konsumentów.</paragraph>
+  </section>
+</law>

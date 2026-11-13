@@ -1,0 +1,27 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:DecisionShape a sh:NodeShape ;
+    sh:targetClass lgo:CourtDecision , lgo:Guidance , lgo:AuthorityDecision ;
+    sh:property [
+        sh:path lgo:jurisdiction ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class lgo:Jurisdiction ;
+    ] , [
+        sh:path eli:title ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+    ] , [
+        sh:path lgo:actType ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Judgment lgv:Guidelines lgv:AuthorityDecision ) ;
+    ] , [
+        sh:path lgo:sourceUrl ;
+        sh:minCount 1 ;
+        sh:datatype xsd:anyURI ;
+    ] .

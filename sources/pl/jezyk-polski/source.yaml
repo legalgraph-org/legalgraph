@@ -1,0 +1,25 @@
+# Ustawa o języku polskim (Dz.U. 1999 nr 90 poz. 999, consolidated): art. 7
+# requires Polish in legal transactions on the territory of Poland between
+# Polish parties — expressly including the naming of goods and services,
+# offers, advertising, manuals, information about properties, warranty terms,
+# invoices and receipts. Foreign-language descriptions of goods/services and
+# offers/advertising must simultaneously have a Polish version; exclusively
+# foreign-language designations are prohibited (except proper names).
+id: pl/jezyk-polski
+title: Ustawa z dnia 7 października 1999 r. o języku polskim (art. 7)
+jurisdiction: PL
+language: pl
+publisher: ISAP, Kancelaria Sejmu (api.sejm.gov.pl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 4 ustawy o prawie autorskim i prawach pokrewnych: normative texts and official documents are not protected by copyright"
+originals:
+  - file: lang.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the ISAP consolidated text: art. 7. Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: 1c330e35808cec2d72a4ffaf2428f8c2045f73c083589061ff1c57f5d9ee707c
+annotated: jezyk.law.xml

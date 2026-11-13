@@ -1,4 +1,4 @@
-// Collections written by `legalgraph generate-site` (src/legalgraph/site.py) into src/data/.
+// Collections written by `legalgraph generate-site` (src/legalgraph/site/) into src/data/.
 // The schemas are the contract between the Python side and the pages: a mismatch fails the build.
 // Articles and legal pages are written by hand, in Markdown under src/content/.
 import { defineCollection } from "astro:content";

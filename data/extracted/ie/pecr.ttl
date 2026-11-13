@@ -90,6 +90,7 @@ lg:IE-SI-336-2011-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/ie/pecr/pecr.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Oireachtas (Open Data) PSI Licence, which incorporates CC BY 4.0, as stated at irishstatutebook.ie/open-data.html, under S.I. 376/2021 transposing Directive (EU) 2019/1024; copyright in enactments vests in the Houses of the Oireachtas (Copyright and Related Rights Act 2000, s. 192)" ;
     lgo:mediaType "text/html" ;

@@ -30,6 +30,7 @@ lg:IT-196-2003 a lgo:LegalAct ;
     lgo:actType lgv:Decree ;
     lgo:jurisdiction lg:IT ;
     eli:date_document "2003-06-30"^^xsd:date ;
+    eli:transposes lg:EU-2002-58 ;
     lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Article 122 is the Italian cookie rule: informed consent for storage and access on terminal equipment, consent may come through browser or device settings (comma 2), and accessing stored information is otherwise prohibited (2-bis). The Garante's 2021 cookie guidelines apply it."@en .

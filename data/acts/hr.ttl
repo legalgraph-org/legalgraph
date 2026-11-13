@@ -5,21 +5,18 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# HR: draft. Act and citation from research notes; not yet checked against the official text.
+# Croatia: članak 6 ZET (additions to data/extracted/hr/).
 
-lg:HR-ZET a lgo:LegalAct ;
-    eli:title "Zakon o elektroničkoj trgovini"@hr , "Electronic Commerce Act"@en ;
+lg:HR-ZET
+    eli:title "Electronic Commerce Act"@en ;
     lgo:shortName "ZET" ;
-    lgo:actType lgv:Statute ;
-    lgo:jurisdiction lg:HR ;
+    eli:id_local "NN 173/2003" ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html"^^xsd:anyURI ;
-    lgo:reviewStatus lgv:Draft .
+    rdfs:comment "Članak 6(1) lists the Directive's items as dashes with a nested §-list for professions; (2) adds delivery costs, handling costs (ostali manipulativni troškovi), tax and 'drugi troškovi' to the price clause."@en .
 
-lg:HR-ZET-cl6-1 a lgo:Provision ;
-    eli:is_part_of lg:HR-ZET ;
-    lgo:citation "Članak 6. stavak 1. ZET" ;
-    lgo:sourceUrl "https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:reviewStatus lgv:Draft .
+lg:HR-ZTD
+    eli:title "Companies Act"@en ;
+    lgo:shortName "ZTD" ;
+    eli:transposes lg:EU-2017-1132 ;
+    eli:id_local "NN 111/1993" ;
+    rdfs:comment "Članak 21(4) extends the business-paper disclosure list to the company's website verbatim; (5) adds paid-up capital, issued shares and board members for capital companies; (6) covers partnerships. Source: NN 152/2011 official consolidation."@en .

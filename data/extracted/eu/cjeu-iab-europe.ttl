@@ -91,6 +91,7 @@ lg:CJEU-C-604-22-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-iab-europe/ECR_62022CJ0604_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: Dutch. This English text is the Court's translation; the authentic version is the Dutch one."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -103,6 +104,7 @@ lg:CJEU-C-604-22-source
 lg:CJEU-C-604-22-source-dutch
     a lgo:SourceDocument ;
     dcterms:language "dutch"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-C-604-22-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

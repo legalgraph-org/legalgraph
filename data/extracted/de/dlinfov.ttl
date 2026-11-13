@@ -57,6 +57,7 @@ lg:DE-DLInfoV-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/dlinfov/BJNR026700010.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Zuletzt geändert durch Art. 3 G v. 12.5.2026 I Nr. 138"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

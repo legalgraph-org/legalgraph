@@ -1,0 +1,17 @@
+name: Spanish S.L. with a company website
+description: >
+  An S.L. in the Registro Mercantil with a VAT ID and a website presenting its services. Artículo
+  10.1 LSSI asks every provider for its NIF as well; Spain has no separate VAT-number line, so the
+  EU VAT rule still applies.
+established_in: ES
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - ES-R-impressum
+  - ES-R-impressum-register
+  - EU-R-company-website-disclosure
+  - EU-R-service-provider-information-vat

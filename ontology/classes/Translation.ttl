@@ -1,0 +1,55 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Non-English text gets an English lgo:Translation node, so translations carry their own provenance
+# (who or what translated, when, reviewed or not, a hash of the source text) and can be reviewed and
+# contributed to without touching the law. Quotes are always translated this way. For short literals
+# on properties marked lgo:englishRequired, a hand-written @en sibling literal also counts.
+
+lgo:Translation a owl:Class ;
+    rdfs:label "Translation"@en ;
+    rdfs:comment "A translation into another language (English for now) of a quote or of a short literal, with its provenance. Never a substitute for the source: the source-language text is what the law says."@en .
+
+lgo:translationOf a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "translation of"@en ;
+    rdfs:comment "What is translated: a quote (its lgo:text), or with lgo:translatedProperty a literal of any resource."@en ;
+    rdfs:domain lgo:Translation .
+
+lgo:translatedProperty a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "translated property"@en ;
+    rdfs:comment "For a translation of a short literal (a title, a status note): the property whose value is translated. The value is identified by lgo:sourceTextSha256."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range rdf:Property .
+
+lgo:translationMethod a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "translation method"@en ;
+    rdfs:comment "How the translation was made, from the translation-method scheme (machine, human, official)."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range skos:Concept .
+
+lgo:translatedBy a owl:DatatypeProperty ;
+    rdfs:label "translated by"@en ;
+    rdfs:comment "The model identifier for a machine translation, the person or organisation otherwise."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:string .
+
+lgo:translatedOn a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "translated on"@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:date .
+
+lgo:reviewedBy a owl:DatatypeProperty ;
+    rdfs:label "reviewed by"@en ;
+    rdfs:comment "Who checked the translation against the source text."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:string .
+
+lgo:sourceTextSha256 a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "source text SHA-256"@en ;
+    rdfs:comment "SHA-256 (hex) of the UTF-8 source text the translation was made from. When the quote changes the hash no longer matches and the translation is stale."@en ;
+    rdfs:domain lgo:Translation ;
+    rdfs:range xsd:string .

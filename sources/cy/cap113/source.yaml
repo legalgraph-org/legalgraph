@@ -1,0 +1,25 @@
+# Ο περί Εταιρειών Νόμος (ΚΕΦ.113) — Cyprus's Companies Law. Άρθρο 103 is the
+# business-documents disclosure duty; εδάφιο (1Α) extends items (i)–(vi) of
+# παράγραφος (γ) verbatim to a company's website (διαδικτυακός τόπος), and (5)
+# makes a website without them an offence. The consolidated text on cylaw.org
+# (the Cyprus Bar Association's legislation service) serves each article in its
+# own section page; the fragment holding άρθρο 103 is kept verbatim.
+id: cy/cap113
+title: Ο περί Εταιρειών Νόμος (άρθρο 103)
+jurisdiction: CY
+language: el
+publisher: Cylaw (ΚΙΝOΠ/CyLii — Παγκύπριος Δικηγορικός Σύλλογος)
+kind: authored-xml
+licence: official-work
+licence_basis: "Νόμος 59/1976 περί Δικαιώματος Πνευματικής Ιδιοκτησίας άρθρο 7: official texts of legislation are not subject to copyright"
+originals:
+  - file: cap113-103.fragment.html
+    url: "https://www.cylaw.org/nomoi/enop/ind/0_113/section-sc8fb0032d-10c6-40ae-b047-57a9d29088d1.html"
+    official: false
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated section page's full-section div, re-encoded to UTF-8 (the page serves windows-1253). Downloaded 2026-11-12. cylaw.org is the Cyprus Bar Association's legislation service hosting the consolidated official texts."
+    retrieved_on: 2026-11-12
+    sha256: bf38952a4d12480d0f861fc2bb248f51d54d77a8b68e3320f4fc92b0ba07df63
+annotated: cap113.law.xml

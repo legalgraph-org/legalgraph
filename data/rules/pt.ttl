@@ -1,0 +1,88 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Portugal: provider information under artigo 10.º of Decree-Law 7/2004, the transposition of
+# Article 5 of the e-Commerce Directive. Portugal asks every provider for its tax identification
+# number (NIF, n.º 1 d) and has no separate VAT-number line, so the EU VAT rule still reaches VAT
+# payers, as in Spain.
+
+lg:PT-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address, e-mail and NIF"@en ;
+    rdfs:comment "Name or company name, the geographic address where the provider is established and an electronic address for direct communication, and the tax identification number (artigo 10.º, n.º 1, a), b) and d) DL 7/2004)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:PT-DL-7-2004-art10-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PT ;
+    lgo:appliesWhen lgv:EstablishedInPortugal , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact , lgv:TaxId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:PT-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: public register entries and numbers"@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:PT-DL-7-2004-art10-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PT ;
+    lgo:appliesWhen lgv:EstablishedInPortugal , lgv:CommercialDigitalService , lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:PT-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: entity that granted the authorisation"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:PT-DL-7-2004-art10-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PT ;
+    lgo:appliesWhen lgv:EstablishedInPortugal , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:PT-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:PT-DL-7-2004-art10-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PT ;
+    lgo:appliesWhen lgv:EstablishedInPortugal , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:PT-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: NIPC and share capital"@en ;
+    rdfs:comment "Companies state on their websites, as in all external activity, the firm name, type, seat, registry office, registration number and corporate identification number (NIPC), and liquidation where it applies (artigo 171.º n.º 1 CSC). Lda, SA and SCA add the share capital, the paid-up amount if different, and equity when it is half the capital or less (n.º 2)."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:PT-CSC-art171-1 , lg:PT-CSC-art171-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PT ;
+    lgo:appliesWhen lgv:EstablishedInPortugal , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:GeographicAddress , lgv:RegisterEntry , lgv:TaxId , lgv:ShareCapital ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:PT-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Artigo 18.º n.º 1-2 Lei 144/2015: the ADR entities the trader is bound to, by adhesion or by mandatory arbitration, with their website, on its website and in written or adhesion contracts."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:PT-LEI-144-2015-art18-1 , lg:PT-LEI-144-2015-art18-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PT ;
+    lgo:appliesWhen lgv:EstablishedInPortugal , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .

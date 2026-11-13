@@ -1,0 +1,17 @@
+name: Norwegian AS with a company website
+description: >
+  An AS in the Register of Business Enterprises, liable for VAT, with a website presenting its
+  services. § 8 ehandelsloven asks for the organisation number and whether the business is liable
+  for VAT, rather than a VAT identification number.
+established_in: "NO"
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - NO-R-company-website
+  - NO-R-impressum
+  - NO-R-impressum-register
+  - NO-R-impressum-vat

@@ -166,6 +166,7 @@ lg:EU-2024-1689-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/ai-act/CL2024R1689EN0010010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text applying from 27 July 2026, prepared by the Publications Office as a documentation tool. The authentic text is Regulation (EU) 2024/1689 (OJ L, 12.7.2024) and its amending acts; each quoted provision is checked against it."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -178,6 +179,7 @@ lg:EU-2024-1689-source
 lg:EU-2024-1689-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2024-1689-source ;
     lgo:legalStatus "Konsolidierte Fassung (documentation tool, not the authentic text)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

@@ -1,0 +1,273 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:SK-ARS-391-s11-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8b1aa945fa0c0dfdb7cc0839795fcd972c7b3d5a8a933583328bf599233bde3d" ;
+    lgo:text "(1) The consumer has the right to submit a remedy request to the trader where a dispute arises between the consumer and the trader over the exercise of rights from liability for defects or where the consumer believes that the trader has infringed other consumer rights."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ARS-391-s11-1-q1 .
+
+lg:SK-ARS-391-s11-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ecb9d1f96a7bebd29cd125843462b94cf1df055e56d3d726db305dc0cfa22bc7" ;
+    lgo:text "(2) The trader shall inform the consumer on a durable medium about the competent alternative dispute resolution entities if the trader has answered the request under paragraph 1 negatively."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ARS-391-s11-2-q1 .
+
+lg:SK-ARS-391-s11-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c06b33fbc038871a14f9be2fe2eabad5ac9669430e5ff0c557ac09788e4b21af" ;
+    lgo:text "(3) The consumer has the right to submit a proposal to initiate alternative dispute resolution (hereinafter the “proposal”) to an alternative dispute resolution entity if the trader has answered the request under paragraph 1 negatively or has not answered it within 30 days of its dispatch."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ARS-391-s11-3-q1 .
+
+lg:SK-ARS-391-title-6819ef5c6cf0-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6819ef5c6cf03bf5b1e7669700d300c46aca176f1dafcc3df73359e08c182e3d" ;
+    lgo:text "Act No. 391/2015 Coll. on alternative resolution of consumer disputes"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ARS-391 .
+
+lg:SK-EOB-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c55339146d0127bbec8e0de8801aab51bd303d317c8cea61c0e06b903c798846" ;
+    lgo:text """(1) A service provider is obliged to give the recipient of the service on an electronic device in particular the following information:
+a) the name, business name and seat of the service provider, if it is a legal person, or the name, surname, place of business and residential address of the service provider, if it is a natural person,
+b) the tax identification number, if it is a value added tax payer,
+c) the e-mail address and telephone number,
+d) the designation of the register in which it is entered and the entry number,
+e) the name and address of the supervisory or oversight body to which the service provider's activity is subject."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-EOB-s4-1-q1 .
+
+lg:SK-EOB-s4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "04ad229b7b46ff7a906a0178c55e67dcfa07cae7471e5e9765bee5afc0eb41f4" ;
+    lgo:text "(2) In the commercial communication of persons under § 3(7), the service provider must additionally give the recipient of the service on an electronic device, besides the data under paragraph 1, the name and seat of the competent self-governing professional organisation established by a special regulation in which the person exercising a regulated profession is entered, its academic title and the member state in which the academic title was obtained, a reference to the relevant rules for exercising the profession and providing services laid down by the self-governing professional organisation, and the manner of permanent access to information about that professional organisation."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-EOB-s4-2-q1 .
+
+lg:SK-EOB-s4-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7f9d28bd9b39fa0cd005619dab284eac9489555d49039805ff9c857c4ecc2fbd" ;
+    lgo:text "(3) The information under paragraphs 1 and 2 must be easily and permanently accessible to the recipient of the service and distinguishable from commercial communication."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-EOB-s4-3-q1 .
+
+lg:SK-EOB-title-5b1569ed5853-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5b1569ed585386a7cafc115d5f8fa05909bcb866477f44591f692276d6c40617" ;
+    lgo:text "Act no. 22/2004 Coll. on electronic commerce and on amendments to Act no. 128/2002 Coll. on state control of the internal market in matters of consumer protection and on amendments to certain acts, as amended by Act no. 284/2002 Coll."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-EOB .
+
+lg:SK-JAZYK-270-s8-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1e3ff36882a9a69e9637b7f1e7f41b135ab4dc9934a4396b5cfaf461aba4e915" ;
+    lgo:text "(1) In the interest of consumer protection, the use of the state language is compulsory when labelling the content of domestic and imported goods, in instructions for use of products, in particular foodstuffs, medicines, consumer electronics and drugstore goods, in warranty conditions and in other consumer information to the extent and under the conditions laid down by special regulations."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-JAZYK-270-s8-1-q1 .
+
+lg:SK-JAZYK-270-s8-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2c6c6fdb2ea4c1b86f85de6cbae53d5e97a5b01deab531a7c626ff3494c59ff1" ;
+    lgo:text "(5) In proceedings before the authorities and legal persons under § 3(1), contracts governing obligatory relations are recognised, alongside the state-language version, also in another official language of the European Union. In the event of ambiguities or inconsistencies, the state-language version of the contract shall prevail."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-JAZYK-270-s8-5-q1 .
+
+lg:SK-JAZYK-270-s8-6-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "671610bfb1498664c25c6c6d4791dbe4825539474365ffd7ee4cf93b87736a29" ;
+    lgo:text "(6) All signs, advertisements and notices intended to inform the public, in particular in shops, on sports grounds, in restaurants, on streets, at and above roads, at airports, bus stations and railway stations, and in public transport vehicles shall be displayed in the state language. If they contain text in other languages, the foreign-language texts shall follow the state-language text and must be identical in content to the state-language text. The foreign-language text shall be displayed in equal or smaller type than the state-language text. In signs and notices intended to inform the public in the language of a national minority and in the state language in municipalities where the language of that national minority is used in official communication under a special regulation, and in advertising, the order of the texts is not prescribed."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-JAZYK-270-s8-6-q1 .
+
+lg:SK-JAZYK-270-s8-7-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1e29e5eca60c4914160a54cc5990459df40505874bd395df2c383bd3539513a9" ;
+    lgo:text "(7) The obligation laid down in paragraph 6 shall not apply to the trade name, trade mark, or name of an institution entered or included in registers or lists under the laws in force in the Slovak Republic or in another Member State of the European Union or in a contracting state of the Agreement on the European Economic Area, nor to the use of first names and surnames forming part of a sign, advertisement or notice intended to inform the public, nor to certain customary expressions in a foreign language which are commonly used together with the trade mark in the text of advertisements, are known to the widest public and form part of the advertisement."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-JAZYK-270-s8-7-q1 .
+
+lg:SK-JAZYK-270-title-9e60190f0bad-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9e60190f0bad8bed586bcbec216cdd5bd3b4548bc7601f61ef91f7f92204a728" ;
+    lgo:text "Act of the National Council of the Slovak Republic No. 270/1995 Coll. on the State Language of the Slovak Republic"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-JAZYK-270 .
+
+lg:SK-OBCH-s3a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a4c880221a549eef2c97dff4b346a825f4d87df8aa515da897cf0248a14162a3" ;
+    lgo:text "Every entrepreneur is obliged to state the following on his or her business letters and orders made in written or electronic form (hereinafter “business documents”): the business name, the seat or place of business, the legal form of a legal person and the identification number, if assigned. Entrepreneurs entered in the commercial register or in another register of entrepreneurs also state the designation of the register in which the entrepreneur is entered and the entry number. If an entrepreneur states the amount of the share capital on his or her business documents, he or she must also state the extent to which it has been paid up."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-OBCH-s3a-1-q1 .
+
+lg:SK-OBCH-s3a-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "23dece703b6e13f08ecf0109ee5eb3446e76468941228b2000de49a095ebeeaf" ;
+    lgo:text "The data under paragraph 1 must also be stated by the entrepreneur in written official correspondence."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-OBCH-s3a-2-q1 .
+
+lg:SK-OBCH-s3a-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2f660ec934988bd1b4dae1c5e36113f162616c818bef0541731e0a7e993c89c4" ;
+    lgo:text "The data under paragraph 1 must also be stated by the entrepreneur on his or her website, if he or she has one."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-OBCH-s3a-3-q1 .
+
+lg:SK-OBCH-title-514e7f397171-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "514e7f397171027eb5e949cbc4ddc5fd0d42d2897c19f88f77950d08f7ff71a4" ;
+    lgo:text "Commercial Code (Obchodný zákonník)"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-OBCH .
+
+lg:SK-PUB-265-s5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e0538ed5425c0d4395e08fb3c1336b762a0d990f314e4de929d328895412ac7a" ;
+    lgo:text """(1) The publisher of a periodical publication is obliged to ensure that every issue of periodical print media contains
+a) the title of the periodical publication,
+b) the title of the regional or language version of the periodical publication and an indication that it is a regional or language edition of the periodical publication, if the periodical publication is issued or made available to the public in a modified form in terms of territorial scope or language of publication,
+c) the frequency of publication,
+d) information about the publisher of the periodical publication, namely
+1. the name, seat and identification number of the organisation, if the publisher of the periodical publication is a legal person,
+2. the business name, place of business and identification number of the organisation, if the publisher of the periodical publication is a natural person – entrepreneur,
+3. the first name, surname and address of permanent residence in the territory of the Slovak Republic, if the publisher of the periodical publication is a natural person,
+e) the date of issue, serial number in the calendar year and volume year of the periodical publication,
+f) the price of the printed copy or other copy of the periodical publication,
+g) the international standard serial number (ISSN), if assigned,
+h) the registration number of the periodical publication; this does not apply during proceedings for entry in the register under § 3."""@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-PUB-265-s5-1-q1 .
+
+lg:SK-PUB-265-s5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b33deb7725778c50e58b8f0bd4bab7b6d1794a2c5445f34528f724c6201cc568" ;
+    lgo:text "(2) The publisher of a periodical publication is obliged to ensure that every issue of an electronic periodical publication contains the information under paragraph 1 or that this information is given in accompanying text connected with the electronic periodical publication and easily accessible to the public."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-PUB-265-s5-2-q1 .
+
+lg:SK-PUB-265-s5-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1324bfebaa09de84ac49510d2717a0d92c3135a58d20301b71209ec3d08a47b9" ;
+    lgo:text "(3) The operator of a news web portal is obliged to ensure that the news web portal is marked with the title, the date of publication of the communiqué, the date of update of the published communiqué, and that it contains information about the operator of the news web portal to the extent under paragraph 1(d) and the information under paragraph 1(h)."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-PUB-265-s5-3-q1 .
+
+lg:SK-PUB-265-s5-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b847828ded4c2e888089263b1aaaf2785befa119e0bf1b76f16f98581d0e556f" ;
+    lgo:text "(4) A press agency is obliged to ensure that the agency service is marked with the name of the press agency and the date of publication."@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-PUB-265-s5-4-q1 .
+
+lg:SK-PUB-265-title-3d34b2216361-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3d34b22163619efcb5e69183c9623a386ded5fb8395a5cf2f928e0eea58eb8d3" ;
+    lgo:text "Act on publishers of publications and on the register in the field of media and audiovisual services and on the amendment of certain acts (Act on Publications)"@en ;
+    lgo:translatedBy "Devin (SWE-2)" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-PUB-265 .
+
+lg:SK-ZOS-108-s5-1-l-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3995304f342caec78a0a6418efde85a61c3a6b535036bf0f05d807b77a4e412c" ;
+    lgo:text "l) a notice about the consumer's right to submit a remedy request to the trader under the special regulation, together with a link to the website on which information about the competent alternative dispute resolution entity is published."@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ZOS-108-s5-1-l-q1 .
+
+lg:SK-ZOS-108-title-f6009847f92c-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f6009847f92c84ea7dacb1a61e2000b0ba95dfb28a84092735fad1b392458b7a" ;
+    lgo:text "Act No. 108/2024 Coll. on consumer protection"@en ;
+    lgo:translatedBy "swe-2-high" ;
+    lgo:translatedOn "2026-11-13"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ZOS-108 .

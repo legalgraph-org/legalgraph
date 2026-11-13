@@ -1,0 +1,24 @@
+# Companies Act 2014, section 151: the Irish company-law disclosure duty.
+# Business letters and order forms must carry name and legal form, place of
+# registration and number, and registered office; a referenced share capital
+# must be the issued paid-up capital. Subsection (4) is the website duty —
+# the same particulars prominently on any company website. The fragment is
+# cut from the section page on irishstatutebook.ie.
+id: ie/ca-2014
+title: Companies Act 2014 (section 151)
+jurisdiction: IE
+language: en
+publisher: Irish Statute Book, irishstatutebook.ie
+kind: authored-xml
+licence: official-work
+licence_basis: "Irish Statute Book reproduction policy: Oireachtas copyright material may be reproduced with acknowledgement"
+originals:
+  - file: ie-151.fragment.html
+    url: "https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the section page between the section body table and the page footer. Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: 300911fe1ae6245bebdf8a88cf07c7021607b432d23e9bcb17e82d6ba8404ebf
+annotated: ca-2014.law.xml

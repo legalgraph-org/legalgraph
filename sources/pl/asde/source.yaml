@@ -1,0 +1,25 @@
+# Ustawa o świadczeniu usług drogą elektroniczną (u.s.d.e.), Dz.U. 2002 nr 144 poz. 1204:
+# Poland's e-commerce act. Art. 5 is the provider-information duty (e-Commerce Directive art. 5);
+# art. 8 adds the national "regulamin" terms-of-service duty. ISAP serves the current consolidated
+# text (tekst jednolity) as HTML through the official ELI API at api.sejm.gov.pl; the fragment
+# holding art. 5 is kept and the text is transcribed in schemas/law.xsd, checked word for word
+# against it.
+id: pl/asde
+title: Ustawa z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (art. 5)
+jurisdiction: PL
+language: pl
+publisher: ISAP, Kancelaria Sejmu (api.sejm.gov.pl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 4 ustawy o prawie autorskim i prawach pokrewnych: normative texts and official documents are not protected by copyright"
+originals:
+  - file: asde-5.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2002/1204/text.html"
+    fetch: html-fragment
+    selector: "#chpt_2-arti_5"
+    media_type: text/html
+    notes:
+      - "Consolidated text (tekst jednolity) served by the official ELI API of ISAP, act WDU20021441204, status 'obowiązujący'."
+    retrieved_on: 2026-11-11
+    sha256: 113db5eed387a0ab6e2a2485b2f11585bb90f5cfad4f5987f5f32ed34be75d1b
+annotated: asde.law.xml

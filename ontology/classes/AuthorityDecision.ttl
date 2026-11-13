@@ -1,0 +1,17 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+# A court decision or an authority decision shows the law at work. Its points (provisions) say how
+# it read the law (lgo:interprets) or that it applied a provision to the facts (lgo:applies). Its
+# outcomes say what followed for a party: a fine, damages, an injunction. Each outcome names the
+# point of the decision that states it (lgo:statedIn), so the amount and the party can be checked
+# against the quoted words, and the provisions behind it (lgo:forBreachOf, lgo:sanctionedUnder).
+# lgo:illustrates ties a decision to the rules of the graph it shows in practice. Typed links
+# between decisions and provisions follow the spirit of CiTO (https://purl.org/spar/cito), kept
+# small: interprets, applies, follows.
+
+lgo:AuthorityDecision a owl:Class ;
+    rdfs:subClassOf lgo:LegalDocument ;
+    rdfs:label "Authority decision"@en ;
+    rdfs:comment "A regulator's decision in an individual case, such as a fine or an order by a data protection authority (a CNIL sanction, a decision of the Austrian data protection authority). Binding on the party it is addressed to, subject to appeal; it shows how the authority enforces the law."@en .

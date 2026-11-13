@@ -1,0 +1,26 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+# Every item an obligation asks for should come from the words of the law: one of the provisions it
+# is established by asks for it (lgo:requiresDisclosureOf), directly, through a point within it, or
+# through the provision it implements. A warning while the existing gaps are filled.
+
+lgs:GroundedDisclosureShape a sh:NodeShape ;
+    sh:targetClass lgo:Obligation ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        sh:message "No provision the obligation is established by asks for this item." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            PREFIX eli: <http://data.europa.eu/eli/ontology#>
+            SELECT $this ?value WHERE {
+                $this lgo:requiresDisclosureOf ?value .
+                FILTER NOT EXISTS {
+                    $this lgo:establishedBy ?provision .
+                    { ?part eli:is_part_of* ?provision . ?part lgo:requiresDisclosureOf ?value }
+                    UNION { ?provision lgo:implements ?implemented . ?implemented lgo:requiresDisclosureOf ?value }
+                }
+            }
+        """ ;
+    ] .

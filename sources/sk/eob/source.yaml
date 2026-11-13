@@ -1,0 +1,25 @@
+# Zákon č. 22/2004 Z. z. o elektronickom obchode: Slovakia's e-commerce act.
+# § 4 is the provider-information duty (e-Commerce Directive art. 5) — the Slovak catalogue
+# includes a telephone number and the DIČ where the provider is a VAT payer. Slov-Lex serves
+# the consolidated text on its static mirror (static.slov-lex.sk); the fragment holding § 4
+# is kept and the text is transcribed in schemas/law.xsd, checked word for word against it.
+id: sk/eob
+title: Zákon č. 22/2004 Z. z. o elektronickom obchode (§ 4)
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: eob-4.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/2004/22/20250628.html"
+    fetch: html-fragment
+    selector: "#paragraf-4"
+    text_ignore: ["a[href^='#poznamky']"]
+    media_type: text/html
+    notes:
+      - "Consolidated version in force from 28 June 2025 (latest; the version index at /static/SK/ZZ/2004/22/ lists every point-in-time text)."
+    retrieved_on: 2026-11-12
+    sha256: 6a3b9e7360592cde7794841e43a479c1b13ddd2da3a64c101cea0f40cf38812f
+annotated: eob.law.xml

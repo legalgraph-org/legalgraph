@@ -31,6 +31,70 @@ lg:EU-2017-1132-art26-1
     lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[1]" ;
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI .
 
+lg:EU-2017-1132-art26-1-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2017-1132 ;
+    lgo:citation "Art. 26(1), second subparagraph Directive 2017/1132" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ShareCapital ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2017-1132-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI .
+
+lg:EU-2017-1132-art26-1-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2017-1132-art26-1-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2017-1132-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI ;
+    lgo:text "Where, in those documents, mention is made of the capital of the company, the reference shall be to the capital subscribed and paid up."@en .
+
+lg:EU-2017-1132-art26-1-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2017-1132-art26-1-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2017-1132-art26-1-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2017-1132-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI ;
+    lgo:text "Wird auf diesen Dokumenten das Gesellschaftskapital angegeben, so ist das gezeichnete und eingezahlte Kapital anzugeben."@de .
+
+lg:EU-2017-1132-art26-1-3
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2017-1132 ;
+    lgo:citation "Art. 26(1), third subparagraph Directive 2017/1132" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:GeographicAddress , lgv:LegalForm , lgv:LiquidationStatus , lgv:RegisterEntry , lgv:ShareCapital ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2017-1132-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI .
+
+lg:EU-2017-1132-art26-1-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2017-1132-art26-1-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2017-1132-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI ;
+    lgo:text "Member States shall prescribe that company websites are to contain at least the particulars referred to in the first paragraph and, if applicable, a reference to the capital subscribed and paid up."@en .
+
+lg:EU-2017-1132-art26-1-3-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2017-1132-art26-1-3-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2017-1132-art26-1-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2017-1132-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/DIVISION[1]/DIVISION[3]/DIVISION[2]/ARTICLE[18]/ALINEA[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02017L1132-20220812"^^xsd:anyURI ;
+    lgo:text "Die Mitgliedstaaten schreiben vor, dass die Webseiten der Gesellschaft zumindest die in Absatz 1 genannten Angaben enthalten sowie gegebenenfalls die Angabe des gezeichneten und eingezahlten Kapitals."@de .
+
 lg:EU-2017-1132-art26-1-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
@@ -60,6 +124,7 @@ lg:EU-2017-1132-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/company-law/CL2017L1132EN0030010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text applying from 12 August 2022, prepared by the Publications Office as a documentation tool. The authentic texts are Directive (EU) 2017/1132 (OJ L 169, 30.6.2017) and its amending acts; each quoted provision is checked against them."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -72,6 +137,7 @@ lg:EU-2017-1132-source
 lg:EU-2017-1132-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2017-1132-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

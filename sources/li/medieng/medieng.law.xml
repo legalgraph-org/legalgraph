@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Mediengesetz (MedienG), LGBl. 2005 Nr. 250, LR-Nr. 449.1, Art. 11 and
+  Art. 12, written in schemas/law.xsd from the Lilex consolidated PDF
+  (Fassung 01.11.2026, version 18). The words are the Landtag's; only the
+  structure is ours. Art. 11 is the Impressum: every medium distributed in
+  Liechtenstein — electronic media included, so news websites — must give
+  the media owner's name or firm and editorial seat, and every periodical
+  medium also the postal address and electronic contact data of owner and
+  editorial office, the publisher's name, address and electronic contact
+  data, and any regulators. Art. 12 is the Offenlegung: for electronic
+  media the ownership and editorial-line data must be kept constantly
+  easily and directly accessible in the medium itself, i.e. on the
+  website. Art. 11 Abs. 5 and 6 (who bears the duty; other duties
+  unaffected) carry no disclosure and are left out. PDF comparison is on
+  letters only, so the PDF's footnote marks and page headers are not part
+  of the compared text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="LI-MEDIENG" lga:jurisdiction="LI" lga:act-type="Statute"
+     lga:url="https://www.gesetze.li/konso/2005250000">
+  <meta>
+    <title>Mediengesetz (MedienG) vom 19. Oktober 2005</title>
+    <date>2005-10-19</date>
+  </meta>
+
+  <section num="Art. 11" title="Impressum" source="medieng.pdf">
+    <paragraph num="1)" lga:provision="LI-MEDIENG-art11-1" lga:citation="Art. 11 Abs. 1 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress">Jedes im Inland verbreitete Medium muss folgende Angaben enthalten:
+      <list>
+        <item num="a)" lga:requires="ProviderName GeographicAddress">Name oder Firma des Medieninhabers und Redaktionssitz;</item>
+        <item num="b)" lga:requires="ProviderName GeographicAddress">bei Medienerzeugnissen auch Name oder Firma des Herstellers und Herstellungsort.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2)" lga:provision="LI-MEDIENG-art11-2" lga:citation="Art. 11 Abs. 2 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="GeographicAddress RapidContact ProviderName SupervisoryAuthority">Jedes im Inland verbreitete periodische Medium muss zudem folgende Angaben enthalten:
+      <list>
+        <item num="a)" lga:requires="GeographicAddress RapidContact">Zustelladresse und elektronische Kontaktdaten des Medieninhabers und der Redaktion;</item>
+        <item num="b)" lga:requires="ProviderName GeographicAddress RapidContact">Name, Zustelladresse und elektronische Kontaktdaten des Herausgebers;</item>
+        <item num="c)" lga:requires="SupervisoryAuthority">gegebenenfalls die zuständigen Regulierungs- oder Aufsichtsbehörden.</item>
+      </list>
+    </paragraph>
+    <paragraph num="3)" lga:provision="LI-MEDIENG-art11-3" lga:citation="Art. 11 Abs. 3 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="EditorialResponsibility" lga:requires="ResponsibleEditor">Periodische Medien, die regelmässig Teile des journalistisch-redaktionellen Inhalts eines anderen Mediums fertig übernehmen, haben auch die für den übernommenen Teil verantwortliche Person anzugeben.</paragraph>
+    <paragraph num="4)" lga:provision="LI-MEDIENG-art11-4" lga:citation="Art. 11 Abs. 4 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress RapidContact ResponsibleEditor SupervisoryAuthority">Bei Rundfunkprogrammen sind die Angaben nach Abs. 1 bis 3 auf der Webseite des Rundfunkveranstalters ständig leicht und unmittelbar auffindbar zu veröffentlichen. Ausserdem ist am Anfang oder am Ende jeder Sendung die für den Inhalt verantwortliche Person bekannt zu geben.</paragraph>
+  </section>
+
+  <section num="Art. 12" title="Offenlegung" source="medieng.pdf">
+    <paragraph num="1)" lga:provision="LI-MEDIENG-art12-1" lga:citation="Art. 12 Abs. 1 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="OwnershipStructure EditorialLine">Der Medieninhaber jedes periodischen Mediums hat die in Abs. 2 bis 4 bezeichneten Angaben zu veröffentlichen. Diese Veröffentlichung ist bei periodischen Medienerzeugnissen in der ersten Ausgabe nach Beginn des Kalenderjahres im Anschluss an das Impressum vorzunehmen. Bei elektronischen Medien sind diese Angaben im Medium selbst oder einem ihm zurechenbaren audiovisuellen Mediendienst auf Abruf oder Video-Sharing-Plattform-Dienst ständig leicht und unmittelbar auffindbar zu veröffentlichen.</paragraph>
+    <paragraph num="2)" lga:provision="LI-MEDIENG-art12-2" lga:citation="Art. 12 Abs. 2 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName BusinessPurpose GeographicAddress AuthorisedRepresentative OwnershipStructure">Anzugeben sind der Medieninhaber mit Namen oder Firma, Unternehmensgegenstand, Wohnort oder Sitz (Niederlassung) und die Namen der vertretungsbefugten Organe des Medieninhabers. Darüber hinaus sind für sämtliche der an einem Medieninhaber direkt oder indirekt beteiligten Personen die jeweiligen Eigentums-, Beteiligungs-, Anteils- und Stimmrechtsverhältnisse anzugeben. Ferner sind allfällige stille Beteiligungen am Medieninhaber und an den an diesem direkt oder indirekt im Sinne des vorstehenden Satzes beteiligten Personen anzugeben und Treuhandverhältnisse für jede Stufe offenzulegen. Im Fall der direkten oder indirekten Beteiligung von Stiftungen sind auch der Stifter und die jeweiligen Begünstigten der Stiftung offenzulegen. Ist der Medieninhaber ein Verein oder ist am Medieninhaber direkt oder indirekt ein Verein beteiligt, so sind für den Verein dessen Vorstand und der Vereinszweck anzugeben. Direkt oder indirekt beteiligte Personen, Treugeber, Stifter und Begünstigte einer Stiftung sind<page num="12"/>verpflichtet, nach Aufforderung durch den Medieninhaber diesem die zur Erfüllung seiner Offenlegungspflicht erforderlichen Angaben mitzuteilen.</paragraph>
+    <paragraph num="3)" lga:provision="LI-MEDIENG-art12-3" lga:citation="Art. 12 Abs. 3 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName BusinessPurpose GeographicAddress">Ist eine nach den vorstehenden Bestimmungen anzugebende Person zugleich Inhaber eines anderen Medienunternehmens oder einer anderen Medienagentur oder an solchen Unternehmen in der in Abs. 2 bezeichneten Art und in dem dort bezeichneten Umfang beteiligt, so müssen auch die Firma, der Betriebsgegenstand und der Sitz dieses Unternehmens angeführt werden.</paragraph>
+    <paragraph num="4)" lga:provision="LI-MEDIENG-art12-4" lga:citation="Art. 12 Abs. 4 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="EditorialLine">Zu veröffentlichen ist ferner eine Erklärung über die grundlegende Richtung des periodischen Mediums. Im Sinne des Art. 20 werden Änderungen und Ergänzungen der grundlegenden Richtung erst wirksam, sobald sie veröffentlicht worden sind.</paragraph>
+    <paragraph num="5)" lga:provision="LI-MEDIENG-art12-5" lga:citation="Art. 12 Abs. 5 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="SupervisoryAuthority">Ein Mediendiensteanbieter hat zudem anzugeben:
+      <list>
+        <item num="a)">den Staat, dessen Rechtshoheit er unterworfen ist; und</item>
+        <item num="b)" lga:requires="SupervisoryAuthority">die zuständigen Regulierungs- und Aufsichtsbehörden.</item>
+      </list>
+    </paragraph>
+    <paragraph num="6)" lga:provision="LI-MEDIENG-art12-6" lga:citation="Art. 12 Abs. 6 MedienG" lga:url="https://www.gesetze.li/konso/2005250000" lga:regulates="MediaOwnerDisclosure" lga:requires="ProviderName BusinessPurpose GeographicAddress RapidContact">Für einen audiovisuellen Mediendienst auf Abruf, der keinen Informationsgehalt aufweist, der geeignet ist, die öffentliche Meinungsbildung zu beeinflussen, gilt Abs. 2 mit der Massgabe, dass nur der Name oder die Firma, gegebenenfalls der Unternehmensgegenstand, der Wohnsitz oder der Sitz des Mediendiensteanbieters samt elektronischen Kontaktdaten anzugeben sind. Abs. 3 bis 5 finden auf solche Dienste keine Anwendung.</paragraph>
+  </section>
+</law>

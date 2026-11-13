@@ -1,0 +1,39 @@
+# Zákon č. 634/1992 Sb., o ochraně spotřebitele, § 14: the trader ADR
+# information duty — Directive 2013/11 Art. 13 transposition. (1) names the
+# competent out-of-court consumer-dispute entity plus its internet address,
+# on the trader's website and in the business terms the contract refers to;
+# (2) is the after-complaint duty in paper or another durable medium.
+id: cz/zos-634
+title: Zákon č. 634/1992 Sb., o ochraně spotřebitele (§ 14)
+jurisdiction: CZ
+language: cs
+publisher: zakonyprolidi.cz (consolidated text mirror)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 3 písm. a) zákona č. 121/2000 Sb., autorský zákon: official works, including legislation, are not copyright works"
+originals:
+  - file: zos-14.fragment.html
+    url: "https://www.zakonyprolidi.cz/cs/1992-634"
+    official: false
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated full-text page: the § 14 paragraph through the last paragraph before § 14a. Downloaded 2026-11-13."
+      - "Official e-Sbírka (e-sbirka.cz) is a client-side application that does not serve the text without JavaScript; zakonyprolidi.cz is an authoritative consolidated-text mirror."
+    retrieved_on: 2026-11-13
+    sha256: 6e0d01e427645e5a8390806e35e7820b2d5ce10ef5f3ceb7127cceafc54feb24
+  - file: 634-1992.esbirka.html
+    url: "https://www.e-sbirka.cz/sb/1992/634"
+    # The official text the mirror's words are verified against (role authentic): e-Sbírka builds it
+    # with JavaScript, so tools/render renders it (make render-install once).
+    role: authentic
+    fetch: rendered
+    wait: esel-fragment-view
+    selector: esel-fragment-view
+    # Each defined term is rendered twice, once hidden for its tooltip.
+    text_ignore:
+      - .esbir-element-hidden
+    media_type: text/html
+    retrieved_on: 2026-11-13
+    sha256: 1ff9e88c6d54b24f744872b02f34f68af55bce43cd80a9d26ae7468b2340fd65
+annotated: zos.law.xml

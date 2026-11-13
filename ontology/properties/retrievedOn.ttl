@@ -1,0 +1,9 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:retrievedOn a owl:DatatypeProperty ;
+    rdfs:label "retrieved on"@en ;
+    rdfs:comment "For a quote: the date of the consolidated version it was taken from, or the day it was read. For a source document: the day it was downloaded."@en ;
+    rdfs:range xsd:date .

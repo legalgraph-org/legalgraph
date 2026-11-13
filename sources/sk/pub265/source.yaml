@@ -1,0 +1,25 @@
+# Zákon č. 265/2022 Z. z. o vydavateľoch publikácií a o registri v oblasti
+# médií a audiovízie a o zmene a doplnení niektorých zákonov (zákon o
+# publikáciách), § 5: the mandatory-data duty for periodical publications.
+# § 5(3) reaches websites — a news web portal operator must mark the portal
+# with the publication name and communication publication/update dates and
+# carry the operator data of § 5(1)(d) plus the evidenčné číslo of § 5(1)(h).
+# In force from 1 November 2025 (as amended by 189/2025 Z. z.).
+id: sk/pub265
+title: Zákon č. 265/2022 Z. z. o vydavateľoch publikácií a o registri v oblasti médií a audiovízie a o zmene a doplnení niektorých zákonov (zákon o publikáciách) (§ 5)
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: pub265-5.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/2022/265/20251101.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the static.slov-lex.sk version mirror (text in force 1 November 2025): div paragraf-5, § 5 in full. Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: fe3ed2fed7ef2dbeab3faccec092b0231887001e4f6ef2496be0def4c580bd29
+annotated: pub265.law.xml

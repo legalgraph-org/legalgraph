@@ -5,33 +5,34 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# Latvia: Section 4 of the Information Society Services Law.
+# Latvia: Section 4 of the Information Society Services Law (additions to data/extracted/lv/).
 
-lg:LV-ISSL a lgo:LegalAct ;
-    eli:title "Informācijas sabiedrības pakalpojumu likums"@lv , "Information Society Services Law"@en ;
-    lgo:actType lgv:Statute ;
-    lgo:jurisdiction lg:LV ;
+lg:LV-ISSL
+    eli:title "Information Society Services Law"@en ;
+    lgo:shortName "ISSL" ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://likumi.lv/ta/en/en/id/96619"^^xsd:anyURI ;
-    lgo:reviewStatus lgv:SourceChecked .
+    rdfs:seeAlso <https://likumi.lv/ta/en/en/id/96619> ;
+    rdfs:comment "4. pants merges the Directive's name, address and register items into a single point and adds nothing beyond the Directive's floor; (2) is the price-clarity clause."@en .
 
-lg:LV-ISSL-s4-1 a lgo:Provision ;
-    eli:is_part_of lg:LV-ISSL ;
-    lgo:citation "Section 4(1) Information Society Services Law" ;
-    lgo:sourceUrl "https://likumi.lv/ta/en/en/id/96619"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry , lgv:EmailAddress ,
-        lgv:RapidContact , lgv:SupervisoryAuthority , lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
-    lgo:reviewStatus lgv:SourceChecked .
+lg:LV-KL
+    eli:title "Commercial Law"@en ;
+    lgo:shortName "Komerclikums" ;
+    eli:transposes lg:EU-2017-1132 ;
+    eli:id_local "LV 5490" ;
+    rdfs:comment "17. pants extends the merchant's business-document disclosures (firma, reģistrācijas numurs, juridiskā adrese, liquidation/insolvency status) verbatim to the merchant's website; (2) adds branch particulars. Consolidated text from likumi.lv."@en .
 
-lg:LV-ISSL-s4-1-q1 a lgo:Quote ;
-    lgo:quoteOf lg:LV-ISSL-s4-1 ;
-    lgo:text """(1) A service provider shall provide the following information in a clear, direct and permanently accessible manner:
-1) the firm name (name) or given name and surname, legal address or declared place of residence and registration number (if there is such) of the service provider;
-2) the contact information of the service provider, including electronic-mail address, which ensures the possibility of quickly communicating in a direct manner;
-3) if a special permit (licence) is necessary for commencing the relevant activity – information regarding the institution, which has issued the special permit (licence);
-[…]"""@en ;
-    lgo:sourceUrl "https://likumi.lv/ta/en/en/id/96619"^^xsd:anyURI ;
-    lgo:officialLanguageVersion false ;
-    rdfs:comment "Quoted from the English translation on likumi.lv; the binding text is Latvian."@en .
+lg:LV-VVL
+    lgo:shortName "VVL" ;
+    rdfs:seeAlso <https://likumi.lv/ta/id/14740-valsts-valodas-likums> ;
+    rdfs:comment "21. pants requires public information in Latvian for public bodies and private entities performing public functions, Latvian on product labelling and manuals, translations for imported goods, Latvian in public notices touching legitimate public interests, and the Latvian text taking the primary place next to any foreign text."@en .
+
+lg:LV-PTAL
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://likumi.lv/ta/id/23309> ;
+    rdfs:comment "19.1 pants is the trader ADR information duty: (1)-(2) the PTAC-listed dispute resolvers with website addresses on the trader's own site or in contract terms; (3) is the after-complaint analogue, triggered when the trader refuses the consumer's claim during the dispute."@en .
+
+lg:LV-PRESI
+    lgo:shortName "Preses likums" ;
+    eli:id_local "LV 1991-01-28" ;
+    rdfs:seeAlso <https://likumi.lv/ta/id/64879-par-presi-un-citiem-masu-informacijas-lidzekliem> ;
+    rdfs:comment "5.1 pants makes media-service providers publish the Article 6(1) European Media Freedom Act information easily and directly to service recipients — e.g. on their website, press publication or electronic media service. The older 18. pants imprint is tied to each press-publication issue (print data) and is not modelled as a website duty."@en .

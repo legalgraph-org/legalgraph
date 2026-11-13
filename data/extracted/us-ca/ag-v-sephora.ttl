@@ -86,6 +86,7 @@ lg:US-CA-SFSC-2022-0824-sephora-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/us-ca/ag-v-sephora/ag-v-sephora.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:PublicDomain ;
     lgo:licenceBasis "Judicial opinions and filed judgments are not copyrightable (government edicts doctrine; 17 U.S.C. § 105); California official publications may be used without fee" ;
     lgo:mediaType "application/pdf" ;

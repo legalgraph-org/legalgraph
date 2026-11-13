@@ -24,6 +24,7 @@ facts:
 obligations:
   - DE-R-accessibility
   - DE-R-dispute-resolution-statement
+  - DE-R-dispute-resolution-after-complaint
   - DE-R-contract-terms-storable
   - DE-R-pre-contract-information
   - DE-R-total-price
@@ -52,6 +53,7 @@ obligations:
   - EU-R-processing-record
   - EU-R-storage-limitation
   - US-R-can-spam
+  - US-CA-R-online-vendor-disclosure
   - US-CA-R-auto-renewal-acknowledgment
   - US-CA-R-auto-renewal-terms
   - US-CA-R-ecommerce-service-notice

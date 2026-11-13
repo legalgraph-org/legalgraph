@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o elektroničkoj trgovini (NN 173/03), članak 6, written in schemas/law.xsd
+  from the Narodne novine publication. The words are the Hrvatski sabor's; only the
+  structure is ours. The list uses dashes, not letters; the profession items are a
+  nested §-list. (2) is the price clause — Croatia adds "ostali manipulativni
+  troškovi" and "drugi troškovi" beyond tax and delivery.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="hr"
+     lga:act="HR-ZET" lga:jurisdiction="HR" lga:act-type="Statute"
+     lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html">
+  <meta>
+    <title>Zakon o elektroničkoj trgovini</title>
+    <date>2003-10-17</date>
+  </meta>
+
+  <section num="Članak 6." title="Opće informacije" source="hr-6.fragment.html">
+    <paragraph num="(1)" lga:provision="HR-ZET-art6-1" lga:citation="članak 6 stavak 1 ZET" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Davatelj usluga informacijskog društva mora u obliku i na način koji je neposredno i stalno dostupan korisnicima i nadležnim tijelima državne uprave Republike Hrvatske pružiti informacije kao što su:
+      <list>
+        <item num="–" lga:requires="ProviderName">ime i prezime ili tvrtku davatelja usluga,</item>
+        <item num="–" lga:requires="GeographicAddress">sjedište obrta ili sjedište pravne osobe davatelja usluga,</item>
+        <item num="–" lga:requires="EmailAddress RapidContact">ostale podatke o davatelju usluga na temelju kojih korisnik može brzo i nesmetano stupiti s njim u vezu, uključujući elektroničku adresu putem koje je moguće uspostaviti izravan kontakt,</item>
+        <item num="–" lga:requires="RegisterEntry">broj sudskog ili drugoga javnog registra u koji je davatelj usluga upisan, te podatke o registru,</item>
+        <item num="–" lga:requires="SupervisoryAuthority">pojedinosti o nadležnom tijelu, ako djelatnost davatelja usluga podliježe službenom nadzoru,</item>
+        <item num="–" lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">u pogledu posebno reguliranih djelatnosti/profesija:
+          <list>
+            <item num="§" lga:requires="ProfessionalBody">profesionalna ili slična institucija kod koje je davatelj usluga registriran,</item>
+            <item num="§" lga:requires="ProfessionalTitle">profesionalni naziv i zemlja koja ga je odobrila,</item>
+            <item num="§" lga:requires="ProfessionalRules">uputa o profesionalnim pravilima u zemlji u kojoj se obavlja djelatnost i mjestu njihove dostupnosti,</item>
+          </list>
+        </item>
+        <item num="–" lga:requires="TaxId">porezni broj ako je davatelj usluga obveznik plaćanja poreza na dodanu vrijednost.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="HR-ZET-art6-2" lga:citation="članak 6 stavak 2 ZET" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Ako davatelj usluga prikazuje cijene, one moraju biti jasno i nedvosmisleno naznačene, a posebno se mora naznačiti jesu li u prikazane cijene uključeni troškovi dostave, ostali manipulativni troškovi, porez i drugi troškovi koji na bilo koji način utječu na prikazanu cijenu.</paragraph>
+  </section>
+</law>

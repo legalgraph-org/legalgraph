@@ -56,6 +56,7 @@ lg:CJEU-C-376-22-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/cjeu-kommaustria/ECR_62022CJ0376_EN_01.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Language of the case: German. This English text is the Court's translation; the authentic version is the case-language one."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;
@@ -68,6 +69,7 @@ lg:CJEU-C-376-22-source
 lg:CJEU-C-376-22-source-german
     a lgo:SourceDocument ;
     dcterms:language "german"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CJEU-C-376-22-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;

@@ -24,6 +24,7 @@ lg:AT-UGB-s14-1
     a lgo:Provision ;
     eli:is_part_of lg:AT-UGB ;
     lgo:citation "§ 14 Abs. 1 UGB" ;
+    lgo:implements lg:EU-2017-1132-art26-1 ;
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:GeographicAddress , lgv:LegalForm , lgv:LiquidationStatus , lgv:ProviderName , lgv:RegisterEntry ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -45,6 +46,7 @@ lg:AT-UGB-s14-2
     a lgo:Provision ;
     eli:is_part_of lg:AT-UGB ;
     lgo:citation "§ 14 Abs. 2 UGB" ;
+    lgo:implements lg:EU-2017-1132-art26-1 ;
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ShareCapital ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -66,6 +68,7 @@ lg:AT-UGB-s14-3
     a lgo:Provision ;
     eli:is_part_of lg:AT-UGB ;
     lgo:citation "§ 14 Abs. 3 UGB" ;
+    lgo:implements lg:EU-2017-1132-art26-1 ;
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProviderName , lgv:RegisterEntry ;
     lgo:reviewStatus lgv:SourceChecked ;
@@ -87,6 +90,7 @@ lg:AT-UGB-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/at/ugb/ugb.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated version (Fassung vom 02.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works" ;

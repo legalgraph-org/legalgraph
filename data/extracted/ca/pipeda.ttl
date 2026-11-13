@@ -178,6 +178,7 @@ lg:CA-PIPEDA-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/ca/pipeda/P-8.6.en.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Reproduction of Federal Law Order (SI/97-5): federal enactments may be reproduced without charge or permission, if reproduced accurately and not presented as an official version" ;
     lgo:mediaType "application/xml" ;
@@ -189,6 +190,7 @@ lg:CA-PIPEDA-source
 lg:CA-PIPEDA-source-en
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CA-PIPEDA-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Reproduction of Federal Law Order (SI/97-5): federal enactments may be reproduced without charge or permission, if reproduced accurately and not presented as an official version" ;

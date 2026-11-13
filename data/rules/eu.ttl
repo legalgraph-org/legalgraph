@@ -13,7 +13,10 @@
 
 # --- Service provider information (Article 5(1) e-Commerce Directive) --------------------
 # The country of establishment's law applies (Article 3(1)), so these follow where the business is
-# established, in the EEA as a whole.
+# established, in the EEA as a whole. The Annex to the Directive carves consumer contracts (among
+# others) out of the country-of-origin principle — it does not touch the Article 5 provider-information
+# duty, which is exactly why the imprint follows the establishment while the pre-contract information
+# follows the consumer's country.
 
 lg:EU-R-service-provider-information a lgo:Obligation ;
     rdfs:label "Provider information: name, address and fast electronic contact"@en ;
@@ -83,7 +86,77 @@ lg:EU-R-contract-terms-storable a lgo:Obligation ;
     lgo:appliesIn lg:EEA ;
     lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsOnlineToConsumers ;
     lgo:requiresAction lgv:ProvideContractTermsInStorableForm ;
-    lgo:requiresDisclosureOf lgv:GeneralTermsAndClauses ;
+    lgo:requiresDisclosureOf lgv:GeneralTermsAvailability ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company website disclosure (Article 26(1) Directive 2017/1132) ---------------------
+# Company law, not the e-Commerce Directive, but it follows the establishment too: a company's
+# website carries the register, legal form and seat its business letters must state. Member
+# states transpose it in their company or commerce acts (Germany: § 5 DDG together with
+# § 35a GmbHG for letters; Austria: § 14 UGB).
+
+lg:EU-R-company-website-disclosure a lgo:Obligation ;
+    rdfs:label "Company details on the website: register, legal form and seat"@en ;
+    rdfs:comment "For limited-liability companies. The website shows at least the particulars the law wants on letters and order forms: the register and the company's number in it, the legal form and the registered office."@en ;
+    lgo:establishedBy lg:EU-2017-1132-art26-1-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EEA ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry , lgv:LegalForm , lgv:GeographicAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-company-website-liquidation a lgo:Obligation ;
+    rdfs:label "Company website: state when the company is being wound up"@en ;
+    lgo:establishedBy lg:EU-2017-1132-art26-1-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EEA ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:LimitedLiabilityCompany , lgv:InLiquidation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:LiquidationStatus ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer ADR information (Article 13 Directive 2013/11/EU) ---------------------------
+# The EU floor for naming the dispute-resolution body; Germany transposes it in §§ 36, 37 VSBG.
+# Directive (EU) 2025/2647 rewords Article 13(2) and (3) — member states apply it from
+# 20 September 2028.
+
+lg:EU-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Only for a trader committed or obliged to use alternative dispute resolution: it names the ADR entity covering it, with the entity's website address, on its own website and in its general terms."@en ;
+    lgo:establishedBy lg:EU-2013-11-art13-1 , lg:EU-2013-11-art13-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EEA ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "When a dispute over a consumer contract cannot be settled after a direct complaint, the trader provides the ADR entity information and says whether it will use ADR. Germany implements it as § 37 VSBG for every trader."@en ;
+    lgo:establishedBy lg:EU-2013-11-art13-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EEA ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-company-website-capital a lgo:Obligation ;
+    rdfs:label "Company website: subscribed and paid-up capital"@en ;
+    rdfs:comment "Where the company mentions its capital, the figure must be the capital subscribed and paid up."@en ;
+    lgo:establishedBy lg:EU-2017-1132-art26-1-2 , lg:EU-2017-1132-art26-1-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EEA ;
+    lgo:appliesWhen lgv:EstablishedInTheEea , lgv:LimitedLiabilityCompany , lgv:StatesShareCapital ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ShareCapital ;
     lgo:reviewStatus lgv:Draft .
 
 # --- Privacy information (Articles 12 and 13 GDPR) -------------------------------------

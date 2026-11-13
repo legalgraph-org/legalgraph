@@ -1,0 +1,74 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:HR-ZET-art6-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bbae49d3163df1ce3ea92e411fbcca674ea2471e1f9d198073b40bae28e22122" ;
+    lgo:text """(1) A provider of information society services must, in a form and manner directly and permanently accessible to users and the competent state administration bodies of the Republic of Croatia, provide information such as:
+- the name and surname or company name of the service provider,
+- the seat of the craft or the seat of the legal person of the service provider,
+- other particulars of the service provider on the basis of which the user can quickly and easily get in touch with it, including an electronic address through which direct contact can be established,
+- the number of the court or other public register in which the service provider is entered, and information about the register,
+- particulars of the competent body, if the service provider's activity is subject to official supervision,
+- in respect of specially regulated activities/professions:
+§ the professional or similar institution with which the service provider is registered,
+§ the professional title and the country that granted it,
+§ guidance on the professional rules in the country where the activity is carried out and where they are accessible,
+- the tax number if the service provider is liable to pay value added tax."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ZET-art6-1-q1 .
+
+lg:HR-ZET-art6-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "972c784b283809e1c5e82b3b1b0c5bb260878a9095a8b4bbc458b6202722ac3f" ;
+    lgo:text "(2) If the service provider displays prices, they must be indicated clearly and unambiguously, and it must be stated in particular whether the displayed prices include delivery costs, other handling costs, tax and other costs that in any way affect the displayed price."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ZET-art6-2-q1 .
+
+lg:HR-ZTD-art21-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "477806506698904393a3652afe1f41665a4875577d0e0edda48066ab3446cc78" ;
+    lgo:text "On the merchant's business paper (letters, invoices, etc.) his company name, registered office, the court where he is entered in the court register and the number under which that was done, the company names and registered offices of the legal persons keeping his accounts and the numbers of those accounts must be printed. The same applies to the content of the company's website."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ZTD-art21-4-q1 .
+
+lg:HR-ZTD-art21-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f47e2176e5aaae0d49ac8bc4b07ba9d6e569f803e088760f4480023c2d404705" ;
+    lgo:text """On the business paper and the website of a capital company, in addition to the particulars from paragraph 4 of this article, the following must be stated:
+1. the amount of the company's share capital with an indication of whether it has been paid in full and, if not, an indication of which part of that capital has not been paid, and
+2. the total number of shares issued and, if the company issues shares with a nominal amount, those amounts where the business paper of a joint-stock company is concerned,
+3. the surnames and at least one given name of the members of the company's management and, in the case of a joint-stock company, of the members of the management board or executive directors and the president of the supervisory or management board."""@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ZTD-art21-5-q1 .
+
+lg:HR-ZTD-art21-6-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c4fd97c0dccb338b2a3f0d21b758eff169117bbf7f3f65c22b928d398e379d94" ;
+    lgo:text "The business paper of a general partnership and a limited partnership must also carry the names of all members of the partnership who are personally liable for its obligations. The business paper of an economic interest grouping must also state the collective authority to represent, where the management members are authorised to represent the grouping in that way."@en ;
+    lgo:translatedBy "SWE-2 (Devin)" ;
+    lgo:translatedOn "2026-11-12"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ZTD-art21-6-q1 .

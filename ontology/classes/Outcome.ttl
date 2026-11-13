@@ -1,0 +1,51 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:Outcome a owl:Class ;
+    rdfs:label "Outcome"@en ;
+    rdfs:comment "What a decision ordered for one party: a fine of a stated amount, damages, an injunction, an order to comply. A preliminary ruling of the Court of Justice has no outcome of its own: it answers the referring court."@en .
+
+lgo:outcomeType a owl:ObjectProperty ;
+    rdfs:label "outcome type"@en ;
+    rdfs:comment "A concept from vocab/outcome-types.ttl."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range skos:Concept .
+
+lgo:against a owl:DatatypeProperty ;
+    rdfs:label "against"@en ;
+    rdfs:comment "The party the outcome is addressed to, as the decision names it. Only companies and public bodies: decisions against private individuals are not recorded with their names."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range xsd:string .
+
+lgo:amount a owl:DatatypeProperty ;
+    rdfs:label "amount"@en ;
+    rdfs:comment "The sum of a fine or of damages, in lgo:currency, as the decision states it."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range xsd:decimal .
+
+lgo:currency a owl:DatatypeProperty ;
+    rdfs:label "currency"@en ;
+    rdfs:comment "ISO 4217 code, e.g. EUR."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range xsd:string .
+
+lgo:forBreachOf a owl:ObjectProperty ;
+    rdfs:label "for breach of"@en ;
+    rdfs:comment "The provision the party breached, as the decision finds."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range lgo:Provision .
+
+lgo:sanctionedUnder a owl:ObjectProperty ;
+    rdfs:label "sanctioned under"@en ;
+    rdfs:comment "The provision that empowers the sanction or grants the claim: Article 83 GDPR for a fine, Article 82 GDPR for damages, § 8 UWG for an injunction."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range lgo:Provision .
+
+lgo:statedIn a owl:ObjectProperty ;
+    rdfs:label "stated in"@en ;
+    rdfs:comment "The point of the decision (a quoted provision of it) where the outcome is stated, so the party and the amount can be checked against its words."@en ;
+    rdfs:domain lgo:Outcome ;
+    rdfs:range lgo:Provision .

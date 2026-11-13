@@ -7,6 +7,8 @@
 
 # Switzerland: not in the EU or EEA. The Impressum duty sits in the unfair competition act:
 # offering goods, works or services online without clear identity and contact details is unfair.
+# The Code of Obligations' firm-name duty (OR Art. 954a) requires the registered name only on
+# correspondence, order forms, invoices and announcements — it does not clearly reach websites.
 
 lg:CH-UWG a lgo:LegalAct ;
     eli:title "Bundesgesetz gegen den unlauteren Wettbewerb (UWG)"@de , "Federal Act on Unfair Competition (UCA)"@en ;

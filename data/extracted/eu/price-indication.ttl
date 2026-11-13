@@ -88,6 +88,7 @@ lg:EU-1998-6-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/price-indication/CL1998L0006EN0010010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text applying from 28 May 2022, prepared by the Publications Office as a documentation tool. The authentic texts are Directive 98/6/EC (OJ L 80, 18.3.1998) and its amending acts; each quoted provision is checked against them."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -100,6 +101,7 @@ lg:EU-1998-6-source
 lg:EU-1998-6-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-1998-6-source ;
     lgo:legalStatus "Konsolidierte Fassung (documentation tool, not the authentic text)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

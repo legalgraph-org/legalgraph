@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The Éditeur officiel du Québec's English version of the Consumer Protection Act, s. 54.4,
+  transcribed in schemas/law.xsd from the Légis Québec consolidated fragment, as the parallel
+  version of cpa.law.xml. The French text prevails. Only lga:provision and lga:url annotate
+  the provisions.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="CA-QC-CPA" lga:jurisdiction="CA-QC" lga:act-type="Statute"
+     lga:url="https://www.legisquebec.gouv.qc.ca/en/document/cs/P-40.1">
+  <meta>
+    <title>Consumer Protection Act (Quebec), CQLR c. P-40.1</title>
+    <date>1978-12-22</date>
+  </meta>
+
+  <section num="54.4" title="Merchant disclosure before a distance contract" source="cpa-54-4-en.fragment.html">
+    <paragraph lga:provision="CA-QC-CPA-s54-4" lga:url="https://www.legisquebec.gouv.qc.ca/en/document/cs/P-40.1">Before a distance contract is entered into, the merchant must disclose the following information to the consumer:
+      <list>
+        <item num="( a )">the merchant’s name and any other name under which the merchant carries on business;</item>
+        <item num="( b )">the merchant’s address;</item>
+        <item num="( c )">the merchant’s telephone number and, if available, the merchant’s fax number and technological address;</item>
+        <item num="( d )">a detailed description of goods or services that are to be the object of the contract, including characteristics and technical specifications;</item>
+        <item num="( d .1 )">if applicable, the information required under subparagraph c of the second paragraph of section 236.1 and under section 236.3;<note num="in-force-2026-10-05"/></item>
+        <item num="( d .2 )">if applicable, the duration of the warranty of good working order provided for in section 38.1;</item>
+        <item num="( d .3 )">if applicable, the replacement parts, repair services and information necessary to maintain or repair goods whose availability is guaranteed by the merchant or the manufacturer under the first paragraph of section 39;</item>
+        <item num="( e )">an itemized list of the prices of the goods or services that are to be the object of the contract, including associated costs charged to the consumer and any additional charges payable under an Act;</item>
+        <item num="( f )">a description of any possible additional charges payable to a third party, such as customs duties and brokerage fees, whose amounts cannot reasonably be determined;</item>
+        <item num="( g )">the total amount to be paid by the consumer under the contract and, if applicable, the amount of instalments, the rate applicable to the use of an incidental good or service and the terms of payment;</item>
+        <item num="( h )">the currency in which amounts owing under the contract are payable if not Canadian dollars;</item>
+        <item num="( i )">the date on which, or the time within which, the merchant’s principal obligation must be performed;</item>
+        <item num="( j )">if applicable, the mode of delivery, the name of the carrier and the place of delivery;</item>
+        <item num="( k )">the applicable cancellation, rescission, return, exchange and refund conditions, if any; and</item>
+        <item num="( l )">any other applicable restrictions or conditions.</item>
+      </list>
+      The merchant must present the information prominently and in a comprehensible manner and bring it expressly to the consumer’s attention; in the case of a written offer, the merchant must present the information in a manner that ensures that the consumer is able to easily retain it and print it. 2006, c. 56, s. 5 ; 2018, c. 14 , s. 11 ; 2023, c. 21 , s. 7 ; I.N. 2025-03-24 ; 2023, c. 21 , s. 7 .</paragraph>
+  </section>
+</law>

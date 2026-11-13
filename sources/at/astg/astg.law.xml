@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Alternative-Streitbeilegung-Gesetz, § 19, written in schemas/law.xsd from the
+  RIS consolidated text (Fassung vom 13.11.2026). The words are the Austrian
+  legislature's; only the structure is ours. § 19 implements Art. 13 of the
+  ADR Directive 2013/11/EU: traders bound or committed to consumer ADR name
+  the competent AS-Stelle with its website address, on their own website and
+  in their terms and conditions; Abs. 3 adds the durable-medium pointer after
+  a failed settlement attempt.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-ASTG" lga:jurisdiction="AT" lga:act-type="Statute"
+     lga:url="https://www.ris.bka.gv.at/eli/bgbl/i/2015/105/P19/NOR40173800">
+  <meta>
+    <title>Bundesgesetz über alternative Streitbeilegung in Verbraucherangelegenheiten (AStG)</title>
+    <date>2015-08-14</date>
+  </meta>
+
+  <section num="§ 19" source="astg-19.fragment.html">
+    <paragraph num="(1)" lga:provision="AT-ASTG-s19-1" lga:citation="§ 19 Abs. 1 AStG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/i/2015/105/P19/NOR40173800" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Ein Unternehmer hat die Verbraucher über die AS-Stelle oder die AS-Stellen in Kenntnis zu setzen, von der oder denen er erfasst wird, sofern er sich verpflichtet oder verpflichtet ist, diese Stellen zur Beilegung von Streitigkeiten mit Verbrauchern einzuschalten. Diese Information hat Angaben zur Website-Adresse der betreffenden AS-Stelle oder AS-Stellen zu enthalten.</paragraph>
+    <paragraph num="(2)" lga:provision="AT-ASTG-s19-2" lga:citation="§ 19 Abs. 2 AStG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/i/2015/105/P19/NOR40173800" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Die in Abs. 1 genannten Informationen hat der Unternehmer, sofern vorhanden, auf seiner Website und gegebenenfalls in den allgemeinen Geschäftsbedingungen in klarer, verständlicher und leicht zugänglicher Weise anzuführen.</paragraph>
+    <paragraph num="(3)" lga:provision="AT-ASTG-s19-3" lga:citation="§ 19 Abs. 3 AStG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/i/2015/105/P19/NOR40173800" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">Können der Unternehmer und der Verbraucher in einer Streitigkeit keine Einigung erzielen, so hat der Unternehmer den Verbraucher auf Papier oder einem anderen dauerhaften Datenträger auf die für ihn zuständige AS-Stelle oder zuständigen AS-Stellen hinzuweisen. Der Unternehmer hat zugleich anzugeben, ob er an einem Verfahren teilnehmen wird.</paragraph>
+  </section>
+</law>

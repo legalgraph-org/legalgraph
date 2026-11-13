@@ -162,6 +162,7 @@ lg:DE-TDDDG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/tdddg/BJNR198210021.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Zuletzt geändert durch Art. 3 G v. 10.3.2026 I Nr. 64"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

@@ -1,0 +1,41 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+lgs:ExternalReferenceShape a sh:NodeShape ;
+    sh:targetClass lgo:ExternalReference ;
+    sh:property [
+        sh:path dcterms:title ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+    ] , [
+        sh:path dcterms:publisher ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+    ] , [
+        sh:path lgo:sourceUrl ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:anyURI ;
+    ] , [
+        sh:path lgo:linkOnlyReason ;
+        sh:minCount 1 ;
+    ] , [
+        sh:path lgo:excerpt ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "At most one short excerpt of someone else's work." ;
+    ] , [
+        sh:path lgo:supports ;
+        sh:minCount 1 ;
+    ] ;
+    sh:sparql [
+        sh:message "An excerpt of someone else's work stays short: at most 300 characters, with its locator." ;
+        sh:select """
+            PREFIX lgo: <https://legalgraph.org/ontology#>
+            SELECT $this WHERE {
+                $this lgo:excerpt ?e .
+                FILTER (STRLEN(?e) > 300 || NOT EXISTS { $this lgo:excerptLocator ?l })
+            }
+        """ ;
+    ] .

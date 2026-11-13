@@ -3,7 +3,7 @@
 Annotations are attributes in the namespace `https://legalgraph.org/ns/annotation#` (prefix `lga`),
 added to the [annotated XML](annotated_xml.md). Values are identifiers from the graph (`lg:` without
 the prefix) or concepts from the ontology's vocabularies (`lgv:` without the prefix, see
-[ontology/src/vocab/](../../ontology/src/vocab)); several values are separated by spaces. Any other
+[ontology/vocab/](../../ontology/vocab)); several values are separated by spaces. Any other
 `lga:` attribute is rejected.
 
 This is where interpretation happens, so it sits on the exact words that justify it.

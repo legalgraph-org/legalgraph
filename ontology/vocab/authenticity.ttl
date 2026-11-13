@@ -1,0 +1,24 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Why a source document's words can be trusted as the law's (lgo:authenticity). Sourcing and checking
+# are separate: a mirror's text becomes as good as the official one once it is verified against it.
+
+lgv:Authenticity a skos:ConceptScheme ;
+    skos:prefLabel "Authenticity"@en .
+
+lgv:Official a skos:Concept ;
+    skos:inScheme lgv:Authenticity ;
+    skos:prefLabel "Official publication"@en ;
+    skos:definition "Taken from the official publication of the text: the official journal, the government's legal database, or the court or authority that issued it."@en .
+
+lgv:VerifiedAgainstOfficial a skos:Concept ;
+    skos:inScheme lgv:Authenticity ;
+    skos:prefLabel "Verified against the official publication"@en ;
+    skos:definition "Taken from a mirror, and every quoted line found word for word in the official publication (lgo:verifiedAgainst), which is downloaded or rendered again by each check."@en .
+
+lgv:NotVerified a skos:Concept ;
+    skos:inScheme lgv:Authenticity ;
+    skos:prefLabel "Mirror, not verified"@en ;
+    skos:definition "Taken from a mirror whose text has not been checked against the official publication yet."@en .

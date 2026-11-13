@@ -1,0 +1,25 @@
+# Aktiebolagslagen (2005:551) 28 kap. 5 §: the Swedish company-law website
+# duty — an aktiebolag's brev, fakturor, orderblanketter och webbplatser must
+# show företagsnamn, the municipality where the board has its seat, and the
+# organisationsnummer, plus the liquidation fact where applicable; paragraph 2
+# lets Bolagsverket permit an AB to withhold its name from its websites and
+# show only the company type instead. The section is cut from the Riksdag
+# consolidated SFS text (current wording since lag 2018:1682).
+id: se/abl
+title: Aktiebolagslag (2005:551), 28 kap. 5 §
+jurisdiction: SE
+language: sv
+publisher: Riksdagen, riksdagen.se
+kind: authored-xml
+licence: official-work
+licence_basis: "2 kap. 9 § upphovsrättslagen: laws and official decisions are not copyright works"
+originals:
+  - file: abl-28-5.fragment.html
+    url: "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/aktiebolagslag-2005551_sfs-2005-551/"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the consolidated SFS page: the 'Uppgifter om företagsnamn m.m.' heading through the 'Lag (2018:1682)' marker before 28 kap. 6 §. Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: 4dabf6371e99c34864201669670f4480a80473380c808f571e914ba89e41fc80
+annotated: abl.law.xml

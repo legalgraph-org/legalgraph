@@ -1,0 +1,22 @@
+# Komerclikums (Commercial Law): Latvia's Companies Act. 17. pants is the
+# merchant's business-documents duty, extended verbatim to the website
+# ("komersanta mājaslapā"). likumi.lv serves the consolidated text; the
+# section's own <div> is kept as the fragment.
+id: lv/kl
+title: Komerclikums (17. pants)
+jurisdiction: LV
+language: lv
+publisher: Latvijas Vēstnesis (likumi.lv)
+kind: authored-xml
+licence: official-work
+licence_basis: "Autortiesību likums 6. panta 1. punkts: normatīvie akti nav autortiesību subjekts — laws and regulations are not subject to copyright"
+originals:
+  - file: kl-17.fragment.html
+    url: "https://likumi.lv/ta/id/5490-komerclikums"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the likumi.lv consolidated text at the 17. pants div (id TV213). Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: b9461b778218f15a2b21eb68a44bce2497b04df9997e2e41ad9ba6639d30c847
+annotated: kl.law.xml

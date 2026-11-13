@@ -88,6 +88,7 @@ lg:FR-CNIL-SAN-2025-005-source
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/cnil-san-2025-005/cnil-san-2025-005.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:LicenceOuverte2 ;
     lgo:licenceBasis "CNIL site content is published under Licence Ouverte 2.0 (cnil.fr legal notice); the courtesy translation bears the same notice" ;
     lgo:mediaType "text/html" ;
@@ -99,6 +100,7 @@ lg:FR-CNIL-SAN-2025-005-source
 lg:FR-CNIL-SAN-2025-005-source-en
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:FR-CNIL-SAN-2025-005-source ;
     lgo:legalStatus "Courtesy translation of the French decision; the French version prevails and is stored here."@en ;
     lgo:licence lgv:LicenceOuverte2 ;

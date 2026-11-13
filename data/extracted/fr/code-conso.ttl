@@ -140,6 +140,7 @@ lg:FR-CONSO-source-1
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/code-conso/code-conso.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:LicenceOuverte2 ;
     lgo:licenceBasis "Légifrance publishes official texts under the Licence Ouverte 2.0 (Etalab); official texts carry no copyright" ;
     lgo:mediaType "text/html" ;
@@ -152,6 +153,7 @@ lg:FR-CONSO-source-2
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/code-conso/code-conso.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:LicenceOuverte2 ;
     lgo:licenceBasis "Légifrance publishes official texts under the Licence Ouverte 2.0 (Etalab); official texts carry no copyright" ;
     lgo:mediaType "text/html" ;
@@ -164,6 +166,7 @@ lg:FR-CONSO-source-3
     a lgo:SourceDocument ;
     dcterms:language "fr"^^xsd:language ;
     lgo:annotatedFile "sources/fr/code-conso/code-conso.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:LicenceOuverte2 ;
     lgo:licenceBasis "Légifrance publishes official texts under the Licence Ouverte 2.0 (Etalab); official texts carry no copyright" ;
     lgo:mediaType "text/html" ;

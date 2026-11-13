@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Prawo prasowe, art. 7(2) and art. 27, written in schemas/law.xsd from the
+  ISAP consolidated text. The words are the Polish legislature's; only the
+  structure is ours. Art. 7(2) defines "prasa" to cover every mass medium
+  created by technical progress that disseminates periodical publications;
+  art. 27 lists the imprint items each edition must show in a visible and
+  customary place. Items 5–7 (print-permission symbol, ISSN, issue numbering)
+  have no vocabulary counterpart for websites and are left untagged.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pl"
+     lga:act="PL-PP" lga:jurisdiction="PL" lga:act-type="Statute"
+     lga:url="https://api.sejm.gov.pl/eli/acts/DU/1984/24/text.html">
+  <meta>
+    <title>Ustawa z dnia 26 stycznia 1984 r. — Prawo prasowe</title>
+    <date>1984-02-04</date>
+  </meta>
+
+  <section num="art. 7" source="press.fragment.html">
+    <paragraph num="2." lga:provision="PL-PP-art7-2" lga:citation="art. 7 ust. 2 Prawa prasowego" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1984/24/text.html" lga:regulates="MediaOwnerDisclosure EditorialResponsibility">W rozumieniu ustawy:
+      <list>
+        <item num="1)">prasa oznacza publikacje periodyczne, które nie tworzą zamkniętej, jednorodnej całości, ukazujące się nie rzadziej niż raz do roku, opatrzone stałym tytułem albo nazwą, numerem bieżącym i datą, a w szczególności: dzienniki i czasopisma, serwisy agencyjne, stałe przekazy teleksowe, biuletyny, programy radiowe i telewizyjne oraz kroniki filmowe; prasą są także wszelkie istniejące i powstające w wyniku postępu technicznego środki masowego przekazywania, w tym także rozgłośnie oraz tele- i radiowęzły zakładowe, upowszechniające publikacje periodyczne za pomocą druku, wizji, fonii lub innej techniki rozpowszechniania; prasa obejmuje również zespoły ludzi i poszczególne osoby zajmujące się działalnością dziennikarską,</item>
+        <item num="2)">dziennikiem jest ogólnoinformacyjny druk periodyczny lub przekaz za pomocą dźwięku oraz dźwięku i obrazu, ukazujący się częściej niż raz w tygodniu,</item>
+        <item num="3)">czasopismem jest druk periodyczny ukazujący się nie częściej niż raz w tygodniu, a nie rzadziej niż raz w roku; przepis ten stosuje się odpowiednio do przekazu za pomocą dźwięku oraz dźwięku i obrazu innego niż określony w pkt 2,</item>
+        <item num="4)">materiałem prasowym jest każdy opublikowany lub przekazany do opublikowania w prasie tekst albo obraz o charakterze informacyjnym, publicystycznym, dokumentalnym lub innym, niezależnie od środków przekazu, rodzaju, formy, przeznaczenia czy autorstwa,</item>
+        <item num="5)">dziennikarzem jest osoba zajmująca się redagowaniem, tworzeniem lub przygotowywaniem materiałów prasowych, pozostająca w stosunku pracy z redakcją albo zajmująca się taką działalnością na rzecz i z upoważnienia redakcji,</item>
+        <item num="6)">redaktorem jest dziennikarz decydujący lub współdecydujący o publikacji materiałów prasowych,</item>
+        <item num="7)">redaktorem naczelnym jest osoba posiadająca uprawnienia do decydowania o całokształcie działalności redakcji,</item>
+        <item num="8)">redakcją jest jednostka organizująca proces przygotowywania (zbierania, oceniania i opracowywania) materiałów do publikacji w prasie.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="art. 27" source="press.fragment.html">
+    <paragraph num="1." lga:provision="PL-PP-art27-1" lga:citation="art. 27 ust. 1 Prawa prasowego" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1984/24/text.html" lga:regulates="EditorialResponsibility MediaOwnerDisclosure" lga:requires="ProviderName GeographicAddress ResponsibleEditor">Na każdym egzemplarzu druków periodycznych, serwisów agencyjnych oraz innych podobnych druków prasowych należy w widocznym i zwyczajowo przyjętym miejscu podać:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress">nazwę i adres wydawcy lub innego właściwego organu,</item>
+        <item num="2)" lga:requires="ResponsibleEditor">adres redakcji oraz imię i nazwisko redaktora naczelnego,</item>
+        <item num="3)">miejsce i datę wydania,</item>
+        <item num="4)">nazwę zakładu wykonującego dany druk prasowy,</item>
+        <item num="5)">symbol udzielającego zgody na publikację, w wypadkach określonych w przepisach o kontroli publikacji i widowisk,</item>
+        <item num="6)">międzynarodowy znak informacyjny,</item>
+        <item num="7)">bieżącą numerację.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2." lga:provision="PL-PP-art27-2" lga:citation="art. 27 ust. 2 Prawa prasowego" lga:url="https://api.sejm.gov.pl/eli/acts/DU/1984/24/text.html" lga:regulates="EditorialResponsibility" lga:requires="ProviderName GeographicAddress ResponsibleEditor">Przepis ust. 1 stosuje się odpowiednio do nagrań radiowych i telewizyjnych oraz kronik filmowych.</paragraph>
+  </section>
+</law>

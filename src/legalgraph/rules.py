@@ -16,21 +16,15 @@ the German rule, one also selling to Italy keeps the EU rule beside it. For a ge
 rule resting on a directive, the national provisions implementing it are named for those places.
 Everything a checklist says points to the obligation and the provisions it comes from.
 
-Scenarios (scenarios/*.yaml) are example businesses with the obligations they must get: the tests
-check the rules against them, and they double as worked examples.
+Scenarios (legalgraph.scenarios) are example businesses with the obligations they must get.
 """
 
 from dataclasses import dataclass, field
-from pathlib import Path
 
-import yaml
 from rdflib import RDF, RDFS, Graph, Literal, URIRef
 from rdflib.term import Node
 
 from legalgraph import ELI, LG, LGO, LGV
-from legalgraph.load import REPO_ROOT
-
-SCENARIOS_DIR = REPO_ROOT / "scenarios"
 
 
 class RulesError(Exception):
@@ -275,34 +269,3 @@ def national(
 def asked(conditions: dict[str, Condition]) -> list[Condition]:
     """The conditions a checklist asks about: those with a question."""
     return sorted((c for c in conditions.values() if c.question), key=lambda c: c.id)
-
-
-@dataclass
-class Scenario:
-    path: Path
-    name: str
-    description: str
-    facts: set[str]
-    expected: set[str]
-    established_in: str | None = None
-    markets: set[str] = field(default_factory=set)
-    # Obligation → the national provisions it must name.
-    national: dict[str, set[str]] = field(default_factory=dict)
-
-
-def load_scenario(path: Path) -> Scenario:
-    config = yaml.safe_load(path.read_text())
-    return Scenario(
-        path=path,
-        name=config["name"],
-        description=config.get("description", ""),
-        facts=set(config.get("facts", [])),
-        expected=set(config.get("obligations", [])),
-        established_in=config.get("established_in"),
-        markets=set(config.get("markets", [])),
-        national={k: set(v) for k, v in (config.get("national") or {}).items()},
-    )
-
-
-def load_scenarios(directory: Path = SCENARIOS_DIR) -> list[Scenario]:
-    return [load_scenario(path) for path in sorted(directory.glob("*.yaml"))]

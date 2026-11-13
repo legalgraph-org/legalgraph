@@ -53,10 +53,12 @@ provisions, quotes, translations, rules (obligations with conditions), court dec
 outcomes, and controlled vocabularies (information items, actions, legal concepts, conditions).
 
 - **Use the existing terms.** Before inventing one, search the vocabularies in
-  [ontology/src/vocab/](ontology/src/vocab): the information item, action or concept you need is
+  [ontology/vocab/](ontology/vocab): the information item, action or concept you need is
   often there under a more general name.
-- **Add a term where one is missing**, in the same pull request: a class or property in
-  `ontology/src/ontology.ttl`, a concept in the matching vocabulary file, with an English label and
+- **Add a term where one is missing**, in the same pull request: a class in
+  `ontology/classes/<ClassName>.ttl` (with the properties whose domain it is; a property without one
+  class as its domain goes in `ontology/properties/<name>.ttl`), a concept in the matching vocabulary
+  file, with an English label and
   a definition that states the law, not our opinion. `legalgraph validate` rejects any `lgo:` or
   `lgv:` term that is not defined, so the data and the model cannot drift apart.
 - **Change the model only with an issue first.** New classes, new properties and new SHACL shapes

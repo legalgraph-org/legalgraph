@@ -1,0 +1,31 @@
+# Ustawa o pozasądowym rozwiązywaniu sporów konsumenckich (Dz.U. 2016 poz.
+# 1823): the Polish ADR act. Art. 31 obliges a trader who has committed to —
+# or is legally required to — use consumer ADR to inform consumers about the
+# competent ADR entity, including at least its website address, accessibly on
+# the trader's own website (if it has one) and in contract templates it uses.
+id: pl/adr
+title: Ustawa z dnia 23 września 2016 r. o pozasądowym rozwiązywaniu sporów konsumenckich (art. 31)
+jurisdiction: PL
+language: pl
+publisher: ISAP, Kancelaria Sejmu (api.sejm.gov.pl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 4 ustawy o prawie autorskim i prawach pokrewnych: normative texts and official documents are not protected by copyright"
+originals:
+  - file: adr.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the ISAP consolidated text: art. 31. Downloaded 2026-11-12."
+    retrieved_on: 2026-11-12
+    sha256: a501e9b18a240f27cf58afd04867a25d1a07ca9d1177ac32e0cbc32ae089a08b
+  - file: adr-32.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the same ISAP consolidated page: art. 32, the trader's after-complaint ADR statement duty (Art. 13(3) transposition; ust. 3 adds a national extra: silence counts as consent). Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: c06b572f5f38ffe640f0dea2ecd27f4c0f4824799637f19fcc9dfe58c47d12d8
+annotated: adr.law.xml

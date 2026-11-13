@@ -1,0 +1,16 @@
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:CA-QC-CPA
+    lgo:amendmentCheck lg:CA-QC-CPA-amendment-check .
+
+lg:CA-QC-CPA-amendment-check
+    a lgo:AmendmentCheck ;
+    lgo:checkedOn "2026-11-13"^^xsd:date ;
+    lgo:sourceUrl "https://www.legisquebec.gouv.qc.ca/fr/document/cs/P-40.1"^^xsd:anyURI ;
+    lgo:lastKnownAmendment "2023, c. 21, a. 7; N.I. 2025-03-24" ;
+    lgo:lastKnownAmendmentDate "2025-10-05"^^xsd:date ;
+    lgo:sourceIsCurrent true ;
+    rdfs:comment "Légis Québec fragment (Wayback capture 2025-11-07): the section's HistoricalNote cites 2006, c. 56, a. 5; 2018, c. 14, a. 11; 2023, c. 21, a. 7; N.I. 2025-03-24; 2023, c. 21, a. 7. legisquebec.gouv.qc.ca is client-side rendered and does not serve the text to plain HTTP clients; the French page was checked through the Wayback Machine."@en .

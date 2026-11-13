@@ -20675,7 +20675,7 @@
 <P1 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/256" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/256" id="section-256">
 <Pnumber><CommentaryRef Ref="key-02f25445e5684d36b45a6f6b5481712f"/>256</Pnumber>
 <P1para>
-<P2 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/256/1" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/256/1" id="section-256-1" lga:provision="GB-DMCC-2024-s256-1" lga:citation="s. 256(1) DMCC Act 2024" lga:url="https://www.legislation.gov.uk/id/ukpga/2024/13/section/256/1" lga:regulates="TermsAndConditions">
+<P2 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/256/1" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/256/1" id="section-256-1" lga:provision="GB-DMCC-2024-s256-1" lga:citation="s. 256(1) DMCC Act 2024" lga:url="https://www.legislation.gov.uk/id/ukpga/2024/13/section/256/1" lga:regulates="TermsAndConditions" lga:requires="SubscriptionTermsDisclosure CancellationInformation">
 <Pnumber>1</Pnumber>
 <P2para>
 <Text>Before a trader enters into a subscription contract with a consumer, the trader must—</Text>
@@ -20833,7 +20833,7 @@
 <P1 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/257" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/257" id="section-257">
 <Pnumber><CommentaryRef Ref="key-9815d9727f45f0a8495f70bb36f3fb06"/>257</Pnumber>
 <P1para>
-<P2 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/257/1" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/257/1" id="section-257-1" lga:provision="GB-DMCC-2024-s257-1" lga:citation="s. 257(1) DMCC Act 2024" lga:url="https://www.legislation.gov.uk/id/ukpga/2024/13/section/257/1" lga:regulates="TermsAndConditions">
+<P2 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/257/1" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/257/1" id="section-257-1" lga:provision="GB-DMCC-2024-s257-1" lga:citation="s. 257(1) DMCC Act 2024" lga:url="https://www.legislation.gov.uk/id/ukpga/2024/13/section/257/1" lga:regulates="TermsAndConditions" lga:requires="PaymentAndDeliveryTerms">
 <Pnumber>1</Pnumber>
 <P2para>
 <Text>Subsections <InternalLink Ref="section-257-2" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/257/2" DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/257/2">(2)</InternalLink> and <InternalLink Ref="section-257-3" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/257/3" DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/257/3">(3)</InternalLink> apply in relation to a subscription contract entered into online.</Text>
@@ -21219,7 +21219,7 @@
 <P1 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/260" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/260" id="section-260">
 <Pnumber><CommentaryRef Ref="key-92cd4c975921377be3a4d2b3e0c487d3"/>260</Pnumber>
 <P1para>
-<P2 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/260/1" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/260/1" id="section-260-1" lga:provision="GB-DMCC-2024-s260-1" lga:citation="s. 260(1) DMCC Act 2024" lga:url="https://www.legislation.gov.uk/id/ukpga/2024/13/section/260/1" lga:regulates="TermsAndConditions">
+<P2 DocumentURI="http://www.legislation.gov.uk/ukpga/2024/13/section/260/1" IdURI="http://www.legislation.gov.uk/id/ukpga/2024/13/section/260/1" id="section-260-1" lga:provision="GB-DMCC-2024-s260-1" lga:citation="s. 260(1) DMCC Act 2024" lga:url="https://www.legislation.gov.uk/id/ukpga/2024/13/section/260/1" lga:regulates="TermsAndConditions" lga:requires="CancellationMechanism OnlineCancellation">
 <Pnumber>1</Pnumber>
 <P2para>
 <Text>A trader must make arrangements to enable a consumer to exercise a right to bring a subscription contract to an end—</Text>

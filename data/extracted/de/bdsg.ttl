@@ -46,6 +46,7 @@ lg:DE-BDSG-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/bdsg/BJNR209710017.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Ersetzt G 204-3 v. 20.12.1990 I 2954, 2955 (BDSG 1990)"@de , "Zuletzt geändert durch Art. 3 G v. 12.5.2026 I Nr. 139"@de , "Änderung durch Art. 3 G v. 3.7.2026 I Nr. 199 textlich nachgewiesen, dokumentarisch noch nicht abschließend bearbeitet"@de ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: laws, ordinances and official decrees are official works without copyright" ;

@@ -55,6 +55,7 @@ lg:EU-2023-1795-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/dpf-adequacy/L_2023231EN.01011801.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Authentic Official Journal text, OJ L 231, 20.9.2023."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -67,6 +68,7 @@ lg:EU-2023-1795-source
 lg:EU-2023-1795-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2023-1795-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

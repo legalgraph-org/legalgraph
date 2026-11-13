@@ -1,0 +1,27 @@
+# Lov 20. juni 2025 nr. 106 om Foretaksregisteret (foretaksregisterloven):
+# § 7-2 is the Norwegian company-law website identification duty — every
+# enterprise's nettsider, brev og forretningsdokumenter must carry
+# organisasjonsnummer and foretaksnavn/navn (ledd 1; MVA marking only on
+# salgsdokumenter); AS/ASA must also show register, organisasjonsform,
+# hovedkontor and any under-avvikling status (ledd 2). In force 1 January
+# 2026 (res. 20 juni 2025 nr. 1119); it replaced the 1985 register act.
+# Lovdata serves the section page; the #PARAGRAF_7-2 fragment is kept.
+id: no/foretaksregisterlov
+title: Lov om Foretaksregisteret (foretaksregisterloven, lov 2025-06-20-106, § 7-2)
+jurisdiction: "NO"
+language: "no"
+publisher: Lovdata, lovdata.no
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 14 åndsverkloven: laws and regulations are not protected by copyright"
+originals:
+  - file: freg-7-2.fragment.html
+    url: "https://lovdata.no/dokument/NL/lov/2025-06-20-106/%C2%A77-2"
+    fetch: html-fragment
+    selector: "#PARAGRAF_7-2"
+    media_type: text/html
+    notes:
+      - "In force 1 January 2026 under res. 20. juni 2025 nr. 1119; the act repealed lov 21. juni 1985 nr. 78."
+    retrieved_on: 2026-11-12
+    sha256: def9272f82fc8634a9568d5075796899428d64a4c4f2b1dd4028542d4ec7aa96
+annotated: freg.law.xml

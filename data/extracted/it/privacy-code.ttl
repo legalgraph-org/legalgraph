@@ -86,6 +86,7 @@ lg:IT-196-2003-source
     a lgo:SourceDocument ;
     dcterms:language "it"^^xsd:language ;
     lgo:annotatedFile "sources/it/privacy-code/privacy-code.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Normattiva's consolidated text of Art. 122, updated for the amendments by D.Lgs. 101/2018 (commas 1, 2 and 2-bis). The text contains editorial placeholder markup '((…))' where the comma's wording refers to the Garante's criteria."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Art. 5 Legge 633/1941: the texts of official acts of the State are not protected by copyright" ;

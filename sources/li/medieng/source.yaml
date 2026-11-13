@@ -1,0 +1,26 @@
+# Mediengesetz (MedienG), LGBl. 2005 Nr. 250, LR-Nr. 449.1, Art. 11 and
+# Art. 12: the Liechtenstein media imprint and ownership-disclosure duty.
+# "Medium" covers electronic media, so news websites are covered: Art. 11
+# requires the owner's name/firm and editorial seat (plus address,
+# electronic contact data, publisher details and regulators for periodical
+# media); Art. 12 requires the ownership/editorial-line data to be kept
+# constantly easily and directly accessible in the medium itself.
+id: li/medieng
+title: Mediengesetz (MedienG) vom 19. Oktober 2005 (Art. 11, 12)
+jurisdiction: LI
+language: de
+publisher: Liechtensteinische Landesverwaltung, Lilex (gesetze.li)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 5 URG (LGBl. 1999 Nr. 160): laws, ordinances and other official instruments are not protected by copyright"
+originals:
+  - file: medieng.pdf
+    page: https://www.gesetze.li/konso/2005250000
+    url: https://www.gesetze.li/konso/pdf/2005250000?version=18
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated text, Fassung vom 01.11.2026 (version 18, latest), Lilex systematic number 449.1. Art. 11 is on pages 10-11 and Art. 12 on pages 11-12 of the PDF."
+    retrieved_on: 2026-11-13
+    sha256: 4c64fdf4af79132d2b909f0b661e91de870d50dffb06ef84092786abd696b4e5
+annotated: medieng.law.xml

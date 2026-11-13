@@ -30,6 +30,241 @@ lg:ES-LSSI-art10-1
     lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[2]" ;
     lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
 
+lg:ES-LSSI-art10-1-a
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.a) LSSI" ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:EmailAddress , lgv:GeographicAddress , lgv:ProviderName , lgv:RapidContact ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[3]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-a-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-a ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[3]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "a) Su nombre o denominación social; su residencia o domicilio o, en su defecto, la dirección de uno de sus establecimientos permanentes en España; su dirección de correo electrónico y cualquier otro dato que permita establecer con él una comunicación directa y efectiva."@es .
+
+lg:ES-LSSI-art10-1-b
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.b) LSSI" ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[4]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-b-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-b ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[4]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "b) Los datos de su inscripción en el Registro Mercantil en el que, en su caso, se encuentren inscritos o de aquel otro registro público en el que lo estuvieran para la adquisición de personalidad jurídica o a los solos efectos de publicidad."@es .
+
+lg:ES-LSSI-art10-1-c
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.c) LSSI" ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[5]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-c-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-c ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[5]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "c) En el caso de que su actividad estuviese sujeta a un régimen de autorización administrativa previa, los datos relativos a dicha autorización y los identificativos del órgano competente encargado de su supervisión."@es .
+
+lg:ES-LSSI-art10-1-d
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.d) LSSI" ;
+    lgo:implements lg:EU-2000-31-art5-1 ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[6]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-d-1
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.d) 1.º LSSI" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[7]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-d-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-d-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[7]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "1.º Los datos del Colegio profesional al que, en su caso, pertenezca y número de colegiado."@es .
+
+lg:ES-LSSI-art10-1-d-2
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.d) 2.º LSSI" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalTitle ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[8]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-d-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-d-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[8]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "2.º El título académico oficial o profesional con el que cuente."@es .
+
+lg:ES-LSSI-art10-1-d-3
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.d) 3.º LSSI" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalTitle ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[9]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-d-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-d-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[9]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "3.º El Estado de la Unión Europea o del Espacio Económico Europeo en el que se expidió dicho título y, en su caso, la correspondiente homologación o reconocimiento."@es .
+
+lg:ES-LSSI-art10-1-d-4
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.d) 4.º LSSI" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[10]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-d-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-d-4 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[10]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "4.º Las normas profesionales aplicables al ejercicio de su profesión y los medios a través de los cuales se puedan conocer, incluidos los electrónicos."@es .
+
+lg:ES-LSSI-art10-1-d-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-d ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[6]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "d) Si ejerce una profesión regulada deberá indicar:"@es .
+
+lg:ES-LSSI-art10-1-e
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.e) LSSI" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:TaxId ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[11]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-e-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-e ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[11]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "e) El número de identificación fiscal que le corresponda."@es .
+
+lg:ES-LSSI-art10-1-f
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.f) LSSI" ;
+    lgo:implements lg:EU-2000-31-art5-2 ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:TotalPrice ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[12]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-f-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-f ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[12]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "f) Cuando el servicio de la sociedad de la información haga referencia a precios, se facilitará información clara y exacta sobre el precio del producto o servicio, indicando si incluye o no los impuestos aplicables y, en su caso, sobre los gastos de envío."@es .
+
+lg:ES-LSSI-art10-1-g
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-LSSI ;
+    lgo:citation "Artículo 10.1.g) LSSI" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:CodesOfConduct ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[13]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI .
+
+lg:ES-LSSI-art10-1-g-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:ES-LSSI-art10-1-g ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:ES-LSSI-source ;
+    lgo:sourceElement "/response/data[1]/texto[1]/bloque[19]/version[4]/p[13]" ;
+    lgo:sourceUrl "https://www.boe.es/eli/es/l/2002/07/11/34/con#a10"^^xsd:anyURI ;
+    lgo:text "g) Los códigos de conducta a los que, en su caso, esté adherido y la manera de consultarlos electrónicamente."@es .
+
 lg:ES-LSSI-art10-1-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
@@ -105,6 +340,7 @@ lg:ES-LSSI-source
     a lgo:SourceDocument ;
     dcterms:language "es"^^xsd:language ;
     lgo:annotatedFile "sources/es/lssi/BOE-A-2002-13758.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text from the BOE open-data API, update timestamp 2025-12-18. Each article carries its version history inside <version> elements; annotations mark the version in force."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Art. 13 Ley de Propiedad Intelectual: legal and regulatory provisions are not the object of intellectual property" ;

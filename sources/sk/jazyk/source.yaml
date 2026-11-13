@@ -1,0 +1,28 @@
+# Zákon Národnej rady Slovenskej republiky č. 270/1995 Z. z. o štátnom
+# jazyku Slovenskej republiky, § 8: the Slovak state-language duties that
+# reach websites — (1) consumer information (product content labelling,
+# instructions, warranty terms, other consumer information) must be in the
+# state language within the scope of the special regulations; (5) in
+# proceedings before public bodies contracts may also exist in another
+# official EU language, but the Slovak version prevails on conflict;
+# (6) signs, advertisements and notices intended to inform the public must
+# be in the state language first; (7) exceptions (trade name, trade mark,
+# registered names, names and surnames, established foreign expressions).
+id: sk/jazyk
+title: Zákon Národnej rady Slovenskej republiky č. 270/1995 Z. z. o štátnom jazyku Slovenskej republiky (§ 8)
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: jazyk-8.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/1995/270/20220801.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the static.slov-lex.sk version mirror (text in force 1 August 2022): div paragraf-8, § 8 in full. Downloaded 2026-11-13."
+    retrieved_on: 2026-11-13
+    sha256: 600a372521999155e7fc3cfd02e3d7ecb8ca304fd0f4faca27ddb8640486748e
+annotated: jazyk.law.xml

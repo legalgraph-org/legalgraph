@@ -130,6 +130,7 @@ lg:UA-3153-source
     a lgo:SourceDocument ;
     dcterms:language "uk"^^xsd:language ;
     lgo:annotatedFile "sources/ua/consumer-rights/consumer-rights.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Ukrainian copyright law: official documents (laws, decrees, regulations) are not objects of copyright" ;
     lgo:mediaType "text/html" ;

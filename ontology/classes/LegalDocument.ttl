@@ -1,0 +1,27 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:jurisdiction a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "jurisdiction"@en ;
+    rdfs:comment "The jurisdiction that enacted the act, or whose court or authority issued the decision or guidance."@en ;
+    rdfs:domain lgo:LegalDocument ;
+    rdfs:range lgo:Jurisdiction .
+
+lgo:actType a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:label "act type"@en ;
+    rdfs:comment "Kind of document, from the act-type scheme (directive, regulation, statute, judgment, guidelines ...)."@en ;
+    rdfs:domain lgo:LegalDocument ;
+    rdfs:range skos:Concept .
+
+lgo:shortName a owl:DatatypeProperty ;
+    rdfs:label "short name"@en ;
+    rdfs:comment "The abbreviation or short title the act is cited by (DDG, LCEN, LSSI)."@en ;
+    rdfs:domain lgo:LegalDocument ;
+    rdfs:range xsd:string .
+
+lgo:LegalDocument a owl:Class ;
+    rdfs:label "Legal document"@en ;
+    rdfs:comment "A document provisions are quoted from: legislation, a court decision, an authority decision or guidance. Only published sources: the graph holds no readings of its own."@en .

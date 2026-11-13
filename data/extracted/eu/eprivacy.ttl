@@ -181,6 +181,7 @@ lg:EU-2002-58-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/eprivacy/CL2002L0058EN0020010.0001.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Consolidated text as of 19 December 2009, prepared by the Publications Office as a documentation tool. The authentic text is Directive 2002/58/EC as published in the Official Journal (OJ L 201, 31.7.2002) and its amending acts; Article 5(3) as replaced by Directive 2009/136/EC (OJ L 337, 18.12.2009)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;
@@ -193,6 +194,7 @@ lg:EU-2002-58-source
 lg:EU-2002-58-source-de
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:EU-2002-58-source ;
     lgo:legalStatus "Konsolidierte Fassung (documentation tool, not the authentic text)."@en ;
     lgo:licence lgv:ReuseWithAttribution ;

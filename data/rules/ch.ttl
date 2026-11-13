@@ -5,6 +5,20 @@
 
 # Switzerland, read from data/extracted/ch/dsg.ttl (Data Protection Act). Draft until a lawyer reviews it.
 
+# --- Provider identification (UWG Art. 3 Abs. 1 lit. s) --------------------------------------
+
+lg:CH-R-provider-identification a lgo:Obligation ;
+    rdfs:label "Provider identification: name, address and e-mail"@en ;
+    rdfs:comment "Offering goods, works or services online without clear and complete details of identity and contact address, including an e-mail address, is unfair competition (Art. 3 Abs. 1 lit. s UWG). The UWG follows the market where the offer is made, so it reaches foreign sellers too."@en ;
+    lgo:establishedBy lg:CH-UWG-art3-1-s ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:CompetesOnTheSwissMarket , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress ;
+    lgo:reviewStatus lgv:Draft .
+
 lg:CH-R-privacy-information a lgo:Obligation ;
     rdfs:label "Privacy information: controller, purposes, recipients (Swiss DSG)"@en ;
     rdfs:comment "Applies to anyone processing data of people in Switzerland, wherever established. The Swiss minimum is shorter than the GDPR's; a privacy policy written for the GDPR usually covers it, if it names the countries data goes to."@en ;

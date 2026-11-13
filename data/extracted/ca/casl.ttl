@@ -118,6 +118,7 @@ lg:CA-CASL-s6-2
     eli:is_part_of lg:CA-CASL ;
     lgo:citation "s. 6(2) CASL" ;
     lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:RapidContact , lgv:UnsubscribeMechanism ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:CA-CASL-source ;
     lgo:sourceElement "/Statute/Body[1]/Section[6]/Subsection[2]" ;
@@ -148,6 +149,7 @@ lg:CA-CASL-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/ca/casl/E-1.6.en.annotated.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Reproduction of Federal Law Order (SI/97-5): federal enactments may be reproduced without charge or permission, if reproduced accurately and not presented as an official version" ;
     lgo:mediaType "application/xml" ;
@@ -159,6 +161,7 @@ lg:CA-CASL-source
 lg:CA-CASL-source-en
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
     lgo:languageVersionOf lg:CA-CASL-source ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Reproduction of Federal Law Order (SI/97-5): federal enactments may be reproduced without charge or permission, if reproduced accurately and not presented as an official version" ;

@@ -1,0 +1,17 @@
+name: Cypriot limited company with a company website
+description: >
+  A limited company in the Cyprus Registrar of Companies with a VAT ID and a website presenting its
+  services. Section 8(1) of Law 156(I)/2004 adds telephone and telefax numbers to the contact
+  details.
+established_in: CY
+facts:
+  - CommercialDigitalService
+  - LegalPerson
+  - LimitedLiabilityCompany
+  - RegisteredInPublicRegister
+  - HasVatId
+obligations:
+  - CY-R-impressum
+  - CY-R-impressum-register
+  - CY-R-impressum-vat
+  - CY-R-company-website

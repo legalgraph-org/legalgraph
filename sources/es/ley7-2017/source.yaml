@@ -1,0 +1,26 @@
+# Ley 7/2017, de 2 de noviembre, transposing the ADR Directive 2013/11/EU:
+# art. 40 is the trader information duty — a trader adhered to or bound to use
+# an accredited ADR entity must inform consumers, naming the entity and its
+# website, clearly and accessibly on the trader's own website and in general
+# contract terms (or other means if it has neither); art. 40(3) is the
+# durable-medium pointer after a failed complaint and art. 40(4) the EU ODR
+# platform link for online sellers.
+id: es/ley7-2017
+title: Ley 7/2017 (art. 40)
+jurisdiction: ES
+language: es
+publisher: BOE (Agencia Estatal Boletín Oficial del Estado)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 13 Ley de Propiedad Intelectual: legal and regulatory texts are not protected by copyright"
+originals:
+  - file: ley40.fragment.html
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12659"
+    fetch: html-fragment
+    selector: "#a4"
+    media_type: text/html
+    notes:
+      - "Consolidated text, last update published 03/01/2025. The BOE block id #a4 addresses art. 40 in the consolidated document."
+    retrieved_on: 2026-11-13
+    sha256: 17f8e236d963ba18bf6be169637cb42f5b4224e411dd63557bccfa18d2a0794b
+annotated: ley7.law.xml

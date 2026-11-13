@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Companies Act 2014, section 151, written in schemas/law.xsd from the
+  irishstatutebook.ie section page. The words are the Oireachtas's; only the
+  structure is ours. Subsection (4) is the website duty: a company that has a
+  website must display the subsection (2) particulars prominently and
+  accessibly, and any stated capital must be the issued paid-up capital.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="IE-CA-2014" lga:jurisdiction="IE" lga:act-type="Statute"
+     lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html">
+  <meta>
+    <title>Companies Act 2014</title>
+    <date>2014-12-23</date>
+  </meta>
+
+  <section num="Section 151" title="Particulars to be shown on all business letters of company" source="ie-151.fragment.html">
+    <paragraph num="(1)" lga:provision="IE-CA-2014-s151-1" lga:citation="section 151(1) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:regulates="ProviderIdentification">Subject to subsection (5) , a company shall, in all business letters on or in which the company's name appears and which are sent by the company to any person, state in legible characters in relation to every director of the company the following particulars:
+      <list>
+        <item num="(a)">his or her present forename, or the initials thereof, and present surname;</item>
+        <item num="(b)">any former forename and surnames of him or her; and</item>
+        <item num="(c)">his or her nationality, if not Irish.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="IE-CA-2014-s151-2" lga:citation="section 151(2) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1">A company shall further have the following particulars on all its business letters and order forms:
+      <list>
+        <item num="(a)" lga:requires="ProviderName LegalForm">the name and legal form of the company;</item>
+        <item num="(b)" lga:requires="RegisterEntry">the place of registration of the company and the number under which it is registered; and</item>
+        <item num="(c)" lga:requires="GeographicAddress">the address of its registered office.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(3)" lga:provision="IE-CA-2014-s151-3" lga:citation="section 151(3) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:regulates="ProviderIdentification" lga:requires="ShareCapital">If on any business letters or order forms of a company there is reference to the share capital of the company, the company shall ensure that the reference is not stated otherwise than as a reference to the issued share capital of the company that is paid up.</paragraph>
+    <paragraph num="(4)" lga:provision="IE-CA-2014-s151-4" lga:citation="section 151(4) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName LegalForm RegisterEntry GeographicAddress">Where a company has a website, it shall display in a prominent and easily accessible place on that website the particulars referred to in subsection (2)(a) to (c) and if there is reference in such a website to the share capital of the company—
+      <list>
+        <item num="(a)" lga:requires="ShareCapital">the same requirement under subsection (3) applies to such a reference as it applies to such a reference on business letters and order forms; and</item>
+        <item num="(b)" lga:requires="ShareCapital">the reference shall be displayed in a prominent and easily accessible place on the website.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(5)" lga:provision="IE-CA-2014-s151-5" lga:citation="section 151(5) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:regulates="ProviderIdentification">If special circumstances exist which render it, in the opinion of the Minister, expedient that such an exemption should be granted, the Minister may, subject to such conditions as he or she may think fit to impose and specifies in the exemption, grant, in writing, an exemption from the obligations imposed by subsection (1) .</paragraph>
+    <paragraph num="(6)" lga:provision="IE-CA-2014-s151-6" lga:citation="section 151(6) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:penalises="IE-CA-2014-s151-2 IE-CA-2014-s151-4">If a company makes default in complying with this section, the company and any officer of it who is in default shall be guilty of a category 4 offence.</paragraph>
+    <paragraph num="(7)" lga:provision="IE-CA-2014-s151-7" lga:citation="section 151(7) Companies Act 2014" lga:url="https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html" lga:regulates="ProviderIdentification">For the purposes of this section—
+      <list>
+        <item num="(a)">“director” includes any person in accordance with whose directions or instructions the directors of the company are accustomed to act, and “officer” shall be read accordingly;</item>
+        <item num="(b)">“initials” includes a recognised abbreviation of a forename; and</item>
+        <item num="(c)">section 149 (12) shall apply as it applies for the purposes of section 149 .</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

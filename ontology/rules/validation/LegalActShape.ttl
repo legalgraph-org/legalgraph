@@ -1,0 +1,55 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lgs:  <https://legalgraph.org/shapes#> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+lgs:LegalActShape a sh:NodeShape ;
+    sh:targetClass lgo:LegalAct ;
+    sh:property [
+        sh:path lgo:jurisdiction ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class lgo:Jurisdiction ;
+        sh:message "A legal act needs exactly one jurisdiction." ;
+    ] , [
+        sh:path eli:title ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:message "A legal act needs a language-tagged eli:title." ;
+    ] , [
+        sh:path lgo:actType ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:Directive lgv:Regulation lgv:Statute lgv:Code lgv:Decree lgv:Ordinance lgv:StatutoryInstrument lgv:StateTreaty lgv:Proposal lgv:Decision ) ;
+        sh:message "lgo:actType must be a concept of the act-type scheme (vocab/act-types.ttl)." ;
+    ] , [
+        sh:path lgo:sourceUrl ;
+        sh:minCount 1 ;
+        sh:datatype xsd:anyURI ;
+        sh:message "A legal act needs a source URL (xsd:anyURI)." ;
+    ] , [
+        sh:path lgo:reviewStatus ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( lgv:SourceChecked lgv:Draft ) ;
+    ] , [
+        sh:path eli:date_document ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path eli:first_date_entry_in_force ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path eli:date_no_longer_in_force ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+    ] , [
+        sh:path eli:transposes ;
+        sh:class lgo:LegalAct ;
+    ] , [
+        sh:path lgo:amendmentCheck ;
+        sh:maxCount 1 ;
+        sh:class lgo:AmendmentCheck ;
+        sh:message "A legal act has at most one amendment check, its latest." ;
+    ] .

@@ -1,0 +1,26 @@
+# Informācijas sabiedrības pakalpojumu likums (Information Society Services Law):
+# Latvia's transposition of the e-Commerce Directive. 4. pants is the
+# provider-information duty. likumi.lv, run by the official gazette publisher
+# Latvijas Vēstnesis, serves the consolidated text with each pants in its own
+# <div izd-pam="…">; the fragment holding 4. pants is kept and the text is
+# transcribed in schemas/law.xsd, checked word for word against it.
+id: lv/issl
+title: Informācijas sabiedrības pakalpojumu likums (4. pants)
+jurisdiction: LV
+language: lv
+publisher: Latvijas Vēstnesis (likumi.lv)
+kind: authored-xml
+licence: official-work
+licence_basis: "Autortiesību likums art. 6: normatīvo aktu teksti nav autortiesību objekts — official texts of normative acts are not subject to copyright"
+originals:
+  - file: issl-4.fragment.html
+    url: "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"
+    fetch: html-fragment
+    selector: "div[izd-pam='4p']"
+    text_ignore: [".labojumu_pamats", ".panta-doc-npk", ".info-icon-wrapper"]
+    media_type: text/html
+    notes:
+      - "Consolidated text in force (redakcija of 21.06.2024)."
+    retrieved_on: 2026-11-12
+    sha256: 906d09acae72c94f10a6050d4d4b586d950bf7aa98b3dc4727dc2d504b2ce551
+annotated: issl.law.xml

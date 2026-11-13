@@ -141,6 +141,7 @@ lg:EU-COM-2025-837-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
     lgo:annotatedFile "sources/eu/digital-omnibus/digital-omnibus.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:legalStatus "Commission proposal of 19 November 2025, not law. As of late October 2026: the Council adopted its negotiating position around 21 October 2026, trilogues had not begun, and reports indicate the Council's text deletes the proposed Articles 88a and 88b, keeping the cookie rule in Article 5(3) of the ePrivacy Directive. Sources: eudigitalpolicy.eu, euinternetpolicy.wordpress.com (23 October 2026), praxikon.com."@en ;
     lgo:licence lgv:ReuseWithAttribution ;
     lgo:licenceBasis "Commission Decision 2011/833/EU and the EUR-Lex legal notice: reuse is authorised provided the source is acknowledged" ;

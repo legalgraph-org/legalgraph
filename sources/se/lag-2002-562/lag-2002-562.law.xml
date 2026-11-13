@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lag (2002:562) om elektronisk handel, 8 §, written in schemas/law.xsd from the
+  Riksdag's consolidated SFS text. The words are the riksdag's; only the structure
+  is ours. Sweden asks for the organisationsnummer rather than a named register,
+  adds nothing beyond the Directive's floor, and gives the availability sentence
+  its own unnumbered paragraph. The last paragraph is the broadcasting carve-out
+  added by lag 2025:989.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sv"
+     lga:act="SE-SFS-2002-562" lga:jurisdiction="SE" lga:act-type="Statute"
+     lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/">
+  <meta>
+    <title>Lag (2002:562) om elektronisk handel och andra informationssamhällets tjänster</title>
+    <date>2002-06-13</date>
+  </meta>
+
+  <section num="8 §" title="Allmänna informationskrav" source="se-8.fragment.html">
+    <paragraph num="" lga:provision="SE-SFS-2002-562-s8-1" lga:citation="8 § st. 1 lag (2002:562)" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1" lga:requires="ProviderName GeographicAddress EmailAddress RapidContact">När en tjänsteleverantör tillhandahåller informationssamhällets tjänster ska leverantören ge information om sitt namn, sin adress i etableringsstaten och sin e-postadress samt i förekommande fall
+      <list>
+        <item num="1." lga:requires="RegisterEntry">organisationsnummer,</item>
+        <item num="2." lga:requires="VatId">registreringsnummer för mervärdesskatt, och</item>
+        <item num="3." lga:requires="SupervisoryAuthority">behörig tillståndsmyndighet.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="SE-SFS-2002-562-s8-2" lga:citation="8 § st. 2 lag (2002:562)" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Om en tjänsteleverantör bedriver reglerad yrkesverksamhet ska informationen även omfatta uppgifter om
+      <list>
+        <item num="1." lga:requires="ProfessionalTitle">yrkestitel och den stat där denna erhållits,</item>
+        <item num="2." lga:requires="ProfessionalBody">den yrkesorganisation eller liknande där tjänsteleverantören är registrerad, och</item>
+        <item num="3." lga:requires="ProfessionalRules">de bestämmelser som är tillämpliga på yrkesverksamheten och sättet att få tillgång till dem.</item>
+      </list>
+    </paragraph>
+    <paragraph num="" lga:provision="SE-SFS-2002-562-s8-3" lga:citation="8 § st. 3 lag (2002:562)" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Informationen ska finnas tillgänglig för tjänstemottagare och myndigheter på ett enkelt, direkt och stadigvarande sätt.</paragraph>
+    <paragraph num="" lga:provision="SE-SFS-2002-562-s8-4" lga:citation="8 § st. 4 lag (2002:562)" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2002562-om-elektronisk-handel-och-andra_sfs-2002-562/" lga:regulates="ProviderIdentification">I fråga om leverantörer av beställ-tv och leverantörer som tillhandahåller beställradio och har ett uppdrag enligt lagen (2025:986) om public service gäller även 2 kap. 1 § radio- och tv-lagen (2010:696). Lag (2025:989) .</paragraph>
+  </section>
+</law>

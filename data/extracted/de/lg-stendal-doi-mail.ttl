@@ -85,6 +85,7 @@ lg:DE-LGST-2021-0512-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/de/lg-stendal-doi-mail/lg-stendal-doi-mail.law.xml" ;
+    lgo:authenticity lgv:Official ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei; the text as published in the Landesrecht Sachsen-Anhalt database" ;
     lgo:mediaType "text/html" ;

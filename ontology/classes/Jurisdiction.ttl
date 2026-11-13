@@ -1,0 +1,34 @@
+@prefix lgo:     <https://legalgraph.org/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+lgo:Jurisdiction a owl:Class ;
+    rdfs:label "Jurisdiction"@en ;
+    rdfs:comment "A territory or legal order whose bodies enact law: a country, or a supranational organisation such as the EU."@en .
+
+lgo:isoCode a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:label "ISO code"@en ;
+    rdfs:comment "ISO 3166-1 alpha-2 code of a country (XK for Kosovo, user-assigned), or a common short code for an organisation (EU, EEA)."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range xsd:string .
+
+lgo:officialLanguage a owl:DatatypeProperty ;
+    rdfs:label "official language"@en ;
+    rdfs:comment "BCP 47 code of a language in which the jurisdiction publishes binding law text."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range xsd:language .
+
+lgo:customaryNoticeName a owl:DatatypeProperty ;
+    rdfs:label "customary notice name"@en ;
+    rdfs:comment "What the provider identification notice is usually called in the jurisdiction (Impressum, mentions légales, aviso legal)."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range rdf:langString .
+
+lgo:within a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:label "within"@en ;
+    rdfs:comment "The jurisdiction lies within the other one, or is the same: a country within the organisations it is a member of, a subdivision within its country. Inferred by rules/reasoning/WithinJurisdictionRule.ttl from lgo:memberOf and lgo:subdivisionOf; never stated in the data."@en ;
+    rdfs:domain lgo:Jurisdiction ;
+    rdfs:range lgo:Jurisdiction ;
+    lgo:inferred true .

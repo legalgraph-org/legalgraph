@@ -13,6 +13,7 @@ facts:
   - EngagesProcessors
   - CommercialDigitalService
   - LegalPerson
+  - LimitedLiabilityCompany
   - RegisteredInPublicRegister
   - HasVatId
   - SellsToConsumers
@@ -26,6 +27,7 @@ obligations:
   - EU-R-service-provider-information-register
   - EU-R-service-provider-information-vat
   - AT-R-pre-contract-information
+  - AT-R-company-website
   - EU-R-privacy-information
   - EU-R-privacy-information-consent
   - EU-R-lawful-basis
@@ -50,6 +52,7 @@ obligations:
   - DE-R-accessibility
   - DE-R-total-price
   - AT-R-media-owner-disclosure
+  - AT-R-adr-information-after-complaint
   - EU-R-access-request
   - EU-R-breach-notification
   - EU-R-data-security

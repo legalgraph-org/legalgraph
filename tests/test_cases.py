@@ -9,25 +9,27 @@ from rdflib import RDF, Graph, Literal
 from legalgraph import LG, LGO, LGV
 from legalgraph import sources as law_sources
 from legalgraph.load import DEFAULT_DATA_DIR, DEFAULT_ONTOLOGY_DIR, Sources, load_all
+from legalgraph.reasoning import load_rules
 from legalgraph.validate import shacl_violations
 
 
 @pytest.fixture(scope="module")
-def graphs() -> tuple[Graph, Graph, Graph]:
-    data, ontology, shapes, errors = load_all(Sources(data_dir=DEFAULT_DATA_DIR, ontology_dir=DEFAULT_ONTOLOGY_DIR))
+def graphs() -> tuple[Graph, Graph, Graph, Graph]:
+    sources = Sources(data_dir=DEFAULT_DATA_DIR, ontology_dir=DEFAULT_ONTOLOGY_DIR)
+    data, ontology, shapes, errors = load_all(sources)
     assert not errors
-    return data, ontology, shapes
+    return data, ontology, shapes, load_rules(sources)
 
 
-def violations_after(graphs: tuple[Graph, Graph, Graph], turtle: str) -> list[str]:
-    data, ontology, shapes = graphs
+def violations_after(graphs: tuple[Graph, Graph, Graph, Graph], turtle: str) -> list[str]:
+    data, ontology, shapes, rules = graphs
     changed = Graph()
     for triple in data:
         changed.add(triple)
     for prefix, namespace in data.namespaces():
         changed.bind(prefix, namespace)
     changed.parse(data=turtle, format="turtle")
-    return shacl_violations(changed, ontology, shapes)
+    return shacl_violations(changed, ontology, shapes, rules)
 
 
 PREFIXES = """
@@ -40,8 +42,8 @@ PREFIXES = """
 """
 
 
-def test_penalty_provisions_point_to_what_they_penalise(graphs: tuple[Graph, Graph, Graph]) -> None:
-    data, _, _ = graphs
+def test_penalty_provisions_point_to_what_they_penalise(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
+    data, *_ = graphs
     assert (LG["DE-TDDDG-s28-2"], LGO.penalises, LG["DE-TDDDG-s25-1"]) in data
     assert (LG["DE-DDG-s33-6-3"], LGO.penalises, LG["DE-DDG-s5-1"]) in data
     assert (LG["EU-2016-679-art83-5"], LGO.penalises, LG["EU-2016-679-art7-3"]) in data
@@ -50,15 +52,15 @@ def test_penalty_provisions_point_to_what_they_penalise(graphs: tuple[Graph, Gra
     assert "dreihunderttausend Euro" in fine
 
 
-def test_an_outcome_is_stated_in_a_quoted_point_of_its_decision(graphs: tuple[Graph, Graph, Graph]) -> None:
-    data, _, _ = graphs
+def test_an_outcome_is_stated_in_a_quoted_point_of_its_decision(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
+    data, *_ = graphs
     outcome = LG["DE-OLGK-2024-0119-outcome-1"]
     assert (LG["DE-OLGK-2024-0119"], LGO.hasOutcome, outcome) in data
     point = data.value(outcome, LGO.statedIn)
     assert "250.000,00 €" in str(data.value(LG[f"{point.removeprefix(str(LG))}-q1"], LGO.text))
 
 
-def test_an_outcome_without_its_statement_is_caught(graphs: tuple[Graph, Graph, Graph]) -> None:
+def test_an_outcome_without_its_statement_is_caught(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
     errors = violations_after(
         graphs,
         PREFIXES
@@ -72,7 +74,7 @@ def test_an_outcome_without_its_statement_is_caught(graphs: tuple[Graph, Graph, 
     assert any("test-outcome" in e and "currency" in e for e in errors), errors
 
 
-def test_an_outcome_stated_in_another_decision_is_caught(graphs: tuple[Graph, Graph, Graph]) -> None:
+def test_an_outcome_stated_in_another_decision_is_caught(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
     errors = violations_after(
         graphs,
         PREFIXES
@@ -85,19 +87,19 @@ def test_an_outcome_stated_in_another_decision_is_caught(graphs: tuple[Graph, Gr
     assert any("test-outcome" in e and "point of the decision" in e for e in errors), errors
 
 
-def test_only_decisions_illustrate_rules(graphs: tuple[Graph, Graph, Graph]) -> None:
+def test_only_decisions_illustrate_rules(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
     errors = violations_after(graphs, PREFIXES + "lg:EU-2016-679 lgo:illustrates lg:EU-R-cookie-consent .")
     assert any("EU-2016-679" in e for e in errors), errors
 
 
-def test_read_under_needs_the_continuing_provision(graphs: tuple[Graph, Graph, Graph]) -> None:
-    data, _, _ = graphs
+def test_read_under_needs_the_continuing_provision(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
+    data, *_ = graphs
     assert (LG["EU-2016-679-art4-7"], LGO.continues, LG["EU-1995-46-art2-d"]) in data
     errors = violations_after(graphs, PREFIXES + "lg:CJEU-C-673-17-ruling-1 lgo:readUnder lg:EU-1995-46-art2-d .")
     assert any("CJEU-C-673-17-ruling-1" in e and "continues" in e for e in errors), errors
 
 
-def test_a_long_excerpt_of_someone_elses_work_is_caught(graphs: tuple[Graph, Graph, Graph]) -> None:
+def test_a_long_excerpt_of_someone_elses_work_is_caught(graphs: tuple[Graph, Graph, Graph, Graph]) -> None:
     long = "word " * 80
     errors = violations_after(
         graphs,

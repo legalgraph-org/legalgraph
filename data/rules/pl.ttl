@@ -1,0 +1,92 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Poland: provider information under art. 5 u.s.d.e. (ustawa o świadczeniu usług drogą
+# elektroniczną, Dz.U. 2002 nr 144 poz. 1204), the transposition of Article 5 of the
+# e-Commerce Directive. The Polish catalogue is narrower: no register or VAT line,
+# licence and profession items where they apply. So the EU register and VAT rules still
+# reach a Polish business — Poland implemented those in the Commercial Companies Code
+# (art. 206 KSH: KRS number, NIP and REGON on the website), which belongs to the
+# company-law layer (L3) rather than a refinement here.
+
+lg:PL-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and electronic addresses"@en ;
+    rdfs:comment "Every service provider gives its electronic addresses and its name or business name with seat and address, clearly, unambiguously and directly accessible through the ICT system the recipient uses (art. 5 ust. 1-2 u.s.d.e.)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:PL-ASDE-art5-1 , lg:PL-ASDE-art5-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:PL-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: licence and licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:PL-ASDE-art5-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:CommercialDigitalService , lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:PL-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:PL-ASDE-art5-5 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:CommercialDigitalService , lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:RegisterEntry , lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:PL-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: KRS, NIP and share capital"@en ;
+    rdfs:comment "A sp. z o.o., S.A. or P.S.A. gives on its website its firm name, seat and address, the registry court and KRS number, its NIP, and its share capital (with the paid-up capital for an S.A.) (art. 206 § 1, 374 § 1 and 300(61) § 1 KSH). The share capital is required, not only where it is mentioned."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:PL-KSH-art206-1 , lg:PL-KSH-art374-1 , lg:PL-KSH-art300-61-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry , lgv:TaxId , lgv:ShareCapital ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer dispute resolution (Directive 2013/11 Art. 13) ---
+
+lg:PL-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Art. 31 of the act on out-of-court resolution of consumer disputes: at least the website address of the competent entity, on the trader's website and in its standard consumer contracts."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:PL-ADR-art31-1 , lg:PL-ADR-art31-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:PL-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Art. 32 of the act on out-of-court resolution of consumer disputes: on paper or another durable medium, whether the trader agrees or refuses to take part, and with an agreement the competent entity. Silence counts as agreement (ust. 3)."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:PL-ADR-art32-1 , lg:PL-ADR-art32-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

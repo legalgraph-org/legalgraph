@@ -15,3 +15,20 @@ lg:NO-EHL a lgo:LegalAct ;
     lgo:sourceUrl "https://lovdata.no/dokument/NL/lov/2003-05-23-35"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "The Norwegian e-Commerce Directive transposition. § 8 is the provider-information duty and § 11 the pre-order disclosure; both follow the directive's Article 5 and Article 10 lists with a narrower professional-detail duty than the ECD minimum."@en .
+
+lg:NO-FREG
+    lgo:shortName "foretaksregisterloven" ;
+    eli:transposes lg:EU-2017-1132 ;
+    rdfs:seeAlso <https://lovdata.no/dokument/NL/lov/2025-06-20-106> ;
+    rdfs:comment "In force 1 January 2026, replacing the 1985 register act. § 7-2 is the website identification duty: org.nr and name on nettsider, brev og forretningsdokumenter for every enterprise; AS/ASA add register, organisasjonsform, hovedkontor and under-avvikling status."@en .
+
+lg:NO-MFL
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://lovdata.no/dokument/NL/lov/2009-01-09-2> ;
+    rdfs:comment "§ 10 a is the trader ADR information duty: Norway implemented the ADR directive (EEA annex XIX) in the Marketing Act, not a standalone act. Første ledd covers the website/terms duty; annet ledd is the after-complaint duty on a durable medium."@en .
+
+lg:NO-MEDIE
+    lgo:shortName "medieansvarsloven" ;
+    eli:id_local "Lov 2020-05-29 nr. 59" ;
+    rdfs:seeAlso <https://lovdata.no/dokument/NL/lov/2020-05-29-59> ;
+    rdfs:comment "§ 5 is the editorial-media disclosure duty: the editor must ensure the medium states who the editor is and that media users can reach the medium's name, address, email and other direct-contact details. Covers editor-controlled journalistic media, including online outlets."@en .
