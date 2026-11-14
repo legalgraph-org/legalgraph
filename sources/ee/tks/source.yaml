@@ -1,0 +1,64 @@
+# Tarbijakaitseseadus (Consumer Protection Act, RT I 31.12.2015, 1): § 26 is
+# the trader-information duty — contact details for complaints (lõige 1),
+# notification of the recognised ADR body incl. its website address and
+# procedure rules (lõige 2), display of that information on the trader's
+# website and in its general terms where it has one (lõige 3), and the
+# post-refusal durable-medium notice (lõige 4). Lõige 5 (ODR platform
+# notice) is repealed in the current consolidation and lõige 6 is a savings
+# clause; neither is sourced. riigiteataja.ee is a JavaScript application;
+# tools/render renders the consolidated act and waits for the § 26 text
+# (make render-install once).
+id: ee/tks
+title: Tarbijakaitseseadus (TKS) (§ 26)
+jurisdiction: EE
+language: et
+publisher: Riigi Teataja, the official gazette
+kind: authored-xml
+licence: official-work
+licence_basis: "Estonian legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: tks-s26-lg1.html
+    url: "https://www.riigiteataja.ee/akt/103072026028"
+    fetch: rendered
+    wait: "text=Kaupleja teave tarbijale"
+    selector: "#para26lg1"
+    text_ignore: [".kaaludBtn", ".hover-item-menu", ".muutmismarge"]
+    media_type: text/html
+    notes:
+      - "Consolidated Estonian text of § 26 lõige 1 as riigiteataja.ee renders it, version in force 31.08.2025–30.08.2026 (amendments through RT I 03.07.2026, 19). lõiked 2–4 are further originals; lõige 5 is repealed and lõige 6 a savings clause. The '[RT I …]' amendment marks are editorial and ignored."
+    retrieved_on: 2026-11-14
+    sha256: f06b71f7143460f4d71e48189f4ea9ea9e974220b4cf99932af0a7db349a21c7
+  - file: tks-s26-lg2.html
+    url: "https://www.riigiteataja.ee/akt/103072026028"
+    fetch: rendered
+    wait: "text=Kaupleja teave tarbijale"
+    selector: "#para26lg2"
+    text_ignore: [".kaaludBtn", ".hover-item-menu", ".muutmismarge"]
+    media_type: text/html
+    notes:
+      - "Consolidated Estonian text of § 26 lõige 2 (ADR-body notification)."
+    retrieved_on: 2026-11-14
+    sha256: 81b607c1ab02920ae8f3bfbbf47004490e783f29759a1374c8bffb3db3285856
+  - file: tks-s26-lg3.html
+    url: "https://www.riigiteataja.ee/akt/103072026028"
+    fetch: rendered
+    wait: "text=Kaupleja teave tarbijale"
+    selector: "#para26lg3"
+    text_ignore: [".kaaludBtn", ".hover-item-menu", ".muutmismarge"]
+    media_type: text/html
+    notes:
+      - "Consolidated Estonian text of § 26 lõige 3 (website and general-terms display)."
+    retrieved_on: 2026-11-14
+    sha256: cb612c6d56091e31bbe21e9a7bfdaaf60c8fe9f8a8e666ae7b1b6df99f96ac92
+  - file: tks-s26-lg4.html
+    url: "https://www.riigiteataja.ee/akt/103072026028"
+    fetch: rendered
+    wait: "text=Kaupleja teave tarbijale"
+    selector: "#para26lg4"
+    text_ignore: [".kaaludBtn", ".hover-item-menu", ".muutmismarge"]
+    media_type: text/html
+    notes:
+      - "Consolidated Estonian text of § 26 lõige 4 (post-refusal durable-medium notice)."
+    retrieved_on: 2026-11-14
+    sha256: 63cebc7515cfb3a5e9e79df356913fe64aeeb45ad03e7deadf2485e29e01ace9
+annotated: tks.law.xml

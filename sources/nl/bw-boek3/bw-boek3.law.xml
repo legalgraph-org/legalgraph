@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Burgerlijk Wetboek, Boek 3, art. 3:15d, written in schemas/law.xsd from the
+  article page wetten.overheid.nl renders. The words are the Dutch
+  legislature's; only the structure is ours. Lid 1 is the provider-information
+  catalogue — the transposition of e-Commerce Directive 2000/31/EC Art. 5(1),
+  including sub f, the BTW identification number; lid 2 is the price clause
+  (Art. 5(2)). Lid 3 (the definition of an information-society service) carries
+  no disclosure and is omitted. Dutch is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="nl"
+     lga:act="NL-BW3" lga:jurisdiction="NL" lga:act-type="Code"
+     lga:url="https://wetten.overheid.nl/BWBR0005291/2024-11-08/0/Boek3/Titeldeel1/Afdeling1A/Artikel15d">
+  <meta>
+    <title>Burgerlijk Wetboek, Boek 3</title>
+    <date>1992-01-01</date>
+  </meta>
+
+  <section num="Artikel 3:15d" source="bw-boek3-art15d.html">
+    <paragraph num="1" lga:provision="NL-BW3-art15d-1" lga:citation="Artikel 3:15d lid 1 BW" lga:url="https://wetten.overheid.nl/BWBR0005291/2024-11-08/0/Boek3/Titeldeel1/Afdeling1A/Artikel15d" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Degene die een dienst van de informatiemaatschappij verleent, maakt de volgende gegevens gemakkelijk, rechtstreeks en permanent toegankelijk voor degenen die gebruik maken van deze dienst, in het bijzonder om informatie te verkrijgen of toegankelijk te maken:
+      <list>
+        <item num="a." lga:requires="ProviderName GeographicAddress">zijn identiteit en adres van vestiging;</item>
+        <item num="b." lga:requires="RapidContact EmailAddress">gegevens die een snel contact en een rechtstreekse en effectieve communicatie met hem mogelijk maken, met inbegrip van zijn elektronische postadres;</item>
+        <item num="c." lga:requires="RegisterEntry">voor zover hij in een handelsregister of een vergelijkbaar openbaar register is ingeschreven: het register waar hij is ingeschreven en zijn inschrijvingsnummer, of een vergelijkbaar middel ter identificatie in dat register;</item>
+        <item num="d." lga:requires="SupervisoryAuthority">voor zover een activiteit aan een vergunningsstelsel is onderworpen: de gegevens over de bevoegde toezichthoudende autoriteit;</item>
+        <item num="e." lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">voor zover hij een gereglementeerd beroep uitoefent:
+          <list>
+            <item num="–">de beroepsvereniging of -organisatie waarbij hij is ingeschreven,</item>
+            <item num="–">de beroepstitel en de lidstaat van de Europese Unie of andere staat die partij is bij de Overeenkomst betreffende de Europese Economische Ruimte waar die is toegekend,</item>
+            <item num="–">een verwijzing naar de beroepsregels die in Nederland van toepassing zijn en de wijze van toegang daartoe;</item>
+          </list>
+        </item>
+        <item num="f." lga:requires="VatId">voor zover hij een aan de BTW onderworpen activiteit uitoefent: het btw-identificatienummer zoals bedoeld in artikel 2a, eerste lid, onder g, van de Wet op de Omzetbelasting 1968 .</item>
+      </list>
+    </paragraph>
+    <paragraph num="2" lga:provision="NL-BW3-art15d-2" lga:citation="Artikel 3:15d lid 2 BW" lga:url="https://wetten.overheid.nl/BWBR0005291/2024-11-08/0/Boek3/Titeldeel1/Afdeling1A/Artikel15d" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">De dienstverlener geeft aanduidingen van prijzen in een dienst van de informatiemaatschappij duidelijk en ondubbelzinnig aan, met de uitdrukkelijke vermelding of, en zo mogelijk welke, belasting en leveringskosten daarbij inbegrepen zijn.</paragraph>
+  </section>
+</law>

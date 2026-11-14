@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lov om tjenester i informationssamfundet (E-handelsloven), lov nr 227 af
+  22/04/2002, §§ 7–8, written in schemas/law.xsd from the consolidated text
+  retsinformation.dk renders. The words are the Danish legislature's; only the
+  structure is ours. § 7 is the general information duty — the transposition of
+  e-Commerce Directive 2000/31/EC Art. 5(1): provider identity, establishment
+  address, rapid direct effective contact, CVR number, approval schemes and the
+  supervisory authority, and regulated-profession data (stk. 2). Stk. 3 is the
+  permanent-access clause. § 8 is the price-transparency clause (Art. 5(2)).
+  Danish is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="da"
+     lga:act="DK-227-2002" lga:jurisdiction="DK" lga:act-type="Statute"
+     lga:url="https://www.retsinformation.dk/eli/lta/2002/227">
+  <meta>
+    <title>Lov om tjenester i informationssamfundet</title>
+    <date>2002-04-22</date>
+  </meta>
+
+  <section num="§ 7" source="e-handelsloven.retsinformation.html">
+    <paragraph num="§ 7." lga:provision="DK-227-2002-s7-1" lga:citation="§ 7 lov om tjenester i informationssamfundet" lga:url="https://www.retsinformation.dk/eli/lta/2002/227" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">En tjenesteyder skal give oplysning om
+      <list>
+        <item num="1)" lga:requires="ProviderName">tjenesteyderens navn,</item>
+        <item num="2)" lga:requires="GeographicAddress">den fysiske adresse, hvor tjenesteyderen er etableret,</item>
+        <item num="3)" lga:requires="EmailAddress RapidContact GeographicAddress">e-post-adresse og eventuelt postadresse og andre oplysninger om tjenesteyderen, som gør det muligt at kontakte og kommunikere med tjenesteyderen,</item>
+        <item num="4)" lga:requires="RegisterEntry">CVR-nummeret, hvis tjenesteyderen er registreret i Det Centrale Virksomhedsregister,</item>
+        <item num="5)" lga:requires="SupervisoryAuthority">tilhørsforhold til eventuelle godkendelsesordninger, herunder den relevante tilsynsmyndighed.</item>
+      </list>
+    </paragraph>
+    <paragraph num="Stk. 2." lga:provision="DK-227-2002-s7-2" lga:citation="§ 7, stk. 2, lov om tjenester i informationssamfundet" lga:url="https://www.retsinformation.dk/eli/lta/2002/227" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">En tjenesteyder, der udøver et lovreguleret erhverv, skal desuden give
+      <list>
+        <item num="1)" lga:requires="ProfessionalBody">oplysning om enhver brancheorganisation eller lignende, hvor tjenesteyderen er registreret,</item>
+        <item num="2)" lga:requires="ProfessionalTitle">oplysning om erhvervsbetegnelsen og den medlemsstat, hvor den er givet, og</item>
+        <item num="3)" lga:requires="ProfessionalRules">en henvisning til de faglige regler, der gælder for det lovregulerede erhverv, og hvorledes der kan opnås adgang til disse.</item>
+      </list>
+    </paragraph>
+    <paragraph num="Stk. 3." lga:provision="DK-227-2002-s7-3" lga:citation="§ 7, stk. 3, lov om tjenester i informationssamfundet" lga:url="https://www.retsinformation.dk/eli/lta/2002/227" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Der skal for tjenestemodtageren og myndighederne være en let tilgængelig og vedvarende adgang til de i stk. 1 og 2 nævnte oplysninger.</paragraph>
+  </section>
+  <section num="§ 8" source="e-handelsloven.retsinformation.html">
+    <paragraph num="§ 8." lga:provision="DK-227-2002-s8-1" lga:citation="§ 8 lov om tjenester i informationssamfundet" lga:url="https://www.retsinformation.dk/eli/lta/2002/227" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Når der gives oplysning om pris for en informationssamfundstjeneste, skal prisen angives klart og tydeligt. Det skal fremgå, hvorvidt prisen er inklusive afgifter og leveringsomkostninger.</paragraph>
+  </section>
+</law>

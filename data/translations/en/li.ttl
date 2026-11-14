@@ -10,6 +10,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:LI-ASTG-art18-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4ecedf0c8779bf72fd26d17b68431fa433b4aad6c49c85a76be73e7bd819fa12" ;
+    lgo:text "1) An entrepreneur shall inform consumers of the ADR body or bodies covering it, if it has committed or is obliged to involve those bodies in resolving disputes with consumers. This information shall include details of the website address of the ADR body or bodies concerned."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-ASTG-art18-1-q1 .
+
+lg:LI-ASTG-art18-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c9c1564f66fc491977374f259dbde8854f6b921d6bcf3823a88856c3885d42bc" ;
+    lgo:text "2) The entrepreneur shall state the information referred to in paragraph 1, if available, on its website and, where applicable, in its general terms and conditions in a clear, comprehensible and easily accessible manner."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-ASTG-art18-2-q1 .
+
+lg:LI-ASTG-art18-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ac53414ca82232d1435796545208aba03451276079efaa94b8febc9f79632cb5" ;
+    lgo:text "3) If the entrepreneur and the consumer cannot reach an agreement in a dispute, the entrepreneur shall point the consumer on paper or another durable medium to the ADR body or bodies competent for it. The entrepreneur shall also state whether it will take part in an ADR procedure."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-ASTG-art18-3-q1 .
+
 lg:LI-ECG-art5-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

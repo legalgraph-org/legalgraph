@@ -6,7 +6,8 @@
  *   bun tools/render/render.ts <url> [--wait <css selector>] [--timeout <ms>]
  *
  * Headless Chromium (Playwright, pinned in package.json; `bun run install-browser` once per host).
- * It waits for the network to settle and, with --wait, for the element holding the law text.
+ * With --wait it waits for the element holding the law text; without, for the network to settle.
+ * Portals that keep connections open (analytics, long polling) never settle, so name the element.
  */
 import { chromium } from "playwright";
 
@@ -23,13 +24,13 @@ const timeout = Number(option("--timeout") ?? 60_000);
 const browser = await chromium.launch();
 try {
   const page = await browser.newPage({ userAgent: "legalgraph (+https://legalgraph.org) Chromium" });
-  const response = await page.goto(url, { waitUntil: "networkidle", timeout });
+  const wait = option("--wait");
+  const response = await page.goto(url, { waitUntil: wait ? "domcontentloaded" : "networkidle", timeout });
   // A portal's refusal (a WAF's 403 page) is not the law text: fail rather than store it.
   if (response && !response.ok()) {
     console.error(`${url} answered HTTP ${response.status()}`);
     process.exitCode = 1;
   } else {
-    const wait = option("--wait");
     if (wait) await page.waitForSelector(wait, { timeout });
     process.stdout.write(await page.content());
   }

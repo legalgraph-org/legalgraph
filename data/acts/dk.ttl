@@ -1,0 +1,19 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Denmark: §§ 7–8 of the Act on services in the information society
+# (E-handelsloven, lov nr 227 af 22/04/2002) — the general information duty and
+# the price-transparency clause (ECD Art. 5 transposition). Sourced from the
+# Retsinformation rendered text.
+
+lg:DK-227-2002 a lgo:LegalAct ;
+    eli:title "Lov om tjenester i informationssamfundet"@da , "Act on services in the information society"@en ;
+    lgo:shortName "E-handelsloven" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:DK ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:reviewStatus lgv:SourceChecked .

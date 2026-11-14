@@ -17,7 +17,7 @@ lg:PT-LEI-144-2015
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:PT ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:PT-LEI-144-2015-source ;
+    lgo:sourceDocument lg:PT-LEI-144-2015-source , lg:PT-LEI-144-2015-source-official ;
     lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&tabela=leis"^^xsd:anyURI .
 
 lg:PT-LEI-144-2015-art18-1
@@ -68,7 +68,7 @@ lg:PT-LEI-144-2015-source
     a lgo:SourceDocument ;
     dcterms:language "pt"^^xsd:language ;
     lgo:annotatedFile "sources/pt/lei-144/lei144.law.xml" ;
-    lgo:authenticity lgv:NotVerified ;
+    lgo:authenticity lgv:VerifiedAgainstOfficial ;
     lgo:legalStatus "Fragment cut from the pgdl consolidated page: art. 18 (as amended by DL 102/2017). Downloaded 2026-11-13."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Art. 5º Código do Direito de Autor e dos Direitos Conexos: official texts are not protected" ;
@@ -76,4 +76,18 @@ lg:PT-LEI-144-2015-source
     lgo:repositoryPath "sources/pt/lei-144/lei18.fragment.html" ;
     lgo:retrievedOn "2026-11-13"^^xsd:date ;
     lgo:sha256 "d034e26c2012c7151fdae6c513c4088499e81cdf1f688d0b821e263f0b626ae8" ;
-    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&tabela=leis"^^xsd:anyURI .
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&tabela=leis"^^xsd:anyURI ;
+    lgo:verifiedAgainst lg:PT-LEI-144-2015-source-official .
+
+lg:PT-LEI-144-2015-source-official
+    a lgo:SourceDocument ;
+    dcterms:language "pt"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "The official consolidated text the mirror's words are verified against: diariodarepublica.pt (Diário da República Eletrónico), reached through the ELI URI data.dre.pt/eli/lei/144/2015/p/cons/pt/html. The portal is an OutSystems application; tools/render renders it (make render-install once)."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "Art. 5º Código do Direito de Autor e dos Direitos Conexos: official texts are not protected" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/pt/lei-144/lei18.dre.html" ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sha256 "3e5818db451a31509da188b109b2d79b96553a52bdcaaa7c36f57478580a6422" ;
+    lgo:sourceUrl "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2015-119475005"^^xsd:anyURI .

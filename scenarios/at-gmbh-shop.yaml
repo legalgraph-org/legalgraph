@@ -61,6 +61,8 @@ obligations:
   - EU-R-portability
   - EU-R-rectification
   - EU-R-restriction
+  - EU-R-processing-on-instructions
+  - EU-R-supervisory-authority-cooperation
 national:
   EU-R-service-provider-information: [AT-ECG-s5-1]
   EU-R-service-provider-information-register: [AT-ECG-s5-1]

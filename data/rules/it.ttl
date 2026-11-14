@@ -1,0 +1,101 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Italy: provider information under art. 7 of the D.Lgs. 70/2003, the transposition of Article 5 of the
+# e-Commerce Directive. Beyond the Directive it asks for the registration number with the professional order
+# and, for an authorised or licensed activity, the activities allowed and the contract particulars.
+
+lg:IT-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and e-mail"@en ;
+    rdfs:comment "Name or company name, domicile or registered office, and details for rapid, direct and effective contact including e-mail, easily, directly and permanently accessible, and kept up to date (art. 7, comma 1, lett. a)–c) and comma 2, D.Lgs. 70/2003)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:IT-DLGS-70-2003-art7-1, lg:IT-DLGS-70-2003-art7-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "The registration number in the REA or the companies register (art. 7, comma 1, lett. d))."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:IT-DLGS-70-2003-art7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    rdfs:comment "The partita IVA or an equivalent identification number (art. 7, comma 1, lett. g))."@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:IT-DLGS-70-2003-art7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly, lgv:CommercialDigitalService, lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    rdfs:comment "For an activity subject to concession, licence or authorisation, its particulars and the competent supervisory authority (lett. e)), and the activities allowed to the consumer with the contract particulars (lett. i))."@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:IT-DLGS-70-2003-art7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority, lgv:LicenceDetails ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "The professional order or similar body with the registration number, the professional title and the member state that granted it, and the professional rules and codes of conduct of the state of establishment with how to consult them (art. 7, comma 1, lett. f))."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:IT-DLGS-70-2003-art7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer ADR (Directive 2013/11/EU Art. 13), Codice del consumo art. 141-sexies ---
+
+lg:IT-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Art. 141-sexies, commi 1–2, Codice del consumo: a trader that has committed to ADR names the ADR entity or entities, with their website address, clearly and accessibly on its website, where it has one, and in its general terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:IT-DLGS-206-2005-art141sexies-1 , lg:IT-DLGS-206-2005-art141sexies-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:IT-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Art. 141-sexies, comma 3, Codice del consumo: when a complaint made directly to the trader is not settled, the trader names the competent ADR entity and says whether it will use it, on paper or another durable medium."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:IT-DLGS-206-2005-art141sexies-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:IT ;
+    lgo:appliesWhen lgv:EstablishedInItaly , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

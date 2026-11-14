@@ -1,0 +1,45 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:LU-LOI-2000-08-14-art5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "57802da60e004fcea31969cf830b229ea223f56690c563bd224e825a98009904" ;
+    lgo:text """(1) The provider of information society services shall allow recipients of the services and the competent authorities easy, direct and permanent access to the following information:
+a) its name;
+b) the geographic address where it is established;
+c) contact details enabling it to be contacted rapidly and to communicate directly and effectively with it, including its electronic-mail address;
+d) where applicable, its registration number in the trade register, its VAT identification number and the authorisation it holds to pursue its activity, together with the contact details of the authority that granted that authorisation."""@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LU-LOI-2000-08-14-art5-1-q1 .
+
+lg:LU-LOI-2000-08-14-art5-1b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "242cf3349fd82261dad33f265aa2e4b1621a911bf4afd1cb74dd9e03056061c0" ;
+    lgo:text "With regard to regulated professions, the information to be provided shall also include the service provider's professional title and the Member State in which it was awarded, the details of the professional body to which it belongs, and a reference to the applicable professional rules and the means of accessing them."@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LU-LOI-2000-08-14-art5-1b-q1 .
+
+lg:LU-LOI-2000-08-14-art5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "20debc32536b17d2bcddb128c3dbb37cd9bc12bff953bd29ec2ec34cb818fb32" ;
+    lgo:text "(2) Where information society services mention prices and conditions of sale or performance of the service, these must be indicated in a precise and unequivocal manner. It must also be indicated whether all taxes and additional charges are included in the price. These provisions are without prejudice to consumer protection legislation."@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LU-LOI-2000-08-14-art5-2-q1 .

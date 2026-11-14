@@ -34,6 +34,6 @@
         <item num="–" lga:requires="TaxId">porezni broj ako je davatelj usluga obveznik plaćanja poreza na dodanu vrijednost.</item>
       </list>
     </paragraph>
-    <paragraph num="(2)" lga:provision="HR-ZET-art6-2" lga:citation="članak 6 stavak 2 ZET" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Ako davatelj usluga prikazuje cijene, one moraju biti jasno i nedvosmisleno naznačene, a posebno se mora naznačiti jesu li u prikazane cijene uključeni troškovi dostave, ostali manipulativni troškovi, porez i drugi troškovi koji na bilo koji način utječu na prikazanu cijenu.</paragraph>
+    <paragraph num="(2)" lga:provision="HR-ZET-art6-2" lga:citation="članak 6 stavak 2 ZET" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2003_10_173_2504.html" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Ako davatelj usluga prikazuje cijene, one moraju biti jasno i nedvosmisleno naznačene, a posebno se mora naznačiti jesu li u prikazane cijene uključeni troškovi dostave, ostali manipulativni troškovi, porez i drugi troškovi koji na bilo koji način utječu na prikazanu cijenu.</paragraph>
   </section>
 </law>

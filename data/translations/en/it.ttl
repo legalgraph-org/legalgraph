@@ -39,3 +39,65 @@ lg:IT-196-2003-art122-2bis-q1-en
     lgo:translatedOn "2026-11-02"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:IT-196-2003-art122-2bis-q1 .
+
+lg:IT-DLGS-206-2005-art141sexies-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "39ed7c7fa30b8443647c444c9f4b9a2f45de641a15c5578d7c3075692a0233a9" ;
+    lgo:text "1. Professionals established in Italy who have undertaken to have recourse to one or more ADR bodies to resolve disputes with consumers are obliged to inform the latter of the body or bodies competent to resolve disputes with consumers. Such information includes the website address of the relevant ADR body or bodies."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-DLGS-206-2005-art141sexies-1-q1 .
+
+lg:IT-DLGS-206-2005-art141sexies-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f4156999c626bb2a094048c71465b65ed503934c66c18b24a646c31b0f86bf30" ;
+    lgo:text "2. The information referred to in paragraph 1 must be provided clearly, understandably and in an easily accessible manner on the professional's website, where one exists, and in the general terms and conditions applicable to the sales or service contract concluded between the professional and the consumer."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-DLGS-206-2005-art141sexies-2-q1 .
+
+lg:IT-DLGS-206-2005-art141sexies-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "555312d977ee01e4f8423a1eec12d7796ca05f05da12f460b9e6448fdc47b769" ;
+    lgo:text "3. Where a dispute between a consumer and a professional established in the respective territory cannot be resolved following a complaint submitted directly by the consumer to the professional, the latter provides the consumer with the information referred to in paragraph 1, specifying whether it intends to have recourse to the relevant ADR bodies to resolve the dispute. That information is provided on paper or on another durable medium."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-DLGS-206-2005-art141sexies-3-q1 .
+
+lg:IT-DLGS-70-2003-art7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6ea0ab4043dca61781c659a0d84c51d3c39c9510a700f5284dfd595debda36f0" ;
+    lgo:text """1. The provider, in addition to the information obligations provided for specific goods and services, must make the following information easily accessible, directly and permanently to the recipients of the service and to the competent authorities:
+a) its name, denomination or company name;
+b) its domicile or registered office;
+c) the details enabling rapid contact with the provider and direct and effective communication with it, including its e-mail address;
+d) the number of registration in the register of economic activities, REA, or in the register of companies;
+e) the identifying elements and the details of the competent supervisory authority, where an activity is subject to a concession, licence or authorisation;
+f) as regards regulated professions:
+1) the professional order or analogous institution with which the provider is registered and the registration number;
+2) the professional title and the Member State in which it was awarded;
+3) the reference to the professional rules and any codes of conduct in force in the Member State of establishment and the manner of consulting them;
+g) the VAT number or other identification number considered equivalent in the Member State, where the provider carries on an activity subject to tax;
+h) a clear and unambiguous indication of the prices and tariffs of the different information-society services provided, highlighting whether they include taxes, delivery costs and other additional elements to be specified;
+i) an indication of the activities permitted to the consumer and recipient of the service and the particulars of the contract, where an activity is subject to authorisation or the object of the service is provided on the basis of a licence-for-use contract."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-DLGS-70-2003-art7-1-q1 .
+
+lg:IT-DLGS-70-2003-art7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0453c5830560654e012e62065686e624853a40da86a0636f1fa6c11bf246fcce" ;
+    lgo:text "2. The provider must keep the information referred to in paragraph 1 up to date."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-DLGS-70-2003-art7-2-q1 .

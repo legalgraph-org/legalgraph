@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Loi du 14 août 2000 relative au commerce électronique, art. 5, written in
+  schemas/law.xsd from the consolidated text legilux.public.lu renders. The
+  words are the Luxembourg legislature's; only the structure is ours. Art. 5 is
+  the general information duty — the transposition of e-Commerce Directive
+  2000/31/EC Art. 5: easy, direct and permanent access to provider identity,
+  address, rapid contact, register and fiscal identifiers, authorisation data,
+  regulated-profession information, and price transparency. The unnumbered
+  alinéa on regulated professions is provision -1b. French is the authentic
+  language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="LU-LOI-2000-08-14" lga:jurisdiction="LU" lga:act-type="Statute"
+     lga:url="https://legilux.public.lu/eli/etat/leg/loi/2000/08/14/n8/consolide/20260510">
+  <meta>
+    <title>Loi du 14 août 2000 relative au commerce électronique</title>
+    <date>2000-08-14</date>
+  </meta>
+
+  <section num="art. 5" source="loi-2000-08-14.legilux.html">
+    <paragraph num="(1)" lga:provision="LU-LOI-2000-08-14-art5-1" lga:citation="art. 5, alinéa 1, loi du 14 août 2000" lga:url="https://legilux.public.lu/eli/etat/leg/loi/2000/08/14/n8/consolide/20260510" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Le prestataire de services de la société de l’information doit permettre aux destinataires des services et aux autorités compétentes un accès facile, direct et permanent aux informations suivantes:
+      <list>
+        <item num="a)" lga:requires="ProviderName">son nom;</item>
+        <item num="b)" lga:requires="GeographicAddress">l’adresse géographique où il est établi;</item>
+        <item num="c)" lga:requires="RapidContact EmailAddress">les coordonnées permettant de le contacter rapidement et de communiquer directement et effectivement avec lui, y compris son adresse de courrier électronique;</item>
+        <item num="d)" lga:requires="RegisterEntry VatId SupervisoryAuthority">le cas échéant, son numéro d'immatriculation au registre de commerce, son numéro d'identification à la TVA et l'autorisation dont il bénéficie pour exercer son activité ainsi que les coordonnées de l'autorité ayant donné cette autorisation.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="LU-LOI-2000-08-14-art5-1b" lga:citation="art. 5, alinéa non numéroté, loi du 14 août 2000" lga:url="https://legilux.public.lu/eli/etat/leg/loi/2000/08/14/n8/consolide/20260510" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">En ce qui concerne les professions réglementées, les informations à fournir comprennent aussi le titre professionnel du prestataire et l'Etat membre dans lequel il a été octroyé, les références de l'ordre professionnel auquel il adhère ainsi qu'une référence aux règles professionnelles applicables et aux moyens d'y avoir accès.</paragraph>
+    <paragraph num="(2)" lga:provision="LU-LOI-2000-08-14-art5-2" lga:citation="art. 5, alinéa 2, loi du 14 août 2000" lga:url="https://legilux.public.lu/eli/etat/leg/loi/2000/08/14/n8/consolide/20260510" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Lorsque les services de la société de l’information font mention de prix et conditions de vente ou de réalisation de la prestation, ces derniers doivent être indiqués de manière précise et non équivoque. Il doit aussi être indiqué si toutes les taxes et frais additionnels sont compris dans le prix. Ces dispositions s’appliquent sans préjudice de la législation sur la protection des consommateurs.</paragraph>
+  </section>
+</law>

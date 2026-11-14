@@ -70,6 +70,12 @@ const labels = {
   textAsOf: t("text as of {date}", { date: "{date}" }),
   officialSource: t("official source"),
   openProvision: t("open the provision"),
+  // The search (lib/graph-search.ts).
+  matches: t("Matches: {count}", { count: "{count}" }),
+  matchesShown: t("Matches: {count}, showing the first {shown}", { count: "{count}", shown: "{shown}" }),
+  noMatch: t("Nothing found for “{query}”", { query: "{query}" }),
+  alsoCalled: t("also called {name}", { name: "{name}" }),
+  loadFailed: t("The graph could not be loaded. Reload the page to try again."),
   // How a translation was made and whether a person has checked it (graph-text/*.json), as shown.
   values: {
     "Machine translation": t("Machine translation"),
@@ -84,6 +90,7 @@ const labels = {
 <Layout
   t={t}
   page="graph"
+  wide
   title={t("Graph")}
   header={{ title: t("Graph"), description: t("Countries, laws, provisions, rules and what they require, as one network.") }}
 >
@@ -104,7 +111,7 @@ const labels = {
   <!-- Two rows: the legend and the search, then the view and its panel, so both pairs line up. Every
        block has its own cell, so hiding the search (folded) leaves the view where it is. -->
   <!-- data-panel="folded" hides the right column (search, buttons, details) and widens the view. -->
-  <div id="graph-layout" data-panel="open" data-labels={JSON.stringify(labels)} class="group/layout grid gap-x-4 gap-y-3 transition-[grid-template-columns] duration-300 ease-out motion-reduce:transition-none lg:grid-cols-[minmax(0,1fr)_22rem] data-[panel=folded]:lg:grid-cols-[minmax(0,1fr)_3rem]">
+  <div id="graph-layout" data-panel="open" data-labels={JSON.stringify(labels)} class="group/layout grid gap-x-4 gap-y-3 transition-[grid-template-columns] duration-300 ease-out motion-reduce:transition-none lg:grid-cols-[minmax(0,1fr)_22rem] 2xl:grid-cols-[minmax(0,1fr)_26rem] data-[panel=folded]:lg:grid-cols-[minmax(0,1fr)_3rem]">
     <div class="flex flex-wrap items-center gap-x-4 gap-y-2 self-center text-sm lg:col-start-1 lg:row-start-1">
       <div class="flex flex-wrap gap-x-4 gap-y-2">
         {
@@ -133,14 +140,19 @@ const labels = {
         </button>
         <button id="graph-reset" type="button" class="control py-1.5">{t("Start over")}</button>
       </div>
+      <!-- A combobox: the matches open under the box, over the details panel. -->
       <div class="relative">
       <label for="graph-search" class="sr-only">{t("Find a node")}</label>
       <input
         id="graph-search"
-        list="graph-nodes"
         type="text"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="graph-results"
         autocomplete="off"
-        placeholder={t("Find a node, e.g. § 5 Abs. 1 DDG")}
+        spellcheck="false"
+        placeholder={t("Search: a law, an abbreviation (DSGVO), a provision, a rule…")}
         class="control h-10 w-full rounded-lg py-1.5 pr-9 pl-3"
       />
       <button
@@ -154,17 +166,20 @@ const labels = {
           <path stroke-linecap="round" stroke-width="2" d="M6 6l12 12M18 6 6 18"></path>
         </svg>
       </button>
-      <datalist id="graph-nodes"></datalist>
+      <div id="graph-results-box" hidden class="card absolute inset-x-0 top-full z-30 mt-1 overflow-hidden p-0 text-sm shadow-lg">
+        <p id="graph-results-count" aria-live="polite" class="border-b border-border px-3 py-1.5 text-xs text-muted-foreground"></p>
+        <ul id="graph-results" role="listbox" aria-label={t("Matching nodes")} class="max-h-[60vh] overflow-auto py-1"></ul>
+      </div>
       </div>
     </div>
     <div class="relative lg:col-start-1 lg:row-start-2">
-      <div id="graph" class="card h-[70vh] p-0"></div>
+      <div id="graph" class="card h-[75vh] min-h-[28rem] p-0"></div>
       <p id="graph-status" class="pointer-events-none absolute bottom-3 left-4 text-xs text-muted-foreground">{t("Loading the graph…")}</p>
     </div>
     <!-- The details panel. Folded, it shrinks to a rail at the view's right edge; the rail opens it again. -->
     <aside
       id="graph-side"
-      class="card relative h-[70vh] overflow-hidden p-0 text-sm group-data-[panel=folded]/layout:max-lg:h-auto lg:col-start-2 lg:row-start-2"
+      class="card relative h-[75vh] min-h-[28rem] overflow-hidden p-0 text-sm group-data-[panel=folded]/layout:max-lg:h-auto lg:col-start-2 lg:row-start-2"
     >
       <button
         id="graph-fold"
@@ -220,17 +235,16 @@ const labels = {
 <script>
   import type { Core } from "cytoscape";
 
+  import { GraphSearch, type SearchHit } from "../../lib/graph-search";
   import {
     TYPE_LABELS,
-    addSharedParents,
+    addNode,
     expand,
     focusOn,
-    jurisdictionIds,
     showJurisdictions,
     trimTo,
     hiddenNeighbours,
-    loadGraphData,
-    loadProperties,
+    loadGraphIndex,
     loadText,
     type ProvisionText,
     mountGraph,
@@ -239,20 +253,24 @@ const labels = {
     nodeIri,
     nodeHref,
     nodeTurtle,
-    type GraphData,
     type GraphNode,
+    type LazyGraph,
   } from "../../scripts/graph-view";
 
   // How many neighbours a focus or an expansion brings in at once; more are a click away.
   const FOCUS_LIMIT = 30;
   const EXPAND_LIMIT = 25;
+  // How many matches the search lists; the count says how many there are in all.
+  const SEARCH_LIMIT = 50;
 
   const container = document.getElementById("graph")!;
   const panel = document.getElementById("graph-panel")!;
   const status = document.getElementById("graph-status")!;
   const search = document.getElementById("graph-search") as HTMLInputElement;
   const clear = document.getElementById("graph-clear") as HTMLButtonElement;
-  const datalist = document.getElementById("graph-nodes")!;
+  const resultsBox = document.getElementById("graph-results-box")!;
+  const results = document.getElementById("graph-results")!;
+  const resultsCount = document.getElementById("graph-results-count")!;
 
   const escape = (text: string) =>
     text.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
@@ -268,16 +286,33 @@ const labels = {
       .replace(/&lt;0&gt;(.*?)&lt;\/0&gt;/g, '<strong class="text-foreground">$1</strong>')
       .replace(/&lt;1&gt;(.*?)&lt;\/1&gt;/g, "<em>$1</em>");
 
-  const data: GraphData = await loadGraphData();
+  // The index only (every node, no edges); a node's edges and properties are fetched when the view
+  // first needs them (scripts/graph-view.ts).
+  let data: LazyGraph;
+  try {
+    data = await loadGraphIndex();
+  } catch (error) {
+    status.textContent = L.loadFailed;
+    throw error;
+  }
   const requested = new URLSearchParams(location.search).get("focus");
   // Without ?focus= the view starts with every jurisdiction (see showJurisdictions), not one country.
   let focus: string | undefined = requested && data.nodes.has(requested) ? requested : undefined;
-  let cy: Core = mountGraph(container, {
-    data,
-    ids: focus ? data.around(focus, FOCUS_LIMIT) : jurisdictionIds(data),
-    focus,
-    onSelect: show,
-  });
+  const cy: Core = mountGraph(container, { data, ids: new Set(), onSelect: (node) => void show(node) });
+
+  /**
+   * Waits for a step that fetches parts of the graph: its result, or undefined if a fetch failed (that
+   * is reported in the status line).
+   */
+  async function fetching<T>(step: Promise<T>): Promise<{ value: T } | undefined> {
+    try {
+      return { value: await step };
+    } catch (error) {
+      console.error(error);
+      status.textContent = L.loadFailed;
+      return undefined;
+    }
+  }
 
   function updateStatus() {
     const hidden = new Set(
@@ -293,19 +328,16 @@ const labels = {
   const railLabel = document.getElementById("graph-rail-label")!;
   const heading = (text: string) => `<h3 class="mt-5 mb-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">${text}</h3>`;
 
-  /** The node's plain properties, as a property graph shows them; fetched the first time. */
-  async function fillProperties(node: GraphNode) {
-    const own = (await loadProperties())[node.id] ?? [];
-    const target = document.getElementById("graph-node-properties");
-    if (!target || target.dataset.node !== node.id) return; // another node was selected meanwhile
+  /** The node's plain properties, as a property graph shows them (the node is loaded). */
+  function propertyRows(node: GraphNode): string {
     const value = (text: string) =>
       /^https?:\/\//.test(text) ? `<a href="${escape(text)}" class="break-all">${escape(text)}</a>` : escape(text);
     const rows: [string, string][] = [
       [escape(L.type), escape(typeLabel(node.type))],
       ["IRI", `<a href="${nodeHref(node)}" class="break-all">${escape(nodeIri(node))}</a>`],
-      ...own.map(([key, text]): [string, string] => [escape(key), value(text)]),
+      ...data.properties(node.id).map(([key, text]): [string, string] => [escape(key), value(text)]),
     ];
-    target.innerHTML = rows.map(([key, text]) => `<dt>${key}</dt><dd class="mb-0 min-w-0">${text}</dd>`).join("");
+    return rows.map(([key, text]) => `<dt>${key}</dt><dd class="mb-0 min-w-0">${text}</dd>`).join("");
   }
 
   // --- The reading panel -------------------------------------------------------------------
@@ -413,13 +445,13 @@ const labels = {
     return law ? [law.name.short, law.name.title, law.name.english].filter(Boolean).join(" · ") : "";
   };
 
-  function show(node: GraphNode | undefined) {
+  async function show(node: GraphNode | undefined) {
     trimButton.disabled = !node;
-    panel.scrollTop = 0;
     void showText(node);
     railDot.style.background = node ? nodeColor(node) : "";
     railLabel.textContent = node ? node.label : L.details;
     if (!node) {
+      panel.scrollTop = 0;
       panel.innerHTML = `
         <p class="font-medium">${escape(L.manualTitle)}</p>
         <ul class="mt-2 list-disc space-y-1 pl-4 text-muted-foreground">
@@ -427,6 +459,10 @@ const labels = {
         </ul>`;
       return;
     }
+    // The node's edges and properties (usually loaded with the view already).
+    if (!(await fetching(data.ensure([node.id])))) return;
+    if (cy.nodes(":selected").first().id() !== node.id) return; // another node was selected meanwhile
+    panel.scrollTop = 0;
     const connections = data.connections(node.id);
     const missing = hiddenNeighbours(cy, data, node.id);
     const kinds = new Map<string, number>();
@@ -462,9 +498,7 @@ const labels = {
         <a href="${nodeHref(node)}" class="control no-underline">${escape(L.openPage)}</a>
       </div>
       ${heading(escape(L.properties))}
-      <dl id="graph-node-properties" data-node="${escape(node.id)}" class="grid grid-cols-[minmax(5.5rem,max-content)_minmax(0,1fr)] gap-x-3 gap-y-1.5">
-        <dt>${escape(L.type)}</dt><dd class="mb-0">${escape(typeLabel(node.type))}</dd>
-      </dl>
+      <dl class="grid grid-cols-[minmax(5.5rem,max-content)_minmax(0,1fr)] gap-x-3 gap-y-1.5">${propertyRows(node)}</dl>
       ${heading(escape(fill(L.relationships, { count: connections.length })))}
       <ul class="flex flex-wrap gap-1.5">
         ${[...kinds]
@@ -489,104 +523,202 @@ const labels = {
             .map((name) => `<div><dt class="inline font-medium text-foreground">${escape(name.short ?? "")}</dt> <dd class="mb-0 inline">${lawNames(name)}</dd></div>`)
             .join("")}</dl>`;
       })()}`;
-    void fillProperties(node);
-    panel.querySelector('[data-action="expand"]')?.addEventListener("click", () => grow(node.id));
-    panel.querySelector('[data-action="focus"]')?.addEventListener("click", () => refocus(node.id));
+    panel.querySelector('[data-action="expand"]')?.addEventListener("click", () => void grow(node.id));
+    panel.querySelector('[data-action="focus"]')?.addEventListener("click", () => void refocus(node.id));
     panel.querySelector('[data-action="hide"]')?.addEventListener("click", () => {
       cy.getElementById(node.id).remove();
-      show(undefined);
+      void show(undefined);
       updateStatus();
     });
     panel.querySelectorAll<HTMLButtonElement>("[data-goto]").forEach((button) =>
-      button.addEventListener("click", () => goTo(button.dataset.goto!)),
+      button.addEventListener("click", () => void goTo(button.dataset.goto!)),
     );
   }
 
   /** Brings in more of a node's neighbours, around it; the rest of the view stays put. */
-  function grow(id: string) {
+  async function grow(id: string) {
     cy.getElementById(id).removeClass("context");
-    if (expand(cy, data, id, EXPAND_LIMIT) === 0) return;
+    const added = await fetching(expand(cy, data, id, EXPAND_LIMIT));
+    if (!added?.value) return;
     updateStatus();
     const node = cy.getElementById(id);
     cy.animate({ fit: { eles: node.closedNeighborhood(), padding: 40 }, duration: 250 });
-    if (node.selected()) show(data.nodes.get(id));
+    if (node.selected()) void show(data.nodes.get(id));
   }
 
   /** Starts over from a node: it and its nearest neighbours only. */
-  function refocus(id: string) {
+  async function refocus(id: string) {
     focus = id;
-    focusOn(cy, data, id, FOCUS_LIMIT);
-    cy.getElementById(id).select();
     const url = new URL(location.href);
     url.searchParams.set("focus", id);
     history.replaceState(null, "", url);
+    if (!(await fetching(focusOn(cy, data, id, FOCUS_LIMIT)))) return;
+    if (focus !== id) return; // another node was chosen meanwhile
+    cy.getElementById(id).select();
     updateStatus();
   }
 
   /** A connection in the panel: select it if it is in the view, otherwise bring it in next to the selected node. */
-  function goTo(id: string) {
-    let target = cy.getElementById(id);
-    if (target.empty()) {
+  async function goTo(id: string) {
+    if (cy.getElementById(id).empty()) {
       const from = cy.nodes(":selected").first();
-      if (from.nonempty()) {
-        cy.add({ group: "nodes", data: { ...data.nodes.get(id)! }, position: { x: from.position("x") + 80, y: from.position("y") + 40 } });
-        for (const { edge } of data.connections(id)) {
-          const key = `${edge.source}|${edge.label}|${edge.target}`;
-          if (cy.getElementById(edge.source).nonempty() && cy.getElementById(edge.target).nonempty() && cy.getElementById(key).empty()) {
-            cy.add({ group: "edges", data: { id: key, ...edge } });
-          }
-        }
-        addSharedParents(cy, data);
-        target = cy.getElementById(id);
-        updateStatus();
-      } else {
-        refocus(id);
+      if (from.empty()) {
+        await refocus(id);
         return;
       }
+      if (!(await fetching(addNode(cy, data, id, from.position())))) return;
+      updateStatus();
     }
+    const target = cy.getElementById(id);
     cy.nodes().unselect();
     target.select();
     cy.animate({ center: { eles: target }, duration: 250 });
   }
 
-  cy.on("dbltap", "node", (event) => grow(event.target.id()));
-  if (focus) cy.getElementById(focus).select();
-  else {
+  cy.on("dbltap", "node", (event) => void grow(event.target.id()));
+  if (focus) {
+    const start = focus;
+    await refocus(start);
+  } else {
     showJurisdictions(cy, data);
-    show(undefined);
+    void show(undefined);
   }
   updateStatus();
 
-  datalist.innerHTML = [...data.nodes.values()]
-    .sort((a, b) => a.title.localeCompare(b.title))
-    .map((node) => `<option value="${escape(node.title)}">${escape(typeLabel(node.type))}</option>`)
-    .join("");
-  // A suggestion picked (or a title typed in full) starts over from that node, at once; "change"
-  // would not fire again for the same text after Start over.
-  const byTitle = new Map([...data.nodes.values()].map((node) => [node.title, node]));
-  search.addEventListener("input", () => {
+  // --- The search ----------------------------------------------------------------------------
+  // Matches open under the box as you type (lib/graph-search.ts ranks them); arrows move through
+  // them, Enter or a click starts over from the match, Escape closes the list.
+  const finder = new GraphSearch(data.nodes.values(), data.terms);
+  let hits: SearchHit[] = [];
+  let active = -1;
+
+  function secondLine(hit: SearchHit): string {
+    const node = data.nodes.get(hit.node.id)!;
+    // A provision's law, by its short name, unless its citation already names it (Art. 6(1) GDPR).
+    const law = node.type === "provision" ? data.lawOf(node.id) : undefined;
+    const lawName = law ? (law.name.short ?? law.name.title) : undefined;
+    return [
+      typeLabel(node.type),
+      lawName && !node.label.includes(lawName) && lawName,
+      node.title !== node.label && node.title,
+      hit.alias && fill(L.alsoCalled, { name: hit.alias }),
+    ]
+      .filter(Boolean)
+      .map((part) => escape(String(part)))
+      .join(" · ");
+  }
+
+  function setActive(index: number) {
+    active = hits.length ? (index + hits.length) % hits.length : -1;
+    results.querySelectorAll<HTMLElement>("[role=option]").forEach((option, i) => {
+      option.setAttribute("aria-selected", String(i === active));
+      if (i === active) option.scrollIntoView({ block: "nearest" });
+    });
+    if (active >= 0) search.setAttribute("aria-activedescendant", `graph-result-${active}`);
+    else search.removeAttribute("aria-activedescendant");
+  }
+
+  function closeResults() {
+    resultsBox.hidden = true;
+    search.setAttribute("aria-expanded", "false");
+    search.removeAttribute("aria-activedescendant");
+    active = -1;
+  }
+
+  function runSearch() {
+    const query = search.value.trim();
     clear.hidden = search.value === "";
-    const node = byTitle.get(search.value);
-    if (node && node.id !== focus) refocus(node.id);
+    if (!query) {
+      hits = [];
+      closeResults();
+      return;
+    }
+    const found = finder.find(query, SEARCH_LIMIT);
+    hits = found.hits;
+    resultsCount.textContent =
+      found.total === 0
+        ? fill(L.noMatch, { query })
+        : found.total > hits.length
+          ? fill(L.matchesShown, { count: found.total, shown: hits.length })
+          : fill(L.matches, { count: found.total });
+    results.innerHTML = hits
+      .map(
+        (hit, index) => `
+        <li id="graph-result-${index}" role="option" aria-selected="false" data-index="${index}"
+            class="flex cursor-pointer items-start gap-2.5 px-3 py-1.5 hover:bg-muted aria-selected:bg-muted">
+          <span class="mt-1.5 size-2.5 shrink-0 rounded-full" style="background:${nodeColor(hit.node)}"></span>
+          <span class="min-w-0">
+            <span class="block truncate font-medium text-foreground">${escape(hit.node.label)}</span>
+            <span class="block truncate text-xs text-muted-foreground">${secondLine(hit)}</span>
+          </span>
+        </li>`,
+      )
+      .join("");
+    resultsBox.hidden = false;
+    search.setAttribute("aria-expanded", "true");
+    setActive(hits.length ? 0 : -1);
+  }
+
+  function choose(index: number) {
+    const hit = hits[index];
+    if (!hit) return;
+    search.value = hit.node.label;
+    clear.hidden = false;
+    closeResults();
+    if (hit.node.id !== focus) void refocus(hit.node.id);
+    else cy.getElementById(hit.node.id).select();
+  }
+
+  search.addEventListener("input", runSearch);
+  search.addEventListener("focus", () => {
+    if (search.value.trim() && hits.length === 0) runSearch();
+    else if (search.value.trim()) {
+      resultsBox.hidden = false;
+      search.setAttribute("aria-expanded", "true");
+    }
   });
+  search.addEventListener("keydown", (event) => {
+    const open = !resultsBox.hidden;
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      if (!open) runSearch();
+      else setActive(active + (event.key === "ArrowDown" ? 1 : -1));
+    } else if (event.key === "Enter" && open) {
+      event.preventDefault();
+      choose(Math.max(active, 0));
+    } else if (event.key === "Escape" && open) {
+      event.preventDefault();
+      closeResults();
+    }
+  });
+  // A click on a match must not blur the box first (that would close the list under the pointer).
+  results.addEventListener("mousedown", (event) => event.preventDefault());
+  results.addEventListener("click", (event) => {
+    const option = (event.target as HTMLElement).closest<HTMLElement>("[role=option]");
+    if (option) choose(Number(option.dataset.index));
+  });
+  search.addEventListener("blur", closeResults);
   clear.addEventListener("click", () => {
     search.value = "";
     clear.hidden = true;
+    hits = [];
+    closeResults();
     search.focus();
   });
   document.querySelectorAll<HTMLInputElement>("[data-type]").forEach((box) => box.addEventListener("change", updateStatus));
   document.getElementById("graph-fit")!.addEventListener("click", () => cy.fit(cy.nodes(":visible"), 30));
   // Trim: the selected node becomes the focus, and only what is around it in the view stays.
-  trimButton.addEventListener("click", () => {
+  trimButton.addEventListener("click", async () => {
     const selected = cy.nodes(":selected").first();
     if (selected.empty()) return;
-    focus = selected.id();
-    trimTo(cy, data, focus);
+    const id = selected.id();
+    focus = id;
     const url = new URL(location.href);
-    url.searchParams.set("focus", focus);
+    url.searchParams.set("focus", id);
     history.replaceState(null, "", url);
+    if (!(await fetching(trimTo(cy, data, id)))) return;
     updateStatus();
-    show(data.nodes.get(focus));
+    void show(data.nodes.get(id));
   });
   // Folding the panel gives the view the whole width; the choice is remembered on this browser.
   const layout = document.getElementById("graph-layout")!;
@@ -618,19 +750,14 @@ const labels = {
   document.getElementById("graph-reset")!.addEventListener("click", () => {
     search.value = "";
     clear.hidden = true;
+    hits = [];
+    closeResults();
     focus = undefined;
     showJurisdictions(cy, data);
     const url = new URL(location.href);
     url.searchParams.delete("focus");
     history.replaceState(null, "", url);
     updateStatus();
-    show(undefined);
+    void show(undefined);
   });
 </script>
-
-<style>
-  /* Chrome draws its own arrow in an input with suggestions; the clear button takes its place. */
-  #graph-search::-webkit-calendar-picker-indicator {
-    display: none !important;
-  }
-</style>

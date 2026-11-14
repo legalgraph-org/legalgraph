@@ -14,12 +14,65 @@ lg:EE-ISSA-s4-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
     lgo:sourceTextSha256 "a9007e47bd5e92582801d3772bbe2bf45e178c090696d421bbc61a0466ae0387" ;
-    lgo:text """(1) A service provider is required to make at least the following information directly and permanently available to the recipient of the service:
-1) the name of the service provider, its registry code and the name of the relevant register, the address and other contact details of the service provider, including its e-mail address;
-2) the registration number, if the law requires registration in the register of economic activities for operating in the relevant field, or the number of the activity licence;
-3) where prices of the service are referred to, information on whether they include taxes and delivery costs;
-4) the VAT registration number, if the service provider is liable to value added tax."""@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-10-31"^^xsd:date ;
+    lgo:text """(1) A service provider is obliged to make at least the following information directly and permanently accessible to the service user:
+1) the name of the service provider, the registry code and the name of the relevant register, the address of the service provider and other contact details, including the e-mail address;
+2) the registration number, where the relevant field of activity requires registration in the register of economic activities under law, or the activity licence number;
+3) where reference is made to the amount of the service fee, information on whether it includes taxes and delivery costs;
+4) the number of registration as a taxable person for VAT purposes, where the service provider is liable for VAT."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:EE-ISSA-s4-1-q1 .
+
+lg:EE-ISSA-s4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2c7d2c59720c6420f6e79a41e0f6892751efef6d4a1df5d40f9bf6afa1cea3bf" ;
+    lgo:text """(2) A service provider operating in a regulated profession is obliged, in addition to what is provided in paragraph 1 of this section, to make the following information directly and permanently accessible to the service user:
+1) the name of the professional organisation or association of which he is a member in connection with the service provided;
+2) the professional title and the name of the Member State in which it was awarded;
+3) a reference to the professional requirements applicable in the Member State of the service provider's place of business, together with the references needed to familiarise oneself with the texts of those requirements."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:EE-ISSA-s4-2-q1 .
+
+lg:EE-TKS-s26-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "185ec640ddb86ba6a99a1d61133d5d468dfc674ee53c0716ce29c839cadc4e82" ;
+    lgo:text "(1) The trader makes contact details available to the consumer by appropriate means through which the consumer can contact the trader and communicate with it for the purpose of resolving a complaint."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:EE-TKS-s26-1-q1 .
+
+lg:EE-TKS-s26-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ad47e252b2f37d64d25f4b185a3008d3b9bff28a325b711836fefe75419a0289" ;
+    lgo:text "(2) The trader informs the consumer of the ADR body recognised under this Act to which the consumer may turn to resolve a dispute arising with the trader. The information must include at least the name of the ADR body or the person that created it, its contact details, the address of its website and information on where the ADR body's rules of procedure can be consulted."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:EE-TKS-s26-2-q1 .
+
+lg:EE-TKS-s26-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c186c78e74c9505be5f9674e1f085b7c8b95908d0635cd9456d401bbba4490a4" ;
+    lgo:text "(3) The information referred to in paragraphs 1 and 2 of this section is presented in a clear, comprehensible and easily accessible manner on the trader's website where it has one and, where necessary, in the general or standard terms of contracts concluded between the trader and the consumer or at the trader's place of business."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:EE-TKS-s26-3-q1 .
+
+lg:EE-TKS-s26-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "35ff6e254b77019f47d2eca9dae683d5b2900d54a301fe31eb0d2f209b37f921" ;
+    lgo:text "(4) If the trader refuses to satisfy a claim contained in a complaint received from the consumer or finds that satisfying the consumer's claim is not possible, the trader gives the consumer on paper or another durable medium the information on the recognised ADR body to which the consumer can turn to resolve the dispute that has arisen with the trader."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:EE-TKS-s26-4-q1 .

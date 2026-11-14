@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o izvensodnem reševanju potrošniških sporov (ZIsRPS, Ur. l. RS
+  81/15), 32. člen, written in schemas/law.xsd from the official gazette PDF
+  pisrs.si serves. The words are the Državni zbor's; only the structure is
+  ours. Odstavek 1 the pre-contract notice of the recognised
+  ADR body on the trader's website and general terms; odstavek 2 the
+  post-refusal durable-medium notice; odstavek 3 the warning when no ADR body
+  is recognised; odstavek 4 the ODR-platform link for online sellers (L7/L4).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sl"
+     lga:act="SI-ZISRPS" lga:jurisdiction="SI" lga:act-type="Statute"
+     lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO6843">
+  <meta>
+    <title>Zakon o izvensodnem reševanju potrošniških sporov</title>
+    <date>2015-10-21</date>
+  </meta>
+
+  <section num="32. člen" title="obveščanje potrošnikov s strani ponudnikov" source="zisrps-ur-l-81-15.pdf">
+    <paragraph num="(1)" lga:provision="SI-ZISRPS-art32-1" lga:citation="32. člen odstavek 1 ZIsRPS" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO6843" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1 EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Ponudnik pred sklenitvijo pogodbe na svoji spletni strani in v splošnih pogojih poslovanja, če jih ima, jasno, enostavno in razumljivo seznani potrošnika, katerega izvajalca IRPS priznava kot pristojnega za reševanje spora, ki ga potrošnik lahko sproži v skladu s tem zakonom. Ponudnik objavi vsaj firmo, elektronski naslov in telefonsko številko priznanega izvajalca IRPS oziroma izvajalcev IRPS. Če ponudnik nima spletne strani in splošnih pogojev poslovanja, objavi podatke o priznanem izvajalcu IRPS iz prejšnjega stavka na drug primeren način.</paragraph>
+    <paragraph num="(2)" lga:provision="SI-ZISRPS-art32-2" lga:citation="32. člen odstavek 2 ZIsRPS" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO6843" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">Kadar se potrošnik s pritožbo obrne neposredno na ponudnika in pritožbi ni ugodeno z notranjimi postopki ponudnika za reševanje pritožb, mu ponudnik pošlje informacijo iz prejšnjega odstavka na trajnem nosilcu podatkov skupaj z razlogi za zavrnitev pritožbe.</paragraph>
+    <paragraph num="(3)" lga:provision="SI-ZISRPS-art32-3" lga:citation="32. člen odstavek 3 ZIsRPS" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO6843" lga:regulates="ConsumerDisputeResolution" lga:requires="DisputeResolutionStatement">Ponudnik, ki ne priznava nobenega izvajalca IRPS, kot pristojnega za reševanje potrošniškega spora, ki ga potrošnik lahko sproži v skladu s tem zakonom, potrošnika na to posebej opozori na svoji spletni strani in v splošnih pogojih poslovanja, ali na drug primeren način, če nima spletne strani in splošnih pogojev poslovanja.</paragraph>
+    <paragraph num="(4)" lga:provision="SI-ZISRPS-art32-4" lga:citation="32. člen odstavek 4 ZIsRPS" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO6843" lga:regulates="ConsumerDisputeResolution" lga:requires="DisputeResolutionBody">Ponudniki, ki se ukvarjajo s spletno prodajo ali spletnimi storitvami, na svoji spletni strani objavijo elektronsko povezavo na platformo za SRPS.</paragraph>
+  </section>
+</law>

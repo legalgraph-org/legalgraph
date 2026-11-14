@@ -1,0 +1,55 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:BG-ZET-art4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8605fb718e036491fb670a8b45fb2c4f53e54e8dcf7a733f40edf6c395f90ddd" ;
+    lgo:text """(1) A provider of information-society services shall provide recipients of the services and the competent authorities with unobstructed, direct and permanent access to the following information:
+1. its name or business name;
+2. its permanent address or seat and management address;
+3. the address at which it carries on its activity, if different from the address in item 2;
+4. correspondence details, including telephone and e-mail address, for direct and timely contact with it;
+5. details of its entry in a trade or other public register;
+6. information on the authority exercising control over its activity, where that activity is subject to a notification, registration or licensing regime;
+7. where it practises a regulated profession — information on the chamber, professional association or organisation of which the provider is a member or in which it is registered, the professional title and the Member State in which it was awarded, together with a reference to the applicable provisions on the right to practise the craft or profession and indications of access to them;
+8. an appropriate indication if registered under the Value Added Tax Act;
+9. other information provided for in legislation."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art4-1-q1 .
+
+lg:BG-ZET-art4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7dfbd8825daf8d27a93a557202fca74b086f79e5d699aee10c8b6e1f13456091" ;
+    lgo:text "(2) Where prices are indicated in the provision of information-society services, they must be indicated in a clear and comprehensible manner. A provider of services is obliged to state whether the prices include taxes, duties and charges that form the final price."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art4-2-q1 .
+
+lg:BG-ZET-art5-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ded161f5f7ae5eccfafdd1a7572fc7fbbe32c44829dd42359eb0f6826b88f43a" ;
+    lgo:text """(3) Commercial communications that form part of a service or constitute a service of the information society shall meet the following requirements:
+1. be easily recognisable as commercial;
+2. enable the clear identification of the natural or legal persons on whose behalf they are made;
+3. clearly and unambiguously state the conditions for using promotional offers, such as discounts, premiums and gifts, where such offers are included;
+4. provide easy access to clear and unambiguous conditions for participation in competitions and games with announced prizes, where such information is contained;
+5. contain the information provided for in other legislative acts."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art5-3-q1 .

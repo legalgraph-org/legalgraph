@@ -12,3 +12,20 @@ lg:RO-LCE
     eli:id_local "M.Of. nr. 483 din 5 iulie 2002" ;
     eli:transposes lg:EU-2000-31 ;
     rdfs:comment "Articolul 5 transposes Article 5 of the e-Commerce Directive, wider than the Directive's catalogue: phone and fax numbers, the fiscal registration code and price items are mandatory for every provider."@en .
+
+# Round 6 additions: company-law information duty and the ADR trader-information
+# duty, both rendered from legislatie.just.ro. Art. 74(5) is an express website
+# clause; alin. (1)–(4) are the underlying document-information rules.
+
+lg:RO-LEGA-31-1990 a lgo:LegalAct ;
+    eli:title "Legea nr. 31 din 16 noiembrie 1990 privind societăţile"@ro , "Law No. 31 of 16 November 1990 on companies"@en ;
+    lgo:shortName "Legea 31/1990" ;
+    eli:transposes lg:EU-2017-1132 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Articolul 74(1) requires a company to state its name, legal form, seat, trade-register number and unique registration code on invoices, offers, orders, price lists, prospectuses and other documents used in commerce, and 74(5) extends the 74(1) and (3) information to the company's own website."@en .
+
+lg:RO-OG-38-2015 a lgo:LegalAct ;
+    eli:title "Ordonanța Guvernului nr. 38 din 26 august 2015 privind soluţionarea alternativă a litigiilor dintre consumatori şi comercianţi"@ro , "Government Ordinance No. 38 of 26 August 2015 on alternative dispute resolution for consumer disputes"@en ;
+    lgo:shortName "O.G. 38/2015" ;
+    eli:transposes lg:EU-2013-11 ;
+    lgo:reviewStatus lgv:SourceChecked .

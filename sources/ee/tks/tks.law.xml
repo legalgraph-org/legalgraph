@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Tarbijakaitseseadus (Consumer Protection Act), § 26, written in
+  schemas/law.xsd from the riigiteataja.ee consolidated rendering. The words
+  are the Riigikogu's; only the structure is ours. Lõige 1 the trader's
+  complaint contact details; lõige 2 the ADR-body notification incl. its
+  website address and procedure rules; lõige 3 the website and general-terms
+  display; lõige 4 the post-refusal durable-medium notice — the Estonian ADR
+  website duty (L4). Lõige 5 (ODR platform notice) is repealed in the current
+  consolidation and lõige 6 is a savings clause; neither is sourced.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="et"
+     lga:act="EE-TKS" lga:jurisdiction="EE" lga:act-type="Statute"
+     lga:url="https://www.riigiteataja.ee/akt/103072026028">
+  <meta>
+    <title>Tarbijakaitseseadus</title>
+    <date>2015-12-09</date>
+  </meta>
+
+  <section num="§ 26" title="Kaupleja teave tarbijale" source="tks-s26-lg1.html">
+    <paragraph num="(1)" lga:provision="EE-TKS-s26-1" lga:citation="§ 26 lõige 1 TKS" lga:url="https://www.riigiteataja.ee/akt/103072026028" lga:regulates="ConsumerDisputeResolution" lga:requires="RapidContact">Kaupleja teeb tarbijale asjakohasel viisil kättesaadavaks kontaktandmed, mille kaudu tarbija saab kauplejaga ühendust võtta ja temaga kaebuse lahendamise eesmärgil suhelda.</paragraph>
+  </section>
+  <section num="§ 26 lõige 2" source="tks-s26-lg2.html">
+    <paragraph num="(2)" lga:provision="EE-TKS-s26-2" lga:citation="§ 26 lõige 2 TKS" lga:url="https://www.riigiteataja.ee/akt/103072026028" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Kaupleja teavitab tarbijat käesoleva seaduse alusel tunnustatud vaidluste kohtuvälise lahendamise üksusest, kelle poole tarbija võib pöörduda kauplejaga tekkiva vaidluse lahendamiseks. Teave peab sisaldama vähemalt vaidluste kohtuvälise lahendamise üksuse või selle loonud isiku nime, kontaktandmeid, veebilehe aadressi ja infot selle kohta, kus saab tutvuda vaidluste kohtuvälise lahendamise üksuse menetlusreeglitega.</paragraph>
+  </section>
+  <section num="§ 26 lõige 3" source="tks-s26-lg3.html">
+    <paragraph num="(3)" lga:provision="EE-TKS-s26-3" lga:citation="§ 26 lõige 3 TKS" lga:url="https://www.riigiteataja.ee/akt/103072026028" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Käesoleva paragrahvi lõigetes 1 ja 2 nimetatud teave esitatakse sõnaselgel, arusaadaval ja kergesti kättesaadaval viisil kaupleja veebilehel selle olemasolul ning vajaduse korral kaupleja ja tarbija vaheliste lepingute üld- või tüüptingimustes või kaupleja tegevuskohas.</paragraph>
+  </section>
+  <section num="§ 26 lõige 4" source="tks-s26-lg4.html">
+    <paragraph num="(4)" lga:provision="EE-TKS-s26-4" lga:citation="§ 26 lõige 4 TKS" lga:url="https://www.riigiteataja.ee/akt/103072026028" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionStatement">Kui kaupleja keeldub tarbijalt saadud kaebuses sisalduva nõude rahuldamisest või leiab, et tarbija nõude rahuldamine ei ole võimalik, esitab kaupleja tarbijale paberil või muul püsival andmekandjal teabe tunnustatud vaidluste kohtuvälise lahendamise üksuse kohta, kuhu tarbija saab pöörduda kauplejaga tekkinud vaidluse lahendamiseks.</paragraph>
+  </section>
+</law>

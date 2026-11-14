@@ -1,0 +1,87 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:SI-ZEPT-art5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1511ca6e0128f787360681a0f269e6e49fdb3d748561edb6ab2960b6ac035505" ;
+    lgo:text """(1) A service provider must, on its websites, provide service recipients and competent authorities, in addition to other requirements concerning data under the applicable regulations, easy, direct and permanent access to:
+- data on the service provider's undertaking and registered office,
+- a valid electronic address for rapid and effective communication,
+- the registration number,
+- the tax number,
+- data on the authorisations under paragraph 2 of the preceding article and the competent supervisory authorities,
+- for regulated professions, the name of the professional association of which the provider is a member, the professional title and the State in which it was awarded, and a reference to the applicable professional rules in the Member State in which the activity is registered and the manner of access to them."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZEPT-art5-1-q1 .
+
+lg:SI-ZEPT-art5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "cb1fe5a91c7165c4c452d1a17cfba1047c2be0a806e21dd5d4099a474758a65f" ;
+    lgo:text "(2) The service provider must enable access to the data referred to in the preceding paragraph through links published on its main website."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZEPT-art5-2-q1 .
+
+lg:SI-ZEPT-art5-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "389eebbf4890cf07475bb64d1da3000516233a90d4ee759308490cc44da7ae8f" ;
+    lgo:text "(3) The service provider must, to service recipients and competent authorities, in addition to other requirements concerning data under the applicable regulations, clearly and unambiguously indicate the price of the service and state whether it includes tax, delivery costs and any other levies."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZEPT-art5-3-q1 .
+
+lg:SI-ZISRPS-art32-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e3346268dd0d7624bda268174466d41570657303c16bb4f47f31831d105c0e10" ;
+    lgo:text "(1) Before concluding a contract, a provider shall, clearly, simply and understandably inform the consumer on its website and in its general terms of business, if it has them, which IRPS provider it recognises as competent to resolve a dispute that the consumer may initiate under this Act. The provider shall publish at least the name, electronic address and telephone number of the recognised IRPS provider or providers. If the provider has no website or general terms of business, it shall publish the information about the recognised IRPS provider from the preceding sentence in another appropriate manner."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZISRPS-art32-1-q1 .
+
+lg:SI-ZISRPS-art32-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "367f719d76e60f9652dd5a2d05a79b94148f6bdcb692c93e3f50500b66376cce" ;
+    lgo:text "(2) Where a consumer approaches the provider directly with a complaint and the complaint is not upheld through the provider's internal complaint-resolution procedures, the provider shall send the consumer the information from the preceding paragraph on a durable medium together with the reasons for rejecting the complaint."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZISRPS-art32-2-q1 .
+
+lg:SI-ZISRPS-art32-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "de3e2181e222789f7798f2ca19720ddc08685b6cea78d6c9571669ff0ce8f278" ;
+    lgo:text "(3) A provider that does not recognise any IRPS provider as competent to resolve a consumer dispute that the consumer may initiate under this Act shall specifically warn the consumer of this on its website and in its general terms of business, or in another appropriate manner if it has no website or general terms of business."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZISRPS-art32-3-q1 .
+
+lg:SI-ZISRPS-art32-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6b02b8ce2395c4a840703a707a637be1e76b04504d0cc7c9f71bddf90f381688" ;
+    lgo:text "(4) Providers engaged in online sales or online services shall publish on their website an electronic link to the SRPS platform."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZISRPS-art32-4-q1 .

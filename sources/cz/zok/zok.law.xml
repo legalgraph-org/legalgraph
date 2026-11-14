@@ -18,7 +18,7 @@
     <date>2012-01-25</date>
   </meta>
 
-  <section num="§ 7" source="zok-7.fragment.html">
+  <section num="§ 7" source="2012-90.zakonyprolidi.html">
     <paragraph num="(1)" lga:provision="CZ-ZOK-s7-1" lga:citation="§ 7 odst. 1 zákona č. 90/2012 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2012-90" lga:regulates="ProviderIdentification" lga:requires="ShareCapital">Uvádí-li kapitálová společnost nebo družstvo na obchodních listinách také údaj o svém základním kapitálu, musí se tento údaj týkat pouze upsané a splacené části základního kapitálu.</paragraph>
     <paragraph num="(2)" lga:provision="CZ-ZOK-s7-2" lga:citation="§ 7 odst. 2 zákona č. 90/2012 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2012-90" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName GeographicAddress RegisterEntry">Akciová společnost bez zbytečného odkladu po svém vzniku a dále průběžně uveřejňuje způsobem umožňujícím dálkový přístup, který je pro veřejnost bezplatný, a to tak, aby informace byly dostupné jednoduchým způsobem po zadání elektronické adresy (dále jen „internetové stránky“), údaje, které je povinna uvádět na obchodních listinách, a další údaje stanovené tímto zákonem.</paragraph>
     <paragraph num="(3)" lga:provision="CZ-ZOK-s7-3" lga:citation="§ 7 odst. 3 zákona č. 90/2012 Sb." lga:url="https://www.zakonyprolidi.cz/cs/2012-90" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName GeographicAddress RegisterEntry">Zřídí-li společnost s ručením omezeným internetové stránky, vztahuje se na ni ustanovení odstavce 2 obdobně.</paragraph>

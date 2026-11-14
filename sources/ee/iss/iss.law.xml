@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Infoühiskonna teenuse seadus, § 4, written in schemas/law.xsd from the
+  consolidated text riigiteataja.ee renders. The words are the Estonian
+  legislature's; only the structure is ours. Lõige 1 is the provider-information
+  catalogue — the transposition of e-Commerce Directive 2000/31/EC Art. 5(1),
+  item 3 the price clause (Art. 5(2)); lõige 2 the regulated-profession items.
+  Estonian is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="et"
+     lga:act="EE-ISSA" lga:jurisdiction="EE" lga:act-type="Statute"
+     lga:url="https://www.riigiteataja.ee/et/akt/104072024024">
+  <meta>
+    <title>Infoühiskonna teenuse seadus</title>
+    <date>2001-11-08</date>
+  </meta>
+
+  <section num="§ 4 lõige 1" source="iss-s4-lg1.html">
+    <paragraph num="(1)" lga:provision="EE-ISSA-s4-1" lga:citation="§ 4 lõige 1 InfoTS" lga:url="https://www.riigiteataja.ee/et/akt/104072024024" lga:regulates="ProviderIdentification PriceTransparency" lga:implements="EU-2000-31-art5-1 EU-2000-31-art5-2">Teenuse osutaja on kohustatud tegema teenuse kasutajale vahetult ja püsivalt kättesaadavaks vähemalt järgmise teabe:
+      <list>
+        <item num="1)" lga:requires="ProviderName RegisterEntry GeographicAddress RapidContact EmailAddress">teenuse osutaja nime, registrikoodi ja vastava registri nime, teenuse osutaja aadressi ja muud kontaktandmed, sealhulgas elektronposti aadressi;</item>
+        <item num="2)" lga:requires="RegisterEntry LicenceDetails">registreeringu numbri, kui vastaval tegevusalal tegutsemiseks on seadusega sätestatud majandustegevuse registris registreerimise nõue, või tegevusloa numbri;</item>
+        <item num="3)" lga:requires="VatStatus DeliveryCosts">viidete puhul teenuse tasu suurusele teabe selle kohta, kas need sisaldavad makse ja tarnekulusid;</item>
+        <item num="4)" lga:requires="VatId">käibemaksukohustuslasena registreerimise numbri, kui teenuse osutaja on käibemaksukohustuslane.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="§ 4 lõige 2" source="iss-s4-lg2.html">
+    <paragraph num="(2)" lga:provision="EE-ISSA-s4-2" lga:citation="§ 4 lõige 2 InfoTS" lga:url="https://www.riigiteataja.ee/et/akt/104072024024" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Reguleeritud kutsealal tegutsev teenuse osutaja on kohustatud lisaks käesoleva paragrahvi lõikes 1 sätestatule tegema teenuse kasutajale vahetult ja püsivalt kättesaadavaks järgmise teabe:
+      <list>
+        <item num="1)" lga:requires="ProfessionalBody">kutseorganisatsiooni või -liidu nimetuse, mille liige ta on seoses osutatava teenusega;</item>
+        <item num="2)" lga:requires="ProfessionalTitle">kutse ja liikmesriigi nime, kus see omistati;</item>
+        <item num="3)" lga:requires="ProfessionalRules">viite teenuse osutaja tegevuskoha liikmesriigis kohaldatavatele kutsealastele nõuetele koos nende nõuete tekstidega tutvumiseks vajalike viidetega.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

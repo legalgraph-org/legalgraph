@@ -667,3 +667,82 @@ lg:EU-R-breach-notification a lgo:Obligation ;
     lgo:appliesWhen lgv:GdprApplies ;
     lgo:requiresAction lgv:NotifyBreachToSupervisoryAuthority , lgv:InformDataSubjectsOfBreach ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Controller duties: GDPR Art. 9, 22, 29, 31, 35, 36, 38 and 39 ---
+
+lg:EU-R-special-categories a lgo:Obligation ;
+    rdfs:label "Process special categories of data only under an exception"@en ;
+    rdfs:comment "Processing data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs or trade union membership, genetic or biometric data for identification, health data or data on sex life or sexual orientation is prohibited unless one of the exceptions of Art. 9(2) applies, such as explicit consent; Member States may add conditions for genetic, biometric and health data (Art. 9(4))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art9-1, lg:EU-2016-679-art9-2 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies, lgv:ProcessesSpecialCategories ;
+    lgo:requiresAction lgv:ProcessSpecialCategoriesOnlyUnderAnException ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-automated-decisions a lgo:Obligation ;
+    rdfs:label "Safeguard decisions based solely on automated processing"@en ;
+    rdfs:comment "A decision with legal or similarly significant effects based solely on automated processing, including profiling, is allowed only for a contract, under law or with explicit consent; for a contract or consent the controller provides human intervention, the chance to express one's view and to contest the decision (Art. 22(1)–(3)), and does not base it on special categories without explicit consent or a substantial public interest (Art. 22(4))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art22-1, lg:EU-2016-679-art22-2, lg:EU-2016-679-art22-3, lg:EU-2016-679-art22-4 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies, lgv:UsesAutomatedDecisionMaking ;
+    lgo:requiresAction lgv:SafeguardAutomatedDecisions ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-processing-on-instructions a lgo:Obligation ;
+    rdfs:label "Staff process personal data only on instructions"@en ;
+    rdfs:comment "Anyone acting under the authority of the controller or processor who has access to personal data processes them only on the controller's instructions, unless Union or Member State law requires it (Art. 29)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art29 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:InstructPersonsWithAccess ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-supervisory-authority-cooperation a lgo:Obligation ;
+    rdfs:label "Cooperate with the supervisory authority"@en ;
+    rdfs:comment "The controller and the processor, and their representatives, cooperate on request with the supervisory authority (Art. 31)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art31 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies ;
+    lgo:requiresAction lgv:CooperateWithSupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-impact-assessment a lgo:Obligation ;
+    rdfs:label "Carry out a data protection impact assessment"@en ;
+    rdfs:comment "Before processing likely to result in a high risk, in particular systematic and extensive profiling with significant effects, large-scale special categories or large-scale systematic monitoring of public areas, the controller assesses its impact, with the DPO's advice where one is designated, and reviews it when the risk changes (Art. 35(1)–(3), (7), (11))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art35-1, lg:EU-2016-679-art35-2, lg:EU-2016-679-art35-3, lg:EU-2016-679-art35-7, lg:EU-2016-679-art35-11 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies, lgv:HighRiskProcessing ;
+    lgo:requiresAction lgv:CarryOutImpactAssessment ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-prior-consultation a lgo:Obligation ;
+    rdfs:label "Consult the supervisory authority before unmitigated high-risk processing"@en ;
+    rdfs:comment "Where the impact assessment shows a high risk the controller cannot mitigate, the controller consults the supervisory authority before processing and gives it the information listed in Art. 36(3)."@en ;
+    lgo:establishedBy lg:EU-2016-679-art36-1, lg:EU-2016-679-art36-3 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies, lgv:UnmitigatedHighRisk ;
+    lgo:requiresAction lgv:ConsultSupervisoryAuthorityBeforeProcessing ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:EU-R-data-protection-officer-support a lgo:Obligation ;
+    rdfs:label "Involve and support the data protection officer"@en ;
+    rdfs:comment "The DPO is involved properly and in good time, gets the resources for the tasks of Art. 39, takes no instructions on them, is not dismissed or penalised for performing them, reports to the highest management level and has no conflicting tasks (Art. 38(1)–(3), (6), Art. 39(1))."@en ;
+    lgo:establishedBy lg:EU-2016-679-art38-1, lg:EU-2016-679-art38-2, lg:EU-2016-679-art38-3, lg:EU-2016-679-art38-6, lg:EU-2016-679-art39-1 ;
+    lgo:bearer lgv:Controller ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:EU ;
+    lgo:appliesWhen lgv:GdprApplies, lgv:HasDataProtectionOfficer ;
+    lgo:requiresAction lgv:SupportDataProtectionOfficer ;
+    lgo:reviewStatus lgv:Draft .

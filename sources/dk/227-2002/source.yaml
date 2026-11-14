@@ -1,0 +1,31 @@
+# Lov om tjenester i informationssamfundet (E-handelsloven), lov nr 227 af
+# 22/04/2002: § 7 is the general information duty — the Danish transposition of
+# e-Commerce Directive 2000/31/EC Art. 5 (provider name, physical address of
+# establishment, e-mail/postal address and other rapid direct effective contact
+# details, CVR number where registered, approval-scheme membership and the
+# supervisory authority; regulated-profession data in stk. 2; permanent easy
+# access in stk. 3). § 8 is the price-transparency clause (Art. 5(2)).
+# retsinformation.dk is a React SPA; tools/render renders it (make
+# render-install once) and waits for the first section element.
+id: dk/227-2002
+title: Lov om tjenester i informationssamfundet (E-handelsloven) (§§ 7–8)
+jurisdiction: DK
+language: da
+publisher: Retsinformation (Civilstyrelsen), the official Danish legal-information service
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 9 ophavsretsloven: official works, including legislation, are not copyright works"
+originals:
+  - file: e-handelsloven.retsinformation.html
+    url: "https://www.retsinformation.dk/eli/lta/2002/227"
+    # retsinformation.dk builds the act with React; tools/render renders it and
+    # waits for the first section (make render-install once).
+    fetch: rendered
+    wait: "#P1"
+    selector: "#INDHOLD"
+    media_type: text/html
+    notes:
+      - "The consolidated Danish text of the whole act as Retsinformation renders it; §§ 7–8 are annotated. Danish is the authentic language."
+    retrieved_on: 2026-11-14
+    sha256: dff090a87d9003accc9dd4ad132d2a951358f4f06ea70642e9c0a379d19ddb79
+annotated: 227-2002.law.xml

@@ -24,6 +24,8 @@ interface Props {
   description?: string;
   /** No column: the page lays out its own full-width sections. */
   bare?: boolean;
+  /** The column spans the whole window (the graph view), with the usual side padding. */
+  wide?: boolean;
   /** The translator of a prose page; data pages use English. */
   t?: Translate;
   /** The prose page being shown (lib/routes.ts); data pages have none. */
@@ -32,7 +34,7 @@ interface Props {
   header?: { title: string; description?: string; note?: string };
 }
 
-const { title, description: given, bare = false, page, header } = Astro.props;
+const { title, description: given, bare = false, wide = false, page, header } = Astro.props;
 const t = Astro.props.t ?? useT(SOURCE_LOCALE);
 const description =
   given ??
@@ -76,11 +78,17 @@ const home = pagePath("home", t.locale);
       ) : (
         <main class="flex-1">
           {header && <PageHeader {...header} />}
-          <Container class="py-8">
-            <div class="mx-auto max-w-6xl">
+          {wide ? (
+            <div class="w-full px-4 py-8 sm:px-6 lg:px-8">
               <slot />
             </div>
-          </Container>
+          ) : (
+            <Container class="py-8">
+              <div class="mx-auto max-w-6xl">
+                <slot />
+              </div>
+            </Container>
+          )}
         </main>
       )
     }

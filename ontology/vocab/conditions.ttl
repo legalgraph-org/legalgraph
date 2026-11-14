@@ -250,6 +250,21 @@ lgv:TransfersOutsideEEA a lgo:Condition ;
     skos:prefLabel "Transfers data outside the EEA"@en ;
     lgo:question "Is personal data transferred outside the EU/EEA, for example to US-based analytics, hosting or email providers?"@en .
 
+lgv:ProcessesSpecialCategories a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Processes special categories of personal data"@en ;
+    lgo:question "Does the business process health, biometric, genetic, religious, political or other special categories of personal data?"@en .
+
+lgv:HighRiskProcessing a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Processing likely to result in a high risk"@en ;
+    lgo:question "Is any processing likely to result in a high risk to people's rights and freedoms: systematic profiling with significant effects, large-scale special categories, large-scale monitoring of public areas, or an activity on the supervisory authority's DPIA list?"@en .
+
+lgv:UnmitigatedHighRisk a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "High risk the controller cannot mitigate"@en ;
+    lgo:question "Has an impact assessment shown a high risk that the business's own measures cannot reduce?"@en .
+
 lgv:UsesAutomatedDecisionMaking a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     skos:prefLabel "Uses automated decision-making"@en ;
@@ -663,6 +678,51 @@ lgv:EstablishedInSweden a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     skos:prefLabel "Established in Sweden"@en ;
     lgo:question "Is the business established in Sweden?"@en .
+
+lgv:EstablishedInFinland a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Finland"@en ;
+    lgo:question "Is the business established in Finland?"@en .
+
+lgv:EstablishedInLuxembourg a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Luxembourg"@en ;
+    lgo:question "Is the business established in Luxembourg?"@en .
+
+lgv:EstablishedInDenmark a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Denmark"@en ;
+    lgo:question "Is the business established in Denmark?"@en .
+
+lgv:EstablishedInBulgaria a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Bulgaria"@en ;
+    lgo:question "Is the business established in Bulgaria?"@en .
+
+lgv:EstablishedInNetherlands a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in the Netherlands"@en ;
+    lgo:question "Is the business established in the Netherlands?"@en .
+
+lgv:EstablishedInGreece a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Greece"@en ;
+    lgo:question "Is the business established in Greece?"@en .
+
+lgv:EstablishedInEstonia a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Estonia"@en ;
+    lgo:question "Is the business established in Estonia?"@en .
+
+lgv:EstablishedInSlovenia a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Slovenia"@en ;
+    lgo:question "Is the business established in Slovenia?"@en .
+
+lgv:EstablishedInItaly a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Established in Italy"@en ;
+    lgo:question "Is the business established in Italy?"@en .
 
 lgv:EstablishedInCzechia a lgo:Condition ;
     skos:inScheme lgv:Conditions ;

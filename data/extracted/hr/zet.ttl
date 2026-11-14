@@ -58,6 +58,7 @@ lg:HR-ZET-art6-2
     lgo:citation "članak 6 stavak 2 ZET" ;
     lgo:implements lg:EU-2000-31-art5-2 ;
     lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:HR-ZET-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;

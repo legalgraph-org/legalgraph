@@ -109,3 +109,31 @@ lg:LI-R-media-owner-disclosure a lgo:Obligation ;
     lgo:partOfDisclosure lgv:MediaOwnerDisclosure ;
     lgo:requiresDisclosureOf lgv:ProviderName , lgv:BusinessPurpose , lgv:GeographicAddress , lgv:AuthorisedRepresentative , lgv:OwnershipStructure , lgv:EditorialLine ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Consumer ADR (Directive 2013/11/EU Art. 13) ---
+
+lg:LI-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Art. 18 Abs. 1–2 of the Alternative-Streitbeilegungs-Gesetz (ASTG): a trader committed to ADR names the ADR body or bodies, with their website address, on its website, where it has one, and in its general terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:LI-ASTG-art18-1, lg:LI-ASTG-art18-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LI ;
+    lgo:appliesWhen lgv:EstablishedInLiechtenstein , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:LI-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Art. 18 Abs. 3 ASTG: when trader and consumer cannot agree, the trader names the competent ADR body on paper or another durable medium and says whether it will take part."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:LI-ASTG-art18-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LI ;
+    lgo:appliesWhen lgv:EstablishedInLiechtenstein , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

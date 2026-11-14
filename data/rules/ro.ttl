@@ -57,3 +57,46 @@ lg:RO-R-impressum-profession a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalTitle , lgv:ProfessionalRules ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Consumer ADR (Directive 2013/11/EU Art. 13), O.G. 38/2015 art. 25 ---
+
+lg:RO-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Art. 25 alin. (1)–(2) O.G. 38/2015: a trader that has committed to ADR names the ADR entity or entities, with their website address, clearly and accessibly on its website, where it has one, and in its general terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:RO-OG-38-2015-art25-1 , lg:RO-OG-38-2015-art25-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:RO-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Art. 25 alin. (3) O.G. 38/2015: when a complaint made directly to a trader established in Romania is not settled, the trader tells the consumer that it can turn to the ADR entity, on paper or another durable medium."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:RO-OG-38-2015-art25-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Company details on the website (Directive 2017/1132 Art. 26) ---
+
+lg:RO-R-company-website a lgo:Obligation ;
+    rdfs:label "Company details on the website: register numbers, CUI and share capital"@en ;
+    rdfs:comment "A company with its own website publishes on it its name, legal form, registered office, trade-register number and unique registration code (CUI), and, for an S.R.L. or S.A., its share capital (art. 74 alin. (1), (3) and (5) Legea 31/1990)."@en ;
+    lgo:refines lg:EU-R-company-website-disclosure ;
+    lgo:establishedBy lg:RO-LEGA-31-1990-art74-1 , lg:RO-LEGA-31-1990-art74-3 , lg:RO-LEGA-31-1990-art74-5 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:LimitedLiabilityCompany ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:GeographicAddress , lgv:RegisterEntry , lgv:TaxId , lgv:ShareCapital ;
+    lgo:reviewStatus lgv:Draft .

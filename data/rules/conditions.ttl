@@ -67,7 +67,10 @@ lgv:ObtainsDataFromOtherSources lgo:basedOn lg:EU-2016-679-art14-1 .
 lgv:ReliesOnConsent lgo:basedOn lg:EU-2016-679-art6-1 .
 lgv:ReliesOnLegitimateInterests lgo:basedOn lg:EU-2016-679-art6-1 .
 lgv:TransfersOutsideEEA lgo:basedOn lg:EU-2016-679-art13-1 .
-lgv:UsesAutomatedDecisionMaking lgo:basedOn lg:EU-2016-679-art13-2 .
+lgv:UsesAutomatedDecisionMaking lgo:basedOn lg:EU-2016-679-art13-2 , lg:EU-2016-679-art22-1 .
+lgv:ProcessesSpecialCategories lgo:basedOn lg:EU-2016-679-art9-1 .
+lgv:HighRiskProcessing lgo:basedOn lg:EU-2016-679-art35-1 , lg:EU-2016-679-art35-3 .
+lgv:UnmitigatedHighRisk lgo:basedOn lg:EU-2016-679-art36-1 .
 lgv:PublicAuthorityProcessing lgo:basedOn lg:EU-2016-679-art37-1 .
 lgv:LargeScaleMonitoring lgo:basedOn lg:EU-2016-679-art37-1 .
 lgv:LargeScaleSpecialCategories lgo:basedOn lg:EU-2016-679-art37-1 .
@@ -146,6 +149,15 @@ lgv:EstablishedInIreland lgo:establishedIn lg:IE .
 lgv:EstablishedInLatvia lgo:establishedIn lg:LV .
 lgv:EstablishedInPortugal lgo:establishedIn lg:PT .
 lgv:EstablishedInSweden lgo:establishedIn lg:SE .
+lgv:EstablishedInFinland lgo:establishedIn lg:FI .
+lgv:EstablishedInLuxembourg lgo:establishedIn lg:LU .
+lgv:EstablishedInDenmark lgo:establishedIn lg:DK .
+lgv:EstablishedInBulgaria lgo:establishedIn lg:BG .
+lgv:EstablishedInNetherlands lgo:establishedIn lg:NL .
+lgv:EstablishedInGreece lgo:establishedIn lg:GR .
+lgv:EstablishedInEstonia lgo:establishedIn lg:EE .
+lgv:EstablishedInSlovenia lgo:establishedIn lg:SI .
+lgv:EstablishedInItaly lgo:establishedIn lg:IT .
 lgv:EstablishedInAustria lgo:establishedIn lg:AT .
 lgv:SellsToConsumersInOntario lgo:offersIn lg:CA-ON ;
     lgo:basedOn lg:CA-ON-CPA-s38-1 .

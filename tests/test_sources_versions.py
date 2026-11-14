@@ -200,7 +200,7 @@ def test_extraction_states_how_authentic_a_document_is(all_sources: list[Source]
     assert "lg:CZ-ZOS-634-source" in mirror
     assert "lgo:authenticity lgv:VerifiedAgainstOfficial" in mirror
     assert "lgo:verifiedAgainst lg:CZ-ZOS-634-source-official" in mirror
-    unchecked = sources.extract(by_id(all_sources, "pt/csc"))
+    unchecked = sources.extract(by_id(all_sources, "cy/adr"))
     assert "lgo:authenticity lgv:NotVerified" in unchecked
     official = sources.extract(by_id(all_sources, "cz/480-2004"))
     assert "lgo:authenticity lgv:Official" in official and "VerifiedAgainstOfficial" not in official

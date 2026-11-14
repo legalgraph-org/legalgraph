@@ -23,4 +23,15 @@ originals:
       - "Fragment cut from the PGDL consolidated view: the <table class=\"artigo\"> holding artigo 10.º. Downloaded 2026-11-12; consolidated version in force."
     retrieved_on: 2026-11-12
     sha256: a1bd9e904bed761ed93016cfbac6186cafb22b0e342445348086fbafbad74833
+  - file: pt-10.dre.html
+    url: "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2004-73199154"
+    role: authentic
+    fetch: rendered
+    wait: "text=Artigo 10.º"
+    selector: "div.fragmento-full-width:-soup-contains(\"Artigo 10.º\")"
+    media_type: text/html
+    notes:
+      - "The official consolidated text the mirror's words are verified against: diariodarepublica.pt (Diário da República Eletrónico), reached through the ELI URI data.dre.pt/eli/dec-lei/7/2004/p/cons/pt/html. The portal is an OutSystems application; tools/render renders it (make render-install once)."
+    retrieved_on: 2026-11-14
+    sha256: 207227f9b2c42de50f17e17a56a90af17de63c83258e3c8ad97d0c1066278841
 annotated: dl-7-2004.law.xml

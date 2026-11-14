@@ -1,0 +1,26 @@
+# Burgerlijk Wetboek, Boek 3, art. 3:15d: the Dutch transposition of e-Commerce
+# Directive 2000/31/EC Art. 5 — lid 1 the provider-information catalogue (incl.
+# lid 1 sub f, the BTW identification number the hand-modeled provision
+# omitted), lid 2 the price-transparency clause. wetten.overheid.nl rejects
+# plain HTTP clients; tools/render renders the article page and the article
+# container holds the whole tekst (make render-install once).
+id: nl/bw-boek3
+title: Burgerlijk Wetboek, Boek 3 (art. 3:15d)
+jurisdiction: NL
+language: nl
+publisher: officielebekendmakingen.nl (overheid.nl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Dutch legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: bw-boek3-art15d.html
+    url: "https://wetten.overheid.nl/BWBR0005291/2024-11-08/0/Boek3/Titeldeel1/Afdeling1A/Artikel15d"
+    fetch: rendered
+    wait: "#Boek3_Titeldeel1_Afdeling1A_Artikel15d"
+    selector: "#Boek3_Titeldeel1_Afdeling1A_Artikel15d"
+    media_type: text/html
+    notes:
+      - "Consolidated Dutch text of art. 3:15d as wetten.overheid.nl renders it, version 2024-11-08. Lid 3 (the definition of an information-society service) carries no disclosure and is omitted."
+    retrieved_on: 2026-11-14
+    sha256: 2189315c2fab2ede6c60bf3eeecbc9686ecb03e9c30c85fc19a95b76a097e4b7
+annotated: bw-boek3.law.xml

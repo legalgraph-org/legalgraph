@@ -1,0 +1,29 @@
+# Laki sähköisen viestinnän palveluista (917/2014), § 176: the general information duty —
+# tietoyhteiskunnan palvelun tarjoaja keeps provider name, geographic address in the state of
+# establishment, e-mail and other rapid direct effective contact details, public-register entry
+# and business/organisation identifier, supervisory-authority contact where a licence or
+# registration is required, VAT identifier where applicable, and for regulated professions the
+# professional body, title, member state, and the professional rules — easily, directly and
+# continuously available to recipients and authorities. This is Finland's transposition of
+# e-Commerce Directive Art. 5. finlex.fi builds the consolidated act with JavaScript; tools/render
+# renders it (make render-install once).
+id: fi/sahkoiset-viestintapalvelut
+title: Laki sähköisen viestinnän palveluista 917/2014 (§ 176)
+jurisdiction: FI
+language: fi
+publisher: Finlex, the Finnish statute database (Oikeusministeriö)
+kind: authored-xml
+licence: official-work
+licence_basis: "Finnish copyright law § 9: legislation is not protected by copyright"
+originals:
+  - file: 917-2014.finlex.html
+    url: "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"
+    fetch: rendered
+    wait: "h5#part_7__chp_22__sec_176"
+    selector: "section:has(> h5#part_7__chp_22__sec_176)"
+    media_type: text/html
+    notes:
+      - "Consolidated Finnish text of § 176 as finlex renders it. The Swedish parallel (Allmän informationsskyldighet) is on the same page under #part_7__chp_22__sec_176 in the sv view; Finnish is the authentic language."
+    retrieved_on: 2026-11-14
+    sha256: 47cfaa9ff26a6e9c14764a5b1ab6733cc2efc55278ac9af49d648ce4d8a91b63
+annotated: sahkoiset-viestintapalvelut.law.xml

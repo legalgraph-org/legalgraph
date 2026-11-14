@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Laki sähköisen viestinnän palveluista 917/2014, § 176, written in
+  schemas/law.xsd from the consolidated text finlex.fi renders. The words are the
+  Finnish legislature's; only the structure is ours. § 176 is the general
+  information duty — Finland's transposition of e-Commerce Directive 2000/31/EC
+  Art. 5: provider identity and rapid contact, public-register entry and business
+  identifier, supervisory-authority contact where a licence or registration is
+  required, VAT identifier where applicable, regulated-profession data, and price
+  transparency. The text is Finnish; the authentic language. Moment 4 (consumer-
+  goods price declaration is regulated separately) carries no disclosure and is
+  omitted, as is the Swedish parallel on the same finlex page.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fi"
+     lga:act="FI-917-2014" lga:jurisdiction="FI" lga:act-type="Statute"
+     lga:url="https://www.finlex.fi/fi/laki/ajantasa/2014/20140917">
+  <meta>
+    <title>Laki sähköisen viestinnän palveluista 917/2014</title>
+    <date>2014-11-14</date>
+  </meta>
+
+  <section num="§ 176" source="917-2014.finlex.html">
+    <paragraph lga:provision="FI-917-2014-s176-1" lga:citation="917/2014 § 176 momentti 1" lga:url="https://www.finlex.fi/fi/laki/ajantasa/2014/20140917" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Sen lisäksi, mitä muualla laissa säädetään tiedonantovelvoitteista, tietoyhteiskunnan palvelun tarjoajan on pidettävä ainakin seuraavat tiedot palvelun vastaanottajien ja viranomaisten saatavilla helposti, välittömästi ja jatkuvasti:
+      <list>
+        <item num="1)" lga:requires="ProviderName GeographicAddress EmailAddress RapidContact">palvelun tarjoajan nimi, maantieteellinen osoite sijoittautumisvaltiossa, sähköpostiosoite sekä sellaiset muut yhteystiedot, joiden avulla palvelun tarjoajaan voidaan saada yhteys nopeasti, suoraan ja tehokkaasti;</item>
+        <item num="2)" lga:requires="RegisterEntry">mihin kaupparekisteriin tai muuhun vastaavaan julkiseen rekisteriin palvelun tarjoaja mahdollisesti on merkitty sekä palvelun tarjoajan yritys- ja yhteisötunnus tai muu vastaava tunniste kyseisessä rekisterissä;</item>
+        <item num="3)" lga:requires="SupervisoryAuthority">asianomaisen valvontaviranomaisen yhteystiedot, jos toiminnan harjoittaminen edellyttää lupaa tai rekisteröintiä;</item>
+        <item num="4)" lga:requires="VatId">arvonlisäverotunniste, jos palvelun tarjoaja harjoittaa arvonlisäveron alaista toimintaa.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="FI-917-2014-s176-2" lga:citation="917/2014 § 176 momentti 2" lga:url="https://www.finlex.fi/fi/laki/ajantasa/2014/20140917" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Sen lisäksi, mitä 1 momentissa säädetään, ammattipätevyyden tunnustamisesta annetussa Euroopan parlamentin ja neuvoston direktiivissä 2005/36/EY tarkoitetun säännellyn ammatin harjoittajan on tietoyhteiskunnan palvelua tarjotessaan pidettävä saatavilla seuraavat tiedot:
+      <list>
+        <item num="1)" lga:requires="ProfessionalBody">ammattialajärjestö tai vastaava yhteisö, johon palvelun tarjoaja kuuluu;</item>
+        <item num="2)" lga:requires="ProfessionalTitle">ammattinimike sekä jäsenvaltio, jossa se on myönnetty;</item>
+        <item num="3)" lga:requires="ProfessionalRules">maininta sijoittautumisvaltiossa sovellettavista ammatillisista säännöistä sekä siitä, missä ja miten ne ovat saatavilla.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="FI-917-2014-s176-3" lga:citation="917/2014 § 176 momentti 3" lga:url="https://www.finlex.fi/fi/laki/ajantasa/2014/20140917" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Jos tietoyhteiskunnan palvelua tarjottaessa annetaan tietoja tavaroiden tai palvelujen hinnoista, ne on annettava selkeästi ja yksiselitteisesti. Tiedoista on käytävä ilmi, sisältyvätkö vero ja toimituskulut hintaan.</paragraph>
+  </section>
+</law>

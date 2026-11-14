@@ -1,0 +1,16 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Finland: § 176 of the Act on Electronic Communications Services (917/2014),
+# the general information duty — the Finnish transposition of e-Commerce
+# Directive Art. 5.
+
+lg:FI-917-2014 a lgo:LegalAct ;
+    eli:title "Laki sähköisen viestinnän palveluista"@fi , "Act on Electronic Communications Services"@en ;
+    lgo:shortName "Sähköisen viestinnän palvelulaki" ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:reviewStatus lgv:SourceChecked .

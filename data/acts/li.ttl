@@ -24,3 +24,16 @@ lg:LI-MEDIENG
     eli:id_local "LGBl. 2005 Nr. 250, LR-Nr. 449.1" ;
     rdfs:seeAlso <https://www.gesetze.li/konso/2005250000> ;
     rdfs:comment "Art. 11 is the media Impressum: every medium distributed in Liechtenstein — electronic media included — must give the media owner's name/firm and editorial seat, and periodical media also address, electronic contact data, publisher details and regulators. Art. 12 is the Offenlegung: ownership, editorial-line and regulator data must stay constantly easily and directly accessible in the medium itself."@en .
+
+# AStG (LGBl. 2016 Nr. 516): the ADR trader-information duty; provisions come
+# from sources/li/astg (Lilex consolidated PDF).
+lg:LI-ASTG a lgo:LegalAct ;
+    eli:title "Gesetz über alternative Streitbeilegung in Konsumentenangelegenheiten"@de , "Act on Alternative Dispute Resolution in Consumer Matters"@en ;
+    lgo:shortName "AStG" ;
+    eli:id_local "LGBl. 2016 Nr. 516" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:LI ;
+    eli:transposes lg:EU-2013-11 ;
+    rdfs:seeAlso <https://www.gesetze.li/konso/2016516000> ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 18 requires entrepreneurs covered by or committed to ADR bodies to inform consumers of the body and its website address (Abs. 1), to state it clearly, understandably and accessibly on their website and in their general terms where they have one (Abs. 2), and to point consumers to the competent body on durable media when no agreement is reached, stating whether they will take part (Abs. 3)."@en .

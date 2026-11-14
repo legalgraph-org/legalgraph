@@ -5,13 +5,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# LU: draft. Act and citation from research notes; not yet checked against the official text.
+# LU: art. 5 of the Law of 14 August 2000 on electronic commerce — the general
+# information duty (ECD Art. 5 transposition). Sourced from the Legilux
+# consolidated text (fetch: rendered).
 
 lg:LU-LOI-2000-08-14 a lgo:LegalAct ;
     eli:title "Loi du 14 août 2000 relative au commerce électronique"@fr , "Law of 14 August 2000 on electronic commerce"@en ;
+    lgo:shortName "Loi commerce électronique" ;
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:LU ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "https://legilux.public.lu/eli/etat/leg/memorial/2000/a96"^^xsd:anyURI ;
-    rdfs:comment "Provision not yet identified: the research cited Art. 14, which in this text amends the Civil Code."@en ;
-    lgo:reviewStatus lgv:Draft .
+    lgo:reviewStatus lgv:SourceChecked .

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Handelsregisterwet 2007, art. 27, written in schemas/law.xsd from the
+  article page wetten.overheid.nl renders. The words are the Dutch
+  legislature's; only the structure is ours. Lid 1 requires registered
+  undertakings and legal persons to state their trade-register number on all
+  outgoing letters, orders, invoices, offers and other announcements, except
+  advertisements; lid 2 defines the number, lid 3 the exemption possibility.
+  Whether "andere aankondigingen" reaches a website is for review; Dutch is
+  the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="nl"
+     lga:act="NL-HRW" lga:jurisdiction="NL" lga:act-type="Statute"
+     lga:url="https://wetten.overheid.nl/BWBR0021777/2025-07-16/0/Hoofdstuk4/Paragraaf4.4/Artikel27">
+  <meta>
+    <title>Handelsregisterwet 2007</title>
+    <date>2008-07-01</date>
+  </meta>
+
+  <section num="Artikel 27" source="handelsregisterwet-art27.html">
+    <paragraph num="1" lga:provision="NL-HRW-art27-1" lga:citation="Artikel 27 lid 1 Handelsregisterwet 2007" lga:url="https://wetten.overheid.nl/BWBR0021777/2025-07-16/0/Hoofdstuk4/Paragraaf4.4/Artikel27" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">De volgende in het handelsregister ingeschreven ondernemingen of rechtspersonen zorgen ervoor dat op alle van die onderneming of die rechtspersoon uitgaande brieven, orders, facturen, offertes en andere aankondigingen, met uitzondering van reclames, is vermeld onder welk nummer deze in het handelsregister is ingeschreven:
+      <list>
+        <item num="a.">de in artikel 5 en 6, eerste lid, onderdeel a, genoemde ondernemingen en rechtspersonen;</item>
+        <item num="b.">de in artikel 6, eerste lid, onderdeel b, genoemde rechtspersonen, tenzij stukken uitgaan van een rechtspersoon waaraan geen onderneming toebehoort.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2" lga:provision="NL-HRW-art27-2" lga:citation="Artikel 27 lid 2 Handelsregisterwet 2007" lga:url="https://wetten.overheid.nl/BWBR0021777/2025-07-16/0/Hoofdstuk4/Paragraaf4.4/Artikel27" lga:defines="RegisterEntry">Het in het eerste lid bedoelde nummer is het nummer, bedoeld in artikel 9, onderdeel a, of in artikel 13, onderdeel a.</paragraph>
+    <paragraph num="3" lga:provision="NL-HRW-art27-3" lga:citation="Artikel 27 lid 3 Handelsregisterwet 2007" lga:url="https://wetten.overheid.nl/BWBR0021777/2025-07-16/0/Hoofdstuk4/Paragraaf4.4/Artikel27" lga:regulates="ProviderIdentification">Bij ministeriële regeling kan vrijstelling worden verleend van het in het eerste lid bepaalde. Een vrijstelling kan niet worden verleend:
+      <list>
+        <item num="a.">aan Europese economische samenwerkingsverbanden;</item>
+        <item num="b.">voor zover het betreft brieven en orders, aan naamloze vennootschappen, besloten vennootschappen met beperkte aansprakelijkheid en Europese naamloze vennootschappen.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

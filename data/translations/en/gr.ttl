@@ -1,0 +1,41 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:GR-PD-131-2003-art4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "edf691d1896b57c9edfa8bd29a4b9d98b039838703f95267ed5ac9dc806e9297" ;
+    lgo:text """1. In addition to the particulars provided for in paragraphs 2 and 9 of Article 4 of Law 2251/1994 (A' 191), the service provider shall offer the recipients of its service and the competent authorities easy, direct and permanent access to at least the following information:
+(a) the name of the service provider,
+(b) the geographic address at which the provider is established,
+(c) details that allow rapid contact and direct and effective communication with the service provider, including its electronic-mail address,
+(d) where the provider is entered in a trade register or similar public register, the register concerned and its registration number in it, or equivalent means of identification in that register,
+(e) where the activity is subject to an authorisation scheme, the particulars of the relevant supervisory authority,
+(f) as regards regulated professions,
+- the professional association or similar body with which the service provider is registered,
+- the professional title and the Member State where it has been granted,
+- a reference to the professional rules applicable in the Member State of establishment and the means to access them.
+(g) where the activity the provider pursues is subject to VAT, the identification number provided for by the common system of value added tax in accordance with Article 36 of Law 2859/2000 (A' 248) \"ratification of the Value Added Tax Code\"."""@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:GR-PD-131-2003-art4-1-q1 .
+
+lg:GR-PD-131-2003-art4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e212e4cf5e87371937a7c40199fc177acdd46bf1688c544b477059cf0f12ced0" ;
+    lgo:text "2. Where information society services refer to prices, these must be indicated clearly and precisely and, in particular, it must be specified whether they include tax and delivery costs."@en ;
+    lgo:translatedBy "claude-opus-5-5" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:GR-PD-131-2003-art4-2-q1 .

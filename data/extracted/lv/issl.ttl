@@ -53,6 +53,7 @@ lg:LV-ISSL-art4-2
     lgo:citation "4. pants (2) ISSL" ;
     lgo:implements lg:EU-2000-31-art5-2 ;
     lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:LV-ISSL-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;

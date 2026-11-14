@@ -54,6 +54,8 @@ obligations:
   - EU-R-portability
   - EU-R-rectification
   - EU-R-restriction
+  - EU-R-processing-on-instructions
+  - EU-R-supervisory-authority-cooperation
   - US-CA-R-opt-out-signals
   - US-CA-R-reask-after-opt-out
   - US-CA-R-request-deadline

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Προεδρικό Διάταγμα 131/2003, άρθρο 4, written in schemas/law.xsd from the Government Gazette issue
+  (ΦΕΚ Α' 116/16.05.2003). The words are the Greek legislator's; only the structure is ours. Line-end
+  hyphenation of the print is joined. Art. 4(1) is the provider-information list (e-Commerce Directive
+  Art. 5(1)); art. 4(2) the price clause (Art. 5(2)).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="el"
+     lga:act="GR-PD-131-2003" lga:jurisdiction="GR" lga:act-type="Statute"
+     lga:url="https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2003/20030100116.pdf" lga:transposes="EU-2000-31">
+  <meta>
+    <title>Προεδρικό Διάταγμα 131/2003</title>
+    <date>2003-05-16</date>
+  </meta>
+
+  <section num="Άρθρο 4" title="Υποχρεωτικά παρεχόμενες γενικές πληροφορίες" source="fek-a-116-2003.pdf">
+    <paragraph num="1." lga:provision="GR-PD-131-2003-art4-1" lga:citation="άρθρο 4 παρ. 1 Π.Δ. 131/2003" lga:url="https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2003/20030100116.pdf" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Ο φορέας παροχής υπηρεσιών οφείλει εκτός από τα στοιχεία που προβλέπονται στις παραγράφους 2 και 9 του άρθρου 4 του Ν. 2251/1994 (Α΄ 191) να προσφέρει στους αποδέκτες του και στις αρμόδιες αρχές εύκολη, άμεση και συνεχή πρόσβαση στις ακόλουθες τουλάχιστον πληροφορίες:
+      <list>
+        <item num="(α)" lga:requires="ProviderName">επωνυμία του φορέα παροχής της υπηρεσίας,</item>
+        <item num="(β)" lga:requires="GeographicAddress">γεωγραφική διεύθυνση στην οποία ο φορέας είναι εγκατεστημένος,</item>
+        <item num="(γ)" lga:requires="RapidContact EmailAddress">στοιχεία που να επιτρέπουν την ταχεία επαφή και την άμεση και ουσιαστική επικοινωνία με το φορέα παροχής της υπηρεσίας, συμπεριλαμβανομένης της ηλεκτρονικής του διεύθυνσης,</item>
+        <item num="(δ)" lga:requires="RegisterEntry">εφόσον ο φορέας είναι εγγεγραμμένος σε εμπορικό μητρώο, ή παρόμοιο δημόσιο μητρώο, το οικείο μητρώο και τον αριθμό εγγραφής του σε αυτό, ή ισοδύναμο τρόπο αναγνώρισης στο μητρώο αυτό,</item>
+        <item num="(ε)" lga:requires="SupervisoryAuthority">εφόσον η δραστηριότητα υπόκειται σε καθεστώς έγκρισης, τα στοιχεία της σχετικής εποπτικής αρχής,</item>
+        <item num="(στ)">όσον αφορά τα νομοθετικώς κατοχυρωμένα επαγγέλματα,
+          <list>
+            <item num="-" lga:requires="ProfessionalBody">επαγγελματική ένωση ή παρόμοιο όργανο στο οποίο είναι εγγεγραμμένος ο φορέας παροχής υπηρεσιών,</item>
+            <item num="-" lga:requires="ProfessionalTitle">επαγγελματικό τίτλο και το κράτος μέλος που τον έχει χορηγήσει,</item>
+            <item num="-" lga:requires="ProfessionalRules">μνεία των επαγγελματικών κανόνων που ισχύουν στο κράτος μέλος εγκατάστασης, καθώς και του τρόπου πρόσβασης σ' αυτούς.</item>
+          </list>
+        </item>
+        <item num="(ζ)" lga:requires="VatId">εφόσον η δραστηριότητα που ασκεί ο φορέας υπόκειται σε ΦΠΑ, τον αριθμό αναγνώρισης που προβλέπεται από το κοινό σύστημα φόρου προστιθέμενης αξίας κύκλου εργασιών σύμφωνα με το άρθρο 36 του Ν. 2859/2000 (Α΄ 248) «κύρωση του κώδικα φόρου προστιθέμενης αξίας».</item>
+      </list>
+    </paragraph>
+    <paragraph num="2." lga:provision="GR-PD-131-2003-art4-2" lga:citation="άρθρο 4 παρ. 2 Π.Δ. 131/2003" lga:url="https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2003/20030100116.pdf" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Όταν οι υπηρεσίες της κοινωνίας της πληροφορίας αναφέρονται σε τιμές, αυτές πρέπει να αναγράφονται σαφώς και επακριβώς και, ειδικότερα να διευκρινίζεται αν περιλαμβάνουν φόρο και έξοδα αποστολής.</paragraph>
+  </section>
+</law>

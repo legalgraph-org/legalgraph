@@ -1,0 +1,70 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Netherlands: provider information under artikel 3:15d lid 1 of the Burgerlijk Wetboek, the transposition
+# of Article 5 of the e-Commerce Directive. It follows the Directive's list.
+
+lg:NL-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and e-mail"@en ;
+    rdfs:comment "Identity and address of establishment, and details for rapid contact and direct, effective communication including e-mail, easily, directly and permanently accessible (art. 3:15d lid 1 onder a en b BW)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:NL-BW3-art15d-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NL ;
+    lgo:appliesWhen lgv:EstablishedInNetherlands, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NL-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "The trade or similar public register the provider is entered in, with its registration number (art. 3:15d lid 1 onder c BW)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:NL-BW3-art15d-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NL ;
+    lgo:appliesWhen lgv:EstablishedInNetherlands, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NL-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:NL-BW3-art15d-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NL ;
+    lgo:appliesWhen lgv:EstablishedInNetherlands, lgv:CommercialDigitalService, lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NL-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:NL-BW3-art15d-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NL ;
+    lgo:appliesWhen lgv:EstablishedInNetherlands, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:NL-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "Professional association, professional title and the state that granted it, and the professional rules that apply in the Netherlands with how to access them (art. 3:15d lid 1 onder e BW)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:NL-BW3-art15d-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:NL ;
+    lgo:appliesWhen lgv:EstablishedInNetherlands, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .

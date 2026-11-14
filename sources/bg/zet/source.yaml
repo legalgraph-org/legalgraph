@@ -1,0 +1,42 @@
+# Закон за електронната търговия (ЗЕТ), ДВ бр. 51/23.06.2006: чл. 4 is the
+# general information duty — the Bulgarian transposition of e-Commerce
+# Directive 2000/31/EC Art. 5(1) (provider name, establishment address and
+# management address, place-of-activity address, correspondence data including
+# phone and e-mail, trade-register entry, supervisory body where a
+# notification/registration/licensing regime applies, regulated-profession data,
+# VAT-registration indication); чл. 4(2) is the price-transparency clause
+# (Art. 5(2)). чл. 5(3) is the commercial-communication requirements clause —
+# item 2 is the sender-identification duty. lex.bg injects the article text by
+# script behind a session; tools/render renders it (make render-install once).
+id: bg/zet
+title: Закон за електронната търговия (ЗЕТ) (чл. 4–5)
+jurisdiction: BG
+language: bg
+publisher: Lex.bg, the official legal-information system
+kind: authored-xml
+licence: official-work
+licence_basis: "Bulgarian legislation is an official work under the Copyright and Related Rights Act; official texts are not copyright-protected"
+originals:
+  - file: zet-chl4.lexbg.html
+    url: "https://lex.bg/laws/ldoc/2135530547"
+    # lex.bg loads the article text by script; tools/render renders it and waits
+    # for the first article's content (make render-install once).
+    fetch: rendered
+    wait: "text=Доставчикът на услуги"
+    selector: "#i_6"
+    media_type: text/html
+    notes:
+      - "Consolidated Bulgarian text of чл. 4 as lex.bg renders it (the div.Article holding the article). Bulgarian is the authentic language."
+    retrieved_on: 2026-11-14
+    sha256: e3b9843409d81608920c85a02343fb577d60c31956dc1cf2bb0520a5d232576f
+  - file: zet-chl5.lexbg.html
+    url: "https://lex.bg/laws/ldoc/2135530547"
+    fetch: rendered
+    wait: "text=Доставчикът на услуги"
+    selector: "#i_7"
+    media_type: text/html
+    notes:
+      - "Consolidated Bulgarian text of чл. 5 as lex.bg renders it. Only чл. 5(3) — the commercial-communication requirements — is annotated; (1)–(2) are the definition and its exceptions."
+    retrieved_on: 2026-11-14
+    sha256: 17ee4a7f21cf60bf85c0da6b849d0652c617babd6ec50a665be037a117c20655
+annotated: zet.law.xml

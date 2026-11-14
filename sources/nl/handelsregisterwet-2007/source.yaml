@@ -1,0 +1,28 @@
+# Handelsregisterwet 2007, art. 27: undertakings and legal persons entered in
+# the trade register must state their registration number on all letters,
+# orders, invoices, offers and other announcements issued by them, except
+# advertisements — the Dutch KvK-number duty. Whether "andere
+# aankondigingen" reaches a company website is for review; the express
+# website duty is Burgerlijk Wetboek art. 3:15d(1)(c), sourced under
+# nl/bw-boek3. wetten.overheid.nl rejects plain HTTP clients; tools/render
+# renders the article page (make render-install once).
+id: nl/handelsregisterwet-2007
+title: Handelsregisterwet 2007 (artikel 27)
+jurisdiction: NL
+language: nl
+publisher: officielebekendmakingen.nl (overheid.nl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Dutch legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: handelsregisterwet-art27.html
+    url: "https://wetten.overheid.nl/BWBR0021777/2025-07-16/0/Hoofdstuk4/Paragraaf4.4/Artikel27"
+    fetch: rendered
+    wait: "[id=\"Hoofdstuk4_Paragraaf4.4_Artikel27\"]"
+    selector: "[id=\"Hoofdstuk4_Paragraaf4.4_Artikel27\"]"
+    media_type: text/html
+    notes:
+      - "Consolidated Dutch text of art. 27 as wetten.overheid.nl renders it, version 2025-07-16. Lid 2 defines the number and lid 3 the exemption possibility; both are transcribed for completeness."
+    retrieved_on: 2026-11-14
+    sha256: ff429ca12ff75755c54e0731487011ad3a8bce2a9ae0a3f0e44ef54fe7f4b65f
+annotated: handelsregisterwet.law.xml

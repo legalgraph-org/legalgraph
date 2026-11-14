@@ -5,7 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-# SI: draft. Act and citation from research notes; not yet checked against the official text.
+# Slovenia: 5. člen of the ZEPT, sourced from the official pisrs.si consolidated text.
 
 lg:SI-ZEPT a lgo:LegalAct ;
     eli:title "Zakon o elektronskem poslovanju na trgu"@sl , "Electronic Commerce Market Act"@en ;
@@ -13,13 +13,18 @@ lg:SI-ZEPT a lgo:LegalAct ;
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:SI ;
     eli:transposes lg:EU-2000-31 ;
-    lgo:sourceUrl "http://www.pisrs.si/Pis.web/pregledPredpisa?id=ZAKO4600"^^xsd:anyURI ;
-    lgo:reviewStatus lgv:Draft .
+    lgo:reviewStatus lgv:SourceChecked .
 
-lg:SI-ZEPT-cl5 a lgo:Provision ;
-    eli:is_part_of lg:SI-ZEPT ;
-    lgo:citation "5. člen ZEPT" ;
-    lgo:sourceUrl "http://www.pisrs.si/Pis.web/pregledPredpisa?id=ZAKO4600"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:reviewStatus lgv:Draft .
+# The provisions of 5. člen come from sources/si/zept (official pisrs.si text);
+# this block keeps only act-level metadata.
+
+lg:SI-ZISRPS a lgo:LegalAct ;
+    eli:title "Zakon o izvensodnem reševanju potrošniških sporov"@sl , "Out-of-Court Resolution of Consumer Disputes Act"@en ;
+    lgo:shortName "ZIsRPS" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:SI ;
+    eli:transposes lg:EU-2013-11 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+# 32. člen comes from sources/si/zisrps (official gazette PDF, Ur. l. RS
+# 81/15); the act was never amended, so the original text is current.

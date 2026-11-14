@@ -17,7 +17,7 @@ lg:PT-CSC
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:PT ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:PT-CSC-source ;
+    lgo:sourceDocument lg:PT-CSC-source , lg:PT-CSC-source-official ;
     lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&tabela=leis"^^xsd:anyURI .
 
 lg:PT-CSC-art171-1
@@ -88,7 +88,7 @@ lg:PT-CSC-source
     a lgo:SourceDocument ;
     dcterms:language "pt"^^xsd:language ;
     lgo:annotatedFile "sources/pt/csc/csc.law.xml" ;
-    lgo:authenticity lgv:NotVerified ;
+    lgo:authenticity lgv:VerifiedAgainstOfficial ;
     lgo:legalStatus "Fragment cut from the PGDL consolidated view (page 2, articles 101-200): the 'Artigo 171.º' block through the end of its version notes. Downloaded 2026-11-12; the page is ISO-8859-1, fragment re-encoded to UTF-8 with text unchanged."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Código do Direito de Autor e dos Direitos Conexos art. 5: official texts are not protected — diplomas oficiais não são protegidos por direito de autor" ;
@@ -96,4 +96,18 @@ lg:PT-CSC-source
     lgo:repositoryPath "sources/pt/csc/csc-171.fragment.html" ;
     lgo:retrievedOn "2026-11-12"^^xsd:date ;
     lgo:sha256 "d590e06489ccacd3b4ed57a1ec492ad52a35ec7568c43e58dc60f8dcbf3ce146" ;
-    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&tabela=leis&pagina=2&ficha=201"^^xsd:anyURI .
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&tabela=leis&pagina=2&ficha=201"^^xsd:anyURI ;
+    lgo:verifiedAgainst lg:PT-CSC-source-official .
+
+lg:PT-CSC-source-official
+    a lgo:SourceDocument ;
+    dcterms:language "pt"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "The official consolidated text the mirror's words are verified against: diariodarepublica.pt (Diário da República Eletrónico), reached through the ELI URI data.dre.pt/eli/dec-lei/262/1986/p/cons/pt/html. The portal is an OutSystems application; tools/render renders it (make render-install once)."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "Código do Direito de Autor e dos Direitos Conexos art. 5: official texts are not protected — diplomas oficiais não são protegidos por direito de autor" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/pt/csc/csc-art171.dre.html" ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sha256 "f0abd3c01cbdf0a57dd6b8b8da12e54cd8ff3d6665d6e8ce9be8d14b09ac38c3" ;
+    lgo:sourceUrl "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975"^^xsd:anyURI .

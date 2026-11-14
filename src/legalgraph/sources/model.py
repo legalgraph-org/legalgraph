@@ -36,6 +36,8 @@ class Original:
     selector: str | None = None
     wait: str | None = None  # rendered: the element to wait for before cutting the fragment
     text_ignore: list[str] = field(default_factory=list)
+    # A PDF whose fonts carry no Unicode map: the codec of the bytes it shows (old Greek ΦΕΚ: cp1253).
+    pdf_encoding: str | None = None
     # False for a mirror's copy: its words count as the law's once verified against an authentic original.
     official: bool = True
     headers: dict[str, str] = field(default_factory=dict)
@@ -124,6 +126,7 @@ class OriginalEntry(BaseModel):
     selector: str | None = None
     wait: str | None = None  # rendered: the element to wait for before cutting the fragment
     text_ignore: list[str] = Field(default_factory=list)
+    pdf_encoding: str | None = None
     official: bool = True
     headers: dict[str, str] = Field(default_factory=dict)
     role: Role = "text"
@@ -161,6 +164,7 @@ class OriginalEntry(BaseModel):
             selector=self.selector,
             wait=self.wait,
             text_ignore=self.text_ignore,
+            pdf_encoding=self.pdf_encoding,
             official=self.official,
             headers=self.headers,
             role=self.role,

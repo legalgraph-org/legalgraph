@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ordonanța Guvernului nr. 38 din 26 august 2015, art. 25, written in
+  schemas/law.xsd from the consolidated print view legislatie.just.ro serves.
+  The words are the Romanian Government's; only the structure is ours. Alin.
+  (2) is the website duty: the information of alin. (1) must appear clearly,
+  intelligibly and accessibly on the trader's website where one exists, and in
+  the general terms of sales or service contracts.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="ro"
+     lga:act="RO-OG-38-2015" lga:jurisdiction="RO" lga:act-type="Ordinance"
+     lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569">
+  <meta>
+    <title>Ordonanța Guvernului nr. 38 din 26 august 2015 privind soluționarea alternativă a litigiilor dintre consumatori și comercianți</title>
+    <date>2015-08-26</date>
+  </meta>
+
+  <section num="Articolul 25" source="og-38-2015-afis.html">
+    <paragraph num="(1)" lga:provision="RO-OG-38-2015-art25-1" lga:citation="art. 25 alin. (1) O.G. 38/2015" lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Comercianții informează consumatorii cu privire la entitatea sau entitățile SAL de care aceștia aparțin atunci când comercianții se angajează să utilizeze respectivele proceduri. Informațiile respective includ adresa site-ului internet al entității sau entităților SAL relevante.</paragraph>
+    <paragraph num="(2)" lga:provision="RO-OG-38-2015-art25-2" lga:citation="art. 25 alin. (2) O.G. 38/2015" lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Informațiile menționate la alin. (1) sunt furnizate în mod clar, inteligibil și ușor accesibil pe site-ul internet al comercianților, în cazul în care acesta există, și, dacă este cazul, în termenii și condițiile generale ale contractelor de vânzare sau de prestare de servicii dintre comerciant și consumator.</paragraph>
+    <paragraph num="(3)" lga:provision="RO-OG-38-2015-art25-3" lga:citation="art. 25 alin. (3) O.G. 38/2015" lga:url="https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionStatement">În cazul în care un litigiu între un consumator și un comerciant stabilit pe teritoriul României nu a putut fi soluționat în urma unei reclamații prezentate direct de consumator comerciantului, comerciantul informează consumatorul despre posibilitatea de a se adresa entității SAL. Această informație este furnizată pe suport hârtie sau pe un alt suport durabil.</paragraph>
+  </section>
+</law>

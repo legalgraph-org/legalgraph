@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Codice del consumo (D.Lgs. 206/2005), Titolo II-bis, art. 141-sexies, written
+  in schemas/law.xsd from the article page normattiva.it renders. The words are
+  the Italian legislature's; only the structure is ours. Comma 1 is the
+  information content, comma 2 the website-and-terms duty — together the
+  transposition of Directive 2013/11/EU Art. 13(1)–(2); comma 3 the
+  post-complaint durable-medium duty (Art. 13(3)). Commas 4–9 carry
+  savings/ECC-NET/authority duties, not the trader's website disclosure, and
+  are omitted. Italian is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="it"
+     lga:act="IT-DLGS-206-2005" lga:jurisdiction="IT" lga:act-type="Decree"
+     lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206">
+  <meta>
+    <title>Codice del consumo</title>
+    <date>2005-09-06</date>
+  </meta>
+
+  <section num="Art. 141-sexies" source="cds-art141sexies.html">
+    <paragraph num="1." lga:provision="IT-DLGS-206-2005-art141sexies-1" lga:citation="art. 141-sexies comma 1 Codice del consumo" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206~art141sexies" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">I professionisti stabiliti in Italia che si sono impegnati a ricorrere ad uno o più organismi ADR per risolvere le controversie sorte con i consumatori, sono obbligati ad informare questi ultimi in merito all'organismo o agli organismi competenti per risolvere le controversie sorte con i consumatori. Tali informazioni includono l'indirizzo del sito web dell'organismo ADR pertinente o degli organismi ADR pertinenti.</paragraph>
+    <paragraph num="2." lga:provision="IT-DLGS-206-2005-art141sexies-2" lga:citation="art. 141-sexies comma 2 Codice del consumo" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206~art141sexies" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Le informazioni di cui al comma 1 devono essere fornite in modo chiaro, comprensibile e facilmente accessibile sul sito web del professionista, ove esista, e nelle condizioni generali applicabili al contratto di vendita o di servizi stipulato tra il professionista ed il consumatore.</paragraph>
+    <paragraph num="3." lga:provision="IT-DLGS-206-2005-art141sexies-3" lga:citation="art. 141-sexies comma 3 Codice del consumo" lga:url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206~art141sexies" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionBody DisputeResolutionStatement">Nel caso in cui non sia possibile risolvere una controversia tra un consumatore e un professionista stabilito nel rispettivo territorio in seguito a un reclamo presentato direttamente dal consumatore al professionista, quest'ultimo fornisce al consumatore le informazioni di cui al comma 1, precisando se intenda avvalersi dei pertinenti organismi ADR per risolvere la controversia stessa. Tali informazioni sono fornite su supporto cartaceo o su altro supporto durevole.</paragraph>
+  </section>
+</law>

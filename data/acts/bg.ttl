@@ -1,0 +1,17 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Bulgaria: чл. 4 of the Закон за електронната търговия (ЗЕТ, ДВ 51/23.06.2006),
+# the general information duty — the Bulgarian transposition of e-Commerce
+# Directive Art. 5. чл. 4(2) is the price-transparency clause and чл. 5(3) the
+# commercial-communication requirements clause.
+
+lg:BG-ZET a lgo:LegalAct ;
+    eli:title "Закон за електронната търговия"@bg , "Law on Electronic Commerce"@en ;
+    lgo:shortName "ЗЕТ" ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:reviewStatus lgv:SourceChecked .

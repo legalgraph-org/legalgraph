@@ -14,15 +14,10 @@ lg:IT-DLGS-70-2003 a lgo:LegalAct ;
     lgo:jurisdiction lg:IT ;
     eli:transposes lg:EU-2000-31 ;
     lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-09;70"^^xsd:anyURI ;
-    lgo:reviewStatus lgv:Draft .
+    lgo:reviewStatus lgv:SourceChecked .
 
-lg:IT-DLGS-70-2003-art7 a lgo:Provision ;
-    eli:is_part_of lg:IT-DLGS-70-2003 ;
-    lgo:citation "Art. 7 D.Lgs. 70/2003" ;
-    lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-09;70"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:reviewStatus lgv:Draft .
+# The provisions of art. 7 come from sources/it/dlgs-70-2003 (official
+# normattiva.it text); this block keeps only act-level metadata.
 
 lg:IT-196-2003 a lgo:LegalAct ;
     eli:title "Codice in materia di protezione dei dati personali"@it , "Personal Data Protection Code"@en ;
@@ -34,3 +29,13 @@ lg:IT-196-2003 a lgo:LegalAct ;
     lgo:sourceUrl "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Article 122 is the Italian cookie rule: informed consent for storage and access on terminal equipment, consent may come through browser or device settings (comma 2), and accessing stored information is otherwise prohibited (2-bis). The Garante's 2021 cookie guidelines apply it."@en .
+
+# Codice del consumo (D.Lgs. 206/2005): art. 141-sexies, the trader-information
+# duty for consumer ADR (Directive 2013/11/EU Art. 13).
+
+lg:IT-DLGS-206-2005 a lgo:LegalAct ;
+    eli:title "Codice del consumo"@it , "Consumer Code"@en ;
+    lgo:shortName "Codice del consumo" ;
+    eli:date_document "2005-09-06"^^xsd:date ;
+    eli:transposes lg:EU-2013-11 ;
+    lgo:reviewStatus lgv:SourceChecked .

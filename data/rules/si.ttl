@@ -1,0 +1,101 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Slovenia: provider information under 5. člen of the Zakon o elektronskem poslovanju na trgu (ZEPT), the
+# transposition of Article 5 of the e-Commerce Directive. It asks for the registration number and the tax
+# number of every provider, and for links to the particulars on the main web page.
+
+lg:SI-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, seat, e-mail and tax number"@en ;
+    rdfs:comment "Company and seat, a valid e-mail address for rapid and effective communication, and the tax number (davčna številka), easily, directly and permanently accessible through links on the provider's main web page (5. člen (1)–(2) ZEPT). The tax number is a national addition to the Directive's list."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:SI-ZEPT-art5-1, lg:SI-ZEPT-art5-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact, lgv:TaxId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SI-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "The registration number (matična številka) (5. člen (1) ZEPT)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:SI-ZEPT-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SI-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    rdfs:comment "The permits the activity needs and the competent supervisory authorities (5. člen (1) ZEPT)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:SI-ZEPT-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:LicenceDetails, lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SI-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "Professional association, professional title and the state that granted it, and the applicable professional rules of the member state where the activity is registered with how to access them (5. člen (1) ZEPT)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:SI-ZEPT-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Consumer ADR (Directive 2013/11/EU Art. 13), 32. člen ZIsRPS ---
+
+lg:SI-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR provider on the website and in the terms"@en ;
+    rdfs:comment "32. člen (1) ZIsRPS: before the contract, a trader names the ADR provider it recognises as competent, with at least its name, e-mail address and telephone number, clearly on its website and in its general terms, if it has them."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:SI-ZISRPS-art32-1 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SI-R-adr-no-participation-statement a lgo:Obligation ;
+    rdfs:label "Warn consumers that the business recognises no ADR provider"@en ;
+    rdfs:comment "32. člen (3) ZIsRPS: a trader that recognises no ADR provider as competent for consumer disputes says so expressly on its website and in its general terms, or in another suitable way if it has neither. A national addition to the Directive."@en ;
+    lgo:establishedBy lg:SI-ZISRPS-art32-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia , lgv:SellsToConsumers ;
+    lgo:unless lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:SI-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "32. člen (2) ZIsRPS: when the trader's internal complaint procedure does not uphold a consumer's complaint, the trader sends the ADR provider's details on a durable medium together with the reasons for rejecting the complaint."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:SI-ZISRPS-art32-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

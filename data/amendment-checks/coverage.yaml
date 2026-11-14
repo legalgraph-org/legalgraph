@@ -114,6 +114,7 @@ CA-QC-CPA: {exempt: "legisquebec.gouv.qc.ca is JavaScript-rendered"}
 # --- IT / IE / ES / NO / MT / NL / PT / SE ----------------------------------------
 IT-196-2003: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2003-06-30;196"}
 IT-DLGS-70-2003: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2003-04-09;70"}
+IT-DLGS-206-2005: {kind: normattiva, arg: "nir:stato:decreto.legislativo:2005-09-06;206"}
 IE-SI-2003-68: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
 IE-SI-336-2011: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
 IE-CA-2014: {exempt: "irishstatutebook amendments tab is JavaScript-rendered"}
@@ -123,6 +124,7 @@ NO-FREG: {kind: lovdata, arg: 2025-06-20-106}
 MT-CAP426: {kind: legislation_mt, arg: cap/426}
 MT-CAP386: {kind: legislation_mt, arg: cap/386}
 NL-BW3: {kind: wetten, arg: BWBR0005291}
+NL-HRW: {kind: wetten, arg: BWBR0021777}
 PT-DL-7-2004: {kind: pgdl, arg: "1399"}
 PT-CSC: {kind: pgdl, arg: "524"}
 SE-SFS-2002-562: {kind: riksdagen, arg: lag-2002562-om-elektronisk-handel-och-andra-informations_sfs-2002-562}
@@ -136,20 +138,26 @@ LV-ISSL: {exempt: "likumi.lv version dates are JavaScript-rendered"}
 LV-KL: {exempt: "likumi.lv version dates are JavaScript-rendered"}
 HR-ZET: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
 HR-ZTD: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
+HR-ARPS: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
 SI-ZEPT: {exempt: "pisrs.si is JavaScript-rendered"}
+SI-ZISRPS: {exempt: "pisrs.si is JavaScript-rendered"}
 TR-6563: {kind: mevzuat, arg: "1.5.6563"}
 CY-156-I-2004: {exempt: "cylaw.org gives no version data"}
 CY-CAP113: {exempt: "cylaw.org gives no version data"}
 BE-WER: {exempt: "justel needs an interactive session"}
 BE-CSA: {exempt: "justel consolidated text is fetched per-act; no amendment feed"}
 EE-ISSA: {exempt: "riigiteataja.ee is a JavaScript application"}
+EE-TKS: {exempt: "riigiteataja.ee is a JavaScript application"}
 LT-IVPI: {exempt: "e-tar.lt returns HTTP 403"}
 LU-LOI-2000-08-14: {exempt: "legilux.public.lu is a JavaScript application"}
 LI-ECG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
+LI-ASTG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 LI-PGR: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 PL-ASDE: {kind: isap, arg: "DU/2002/1204"}
 PL-KSH: {kind: isap, arg: "DU/2024/18"}
 RO-LCE: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
+RO-LEGA-31-1990: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
+RO-OG-38-2015: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
 SK-EOB: {exempt: "static.slov-lex.sk version index is scrapable but has no amendment-diff feed; slov-lex.sk proper is JavaScript-rendered"}
 MD-ECOM: {exempt: "legis.md returns HTTP 403"}
 ME-ZET: {exempt: "podaci.net gives no version data"}
@@ -178,3 +186,8 @@ LV-PRESI: {exempt: "likumi.lv serves the consolidated text"}
 NO-MEDIE: {kind: lovdata, arg: 2020-05-29-59}
 LI-MEDIENG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 SK-OBCH: {exempt: "slov-lex static mirror serves a dated text"}
+FI-917-2014: {exempt: "finlex.fi serves the consolidated text; no machine-readable amendment feed"}
+LU-LOI-2000-08-14: {exempt: "legilux.public.lu consolidated text carries per-article amendment marks but no machine-readable consolidation feed"}
+DK-227-2002: {exempt: "retsinformation.dk serves the consolidated act but gives no machine-readable amendment feed"}
+BG-ZET: {exempt: "lex.bg serves the consolidated act behind a session; no machine-readable amendment feed"}
+GR-PD-131-2003: {exempt: "et.gr publishes Government Gazette issues as PDFs, without a consolidated text or amendment feed"}

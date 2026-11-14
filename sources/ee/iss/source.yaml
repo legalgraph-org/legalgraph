@@ -1,0 +1,40 @@
+# Infoühiskonna teenuse seadus (Information Society Services Act, RT I
+# 68/2001): § 4 is the provider-information duty — the Estonian transposition
+# of e-Commerce Directive 2000/31/EC Art. 5. Lõige 1 is the catalogue
+# (name/registry code/address/contact, registration or licence number, price
+# references with tax and delivery costs, VAT number); lõige 2 the
+# regulated-profession items. riigiteataja.ee is a JavaScript application;
+# tools/render renders the consolidated act and waits for the § 4 text
+# (make render-install once).
+id: ee/iss
+title: Infoühiskonna teenuse seadus (InfoTS) (§ 4)
+jurisdiction: EE
+language: et
+publisher: Riigi Teataja, the official gazette
+kind: authored-xml
+licence: official-work
+licence_basis: "Estonian legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: iss-s4-lg1.html
+    url: "https://www.riigiteataja.ee/et/akt/104072024024"
+    fetch: rendered
+    wait: "text=Teenuse osutaja on kohustatud"
+    selector: "#para4lg1"
+    text_ignore: [".kaaludBtn", ".hover-item-menu", ".muutmismarge"]
+    media_type: text/html
+    notes:
+      - "Consolidated Estonian text of § 4 lõige 1 as riigiteataja.ee renders it. lõige 2 is a second original; the '[RT I …]' amendment marks are editorial and ignored."
+    retrieved_on: 2026-11-14
+    sha256: 5c11e02a4c24e9a27b7eaddc5610ed8bcbf2d75e3dc3c9d827e819d137f42bf7
+  - file: iss-s4-lg2.html
+    url: "https://www.riigiteataja.ee/et/akt/104072024024"
+    fetch: rendered
+    wait: "text=Teenuse osutaja on kohustatud"
+    selector: "#para4lg2"
+    text_ignore: [".kaaludBtn", ".hover-item-menu", ".muutmismarge"]
+    media_type: text/html
+    notes:
+      - "Consolidated Estonian text of § 4 lõige 2 (regulated-profession information)."
+    retrieved_on: 2026-11-14
+    sha256: 7cf8ec93faa542018b0c419e09f130d4f40a229f2d86acd5d4018dbde4d470e7
+annotated: iss.law.xml

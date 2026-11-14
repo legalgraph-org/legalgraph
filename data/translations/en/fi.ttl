@@ -1,0 +1,48 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:FI-917-2014-s176-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "36056314d575dbf28eea92eea266c0ca45c4cfe6aecc8ed00884aafb7eab75ea" ;
+    lgo:text """In addition to what is provided elsewhere in law on information duties, a provider of an information society service shall keep at least the following information easily, directly and continuously available to recipients of the service and to authorities:
+1) the name of the service provider, its geographic address in the Member State of establishment, its e-mail address and other contact details enabling the service provider to be contacted rapidly, directly and effectively;
+2) the commercial register or other corresponding public register in which the service provider is entered, if any, and the service provider's business and organisation identifier or other corresponding identifier in that register;
+3) the contact details of the competent supervisory authority, if the pursuit of the activity requires a licence or registration;
+4) the VAT identification number, if the service provider carries out activity subject to value added tax."""@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FI-917-2014-s176-1-q1 .
+
+lg:FI-917-2014-s176-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "067dde5cf36d2da56f799e643ff27e6b2cdec90c2883ce3ae804a22fcc3847b9" ;
+    lgo:text """In addition to what is provided in paragraph 1, a person practising a regulated profession within the meaning of Directive 2005/36/EC of the European Parliament and of the Council on the recognition of professional qualifications shall keep the following information available when providing an information society service:
+1) the professional organisation or corresponding body to which the service provider belongs;
+2) the professional title and the Member State in which it was awarded;
+3) a statement of the professional rules applicable in the Member State of establishment and of where and how they are available."""@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FI-917-2014-s176-2-q1 .
+
+lg:FI-917-2014-s176-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "db9cd27540b051a3f046d84204a0785d4a5fc454cef179bfc13dcf10d2dac5b4" ;
+    lgo:text "If information on the prices of goods or services is given when providing an information society service, it shall be given clearly and unambiguously. The information shall state whether tax and delivery costs are included in the price."@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FI-917-2014-s176-3-q1 .

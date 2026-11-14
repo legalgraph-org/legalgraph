@@ -11,7 +11,7 @@ facts:
   - RegisteredInPublicRegister
   - HasVatId
 obligations:
-  - EU-R-company-website-disclosure
+  - RO-R-company-website
   - EU-R-service-provider-information-vat
   - RO-R-impressum
   - RO-R-impressum-register

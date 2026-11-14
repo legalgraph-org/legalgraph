@@ -1,0 +1,24 @@
+# Zakon o alternativnom rješavanju potrošačkih sporova (NN 121/2016):
+# članak 22 is the trader-information duty — traders committed to or obliged
+# to use ADR bodies must inform consumers, and stavak 3 requires the notice
+# on the trader's website, in its business premises and by other means. The
+# page is a flat Word export with no per-article wrapper; the fragment is cut
+# from the rendered Narodne novine publication (make render-install once).
+id: hr/arps
+title: Zakon o alternativnom rješavanju potrošačkih sporova (članak 22)
+jurisdiction: HR
+language: hr
+publisher: Narodne novine d.d. (narodne-novine.nn.hr)
+kind: authored-xml
+licence: official-work
+licence_basis: "Zakon o autorskom pravu čl. 8 st. 1: službeni tekstovi zakonodavnih, upravnih i sudskih akata nisu predmet autorskog prava — official texts of legislation are not subject to copyright"
+originals:
+  - file: clanak-22.fragment.html
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the NN 121/2016 publication page between the Članak 22 paragraph and the next heading: the page is a flat Word export with no per-article wrapper. Rendered 2026-11-14 (plain HTTP works for this page). The consolidated text (NN 121/16, 32/19) is not published as official HTML; the 2019 amendments do not touch članak 22."
+    retrieved_on: 2026-11-14
+    sha256: d24dc4390a29b9c84d78bcf7801f7aa16ee47d9dfb8ebf3a756f57ae0be67448
+annotated: arps.law.xml

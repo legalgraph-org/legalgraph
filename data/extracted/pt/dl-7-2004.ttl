@@ -17,7 +17,7 @@ lg:PT-DL-7-2004
     lgo:actType lgv:Decree ;
     lgo:jurisdiction lg:PT ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:PT-DL-7-2004-source ;
+    lgo:sourceDocument lg:PT-DL-7-2004-source , lg:PT-DL-7-2004-source-official ;
     lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=1399A0010&nid=1399&tabela=leis"^^xsd:anyURI .
 
 lg:PT-DL-7-2004-art10-1
@@ -116,7 +116,7 @@ lg:PT-DL-7-2004-source
     a lgo:SourceDocument ;
     dcterms:language "pt"^^xsd:language ;
     lgo:annotatedFile "sources/pt/dl-7-2004/dl-7-2004.law.xml" ;
-    lgo:authenticity lgv:NotVerified ;
+    lgo:authenticity lgv:VerifiedAgainstOfficial ;
     lgo:legalStatus "Fragment cut from the PGDL consolidated view: the <table class=\"artigo\"> holding artigo 10.º. Downloaded 2026-11-12; consolidated version in force."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Código do Direito de Autor e dos Direitos Conexos art. 5: official texts are not protected — diplomas oficiais não são protegidos por direito de autor" ;
@@ -124,4 +124,18 @@ lg:PT-DL-7-2004-source
     lgo:repositoryPath "sources/pt/dl-7-2004/pt-10.fragment.html" ;
     lgo:retrievedOn "2026-11-12"^^xsd:date ;
     lgo:sha256 "a1bd9e904bed761ed93016cfbac6186cafb22b0e342445348086fbafbad74833" ;
-    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=1399A0010&nid=1399&tabela=leis"^^xsd:anyURI .
+    lgo:sourceUrl "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=1399A0010&nid=1399&tabela=leis"^^xsd:anyURI ;
+    lgo:verifiedAgainst lg:PT-DL-7-2004-source-official .
+
+lg:PT-DL-7-2004-source-official
+    a lgo:SourceDocument ;
+    dcterms:language "pt"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "The official consolidated text the mirror's words are verified against: diariodarepublica.pt (Diário da República Eletrónico), reached through the ELI URI data.dre.pt/eli/dec-lei/7/2004/p/cons/pt/html. The portal is an OutSystems application; tools/render renders it (make render-install once)."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "Código do Direito de Autor e dos Direitos Conexos art. 5: official texts are not protected — diplomas oficiais não são protegidos por direito de autor" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/pt/dl-7-2004/pt-10.dre.html" ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sha256 "207227f9b2c42de50f17e17a56a90af17de63c83258e3c8ad97d0c1066278841" ;
+    lgo:sourceUrl "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2004-73199154"^^xsd:anyURI .

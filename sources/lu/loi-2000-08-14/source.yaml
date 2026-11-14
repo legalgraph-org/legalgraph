@@ -1,0 +1,34 @@
+# Loi du 14 août 2000 relative au commerce électronique: art. 5 is the general
+# information duty — the Luxembourg transposition of e-Commerce Directive
+# 2000/31/EC Art. 5 (provider name, geographic address, rapid direct effective
+# contact including e-mail, register/VAT numbers and authorisation with the
+# granting authority's details, regulated-profession data, and price
+# transparency). Note: the workplan cited "art. 4"; art. 4 is the freedom-of-
+# establishment/access rule. Art. 5 is the information duty. legilux.public.lu
+# builds the consolidated text with Angular; tools/render renders it
+# (make render-install once).
+id: lu/loi-2000-08-14
+title: Loi du 14 août 2000 relative au commerce électronique (art. 5)
+jurisdiction: LU
+language: fr
+publisher: Service central de législation (Legilux)
+kind: authored-xml
+licence: official-work
+licence_basis: "Législation luxembourgeoise is an official work under article 5 de la loi du 18 avril 2001 sur les droits d'auteur, qui ne sont pas protégés"
+originals:
+  - file: loi-2000-08-14.legilux.html
+    url: "https://legilux.public.lu/eli/etat/leg/loi/2000/08/14/n8/consolide/20260510"
+    fetch: rendered
+    wait: "#art_5"
+    selector: "#art_5"
+    # span[title] holds the consolidation amendment marks ("7 >", "8 <", "59 >"…)
+    # naming the modifying laws; .expand-collapse-btn is the article's UI button.
+    text_ignore:
+      - "span[title]"
+      - ".expand-collapse-btn"
+    media_type: text/html
+    notes:
+      - "Consolidated French text of art. 5 as Legilux renders it (the consolidated version applicable 2026-05-10; /n8/consolide without a date resolves to the current consolidation). French is the authentic language."
+    retrieved_on: 2026-11-14
+    sha256: 91a522dcce93605590d66901967def44b7de8dc6092a2cf6669ce3c9b83cf186
+annotated: loi-2000-08-14.law.xml

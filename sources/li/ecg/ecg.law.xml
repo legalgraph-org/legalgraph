@@ -27,6 +27,6 @@
         <item num="g)" lga:requires="VatId">sofern vorhanden, die Mehrwertsteuer-Nummer.</item>
       </list>
     </paragraph>
-    <paragraph num="2)" lga:provision="LI-ECG-art5-2" lga:citation="Art. 5 Abs. 2 ECG" lga:url="https://www.gesetze.li/konso/2003133000" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Sofern in Diensten der Informationsgesellschaft Preise angeführt werden, sind diese so auszuzeichnen, dass sie ein durchschnittlich aufmerksamer Betrachter leicht lesen und zuordnen kann. Es muss eindeutig erkennbar sein, ob die Preise einschliesslich der Mehrwertsteuer sowie aller sonstigen Abgaben und Zuschläge ausgezeichnet sind (Bruttopreise) oder nicht. Darüber hinaus ist auch anzugeben, ob Versandkosten enthalten sind.</paragraph>
+    <paragraph num="2)" lga:provision="LI-ECG-art5-2" lga:citation="Art. 5 Abs. 2 ECG" lga:url="https://www.gesetze.li/konso/2003133000" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Sofern in Diensten der Informationsgesellschaft Preise angeführt werden, sind diese so auszuzeichnen, dass sie ein durchschnittlich aufmerksamer Betrachter leicht lesen und zuordnen kann. Es muss eindeutig erkennbar sein, ob die Preise einschliesslich der Mehrwertsteuer sowie aller sonstigen Abgaben und Zuschläge ausgezeichnet sind (Bruttopreise) oder nicht. Darüber hinaus ist auch anzugeben, ob Versandkosten enthalten sind.</paragraph>
   </section>
 </law>

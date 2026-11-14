@@ -72,7 +72,7 @@ msgstr ""
 msgid "<0>make check</0> runs the last four checks below and fails if any one of them fails, so a change that breaks the link to the law cannot pass unnoticed. The first needs the network and runs on its own."
 msgstr ""
 
-#: src/layouts/Layout.astro:99
+#: src/layouts/Layout.astro:107
 msgid "<0>Not legal advice.</0> Maintained by researchers, not lawyers. Check the official text before relying on any entry."
 msgstr ""
 
@@ -152,11 +152,11 @@ msgstr ""
 msgid "A guest article: from the dataset to a product"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:95
+#: src/components/pages/GraphPage.astro:102
 msgid "a node to select it. The panel on the right shows what it is, its properties and all its connections."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:96
+#: src/components/pages/GraphPage.astro:103
 msgid "a node, or select it and press Expand, to bring in its closest neighbours: the nodes it is directly connected to, up to 25 at a time."
 msgstr ""
 
@@ -200,6 +200,10 @@ msgstr ""
 msgid "All the Turtle, checked against the ontology and its SHACL shapes"
 msgstr ""
 
+#: src/components/pages/GraphPage.astro:77
+msgid "also called {name}"
+msgstr ""
+
 #: src/components/pages/AboutPage.astro:75
 msgid "Always check the official text before relying on an entry."
 msgstr ""
@@ -220,7 +224,7 @@ msgstr ""
 msgid "An open graph of website law"
 msgstr ""
 
-#: src/layouts/Layout.astro:39
+#: src/layouts/Layout.astro:41
 msgid "An open knowledge graph of the laws on what websites must show and do, with every statement traced to the official text."
 msgstr ""
 
@@ -332,7 +336,7 @@ msgstr ""
 msgid "Checklist"
 msgstr ""
 
-#: src/layouts/Layout.astro:113
+#: src/layouts/Layout.astro:121
 msgid "Choose a language"
 msgstr ""
 
@@ -344,11 +348,11 @@ msgstr ""
 msgid "Classes, vocabularies and the SHACL shapes"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:149
+#: src/components/pages/GraphPage.astro:161
 msgid "Clear the search"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:95
+#: src/components/pages/GraphPage.astro:102
 msgid "Click"
 msgstr ""
 
@@ -360,7 +364,7 @@ msgstr ""
 msgid "Clone it from GitHub (recommended)"
 msgstr ""
 
-#: src/layouts/Layout.astro:114
+#: src/layouts/Layout.astro:122
 msgid "Close"
 msgstr ""
 
@@ -412,7 +416,7 @@ msgstr ""
 msgid "Countries"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:88
+#: src/components/pages/GraphPage.astro:95
 msgid "Countries, laws, provisions, rules and what they require, as one network."
 msgstr ""
 
@@ -436,7 +440,7 @@ msgstr ""
 msgid "Data"
 msgstr ""
 
-#: src/layouts/Layout.astro:105
+#: src/layouts/Layout.astro:113
 msgid "Data and ontology <0>CC BY 4.0</0>, code MIT. Law texts are official works, reproduced unchanged."
 msgstr ""
 
@@ -464,7 +468,7 @@ msgstr ""
 msgid "Delivered {date}"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:196 src/components/pages/GraphPage.astro:43
+#: src/components/pages/GraphPage.astro:211 src/components/pages/GraphPage.astro:43
 msgid "Details"
 msgstr ""
 
@@ -488,7 +492,7 @@ msgstr ""
 msgid "Don't sell data"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:96
+#: src/components/pages/GraphPage.astro:103
 msgid "Double-click"
 msgstr ""
 
@@ -508,11 +512,11 @@ msgstr ""
 msgid "draft"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:78
+#: src/components/pages/GraphPage.astro:84
 msgid "Draft"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:100
+#: src/components/pages/GraphPage.astro:107
 msgid "Drag a node to move it, drag the background to pan, scroll to zoom. The checkboxes above hide or show each kind of node. Hover a line to see the relation."
 msgstr ""
 
@@ -656,7 +660,7 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:137
+#: src/components/pages/GraphPage.astro:145
 msgid "Find a node"
 msgstr ""
 
@@ -664,27 +668,23 @@ msgstr ""
 msgid "Find a node with the search above, or click one in the view."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:143
-msgid "Find a node, e.g. § 5 Abs. 1 DDG"
-msgstr ""
-
 #: src/components/pages/SourcesPage.astro:151
 msgid "Fingerprints and download dates are on each source page and in the repository."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:124
+#: src/components/pages/GraphPage.astro:131
 msgid "Fit"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:124
+#: src/components/pages/GraphPage.astro:131
 msgid "Fit the view to what is shown"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:54 src/components/pages/GraphPage.astro:98
+#: src/components/pages/GraphPage.astro:105 src/components/pages/GraphPage.astro:54
 msgid "Focus"
 msgstr ""
 
-#: src/layouts/Layout.astro:90
+#: src/layouts/Layout.astro:98
 msgid "Footer navigation"
 msgstr ""
 
@@ -744,7 +744,7 @@ msgstr ""
 msgid "Glossary"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:87 src/components/pages/GraphPage.astro:88 src/lib/navigation.ts:26
+#: src/components/pages/GraphPage.astro:94 src/components/pages/GraphPage.astro:95 src/lib/navigation.ts:26
 msgid "Graph"
 msgstr ""
 
@@ -760,7 +760,7 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:174 src/components/pages/GraphPage.astro:175
+#: src/components/pages/GraphPage.astro:189 src/components/pages/GraphPage.astro:190
 msgid "Hide the details panel"
 msgstr ""
 
@@ -800,11 +800,11 @@ msgstr ""
 msgid "How to contribute"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:92
+#: src/components/pages/GraphPage.astro:99
 msgid "How to use the graph"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:76
+#: src/components/pages/GraphPage.astro:82
 msgid "Human translation"
 msgstr ""
 
@@ -872,7 +872,7 @@ msgstr ""
 msgid "Just a syntax: a plain-text way of writing those statements down, readable by people as well as programs. The graph's files end in <0>.ttl</0>."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:130
+#: src/components/pages/GraphPage.astro:137
 msgid "Keep only the selected node, its neighbours in the view, and the laws they share"
 msgstr ""
 
@@ -880,7 +880,7 @@ msgstr ""
 msgid "Keeping the graph on its own domain, apart from any company's brand, keeps those addresses stable and lets lawyers, researchers and public bodies contribute to a neutral project."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:97
+#: src/components/pages/GraphPage.astro:104
 msgid "keeps only the selected node and its neighbours in the view (and the laws they share), and removes everything else."
 msgstr ""
 
@@ -892,7 +892,7 @@ msgstr ""
 msgid "Kind"
 msgstr ""
 
-#: src/components/pages/SourcesPage.astro:127 src/layouts/Layout.astro:112 src/layouts/Layout.astro:68 src/layouts/Layout.astro:96
+#: src/components/pages/SourcesPage.astro:127 src/layouts/Layout.astro:104 src/layouts/Layout.astro:120 src/layouts/Layout.astro:70
 msgid "Language"
 msgstr ""
 
@@ -948,7 +948,7 @@ msgstr ""
 msgid "Legal concept"
 msgstr ""
 
-#: src/layouts/Layout.astro:66 src/layouts/Layout.astro:89
+#: src/layouts/Layout.astro:68 src/layouts/Layout.astro:97
 msgid "legalgraph home"
 msgstr ""
 
@@ -968,11 +968,11 @@ msgstr ""
 msgid "legalgraph is that evidence, published as open data so anyone can use it, cite it and correct it."
 msgstr ""
 
-#: src/layouts/Layout.astro:67 src/layouts/Layout.astro:95
+#: src/layouts/Layout.astro:103 src/layouts/Layout.astro:69
 msgid "legalgraph on GitHub"
 msgstr ""
 
-#: src/layouts/Layout.astro:42
+#: src/layouts/Layout.astro:44
 msgid "legalgraph: website law as open, checkable data"
 msgstr ""
 
@@ -988,7 +988,7 @@ msgstr ""
 msgid "Link a claim to the provision it rests on, so readers can check it."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:162
+#: src/components/pages/GraphPage.astro:177
 msgid "Loading the graph…"
 msgstr ""
 
@@ -996,11 +996,11 @@ msgstr ""
 msgid "machine translation"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:75
+#: src/components/pages/GraphPage.astro:81
 msgid "Machine translation"
 msgstr ""
 
-#: src/layouts/Layout.astro:66
+#: src/layouts/Layout.astro:68
 msgid "Main navigation"
 msgstr ""
 
@@ -1008,7 +1008,19 @@ msgstr ""
 msgid "marks removed = the original"
 msgstr ""
 
-#: src/layouts/Layout.astro:66
+#: src/components/pages/GraphPage.astro:74
+msgid "Matches: {count}"
+msgstr ""
+
+#: src/components/pages/GraphPage.astro:75
+msgid "Matches: {count}, showing the first {shown}"
+msgstr ""
+
+#: src/components/pages/GraphPage.astro:171
+msgid "Matching nodes"
+msgstr ""
+
+#: src/layouts/Layout.astro:68
 msgid "Menu"
 msgstr ""
 
@@ -1044,6 +1056,10 @@ msgstr ""
 msgid "No text matches your search."
 msgstr ""
 
+#: src/components/pages/GraphPage.astro:76
+msgid "Nothing found for “{query}”"
+msgstr ""
+
 #: src/lib/navigation.ts:24
 msgid "Obligations, the conditions they apply under"
 msgstr ""
@@ -1064,7 +1080,7 @@ msgstr ""
 msgid "Official text"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:77
+#: src/components/pages/GraphPage.astro:83
 msgid "Official translation"
 msgstr ""
 
@@ -1264,7 +1280,7 @@ msgstr ""
 msgid "requires"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:99
+#: src/components/pages/GraphPage.astro:106
 msgid "returns to every jurisdiction; Fit brings everything shown back into view."
 msgstr ""
 
@@ -1272,7 +1288,7 @@ msgstr ""
 msgid "Review a reading, propose a better one, compare countries line by line."
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:79
+#: src/components/pages/GraphPage.astro:85
 msgid "Reviewed"
 msgstr ""
 
@@ -1352,6 +1368,10 @@ msgstr ""
 msgid "Search the law texts"
 msgstr ""
 
+#: src/components/pages/GraphPage.astro:155
+msgid "Search: a law, an abbreviation (DSGVO), a provision, a rule…"
+msgstr ""
+
 #: src/components/pages/HomePage.astro:266
 msgid "See <0>what each country's law asks a website to show</0>, side by side."
 msgstr ""
@@ -1376,11 +1396,11 @@ msgstr ""
 msgid "Show"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:187 src/components/pages/GraphPage.astro:188
+#: src/components/pages/GraphPage.astro:202 src/components/pages/GraphPage.astro:203
 msgid "Show the details panel"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:212
+#: src/components/pages/GraphPage.astro:227
 msgid "Side by side"
 msgstr ""
 
@@ -1400,11 +1420,11 @@ msgstr ""
 msgid "Star and clone on GitHub"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:134 src/components/pages/GraphPage.astro:99
+#: src/components/pages/GraphPage.astro:106 src/components/pages/GraphPage.astro:141
 msgid "Start over"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:98
+#: src/components/pages/GraphPage.astro:105
 msgid "starts over from the selected node with its nearest neighbours; Hide removes a node from the view."
 msgstr ""
 
@@ -1444,7 +1464,7 @@ msgstr ""
 msgid "Text as of {date}"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:204
+#: src/components/pages/GraphPage.astro:219
 msgid "Text of the law"
 msgstr ""
 
@@ -1530,6 +1550,10 @@ msgstr ""
 
 #: src/components/pages/SourcesPage.astro:225
 msgid "The graph built from these texts is on the <0>downloads page</0>, in Turtle, N-Triples and JSON-LD, and in full, with every original and the code, on <1>GitHub</1>."
+msgstr ""
+
+#: src/components/pages/GraphPage.astro:78
+msgid "The graph could not be loaded. Reload the page to try again."
 msgstr ""
 
 #: src/components/pages/HomePage.astro:323
@@ -1684,7 +1708,7 @@ msgstr ""
 msgid "The trail in the graph · click a node to open it"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:94
+#: src/components/pages/GraphPage.astro:101
 msgid "The view starts with every jurisdiction: the EU and the EEA with their members, and states or provinces with their country."
 msgstr ""
 
@@ -1708,7 +1732,7 @@ msgstr ""
 msgid "This page is being written."
 msgstr ""
 
-#: src/layouts/Layout.astro:113
+#: src/layouts/Layout.astro:121
 msgid "This page is in English only. The site's own pages are also in:"
 msgstr ""
 
@@ -1744,11 +1768,11 @@ msgstr ""
 msgid "translation for information"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:132 src/components/pages/GraphPage.astro:97
+#: src/components/pages/GraphPage.astro:104 src/components/pages/GraphPage.astro:139
 msgid "Trim"
 msgstr ""
 
-#: src/components/pages/HomePage.astro:128 src/layouts/Layout.astro:69
+#: src/components/pages/HomePage.astro:128 src/layouts/Layout.astro:71
 msgid "Try the checklist"
 msgstr ""
 
@@ -1816,7 +1840,7 @@ msgstr ""
 msgid "We wanted every claim to come with its evidence: the paragraph, its exact words, an English translation, and who reviewed it."
 msgstr ""
 
-#: src/layouts/Layout.astro:91
+#: src/layouts/Layout.astro:99
 msgid "Website law as open, checkable data: every statement links to the words of the law it comes from."
 msgstr ""
 
@@ -1888,7 +1912,7 @@ msgstr ""
 msgid "Which provisions matter, and what each says, is marked up in XML. Two forms, depending on what the portal publishes:"
 msgstr ""
 
-#: src/components/pages/GraphPage.astro:209
+#: src/components/pages/GraphPage.astro:224
 msgid "Which text to show"
 msgstr ""
 

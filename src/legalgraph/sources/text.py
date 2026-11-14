@@ -8,6 +8,7 @@ import unicodedata
 
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+from pypdf.generic import ContentStream, NumberObject
 
 from legalgraph.sources.model import Original
 
@@ -19,11 +20,11 @@ def collapse(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def text_of(media_type: str, data: bytes, text_ignore: list[str]) -> str:
+def text_of(media_type: str, data: bytes, text_ignore: list[str], pdf_encoding: str | None = None) -> str:
     """An original's text as it is compared word for word: for HTML, the words with the elements
     text_ignore names left out."""
     if media_type == "application/pdf":
-        return pdf_text(data)
+        return pdf_shown_text(data, pdf_encoding) if pdf_encoding else pdf_text(data)
     soup = BeautifulSoup(data, "html.parser")
     for selector in text_ignore:
         for element in soup.select(selector):
@@ -32,7 +33,7 @@ def text_of(media_type: str, data: bytes, text_ignore: list[str]) -> str:
 
 
 def original_text(original: Original) -> str:
-    return text_of(original.media_type, original.file.read_bytes(), original.text_ignore)
+    return text_of(original.media_type, original.file.read_bytes(), original.text_ignore, original.pdf_encoding)
 
 
 def original_full_text(original: Original) -> str:
@@ -55,6 +56,30 @@ def same_text(original: Original, data: bytes) -> bool:
 def pdf_text(data: bytes) -> str:
     reader = PdfReader(io.BytesIO(data))
     return collapse(" ".join(page.extract_text() or "" for page in reader.pages))
+
+
+@functools.cache
+def pdf_shown_text(data: bytes, encoding: str) -> str:
+    """A PDF's text from the bytes its pages show, decoded with `encoding`. For PDFs typeset with
+    fonts that map a national code page onto Latin glyph names and carry no Unicode map (the Greek
+    Government Gazette before about 2005): a text extractor reads those bytes as Latin letters, and
+    which Latin letters depends on its fallbacks, so the bytes are decoded here directly."""
+    reader = PdfReader(io.BytesIO(data))
+    shown = []
+    for page in reader.pages:
+        for operands, operator in ContentStream(page.get_contents(), reader).operations:
+            if operator in (b"Tj", b"'", b'"'):
+                shown.append(operands[-1])
+            elif operator == b"TJ":
+                shown.extend(part for part in operands[0] if not isinstance(part, NumberObject | float))
+            elif operator in (b"Td", b"TD", b"T*", b"ET"):
+                shown.append(b" ")
+    return collapse(
+        "".join(
+            part.decode(encoding) if isinstance(part, bytes) else bytes(part.original_bytes).decode(encoding)
+            for part in shown
+        )
+    )
 
 
 def comparable(text: str, media_type: str) -> str:

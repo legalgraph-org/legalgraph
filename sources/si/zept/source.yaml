@@ -1,0 +1,26 @@
+# Zakon o elektronskem poslovanju na trgu (ZEPT, Ur. l. RS 96/09): 5. člen is
+# the provider-information duty — the Slovenian transposition of e-Commerce
+# Directive 2000/31/EC Art. 5. Odstavek 1 is the catalogue on the provider's
+# websites, odstavek 2 the links-on-the-main-page mechanism, odstavek 3 the
+# price clause. pisrs.si is a JavaScript application whose data API needs a
+# browser user agent; the portal's own machine-readable consolidated text
+# (neprečiščeno besedilo NPB7, datoteke/integracije) serves the same words as
+# static HTML and is fetched directly.
+id: si/zept
+title: Zakon o elektronskem poslovanju na trgu (ZEPT) (5. člen)
+jurisdiction: SI
+language: sl
+publisher: Pravna informatika (pisrs.si), the official legal-information system
+kind: authored-xml
+licence: official-work
+licence_basis: "Slovenian legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: zept-npb7.html
+    url: "https://pisrs.si/api/datoteke/integracije/358081927"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "The portal's consolidated text (neprečiščeno besedilo št. 7, consolidated to 13.04.2024), the same words the pisrs.si reader displays. The file is the whole act; only 5. člen is annotated. The datoteke/integracije id is version-bound — a later consolidation gets a new id."
+    retrieved_on: 2026-11-14
+    sha256: fc46046cd8f8de052d3936aa25b6690311eec926d18e6ba0486aa381b48b5519
+annotated: zept.law.xml

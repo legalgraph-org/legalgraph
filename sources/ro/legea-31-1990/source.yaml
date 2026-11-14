@@ -1,0 +1,30 @@
+# Legea nr. 31 din 16 noiembrie 1990 (Legea societăților): art. 74 requires a
+# company to state its name, legal form, seat and unique registration code on
+# any invoice, offer, order, price list, prospectus or other document used in
+# commerce emanating from it, and alin. (5) extends the same information to the
+# company's own website — the Romanian company-law website duty (L3). The
+# consolidated view (DetaliiDocument) of legislatie.just.ro serves the current
+# text; the print view (DetaliiDocumentAfis) serves the unamended original and
+# rejects plain HTTP clients, so tools/render renders the consolidated page
+# (make render-install once).
+id: ro/legea-31-1990
+title: Legea nr. 31 din 16 noiembrie 1990 (articolul 74)
+jurisdiction: RO
+language: ro
+publisher: Portal Legislativ (legislatie.just.ro), Camera Deputaților
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 9 din Legea nr. 8/1996: official texts of a political, legislative, administrative or judicial nature are not protected by copyright"
+originals:
+  - file: legae-31-1990-doc.html
+    url: "https://legislatie.just.ro/Public/DetaliiDocument/56732"
+    fetch: rendered
+    wait: "#id_artA864"
+    selector: "#id_artA864"
+    text_ignore: [".TAG_COLLAPSED", ".S_PAR[style*=\"color:blue\"]"]
+    media_type: text/html
+    notes:
+      - "Consolidated form (consolidări through 18.12.2025) on the document view; art. 74 has five alineate, alin. (5) is the website clause. Blue S_PAR spans are the amendment-history notes."
+    retrieved_on: 2026-11-14
+    sha256: 3c2dc9e7c71bfcc0e3e60579884edab7071f1c1346ac8df2795e5a8a830104d7
+annotated: legea-31-1990.law.xml

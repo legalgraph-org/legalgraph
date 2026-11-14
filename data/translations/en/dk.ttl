@@ -1,0 +1,70 @@
+# English translations. Managed by `legalgraph translations apply`.
+# To review one: correct lgo:text if needed, add lgo:reviewedBy and set lgo:reviewStatus lgv:Reviewed.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix lg: <https://legalgraph.org/id/> .
+@prefix lgo: <https://legalgraph.org/ontology#> .
+@prefix lgv: <https://legalgraph.org/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lg:DK-227-2002-s7-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c49b6e1ab89d7f2b5da17d4154b8968c7e4dcb7f6a9f9e17b187c52748980527" ;
+    lgo:text """§ 7. A service provider shall provide information on
+1) the service provider's name,
+2) the physical address where the service provider is established,
+3) an e-mail address and, where applicable, a postal address and other information about the service provider that makes it possible to contact and communicate with the service provider,
+4) the CVR number, if the service provider is registered in the Central Business Register,
+5) membership of any approval schemes, including the relevant supervisory authority."""@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-227-2002-s7-1-q1 .
+
+lg:DK-227-2002-s7-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a976e4a4b9177ed8cfcac3b35e20e0ed38fc3fdb56288114d8af9163c09aa1e6" ;
+    lgo:text """Stk. 2. A service provider practising a regulated profession shall additionally provide
+1) information on any trade organisation or similar body in which the service provider is registered,
+2) information on the professional title and the Member State in which it was awarded, and
+3) a reference to the professional rules applicable to the regulated profession and how access to them can be obtained."""@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-227-2002-s7-2-q1 .
+
+lg:DK-227-2002-s7-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a5d730c77edc25f8600ee93d4d8121bad8ba48db2f262d49212c3522c5746f1e" ;
+    lgo:text "Stk. 3. Recipients of the service and the authorities shall have easy and permanent access to the information referred to in subsections 1 and 2."@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-227-2002-s7-3-q1 .
+
+lg:DK-227-2002-s8-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a33038cbbb7335bdae533c477d2c301ebce6ebc09d45dce41117654aa6c950c6" ;
+    lgo:text "§ 8. Where information on the price of an information-society service is given, the price shall be indicated clearly and unambiguously. It shall be apparent whether the price includes taxes and delivery costs."@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-227-2002-s8-1-q1 .
+
+lg:DK-227-2002-title-43b5bd22e148-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "43b5bd22e148db16c1c246b6540a1430b5f0f2dad4c6e76fbf24b3f23805251f" ;
+    lgo:text "Act on services in the information society (the E-commerce Act)"@en ;
+    lgo:translatedBy "devin-swe2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-227-2002 .

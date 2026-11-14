@@ -1,0 +1,29 @@
+# Codice del consumo (D.Lgs. 6 settembre 2005, n. 206), Titolo II-bis: art.
+# 141-sexies is the trader-information duty — the Italian transposition of
+# Directive 2013/11/EU Art. 13. Comma 1 defines the information (the ADR
+# organism(s) and their website address) for traders committed to ADR; comma 2
+# requires it clearly and accessibly on the trader's website and in the general
+# contract terms; comma 3 the post-complaint durable-medium duty. The workplan
+# said "art. 141-ter" — that article governs parity-negotiation procedures;
+# the information duty is 141-sexies. normattiva.it serves article-level pages
+# under ~artN URNs; tools/render renders them (make render-install once).
+id: it/codice-consumo-206-2005
+title: Codice del consumo (D.Lgs. 206/2005), Titolo II-bis (art. 141-sexies)
+jurisdiction: IT
+language: it
+publisher: Normattiva, the official legislation database
+kind: authored-xml
+licence: official-work
+licence_basis: "Italian legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: cds-art141sexies.html
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206~art141sexies"
+    fetch: rendered
+    wait: "#art_141-sexies"
+    selector: "#testoNormalizzato"
+    media_type: text/html
+    notes:
+      - "Consolidated Italian text of art. 141-sexies as normattiva.it renders the ~art141sexies page. Commas 4–9 carry savings/ECC-NET/authority duties, not the website disclosure, and are omitted."
+    retrieved_on: 2026-11-14
+    sha256: 9eda0927ab90d82455a7993c122b15a420c3baa8eea8e4702de05a72909a10d8
+annotated: codice-consumo.law.xml

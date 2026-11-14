@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Gesetz über alternative Streitbeilegung in Konsumentenangelegenheiten
+  (AStG; LGBl. 2016 Nr. 516), Art. 18, written in schemas/law.xsd from the
+  Lilex consolidated PDF. The words are the Liechtenstein administration's
+  (gesetze.li, Fassung vom 01.06.2022); only the structure is ours.
+  `legalgraph sources verify` checks every paragraph letter for letter
+  against the PDF's text. Abs. 1 is the trader-information duty including the
+  ADR body's website address; Abs. 2 puts it on the trader's website and in
+  its general terms; Abs. 3 the post-complaint durable-medium notice — the
+  Liechtenstein ADR website duty (L4).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="LI-ASTG" lga:jurisdiction="LI" lga:act-type="Statute"
+     lga:url="https://www.gesetze.li/konso/2016516000">
+  <meta>
+    <title>Gesetz vom 4. November 2016 über alternative Streitbeilegung in Konsumentenangelegenheiten (Alternative-Streitbeilegung-Gesetz; AStG)</title>
+    <date>2016-11-04</date>
+  </meta>
+
+  <section num="Art. 18" title="Informationspflichten für Unternehmer" source="astg.pdf">
+    <paragraph num="1)" lga:provision="LI-ASTG-art18-1" lga:citation="Art. 18 Abs. 1 AStG" lga:url="https://www.gesetze.li/konso/2016516000" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Ein Unternehmer hat die Konsumenten über die AS-Stelle oder die AS-Stellen in Kenntnis zu setzen, von der oder denen er erfasst wird, sofern er sich verpflichtet oder verpflichtet ist, diese Stellen zur Beilegung von Streitigkeiten mit Konsumenten einzuschalten. Diese Information hat Angaben zur Website-Adresse der betreffenden AS-Stelle oder AS-Stellen zu enthalten.</paragraph>
+    <paragraph num="2)" lga:provision="LI-ASTG-art18-2" lga:citation="Art. 18 Abs. 2 AStG" lga:url="https://www.gesetze.li/konso/2016516000" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Die in Abs. 1 genannten Informationen hat der Unternehmer, sofern vorhanden, auf seiner Website und gegebenenfalls in den allgemeinen Geschäftsbedingungen in klarer, verständlicher und leicht zugänglicher Weise anzuführen.</paragraph>
+    <paragraph num="3)" lga:provision="LI-ASTG-art18-3" lga:citation="Art. 18 Abs. 3 AStG" lga:url="https://www.gesetze.li/konso/2016516000" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionStatement">Können der Unternehmer und der Konsument in einer Streitigkeit keine Einigung erzielen, so hat der Unternehmer den Konsumenten auf Papier oder einem anderen dauerhaften Datenträger auf die für ihn zuständige AS-Stelle oder zuständigen AS-Stellen hinzuweisen. Der Unternehmer hat zugleich anzugeben, ob er an einem AS-Verfahren teilnehmen wird.</paragraph>
+  </section>
+</law>

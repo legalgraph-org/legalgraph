@@ -1,0 +1,59 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Denmark: provider information under § 7 of lov om tjenester i informationssamfundet, herunder visse
+# aspekter af elektronisk handel (e-handelsloven, lov nr. 227 af 22. april 2002), the transposition of
+# Article 5 of the e-Commerce Directive. The register entry is the CVR number; the act names no VAT number.
+
+lg:DK-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and e-mail"@en ;
+    rdfs:comment "Name, physical address of establishment, e-mail address and other details for contact and communication, easily and permanently accessible to recipients and authorities (§ 7, stk. 1 nr. 1–3 and stk. 3, e-handelsloven)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:DK-227-2002-s7-1, lg:DK-227-2002-s7-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DK ;
+    lgo:appliesWhen lgv:EstablishedInDenmark, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DK-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "The CVR number, where the provider is registered in the Central Business Register (§ 7, stk. 1 nr. 4)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:DK-227-2002-s7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DK ;
+    lgo:appliesWhen lgv:EstablishedInDenmark, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DK-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:DK-227-2002-s7-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DK ;
+    lgo:appliesWhen lgv:EstablishedInDenmark, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:DK-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "Professional body, professional title and the member state that granted it, and the applicable professional rules with how to access them (§ 7, stk. 2)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:DK-227-2002-s7-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DK ;
+    lgo:appliesWhen lgv:EstablishedInDenmark, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .

@@ -20,3 +20,16 @@ lg:HR-ZTD
     eli:transposes lg:EU-2017-1132 ;
     eli:id_local "NN 111/1993" ;
     rdfs:comment "Članak 21(4) extends the business-paper disclosure list to the company's website verbatim; (5) adds paid-up capital, issued shares and board members for capital companies; (6) covers partnerships. Source: NN 152/2011 official consolidation."@en .
+
+# ADR Act (NN 121/2016): the trader-information duty; provisions come from
+# sources/hr/arps (Narodne novine publication).
+lg:HR-ARPS a lgo:LegalAct ;
+    eli:title "Zakon o alternativnom rješavanju potrošačkih sporova"@hr , "Act on Alternative Resolution of Consumer Disputes"@en ;
+    lgo:shortName "Zakon o ARPS" ;
+    eli:id_local "NN 121/2016" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:HR ;
+    eli:transposes lg:EU-2013-11 ;
+    lgo:sourceUrl "https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Članak 22 requires traders committed to or obliged to use ADR bodies to inform consumers of that fact, gives the notice's content (postal address and website address of the ADR body), and stavak 3 requires it on the trader's website, in its business premises and by other means; stavak 4 adds the duty in the reply to a written complaint. Consolidated text (NN 121/16, 32/19) is not published as official HTML; the 2019 amendments do not touch članak 22."@en .

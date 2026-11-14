@@ -341,3 +341,38 @@ lgv:Wait12MonthsBeforeReasking a lgo:Action ;
     skos:inScheme lgv:Actions ;
     skos:prefLabel "Wait 12 months before asking an opted-out consumer again"@en ;
     skos:definition "After an opt-out, wait at least 12 months before asking the consumer to authorise the sale or sharing of their personal information again (Cal. Civ. Code § 1798.135(c)(4))."@en .
+
+lgv:ProcessSpecialCategoriesOnlyUnderAnException a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Process special categories of data only under an exception"@en , "Besondere Kategorien personenbezogener Daten nur aufgrund einer Ausnahme verarbeiten"@de ;
+    skos:definition "Health, biometric, religious and the other special categories of data are processed only where an exception of Article 9(2) GDPR applies, most often the person's explicit consent."@en .
+
+lgv:SafeguardAutomatedDecisions a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Safeguard automated decisions"@en , "Automatisierte Entscheidungen absichern"@de ;
+    skos:definition "Where a decision with legal or similarly significant effects is based solely on automated processing for a contract or with explicit consent, give the person the right to human intervention, to express their point of view and to contest the decision (Article 22(3) GDPR)."@en .
+
+lgv:InstructPersonsWithAccess a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Let staff process personal data only on instructions"@en , "Personal nur auf Weisung verarbeiten lassen"@de ;
+    skos:definition "Anyone acting under the authority of the controller or processor with access to personal data processes them only on the controller's instructions (Article 29 GDPR)."@en .
+
+lgv:CooperateWithSupervisoryAuthority a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Cooperate with the supervisory authority"@en , "Mit der Aufsichtsbehörde zusammenarbeiten"@de ;
+    skos:definition "On request, cooperate with the supervisory authority in the performance of its tasks (Article 31 GDPR)."@en .
+
+lgv:CarryOutImpactAssessment a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Carry out a data protection impact assessment"@en , "Datenschutz-Folgenabschätzung durchführen"@de ;
+    skos:definition "Before processing likely to result in a high risk, assess its impact: a description of the processing, its necessity and proportionality, the risks and the measures to address them, with the data protection officer's advice where one is designated (Article 35 GDPR)."@en .
+
+lgv:ConsultSupervisoryAuthorityBeforeProcessing a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Consult the supervisory authority before high-risk processing"@en , "Aufsichtsbehörde vor einer Verarbeitung mit hohem Risiko konsultieren"@de ;
+    skos:definition "Where the impact assessment shows a high risk that the controller cannot mitigate, consult the supervisory authority before the processing starts (Article 36 GDPR)."@en .
+
+lgv:SupportDataProtectionOfficer a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Involve and support the data protection officer"@en , "Datenschutzbeauftragten einbinden und unterstützen"@de ;
+    skos:definition "Involve the data protection officer properly and in good time, give them the resources they need, take no instructions to them on their tasks, do not dismiss or penalise them for performing them, and avoid conflicts of interest (Article 38 GDPR)."@en .

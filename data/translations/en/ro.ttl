@@ -50,3 +50,83 @@ lg:RO-LCE-title-3da1099a81bd-en
     lgo:translatedProperty eli:title ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:RO-LCE .
+
+lg:RO-LEGA-31-1990-art74-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "51f0a8a6c3b8dc723aa1eb1cd17683c306d027be995d991df45d06603900fb02" ;
+    lgo:text "(1) In any invoice, offer, order, price list, prospectus or other document used in commerce emanating from a company, the name, legal form, registered office, trade-register number and unique registration code must be stated. Receipts issued by electronic marking devices are exempt and shall contain the elements provided for by the legislation in the field."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LEGA-31-1990-art74-1-q1 .
+
+lg:RO-LEGA-31-1990-art74-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b7e60b93164a2bf4b02269ea26cad01d0a80e39e76c59a6cf81cf32ae8676365" ;
+    lgo:text "(2) If a joint-stock company opts for a dual management system in accordance with Article 153, the documents referred to in paragraph (1) must also contain the mention \"company managed under a dual system\"."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LEGA-31-1990-art74-2-q1 .
+
+lg:RO-LEGA-31-1990-art74-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d86a39907e8354d10f0fdd87df7bce80e03a282f0328e0ec7519399bc4102023" ;
+    lgo:text "(3) In the documents referred to in paragraph (1), if issued by a limited liability company, the share capital must also be stated; if issued by a joint-stock company or a limited partnership by shares, both the subscribed and the paid-up share capital must be stated."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LEGA-31-1990-art74-3-q1 .
+
+lg:RO-LEGA-31-1990-art74-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a95d4b3e3f39faafa9b7f729a7e1e64bde958128e9a012c2cd11386cf769743f" ;
+    lgo:text "(4) Where the documents referred to in paragraph (1) are issued by a branch, they must also state the trade-register office where the branch is registered and its registration number."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LEGA-31-1990-art74-4-q1 .
+
+lg:RO-LEGA-31-1990-art74-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5d6198752d7656571e830bae359780629acf8ebf13b9d3e98ebbc6df4bba1e0e" ;
+    lgo:text "(5) If the company has its own website, the information referred to in paragraphs (1) and (3) must also be published on the company's website."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-LEGA-31-1990-art74-5-q1 .
+
+lg:RO-OG-38-2015-art25-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "45d3ffc0822457a4dc0937597a6b341f3879307936b373215456f219506afaa8" ;
+    lgo:text "(1) Traders inform consumers of the ADR entity or entities to which they belong when the traders undertake to use those procedures. The information includes the website address of the relevant ADR entity or entities."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-OG-38-2015-art25-1-q1 .
+
+lg:RO-OG-38-2015-art25-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "04d37cc853232d91bc1e819ee3fe92b5da97456323bd83260717b9ae78d3bfa5" ;
+    lgo:text "(2) The information referred to in paragraph (1) is provided clearly, intelligibly and accessibly on the traders' website, where one exists, and, where appropriate, in the general terms and conditions of the sales or service contracts between the trader and the consumer."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-OG-38-2015-art25-2-q1 .
+
+lg:RO-OG-38-2015-art25-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f5d8625e2776927393a7e102f8f50a99997d7727d0314d247e3f040bb3fb34c1" ;
+    lgo:text "(3) Where a dispute between a consumer and a trader established in Romania could not be resolved following a complaint submitted directly by the consumer to the trader, the trader informs the consumer of the possibility of having recourse to the ADR entity. That information is provided on paper or on another durable medium."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:RO-OG-38-2015-art25-3-q1 .

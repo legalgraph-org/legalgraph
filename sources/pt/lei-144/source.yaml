@@ -22,4 +22,15 @@ originals:
       - "Fragment cut from the pgdl consolidated page: art. 18 (as amended by DL 102/2017). Downloaded 2026-11-13."
     retrieved_on: 2026-11-13
     sha256: d034e26c2012c7151fdae6c513c4088499e81cdf1f688d0b821e263f0b626ae8
+  - file: lei18.dre.html
+    url: "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2015-119475005"
+    role: authentic
+    fetch: rendered
+    wait: "text=Artigo 18.º"
+    selector: "div.fragmento-full-width:-soup-contains(\"Artigo 18.º\")"
+    media_type: text/html
+    notes:
+      - "The official consolidated text the mirror's words are verified against: diariodarepublica.pt (Diário da República Eletrónico), reached through the ELI URI data.dre.pt/eli/lei/144/2015/p/cons/pt/html. The portal is an OutSystems application; tools/render renders it (make render-install once)."
+    retrieved_on: 2026-11-14
+    sha256: 3e5818db451a31509da188b109b2d79b96553a52bdcaaa7c36f57478580a6422
 annotated: lei144.law.xml

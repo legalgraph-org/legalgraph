@@ -83,3 +83,31 @@ lg:HR-R-company-website a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:RegisterEntry , lgv:ShareCapital , lgv:AuthorisedRepresentative , lgv:PaymentAccount ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Consumer ADR (Directive 2013/11/EU Art. 13) ---
+
+lg:HR-R-adr-information a lgo:Obligation ;
+    rdfs:label "Name the consumer ADR entity on the website and in the terms"@en ;
+    rdfs:comment "Članak 22(1)–(3) of the Zakon o alternativnom rješavanju potrošačkih sporova (NN 121/2016): a trader established in Croatia that has committed, or is obliged by law, to resolve consumer disputes through an ADR body names the competent body, with its postal and website address, clearly and accessibly on its website and in its general terms."@en ;
+    lgo:refines lg:EU-R-adr-information ;
+    lgo:establishedBy lg:HR-ARPS-art22-1, lg:HR-ARPS-art22-2, lg:HR-ARPS-art22-3 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:SellsToConsumers , lgv:TakesPartInConsumerDisputeResolution ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:HR-R-adr-information-after-complaint a lgo:Obligation ;
+    rdfs:label "Point the consumer to ADR after an unsettled complaint"@en ;
+    rdfs:comment "Članak 22(4) NN 121/2016: when a dispute cannot be settled through the consumer's written complaint, the trader's answer names the competent ADR body and says whether the trader will take part."@en ;
+    lgo:refines lg:EU-R-adr-information-after-complaint ;
+    lgo:establishedBy lg:HR-ARPS-art22-4 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:HR ;
+    lgo:appliesWhen lgv:EstablishedInCroatia , lgv:SellsToConsumers ;
+    lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
+    lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
+    lgo:reviewStatus lgv:Draft .

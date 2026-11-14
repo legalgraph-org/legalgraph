@@ -1,0 +1,30 @@
+# Ordonanța Guvernului nr. 38 din 26 august 2015 (Monitorul Oficial nr. 654
+# din 28 august 2015), transposing Directive 2013/11/EU on alternative dispute
+# resolution: art. 25 is the trader-information duty — alin. (1) defines the
+# information (the ADR entity/entities and their website address), alin. (2)
+# requires it on the trader's website where one exists and in the general
+# terms of sales/service contracts, alin. (3) the post-complaint durable-medium
+# duty. The print view (DetaliiDocumentAfis) of legislatie.just.ro serves the
+# consolidated text but rejects plain HTTP clients; tools/render renders it
+# (make render-install once).
+id: ro/og-38-2015
+title: Ordonanța Guvernului nr. 38 din 26 august 2015 (articolul 25)
+jurisdiction: RO
+language: ro
+publisher: Portal Legislativ (legislatie.just.ro), Camera Deputaților
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 9 din Legea nr. 8/1996: official texts of a political, legislative, administrative or judicial nature are not protected by copyright"
+originals:
+  - file: og-38-2015-afis.html
+    url: "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"
+    fetch: rendered
+    wait: "body"
+    selector: "#id_artA317"
+    text_ignore: [".TAG_COLLAPSED"]
+    media_type: text/html
+    notes:
+      - "Consolidated form on the print view. Article 25 only; all three alineate are annotated."
+    retrieved_on: 2026-11-14
+    sha256: 78d6b52b99eb2d8c7b8b4050dfacf43f35ae9895f6bc13368a1baf3e47d9d073
+annotated: og-38-2015.law.xml

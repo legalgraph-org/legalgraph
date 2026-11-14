@@ -1,0 +1,71 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Greece: provider information under art. 4(1) of Presidential Decree 131/2003, the transposition of
+# Article 5 of the e-Commerce Directive. It follows the Directive's list, on top of the trader
+# particulars of art. 4(2) and (9) of Law 2251/1994 on consumer protection.
+
+lg:GR-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and e-mail"@en ;
+    rdfs:comment "Name, geographic address of establishment, and details for rapid contact and direct, effective communication including e-mail, with easy, direct and permanent access for recipients and authorities (άρθρο 4 παρ. 1 (α)–(γ) Π.Δ. 131/2003)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:GR-PD-131-2003-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GR ;
+    lgo:appliesWhen lgv:EstablishedInGreece, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GR-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "The trade or similar public register the provider is entered in, with its registration number (άρθρο 4 παρ. 1 (δ))."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:GR-PD-131-2003-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GR ;
+    lgo:appliesWhen lgv:EstablishedInGreece, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GR-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:GR-PD-131-2003-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GR ;
+    lgo:appliesWhen lgv:EstablishedInGreece, lgv:CommercialDigitalService, lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GR-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:GR-PD-131-2003-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GR ;
+    lgo:appliesWhen lgv:EstablishedInGreece, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:GR-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "Professional association, professional title and the member state that granted it, and the professional rules of the state of establishment with the means of access (άρθρο 4 παρ. 1 (στ))."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:GR-PD-131-2003-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:GR ;
+    lgo:appliesWhen lgv:EstablishedInGreece, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Legea nr. 31 din 16 noiembrie 1990 (Legea societăților), art. 74, written
+  in schemas/law.xsd from the consolidated document view legislatie.just.ro
+  serves (consolidări through 18.12.2025). The words are the Romanian
+  legislature's; only the structure is ours. Alin. (1) obliges a company to
+  state its name, legal form, seat, trade-register number and unique
+  registration code on invoices, offers, orders, price lists, prospectuses
+  and other documents used in commerce; alin. (5) extends the alin. (1) and
+  (3) information to the company's own website — the Romanian company-law
+  website duty (L3).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="ro"
+     lga:act="RO-LEGA-31-1990" lga:jurisdiction="RO" lga:act-type="Statute"
+     lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56732">
+  <meta>
+    <title>Legea nr. 31 din 16 noiembrie 1990 privind societățile</title>
+    <date>1990-11-16</date>
+  </meta>
+
+  <section num="Articolul 74" source="legae-31-1990-doc.html">
+    <paragraph num="(1)" lga:provision="RO-LEGA-31-1990-art74-1" lga:citation="art. 74 alin. (1) Legea 31/1990" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56732" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName LegalForm GeographicAddress RegisterEntry TaxId">În orice factură, ofertă, comandă, tarif, prospect și alte documente întrebuințate în comerț, emanând de la o societate, trebuie să se menționeze denumirea, forma juridică, sediul social, numărul din registrul comerțului și codul unic de înregistrare. Sunt exceptate bonurile fiscale emise de aparatele de marcat electronice, care vor cuprinde elementele prevăzute de legislația din domeniu.</paragraph>
+    <paragraph num="(2)" lga:provision="RO-LEGA-31-1990-art74-2" lga:citation="art. 74 alin. (2) Legea 31/1990" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56732" lga:regulates="ProviderIdentification">Dacă societatea pe acțiuni optează pentru un sistem dualist de administrare, în conformitate cu prevederile art. 153, documentele prevăzute la alin. (1) vor conține și mențiunea «societate administrată în sistem dualist».</paragraph>
+    <paragraph num="(3)" lga:provision="RO-LEGA-31-1990-art74-3" lga:citation="art. 74 alin. (3) Legea 31/1990" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56732" lga:regulates="ProviderIdentification" lga:requires="ShareCapital">În documentele prevăzute la alin. (1), dacă acestea provin de la o societate cu răspundere limitată, se va menționa și capitalul social, iar dacă ele provin de la o societate pe acțiuni sau în comandită pe acțiuni, se vor menționa atât capitalul social subscris, cât și cel vărsat.</paragraph>
+    <paragraph num="(4)" lga:provision="RO-LEGA-31-1990-art74-4" lga:citation="art. 74 alin. (4) Legea 31/1990" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56732" lga:regulates="ProviderIdentification" lga:requires="RegisterEntry">În situația în care documentele prevăzute la alin. (1) sunt emise de o sucursală, acestea trebuie să menționeze și oficiul registrului comerțului la care a fost înregistrată sucursala și numărul ei de înregistrare.</paragraph>
+    <paragraph num="(5)" lga:provision="RO-LEGA-31-1990-art74-5" lga:citation="art. 74 alin. (5) Legea 31/1990" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56732" lga:regulates="ProviderIdentification" lga:implements="EU-2017-1132-art26-1" lga:requires="ProviderName LegalForm GeographicAddress RegisterEntry TaxId ShareCapital">Dacă societatea deține o pagină de internet proprie, informațiile prevăzute la alin. (1) și (3) vor fi publicate și pe pagina de internet a societății.</paragraph>
+  </section>
+</law>

@@ -1,0 +1,71 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Bulgaria: provider information under чл. 4(1) of Закон за електронната търговия, the transposition of
+# Article 5 of the e-Commerce Directive. It asks for more than the Directive: a correspondence address and
+# telephone number, and the place of business where it differs from the seat.
+
+lg:BG-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address, telephone and e-mail"@en ;
+    rdfs:comment "Name, seat and registered address, the address of business where different, and correspondence details including a telephone number and e-mail address for direct and timely contact (чл. 4, ал. 1, т. 1–4 ЗЕТ). The telephone number is a national addition to the Directive's list."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:BG-ZET-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BG ;
+    lgo:appliesWhen lgv:EstablishedInBulgaria, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact, lgv:PhoneNumber ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BG-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "The register the provider is entered in, with its registration number (чл. 4, ал. 1, т. 5 ЗЕТ)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:BG-ZET-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BG ;
+    lgo:appliesWhen lgv:EstablishedInBulgaria, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BG-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:BG-ZET-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BG ;
+    lgo:appliesWhen lgv:EstablishedInBulgaria, lgv:CommercialDigitalService, lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BG-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:BG-ZET-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BG ;
+    lgo:appliesWhen lgv:EstablishedInBulgaria, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:BG-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "For regulated professions, the professional body, title and the state that granted it, and the applicable professional rules (чл. 4, ал. 1, т. 7 ЗЕТ)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:BG-ZET-art4-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BG ;
+    lgo:appliesWhen lgv:EstablishedInBulgaria, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .

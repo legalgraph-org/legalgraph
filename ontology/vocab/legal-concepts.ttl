@@ -514,6 +514,56 @@ lgv:DataMinimisation a lgo:LegalConcept ;
     skos:prefLabel "Data minimisation"@en , "Datenminimierung"@de ;
     skos:definition "Personal data must be adequate, relevant and limited to what the purposes require (Art. 5(1)(c) GDPR)."@en .
 
+lgv:SpecialCategoriesOfData a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Special categories of personal data"@en , "Besondere Kategorien personenbezogener Daten"@de ;
+    skos:definition "Data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs or trade union membership, genetic and biometric data for identification, health data and data on sex life or sexual orientation: processing them is prohibited unless an exception of Article 9(2) GDPR applies."@en .
+
+lgv:CriminalOffenceData a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Data on criminal convictions and offences"@en , "Daten über strafrechtliche Verurteilungen und Straftaten"@de ;
+    skos:definition "Personal data on criminal convictions, offences or related security measures, processed only under the control of official authority or where Union or Member State law authorises it (Article 10 GDPR)."@en .
+
+lgv:ProcessingWithoutIdentification a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Processing which does not require identification"@en , "Verarbeitung, für die eine Identifizierung der betroffenen Person nicht erforderlich ist"@de ;
+    skos:definition "A controller need not keep or obtain information to identify the data subject only to comply with the GDPR; the data subject rights then apply only once the person provides that information (Article 11 GDPR)."@en .
+
+lgv:AutomatedIndividualDecision a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Automated individual decision-making, including profiling"@en , "Automatisierte Entscheidung im Einzelfall einschließlich Profiling"@de ;
+    skos:definition "A decision based solely on automated processing that produces legal or similarly significant effects: allowed only for a contract, under law or with explicit consent, and then with the right to human intervention, to express one's view and to contest the decision (Article 22 GDPR)."@en .
+
+lgv:RestrictionOfRights a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Restrictions of data subject rights"@en , "Beschränkungen der Betroffenenrechte"@de ;
+    skos:definition "Union or Member State law may restrict the data subject rights and the transparency duties to safeguard national security, public security, the enforcement of civil claims and other listed objectives (Article 23 GDPR); national data protection acts such as the BDSG rely on it."@en .
+
+lgv:ControllerResponsibility a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Responsibility of the controller"@en , "Verantwortung des für die Verarbeitung Verantwortlichen"@de ;
+    skos:definition "The controller implements appropriate technical and organisational measures, including data protection policies, to ensure and be able to demonstrate that processing complies with the GDPR (Article 24 GDPR)."@en .
+
+lgv:ProcessingUnderAuthority a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Processing under the authority of the controller or processor"@en , "Verarbeitung unter der Aufsicht des Verantwortlichen oder des Auftragsverarbeiters"@de ;
+    skos:definition "Staff and processors with access to personal data process them only on the controller's instructions, unless the law requires otherwise (Article 29 GDPR)."@en .
+
+lgv:CooperationWithSupervisoryAuthority a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Cooperation with the supervisory authority"@en , "Zusammenarbeit mit der Aufsichtsbehörde"@de ;
+    skos:definition "Controllers, processors and their representatives cooperate, on request, with the supervisory authority (Article 31 GDPR)."@en .
+
+lgv:DataProtectionImpactAssessment a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Data protection impact assessment"@en , "Datenschutz-Folgenabschätzung"@de ;
+    skos:definition "An assessment, before the processing, of processing likely to result in a high risk to people's rights and freedoms, in particular with new technologies, systematic profiling, large-scale special categories or large-scale monitoring of public areas (Article 35 GDPR)."@en .
+
+lgv:PriorConsultation a lgo:LegalConcept ;
+    skos:inScheme lgv:DataProtectionConcepts ;
+    skos:prefLabel "Prior consultation"@en , "Vorherige Konsultation"@de ;
+    skos:definition "Consulting the supervisory authority before processing where the impact assessment shows a high risk the controller cannot mitigate (Article 36 GDPR)."@en .
+
 lgv:SecurityOfProcessing a lgo:LegalConcept ;
     skos:inScheme lgv:DataProtectionConcepts ;
     skos:prefLabel "Security of processing"@en , "Sicherheit der Verarbeitung"@de ;

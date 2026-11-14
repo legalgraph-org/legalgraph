@@ -33,6 +33,6 @@
         <item num="(h)" lga:requires="UnsubscribeMechanism">when a service provider sends unsolicited commercial communications, details of how users of the service can register their choice regarding unsolicited commercial communications, which details must be prominently displayed on the website of the service provider and at every point where users of the service are asked to provide information when accessing the website of the service provider.</item>
       </list>
     </paragraph>
-    <paragraph num="(2)" lga:provision="MT-CAP426-art8C-2" lga:citation="Art. 8C(2) Cap. 426 (MT)" lga:url="https://legislation.mt/eli/cap/426/eng" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2">Where the service provider refers to prices, such prices shall be indicated clearly and unambiguously and, in particular, shall indicate whether they are inclusive of any tax, however so described, and delivery costs.</paragraph>
+    <paragraph num="(2)" lga:provision="MT-CAP426-art8C-2" lga:citation="Art. 8C(2) Cap. 426 (MT)" lga:url="https://legislation.mt/eli/cap/426/eng" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Where the service provider refers to prices, such prices shall be indicated clearly and unambiguously and, in particular, shall indicate whether they are inclusive of any tax, however so described, and delivery costs.</paragraph>
   </section>
 </law>

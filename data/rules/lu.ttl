@@ -1,0 +1,70 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:   <https://legalgraph.org/id/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Luxembourg: provider information under art. 5 of the Law of 14 August 2000 on electronic commerce,
+# the transposition of Article 5 of the e-Commerce Directive. It follows the Directive's list.
+
+lg:LU-R-impressum a lgo:Obligation ;
+    rdfs:label "Provider information: name, address and e-mail"@en ;
+    rdfs:comment "Name, geographic address of establishment, and contact details for rapid, direct and effective communication including e-mail, with easy, direct and permanent access for recipients and authorities (art. 5(1) a)–c), loi du 14 août 2000)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:LU-LOI-2000-08-14-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LU ;
+    lgo:appliesWhen lgv:EstablishedInLuxembourg, lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName, lgv:GeographicAddress, lgv:EmailAddress, lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:LU-R-impressum-register a lgo:Obligation ;
+    rdfs:label "Provider information: register entry"@en ;
+    rdfs:comment "Where applicable, the trade register number (art. 5(1) d), loi du 14 août 2000)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-register ;
+    lgo:establishedBy lg:LU-LOI-2000-08-14-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LU ;
+    lgo:appliesWhen lgv:EstablishedInLuxembourg, lgv:CommercialDigitalService, lgv:RegisteredInPublicRegister ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:RegisterEntry ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:LU-R-impressum-vat a lgo:Obligation ;
+    rdfs:label "Provider information: VAT identification number"@en ;
+    lgo:refines lg:EU-R-service-provider-information-vat ;
+    lgo:establishedBy lg:LU-LOI-2000-08-14-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LU ;
+    lgo:appliesWhen lgv:EstablishedInLuxembourg, lgv:CommercialDigitalService, lgv:HasVatId ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:VatId ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:LU-R-impressum-authorisation a lgo:Obligation ;
+    rdfs:label "Provider information: competent licensing authority"@en ;
+    lgo:refines lg:EU-R-service-provider-information-authorisation ;
+    lgo:establishedBy lg:LU-LOI-2000-08-14-art5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LU ;
+    lgo:appliesWhen lgv:EstablishedInLuxembourg, lgv:CommercialDigitalService, lgv:ActivityRequiresAuthorisation ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:SupervisoryAuthority ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:LU-R-impressum-profession a lgo:Obligation ;
+    rdfs:label "Provider information: regulated profession details"@en ;
+    rdfs:comment "Professional title and the member state that granted it, the professional order the provider belongs to, and the applicable professional rules with the means of access (art. 5, unnumbered paragraph after (1), loi du 14 août 2000)."@en ;
+    lgo:refines lg:EU-R-service-provider-information-profession ;
+    lgo:establishedBy lg:LU-LOI-2000-08-14-art5-1b ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:LU ;
+    lgo:appliesWhen lgv:EstablishedInLuxembourg, lgv:CommercialDigitalService, lgv:RegulatedProfession ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
+    lgo:reviewStatus lgv:Draft .

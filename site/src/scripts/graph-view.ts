@@ -1,143 +1,92 @@
-// Interactive graph (Cytoscape.js) over /graph-data.json: countries, acts, provisions, rules,
-// disclosure types, information items and concepts, and the relations between them. Views start
-// small, like the Neo4j browser: one node and some of its neighbours, and grow as you expand nodes.
+// Interactive graph (Cytoscape.js): countries, acts, provisions, rules, disclosure types, information
+// items and concepts, and the relations between them. Views start small, like the Neo4j browser: one
+// node and some of its neighbours, and grow as you expand nodes.
+//
+// The graph view does not download the whole graph: it starts from /graph-index.json (every node,
+// without edges) and fetches a node's edges and properties (/graph-node/<id>.json) when it first shows
+// or selects that node (LazyGraph). Every node in a view is loaded, so the view knows every edge
+// between its nodes. A page's mini graph gets its neighbourhood with the page (MiniGraph.astro).
 import cytoscape, { type Core, type ElementDefinition, type NodeSingular } from "cytoscape";
 
+import { GraphData, edgeKey, type GraphEdge, type GraphNode, type LawName } from "../lib/graph-model";
 import { NODE_COLORS, NODE_SHAPES, SMALL_NODE_TYPES, curie, iri, pagePath, turtlePath } from "../lib/links";
 
-export interface GraphNode {
-  id: string;
-  label: string;
-  title: string;
-  type: string;
-}
+export { GraphData, type Connection, type GraphEdge, type GraphNode, type LawName } from "../lib/graph-model";
 
-export interface GraphEdge {
-  source: string;
-  target: string;
-  label: string;
-}
+export type Property = [string, string];
 
-/** A law's names: short name, title in its own language, and English title (if different). */
-export interface LawName {
-  short: string | null;
-  title: string;
-  lang: string;
-  english: string | null;
-}
-
-export interface Connection {
-  edge: GraphEdge;
-  other: GraphNode;
-  outgoing: boolean;
-}
-
-/** The whole graph in memory, with an index of each node's edges. */
-export class GraphData {
-  readonly nodes: Map<string, GraphNode>;
-  private readonly adjacent = new Map<string, GraphEdge[]>();
+/** The graph as the graph view knows it: every node, and the edges and properties of the nodes loaded so far. */
+export class LazyGraph extends GraphData {
+  private readonly loading = new Map<string, Promise<void>>();
+  private readonly props = new Map<string, Property[]>();
 
   constructor(
-    nodes: GraphNode[],
-    readonly edges: GraphEdge[],
-    readonly laws: Record<string, LawName> = {},
+    nodes: (Omit<GraphNode, "title"> & { title?: string })[],
+    edges: GraphEdge[],
+    laws: Record<string, LawName>,
+    /** Other names of nodes, for the search (lib/graph-search.ts). */
+    readonly terms: Record<string, string[]>,
   ) {
-    this.nodes = new Map(nodes.map((node) => [node.id, node]));
-    for (const edge of edges) {
-      for (const end of [edge.source, edge.target]) {
-        if (!this.adjacent.has(end)) this.adjacent.set(end, []);
-        this.adjacent.get(end)!.push(edge);
-      }
+    super(
+      nodes.map((node) => ({ ...node, title: node.title ?? node.label })),
+      edges,
+      laws,
+    );
+  }
+
+  /** Fetches the nodes not loaded yet, all at once; a failed fetch is tried again next time. */
+  override async ensure(ids: Iterable<string>): Promise<void> {
+    await Promise.all([...new Set(ids)].filter((id) => this.nodes.has(id)).map((id) => this.load(id)));
+  }
+
+  /** A loaded node's properties. */
+  properties(id: string): Property[] {
+    return this.props.get(id) ?? [];
+  }
+
+  private load(id: string): Promise<void> {
+    let pending = this.loading.get(id);
+    if (!pending) {
+      const url = `/graph-node/${encodeURIComponent(id)}.json`;
+      pending = fetch(url)
+        .then((response) => {
+          if (!response.ok) throw new Error(`${url}: ${response.status}`);
+          return response.json() as Promise<{ edges: [string, string, 0 | 1][]; properties: Property[] }>;
+        })
+        .then((shard) => {
+          this.addEdges(
+            shard.edges.map(([label, other, outgoing]) =>
+              outgoing ? { source: id, target: other, label } : { source: other, target: id, label },
+            ),
+          );
+          this.props.set(id, shard.properties);
+        })
+        .catch((error: unknown) => {
+          this.loading.delete(id);
+          throw error;
+        });
+      this.loading.set(id, pending);
     }
-  }
-
-  connections(id: string): Connection[] {
-    return (this.adjacent.get(id) ?? [])
-      .map((edge) => {
-        const outgoing = edge.source === id;
-        return { edge, outgoing, other: this.nodes.get(outgoing ? edge.target : edge.source)! };
-      })
-      .filter((connection) => connection.other)
-      .sort((a, b) => a.edge.label.localeCompare(b.edge.label) || a.other.title.localeCompare(b.other.title));
-  }
-
-  /**
-   * The node's neighbours, taking turns between kinds of relation (part of, implements, requires …)
-   * so that a capped list still shows every kind, not the first fifty of one.
-   */
-  neighbours(id: string): string[] {
-    const byLabel = new Map<string, string[]>();
-    for (const { edge, other, outgoing } of this.connections(id)) {
-      const key = `${outgoing ? "→" : "←"}${edge.label}`;
-      if (!byLabel.has(key)) byLabel.set(key, []);
-      const list = byLabel.get(key)!;
-      if (!list.includes(other.id)) list.push(other.id);
-    }
-    const queues = [...byLabel.values()];
-    const order: string[] = [];
-    while (queues.some((queue) => queue.length)) {
-      for (const queue of queues) {
-        const next = queue.shift();
-        if (next && !order.includes(next)) order.push(next);
-      }
-    }
-    return order;
-  }
-
-  /** A node and at most `limit` of its neighbours. */
-  around(id: string, limit: number): Set<string> {
-    return new Set([id, ...this.neighbours(id).slice(0, limit)]);
-  }
-
-  /** The law (or judgment, or guideline) a provision is part of. */
-  partOf(id: string): string | undefined {
-    return this.connections(id).find(({ edge, outgoing }) => outgoing && edge.label === "part of")?.other.id;
-  }
-
-  /** The law a node belongs to: itself for a law, judgment or guideline; its law for a provision. */
-  lawOf(id: string): { id: string; name: LawName } | undefined {
-    const lawId = this.laws[id] ? id : this.partOf(id);
-    const name = lawId ? this.laws[lawId] : undefined;
-    return lawId && name ? { id: lawId, name } : undefined;
-  }
-
-  /**
-   * Laws that two or more of these provisions are part of but that are not among them: shown as
-   * context, so a view makes clear when its provisions come from the same law.
-   */
-  sharedParents(ids: Iterable<string>): string[] {
-    const present = new Set(ids);
-    const children = new Map<string, number>();
-    for (const id of present) {
-      const parent = this.partOf(id);
-      if (parent && !present.has(parent)) children.set(parent, (children.get(parent) ?? 0) + 1);
-    }
-    return [...children].filter(([, count]) => count >= 2).map(([parent]) => parent);
+    return pending;
   }
 }
 
-let loading: Promise<GraphData> | undefined;
+let loading: Promise<LazyGraph> | undefined;
 
-/** Fetches the graph once per page; every view on the page shares it. */
-export function loadGraphData(): Promise<GraphData> {
-  loading ??= fetch("/graph-data.json")
+/** Fetches the graph's index once per page (see the top of this file). */
+export function loadGraphIndex(): Promise<LazyGraph> {
+  loading ??= fetch("/graph-index.json")
     .then((response) => {
-      if (!response.ok) throw new Error(`/graph-data.json: ${response.status}`);
-      return response.json() as Promise<{ nodes: GraphNode[]; edges: GraphEdge[]; laws: Record<string, LawName> }>;
+      if (!response.ok) throw new Error(`/graph-index.json: ${response.status}`);
+      return response.json() as Promise<{
+        nodes: (Omit<GraphNode, "title"> & { title?: string })[];
+        edges: GraphEdge[];
+        laws: Record<string, LawName>;
+        terms: Record<string, string[]>;
+      }>;
     })
-    .then((data) => new GraphData(data.nodes, data.edges, data.laws));
+    .then((index) => new LazyGraph(index.nodes, index.edges, index.laws, index.terms));
   return loading;
-}
-
-let loadingProperties: Promise<Record<string, [string, string][]>> | undefined;
-
-/** The plain properties of every node (/graph-properties.json), fetched the first time they are needed. */
-export function loadProperties(): Promise<Record<string, [string, string][]>> {
-  loadingProperties ??= fetch("/graph-properties.json").then((response) => {
-    if (!response.ok) throw new Error(`/graph-properties.json: ${response.status}`);
-    return response.json() as Promise<Record<string, [string, string][]>>;
-  });
-  return loadingProperties;
 }
 
 /** A provision's text for the reading panel (/graph-text/<id>.json). */
@@ -195,9 +144,7 @@ function elements(data: GraphData, ids: Set<string>, context: ReadonlySet<string
   const nodes = [...ids]
     .filter((id) => data.nodes.has(id))
     .map((id) => ({ group: "nodes" as const, data: { ...data.nodes.get(id)! }, classes: context.has(id) ? "context" : "" }));
-  const edges = data.edges
-    .filter((edge) => ids.has(edge.source) && ids.has(edge.target))
-    .map((edge) => ({ group: "edges" as const, data: { id: `${edge.source}|${edge.label}|${edge.target}`, ...edge } }));
+  const edges = data.edgesAmong(ids).map((edge) => ({ group: "edges" as const, data: { id: edgeKey(edge), ...edge } }));
   return [...nodes, ...edges];
 }
 
@@ -367,21 +314,25 @@ function layoutFor(options: { focus?: string; ids: Set<string>; positions?: Grap
 
 /** The ids plus the laws two or more of them share. */
 function withParents(data: GraphData, ids: Set<string>): Set<string> {
-  return new Set([...ids, ...data.sharedParents(ids)]);
+  return data.withParents(ids);
 }
 
 /**
  * Brings in the laws that provisions in the view now share, each placed among its provisions.
  * Returns the nodes added.
  */
-export function addSharedParents(cy: Core, data: GraphData): string[] {
-  const present = new Set(cy.nodes().map((node) => node.id()));
-  const parents = data.sharedParents(present);
+export async function addSharedParents(cy: Core, data: GraphData): Promise<string[]> {
+  const parents = data.sharedParents(cy.nodes().map((node) => node.id()));
   if (parents.length === 0) return [];
-  const added = elements(data, new Set([...present, ...parents]), new Set(parents)).filter((element) =>
+  await data.ensure(parents);
+  // The view may have changed while the laws were fetched.
+  const present = new Set(cy.nodes().map((node) => node.id()));
+  const fresh = parents.filter((parent) => !present.has(parent));
+  if (fresh.length === 0) return [];
+  const added = elements(data, new Set([...present, ...fresh]), new Set(fresh)).filter((element) =>
     element.group === "nodes" ? !present.has(element.data.id!) : cy.getElementById(element.data.id!).empty(),
   );
-  for (const parent of parents) {
+  for (const parent of fresh) {
     const children = cy.nodes().filter((node) => data.partOf(node.id()) === parent);
     let x = 0;
     let y = 0;
@@ -393,7 +344,7 @@ export function addSharedParents(cy: Core, data: GraphData): string[] {
     if (element && children.length) element.position = { x: x / children.length + 30, y: y / children.length - 30 };
   }
   cy.add(added);
-  return parents;
+  return fresh;
 }
 
 /**
@@ -402,7 +353,7 @@ export function addSharedParents(cy: Core, data: GraphData): string[] {
  * of (shown as context if it was not in the view). Nothing new is brought in otherwise; the kept
  * nodes are arranged around the node. Returns how many nodes were removed.
  */
-export function trimTo(cy: Core, data: GraphData, id: string): number {
+export async function trimTo(cy: Core, data: GraphData, id: string): Promise<number> {
   const node = cy.getElementById(id);
   if (node.empty()) return 0;
   const near = node.closedNeighborhood().nodes();
@@ -410,7 +361,7 @@ export function trimTo(cy: Core, data: GraphData, id: string): number {
   const removed = cy.nodes().not(near).filter((other) => !shared.has(other.id()));
   const count = removed.length;
   removed.remove();
-  addSharedParents(cy, data);
+  await addSharedParents(cy, data);
   cy.nodes().removeClass("focus");
   node.addClass("focus");
   cy.layout(focusLayout(id, true)).run();
@@ -425,14 +376,15 @@ export function jurisdictionIds(data: GraphData): Set<string> {
   return new Set([...data.nodes.values()].filter((node) => node.type === "country" || node.type === "organisation").map((node) => node.id));
 }
 
-/** Replaces the view with every jurisdiction (see jurisdictionIds). */
+/** Replaces the view with every jurisdiction (see jurisdictionIds; their edges come with the index). */
 export function showJurisdictions(cy: Core, data: GraphData): void {
   cy.elements().remove();
+  const ids = jurisdictionIds(data);
   // Every EU member is in the EEA too; drawing both links pulls the two hubs into one. Here an EU
   // member hangs on the EU only, and the EEA keeps the members that are not in the EU.
-  const inEu = new Set(data.edges.filter((e) => e.label === "member of" && e.target === "EU").map((e) => e.source));
+  const inEu = new Set(data.edgesAmong(ids).filter((e) => e.label === "member of" && e.target === "EU").map((e) => e.source));
   cy.add(
-    elements(data, jurisdictionIds(data)).filter(
+    elements(data, ids).filter(
       (element) => !(element.group === "edges" && element.data.target === "EEA" && inEu.has(element.data.source as string)),
     ),
   );
@@ -442,17 +394,20 @@ export function showJurisdictions(cy: Core, data: GraphData): void {
 }
 
 /** Replaces the view with a node and at most `limit` of its neighbours. */
-export function focusOn(cy: Core, data: GraphData, id: string, limit: number): void {
-  cy.elements().remove();
+export async function focusOn(cy: Core, data: GraphData, id: string, limit: number): Promise<void> {
+  await data.ensure([id]);
   const ids = data.around(id, limit);
-  cy.add(elements(data, withParents(data, ids), new Set(data.sharedParents(ids))));
+  const shown = withParents(data, ids);
+  await data.ensure(shown);
+  cy.elements().remove();
+  cy.add(elements(data, shown, new Set(data.sharedParents(ids))));
   cy.nodes().removeClass("focus");
   cy.getElementById(id).addClass("focus");
   cy.layout(focusLayout(id)).run();
   cy.fit(undefined, 30);
 }
 
-/** How many of a node's neighbours are not in the view yet. */
+/** How many of a node's neighbours are not in the view yet (the node must be loaded). */
 export function hiddenNeighbours(cy: Core, data: GraphData, id: string): number {
   return data.neighbours(id).filter((other) => cy.getElementById(other).empty()).length;
 }
@@ -462,11 +417,14 @@ export function hiddenNeighbours(cy: Core, data: GraphData, id: string): number 
  * it on the side away from the rest of the view. The nodes already there keep their places, so
  * the picture grows instead of being rearranged. Returns how many were added.
  */
-export function expand(cy: Core, data: GraphData, id: string, limit: number): number {
+export async function expand(cy: Core, data: GraphData, id: string, limit: number): Promise<number> {
+  await data.ensure([id]);
+  const candidates = data.neighbours(id).filter((other) => cy.getElementById(other).empty()).slice(0, limit);
+  await data.ensure(candidates);
   const node = cy.getElementById(id);
-  if (node.empty()) return 0;
-  const fresh = data.neighbours(id).filter((other) => cy.getElementById(other).empty()).slice(0, limit);
-  if (fresh.length === 0) return 0;
+  // The view may have changed while the neighbours were fetched.
+  const fresh = candidates.filter((other) => cy.getElementById(other).empty());
+  if (node.empty() || fresh.length === 0) return 0;
   const present = new Set(cy.nodes().map((n) => n.id()));
   const center = node.position();
   const others = cy.nodes().not(node);
@@ -491,7 +449,7 @@ export function expand(cy: Core, data: GraphData, id: string, limit: number): nu
   });
   const old = cy.nodes();
   cy.add(added);
-  addSharedParents(cy, data);
+  await addSharedParents(cy, data);
   // Let only the new nodes settle (no overlaps, short edges); the rest of the view stays where it was.
   old.lock();
   const layout = cy.layout({
@@ -507,4 +465,24 @@ export function expand(cy: Core, data: GraphData, id: string, limit: number): nu
   layout.one("layoutstop", () => old.unlock());
   layout.run();
   return fresh.length;
+}
+
+/**
+ * Adds one node next to another (or anywhere), with its edges to the nodes in the view and the laws
+ * it now shares with them. Returns false if it is not in the graph.
+ */
+export async function addNode(cy: Core, data: GraphData, id: string, near?: { x: number; y: number }): Promise<boolean> {
+  const node = data.nodes.get(id);
+  if (!node) return false;
+  await data.ensure([id]);
+  if (cy.getElementById(id).nonempty()) return true;
+  cy.add({ group: "nodes", data: { ...node }, position: near ? { x: near.x + 80, y: near.y + 40 } : { x: 0, y: 0 } });
+  for (const edge of data.edgesOf(id)) {
+    const key = edgeKey(edge);
+    if (cy.getElementById(edge.source).nonempty() && cy.getElementById(edge.target).nonempty() && cy.getElementById(key).empty()) {
+      cy.add({ group: "edges", data: { id: key, ...edge } });
+    }
+  }
+  await addSharedParents(cy, data);
+  return true;
 }

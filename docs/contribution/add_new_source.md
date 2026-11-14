@@ -93,7 +93,10 @@ GDPR's recitals come from a second source).
 - **`html-fragment`**: download a page and keep the element matching `selector`, as BeautifulSoup
   (`html.parser`) serialises it. Portal pages differ on every request (session tokens, timestamps);
   the fragment with the law text does not.
-- **`file`**: the response as served, byte for byte (PDF and anything else).
+- **`file`**: the response as served, byte for byte (PDF and anything else). A PDF whose fonts show a
+  national code page under Latin glyph names, with no Unicode map, extracts as Latin gibberish
+  (`ÅÖÇÌÅÑÉÓ` for `ΕΦΗΜΕΡΙΣ`). Set `pdf_encoding` to that code page and the shown bytes are decoded
+  with it: `cp1253` for Greek Government Gazette issues before about 2005 (`sources/gr/pd-131-2003/`).
 - **`rendered`**: for portals that build the law text with JavaScript (single-page apps such as the
   Czech e-Sbírka): the page is rendered in headless Chromium (`tools/render`, bun and Playwright; run
   `make render-install` once on your machine), then the element matching `selector` is kept as for

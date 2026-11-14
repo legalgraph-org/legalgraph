@@ -1,5 +1,6 @@
 """Sources: verifying originals and annotated XML, extracting Turtle, fetching, rendering lines."""
 
+import io
 import shutil
 import xml.etree.ElementTree as ET
 from dataclasses import replace
@@ -7,10 +8,13 @@ from datetime import date
 from pathlib import Path
 
 import pytest
+from pypdf import PdfWriter
+from pypdf.generic import DecodedStreamObject, DictionaryObject, NameObject
 from source_helpers import by_id, with_annotated
 
 from legalgraph import sources
 from legalgraph.sources import Source
+from legalgraph.sources.text import text_of
 
 
 def test_every_source_verifies(all_sources: list[Source]) -> None:
@@ -144,3 +148,21 @@ def test_gdpr_has_english_and_german_quotes(all_sources: list[Source]) -> None:
     assert "lgo:languageVersionOf lg:EU-2016-679-art13-1-q1 ;" in extracted
     assert "(b) the contact details of the data protection officer, where applicable;" in extracted
     assert "b) gegebenenfalls die Kontaktdaten des Datenschutzbeauftragten;" in extracted
+
+
+def test_a_pdf_without_a_unicode_map_is_read_in_its_code_page() -> None:
+    """The Greek Government Gazette's old fonts show Windows-1253 bytes under Latin glyph names."""
+    writer = PdfWriter()
+    page = writer.add_blank_page(200, 200)
+    font = DictionaryObject({NameObject("/Type"): NameObject("/Font"), NameObject("/BaseFont"): NameObject("/Times")})
+    page[NameObject("/Resources")] = DictionaryObject(
+        {NameObject("/Font"): DictionaryObject({NameObject("/F1"): writer._add_object(font)})}
+    )
+    content = DecodedStreamObject()
+    # ΕΦΗΜΕΡΙΣ, then ΤΗΣ kerned in two parts on the next line.
+    content.set_data(b"BT /F1 10 Tf 10 100 Td (\xc5\xd6\xc7\xcc\xc5\xd1\xc9\xd3) Tj T* [(\xd4) -20 (\xc7\xd3)] TJ ET")
+    page[NameObject("/Contents")] = writer._add_object(content)
+    pdf = io.BytesIO()
+    writer.write(pdf)
+
+    assert text_of("application/pdf", pdf.getvalue(), [], "cp1253") == "ΕΦΗΜΕΡΙΣ ΤΗΣ"

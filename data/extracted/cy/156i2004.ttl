@@ -58,6 +58,7 @@ lg:CY-156-I-2004-art8-2
     lgo:citation "άρθρο 8(2) Ν.156(Ι)/2004" ;
     lgo:implements lg:EU-2000-31-art5-2 ;
     lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:CY-156-I-2004-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;

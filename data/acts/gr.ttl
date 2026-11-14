@@ -1,0 +1,15 @@
+@prefix lgo:  <https://legalgraph.org/ontology#> .
+@prefix lgv:  <https://legalgraph.org/vocab/> .
+@prefix lg:  <https://legalgraph.org/id/> .
+@prefix eli:  <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Greece: art. 4 of Presidential Decree 131/2003, the general information duty — the Greek
+# transposition of e-Commerce Directive Art. 5.
+
+lg:GR-PD-131-2003 a lgo:LegalAct ;
+    eli:title "Προσαρμογή στην Οδηγία 2000/31 του Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου σχετικά με ορισμένες νομικές πτυχές των υπηρεσιών της κοινωνίας της πληροφορίας, ιδίως του ηλεκτρονικού εμπορίου, στην εσωτερική αγορά (Οδηγία για το ηλεκτρονικό εμπόριο)"@el , "Presidential Decree 131/2003 transposing Directive 2000/31/EC (Directive on electronic commerce)"@en ;
+    lgo:shortName "Π.Δ. 131/2003" ;
+    eli:id_local "ΦΕΚ Α' 116/16.05.2003" ;
+    eli:transposes lg:EU-2000-31 ;
+    lgo:reviewStatus lgv:SourceChecked .

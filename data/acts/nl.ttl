@@ -17,23 +17,17 @@ lg:NL-BW3 a lgo:LegalAct ;
     lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/"^^xsd:anyURI ;
     lgo:reviewStatus lgv:SourceChecked .
 
-lg:NL-BW3-art15d-1 a lgo:Provision ;
-    eli:is_part_of lg:NL-BW3 ;
-    lgo:citation "Artikel 3:15d lid 1 BW" ;
-    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/2020-01-01/#Boek3_Titeldeel1_Afdeling1A_Artikel15d"^^xsd:anyURI ;
-    lgo:implements lg:EU-2000-31-art5-1 ;
-    lgo:regulates lgv:ProviderIdentification ;
-    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ,
-        lgv:RegisterEntry , lgv:SupervisoryAuthority , lgv:ProfessionalBody , lgv:ProfessionalTitle ,
-        lgv:ProfessionalRules ;
-    lgo:reviewStatus lgv:SourceChecked .
+# The provisions of art. 3:15d come from sources/nl/bw-boek3 (official
+# wetten.overheid.nl text); this block keeps only act-level metadata.
 
-lg:NL-BW3-art15d-1-q1 a lgo:Quote ;
-    lgo:quoteOf lg:NL-BW3-art15d-1 ;
-    lgo:text """Degene die een dienst van de informatiemaatschappij verleent, maakt de volgende gegevens gemakkelijk, rechtstreeks en permanent toegankelijk voor degenen die gebruik maken van deze dienst, in het bijzonder om informatie te verkrijgen of toegankelijk te maken:
-a. zijn identiteit en adres van vestiging;
-b. gegevens die een snel contact en een rechtstreekse en effectieve communicatie met hem mogelijk maken, met inbegrip van zijn elektronische postadres;
-c. voor zover hij in een handelsregister of een vergelijkbaar openbaar register is ingeschreven: het register waar hij is ingeschreven en zijn inschrijvingsnummer, of een vergelijkbaar middel ter identificatie in dat register;
-[…]"""@nl ;
-    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0005291/2020-01-01/#Boek3_Titeldeel1_Afdeling1A_Artikel15d"^^xsd:anyURI ;
-    lgo:officialLanguageVersion true .
+# Handelsregisterwet 2007: the KvK-number duty; provisions come from
+# sources/nl/handelsregisterwet-2007.
+lg:NL-HRW a lgo:LegalAct ;
+    eli:title "Handelsregisterwet 2007"@nl , "Trade Register Act 2007"@en ;
+    lgo:shortName "Hrw 2007" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:NL ;
+    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0021777/"^^xsd:anyURI ;
+    eli:id_local "BWBR0021777" ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 27 requires registered undertakings and legal persons to state their trade-register number on all outgoing letters, orders, invoices, offers and other announcements, except advertisements; whether 'andere aankondigingen' reaches a website is for review — the express website duty is BW art. 3:15d(1)(c)."@en .

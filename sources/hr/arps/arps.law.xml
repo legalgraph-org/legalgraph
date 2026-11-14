@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o alternativnom rješavanju potrošačkih sporova (NN 121/2016),
+  članak 22, written in schemas/law.xsd from the Narodne novine publication.
+  The words are the Hrvatski sabor's; only the structure is ours. Stavak 3
+  requires the trader's ADR notice on its website, in its business premises
+  and by other means provided by consumer-protection legislation — the
+  Croatian ADR website duty (L4).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="hr"
+     lga:act="HR-ARPS" lga:jurisdiction="HR" lga:act-type="Statute"
+     lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html">
+  <meta>
+    <title>Zakon o alternativnom rješavanju potrošačkih sporova</title>
+    <date>2016-12-23</date>
+  </meta>
+
+  <section num="Članak 22." source="clanak-22.fragment.html">
+    <paragraph num="(1)" lga:provision="HR-ARPS-art22-1" lga:citation="članak 22 stavak 1 Zakona o ARPS" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Trgovci sa sjedištem u Republici Hrvatskoj koji se obvežu ili su temeljem mjerodavnih propisa obvezni rješavati potrošačke sporove putem tijela za ARPS, dužni su o toj činjenici obavijestiti potrošače.</paragraph>
+    <paragraph num="(2)" lga:provision="HR-ARPS-art22-2" lga:citation="članak 22 stavak 2 Zakona o ARPS" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-1" lga:requires="DisputeResolutionBody">Obavijest o nadležnom tijelu ili tijelima za ARPS iz stavka 1. ovoga članka sadržava poštansku adresu i adresu mrežne stranice.</paragraph>
+    <paragraph num="(3)" lga:provision="HR-ARPS-art22-3" lga:citation="članak 22 stavak 3 Zakona o ARPS" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-2" lga:requires="DisputeResolutionBody">Obavijesti iz stavaka 1. i 2. ovoga članka moraju biti istaknute na način koji je za potrošača jasan, razumljiv i lako dostupan, na mrežnim stranicama i u poslovnim prostorijama trgovca, kao i na druge načine predviđene posebnim propisima o zaštiti potrošača.</paragraph>
+    <paragraph num="(4)" lga:provision="HR-ARPS-art22-4" lga:citation="članak 22 stavak 4 Zakona o ARPS" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_121_2622.html" lga:regulates="ConsumerDisputeResolution" lga:implements="EU-2013-11-art13-3" lga:requires="DisputeResolutionStatement">Kada se određeni spor ne može riješiti putem pisanog prigovora koji potrošač upućuje trgovcu, trgovac je u odgovoru na pisani prigovor dužan dati potrošaču obavijesti iz stavaka 1. i 2. ovoga članka uz pisanu izjavu o mogućnostima pokretanja postupka pred navedenim tijelima za ARPS te o tome hoće li se upustiti u postupak pred nekima od njih.</paragraph>
+  </section>
+</law>

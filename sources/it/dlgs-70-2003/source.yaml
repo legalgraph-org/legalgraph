@@ -1,0 +1,28 @@
+# Decreto legislativo 9 aprile 2003, n. 70 (e-commerce): art. 7 is the general
+# information duty — the Italian transposition of e-Commerce Directive
+# 2000/31/EC Art. 5. Comma 1 is the provider-information catalogue (a–i,
+# including sub f the regulated-profession items and sub h the price clause);
+# comma 2 the update duty. Comma 3 (registration of the telematic editorial
+# masthead for L. 62/2001 benefits) is a different rule and is omitted.
+# normattiva.it serves article-level pages under ~artN URNs; tools/render
+# renders them (make render-install once).
+id: it/dlgs-70-2003
+title: Decreto legislativo 9 aprile 2003, n. 70 (art. 7)
+jurisdiction: IT
+language: it
+publisher: Normattiva, the official legislation database
+kind: authored-xml
+licence: official-work
+licence_basis: "Italian legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: dlgs-70-2003-art7.html
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-09;70~art7"
+    fetch: rendered
+    wait: "#art_7"
+    selector: "#testoNormalizzato"
+    media_type: text/html
+    notes:
+      - "Consolidated Italian text of art. 7 as normattiva.it renders the ~art7 page."
+    retrieved_on: 2026-11-14
+    sha256: a104705e49b046e8d2e3768e0d9738fec6084940f35c347a1aba905b59627649
+annotated: dlgs-70-2003.law.xml

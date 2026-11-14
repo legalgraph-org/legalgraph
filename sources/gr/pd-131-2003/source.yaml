@@ -1,0 +1,26 @@
+# Προεδρικό Διάταγμα 131/2003 (ΦΕΚ Α' 116/16.05.2003), art. 4: the general information duty, Greece's
+# transposition of e-Commerce Directive Art. 5 (provider name, geographic address, rapid contact
+# including e-mail, register, supervisory authority, regulated-profession data, VAT number) and the
+# price clause. The Government Gazette (et.gr) publishes the issue as a PDF whose fonts show
+# Windows-1253 bytes under Latin glyph names, with no Unicode map: `pdf_encoding: cp1253` reads the
+# bytes as Greek. The paragraphs the graph quotes are transcribed in schemas/law.xsd and checked
+# letter for letter against that text.
+id: gr/pd-131-2003
+title: Προεδρικό Διάταγμα 131/2003 (άρθρο 4)
+jurisdiction: GR
+language: el
+publisher: Εθνικό Τυπογραφείο (National Printing Office), Government Gazette
+kind: authored-xml
+licence: official-work
+licence_basis: "Ν. 2121/1993 άρθρο 2 παρ. 5: official texts expressing the authority of the State, in particular legislative, administrative and judicial texts, are not protected by copyright"
+originals:
+  - file: fek-a-116-2003.pdf
+    url: https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2003/20030100116.pdf
+    fetch: file
+    media_type: application/pdf
+    pdf_encoding: cp1253
+    notes:
+      - "ΦΕΚ Α' 116/16.05.2003 as published; the search.et.gr viewer links this file. P.D. 131/2003 is the issue's first act; art. 4 is on page 2."
+    retrieved_on: 2026-11-14
+    sha256: 18361c971994aa48dd659fbebba178c622e1932d8361b7e68ab1c7ed9275f4f6
+annotated: pd-131-2003.law.xml

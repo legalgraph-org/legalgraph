@@ -24,4 +24,15 @@ originals:
       - "Fragment cut from the PGDL consolidated view (page 2, articles 101-200): the 'Artigo 171.º' block through the end of its version notes. Downloaded 2026-11-12; the page is ISO-8859-1, fragment re-encoded to UTF-8 with text unchanged."
     retrieved_on: 2026-11-12
     sha256: d590e06489ccacd3b4ed57a1ec492ad52a35ec7568c43e58dc60f8dcbf3ce146
+  - file: csc-art171.dre.html
+    url: "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975"
+    role: authentic
+    fetch: rendered
+    wait: "text=Artigo 171.º"
+    selector: "div.fragmento-full-width:-soup-contains(\"Artigo 171.º\")"
+    media_type: text/html
+    notes:
+      - "The official consolidated text the mirror's words are verified against: diariodarepublica.pt (Diário da República Eletrónico), reached through the ELI URI data.dre.pt/eli/dec-lei/262/1986/p/cons/pt/html. The portal is an OutSystems application; tools/render renders it (make render-install once)."
+    retrieved_on: 2026-11-14
+    sha256: f0abd3c01cbdf0a57dd6b8b8da12e54cd8ff3d6665d6e8ce9be8d14b09ac38c3
 annotated: csc.law.xml

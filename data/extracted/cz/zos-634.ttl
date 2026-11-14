@@ -36,7 +36,7 @@ lg:CZ-ZOS-634-s14-1-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:CZ-ZOS-634-s14-1 ;
-    lgo:retrievedOn "2026-11-13"^^xsd:date ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
     lgo:sourceDocument lg:CZ-ZOS-634-source ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://www.zakonyprolidi.cz/cs/1992-634"^^xsd:anyURI ;
@@ -58,7 +58,7 @@ lg:CZ-ZOS-634-s14-2-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:CZ-ZOS-634-s14-2 ;
-    lgo:retrievedOn "2026-11-13"^^xsd:date ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
     lgo:sourceDocument lg:CZ-ZOS-634-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
     lgo:sourceUrl "https://www.zakonyprolidi.cz/cs/1992-634"^^xsd:anyURI ;
@@ -69,13 +69,13 @@ lg:CZ-ZOS-634-source
     dcterms:language "cs"^^xsd:language ;
     lgo:annotatedFile "sources/cz/zos-634/zos.law.xml" ;
     lgo:authenticity lgv:VerifiedAgainstOfficial ;
-    lgo:legalStatus "Fragment cut from the consolidated full-text page: the § 14 paragraph through the last paragraph before § 14a. Downloaded 2026-11-13."@en , "Official e-Sbírka (e-sbirka.cz) is a client-side application that does not serve the text without JavaScript; zakonyprolidi.cz is an authoritative consolidated-text mirror."@en ;
+    lgo:legalStatus "Official e-Sbírka (e-sbirka.cz) is a client-side application that does not serve the text without JavaScript; zakonyprolidi.cz is an authoritative consolidated-text mirror; div.Frags holds the act text."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "§ 3 písm. a) zákona č. 121/2000 Sb., autorský zákon: official works, including legislation, are not copyright works" ;
     lgo:mediaType "text/html" ;
-    lgo:repositoryPath "sources/cz/zos-634/zos-14.fragment.html" ;
-    lgo:retrievedOn "2026-11-13"^^xsd:date ;
-    lgo:sha256 "6e0d01e427645e5a8390806e35e7820b2d5ce10ef5f3ceb7127cceafc54feb24" ;
+    lgo:repositoryPath "sources/cz/zos-634/1992-634.zakonyprolidi.html" ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sha256 "bb874eac47a01c38b6f61262d0a6050c4699f64647c2a0e0941300c8c3dce013" ;
     lgo:sourceUrl "https://www.zakonyprolidi.cz/cs/1992-634"^^xsd:anyURI ;
     lgo:verifiedAgainst lg:CZ-ZOS-634-source-official .
 

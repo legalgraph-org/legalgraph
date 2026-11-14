@@ -10,6 +10,46 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:HR-ARPS-art22-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b30ea9ba444dc3aacf4921aa2e59b032a269a4bbb78f9fe95c9470a0cedaf074" ;
+    lgo:text "(1) Traders established in the Republic of Croatia that commit to or are required by the relevant legislation to resolve consumer disputes through ADR bodies are obliged to inform consumers of that fact."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ARPS-art22-1-q1 .
+
+lg:HR-ARPS-art22-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "45b1d88834cfd393a278aab1ce51027b166caa36d279b625f2ab41113f8e78b1" ;
+    lgo:text "(2) The notice on the competent ADR body or bodies referred to in paragraph 1 of this Article contains the postal address and website address."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ARPS-art22-2-q1 .
+
+lg:HR-ARPS-art22-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c4a97c5ea0156ccf7a97978809de3eb73721ba54407929eeda19213b04ed5dbd" ;
+    lgo:text "(3) The notices referred to in paragraphs 1 and 2 of this Article must be highlighted in a manner that is clear, comprehensible and easily accessible to the consumer, on websites and in the trader's business premises, as well as by other means provided for by special consumer-protection legislation."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ARPS-art22-3-q1 .
+
+lg:HR-ARPS-art22-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d0d8203b9a709923095c6773f92a3a3af5f993aec934ff941da1d78053020481" ;
+    lgo:text "(4) When a particular dispute cannot be resolved through a written complaint lodged by the consumer with the trader, the trader is obliged, in its reply to the written complaint, to give the consumer the notices referred to in paragraphs 1 and 2 of this Article together with a written statement on the possibilities of initiating proceedings before the indicated ADR bodies and whether it will engage in proceedings before any of them."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ARPS-art22-4-q1 .
+
 lg:HR-ZET-art6-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

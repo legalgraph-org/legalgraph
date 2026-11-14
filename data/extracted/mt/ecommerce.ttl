@@ -60,6 +60,7 @@ lg:MT-CAP426-art8C-2
     lgo:citation "Art. 8C(2) Cap. 426 (MT)" ;
     lgo:implements lg:EU-2000-31-art5-2 ;
     lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:MT-CAP426-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;

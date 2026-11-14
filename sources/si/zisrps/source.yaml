@@ -1,0 +1,30 @@
+# Zakon o izvensodnem reševanju potrošniških sporov (ZIsRPS, Ur. l. RS 81/15,
+# in force 13.11.2015): 32. člen is the trader-information duty — the
+# Slovenian transposition of Directive 2013/11/EU Art. 13 and the ODR
+# Regulation 524/2013 link duty. Odstavek 1 the pre-contract website and
+# general-terms notice naming the recognised ADR body with its firm, e-mail
+# and phone; odstavek 2 the post-refusal durable-medium notice; odstavek 3
+# the warning when the trader recognises no ADR body; odstavek 4 the
+# electronic link to the EU ODR platform for online sellers. The original is
+# the official gazette PDF served by pisrs.si's datoteke/integracije endpoint
+# (the act was never amended, so the original text is the current text);
+# pisrs.si's reader is JavaScript-only, but its API serves the same official
+# file as PDF.
+id: si/zisrps
+title: Zakon o izvensodnem reševanju potrošniških sporov (ZIsRPS) (32. člen)
+jurisdiction: SI
+language: sl
+publisher: Pravna informatika (pisrs.si), the official legal-information system
+kind: authored-xml
+licence: official-work
+licence_basis: "Slovenian legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: zisrps-ur-l-81-15.pdf
+    url: "https://pisrs.si/api/datoteke/integracije/357051465"
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "The official gazette text (Ur. l. RS št. 81/15, ZIsRPS as published; SOP 2015-01-3185, 'Besedilo osnovnega predpisa'). The act was never amended — the last consolidated text (NPB, iuris.si) is the publication text itself — so the original is current. 32. člen is on page 14 of the 17-page PDF."
+    retrieved_on: 2026-11-14
+    sha256: 1a2c0456eff937a901722a7968638acc37ef518a2fd944a3b91ac8a7e6b5a62f
+annotated: zisrps.law.xml

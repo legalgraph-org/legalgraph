@@ -55,6 +55,7 @@ lg:LI-ECG-art5-2
     lgo:citation "Art. 5 Abs. 2 ECG" ;
     lgo:implements lg:EU-2000-31-art5-2 ;
     lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:LI-ECG-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;

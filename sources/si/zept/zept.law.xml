@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o elektronskem poslovanju na trgu (ZEPT), 5. člen, written in
+  schemas/law.xsd from the consolidated text pisrs.si serves. The words are the
+  Slovenian legislature's; only the structure is ours. Odstavek 1 is the
+  provider-information catalogue — the transposition of e-Commerce Directive
+  2000/31/EC Art. 5(1); odstavek 2 the links-on-the-main-page mechanism;
+  odstavek 3 the price clause (Art. 5(2)). Slovenian is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sl"
+     lga:act="SI-ZEPT" lga:jurisdiction="SI" lga:act-type="Statute"
+     lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO4600">
+  <meta>
+    <title>Zakon o elektronskem poslovanju na trgu</title>
+    <date>2006-06-12</date>
+  </meta>
+
+  <section num="5. člen" source="zept-npb7.html">
+    <paragraph num="(1)" lga:provision="SI-ZEPT-art5-1" lga:citation="5. člen ZEPT, 1. odstavek" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO4600" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Ponudnik storitev mora na svojih spletnih straneh prejemnikom storitve in pristojnim organom poleg drugih zahtev v zvezi s podatki v skladu z veljavnimi predpisi zagotavljati lahek, neposreden in stalen dostop do:
+      <list>
+        <item num="-" lga:requires="ProviderName GeographicAddress">podatkov o podjetju in sedežu ponudnika storitev,</item>
+        <item num="-" lga:requires="EmailAddress RapidContact">veljavnega elektronskega naslova za hitro in učinkovito komuniciranje,</item>
+        <item num="-" lga:requires="RegisterEntry">matične številke,</item>
+        <item num="-" lga:requires="TaxId">davčne številke,</item>
+        <item num="-" lga:requires="LicenceDetails SupervisoryAuthority">podatkov o dovoljenjih iz drugega odstavka prejšnjega člena in pristojnih nadzornih organih,</item>
+        <item num="-" lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">pri reguliranih poklicih navedbe poklicnega združenja, v katero je ponudnik včlanjen, poklicnega naziva in države, v kateri je bil podeljen naziv, ter napotila k uporabnim poklicnim pravilom v državi članici, v kateri je registrirana dejavnost, in načinom dostopa do njih.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="SI-ZEPT-art5-2" lga:citation="5. člen ZEPT, 2. odstavek" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO4600" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Ponudnik storitev mora dostop do podatkov iz prejšnjega odstavka omogočiti s povezavami, ki jih objavi na svoji glavni spletni strani.</paragraph>
+    <paragraph num="(3)" lga:provision="SI-ZEPT-art5-3" lga:citation="5. člen ZEPT, 3. odstavek" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO4600" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="TotalPrice DeliveryCosts VatStatus">Ponudnik storitev mora prejemnikom storitve in pristojnim organom poleg drugih zahtev, v zvezi s podatki v skladu z veljavnimi predpisi jasno in nedvoumno označiti ceno storitve ter navesti, ali je v njej vključen davek, stroški dobave in morebitne druge dajatve.</paragraph>
+  </section>
+</law>

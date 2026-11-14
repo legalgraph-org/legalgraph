@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Закон за електронната търговия (ЗЕТ), ДВ бр. 51/23.06.2006, чл. 4–5, written
+  in schemas/law.xsd from the consolidated text lex.bg renders. The words are
+  the Bulgarian legislature's; only the structure is ours. Чл. 4 is the general
+  information duty — the transposition of e-Commerce Directive 2000/31/EC
+  Art. 5(1), with чл. 4(2) the price-transparency clause (Art. 5(2)). Чл. 5(3)
+  is the commercial-communication requirements clause; its item 2 is the
+  sender-identification duty. Чл. 5(1)–(2) (definition and exceptions) carry no
+  disclosure and are omitted. Bulgarian is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="bg"
+     lga:act="BG-ZET" lga:jurisdiction="BG" lga:act-type="Statute"
+     lga:url="https://lex.bg/laws/ldoc/2135530547">
+  <meta>
+    <title>Закон за електронната търговия</title>
+    <date>2006-06-23</date>
+  </meta>
+
+  <section num="Чл. 4" source="zet-chl4.lexbg.html">
+    <paragraph num="(1)" lga:provision="BG-ZET-art4-1" lga:citation="член 4, ал. 1 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="ProviderIdentification" lga:implements="EU-2000-31-art5-1">Доставчикът на услуги на информационното общество е длъжен да предоставя безпрепятствен, пряк и постоянен достъп на получателите на услугите и на компетентните органи до следната информация:
+      <list>
+        <item num="1." lga:requires="ProviderName">името или наименованието си;</item>
+        <item num="2." lga:requires="GeographicAddress">постоянния си адрес или седалището и адреса си на управление;</item>
+        <item num="3." lga:requires="GeographicAddress">адреса, на който упражнява дейността си, ако е различен от адреса по т. 2;</item>
+        <item num="4." lga:requires="RapidContact EmailAddress PhoneNumber">данни за кореспонденция, включително телефон и адрес на електронна поща, за осъществяване на пряка и навременна връзка с него;</item>
+        <item num="5." lga:requires="RegisterEntry">данни за вписване в търговски или друг публичен регистър;</item>
+        <item num="6." lga:requires="SupervisoryAuthority">информация за органа, осъществяващ контрол върху дейността му, когато тази дейност подлежи на уведомителен, регистрационен или лицензионен режим;</item>
+        <item num="7." lga:requires="ProfessionalBody ProfessionalTitle ProfessionalRules">когато осъществява регулирана професия - информация за камарата, професионалния съюз или организацията, в която доставчикът членува или е регистриран, професионалното звание и държавата, в която то е предоставено, както и препратка към приложимите разпоредби относно правото на упражняване на занаята или професията и указания за достъпа до тях;</item>
+        <item num="8." lga:requires="VatId">съответно указание, ако е регистриран по Закона за данък върху добавената стойност ;</item>
+        <item num="9.">друга информация, предвидена в нормативен акт.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="BG-ZET-art4-2" lga:citation="член 4, ал. 2 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Когато при предоставянето на услуги на информационното общество се посочват цени, те трябва да се обозначават по ясен и разбираем начин. Доставчикът на услуги е длъжен да указва дали цените включват данъци, такси и разноски, които формират крайната цена.</paragraph>
+  </section>
+  <section num="Чл. 5" source="zet-chl5.lexbg.html">
+    <paragraph num="(3)" lga:provision="BG-ZET-art5-3" lga:citation="член 5, ал. 3 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="CommercialCommunication" lga:implements="EU-2000-31-art6">Търговските съобщения, които са част от услуга или представляват услуга на информационното общество, трябва да отговарят на следните изисквания:
+      <list>
+        <item num="1.">да бъдат лесно разпознавани като търговски;</item>
+        <item num="2." lga:requires="ProviderName">да позволяват ясна индентификация на физическите или юридическите лица, от името на които са направени;</item>
+        <item num="3.">да определят ясно и недвусмислено условията за ползване на промоционни предложения, като отстъпки, премии и подаръци, ако включват такива;</item>
+        <item num="4.">да осигуряват лесен достъп до ясни и недвусмислени условия за участие в състезания и игри с обявени награди, ако съдържат такава информация;</item>
+        <item num="5.">да съдържат и информацията, предвидена в други нормативни актове.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>
