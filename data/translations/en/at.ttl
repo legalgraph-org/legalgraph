@@ -51,6 +51,103 @@ lg:AT-ASTG-title-d32926411ac1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-ASTG .
 
+lg:AT-BAFG-s14-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "03179d113854984cb67c9fafdc044905a37cdf7924ae7fb13e6acbc683f02bc6" ;
+    lgo:text "(1) The service provider may only offer or provide services that are designed, offered and provided in accordance with the accessibility requirements pursuant to § 4(3)."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s14-1-q1 .
+
+lg:AT-BAFG-s14-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "415bb1d2888607003718860a7cfd8b9dc91198b587fb8ecdea191c3f6babba13" ;
+    lgo:text "(2) The service provider must create the necessary information pursuant to Annex 3 and make that information available to the general public in written and oral form, including in a form accessible to people with disabilities. The service provider must keep the information for the duration of the offer of the service."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s14-2-q1 .
+
+lg:AT-BAFG-s2-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3f5020a406dbd9cec73c05df5173722a96e06c0a54ebdbdf6a9333b2497a8457" ;
+    lgo:text """(2) This federal act applies to the following services provided to consumers after 28 June 2025:
+1. electronic communications services, with the exception of emergency calls and transmission services for providing machine-to-machine communication services;
+2. services that provide access to audiovisual media services;
+3. the following elements of passenger transport services in air, bus, rail and water transport, with the exception of urban, suburban and regional transport services, for which only lit. e applies:
+a) websites;
+b) services offered on mobile devices, including mobile applications;
+c) electronic tickets and electronic ticketing services;
+d) the provision of information relating to the transport service, including real-time travel information, whereby this is limited to information screens as interactive screens in the territory of the European Union;
+e) interactive self-service terminals in the territory of the European Union, with the exception of terminals installed as integral parts of vehicles, aircraft, ships or trains and used for providing such passenger transport services;
+4. banking services for consumers;
+5. e-books and software specifically intended for them;
+6. services in electronic commerce."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s2-2-q1 .
+
+lg:AT-BAFG-s2-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "05a9c7f7c4e85c8183fd9d8a1e3a4ed55897821712152036b89e33e0595d18fb" ;
+    lgo:text """(3) This federal act does not apply to the following content of websites and mobile applications:
+1. pre-recorded time-based media published before 28 June 2025;
+2. file formats of office applications published before 28 June 2025;
+3. online maps and map services, provided that essential information for navigation purposes is made accessible in digital form;
+4. content of third parties that is neither financed nor developed by the economic operator concerned nor under its control;
+5. content of websites and mobile applications that count as archives and whose content is therefore neither updated nor revised after 28 June 2025."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s2-3-q1 .
+
+lg:AT-BAFG-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "016860ade6813e97acf786867611722f12922152434f0c63b64e610552e3e6dd" ;
+    lgo:text "(1) Economic operators may only place products on the market and only offer or provide services that meet the accessibility requirements under this federal act."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s4-1-q1 .
+
+lg:AT-BAFG-s4-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "732e6a3b4deb6d9c22153058006907eb5d7641b579edf3d58ce80cbf9a8bd34e" ;
+    lgo:text "(3) The accessibility requirements laid down in Sections 3 and 4 of Annex 1 apply to services, with the exception of urban, suburban and regional transport services, for which only the accessibility requirements laid down in Section 4 of Annex 1 apply."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s4-3-q1 .
+
+lg:AT-BAFG-s6-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "70accc2fcd9cc51026debe7b7f9736cf4dd158747301211ce96e0cc4dfd2d576" ;
+    lgo:text "(1) Microenterprises that offer or provide services are exempt from compliance with the accessibility requirements pursuant to § 4(3) and from all obligations in connection with compliance with those requirements."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG-s6-1-q1 .
+
+lg:AT-BAFG-title-565870298466-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "565870298466d7e2181281791348592af613893d1531a882dff46f793d79ca06" ;
+    lgo:text "Federal Act on Accessibility Requirements for Products and Services (Accessibility Act – BaFG)"@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-BAFG .
+
 lg:AT-DSB-2021-D155027-spruch-2-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -103,6 +200,69 @@ lg:AT-ECG-s5-2-q1-en
     lgo:translatedOn "2026-11-02"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-ECG-s5-2-q1 .
+
+lg:AT-FAGG-s13a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8c565a0a75d9333780cd5e526884b31347ea910782bafeb8d5bcf42897fc710b" ;
+    lgo:text "(1) For distance contracts concluded via an online user interface, the trader must ensure that the consumer is also provided with a withdrawal function for withdrawing from the contract, which meets the requirements laid down in paragraphs 2 to 4."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s13a-1-q1 .
+
+lg:AT-FAGG-s13a-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7664783b2ac115159053e19b7729386c9a076ebbebef3173980f36cf31002901" ;
+    lgo:text "(2) The withdrawal function must be legibly labelled with the words \"Revoke contract\" or an equivalent unambiguous wording, kept available continuously throughout the withdrawal period and placed on the online user interface in a highlighted manner and easily accessible to consumers."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s13a-2-q1 .
+
+lg:AT-FAGG-s13a-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "beedb406b800213ef66f35afa326f13a9e8ec27f27bd69b751a94c8ede02c697" ;
+    lgo:text """(3) The withdrawal function must enable the consumer to submit an online declaration of withdrawal informing the trader of the consumer's decision to withdraw from the contract. The consumer must be able to provide or confirm the following information about the online declaration of withdrawal without difficulty:
+1. his or her name;
+2. details identifying the contract from which the consumer is withdrawing;
+3. details of the electronic means by which the confirmation of receipt of the declaration of withdrawal is to be sent to the consumer."""@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s13a-3-q1 .
+
+lg:AT-FAGG-s13a-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2d76a66f8fa4f725ad85ff95f9be1a5ce1d672d08adf10047e10fb658d261b3a" ;
+    lgo:text "(4) Once the consumer has completed the online declaration of withdrawal pursuant to paragraph 3, the consumer must be able to transmit that declaration to the trader by means of a confirmation function, which must be legibly marked exclusively with the words \"Confirm revocation\" or an equivalent unambiguous wording."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s13a-4-q1 .
+
+lg:AT-FAGG-s13a-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6acc6ba26c96dbe8828cc182f30b693debceb9b48944bf4a208047c5c0f7fd56" ;
+    lgo:text "(5) Once the consumer has activated the confirmation function, the trader must immediately send the consumer, on a durable medium, a confirmation of receipt which includes, among other things, the content of the declaration of withdrawal as well as the date and time of its receipt."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s13a-5-q1 .
+
+lg:AT-FAGG-s13a-6-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dc6968652b4801aeb5a8e2d7e7bcc10cebd015ef42d2f651070be372079f56c8" ;
+    lgo:text "(6) The consumer's right of withdrawal is deemed to have been exercised within the withdrawal period if the consumer has submitted the online declaration of withdrawal before the expiry of that period."@en ;
+    lgo:translatedBy "devin-swe-2" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-FAGG-s13a-6-q1 .
 
 lg:AT-FAGG-s4-1-q1-en
     a lgo:Translation ;

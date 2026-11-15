@@ -26,3 +26,16 @@ lg:SE-ARL
     eli:transposes lg:EU-2013-11 ;
     rdfs:seeAlso <https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2015671-om-alternativ-tvistlosning-i-konsument_sfs-2015-671/> ;
     rdfs:comment "10 § requires a trader committed to ADR to name the ADR board with its web and postal address on consumer-facing websites and in contract terms; 11 § is the durable-medium pointer when a consumer claim is rejected; 12 § points to art. 14 of the EU ODR regulation."@en .
+
+# SE: 9 kap. 28 § LEK (addition to data/extracted/se/).
+
+lg:SE-LEK-2022-482 a lgo:LegalAct ;
+    eli:title "Lag (2022:482) om elektronisk kommunikation"@sv , "Electronic Communications Act"@en ;
+    lgo:shortName "LEK" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:SE ;
+    lgo:sourceUrl "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2022482-om-elektronisk-kommunikation_sfs-2022-482/"^^xsd:anyURI ;
+    eli:id_local "SFS 2022:482" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "9 kap. 28 § is the storage-and-access rule (ePrivacy Art. 5(3)), on the consent model — it does not use the word 'cookie' and covers any data stored in or retrieved from a subscriber's or user's terminal equipment: information about the purpose of the processing plus consent (GDPR meaning per 1 kap. 8 §); andra stycket excepts transmission-only storage/access and access strictly necessary for a service at the express request of the user or subscriber. LEK replaced lag (2003:389) on 3 June 2022."@en .

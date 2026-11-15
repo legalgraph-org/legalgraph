@@ -114,6 +114,28 @@ lg:SE-ARL-title-47cb2fac27ba-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:SE-ARL .
 
+lg:SE-LEK-2022-482-k9s28-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "85c562533dd4e834f4bbd63c8b1cef5bb20dba9021cfb2c8fa7e8e72d9323ded" ;
+    lgo:text "Data may be stored in, or retrieved from, a subscriber's or user's terminal equipment only if the subscriber or user is given access to information about the purpose of the processing and consents to it."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-LEK-2022-482-k9s28-1-q1 .
+
+lg:SE-LEK-2022-482-k9s28-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fed67ee6f22066d8c77a144d6c0417e02854b65578d4ef790b69b44ea316544e" ;
+    lgo:text """Notwithstanding that consent has not been given, such storage or access is permitted where it
+1. is needed for the transmission of an electronic message over an electronic communications network, or
+2. is necessary for providing a service at the express request of the user or subscriber."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SE-LEK-2022-482-k9s28-2-q1 .
+
 lg:SE-SFS-2002-562-s8-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

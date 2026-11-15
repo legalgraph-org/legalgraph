@@ -39,4 +39,14 @@ originals:
       - "Consolidated Bulgarian text of чл. 5 as lex.bg renders it. Only чл. 5(3) — the commercial-communication requirements — is annotated; (1)–(2) are the definition and its exceptions."
     retrieved_on: 2026-11-14
     sha256: 17ee4a7f21cf60bf85c0da6b849d0652c617babd6ec50a665be037a117c20655
+  - file: zet-chl4a.lexbg.html
+    url: "https://lex.bg/laws/ldoc/2135530547"
+    fetch: rendered
+    wait: "text=Съхраняване на информация в крайното"
+    selector: "#i_231"
+    media_type: text/html
+    notes:
+      - "Consolidated Bulgarian text of чл. 4а as lex.bg renders it — the cookie rule (ePrivacy Art. 5(3) transposition, inserted by ДВ бр. 105/2011). Bulgarian is the authentic language."
+    retrieved_on: 2026-11-15
+    sha256: 3f0accf0afb44bd9ee11fa9ae77ae15dd6ca4127871654aef002d0be333370af
 annotated: zet.law.xml

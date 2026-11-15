@@ -376,3 +376,8 @@ lgv:SupportDataProtectionOfficer a lgo:Action ;
     skos:inScheme lgv:Actions ;
     skos:prefLabel "Involve and support the data protection officer"@en , "Datenschutzbeauftragten einbinden und unterstützen"@de ;
     skos:definition "Involve the data protection officer properly and in good time, give them the resources they need, take no instructions to them on their tasks, do not dismiss or penalise them for performing them, and avoid conflicts of interest (Article 38 GDPR)."@en .
+
+lgv:InformAboutDeviceAccessWithOptOut a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Inform about cookies and similar, and offer to refuse them"@en , "Über Cookies informieren und Ablehnung ermöglichen"@de ;
+    skos:definition "Tell users which data are processed on their devices and for what purpose, and that they can refuse it (Art. 45c FMG): the Swiss opt-out model, not the EU's prior consent."@en .

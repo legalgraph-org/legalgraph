@@ -1,0 +1,27 @@
+# Garante per la protezione dei dati personali, Provvedimento n. 231 del 10 giugno 2021,
+# "Linee guida cookie e altri strumenti di tracciamento", published in Gazzetta Ufficiale
+# Serie generale n. 163 del 9 luglio 2021 (the whole issue is kept as original): Italy's
+# cookie guidance — consent via a positive act, scrolling is never consent, the cookie
+# wall is unlawful without an equivalent content/service alternative, excessive banner
+# re-proposal undermines freedom of consent, and legitimate interest cannot justify
+# cookies or other tracking tools. The paragraphs the graph quotes are transcribed in
+# schemas/law.xsd and checked letter for letter against the PDF's text.
+id: it/garante-cookies
+title: Garante, Provvedimento n. 231 del 10 giugno 2021 — Linee guida cookie e altri strumenti di tracciamento
+jurisdiction: IT
+language: it
+publisher: Garante per la protezione dei dati personali, Gazzetta Ufficiale
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 5 Legge 633/1941: the texts of official acts of the State and of public administrations are not protected by copyright; the guidelines are a decision of the Garante (provvedimento of 10 June 2021) published in the Gazzetta Ufficiale"
+originals:
+  - file: gu-163-2021.pdf
+    page: https://www.gazzettaufficiale.it/eli/id/2021/07/09/21A04089/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2021/07/09/163/sg/pdf
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "GU Serie generale n. 163 del 09-07-2021; the guidelines run pp. 117-125 of the issue (pages 8629-8647 of the PDF's internal numbering). Adopted after public consultation on the draft of deliberation 255/2020."
+    retrieved_on: 2026-11-15
+    sha256: a2d5ad4936994585b42f4724a467a3fa262c96fb021aca1894aa3a67e3a6394b
+annotated: garante-cookies.law.xml

@@ -123,3 +123,17 @@ lg:MT-R-adr-information-after-complaint a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:MT-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Regulation 5 of S.L. 586.01 as substituted by L.N. 239 of 2011: consent after clear and comprehensive information, under article 19 of the Data Protection Act."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:MT-SL-586-01-r5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:MT ;
+    lgo:appliesWhen lgv:EstablishedInMalta , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

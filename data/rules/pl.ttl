@@ -90,3 +90,17 @@ lg:PL-R-adr-information-after-complaint a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:PL-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Art. 399 of the Electronic Communications Law (Dz.U. 2024 poz. 1221), which replaced art. 173 of the Telecommunications Law on 10 November 2024: consent after information on the purpose; ust. 4 applies the same conditions to installing software on the device."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:PL-PKE-2024-1221-art399-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:PL ;
+    lgo:appliesWhen lgv:EstablishedInPoland , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

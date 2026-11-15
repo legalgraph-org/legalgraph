@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Telecommunicatiewet (Stb. 1998, 610), art. 11.7a, written in schemas/law.xsd
+  from the consolidated text wetten.overheid.nl renders. The words are the Dutch
+  legislature's; only the structure is ours. Art. 11.7a is the Dutch cookie rule —
+  the transposition of ePrivacy Directive Art. 5(3): storing information on, or
+  gaining access to information already stored in, a user's terminal equipment via
+  an electronic communications network is allowed only if the user has been given
+  clear and complete information (at least about the purposes) and has given
+  consent. Lid 2 extends the requirement to equivalent access not via the
+  network; lid 3 is the transmission/strictly-necessary exception plus a
+  de-minimis alternative for service-quality data; lid 4 presumes personal-data
+  processing where usage data is collected, combined or analysed across services
+  to treat the user differently; lid 5 bars public-law service providers from
+  conditioning access to their service on that consent; lid 6 delegates further
+  rules to a ministerial decree. The text is Dutch; the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="nl"
+     lga:act="NL-TW" lga:jurisdiction="NL" lga:act-type="Statute"
+     lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a">
+  <meta>
+    <title>Telecommunicatiewet</title>
+    <date>1998-12-03</date>
+  </meta>
+
+  <section num="art. 11.7a" source="telecommunicatiewet-art117a.html">
+    <paragraph lga:provision="NL-TW-art11-7a-1" lga:citation="art. 11.7a, lid 1 Telecommunicatiewet" lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a" lga:regulates="TerminalEquipmentAccess Consent" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes Consent">Onverminderd de Algemene verordening gegevensbescherming is het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker, alleen toegestaan op voorwaarde dat de betrokken gebruiker:
+      <list>
+        <item num="a.">is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en</item>
+        <item num="b.">daarvoor toestemming heeft verleend.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="NL-TW-art11-7a-2" lga:citation="art. 11.7a, lid 2 Telecommunicatiewet" lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a" lga:regulates="TerminalEquipmentAccess Consent" lga:implements="EU-2002-58-art5-3">De in het eerste lid, onder a en b, genoemde vereisten zijn ook van toepassing in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie.</paragraph>
+    <paragraph lga:provision="NL-TW-art11-7a-3" lga:citation="art. 11.7a, lid 3 Telecommunicatiewet" lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Het bepaalde in het eerste lid is niet van toepassing indien het de opslag of toegang betreft:
+      <list>
+        <item num="a.">met als uitsluitend doel de communicatie over een elektronisch communicatienetwerk uit te voeren,</item>
+        <item num="b.">die strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren of – mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker – om informatie te verkrijgen over de kwaliteit of effectiviteit van een geleverde dienst van de informatiemaatschappij.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="NL-TW-art11-7a-4" lga:citation="art. 11.7a, lid 4 Telecommunicatiewet" lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a" lga:regulates="PersonalData">Een handeling als bedoeld in het eerste lid, die tot doel heeft gegevens over het gebruik van verschillende diensten van de informatiemaatschappij door de gebruiker of de abonnee te verzamelen, combineren of analyseren zodat de betrokken gebruiker of abonnee anders behandeld kan worden, wordt vermoed een verwerking van persoonsgegevens te zijn.</paragraph>
+    <paragraph lga:provision="NL-TW-art11-7a-5" lga:citation="art. 11.7a, lid 5 Telecommunicatiewet" lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a" lga:regulates="Consent">De toegang van de gebruiker tot een dienst van de informatiemaatschappij die wordt geleverd door of namens een krachtens publiekrecht ingestelde rechtspersoon wordt niet afhankelijk gemaakt van het verlenen van toestemming als bedoeld in het eerste lid.</paragraph>
+    <paragraph lga:provision="NL-TW-art11-7a-6" lga:citation="art. 11.7a, lid 6 Telecommunicatiewet" lga:url="https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a" lga:regulates="TerminalEquipmentAccess">Bij of krachtens algemene maatregel van bestuur kunnen in overeenstemming met Onze Minister van Veiligheid en Justitie nadere regels worden gegeven met betrekking tot de in het eerste lid, onder a en b, genoemde vereisten en de in het derde lid genoemde uitzonderingen.</paragraph>
+  </section>
+</law>

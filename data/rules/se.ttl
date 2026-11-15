@@ -110,3 +110,17 @@ lg:SE-R-adr-information-after-complaint a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:SE-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Chapter 9 § 28 of the Electronic Communications Act (2022:482): consent after information on the purpose; it covers any data stored in or read from the device."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:SE-LEK-2022-482-k9s28-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:SE ;
+    lgo:appliesWhen lgv:EstablishedInSweden , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

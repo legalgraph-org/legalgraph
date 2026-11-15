@@ -32,3 +32,19 @@ lg:NO-MEDIE
     eli:id_local "Lov 2020-05-29 nr. 59" ;
     rdfs:seeAlso <https://lovdata.no/dokument/NL/lov/2020-05-29-59> ;
     rdfs:comment "§ 5 is the editorial-media disclosure duty: the editor must ensure the medium states who the editor is and that media users can reach the medium's name, address, email and other direct-contact details. Covers editor-controlled journalistic media, including online outlets."@en .
+
+# Ekomloven 2024: Norway's electronic-communications act; § 3-15 is the
+# storage-and-access rule (ePrivacy Directive Art. 5(3)), consent-based since
+# 01.01.2025 — consent must satisfy the GDPR consent standard.
+
+lg:NO-EKOMLOVEN a lgo:LegalAct ;
+    eli:title "Lov om elektronisk kommunikasjon (ekomloven)"@no , "Act on electronic communications (the Electronic Communications Act)"@en ;
+    lgo:shortName "ekomloven" ;
+    eli:id_local "Lov 2024-12-13 nr. 76" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:NO ;
+    eli:date_document "2024-12-13"^^xsd:date ;
+    lgo:sourceUrl "https://lovdata.no/dokument/NL/lov/2024-12-13-76"^^xsd:anyURI ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "§ 3-15 permits storing information on, or accessing information stored on, a subscriber's or user's communications equipment only where the user is informed, inter alia, about which data are processed, the purpose of the processing and who processes them, and has given consent meeting the GDPR consent standard; annet ledd excepts transmission-only storage/access and access strictly necessary for an expressly requested information-society service. In force 01.01.2025 — replaced the old § 2-7 b rule under which browser defaults could count as consent."@en .

@@ -99,3 +99,17 @@ lg:SI-R-adr-information-after-complaint a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:SI-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Art. 225 of ZEKom-2: consent after clear and comprehensive information on the controller and the purposes; exceptions in para. 2."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:SI-ZEKOM-2-art225-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:SI ;
+    lgo:appliesWhen lgv:EstablishedInSlovenia , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

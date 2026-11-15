@@ -10,6 +10,16 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:GR-N-3471-2006-art4-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6d210e380f5036d75223263774f5ea06d167fc87405081efa93b86e8a4d0400c" ;
+    lgo:text "The storing of information or the gaining of access to information already stored on a subscriber's or user's terminal equipment is permitted only if the subscriber or user concerned has given consent after clear and extensive information in accordance with para. 1 of art. 11 of Law 2472/1997, as in force. The subscriber's or user's consent may be given through appropriate settings in the web browser or through another application. The above does not prevent any technical storage or access whose sole purpose is the transmission of a communication over an electronic communications network or which is necessary for the provision of an information-society service explicitly requested by the user or subscriber. By act of the Personal Data Protection Authority (Α.Π.Δ.Π.Χ.) the detailed ways of providing information and declaring consent are determined."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:GR-N-3471-2006-art4-5-q1 .
+
 lg:GR-PD-131-2003-art4-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

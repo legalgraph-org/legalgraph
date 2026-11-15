@@ -8,10 +8,12 @@
 # Bulgaria: чл. 4 of the Закон за електронната търговия (ЗЕТ, ДВ 51/23.06.2006),
 # the general information duty — the Bulgarian transposition of e-Commerce
 # Directive Art. 5. чл. 4(2) is the price-transparency clause and чл. 5(3) the
-# commercial-communication requirements clause.
+# commercial-communication requirements clause. чл. 4а (inserted by ДВ бр.
+# 105/2011) is the storage-and-access rule — the ePrivacy Directive Art. 5(3)
+# transposition, on the opt-out model.
 
 lg:BG-ZET a lgo:LegalAct ;
     eli:title "Закон за електронната търговия"@bg , "Law on Electronic Commerce"@en ;
     lgo:shortName "ЗЕТ" ;
-    eli:transposes lg:EU-2000-31 ;
+    eli:transposes lg:EU-2000-31 , lg:EU-2002-58 ;
     lgo:reviewStatus lgv:SourceChecked .

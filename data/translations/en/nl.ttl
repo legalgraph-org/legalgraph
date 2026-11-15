@@ -72,3 +72,67 @@ b. as regards letters and orders, to public limited companies, private limited c
     lgo:translatedOn "2026-11-14"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:NL-HRW-art27-3-q1 .
+
+lg:NL-TW-art11-7a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ac6f8afc20254fb47398518e5f1dbde66e06248c22c47b777ed893cfaa87881c" ;
+    lgo:text """Without prejudice to the General Data Protection Regulation, the storing of or access to information in the terminal equipment of a user via an electronic communications network is only permitted on condition that the user concerned:
+a. has been provided with clear and complete information in accordance with the General Data Protection Regulation, in any event about the purposes for which this information is used, and
+b. has given consent thereto."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-TW-art11-7a-1-q1 .
+
+lg:NL-TW-art11-7a-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "eaa1cf27d623e252f60ded399ff7ed7368324e76b1c5bce437bb0b433dcc28ff" ;
+    lgo:text "The requirements referred to in the first paragraph, points a and b, also apply where, other than by means of an electronic communications network, it is brought about that information is stored or access is granted to information stored on the terminal equipment via an electronic communications network."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-TW-art11-7a-2-q1 .
+
+lg:NL-TW-art11-7a-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "10ed31370de101fa7cc1e4439bee6dbf447dce58a76bf1cad792260b030085cd" ;
+    lgo:text """The provisions of the first paragraph do not apply where the storage or access concerns:
+a. having as its sole purpose the transmission of communication over an electronic communications network, or
+b. being strictly necessary in order to provide a service of the information society requested by the subscriber or user or – provided this has no or negligible consequences for the personal privacy of the subscriber or user concerned – in order to obtain information about the quality or effectiveness of a service of the information society provided."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-TW-art11-7a-3-q1 .
+
+lg:NL-TW-art11-7a-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1adf1914837359c350c2b71f6fc94cd4446d67d45232c2f108883e55f3d55db1" ;
+    lgo:text "An act as referred to in the first paragraph, which aims to collect, combine or analyse data about the use of various services of the information society by the user or subscriber so that the user or subscriber concerned may be treated differently, is presumed to be processing of personal data."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-TW-art11-7a-4-q1 .
+
+lg:NL-TW-art11-7a-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5f3277fc7fe081184e22b693b20c85f03a022e123587acd1abd8a2b4b0b58e1c" ;
+    lgo:text "Access of the user to a service of the information society provided by or on behalf of a legal person established under public law shall not be made dependent on the giving of consent as referred to in the first paragraph."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-TW-art11-7a-5-q1 .
+
+lg:NL-TW-art11-7a-6-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "d10bc82cd128a0b01fbe176254f56c8a5d49322c9b61b28e36f1587ca5504fd2" ;
+    lgo:text "Rules may be laid down by or pursuant to a general administrative measure, in accordance with Our Minister of Justice and Security, regarding the requirements referred to in the first paragraph, points a and b, and the exceptions referred to in the third paragraph."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NL-TW-art11-7a-6-q1 .

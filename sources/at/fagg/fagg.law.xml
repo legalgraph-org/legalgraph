@@ -53,4 +53,19 @@
       </list>
     </paragraph>
   </section>
+
+  <section num="§ 13a" title="Ausübung des Rücktrittsrechts bei Fernabsatzverträgen, die über eine Online-Benutzeroberfläche geschlossen werden" source="fagg-konsolidiert.html">
+    <paragraph num="(1)" lga:provision="AT-FAGG-s13a-1" lga:citation="§ 13a Abs. 1 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a" lga:regulates="WithdrawalFunction" lga:implements="EU-2011-83-art11a-1">Bei Fernabsatzverträgen, die über eine Online-Benutzeroberfläche geschlossen werden, hat der Unternehmer sicherzustellen, dass dem Verbraucher für den Rücktritt vom Vertrag auch eine Rücktrittsfunktion zur Verfügung steht, die den in Abs. 2 bis 4 festgelegten Anforderungen entspricht.</paragraph>
+    <paragraph num="(2)" lga:provision="AT-FAGG-s13a-2" lga:citation="§ 13a Abs. 2 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a" lga:regulates="WithdrawalFunction" lga:implements="EU-2011-83-art11a-1">Die Rücktrittsfunktion ist gut lesbar mit den Worten „Vertrag widerrufen“ oder einer entsprechenden eindeutigen Formulierung zu kennzeichnen, während der gesamten Rücktrittsfrist durchgehend verfügbar zu halten und auf der Online-Benutzeroberfläche hervorgehoben und für Verbraucher leicht zugänglich zu platzieren.</paragraph>
+    <paragraph num="(3)" lga:provision="AT-FAGG-s13a-3" lga:citation="§ 13a Abs. 3 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a" lga:regulates="WithdrawalFunction" lga:implements="EU-2011-83-art11a-1">Die Rücktrittsfunktion muss dem Verbraucher die Versendung einer Online-Rücktrittserklärung ermöglichen, mit der der Unternehmer von der Entscheidung des Verbrauchers, vom Vertrag zurückzutreten, in Kenntnis gesetzt wird. Folgende Informationen muss der Verbraucher über die Online-Rücktrittserklärung ohne Weiteres bereitstellen oder bestätigen können:
+      <list>
+        <item num="1.">seinen Namen;</item>
+        <item num="2.">Angaben zur Identifizierung des Vertrags, von dem der Verbraucher zurücktritt;</item>
+        <item num="3.">Angaben zu dem elektronischen Kommunikationsmittel, mit dem dem Verbraucher die Eingangsbestätigung für die Rücktrittserklärung übermittelt werden soll.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(4)" lga:provision="AT-FAGG-s13a-4" lga:citation="§ 13a Abs. 4 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a" lga:regulates="WithdrawalFunction" lga:implements="EU-2011-83-art11a-1">Sobald der Verbraucher die Online-Rücktrittserklärung gemäß Abs. 3 ausgefüllt hat, muss er die Möglichkeit haben, dem Unternehmer diese Erklärung mittels einer Bestätigungsfunktion zu übermitteln, wobei diese Bestätigungsfunktion gut lesbar und ausschließlich mit den Worten „Widerruf bestätigen“ oder einer entsprechenden eindeutigen Formulierung gekennzeichnet sein muss.</paragraph>
+    <paragraph num="(5)" lga:provision="AT-FAGG-s13a-5" lga:citation="§ 13a Abs. 5 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a" lga:regulates="WithdrawalFunction" lga:implements="EU-2011-83-art11a-1">Sobald der Verbraucher die Bestätigungsfunktion aktiviert hat, hat der Unternehmer dem Verbraucher auf einem dauerhaften Datenträger unverzüglich eine Eingangsbestätigung zu übermitteln, die unter anderem den Inhalt der Rücktrittserklärung sowie das Datum und die Uhrzeit ihres Eingangs enthält.</paragraph>
+    <paragraph num="(6)" lga:provision="AT-FAGG-s13a-6" lga:citation="§ 13a Abs. 6 FAGG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a" lga:regulates="RightOfWithdrawal">Das Rücktrittsrecht des Verbrauchers gilt als innerhalb der Rücktrittsfrist ausgeübt, wenn der Verbraucher die Online-Rücktrittserklärung vor Ablauf dieser Frist abgegeben hat.</paragraph>
+  </section>
 </law>

@@ -17,3 +17,17 @@ lg:DK-227-2002 a lgo:LegalAct ;
     lgo:jurisdiction lg:DK ;
     eli:transposes lg:EU-2000-31 ;
     lgo:reviewStatus lgv:SourceChecked .
+
+# Denmark: the Cookiebekendtgørelse (BEK nr. 1148 af 09/12/2011) — §§ 3–5 are
+# the ePrivacy Art. 5(3) transposition.
+
+lg:DK-BEK1148 a lgo:LegalAct ;
+    eli:title "Bekendtgørelse om krav til information og samtykke ved lagring af eller adgang til oplysninger i slutbrugeres terminaludstyr"@da , "Order on information and consent requirements for storing or accessing information in end users' terminal equipment"@en ;
+    lgo:shortName "Cookiebekendtgørelsen" ;
+    lgo:actType lgv:StatutoryInstrument ;
+    lgo:jurisdiction lg:DK ;
+    lgo:sourceUrl "https://www.retsinformation.dk/eli/lta/2011/1148"^^xsd:anyURI ;
+    eli:id_local "BEK 1148" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "§ 3 bans storing information in, or accessing information stored in, an end user's terminal equipment — including letting a third party do so — without the end user's consent after comprehensive information; stk. 2 fixes the information's minimum content (clear language, purpose, controller identity, an immediately available refuse/withdraw mechanism, permanent availability via a marked access point on the service). § 4 exempts transmission-only and strictly-necessary storage/access for explicitly requested services; § 5 penalises breach of § 3 with a fine."@en .

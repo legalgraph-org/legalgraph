@@ -101,3 +101,43 @@ lg:IT-DLGS-70-2003-art7-2-q1-en
     lgo:translatedOn "2026-11-14"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:IT-DLGS-70-2003-art7-2-q1 .
+
+lg:IT-GARANTE-231-2021-s5-legitimate-interest-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "45b0e1f73f3ec35507f955cd6e1ce27eb1d3f121b63ea3fd21c33522ff718697" ;
+    lgo:text "From the regulatory reconstruction carried out, a first, important conclusion is drawn: the special discipline applicable to the matter does not contemplate further legal bases that would make the processing legitimate in the absence of the data subject's consent or in the occurrence of one of the derogations from the obligation to collect it provided for by that special discipline. In no case will it therefore be possible to invoke, for example — as was observed in the course of checks carried out on various websites — the controller's legitimate interest as a justification for resorting to cookies or other tracking tools."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-GARANTE-231-2021-s5-legitimate-interest-q1 .
+
+lg:IT-GARANTE-231-2021-s61-cookie-wall-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "640de76e5a55a27349e050c82d2e6c10b1b7c2b949caf8b78d44b10269d3c82d" ;
+    lgo:text "Further clarification appears appropriate with reference to the so-called cookie wall, meaning by that expression a binding mechanism (the so-called 'take it or leave it'), whereby the user is obliged, without alternative, to express consent to the receipt of cookies or other tracking tools, on pain of being unable to access the site. Such a mechanism, which does not allow the consent thus obtained to be qualified as conforming to the characteristics imposed by the Regulation, and in particular its Article 4(11) with specific reference to the requirement of the 'freedom' of consent, is to be considered unlawful, without prejudice to the case — to be verified case by case — in which the site owner offers the data subject the possibility of accessing equivalent content or a service without giving consent to the installation and use of cookies or other tracking tools."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-GARANTE-231-2021-s61-cookie-wall-q1 .
+
+lg:IT-GARANTE-231-2021-s61-scrolling-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "726f600d266344d9b3176bc42c72650177990ba4626ced4f8443915f5f465723" ;
+    lgo:text "The EDPB has, moreover, clarified (Opinion No. 5/2020 of 4 May 2020) that simple scrolling is never, in itself, suitable to fully express the data subject's manifestation of will aimed at accepting the placement, within their terminal, of cookies other than technical cookies, and therefore does not equate, in itself, to consent 'in any circumstances'. The Garante naturally shares the EDPB's opinion: the simple 'scroll down' of the page cursor is in itself unsuitable for the collection, by the controller, of suitable consent to the installation and use of profiling cookies or other tracking tools."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-GARANTE-231-2021-s61-scrolling-q1 .
+
+lg:IT-GARANTE-231-2021-s62-banner-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1c89171a3933ad20b117ccc07e6cb947b542f1e6f829261a2f75eed2019c6114" ;
+    lgo:text "The excessive re-proposal of the banner for the purpose of obtaining consent, where the user has previously refused it, appears likely to undermine its freedom by inducing them to give it in order to continue browsing free from the appearance of the banner containing the brief information notice and the request for consent."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:IT-GARANTE-231-2021-s62-banner-q1 .

@@ -69,3 +69,17 @@ lg:GR-R-impressum-profession a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:GR-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Art. 4(5) of Law 3471/2006 as replaced by Law 4070/2012 (Government Gazette A' 82/2012): consent after clear and extensive information under art. 11(1) of Law 2472/1997, which may be given through browser settings; exceptions in the same paragraph. The 2006 text it replaced prohibited such storage and access outright, apart from the two technical exceptions."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:GR-N-3471-2006-art4-5 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:GR ;
+    lgo:appliesWhen lgv:EstablishedInGreece , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

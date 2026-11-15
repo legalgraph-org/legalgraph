@@ -119,7 +119,7 @@ lg:DE-EinwV
     lgo:shortName "EinwV" ;
     eli:first_date_entry_in_force "2025-04-01"^^xsd:date ;
     rdfs:seeAlso <https://www.gesetze-im-internet.de/einwv/> ;
-    rdfs:comment "The consent-management ordinance under § 26 TDDDG: what a cookie banner or CMP must do to be an approved consent-management service — the user told who stores/accesses information, what, for which purposes and how long (§ 3(2)), a transparent and revocable interface (§ 4), and operators that integrate a recognised service must honour its settings (§ 19(1)). Germany's first CMP approvals under it were still pending."@en .
+    rdfs:comment "The consent-management ordinance under § 26 TDDDG, in force since 1 April 2025 (BGBl. 2025 I Nr. 32): embedding a recognised consent-management service is voluntary for digital-service providers (§ 18(1)), but providers that do so must honour end-user settings (§ 19(1)), inform users visibly that recognised services are embedded (§ 18(3) no. 2), and remain responsible for the GDPR information duties and TDDDG § 25 consent validity (§ 1(2)); providers may transmit already-held consents with their date and time (§ 19(2)) and must not steer users towards particular services (§ 20). Requirements for recognised services themselves: transparency of who stores/accesses what, for which purposes and how long (§ 3(2)) and a transparent, revocable interface (§ 4)."@en .
 
 lg:DE-OLGK-2024-0119 a lgo:CourtDecision ;
     eli:title "Oberlandesgericht Köln, Urteil vom 19. Januar 2024 – 6 U 80/23"@de , "Higher Regional Court of Cologne, judgment of 19 January 2024 – 6 U 80/23"@en ;

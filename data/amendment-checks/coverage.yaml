@@ -93,6 +93,8 @@ AT-UGB: {kind: ris, arg: "10001702"}
 
 # --- CH: fedlex SPARQL ----------------------------------------------------------
 CH-DSG: {kind: fedlex, arg: cc/2022/491}
+CH-FMG: {kind: fedlex, arg: cc/1997/2187_2187_2187}
+CH-OR: {kind: fedlex, arg: cc/27/317_321_377}
 CH-UWG: {kind: fedlex, arg: cc/1988/223_223_223}
 
 # --- US / US-CA -----------------------------------------------------------------
@@ -124,6 +126,7 @@ NO-FREG: {kind: lovdata, arg: 2025-06-20-106}
 MT-CAP426: {kind: legislation_mt, arg: cap/426}
 MT-CAP386: {kind: legislation_mt, arg: cap/386}
 NL-BW3: {kind: wetten, arg: BWBR0005291}
+NL-TW: {kind: wetten, arg: BWBR0009950}
 NL-HRW: {kind: wetten, arg: BWBR0021777}
 PT-DL-7-2004: {kind: pgdl, arg: "1399"}
 PT-CSC: {kind: pgdl, arg: "524"}
@@ -139,25 +142,30 @@ LV-KL: {exempt: "likumi.lv version dates are JavaScript-rendered"}
 HR-ZET: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
 HR-ZTD: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
 HR-ARPS: {exempt: "no consolidated-amendment endpoint on narodne-novine"}
+HR-ZEK-76-22: {exempt: "no consolidated-amendment endpoint on narodne-novine; amendments tracked in act comment"}
 SI-ZEPT: {exempt: "pisrs.si is JavaScript-rendered"}
 SI-ZISRPS: {exempt: "pisrs.si is JavaScript-rendered"}
+SI-ZEKOM-2: {exempt: "pisrs.si consolidated text is fetched as NPB PDF; no machine-readable amendment feed"}
 TR-6563: {kind: mevzuat, arg: "1.5.6563"}
 CY-156-I-2004: {exempt: "cylaw.org gives no version data"}
 CY-CAP113: {exempt: "cylaw.org gives no version data"}
 BE-WER: {exempt: "justel needs an interactive session"}
 BE-CSA: {exempt: "justel consolidated text is fetched per-act; no amendment feed"}
+BE-GBW: {exempt: "justel consolidated text is fetched per-act; no amendment feed"}
 EE-ISSA: {exempt: "riigiteataja.ee is a JavaScript application"}
 EE-TKS: {exempt: "riigiteataja.ee is a JavaScript application"}
 LT-IVPI: {exempt: "e-tar.lt returns HTTP 403"}
 LU-LOI-2000-08-14: {exempt: "legilux.public.lu is a JavaScript application"}
+LU-LOI-2005-05-30: {exempt: "legilux.public.lu is a JavaScript application"}
 LI-ECG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 LI-ASTG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 LI-PGR: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 PL-ASDE: {kind: isap, arg: "DU/2002/1204"}
 PL-KSH: {kind: isap, arg: "DU/2024/18"}
-RO-LCE: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
-RO-LEGA-31-1990: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
-RO-OG-38-2015: {exempt: "legislatie.just.ro print view serves the consolidated text but gives no machine-readable amendment metadata"}
+RO-LCE: {exempt: "legislatie.just.ro consolidated view (DetaliiDocument) embeds amendment notes inline but gives no machine-readable amendment feed; re-checked against forma consolidată 2026-11-15"}
+RO-LEGA-31-1990: {exempt: "legislatie.just.ro consolidated view (DetaliiDocument) embeds amendment notes inline but gives no machine-readable amendment feed"}
+RO-LEGA-506: {exempt: "legislatie.just.ro consolidated view (DetaliiDocument) embeds amendment notes inline but gives no machine-readable amendment feed; OUG 13/2012 amendments to art. 4 verified in forma consolidată 2026-11-15"}
+RO-OG-38-2015: {exempt: "legislatie.just.ro consolidated view (DetaliiDocument) embeds amendment notes inline but gives no machine-readable amendment feed; art. 25 verified unchanged in forma consolidată 2026-11-15"}
 SK-EOB: {exempt: "static.slov-lex.sk version index is scrapable but has no amendment-diff feed; slov-lex.sk proper is JavaScript-rendered"}
 MD-ECOM: {exempt: "legis.md returns HTTP 403"}
 ME-ZET: {exempt: "podaci.net gives no version data"}
@@ -165,17 +173,23 @@ XK-04-L-094: {exempt: "gzk.rks-gov.net returned an error page"}
 
 # --- L4–L8 round -----------------------------------------------------------
 AT-ASTG: {exempt: "ris.bka.gv.at ELI per-section URL; no consolidated-version stamp API"}
+AT-BAFG: {kind: ris, arg: "20012316"}
 ES-LEY7-2017: {exempt: "boe.es consolidated text; changes listed on the act page"}
 IE-SI-343-2015: {exempt: "irishstatutebook made text; amendments by later SIs"}
 PL-ADR: {exempt: "api.sejm.gov.pl serves the consolidated text"}
 PL-PP: {exempt: "api.sejm.gov.pl serves the consolidated text"}
 PL-UJP: {exempt: "api.sejm.gov.pl serves the consolidated text"}
+PL-PKE-2024-1221: {kind: isap, arg: "DU/2024/1221"}
 SE-ARL: {exempt: "riksdagen.se serves the consolidated text"}
+SE-LEK-2022-482: {exempt: "riksdagen.se serves the consolidated text"}
 PT-LEI-144-2015: {kind: pgdl, arg: "nid=2425"}
+PT-LEI-41-2004: {exempt: "diariodarepublica.pt consolidated text is rendered per-act; no amendment feed"}
 LV-VVL: {exempt: "likumi.lv serves the consolidated text"}
 CZ-ZOS-634: {exempt: "e-sbirka.cz is JavaScript-rendered; zakonyprolidi mirror used"}
+CZ-ZEK-127-2005: {exempt: "e-sbirka.cz is JavaScript-rendered; whole-act rendered page compared on fetch --check"}
 LV-PTAL: {exempt: "likumi.lv serves the consolidated text"}
 MT-SL-378-18: {kind: legislation_mt, arg: sl/378.18}
+MT-SL-586-01: {kind: legislation_mt, arg: sl/586.1}
 NO-MFL: {kind: lovdata, arg: 2009-01-09-2}
 SK-ARS-391: {exempt: "slov-lex static mirror serves a dated text"}
 SK-ZOS-108: {exempt: "slov-lex static mirror serves a dated text"}
@@ -184,10 +198,15 @@ SK-JAZYK-270: {exempt: "slov-lex static mirror serves a dated text"}
 SK-PUB-265: {exempt: "slov-lex static mirror serves a dated text"}
 LV-PRESI: {exempt: "likumi.lv serves the consolidated text"}
 NO-MEDIE: {kind: lovdata, arg: 2020-05-29-59}
+NO-EKOMLOVEN: {kind: lovdata, arg: 2024-12-13-76}
 LI-MEDIENG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
+LI-KOMG: {exempt: "gesetze.li (Lilex) publishes consolidated PDFs without a machine-readable amendment feed"}
 SK-OBCH: {exempt: "slov-lex static mirror serves a dated text"}
+SK-ZEK-452-2021: {exempt: "slov-lex static mirror serves a dated text"}
 FI-917-2014: {exempt: "finlex.fi serves the consolidated text; no machine-readable amendment feed"}
 LU-LOI-2000-08-14: {exempt: "legilux.public.lu consolidated text carries per-article amendment marks but no machine-readable consolidation feed"}
 DK-227-2002: {exempt: "retsinformation.dk serves the consolidated act but gives no machine-readable amendment feed"}
+DK-BEK1148: {exempt: "retsinformation.dk serves the consolidated order but gives no machine-readable amendment feed"}
 BG-ZET: {exempt: "lex.bg serves the consolidated act behind a session; no machine-readable amendment feed"}
 GR-PD-131-2003: {exempt: "et.gr publishes Government Gazette issues as PDFs, without a consolidated text or amendment feed"}
+GR-N-3471-2006: {exempt: "et.gr publishes Government Gazette issues as PDFs, without a consolidated text or amendment feed"}

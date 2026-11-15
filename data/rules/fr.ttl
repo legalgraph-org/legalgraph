@@ -128,3 +128,17 @@ lg:FR-R-publisher-identification a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ResponsibleEditor , lgv:HostingProvider ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:FR-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Art. 82 of the Loi Informatique et Libertés: clear and complete information on the purpose and the means to object, then consent, which may result from the settings of the user's device; exceptions in the next paragraph."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:FR-LIL-art82-1 , lg:FR-LIL-art82-2 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:FR ;
+    lgo:appliesWhen lgv:EstablishedInFrance , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

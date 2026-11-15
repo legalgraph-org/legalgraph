@@ -53,3 +53,13 @@ lg:FR-CONSO
     eli:title "French Consumer Code"@en ;
     eli:transposes lg:EU-2011-83 ;
     rdfs:comment "Articles L221-5 (the pre-contract list, transposing CRD art. 6), L221-13 (durable-medium confirmation, art. 8(7)) and L221-14 (electronic contracts: the « commande avec obligation de paiement » button, payment methods and delivery restrictions). The 2026 ordonnance version is annotated; LCEN art. 19 provider details remain a separate saved source."@en .
+
+lg:FR-CNIL-2020-091 a lgo:Guidance ;
+    eli:title "Délibération n° 2020-091 du 17 septembre 2020 portant adoption des lignes directrices relatives à l'application de l'article 82 de la loi du 6 janvier 1978 modifiée"@fr , "Deliberation 2020-091: CNIL guidelines on cookies and other trackers (Article 82 LIL)"@en ;
+    lgo:shortName "Lignes directrices cookies CNIL" ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:FR ;
+    eli:date_document "2020-09-17"^^xsd:date ;
+    lgo:sourceUrl "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/lignes-directrices"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The CNIL's cookie-tracker guidelines quoted at duty paragraphs: GDPR-standard consent for trackers requiring it (¶16); cookie walls may impair freedom of consent (¶17); no consent via global terms-of-service acceptance (¶20); minimum information before consent incl. controller, purposes, accept/refuse method, consequences and withdrawal right (¶24); scrolling, continued navigation and pre-ticked boxes are not consent, silence means refusal (¶27); refusal as simple as consent (¶30); withdrawal as simple as giving (¶31); trackers exempt only when exclusively within the art. 82 exceptions and a mixed-purpose tracker needs consent (¶46-48); audience-measurement trackers exempt only if limited to first-party anonymous statistics with no cross-site tracking or third-party transmission (¶51)."@en .

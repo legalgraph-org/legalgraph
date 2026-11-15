@@ -1,0 +1,33 @@
+# Telecommunicatiewet (Stb. 1998, 610), art. 11.7a: the Dutch cookie rule —
+# Netherlands' transposition of ePrivacy Directive Art. 5(3). Storing information
+# on, or gaining access to information already stored in, a user's terminal
+# equipment via an electronic communications network is allowed only if the user
+# has been given clear and complete information (at least about the purposes)
+# and has given consent; lid 2 extends the requirement to equivalent access not
+# via the network; lid 3 is the transmission/strictly-necessary exception
+# (plus a de-minimis alternative for quality/effectiveness data with no or minor
+# privacy impact); lid 4 presumes personal-data processing where data is
+# collected, combined or analysed across information-society services to treat
+# the user differently; lid 5 bars public-law service providers from conditioning
+# access to their service on that consent. wetten.overheid.nl rejects plain
+# HTTP clients; tools/render renders the article page (make render-install once).
+id: nl/telecommunicatiewet-2000
+title: Telecommunicatiewet (artikel 11.7a)
+jurisdiction: NL
+language: nl
+publisher: officielebekendmakingen.nl (overheid.nl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Dutch legislation is an official work; official texts are not copyright-protected"
+originals:
+  - file: telecommunicatiewet-art117a.html
+    url: "https://wetten.overheid.nl/BWBR0009950/2025-07-01/0/Hoofdstuk11/Paragraaf11.7/Artikel11.7a"
+    fetch: rendered
+    wait: "[id=\"Hoofdstuk11_Paragraaf11.1_Artikel11.7a\"]"
+    selector: "[id=\"Hoofdstuk11_Paragraaf11.1_Artikel11.7a\"]"
+    media_type: text/html
+    notes:
+      - "Consolidated Dutch text of art. 11.7a as wetten.overheid.nl renders it, version 2025-07-01. The article page embeds the whole act skeleton; the selector keeps the single artikel div."
+    retrieved_on: 2026-11-15
+    sha256: 5d0de026238193e36b4e991e9c9e50ae4c59026c508065172aac47d515993653
+annotated: telecommunicatiewet.law.xml

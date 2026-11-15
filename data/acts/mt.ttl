@@ -26,3 +26,22 @@ lg:MT-SL-378-18
     eli:transposes lg:EU-2013-11 ;
     rdfs:seeAlso <https://legislation.mt/eli/sl/378.18/eng> ;
     rdfs:comment "Regulation 14 is the trader ADR information duty transposing Directive 2013/11 Art. 13 in full; Cap. 378 Part VI delegates the details to these regulations."@en .
+
+# S.L. 586.01: Malta's Processing of Personal Data (Electronic Communications
+# Sector) Regulations (Legal Notice 16 of 2003, as amended), regulation 5 —
+# the storage-and-access rule transposing ePrivacy Directive Art. 5(3):
+# consent after clear and comprehensive information under art. 19 of the
+# Data Protection Act, with transmission-only and strictly-necessary
+# exceptions. Regulation 5 was substituted by Legal Notice 239 of 2011.
+
+lg:MT-SL-586-01 a lgo:LegalAct ;
+    eli:title "Processing of Personal Data (Electronic Communications Sector) Regulations (S.L. 586.01)"@en ;
+    lgo:shortName "Electronic Communications Sector (Personal Data) Regulations" ;
+    lgo:actType lgv:StatutoryInstrument ;
+    lgo:jurisdiction lg:MT ;
+    eli:id_local "S.L. 586.01" ;
+    eli:date_document "2003-07-15"^^xsd:date ;
+    lgo:sourceUrl "https://legislation.mt/eli/sl/586.1/eng"^^xsd:anyURI ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Regulation 5 (substituted by Legal Notice 239 of 2011) permits storing information on, or gaining access to information stored on, a subscriber's or user's terminal equipment only on condition that the subscriber or user has given consent after clear and comprehensive information in terms of article 19 of the Data Protection Act. The requirements do not prevent technical storage or access for the sole purpose of carrying out or facilitating transmission over an electronic communications network, or access strictly necessary for the service provider to provide an expressly requested information-society service."@en .

@@ -1,0 +1,23 @@
+# BGH, Urteil vom 7. Juli 2023 – V ZR 210/22: a proper action requires the plaintiff's
+# serviceable address (ladungsfähige Anschrift); the address of a postal service provider
+# that merely forwards mail is not one (ZPO § 253 Abs. 2 Nr. 1, § 130 Nr. 1, § 177).
+# Not an Impressum decision — it decides § 253 ZPO — but it states the "ladungsfähig"
+# standard that the § 5 DDG provider-address duty tracks. The BGH publishes the decision
+# as a PDF only; the file is kept whole and the paragraphs the graph quotes are
+# transcribed in schemas/law.xsd, checked word for word.
+id: de/bgh-vzr210-22
+title: BGH, Urteil vom 07.07.2023 – V ZR 210/22
+jurisdiction: DE
+language: de
+publisher: Bundesgerichtshof, bundesgerichtshof.de
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: court decisions are official works without copyright"
+originals:
+  - file: bgh-vzr210-22.pdf
+    url: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&v=1
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-14
+    sha256: 6cc86ccaab921115208920b5f41caceffe75fafd7182c14a63db943421e9cf04
+annotated: bgh-vzr210-22.law.xml

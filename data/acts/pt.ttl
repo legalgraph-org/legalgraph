@@ -25,3 +25,16 @@ lg:PT-LEI-144-2015
     eli:transposes lg:EU-2013-11 ;
     rdfs:seeAlso <https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2425&tabela=leis> ;
     rdfs:comment "Art. 18 transposes art. 13 of the ADR Directive: suppliers established in Portugal bound to an ADR entity (by adhesion or mandatory arbitration) must name it and give its website on their own site where they have one, and in written or adhesion contracts or another durable medium."@en .
+
+# PT: art. 5.º Lei 41/2004 (addition to data/extracted/pt/).
+
+lg:PT-LEI-41-2004 a lgo:LegalAct ;
+    eli:title "Lei n.º 41/2004, de 18 de agosto"@pt , "Law No. 41/2004 of 18 August"@en ;
+    lgo:shortName "Lei 41/2004" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:PT ;
+    lgo:sourceUrl "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-106523049"^^xsd:anyURI ;
+    eli:id_local "Lei n.º 41/2004" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 5.º is the storage-and-access rule (ePrivacy Art. 5(3) as replaced by Lei 46/2012), on the consent model: storing information on, or accessing information stored on, a subscriber's or user's terminal equipment is permitted only with prior consent based on clear and complete information under the Personal Data Protection Law, inter alia on the purposes of the processing; n.º 2 excepts transmission-only storage/access and access strictly necessary for an expressly requested information-society service."@en .

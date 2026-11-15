@@ -39,3 +39,21 @@ lg:SK-OBCH
     eli:transposes lg:EU-2017-1132 ;
     rdfs:seeAlso <https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/> ;
     rdfs:comment "§ 3a(1) lists the data every entrepreneur must give on business documents (obchodné meno, sídlo alebo miesto podnikania, právna forma, IČO, register designation and entry number, paid-up share capital if capital is stated); § 3a(3) extends the same data to the entrepreneur's website. Earlier rounds recorded Slovakia as having no company-law website list — § 3a(3) is that list."@en .
+
+# Zákon 452/2021 o elektronických komunikáciách: Slovakia's electronic-
+# communications act; § 109 ods. 8 is the storage-and-access rule
+# (ePrivacy Directive Art. 5(3)) — provable consent per the special
+# regulation (GDPR standard), state-body carve-out, transmission and
+# strictly-necessary exceptions.
+
+lg:SK-ZEK-452-2021 a lgo:LegalAct ;
+    eli:title "Zákon č. 452/2021 Z. z. o elektronických komunikáciách"@sk , "Act No. 452/2021 Coll. on electronic communications"@en ;
+    lgo:shortName "Zákon o elektronických komunikáciách" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:SK ;
+    eli:id_local "Z. z. 452/2021" ;
+    eli:date_document "2021-11-24"^^xsd:date ;
+    lgo:sourceUrl "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2021/452/"^^xsd:anyURI ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "§ 109 ods. 8 permits storing information on, or accessing information stored on, a user's terminal equipment only with the user's provable consent meeting the requirements of the special regulation (the GDPR consent standard, per the provision's footnote). The consent duty does not apply to criminal-procedure bodies and other state bodies, and technical storage/access is excepted where its sole purpose is the transmission of a message or it is strictly necessary for an expressly requested information-society service."@en .

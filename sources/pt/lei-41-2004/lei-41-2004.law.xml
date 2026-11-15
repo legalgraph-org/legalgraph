@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lei n.º 41/2004, de 18 de agosto, art. 5.º "Armazenamento e acesso à
+  informação", written in schemas/law.xsd from the Diário da República
+  consolidated text (as amended by Lei n.º 46/2012). The words are the
+  Portuguese legislature's; only the structure is ours. Art. 5.º is the
+  storage-and-access rule — the transposition of ePrivacy Directive 2002/58/EC
+  Art. 5(3), on the consent model ("consentimento prévio"). Portuguese is the
+  authentic language; the Act has no official English version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pt"
+     lga:act="PT-LEI-41-2004" lga:jurisdiction="PT" lga:act-type="Statute"
+     lga:url="https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-106523049">
+  <meta>
+    <title>Lei n.º 41/2004, de 18 de agosto</title>
+    <date>2004-08-18</date>
+  </meta>
+
+  <section num="Artigo 5.º" title="Armazenamento e acesso à informação" source="lei-41-2004-art5.dre.html">
+    <paragraph num="1 -" lga:provision="PT-LEI-41-2004-art5-1" lga:citation="art. 5.º n.º 1 Lei 41/2004" lga:url="https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-106523049" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">O armazenamento de informações e a possibilidade de acesso à informação armazenada no equipamento terminal de um assinante ou utilizador apenas são permitidos se estes tiverem dado o seu consentimento prévio, com base em informações claras e completas nos termos da Lei de Proteção de Dados Pessoais, nomeadamente quanto aos objetivos do processamento.</paragraph>
+    <paragraph num="2 -" lga:provision="PT-LEI-41-2004-art5-2" lga:citation="art. 5.º n.º 2 Lei 41/2004" lga:url="https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-106523049" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">O disposto no presente artigo e no artigo anterior não impede o armazenamento técnico ou o acesso:
+      <list>
+        <item num="a)">Que tenha como única finalidade transmitir uma comunicação através de uma rede de comunicações eletrónicas;</item>
+        <item num="b)">Estritamente necessário ao fornecedor para fornecer um serviço da sociedade de informação solicitado expressamente pelo assinante ou utilizador.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

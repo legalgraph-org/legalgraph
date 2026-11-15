@@ -156,6 +156,48 @@ def test_link_only_refuses_a_long_quote(tmp_path: Path) -> None:
         law_sources.extract_link_only(path)
 
 
+def test_guidance_we_may_not_republish_keeps_its_findings_not_its_words(tmp_path: Path) -> None:
+    path = tmp_path / "link-only.yaml"
+    path.write_text(
+        """
+- id: xx-guide
+  title: "Guía de cookies"
+  publisher: "A regulator"
+  url: "https://example.org/guide"
+  why_link_only: "no reuse notice"
+  supports: [ES-LSSI-art22-2]
+  local_copy: {url: "https://example.org/guide.pdf", file: guide.pdf, retrieved_on: 2026-11-15,
+               sha256: f968645392c12d3670221cf459f9765a34bb6e6dc12de3d6d753a2b917687085}
+  guidance:
+    id: ES-XX-COOKIES
+    short_name: "Guía XX"
+    jurisdiction: ES
+    language: es
+    findings:
+      - id: ES-XX-cookies-reject
+        locator: "§ 3.2.3"
+        finding: "Rejecting is offered on the same layer as accepting."
+        interprets: [ES-LSSI-art22-2]
+        regulates: [Consent]
+"""
+    )
+    graph = Graph().parse(data=law_sources.extract_link_only(path), format="turtle")
+    guide, point = LG["ES-XX-COOKIES"], LG["ES-XX-cookies-reject"]
+    assert (guide, RDF.type, LGO.Guidance) in graph
+    assert (guide, RDF.type, LGO.ExternalReference) in graph
+    assert (point, RDF.type, LGO.Provision) in graph
+    assert (point, LGO.interprets, LG["ES-LSSI-art22-2"]) in graph
+    assert graph.value(point, LGO.citation) == Literal("Guía XX, § 3.2.3")
+    assert not list(graph.subjects(LGO.quoteOf, point)), "a link-only finding is never quoted"
+
+
+def test_a_web_page_is_the_version_read_when_its_words_are_the_same() -> None:
+    read = b"<!doctype html><html><body><p>Refuse  as easily</p><script>t=1</script></body></html>"
+    served = b"<!doctype html><html><body><p>Refuse as easily</p><script>t=2</script></body></html>"
+    assert law_sources.same_version(read, served)
+    assert not law_sources.same_version(read, served.replace(b"easily", b"quickly"))
+
+
 INDEX = """
 id: de/test
 title: Test

@@ -39,6 +39,50 @@ lg:BG-ZET-art4-2-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:BG-ZET-art4-2-q1 .
 
+lg:BG-ZET-art4a-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0326ef10a86d3bdcab663445c44ecc8277a56f5586ef248c7f2e24eaf899af44" ;
+    lgo:text """(1) An information-society service provider may store information or access information stored on the terminal equipment of the recipient of the service only on condition that:
+1. (amended – Official Gazette No. 17 of 2019) the recipient of an information-society service is provided with clear and comprehensive information pursuant to Article 13 of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (General Data Protection Regulation) (OJ L 119/1 of 4 May 2016);
+2. the recipient of an information-society service is given the possibility to refuse the storage or access to the information."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art4a-1-q1 .
+
+lg:BG-ZET-art4a-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b4bbb69cffb7b4b867446f5e27945cc8072d864b3774659b5d9ea93c64d2b5ed" ;
+    lgo:text "(2) In the cases under para. 1, information-society service providers shall ensure that the recipient of the service can at any time obtain information about the data stored on the terminal equipment."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art4a-2-q1 .
+
+lg:BG-ZET-art4a-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dd27365f7c75b2caf401d3979590b037506cb0701199b80dd63d62e5906780d1" ;
+    lgo:text "(3) In the case of subsequent storage of information or access to information by the same provider, the requirements of para. 1 shall not apply where the recipient of the service has not objected."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art4a-3-q1 .
+
+lg:BG-ZET-art4a-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e3bbe3eea02f341cd399043265c72190d19090794f209eb38ad5067c29ba7f18" ;
+    lgo:text """(4) The requirements of para. 1 shall not apply to the storage of information and the provision of access to it where they are necessary for:
+1. the transmission of communications over an electronic communications network;
+2. providing an information-society service expressly requested by the recipient of an information-society service."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BG-ZET-art4a-4-q1 .
+
 lg:BG-ZET-art5-3-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

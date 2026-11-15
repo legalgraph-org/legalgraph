@@ -46,3 +46,13 @@ lg:FI-917-2014-s176-3-q1-en
     lgo:translatedOn "2026-11-14"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:FI-917-2014-s176-3-q1 .
+
+lg:FI-917-2014-s205-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "9f9f51c84c621d8103b02007300756012a413da6163a8157e79f4b3b828605b2" ;
+    lgo:text "A service provider may store cookies or other data describing the use of the service on the user's terminal equipment and use such data, if the user has given their consent to this and the service provider provides the user with understandable and comprehensive information about the purposes of the storage or use."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FI-917-2014-s205-1-q1 .

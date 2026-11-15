@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Bekendtgørelse nr. 1148 af 09/12/2011 om krav til information og samtykke ved
+  lagring af eller adgang til oplysninger i slutbrugeres terminaludstyr
+  (Cookiebekendtgørelsen), §§ 3–5, written in schemas/law.xsd from the
+  consolidated text retsinformation.dk renders. The words are the Danish
+  authorities' (Erhvervs- og Vækstministeriet); only the structure is ours. § 3
+  is the cookie rule — Denmark's transposition of ePrivacy Directive Art. 5(3):
+  physical or legal persons may not store information in, or gain access to
+  information already stored in, an end user's terminal equipment, or let a third
+  party do so, unless the end user gives consent after receiving comprehensive
+  information; stk. 2 sets the information's minimum content (clear language,
+  purpose, identity of the person arranging storage/access, an immediately
+  available way to refuse or withdraw consent with clear guidance, and permanent
+  availability via a clearly marked access point on the service). § 4 is the
+  exception for transmission-only storage/access and storage/access strictly
+  necessary for an explicitly requested service; § 4 stk. 2 defines "required".
+  § 5 penalises breach of § 3 with a fine. §§ 1–2 (purpose, definitions) and § 6
+  (entry into force) are omitted. The text is Danish; the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="da"
+     lga:act="DK-BEK1148" lga:jurisdiction="DK" lga:act-type="StatutoryInstrument"
+     lga:url="https://www.retsinformation.dk/eli/lta/2011/1148">
+  <meta>
+    <title>Bekendtgørelse om krav til information og samtykke ved lagring af eller adgang til oplysninger i slutbrugeres terminaludstyr</title>
+    <date>2011-12-09</date>
+  </meta>
+
+  <section num="§ 3" title="Lagring af eller adgang til oplysninger i terminaludstyr" source="bek-1148.retsinformation.html">
+    <paragraph lga:provision="DK-BEK1148-s3-1" lga:citation="BEK nr. 1148 § 3, stk. 1" lga:url="https://www.retsinformation.dk/eli/lta/2011/1148" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="Consent CookiePurposes">Fysiske eller juridiske personer må ikke lagre oplysninger eller opnå adgang til oplysninger, der allerede er lagret, i en slutbrugers terminaludstyr eller lade tredjepart lagre oplysninger eller opnå adgang til oplysninger, hvis slutbrugeren ikke giver samtykke hertil efter at have modtaget fyldestgørende information om lagringen af eller adgangen til oplysningerne.</paragraph>
+    <paragraph lga:provision="DK-BEK1148-s3-2" lga:citation="BEK nr. 1148 § 3, stk. 2" lga:url="https://www.retsinformation.dk/eli/lta/2011/1148" lga:regulates="Consent" lga:implements="EU-2002-58-art5-3">Information, jf. stk. 1, er fyldestgørende, når den som minimum
+      <list>
+        <item num="1)">fremstår i et klart, præcist og letforståeligt sprog eller tilsvarende billedskrift,</item>
+        <item num="2)" lga:requires="CookiePurposes">indeholder oplysning om formål med lagringen af eller adgangen til oplysninger i slutbrugerens terminaludstyr,</item>
+        <item num="3)" lga:requires="ControllerIdentity">indeholder oplysninger, der identificerer enhver fysisk eller juridisk person, der foranstalter lagringen af eller adgangen til oplysningerne,</item>
+        <item num="4)" lga:requires="ConsentWithdrawalMechanism">indeholder en umiddelbart tilgængelig adgang for slutbrugeren til at afslå samtykke eller tilbagekalde samtykke til lagringen af eller adgangen til oplysninger samt en klar, præcis og letforståelig vejledning om, hvordan slutbrugeren anvender en sådan adgang og</item>
+        <item num="5)">er umiddelbart tilgængelig for slutbrugeren ved samlet og tydeligt at blive meddelt denne. Desuden skal information, når der sker lagring af eller adgang til oplysninger i slutbrugerens terminaludstyr igennem en informations- og indholdstjeneste, være vedvarende tilgængelig for slutbrugeren ved en direkte og tydeligt markeret adgang på den pågældende informations- og indholdstjeneste.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="§ 4" title="Undtagelse" source="bek-1148.retsinformation.html">
+    <paragraph lga:provision="DK-BEK1148-s4-1" lga:citation="BEK nr. 1148 § 4, stk. 1" lga:url="https://www.retsinformation.dk/eli/lta/2011/1148" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Uanset § 3 kan fysiske eller juridiske personer lagre oplysninger eller opnå adgang til oplysninger, der allerede er lagret, i en slutbrugers terminaludstyr, hvis
+      <list>
+        <item num="1)">lagringen af eller adgangen til oplysninger alene sker med det formål at overføre kommunikation via et elektronisk kommunikationsnet, eller</item>
+        <item num="2)">lagringen af eller adgangen til oplysninger er påkrævet for at sætte tjenesteyderen af en informationssamfundstjeneste, som slutbrugeren udtrykkelig har anmodet om, i stand til at levere denne tjeneste.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="DK-BEK1148-s4-2" lga:citation="BEK nr. 1148 § 4, stk. 2" lga:url="https://www.retsinformation.dk/eli/lta/2011/1148" lga:defines="StrictlyNecessaryAccess">Lagring af eller adgang til oplysninger i en slutbrugers terminaludstyr er påkrævet, jf. stk. 1, nr. 2, hvis lagringen af eller adgangen til oplysninger er en teknisk forudsætning for at kunne levere en tjeneste, der fungerer i overensstemmelse med tjenestens formål.</paragraph>
+  </section>
+
+  <section num="§ 5" title="Straffebestemmelser" source="bek-1148.retsinformation.html">
+    <paragraph lga:provision="DK-BEK1148-s5-1" lga:citation="BEK nr. 1148 § 5, stk. 1" lga:url="https://www.retsinformation.dk/eli/lta/2011/1148" lga:penalises="DK-BEK1148-s3-1">Med bøde straffes den, der overtræder § 3.</paragraph>
+    <paragraph lga:provision="DK-BEK1148-s5-2" lga:citation="BEK nr. 1148 § 5, stk. 2" lga:url="https://www.retsinformation.dk/eli/lta/2011/1148" lga:penalises="DK-BEK1148-s3-1">Der kan pålægges selskaber m.v. (juridiske personer) strafansvar efter reglerne i straffelovens 5. kapitel.</paragraph>
+  </section>
+</law>

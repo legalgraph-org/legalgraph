@@ -3,6 +3,7 @@
 @prefix lg:  <https://legalgraph.org/id/> .
 @prefix eli:  <http://data.europa.eu/eli/ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 # Greece: art. 4 of Presidential Decree 131/2003, the general information duty — the Greek
 # transposition of e-Commerce Directive Art. 5.
@@ -13,3 +14,26 @@ lg:GR-PD-131-2003 a lgo:LegalAct ;
     eli:id_local "ΦΕΚ Α' 116/16.05.2003" ;
     eli:transposes lg:EU-2000-31 ;
     lgo:reviewStatus lgv:SourceChecked .
+
+# Νόμος 3471/2006 (ΦΕΚ Α' 133/28.06.2006): Greece's ePrivacy-sector act
+# (Directive 2002/58/EC). Άρθρο 4 παρ. 5, as replaced by art. 170 of Ν.
+# 4070/2012 (ΦΕΚ Α' 82/2012), is the storage-and-access rule: consent
+# (συγκατάθεση) after clear and extensive information per art. 11(1) of
+# Ν. 2472/1997, consent possible via browser settings, plus the
+# transmission and strictly-necessary exceptions in the same paragraph.
+# As originally adopted παρ. 5 prohibited storage and access outright, apart
+# from the two technical exceptions; the 2012 replacement
+# is the current text. Separate from Π.Δ. 131/2003, which remains the
+# e-Commerce provider-information act.
+
+lg:GR-N-3471-2006 a lgo:LegalAct ;
+    eli:title "Προστασία δεδομένων προσωπικού χαρακτήρα και της ιδιωτικής ζωής στον τομέα των ηλεκτρονικών επικοινωνιών"@el , "Protection of personal data and privacy in the electronic communications sector (Law 3471/2006)"@en ;
+    lgo:shortName "Ν. 3471/2006" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:GR ;
+    eli:id_local "ΦΕΚ Α' 133/28.06.2006" ;
+    eli:date_document "2006-06-28"^^xsd:date ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:sourceUrl "https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2006/20060100133.pdf"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Article 4(5), as substituted by art. 170 of Law 4070/2012 (ΦΕΚ Α' 82/2012), permits storing information on, or accessing information stored on, a subscriber's or user's terminal equipment only with that subscriber's or user's consent after clear and extensive information under art. 11(1) of Law 2472/1997; consent may be given through appropriate web-browser settings or another application. Transmission-only technical storage/access and access strictly necessary for an expressly requested information-society service are excepted; the Hellenic DPA (Α.Π.Δ.Π.Χ.) sets the detailed modes of information and consent by decision."@en .

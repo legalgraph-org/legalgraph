@@ -1,0 +1,24 @@
+# Austrian Barrierefreiheitsgesetz (BaFG), BGBl. I Nr. 76/2023, in force since 28.06.2025,
+# transposing Directive (EU) 2019/882 on accessibility requirements for products and services.
+# Consolidated version from RIS (ris.bka.gv.at, Federal Chancellery). The page repeats each
+# sentence in a screen-reader rendering and carries the request date in its title and #Title;
+# text_ignore drops both so `fetch --check` stays "unchanged" day to day.
+id: at/bafg
+title: Bundesgesetz über Barrierefreiheitsanforderungen für Produkte und Dienstleistungen (Barrierefreiheitsgesetz – BaFG), consolidated version
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: bafg-konsolidiert.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20012316"
+    fetch: file
+    media_type: text/html
+    text_ignore: [".sr-only", ".onlyScreenreader", "title", "#Title"]
+    notes:
+      - "The whole consolidated act as RIS serves it (330 KB), kept for §§ 2, 4, 6 and 14 — the e-commerce scope, the service accessibility requirements, the micro-enterprise exemption and the service-provider information duty (Anlage 3). The page repeats each sentence in a screen-reader rendering ('Absatz eins,' / 'Paragraph N,'); text_ignore drops it, the transcription follows the first occurrence. title and #Title carry the request date ('Fassung vom …'), which changes daily."
+    retrieved_on: 2026-11-14
+    sha256: 2e7efe5bc5eea43341cd4811163657e6fd423d8094ddcabebd636d8246d37a05
+annotated: bafg.law.xml

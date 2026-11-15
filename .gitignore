@@ -6,3 +6,5 @@ dist/
 .env
 # The renderer's dependencies (make render-install)
 tools/render/node_modules/
+# Originals of link-only guidance, kept for checking and never published (legalgraph sources local)
+sources/.local/

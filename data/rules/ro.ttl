@@ -100,3 +100,17 @@ lg:RO-R-company-website a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProviderName , lgv:LegalForm , lgv:GeographicAddress , lgv:RegisterEntry , lgv:TaxId , lgv:ShareCapital ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:RO-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Art. 4(5) of Law 506/2004 as replaced by OUG 13/2012: consent after clear and complete information, including the purpose and, for third parties, how to refuse; consent may also be given through browser settings (alin. (5^1)). Exceptions in alin. (6)."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:RO-LEGA-506-art4-5 , lg:RO-LEGA-506-art4-5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:RO ;
+    lgo:appliesWhen lgv:EstablishedInRomania , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

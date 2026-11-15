@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met
+  betrekking tot de verwerking van persoonsgegevens, art. 10/2, written in
+  schemas/law.xsd from the consolidated text Justel renders. The words are the
+  Belgian legislature's; only the structure is ours. Art. 10/2 is Belgium's
+  cookie rule — inserted by art. 256 of the Wet van 21 december 2021 (in force
+  10-01-2022), replacing the repealed art. 129 of the Wet van 13 juni 2005
+  betreffende de elektronische communicatie (WEC); it transposes ePrivacy
+  Directive Art. 5(3). Storage of or access to information on the terminal
+  equipment of a subscriber or user is allowed only on condition that the person
+  concerned receives clear and precise information about the purposes of the
+  processing and his rights and has given consent after being informed; lid 2 is
+  the transmission/strictly-necessary exception. The whole article carries the
+  [ ]1 insertion markers and footnote 1 in the Justel original; they are part of
+  the kept original, not of the transcribed text. The text is Dutch; the
+  authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="nl"
+     lga:act="BE-GBW" lga:jurisdiction="BE" lga:act-type="Statute"
+     lga:url="https://www.ejustice.just.fgov.be/eli/wet/2018/07/30/2018040581/justel">
+  <meta>
+    <title>Wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens</title>
+    <date>2018-07-30</date>
+  </meta>
+
+  <section num="art. 10/2" title="Opslag van en toegang tot informatie in de eindapparatuur" source="be-gbw-art102.fragment.html">
+    <paragraph lga:provision="BE-GBW-art10-2-1" lga:citation="art. 10/2, eerste lid Wet 30 juli 2018" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2018/07/30/2018040581/justel" lga:regulates="TerminalEquipmentAccess Consent" lga:implements="EU-2002-58-art5-3">In toepassing van artikel 125, § 1, 1°, van de wet van 13 juni 2005 betreffende de elektronische communicatie en onverminderd de toepassing van de Verordening en deze wet is de opslag van informatie of het verkrijgen van toegang tot informatie die reeds is opgeslagen in de eindapparatuur van een abonnee of een gebruiker slechts toegestaan op voorwaarde dat:
+      <list>
+        <item num="1°" lga:requires="ProcessingPurposes">de betrokken abonnee of gebruiker, overeenkomstig de voorwaarden bepaald in de Verordening en in deze wet, duidelijke en precieze informatie krijgt over de doeleinden van de verwerking en zijn rechten op basis van de Verordening en van deze wet;</item>
+        <item num="2°" lga:requires="Consent">de abonnee of eindgebruiker zijn toestemming heeft gegeven na ingelicht te zijn overeenkomstig de bepaling onder 1°.</item>
+      </list>
+    </paragraph>
+    <paragraph lga:provision="BE-GBW-art10-2-2" lga:citation="art. 10/2, tweede lid Wet 30 juli 2018" lga:url="https://www.ejustice.just.fgov.be/eli/wet/2018/07/30/2018040581/justel" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Het eerste lid is niet van toepassing voor de technische opslag van informatie of de toegang tot informatie opgeslagen in de eindapparatuur van een abonnee of een eindgebruiker met als uitsluitend doel de verzending van een communicatie via een elektronische-communicatienetwerk uit te voeren of een uitdrukkelijk door de abonnee of eindgebruiker gevraagde dienst te leveren wanneer dit hiervoor strikt noodzakelijk is.</paragraph>
+  </section>
+</law>

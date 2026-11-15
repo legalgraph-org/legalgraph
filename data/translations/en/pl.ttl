@@ -233,6 +233,56 @@ lg:PL-KSH-title-e12b806c1491-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:PL-KSH .
 
+lg:PL-PKE-2024-1221-art399-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "36e5ae8b902c795352326dde73028936af9bec618aa559de187a1c7f4087a7f2" ;
+    lgo:text """1. Storing information or obtaining access to information already stored in the terminal telecommunications equipment of a subscriber or end user is permitted provided that:
+1) the subscriber or end user has been informed in advance, in a clear, easy and understandable manner, of:
+a) the purpose of storing and obtaining access to that information,
+b) the possibility for them to determine the conditions of storing or obtaining access to that information through the settings of the software installed on the terminal telecommunications equipment they use or the configuration of the service;
+2) the subscriber or end user, after receiving the information referred to in point 1, expresses their consent to it;
+3) the stored information or the obtaining of access to it does not cause configuration changes in the terminal telecommunications equipment of the end user and the software installed in that equipment."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PKE-2024-1221-art399-1-q1 .
+
+lg:PL-PKE-2024-1221-art399-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "34f3d90d219a3dc4860f8b9a987424ac2116c440501c9ddfcdb39a7d1c5e8f97" ;
+    lgo:text "2. The subscriber or end user may express the consent referred to in paragraph 1 point 2 through the settings of the software installed on the terminal telecommunications equipment they use or the configuration of the service."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PKE-2024-1221-art399-2-q1 .
+
+lg:PL-PKE-2024-1221-art399-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "841cc168e00317696f6e088a9a911348dfd8e6b4a502382addde4e9321840f5d" ;
+    lgo:text """3. The conditions referred to in paragraph 1 do not apply if storing or obtaining access to the information referred to in paragraph 1 is necessary for:
+1) carrying out the transmission of an electronic message over a public telecommunications network or
+2) providing a telecommunications service or a service provided by electronic means requested by the subscriber or end user."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PKE-2024-1221-art399-3-q1 .
+
+lg:PL-PKE-2024-1221-art399-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a03fe321a763859f8c7d8b066e268c8d741ed3a530d2f14d304eac5bacc45ab8" ;
+    lgo:text """4. Entities providing telecommunications services or services by electronic means may install software on the terminal telecommunications equipment of a subscriber or end user intended for using those services or use that software, provided that the subscriber or end user:
+1) before the software is installed is informed directly, in a clear, easy and understandable manner, of the purpose for which the software will be installed and of the ways in which the service provider uses that software;
+2) is informed directly, in a clear, easy and understandable manner, of the way to remove the software from the end user's terminal telecommunications equipment;
+3) before the software is installed expresses consent to its installation and use."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PL-PKE-2024-1221-art399-4-q1 .
+
 lg:PL-PP-art27-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

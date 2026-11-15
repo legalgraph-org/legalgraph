@@ -7,10 +7,11 @@ from pathlib import Path
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator
-from rdflib import DCTERMS, RDF, RDFS, XSD, Graph, Literal
+from rdflib import DCTERMS, RDF, RDFS, XSD, Graph, Literal, URIRef
 
 from legalgraph import LG, LGO
 from legalgraph.sources.constants import EXCERPT_LIMIT, LINK_ONLY
+from legalgraph.sources.link_only_guidance import GuidanceDocument, LocalCopy, add_guidance
 from legalgraph.sources.model import SourceError, repo_path, validation_message
 from legalgraph.sources.text import collapse
 from legalgraph.turtle import serialize
@@ -61,9 +62,15 @@ class LinkOnly(BaseModel):
     claim: str | None = None
     supports: list[str] = Field(default_factory=list)
     quote: Excerpt | None = None
+    guidance: GuidanceDocument | None = None
+    local_copy: LocalCopy | None = None
+
+    @property
+    def node(self) -> URIRef:
+        return LG[self.guidance.id] if self.guidance else LG[f"ref-{self.id}"]
 
     def add_to(self, graph: Graph) -> None:
-        node = LG[f"ref-{self.id}"]
+        node = self.node
         graph.add((node, RDF.type, LGO.ExternalReference))
         graph.add((node, DCTERMS.title, Literal(self.title)))
         graph.add((node, DCTERMS.publisher, Literal(self.publisher)))
@@ -78,6 +85,8 @@ class LinkOnly(BaseModel):
         if self.quote:
             graph.add((node, LGO.excerpt, Literal(self.quote.text, lang=self.quote.language)))
             graph.add((node, LGO.excerptLocator, Literal(self.quote.locator)))
+        if self.guidance:
+            add_guidance(graph, node, self.guidance, self.title, self.url, self.date)
 
 
 def parse_entries(path: Path) -> list[LinkOnly]:
@@ -93,6 +102,11 @@ def parse_entries(path: Path) -> list[LinkOnly]:
         seen.add(reference.id)
         entries.append(reference)
     return entries
+
+
+def parse_link_only(path: Path = LINK_ONLY) -> list[LinkOnly]:
+    """The entries of sources/link-only.yaml (none when there is no such file)."""
+    return parse_entries(path) if path.exists() else []
 
 
 def extract_link_only(path: Path = LINK_ONLY) -> str | None:

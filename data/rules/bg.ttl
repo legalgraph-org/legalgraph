@@ -69,3 +69,16 @@ lg:BG-R-impressum-profession a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProfessionalBody, lgv:ProfessionalTitle, lgv:ProfessionalRules ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (чл. 4а ЗЕТ) ----------------------------------------------------
+
+lg:BG-R-device-access-information a lgo:Obligation ;
+    rdfs:label "Inform about cookies and similar, with the option to refuse"@en ;
+    rdfs:comment "Art. 4a of the Electronic Commerce Act allows storage on or access to the user's device once the user has the information required by Art. 13 GDPR and the option to refuse (para. 1); later access by the same provider needs neither unless the user has objected (para. 3); exceptions in para. 4. An opt-out model, which falls short of the Directive as the Court of Justice reads it: consent must be given actively, before the cookies are set (Planet49, C-673/17). This rule does not refine the EU rule; a Bulgarian business should also follow EU-R-cookie-consent."@en ;
+    lgo:establishedBy lg:BG-ZET-art4a-1 , lg:BG-ZET-art4a-3 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:BG ;
+    lgo:appliesWhen lgv:EstablishedInBulgaria , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:InformAboutDeviceAccessWithOptOut ;
+    lgo:reviewStatus lgv:Draft .

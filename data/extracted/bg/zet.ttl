@@ -17,7 +17,7 @@ lg:BG-ZET
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:BG ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:BG-ZET-source-1 , lg:BG-ZET-source-2 ;
+    lgo:sourceDocument lg:BG-ZET-source-1 , lg:BG-ZET-source-2 , lg:BG-ZET-source-3 ;
     lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .
 
 lg:BG-ZET-art4-1
@@ -73,6 +73,93 @@ lg:BG-ZET-art4-2-q1
     lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI ;
     lgo:text "(2) Когато при предоставянето на услуги на информационното общество се посочват цени, те трябва да се обозначават по ясен и разбираем начин. Доставчикът на услуги е длъжен да указва дали цените включват данъци, такси и разноски, които формират крайната цена."@bg .
 
+lg:BG-ZET-art4a-1
+    a lgo:Provision ;
+    eli:is_part_of lg:BG-ZET ;
+    lgo:citation "член 4а, ал. 1 ЗЕТ" ;
+    lgo:implements lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:TerminalEquipmentAccess ;
+    lgo:requiresDisclosureOf lgv:PrivacyInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[1]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .
+
+lg:BG-ZET-art4a-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:BG-ZET-art4a-1 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[1]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI ;
+    lgo:text """(1) Доставчикът на услуги на информационното общество съхранява информация или получава достъп до информация, съхранена в крайното устройство на получателя на услугата, при условие че:
+1. (изм. - ДВ, бр. 17 от 2019 г.) на получателя на услуга на информационното общество е предоставена ясна и изчерпателна информация по чл. 13 от Регламент (ЕС) 2016/679 на Европейския парламент и на Съвета от 27 април 2016 г. относно защитата на физическите лица във връзка с обработването на лични данни и относно свободното движение на такива данни и за отмяна на Директива 95/46/ЕО (Общ регламент относно защитата на данните) (ОВ, L 119/1 от 4 май 2016 г.);
+2. на получателя на услуга на информационното общество е предоставена възможност да откаже съхраняването или достъпа до информацията."""@bg .
+
+lg:BG-ZET-art4a-2
+    a lgo:Provision ;
+    eli:is_part_of lg:BG-ZET ;
+    lgo:citation "член 4а, ал. 2 ЗЕТ" ;
+    lgo:regulates lgv:PrivacyInformation ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[2]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .
+
+lg:BG-ZET-art4a-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:BG-ZET-art4a-2 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[2]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI ;
+    lgo:text "(2) В случаите по ал. 1 доставчиците на услуги на информационното общество осигуряват на получателя на услугата възможност по всяко време да получи информация за съхраняваните в крайното устройство данни."@bg .
+
+lg:BG-ZET-art4a-3
+    a lgo:Provision ;
+    eli:is_part_of lg:BG-ZET ;
+    lgo:citation "член 4а, ал. 3 ЗЕТ" ;
+    lgo:regulates lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[3]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .
+
+lg:BG-ZET-art4a-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:BG-ZET-art4a-3 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[3]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI ;
+    lgo:text "(3) При последващо съхраняване на информация или получаване на достъп до информация от един и същ доставчик изискванията на ал. 1 не са задължителни, в случай че получателят на услугата не е възразил."@bg .
+
+lg:BG-ZET-art4a-4
+    a lgo:Provision ;
+    eli:is_part_of lg:BG-ZET ;
+    lgo:citation "член 4а, ал. 4 ЗЕТ" ;
+    lgo:implements lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess , lgv:TransmissionOnlyAccess ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[4]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .
+
+lg:BG-ZET-art4a-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:BG-ZET-art4a-4 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:BG-ZET-source-3 ;
+    lgo:sourceElement "/law/section[3]/paragraph[4]" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI ;
+    lgo:text """(4) Изискванията на ал. 1 не се прилагат по отношение на съхраняването на информация и предоставянето на достъп до нея, когато те са необходими за:
+1. предаването на съобщения по електронна съобщителна мрежа;
+2. предоставяне на услуга на информационното общество, изрично поискана от получателя на услуги на информационното общество."""@bg .
+
 lg:BG-ZET-art5-3
     a lgo:Provision ;
     eli:is_part_of lg:BG-ZET ;
@@ -126,4 +213,18 @@ lg:BG-ZET-source-2
     lgo:repositoryPath "sources/bg/zet/zet-chl5.lexbg.html" ;
     lgo:retrievedOn "2026-11-14"^^xsd:date ;
     lgo:sha256 "17ee4a7f21cf60bf85c0da6b849d0652c617babd6ec50a665be037a117c20655" ;
+    lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .
+
+lg:BG-ZET-source-3
+    a lgo:SourceDocument ;
+    dcterms:language "bg"^^xsd:language ;
+    lgo:annotatedFile "sources/bg/zet/zet.law.xml" ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "Consolidated Bulgarian text of чл. 4а as lex.bg renders it — the cookie rule (ePrivacy Art. 5(3) transposition, inserted by ДВ бр. 105/2011). Bulgarian is the authentic language."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "Bulgarian legislation is an official work under the Copyright and Related Rights Act; official texts are not copyright-protected" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/bg/zet/zet-chl4a.lexbg.html" ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sha256 "3f0accf0afb44bd9ee11fa9ae77ae15dd6ca4127871654aef002d0be333370af" ;
     lgo:sourceUrl "https://lex.bg/laws/ldoc/2135530547"^^xsd:anyURI .

@@ -80,6 +80,28 @@ lg:NO-EHL-s8-3-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:NO-EHL-s8-3-q1 .
 
+lg:NO-EKOMLOVEN-s3-15-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "802d78956354e86eaf54cdcdeee4f538704f83d8d606f4c2bcc66542ff8d12ef" ;
+    lgo:text "It is not permitted to store information or to gain access to information in an end user's or user's communications equipment without the end user or user concerned being informed, among other things, about which information is processed, the purpose of the processing and who processes the information, and without the end user or user concerned having given consent. Consent shall meet the requirements for consent under the Personal Data Act (personvernforordningen)."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EKOMLOVEN-s3-15-1-q1 .
+
+lg:NO-EKOMLOVEN-s3-15-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "598b64a1a3a9d9d5b813b7a92b147e98b9b7e17c4df9af91edd28367f33f8f76" ;
+    lgo:text """The first paragraph does not apply to technical storage of or access to information
+a. solely for the purpose of transmitting a communication in an electronic communications network, or
+b. which is strictly necessary to provide an information society service at the express request of the end user or user."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:NO-EKOMLOVEN-s3-15-2-q1 .
+
 lg:NO-FREG-s7-2-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

@@ -18,7 +18,7 @@ lg:RO-OG-38-2015
     lgo:jurisdiction lg:RO ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI .
 
 lg:RO-OG-38-2015-art25-1
     a lgo:Provision ;
@@ -30,16 +30,16 @@ lg:RO-OG-38-2015-art25-1
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI .
 
 lg:RO-OG-38-2015-art25-1-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:RO-OG-38-2015-art25-1 ;
-    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI ;
     lgo:text "(1) Comercianții informează consumatorii cu privire la entitatea sau entitățile SAL de care aceștia aparțin atunci când comercianții se angajează să utilizeze respectivele proceduri. Informațiile respective includ adresa site-ului internet al entității sau entităților SAL relevante."@ro .
 
 lg:RO-OG-38-2015-art25-2
@@ -52,16 +52,16 @@ lg:RO-OG-38-2015-art25-2
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI .
 
 lg:RO-OG-38-2015-art25-2-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:RO-OG-38-2015-art25-2 ;
-    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI ;
     lgo:text "(2) Informațiile menționate la alin. (1) sunt furnizate în mod clar, inteligibil și ușor accesibil pe site-ul internet al comercianților, în cazul în care acesta există, și, dacă este cazul, în termenii și condițiile generale ale contractelor de vânzare sau de prestare de servicii dintre comerciant și consumator."@ro .
 
 lg:RO-OG-38-2015-art25-3
@@ -74,16 +74,16 @@ lg:RO-OG-38-2015-art25-3
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
     lgo:sourceElement "/law/section[1]/paragraph[3]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI .
 
 lg:RO-OG-38-2015-art25-3-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:RO-OG-38-2015-art25-3 ;
-    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
     lgo:sourceDocument lg:RO-OG-38-2015-source ;
     lgo:sourceElement "/law/section[1]/paragraph[3]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI ;
     lgo:text "(3) În cazul în care un litigiu între un consumator și un comerciant stabilit pe teritoriul României nu a putut fi soluționat în urma unei reclamații prezentate direct de consumator comerciantului, comerciantul informează consumatorul despre posibilitatea de a se adresa entității SAL. Această informație este furnizată pe suport hârtie sau pe un alt suport durabil."@ro .
 
 lg:RO-OG-38-2015-source
@@ -91,11 +91,11 @@ lg:RO-OG-38-2015-source
     dcterms:language "ro"^^xsd:language ;
     lgo:annotatedFile "sources/ro/og-38-2015/og-38-2015.law.xml" ;
     lgo:authenticity lgv:Official ;
-    lgo:legalStatus "Consolidated form on the print view. Article 25 only; all three alineate are annotated."@en ;
+    lgo:legalStatus "Consolidated form (forma consolidată). Article 25 only; all three alineate are annotated. The main view rejects the default tool user agent, hence the browser header."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Art. 9 din Legea nr. 8/1996: official texts of a political, legislative, administrative or judicial nature are not protected by copyright" ;
     lgo:mediaType "text/html" ;
-    lgo:repositoryPath "sources/ro/og-38-2015/og-38-2015-afis.html" ;
-    lgo:retrievedOn "2026-11-14"^^xsd:date ;
-    lgo:sha256 "78d6b52b99eb2d8c7b8b4050dfacf43f35ae9895f6bc13368a1baf3e47d9d073" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/193569"^^xsd:anyURI .
+    lgo:repositoryPath "sources/ro/og-38-2015/og-38-2015-art25.fragment.html" ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sha256 "cbb029d915b0607053fff636665e21313fd302148230b51a3beb89bfca93d67d" ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/193569"^^xsd:anyURI .

@@ -114,6 +114,16 @@ lg:CZ-OZ-title-08f43db170d2-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:CZ-OZ .
 
+lg:CZ-ZEK-127-2005-s89-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6c77db1af7c654fbea29d17229010845647e786bc4fda70759b088dd3a320217" ;
+    lgo:text "(3) Anyone who intends to use or uses electronic communications networks to store data or to gain access to data stored in the terminal equipment of participants or users shall obtain from those participants or users prior demonstrable consent to the scope and purpose of the processing of such data. This obligation does not apply to technical storage or access exclusively for the purpose of transmitting a message over an electronic communications network or where it is strictly necessary for the provision of an information-society service expressly requested by the participant or user."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:CZ-ZEK-127-2005-s89-3-q1 .
+
 lg:CZ-ZOK-s7-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

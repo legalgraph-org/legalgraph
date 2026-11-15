@@ -69,6 +69,28 @@ lg:BE-CSA-title-f15553d58a0e-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:BE-CSA .
 
+lg:BE-GBW-art10-2-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "08526cd5ab4a13099d4a4a2bb856adab4f657164d2ae09d2300755eef2c78ef9" ;
+    lgo:text """In application of Article 125, § 1, 1°, of the Law of 13 June 2005 on electronic communications, and without prejudice to the Regulation and this law, the storage of information or access to information already stored on the terminal equipment of a subscriber or user is permitted only on condition that:
+1° the subscriber or user concerned is given, in accordance with the conditions laid down in the Regulation and in this law, clear and precise information about the purposes of the processing and their rights under the Regulation and this law;
+2° the subscriber or end user has given their consent after being informed in accordance with the provision under 1°."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-GBW-art10-2-1-q1 .
+
+lg:BE-GBW-art10-2-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f2493bb7481a308e6ecc23b6cbb14a700a270e1ca659c0b6c4b71468b611f25a" ;
+    lgo:text "Paragraph 1 does not apply to technical storage of information or access to information stored on the terminal equipment of a subscriber or end user whose sole purpose is to carry out the transmission of a communication over an electronic communications network or to provide a service expressly requested by the subscriber or end user, where this is strictly necessary for that purpose."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:BE-GBW-art10-2-2-q1 .
+
 lg:BE-WER-III-25-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

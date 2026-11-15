@@ -125,3 +125,25 @@ lg:PT-LEI-144-2015-title-ddd5e8829542-en
     lgo:translatedProperty eli:title ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:PT-LEI-144-2015 .
+
+lg:PT-LEI-41-2004-art5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "deaaa3397b15cd688040199a01014c55602eb4259685d873495e0e0b6e072f22" ;
+    lgo:text "1 - The storage of information and the possibility of access to information stored in the terminal equipment of a subscriber or user are permitted only if they have given their prior consent, based on clear and complete information under the Personal Data Protection Law, namely regarding the purposes of the processing."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-LEI-41-2004-art5-1-q1 .
+
+lg:PT-LEI-41-2004-art5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e8ff9df411002a471711ad6647c6b1e9aaa6b834105b579ef22006454f1bfc23" ;
+    lgo:text """2 - The provisions of this article and the preceding article do not prevent technical storage or access:
+a) Whose sole purpose is to transmit a communication over an electronic communications network;
+b) Strictly necessary for the provider to provide an information-society service expressly requested by the subscriber or user."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:PT-LEI-41-2004-art5-2-q1 .

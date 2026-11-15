@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Malta Processing of Personal Data (Electronic Communications Sector) Regulations
+  (S.L. 586.01), regulation 5, written in schemas/law.xsd from the consolidated PDF.
+  The words are the official text's; only the structure is ours.
+  `legalgraph sources verify` checks every line letter for letter against the PDF.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="en"
+     lga:act="MT-SL-586-01" lga:jurisdiction="MT" lga:act-type="StatutoryInstrument"
+     lga:url="https://legislation.mt/eli/sl/586.1/eng" lga:transposes="EU-2002-58">
+  <meta>
+    <title>Processing of Personal Data (Electronic Communications Sector) Regulations (S.L. 586.01)</title>
+    <date>2003-07-15</date>
+  </meta>
+
+  <section num="5" title="Access to information stored in terminal equipment" source="sl58601.pdf">
+    <paragraph num="(1)" lga:provision="MT-SL-586-01-r5-1" lga:citation="Reg. 5(1) S.L. 586.01 (MT)" lga:url="https://legislation.mt/eli/sl/586.1/eng" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">The storing of information or the gaining of access to information stored in the terminal equipment of a subscriber or user shall only be allowed on condition that the subscriber or user concerned has given his consent, having been provided by the controller with clear and comprehensive information in terms of article 19 of the Act.</paragraph>
+    <paragraph num="(2)" lga:provision="MT-SL-586-01-r5-2" lga:citation="Reg. 5(2) S.L. 586.01 (MT)" lga:url="https://legislation.mt/eli/sl/586.1/eng" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess">The requirements contained in this regulation shall not prevent the technical storage or access for the sole purpose of carrying out or facilitating the transmission of a communication over an electronic communications network or as may be strictly necessary in order for the service provider to provide an information society service explicitly requested by the subscriber or user to provide the service.</paragraph>
+  </section>
+</law>

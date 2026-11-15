@@ -35,6 +35,26 @@ lg:LV-ISSL-art4-2-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:LV-ISSL-art4-2-q1 .
 
+lg:LV-ISSL-art7-1-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5d9c4fc21ce9232a1e8a14457f2772e4255c05678eaf57c0fbe49edab3c399cc" ;
+    lgo:text "(1) The storage of information in a subscriber's or user's terminal equipment, or obtaining access to the information stored in the terminal equipment, is permitted if the subscriber or user concerned has given their consent after receiving clear and comprehensive information on the purpose of the aforementioned processing in accordance with the Personal Data Protection Law."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-ISSL-art7-1-1-q1 .
+
+lg:LV-ISSL-art7-1-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e69e6de0bb3b93cb7f61b541dd54020a8810c44ef0233322192f71a04c5a8e33" ;
+    lgo:text "(2) The consent referred to in paragraph one of this Section is not necessary if the storage of information in the terminal equipment or obtaining access to the information stored in the terminal equipment is necessary for ensuring the circulation of information in the electronic communications network or for the intermediary service provider in order to provide the service requested by the subscriber or user."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LV-ISSL-art7-1-2-q1 .
+
 lg:LV-KL-art17-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

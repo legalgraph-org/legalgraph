@@ -43,3 +43,16 @@ lg:CZ-ZOS-634
     eli:transposes lg:EU-2013-11 ;
     rdfs:seeAlso <https://www.zakonyprolidi.cz/cs/1992-634> ;
     rdfs:comment "§ 14 is the trader ADR information duty: (1) the competent out-of-court dispute entity plus its internet address on the trader's website and in the business terms the contract refers to; (2) the after-complaint duty on paper or another durable medium."@en .
+
+# CZ: § 89 odst. 3 ZEK (addition to data/extracted/cz/).
+
+lg:CZ-ZEK-127-2005 a lgo:LegalAct ;
+    eli:title "Zákon č. 127/2005 Sb., o elektronických komunikacích"@cs , "Act No. 127/2005 Coll. on electronic communications"@en ;
+    lgo:shortName "ZEK" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CZ ;
+    lgo:sourceUrl "https://www.e-sbirka.cz/sb/2005/127"^^xsd:anyURI ;
+    eli:id_local "Zákon č. 127/2005 Sb." ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "§ 89 odst. 3 is the storage-and-access rule (ePrivacy Art. 5(3)): demonstrable consent covering the scope and purpose of the processing is required before storing data on, or gaining access to data stored on, a participant's or user's terminal equipment; the obligation does not apply to transmission-only storage/access or to access strictly necessary for an expressly requested information-society service."@en .

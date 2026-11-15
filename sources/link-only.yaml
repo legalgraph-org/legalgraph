@@ -46,3 +46,227 @@
     language: en
   claim: "California AG v. Sephora (2022): $1.2m — the first CCPA enforcement action, for not honouring Global Privacy Control opt-out signals."
   supports: [US-CA-SFSC-2022-0824-sephora]
+
+# --- Regulators' cookie guidance whose terms do not allow republishing --------------------------
+# The graph states each point in our words and links the original; `legalgraph sources local`
+# downloads the original into sources/.local/ (git-ignored) to check the findings against.
+
+- id: es-aepd-guia-cookies
+  title: "Guía sobre el uso de las cookies"
+  publisher: "Agencia Española de Protección de Datos (AEPD)"
+  url: "https://www.aepd.es/guias/guia-cookies.html"
+  date: 2024-05-01
+  why_link_only: "regulator's guide; no legal notice found that allows reproducing it, so its points are stated in our words and the guide is linked"
+  claim: "Guidance, not binding text: how the Spanish data protection authority applies art. 22.2 LSSI and the GDPR to cookie banners (May 2024 update)."
+  supports: [ES-LSSI-art22-2]
+  local_copy:
+    url: "https://www.aepd.es/guias/guia-cookies.pdf"
+    file: guia-cookies.pdf
+    retrieved_on: 2026-11-15
+    sha256: f968645392c12d3670221cf459f9765a34bb6e6dc12de3d6d753a2b917687085
+  guidance:
+    id: ES-AEPD-COOKIES
+    short_name: "AEPD, Guía de cookies"
+    title_en: "Guide to the use of cookies (AEPD, May 2024)"
+    jurisdiction: ES
+    language: es
+    findings:
+      - id: ES-AEPD-cookies-s212-b
+        locator: "§ 2.1.2 b)"
+        finding: "Cookies that only remember a preference the user chose (language, currency, font size, contrast) are a service the user expressly asked for and need no consent, as long as they serve only that purpose; they need not be session cookies."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3]
+        regulates: [StrictlyNecessaryAccess]
+      - id: ES-AEPD-cookies-s212-c
+        locator: "§ 2.1.2 c)"
+        finding: "Analytics cookies are not exempt from consent, but, following the Article 29 Working Party, are unlikely to be a privacy risk when they are first-party, process aggregated data for strictly statistical purposes, are explained to users and users can refuse them."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3, EU-2016-679-art4-11]
+        regulates: [Consent, TerminalEquipmentAccess]
+      - id: ES-AEPD-cookies-s3122-b
+        locator: "§ 3.1.2.2 b)"
+        finding: "The first layer needs a control to reject cookies that matches the accept control: if accepting is a button, rejecting must be a button too, labelled 'Reject cookies' or similar."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3, EU-2016-679-art7-3]
+        regulates: [Consent]
+      - id: ES-AEPD-cookies-s3122-premarcadas
+        locator: "§ 3.1.2.2"
+        finding: "Pre-ticked options in favour of cookies never give valid consent; saving the settings without selecting any cookie counts as rejecting them all."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3, EU-2016-679-art4-11]
+        regulates: [Consent]
+      - id: ES-AEPD-cookies-s323
+        locator: "§ 3.2.3"
+        finding: "Whatever the way consent is collected, rejecting must be offered at the same time, at the same level and with the same visibility as accepting, without sending the user to another layer."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3, EU-2016-679-art7-3]
+        regulates: [Consent]
+      - id: ES-AEPD-cookies-s329
+        locator: "§ 3.2.9"
+        finding: "Users must be able to withdraw consent at any time, as easily as they gave it, for example through simple, permanent access to the cookie settings; the cookie policy must say how to withdraw consent and delete cookies."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3, EU-2016-679-art7-3]
+        regulates: [Consent]
+        requires: [ConsentWithdrawalMechanism]
+      - id: ES-AEPD-cookies-s3210
+        locator: "§ 3.2.10"
+        finding: "Refusing cookies may block access to a site or service only if users are told so and offered an alternative way in without cookies, not necessarily free; following EDPB Guidelines 05/2020 the two must be genuinely equivalent and offered by the publisher itself."
+        interprets: [ES-LSSI-art22-2, EU-2002-58-art5-3, EU-2016-679-art7-4]
+        regulates: [Consent]
+      - id: ES-AEPD-cookies-s3210-payorok
+        locator: "§ 3.2.10"
+        finding: "Following EDPB Opinion 8/2024, large online platforms will in most cases not obtain valid consent by offering only a choice between behavioural advertising and paying a fee; a paid alternative should not be the default way."
+        interprets: [ES-LSSI-art22-2, EU-2016-679-art7-4]
+        regulates: [Consent]
+
+- id: nl-ap-vuistregels-cookiebanners
+  title: "Vuistregels heldere cookiebanners"
+  publisher: "Autoriteit Persoonsgegevens (AP)"
+  url: "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"
+  why_link_only: "regulator's web page; not checked against a reuse notice, so its points are stated in our words and the page is linked"
+  claim: "Guidance, not binding text: the Dutch data protection authority's rules of thumb for clear cookie banners."
+  supports: [NL-TW-art11-7a-1]
+  local_copy:
+    url: "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"
+    file: vuistregels-heldere-cookiebanners.html
+    retrieved_on: 2026-11-15
+    sha256: c9f9791ea83538ef808ff0308d48a313da8b3c7ec978077399053dd22f68003c
+  guidance:
+    id: NL-AP-COOKIEBANNERS
+    short_name: "AP, Vuistregels heldere cookiebanners"
+    title_en: "Rules of thumb for clear cookie banners (AP)"
+    jurisdiction: NL
+    language: nl
+    findings:
+      - id: NL-AP-COOKIEBANNERS-consent-required
+        locator: "'Tracking cookies en analytische cookies met impact'"
+        finding: "Tracking cookies, similar tracking techniques and analytics cookies with more than a slight privacy impact need consent first, for example through a banner; the visitor must be properly informed, and consent must be free, specific and unambiguous."
+        interprets: [NL-TW-art11-7a-1, EU-2002-58-art5-3, EU-2016-679-art4-11, EU-2016-679-art7-1]
+        regulates: [Consent, TerminalEquipmentAccess]
+      - id: NL-AP-COOKIEBANNERS-no-processing-early
+        locator: "'Let op'"
+        finding: "No personal data may be processed with consent-requiring cookies before the visitor has made a choice in the banner."
+        regulates: [Consent, TerminalEquipmentAccess]
+      - id: NL-AP-COOKIEBANNERS-analytics-exempt
+        locator: "'Functionele en beperkt analytische cookies'"
+        finding: "Functional cookies and analytics cookies with limited impact need no consent; their processing rests on legitimate interest, and visitors must be informed and able to object easily."
+        regulates: [TerminalEquipmentAccess, LawfulBasis]
+        requires: [ProcessingPurposes]
+      - id: NL-AP-COOKIEBANNERS-vr2-dark-patterns
+        locator: "Vuistregel 2"
+        finding: "Design that steers visitors towards accepting makes refusing difficult, and consent given that way is not free and unambiguous."
+        interprets: [EU-2016-679-art4-11, EU-2016-679-art7-4]
+        regulates: [Consent]
+      - id: NL-AP-COOKIEBANNERS-vr2-no-pre-ticked
+        locator: "Vuistregel 2, 'Zet vinkjes of schuifjes niet vooraf aan'"
+        finding: "No pre-ticked boxes or switches, on the first layer or any further layer: the visitor must make an active choice."
+        interprets: [EU-2016-679-art4-11]
+        regulates: [Consent]
+      - id: NL-AP-COOKIEBANNERS-vr2-all-reject
+        locator: "Vuistregel 2, 'Bied een Alles weigeren-optie aan'"
+        finding: "A banner with an 'accept all' button on its first layer must also have an equivalent 'reject all' button."
+        interprets: [EU-2002-58-art5-3]
+        regulates: [Consent]
+      - id: NL-AP-COOKIEBANNERS-vr2-reject-clicks
+        locator: "Vuistregel 2, 'Vraag geen extra bevestiging bij weigeren'"
+        finding: "Refusing must not take more clicks than accepting; for example, no extra confirmation when someone refuses."
+        regulates: [Consent]
+      - id: NL-AP-COOKIEBANNERS-vr3-withdraw
+        locator: "Vuistregel 3"
+        finding: "Visitors must be able to change their choice or withdraw consent easily later."
+        interprets: [EU-2016-679-art7-3]
+        regulates: [Consent]
+        requires: [ConsentWithdrawalMechanism]
+      - id: NL-AP-COOKIEBANNERS-vr3-accessible
+        locator: "Vuistregel 3"
+        finding: "Withdrawing consent must always be easy to reach, also outside the banner, for example through a floating button that stays on screen or a control on the cookie policy page."
+        interprets: [EU-2016-679-art7-3]
+        regulates: [Consent]
+        requires: [ConsentWithdrawalMechanism]
+      - id: NL-AP-COOKIEBANNERS-vr4-objection
+        locator: "Vuistregel 4"
+        finding: "Where cookies rest on legitimate interest (functional or limited analytics), no prior consent is asked, but visitors have the right to object; consent and objection are kept apart."
+        interprets: [EU-2002-58-art5-3]
+        regulates: [Consent, TerminalEquipmentAccess]
+
+- id: ie-dpc-cookies-guidance
+  title: "Guidance note on cookies and other tracking technologies"
+  publisher: "Data Protection Commission (DPC), Ireland"
+  url: "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"
+  date: 2020-04-01
+  why_link_only: "Irish state works are in copyright (Copyright and Related Rights Act 2000, s. 191) and no reuse notice was found, so its points are stated in our words and the note is linked"
+  claim: "Guidance, not binding text: how the Irish Data Protection Commission applies S.I. No. 336 of 2011 and the GDPR to cookies (April 2020)."
+  supports: [IE-SI-336-2011-r5-3]
+  local_copy:
+    url: "https://www.dataprotection.ie/sites/default/files/uploads/2020-04/Guidance%20note%20on%20cookies%20and%20other%20tracking%20technologies.pdf"
+    file: guidance-note-cookies-tracking.pdf
+    retrieved_on: 2026-11-15
+    sha256: e0e3dcfc77704405aa781a3336ac39502312687372a41f27e6b971d99ddf207e
+  guidance:
+    id: IE-DPC-COOKIES
+    short_name: "DPC guidance note on cookies"
+    jurisdiction: IE
+    language: en
+    findings:
+      - id: IE-DPC-cookies-analytics-consent
+        locator: "'Do analytics cookies require consent?'"
+        finding: "Analytics cookies, used to measure a website (unique visitors, pages viewed), require consent."
+        interprets: [IE-SI-336-2011-r5-3, EU-2002-58-art5-3, EU-2016-679-art4-11]
+        regulates: [Consent, TerminalEquipmentAccess]
+      - id: IE-DPC-cookies-analytics-low-risk
+        locator: "'Do analytics cookies require consent?'"
+        finding: "Following the Article 29 Working Party, first-party analytics limited to aggregated statistics are unlikely to be a privacy risk where the site explains them clearly, has adequate safeguards and offers a user-friendly way to opt out."
+        regulates: [TerminalEquipmentAccess]
+      - id: IE-DPC-cookies-strictly-necessary-ex1
+        locator: "Example 1"
+        finding: "Session cookies for a shopping basket, expiring with the session, and cookies recording the user's language or country choice are strictly necessary and need no consent."
+        interprets: [IE-SI-336-2011-r5-5]
+        regulates: [StrictlyNecessaryAccess]
+      - id: IE-DPC-cookies-strictly-necessary-ex3
+        locator: "Example 3"
+        finding: "Cookies for a customer-service chatbot are not strictly necessary for the site and may only be set once the person asks to use the chat."
+        interprets: [IE-SI-336-2011-r5-5]
+        regulates: [StrictlyNecessaryAccess]
+      - id: IE-DPC-cookies-no-bundling
+        locator: "'Can you obtain consent for multiple purposes at the same time?'"
+        finding: "Consent may not be bundled for several purposes; the first layer should say for which specific purposes cookies are used."
+        interprets: [EU-2016-679-art4-11, EU-2016-679-art7-4]
+        regulates: [Consent]
+      - id: IE-DPC-cookies-no-pre-checked
+        locator: "'Can you obtain consent for multiple purposes at the same time?'"
+        finding: "Pre-checked boxes, sliders or other controls switched on by default do not signal consent."
+        interprets: [EU-2016-679-art4-11]
+        regulates: [Consent]
+      - id: IE-DPC-cookies-withdraw-easy
+        locator: "'Withdrawal of consent'"
+        finding: "Withdrawing consent must be as easy as giving it, and consent to cookies may not be tied to other purposes or to the terms of a contract."
+        interprets: [EU-2016-679-art7-3, IE-SI-336-2011-r5-4]
+        regulates: [Consent]
+        requires: [ConsentWithdrawalMechanism]
+      - id: IE-DPC-cookies-consent-six-months
+        locator: "'Withdrawal of consent'"
+        finding: "Where a cookie stores the user's consent, the user should be asked to confirm it again within six months."
+        regulates: [Consent]
+      - id: IE-DPC-cookies-equal-prominence
+        locator: "'How do you obtain consent in practice?'"
+        finding: "A banner must not nudge users towards accepting: an 'accept' button needs a 'reject' option of equal prominence, or an equally prominent option to manage cookies by type and purpose."
+        interprets: [EU-2002-58-art5-3, EU-2016-679-art4-11]
+        regulates: [Consent]
+      - id: IE-DPC-cookies-no-implied
+        locator: "'Can you use implied consent for the use of cookies and tracking technologies?'"
+        finding: "Consent cannot be implied: a banner saying that continuing to use, click or scroll the site counts as consent is not allowed."
+        interprets: [EU-2016-679-art4-11]
+        regulates: [Consent]
+      - id: IE-DPC-cookies-scrolling
+        locator: "'Can you use implied consent for the use of cookies and tracking technologies?'"
+        finding: "A user who merely scrolls or clicks an element cannot be assumed to have read the banner, unless the site can show clearly that they engaged with it and consented unambiguously."
+        interprets: [EU-2016-679-art4-11, EU-2016-679-art7-1]
+        regulates: [Consent]
+      - id: IE-DPC-cookies-banner-reject
+        locator: "'Requirements for cookie banners'"
+        finding: "A banner that only offers 'accept' (such as 'OK, got it!' or 'I understand'), with no way to reject or to get more detail, does not obtain valid consent."
+        interprets: [EU-2016-679-art4-11]
+        regulates: [Consent]
+      - id: IE-DPC-cookies-reject-info
+        locator: "'Requirements for cookie banners'"
+        finding: "At the least, the banner must let the user reject non-necessary cookies or ask for more information about them."
+        regulates: [Consent]
+      - id: IE-DPC-cookies-browser-settings
+        locator: "'Can you rely on the user's browser settings to infer consent?'"
+        finding: "As a rule, a browser's default settings that allow cookies are not the user's consent."
+        interprets: [EU-2016-679-art4-11]
+        regulates: [Consent]

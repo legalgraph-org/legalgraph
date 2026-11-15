@@ -37,6 +37,35 @@ lg:AT-R-pre-contract-information a lgo:Obligation ;
         lgv:DisputeResolutionStatement , lgv:RepairInformation ;
     lgo:reviewStatus lgv:Draft .
 
+# --- Withdrawal function on the online interface (§ 13a FAGG, Article 11a CRD) ---------------
+
+lg:AT-R-withdrawal-function a lgo:Obligation ;
+    rdfs:label "Withdrawal button on the online interface (since 19 June 2026)"@en ;
+    rdfs:comment "A distance contract concluded through an online interface needs a withdrawal function labelled “Vertrag widerrufen” or equally clear wording, prominent and available throughout the withdrawal period. It lets the consumer send an online withdrawal with their name, the contract and the channel for the confirmation, through a confirmation function, and the trader confirms receipt without delay on a durable medium, with the declaration's content and the date and time it arrived (§ 13a Abs. 1–5 FAGG). A withdrawal sent this way before the period ends is in time (Abs. 6)."@en ;
+    lgo:establishedBy lg:AT-FAGG-s13a-1 , lg:AT-FAGG-s13a-2 , lg:AT-FAGG-s13a-3 , lg:AT-FAGG-s13a-4 , lg:AT-FAGG-s13a-5 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:SellsToConsumersInAustria , lgv:SellsOnlineToConsumers ;
+    lgo:requiresAction lgv:ProvideWithdrawalFunction ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Accessibility (BaFG, European Accessibility Act) ------------------------------------------
+
+lg:AT-R-accessibility a lgo:Obligation ;
+    rdfs:label "Accessible online shop and accessibility information"@en ;
+    rdfs:comment "Services in electronic commerce provided to consumers after 28 June 2025 meet the accessibility requirements (§ 2 Abs. 2 and § 4 Abs. 3 BaFG), and the provider publishes how the service meets them (§ 14 Abs. 2). Microenterprises providing services are exempt (§ 6 Abs. 1)."@en ;
+    lgo:establishedBy lg:AT-BAFG-s2-2 , lg:AT-BAFG-s4-3 , lg:AT-BAFG-s14-2 ;
+    lgo:bearer lgv:Trader ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:SellsToConsumersInAustria , lgv:SellsOnlineToConsumers ;
+    lgo:unless lgv:Microenterprise ;
+    lgo:partOfDisclosure lgv:AccessibilityInformation ;
+    lgo:requiresAction lgv:MakeServiceAccessible ;
+    lgo:requiresDisclosureOf lgv:AccessibilityStatement ;
+    lgo:reviewStatus lgv:Draft .
+
 # --- Unfair terms in consumer contracts (§ 6 KSchG) -----------------------------------------
 
 lg:AT-R-unfair-terms a lgo:Obligation ;

@@ -10,6 +10,371 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:ES-AEPD-COOKIES
+    a lgo:ExternalReference , lgo:Guidance ;
+    dcterms:date "2024-05-01"^^xsd:date ;
+    dcterms:publisher "Agencia Española de Protección de Datos (AEPD)" ;
+    dcterms:title "Guía sobre el uso de las cookies" ;
+    eli:date_document "2024-05-01"^^xsd:date ;
+    eli:title "Guide to the use of cookies (AEPD, May 2024)"@en , "Guía sobre el uso de las cookies"@es ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:ES ;
+    lgo:linkOnlyReason "regulator's guide; no legal notice found that allows reproducing it, so its points are stated in our words and the guide is linked" ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:shortName "AEPD, Guía de cookies" ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    lgo:supports lg:ES-LSSI-art22-2 ;
+    rdfs:comment "Guidance, not binding text: how the Spanish data protection authority applies art. 22.2 LSSI and the GDPR to cookie banners (May 2024 update)."@en .
+
+lg:ES-AEPD-cookies-s212-b
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 2.1.2 b)" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Cookies that only remember a preference the user chose (language, currency, font size, contrast) are a service the user expressly asked for and need no consent, as long as they serve only that purpose; they need not be session cookies."@en .
+
+lg:ES-AEPD-cookies-s212-c
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 2.1.2 c)" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Analytics cookies are not exempt from consent, but, following the Article 29 Working Party, are unlikely to be a privacy risk when they are first-party, process aggregated data for strictly statistical purposes, are explained to users and users can refuse them."@en .
+
+lg:ES-AEPD-cookies-s3122-b
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 3.1.2.2 b)" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 , lg:EU-2016-679-art7-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "The first layer needs a control to reject cookies that matches the accept control: if accepting is a button, rejecting must be a button too, labelled 'Reject cookies' or similar."@en .
+
+lg:ES-AEPD-cookies-s3122-premarcadas
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 3.1.2.2" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Pre-ticked options in favour of cookies never give valid consent; saving the settings without selecting any cookie counts as rejecting them all."@en .
+
+lg:ES-AEPD-cookies-s3210
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 3.2.10" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 , lg:EU-2016-679-art7-4 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Refusing cookies may block access to a site or service only if users are told so and offered an alternative way in without cookies, not necessarily free; following EDPB Guidelines 05/2020 the two must be genuinely equivalent and offered by the publisher itself."@en .
+
+lg:ES-AEPD-cookies-s3210-payorok
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 3.2.10" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2016-679-art7-4 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Following EDPB Opinion 8/2024, large online platforms will in most cases not obtain valid consent by offering only a choice between behavioural advertising and paying a fee; a paid alternative should not be the default way."@en .
+
+lg:ES-AEPD-cookies-s323
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 3.2.3" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 , lg:EU-2016-679-art7-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Whatever the way consent is collected, rejecting must be offered at the same time, at the same level and with the same visibility as accepting, without sending the user to another layer."@en .
+
+lg:ES-AEPD-cookies-s329
+    a lgo:Provision ;
+    eli:is_part_of lg:ES-AEPD-COOKIES ;
+    lgo:citation "AEPD, Guía de cookies, § 3.2.9" ;
+    lgo:interprets lg:ES-LSSI-art22-2 , lg:EU-2002-58-art5-3 , lg:EU-2016-679-art7-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalMechanism ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.aepd.es/guias/guia-cookies.html"^^xsd:anyURI ;
+    rdfs:comment "Users must be able to withdraw consent at any time, as easily as they gave it, for example through simple, permanent access to the cookie settings; the cookie policy must say how to withdraw consent and delete cookies."@en .
+
+lg:IE-DPC-COOKIES
+    a lgo:ExternalReference , lgo:Guidance ;
+    dcterms:date "2020-04-01"^^xsd:date ;
+    dcterms:publisher "Data Protection Commission (DPC), Ireland" ;
+    dcterms:title "Guidance note on cookies and other tracking technologies" ;
+    eli:date_document "2020-04-01"^^xsd:date ;
+    eli:title "Guidance note on cookies and other tracking technologies"@en ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:IE ;
+    lgo:linkOnlyReason "Irish state works are in copyright (Copyright and Related Rights Act 2000, s. 191) and no reuse notice was found, so its points are stated in our words and the note is linked" ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:shortName "DPC guidance note on cookies" ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    lgo:supports lg:IE-SI-336-2011-r5-3 ;
+    rdfs:comment "Guidance, not binding text: how the Irish Data Protection Commission applies S.I. No. 336 of 2011 and the GDPR to cookies (April 2020)."@en .
+
+lg:IE-DPC-cookies-analytics-consent
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Do analytics cookies require consent?'" ;
+    lgo:interprets lg:EU-2002-58-art5-3 , lg:EU-2016-679-art4-11 , lg:IE-SI-336-2011-r5-3 ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Analytics cookies, used to measure a website (unique visitors, pages viewed), require consent."@en .
+
+lg:IE-DPC-cookies-analytics-low-risk
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Do analytics cookies require consent?'" ;
+    lgo:regulates lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Following the Article 29 Working Party, first-party analytics limited to aggregated statistics are unlikely to be a privacy risk where the site explains them clearly, has adequate safeguards and offers a user-friendly way to opt out."@en .
+
+lg:IE-DPC-cookies-banner-reject
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Requirements for cookie banners'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "A banner that only offers 'accept' (such as 'OK, got it!' or 'I understand'), with no way to reject or to get more detail, does not obtain valid consent."@en .
+
+lg:IE-DPC-cookies-browser-settings
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Can you rely on the user's browser settings to infer consent?'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "As a rule, a browser's default settings that allow cookies are not the user's consent."@en .
+
+lg:IE-DPC-cookies-consent-six-months
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Withdrawal of consent'" ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Where a cookie stores the user's consent, the user should be asked to confirm it again within six months."@en .
+
+lg:IE-DPC-cookies-equal-prominence
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'How do you obtain consent in practice?'" ;
+    lgo:interprets lg:EU-2002-58-art5-3 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "A banner must not nudge users towards accepting: an 'accept' button needs a 'reject' option of equal prominence, or an equally prominent option to manage cookies by type and purpose."@en .
+
+lg:IE-DPC-cookies-no-bundling
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Can you obtain consent for multiple purposes at the same time?'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 , lg:EU-2016-679-art7-4 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Consent may not be bundled for several purposes; the first layer should say for which specific purposes cookies are used."@en .
+
+lg:IE-DPC-cookies-no-implied
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Can you use implied consent for the use of cookies and tracking technologies?'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Consent cannot be implied: a banner saying that continuing to use, click or scroll the site counts as consent is not allowed."@en .
+
+lg:IE-DPC-cookies-no-pre-checked
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Can you obtain consent for multiple purposes at the same time?'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Pre-checked boxes, sliders or other controls switched on by default do not signal consent."@en .
+
+lg:IE-DPC-cookies-reject-info
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Requirements for cookie banners'" ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "At the least, the banner must let the user reject non-necessary cookies or ask for more information about them."@en .
+
+lg:IE-DPC-cookies-scrolling
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Can you use implied consent for the use of cookies and tracking technologies?'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 , lg:EU-2016-679-art7-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "A user who merely scrolls or clicks an element cannot be assumed to have read the banner, unless the site can show clearly that they engaged with it and consented unambiguously."@en .
+
+lg:IE-DPC-cookies-strictly-necessary-ex1
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, Example 1" ;
+    lgo:interprets lg:IE-SI-336-2011-r5-5 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Session cookies for a shopping basket, expiring with the session, and cookies recording the user's language or country choice are strictly necessary and need no consent."@en .
+
+lg:IE-DPC-cookies-strictly-necessary-ex3
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, Example 3" ;
+    lgo:interprets lg:IE-SI-336-2011-r5-5 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Cookies for a customer-service chatbot are not strictly necessary for the site and may only be set once the person asks to use the chat."@en .
+
+lg:IE-DPC-cookies-withdraw-easy
+    a lgo:Provision ;
+    eli:is_part_of lg:IE-DPC-COOKIES ;
+    lgo:citation "DPC guidance note on cookies, 'Withdrawal of consent'" ;
+    lgo:interprets lg:EU-2016-679-art7-3 , lg:IE-SI-336-2011-r5-4 ;
+    lgo:regulates lgv:Consent ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalMechanism ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.dataprotection.ie/en/dpc-guidance/guidance-cookies-and-other-tracking-technologies"^^xsd:anyURI ;
+    rdfs:comment "Withdrawing consent must be as easy as giving it, and consent to cookies may not be tied to other purposes or to the terms of a contract."@en .
+
+lg:NL-AP-COOKIEBANNERS
+    a lgo:ExternalReference , lgo:Guidance ;
+    dcterms:publisher "Autoriteit Persoonsgegevens (AP)" ;
+    dcterms:title "Vuistregels heldere cookiebanners" ;
+    eli:title "Rules of thumb for clear cookie banners (AP)"@en , "Vuistregels heldere cookiebanners"@nl ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:NL ;
+    lgo:linkOnlyReason "regulator's web page; not checked against a reuse notice, so its points are stated in our words and the page is linked" ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:shortName "AP, Vuistregels heldere cookiebanners" ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    lgo:supports lg:NL-TW-art11-7a-1 ;
+    rdfs:comment "Guidance, not binding text: the Dutch data protection authority's rules of thumb for clear cookie banners."@en .
+
+lg:NL-AP-COOKIEBANNERS-analytics-exempt
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, 'Functionele en beperkt analytische cookies'" ;
+    lgo:regulates lgv:LawfulBasis , lgv:TerminalEquipmentAccess ;
+    lgo:requiresDisclosureOf lgv:ProcessingPurposes ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Functional cookies and analytics cookies with limited impact need no consent; their processing rests on legitimate interest, and visitors must be informed and able to object easily."@en .
+
+lg:NL-AP-COOKIEBANNERS-consent-required
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, 'Tracking cookies en analytische cookies met impact'" ;
+    lgo:interprets lg:EU-2002-58-art5-3 , lg:EU-2016-679-art4-11 , lg:EU-2016-679-art7-1 , lg:NL-TW-art11-7a-1 ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Tracking cookies, similar tracking techniques and analytics cookies with more than a slight privacy impact need consent first, for example through a banner; the visitor must be properly informed, and consent must be free, specific and unambiguous."@en .
+
+lg:NL-AP-COOKIEBANNERS-no-processing-early
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, 'Let op'" ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "No personal data may be processed with consent-requiring cookies before the visitor has made a choice in the banner."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr2-all-reject
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 2, 'Bied een Alles weigeren-optie aan'" ;
+    lgo:interprets lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "A banner with an 'accept all' button on its first layer must also have an equivalent 'reject all' button."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr2-dark-patterns
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 2" ;
+    lgo:interprets lg:EU-2016-679-art4-11 , lg:EU-2016-679-art7-4 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Design that steers visitors towards accepting makes refusing difficult, and consent given that way is not free and unambiguous."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr2-no-pre-ticked
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 2, 'Zet vinkjes of schuifjes niet vooraf aan'" ;
+    lgo:interprets lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "No pre-ticked boxes or switches, on the first layer or any further layer: the visitor must make an active choice."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr2-reject-clicks
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 2, 'Vraag geen extra bevestiging bij weigeren'" ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Refusing must not take more clicks than accepting; for example, no extra confirmation when someone refuses."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr3-accessible
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 3" ;
+    lgo:interprets lg:EU-2016-679-art7-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalMechanism ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Withdrawing consent must always be easy to reach, also outside the banner, for example through a floating button that stays on screen or a control on the cookie policy page."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr3-withdraw
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 3" ;
+    lgo:interprets lg:EU-2016-679-art7-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalMechanism ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Visitors must be able to change their choice or withdraw consent easily later."@en .
+
+lg:NL-AP-COOKIEBANNERS-vr4-objection
+    a lgo:Provision ;
+    eli:is_part_of lg:NL-AP-COOKIEBANNERS ;
+    lgo:citation "AP, Vuistregels heldere cookiebanners, Vuistregel 4" ;
+    lgo:interprets lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/vuistregels-heldere-cookiebanners"^^xsd:anyURI ;
+    rdfs:comment "Where cookies rest on legitimate interest (functional or limited analytics), no prior consent is asked, but visitors have the right to object; consent and objection are kept apart."@en .
+
 lg:ref-cnil-google-cookie-injunction-closure
     a lgo:ExternalReference ;
     dcterms:date "2023-07-13"^^xsd:date ;

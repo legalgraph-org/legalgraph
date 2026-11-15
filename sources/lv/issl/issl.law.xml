@@ -27,4 +27,9 @@
     </paragraph>
     <paragraph num="(2)" lga:provision="LV-ISSL-art4-2" lga:citation="4. pants (2) ISSL" lga:url="https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums" lga:regulates="PriceTransparency" lga:implements="EU-2000-31-art5-2" lga:requires="VatStatus DeliveryCosts">Ja tiek norādīta cena, tad pakalpojuma sniedzējs to norāda tā, lai cena būtu nepārprotama un skaidri salasāma, un sniedz informāciju par to, vai cenā ir ietverti maksājamie nodokļi un preces piegādes izmaksas.</paragraph>
   </section>
+
+  <section num="7.1.pants" title="Informācijas uzglabāšana galiekārtā" source="issl-7_1.fragment.html">
+    <paragraph num="(1)" lga:provision="LV-ISSL-art7-1-1" lga:citation="7.1 pants (1) ISSL" lga:url="https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Informācijas uzglabāšana abonenta vai lietotāja galiekārtā vai piekļuves iegūšana galiekārtā uzglabātajai informācijai ir atļauta, ja attiecīgais abonents vai lietotājs ir devis savu piekrišanu pēc tam, kad saņēmis skaidru un visaptverošu informāciju par iepriekšminētās apstrādes mērķi saskaņā ar Fizisko personu datu aizsardzības likumu.</paragraph>
+    <paragraph num="(2)" lga:provision="LV-ISSL-art7-1-2" lga:citation="7.1 pants (2) ISSL" lga:url="https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Šā panta pirmajā daļā minētā piekrišana nav nepieciešama, ja informācijas uzglabāšana galiekārtā vai piekļuves iegūšana galiekārtā uzglabātajai informācijai ir nepieciešama informācijas aprites nodrošināšanai elektronisko sakaru tīklā vai starpniecības pakalpojumu sniedzējam, lai sniegtu abonenta vai lietotāja pieprasīto pakalpojumu.</paragraph>
+  </section>
 </law>

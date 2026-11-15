@@ -45,13 +45,23 @@ lg:DE-LGM-2022-0120-outcome-2 a lgo:Outcome ;
 
 lg:DE-LGM-2023-0330 lgo:caseNumber "4 O 13063/22" ;
     lgo:illustrates lg:EU-R-lawful-basis ;
-    rdfs:comment "The other side of the Google Fonts wave: a private person had a crawler visit websites with Google Fonts and then sent warning letters (by his own account at least 100,000) asking €170 each. On the website operator's action, the court declared he had neither an injunction nor a damages claim: a crawler's visit affects no one personally, and provoking a breach to claim from it is an abuse of rights (§ 242 BGB). It did not decide whether dynamic Google Fonts breached the GDPR."@en .
+    rdfs:comment "The other side of the service-address question: a US LLC's Impressum gave an address where, the plaintiff said, there was only a letterbox (Briefkastenadresse), and the court held § 5 Abs. 1 Nr. 1 TMG (the predecessor of § 5 DDG) satisfied. The provision asks for the address where the provider is established, not for physical business premises: unlike the anti-deception rule of § 5a(3) No. 2 UWG, it is meant only to enable contact. Contrast BGH V ZR 210/22, where an address that merely forwards mail was not a ladungsfähige Anschrift for bringing an action. On appeal the Regional Court's judgment was amended and the action dismissed; the defendant's counterclaim succeeded in part; no appeal on points of law (Revision) was allowed."@en .
 
 lg:DE-BGH-2020-0528 lgo:caseNumber "I ZR 7/16" ;
     lgo:ecli "ECLI:DE:BGH:2020:280520UIZR7.16.0" ;
     lgo:follows lg:CJEU-C-673-17 ;
     lgo:illustrates lg:DE-R-cookie-consent ;
     rdfs:comment "Planet49 in Germany: after the Court of Justice's ruling in the same case, the Federal Court of Justice read the German law then in force (§ 15(3) TMG) in line with Article 5(3) of the ePrivacy Directive: cookies for advertising profiles need consent, and a pre-ticked box is none. The consumer association's injunction against the operator of the online lottery was upheld."@en .
+
+lg:DE-BGH-2023-0707 lgo:caseNumber "V ZR 210/22" ;
+    lgo:ecli "ECLI:DE:BGH:2023:070723UVZR210.22.0" ;
+    lgo:illustrates lg:DE-R-impressum ;
+    rdfs:comment "Not an Impressum decision: it decides § 253 Abs. 2 Nr. 1 ZPO, where a proper action needs the plaintiff's ladungsfähige Anschrift, and holds that the address of a postal service provider that merely forwards mail is not one — the addressee cannot actually be reached there (Rn. 9–10). It is the Federal Court's statement of the 'serviceable address' standard that the § 5 DDG provider-address requirement tracks; the revision was dismissed and the action stayed inadmissible. German Impressum case law on c/o and service addresses: OLG Frankfurt 6 U 150/19 is in the graph (Briefkastenadresse sufficed for § 5 TMG); LG Frankfurt 2-30 O 147/20 and OLG München 29 U 8/17 are not: no official text of either was found (LaReDa has no such order under the LG docket, and Bayern.Recht does not publish the München decision)."@en .
+
+lg:DE-OLGHE-2021-0218 lgo:caseNumber "6 U 150/19" ;
+    lgo:ecli "ECLI:DE:OLGHE:2021:0218.6U150.19.00" ;
+    lgo:illustrates lg:DE-R-impressum ;
+    rdfs:comment "The other side of the service-address question: a US LLC's Impressum gave an address where, the plaintiff said, there was only a letterbox (Briefkastenadresse), and the court held § 5 Abs. 1 Nr. 1 TMG (the predecessor of § 5 DDG) satisfied. The provision asks for the address where the provider is established, not for physical business premises: unlike the anti-deception rule of § 5a(3) No. 2 UWG, it is meant only to enable contact. Contrast BGH V ZR 210/22, where an address that merely forwards mail was not a ladungsfähige Anschrift for bringing an action. On appeal the Regional Court's judgment was amended and the action dismissed; the defendant's counterclaim succeeded in part; no appeal on points of law (Revision) was allowed."@en .
 
 lg:DE-BGH-2011-0210 lgo:caseNumber "I ZR 164/09" ;
     lgo:ecli "ECLI:DE:BGH:2011:100211UIZR164.09.0" ;

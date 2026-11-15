@@ -16,3 +16,18 @@ lg:LU-LOI-2000-08-14 a lgo:LegalAct ;
     lgo:jurisdiction lg:LU ;
     eli:transposes lg:EU-2000-31 ;
     lgo:reviewStatus lgv:SourceChecked .
+
+# LU: art. 4(3)(e) of the law of 30 May 2005 on privacy in the electronic
+# communications sector — the storage-and-access rule (ePrivacy Directive
+# Art. 5(3) transposition), on the consent model.
+
+lg:LU-LOI-2005-05-30 a lgo:LegalAct ;
+    eli:title "Loi modifiée du 30 mai 2005 concernant la protection de la vie privée dans le secteur des communications électroniques"@fr , "Amended Law of 30 May 2005 on the protection of privacy in the electronic communications sector"@en ;
+    lgo:shortName "Loi communications électroniques" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:LU ;
+    lgo:sourceUrl "https://legilux.public.lu/eli/etat/leg/loi/2005/05/30/n4/consolide"^^xsd:anyURI ;
+    eli:id_local "Mémorial A n° 112 du 8 juin 2005" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 4(3)(e) permits storing information on, or accessing information already stored on, a subscriber's or user's terminal equipment only where the subscriber or user has given their accord after receiving clear and complete information, inter alia on the purposes of the processing; the same point excepts transmission-only storage/access and access strictly necessary for an expressly requested information-society service. Consent model — accord, not mere refusal."@en .

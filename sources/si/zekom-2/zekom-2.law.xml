@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o elektronskih komunikacijah (ZEKom-2, Ur. l. RS 130/22), 225. člen
+  ("piškotki"), written in schemas/law.xsd from the official pisrs.si
+  consolidated text (neprečiščeno besedilo št. 2). The words are the Slovenian
+  legislature's; only the structure is ours. 225. člen is the storage-and-
+  access rule — the transposition of ePrivacy Directive 2002/58/EC Art. 5(3),
+  on the consent model ("privolitev"). Odstavka (4)–(5) (the data-protection-law
+  precedence clause and the Information Commissioner's inspection competence)
+  carry no website-obligation disclosure and are omitted. Slovenian is the
+  authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sl"
+     lga:act="SI-ZEKOM-2" lga:jurisdiction="SI" lga:act-type="Statute"
+     lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO8611">
+  <meta>
+    <title>Zakon o elektronskih komunikacijah (ZEKom-2)</title>
+    <date>2022-10-11</date>
+  </meta>
+
+  <section num="225. člen" title="(piškotki)" source="zekom2-npb2.pdf">
+    <paragraph num="(1)" lga:provision="SI-ZEKOM-2-art225-1" lga:citation="225. člen, 1. odst. ZEKom-2" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO8611" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Shranjevanje podatkov ali pridobivanje dostopa do podatkov, shranjenih v terminalski opremi naročnika ali uporabnika, je dovoljeno samo pod pogojem, da je naročnik ali uporabnik v to privolil potem, ko je bil predhodno jasno in izčrpno obveščen o upravljavcu in namenih obdelave teh podatkov v skladu s predpisi, ki urejajo varstvo osebnih podatkov.</paragraph>
+    <paragraph num="(2)" lga:provision="SI-ZEKOM-2-art225-2" lga:citation="225. člen, 2. odst. ZEKom-2" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO8611" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Ne glede na določbe prejšnjega odstavka je dovoljeno tehnično shranjevanje podatkov ali dostop do njih izključno zaradi prenosa sporočila po elektronskem komunikacijskem omrežju, ali če je to nujno potrebno za zagotovitev storitve informacijske družbe, ki jo naročnik ali uporabnik izrecno zahtevata.</paragraph>
+    <paragraph num="(3)" lga:provision="SI-ZEKOM-2-art225-3" lga:citation="225. člen, 3. odst. ZEKom-2" lga:url="https://pisrs.si/pregledPredpisa?id=ZAKO8611" lga:regulates="Consent">Če je tehnično izvedljivo in učinkovito ter v skladu s predpisi, ki urejajo varstvo osebnih podatkov, se šteje, da uporabnik lahko izrazi svojo privolitev iz prvega odstavka tega člena tudi z uporabo ustreznih nastavitev v brskalniku ali drugih aplikacijah. Privolitev uporabnika ali naročnika pomeni osebno privolitev v skladu s predpisi, ki urejajo varstvo osebnih podatkov.</paragraph>
+  </section>
+</law>

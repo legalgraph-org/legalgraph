@@ -108,7 +108,7 @@ lg:EU-2019-882-art4-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2019-882 ;
     lgo:citation "Art. 4(1) Directive (EU) 2019/882" ;
-    lgo:refersTo lg:EU-2019-882-art4-5 ;
+    lgo:refersTo lg:EU-2019-882-art4-3 , lg:EU-2019-882-art4-5 ;
     lgo:regulates lgv:Accessibility ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:EU-2019-882-source ;
@@ -136,10 +136,45 @@ lg:EU-2019-882-art4-1-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/deu"^^xsd:anyURI ;
     lgo:text "(1) Gemäß den Absätzen 2, 3 und 5 dieses Artikels und unbeschadet des Artikels 14 dieser Richtlinie gewährleisten die Mitgliedstaaten, dass die Wirtschaftsakteure nur Produkte in Verkehr bringen und nur Dienstleistungen erbringen, die die Barrierefreiheitsanforderungen in Anhang I erfüllen."@de .
 
+lg:EU-2019-882-art4-3
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2019-882 ;
+    lgo:citation "Art. 4(3) Directive (EU) 2019/882" ;
+    lgo:refersTo lg:EU-2019-882-art4-5 ;
+    lgo:regulates lgv:Accessibility ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2019-882-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[2]/ARTICLE[1]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng"^^xsd:anyURI .
+
+lg:EU-2019-882-art4-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2019-882-art4-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2019-882-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[2]/ARTICLE[1]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng"^^xsd:anyURI ;
+    lgo:text """3. Without prejudice to paragraph 5 of this Article, all services, except for urban and suburban transport services and regional transport services, shall comply with the accessibility requirements set out in Section III of Annex I.
+Without prejudice to paragraph 5 of this Article, all services shall comply with the accessibility requirements set out in Section IV of Annex I."""@en .
+
+lg:EU-2019-882-art4-3-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2019-882-art4-3-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2019-882-art4-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2019-882-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[2]/ARTICLE[1]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/dir/2019/882/oj/deu"^^xsd:anyURI ;
+    lgo:text """(3) Unbeschadet Absatz 5 dieses Artikels müssen alle Dienstleistungen mit Ausnahme von Stadt- und Vorortverkehrsdiensten sowie Regionalverkehrsdiensten die in Anhang I Abschnitt III festgelegten Barrierefreiheitsanforderungen erfüllen.
+Unbeschadet Absatz 5 dieses Artikels müssen alle Dienstleistungen die einschlägigen Barrierefreiheitsanforderungen, die in Anhang I Abschnitt IV festgelegt sind, erfüllen."""@de .
+
 lg:EU-2019-882-art4-5
     a lgo:Provision ;
     eli:is_part_of lg:EU-2019-882 ;
     lgo:citation "Art. 4(5) Directive (EU) 2019/882" ;
+    lgo:refersTo lg:EU-2019-882-art4-3 ;
     lgo:regulates lgv:Accessibility ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:EU-2019-882-source ;

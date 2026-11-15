@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Loi modifiée du 30 mai 2005 concernant la protection de la vie privée dans le
+  secteur des communications électroniques, art. 4, paragraphe (3), point e),
+  written in schemas/law.xsd from the Legilux consolidated text. The words are
+  the Luxembourg legislature's; only the structure is ours. Point e) is the
+  storage-and-access rule — the transposition of ePrivacy Directive 2002/58/EC
+  Art. 5(3), on the consent model ("donné son accord" after clear and complete
+  information). Points a)–d) of paragraph (3) cover interception, judicial
+  authorities, emergency numbers and professional recording and carry no
+  storage-and-access disclosure, so they are omitted. French is the authentic
+  language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="fr"
+     lga:act="LU-LOI-2005-05-30" lga:jurisdiction="LU" lga:act-type="Statute"
+     lga:url="https://legilux.public.lu/eli/etat/leg/loi/2005/05/30/n4/consolide">
+  <meta>
+    <title>Loi modifiée du 30 mai 2005 concernant la protection de la vie privée dans le secteur des communications électroniques</title>
+    <date>2005-05-30</date>
+  </meta>
+
+  <section num="Art. 4" title="Confidentialité des communications" source="loi-2005-05-30-p3e.legilux.html">
+    <paragraph lga:provision="LU-LOI-2005-05-30-art4-3e" lga:citation="art. 4, paragraphe (3), point e) loi du 30 mai 2005" lga:url="https://legilux.public.lu/eli/etat/leg/loi/2005/05/30/n4/consolide" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">(e) ne s’applique pas au stockage d’informations, ou l’obtention de l’accès à des informations déjà stockées, dans l’équipement terminal d’un abonné ou d’un utilisateur à condition que l’abonné ou l’utilisateur ait donné son accord, après avoir reçu une information claire et complète, entre autres sur les finalités du traitement. Les méthodes retenues pour fournir l’information et offrir le droit de refus devraient être les plus conviviales possibles. Lorsque cela est techniquement possible et effectif, l’accord de l’abonné ou de l’utilisateur peut être exprimé par l’utilisation des paramètres appropriés d’un navigateur ou d’une autre application. Cette disposition ne fait pas obstacle à un stockage ou à un accès techniques visant exclusivement à effectuer la transmission d’une communication par la voie d’un réseau de communications électroniques, ou strictement nécessaires au fournisseur pour la fourniture d’un service de la société de l’information expressément demandé par l’abonné ou l’utilisateur.</paragraph>
+  </section>
+</law>

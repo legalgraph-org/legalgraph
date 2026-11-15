@@ -14,10 +14,21 @@ originals:
     url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008847"
     fetch: html-fragment
     selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_5_TextContainer_5"
-    text_ignore: [".sr-only", ".onlyScreenreader"]
+    # title and #Title carry the date of the request ("Fassung vom …"), which changes daily.
+    text_ignore: [".sr-only", ".onlyScreenreader", "title", "#Title"]
     media_type: text/html
     notes:
       - "Consolidated version (Fassung vom 10.11.2026). The repeater id indexes the document's position in the section list, not the section number; if RIS reorders sections the hash check flags it and the selector must be re-picked."
     retrieved_on: 2026-11-08
     sha256: 87cd93013183dab88562aa9fc764b5046e99c584437edaa9d22e012ae536ccda
+  - file: fagg-konsolidiert.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008847"
+    fetch: file
+    media_type: text/html
+    # title and #Title carry the date of the request ("Fassung vom …"), which changes daily.
+    text_ignore: [".sr-only", ".onlyScreenreader", "title", "#Title"]
+    notes:
+      - "The whole consolidated act as RIS serves it (240 KB), kept for § 13a — the Rücktrittsfunktion (withdrawal-button) duty. The page repeats each sentence in a screen-reader rendering ('Absatz eins,' / 'Paragraph 13a,'); text_ignore drops it, the transcription follows the first occurrence."
+    retrieved_on: 2026-11-14
+    sha256: 6e4d45bdfd2c940315d9f54953d194e4cda4e769cb619b75f04798551b9a65d1
 annotated: fagg.law.xml

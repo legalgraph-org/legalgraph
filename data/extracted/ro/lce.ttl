@@ -18,7 +18,7 @@ lg:RO-LCE
     lgo:jurisdiction lg:RO ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-LCE-source ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI .
 
 lg:RO-LCE-art5-1
     a lgo:Provision ;
@@ -30,27 +30,27 @@ lg:RO-LCE-art5-1
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-LCE-source ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI .
 
 lg:RO-LCE-art5-1-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:RO-LCE-art5-1 ;
-    lgo:retrievedOn "2026-11-12"^^xsd:date ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
     lgo:sourceDocument lg:RO-LCE-source ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"^^xsd:anyURI ;
-    lgo:text """(1) Furnizorul de servicii are obligaţia de a pune la dispoziţie destinatarilor şi autorităţilor publice mijloace care să permită accesul facil, direct, permanent şi gratuit cel puţin la următoarele informaţii:
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI ;
+    lgo:text """(1) Furnizorul de servicii are obligația de a pune la dispoziție destinatarilor și autorităților publice mijloace care să permită accesul facil, direct, permanent și gratuit cel puțin la următoarele informații:
 a) numele sau denumirea furnizorului de servicii;
 b) domiciliul sau sediul furnizorului de servicii;
-c) numerele de telefon, fax, adresa de posta electronică şi orice alte date necesare contactarii furnizorului de servicii în mod direct şi efectiv;
-d) numărul de înmatriculare sau alte mijloace similare de identificare, în cazul în care furnizorul de servicii este înscris în registrul comerţului sau în alt registru public similar;
+c) numerele de telefon, fax, adresa de poștă electronică și orice alte date necesare contactării furnizorului de servicii în mod direct și efectiv;
+d) numărul de înmatriculare sau alte mijloace similare de identificare, în cazul în care furnizorul de servicii este înscris în registrul comerțului sau în alt registru public similar;
 e) codul de înregistrare fiscală;
-f) datele de identificare ale autorităţii competente, în cazul în care activitatea furnizorului de servicii este supusă unui regim de autorizare;
-g) titlul profesional şi statul în care a fost acordat, corpul profesional sau orice alt organism similar din care face parte, indicarea reglementărilor aplicabile profesiei respective în statul în care furnizorul de servicii este stabilit, precum şi a mijloacelor de acces la acestea, în cazul în care furnizorul de servicii este membru al unei profesii liberale;
-h) tarifele aferente serviciilor oferite, care trebuie indicate cu respectarea normelor privind comercializarea produselor şi serviciilor de piaţa, cu precizarea scutirii, includerii sau neincluderii taxei pe valoarea adăugată, precum şi a cuantumului acesteia;
-i) includerea sau neincluderea în preţ a cheltuielilor de livrare, precum şi valoarea acestora, dacă este cazul;
-j) orice alte informaţii pe care furnizorul de servicii este obligat să le pună la dispoziţie destinatarilor, în conformitate cu prevederile legale în vigoare."""@ro .
+f) datele de identificare ale autorității competente, în cazul în care activitatea furnizorului de servicii este supusă unui regim de autorizare;
+g) titlul profesional și statul în care a fost acordat, corpul profesional sau orice alt organism similar din care face parte, indicarea reglementărilor aplicabile profesiei respective în statul în care furnizorul de servicii este stabilit, precum și a mijloacelor de acces la acestea, în cazul în care furnizorul de servicii desfășoară o activitate profesională reglementată;
+h) tarifele aferente serviciilor oferite, care trebuie indicate cu respectarea normelor privind comercializarea produselor și serviciilor de piață, cu precizarea scutirii, includerii sau neincluderii taxei pe valoarea adăugată, precum și a cuantumului acesteia;
+i) includerea sau neincluderea în preț a cheltuielilor de livrare, precum și valoarea acestora, dacă este cazul;
+j) orice alte informații pe care furnizorul de servicii este obligat să le pună la dispoziție destinatarilor, în conformitate cu prevederile legale în vigoare."""@ro .
 
 lg:RO-LCE-art5-2
     a lgo:Provision ;
@@ -60,28 +60,48 @@ lg:RO-LCE-art5-2
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:RO-LCE-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"^^xsd:anyURI .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI .
 
 lg:RO-LCE-art5-2-q1
     a lgo:Quote ;
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:RO-LCE-art5-2 ;
-    lgo:retrievedOn "2026-11-12"^^xsd:date ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
     lgo:sourceDocument lg:RO-LCE-source ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"^^xsd:anyURI ;
-    lgo:text "(2) Obligaţia prevăzută la alin. (1) se considera îndeplinită în cazul în care furnizorul unui serviciu afişează aceste informaţii într-o formă clara, vizibil şi permanent, în interiorul paginii de web prin intermediul căreia este oferit serviciul respectiv, în condiţiile menţionate la alin. (1)."@ro .
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI ;
+    lgo:text "(2) Obligația prevăzută la alin. (1) se consideră îndeplinită în cazul în care furnizorul unui serviciu afișează aceste informații într-o formă clară, vizibil și permanent, în interiorul paginii de web prin intermediul căreia este oferit serviciul respectiv, în condițiile menționate la alin. (1)."@ro .
+
+lg:RO-LCE-art5-3
+    a lgo:Provision ;
+    eli:is_part_of lg:RO-LCE ;
+    lgo:citation "art. 5 alin. (3) Legea 365/2002" ;
+    lgo:regulates lgv:ProviderIdentification ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:RO-LCE-source ;
+    lgo:sourceElement "/law/section[1]/paragraph[3]" ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI .
+
+lg:RO-LCE-art5-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:RO-LCE-art5-3 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:RO-LCE-source ;
+    lgo:sourceElement "/law/section[1]/paragraph[3]" ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI ;
+    lgo:text "(3) Furnizorul de servicii are obligația de a se asigura că informațiile puse la dispoziție conform alin. (1) sunt actualizate și pot fi utilizate de autoritățile publice în vederea primirii oricăror comunicări potrivit legii."@ro .
 
 lg:RO-LCE-source
     a lgo:SourceDocument ;
     dcterms:language "ro"^^xsd:language ;
     lgo:annotatedFile "sources/ro/lce/lce.law.xml" ;
     lgo:authenticity lgv:Official ;
-    lgo:legalStatus "Consolidated form (M.Of. nr. 959 din 29 noiembrie 2006 republicare, forma consolidată). The main view (DetaliiDocument) rejects automated requests; the print view serves the same text."@en ;
+    lgo:legalStatus "Consolidated form (M.Of. nr. 959 din 29 noiembrie 2006 republicare, forma consolidată) incl. Legea nr. 50/2024 which added alin. (3). The print view (DetaliiDocumentAfis) serves the pre-2024 text — do not use it here. The main view rejects the default tool user agent, hence the browser header."@en ;
     lgo:licence lgv:OfficialWork ;
     lgo:licenceBasis "Art. 9 din Legea nr. 8/1996: official texts of a political, legislative, administrative or judicial nature are not protected by copyright" ;
     lgo:mediaType "text/html" ;
     lgo:repositoryPath "sources/ro/lce/lce-5.fragment.html" ;
-    lgo:retrievedOn "2026-11-12"^^xsd:date ;
-    lgo:sha256 "cc333a809f2267ab43273bf58b6df655f72d809cfd1d76f297389a4b4dba56b1" ;
-    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"^^xsd:anyURI .
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sha256 "90ba080a1e85524786016d861ab9e4ebc591ca2c0d994de1fdf60b716948e97c" ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/37075"^^xsd:anyURI .

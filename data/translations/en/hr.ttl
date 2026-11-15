@@ -50,6 +50,16 @@ lg:HR-ARPS-art22-4-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:HR-ARPS-art22-4-q1 .
 
+lg:HR-ZEK-76-22-art43-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "cafa81037907939f4b37029ec356b9afb0a30ae96bbadbd6027fdeafae4d36d7" ;
+    lgo:text "(4) The use of electronic communications networks to store data or to gain access to data already stored in the terminal equipment of an end user or user is permitted only where that end user or user has given their consent after receiving clear and complete information in accordance with the personal-data-protection rules, in particular on the purposes of processing. This does not prevent technical storage of data or access to data exclusively for the purpose of carrying out the transmission of a communication over an electronic communications network, or, where necessary, for providing information-society services at the express request of the end user or user."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:HR-ZEK-76-22-art43-4-q1 .
+
 lg:HR-ZET-art6-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

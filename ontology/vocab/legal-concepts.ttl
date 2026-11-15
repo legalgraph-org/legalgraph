@@ -564,6 +564,11 @@ lgv:PriorConsultation a lgo:LegalConcept ;
     skos:prefLabel "Prior consultation"@en , "Vorherige Konsultation"@de ;
     skos:definition "Consulting the supervisory authority before processing where the impact assessment shows a high risk the controller cannot mitigate (Article 36 GDPR)."@en .
 
+lgv:ServiceableAddress a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Serviceable address"@en , "Ladungsfähige Anschrift"@de ;
+    skos:definition "An address at which a person can actually be reached and served with documents. German courts read the imprint's address (§ 5 DDG, formerly § 5 TMG) as such an address; the BGH holds for § 253 ZPO that a mere mail-forwarding address is not one."@en .
+
 lgv:SecurityOfProcessing a lgo:LegalConcept ;
     skos:inScheme lgv:DataProtectionConcepts ;
     skos:prefLabel "Security of processing"@en , "Sicherheit der Verarbeitung"@de ;

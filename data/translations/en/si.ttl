@@ -10,6 +10,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:SI-ZEKOM-2-art225-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "803c5da279a82cbb1e5f59a72433ee9d8a3b809b2b0dc44c569381a07e1d63b3" ;
+    lgo:text "(1) The storage of data or the obtaining of access to data stored in the terminal equipment of a subscriber or user is permitted only on the condition that the subscriber or user has consented to it after having been previously clearly and comprehensively informed about the controller and the purposes of the processing of such data in accordance with the rules governing the protection of personal data."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZEKOM-2-art225-1-q1 .
+
+lg:SI-ZEKOM-2-art225-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ab4141bd944ef2eb18aafbea24efd4cf5bbf9e8ca6b91802db0ee1fe880b5e59" ;
+    lgo:text "(2) Notwithstanding the provisions of the preceding paragraph, technical storage of data or access to it is permitted exclusively for the purpose of transmitting a message over an electronic communications network, or where it is strictly necessary for the provision of an information-society service that the subscriber or user expressly requests."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZEKOM-2-art225-2-q1 .
+
+lg:SI-ZEKOM-2-art225-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "dffd97259225418129f9a83a16066aef8705b5b9e458a704d392c44aecfddac7" ;
+    lgo:text "(3) Where this is technically feasible and effective and in accordance with the rules governing the protection of personal data, the user may be considered to be able to express their consent under the first paragraph of this Article also through the use of appropriate settings in a browser or other applications. The consent of the user or subscriber constitutes personal consent in accordance with the rules governing the protection of personal data."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SI-ZEKOM-2-art225-3-q1 .
+
 lg:SI-ZEPT-art5-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

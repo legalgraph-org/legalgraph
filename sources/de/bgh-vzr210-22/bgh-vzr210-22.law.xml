@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BGH, Urteil vom 7. Juli 2023 – V ZR 210/22
+  (ECLI:DE:BGH:2023:070723UVZR210.22.0), the paragraphs the graph quotes, written in
+  schemas/law.xsd from the court's PDF. The words are the court's; only the structure is
+  ours. `legalgraph sources verify` checks each paragraph against the PDF's text.
+  This is not an Impressum decision: it decides § 253 Abs. 2 Nr. 1 ZPO (a proper action
+  needs the plaintiff's ladungsfähige Anschrift). It is kept because it states the
+  "serviceable address" standard that the § 5 DDG provider-address duty tracks.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-BGH-2023-0707" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&amp;v=1">
+  <meta>
+    <title>Bundesgerichtshof, Urteil vom 7. Juli 2023 – V ZR 210/22</title>
+    <date>2023-07-07</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="bgh-vzr210-22.pdf">
+    <paragraph lga:provision="DE-BGH-2023-0707-tenor-1" lga:citation="BGH V ZR 210/22, Tenor"
+      lga:regulates="ServiceableAddress" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&amp;v=1">Die Revision gegen das Urteil der 13. Zivilkammer des Landgerichts Frankfurt am Main vom 6. Oktober 2022 wird auf Kosten der Klägerin zurückgewiesen.</paragraph>
+  </section>
+
+  <section num="Leitsatz" title="Leitsatz" source="bgh-vzr210-22.pdf">
+    <paragraph lga:provision="DE-BGH-2023-0707-leitsatz-1" lga:citation="BGH V ZR 210/22, Leitsatz"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&amp;v=1" lga:regulates="ServiceableAddress">Eine ordnungsgemäße Klageerhebung setzt grundsätzlich die Angabe der ladungsfähigen Anschrift des Klägers voraus; die Adresse eines Postdienstleisters, der lediglich mit der Weiterleitung der an den Kläger gerichteten Post beauftragt ist, reicht hierfür nicht aus.</paragraph>
+  </section>
+
+  <section num="II. 5" title="Entscheidungsgründe" source="bgh-vzr210-22.pdf">
+    <paragraph lga:provision="DE-BGH-2023-0707-p5" lga:citation="BGH V ZR 210/22, Rn. 5"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&amp;v=1" lga:regulates="ServiceableAddress">Eine ordnungsgemäße Klageerhebung setzt grundsätzlich die Angabe der ladungsfähigen Anschrift des Klägers voraus; die Adresse eines Postdienstleisters, der lediglich mit der Weiterleitung der an den Kläger gerichteten Post beauftragt ist, reicht hierfür nicht aus.</paragraph>
+    <paragraph num="(1)" lga:provision="DE-BGH-2023-0707-p9-1" lga:citation="BGH V ZR 210/22, Rn. 9"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&amp;v=1" lga:regulates="ServiceableAddress">Die ladungsfähige Anschrift ist nicht jede Anschrift, unter der eine Zustellung an den Zustelladressaten möglich ist, sondern eine solche, unter der der Zustelladressat tatsächlich zu erreichen ist und die ernsthafte Möglichkeit der Übergabe eines zuzustellenden Schriftstückes an ihn selbst besteht.</paragraph>
+    <paragraph num="(2)" lga:provision="DE-BGH-2023-0707-p10-2" lga:citation="BGH V ZR 210/22, Rn. 10"
+      lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/V_ZS/2023/V_ZR_210-22.pdf?__blob=publicationFile&amp;v=1" lga:regulates="ServiceableAddress">Hiernach ist die Adresse des Postdienstleisters keine ladungsfähige Anschrift der Klägerin. Eine Zustellung nach § 177 ZPO durch Übergabe an die Klägerin scheidet unter der angegebenen Anschrift aus. Die Klägerin hält sich an der Adresse des Postdienstleisters nicht auf. Sie hat dort weder ihre Wohnung im Sinne ihres tatsächlichen Lebensmittelpunktes noch einen Geschäftsraum noch ist sie dort sonst anzutreffen.</paragraph>
+  </section>
+</law>

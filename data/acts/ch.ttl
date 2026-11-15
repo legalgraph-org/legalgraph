@@ -45,3 +45,33 @@ lg:CH-DSG
     eli:title "Federal Act on Data Protection (Data Protection Act, FADP)"@en ;
     eli:first_date_entry_in_force "2023-09-01"^^xsd:date ;
     rdfs:comment "The revised Swiss data protection law (often called nDSG or revFADP), in force since 1 September 2023. It applies wherever processing has effects in Switzerland. Fines of up to CHF 250,000 are imposed on the responsible individuals, not the company (Art. 60 to 63)."@en .
+
+# --- FMG (data/extracted/ch/fmg.ttl) ---------------------------------------------
+
+lg:CH-FMG
+    eli:title "Bundesgesetz über Fernmeldewesen (Fernmeldegesetz, FMG)"@de , "Federal Telecommunications Act (FMG)"@en ;
+    lgo:shortName "FMG" ;
+    eli:id_local "SR 784.10" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CH ;
+    eli:date_document "1997-04-30"^^xsd:date ;
+    eli:first_date_entry_in_force "1998-01-01"^^xsd:date ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/1997/2187_2187_2187/de"^^xsd:anyURI ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/1997/2187_2187_2187/en> ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Swiss telecommunications act (SR 784.10). Art. 45c is the Swiss cookie rule: processing data on users' devices by means of telecommunications transmission is allowed only for telecommunications services and billing, or if users are informed of the processing and its purpose and told they can refuse it — an opt-out model, unlike the EU's consent requirement."@en .
+
+# --- OR (data/extracted/ch/or.ttl) -----------------------------------------------
+
+lg:CH-OR
+    eli:title "Bundesgesetz betreffend die Ergänzung des Schweizerischen Zivilgesetzbuches (Fünfter Teil: Obligationenrecht)"@de , "Federal Act supplementing the Swiss Civil Code (Obligations Law, OR)"@en ;
+    lgo:shortName "OR" ;
+    eli:id_local "SR 220" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:CH ;
+    eli:date_document "1911-03-30"^^xsd:date ;
+    eli:first_date_entry_in_force "1911-12-31"^^xsd:date ;
+    lgo:sourceUrl "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de"^^xsd:anyURI ;
+    rdfs:seeAlso <https://www.fedlex.admin.ch/eli/cc/27/317_321_377/en> ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Swiss obligations law (SR 220). The Widerrufsrecht (right of withdrawal) in Art. 40a–40f applies only where the offer was made at the customer's workplace or home, in public transport or streets, at a promotional event tied to an excursion, or by telephone or comparable simultaneous oral means — an online purchase carries no statutory withdrawal right. Art. 40d requires the provider to inform the customer in writing or another text-provable form of the right, its form and period."@en .

@@ -1,0 +1,29 @@
+# OLG Frankfurt am Main, Urteil vom 18.02.2021 – 6 U 150/19
+# (ECLI:DE:OLGHE:2021:0218.6U150.19.00): the Impressum of a US LLC with a
+# Briefkastenadresse (postal box) was sufficient under § 5 Abs. 1 TMG — the
+# provision asks for the address where the provider is established but not a
+# physical business premises; its purpose is only to enable contact. The
+# counterpoint to the "ladungsfähige Anschrift" standard of BGH V ZR 210/22.
+# LaReDa (rv.hessenrecht.hessen.de, the Hessian
+# courts' official database) serves the decision through a JavaScript app;
+# the document page is rendered and the article holding the decision text is
+# kept, the paragraphs the graph quotes transcribed in schemas/law.xsd and
+# checked word for word.
+id: de/olg-frankfurt-6u150-19
+title: OLG Frankfurt am Main, Urteil vom 18.02.2021 – 6 U 150/19
+jurisdiction: DE
+language: de
+publisher: Oberlandesgericht Frankfurt am Main, LaReDa (rv.hessenrecht.hessen.de)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: court decisions are official works without copyright"
+originals:
+  - file: olg-frankfurt-6u150-19.html
+    url: https://www.rv.hessenrecht.hessen.de/bshe/document/LARE210000755
+    fetch: rendered
+    wait: "#DocView"
+    selector: "article.docbody"
+    media_type: text/html
+    retrieved_on: 2026-11-14
+    sha256: c57ad9f3c51d13ba287ddb8b819a0a9a276c68fc76deb3f71a60597018aef6ab
+annotated: olg-frankfurt-6u150-19.law.xml

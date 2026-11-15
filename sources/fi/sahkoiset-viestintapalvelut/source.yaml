@@ -1,14 +1,19 @@
-# Laki sähköisen viestinnän palveluista (917/2014), § 176: the general information duty —
+# Laki sähköisen viestinnän palveluista (917/2014): § 176 is the general information duty —
 # tietoyhteiskunnan palvelun tarjoaja keeps provider name, geographic address in the state of
 # establishment, e-mail and other rapid direct effective contact details, public-register entry
 # and business/organisation identifier, supervisory-authority contact where a licence or
 # registration is required, VAT identifier where applicable, and for regulated professions the
 # professional body, title, member state, and the professional rules — easily, directly and
 # continuously available to recipients and authorities. This is Finland's transposition of
-# e-Commerce Directive Art. 5. finlex.fi builds the consolidated act with JavaScript; tools/render
-# renders it (make render-install once).
+# e-Commerce Directive Art. 5. § 205 (chapter 24, direct marketing) is the cookie rule —
+# Finland's transposition of ePrivacy Directive Art. 5(3): storing cookies or other
+# service-usage data on the user's terminal equipment and using it is allowed for the
+# service provider only with the user's consent and after giving understandable and
+# comprehensive information about the purpose of the storage or use.
+# finlex.fi builds the consolidated act with JavaScript; tools/render renders it
+# (make render-install once).
 id: fi/sahkoiset-viestintapalvelut
-title: Laki sähköisen viestinnän palveluista 917/2014 (§ 176)
+title: Laki sähköisen viestinnän palveluista 917/2014 (§§ 176, 205)
 jurisdiction: FI
 language: fi
 publisher: Finlex, the Finnish statute database (Oikeusministeriö)
@@ -26,4 +31,14 @@ originals:
       - "Consolidated Finnish text of § 176 as finlex renders it. The Swedish parallel (Allmän informationsskyldighet) is on the same page under #part_7__chp_22__sec_176 in the sv view; Finnish is the authentic language."
     retrieved_on: 2026-11-14
     sha256: 47cfaa9ff26a6e9c14764a5b1ab6733cc2efc55278ac9af49d648ce4d8a91b63
+  - file: 917-2014-s205.finlex.html
+    url: "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"
+    fetch: rendered
+    wait: "h5#part_7__chp_24__sec_205"
+    selector: "section:has(> h5#part_7__chp_24__sec_205)"
+    media_type: text/html
+    notes:
+      - "Consolidated Finnish text of § 205 as finlex renders it, same page as the § 176 fragment."
+    retrieved_on: 2026-11-15
+    sha256: 623a26129748f10dfa2043f2c605e5a2c1e41a571696b4b08d7e5111991dee78
 annotated: sahkoiset-viestintapalvelut.law.xml

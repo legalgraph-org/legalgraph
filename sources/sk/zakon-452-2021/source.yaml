@@ -1,0 +1,31 @@
+# Zákon č. 452/2021 Z. z. o elektronických komunikáciách, § 109 ods. 8:
+# Slovakia's ePrivacy transposition — the storage-and-access rule. Anyone who
+# stores information in, or accesses information stored in, a user's terminal
+# equipment may do so only with the user's provable consent meeting the
+# requirements of the special regulation (the GDPR consent standard, per the
+# provision's own footnote). The consent duty does not apply to criminal-
+# procedure bodies and other state bodies, and technical storage/access is
+# excepted where its sole purpose is the transmission of a message or it is
+# strictly necessary for an expressly requested information-society service.
+# The fragment is cut from the static.slov-lex.sk consolidated version
+# (2026-08-18); footnote anchors are ignored. Slovak is the authentic
+# language.
+id: sk/zakon-452-2021
+title: Zákon č. 452/2021 Z. z. o elektronických komunikáciách (§ 109 ods. 8)
+jurisdiction: SK
+language: sk
+publisher: Slov-Lex, Ministerstvo spravodlivosti SR (static.slov-lex.sk)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 ods. 2 zákona č. 385/2000 Z. z. o autorskom práve: official texts of legislation are not copyright works"
+originals:
+  - file: zakon452-s109-o8.fragment.html
+    url: "https://static.slov-lex.sk/static/SK/ZZ/2021/452/20260818.html"
+    fetch: file
+    media_type: text/html
+    text_ignore: [".citacnyOdkazJednoduchy"]
+    notes:
+      - "Fragment cut from the static.slov-lex.sk consolidated version (v znení k 18.08.2026): div paragraf-109.odsek-8, the terminal-equipment storage/access rule. Later consolidations (01.01.2027) exist but were not yet in force on retrieval."
+    retrieved_on: 2026-11-15
+    sha256: 2e3065e1d99aa61b74cf212c964d08ca799f9f7668d47fdead9fbffc0231d54c
+annotated: zakon452.law.xml

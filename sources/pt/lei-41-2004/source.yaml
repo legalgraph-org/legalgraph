@@ -1,0 +1,27 @@
+# Lei n.º 41/2004, de 18 de agosto — the Portuguese transposition of the
+# ePrivacy Directive (2002/58/CE as amended by 2009/136/CE): art. 5.º
+# "Armazenamento e acesso à informação" is the storage-and-access rule, on the
+# consent model ("consentimento prévio"), as replaced by Lei n.º 46/2012.
+# diariodarepublica.pt is a JavaScript application; tools/render renders the
+# consolidated text and the whole act is kept as the original.
+id: pt/lei-41-2004
+title: Lei n.º 41/2004 (art. 5.º)
+jurisdiction: PT
+language: pt
+publisher: Diário da República (diariodarepublica.pt)
+kind: authored-xml
+licence: official-work
+licence_basis: "Código do Direito de Autor e dos Direitos Conexos art. 7: official documents are not protected by copyright"
+originals:
+  - file: lei-41-2004-art5.dre.html
+    url: "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-106523049"
+    # diariodarepublica.pt builds the text with JavaScript: tools/render renders it (make render-install once).
+    fetch: rendered
+    wait: "text=Armazenamento e acesso"
+    selector: "div.fragmento-full-width:-soup-contains(\"Artigo 5.º\")"
+    media_type: text/html
+    notes:
+      - "Fragment cut from the Diário da República consolidated page: art. 5.º as amended by Lei 46/2012."
+    retrieved_on: 2026-11-15
+    sha256: aa4736ac0f0fca33d2c7b123dcc0f6975621b7baba8dd10ec1c15dd27e7b5e4c
+annotated: lei-41-2004.law.xml

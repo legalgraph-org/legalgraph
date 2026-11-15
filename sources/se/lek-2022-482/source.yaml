@@ -1,0 +1,27 @@
+# Lag (2022:482) om elektronisk kommunikation (LEK): 9 kap. 28 § is the
+# storage-and-access rule — Sweden's transposition of ePrivacy Directive
+# art. 5(3), on the consent model. The provision does not use the word
+# "cookie": it covers any data stored in or retrieved from a subscriber's or
+# user's terminal equipment, with information about the purpose of the
+# processing and consent having the meaning they have in the GDPR (1 kap.
+# 8 §); the second paragraph excepts transmission-only storage/access and
+# access strictly necessary for a service at the user's or subscriber's
+# express request. LEK replaced lag (2003:389) on 3 June 2022.
+id: se/lek-2022-482
+title: Lag (2022:482) om elektronisk kommunikation (9 kap. 28 §)
+jurisdiction: SE
+language: sv
+publisher: Riksdagen (Sveriges riksdag, Svensk författningssamling)
+kind: authored-xml
+licence: official-work
+licence_basis: "9 § upphovsrättslagen: statutes and public authority decisions are not protected by copyright"
+originals:
+  - file: lek-28.fragment.html
+    url: "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2022482-om-elektronisk-kommunikation_sfs-2022-482/"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the riksdagen full-text page: 9 kap. 28 §, the storage-and-access rule. The page carries the current consolidated text including later amendments (Lag 2022:1086, 2026:1302)."
+    retrieved_on: 2026-11-15
+    sha256: 6a1145220225e008cdfcabccc0d6e6102bdf0ec1188d007fb1914cc9bf2e63ea
+annotated: lek.law.xml

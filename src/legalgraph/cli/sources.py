@@ -162,3 +162,46 @@ def sources_extract(ids: tuple[str, ...], check: bool) -> None:
         raise click.ClickException(f"{len(stale)} generated file(s) out of date.")
     if check:
         click.echo("✔ Generated files are up to date.")
+
+
+@sources.command("local")
+@click.argument("ids", nargs=-1)
+def sources_local(ids: tuple[str, ...]) -> None:
+    """Download the originals of link-only guidance into sources/.local/ (git-ignored), to check
+    their findings against: never committed, never published.
+
+    The copy that was read (the SHA-256 in sources/link-only.yaml) is kept; when the publisher now
+    serves something else, it is saved next to it as <name>.latest<ext> for the findings to be
+    re-read."""
+    try:
+        entries = [e for e in law_sources.parse_link_only() if e.local_copy and (not ids or e.id in ids)]
+    except law_sources.SourceError as error:
+        raise click.ClickException(str(error)) from error
+    changed = sum(local_copy(entry) for entry in entries)
+    if changed:
+        raise click.ClickException(f"{changed} guidance document(s) changed since they were read.")
+
+
+def local_copy(entry: law_sources.LinkOnly) -> bool:
+    """Fetch one entry's original; True when the publisher now serves a different version."""
+    copy = entry.local_copy
+    assert copy is not None
+    try:
+        served = law_sources.download(copy.url)
+    except OSError as error:
+        click.echo(f"- {entry.id}: skip ({error})")
+        return False
+    target = law_sources.LOCAL_DIR / entry.id / copy.file
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if not (target.exists() and law_sources.sha256(target.read_bytes()) == copy.sha256):
+        if law_sources.sha256(served) != copy.sha256:
+            click.echo(f"✘ {entry.id}: no copy of the version read, and the publisher serves another", err=True)
+            target.with_name(f"{target.stem}.latest{target.suffix}").write_bytes(served)
+            return True
+        target.write_bytes(served)
+    if law_sources.same_version(target.read_bytes(), served):
+        click.echo(f"✔ {entry.id}: {target.relative_to(law_sources.SOURCES_DIR.parent)} is the version read")
+        return False
+    target.with_name(f"{target.stem}.latest{target.suffix}").write_bytes(served)
+    click.echo(f"✘ {entry.id}: the publisher now serves different text; compare with {target.stem}.latest", err=True)
+    return True

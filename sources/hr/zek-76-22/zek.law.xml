@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zakon o elektroničkim komunikacijama (ZEK, NN 76/2022), članak 43. stavak 4,
+  written in schemas/law.xsd from the Narodne novine gazette text. The words
+  are the Croatian legislature's; only the structure is ours. Stavak 4 is the
+  storage-and-access rule — the transposition of ePrivacy Directive 2002/58/EC
+  Art. 5(3), on the consent model ("privola"). Stavci (1)–(3) of članak 43.
+  (secrecy of communications and traffic data, recording exceptions) carry no
+  website-obligation disclosure for this rule and are omitted. Croatian is the
+  authentic language; the Act has no official English version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="hr"
+     lga:act="HR-ZEK-76-22" lga:jurisdiction="HR" lga:act-type="Statute"
+     lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_07_76_1116.html">
+  <meta>
+    <title>Zakon o elektroničkim komunikacijama</title>
+    <date>2022-07-12</date>
+  </meta>
+
+  <section num="Članak 43." title="Tajnost komunikacija" source="zek-43.fragment.html">
+    <paragraph num="(4)" lga:provision="HR-ZEK-76-22-art43-4" lga:citation="članak 43. stavak 4 ZEK" lga:url="https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_07_76_1116.html" lga:regulates="Consent TerminalEquipmentAccess TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Uporaba elektroničkih komunikacijskih mreža za pohranu podataka ili za pristup već pohranjenim podacima u terminalnoj opremi krajnjeg korisnika ili korisnika dopušteno je samo u slučaju kada je taj krajnji korisnik ili korisnik dao svoju privolu, nakon što je dobio jasnu i potpunu obavijest u skladu s propisima o zaštiti osobnih podataka, i to osobito o svrhama obrade podataka. Time se ne može spriječiti tehnička pohrana podataka ili pristup podacima isključivo u svrhu obavljanja prijenosa komunikacija putem elektroničke komunikacijske mreže, ili, ako je to nužno, radi pružanja usluga informacijskog društva na izričit zahtjev krajnjeg korisnika ili korisnika.</paragraph>
+  </section>
+</law>

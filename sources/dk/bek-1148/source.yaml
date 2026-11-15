@@ -1,0 +1,37 @@
+# Bekendtgørelse nr. 1148 af 09/12/2011 om krav til information og samtykke ved
+# lagring af eller adgang til oplysninger i slutbrugeres terminaludstyr
+# (Cookiebekendtgørelsen): Denmark's cookie rule — the transposition of ePrivacy
+# Directive Art. 5(3), issued under §§ 9 and 81(2) of lov nr. 169 af 3. marts
+# 2011 om elektroniske kommunikationsnet og -tjenester. § 3 prohibits storing
+# information in, or accessing information already stored in, an end user's
+# terminal equipment — including letting a third party do so — without the end
+# user's consent after receiving comprehensive information; stk. 2 sets the
+# minimum content of that information (clear language, purpose, identity of the
+# person arranging storage/access, an immediately available way to refuse or
+# withdraw consent with clear guidance, and permanent availability via a clearly
+# marked access point on the information/content service). § 4 is the exception:
+# storage/access solely to transmit a communication over an electronic
+# communications network, or strictly necessary to enable an explicitly
+# requested information-society service. § 5 penalises breach of § 3 with a
+# fine; § 6 entry into force 14.12.2011. retsinformation.dk is a React SPA;
+# tools/render renders it (make render-install once).
+id: dk/bek-1148
+title: Bekendtgørelse om krav til information og samtykke ved lagring af eller adgang til oplysninger i slutbrugeres terminaludstyr (BEK nr. 1148 af 09/12/2011)
+jurisdiction: DK
+language: da
+publisher: Retsinformation (Erhvervs- og Vækstministeriet / Civilstyrelsen), the official Danish legal-information service
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 9 ophavsretsloven: official works, including legislation, are not copyright works"
+originals:
+  - file: bek-1148.retsinformation.html
+    url: "https://www.retsinformation.dk/eli/lta/2011/1148"
+    fetch: rendered
+    wait: "#P1"
+    selector: "#restylingRoot"
+    media_type: text/html
+    notes:
+      - "Consolidated Danish text of the Cookiebekendtgørelse as retsinformation.dk renders it, current version (last consolidated 19/09/2013 per the document metadata). The selector keeps the document-content root holding the whole order; the metadata header above it is not part of the kept original."
+    retrieved_on: 2026-11-15
+    sha256: f358b02fe9ec94f9fa3a66dad284d2d38973af0d4f3e08bf3e6ed8492a148d60
+annotated: bek-1148.law.xml

@@ -10,6 +10,116 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:FR-CNIL-2020-091-p16-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c0083af441600c1eda7928275831cab2c635eca384d2b1addbc93dfd90bcf5d6" ;
+    lgo:text "{'lang': 'en', 'text': 'Under the combined provisions of Article 82 of the « Informatique et Libertés » Act and Article 4 of the GDPR, trackers requiring consent may not, subject to the exceptions laid down in those provisions, be used for writing or reading unless the user has manifested that will, freely, specifically, with information and unambiguously, by a statement or by a clear positive act.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p16-q1 .
+
+lg:FR-CNIL-2020-091-p17-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b3be650e2041c52d7cba6977f0a06cda5e369e6c891e3e1455d92b549383bb78" ;
+    lgo:text "{'lang': 'en', 'text': \"In order to determine whether consent is given freely, the GDPR requires that 'the utmost account be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract'. Under recital 42 of the GDPR, which clarifies the requirement of free consent in its Article 4, 'consent should not be considered to have been freely given if the data subject has no genuine free choice or is unable to refuse or withdraw consent without detriment'. In these circumstances, the Commission considers that making the provision of a service or access to a website conditional on the acceptance of operations of writing or reading on the user's terminal (the so-called 'cookie wall' practice) is liable, in some cases, to impair the freedom of consent.\"}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p17-q1 .
+
+lg:FR-CNIL-2020-091-p20-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "eb8181ba7809ae55aa4968a9d572d7a86502a7087aa3904d9b98751373be2fac" ;
+    lgo:text "{'lang': 'en', 'text': 'The Commission recalls that consent to read and write operations must be specific. To that end, consent to these operations cannot be validly obtained through a general acceptance of terms and conditions of use.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p20-q1 .
+
+lg:FR-CNIL-2020-091-p24-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "69cc8e75d6dee4f0c6a4ecf4548898a6b84ccf38b0369cb134191acd3ab92a9b" ;
+    lgo:text "{'lang': 'en', 'text': 'As a minimum, the provision of the following information to users, prior to collecting their consent, is necessary to ensure that consent is informed: the identity of the controller(s) of the read or write operations; the purposes of the read or write operations on the data; the manner of accepting or refusing trackers; the consequences attaching to refusal or acceptance of trackers; the existence of the right to withdraw consent.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p24-q1 .
+
+lg:FR-CNIL-2020-091-p27-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b26a96bc4fe5ad4185ab38160a48cbff9ec0c7ad6db2fcb1760e4ce8452eaa42" ;
+    lgo:text "{'lang': 'en', 'text': 'It therefore considers that continuing to browse a website, using a mobile application, or scrolling the page of a website or mobile application do not constitute clear positive actions amounting to valid consent. The Commission recalls that the Court of Justice of the European Union (CJEU) held in its Planet 49 judgment of 1 October 2019 (CJEU, 1 Oct. 2019, C-673/17) that the use of pre-ticked boxes cannot be considered a clear positive act aimed at giving consent. In the absence of consent expressed by a clear positive act, the user must be considered to have refused access to their terminal or the inscription of information in it.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p27-q1 .
+
+lg:FR-CNIL-2020-091-p30-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "70d1c43d1c189358c5a8aad54c916da4a5625f06228c174cad660d9d87c314a0" ;
+    lgo:text "{'lang': 'en', 'text': \"The Commission observes that if consent must be expressed through a positive action by the user, the user's refusal may be inferred from their silence. The expression of the user's refusal must therefore require no action on their part or must be capable of being expressed by an action presenting the same degree of simplicity as that allowing consent to be expressed.\"}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p30-q1 .
+
+lg:FR-CNIL-2020-091-p31-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "291b3cb79357948e71965522f9adc68042584cbb27022725282e45a53d526f4f" ;
+    lgo:text "{'lang': 'en', 'text': 'In addition, the Commission recalls that, in accordance with Article 7(3) of the GDPR, it must be as simple to withdraw consent as to give it. Users who have given their consent to the use of trackers must be able to withdraw it simply and at any time.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p31-q1 .
+
+lg:FR-CNIL-2020-091-p46-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "02ad6ba7e05064fa6223dc85bad19088c01e6e08f8d5daba8da34b71bcc82e2e" ;
+    lgo:text "{'lang': 'en', 'text': 'For the record, the requirement of consent does not apply to operations whose exclusive purpose is to allow or facilitate communication by electronic means or which are strictly necessary for the provision of an online communication service at the express request of users.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p46-q1 .
+
+lg:FR-CNIL-2020-091-p47-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bcce7e579f853fcdd6a41b7945363305eb96d91cb1e3242ced01e5e70a1f55fd" ;
+    lgo:text "{'lang': 'en', 'text': 'Trackers only fall outside the scope of the consent requirement where they are used exclusively for one or more purposes that can be linked to the exceptions laid down by Article 82 of the « Informatique et Libertés » Act.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p47-q1 .
+
+lg:FR-CNIL-2020-091-p48-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "584be68310e7a2b72df6e8179e6ec294d3f8db2f12c8e922827b5da1bf022485" ;
+    lgo:text "{'lang': 'en', 'text': 'The Commission specifies in this regard that the use of the same tracker for several purposes, some of which fall outside the scope of these exemptions, requires the prior collection of the consent of the data subjects, under the conditions recalled by these guidelines.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p48-q1 .
+
+lg:FR-CNIL-2020-091-p51-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1d9aa9cdc2da0323fd0811b87f8e48dbbac2397c5b55df1ab75135c245c721a5" ;
+    lgo:text "{'lang': 'en', 'text': 'In order to limit itself to what is strictly necessary for the provision of the service, the Commission emphasises that these trackers must have a purpose strictly limited to audience measurement on the site or application on the exclusive account of the publisher. These trackers must in particular not allow global tracking of the navigation of the person using different applications or browsing different websites. Likewise, these trackers must serve only to produce anonymous statistical data, and the personal data collected may not be cross-referenced with other processing operations nor transmitted to third parties, these different operations likewise not being necessary for the functioning of the service.'}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:FR-CNIL-2020-091-p51-q1 .
+
 lg:FR-CNIL-2020-092-p12-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

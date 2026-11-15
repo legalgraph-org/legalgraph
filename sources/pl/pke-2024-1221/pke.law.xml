@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ustawa z dnia 12 lipca 2024 r. — Prawo komunikacji elektronicznej (PKE),
+  Dz. U. 2024 poz. 1221, art. 399, written in schemas/law.xsd from the ISAP
+  consolidated text. The words are the Polish legislature's; only the
+  structure is ours. Art. 399 is the storage-and-access rule — the
+  transposition of ePrivacy Directive 2002/58/EC Art. 5(3), replacing art. 173
+  of the repealed Prawo telekomunikacyjne, on the consent model. Polish is the
+  authentic language; the Act has no official English version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="pl"
+     lga:act="PL-PKE-2024-1221" lga:jurisdiction="PL" lga:act-type="Statute"
+     lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html">
+  <meta>
+    <title>Ustawa z dnia 12 lipca 2024 r. — Prawo komunikacji elektronicznej</title>
+    <date>2024-07-12</date>
+  </meta>
+
+  <section num="Art. 399" title="Przechowywanie informacji lub uzyskiwanie dostępu do informacji" source="pke-399.fragment.html">
+    <paragraph num="1." lga:provision="PL-PKE-2024-1221-art399-1" lga:citation="art. 399 ust. 1 PKE" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="CookiePurposes">Przechowywanie informacji lub uzyskiwanie dostępu do informacji już przechowywanej w telekomunikacyjnym urządzeniu końcowym abonenta lub użytkownika końcowego jest dozwolone, pod warunkiem że:
+      <list>
+        <item num="1)" lga:requires="CookiePurposes">abonent lub użytkownik końcowy zostanie uprzednio poinformowany w sposób jednoznaczny, łatwy i zrozumiały, o:
+          <list>
+            <item num="a)">celu przechowywania i uzyskiwania dostępu do tej informacji,</item>
+            <item num="b)">możliwości określenia przez niego warunków przechowywania lub uzyskiwania dostępu do tej informacji za pomocą ustawień oprogramowania zainstalowanego w wykorzystywanym przez niego telekomunikacyjnym urządzeniu końcowym lub konfiguracji usługi;</item>
+          </list>
+        </item>
+        <item num="2)">abonent lub użytkownik końcowy, po otrzymaniu informacji, o których mowa w pkt 1, wyrazi na to zgodę;</item>
+        <item num="3)">przechowywana informacja lub uzyskiwanie do niej dostępu nie powoduje zmian konfiguracyjnych w telekomunikacyjnym urządzeniu końcowym użytkownika końcowego i oprogramowaniu zainstalowanym w tym urządzeniu.</item>
+      </list>
+    </paragraph>
+    <paragraph num="2." lga:provision="PL-PKE-2024-1221-art399-2" lga:citation="art. 399 ust. 2 PKE" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html" lga:regulates="Consent">Abonent lub użytkownik końcowy może wyrazić zgodę, o której mowa w ust. 1 pkt 2, za pomocą ustawień oprogramowania zainstalowanego w wykorzystywanym przez niego telekomunikacyjnym urządzeniu końcowym lub konfiguracji usługi.</paragraph>
+    <paragraph num="3." lga:provision="PL-PKE-2024-1221-art399-3" lga:citation="art. 399 ust. 3 PKE" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Warunków, o których mowa w ust. 1, nie stosuje się, jeżeli przechowywanie lub uzyskanie dostępu do informacji, o której mowa w ust. 1, jest konieczne do:
+      <list>
+        <item num="1)">wykonania transmisji komunikatu elektronicznego za pośrednictwem publicznej sieci telekomunikacyjnej lub</item>
+        <item num="2)">dostarczania usługi telekomunikacyjnej lub usługi świadczonej drogą elektroniczną, żądanej przez abonenta lub użytkownika końcowego.</item>
+      </list>
+    </paragraph>
+    <paragraph num="4." lga:provision="PL-PKE-2024-1221-art399-4" lga:citation="art. 399 ust. 4 PKE" lga:url="https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="CookiePurposes">Podmioty świadczące usługi telekomunikacyjne lub usługi drogą elektroniczną mogą instalować oprogramowanie w telekomunikacyjnym urządzeniu końcowym abonenta lub użytkownika końcowego przeznaczonym do korzystania z tych usług lub korzystać z tego oprogramowania, pod warunkiem że abonent lub użytkownik końcowy:
+      <list>
+        <item num="1)" lga:requires="CookiePurposes">przed instalacją oprogramowania zostanie poinformowany bezpośrednio, w sposób jednoznaczny, łatwy i zrozumiały, o celu, w jakim zostanie zainstalowane oprogramowanie, oraz sposobach korzystania przez podmiot świadczący usługi z tego oprogramowania;</item>
+        <item num="2)">zostanie poinformowany bezpośrednio, w sposób jednoznaczny, łatwy i zrozumiały, o sposobie usunięcia oprogramowania z telekomunikacyjnego urządzenia końcowego użytkownika;</item>
+        <item num="3)">przed instalacją oprogramowania wyrazi zgodę na jego instalację i używanie.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

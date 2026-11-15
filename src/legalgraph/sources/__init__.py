@@ -38,7 +38,8 @@ from legalgraph.sources.fetch import (
     same_saved_url,
     saved_url,
 )
-from legalgraph.sources.link_only import extract_link_only
+from legalgraph.sources.link_only import LinkOnly, extract_link_only, parse_link_only
+from legalgraph.sources.link_only_guidance import LOCAL_DIR, same_version
 from legalgraph.sources.model import Original, Source, SourceError, load_sources, parse_index, repo_path, sha256
 from legalgraph.sources.reading import reading_view
 from legalgraph.sources.render import render, render_lines
@@ -51,7 +52,9 @@ __all__ = [
     "LICENCES",
     "LINK_ONLY",
     "LINK_ONLY_OUTPUT",
+    "LOCAL_DIR",
     "SOURCES_DIR",
+    "LinkOnly",
     "Original",
     "Source",
     "SourceError",
@@ -64,6 +67,7 @@ __all__ = [
     "html_fragment",
     "load_sources",
     "parse_index",
+    "parse_link_only",
     "reading_view",
     "reannotate",
     "record_fetch",
@@ -72,6 +76,7 @@ __all__ = [
     "repo_path",
     "same_saved_url",
     "same_text",
+    "same_version",
     "saved_url",
     "sha256",
     "strip_annotations",

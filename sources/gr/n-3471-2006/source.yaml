@@ -1,0 +1,40 @@
+# Νόμος 3471/2006 (ΦΕΚ Α' 133/28.06.2006), «Προστασία δεδομένων προσωπικού
+# χαρακτήρα και της ιδιωτικής ζωής στον τομέα των ηλεκτρονικών επικοινωνιών»:
+# Greece's ePrivacy-sector act (transposes Directive 2002/58/EC). Άρθρο 4
+# παρ. 5 is the storage-and-access rule — as originally adopted it prohibited
+# storage and access outright, apart from transmission and what a requested
+# service strictly needs; art. 170 of Ν.
+# 4070/2012 (ΦΕΚ Α' 82/2012) replaced παρ. 5 with the current consent rule:
+# consent (συγκατάθεση) after clear and extensive information per art. 11(1)
+# of Ν. 2472/1997, consent possible via browser settings, plus the
+# transmission and strictly-necessary exceptions in the same paragraph. The
+# annotated words are the replacement text published in ΦΕΚ Α' 82/2012; the
+# 133/2006 issue is kept as the act's original publication. et.gr serves
+# Gazette issues as PDFs without a consolidated text; both PDFs carry proper
+# Unicode maps (no pdf_encoding needed, unlike ΦΕΚ Α' 116/2003).
+id: gr/n-3471-2006
+title: Νόμος 3471/2006 (άρθρο 4 παρ. 5)
+jurisdiction: GR
+language: el
+publisher: Εθνικό Τυπογραφείο (National Printing Office), Government Gazette
+kind: authored-xml
+licence: official-work
+licence_basis: "Ν. 2121/1993 άρθρο 2 παρ. 5: official texts expressing the authority of the State, in particular legislative, administrative and judicial texts, are not protected by copyright"
+originals:
+  - file: fek-a-133-2006.pdf
+    url: https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2006/20060100133.pdf
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "ΦΕΚ Α' 133/28.06.2006 as published; art. 4 παρ. 5 there is the pre-2012 wording (an outright prohibition with the two technical exceptions) — kept for provenance only, not quoted."
+    retrieved_on: 2026-11-15
+    sha256: ac9868f8256311552f6af3e0a5ef7c44fa66055332365ff3bdbaa17ed6770ae3
+  - file: fek-a-82-2012.pdf
+    url: https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2012/20120100082.pdf
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "ΦΕΚ Α' 82/2012 (Ν. 4070/2012); art. 170 replaces art. 4 παρ. 5 of Ν. 3471/2006 with the current consent text, quoted on page 2237. No later amendment touches art. 4 παρ. 5 (per the Hellenic DPA's codified text, which describes the same consent rule)."
+    retrieved_on: 2026-11-15
+    sha256: 7172f0f7cd80071335517312b28a8c694ebc6061bca63c7c6a6faf421c07b9b6
+annotated: n-3471-2006.law.xml

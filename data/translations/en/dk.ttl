@@ -68,3 +68,70 @@ lg:DK-227-2002-title-43b5bd22e148-en
     lgo:translatedProperty eli:title ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DK-227-2002 .
+
+lg:DK-BEK1148-s3-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f56fb46c7c2da80d885104ca8779ddbadd0a5714d2e536cbbfff9157d334b84a" ;
+    lgo:text "Natural or legal persons must not store information or gain access to information already stored on an end user's terminal equipment, or allow a third party to store information or gain access to information, unless the end user has given consent after receiving adequate information about the storage of or access to the information."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-BEK1148-s3-1-q1 .
+
+lg:DK-BEK1148-s3-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "df127ff618278c4b80c87b2a17c7b8d5f44f188e0bca465b4e51b274d9a18427" ;
+    lgo:text """Information within the meaning of sub-section 1 is adequate when it at a minimum
+1) appears in a clear, precise and easy-to-understand language or equivalent pictorial script,
+2) contains information about the purposes of the storage of or access to information in the end user's terminal equipment,
+3) contains information identifying every natural or legal person that arranges the storage of or access to the information,
+4) contains an immediately accessible means for the end user to refuse consent to or withdraw consent to the storage of or access to information, and clear, precise and easy-to-understand guidance on how the end user may use such a means, and
+5) is immediately accessible to the end user by being communicated to them in a comprehensive and clearly marked way. In addition, when storage of or access to information in the end user's terminal equipment takes place through an information and content service, the information must be permanently accessible to the end user through a direct and clearly marked access on the information and content service in question."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-BEK1148-s3-2-q1 .
+
+lg:DK-BEK1148-s4-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7ecc469156b1ebf0609d5df394956ab6351645559b91253561112c2f58c01da3" ;
+    lgo:text """Notwithstanding section 3, natural or legal persons may store information or gain access to information already stored on an end user's terminal equipment if
+1) the storage of or access to information serves only the purpose of transmitting communication over an electronic communications network, or
+2) the storage of or access to information is required to enable the provider of an information-society service expressly requested by the end user to provide that service."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-BEK1148-s4-1-q1 .
+
+lg:DK-BEK1148-s4-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3ed472253621e2b221edb8e1ed01f4e0d2880ce103da156729dc394e6fb20290" ;
+    lgo:text "The storage of or access to information in an end user's terminal equipment is required for the purposes of sub-section 1, no. 2, if the storage of or access to information is a technical precondition for being able to provide a service that functions in accordance with the service's purpose."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-BEK1148-s4-2-q1 .
+
+lg:DK-BEK1148-s5-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ac41e3f9bf1fe83e32c6c26fdfce0244e47ddffed8246447275ca6c769172a18" ;
+    lgo:text "Any person who contravenes section 3 is liable to a fine."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-BEK1148-s5-1-q1 .
+
+lg:DK-BEK1148-s5-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1d81212e48345a5d477c7f8e1450e06bc33fa51a5c2c93dbef6e5db8cd33b376" ;
+    lgo:text "Companies etc. (legal persons) may be held criminally liable under the rules in chapter 5 of the Penal Code."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DK-BEK1148-s5-2-q1 .

@@ -75,3 +75,16 @@ lg:CH-R-representative a lgo:Obligation ;
     lgo:requiresAction lgv:DesignateRepresentativeInSwitzerland ;
     lgo:requiresDisclosureOf lgv:ControllerRepresentative ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (Art. 45c FMG) ---
+
+lg:CH-R-device-access-information a lgo:Obligation ;
+    rdfs:label "Inform about cookies and similar, with the option to refuse"@en ;
+    rdfs:comment "Processing data on users' devices by telecommunication, such as cookies, local storage or pixels, is allowed only for telecommunication services and their billing, or if users are informed of the processing and its purpose and told that they can refuse it (Art. 45c FMG). An opt-out model: unlike the EU rule, no prior consent, and no exception for strictly necessary cookies beyond telecommunication services."@en ;
+    lgo:establishedBy lg:CH-FMG-art45c-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:CompetesOnTheSwissMarket , lgv:AccessesTerminalEquipment ;
+    lgo:requiresAction lgv:InformAboutDeviceAccessWithOptOut ;
+    lgo:reviewStatus lgv:Draft .

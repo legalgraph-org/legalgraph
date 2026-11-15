@@ -21,6 +21,94 @@ lg:DE-EinwV
     lgo:sourceDocument lg:DE-EinwV-source ;
     lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/"^^xsd:anyURI .
 
+lg:DE-EinwV-s1-2
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-EinwV ;
+    lgo:citation "§ 1 Abs. 2 EinwV" ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[4]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__1.html"^^xsd:anyURI .
+
+lg:DE-EinwV-s1-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-EinwV-s1-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[4]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__1.html"^^xsd:anyURI ;
+    lgo:text "(2) Der Anbieter von digitalen Diensten bleibt verantwortlich für die Erfüllung der Informationspflichten und für die Beachtung der Anforderungen an die Wirksamkeit der Einwilligung nach der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten, zum freien Datenverkehr und zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung) (ABl. L 119 vom 4.5.2016, S. 1; L 314 vom 22.11.2016, S. 72; L 127 vom 23.5.2018, S. 2; L 74 vom 4.3.2021, S. 35) in der jeweils geltenden Fassung."@de .
+
+lg:DE-EinwV-s18-1
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-EinwV ;
+    lgo:citation "§ 18 Abs. 1 EinwV" ;
+    lgo:regulates lgv:ConsentManagementService ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[24]/textdaten[1]/text[1]/Content[1]/P[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__18.html"^^xsd:anyURI .
+
+lg:DE-EinwV-s18-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-EinwV-s18-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[24]/textdaten[1]/text[1]/Content[1]/P[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__18.html"^^xsd:anyURI ;
+    lgo:text "(1) Die Einbindung von anerkannten Diensten zur Einwilligungsverwaltung durch Anbieter von digitalen Diensten erfolgt freiwillig."@de .
+
+lg:DE-EinwV-s18-2
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-EinwV ;
+    lgo:citation "§ 18 Abs. 2 EinwV" ;
+    lgo:refersTo lg:DE-TDDDG-s25-1 ;
+    lgo:regulates lgv:ConsentManagementService ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[24]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__18.html"^^xsd:anyURI .
+
+lg:DE-EinwV-s18-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-EinwV-s18-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[24]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__18.html"^^xsd:anyURI ;
+    lgo:text """(2) Anbieter von digitalen Diensten, die einen anerkannten Dienst zur Einwilligungsverwaltung einbinden und über diesen die Einstellungen der Endnutzer zu ihren Einwilligungen nach § 25 Absatz 1 des Telekommunikation-Digitale-Dienste-Datenschutz-Gesetzes nachfragen, sollen durch technische und organisatorische Maßnahmen nach dem Stand der Technik dafür Sorge tragen, dass
+1. die Einbindung eines anerkannten Dienstes zur Einwilligungsverwaltung durch den Endnutzer bei dem Aufruf ihres digitalen Dienstes berücksichtigt wird und
+2. überprüft wird, ob Einstellungen der Endnutzer zu den nachgefragten Einwilligungen des Anbieters von digitalen Diensten beim anerkannten Dienst zur Einwilligungsverwaltung verwaltet werden."""@de .
+
+lg:DE-EinwV-s18-3
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-EinwV ;
+    lgo:citation "§ 18 Abs. 3 EinwV" ;
+    lgo:refersTo lg:DE-TDDDG-s25-1 ;
+    lgo:regulates lgv:ConsentManagementService ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[24]/textdaten[1]/text[1]/Content[1]/P[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__18.html"^^xsd:anyURI .
+
+lg:DE-EinwV-s18-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-EinwV-s18-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[24]/textdaten[1]/text[1]/Content[1]/P[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__18.html"^^xsd:anyURI ;
+    lgo:text """(3) Anbieter von digitalen Diensten, die einen anerkannten Dienst zur Einwilligungsverwaltung einbinden, sollen
+1. es ermöglichen, dass die von ihnen nachgefragten Einwilligungen nach § 25 Absatz 1 des Telekommunikation-Digitale-Dienste-Datenschutz-Gesetzes und die hierzu getroffenen Einstellungen der Endnutzer durch den eingebundenen anerkannten Dienst zur Einwilligungsverwaltung gespeichert werden können,
+2. die Endnutzer an sichtbarer und geeigneter Stelle darauf hinweisen, dass der angebotene digitale Dienst anerkannte Dienste zur Einwilligungsverwaltung einbindet und die dort verwalteten Einstelllungen der Endnutzer berücksichtigt,
+3. mit dem anerkannten Dienst zur Einwilligungsverwaltung zur Umsetzung der Vorgaben des § 7 zusammenwirken und
+4. dem anerkannten Dienst zur Einwilligungsverwaltung die nach den Artikeln 7 und 12 bis 14 der Verordnung (EU) 2016/679 erforderlichen Informationen in einem maschinenlesbaren Format zur Verfügung stellen."""@de .
+
 lg:DE-EinwV-s19-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-EinwV ;
@@ -40,6 +128,47 @@ lg:DE-EinwV-s19-1-q1
     lgo:sourceElement "/dokumente/norm[25]/textdaten[1]/text[1]/Content[1]/P[1]" ;
     lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__19.html"^^xsd:anyURI ;
     lgo:text "(1) Anbieter von digitalen Diensten, die einen anerkannten Dienst zur Einwilligungsverwaltung einbinden, berücksichtigen die Einstellungen der Endnutzer. Sie weisen die Endnutzer, von denen sie keine Einwilligung über die Einbindung des anerkannten Dienstes zur Einwilligungsverwaltung und die Einstellungen der Endnutzer erhalten haben, bei Aufforderung zur Erteilung einer Einwilligung zugleich auf die Einstellungen des Endnutzers beim anerkannten Dienst zur Einwilligungsverwaltung hin."@de .
+
+lg:DE-EinwV-s19-2
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-EinwV ;
+    lgo:citation "§ 19 Abs. 2 EinwV" ;
+    lgo:refersTo lg:DE-EinwV-s19-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[25]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__19.html"^^xsd:anyURI .
+
+lg:DE-EinwV-s19-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-EinwV-s19-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[25]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__19.html"^^xsd:anyURI ;
+    lgo:text "(2) Anbieter von digitalen Diensten können einem vom Endnutzer in Anspruch genommenen anerkannten Dienst zur Einwilligungsverwaltung Einwilligungen des Endnutzers, die ihnen bereits vorliegen, übermitteln. Dabei sind zugleich die Informationen nach § 3 Absatz 3 mit dem Datum und der Uhrzeit der getätigten Einwilligung der Endnutzer zu übermitteln."@de .
+
+lg:DE-EinwV-s20
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-EinwV ;
+    lgo:citation "§ 20 EinwV" ;
+    lgo:regulates lgv:ConsentManagementService ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[26]/textdaten[1]/text[1]/Content[1]/P[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__20.html"^^xsd:anyURI .
+
+lg:DE-EinwV-s20-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-EinwV-s20 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-EinwV-source ;
+    lgo:sourceElement "/dokumente/norm[26]/textdaten[1]/text[1]/Content[1]/P[1]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/einwv/__20.html"^^xsd:anyURI ;
+    lgo:text "Anbieter von digitalen Diensten sowie Hersteller und Anbieter von Abruf- und Darstellungssoftware, die einen anerkannten Dienst zur Einwilligungsverwaltung einbinden, sollen nicht ohne sachlichen Grund darauf hinwirken, dass Endnutzer bestimmte anerkannte Dienste zur Einwilligungsverwaltung anwenden oder ausschließen."@de .
 
 lg:DE-EinwV-s3-2
     a lgo:Provision ;

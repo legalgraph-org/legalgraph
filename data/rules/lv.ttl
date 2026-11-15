@@ -138,3 +138,17 @@ lg:LV-R-media-ownership a lgo:Obligation ;
     lgo:partOfDisclosure lgv:MediaOwnerDisclosure ;
     lgo:requiresDisclosureOf lgv:OwnershipStructure ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:LV-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "Section 7.1 of the Information Society Services Law, not the Electronic Communications Law: consent after clear and comprehensive information, in particular on the purpose; exceptions in paragraph 2."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:LV-ISSL-art7-1-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:LV ;
+    lgo:appliesWhen lgv:EstablishedInLatvia , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

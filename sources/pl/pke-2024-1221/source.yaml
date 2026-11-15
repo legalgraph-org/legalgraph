@@ -1,0 +1,32 @@
+# Ustawa z dnia 12 lipca 2024 r. — Prawo komunikacji elektronicznej (PKE),
+# Dz. U. 2024 poz. 1221, in force 10 November 2024: art. 399 is the
+# storage-and-access rule — Poland's transposition of ePrivacy Directive
+# art. 5(3), replacing art. 173 of the repealed Prawo telekomunikacyjne
+# (2002/2004). On the consent model: prior clear, easy and understandable
+# information on the purpose of the storing/accessing and on the possibility
+# to set conditions via software settings or service configuration, then
+# consent (which may itself be expressed through those settings); ust. 3
+# excepts transmission-only storage/access and access strictly necessary for
+# an expressly requested telecom or e-service; ust. 4 covers installing or
+# using software on the subscriber's or user's terminal equipment. ISAP serves
+# the consolidated text as HTML through the official ELI API; one fragment per
+# article is kept.
+id: pl/pke-2024-1221
+title: Ustawa z dnia 12 lipca 2024 r. — Prawo komunikacji elektronicznej (art. 399)
+jurisdiction: PL
+language: pl
+publisher: ISAP, Kancelaria Sejmu (api.sejm.gov.pl)
+kind: authored-xml
+licence: official-work
+licence_basis: "Art. 4 ustawy o prawie autorskim i prawach pokrewnych: normative texts and official documents are not protected by copyright"
+originals:
+  - file: pke-399.fragment.html
+    url: "https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html"
+    fetch: html-fragment
+    selector: "#bran_VII-chpt_5-arti_399"
+    media_type: text/html
+    notes:
+      - "Art. 399 as published in Dz. U. 2024 poz. 1221. Verified 2026-11-15 against the act's amendment history: no amendment touches art. 399 (later amendments reach only arts. 42, 43, 45, 278, 337, 356 and 419; the latest act-level change is Dz. U. 2026 poz. 1296, in force 06-11-2026). The text.html served by ISAP is word-for-word identical to this fragment."
+    retrieved_on: 2026-11-15
+    sha256: 23be790afbd9492ab3f7a1d3dfc58a4ba3b986a105ed5328f80ce49e0861eb8a
+annotated: pke.law.xml

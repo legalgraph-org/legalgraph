@@ -1,0 +1,33 @@
+# Gesetz vom 5. April 2023 über die elektronische Kommunikation (Kommunikationsgesetz;
+# KomG, LGBl. 2023 Nr. 216): Liechtenstein's electronic-communications act. Art. 61
+# Abs. 4 — introduced by the KomG revision in force 01.02.2025 — is the storage-and-
+# access rule, the transposition of ePrivacy Directive 2002/58/EC Art. 5(3): storing
+# information on, or accessing information stored on, a user's terminal equipment only
+# with the user's consent on the basis of clear and comprehensive information, given
+# and constituted under the GDPR (Verordnung (EU) 2016/679), with exceptions for
+# transmission-only storage/access and storage/access strictly necessary for an
+# audiovisual media service explicitly requested by the user — the published text says
+# "audiovisuellen Mediendienst", not "information-society service"; the Datenschutzstelle
+# Liechtenstein reads it as the ePrivacy concept. gesetze.li (Lilex) serves the
+# consolidated act as PDF in the version of 01.02.2025; the paragraph the graph quotes
+# is transcribed in schemas/law.xsd and checked letter for letter against the PDF's
+# text.
+id: li/komg
+title: Gesetz über die elektronische Kommunikation (Kommunikationsgesetz; KomG), Art. 61 Abs. 4
+jurisdiction: LI
+language: de
+publisher: Lilex — Gesetze- und Verordnungsdatenbank des Fürstentums Liechtenstein
+kind: authored-xml
+licence: official-work
+licence_basis: "Liechtensteinese law texts are official publications of the state; Lilex republishes them for public use"
+originals:
+  - file: komg.pdf
+    page: https://www.gesetze.li/konso/2023216000
+    url: https://www.gesetze.li/konso/pdf/2023216000
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated version in force 01.02.2025 (Fassung: 01.02.2025), which introduced Art. 61 Abs. 4; the page is the official Lilex record. Footnote 14 after 'Verordnung (EU) 2016/679' is the OJ citation of the GDPR and is marked, not quoted."
+    retrieved_on: 2026-11-15
+    sha256: 64c72c1c958ec81e909197fa2ca498f42825f41a010a9f76d9166cf15adbf7ab
+annotated: komg.law.xml

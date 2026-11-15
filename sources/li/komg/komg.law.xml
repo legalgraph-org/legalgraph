@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Liechtenstein Kommunikationsgesetz (KomG, LGBl. 2023 Nr. 216), Art. 61 Abs. 4,
+  written in schemas/law.xsd from the Lilex consolidated PDF (version in force
+  01.02.2025). The words are the official text's; only the structure is ours.
+  `legalgraph sources verify` checks every line letter for letter against the PDF.
+  Abs. 4 b)'s "audiovisuellen Mediendienst" is the published wording — narrower
+  than ePrivacy's "information society service"; the Datenschutzstelle reads it as
+  the ePrivacy concept (see data/acts/li.ttl).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="LI-KOMG" lga:jurisdiction="LI" lga:act-type="Statute"
+     lga:url="https://www.gesetze.li/konso/2023216000" lga:transposes="EU-2002-58">
+  <meta>
+    <title>Gesetz über die elektronische Kommunikation (Kommunikationsgesetz; KomG)</title>
+    <date>2023-04-05</date>
+  </meta>
+
+  <section num="Art. 61" title="Grundsatz" source="komg.pdf">
+    <paragraph num="4)" lga:provision="LI-KOMG-art61-4" lga:citation="Art. 61 Abs. 4 KomG" lga:url="https://www.gesetze.li/konso/2023216000" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Die Speicherung von Informationen im Endgerät des Nutzers oder der Zugriff auf Informationen, die bereits im Endgerät gespeichert sind, sind nur zulässig, wenn der Nutzer auf der Grundlage von klaren und umfassenden Informationen eingewilligt hat. Die Information des Nutzers und die Einwilligung haben nach Massgabe der Verordnung (EU) 2016/679<note num="14"/> zu erfolgen. Die Einwilligung ist nicht erforderlich, wenn:
+      <list>
+        <item num="a)">der alleinige Zweck der Speicherung von Informationen im Endgerät des Nutzers oder der alleinige Zweck des Zugriffs auf bereits im Endgerät des Nutzers gespeicherte Informationen die Durchführung der Übertragung einer Nachricht über ein öffentliches elektronisches Kommunikationsnetz ist; oder</item>
+        <item num="b)">die Speicherung von Informationen im Endgerät des Nutzers oder der Zugriff auf bereits im Endgerät des Nutzers gespeicherte Informationen unbedingt erforderlich ist, damit der Diensteanbieter einen vom Nutzer ausdrücklich gewünschten audiovisuellen Mediendienst zur Verfügung stellen kann.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

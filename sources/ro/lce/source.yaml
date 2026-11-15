@@ -1,7 +1,9 @@
 # Legea nr. 365 din 7 iunie 2002 privind comerţul electronic: Romania's e-commerce act.
 # Articolul 5 is the provider-information duty (e-Commerce Directive art. 5) — wider than the
 # Directive: it adds phone and fax numbers and the fiscal registration code. legislatie.just.ro
-# serves the consolidated text on its print view (DetaliiDocumentAfis); the fragment holding
+# serves the consolidated text (forma consolidată) on its main view (DetaliiDocument); the
+# print view (DetaliiDocumentAfis) serves the act as originally adopted and must not be used
+# for current-law checks. Alin. (3) was added by Legea nr. 50/2024. The fragment holding
 # articolul 5 is kept and the text is transcribed in schemas/law.xsd, checked word for word
 # against it.
 id: ro/lce
@@ -14,13 +16,15 @@ licence: official-work
 licence_basis: "Art. 9 din Legea nr. 8/1996: official texts of a political, legislative, administrative or judicial nature are not protected by copyright"
 originals:
   - file: lce-5.fragment.html
-    url: "https://legislatie.just.ro/Public/DetaliiDocumentAfis/37075"
+    url: "https://legislatie.just.ro/Public/DetaliiDocument/37075"
     fetch: html-fragment
-    selector: "#id_artA87"
-    text_ignore: [".S_LIT_SHORT", ".TAG_COLLAPSED"]
+    headers:
+      User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    selector: "#id_artA99"
+    text_ignore: [".S_LIT_SHORT", ".S_PCT_SHORT", ".TAG_COLLAPSED"]
     media_type: text/html
     notes:
-      - "Consolidated form (M.Of. nr. 959 din 29 noiembrie 2006 republicare, forma consolidată). The main view (DetaliiDocument) rejects automated requests; the print view serves the same text."
-    retrieved_on: 2026-11-12
-    sha256: cc333a809f2267ab43273bf58b6df655f72d809cfd1d76f297389a4b4dba56b1
+      - "Consolidated form (M.Of. nr. 959 din 29 noiembrie 2006 republicare, forma consolidată) incl. Legea nr. 50/2024 which added alin. (3). The print view (DetaliiDocumentAfis) serves the pre-2024 text — do not use it here. The main view rejects the default tool user agent, hence the browser header."
+    retrieved_on: 2026-11-15
+    sha256: 90ba080a1e85524786016d861ab9e4ebc591ca2c0d994de1fdf60b716948e97c
 annotated: lce.law.xml

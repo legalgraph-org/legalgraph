@@ -1,0 +1,36 @@
+# Swiss Code of Obligations (Obligationenrecht, OR; fifth part of the Civil Code, SR 220),
+# consolidated version of 1 October 2026: official XML (Akoma Ntoso) from Fedlex, the Federal
+# Chancellery's publication platform. German, French and Italian are authentic; German is
+# annotated. The English text is Fedlex's translation, published for information only
+# (authentic: false), kept as a parallel version. Only the Widerrufsrecht block (Art. 40a–40f)
+# is annotated: it records that the statutory withdrawal right covers doorstep and telephone
+# sales, not online purchases.
+id: ch/or
+title: Code of Obligations (OR), consolidated version of 1 October 2026
+jurisdiction: CH
+language: de
+publisher: Swiss Federal Chancellery, Fedlex
+kind: official-xml
+licence: official-work
+licence_basis: "Art. 5 Abs. 1 URG (Switzerland): laws and ordinances are not protected by copyright"
+originals:
+  - file: fedlex-data-admin-ch-eli-cc-27-317_321_377-20261001-de-xml-1.xml
+    page: https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de
+    url: https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/27/317_321_377/20261001/de/xml/fedlex-data-admin-ch-eli-cc-27-317_321_377-20261001-de-xml-1.xml
+    fetch: file
+    media_type: application/xml
+    retrieved_on: 2026-11-14
+    sha256: 8804b5c82fc036d014f441a917b5f0433573970029b69ca9c09c8a9c46bd5d1b
+  - file: fedlex-data-admin-ch-eli-cc-27-317_321_377-20261001-en-xml.xml
+    role: parallel
+    language: en
+    authentic: false
+    page: https://www.fedlex.admin.ch/eli/cc/27/317_321_377/en
+    url: https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/27/317_321_377/20261001/en/xml/fedlex-data-admin-ch-eli-cc-27-317_321_377-20261001-en-xml.xml
+    fetch: file
+    media_type: application/xml
+    notes:
+      - "English translation published by the Federal Chancellery for information. It has no legal force; only the German, French and Italian texts are authentic."
+    retrieved_on: 2026-11-14
+    sha256: ea7035d1c8eb49c4842ba1a6606f2329c68a4be793d1b56b32b6c524b98decc2
+annotated: fedlex-data-admin-ch-eli-cc-27-317_321_377-20261001-de-xml-1.annotated.xml

@@ -1,0 +1,28 @@
+# Zakon o elektroničkim komunikacijama (ZEK), Narodne novine 76/2022 (in force
+# 12 July 2022, replacing the 2008 act): članak 43. stavak 4 is the
+# storage-and-access rule — Croatia's transposition of ePrivacy Directive
+# art. 5(3), on the consent model ("privola"), with clear and complete
+# information under the personal-data-protection rules, inter alia on the
+# purposes of processing; the same paragraph excepts transmission-only
+# storage/access and access strictly necessary for an expressly requested
+# information-society service. Subsequent amendments (NN 14/24 — cybersecurity
+# law repealing art. 41 — and NN 45/2026) do not touch članak 43. narodne-
+# novine.nn.hr serves the gazette text directly.
+id: hr/zek-76-22
+title: Zakon o elektroničkim komunikacijama (članak 43. stavak 4)
+jurisdiction: HR
+language: hr
+publisher: Narodne novine (narodne-novine.nn.hr)
+kind: authored-xml
+licence: official-work
+licence_basis: "Autorski zakon i srodna prava art. 6: official texts of normative acts are not subject to copyright"
+originals:
+  - file: zek-43.fragment.html
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_07_76_1116.html"
+    fetch: file
+    media_type: text/html
+    notes:
+      - "Fragment cut from the Narodne novine gazette page: članak 43. (tajnost komunikacija) in full — stavak 4 is the storage-and-access rule. Current text: NN 14/24 repealed art. 41 and NN 45/2026 amended market-access provisions; neither touches članak 43."
+    retrieved_on: 2026-11-15
+    sha256: ff5139cf574d725b6f5f9a8e787023d9b8b4e81a95b9a176ed7ce168df7d739e
+annotated: zek.law.xml

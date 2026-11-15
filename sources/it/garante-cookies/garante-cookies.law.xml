@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Garante per la protezione dei dati personali, Provvedimento n. 231 del 10 giugno 2021
+  ("Linee guida cookie e altri strumenti di tracciamento", GU Serie generale n. 163
+  del 9 luglio 2021), written in schemas/law.xsd from the Gazzetta Ufficiale PDF.
+  The words are the Garante’s; only the structure is ours. `legalgraph sources verify`
+  checks every line letter for letter against the PDF. Guidance, not binding text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="it"
+     lga:act="IT-GARANTE-231-2021" lga:jurisdiction="IT" lga:act-type="Guidelines"
+     lga:url="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876">
+  <meta>
+    <title>Linee guida cookie e altri strumenti di tracciamento (Provvedimento n. 231 del 10 giugno 2021)</title>
+    <date>2021-06-10</date>
+  </meta>
+
+  <section num="5." title="Normativa applicabile" source="gu-163-2021.pdf">
+    <paragraph lga:provision="IT-GARANTE-231-2021-s5-legitimate-interest" lga:citation="Linee guida cookie, § 5" lga:url="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876" lga:interprets="IT-196-2003-art122-1 EU-2002-58-art5-3 EU-2016-679-art6-1">Dalla ricostruzione normativa effettuata si trae una prima, importante conclusione: la disciplina di carattere speciale applicabile alla specie non contempla ulteriori basi giuridiche che rendano legittimo il trattamento se non in presenza del consenso dell’interessato ovvero al ricorrere di una delle ipotesi di deroga rispetto all’obbligo della sua raccolta previste proprio da tale disciplina speciale. In nessun caso sarà pertanto possibile invocare ad esempio, come è stato invece osservato nel corso delle verifiche effettuate su diversi siti web, la scriminante del legittimo interesse del titolare per giustificare il ricorso a cookie o altri strumenti di tracciamento.</paragraph>
+  </section>
+
+  <section num="6.1" title="Il c.d. «scrolling» e il cookie wall" source="gu-163-2021.pdf">
+    <paragraph lga:provision="IT-GARANTE-231-2021-s61-scrolling" lga:citation="Linee guida cookie, § 6.1" lga:url="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876" lga:interprets="IT-196-2003-art122-2 EU-2016-679-art4-11 EU-2016-679-art7-1">L’EDPB ha, inoltre, chiarito (parere n. 5/2020, del 4 maggio 2020) che il semplice scrolling non è mai idoneo, di per sé, ad esprimere compiutamente la manifestazione di volontà dell’interessato volta ad accettare di ricevere il posizionamento, all’interno del proprio terminale, di cookie diversi da quelli tecnici e, dunque, non equivale, in sé considerato, al consenso «in nessuna circostanza»<note num="4"/> Il Garante condivide naturalmente l’opinione dell’EDPB: il semplice «scroll down» del cursore di pagina è inadatto in sé alla raccolta, da parte del titolare del trattamento, di un idoneo consenso all’installazione e all’utilizzo di cookie di profilazione ovvero di altri strumenti di tracciamento.</paragraph>
+    <paragraph lga:provision="IT-GARANTE-231-2021-s61-cookie-wall" lga:citation="Linee guida cookie, § 6.1" lga:url="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876" lga:interprets="IT-196-2003-art122-1 EU-2016-679-art4-11">Ulteriori chiarimenti appaiono opportuni con riferimento al cd. cookie wall, intendendosi con tale espressione un meccanismo vincolante (cd. «take it or leave it»), nel quale l’utente venga cioè obbligato, senza alternativa, ad esprimere il proprio consenso alla ricezione di cookie ovvero altri strumenti di tracciamento, pena l’impossibilità di accedere al sito. Tale meccanismo, non consentendo di qualificare l’eventuale consenso così ottenuto come conforme alle caratteristiche imposte dal regolamento, e segnatamente al suo art. 4, punto 11 con particolare riferimento al requisito della «libertà» del consenso, è da ritenersi illecito, salva l’ipotesi da verificare caso per caso nella quale il titolare del sito offra all’interessato la possibilità di accedere ad un contenuto o a un servizio equivalenti senza prestare il proprio consenso all’installazione e all’uso di cookie o altri strumenti di tracciamento.</paragraph>
+  </section>
+
+  <section num="6.2" title="La reiterazione della richiesta di consenso in presenza di una precedente mancata prestazione dello stesso" source="gu-163-2021.pdf">
+    <paragraph lga:provision="IT-GARANTE-231-2021-s62-banner" lga:citation="Linee guida cookie, § 6.2" lga:url="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876" lga:interprets="IT-196-2003-art122-1 EU-2016-679-art4-11 EU-2016-679-art7-4">L’eccessiva riproposizione del banner ai fini dell’acquisizione del consenso, laddove l’utente l’abbia in precedenza negato, appare suscettibile di lederne la libertà inducendolo a prestarlo pur di proseguire nella navigazione libero dalla comparsa del banner contenente l’informativa breve e la richiesta di prestazione del consenso.</paragraph>
+  </section>
+</law>

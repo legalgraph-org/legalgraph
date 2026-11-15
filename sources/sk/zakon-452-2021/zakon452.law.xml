@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 452/2021 Z. z. o elektronických komunikáciách, § 109 ods. 8,
+  consolidated version of 18.08.2026, written in schemas/law.xsd from the
+  Slov-Lex fragment. The words are the Slovak legislature's; only the
+  structure is ours. Ods. 8 is the storage-and-access rule — the transposition
+  of ePrivacy Directive 2002/58/EC Art. 5(3): provable consent meeting the
+  special regulation's requirements (the GDPR consent standard per the
+  provision's footnote); the consent duty does not apply to criminal-
+  procedure bodies and other state bodies; technical storage/access is
+  excepted where its sole purpose is the transmission of a message or it is
+  strictly necessary for an expressly requested information-society service.
+  Other paragraphs of § 109 (interception, traffic data, call identification)
+  carry no storage-and-access disclosure and are omitted. Slovak is the
+  authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sk"
+     lga:act="SK-ZEK-452-2021" lga:jurisdiction="SK" lga:act-type="Statute"
+     lga:url="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2021/452/" lga:transposes="EU-2002-58">
+  <meta>
+    <title>Zákon č. 452/2021 Z. z. o elektronických komunikáciách</title>
+    <date>2021-11-24</date>
+  </meta>
+
+  <section num="§ 109" source="zakon452-s109-o8.fragment.html">
+    <paragraph num="(8)" lga:provision="SK-ZEK-452-2021-s109-8" lga:citation="§ 109 ods. 8 zákon č. 452/2021 Z. z." lga:url="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2021/452/" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3">Každý, kto ukladá alebo získava prístup k informáciám uloženým v koncovom zariadení užívateľa, je na to oprávnený iba ak užívateľ udelil preukázateľný súhlas spĺňajúci náležitosti podľa osobitného predpisu. Povinnosť získania súhlasu sa nevzťahuje na orgán činný v trestnom konaní a iný orgán štátu. To nebráni technickému uloženiu údajov alebo prístupu k nim, ktorých jediným účelom je prenos alebo uľahčenie prenosu správy prostredníctvom siete, alebo ak je to bezpodmienečne potrebné pre poskytovateľa služieb informačnej spoločnosti na poskytovanie služby informačnej spoločnosti, ktorú výslovne požaduje užívateľ.</paragraph>
+  </section>
+</law>

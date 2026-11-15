@@ -251,6 +251,16 @@ lg:SK-PUB-265-title-3d34b2216361-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:SK-PUB-265 .
 
+lg:SK-ZEK-452-2021-s109-8-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "875d14248d182d739dbbb749d0417a96daa909c0e5fc7183e3095cf8d4fb02e5" ;
+    lgo:text "Anyone who stores information or gains access to information stored in a user's terminal equipment is entitled to do so only if the user has given demonstrable consent meeting the requirements of the special regulation. The obligation to obtain consent does not apply to a body active in criminal proceedings and to other state bodies. This does not prevent technical storage of or access to data whose sole purpose is the transmission or facilitation of the transmission of a message over a network, or where it is unconditionally necessary for a provider of information-society services to provide a service explicitly requested by the user."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:SK-ZEK-452-2021-s109-8-q1 .
+
 lg:SK-ZOS-108-s5-1-l-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

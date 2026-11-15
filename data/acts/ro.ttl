@@ -11,7 +11,7 @@ lg:RO-LCE
     lgo:shortName "L. 365/2002" ;
     eli:id_local "M.Of. nr. 483 din 5 iulie 2002" ;
     eli:transposes lg:EU-2000-31 ;
-    rdfs:comment "Articolul 5 transposes Article 5 of the e-Commerce Directive, wider than the Directive's catalogue: phone and fax numbers, the fiscal registration code and price items are mandatory for every provider."@en .
+    rdfs:comment "Articolul 5 transposes Article 5 of the e-Commerce Directive, wider than the Directive's catalogue: phone and fax numbers, the fiscal registration code and price items are mandatory for every provider. In the consolidated text, alin. (1) lit. g) covers any regulated professional activity and alin. (3) — added by Legea nr. 50/2024 — requires the information to be kept up to date and usable by public authorities."@en .
 
 # Round 6 additions: company-law information duty and the ADR trader-information
 # duty, both rendered from legislatie.just.ro. Art. 74(5) is an express website
@@ -29,3 +29,19 @@ lg:RO-OG-38-2015 a lgo:LegalAct ;
     lgo:shortName "O.G. 38/2015" ;
     eli:transposes lg:EU-2013-11 ;
     lgo:reviewStatus lgv:SourceChecked .
+
+# Legea 506/2004: the ePrivacy-sector act. Art. 4(5), (5¹)–(6) is the
+# storage-and-access rule — ePrivacy Directive Art. 5(3) transposition as
+# amended by OUG 13/2012: consent (acordul), GDPR-style information, consent
+# via browser settings, plus the transmission/strictly-necessary exceptions.
+
+lg:RO-LEGA-506 a lgo:LegalAct ;
+    eli:title "Legea nr. 506 din 17 noiembrie 2004 privind prelucrarea datelor cu caracter personal şi protecţia vieţii private în sectorul comunicaţiilor electronice"@ro , "Law No. 506 of 17 November 2004 on the processing of personal data and the protection of privacy in the electronic communications sector"@en ;
+    lgo:shortName "Legea 506/2004" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:RO ;
+    lgo:sourceUrl "https://legislatie.just.ro/Public/DetaliiDocument/56973"^^xsd:anyURI ;
+    eli:id_local "M.Of. nr. 237 din 18 noiembrie 2004" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Articolul 4 alin. (5), (5¹)–(6), as amended by OUG nr. 13/2012 (in force 26-04-2012), permits storing information on, or accessing information stored on, a subscriber's or user's terminal equipment only with the cumulative satisfaction of: the subscriber's or user's consent (acordul), which may also be given through browser settings, and prior clear and complete information under art. 12 of Legea 677/2001 including the purpose of the processing (with a specific rule for third-party storage/access); alin. (6) excepts transmission-only storage/access and access strictly necessary for an expressly requested information-society service. Consent model."@en .

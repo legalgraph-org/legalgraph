@@ -39,3 +39,21 @@ lg:IT-DLGS-206-2005 a lgo:LegalAct ;
     eli:date_document "2005-09-06"^^xsd:date ;
     eli:transposes lg:EU-2013-11 ;
     lgo:reviewStatus lgv:SourceChecked .
+
+# Garante Provvedimento n. 231 del 10 giugno 2021 (GU Serie generale n. 163
+# del 09-07-2021): Italy's cookie guidance — consent via a positive act,
+# scrolling is never consent, the cookie wall is unlawful without an
+# equivalent content/service alternative, excessive banner re-proposal
+# undermines freedom of consent, and legitimate interest cannot justify
+# cookies or other tracking tools.
+
+lg:IT-GARANTE-231-2021 a lgo:Guidance ;
+    eli:title "Linee guida cookie e altri strumenti di tracciamento"@it , "Guidelines on cookies and other tracking tools"@en ;
+    lgo:shortName "Linee guida cookie Garante" ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:IT ;
+    eli:id_local "Provvedimento Garante n. 231 del 10 giugno 2021, GU n. 163 del 09-07-2021" ;
+    eli:date_document "2021-06-10"^^xsd:date ;
+    lgo:sourceUrl "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Guidance, not binding text: scrolling is never consent (§ 6.1); the cookie wall ('take it or leave it') is unlawful unless the site offers access to equivalent content or a service without consent (§ 6.1); excessive re-proposal of the banner after refusal undermines freedom of consent (§ 6.2); legitimate interest cannot justify cookies or other tracking tools (§ 5)."@en .

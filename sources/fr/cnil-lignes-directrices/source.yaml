@@ -1,0 +1,25 @@
+# CNIL délibération n° 2020-091 du 17 septembre 2020: lignes directrices relatives à
+# l'application de l'article 82 de la loi du 6 janvier 1978 (cookies et autres traceurs),
+# published only as PDF. The paragraphs the graph quotes are transcribed in
+# schemas/law.xsd and `legalgraph sources verify` checks each, letter for letter, against
+# the PDF's text: the GDPR-standard consent (¶16), the cookie wall and bundled purposes
+# (¶17, 19), specific consent not via global terms (¶20), minimum information (¶24),
+# scrolling and pre-ticked boxes are not consent and silence means refusal (¶27), refusal
+# as easy as consent (¶30), withdrawal as easy as giving (¶31), and the exemption scope
+# including the audience-measurement carve-out (¶46-48, 51).
+id: fr/cnil-lignes-directrices
+title: CNIL lignes directrices « cookies et autres traceurs » (délibération n° 2020-091 du 17 septembre 2020)
+jurisdiction: FR
+language: fr
+publisher: Commission nationale de l'informatique et des libertés
+kind: authored-xml
+licence: licence-ouverte-2.0
+licence_basis: "CNIL site content is published under Licence Ouverte 2.0 (cnil.fr legal notice)"
+originals:
+  - file: lignes-directrices-cookies-traceurs.pdf
+    url: https://www.cnil.fr/sites/default/files/atoms/files/lignes_directrices_de_la_cnil_sur_les_cookies_et_autres_traceurs.pdf
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-15
+    sha256: 88de95e6032b898b5a46b5c981bf9998a57ab1deacd82123d6a32447509572dd
+annotated: cnil-lignes-directrices.law.xml

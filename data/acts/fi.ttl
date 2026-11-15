@@ -13,4 +13,5 @@ lg:FI-917-2014 a lgo:LegalAct ;
     eli:title "Laki sähköisen viestinnän palveluista"@fi , "Act on Electronic Communications Services"@en ;
     lgo:shortName "Sähköisen viestinnän palvelulaki" ;
     eli:transposes lg:EU-2000-31 ;
+    eli:transposes lg:EU-2002-58 ;
     lgo:reviewStatus lgv:SourceChecked .

@@ -60,3 +60,13 @@ lg:AT-ASTG
     eli:transposes lg:EU-2013-11 ;
     rdfs:seeAlso <https://www.ris.bka.gv.at/eli/bgbl/i/2015/105/P19/NOR40173800> ;
     rdfs:comment "§ 19 transposes art. 13 of the ADR Directive: a trader committed or obliged to use a consumer ADR body names it with its website on its own website and in its terms; Abs. 3 is the durable-medium pointer after a failed settlement attempt."@en .
+
+lg:AT-BAFG
+    lgo:shortName "BaFG" ;
+    eli:id_local "BGBl. I Nr. 76/2023" ;
+    eli:transposes lg:EU-2019-882 ;
+    eli:date_document "2023-07-19"^^xsd:date ;
+    eli:first_date_entry_in_force "2025-06-28"^^xsd:date ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2023/76"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Austria's accessibility act (EAA transposition, in force 28.06.2025). § 2(2) Z 6 brings e-commerce services for consumers within scope; § 4(3) points to the accessibility requirements of Anlage 1 for services; § 6(1) exempts microenterprises (< 10 staff, turnover or balance sheet ≤ EUR 2m — § 3 Z 19); § 14(2) requires the service provider to create the Annex 3 information and make it available to the public in writing and orally, in a form accessible to people with disabilities — the accessibility statement."@en .

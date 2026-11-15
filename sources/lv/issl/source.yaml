@@ -23,4 +23,14 @@ originals:
       - "Consolidated text in force (redakcija of 21.06.2024)."
     retrieved_on: 2026-11-12
     sha256: 906d09acae72c94f10a6050d4d4b586d950bf7aa98b3dc4727dc2d504b2ce551
+  - file: issl-7_1.fragment.html
+    url: "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"
+    fetch: html-fragment
+    selector: "div[izd-pam='7_1p']"
+    text_ignore: [".labojumu_pamats", ".panta-doc-npk", ".info-icon-wrapper"]
+    media_type: text/html
+    notes:
+      - "Consolidated text in force (redakcija of 21.06.2024). 7.1 pants is the storage-and-access rule — Latvia's ePrivacy Art. 5(3) transposition, on the consent model."
+    retrieved_on: 2026-11-15
+    sha256: 29d64118c437b56f1e321a9a93f36faf8a027bc1a890134ada62750f74b56a0d
 annotated: issl.law.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lov om elektronisk kommunikasjon (ekomloven), Lov 13.12.2024 nr. 76, § 3-15,
+  written in schemas/law.xsd from Lovdata's per-section fragment. The words
+  are the Norwegian official text's; only the structure is ours. § 3-15 is the
+  storage-and-access rule — the transposition of ePrivacy Directive
+  2002/58/EC Art. 5(3) in force from 01.01.2025: consent meeting the GDPR
+  consent standard plus information on which data are processed, the purpose
+  and the controller; annet ledd excepts transmission-only storage/access and
+  access strictly necessary for an expressly requested information-society
+  service. Tredje ledd (delegation to the ministry) is omitted. Norwegian is
+  the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="no"
+     lga:act="NO-EKOMLOVEN" lga:jurisdiction="NO" lga:act-type="Statute"
+     lga:url="https://lovdata.no/dokument/NL/lov/2024-12-13-76" lga:transposes="EU-2002-58">
+  <meta>
+    <title>Lov om elektronisk kommunikasjon (ekomloven)</title>
+    <date>2024-12-13</date>
+  </meta>
+
+  <section num="§ 3-15" title="Bruk av informasjonskapsler mv." source="ekom-s3-15.fragment.html">
+    <paragraph num="" lga:provision="NO-EKOMLOVEN-s3-15-1" lga:citation="ekomloven § 3-15 første ledd" lga:url="https://lovdata.no/dokument/NL/lov/2024-12-13-76/%C2%A73-15" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Det er ikke tillatt å lagre eller å skaffe seg tilgang til opplysninger i sluttbrukers eller brukers kommunikasjonsutstyr uten at den aktuelle sluttbrukeren eller brukeren er informert om blant annet hvilke opplysninger som behandles, formålet med behandlingen og hvem som behandler opplysningene, og uten at den aktuelle sluttbrukeren eller brukeren har gitt samtykke. Samtykke skal oppfylle kravene til samtykke i personvernforordningen.</paragraph>
+    <paragraph num="" lga:provision="NO-EKOMLOVEN-s3-15-2" lga:citation="ekomloven § 3-15 annet ledd" lga:url="https://lovdata.no/dokument/NL/lov/2024-12-13-76/%C2%A73-15" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Første ledd gjelder ikke for teknisk lagring av eller adgang til opplysninger
+      <list>
+        <item num="a.">utelukkende for det formål å overføre kommunikasjon i et elektronisk kommunikasjonsnett, eller</item>
+        <item num="b.">som er strengt nødvendig for å levere en informasjonssamfunnstjeneste etter den aktuelle sluttbrukerens eller brukerens uttrykkelige forespørsel.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

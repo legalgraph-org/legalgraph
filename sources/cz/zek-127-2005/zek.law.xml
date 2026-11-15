@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Zákon č. 127/2005 Sb., o elektronických komunikacích (ZEK), § 89 odst. 3,
+  written in schemas/law.xsd from the e-Sbírka consolidated text. The words
+  are the Czech legislature's; only the structure is ours. § 89 odst. 3 is
+  the storage-and-access rule — the transposition of ePrivacy Directive
+  2002/58/EC Art. 5(3), on the consent model ("prokazatelný souhlas" =
+  demonstrable consent) covering the scope and purpose of the processing.
+  Czech is the authentic language; the Act has no official English version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="cs"
+     lga:act="CZ-ZEK-127-2005" lga:jurisdiction="CZ" lga:act-type="Statute"
+     lga:url="https://www.e-sbirka.cz/sb/2005/127">
+  <meta>
+    <title>Zákon č. 127/2005 Sb., o elektronických komunikacích</title>
+    <date>2005-07-29</date>
+  </meta>
+
+  <section num="§ 89" title="Důvěrnost komunikací" source="zek.esbirka.html">
+    <paragraph num="(3)" lga:provision="CZ-ZEK-127-2005-s89-3" lga:citation="§ 89 odst. 3 zákona č. 127/2005 Sb." lga:url="https://www.e-sbirka.cz/sb/2005/127#f6241973" lga:regulates="Consent TerminalEquipmentAccess TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Každý, kdo hodlá používat nebo používá sítě elektronických komunikací k ukládání údajů nebo k získávání přístupu k údajům uloženým v koncových zařízeních účastníků nebo uživatelů, získá od těchto účastníků nebo uživatelů předem prokazatelný souhlas s rozsahem a účelem jejich zpracování. Tato povinnost neplatí pro technické ukládání nebo přístup výhradně pro potřeby přenosu zprávy prostřednictvím sítě elektronických komunikací nebo je-li to nezbytné pro potřeby poskytování služby informační společnosti, která je výslovně vyžádána účastníkem nebo uživatelem.</paragraph>
+  </section>
+</law>

@@ -43,3 +43,13 @@ lg:LU-LOI-2000-08-14-art5-2-q1-en
     lgo:translatedOn "2026-11-14"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:LU-LOI-2000-08-14-art5-2-q1 .
+
+lg:LU-LOI-2005-05-30-art4-3e-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6cd18b68c4f250f3ac49074cbde73ddb17dcacbe802cedd9516a44eca10bab83" ;
+    lgo:text "(e) does not apply to the storage of information, or the obtaining of access to information already stored, in the terminal equipment of a subscriber or user provided that the subscriber or user has given their agreement, after receiving clear and complete information, inter alia on the purposes of the processing. The methods chosen to provide the information and offer the right to refuse should be as user-friendly as possible. Where this is technically possible and effective, the subscriber's or user's agreement may be expressed through the use of appropriate settings of a browser or other application. This provision does not prevent technical storage or access aimed exclusively at carrying out the transmission of a communication over an electronic communications network, or strictly necessary for the provider to supply an information-society service expressly requested by the subscriber or user."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LU-LOI-2005-05-30-art4-3e-q1 .

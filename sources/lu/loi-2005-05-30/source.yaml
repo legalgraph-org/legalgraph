@@ -1,0 +1,33 @@
+# Loi modifiée du 30 mai 2005 concernant la protection de la vie privée dans
+# le secteur des communications électroniques: art. 4, paragraphe (3), point e)
+# is the storage-and-access rule — the Luxembourg transposition of ePrivacy
+# Directive art. 5(3), on the consent model ("donné son accord" after clear
+# and complete information; CNPD reads the RGPD consent standard into it).
+# The point also carries the transmission-only and strictly-necessary
+# exceptions. legilux.public.lu builds the consolidated text with Angular;
+# tools/render renders it (make render-install once).
+id: lu/loi-2005-05-30
+title: Loi modifiée du 30 mai 2005 (art. 4, paragraphe 3, point e)
+jurisdiction: LU
+language: fr
+publisher: Service central de législation (Legilux)
+kind: authored-xml
+licence: official-work
+licence_basis: "Législation luxembourgeoise est une œuvre officielle au sens de l'article 5 de la loi du 18 avril 2001 sur les droits d'auteur, qui ne sont pas protégés"
+originals:
+  - file: loi-2005-05-30-p3e.legilux.html
+    url: "https://legilux.public.lu/eli/etat/leg/loi/2005/05/30/n4/consolide"
+    fetch: rendered
+    wait: "#paragraph_8"
+    selector: "#paragraph_8"
+    # span[title] holds the consolidation amendment marks naming the
+    # modifying laws; .expand-collapse-btn is the article's UI button.
+    text_ignore:
+      - "span[title]"
+      - ".expand-collapse-btn"
+    media_type: text/html
+    notes:
+      - "Consolidated text. Only point e) of paragraph (3) is annotated; points a)–d) cover interception, judicial authorities, emergency numbers and professional recording. The URL carries no consolidation date; Legilux serves the current version."
+    retrieved_on: 2026-11-15
+    sha256: 0332d3eb8084f898ac8ed0d1fbdba99ee095fa1ba503518fc74d8200d6e5a5c2
+annotated: loi-2005-05-30.law.xml

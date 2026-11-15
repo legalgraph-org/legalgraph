@@ -139,3 +139,17 @@ lg:NO-R-editor-identification a lgo:Obligation ;
     lgo:partOfDisclosure lgv:EditorialResponsibility ;
     lgo:requiresDisclosureOf lgv:ResponsibleEditor , lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Cookies and similar (ePrivacy art. 5(3)) -------------------------------------------
+
+lg:NO-R-cookie-consent a lgo:Obligation ;
+    rdfs:label "Consent before cookies and similar technologies that are not strictly necessary"@en ;
+    rdfs:comment "§ 3-15 of the Electronic Communications Act (ekomloven 2024), in force since 1 January 2025: consent to the GDPR's standard. The former § 2-7 b let browser settings count as consent."@en ;
+    lgo:refines lg:EU-R-cookie-consent ;
+    lgo:establishedBy lg:NO-EKOMLOVEN-s3-15-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:MustNot ;
+    lgo:appliesIn lg:NO ;
+    lgo:appliesWhen lgv:EstablishedInNorway , lgv:NonEssentialDeviceAccess ;
+    lgo:requiresAction lgv:ObtainConsentBeforeDeviceAccess ;
+    lgo:reviewStatus lgv:Draft .

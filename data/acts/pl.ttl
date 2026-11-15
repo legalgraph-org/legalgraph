@@ -34,3 +34,16 @@ lg:PL-UJP
     lgo:shortName "język polski" ;
     rdfs:seeAlso <https://api.sejm.gov.pl/eli/acts/DU/1999/999/text.html> ;
     rdfs:comment "Art. 7 requires Polish in legal transactions on Polish territory between Polish parties — including naming of goods and services, offers, advertising, manuals, property information, warranty terms, invoices; foreign-language descriptions/offers/ads must simultaneously carry a Polish version."@en .
+
+# PL: art. 399 PKE (addition to data/extracted/pl/).
+
+lg:PL-PKE-2024-1221 a lgo:LegalAct ;
+    eli:title "Ustawa z dnia 12 lipca 2024 r. — Prawo komunikacji elektronicznej"@pl , "Act of 12 July 2024 — Electronic Communications Law"@en ;
+    lgo:shortName "PKE" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:PL ;
+    lgo:sourceUrl "https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text.html"^^xsd:anyURI ;
+    eli:id_local "Dz. U. 2024 poz. 1221" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 399 is the storage-and-access rule (ePrivacy Art. 5(3)), replacing art. 173 of the repealed Prawo telekomunikacyjne on 10 November 2024: storing information on, or gaining access to information stored on, a subscriber's or user's terminal equipment is allowed only after prior clear, easy and understandable information on the purpose of the storing/accessing and on the possibility to set conditions via software settings or service configuration, plus consent (which may be expressed through those settings); ust. 3 excepts transmission-only storage/access and access strictly necessary for an expressly requested telecom or e-service; ust. 4 covers installing or using software on terminal equipment under the same information-plus-consent conditions."@en .

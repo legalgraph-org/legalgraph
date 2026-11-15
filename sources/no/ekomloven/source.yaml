@@ -1,0 +1,29 @@
+# Lov om elektronisk kommunikasjon (ekomloven), Lov 13.12.2024 nr. 76, in
+# force 01.01.2025: Norway's electronic-communications act implementing the
+# EU Electronic Communications Code. § 3-15 is the storage-and-access rule —
+# the transposition of ePrivacy Directive 2002/58/EC Art. 5(3) as amended:
+# consent meeting the GDPR consent standard plus information on the data,
+# the purpose and the controller, and the transmission/strictly-necessary
+# exceptions in annet ledd. It replaced the old § 2-7 b rule under which
+# browser defaults could count as consent. Lovdata serves the act's official
+# text; the per-section fragment is kept and the text is transcribed in
+# schemas/law.xsd, checked word for word against it.
+id: no/ekomloven
+title: Lov om elektronisk kommunikasjon (ekomloven) (§ 3-15)
+jurisdiction: "NO"
+language: "no"
+publisher: Lovdata, under the licence of the Norwegian Ministry of Justice and Public Security
+kind: authored-xml
+licence: official-work
+licence_basis: "Åndsverkloven § 9: Norwegian statutory texts are not protected by copyright"
+originals:
+  - file: ekom-s3-15.fragment.html
+    url: "https://lovdata.no/dokument/NL/lov/2024-12-13-76/%C2%A73-15"
+    fetch: html-fragment
+    selector: "#PARAGRAF_3-15"
+    media_type: text/html
+    notes:
+      - "§ 3-15 only; third ledd (regulation-making delegation) is not annotated. In force 01.01.2025 — the consent requirement is new; before it browser defaults could suffice."
+    retrieved_on: 2026-11-15
+    sha256: 5f2d5d991c58727ea653c4099b6179cd37498ac1be9e97190d37b2cbdb8277c5
+annotated: ekomloven.law.xml

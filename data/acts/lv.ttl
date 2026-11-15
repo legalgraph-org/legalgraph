@@ -8,11 +8,11 @@
 # Latvia: Section 4 of the Information Society Services Law (additions to data/extracted/lv/).
 
 lg:LV-ISSL
-    eli:title "Information Society Services Law"@en ;
+    eli:title "Information Society Services Law"@en , "Informācijas sabiedrības pakalpojumu likums"@lv ;
     lgo:shortName "ISSL" ;
-    eli:transposes lg:EU-2000-31 ;
+    eli:transposes lg:EU-2000-31, lg:EU-2002-58 ;
     rdfs:seeAlso <https://likumi.lv/ta/en/en/id/96619> ;
-    rdfs:comment "4. pants merges the Directive's name, address and register items into a single point and adds nothing beyond the Directive's floor; (2) is the price-clarity clause."@en .
+    rdfs:comment "4. pants merges the Directive's name, address and register items into a single point and adds nothing beyond the Directive's floor; (2) is the price-clarity clause. 7.1 pants is the storage-and-access rule — Latvia's ePrivacy Art. 5(3) transposition, on the consent model: consent after clear and comprehensive information on the purpose of the processing under the Personal Data Protection Law; (2) excepts transmission and intermediary services."@en .
 
 lg:LV-KL
     eli:title "Commercial Law"@en ;

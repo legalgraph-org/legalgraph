@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Legea nr. 506 din 17 noiembrie 2004, articolul 4 alin. (5), (5^1)–(6),
+  consolidated text (forma consolidată) written in schemas/law.xsd from the
+  Portal Legislativ main view (DetaliiDocument/56973). The words are the
+  Romanian legislature's; only the structure is ours. Alin. (5), (5^1) and (6)
+  are the storage-and-access rule — the transposition of ePrivacy Directive
+  2002/58/EC Art. 5(3) as amended by OUG nr. 13/2012 (in force 26-04-2012):
+  cumulative consent (acordul) and clear, complete information under art. 12
+  of Legea nr. 677/2001 including the purpose of the processing, consent may
+  also be given via browser settings, plus the transmission and strictly-
+  necessary exceptions. The pre-2012 opt-out wording ("posibilitatea de a
+  refuza") was replaced and must not be used. Alin. (1)–(4) (communications
+  confidentiality) carry no storage-and-access disclosure and are omitted.
+  Romanian is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="ro"
+     lga:act="RO-LEGA-506" lga:jurisdiction="RO" lga:act-type="Statute"
+     lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56973">
+  <meta>
+    <title>Legea nr. 506 din 17 noiembrie 2004 privind prelucrarea datelor cu caracter personal şi protecţia vieţii private în sectorul comunicaţiilor electronice</title>
+    <date>2004-11-17</date>
+  </meta>
+
+  <section num="Articolul 4" title="Confidenţialitatea comunicărilor" source="legea-506-art4.fragment.html">
+    <paragraph num="(5)" lga:provision="RO-LEGA-506-art4-5" lga:citation="art. 4 alin. (5) Legea 506/2004" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56973" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Stocarea de informații sau obținerea accesului la informația stocată în echipamentul terminal al unui abonat ori utilizator este permisă numai cu îndeplinirea în mod cumulativ a următoarelor condiții:
+      <list>
+        <item num="a)" lga:requires="Consent">abonatul sau utilizatorul în cauză și-a exprimat acordul;</item>
+        <item num="b)" lga:requires="ProcessingPurposes">abonatului sau utilizatorului în cauză i s-au furnizat, anterior exprimării acordului, în conformitate cu prevederile art. 12 din Legea nr. 677/2001, cu modificările și completările ulterioare, informații clare și complete care:
+          <list>
+            <item num="(i)">să fie expuse într-un limbaj ușor de înțeles și să fie ușor accesibile abonatului sau utilizatorului;</item>
+            <item num="(ii)">să includă mențiuni cu privire la scopul procesării informațiilor stocate de abonat sau utilizator ori informațiilor la care acesta are acces.</item>
+          </list>
+          În cazul în care furnizorul permite unor terți stocarea sau accesul la informații stocate în echipamentul terminal al abonatului ori utilizatorului, informarea în concordanță cu pct. (i) și (ii) va include scopul general al procesării acestor informații de către terți și modul în care abonatul sau utilizatorul poate folosi setările aplicației de navigare pe internet ori alte tehnologii similare pentru a șterge informațiile stocate sau pentru a refuza accesul terților la aceste informații.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(5^1)" lga:provision="RO-LEGA-506-art4-5-1" lga:citation="art. 4 alin. (5^1) Legea 506/2004" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56973" lga:regulates="Consent" lga:implements="EU-2002-58-art5-3">Acordul prevăzut la alin. (5) lit. a) poate fi dat și prin utilizarea setărilor aplicației de navigare pe internet sau a altor tehnologii similare prin intermediul cărora se poate considera că abonatul ori utilizatorul și-a exprimat acordul.</paragraph>
+    <paragraph num="(6)" lga:provision="RO-LEGA-506-art4-6" lga:citation="art. 4 alin. (6) Legea 506/2004" lga:url="https://legislatie.just.ro/Public/DetaliiDocument/56973" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Prevederile alin. (5) nu aduc atingere posibilității de a efectua stocarea sau accesul tehnic la informația stocată în următoarele cazuri:
+      <list>
+        <item num="a)">atunci când aceste operațiuni sunt realizate exclusiv în scopul efectuării transmisiei unei comunicări printr-o rețea de comunicații electronice;</item>
+        <item num="b)">atunci când aceste operațiuni sunt strict necesare în vederea furnizării unui serviciu al societății informaționale, solicitat în mod expres de către abonat sau utilizator.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

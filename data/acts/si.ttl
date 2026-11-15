@@ -28,3 +28,17 @@ lg:SI-ZISRPS a lgo:LegalAct ;
 
 # 32. člen comes from sources/si/zisrps (official gazette PDF, Ur. l. RS
 # 81/15); the act was never amended, so the original text is current.
+
+# ZEKom-2: 225. člen ("piškotki") is the storage-and-access rule — the
+# ePrivacy Directive Art. 5(3) transposition, on the consent model.
+
+lg:SI-ZEKOM-2 a lgo:LegalAct ;
+    eli:title "Zakon o elektronskih komunikacijah"@sl , "Electronic Communications Act"@en ;
+    lgo:shortName "ZEKom-2" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:SI ;
+    lgo:sourceUrl "https://pisrs.si/pregledPredpisa?id=ZAKO8611"^^xsd:anyURI ;
+    eli:id_local "Uradni list RS št. 130/22" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "225. člen permits storing information on, or accessing information stored on, a subscriber's or user's terminal equipment only with the subscriber's or user's consent after clear and exhaustive information about the controller and the purposes of processing under the personal-data-protection rules; odstavek 2 excepts transmission-only storage/access and access strictly necessary for an expressly requested information-society service; odstavek 3 lets consent be expressed through appropriate browser or application settings, counting as personal consent under the data-protection rules."@en .

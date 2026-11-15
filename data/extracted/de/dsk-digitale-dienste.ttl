@@ -28,7 +28,7 @@ lg:DE-DSK-OH-DD-rn137
     lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art7-3 ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:DE-DSK-OH-DD-source ;
-    lgo:sourceElement "/law/section[5]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[6]/paragraph[1]" ;
     lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI .
 
 lg:DE-DSK-OH-DD-rn137-q1
@@ -37,7 +37,7 @@ lg:DE-DSK-OH-DD-rn137-q1
     lgo:quoteOf lg:DE-DSK-OH-DD-rn137 ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:DE-DSK-OH-DD-source ;
-    lgo:sourceElement "/law/section[5]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[6]/paragraph[1]" ;
     lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
     lgo:text "(137) Wird neben der Schaltfläche zur Einwilligung eine Schaltfläche zum Ablehnen der Einwilligung angeboten, muss die Bezeichnung unmissverständlich sein, sodass Nutzer:innen wissen, dass sie keine Einwilligung erteilen. Dies kann durch eine kurze und prägnante Beschriftung abgebildet werden. Eine Schaltfläche „Einstellungen oder Ablehnen“, die zu einer weiteren Ebene des Banners führt, ist an dieser Stelle nicht ausreichend."@de .
 
@@ -101,6 +101,27 @@ lg:DE-DSK-OH-DD-rn58-q1
     lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
     lgo:text "(58) Das Merkmal der Freiwilligkeit wird auch dann spürbar beeinflusst, wenn die Ablehnung aller einwilligungsbedürftigen Zugriffe einen messbaren Mehraufwand für Endnutzer:innen bedeutet. Ein solcher Mehraufwand wird z. B. erzeugt, indem die Ablehnung erst auf einer zweiten Banner-Ebene, und damit nur mit einer höheren Anzahl an Klicks möglich ist (im Vergleich zur Zustimmung). Der Mehraufwand besteht in der Regel auch nicht lediglich darin, dass Endnutzer:innen einmal mehr klicken müssen als bei der Zustimmung. Sie müssen vielmehr darüber hinaus auch die weiteren Informationen und Einstellungsmöglichkeiten, mit denen sie auf einer zweiten Ebene der Einwilligungsdialoge konfrontiert werden, lesen, nachvollziehen und dann unter den weiteren Auswahloptionen die zutreffende auswählen. Der erzeugte Mehraufwand lässt sich grundsätzlich auch nicht sachlich begründen (z. B. mit technischen Hindernissen), sondern wird künstlich konstruiert. Dies lässt sich nicht zuletzt daraus schließen, dass Endnutzer:innen mittlerweile auf einer Vielzahl an Webseiten durchaus eine gleich einfache Ablehnungsmöglichkeit zur Auswahl gestellt wird."@de .
 
+lg:DE-DSK-OH-DD-rn63
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 63" ;
+    lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-DSK-OH-DD-source ;
+    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI .
+
+lg:DE-DSK-OH-DD-rn63-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-DSK-OH-DD-rn63 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:DE-DSK-OH-DD-source ;
+    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    lgo:text "Zu beachten ist, dass sich Einwilligungen immer auf „den bestimmten Fall“ beziehen. Ändert sich der „Fall“ wird die ursprüngliche Einwilligung gegenstandslos und es ist eine neue Einwilligung einzuholen. Wird durch eine bestätigende Handlung eine gebündelte Einwilligung für zahlreiche Fälle eingeholt, wie dies regelmäßig auf Webseiten und in Apps erfolgt, führt jede Änderung insbesondere der eingesetzten Cookies und eingebundenen Drittdienste dazu, dass für den neuen Fall eine neue Einwilligung eingeholt werden muss. Wird diese nicht einzeln abgefragt, muss die gebündelte Einwilligung erneut eingeholt werden."@de .
+
 lg:DE-DSK-OH-DD-rn78
     a lgo:Provision ;
     eli:is_part_of lg:DE-DSK-OH-DD ;
@@ -108,7 +129,7 @@ lg:DE-DSK-OH-DD-rn78
     lgo:interprets lg:DE-TDDDG-s25-2 , lg:EU-2002-58-art5-3 ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:DE-DSK-OH-DD-source ;
-    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[5]/paragraph[1]" ;
     lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI .
 
 lg:DE-DSK-OH-DD-rn78-q1
@@ -117,7 +138,7 @@ lg:DE-DSK-OH-DD-rn78-q1
     lgo:quoteOf lg:DE-DSK-OH-DD-rn78 ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;
     lgo:sourceDocument lg:DE-DSK-OH-DD-source ;
-    lgo:sourceElement "/law/section[4]/paragraph[1]" ;
+    lgo:sourceElement "/law/section[5]/paragraph[1]" ;
     lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
     lgo:text "(78) Das Merkmal „unbedingt erforderlich“ wird weder im TDDDG noch in der ePrivacy-RL näher definiert. In der Gesetzesbegründung zum TDDDG wird jedoch von einer technischen Erforderlichkeit ausgegangen, was ein strenges Verständnis nahelegt. Dies bedeutet, dass auch für von Endnutzer:innen ausdrücklich gewünschte Dienste nur solche Zugriffe auf die Endeinrichtung von der Ausnahme umfasst sind, die technisch erforderlich sind, um gerade den gewünschten Dienst bereitzustellen. Denn das Kriterium der Erforderlichkeit im Sinne der Vorschrift bezieht sich ausschließlich auf die Funktionalität des digitalen Dienstes als solchen. Eine Ausnahme von der Einwilligungsbedürftigkeit kann daher nicht dadurch begründet werden, dass das Speichern von oder der Zugriff auf Informationen im Endgerät wirtschaftlich für das Geschäftsmodell erforderlich ist, in das der digitale Dienst eingebunden ist."@de .
 

@@ -17,7 +17,7 @@ lg:LV-ISSL
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:LV ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:LV-ISSL-source ;
+    lgo:sourceDocument lg:LV-ISSL-source-1 , lg:LV-ISSL-source-2 ;
     lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .
 
 lg:LV-ISSL-art4-1
@@ -28,7 +28,7 @@ lg:LV-ISSL-art4-1
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:EmailAddress , lgv:GeographicAddress , lgv:ProfessionalBody , lgv:ProfessionalRules , lgv:ProfessionalTitle , lgv:ProviderName , lgv:RapidContact , lgv:RegisterEntry , lgv:SupervisoryAuthority , lgv:VatId ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:LV-ISSL-source ;
+    lgo:sourceDocument lg:LV-ISSL-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .
 
@@ -37,7 +37,7 @@ lg:LV-ISSL-art4-1-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:LV-ISSL-art4-1 ;
     lgo:retrievedOn "2026-11-12"^^xsd:date ;
-    lgo:sourceDocument lg:LV-ISSL-source ;
+    lgo:sourceDocument lg:LV-ISSL-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI ;
     lgo:text """(1) Pakalpojuma sniedzējs uzskatāmi, tieši un pastāvīgi pieejamā veidā sniedz šādu informāciju:
@@ -55,7 +55,7 @@ lg:LV-ISSL-art4-2
     lgo:regulates lgv:PriceTransparency ;
     lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:LV-ISSL-source ;
+    lgo:sourceDocument lg:LV-ISSL-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
     lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .
 
@@ -64,12 +64,55 @@ lg:LV-ISSL-art4-2-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:LV-ISSL-art4-2 ;
     lgo:retrievedOn "2026-11-12"^^xsd:date ;
-    lgo:sourceDocument lg:LV-ISSL-source ;
+    lgo:sourceDocument lg:LV-ISSL-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
     lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI ;
     lgo:text "(2) Ja tiek norādīta cena, tad pakalpojuma sniedzējs to norāda tā, lai cena būtu nepārprotama un skaidri salasāma, un sniedz informāciju par to, vai cenā ir ietverti maksājamie nodokļi un preces piegādes izmaksas."@lv .
 
-lg:LV-ISSL-source
+lg:LV-ISSL-art7-1-1
+    a lgo:Provision ;
+    eli:is_part_of lg:LV-ISSL ;
+    lgo:citation "7.1 pants (1) ISSL" ;
+    lgo:implements lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:requiresDisclosureOf lgv:ProcessingPurposes ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:LV-ISSL-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .
+
+lg:LV-ISSL-art7-1-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:LV-ISSL-art7-1-1 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:LV-ISSL-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI ;
+    lgo:text "(1) Informācijas uzglabāšana abonenta vai lietotāja galiekārtā vai piekļuves iegūšana galiekārtā uzglabātajai informācijai ir atļauta, ja attiecīgais abonents vai lietotājs ir devis savu piekrišanu pēc tam, kad saņēmis skaidru un visaptverošu informāciju par iepriekšminētās apstrādes mērķi saskaņā ar Fizisko personu datu aizsardzības likumu."@lv .
+
+lg:LV-ISSL-art7-1-2
+    a lgo:Provision ;
+    eli:is_part_of lg:LV-ISSL ;
+    lgo:citation "7.1 pants (2) ISSL" ;
+    lgo:implements lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess , lgv:TransmissionOnlyAccess ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:LV-ISSL-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .
+
+lg:LV-ISSL-art7-1-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:LV-ISSL-art7-1-2 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:LV-ISSL-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI ;
+    lgo:text "(2) Šā panta pirmajā daļā minētā piekrišana nav nepieciešama, ja informācijas uzglabāšana galiekārtā vai piekļuves iegūšana galiekārtā uzglabātajai informācijai ir nepieciešama informācijas aprites nodrošināšanai elektronisko sakaru tīklā vai starpniecības pakalpojumu sniedzējam, lai sniegtu abonenta vai lietotāja pieprasīto pakalpojumu."@lv .
+
+lg:LV-ISSL-source-1
     a lgo:SourceDocument ;
     dcterms:language "lv"^^xsd:language ;
     lgo:annotatedFile "sources/lv/issl/issl.law.xml" ;
@@ -81,4 +124,18 @@ lg:LV-ISSL-source
     lgo:repositoryPath "sources/lv/issl/issl-4.fragment.html" ;
     lgo:retrievedOn "2026-11-12"^^xsd:date ;
     lgo:sha256 "906d09acae72c94f10a6050d4d4b586d950bf7aa98b3dc4727dc2d504b2ce551" ;
+    lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .
+
+lg:LV-ISSL-source-2
+    a lgo:SourceDocument ;
+    dcterms:language "lv"^^xsd:language ;
+    lgo:annotatedFile "sources/lv/issl/issl.law.xml" ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "Consolidated text in force (redakcija of 21.06.2024). 7.1 pants is the storage-and-access rule — Latvia's ePrivacy Art. 5(3) transposition, on the consent model."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "Autortiesību likums art. 6: normatīvo aktu teksti nav autortiesību objekts — official texts of normative acts are not subject to copyright" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/lv/issl/issl-7_1.fragment.html" ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sha256 "29d64118c437b56f1e321a9a93f36faf8a027bc1a890134ada62750f74b56a0d" ;
     lgo:sourceUrl "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums"^^xsd:anyURI .

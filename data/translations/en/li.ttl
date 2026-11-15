@@ -78,6 +78,18 @@ lg:LI-ECG-title-813436c1dfc4-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:LI-ECG .
 
+lg:LI-KOMG-art61-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "822c9df5226cd5562477754f77e25d669d7d0857e2e12e4e2d083fdb88cf1707" ;
+    lgo:text """4) The storing of information on a user's terminal equipment or the accessing of information already stored on the terminal equipment is permitted only if the user has consented on the basis of clear and comprehensive information. The informing of the user and the consent must be given in accordance with Regulation (EU) 2016/679. Consent is not required if:
+a) the sole purpose of storing information on a user's terminal equipment or the sole purpose of accessing information already stored on a user's terminal equipment is the transmission of a message over a public electronic communications network; or
+b) the storing of information on a user's terminal equipment or the accessing of information already stored on a user's terminal equipment is strictly necessary for the service provider to provide an audiovisual media service explicitly requested by the user."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:LI-KOMG-art61-4-q1 .
+
 lg:LI-MEDIENG-art11-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;

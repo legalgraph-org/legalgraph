@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Νόμος 3471/2006, άρθρο 4 παρ. 5, as replaced by art. 170 of Νόμος
+  4070/2012 (ΦΕΚ Α' 82/2012), written in schemas/law.xsd from the Government
+  Gazette PDFs. The words are the Greek legislator's; only the structure is
+  ours. The paragraph is the storage-and-access rule — the transposition of
+  ePrivacy Directive 2002/58/EC Art. 5(3) in its current consent form:
+  consent (συγκατάθεση) after clear and extensive information under art.
+  11(1) of Ν. 2472/1997, consent may be given via browser settings or another
+  application, and storage/access is excepted where its sole purpose is
+  carrying out or facilitating the transmission of a communication or it is
+  strictly necessary for an information-society service expressly requested
+  by the user or subscriber. The original 2006 wording (an outright
+  prohibition with the two technical exceptions) is no longer in force. Other paragraphs of art. 4 (confidentiality
+  of communications) carry no storage-and-access disclosure and are omitted.
+  Greek is the authentic language.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="el"
+     lga:act="GR-N-3471-2006" lga:jurisdiction="GR" lga:act-type="Statute"
+     lga:url="https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2006/20060100133.pdf" lga:transposes="EU-2002-58">
+  <meta>
+    <title>Νόμος 3471/2006: Προστασία δεδομένων προσωπικού χαρακτήρα και της ιδιωτικής ζωής στον τομέα των ηλεκτρονικών επικοινωνιών</title>
+    <date>2006-06-28</date>
+  </meta>
+
+  <section num="Άρθρο 4" title="Απόρρητο" source="fek-a-82-2012.pdf">
+    <paragraph num="5." lga:provision="GR-N-3471-2006-art4-5" lga:citation="άρθρο 4 παρ. 5 ν. 3471/2006 (όπως αντικαταστάθηκε με το άρθρο 170 ν. 4070/2012)" lga:url="https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2012/20120100082.pdf" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Η αποθήκευση πληροφοριών ή η απόκτηση πρόσβασης σε ήδη αποθηκευμένες πληροφορίες στον τερματικό εξοπλισμό συνδρομητή ή χρήστη επιτρέπεται μόνο αν ο συγκεκριμένος συνδρομητής ή χρήστης έχει δώσει τη συγκατάθεσή του μετά από σαφή και εκτενή ενημέρωση κατά την παρ. 1 του άρθρου 11 του ν. 2472/1997, όπως ισχύει. Η συγκατάθεση του συνδρομητή ή χρήστη μπορεί να δίδεται μέσω κατάλληλων ρυθμίσεων στο φυλλομετρητή ιστού ή μέσω άλλης εφαρμογής. Τα παραπάνω δεν εμποδίζουν την οποιαδήποτε τεχνικής φύσεως αποθήκευση ή πρόσβαση, αποκλειστικός σκοπός της οποίας είναι η διενέργεια της διαβίβασης μίας επικοινωνίας μέσω δικτύου ηλεκτρονικών επικοινωνιών ή η οποία είναι αναγκαία για την παροχή υπηρεσίας της κοινωνίας της πληροφορίας, την οποία έχει ζητήσει ρητά ο χρήστης ή ο συνδρομητής. Με πράξη της Αρχής Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (Α.Π.Δ.Π.Χ.) ορίζονται ειδικότερα οι τρόποι παροχής πληροφοριών και δήλωσης της συγκατάθεσης.</paragraph>
+  </section>
+</law>

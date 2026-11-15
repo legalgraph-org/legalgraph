@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OLG Frankfurt am Main, Urteil vom 18. Februar 2021 – 6 U 150/19
+  (ECLI:DE:OLGHE:2021:0218.6U150.19.00), the paragraphs the graph quotes, written
+  in schemas/law.xsd from the LaReDa document page. The words are the court's;
+  only the structure is ours. `legalgraph sources verify` checks each paragraph
+  against the page's text. The decision applies § 5 TMG, the predecessor of
+  § 5 DDG.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-OLGHE-2021-0218" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.rv.hessenrecht.hessen.de/bshe/document/LARE210000755">
+  <meta>
+    <title>Oberlandesgericht Frankfurt am Main, Urteil vom 18. Februar 2021 – 6 U 150/19</title>
+    <date>2021-02-18</date>
+  </meta>
+
+  <section num="Entscheidungsgründe" title="Entscheidungsgründe (Impressum)" source="olg-frankfurt-6u150-19.html">
+    <paragraph lga:provision="DE-OLGHE-2021-0218-i1" lga:citation="OLG Frankfurt 6 U 150/19, Entscheidungsgründe"
+      lga:url="https://www.rv.hessenrecht.hessen.de/bshe/document/LARE210000755"
+      lga:applies="DE-DDG-s5-1">Entgegen der Auffassung der Klägerin sind die nach § 5 Abs. 1 TMG erforderlichen Pflichtangaben - Angaben über die Vertretungsberechtigten, vollständige und korrekte Unternehmensbezeichnung sowie Angabe einer E-Mail-Adresse - vorhanden. So ist der Vertretungsberechtigte mit „CEO: F“ bezeichnet. Da es sich um eine US-Firma handelt, ist die Abkürzung für Chief Executive Officer ausreichend. Sie ist dem deutschen Verkehr hinreichend bekannt. Das nach TMG verantwortliche Unternehmen ist ebenfalls bezeichnet. Die Abkürzung LLC steht für die US-amerikanische Limited Liability Company. Auch eine E-Mail-Adresse ist vorhanden.</paragraph>
+    <paragraph lga:provision="DE-OLGHE-2021-0218-i2" lga:citation="OLG Frankfurt 6 U 150/19, Entscheidungsgründe"
+      lga:url="https://www.rv.hessenrecht.hessen.de/bshe/document/LARE210000755"
+      lga:applies="DE-DDG-s5-1">Dass das Impressum insgesamt unübersichtlich gestaltet ist, weil die Firma A zusätzlich noch als Unternehmensgruppe ohne den Zusatz LLC und einmal mit dem Zusatz S.L. (mit einer Adresse auf Ort1) genannt wird, ist im Hinblick auf die hier zu prüfenden Informationspflichten zu vernachlässigen, zumal die entscheidenden Angaben unter der Überschrift „Pflichtangaben nach dem Telemediengesetz, Inhaltlich verantwortlich“ gesetzt sind.</paragraph>
+    <paragraph lga:provision="DE-OLGHE-2021-0218-i3" lga:citation="OLG Frankfurt 6 U 150/19, Entscheidungsgründe"
+      lga:url="https://www.rv.hessenrecht.hessen.de/bshe/document/LARE210000755"
+      lga:applies="DE-DDG-s5-1">Die Klägerin kann sich in diesem Zusammenhang auch nicht mit Erfolg darauf berufen, dass unter der angegebenen Adresse der A Unternehmensgruppe LLC nur ein Briefkasten vorhanden sein soll, was das Landgericht zu Unrecht zu einer entsprechenden Verurteilung im angefochtenen Urteil veranlasst hat.</paragraph>
+    <paragraph lga:provision="DE-OLGHE-2021-0218-i4" lga:citation="OLG Frankfurt 6 U 150/19, Entscheidungsgründe"
+      lga:url="https://www.rv.hessenrecht.hessen.de/bshe/document/LARE210000755"
+      lga:interprets="DE-DDG-s5-1">§ 5 Abs. 1 Nr. 1 TMG verlangt die Anschrift, an dem der Diensteanbieter niedergelassen ist. Dass es sich hierbei um eine physische Niederlassung handeln muss, also eine „auf gewisse Dauer angelegte Geschäftsstelle, die mit ausreichenden Räumlichkeiten sowie einer solchen persönlich-sachlichen Ausstattung versehen ist, dass von dort aus die Angelegenheiten des Diensteanbieters tatsächlich verwaltet und geregelt werden können“, kann man der Vorschrift nicht entnehmen. Dies auch vor dem Hintergrund, dass die Informationspflichten des § 5 TMG (nur) eine Kontaktaufnahme mit dem Diensteanbieter ermöglichen sollen. Anders als dies § 5a Abs. 3 Nr. 2 UWG zur Vermeidung einer Irrführung durch Unterlassen fordert (vgl. dazu Köhler/Bornkamm UWG, § 5a Rn 4.34), bedeutet das nicht, dass damit eine physische Präsenz im Sinne eines Geschäftslokals an einem bestimmten Ort verbunden sein muss.</paragraph>
+  </section>
+</law>

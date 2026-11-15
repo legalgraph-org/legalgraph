@@ -17,7 +17,7 @@ lg:FI-917-2014
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:FI ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 , lg:FI-917-2014-source-2 ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .
 
 lg:FI-917-2014-s176-1
@@ -28,7 +28,7 @@ lg:FI-917-2014-s176-1
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:EmailAddress , lgv:GeographicAddress , lgv:ProviderName , lgv:RapidContact , lgv:RegisterEntry , lgv:SupervisoryAuthority , lgv:VatId ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .
 
@@ -37,7 +37,7 @@ lg:FI-917-2014-s176-1-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:FI-917-2014-s176-1 ;
     lgo:retrievedOn "2026-11-14"^^xsd:date ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI ;
     lgo:text """Sen lisäksi, mitä muualla laissa säädetään tiedonantovelvoitteista, tietoyhteiskunnan palvelun tarjoajan on pidettävä ainakin seuraavat tiedot palvelun vastaanottajien ja viranomaisten saatavilla helposti, välittömästi ja jatkuvasti:
@@ -54,7 +54,7 @@ lg:FI-917-2014-s176-2
     lgo:regulates lgv:ProviderIdentification ;
     lgo:requiresDisclosureOf lgv:ProfessionalBody , lgv:ProfessionalRules , lgv:ProfessionalTitle ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .
 
@@ -63,7 +63,7 @@ lg:FI-917-2014-s176-2-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:FI-917-2014-s176-2 ;
     lgo:retrievedOn "2026-11-14"^^xsd:date ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[2]" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI ;
     lgo:text """Sen lisäksi, mitä 1 momentissa säädetään, ammattipätevyyden tunnustamisesta annetussa Euroopan parlamentin ja neuvoston direktiivissä 2005/36/EY tarkoitetun säännellyn ammatin harjoittajan on tietoyhteiskunnan palvelua tarjotessaan pidettävä saatavilla seuraavat tiedot:
@@ -79,7 +79,7 @@ lg:FI-917-2014-s176-3
     lgo:regulates lgv:PriceTransparency ;
     lgo:requiresDisclosureOf lgv:DeliveryCosts , lgv:VatStatus ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[3]" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .
 
@@ -88,12 +88,34 @@ lg:FI-917-2014-s176-3-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:FI-917-2014-s176-3 ;
     lgo:retrievedOn "2026-11-14"^^xsd:date ;
-    lgo:sourceDocument lg:FI-917-2014-source ;
+    lgo:sourceDocument lg:FI-917-2014-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[3]" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI ;
     lgo:text "Jos tietoyhteiskunnan palvelua tarjottaessa annetaan tietoja tavaroiden tai palvelujen hinnoista, ne on annettava selkeästi ja yksiselitteisesti. Tiedoista on käytävä ilmi, sisältyvätkö vero ja toimituskulut hintaan."@fi .
 
-lg:FI-917-2014-source
+lg:FI-917-2014-s205-1
+    a lgo:Provision ;
+    eli:is_part_of lg:FI-917-2014 ;
+    lgo:citation "917/2014 § 205" ;
+    lgo:implements lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:Consent , lgv:TerminalEquipmentAccess ;
+    lgo:requiresDisclosureOf lgv:CookiePurposes ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:FI-917-2014-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .
+
+lg:FI-917-2014-s205-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:FI-917-2014-s205-1 ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sourceDocument lg:FI-917-2014-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI ;
+    lgo:text "Evästeiden tai muiden palvelun käyttöä kuvaavien tietojen tallentaminen käyttäjän päätelaitteelle ja näiden tietojen käyttö on sallittua palvelun tarjoajalle, jos käyttäjä on antanut siihen suostumuksensa ja palvelun tarjoaja antaa käyttäjälle ymmärrettävät ja kattavat tiedot tallentamisen tai käytön tarkoituksesta."@fi .
+
+lg:FI-917-2014-source-1
     a lgo:SourceDocument ;
     dcterms:language "fi"^^xsd:language ;
     lgo:annotatedFile "sources/fi/sahkoiset-viestintapalvelut/sahkoiset-viestintapalvelut.law.xml" ;
@@ -105,4 +127,18 @@ lg:FI-917-2014-source
     lgo:repositoryPath "sources/fi/sahkoiset-viestintapalvelut/917-2014.finlex.html" ;
     lgo:retrievedOn "2026-11-14"^^xsd:date ;
     lgo:sha256 "47cfaa9ff26a6e9c14764a5b1ab6733cc2efc55278ac9af49d648ce4d8a91b63" ;
+    lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .
+
+lg:FI-917-2014-source-2
+    a lgo:SourceDocument ;
+    dcterms:language "fi"^^xsd:language ;
+    lgo:annotatedFile "sources/fi/sahkoiset-viestintapalvelut/sahkoiset-viestintapalvelut.law.xml" ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "Consolidated Finnish text of § 205 as finlex renders it, same page as the § 176 fragment."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "Finnish copyright law § 9: legislation is not protected by copyright" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/fi/sahkoiset-viestintapalvelut/917-2014-s205.finlex.html" ;
+    lgo:retrievedOn "2026-11-15"^^xsd:date ;
+    lgo:sha256 "623a26129748f10dfa2043f2c605e5a2c1e41a571696b4b08d7e5111991dee78" ;
     lgo:sourceUrl "https://www.finlex.fi/fi/laki/ajantasa/2014/20140917"^^xsd:anyURI .

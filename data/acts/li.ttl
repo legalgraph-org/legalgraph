@@ -37,3 +37,25 @@ lg:LI-ASTG a lgo:LegalAct ;
     rdfs:seeAlso <https://www.gesetze.li/konso/2016516000> ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Art. 18 requires entrepreneurs covered by or committed to ADR bodies to inform consumers of the body and its website address (Abs. 1), to state it clearly, understandably and accessibly on their website and in their general terms where they have one (Abs. 2), and to point consumers to the competent body on durable media when no agreement is reached, stating whether they will take part (Abs. 3)."@en .
+
+# KomG (LGBl. 2023 Nr. 216): Liechtenstein's electronic-communications act;
+# Art. 61 Abs. 4, in force since the 01.02.2025 revision, is the storage-and-
+# access rule (ePrivacy Directive Art. 5(3)) — consent on the basis of clear
+# and comprehensive information, constituted under the GDPR, with the
+# transmission and strictly-necessary exceptions. Its exception b) names an
+# "audiovisuellen Mediendienst" (audiovisual media service), narrower than
+# ePrivacy's "information society service"; the Datenschutzstelle Liechtenstein
+# reads it as the ePrivacy concept (datenschutzstelle.li, "Aktualisierung:
+# Cookies und vergleichbare Technologien").
+
+lg:LI-KOMG a lgo:LegalAct ;
+    eli:title "Gesetz über die elektronische Kommunikation (Kommunikationsgesetz; KomG)"@de , "Act on Electronic Communications (Communications Act; KomG)"@en ;
+    lgo:shortName "KomG" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:LI ;
+    eli:id_local "LGBl. 2023 Nr. 216" ;
+    eli:date_document "2023-04-05"^^xsd:date ;
+    lgo:sourceUrl "https://www.gesetze.li/konso/2023216000"^^xsd:anyURI ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 61 Abs. 4 (introduced by the revision in force 01.02.2025) permits storing information on, or accessing information stored on, a user's terminal equipment only with the user's consent on the basis of clear and comprehensive information; the information and consent are governed by Regulation (EU) 2016/679 (the GDPR). Consent is not required where the sole purpose is the transmission of a message over a public electronic communications network, or where storage/access is strictly necessary for the service provider to provide an audiovisual media service explicitly requested by the user — the published text says 'audiovisuellen Mediendienst'; the Datenschutzstelle Liechtenstein reads it as the ePrivacy 'information society service' concept."@en .

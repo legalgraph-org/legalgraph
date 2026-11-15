@@ -85,7 +85,7 @@ lgv:EmailsOnlyExistingCustomers lgo:basedOn lg:DE-UWG-s7-3 .
 lgv:SellsOnlineToConsumers lgo:basedOn lg:DE-BGB-s312j-2 , lg:DE-BGB-s356a-1 , lg:EU-2011-83-art8-2 .
 lgv:ShowsPricesToConsumers lgo:basedOn lg:DE-PAngV-s3-1 .
 lgv:SellsGoodsByQuantity lgo:basedOn lg:DE-PAngV-s4-1 .
-lgv:Microenterprise lgo:basedOn lg:DE-BFSG-s3-3 , lg:EU-2019-882-art4-5 .
+lgv:Microenterprise lgo:basedOn lg:DE-BFSG-s3-3 , lg:EU-2019-882-art4-5 , lg:AT-BAFG-s6-1 .
 lgv:ProvidesIntermediaryService lgo:basedOn lg:EU-2022-2065-art11-1 , lg:EU-2022-2065-art12-1 .
 lgv:OperatesOnlinePlatform lgo:basedOn lg:EU-2022-2065-art26-1 .
 lgv:ShowsAdvertisementsOnPlatform lgo:basedOn lg:EU-2022-2065-art26-1 .

@@ -31,3 +31,16 @@ lg:NL-HRW a lgo:LegalAct ;
     eli:id_local "BWBR0021777" ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "Art. 27 requires registered undertakings and legal persons to state their trade-register number on all outgoing letters, orders, invoices, offers and other announcements, except advertisements; whether 'andere aankondigingen' reaches a website is for review — the express website duty is BW art. 3:15d(1)(c)."@en .
+
+# Netherlands: art. 11.7a Telecommunicatiewet (additions to data/extracted/nl/).
+
+lg:NL-TW a lgo:LegalAct ;
+    eli:title "Telecommunicatiewet"@nl , "Telecommunications Act"@en ;
+    lgo:shortName "Tw" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:NL ;
+    lgo:sourceUrl "https://wetten.overheid.nl/BWBR0009950/"^^xsd:anyURI ;
+    eli:id_local "BWBR0009950" ;
+    eli:transposes lg:EU-2002-58 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Art. 11.7a is the Dutch cookie rule: storing information on or accessing information in a user's terminal equipment via an electronic communications network needs clear and complete information (at least the purposes) plus consent; lid 3 is the transmission/strictly-necessary exception, lid 4 presumes personal-data processing for cross-service tracking, lid 5 protects public-law services from consent-conditioning."@en .

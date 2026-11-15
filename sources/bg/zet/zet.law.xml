@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Закон за електронната търговия (ЗЕТ), ДВ бр. 51/23.06.2006, чл. 4–5, written
+  Закон за електронната търговия (ЗЕТ), ДВ бр. 51/23.06.2006, чл. 4, 4а, 5, written
   in schemas/law.xsd from the consolidated text lex.bg renders. The words are
   the Bulgarian legislature's; only the structure is ours. Чл. 4 is the general
   information duty — the transposition of e-Commerce Directive 2000/31/EC
-  Art. 5(1), with чл. 4(2) the price-transparency clause (Art. 5(2)). Чл. 5(3)
+  Art. 5(1), with чл. 4(2) the price-transparency clause (Art. 5(2)). Чл. 4а is
+  the storage-and-access rule — the transposition of ePrivacy Directive
+  2002/58/EC Art. 5(3), using the opt-out model (the user must be given the
+  possibility to refuse, not to consent). Чл. 5(3)
   is the commercial-communication requirements clause; its item 2 is the
   sender-identification duty. Чл. 5(1)–(2) (definition and exceptions) carry no
   disclosure and are omitted. Bulgarian is the authentic language.
@@ -43,6 +46,22 @@
         <item num="3.">да определят ясно и недвусмислено условията за ползване на промоционни предложения, като отстъпки, премии и подаръци, ако включват такива;</item>
         <item num="4.">да осигуряват лесен достъп до ясни и недвусмислени условия за участие в състезания и игри с обявени награди, ако съдържат такава информация;</item>
         <item num="5.">да съдържат и информацията, предвидена в други нормативни актове.</item>
+      </list>
+    </paragraph>
+  </section>
+  <section num="Чл. 4а" title="Съхраняване на информация в крайното устройство на потребителя и достъп до нея" source="zet-chl4a.lexbg.html">
+    <paragraph num="(1)" lga:provision="BG-ZET-art4a-1" lga:citation="член 4а, ал. 1 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3">Доставчикът на услуги на информационното общество съхранява информация или получава достъп до информация, съхранена в крайното устройство на получателя на услугата, при условие че:
+      <list>
+        <item num="1." lga:requires="PrivacyInformation">(изм. - ДВ, бр. 17 от 2019 г.) на получателя на услуга на информационното общество е предоставена ясна и изчерпателна информация по чл. 13 от Регламент (ЕС) 2016/679 на Европейския парламент и на Съвета от 27 април 2016 г. относно защитата на физическите лица във връзка с обработването на лични данни и относно свободното движение на такива данни и за отмяна на Директива 95/46/ЕО (Общ регламент относно защитата на данните) (ОВ, L 119/1 от 4 май 2016 г.);</item>
+        <item num="2.">на получателя на услуга на информационното общество е предоставена възможност да откаже съхраняването или достъпа до информацията.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="BG-ZET-art4a-2" lga:citation="член 4а, ал. 2 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="PrivacyInformation">В случаите по ал. 1 доставчиците на услуги на информационното общество осигуряват на получателя на услугата възможност по всяко време да получи информация за съхраняваните в крайното устройство данни.</paragraph>
+    <paragraph num="(3)" lga:provision="BG-ZET-art4a-3" lga:citation="член 4а, ал. 3 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="TerminalEquipmentAccess">При последващо съхраняване на информация или получаване на достъп до информация от един и същ доставчик изискванията на ал. 1 не са задължителни, в случай че получателят на услугата не е възразил.</paragraph>
+    <paragraph num="(4)" lga:provision="BG-ZET-art4a-4" lga:citation="член 4а, ал. 4 ЗЕТ" lga:url="https://lex.bg/laws/ldoc/2135530547" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Изискванията на ал. 1 не се прилагат по отношение на съхраняването на информация и предоставянето на достъп до нея, когато те са необходими за:
+      <list>
+        <item num="1.">предаването на съобщения по електронна съобщителна мрежа;</item>
+        <item num="2.">предоставяне на услуга на информационното общество, изрично поискана от получателя на услуги на информационното общество.</item>
       </list>
     </paragraph>
   </section>

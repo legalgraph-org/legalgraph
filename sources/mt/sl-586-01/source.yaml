@@ -1,0 +1,27 @@
+# Malta's Processing of Personal Data (Electronic Communications Sector) Regulations
+# (S.L. 586.01, Legal Notice 16 of 2003 as amended), regulation 5 "Access to information
+# stored in terminal equipment": the ePrivacy Directive Article 5(3) transposition —
+# storing or accessing information in a subscriber's or user's terminal equipment only with
+# consent after clear and comprehensive information under article 19 of the Data Protection
+# Act, with transmission-only and strictly-necessary exceptions. Legislation.mt publishes the
+# consolidated regulations as PDF; the paragraphs the graph quotes are transcribed in
+# schemas/law.xsd and checked letter for letter against the PDF's text.
+id: mt/sl-586-01
+title: Processing of Personal Data (Electronic Communications Sector) Regulations (S.L. 586.01)
+jurisdiction: MT
+language: en
+publisher: Legislation Unit, legislation.mt
+kind: authored-xml
+licence: official-work
+licence_basis: "Copyright Act (Cap. 415), art. 2: \"literary work\" \"save as provided in article 12 of the Statute Law Revision Act, 1980, does not include any written law, law report or judicial decisions\"; in any case the Re-Use of Public Sector Information Act (Cap. 546), art. 7, makes public sector documents re-usable for commercial and non-commercial purposes, and legislation is not among its art. 3 exclusions"
+originals:
+  - file: sl58601.pdf
+    page: https://legislation.mt/eli/sl/586.1/eng
+    url: https://legislation.mt/getpdf/602258b9bc8272018c0e1dc7
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Consolidated as amended by Legal Notices 153 of 2003, 522 of 2004, 109 of 2005, 426 of 2007, 198 of 2008, 239 of 2011 and 429 of 2013. Regulation 5 was substituted by Legal Notice 239 of 2011; reg. 5(2)'s wording also carries the L.N. 522 of 2004 amendment. Regulation 1(2): these regulations implement Directive 2002/58/EC as amended by Directive 2009/136/EC."
+    retrieved_on: 2026-11-15
+    sha256: bb29e66a55acde395e49b626e9bc2b300ef0051bf9691564100a69cacb7aaefc
+annotated: sl-586-01.law.xml

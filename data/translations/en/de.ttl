@@ -456,6 +456,67 @@ lg:DE-BGH-2020-0528-title-556234141f67-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-BGH-2020-0528 .
 
+lg:DE-BGH-2023-0707-leitsatz-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8e64a8bb99b2323ecb363cc6f3a58b47f0cf12b52efb73a7494404197dc203a1" ;
+    lgo:text "A proper action generally requires the plaintiff's serviceable address to be stated; the address of a postal service provider that is merely commissioned to forward mail addressed to the plaintiff does not suffice for this."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2023-0707-leitsatz-1-q1 .
+
+lg:DE-BGH-2023-0707-p10-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e84f7b0e3afcee60afff9ad568d235ad8bccae5d7fdf41da1a342dbbe19b15d0" ;
+    lgo:text "(2) Accordingly, the postal service provider's address is not a serviceable address of the plaintiff. Service under § 177 ZPO by delivery to the plaintiff is ruled out at the stated address. The plaintiff does not stay at the postal service provider's address. She has neither her dwelling there within the meaning of her actual centre of life, nor business premises, nor is she otherwise to be found there."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2023-0707-p10-2-q1 .
+
+lg:DE-BGH-2023-0707-p5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "8e64a8bb99b2323ecb363cc6f3a58b47f0cf12b52efb73a7494404197dc203a1" ;
+    lgo:text "A proper action generally requires the plaintiff's serviceable address to be stated; the address of a postal service provider that is merely commissioned to forward mail addressed to the plaintiff does not suffice for this."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2023-0707-p5-q1 .
+
+lg:DE-BGH-2023-0707-p9-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b81312053ad55564fed962ac5257b2a1e0ab6fd00edd465cdb1efb4ba3cbaa79" ;
+    lgo:text "(1) A serviceable address is not every address at which service on the addressee is possible, but one at which the addressee can actually be reached and where there is a genuine possibility of a document to be served being handed over to him or her in person."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2023-0707-p9-1-q1 .
+
+lg:DE-BGH-2023-0707-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "27305218ef8ca33322c62f6322fc459b24a3955c2664a92b013e50ebb8a6ba2c" ;
+    lgo:text "The appeal on points of law against the judgment of the 13th Civil Panel of the Frankfurt am Main Regional Court of 6 October 2022 is dismissed with costs to be borne by the plaintiff."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2023-0707-tenor-1-q1 .
+
+lg:DE-BGH-2023-0707-title-3fd088cc2d50-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3fd088cc2d5015e4f87591fecce2393cba9fe5af9bd54bb5cc557b4a603b7aa8" ;
+    lgo:text "Federal Court of Justice, judgment of 7 July 2023 – V ZR 210/22"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-14"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2023-0707 .
+
 lg:DE-DDG-s3-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -626,6 +687,16 @@ lg:DE-DSK-OH-DD-rn58-q1-en
     lgo:translatedOn "2026-11-02"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-DSK-OH-DD-rn58-q1 .
+
+lg:DE-DSK-OH-DD-rn63-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6b6fa8c05681e216b3d20662ddcca7654910b70beb9eebee77cde3aa6fad6a84" ;
+    lgo:text "{'lang': 'en', 'text': \"It should be noted that consents always relate to 'the specific case'. If the 'case' changes, the original consent becomes obsolete and new consent must be obtained. Where a blanket consent for numerous cases is obtained through an affirmative act, as regularly happens on websites and in apps, any change — in particular of the cookies used and embedded third-party services — means that new consent must be obtained for the new case. If this is not requested individually, the blanket consent must be obtained anew.\"}"@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-DSK-OH-DD-rn63-q1 .
 
 lg:DE-DSK-OH-DD-rn78-q1-en
     a lgo:Translation ;
@@ -977,6 +1048,52 @@ lg:DE-EGBGB-source-legalStatus-f508f07a4698-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-EGBGB-source .
 
+lg:DE-EinwV-s1-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a3427c706c08f5e832ed2eb78da2fdf08cd735310944f341feb6e6c480e0930a" ;
+    lgo:text "(2) The provider of digital services remains responsible for fulfilling the information obligations and for observing the requirements concerning the effectiveness of consent under Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (General Data Protection Regulation)."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s1-2-q1 .
+
+lg:DE-EinwV-s18-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "986f7fc38000d780bde0c61923d472d36bd9b6e3a444bb95b0cbc9dc2607f7b6" ;
+    lgo:text "(1) The embedding of recognised consent management services by providers of digital services is voluntary."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s18-1-q1 .
+
+lg:DE-EinwV-s18-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "cbeddc910b24df6e604a08dc672c1a08693318d0f8907e048953f6f802dd8d61" ;
+    lgo:text """(2) Providers of digital services that embed a recognised consent management service and use it to query the end user's settings regarding their consents under Section 25(1) of the Telecommunications-Digital Services Data Protection Act should, through technical and organisational measures corresponding to the state of the art, ensure that
+1. the embedding of a recognised consent management service is taken into account when the end user accesses their digital service, and
+2. it is verified whether settings of the end user regarding the consents of the provider of digital services that were queried are managed with the recognised consent management service."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s18-2-q1 .
+
+lg:DE-EinwV-s18-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ce9f4d9a6a69cdd5a25ca098f33ce08b4dfb1515e625c5a2ec669dbc857e356a" ;
+    lgo:text """(3) Providers of digital services that embed a recognised consent management service should
+1. enable the consents under Section 25(1) of the Telecommunications-Digital Services Data Protection Act that they have queried and the settings made in response to be stored by the embedded recognised consent management service,
+2. point out to end users in a visible and appropriate place that the digital service offered embeds recognised consent management services and takes into account the settings of end users managed there,
+3. cooperate with the recognised consent management service to implement the requirements of Section 7, and
+4. make available to the recognised consent management service the information required under Articles 7 and 12 to 14 of Regulation (EU) 2016/679 in a machine-readable format."""@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s18-3-q1 .
+
 lg:DE-EinwV-s19-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -986,6 +1103,26 @@ lg:DE-EinwV-s19-1-q1-en
     lgo:translatedOn "2026-11-02"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-EinwV-s19-1-q1 .
+
+lg:DE-EinwV-s19-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "b7024b653c798c6eb78c1b3c1ba7d346b8853acacaac939239113496ddc19dbc" ;
+    lgo:text "(2) Providers of digital services may transmit to a recognised consent management service used by the end user consents of the end user that are already available to them. The information under Section 3(3) must be transmitted together with the date and time of the consent given by the end user."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s19-2-q1 .
+
+lg:DE-EinwV-s20-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f553e072acc843ff3fc6a893979a7ba8f69207902e24b632dbb6784fd30eae31" ;
+    lgo:text "Providers of digital services as well as manufacturers and providers of software for retrieving and displaying information from the internet that embed a recognised consent management service should not, without objective reason, induce end users to use or exclude particular recognised consent management services."@en ;
+    lgo:translatedBy "swe-2" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-EinwV-s20-q1 .
 
 lg:DE-EinwV-s3-2-q1-en
     a lgo:Translation ;
@@ -1362,6 +1499,57 @@ Sentence 3 nos. 3 and 4 does not apply to young persons responsible for telemedi
     lgo:translatedOn "2026-10-31"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-MStV-s18-2-q1 .
+
+lg:DE-OLGHE-2021-0218-i1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "397fc2a96e2427f6ef9170516bd6b1725bcdcb21167b6e3b0beb3d47114f1c19" ;
+    lgo:text "Contrary to the plaintiff's view, the particulars required by § 5(1) TMG are present — details of the authorised representatives, the full and correct company name and an e-mail address. The authorised representative is designated 'CEO: F'. As this is a US company, the abbreviation for Chief Executive Officer suffices; it is sufficiently well known in German usage. The company responsible under the TMG is also named. The abbreviation LLC stands for the US Limited Liability Company. An e-mail address is also given."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHE-2021-0218-i1-q1 .
+
+lg:DE-OLGHE-2021-0218-i2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e26a4dd452fba2561d3f06a170d5d61ed9a95c1a3c1e0e6dbc7bf01bb5dfe109" ;
+    lgo:text "That the Impressum as a whole is confusingly laid out, because company A is additionally named as a corporate group without the LLC suffix and once with the S.L. suffix (with an address in Town1), is immaterial to the information duties examined here, especially as the decisive details are placed under the heading 'Particulars under the Telemedia Act, person responsible for content'."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHE-2021-0218-i2-q1 .
+
+lg:DE-OLGHE-2021-0218-i3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "05e426d262542f8ef4b660e637216f0881ab6a9dc3c6a7439b29a7b0e594accf" ;
+    lgo:text "Nor can the plaintiff successfully argue in this context that only a postal box is said to exist at the stated address of company group LLC A, which induced the Regional Court wrongly to order the corresponding penalty in the judgment appealed against."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHE-2021-0218-i3-q1 .
+
+lg:DE-OLGHE-2021-0218-i4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bcc45eccff497d096bb9c37d6e1309a1ea1645cb1760867ce0c187c5c698ed35" ;
+    lgo:text "§ 5(1) no. 1 TMG requires the address at which the service provider is established. That this must be a physical establishment — that is, 'business premises set up for a certain duration, equipped with sufficient rooms and such personal and material facilities that the provider's affairs can actually be managed and regulated from there' — cannot be inferred from the provision. This also against the background that the information duties of § 5 TMG are intended (only) to enable contact with the service provider. Unlike § 5a(3) no. 2 UWG, which requires this to avoid misleading omission (cf. Köhler/Bornkamm UWG, § 5a para. 4.34), this does not mean that a physical presence in the sense of business premises at a particular place must be connected with it."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHE-2021-0218-i4-q1 .
+
+lg:DE-OLGHE-2021-0218-title-1344fbd7a3b2-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1344fbd7a3b218e3f538b327db08d7b0f84c00c731bb6d2a8bae4fd635b70b3d" ;
+    lgo:text "Higher Regional Court of Frankfurt am Main, judgment of 18 February 2021 – 6 U 150/19"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHE-2021-0218 .
 
 lg:DE-OLGK-2024-0119-p46-q1-en
     a lgo:Translation ;

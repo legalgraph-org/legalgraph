@@ -27,6 +27,7 @@ obligations:
   - EU-R-service-provider-information-register
   - EU-R-service-provider-information-vat
   - AT-R-pre-contract-information
+  - AT-R-withdrawal-function
   - AT-R-company-website
   - EU-R-privacy-information
   - EU-R-privacy-information-consent
@@ -53,6 +54,7 @@ obligations:
   - DE-R-total-price
   - AT-R-media-owner-disclosure
   - AT-R-adr-information-after-complaint
+  - AT-R-accessibility
   - EU-R-access-request
   - EU-R-breach-notification
   - EU-R-data-security

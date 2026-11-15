@@ -16,6 +16,7 @@ obligations:
   - CH-R-provider-identification
   - CH-R-privacy-information
   - CH-R-privacy-information-abroad
+  - CH-R-device-access-information
   - EU-R-privacy-information
   - EU-R-privacy-information-consent
   - EU-R-privacy-information-transfers

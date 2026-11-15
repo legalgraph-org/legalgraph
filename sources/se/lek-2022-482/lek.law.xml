@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Lag (2022:482) om elektronisk kommunikation (LEK), 9 kap. 28 §, written in
+  schemas/law.xsd from the riksdagen.se consolidated text. The words are the
+  Swedish legislature's; only the structure is ours. 9 kap. 28 § is the
+  storage-and-access rule — the transposition of ePrivacy Directive 2002/58/EC
+  Art. 5(3), on the consent model; "samtycke" carries its GDPR meaning
+  (1 kap. 8 §). Swedish is the authentic language; the Act has no official
+  English version.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="sv"
+     lga:act="SE-LEK-2022-482" lga:jurisdiction="SE" lga:act-type="Statute"
+     lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2022482-om-elektronisk-kommunikation_sfs-2022-482/">
+  <meta>
+    <title>Lag (2022:482) om elektronisk kommunikation</title>
+    <date>2022-06-03</date>
+  </meta>
+
+  <section num="9 kap. 28 §" title="Lagring och åtkomst till information i terminalutrustning" source="lek-28.fragment.html">
+    <paragraph num="" lga:provision="SE-LEK-2022-482-k9s28-1" lga:citation="9 kap. 28 § st. 1 LEK" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2022482-om-elektronisk-kommunikation_sfs-2022-482/" lga:regulates="Consent TerminalEquipmentAccess" lga:implements="EU-2002-58-art5-3" lga:requires="ProcessingPurposes">Uppgifter får lagras i eller hämtas från en abonnents eller användares terminalutrustning endast om abonnenten eller användaren får tillgång till information om ändamålet med behandlingen och samtycker till den.</paragraph>
+    <paragraph num="" lga:provision="SE-LEK-2022-482-k9s28-2" lga:citation="9 kap. 28 § st. 2 LEK" lga:url="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2022482-om-elektronisk-kommunikation_sfs-2022-482/" lga:regulates="TransmissionOnlyAccess StrictlyNecessaryAccess" lga:implements="EU-2002-58-art5-3">Trots att samtycke inte har lämnats är sådan lagring eller åtkomst tillåten som
+      <list>
+        <item num="1.">behövs för överföring av ett elektroniskt meddelande via ett elektroniskt kommunikationsnät, eller</item>
+        <item num="2.">är nödvändig för tillhandahållande av en tjänst på uttrycklig begäran av användaren eller abonnenten.</item>
+      </list>
+    </paragraph>
+  </section>
+</law>

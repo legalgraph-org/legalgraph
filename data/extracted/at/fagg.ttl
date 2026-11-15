@@ -17,8 +17,136 @@ lg:AT-FAGG
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:AT ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:AT-FAGG-source ;
+    lgo:sourceDocument lg:AT-FAGG-source-1 , lg:AT-FAGG-source-2 ;
     lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-1
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-FAGG ;
+    lgo:citation "§ 13a Abs. 1 FAGG" ;
+    lgo:implements lg:EU-2011-83-art11a-1 ;
+    lgo:regulates lgv:WithdrawalFunction ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-FAGG-s13a-1 ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[1]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI ;
+    lgo:text "(1) Bei Fernabsatzverträgen, die über eine Online-Benutzeroberfläche geschlossen werden, hat der Unternehmer sicherzustellen, dass dem Verbraucher für den Rücktritt vom Vertrag auch eine Rücktrittsfunktion zur Verfügung steht, die den in Abs. 2 bis 4 festgelegten Anforderungen entspricht."@de .
+
+lg:AT-FAGG-s13a-2
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-FAGG ;
+    lgo:citation "§ 13a Abs. 2 FAGG" ;
+    lgo:implements lg:EU-2011-83-art11a-1 ;
+    lgo:regulates lgv:WithdrawalFunction ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-FAGG-s13a-2 ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[2]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI ;
+    lgo:text "(2) Die Rücktrittsfunktion ist gut lesbar mit den Worten „Vertrag widerrufen“ oder einer entsprechenden eindeutigen Formulierung zu kennzeichnen, während der gesamten Rücktrittsfrist durchgehend verfügbar zu halten und auf der Online-Benutzeroberfläche hervorgehoben und für Verbraucher leicht zugänglich zu platzieren."@de .
+
+lg:AT-FAGG-s13a-3
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-FAGG ;
+    lgo:citation "§ 13a Abs. 3 FAGG" ;
+    lgo:implements lg:EU-2011-83-art11a-1 ;
+    lgo:regulates lgv:WithdrawalFunction ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[3]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-FAGG-s13a-3 ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[3]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI ;
+    lgo:text """(3) Die Rücktrittsfunktion muss dem Verbraucher die Versendung einer Online-Rücktrittserklärung ermöglichen, mit der der Unternehmer von der Entscheidung des Verbrauchers, vom Vertrag zurückzutreten, in Kenntnis gesetzt wird. Folgende Informationen muss der Verbraucher über die Online-Rücktrittserklärung ohne Weiteres bereitstellen oder bestätigen können:
+1. seinen Namen;
+2. Angaben zur Identifizierung des Vertrags, von dem der Verbraucher zurücktritt;
+3. Angaben zu dem elektronischen Kommunikationsmittel, mit dem dem Verbraucher die Eingangsbestätigung für die Rücktrittserklärung übermittelt werden soll."""@de .
+
+lg:AT-FAGG-s13a-4
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-FAGG ;
+    lgo:citation "§ 13a Abs. 4 FAGG" ;
+    lgo:implements lg:EU-2011-83-art11a-1 ;
+    lgo:regulates lgv:WithdrawalFunction ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[4]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-FAGG-s13a-4 ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[4]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI ;
+    lgo:text "(4) Sobald der Verbraucher die Online-Rücktrittserklärung gemäß Abs. 3 ausgefüllt hat, muss er die Möglichkeit haben, dem Unternehmer diese Erklärung mittels einer Bestätigungsfunktion zu übermitteln, wobei diese Bestätigungsfunktion gut lesbar und ausschließlich mit den Worten „Widerruf bestätigen“ oder einer entsprechenden eindeutigen Formulierung gekennzeichnet sein muss."@de .
+
+lg:AT-FAGG-s13a-5
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-FAGG ;
+    lgo:citation "§ 13a Abs. 5 FAGG" ;
+    lgo:implements lg:EU-2011-83-art11a-1 ;
+    lgo:regulates lgv:WithdrawalFunction ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[5]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-5-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-FAGG-s13a-5 ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[5]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI ;
+    lgo:text "(5) Sobald der Verbraucher die Bestätigungsfunktion aktiviert hat, hat der Unternehmer dem Verbraucher auf einem dauerhaften Datenträger unverzüglich eine Eingangsbestätigung zu übermitteln, die unter anderem den Inhalt der Rücktrittserklärung sowie das Datum und die Uhrzeit ihres Eingangs enthält."@de .
+
+lg:AT-FAGG-s13a-6
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-FAGG ;
+    lgo:citation "§ 13a Abs. 6 FAGG" ;
+    lgo:regulates lgv:RightOfWithdrawal ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[6]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI .
+
+lg:AT-FAGG-s13a-6-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-FAGG-s13a-6 ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sourceDocument lg:AT-FAGG-source-2 ;
+    lgo:sourceElement "/law/section[2]/paragraph[6]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P13a"^^xsd:anyURI ;
+    lgo:text "(6) Das Rücktrittsrecht des Verbrauchers gilt als innerhalb der Rücktrittsfrist ausgeübt, wenn der Verbraucher die Online-Rücktrittserklärung vor Ablauf dieser Frist abgegeben hat."@de .
 
 lg:AT-FAGG-s4-1
     a lgo:Provision ;
@@ -28,7 +156,7 @@ lg:AT-FAGG-s4-1
     lgo:regulates lgv:PreContractInformation ;
     lgo:requiresDisclosureOf lgv:CodesOfConduct , lgv:CommercialGuarantee , lgv:CommunicationCosts , lgv:ComplaintAddress , lgv:ContractDuration , lgv:DeliveryCosts , lgv:Deposit , lgv:DigitalProductInformation , lgv:DisputeResolutionStatement , lgv:EmailAddress , lgv:GeographicAddress , lgv:LegalGuarantee , lgv:MainCharacteristics , lgv:NoWithdrawalRight , lgv:PaymentAndDeliveryTerms , lgv:PersonalisedPricing , lgv:PhoneNumber , lgv:ProviderName , lgv:RapidContact , lgv:RepairInformation , lgv:ReturnCosts , lgv:SoftwareUpdatePeriod , lgv:SubscriptionCosts , lgv:TotalPrice , lgv:WithdrawalInformation ;
     lgo:reviewStatus lgv:SourceChecked ;
-    lgo:sourceDocument lg:AT-FAGG-source ;
+    lgo:sourceDocument lg:AT-FAGG-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P4"^^xsd:anyURI .
 
@@ -37,7 +165,7 @@ lg:AT-FAGG-s4-1-q1
     lgo:officialLanguageVersion true ;
     lgo:quoteOf lg:AT-FAGG-s4-1 ;
     lgo:retrievedOn "2026-11-08"^^xsd:date ;
-    lgo:sourceDocument lg:AT-FAGG-source ;
+    lgo:sourceDocument lg:AT-FAGG-source-1 ;
     lgo:sourceElement "/law/section[1]/paragraph[1]" ;
     lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2014/33/P4"^^xsd:anyURI ;
     lgo:text """(1) Bevor der Verbraucher durch einen Vertrag oder seine Vertragserklärung gebunden ist, muss ihn der Unternehmer in klarer und verständlicher Weise über Folgendes informieren:
@@ -71,7 +199,7 @@ c) den Namen oder die Firma und die Anschrift der Niederlassung jener Person, in
 20. gegebenenfalls den Reparierbarkeitswert der Waren,
 21. wenn die Z 20 nicht anwendbar ist und sofern der Hersteller dem Unternehmer die Informationen zur Verfügung stellt, Informationen über die Verfügbarkeit, die geschätzten Kosten und das Verfahren für die Bestellung von Ersatzteilen, die für den Erhalt der Vertragsmäßigkeit der Waren erforderlich sind, über die Verfügbarkeit von Reparatur- und Wartungsanleitungen sowie über Reparatureinschränkungen."""@de .
 
-lg:AT-FAGG-source
+lg:AT-FAGG-source-1
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;
     lgo:annotatedFile "sources/at/fagg/fagg.law.xml" ;
@@ -83,4 +211,18 @@ lg:AT-FAGG-source
     lgo:repositoryPath "sources/at/fagg/fagg-4.fragment.html" ;
     lgo:retrievedOn "2026-11-08"^^xsd:date ;
     lgo:sha256 "87cd93013183dab88562aa9fc764b5046e99c584437edaa9d22e012ae536ccda" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008847"^^xsd:anyURI .
+
+lg:AT-FAGG-source-2
+    a lgo:SourceDocument ;
+    dcterms:language "de"^^xsd:language ;
+    lgo:annotatedFile "sources/at/fagg/fagg.law.xml" ;
+    lgo:authenticity lgv:Official ;
+    lgo:legalStatus "The whole consolidated act as RIS serves it (240 KB), kept for § 13a — the Rücktrittsfunktion (withdrawal-button) duty. The page repeats each sentence in a screen-reader rendering ('Absatz eins,' / 'Paragraph 13a,'); text_ignore drops it, the transcription follows the first occurrence."@en ;
+    lgo:licence lgv:OfficialWork ;
+    lgo:licenceBasis "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works" ;
+    lgo:mediaType "text/html" ;
+    lgo:repositoryPath "sources/at/fagg/fagg-konsolidiert.html" ;
+    lgo:retrievedOn "2026-11-14"^^xsd:date ;
+    lgo:sha256 "6e4d45bdfd2c940315d9f54953d194e4cda4e769cb619b75f04798551b9a65d1" ;
     lgo:sourceUrl "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20008847"^^xsd:anyURI .
