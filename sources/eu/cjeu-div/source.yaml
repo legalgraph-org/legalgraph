@@ -23,4 +23,17 @@ originals:
       - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one. EUR-Lex offers no Formex XML for this 2008 judgment."
     retrieved_on: 2026-11-08
     sha256: 0bd1e1d0f18335faaef53ea5896ffa9d59bab462b5f68fce93a1666d61659f93
+  - file: C-298-07_div_DE.pdf
+    role: parallel
+    language: de
+    authentic: true
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62007CJ0298
+    url: https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62007CJ0298
+    fetch: file
+    media_type: application/pdf
+    notes:
+      - "Authentic version: the language of the case is German. EUR-Lex offers no Formex XML for this 2008 judgment; the official ECR PDF is kept whole and the operative part is transcribed in div_de.law.xml."
+    retrieved_on: 2026-11-18
+    sha256: 772c2c5b0353af7e029090b73fde041850ee85f5996e95252a401e9ca06b4bb4
+    annotated: div_de.law.xml
 annotated: div.law.xml

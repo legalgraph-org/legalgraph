@@ -24,7 +24,7 @@ lgv:EmailAddress a lgo:InformationItem ;
 
 lgv:RapidContact a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Rapid direct contact details"@en ;
+    skos:prefLabel "Rapid direct contact details"@en , "Angaben zur schnellen und unmittelbaren Kontaktaufnahme"@de ;
     skos:definition "Details beyond email that allow fast, direct and effective communication, such as a phone number or contact form."@en .
 
 lgv:PhoneNumber a lgo:InformationItem ;
@@ -63,7 +63,7 @@ lgv:EconomicIdNumber a lgo:InformationItem ;
 
 lgv:TaxId a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Tax identification number"@en ;
+    skos:prefLabel "Tax identification number"@en , "Steuer-Identifikationsnummer"@de ;
     skos:definition "A national tax or business identification number other than the VAT ID, such as the Spanish or Portuguese NIF, or the Ukrainian EDRPOU code (companies) or RNOKPP (individual entrepreneurs)."@en .
 
 lgv:SupervisoryAuthority a lgo:InformationItem ;
@@ -89,7 +89,7 @@ lgv:LiquidationStatus a lgo:InformationItem ;
 
 lgv:AudiovisualRegulator a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Audiovisual media services seat state and regulators"@en .
+    skos:prefLabel "Audiovisual media services seat state and regulators"@en , "Sitzland und Regulierungsbehörden für audiovisuelle Mediendienste"@de .
 
 lgv:ResponsibleEditor a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
@@ -111,11 +111,11 @@ lgv:EditorialLine a lgo:InformationItem ;
 
 lgv:HostingProvider a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Hosting provider"@en , "Hébergeur"@fr .
+    skos:prefLabel "Hosting provider"@en , "Hébergeur"@fr , "Hosting-Anbieter"@de .
 
 lgv:DisputeResolutionStatement a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Dispute resolution statement"@en ;
+    skos:prefLabel "Dispute resolution statement"@en , "Hinweis zur Verbraucherstreitbeilegung"@de ;
     skos:definition "Whether the business is willing or obliged to take part in consumer dispute resolution."@en .
 
 lgv:DisputeResolutionBody a lgo:InformationItem ;
@@ -390,7 +390,7 @@ lgv:WeeeTakeBackInformation a lgo:InformationItem ;
 
 lgv:LicenceDetails a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Licence details (series, number, validity, date of issue)"@en , "Відомості про ліцензію"@uk .
+    skos:prefLabel "Licence details (series, number, validity, date of issue)"@en , "Відомості про ліцензію"@uk , "Angaben zur Lizenz (Serie, Nummer, Gültigkeit, Ausstellungsdatum)"@de .
 
 lgv:AiInteractionNotice a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
@@ -435,7 +435,7 @@ lgv:ConsentWithdrawalMechanism a lgo:InformationItem ;
 
 lgv:UnsubscribeMechanism a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "The way to say stop"@en ;
+    skos:prefLabel "The way to say stop"@en , "Möglichkeit zur Abmeldung"@de ;
     skos:definition "A functioning unsubscribe or opt-out control in every commercial electronic message — free to use, sent to an electronic address or a web page, effective for the stated period — under CASL s. 6(2)(c) and 11 and CAN-SPAM s. 7704(a)(3)-(4)."@en .
 
 lgv:ContractCopy a lgo:InformationItem ;
@@ -450,7 +450,7 @@ lgv:PrescribedContractInformation a lgo:InformationItem ;
 
 lgv:VatStatus a lgo:InformationItem ;
     skos:inScheme lgv:InformationItems ;
-    skos:prefLabel "Whether the business is VAT-registered"@en ;
+    skos:prefLabel "Whether the business is VAT-registered"@en , "Ob das Unternehmen umsatzsteuerpflichtig ist"@de ;
     skos:definition "That the business is liable for value-added tax — Norway's § 8 requires it where an organumber but no full VAT identification number exists."@en .
 
 lgv:ContractArchiving a lgo:InformationItem ;

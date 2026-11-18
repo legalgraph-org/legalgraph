@@ -18,7 +18,7 @@ lg:CJEU-C-298-07
     lgo:jurisdiction lg:EU ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:shortName "deutsche internet versicherung" ;
-    lgo:sourceDocument lg:CJEU-C-298-07-source ;
+    lgo:sourceDocument lg:CJEU-C-298-07-source , lg:CJEU-C-298-07-source-de ;
     lgo:sourceUrl "https://curia.europa.eu/juris/liste.jsf?num=C-298/07"^^xsd:anyURI .
 
 lg:CJEU-C-298-07-ruling-1
@@ -42,6 +42,17 @@ lg:CJEU-C-298-07-ruling-1-q1
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62007CJ0298"^^xsd:anyURI ;
     lgo:text "1. Article 5(1)(c) of Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the internal market (‘Directive on electronic commerce’) must be interpreted as meaning that a service provider is required to supply to recipients of the service, before the conclusion of a contract with them, in addition to its electronic mail address, other information which allows the service provider to be contacted rapidly and communicated with in a direct and effective manner. That information does not necessarily have to be a telephone number. That information may be in the form of an electronic enquiry template through which the recipients of the service can contact the service provider via the Internet, to whom the service provider replies by electronic mail except in situations where a recipient of the service, who, after contacting the service provider electronically, finds himself without access to the electronic network, requests the latter to provide access to another, non-electronic, means of communication."@en .
 
+lg:CJEU-C-298-07-ruling-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:CJEU-C-298-07-ruling-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:CJEU-C-298-07-ruling-1 ;
+    lgo:retrievedOn "2026-11-18"^^xsd:date ;
+    lgo:sourceDocument lg:CJEU-C-298-07-source-de ;
+    lgo:sourceElement "/law/section[1]/paragraph[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62007CJ0298"^^xsd:anyURI ;
+    lgo:text "Art. 5 Abs. 1 Buchst. c der Richtlinie 2000/31/EG des Europäischen Parlaments und des Rates vom 8. Juni 2000 über bestimmte rechtliche Aspekte der Dienste der Informationsgesellschaft, insbesondere des elektronischen Geschäftsverkehrs, im Binnenmarkt („Richtlinie über den elektronischen Geschäftsverkehr“) ist dahin auszulegen, dass der Diensteanbieter verpflichtet ist, den Nutzern des Dienstes vor Vertragsschluss mit ihnen neben seiner Adresse der elektronischen Post weitere Informationen zur Verfügung zu stellen, die eine schnelle Kontaktaufnahme und eine unmittelbare und effiziente Kommunikation ermöglichen. Diese Informationen müssen nicht zwingend eine Telefonnummer umfassen. Sie können eine elektronische Anfragemaske betreffen, über die sich die Nutzer des Dienstes im Internet an den Diensteanbieter wenden können, woraufhin dieser mit elektronischer Post antwortet; anders verhält es sich jedoch in Situationen, in denen ein Nutzer des Dienstes nach elektronischer Kontaktaufnahme mit dem Diensteanbieter keinen Zugang zum elektronischen Netz hat und diesen um Zugang zu einem anderen, nichtelektronischen Kommunikationsweg ersucht."@de .
+
 lg:CJEU-C-298-07-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;
@@ -55,3 +66,17 @@ lg:CJEU-C-298-07-source
     lgo:retrievedOn "2026-11-08"^^xsd:date ;
     lgo:sha256 "0bd1e1d0f18335faaef53ea5896ffa9d59bab462b5f68fce93a1666d61659f93" ;
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62007CJ0298"^^xsd:anyURI .
+
+lg:CJEU-C-298-07-source-de
+    a lgo:SourceDocument ;
+    dcterms:language "de"^^xsd:language ;
+    lgo:authenticity lgv:Official ;
+    lgo:languageVersionOf lg:CJEU-C-298-07-source ;
+    lgo:legalStatus "Authentic version: the language of the case is German. EUR-Lex offers no Formex XML for this 2008 judgment; the official ECR PDF is kept whole and the operative part is transcribed in div_de.law.xml."@en ;
+    lgo:licence lgv:ReuseWithAttribution ;
+    lgo:licenceBasis "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)" ;
+    lgo:mediaType "application/pdf" ;
+    lgo:repositoryPath "sources/eu/cjeu-div/C-298-07_div_DE.pdf" ;
+    lgo:retrievedOn "2026-11-18"^^xsd:date ;
+    lgo:sha256 "772c2c5b0353af7e029090b73fde041850ee85f5996e95252a401e9ca06b4bb4" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62007CJ0298"^^xsd:anyURI .

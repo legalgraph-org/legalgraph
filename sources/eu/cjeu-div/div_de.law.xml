@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The authentic German version of the operative part of Case C-298/07, transcribed in
+  schemas/law.xsd from the official German ECR PDF (C-298-07_div_DE.pdf), as the parallel
+  language version of div.law.xml. The language of the case is German; the English text in
+  div.law.xml is the Court's translation. Only lga:provision and lga:url annotate the
+  provisions.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="CJEU-C-298-07" lga:jurisdiction="EU" lga:act-type="Judgment"
+     lga:url="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62007CJ0298">
+  <meta>
+    <title>Urteil des Gerichtshofs (Vierte Kammer) vom 16. Oktober 2008, Rechtssache C-298/07, Bundesverband der Verbraucherzentralen und Verbraucherverbände – Verbraucherzentrale Bundesverband e. V. gegen deutsche internet versicherung AG</title>
+    <date>2008-10-16</date>
+  </meta>
+
+  <section num="ruling 1" title="Aus diesen Gründen hat der Gerichtshof (Vierte Kammer) für Recht erkannt" source="C-298-07_div_DE.pdf">
+    <paragraph lga:provision="CJEU-C-298-07-ruling-1" lga:url="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62007CJ0298">Art. 5 Abs. 1 Buchst. c der Richtlinie 2000/31/EG des Europäischen Parlaments und des Rates vom 8. Juni 2000 über bestimmte rechtliche Aspekte der Dienste der Informationsgesellschaft, insbesondere des elektronischen Geschäftsverkehrs, im Binnenmarkt („Richtlinie über den elektronischen Geschäftsverkehr“) ist dahin auszulegen, dass der Diensteanbieter verpflichtet ist, den Nutzern des Dienstes vor Vertragsschluss mit ihnen neben seiner Adresse der elektronischen Post weitere Informationen zur Verfügung zu stellen, die eine schnelle Kontaktaufnahme und eine unmittelbare und effiziente Kommunikation ermöglichen. Diese Informationen müssen nicht zwingend eine Telefonnummer umfassen. Sie können eine elektronische Anfragemaske betreffen, über die sich die Nutzer des Dienstes im Internet an den Diensteanbieter wenden können, woraufhin dieser mit elektronischer Post antwortet; anders verhält es sich jedoch in Situationen, in denen ein Nutzer des Dienstes nach elektronischer Kontaktaufnahme mit dem Diensteanbieter keinen Zugang zum elektronischen Netz hat und diesen um Zugang zu einem anderen, nichtelektronischen Kommunikationsweg ersucht.</paragraph>
+  </section>
+</law>
