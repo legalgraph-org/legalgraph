@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BGH, Urteil vom 9. September 2021 – I ZR 125/20 ("Influencer II"), the passages the graph
+  quotes, written in schemas/law.xsd from the court's PDF. The words are the court's; only
+  the structure is ours. `legalgraph sources verify` checks each paragraph against the PDF's
+  text. The media-law provisions on commercial communication (§ 6 TMG, § 22 MStV —
+  predecessors of § 6 DDG) are lex specialis not undermined by § 5a(6) UWG, and their
+  "Gegenleistung" element covers advertising for third parties only, not an influencer's own
+  promotion (Eigenwerbung).
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-BGH-2021-0909b" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR_125-20.pdf?__blob=publicationFile&amp;v=2">
+  <meta>
+    <title>Bundesgerichtshof, Urteil vom 9. September 2021 – I ZR 125/20</title>
+    <date>2021-09-09</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="bgh-izr125-20.pdf">
+    <paragraph lga:provision="DE-BGH-2021-0909b-tenor-1" lga:citation="BGH I ZR 125/20, Tenor"
+      lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR_125-20.pdf?__blob=publicationFile&amp;v=2">Die Revision gegen das Urteil des Hanseatischen Oberlandesgerichts Hamburg - 15. Zivilsenat - vom 2. Juli 2020 wird auf Kosten des Klägers zurückgewiesen.</paragraph>
+  </section>
+
+  <section num="Leitsatz" title="Leitsatz" source="bgh-izr125-20.pdf">
+    <paragraph lga:provision="DE-BGH-2021-0909b-ls-a" lga:citation="BGH I ZR 125/20, Leitsatz a)"
+      lga:interprets="DE-DDG-s6-1" lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR_125-20.pdf?__blob=publicationFile&amp;v=2">a) Die Vorschriften des § 6 Abs. 1 Nr. 1 TMG für kommerzielle Kommunikation in Telemedien sowie des § 58 Abs. 1 Satz 1 RStV und des § 22 Abs. 1 Satz 1 MStV für Werbung in Telemedien sind bereichsspezifische Marktverhaltensr egelungen für Telemedien. Die in diesen Spezialvorschriften zum Ausdruck kommenden medienrechtlichen Wertungen dürfen nicht durch die Anwendung der allgemeinen lauterkeitsrechtlichen Vorschrift des § 5a Abs. 6 UWG unterlaufen werden (Fortführung von BGH, Urteil vom 24. März 2016 - I ZR 7/15, GRUR 2016, 1068 Rn. 20 = WRP 2016, 1219 - Textilkennzeichnung).</paragraph>
+    <paragraph lga:provision="DE-BGH-2021-0909b-ls-b" lga:citation="BGH I ZR 125/20, Leitsatz b)"
+      lga:interprets="DE-DDG-s6-1" lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR_125-20.pdf?__blob=publicationFile&amp;v=2">b) Das in § 6 Abs. 1 Nr. 1 TMG für kommerzielle Kommunikation in Telemedien sowie in § 58 Abs. 1 Satz 1 RStV und § 22 Abs. 1 Satz 1 MStV für Werbung in Telemedien vorgesehene Tatbestandsmerkmal der Gegenleistung gilt nur für werbliche Handlungen zugunsten fremder Unternehmen, nicht aber für Eigenwerbung.</paragraph>
+  </section>
+</law>

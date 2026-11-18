@@ -84,6 +84,99 @@ lg:EU-1998-6-art6a-2-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
     lgo:text "(2) Der vorherige Preis ist der niedrigste Preis, den der Händler innerhalb eines Zeitraums von mindestens 30 Tage vor der Anwendung der Preisermäßigung angewandt hat."@de .
 
+lg:EU-1998-6-art6a-3
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-1998-6 ;
+    lgo:citation "Art. 6a(3) Directive 98/6/EC" ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-1998-6-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI .
+
+lg:EU-1998-6-art6a-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1998-6-art6a-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1998-6-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
+    lgo:text "3. Member States may provide for different rules for goods which are liable to deteriorate or expire rapidly."@en .
+
+lg:EU-1998-6-art6a-3-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-1998-6-art6a-3-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1998-6-art6a-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1998-6-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
+    lgo:text "(3) Die Mitgliedstaaten können für schnell verderbliche Waren oder Waren mit kurzer Haltbarkeit abweichende Regelungen treffen."@de .
+
+lg:EU-1998-6-art6a-4
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-1998-6 ;
+    lgo:citation "Art. 6a(4) Directive 98/6/EC" ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-1998-6-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI .
+
+lg:EU-1998-6-art6a-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1998-6-art6a-4 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1998-6-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
+    lgo:text "4. Where the product has been on the market for less than 30 days, Member States may also provide for a shorter period of time than the period specified in paragraph 2."@en .
+
+lg:EU-1998-6-art6a-4-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-1998-6-art6a-4-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1998-6-art6a-4 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1998-6-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
+    lgo:text "(4) Ist das Erzeugnis seit weniger als 30 Tagen auf dem Markt, können die Mitgliedstaaten auch einen kürzeren als den in Absatz 2 genannten Zeitraum festlegen."@de .
+
+lg:EU-1998-6-art6a-5
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-1998-6 ;
+    lgo:citation "Art. 6a(5) Directive 98/6/EC" ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-1998-6-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI .
+
+lg:EU-1998-6-art6a-5-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1998-6-art6a-5 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1998-6-source ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
+    lgo:text "5. Member States may provide that, when the price reduction is progressively increased, the prior price is the price without the price reduction before the first application of the price reduction."@en .
+
+lg:EU-1998-6-art6a-5-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-1998-6-art6a-5-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-1998-6-art6a-5 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-1998-6-source-de ;
+    lgo:sourceElement "/CONS.ACT/CONS.DOC[1]/ENACTING.TERMS[1]/ARTICLE[7]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:01998L0006-20220528"^^xsd:anyURI ;
+    lgo:text "(5) Die Mitgliedstaaten können festlegen, dass im Falle einer schrittweise ansteigenden Preisermäßigung der vorherige Preis der nicht ermäßigte Preis vor der ersten Anwendung der Preisermäßigung ist."@de .
+
 lg:EU-1998-6-source
     a lgo:SourceDocument ;
     dcterms:language "en"^^xsd:language ;

@@ -381,3 +381,8 @@ lgv:InformAboutDeviceAccessWithOptOut a lgo:Action ;
     skos:inScheme lgv:Actions ;
     skos:prefLabel "Inform about cookies and similar, and offer to refuse them"@en , "Über Cookies informieren und Ablehnung ermöglichen"@de ;
     skos:definition "Tell users which data are processed on their devices and for what purpose, and that they can refuse it (Art. 45c FMG): the Swiss opt-out model, not the EU's prior consent."@en .
+
+lgv:LabelCommercialCommunication a lgo:Action ;
+    skos:inScheme lgv:Actions ;
+    skos:prefLabel "Label commercial communication clearly as such"@en ;
+    skos:definition "Make paid promotions and sponsored content recognisable as advertising at first glance, identify who it is for, and make the commercial purpose apparent without doubt."@en .

@@ -1,0 +1,23 @@
+# BGH, Urteil vom 20.07.2006 – I ZR 228/03 (NJW 2007, 310, "Anbieterkennzeichnung im
+# Internet"): provider identification reachable through two clearly labelled links ("Kontakt"
+# and "Impressum") can satisfy the "leicht erkennbar, unmittelbar erreichbar und ständig
+# verfügbar" duty of § 6 TDG / § 10 Abs. 2 MDStV (predecessors of § 5 Abs. 1 DDG); two steps
+# suffice for "unmittelbar erreichbar" and the information need not sit on the start page.
+# The BGH publishes the decision as a PDF only; the file is kept whole and the passages the
+# graph quotes are transcribed in schemas/law.xsd, checked word for word.
+id: de/bgh-izr228-03
+title: BGH, Urteil vom 20.07.2006 – I ZR 228/03 (Anbieterkennzeichnung im Internet)
+jurisdiction: DE
+language: de
+publisher: Bundesgerichtshof, bundesgerichtshof.de
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: court decisions are official works without copyright"
+originals:
+  - file: bgh-izr228-03.pdf
+    url: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&v=1
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-18
+    sha256: efb2d0b77f2eb24112c375b57c9c92465a4a3d60114d8272b077e991ee4924a2
+annotated: bgh-izr228-03.law.xml

@@ -648,66 +648,6 @@ lg:DE-DLInfoV-source-legalStatus-db47b870273c-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-DLInfoV-source .
 
-lg:DE-DSK-OH-DD-rn137-q1-en
-    a lgo:Translation ;
-    lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "00d90a9a80693ed004736064a808d7d105216b2d119177df510688f1f312ac80" ;
-    lgo:text "(137) If a button to refuse consent is offered next to the button to give consent, its label must be unambiguous, so that users know they are not giving consent. This can be achieved with a short and concise label. A button \"Settings or refuse\" that leads to a further layer of the banner is not sufficient here."@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-11-02"^^xsd:date ;
-    lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:DE-DSK-OH-DD-rn137-q1 .
-
-lg:DE-DSK-OH-DD-rn50-q1-en
-    a lgo:Translation ;
-    lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "a801dc1c10c8ae486fa1d7b7e65e429a16f996a422a9435596c26ddee1b29616" ;
-    lgo:text "(50) In order to be able to prove that end users have given an unambiguous and clearly affirmative action, they must therefore be offered at least such choices whose communicative effect is equivalent. If one choice is presented precisely and has an immediate effect (e.g. an \"Accept all\" button), while the other option is kept vague and does not allow the true contrary will to be expressed with the same effort, there is a deficit of effect and information. Such a deficit is likely to lead end users to make their decision not according to their clear will, but only according to which option ends the consent request clearly faster. If users are not offered equivalent options to give or refuse consent, the requirements for valid consent are regularly not met."@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-11-02"^^xsd:date ;
-    lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:DE-DSK-OH-DD-rn50-q1 .
-
-lg:DE-DSK-OH-DD-rn53-q1-en
-    a lgo:Translation ;
-    lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "bc85f669ef7dc66dd975d046a6f815f27b071cfd981a129db7656dbf6bd07e1b" ;
-    lgo:text "(53) In principle, consent banners may have several layers, giving more detailed information only on a second layer of the banner, which users reach through a button or link. However, if there is already a button on the first layer of the banner with which consent can be given for various purposes, specific information on all the individual purposes must also be given on this first layer. It would be too vague merely to give generic, general or vague information on the purposes there, such as “We use cookies to offer you a better user experience”."@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-11-02"^^xsd:date ;
-    lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:DE-DSK-OH-DD-rn53-q1 .
-
-lg:DE-DSK-OH-DD-rn58-q1-en
-    a lgo:Translation ;
-    lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "18929ce73b7e6ef045fd76955b45c693250e05e8447645bc53c268a1b6121ada" ;
-    lgo:text "(58) Voluntariness is also noticeably affected if refusing all accesses that require consent means measurable additional effort for end users. Such additional effort is created, for example, if refusal is possible only on a second layer of the banner, and thus only with more clicks (compared with consenting). As a rule, the additional effort does not merely consist in end users having to click once more than when consenting. Rather, they must also read and understand the further information and setting options they are confronted with on a second layer of the consent dialogue, and then choose the right one among the further options. The additional effort created generally cannot be objectively justified either (e.g. by technical obstacles), but is artificially constructed. This can be inferred not least from the fact that end users are by now offered an equally simple option to refuse on a great many websites."@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-11-02"^^xsd:date ;
-    lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:DE-DSK-OH-DD-rn58-q1 .
-
-lg:DE-DSK-OH-DD-rn63-q1-en
-    a lgo:Translation ;
-    lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "6b6fa8c05681e216b3d20662ddcca7654910b70beb9eebee77cde3aa6fad6a84" ;
-    lgo:text "{'lang': 'en', 'text': \"It should be noted that consents always relate to 'the specific case'. If the 'case' changes, the original consent becomes obsolete and new consent must be obtained. Where a blanket consent for numerous cases is obtained through an affirmative act, as regularly happens on websites and in apps, any change — in particular of the cookies used and embedded third-party services — means that new consent must be obtained for the new case. If this is not requested individually, the blanket consent must be obtained anew.\"}"@en ;
-    lgo:translatedBy "swe-2" ;
-    lgo:translatedOn "2026-11-15"^^xsd:date ;
-    lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:DE-DSK-OH-DD-rn63-q1 .
-
-lg:DE-DSK-OH-DD-rn78-q1-en
-    a lgo:Translation ;
-    lgo:reviewStatus lgv:Draft ;
-    lgo:sourceTextSha256 "daf97181d0b87194a697cd1736a34d40cac6c0fe9922fc42a1eb8c7c50a80b3e" ;
-    lgo:text "(78) The criterion “strictly necessary” is defined in more detail neither in the TDDDG nor in the ePrivacy Directive. The explanatory memorandum to the TDDDG, however, assumes technical necessity, which suggests a strict understanding. This means that, even for services expressly requested by end users, the exception covers only those accesses to the terminal equipment that are technically necessary to provide precisely the requested service. For the criterion of necessity within the meaning of the provision relates exclusively to the functionality of the digital service as such. An exception from the consent requirement therefore cannot be justified by storing information on, or accessing information in, the terminal equipment being economically necessary for the business model in which the digital service is embedded."@en ;
-    lgo:translatedBy "claude-opus-5-5" ;
-    lgo:translatedOn "2026-11-02"^^xsd:date ;
-    lgo:translationMethod lgv:MachineTranslation ;
-    lgo:translationOf lg:DE-DSK-OH-DD-rn78-q1 .
-
 lg:DE-EGBGB-a246a-s1-1-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -1601,6 +1541,38 @@ lg:DE-PAngV-s11-1-q1-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-PAngV-s11-1-q1 .
 
+lg:DE-PAngV-s11-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6662b329eb909d4d9b959fbe3bfef7f6d1dc72008e03758dda8c0a5e6e02e2fc" ;
+    lgo:text "(2) In the case of a progressive price reduction of the total price of a product that increases without interruption, the lowest total price under paragraph 1 that was applied to consumers for that product before the start of the progressive price reduction may be indicated during the price reduction."@en ;
+    lgo:translatedBy "devin (draft)" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-s11-2-q1 .
+
+lg:DE-PAngV-s11-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "87a7d4aeb0a8654132c097e079d122d89c8e7f45555bc892d4725678c38d3a8b" ;
+    lgo:text "(3) Paragraphs 1 and 2 apply mutatis mutandis to persons who, under Section 4(2), are only obliged to indicate the unit price."@en ;
+    lgo:translatedBy "devin (draft)" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-s11-3-q1 .
+
+lg:DE-PAngV-s11-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "96c6526d70c5312cf6ee3d28add86c9dc9537b837684e2a2f8352683fb113752" ;
+    lgo:text """(4) Paragraphs 1 to 3 do not apply to the announcement of
+1. individual price reductions or
+2. price reductions for perishable goods or goods with a short shelf life, where the price is reduced because of an imminent risk of spoilage or expiry of shelf life and this is made apparent to consumers in a suitable manner."""@en ;
+    lgo:translatedBy "devin (draft)" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-PAngV-s11-4-q1 .
+
 lg:DE-PAngV-s3-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -1981,3 +1953,316 @@ lg:DE-VerpackDG-source-legalStatus-a8838e03deb7-en
     lgo:translatedProperty lgo:legalStatus ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:DE-VerpackDG-source .
+
+lg:DE-BGH-2006-0720-ls-a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "1b601f74f81c30555252cffa9251b4f5d53f529b2ad391756282b9a461f5dcf1" ;
+    lgo:text "Provider identification on a website that is reachable via two links (here: the links \"Kontakt\" and \"Impressum\") can meet the requirements of easy recognisability and immediate accessibility within the meaning of § 6 TDG and § 10(2) MDStV."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2006-0720-ls-a-q1 .
+
+lg:DE-BGH-2006-0720-ls-b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "91d85a710d711cd5bd421551f4eb3691de15da158aed60a80655df8437bb9cb8" ;
+    lgo:text "To satisfy the requirements of § 312c(1) sentence 1 BGB for a clear and understandable provision of the information within the meaning of § 1(1) BGB-InfoV on the internet, it is not necessary that the details be kept available on the start page or necessarily be called up in the course of an ordering process."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2006-0720-ls-b-q1 .
+
+lg:DE-BGH-2006-0720-rn18-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5f23832c96fbc01da70c6e274b36ad1beadc29238e452349ade349efaffeda50" ;
+    lgo:text "The purpose of the information duties on identity, address, authorised representatives and commercial register entry is that the trader clearly and unambiguously tells the consumer with whom he or she is entering into a business relationship. The required information must therefore be, among other things, easily recognisable. Where the required details are not on the start page, this includes that the provider chooses designations for further links that are understandable and that the user can grasp without more. The terms \"Kontakt\" and \"Impressum\" satisfy these requirements."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2006-0720-rn18-q1 .
+
+lg:DE-BGH-2006-0720-rn23-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "aa1e4f7133f3acdc5250af53a3d4e15850520fc09a012cbbebb408a2a0e8e748" ;
+    lgo:text "Immediate accessibility does not fail merely because the user does not reach the required information in a single step but only in two steps (cf. Fezer/Mankowski loc. cit. § 4-S12 Rdn. 155; Fezer/Hoeren loc. cit. § 4-S13 Rdn. 40 f.; Kaestner/Tews, WRP 2002, 1011, 1016; Ott, WRP 2003, 945, 948; contra Hoenike/Hülsdunk, MMR 2002, 415, 417; Woitke, NJW 2003, 871, 873). Reaching a webpage via two links generally does not require a lengthy search."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2006-0720-rn23-q1 .
+
+lg:DE-BGH-2006-0720-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fc888329aa35673176a76de9c2b952d8c771d8e8fe4ddcbc7f0a0314c22a9920" ;
+    lgo:text "The appeal on points of law against the judgment of the 29th Civil Senate of the Munich Higher Regional Court of 11 September 2003 is dismissed with costs to be borne by the plaintiff."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2006-0720-tenor-1-q1 .
+
+lg:DE-OLGHH-2026-0521-rn3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "33a5e2550de47831da8f082f96c9436b25f5decc1fb628e60cabe87097457841" ;
+    lgo:text "1. The plaintiff has no claim against the defendant under §§ 8(1), (3) no. 3, 3, 5a(1), 5b(4) UWG in conjunction with § 5(1) DDG for a breach of the so-called Impressum duty in operating the Instagram account in dispute ...._... (appellant's request under point I.1.). A breach by the defendant of the obligations arising from § 5(1) DDG cannot be established. Under that provision, providers (cf. § 1(4) no. 5 DDG) of business, usually paid, digital services must keep the information listed in § 5(1) nos. 1 to 8 DDG constantly available in an easily recognisable and immediately accessible manner. The Instagram account in dispute is indeed a digital service offered on a business basis by the defendant within the meaning of § 5(1) DDG (cf. on the provider status of influencers on Instagram: Köhler/Feddersen/Köhler/Feddersen, 44th ed. 2026, UWG § 5a, Rn. 4.94). On the parties' submissions, however, it must be assumed that the defendant satisfied the requirements of § 5(1) DDG at least by keeping available the link www.....com below the \"Bio\" of her Instagram account (cf. Annex K1, p. 1). The defendant's submission that an Impressum was also kept available on the webpage www.....com on both of the days cited by the plaintiff (20 and 21.11.2023) was not disputed by the plaintiff. Nor did the plaintiff argue that the Impressum on the webpage was difficult to find or fell short in content of the requirements of § 5(1) DDG. The Impressum on the webpage was moreover constantly available via the defendant's Instagram account in dispute in an easily recognisable and immediately accessible manner within the meaning of § 5(1) DDG. Under the explanatory memorandum (BT-Drs. 14/6098, p. 21), this merely requires that the information in question be placed in a clearly perceptible position and be findable at any time without a lengthy search (cf. also: BeckOK InfoMedienR/Ott, 51st ed. 1.2.2026, DDG § 5 Rn. 22, with further references). This was the case here. What matters in this respect is the average Instagram user (cf. on the average user of a website: BGH, judgment of 20.07.2006 - I ZR 228/03, MMR 2007, 40, 41). That user expects to be able to find the Impressum for an Instagram account, where applicable (also), via a link provided there to a webpage (in this sense already for a YouTube channel: LG Trier, judgment of 01.08.2017 – 11 O 258/16, BeckRS 2017, 127614; cf. also: BeckOK InfoMedienR/Ott, 51st ed. 1.2.2026, DDG § 5, Rn. 20). The Senate, as a judicial body regularly concerned with competition matters, can assess this on the basis of its specific experience as a matter of its own expertise (on the judicial determination of a traffic understanding cf.: BGH, judgment of 02.10.2003 - I ZR 150/01, GRUR 2004, 244, 245 - Marktführerschaft). Because in the defendant's Instagram account in dispute the link to the webpage www.....com was placed directly below the \"Bio\" and was also highlighted visually in blue lettering (cf. Annex K1, p. 1), it was at all times clearly perceptible to the average user and findable without any significant searching."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHH-2026-0521-rn3-q1 .
+
+lg:DE-OLGHH-2026-0521-rn4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "03d62c0a1403d99950942fb443e53f60c0f71fed3b88518d81f512d4a0d5f285" ;
+    lgo:text "The plaintiff apparently does not dispute this either. With regard to the Impressum on the defendant's webpage he relies solely on the fact that on 20 and 21.11.2023, when the link www.....de in the defendant's Instagram account was clicked, the error messages \"Upload failed\" and \"There was a problem loading this website\" appeared (cf. Annex K1, p. 2). As the Regional Court rightly found, however, this submission is not sufficient to establish a breach of the Impressum duty under § 5(1) DDG. A merely temporary technical disruption of accessibility does not in itself constitute a breach of § 5(1) DDG, in particular not of the duty it provides to keep the Impressum \"ständig verfügbar\" (constantly available) (OLG Düsseldorf, judgment of 04.11.2008 – I-20 U 125/08, MMR 2009, 266, 267; Daum, Pflichtangaben auf Webseiten, in: MMR 2020, 643, 644; Ott, in: BeckOK Informations- und Medienrecht, 51st ed., 01.02.2026, DDG § 5, Rn. 25). This must apply all the more where the disruption originates in the (technical) sphere of control of the plaintiff. Nothing in the plaintiff's submissions indicates whether the error message he reported was also displayed beyond 20/21.11.2023 or for what exact period it persisted, nor whether it also occurred on different end devices or in different (W)LAN networks. In the defendant's favour it must therefore be assumed that the error message appeared only for a short period and/or within the plaintiff's technical sphere of control."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHH-2026-0521-rn4-q1 .
+
+lg:DE-OLGHH-2026-0521-rn9-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "55b82546ab91589fda264470266ca880171b8572e8d9360de2c8771ba1a3a029" ;
+    lgo:text "On this basis, the commercial purpose of the post was also apparent directly, without express labelling, to the average Instagram user from the circumstances. The labelling of the commercial purpose of a business act is not required where its outward appearance is designed so that an average, adequately attentive and reasonable member of the addressed public can recognise the commercial purpose clearly and unambiguously at first glance. For an Instagram post, a holistic assessment must be made taking into account both the design of the account in question in general and of the individual post in particular (for a detailed discussion: BGH, judgment of 09.09.2021, GRUR 2021, 1414, Rn. 34 – Influencer II). On this basis, in the Senate's assessment, there can be no doubt here that the commercial purpose of the Instagram post in dispute was immediately obvious to every average Instagram user. The defendant has 9.3 million followers on Instagram (see Annex K1, p. 1). She is thus, as a matter of general knowledge, one of the best-known influencers in Germany. Her account also carries the verification provided by Instagram by means of a \"blue tick\". Even Instagram users who had not previously known the defendant could tell from this that she has a high public profile or a substantial number of followers (cf. BGH, judgment of 09.09.2021, GRUR 2021, 1414, Rn. 37 – Influencer II). Moreover, given the typically promotional design of the Instagram post in dispute in words and pictures, there could be no doubt in itself that it was sales advertising for the \"10 products\" presented there. Whether the post in dispute was also distributed via an algorithm to users outside the defendant's account (cf. on such a constellation: OLG Karlsruhe, judgment of 03.03.2026 – 14 UKl 2/24, GRUR 2026, 725, Rn. 42) — on which the parties had in any event not pleaded here — is therefore already immaterial."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHH-2026-0521-rn9-q1 .
+
+lg:DE-BGH-2006-0720-title-6f190457081b-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6f190457081bdefc39dd3aa0f05010cd5fce31f37edae6734e3bb5ada192cfb3" ;
+    lgo:text "Federal Court of Justice, judgment of 20 July 2006 – I ZR 228/03"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2006-0720 .
+
+lg:DE-OLGHH-2026-0521-title-4535e9e98845-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4535e9e9884553de49b35d616f0e4f0b614b1e8e1c0ba9952c55502717c3c62f" ;
+    lgo:text "Hanseatic Higher Regional Court of Hamburg, judgment of 21 May 2026 – 15 U 99/24"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGHH-2026-0521 .
+lg:DE-BGH-2021-0909-ls-d-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6136094d09fba060bc4f89ec0bc48ca55386df29eb5979c4c02b15e652745069" ;
+    lgo:text "d) If an influencer receives no consideration for a post published on social media referring to a third-party company, the publication is a commercial act for the benefit of that third-party company when the post, judged by its overall impression, is excessively promotional, i.e. contains a promotional surplus such that the promotion of third-party competition plays a greater than merely necessarily incidental role (continuing BGH, judgment of 9 February 2006 - I ZR 124/03, GRUR 2006, 875 para. 23 = WRP 2006, 1109)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909-ls-d-q1 .
+
+lg:DE-BGH-2021-0909-ls-e-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "4fb35cb9c925c4c84ee07f873620502db36005c8ef79d4cd3a91cd118e85176d" ;
+    lgo:text "e) Whether a post by an influencer on social media contains the promotional surplus required to assume a commercial act for the benefit of a third-party company must be assessed on the basis of a comprehensive evaluation of all circumstances of the individual case, taking into account the interplay of the design features (e.g. posted product photos, editorial context, links to third-party websites). The fact that the influencer has provided images with \"Tap Tags\" to identify the manufacturers of the pictured goods is not as such sufficient to assume a promotional surplus in the Instagram posts. A link to a website of the manufacturer of the pictured product, however, regularly involves a promotional surplus, even where the linked manufacturer's site does not allow the products to be purchased directly."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909-ls-e-q1 .
+
+lg:DE-BGH-2021-0909-ls-f-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f0075cee73207a25fb04cd65084fdf7d2b1f64bdb1a4f4e81e2c3ab4fb54433a" ;
+    lgo:text "f) The indication of the commercial purpose of a commercial act required by § 5a(6) UWG must be made so clearly that it stands out at first glance and beyond doubt from the perspective of the average consumer who is informed, attentive to the circumstances and reasonably understanding and belongs to the group addressed. An indication of the commercial purpose appearing in the text part of a post published on social media is regularly not sufficient to label the commercial purpose of a \"Tap Tag\" appearing on an image placed next to the text as advertising."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909-ls-f-q1 .
+
+lg:DE-BGH-2021-0909-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f1a42dd0735259e69f6a29a31d9aad7dbf10a4007ed3ee29c00e315c1ae79abe" ;
+    lgo:text "The appeal against the judgment of the 2nd Civil Senate of the Higher Regional Court of Braunschweig of 13 May 2020 is dismissed at the defendant's expense."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909-tenor-1-q1 .
+
+lg:DE-BGH-2021-0909b-ls-a-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "f36b4a3a2fd95d742a895e27816955f3ab558f41ce02cc7302c638d59440f285" ;
+    lgo:text "a) The provisions of § 6(1) no. 1 TMG on commercial communication in telemedia as well as § 58(1) sentence 1 RStV and § 22(1) sentence 1 MStV on advertising in telemedia are sector-specific market-conduct rules for telemedia. The media-law assessments expressed in these special provisions may not be undermined by applying the general unfair-competition provision of § 5a(6) UWG (continuing BGH, judgment of 24 March 2016 - I ZR 7/15, GRUR 2016, 1068 para. 20 = WRP 2016, 1219 - Textilkennzeichnung)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909b-ls-a-q1 .
+
+lg:DE-BGH-2021-0909b-ls-b-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "25e248bf10350680a62d726c21e9d894e4f5225e6ffb70f37f1d7c9a36d7c43c" ;
+    lgo:text "b) The element of consideration provided for in § 6(1) no. 1 TMG for commercial communication in telemedia as well as in § 58(1) sentence 1 RStV and § 22(1) sentence 1 MStV for advertising in telemedia applies only to commercial acts for the benefit of third-party companies, not to self-promotion (Eigenwerbung)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909b-ls-b-q1 .
+
+lg:DE-BGH-2021-0909b-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "721aae26ed8cd726a76c708c26cd4db6e2d21842bd1c62cd8732d10f6ec56f40" ;
+    lgo:text "The appeal against the judgment of the Hanseatic Higher Regional Court of Hamburg - 15th Civil Senate - of 2 July 2020 is dismissed at the plaintiff's expense."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909b-tenor-1-q1 .
+
+lg:DE-BGH-2021-0909-title-5d31472496d5-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5d31472496d53761b79cfbb6db417b537cc3bb426ccf059154affad7e558ed20" ;
+    lgo:text "Federal Court of Justice, judgment of 9 September 2021 – I ZR 90/20"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909 .
+
+lg:DE-BGH-2021-0909b-title-606db9daad70-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "606db9daad706e06caffbeea1f35586a87e44c6a0a4d81c72ad902deabe3de16" ;
+    lgo:text "Federal Court of Justice, judgment of 9 September 2021 – I ZR 125/20"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-BGH-2021-0909b .
+lg:DE-OLGK-2026-0303-rn42-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6f3527abf1e200bcbaae2ddf2c940078701ea65123176597e87b51f9de6d9887" ;
+    lgo:text "(1) The defendant, as an influencer on Instagram who maintains an independent profile there, is a provider of a digital service within the meaning of § 1(4) no. 5 DDG (cf. BGH, judgment of 13 January 2022 - I ZR 9/21, para. 61, juris)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn42-q1 .
+
+lg:DE-OLGK-2026-0303-rn43-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6bc64798bcf1d6adcdd14cfa6681934d4a50ff43c6cc2e1b1482d797076743ff" ;
+    lgo:text "(2) The posts at issue constitute commercial communication for the benefit of third parties."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn43-q1 .
+
+lg:DE-OLGK-2026-0303-rn45-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ef39e8ebf00d14d09e25051c54bf1c79a149a94df21c9880819cd1964c46d72d" ;
+    lgo:text "If an influencer receives consideration for a promotional post, the publication is without more a commercial act for the benefit of the company being promoted (BGH, judgment of 9 September 2021 - I ZR 90/20, para. 50, juris). Commercial communication exists in particular also where the company benefited has made no cash payment but has made the product shown available to the influencer. The link between the report and the benefit in kind is established here by the obvious and therefore regularly assumable expectation of the company benefited by the report that the influencer would report on the product. Such a report is initiated by the provision of the product and is therefore not independent. No synallagmatic connection between the post and the consideration is required. The protective purpose of the provision requires capturing also such grants of benefits in kind with which posts are to be induced in the first place, without a prior agreement having been concluded (cf. BGH, judgment of 13 January 2022 - I ZR 35/21, paras. 64 et seq., juris). There is no de minimis threshold for the consideration granted (BGH, judgment of 13 January 2022 - I ZR 9/21, para. 69, juris)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn45-q1 .
+
+lg:DE-OLGK-2026-0303-rn46-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "3515ea40a82f75443a856e9ca4a41b07dd2997d9f1854e2fe32fd4b427fb23f0" ;
+    lgo:text "b) Under these principles, the Instagram posts at issue constitute commercial communication for the benefit of the respective car manufacturers."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn46-q1 .
+
+lg:DE-OLGK-2026-0303-rn48-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a4b493c0e312feb3781803de4be7e79db2235f3ccbfee036380acd046af057a1" ;
+    lgo:text "Because the vehicles were made available to the defendant free of charge within the framework of press events and she had her travel costs (plus catering) reimbursed, she received consideration for the posts she published. In this context - as set out - it does not matter that the defendant may have been free to decide whether to publish posts at all and what content the posts would have. For the provision of the vehicles together with the cost reimbursement was evidently made by the car manufacturers in the expectation that the vehicles would be reported on."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn48-q1 .
+
+lg:DE-OLGK-2026-0303-rn50-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "ca378f516f4bbd4be2ac68f12d6329d9c154cd32fc0f3bb344219c5c03aaeb78" ;
+    lgo:text "a) According to the case law of the Federal Court of Justice, an indication of the commercial purpose is not required if the outward appearance of the commercial act is designed so that the average consumers who are informed, attentive to the circumstances and reasonably understanding and who belong to the group addressed can recognise the commercial purpose clearly and unambiguously at first glance - and not only after an analytical study. It is therefore not sufficient if the promotional character of a post only becomes apparent to the consumer once he or she has already taken note of it. For then the consumer has already succumbed to the lure that the labelling requirement is precisely meant to prevent, and was exposed to the advertising message unprepared. The labelling is meant to give the consumer the opportunity to adjust to the commercial character of the act so that he or she can assess it critically from the outset or avoid it entirely (BGH, judgment of 13 January 2022 - I ZR 9/21, para. 49, juris)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn50-q1 .
+
+lg:DE-OLGK-2026-0303-rn51-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0ca3158d5cf37d26aa9f5d91dedbe901c383d48d5196c9ef006b15e31b71d941" ;
+    lgo:text "If an influencer maintains a verified account, has a substantial number of followers and the account is evidently not operated under his or her civil name, the commercial purpose of the channel may arise from the circumstances (cf. OLG Hamburg, judgment of 2 July 2020 - 15 U 142/19, para. 57, juris). This is not, however, mandatory. The assumption that the commercial purpose of individual posts of promoting third-party companies arises from the circumstances may be opposed, for example, by the frequently encountered mixture of non-promotional and promotional posts. With such a mixture of posts, this commercial purpose does not already arise from a possible verification of the profile (i.e. the marking as the 'genuine profile' of the named owner, which only occurs for persons with a certain public profile or above a certain number of followers), a particularly high number of followers or general fame of the influencer (OLG Frankfurt, judgment of 19 May 2022 - 6 U 56/21, para. 70, juris)."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn51-q1 .
+
+lg:DE-OLGK-2026-0303-rn52-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c7023e165ba3fa9fd77f8d0d8efae80280d229fcce698b98a3933ea7db49b0bd" ;
+    lgo:text "b) Measured against these requirements, the posts at issue were not designed so that the average consumers who are informed, attentive to the circumstances and reasonably understanding and who belong to the group addressed could recognise the commercial purpose clearly and unambiguously at first glance - and not only after an analytical study of the video clips."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn52-q1 .
+
+lg:DE-OLGK-2026-0303-rn53-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "56c52541025916c921ec8b1e91b31bbc253a2397a428a6ad785d0cecd0dcd0b6" ;
+    lgo:text "aa) The group addressed includes not only the defendant's followers but also those Instagram users who are generally interested in automobiles. For the dissemination of the posts on Instagram takes place in any event also via algorithms that recommend videos with corresponding content to users who might potentially be interested in them, here for example car enthusiasts. This happens in that the 'Reels' are fed to potentially interested users in the so-called 'Instagram feed', which comprises not only followed accounts but also recommended posts. This is shown here by the fact that individual posts of the defendant have substantially more views than the defendant has followers. It is therefore not decisive that the defendant operates the account under the subject-related alias 'j...', is verified on Instagram, now has more than one million followers and has published 651 posts on her profile which (in part) have views of well over one million users. This information is not readily known to users who do not follow the defendant and to whom the 'Reels' are merely recommended by Instagram, so that the commercial purpose of the posts of promoting third-party companies does not already arise from these circumstances."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn53-q1 .
+
+lg:DE-OLGK-2026-0303-rn54-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0e8752da1b70abc145b3ed7781960e45ca2476890b7d8f1af54027cfe3c73cd8" ;
+    lgo:text "bb) The commercial purpose of the posts also does not readily arise from the design of the video posts. These are rather designed at first glance to be neutral in content, in the form of an operating manual or plain presentation."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-rn54-q1 .
+
+lg:DE-OLGK-2026-0303-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "0924be696bf9876bae6037a559710186f0692120ed491023b7c3684d611fdfc9" ;
+    lgo:text "§ 1. The defendant is ordered, on pain of a coercive fine of up to €250,000 for each case of infringement, alternatively coercive detention or coercive detention of up to six months, to refrain from advertising as an influencer in a commercial capacity for third-party products without the required advertising label, as occurred in the Instagram posts according to the exhibits K 3 and/or K 4 and/or K 5 and/or K 6 and/or K 7 and/or K 8 and/or K 9 and/or K 10 attached to the tenor of the judgment. § 2. The defendant is ordered to pay the claimant €374.50 plus interest thereon at five percentage points above the base rate from 26 January 2025. § 3. The defendant shall bear the costs of the proceedings. § 4. The judgment is provisionally enforceable for the claimant with regard to item 1 against security of €16,000 and otherwise against security of 110% of the amount to be enforced."@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303-tenor-1-q1 .
+
+lg:DE-OLGK-2026-0303-title-46e76823ba80-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "46e76823ba80235e14e9dd52697321ec55251bcaae70bd1532d2c22b6ebadb47" ;
+    lgo:text "Higher Regional Court of Karlsruhe, judgment of 3 March 2026 – 14 UKl 2/24"@en ;
+    lgo:translatedBy "SWE-2 Flash" ;
+    lgo:translatedOn "2026-11-18"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:DE-OLGK-2026-0303 .

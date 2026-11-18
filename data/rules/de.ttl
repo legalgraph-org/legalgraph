@@ -439,3 +439,16 @@ lg:DE-R-unfair-terms a lgo:Obligation ;
     lgo:appliesWhen lgv:SellsToConsumersInGermany ;
     lgo:requiresAction lgv:ImposeUnfairTerms ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Commercial communication (§ 6 DDG; § 22 MStV) -------------------------------------------
+
+lg:DE-R-advertising-disclosure a lgo:Obligation ;
+    rdfs:label "Label commercial communication clearly as such"@en ;
+    rdfs:comment "Commercial communications that are part of a digital service must be clearly recognisable as such, identify the person on whose behalf they are made, and disclose sales promotions and their conditions (BGH, Influencer I and II, I ZR 90/20 and I ZR 125/20, 9 September 2021: the media-law provisions are lex specialis, and the 'Gegenleistung' element covers advertising for third parties, not self-promotion; a promotional post for a third party is a commercial act when it has a 'werblicher Überschuss')."@en ;
+    lgo:establishedBy lg:DE-DDG-s6-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:DE ;
+    lgo:appliesWhen lgv:CompetesOnTheGermanMarket , lgv:PublishesCommercialContent ;
+    lgo:requiresAction lgv:LabelCommercialCommunication ;
+    lgo:reviewStatus lgv:Draft .

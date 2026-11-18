@@ -1,0 +1,28 @@
+# Oberlandesgericht Karlsruhe, Urteil vom 03.03.2026 – 14 UKl 2/24
+# (ECLI:DE:OLGKARL:2026:0303.14UKL2.24.00, "Pressetermine", GRUR 2026, 725): an automotive
+# influencer's Instagram Reels are commercial communication for the car makers when vehicles were
+# provided free for press events and travel costs reimbursed — consideration need not be a cash
+# payment and no obligation to post is required; the posts were not clearly recognisable as
+# advertising because the relevant audience includes non-followers reached through Instagram's
+# recommendation algorithms (Rn. 42–54). Injunction plus €374.50 damages. The OLG provides
+# decisions only on request; the full text was retrieved from nu:legal (Nulegal GmbH), which
+# republishes official decisions — the decision itself is an official work under § 5 Abs. 1 UrhG.
+id: de/olg-karlsruhe-14ukl2-24
+title: OLG Karlsruhe, Urteil vom 03.03.2026 – 14 UKl 2/24 (Pressetermine)
+jurisdiction: DE
+language: de
+publisher: Oberlandesgericht Karlsruhe; full text via nu:legal (recht.nulegal.eu, Nulegal GmbH)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei"
+originals:
+  - file: olg-karlsruhe-14ukl2-24.html
+    url: https://recht.nulegal.eu/rechtsprechung/olg-karlsruhe/2026-03-03/14-ukl-2-24
+    fetch: file
+    media_type: text/html
+    official: false
+    notes:
+      - "A copy on nu:legal, a commercial case-law database, not the court's own publication; not yet checked against the official text on landesrecht-bw.de."
+    retrieved_on: 2026-11-18
+    sha256: 220cd747831989030d4e016c4869343a754aac345a09a958a7a73bf4013df191
+annotated: olg-karlsruhe-14ukl2-24.law.xml

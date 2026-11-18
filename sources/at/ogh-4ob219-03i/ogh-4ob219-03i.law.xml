@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OGH, Urteil vom 18. November 2003 – 4 Ob 219/03i
+  (ECLI:AT:OGH0002:2003:0040OB00219.03I.1118.000), the paragraphs the graph quotes,
+  written in schemas/law.xsd from the RIS Entscheidungstext page. The words are the
+  court's; only the structure is ours. `legalgraph sources verify` checks each
+  paragraph against the page's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-OGH-2003-1118" lga:jurisdiction="AT" lga:act-type="Judgment"
+     lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20031118_OGH0002_0040OB00219_03I0000_000">
+  <meta>
+    <title>Oberster Gerichtshof, Urteil vom 18. November 2003 – 4 Ob 219/03i</title>
+    <date>2003-11-18</date>
+  </meta>
+
+  <section num="Spruch" title="Spruch" source="ogh-4ob219-03i-spruch.fragment.html">
+    <paragraph lga:provision="AT-OGH-2003-1118-tenor-1" lga:citation="OGH 4 Ob 219/03i, Spruch"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20031118_OGH0002_0040OB00219_03I0000_000"
+      lga:regulates="ProviderIdentification">1. Der Revision der beklagten Partei wird nicht Folge gegeben.</paragraph>
+  </section>
+
+  <section num="Rechtliche Beurteilung" title="Rechtliche Beurteilung (§ 5 Abs. 1 Z 3 ECG)" source="ogh-4ob219-03i-begruendung.fragment.html">
+    <paragraph lga:provision="AT-OGH-2003-1118-i1" lga:citation="OGH 4 Ob 219/03i, Rechtliche Beurteilung"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20031118_OGH0002_0040OB00219_03I0000_000"
+      lga:applies="AT-ECG-s5-1">Richtig ist, dass in § 5 Abs 1 Z 3 ECG eine Telefonnummer nicht explizit angeführt ist. Aus der vom Gesetzgeber gewählten Formulierung "einschließlich seiner elektronischen Postadresse" ist aber abzuleiten, dass neben dieser mindestens ein anderer individueller Kommunkationsweg (arg.: "in Verbindung treten") angegeben werden muss, worunter etwa Telefon oder Telefax fallen (so auch Blume/Hammerl aaO 71, Burgstaller/Minichmayr aaO 54 und Zankl aaO 100). Brenn (aaO 208) verweist in diesem Zusammenhang zutreffend darauf, dass nicht jeder Nutzer über eine E-Mail-Adresse verfügt oder Zugang zu einer solchen hat.</paragraph>
+    <paragraph lga:provision="AT-OGH-2003-1118-i2" lga:citation="OGH 4 Ob 219/03i, Rechtliche Beurteilung"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20031118_OGH0002_0040OB00219_03I0000_000"
+      lga:applies="AT-ECG-s5-1">Im Streitfall war auf den beanstandeten Websites zunächst eine unrichtige Telefonnummer angegeben, sodann eine Telefonnummer, unter der man keine Verbindung zum Diensteanbieter herstellen kann. Damit fehlt jedenfalls neben der elektronischen Postadresse die Angabe eines sonst tauglichen individuellen Kommunikationswegs; dass etwa eine Telefaxnummer angegeben worden wäre, wurde weder behauptet noch festgestellt. Das Berufungsgericht hat der Beklagten daher zu Recht auch einen Verstoß gegen § 5 Abs 1 Z 3 ECG angelastet.</paragraph>
+  </section>
+</law>

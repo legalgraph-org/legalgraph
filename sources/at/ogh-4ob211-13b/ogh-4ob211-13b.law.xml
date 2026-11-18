@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OGH, Beschluss vom 17. Dezember 2013 – 4 Ob 211/13b
+  (ECLI:AT:OGH0002:2013:0040OB00211.13B.1217.000), the paragraphs the graph quotes,
+  written in schemas/law.xsd from the RIS Entscheidungstext page. The words are the
+  court's; only the structure is ours. `legalgraph sources verify` checks each
+  paragraph against the page's text.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-OGH-2013-1217" lga:jurisdiction="AT" lga:act-type="Judgment"
+     lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000">
+  <meta>
+    <title>Oberster Gerichtshof, Beschluss vom 17. Dezember 2013 – 4 Ob 211/13b</title>
+    <date>2013-12-17</date>
+  </meta>
+
+  <section num="Spruch" title="Spruch" source="ogh-4ob211-13b-spruch.fragment.html">
+    <paragraph lga:provision="AT-OGH-2013-1217-tenor-1" lga:citation="OGH 4 Ob 211/13b, Spruch"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000"
+      lga:regulates="ProviderIdentification">Dem Revisionsrekurs wird nicht Folge gegeben.</paragraph>
+  </section>
+
+  <section num="Rechtliche Beurteilung" title="Rechtliche Beurteilung (§ 5 Abs. 1 ECG)" source="ogh-4ob211-13b-begruendung.fragment.html">
+    <paragraph lga:provision="AT-OGH-2013-1217-i1" lga:citation="OGH 4 Ob 211/13b, Rechtliche Beurteilung"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000"
+      lga:applies="AT-ECG-s5-1">Es schadet auch nicht, dass die erforderlichen Daten (Name oder Firmenwortlaut einerseits und Firmenbuchnummer und Firmenbuchgericht andererseits) nicht im eigens hervorgehobenen Feld „Impressum“ zusammengefasst sind, wenn sie sonst im Rahmen des Internetauftritts ständig, leicht und unmittelbar zugänglich sind, was nach den jeweiligen Umständen des Einzelfalls zu prüfen ist (hier etwa Firmennamen im rechten oberen Bereich der Homepage).</paragraph>
+    <paragraph lga:provision="AT-OGH-2013-1217-i2" lga:citation="OGH 4 Ob 211/13b, Rechtliche Beurteilung"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000"
+      lga:applies="AT-ECG-s5-1">Diese Erwägungen lassen sich wie folgt zusammenfassen: Ob ein Diensteanbieter die Offenlegungsverpflichtungen des § 5 Abs 1 ECG erfüllt, ist nach den Umständen des Einzelfalls insoweit zu prüfen, ob der Nutzer die zur Identifizierung des Diensteanbieters sowie die zur Ermöglichung der Kontaktaufnahme notwendigen Daten ständig, leicht und unmittelbar erlangen kann. Die Verwendung allgemein gebräuchlicher Abkürzungen schadet ebensowenig wie die Verwendung individueller Abkürzungen etwa des Namens, wenn der ungekürzte vollständige Wortlaut dem Gesamtauftritt ständig, leicht und unmittelbar zu entnehmen ist.</paragraph>
+    <paragraph lga:provision="AT-OGH-2013-1217-i3" lga:citation="OGH 4 Ob 211/13b, Rechtliche Beurteilung"
+      lga:url="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&amp;Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000"
+      lga:applies="AT-ECG-s5-1">Mangels bescheinigten Verstoßes gegen die ins Treffen geführten Offenlegungsbestimmungen erweist sich das klägerische Sicherungsbegehren als unberechtigt.</paragraph>
+  </section>
+</law>

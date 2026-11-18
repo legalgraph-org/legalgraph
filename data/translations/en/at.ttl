@@ -174,6 +174,87 @@ lg:AT-DSB-2021-D155027-title-49f5ed5f102f-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-DSB-2021-D155027 .
 
+lg:AT-DSG-s43-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "77a6610f0e054e27af6fee7b70ba2362f447919dbe5027435c000f27f853a214" ;
+    lgo:text """(1) The controller shall provide the data subject with at least the following information:
+1. the name and contact details of the controller,
+2. where applicable, the contact details of the data protection officer,
+3. the purposes for which the personal data are processed,
+4. the existence of a right to lodge a complaint with the supervisory authority and the contact details of that authority,
+5. the existence of a right to access and to rectification or erasure of personal data and to restriction of processing of the data subject's personal data by the controller."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s43-1-q1 .
+
+lg:AT-DSG-s43-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "a5b29ffcffc904c5b724f39dc064b324319a3ff6206829f47d8f0cb2482e35c6" ;
+    lgo:text """(2) In addition to the information referred to in para. 1, the controller shall provide the data subject with the following additional information in special cases in order to enable the data subject to exercise their rights:
+1. the legal basis of the processing,
+2. the period for which the personal data will be stored or, where that is not possible, the criteria used to determine that period,
+3. where applicable, the categories of recipients of the personal data, including recipients in third countries or in international organisations,
+4. where necessary, further information, in particular where the personal data have been collected without the data subject's knowledge."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s43-2-q1 .
+
+lg:AT-DSG-s43-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6ad17997df38d12108dc39bcf3aee6d13e928894ed251268a963bcd5aa76231b" ;
+    lgo:text "(3) Where the personal data are collected from the data subject, the information under paras. 1 and 2 must be available to the data subject at the time of collection. In all other cases, Art. 14(3) GDPR applies. The information under paras. 1 and 2 may be dispensed with where the data are obtained not by questioning the data subject but by transmission of data from other areas of responsibility of the same controller or from applications of other controllers, and the data processing is provided for by law."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s43-3-q1 .
+
+lg:AT-DSG-s49-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "638b93619c3f266f9c190caa5dfd72fd59ee192a2ff8e5d1ff6b0e8755ad59d6" ;
+    lgo:text "(1) Each controller shall keep a record of processing activities in accordance with Art. 30(1) to (4) GDPR mutatis mutandis, the references in Art. 30(1)(g) and (2)(d) GDPR to § 54 relating to this Act and the reference to a representative of the controller or of the processor being without object."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s49-1-q1 .
+
+lg:AT-DSG-s49-2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c27f5ba55cfdea27e55951cf75f5bf4869de84eb04338ae0646424feb9c34fcb" ;
+    lgo:text """(2) The record under para. 1 shall also contain information on
+1. the use of profiling, where such use is carried out, and
+2. the legal basis of the processing, including the transfers for which the personal data are intended."""@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s49-2-q1 .
+
+lg:AT-DSG-s57-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "6166a3918bb4121f2355291feb48d50afaedab6d5d38233dcc3aa20e7dd8ea2b" ;
+    lgo:text "(1) Every controller shall appoint a data protection officer in accordance with Art. 37(5) and (7) GDPR. Courts are exempt from the obligation to appoint a data protection officer within the scope of their judicial activities. § 5 applies mutatis mutandis with regard to the provisions of this Part."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s57-1-q1 .
+
+lg:AT-DSG-s57-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "62f2a6d7de200866aeef6ae351bec81285ba4d61c6850a072aaaa088a073aa9b" ;
+    lgo:text "(4) The controller shall publish the contact details of the data protection officer and notify them to the data protection authority."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-DSG-s57-4-q1 .
+
 lg:AT-ECG-s5-1-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -411,6 +492,98 @@ lg:AT-MEDIENG-title-9fae080ed736-en
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-MEDIENG .
 
+lg:AT-OGH-2003-1118-i1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "e49c7b4216405cd9b3580b80c0a5a1e918defa3ee0e7399aa83c319539e5c5a7" ;
+    lgo:text "It is correct that § 5(1) no. 3 ECG does not explicitly mention a telephone number. But from the wording chosen by the legislature, \"including its electronic mail address\", it must be derived that besides the latter at least one other individual communication channel (cf. \"get in touch\") must be given, such as telephone or fax (see also Blume/Hammerl aaO 71, Burgstaller/Minichmayr aaO 54 and Zankl aaO 100). Brenn (aaO 208) rightly points out in this context that not every user has an e-mail address or access to one."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2003-1118-i1-q1 .
+
+lg:AT-OGH-2003-1118-i2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "18d7cf348735e42f1808449b45866f3d1ff6529112adb881a7285946407e211f" ;
+    lgo:text "In the case at hand, the impugned websites first gave an incorrect telephone number, then a telephone number under which no connection to the service provider could be made. Thus, besides the electronic mail address, the giving of another suitable individual communication channel was lacking; nor was it alleged or found that a fax number had been given. The court of appeal was therefore right to hold the defendant liable also for a breach of § 5(1) no. 3 ECG."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2003-1118-i2-q1 .
+
+lg:AT-OGH-2003-1118-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "5dca0c258a8242c48620a54776ca1dc85724d49965e5a1dc338a0638bb5ebd82" ;
+    lgo:text "1. The defendant's appeal on points of law is not upheld."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2003-1118-tenor-1-q1 .
+
+lg:AT-OGH-2003-1118-title-7989ecae180a-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "7989ecae180adb8815cf4993a03bcb8b1d6276c3c58a863971bc4efbb0bf7138" ;
+    lgo:text "Supreme Court, Judgment of 18 November 2003 – 4 Ob 219/03i"@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2003-1118 .
+
+lg:AT-OGH-2013-1217-i1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "c5e9ca0f229376e89ec8ed0a28ebee6ac9d09e1799519fac678231a72af39479" ;
+    lgo:text "Nor is it harmful that the required data (name or corporate name on the one hand, and register number and register court on the other) are not collected in a specially highlighted \"Impressum\" field, provided they are otherwise constantly, easily and directly accessible within the web presence, which is to be examined according to the circumstances of the individual case (here, for example, the company names in the upper right area of the homepage)."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2013-1217-i1-q1 .
+
+lg:AT-OGH-2013-1217-i2-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "2579f3c53c836d771837e79b39a7bbabece4660d77c69291e1bf815c38db762f" ;
+    lgo:text "These considerations can be summarised as follows: whether a service provider fulfils the disclosure obligations of § 5(1) ECG is, according to the circumstances of the individual case, to be examined as to whether the user can obtain constantly, easily and directly the data necessary to identify the service provider and to enable contact to be made. The use of commonly used abbreviations is no more harmful than the use of individual abbreviations, such as of the name, if the unabridged full wording can be gathered constantly, easily and directly from the overall presentation."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2013-1217-i2-q1 .
+
+lg:AT-OGH-2013-1217-i3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "027dce03f4b8c2be39aee50a3c33382ef75f4e2a07a249d63ef8d5f034cb2427" ;
+    lgo:text "For lack of a proven breach of the disclosure provisions invoked, the claimant's application for an injunction is unfounded."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2013-1217-i3-q1 .
+
+lg:AT-OGH-2013-1217-tenor-1-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fa26005c3d24e84da5ea0827420e318c830b3da11ea2a062982ac25d07ab2460" ;
+    lgo:text "The appeal on points of law is not upheld."@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2013-1217-tenor-1-q1 .
+
+lg:AT-OGH-2013-1217-title-69c818647605-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "69c81864760503b532549e86922e4c25e3b6da767b825a4fd1ad57462dd7d67b" ;
+    lgo:text "Supreme Court, Order of 17 December 2013 – 4 Ob 211/13b"@en ;
+    lgo:translatedBy "devin" ;
+    lgo:translatedOn "2026-11-15"^^xsd:date ;
+    lgo:translatedProperty eli:title ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-OGH-2013-1217 .
+
 lg:AT-TKG-2021-s165-3-q1-en
     a lgo:Translation ;
     lgo:reviewStatus lgv:Draft ;
@@ -420,6 +593,36 @@ lg:AT-TKG-2021-s165-3-q1-en
     lgo:translatedOn "2026-11-02"^^xsd:date ;
     lgo:translationMethod lgv:MachineTranslation ;
     lgo:translationOf lg:AT-TKG-2021-s165-3-q1 .
+
+lg:AT-TKG-2021-s174-3-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "87c85d5637eb9acf03ee81cacf2846266ff9025bdd22e23ac4719297bddb1253" ;
+    lgo:text "(3) Sending electronic mail — including SMS — for the purposes of direct marketing is unlawful without the recipient's prior consent."@en ;
+    lgo:translatedBy "devin (draft)" ;
+    lgo:translatedOn "2026-11-16"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-TKG-2021-s174-3-q1 .
+
+lg:AT-TKG-2021-s174-4-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "bfa5fca441d067dac7aec3116b9689af1a515f509d08af6e4a6aa8167a10a2d2" ;
+    lgo:text """(4) Prior consent for sending electronic mail under paragraph 3 is not necessary if 1. the sender obtained the contact information for the message in connection with the sale of a good or service to its customers and 2. this message is for direct marketing of its own similar products or services and 3. the recipient was clearly and plainly given the possibility, when the contact information was collected and additionally at every transmission, to refuse such use of the electronic contact information free of charge and without difficulty and 4. the recipient has not refused the sending in advance, in particular not by entry in the list referred to in § 7(2) of the E-Commerce Act."""@en ;
+    lgo:translatedBy "devin (draft)" ;
+    lgo:translatedOn "2026-11-16"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-TKG-2021-s174-4-q1 .
+
+lg:AT-TKG-2021-s174-5-q1-en
+    a lgo:Translation ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceTextSha256 "fc4bbfd587a9d13b68e7d45c584cf2fe6fa4a826ea12592a9cdea2c3004f9f00" ;
+    lgo:text """(5) Sending electronic mail for the purposes of direct marketing is in any case unlawful if 1. the identity of the sender on whose behalf the message is transmitted is disguised or concealed, or 2. the provisions of § 6(1) of the E-Commerce Act are violated, or 3. the recipient is asked to visit websites that breach that provision or 4. no authentic address is available to which the recipient can send a request to stop such messages."""@en ;
+    lgo:translatedBy "devin (draft)" ;
+    lgo:translatedOn "2026-11-16"^^xsd:date ;
+    lgo:translationMethod lgv:MachineTranslation ;
+    lgo:translationOf lg:AT-TKG-2021-s174-5-q1 .
 
 lg:AT-UGB-s14-1-q1-en
     a lgo:Translation ;

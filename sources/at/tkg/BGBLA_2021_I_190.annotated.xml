@@ -4710,8 +4710,8 @@
       <ueberschrift typ="para" halign="c">Unerbetene Nachrichten</ueberschrift>
       <absatz typ="abs" halign="j"><gldsym>§ 174.</gldsym> (1) Anrufe – einschließlich das Senden von Fernkopien – zu Werbezwecken ohne vorherige Einwilligung des Nutzers sind unzulässig. Der Einwilligung des Nutzers steht die Einwilligung einer Person, die vom Endnutzer zur Benützung seines Anschlusses ermächtigt wurde, gleich. Die erteilte Einwilligung kann jederzeit widerrufen werden; der Widerruf der Einwilligung hat auf ein Vertragsverhältnis mit dem Adressaten der Einwilligung keinen Einfluss.</absatz>
       <absatz typ="abs" halign="j">(2) Bei Telefonanrufen zu Werbezwecken darf die Rufnummernanzeige durch den Anrufer nicht unterdrückt oder verfälscht werden und der Diensteanbieter nicht veranlasst werden, diese zu unterdrücken oder zu verfälschen.</absatz>
-      <absatz typ="abs" halign="j">(3) Die Zusendung einer elektronischen Post – einschließlich SMS – ist ohne vorherige Einwilligung des Empfängers unzulässig, wenn die Zusendung zu Zwecken der Direktwerbung erfolgt.</absatz>
-      <absatz typ="abs" halign="j">(4) Eine vorherige Einwilligung für die Zusendung elektronischer Post gemäß Abs. 3 ist dann nicht notwendig, wenn</absatz>
+      <absatz typ="abs" halign="j" lga:provision="AT-TKG-2021-s174-3" lga:citation="§ 174 Abs. 3 TKG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174" lga:regulates="ElectronicDirectMarketing" lga:implements="EU-2002-58-art13-1">(3) Die Zusendung einer elektronischen Post – einschließlich SMS – ist ohne vorherige Einwilligung des Empfängers unzulässig, wenn die Zusendung zu Zwecken der Direktwerbung erfolgt.</absatz>
+      <absatz typ="abs" halign="j" lga:provision="AT-TKG-2021-s174-4" lga:citation="§ 174 Abs. 4 TKG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174" lga:regulates="ElectronicDirectMarketing" lga:implements="EU-2002-58-art13-2">(4) Eine vorherige Einwilligung für die Zusendung elektronischer Post gemäß Abs. 3 ist dann nicht notwendig, wenn</absatz>
       <liste>
         <aufzaehlung ebene="1" art="normal">
           <listelem><symbol stellen="2">1.</symbol>der Absender die Kontaktinformation für die Nachricht im Zusammenhang mit dem Verkauf oder einer Dienstleistung an seine Kunden erhalten hat und</listelem>
@@ -4720,7 +4720,7 @@
           <listelem><symbol stellen="2">4.</symbol>der Empfänger die Zusendung nicht von vornherein, insbesondere nicht durch Eintragung in die in § 7 Abs. 2 E<gdash />Commerce-Gesetz genannte Liste, abgelehnt hat.</listelem>
         </aufzaehlung>
       </liste>
-      <absatz typ="abs" halign="j">(5) Die Zusendung elektronischer Post zu Zwecken der Direktwerbung ist jedenfalls unzulässig, wenn</absatz>
+      <absatz typ="abs" halign="j" lga:provision="AT-TKG-2021-s174-5" lga:citation="§ 174 Abs. 5 TKG" lga:url="https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174" lga:regulates="ElectronicDirectMarketing" lga:requires="Advertiser UnsubscribeMechanism">(5) Die Zusendung elektronischer Post zu Zwecken der Direktwerbung ist jedenfalls unzulässig, wenn</absatz>
       <liste>
         <aufzaehlung ebene="1" art="normal">
           <listelem><symbol stellen="2">1.</symbol>die Identität des Absenders, in dessen Auftrag die Nachricht übermittelt wird, verschleiert oder verheimlicht wird, oder</listelem>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BGH, Urteil vom 20. Juli 2006 – I ZR 228/03
+  (BGHZ; NJW 2007, 310 – "Anbieterkennzeichnung im Internet"), the passages the graph
+  quotes, written in schemas/law.xsd from the court's PDF. The words are the court's;
+  only the structure is ours. `legalgraph sources verify` checks each paragraph against
+  the PDF's text. The decision interprets the predecessor rules of § 5 Abs. 1 DDG
+  (§ 6 TDG, § 10 Abs. 2 MDStV): provider identification that is "leicht erkennbar,
+  unmittelbar erreichbar und ständig verfügbar" may sit behind clearly labelled links —
+  here "Kontakt" and "Impressum" — and need not be on the start page; two steps suffice
+  for "unmittelbar erreichbar". The revision was dismissed.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-BGH-2006-0720" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&amp;v=1">
+  <meta>
+    <title>Bundesgerichtshof, Urteil vom 20. Juli 2006 – I ZR 228/03</title>
+    <date>2006-07-20</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="bgh-izr228-03.pdf">
+    <paragraph lga:provision="DE-BGH-2006-0720-tenor-1" lga:citation="BGH I ZR 228/03, Tenor"
+      lga:regulates="ProviderIdentification" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&amp;v=1">Die Revision gegen das Urteil des 29. Zivilsenats des Oberlandesgerichts München vom 11. September 2003 wird auf Kosten der Klägerin zurückgewiesen.</paragraph>
+  </section>
+
+  <section num="Leitsatz" title="Leitsatz" source="bgh-izr228-03.pdf">
+    <paragraph lga:provision="DE-BGH-2006-0720-ls-a" lga:citation="BGH I ZR 228/03, Leitsatz a)"
+      lga:interprets="DE-DDG-s5-1" lga:regulates="ProviderIdentification" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&amp;v=1">Die Angabe einer Anbieterkennzeichnung bei einem Internetauftritt, die über zwei Links erreichbar ist (hier: die Links "Kontakt" und "Impressum"), kann den Voraussetzungen entsprechen, die an eine leichte Erkennbarkeit und unmittelbare Erreichbarkeit i.S. von § 6 TDG und § 10 Abs. 2 MDStV zu stellen sind.</paragraph>
+    <paragraph lga:provision="DE-BGH-2006-0720-ls-b" lga:citation="BGH I ZR 228/03, Leitsatz b)"
+      lga:regulates="ProviderIdentification" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&amp;v=1">Um den Anforderungen des § 312c Abs. 1 Satz 1 BGB an eine klare und verständliche Zurverfügungstellung der Informationen i.S. von § 1 Abs. 1 BGB-InfoV im Internet zu genügen, ist es nicht erforderlich, dass die Angaben auf der Startseite bereitgehalten werden oder im Laufe eines Bestellvorgangs zwangsläufig aufgerufen werden müssen.</paragraph>
+  </section>
+
+  <section num="Entscheidungsgründe" title="Entscheidungsgründe" source="bgh-izr228-03.pdf">
+    <paragraph lga:provision="DE-BGH-2006-0720-rn18" lga:citation="BGH I ZR 228/03, Rn. 18"
+      lga:interprets="DE-DDG-s5-1" lga:regulates="ProviderIdentification" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&amp;v=1">Zweck der Informationspflichten über Identität, Anschrift, Vertretungsberechtigten und Handelsregistereintragung ist es, dass der Unternehmer den Verbraucher klar und unmissverständlich darauf hinweist, mit wem er in geschäftlichen Kontakt tritt. Die erforderlichen Informationen müssen deshalb u.a. leicht erkennbar sein. Befinden sich die erforderlichen Angaben nicht auf der Startseite, gehört hierzu, dass der Anbieter für weiterführende Links Bezeichnungen wählt, die verständlich sind und sich dem Nutzer ohne weiteres erschließen. Diesen Anforderungen genügen die Begriffe "Kontakt" und "Impressum".</paragraph>
+    <paragraph lga:provision="DE-BGH-2006-0720-rn23" lga:citation="BGH I ZR 228/03, Rn. 23"
+      lga:interprets="DE-DDG-s5-1" lga:regulates="ProviderIdentification" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2003/I_ZR_228-03.pdf?__blob=publicationFile&amp;v=1">Eine unmittelbare Erreichbarkeit scheitert nicht daran, dass der Nutzer nicht schon in einem Schritt, sondern erst in zwei Schritten zu den benötigten Informationen gelangt (vgl. Fezer/Mankowski aaO § 4-S12 Rdn. 155;<page num="10"/> Fezer/Hoeren aaO § 4-S13 Rdn. 40 f.; Kaestner/Tews, WRP 2002, 1011, 1016; Ott, WRP 2003, 945, 948; a.A. Hoenike/Hülsdunk, MMR 2002, 415, 417; Woitke, NJW 2003, 871, 873). Das Erreichen einer Internetseite über zwei Links erfordert regelmäßig kein langes Suchen.</paragraph>
+  </section>
+</law>

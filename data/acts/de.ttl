@@ -101,12 +101,6 @@ lg:DE-BFSG eli:title "Accessibility Strengthening Act"@en ;
 lg:DE-BGB-s356a-1
     rdfs:comment "In force since 19 June 2026 (transposing Article 11a of the Consumer Rights Directive, inserted by Directive (EU) 2023/2673)."@en .
 
-# --- DSK guidance (additions to data/extracted/de/dsk-digitale-dienste.ttl) -------------
-
-lg:DE-DSK-OH-DD
-    eli:title "Guidance of the supervisory authorities for providers of digital services"@en ;
-    rdfs:comment "Version 1.2, November 2024, by the Conference of the German federal and state data protection authorities (DSK): how they enforce § 25 TDDDG and the GDPR on websites, including consent banners. Not binding on courts."@en .
-
 # --- Youth protection, electrical equipment, packaging (additions to data/extracted/de/) -------
 
 lg:DE-JMStV eli:title "Interstate Treaty on the Protection of Minors in the Media"@en ;

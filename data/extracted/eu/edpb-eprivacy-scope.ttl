@@ -167,7 +167,7 @@ lg:EDPB-GL-2023-02-source
     lgo:annotatedFile "sources/eu/edpb-eprivacy-scope/edpb-eprivacy-scope.law.xml" ;
     lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
-    lgo:licenceBasis "EDPB legal notice: reproduction is authorised provided the source is acknowledged" ;
+    lgo:licenceBasis "EDPB Copyright page (edpb.europa.eu/copyright_en): reuse of website information is authorised for commercial and non-commercial purposes provided the source is acknowledged and the meaning is not distorted" ;
     lgo:mediaType "application/pdf" ;
     lgo:repositoryPath "sources/eu/edpb-eprivacy-scope/edpb_guidelines_202302_technical_scope_art_53_eprivacydirective_v2_en_0.pdf" ;
     lgo:retrievedOn "2026-11-03"^^xsd:date ;

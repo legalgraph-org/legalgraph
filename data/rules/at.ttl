@@ -151,3 +151,54 @@ lg:AT-R-adr-information-after-complaint a lgo:Obligation ;
     lgo:partOfDisclosure lgv:ConsumerDisputeResolution ;
     lgo:requiresDisclosureOf lgv:DisputeResolutionBody , lgv:DisputeResolutionStatement ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Provider identification (ECG § 5, the Austrian Impressum) --------------------
+
+lg:AT-R-impressum a lgo:Obligation ;
+    rdfs:label "Impressum: name, address and fast electronic contact"@en ;
+    rdfs:comment "Every information-society service established in Austria. § 5(1) ECG asks for the provider's name or firm, the geographic address of its establishment, details for rapid and direct contact including the email address, the Firmenbuch number and court where registered, the supervisory authority where the activity is supervised, chamber or professional-body details for regulated trades, and the VAT ID where held. The details must be constantly, easily and directly available; they need not sit under an 'Impressum' heading (OGH 4 Ob 211/13b), and the email address alone is not enough — at least one other individual communication channel is required (OGH 4 Ob 219/03i)."@en ;
+    lgo:refines lg:EU-R-service-provider-information ;
+    lgo:establishedBy lg:AT-ECG-s5-1 ;
+    lgo:bearer lgv:DigitalServiceProvider ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:EstablishedInAustria , lgv:CommercialDigitalService ;
+    lgo:partOfDisclosure lgv:ProviderIdentification ;
+    lgo:requiresDisclosureOf lgv:ProviderName , lgv:GeographicAddress , lgv:EmailAddress , lgv:RapidContact ;
+    lgo:reviewStatus lgv:Draft .
+
+# --- Email marketing (§ 174 TKG 2021, the Austrian transposition of ePrivacy art. 13) ---
+
+lg:AT-R-email-marketing-consent a lgo:Obligation ;
+    rdfs:label "Prior consent for advertising emails"@en ;
+    rdfs:comment "Sending electronic mail — including SMS — for direct marketing is unlawful without the recipient's prior consent; consent may be withdrawn at any time without affecting the contract (§ 174(3) TKG)."@en ;
+    lgo:establishedBy lg:AT-TKG-2021-s174-3 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:CompetesOnTheAustrianMarket , lgv:SendsMarketingEmails ;
+    lgo:unless lgv:EmailsOnlyExistingCustomers ;
+    lgo:requiresAction lgv:ObtainConsentForEmailMarketing , lgv:KeepConsentEvidencePerAddress ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:AT-R-email-marketing-existing-customers a lgo:Obligation ;
+    rdfs:label "Existing customers: refuse marketing use of the address"@en ;
+    rdfs:comment "No prior consent is needed when the sender obtained the contact details in connection with a sale or service to its own customers, markets only similar own products or services, gave a clear and easy free possibility to refuse at collection and at every transmission, and the recipient has not refused in advance (§ 174(4) TKG)."@en ;
+    lgo:establishedBy lg:AT-TKG-2021-s174-4 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:CompetesOnTheAustrianMarket , lgv:SendsMarketingEmails , lgv:EmailsOnlyExistingCustomers ;
+    lgo:requiresAction lgv:OfferObjectionInEveryEmail ;
+    lgo:reviewStatus lgv:Draft .
+
+lg:AT-R-email-marketing-sender a lgo:Obligation ;
+    rdfs:label "Identify the sender and give a valid address to stop messages"@en ;
+    rdfs:comment "Direct-marketing email is always unlawful when the sender's identity is disguised, when it breaches § 6(1) ECG (commercial-communication rules), when it points to websites that do, or when no authentic address exists for a stop request (§ 174(5) TKG)."@en ;
+    lgo:establishedBy lg:AT-TKG-2021-s174-5 ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:AT ;
+    lgo:appliesWhen lgv:CompetesOnTheAustrianMarket , lgv:SendsMarketingEmails ;
+    lgo:requiresAction lgv:ProvideValidUnsubscribeAddress ;
+    lgo:reviewStatus lgv:Draft .

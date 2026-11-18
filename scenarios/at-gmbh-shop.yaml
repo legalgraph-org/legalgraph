@@ -23,7 +23,7 @@ facts:
   - ReliesOnConsent
   - NonEssentialDeviceAccess
 obligations:
-  - EU-R-service-provider-information
+  - AT-R-impressum
   - EU-R-service-provider-information-register
   - EU-R-service-provider-information-vat
   - AT-R-pre-contract-information
@@ -66,6 +66,5 @@ obligations:
   - EU-R-processing-on-instructions
   - EU-R-supervisory-authority-cooperation
 national:
-  EU-R-service-provider-information: [AT-ECG-s5-1]
   EU-R-service-provider-information-register: [AT-ECG-s5-1]
   EU-R-service-provider-information-vat: [AT-ECG-s5-1]

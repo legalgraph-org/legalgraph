@@ -294,7 +294,7 @@ lg:EDPB-GL-2020-05-source
     lgo:annotatedFile "sources/eu/edpb-consent/edpb-consent.law.xml" ;
     lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
-    lgo:licenceBasis "EDPB legal notice: reproduction is authorised provided the source is acknowledged" ;
+    lgo:licenceBasis "EDPB Copyright page (edpb.europa.eu/copyright_en): reuse of website information is authorised for commercial and non-commercial purposes provided the source is acknowledged and the meaning is not distorted" ;
     lgo:mediaType "application/pdf" ;
     lgo:repositoryPath "sources/eu/edpb-consent/edpb_guidelines_202005_consent_en.pdf" ;
     lgo:retrievedOn "2026-11-02"^^xsd:date ;

@@ -212,12 +212,23 @@ class Extraction:
         if found is None:
             return
         match, version_url, version_path = found
+        elements = [match]
+        for _ in range(int(annotation(element, "parallel-siblings") or 0)):
+            parent = self.parallel_parents[parallel.file.name][match]
+            siblings = [child for child in parent if isinstance(child.tag, str)]
+            index = siblings.index(elements[-1])
+            if index + 1 >= len(siblings):
+                raise SourceError(
+                    f"{parallel.file.name}: {xpath(match, self.parallel_parents[parallel.file.name])} "
+                    "has no further sibling for lga:parallel-siblings"
+                )
+            elements.append(siblings[index + 1])
         language = self.source.language_of(parallel)
         version = LG[f"{quote.removeprefix(str(LG))}-{language}"]
         self.add(version, RDF.type, LGO.Quote)
         self.add(version, LGO.quoteOf, provision)
         self.add(version, LGO.languageVersionOf, quote)
-        self.add(version, LGO.text, Literal(render(match), lang=language))
+        self.add(version, LGO.text, Literal("\n".join(render(part) for part in elements), lang=language))
         self.add(version, LGO.sourceUrl, Literal(version_url, datatype=XSD.anyURI))
         self.add(version, LGO.retrievedOn, date_literal(parallel.retrieved_on.isoformat()))
         self.add(version, LGO.officialLanguageVersion, Literal(parallel.authentic))

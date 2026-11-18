@@ -19,6 +19,18 @@ lg:AT-ECG a lgo:LegalAct ;
 # § 5 ECG is now sourced from RIS's consolidated text: see sources/at/ecg and
 # data/extracted/at/ecg.ttl. § 14 UGB and § 165(3) TKG come from sources/at/ugb and sources/at/tkg.
 
+lg:AT-DSG a lgo:LegalAct ;
+    eli:title "Bundesgesetz zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (Datenschutzgesetz – DSG)"@de , "Data Protection Act"@en ;
+    lgo:shortName "DSG" ;
+    eli:id_local "BGBl. I Nr. 165/1999" ;
+    lgo:actType lgv:Statute ;
+    lgo:jurisdiction lg:AT ;
+    eli:date_document "1999-07-08"^^xsd:date ;
+    eli:transposes lg:EU-2016-679 ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/i/1999/165"^^xsd:anyURI ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "The GDPR applies directly in Austria; the DSG adds national rules. Website-relevant provisions sourced from the consolidated RIS text: § 43 information duty (privacy policy content and timing), § 49 records of processing (Art. 30 GDPR plus profiling and legal basis), § 57 DPO designation and publication of contact details."@en .
+
 
 lg:AT-UGB a lgo:LegalAct ;
     eli:title "Unternehmensgesetzbuch"@de , "Commercial Code"@en ;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Datenschutzgesetz (DSG, BGBl. I Nr. 165/1999, consolidated), the website-relevant
+  provisions of Art. 2 written in schemas/law.xsd from RIS fragments (Fassung vom
+  15.11.2026). The words are the Federal Chancellery's; only the structure is ours.
+  `legalgraph sources verify` checks every paragraph word for word against the fragments.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="AT-DSG" lga:jurisdiction="AT" lga:act-type="Statute"
+     lga:url="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&amp;Gesetzesnummer=10001597">
+  <meta>
+    <title>Bundesgesetz zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (Datenschutzgesetz – DSG)</title>
+    <short>DSG</short>
+    <date>1999-07-08</date>
+  </meta>
+
+  <section num="§ 43" title="Information der betroffenen Person" source="dsg-43.fragment.html">
+    <paragraph num="(1)" lga:provision="AT-DSG-s43-1" lga:citation="§ 43 Abs. 1 DSG" lga:regulates="PrivacyInformation" lga:implements="EU-2016-679-art13-1">Der Verantwortliche hat der betroffenen Person zumindest die folgenden Informationen zur Verfügung zu stellen:
+      <list>
+        <item num="1." lga:requires="ControllerIdentity">den Namen und die Kontaktdaten des Verantwortlichen,</item>
+        <item num="2." lga:requires="DataProtectionOfficerContact">gegebenenfalls die Kontaktdaten des Datenschutzbeauftragten,</item>
+        <item num="3." lga:requires="ProcessingPurposes">die Zwecke, für die die personenbezogenen Daten verarbeitet werden,</item>
+        <item num="4." lga:requires="ComplaintRight">das Bestehen eines Beschwerderechts bei der Aufsichtsbehörde sowie deren Kontaktdaten,</item>
+        <item num="5." lga:requires="DataSubjectRights">das Bestehen eines Rechts auf Auskunft und Berichtigung oder Löschung personenbezogener Daten und Einschränkung der Verarbeitung der personenbezogenen Daten der betroffenen Person durch den Verantwortlichen.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(2)" lga:provision="AT-DSG-s43-2" lga:citation="§ 43 Abs. 2 DSG" lga:regulates="PrivacyInformation">Zusätzlich zu den in Abs. 1 genannten Informationen hat der Verantwortliche der betroffenen Person in besonderen Fällen die folgenden zusätzlichen Informationen zu erteilen, um die Ausübung der Rechte der betroffenen Person zu ermöglichen:
+      <list>
+        <item num="1.">die Rechtsgrundlage der Verarbeitung,</item>
+        <item num="2.">die Dauer, für die die personenbezogenen Daten gespeichert werden oder, falls dies nicht möglich ist, die Kriterien für die Festlegung dieser Dauer,</item>
+        <item num="3.">gegebenenfalls die Kategorien von Empfängern der personenbezogenen Daten, auch der Empfänger in Drittländern oder in internationalen Organisationen,</item>
+        <item num="4.">erforderlichenfalls weitere Informationen, insbesondere wenn die personenbezogenen Daten ohne Wissen der betroffenen Person erhoben werden.</item>
+      </list>
+    </paragraph>
+    <paragraph num="(3)" lga:provision="AT-DSG-s43-3" lga:citation="§ 43 Abs. 3 DSG" lga:regulates="PrivacyInformation" lga:interprets="EU-2016-679-art13-1 EU-2016-679-art14-1 EU-2016-679-art14-2">Im Fall der Erhebung der personenbezogenen Daten bei der betroffenen Person müssen der betroffenen Person die Informationen nach den Vorgaben des Abs. 1 und 2 zum Zeitpunkt der Erhebung vorliegen. In allen übrigen Fällen findet Art. 14 Abs. 3 DSGVO Anwendung. Die Information gemäß Abs. 1 und 2 kann entfallen, wenn die Daten nicht durch Befragung des Betroffenen, sondern durch Übermittlung von Daten aus anderen Aufgabengebieten desselben Verantwortlichen oder aus Anwendungen anderer Verantwortlicher ermittelt und die Datenverarbeitung durch Gesetz vorgesehen ist.</paragraph>
+  </section>
+
+  <section num="§ 49" title="Verzeichnis von Verarbeitungstätigkeiten" source="dsg-49.fragment.html">
+    <paragraph num="(1)" lga:provision="AT-DSG-s49-1" lga:citation="§ 49 Abs. 1 DSG" lga:regulates="ProcessingRecord" lga:implements="EU-2016-679-art30-1">Jeder Verantwortliche hat sinngemäß nach Maßgabe des Art. 30 Abs. 1 bis 4 DSGVO ein Verzeichnis von Verarbeitungstätigkeiten zu führen, wobei sich die Verweise in Art. 30 Abs. 1 lit. g und Abs. 2 lit. d DSGVO auf § 54 beziehen und die Bezugnahme auf einen Vertreter des Verantwortlichen oder des Auftragsverarbeiters gegenstandslos ist.</paragraph>
+    <paragraph num="(2)" lga:provision="AT-DSG-s49-2" lga:citation="§ 49 Abs. 2 DSG" lga:regulates="ProcessingRecord">Das Verzeichnis gemäß Abs. 1 hat auch Angaben zu enthalten über
+      <list>
+        <item num="1.">die Verwendung von Profiling, wenn eine solche Verwendung vorgenommen wird, und</item>
+        <item num="2.">die Rechtsgrundlage der Verarbeitung, einschließlich der Übermittlungen, für die die personenbezogenen Daten bestimmt sind.</item>
+      </list>
+    </paragraph>
+  </section>
+
+  <section num="§ 57" title="Benennung, Stellung und Aufgaben des Datenschutzbeauftragten" source="dsg-57.fragment.html">
+    <paragraph num="(1)" lga:provision="AT-DSG-s57-1" lga:citation="§ 57 Abs. 1 DSG" lga:regulates="DataProtectionOfficer" lga:implements="EU-2016-679-art37-7">Jeder Verantwortliche hat nach Maßgabe des Art. 37 Abs. 5 und 7 DSGVO einen Datenschutzbeauftragten zu benennen. Gerichte sind im Rahmen ihrer justiziellen Tätigkeit von der Verpflichtung zur Benennung eines Datenschutzbeauftragten ausgenommen. § 5 gilt im Hinblick auf die Bestimmungen dieses Hauptstücks sinngemäß.</paragraph>
+    <paragraph num="(4)" lga:provision="AT-DSG-s57-4" lga:citation="§ 57 Abs. 4 DSG" lga:regulates="DataProtectionOfficer" lga:implements="EU-2016-679-art37-4" lga:requires="DataProtectionOfficerContact">Der Verantwortliche hat die Kontaktdaten des Datenschutzbeauftragten zu veröffentlichen und der Datenschutzbehörde mitzuteilen.</paragraph>
+  </section>
+</law>

@@ -88,3 +88,17 @@ lg:CH-R-device-access-information a lgo:Obligation ;
     lgo:appliesWhen lgv:CompetesOnTheSwissMarket , lgv:AccessesTerminalEquipment ;
     lgo:requiresAction lgv:InformAboutDeviceAccessWithOptOut ;
     lgo:reviewStatus lgv:Draft .
+
+# --- Unsolicited advertising email (UWG Art. 3(1)(o)) ---
+
+lg:CH-R-email-marketing-consent a lgo:Obligation ;
+    rdfs:label "Consent, sender and opt-out for mass advertising"@en ;
+    rdfs:comment "Mass advertising sent by telecommunications — email and SMS — is unfair when it lacks the customer's prior consent, the correct sender indication, or a problem-free and free way to refuse. When the sender got customer contact details while selling goods or services and pointed out the refusal option, sending mass advertising for own similar goods or services without consent is not unfair (UWG Art. 3(1)(o))."@en ;
+    lgo:establishedBy lg:CH-UWG-art3-1-o ;
+    lgo:bearer lgv:Advertiser ;
+    lgo:deonticType lgv:Must ;
+    lgo:appliesIn lg:CH ;
+    lgo:appliesWhen lgv:CompetesOnTheSwissMarket , lgv:SendsMarketingEmails ;
+    lgo:unless lgv:EmailsOnlyExistingCustomers ;
+    lgo:requiresAction lgv:ObtainConsentForEmailMarketing , lgv:ProvideValidUnsubscribeAddress ;
+    lgo:reviewStatus lgv:Draft .

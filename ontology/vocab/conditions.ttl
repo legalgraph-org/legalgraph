@@ -450,6 +450,12 @@ lgv:OffersGoodsOrServicesInSwitzerland a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     skos:prefLabel "Offers goods or services in Switzerland"@en .
 
+lgv:CompetesOnTheAustrianMarket a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Competes for customers in Austria"@en ;
+    skos:definition "Offers goods or services to people in Austria. Unfair-competition rules, including the rules on advertising email, follow the market where competitors meet and consumers' interests are affected (Article 6(1) Rome II), wherever the business is established."@en ;
+    lgo:holdsWhenAny lgv:OffersGoodsOrServicesInAustria .
+
 lgv:CompetesOnTheSwissMarket a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     skos:prefLabel "Competes for customers in Switzerland"@en ;
@@ -752,3 +758,8 @@ lgv:ActsAsProcessor a lgo:Condition ;
 lgv:HostsFormsForOthers a lgo:Condition ;
     skos:inScheme lgv:Conditions ;
     lgo:question "Does the business run a service that captures personal data for its customers' websites (forms, landing pages, newsletters)?"@en .
+
+lgv:PublishesCommercialContent a lgo:Condition ;
+    skos:inScheme lgv:Conditions ;
+    skos:prefLabel "Publishes commercial content or advertising"@en ;
+    lgo:question "Does the website publish paid promotions, sponsored posts, affiliate links or other commercial content?"@en .

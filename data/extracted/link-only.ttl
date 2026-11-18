@@ -10,6 +10,200 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+lg:CH-EDOEB-COOKIES
+    a lgo:ExternalReference , lgo:Guidance ;
+    dcterms:date "2025-10-06"^^xsd:date ;
+    dcterms:publisher "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)" ;
+    dcterms:title "Leitfaden des EDÖB betreffend Datenbearbeitungen mittels Cookies und ähnlichen Technologien" ;
+    eli:date_document "2025-10-06"^^xsd:date ;
+    eli:title "EDÖB guide on data processing by means of cookies and similar technologies (v1.1)"@en , "Leitfaden des EDÖB betreffend Datenbearbeitungen mittels Cookies und ähnlichen Technologien"@de ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:CH ;
+    lgo:linkOnlyReason "federal-authority guidance; the site's copyright notice requires the rights holders' written consent for any reproduction, so its points are stated in our words and the guide is linked" ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:shortName "EDÖB, Leitfaden Cookies" ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    lgo:supports lg:CH-FMG-art45c-1 ;
+    rdfs:comment "Guidance, not binding on courts: the Swiss data protection authority's requirements for cookie and similar-technology processing by private controllers (v1.1, 22 Jan 2025, supplemented 6 Oct 2025)."@en .
+
+lg:CH-EDOEB-cookies-s21
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 2.1 (Art. 45c FMG)" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:TerminalEquipmentAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Under Art. 45c FMG users have a right to refuse the use of non-essential cookies and similar technologies; the guide reads the GDPR-style duties of the revised Data Protection Act (DSG) on top of that objection right."@en .
+
+lg:CH-EDOEB-cookies-s310
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.10" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Cookie use with high intrusiveness — in the context of processing of particularly sensitive personal data or profiling with high risk — cannot be justified by balancing private interests or by an optional design: express consent must be obtained first."@en .
+
+lg:CH-EDOEB-cookies-s3122
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.12.2" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Consent must be informed: before the declaration the user must be able to understand what processing they consent to and its main possible consequences for their personality rights; the more sensitive the data, the clearer the information must be, and it must always precede the declaration."@en .
+
+lg:CH-EDOEB-cookies-s3124
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.12.4" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Consent given through deception, coercion or dark patterns/nudging is invalid; where access to a main service is refused until non-essential processing is consented to, an equivalent alternative must be offered if refusal would be unreasonable — as with cookie paywalls."@en .
+
+lg:CH-EDOEB-cookies-s3125
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.12.5" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Where a banner combines processing for different purposes, users must be able to select or deselect each purpose individually; a dialog offering only 'accept all' or losing access to the content is not a valid declaration, especially where processing that needs no consent is mixed with processing that does — though same-purpose processing may be combined."@en .
+
+lg:CH-EDOEB-cookies-s3126
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.12.6" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Where the DSG requires express consent (sensitive personal data, high-risk profiling by a private person, or profiling by a federal body), controllers must always require an active opt-in act; objection and withdrawal rights, by contrast, may be exercised through active selection that is not mandatory."@en .
+
+lg:CH-EDOEB-cookies-s3127
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.12.7" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalMechanism ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Consent to non-essential cookies must be withdrawable at any time, informally and without reasons; making withdrawal unreasonably more effortful than giving it breaches voluntariness, and tying withdrawal to deselecting a multitude of processings is an inadmissible dark pattern."@en .
+
+lg:CH-EDOEB-cookies-s3132
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.13.2" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "For express consent the banner must require an active click or mark; where a pre-selected option may be deselected, doing so must be no more complicated than selecting it, mandatory and optional fields must be clearly distinguishable, and the visual design must not lead to confusion, oversight or omission."@en .
+
+lg:CH-EDOEB-cookies-s35
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.5.2" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "Cookies are technically necessary only where the page could not serve its actually requested function without them, or where a processing would fail the data-security requirements of Art. 8 DSG; necessity is judged case by case on content, storage duration and any disclosure to third parties — shopping-cart, form-input, login, language-choice, load-balancing and consent-storage cookies are the typical cases."@en .
+
+lg:CH-EDOEB-cookies-s39
+    a lgo:Provision ;
+    eli:is_part_of lg:CH-EDOEB-COOKIES ;
+    lgo:citation "EDÖB, Leitfaden Cookies, Ziff. 3.9" ;
+    lgo:interprets lg:CH-FMG-art45c-1 ;
+    lgo:regulates lgv:TerminalEquipmentAccess ;
+    lgo:requiresDisclosureOf lgv:ConsentWithdrawalMechanism ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.edoeb.admin.ch/de/leitfaden-cookies"^^xsd:anyURI ;
+    rdfs:comment "The right to object to non-essential cookies must be shown prominently on the website and exercisable with few clicks on the first and subsequent visits, through an opt-out button or equivalent."@en .
+
+lg:DE-DSK-OH-DD
+    a lgo:ExternalReference , lgo:Guidance ;
+    dcterms:date "2024-11-21"^^xsd:date ;
+    dcterms:publisher "Konferenz der unabhängigen Datenschutzaufsichtsbehörden des Bundes und der Länder (DSK)" ;
+    dcterms:title "Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (Version 1.2)" ;
+    eli:date_document "2024-11-21"^^xsd:date ;
+    eli:title "Guidance of the supervisory authorities for providers of digital services (DSK, v1.2)"@en , "Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (Version 1.2)"@de ;
+    lgo:actType lgv:Guidelines ;
+    lgo:jurisdiction lg:DE ;
+    lgo:linkOnlyReason "guidance by an association of supervisory authorities, not an official act; § 5 Abs. 2 UrhG was judged too weak a basis and no reuse notice exists on the DSK site, so its points are stated in our words and the guidance is linked" ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:shortName "DSK, OH Digitale Dienste" ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    lgo:supports lg:DE-TDDDG-s25-1 , lg:DE-TDDDG-s25-2 ;
+    rdfs:comment "Guidance, not binding on courts: how the German supervisory authorities enforce § 25 TDDDG and the GDPR on websites, including consent banners."@en .
+
+lg:DE-DSK-OH-DD-rn137
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 137 (V. 2. b)" ;
+    lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art7-3 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    rdfs:comment "Where a reject button is offered next to the consent button, its label must be unambiguous so users know they are not consenting; a button reading 'Einstellungen oder Ablehnen' leading to a further layer is not enough."@en .
+
+lg:DE-DSK-OH-DD-rn50
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 50 (III. 2. d)" ;
+    lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    rdfs:comment "To prove users gave an unambiguous, unequivocally confirming act, the banner must offer options with equivalent effect; an accept button paired with a vague or harder-to-find reject option means no valid consent."@en .
+
+lg:DE-DSK-OH-DD-rn53
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 53 (III. 2. e)" ;
+    lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    rdfs:comment "Layered banners are possible, but where the first layer already offers an accept-all button, concrete information on each individual purpose must appear on that first layer."@en .
+
+lg:DE-DSK-OH-DD-rn58
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 58 (III. 2. f)" ;
+    lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art4-11 , lg:EU-2016-679-art7-4 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    rdfs:comment "Voluntariness is impaired where rejecting all consent-requiring accesses means a measurable extra effort, such as rejection only on a second banner level with more clicks and more information to read."@en .
+
+lg:DE-DSK-OH-DD-rn63
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 63 (III. 2. h)" ;
+    lgo:interprets lg:DE-TDDDG-s25-1 , lg:EU-2016-679-art4-11 ;
+    lgo:regulates lgv:Consent ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    rdfs:comment "Consent always relates to the specific case: where the case changes — in particular the cookies used or embedded third-party services — the original consent lapses and a new one must be obtained; a bundled consent must be renewed where not asked individually."@en .
+
+lg:DE-DSK-OH-DD-rn78
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-DSK-OH-DD ;
+    lgo:citation "DSK, OH Digitale Dienste, Rn. 78 (III. 3. b) bb.)" ;
+    lgo:interprets lg:DE-TDDDG-s25-2 , lg:EU-2002-58-art5-3 ;
+    lgo:regulates lgv:StrictlyNecessaryAccess ;
+    lgo:reviewStatus lgv:Draft ;
+    lgo:sourceUrl "https://www.datenschutzkonferenz-online.de/orientierungshilfen.html"^^xsd:anyURI ;
+    rdfs:comment "'Unbedingt erforderlich' means strict technical necessity for the specifically requested digital service: storage or access needed only for the provider's business model does not qualify, and a legitimate-interest balancing under Art. 6(1)(f) GDPR does not establish the exception."@en .
+
 lg:ES-AEPD-COOKIES
     a lgo:ExternalReference , lgo:Guidance ;
     dcterms:date "2024-05-01"^^xsd:date ;

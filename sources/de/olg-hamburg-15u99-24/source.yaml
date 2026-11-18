@@ -1,0 +1,28 @@
+# Hanseatisches Oberlandesgericht Hamburg, Urteil vom 21.05.2026 – 15 U 99/24
+# (ECLI:DE:OLGHH:2026:0521.15U99.24.00, NJRE001647569): a business Instagram account is a
+# geschäftsmäßiger digitaler Dienst under § 5(1) DDG, and a highlighted link below the "Bio"
+# to a webpage holding the full Impressum satisfies the duty — the average Instagram user
+# expects to find it that way (citing BGH I ZR 228/03 and LG Trier 11 O 258/16). A merely
+# temporary technical outage of the linked page is no breach of the "ständig verfügbar" duty
+# (OLG Düsseldorf I-20 U 125/08). The commercial purpose of a post for the influencer's own
+# products was evident without a separate label. Landesrecht Hamburg (juris) is a JS portal;
+# the page is rendered and the article holding the decision text is kept, the paragraphs the
+# graph quotes transcribed in schemas/law.xsd and checked word for word.
+id: de/olg-hamburg-15u99-24
+title: OLG Hamburg, Urteil vom 21.05.2026 – 15 U 99/24 (Instagram Impressum)
+jurisdiction: DE
+language: de
+publisher: Hanseatisches Oberlandesgericht Hamburg, Landesrecht Hamburg (landesrecht-hamburg.de, juris)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: Gerichtsentscheidungen sind amtliche Werke und damit urheberrechtsfrei"
+originals:
+  - file: olg-hamburg-15u99-24.html
+    url: https://www.landesrecht-hamburg.de/bsha/document/NJRE001647569
+    fetch: rendered
+    wait: "article.docbody"
+    selector: "article.docbody"
+    media_type: text/html
+    retrieved_on: 2026-11-18
+    sha256: 870d3184f144ed44edde49d8fbbebefa4bbc51859e3abc6ee1e5ce1418a86cdc
+annotated: olg-hamburg-15u99-24.law.xml

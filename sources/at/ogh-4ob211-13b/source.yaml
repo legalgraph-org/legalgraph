@@ -1,0 +1,33 @@
+# OGH, Beschluss vom 17.12.2013 – 4 Ob 211/13b
+# (ECLI:AT:OGH0002:2013:0040OB00211.13B.1217.000): § 5 Abs. 1 ECG is satisfied when the
+# user can obtain the identification and contact data constantly, easily and directly;
+# common and even individual abbreviations are harmless if the full wording is apparent
+# from the overall presentation, and the data need not be collected under an "Impressum"
+# heading. The decision's Spruch and the reasoning (Rechtliche Beurteilung) are kept as
+# RIS html-fragment originals and transcribed in schemas/law.xsd, checked word for word.
+id: at/ogh-4ob211-13b
+title: OGH, Beschluss vom 17.12.2013 – 4 Ob 211/13b
+jurisdiction: AT
+language: de
+publisher: Oberster Gerichtshof, RIS Justiz (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG (Austria): court decisions are official works without copyright"
+originals:
+  - file: ogh-4ob211-13b-spruch.fragment.html
+    url: "https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_JustizDocumentData_0_SpruchContainer_0"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    retrieved_on: 2026-11-15
+    sha256: "42d7a314a386fbb3bbb1a5eda4732a7aa96d74c8ea8559936acc43f429bb46cc"
+  - file: ogh-4ob211-13b-begruendung.fragment.html
+    url: "https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&Dokumentnummer=JJT_20131217_OGH0002_0040OB00211_13B0000_000"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_JustizDocumentData_0_RechtlicheBeurteilungContainer_0"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    retrieved_on: 2026-11-15
+    sha256: "0ad681afe3a1993089fccae76d5220c30d2b2d48b81544035f5612c5e4513684"
+annotated: ogh-4ob211-13b.law.xml

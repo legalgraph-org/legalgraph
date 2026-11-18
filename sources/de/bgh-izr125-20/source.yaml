@@ -1,0 +1,22 @@
+# BGH, Urteil vom 09.09.2021 – I ZR 125/20 ("Influencer II", ECLI:DE:BGH:2021:090921UIZR125.20.0):
+# the media-law provisions on commercial communication (§ 6 TMG, § 58 RStV, § 22 MStV — predecessors
+# of § 6 DDG) are lex specialis not undermined by § 5a(6) UWG, and their "Gegenleistung" element
+# covers advertising for third parties only, not an influencer's own promotion (Eigenwerbung).
+# The BGH publishes the decision as a PDF only; the file is kept whole and the passages the graph
+# quotes are transcribed in schemas/law.xsd, checked word for word.
+id: de/bgh-izr125-20
+title: BGH, Urteil vom 09.09.2021 – I ZR 125/20 (Influencer II)
+jurisdiction: DE
+language: de
+publisher: Bundesgerichtshof, bundesgerichtshof.de
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG: court decisions are official works without copyright"
+originals:
+  - file: bgh-izr125-20.pdf
+    url: https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR_125-20.pdf?__blob=publicationFile&v=2
+    fetch: file
+    media_type: application/pdf
+    retrieved_on: 2026-11-18
+    sha256: 2c319001d64bcbf842bdb211c6a33d6d21ba1caa29ab927478c614ff7ab04324
+annotated: bgh-izr125-20.law.xml

@@ -1,0 +1,46 @@
+# Datenschutzgesetz (DSG, BGBl. I Nr. 165/1999): website-relevant provisions of Art. 2
+# (information duty, records of processing, DPO designation/contact). §§ 11 and 62
+# (enforcement/fines) are not modelled: they create no disclosure duty and have no
+# graph provisions to link to.
+# RIS serves the consolidated text as HTML only; each section's TextContainer fragment is kept
+# and the text is transcribed in schemas/law.xsd, checked word for word against it.
+id: at/dsg
+title: Datenschutzgesetz (§§ 43, 49, 57)
+jurisdiction: AT
+language: de
+publisher: Rechtsinformationssystem des Bundes (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 7 Abs. 1 UrhG (Austria): laws, ordinances and official decrees are free works"
+originals:
+  - file: dsg-43.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_5_TextContainer_51"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Same consolidated page; TextContainer_51 holds § 43."
+    retrieved_on: 2026-11-14
+    sha256: 3eb668689428178b87fa71380b6c48113768d0000d01ac0b9409872761218457
+  - file: dsg-49.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_5_TextContainer_57"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Same consolidated page; TextContainer_57 holds § 49."
+    retrieved_on: 2026-11-14
+    sha256: 275a7c9b95ede96639706545fb9eec1a2e7ac8e3cdbd487ab1d46ca03d3ebe5b
+  - file: dsg-57.fragment.html
+    url: "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_BundesnormenCompleteNormDocumentData_5_TextContainer_65"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    notes:
+      - "Same consolidated page; TextContainer_65 holds § 57."
+    retrieved_on: 2026-11-14
+    sha256: a5f58640f737490953962b5dab1039d8fb909dadbb175744f7823f4d7206e3dd
+annotated: dsg.law.xml

@@ -11,7 +11,7 @@ language: en
 publisher: European Data Protection Board
 kind: authored-xml
 licence: reuse-with-attribution
-licence_basis: "EDPB legal notice: reproduction is authorised provided the source is acknowledged"
+licence_basis: "EDPB Copyright page (edpb.europa.eu/copyright_en): reuse of website information is authorised for commercial and non-commercial purposes provided the source is acknowledged and the meaning is not distorted"
 originals:
   - file: edpb_guidelines_202005_consent_en.pdf
     url: https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_202005_consent_en.pdf

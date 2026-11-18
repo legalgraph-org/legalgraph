@@ -14,3 +14,21 @@ lg:AT-DSB-2021-D155027-outcome-1 a lgo:Outcome ;
     lgo:statedIn lg:AT-DSB-2021-D155027-spruch-2 ;
     lgo:forBreachOf lg:EU-2016-679-art44 ;
     lgo:reviewStatus lgv:SourceChecked .
+
+lg:AT-OGH-2003-1118 lgo:caseNumber "4 Ob 219/03i" ;
+    lgo:ecli "ECLI:AT:OGH0002:2003:0040OB00219.03I.1118.000" ;
+    lgo:hasOutcome lg:AT-OGH-2003-1118-outcome-1 ;
+    lgo:illustrates lg:AT-R-impressum ;
+    rdfs:comment "The leading Austrian decision on § 5(1) Z 3 ECG: the provision names no telephone number explicitly, but from the wording 'including its electronic mail address' the Supreme Court derived that besides the email address at least one other individual communication channel (e.g. telephone or fax) must be given, since not every user has email. The defendant's first a wrong and then an unreachable telephone number, so the duty was breached; the defendant's revision was dismissed and the lower court's finding of infringement stands. No Austrian decision on c/o or virtual-office addresses under § 5(1) Z 2 ECG was found in official sources; the 'serviceable address' standard of the German BGH V ZR 210/22 is the closest analogue."@en .
+
+lg:AT-OGH-2003-1118-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:FindingOfInfringement ;
+    lgo:against "The operator of the adult websites phonesex.at, sadoland.at and others (name redacted in the published decision)" ;
+    lgo:statedIn lg:AT-OGH-2003-1118-tenor-1 ;
+    lgo:forBreachOf lg:AT-ECG-s5-1 ;
+    lgo:reviewStatus lgv:SourceChecked .
+
+lg:AT-OGH-2013-1217 lgo:caseNumber "4 Ob 211/13b" ;
+    lgo:ecli "ECLI:AT:OGH0002:2013:0040OB00211.13B.1217.000" ;
+    lgo:illustrates lg:AT-R-impressum ;
+    rdfs:comment "Whether § 5(1) ECG is satisfied is a question of the individual case: the user must be able to obtain the data needed to identify the provider and to make contact constantly, easily and directly. Abbreviations — common ones and even individual ones — are harmless if the full wording is apparent from the overall presentation, and the data need not be collected under an 'Impressum' heading. The claimant's bid to stop a travel agency's website failed: no proven breach of the disclosure provisions, and the revision was dismissed."@en .

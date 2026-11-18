@@ -103,3 +103,46 @@ lg:DE-LGST-2021-0512-outcome-2 a lgo:Outcome ;
     lgo:sanctionedUnder lg:DE-BGB-s823-1 ;
     lgo:reviewStatus lgv:SourceChecked ;
     rdfs:comment "The claimant's lawyer's fees for the warning letter, awarded as damages under §§ 823(1), 249 BGB (Rn. 23)."@en .
+
+lg:DE-OLGHH-2026-0521 lgo:caseNumber "15 U 99/24" ;
+    lgo:illustrates lg:DE-R-impressum ;
+    rdfs:comment "The link-in-bio Impressum ruling: a business Instagram account is a geschäftsmäßiger digitaler Dienst under § 5 Abs. 1 DDG, and a highlighted link directly below the 'Bio' to a webpage holding the complete Impressum satisfies the duty — the average Instagram user expects to find it there, following BGH I ZR 228/03 (Rn. 3). A merely temporary technical outage of the linked page is no breach of the 'ständig verfügbar' duty (OLG Düsseldorf I-20 U 125/08) (Rn. 4). The commercial purpose of a post promoting the influencer's own products was evident from the account's context without a separate label (UWG § 5a, DDG § 6) (Rn. 9). The consumer association's appeal was dismissed; the Instagram account stayed compliant as operated."@en .
+
+lg:DE-BGH-2006-0720 lgo:caseNumber "I ZR 228/03" ;
+    lgo:ecli "ECLI:DE:BGH:2006:20060720UIZR228.03.0" ;
+    lgo:illustrates lg:DE-R-impressum ;
+    rdfs:comment "The foundational provider-identification ruling: information under § 6 TDG / § 10 Abs. 2 MDStV (predecessors of § 5 Abs. 1 DDG) that is 'leicht erkennbar, unmittelbar erreichbar und ständig verfügbar' may sit behind clearly labelled links — 'Kontakt' and 'Impressum' suffice — and need not be on the start page (Rn. 18). Two steps to reach the information still count as 'unmittelbar erreichbar'; three steps would not (Rn. 23). For distance-selling information under § 312c BGB / BGB-InfoV the same holds: no obligation to show the details on the start page or force them during ordering (Leitsatz b). The consumer association's revision was dismissed."@en .
+
+lg:DE-BGH-2021-0909 lgo:caseNumber "I ZR 90/20" ;
+    lgo:ecli "ECLI:DE:BGH:2021:090921UIZR90.20.0" ;
+    lgo:illustrates lg:DE-R-advertising-disclosure ;
+    rdfs:comment "Influencer I: an influencer's posts on social media are commercial acts for her own business; a post about a third company's product without consideration is also one for that company when, judged by its overall impression, it contains a 'werblicher Überschuss' — a promotional surplus that makes promoting third-party competition more than a merely incidental role (Leitsatz d). The assessment weighs all circumstances — product photos, editorial context, links to third-party sites; 'Tap Tags' alone do not establish the surplus, but a link to the manufacturer's page regularly does (Leitsatz e). The § 5a(6) UWG label must be obvious at first glance to the average consumer, and a hint in the post text does not label a 'Tap Tag' on an adjacent image (Leitsatz f). The influencer's revision was dismissed, so the injunction below stands."@en .
+
+lg:DE-BGH-2021-0909b lgo:caseNumber "I ZR 125/20" ;
+    lgo:ecli "ECLI:DE:BGH:2021:090921UIZR125.20.0" ;
+    lgo:illustrates lg:DE-R-advertising-disclosure ;
+    rdfs:comment "Influencer II: § 6(1) no. 1 TMG on commercial communication in telemedia and § 58(1) sentence 1 RStV / § 22(1) sentence 1 MStV on advertising in telemedia are sector-specific market-conduct rules whose media-law assessments may not be undermined by the general unfair-competition provision § 5a(6) UWG (Leitsatz a; predecessors of today's § 6 DDG and § 18 MStV). Their 'Gegenleistung' element applies only to advertising for third-party companies, not to an influencer's own promotion (Eigenwerbung) (Leitsatz b). The plaintiff's revision was dismissed."@en .
+
+lg:DE-OLGK-2026-0303 lgo:caseNumber "14 UKl 2/24" ;
+    lgo:ecli "ECLI:DE:OLGKARL:2026:0303.14UKL2.24.00" ;
+    lgo:hasOutcome lg:DE-OLGK-2026-0303-outcome-1 , lg:DE-OLGK-2026-0303-outcome-2 ;
+    lgo:illustrates lg:DE-R-advertising-disclosure ;
+    rdfs:comment "An automotive influencer's Instagram Reels are commercial communication for the car makers when vehicles were provided free for press events and travel costs (plus catering) reimbursed — consideration need not be a cash payment, no obligation to post is required, and there is no de minimis threshold for the benefit (Rn. 45, 48; BGH I ZR 90/20, I ZR 9/21, I ZR 35/21). The posts were not clearly recognisable as advertising: the relevant audience is not only the influencer's followers but also Instagram users reached through the platform's recommendation algorithms, for whom the account's verification, follower count and post history are not known (Rn. 51–54). The commercial purpose did not appear from the neutral product-demonstration design either. Injunction under the UKlaG plus €374.50 damages."@en .
+
+lg:DE-OLGK-2026-0303-outcome-1 a lgo:Outcome ;
+    lgo:outcomeType lgv:Injunction ;
+    lgo:against "An automotive influencer (the defendant)" ;
+    lgo:statedIn lg:DE-OLGK-2026-0303-tenor-1 ;
+    lgo:forBreachOf lg:DE-DDG-s6-1 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Cease-and-desist under the Unterlassungsklagengesetz: no unlabelled advertising for third-party products as an influencer, on pain of a coercive fine up to €250,000 or coercive detention up to six months (Tenor § 1)."@en .
+
+lg:DE-OLGK-2026-0303-outcome-2 a lgo:Outcome ;
+    lgo:outcomeType lgv:Damages ;
+    lgo:against "An automotive influencer (the defendant)" ;
+    lgo:amount 374.50 ;
+    lgo:currency "EUR" ;
+    lgo:statedIn lg:DE-OLGK-2026-0303-tenor-1 ;
+    lgo:forBreachOf lg:DE-DDG-s6-1 ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    rdfs:comment "Damages of €374.50 plus interest at five percentage points above the base rate from 26 January 2025 (Tenor § 2)."@en .

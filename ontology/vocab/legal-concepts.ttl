@@ -315,7 +315,77 @@ lgv:AiGeneratedContent a lgo:LegalConcept ;
 lgv:SmallPlatformExemption a lgo:LegalConcept ;
     skos:inScheme lgv:ConsumerLawConcepts ;
     skos:prefLabel "Exemption of micro and small platforms"@en ;
-    skos:definition "Most obligations for online platforms (Articles 20 to 28 DSA) and for marketplaces (Articles 30 to 32) do not apply to micro and small enterprises, unless designated very large platforms (Articles 19 and 29 DSA)."@en .
+    skos:definition "Section 3 of Chapter III DSA (Articles 15 to 32) does not apply to providers of online platforms that qualify as micro or small enterprises, except Article 24(3); very large online platforms are never exempt (Articles 19 and 29 DSA)."@en .
+
+lgv:HostingLiabilityExemption a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Liability exemption for hosting services"@en ;
+    skos:definition "A provider that only stores information at a recipient's request is not liable for that information, provided it has no actual knowledge of illegal activity and, on obtaining such knowledge, acts expeditiously to remove or disable access (Article 6 DSA)."@en .
+
+lgv:TransparencyReportingIntermediaryServices a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Transparency reporting by intermediary services"@en ;
+    skos:definition "Providers of intermediary services must publish annual reports on content moderation: numbers of notices and actions, grounds, use of automated means and complaint outcomes, in a machine-readable format (Article 15 DSA)."@en .
+
+lgv:NoticeAndActionMechanism a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Notice and action mechanism"@en ;
+    skos:definition "Hosting providers must offer an easy electronic way for anyone to report specific items of illegal content; notices that are precise enough give rise to actual knowledge, trigger a receipt confirmation and a decision notice, and must be handled diligently and non-arbitrarily (Article 16 DSA)."@en .
+
+lgv:StatementOfReasons a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Statement of reasons"@en ;
+    skos:definition "Hosting providers must give affected recipients a clear and specific statement of reasons for restricting or removing content, suspending accounts or stopping payments, in plain language and before or at the time of the decision (Article 17 DSA)."@en .
+
+lgv:NotificationOfSuspectedCriminalOffences a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Notification of suspected criminal offences"@en ;
+    skos:definition "Hosting providers that become aware of information giving rise to a suspicion of a criminal offence involving a threat to life or safety must inform the relevant law-enforcement authorities or Europol (Article 18 DSA)."@en .
+
+lgv:InternalComplaintHandlingSystem a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Internal complaint-handling system"@en ;
+    skos:definition "Online platforms must let recipients complain about the platform's decisions on notices and its own content rules; complaints must be handled diligently, non-arbitrarily and within set time limits (Article 20 DSA)."@en .
+
+lgv:TrustedFlaggers a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Trusted flaggers"@en ;
+    skos:definition "Bodies vetted by Digital Services Coordinators whose notices platforms must process as a priority (Article 22 DSA)."@en .
+
+lgv:MeasuresAgainstMisuse a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Measures and protection against misuse"@en ;
+    skos:definition "Platforms must act against recipients who manifestly submit unfounded notices or complaints, including temporary suspension after a warning and restrictions on repeated misuse (Article 23 DSA)."@en .
+
+lgv:PlatformTransparencyReporting a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Transparency reporting by online platforms"@en ;
+    skos:definition "Online platforms extend their Article 15 reports with dispute-settlement and suspension statistics, publish average monthly recipients, and submit Article 17 decisions to the Commission's public database; Article 24(3) applies to all platforms, including micro and small ones (Article 24 DSA)."@en .
+
+lgv:NonDeceptiveOnlineInterface a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Online interfaces designed to deceive or manipulate"@en ;
+    skos:definition "Platforms must not design or operate interfaces that deceive or manipulate recipients into giving consent or making choices, or that distort their ability to make free choices (Article 25 DSA)."@en .
+
+lgv:RecommenderSystemTransparency a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Recommender system transparency"@en ;
+    skos:definition "Platforms using recommender systems must explain in their terms the main parameters, their relative weight and options to modify or switch them off (Article 27 DSA)."@en .
+
+lgv:OnlineProtectionOfMinors a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Online protection of minors"@en ;
+    skos:definition "Platforms accessible to minors must take appropriate and proportionate measures to ensure a high level of privacy, safety and security for them (Article 28 DSA)."@en .
+
+lgv:ComplianceByDesign a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Compliance by design for distance-selling platforms"@en ;
+    skos:definition "Platforms allowing consumers to conclude distance contracts with traders must design their interface so traders display the information required by Union consumer law before the order is placed (Article 31 DSA)."@en .
+
+lgv:InformConsumersOfIllegalProducts a lgo:LegalConcept ;
+    skos:inScheme lgv:ConsumerLawConcepts ;
+    skos:prefLabel "Inform consumers of illegal products sold through the platform"@en ;
+    skos:definition "Distance-selling platforms that learn a trader offered illegal products or services must tell affected consumers (within six months of purchase) about the illegality, the trader's identity and redress options, or publish that information on the interface (Article 32 DSA)."@en .
 
 # --- Switzerland (DSG) -------------------------------------------------------------
 

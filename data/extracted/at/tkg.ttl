@@ -41,6 +41,69 @@ lg:AT-TKG-2021-s165-3-q1
     lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P165"^^xsd:anyURI ;
     lgo:text "(3) Betreiber öffentlicher Kommunikationsdienste und Anbieter eines Dienstes der Informationsgesellschaft im Sinne des § 3 Z 1 ECommerce-Gesetz, BGBl. I Nr. 152/2001, sind verpflichtet, den Nutzer oder Benutzer darüber zu informieren, welche personenbezogenen Daten er verarbeiten wird, auf welcher Rechtsgrundlage und für welche Zwecke dies erfolgt und für wie lange die Daten gespeichert werden. Eine Ermittlung dieser Daten ist nur zulässig, wenn der Nutzer oder Benutzer seine Einwilligung dazu aktiv und auf Grundlage von klaren und umfassenden Informationen erteilt hat. Dies steht einer technischen Speicherung oder dem Zugang nicht entgegen, wenn der alleinige Zweck die Durchführung der Übertragung einer Nachricht über ein Kommunikationsnetz ist oder, wenn dies unbedingt erforderlich ist, damit der Anbieter eines Dienstes der Informationsgesellschaft, der vom Nutzer oder Benutzer ausdrücklich gewünscht wurde, diesen Dienst zur Verfügung stellen kann. Der Nutzer ist auch über die Nutzungsmöglichkeiten auf Grund der in elektronischen Fassungen der Verzeichnisse eingebetteten Suchfunktionen zu informieren. Diese Information hat in geeigneter Form, insbesondere im Rahmen Allgemeiner Geschäftsbedingungen und spätestens bei Beginn der Rechtsbeziehungen zu erfolgen."@de .
 
+lg:AT-TKG-2021-s174-3
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-TKG-2021 ;
+    lgo:citation "§ 174 Abs. 3 TKG" ;
+    lgo:implements lg:EU-2002-58-art13-1 ;
+    lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-TKG-2021-source ;
+    lgo:sourceElement "/risdok/nutzdaten[1]/abschnitt[1]/absatz[782]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174"^^xsd:anyURI .
+
+lg:AT-TKG-2021-s174-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-TKG-2021-s174-3 ;
+    lgo:retrievedOn "2026-11-03"^^xsd:date ;
+    lgo:sourceDocument lg:AT-TKG-2021-source ;
+    lgo:sourceElement "/risdok/nutzdaten[1]/abschnitt[1]/absatz[782]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174"^^xsd:anyURI ;
+    lgo:text "(3) Die Zusendung einer elektronischen Post – einschließlich SMS – ist ohne vorherige Einwilligung des Empfängers unzulässig, wenn die Zusendung zu Zwecken der Direktwerbung erfolgt."@de .
+
+lg:AT-TKG-2021-s174-4
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-TKG-2021 ;
+    lgo:citation "§ 174 Abs. 4 TKG" ;
+    lgo:implements lg:EU-2002-58-art13-2 ;
+    lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-TKG-2021-source ;
+    lgo:sourceElement "/risdok/nutzdaten[1]/abschnitt[1]/absatz[783]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174"^^xsd:anyURI .
+
+lg:AT-TKG-2021-s174-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-TKG-2021-s174-4 ;
+    lgo:retrievedOn "2026-11-03"^^xsd:date ;
+    lgo:sourceDocument lg:AT-TKG-2021-source ;
+    lgo:sourceElement "/risdok/nutzdaten[1]/abschnitt[1]/absatz[783]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174"^^xsd:anyURI ;
+    lgo:text "(4) Eine vorherige Einwilligung für die Zusendung elektronischer Post gemäß Abs. 3 ist dann nicht notwendig, wenn"@de .
+
+lg:AT-TKG-2021-s174-5
+    a lgo:Provision ;
+    eli:is_part_of lg:AT-TKG-2021 ;
+    lgo:citation "§ 174 Abs. 5 TKG" ;
+    lgo:regulates lgv:ElectronicDirectMarketing ;
+    lgo:requiresDisclosureOf lgv:Advertiser , lgv:UnsubscribeMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:AT-TKG-2021-source ;
+    lgo:sourceElement "/risdok/nutzdaten[1]/abschnitt[1]/absatz[784]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174"^^xsd:anyURI .
+
+lg:AT-TKG-2021-s174-5-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:AT-TKG-2021-s174-5 ;
+    lgo:retrievedOn "2026-11-03"^^xsd:date ;
+    lgo:sourceDocument lg:AT-TKG-2021-source ;
+    lgo:sourceElement "/risdok/nutzdaten[1]/abschnitt[1]/absatz[784]" ;
+    lgo:sourceUrl "https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P174"^^xsd:anyURI ;
+    lgo:text "(5) Die Zusendung elektronischer Post zu Zwecken der Direktwerbung ist jedenfalls unzulässig, wenn"@de .
+
 lg:AT-TKG-2021-source
     a lgo:SourceDocument ;
     dcterms:language "de"^^xsd:language ;

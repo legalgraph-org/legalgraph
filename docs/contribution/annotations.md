@@ -55,6 +55,11 @@ A provision needs at least one of `regulates`, `enforces`, `defines`, `authorise
 "paragraph 1") are read from the English text mechanically and become `lgo:refersTo` to the act's
 provisions in the graph.
 
+When a parallel language version splits one sentence over several sibling elements (the German
+operative part of C-330/23 typesets "ist dahin auszulegen, dass" and "er verlangt, …" as two
+`<P>`s where the English has one), `lga:parallel-siblings="<n>"` on the provision extends its
+quote in each parallel over the `n` elements following the matched one.
+
 If no concept in the vocabularies fits, add one in the same pull request, with a definition that
 states the law, not an opinion.
 

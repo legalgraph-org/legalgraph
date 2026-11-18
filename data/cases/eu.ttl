@@ -42,6 +42,11 @@ lg:CJEU-C-21-23 lgo:caseNumber "C-21/23" ;
     lgo:shortName "Lindenapotheke" ;
     rdfs:comment "The GDPR does not prevent national law from letting competitors sue over GDPR breaches as unfair commercial practices. This is why, in Germany, a competitor's Abmahnung can enforce privacy duties (§ 3a UWG)."@en .
 
+lg:CJEU-C-330-23 lgo:caseNumber "C-330/23" ;
+    lgo:shortName "Aldi Süd" ;
+    lgo:illustrates lg:DE-R-prior-price ;
+    rdfs:comment "Art. 6a(1)-(2) Directive 98/6/EC requires an announced price reduction — in percentage or promotional form — to be determined on the basis of the prior price, the lowest price of the last 30 days; the reduced price cannot be equal to or higher than it. This is the EU basis of Germany's PAngV § 11 '30-day rule' for was/now price claims."@en .
+
 lg:CJEU-C-509-09 lgo:caseNumber "C-509/09" .
 
 lg:CJEU-C-376-22 lgo:caseNumber "C-376/22" .

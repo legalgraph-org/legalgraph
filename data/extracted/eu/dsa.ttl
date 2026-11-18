@@ -146,11 +146,321 @@ lg:EU-2022-2065-art14-1-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
     lgo:text "(1) Die Anbieter von Vermittlungsdiensten machen in ihren allgemeinen Geschäftsbedingungen Angaben zu etwaigen Beschränkungen in Bezug auf die von den Nutzern bereitgestellten Informationen, die sie im Zusammenhang mit der Nutzung ihres Dienstes auferlegen. Diese Angaben enthalten Angaben zu allen Leitlinien, Verfahren, Maßnahmen und Werkzeuge, die zur Moderation von Inhalten eingesetzt werden, einschließlich der algorithmischen Entscheidungsfindung und der menschlichen Überprüfung, sowie zu den Verfahrensregeln für ihr internes Beschwerdemanagementsystem. Sie werden in klarer, einfacher, verständlicher, benutzerfreundlicher und eindeutiger Sprache abgefasst und in leicht zugänglicher und maschinenlesbarer Form öffentlich zur Verfügung gestellt."@de .
 
+lg:EU-2022-2065-art15-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 15(1) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art16-1 , lg:EU-2022-2065-art16-2 , lg:EU-2022-2065-art16-3 , lg:EU-2022-2065-art16-4 , lg:EU-2022-2065-art16-5 , lg:EU-2022-2065-art16-6 , lg:EU-2022-2065-art20-1 ;
+    lgo:regulates lgv:TransparencyReportingIntermediaryServices ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[1]/ARTICLE[5]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art15-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art15-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[1]/ARTICLE[5]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Providers of intermediary services shall make publicly available, in a machine-readable format and in an easily accessible manner, at least once a year, clear, easily comprehensible reports on any content moderation that they engaged in during the relevant period. Those reports shall include, in particular, information on the following, as applicable:
+(a) for providers of intermediary services, the number of orders received from Member States’ authorities including orders issued in accordance with Articles 9 and 10, categorised by the type of illegal content concerned, the Member State issuing the order, and the median time needed to inform the authority issuing the order, or any other authority specified in the order, of its receipt, and to give effect to the order;
+(b) for providers of hosting services, the number of notices submitted in accordance with Article 16, categorised by the type of alleged illegal content concerned, the number of notices submitted by trusted flaggers, any action taken pursuant to the notices by differentiating whether the action was taken on the basis of the law or the terms and conditions of the provider, the number of notices processed by using automated means and the median time needed for taking the action;
+(c) for providers of intermediary services, meaningful and comprehensible information about the content moderation engaged in at the providers’ own initiative, including the use of automated tools, the measures taken to provide training and assistance to persons in charge of content moderation, the number and type of measures taken that affect the availability, visibility and accessibility of information provided by the recipients of the service and the recipients’ ability to provide information through the service, and other related restrictions of the service; the information reported shall be categorised by the type of illegal content or violation of the terms and conditions of the service provider, by the detection method and by the type of restriction applied;
+(d) for providers of intermediary services, the number of complaints received through the internal complaint-handling systems in accordance with the provider’s terms and conditions and additionally, for providers of online platforms, in accordance with Article 20, the basis for those complaints, decisions taken in respect of those complaints, the median time needed for taking those decisions and the number of instances where those decisions were reversed;
+(e) any use made of automated means for the purpose of content moderation, including a qualitative description, a specification of the precise purposes, indicators of the accuracy and the possible rate of error of the automated means used in fulfilling those purposes, and any safeguards applied."""@en .
+
+lg:EU-2022-2065-art15-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art15-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art15-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[1]/ARTICLE[5]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Die Anbieter von Vermittlungsdiensten stellen mindestens einmal jährlich in einem maschinenlesbaren Format und auf leicht zugängliche Art und Weise klare, leicht verständliche Berichte über die die von ihnen in dem betreffenden Zeitraum durchgeführte Moderation von Inhalten öffentlich zur Verfügung. Diese Berichte enthalten – soweit zutreffend – insbesondere folgende Angaben:
+a) bei Anbietern von Vermittlungsdiensten die Anzahl der von Behörden der Mitgliedstaaten erhaltenen Anordnungen einschließlich der gemäß den Artikeln 9 und 10 erlassenen Anordnungen, aufgeschlüsselt nach der Art der betroffenen rechtswidrigen Inhalte, dem die Anordnung erlassenden Mitgliedstaat und der Medianzeit, die benötigt wurde, um die die Anordnung erlassende Behörde bzw. die anderen in der Anordnung angegebenen Behörden über den Eingang der Anordnung zu unterrichten und der Anordnung nachzukommen;
+b) bei Hostingdiensteanbietern die Anzahl der nach Artikel 16 gemachten Meldungen, aufgeschlüsselt nach der Art der betroffenen mutmaßlich rechtswidrigen Inhalte, die Anzahl der durch vertrauenswürdige Hinweisgeber übermittelten Meldungen, alle aufgrund der Meldungen ergriffenen Maßnahmen, unterschieden danach, ob dies auf gesetzlicher Grundlage oder gemäß den allgemeinen Geschäftsbedingungen des Anbieters erfolgt ist, die Anzahl der ausschließlich automatisch verarbeiteten Meldungen und die Mediandauer bis zur Ergreifung der Maßnahmen;
+c) bei Anbietern von Vermittlungsdiensten aussagekräftige und verständliche Informationen über die auf Eigeninitiative des Anbieters durchgeführte Moderation von Inhalten einschließlich der Nutzung automatisierter Werkzeuge, der Maßnahmen zur Schulung und Unterstützung der für die Moderation von Inhalten zuständigen Personen, der Anzahl und Art der ergriffenen Maßnahmen, die sich auf die Verfügbarkeit, Erkennbarkeit und Zugänglichkeit der von den Nutzern bereitgestellten Informationen auswirken, und der Fähigkeit der Nutzer, solche Informationen über den Dienst bereitzustellen, und anderer entsprechender Beschränkungen des Dienstes; die gemeldeten Informationen werden nach der Art der rechtswidrigen Inhalte oder des Verstoßes gegen die allgemeinen Geschäftsbedingungen des Diensteanbieters, nach der zur Aufspürung verwendeten Methode und der Art der angewendeten Beschränkung aufgeschlüsselt;
+d) bei Anbietern von Vermittlungsdiensten die Anzahl der Beschwerden, die gemäß den allgemeinen Geschäftsbedingungen des Anbieters über die internen Beschwerdemanagementsysteme und darüber hinaus – bei Anbietern von Online-Plattformen – gemäß Artikel 20 eingegangen sind, die Grundlage dieser Beschwerden, die zu diesen Beschwerden getroffenen Entscheidungen, die bis zur Entscheidung benötigte Mediandauer und die Anzahl der Fälle, in denen diese Entscheidungen rückgängig gemacht wurden.
+e) die etwaige Verwendung automatisierter Mittel zur Moderation von Inhalten, mit einer qualitativen Beschreibung, mit Angabe der genauen Zwecke, mit Indikatoren für die Genauigkeit und mit der möglichen Fehlerquote der bei der Erfüllung dieser Zwecke verwendeten automatisierten Mittel und mit angewandten Schutzvorkehrungen."""@de .
+
+lg:EU-2022-2065-art16-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 16(1) DSA" ;
+    lgo:regulates lgv:NoticeAndActionMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art16-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of hosting services shall put mechanisms in place to allow any individual or entity to notify them of the presence on their service of specific items of information that the individual or entity considers to be illegal content. Those mechanisms shall be easy to access and user-friendly, and shall allow for the submission of notices exclusively by electronic means."@en .
+
+lg:EU-2022-2065-art16-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art16-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Die Hostingdiensteanbieter richten Verfahren ein, nach denen Personen oder Einrichtungen ihnen das Vorhandensein von Einzelinformationen in ihren Diensten melden können, die die betreffende Person oder Einrichtung als rechtswidrige Inhalte ansieht. Diese Verfahren müssen leicht zugänglich und benutzerfreundlich sein und eine Übermittlung von Meldungen ausschließlich auf elektronischem Weg ermöglichen."@de .
+
+lg:EU-2022-2065-art16-2
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 16(2) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art16-1 ;
+    lgo:regulates lgv:NoticeAndActionMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art16-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """2. The mechanisms referred to in paragraph 1 shall be such as to facilitate the submission of sufficiently precise and adequately substantiated notices. To that end, the providers of hosting services shall take the necessary measures to enable and to facilitate the submission of notices containing all of the following elements:
+(a) a sufficiently substantiated explanation of the reasons why the individual or entity alleges the information in question to be illegal content;
+(b) a clear indication of the exact electronic location of that information, such as the exact URL or URLs, and, where necessary, additional information enabling the identification of the illegal content adapted to the type of content and to the specific type of hosting service;
+(c) the name and email address of the individual or entity submitting the notice, except in the case of information considered to involve one of the offences referred to in Articles 3 to 7 of Directive 2011/93/EU;
+(d) a statement confirming the bona fide belief of the individual or entity submitting the notice that the information and allegations contained therein are accurate and complete."""@en .
+
+lg:EU-2022-2065-art16-2-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art16-2-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-2 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[2]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(2) Mit den in Absatz 1 genannten Verfahren muss das Übermitteln hinreichend genauer und angemessen begründeter Meldungen erleichtert werden. Dazu ergreifen die Hostingdiensteanbieter die erforderlichen Maßnahmen, um die Übermittlung von Meldungen zu ermöglichen und zu erleichtern, die alle folgenden Elemente enthalten:
+a) eine hinreichend begründete Erläuterung, warum die betreffende Person oder Einrichtung die fraglichen Informationen als rechtswidrige Inhalte ansieht;
+b) eine eindeutige Angabe des genauen elektronischen Speicherorts dieser Informationen, etwa die präzise URL-Adresse bzw. die präzisen URL-Adressen, oder, soweit erforderlich, weitere, hinsichtlich der Art der Inhalte und der konkreten Art des Hostingdienstes zweckdienliche Angaben zur Ermittlung der rechtswidrigen Inhalte;
+c) den Namen und die E-Mail-Adresse der meldenden Person oder Einrichtung, es sei denn, es handelt sich um Informationen, bei denen davon ausgegangen wird, dass sie eine in den Artikeln 3 bis 7 der Richtlinie 2011/93/EU genannte Straftat betreffen;
+d) eine Erklärung darüber, dass die meldende Person oder Einrichtung in gutem Glauben davon überzeugt ist, dass die in der Meldung enthaltenen Angaben und Anführungen richtig und vollständig sind."""@de .
+
+lg:EU-2022-2065-art16-3
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 16(3) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art6-1 ;
+    lgo:regulates lgv:NoticeAndActionMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art16-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "3. Notices referred to in this Article shall be considered to give rise to actual knowledge or awareness for the purposes of Article 6 in respect of the specific item of information concerned where they allow a diligent provider of hosting services to identify the illegality of the relevant activity or information without a detailed legal examination."@en .
+
+lg:EU-2022-2065-art16-3-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art16-3-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(3) Die im vorliegenden Artikel genannten Meldungen bewirken, dass für die Zwecke des Artikels 6 von einer tatsächlichen Kenntnis oder einem Bewusstsein in Bezug auf die betreffende Einzelinformation ausgegangen wird, wenn sie es einem sorgfältig handelnden Anbieter von Hostingdiensten ermöglichen, ohne eingehende rechtliche Prüfung festzustellen, dass die einschlägige Tätigkeit oder Information rechtswidrig ist."@de .
+
+lg:EU-2022-2065-art16-4
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 16(4) DSA" ;
+    lgo:regulates lgv:NoticeAndActionMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art16-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-4 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "4. Where the notice contains the electronic contact information of the individual or entity that submitted it, the provider of hosting services shall, without undue delay, send a confirmation of receipt of the notice to that individual or entity."@en .
+
+lg:EU-2022-2065-art16-4-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art16-4-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-4 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[4]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(4) Enthält die Meldung die elektronische Kontaktangabe der meldenden Person oder Einrichtung, so schickt der Hostingdiensteanbieter dieser Person oder Einrichtung unverzüglich eine Empfangsbestätigung."@de .
+
+lg:EU-2022-2065-art16-5
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 16(5) DSA" ;
+    lgo:regulates lgv:NoticeAndActionMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art16-5-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-5 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "5. The provider shall also, without undue delay, notify that individual or entity of its decision in respect of the information to which the notice relates, providing information on the possibilities for redress in respect of that decision."@en .
+
+lg:EU-2022-2065-art16-5-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art16-5-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-5 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[5]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(5) Ferner teilt der Anbieter der betreffenden Person oder Einrichtung unverzüglich seine Entscheidung in Bezug auf die gemeldeten Informationen mit und weist dabei auf die möglichen Rechtsbehelfe gegen diese Entscheidung hin."@de .
+
+lg:EU-2022-2065-art16-6
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 16(6) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art16-1 , lg:EU-2022-2065-art16-5 ;
+    lgo:regulates lgv:NoticeAndActionMechanism ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[6]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art16-6-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-6 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[6]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "6. Providers of hosting services shall process any notices that they receive under the mechanisms referred to in paragraph 1 and take their decisions in respect of the information to which the notices relate, in a timely, diligent, non-arbitrary and objective manner. Where they use automated means for that processing or decision-making, they shall include information on such use in the notification referred to in paragraph 5."@en .
+
+lg:EU-2022-2065-art16-6-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art16-6-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art16-6 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[1]/PARAG[6]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(6) Die Hostingdiensteanbieter bearbeiten alle Meldungen, die sie im Rahmen der in Absatz 1 genannten Verfahren erhalten, und entscheiden zeitnah, sorgfältig, frei von Willkür und objektiv über die gemeldeten Informationen. Wenn sie zu dieser Bearbeitung oder Entscheidungsfindung automatisierte Mittel einsetzen, machen sie in ihrer Mitteilung nach Absatz 5 auch Angaben über den Einsatz dieser Mittel."@de .
+
+lg:EU-2022-2065-art17-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 17(1) DSA" ;
+    lgo:regulates lgv:StatementOfReasons ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art17-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art17-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Providers of hosting services shall provide a clear and specific statement of reasons to any affected recipients of the service for any of the following restrictions imposed on the ground that the information provided by the recipient of the service is illegal content or incompatible with their terms and conditions:
+(a) any restrictions of the visibility of specific items of information provided by the recipient of the service, including removal of content, disabling access to content, or demoting content;
+(b) suspension, termination or other restriction of monetary payments;
+(c) suspension or termination of the provision of the service in whole or in part;
+(d) suspension or termination of the recipient of the service's account."""@en .
+
+lg:EU-2022-2065-art17-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art17-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art17-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Die Hostingdiensteanbieter legen allen betroffenen Nutzern eine klare und spezifische Begründung für alle folgenden Beschränkungen vor, die mit der Begründung verhängt werden, dass es sich bei den vom Nutzer bereitgestellten Informationen um rechtswidrige Inhalte handelt oder diese nicht mit ihren Nutzungsbedingungen vereinbar sind:
+a) etwaige Beschränkungen der Anzeige bestimmter Einzelinformationen, die vom Nutzer bereitgestellt werden, einschließlich Entfernung von Inhalten, Sperrung des Zugangs zu Inhalten oder Herabstufung von Inhalten;
+b) Aussetzung, Beendigung oder sonstige Beschränkung von Geldzahlungen;
+c) Aussetzung oder Beendigung der gesamten oder teilweisen Bereitstellung des Dienstes;
+d) Aussetzung oder Schließung des Kontos des Nutzers."""@de .
+
+lg:EU-2022-2065-art18-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 18(1) DSA" ;
+    lgo:regulates lgv:NotificationOfSuspectedCriminalOffences ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art18-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art18-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Where a provider of hosting services becomes aware of any information giving rise to a suspicion that a criminal offence involving a threat to the life or safety of a person or persons has taken place, is taking place or is likely to take place, it shall promptly inform the law enforcement or judicial authorities of the Member State or Member States concerned of its suspicion and provide all relevant information available."@en .
+
+lg:EU-2022-2065-art18-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art18-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art18-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[2]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Erhält ein Hostingdiensteanbieter Kenntnis von Informationen, die den Verdacht begründen, dass eine Straftat, die eine Gefahr für das Leben oder die Sicherheit einer Person oder von Personen darstellt, begangen wurde, begangen wird oder begangen werden könnte, so teilt er seinen Verdacht unverzüglich den Strafverfolgungs- oder Justizbehörden des betreffenden Mitgliedstaats oder der betreffenden Mitgliedstaaten mit und stellt alle vorliegenden einschlägigen Informationen zur Verfügung."@de .
+
 lg:EU-2022-2065-art19-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2022-2065 ;
     lgo:citation "Art. 19(1) DSA" ;
     lgo:defines lgv:SmallPlatformExemption ;
+    lgo:refersTo lg:EU-2022-2065-art24-3 ;
     lgo:reviewStatus lgv:SourceChecked ;
     lgo:sourceDocument lg:EU-2022-2065-source ;
     lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[1]/PARAG[1]" ;
@@ -210,6 +520,242 @@ lg:EU-2022-2065-art2-1-q1-de
     lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
     lgo:text "(1) Diese Verordnung gilt für Vermittlungsdienste, die für Nutzer mit Niederlassungsort oder Sitz in der Union angeboten werden, ungeachtet des Niederlassungsortes des Anbieters dieser Vermittlungsdienste."@de .
 
+lg:EU-2022-2065-art20-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 20(1) DSA" ;
+    lgo:regulates lgv:InternalComplaintHandlingSystem ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art20-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art20-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Providers of online platforms shall provide recipients of the service, including individuals or entities that have submitted a notice, for a period of at least six months following the decision referred to in this paragraph, with access to an effective internal complaint-handling system that enables them to lodge complaints, electronically and free of charge, against the decision taken by the provider of the online platform upon the receipt of a notice or against the following decisions taken by the provider of the online platform on the grounds that the information provided by the recipients constitutes illegal content or is incompatible with its terms and conditions:
+(a) decisions whether or not to remove or disable access to or restrict visibility of the information;
+(b) decisions whether or not to suspend or terminate the provision of the service, in whole or in part, to the recipients;
+(c) decisions whether or not to suspend or terminate the recipients’ account;
+(d) decisions whether or not to suspend, terminate or otherwise restrict the ability to monetise information provided by the recipients."""@en .
+
+lg:EU-2022-2065-art20-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art20-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art20-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[2]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Die Anbieter von Online-Plattformen gewähren den Nutzern einschließlich meldenden Personen oder Einrichtungen während eines Zeitraums von mindestens sechs Monaten nach einer Entscheidung gemäß diesem Absatz Zugang zu einem wirksamen internen Beschwerdemanagementsystem, das eine elektronische und kostenlose Einreichung von Beschwerden gegen die Entscheidung des Anbieters einer Online-Plattform nach Erhalt der Meldung oder gegen folgende Entscheidungen des Anbieters einer Online-Plattform ermöglicht, die damit begründet worden sind, dass die von den Nutzern bereitgestellten Informationen rechtswidrige Inhalte darstellen oder mit den allgemeinen Geschäftsbedingungen der Plattform unvereinbar sind:
+a) Entscheidungen, ob die Information entfernt oder der Zugang dazu gesperrt oder die Anzeige der Information beschränkt wird;
+b) Entscheidungen, ob die Erbringung des Dienstes gegenüber den Nutzern vollständig oder teilweise ausgesetzt oder beendet wird;
+c) Entscheidungen, ob das Konto des Nutzers ausgesetzt oder geschlossen wird;
+d) Entscheidungen, ob Geldzahlungen im Zusammenhang mit von den Nutzern bereitgestellten Informationen ausgesetzt, beendet oder die Fähigkeit der Nutzer zu deren Monetarisierung anderweitig eingeschränkt werden."""@de .
+
+lg:EU-2022-2065-art21-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 21(1) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art20-1 ;
+    lgo:regulates lgv:ConsumerDisputeResolution ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art21-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art21-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Recipients of the service, including individuals or entities that have submitted notices, addressed by the decisions referred to in Article 20(1) shall be entitled to select any out-of-court dispute settlement body that has been certified in accordance with paragraph 3 of this Article in order to resolve disputes relating to those decisions, including complaints that have not been resolved by means of the internal complaint-handling system referred to in that Article.
+Providers of online platforms shall ensure that information about the possibility for recipients of the service to have access to an out-of-court dispute settlement, as referred to in the first subparagraph, is easily accessible on their online interface, clear and user-friendly.
+The first subparagraph is without prejudice to the right of the recipient of the service concerned to initiate, at any stage, proceedings to contest those decisions by the providers of online platforms before a court in accordance with the applicable law."""@en .
+
+lg:EU-2022-2065-art21-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art21-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art21-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Nutzer, einschließlich meldender Personen oder Einrichtungen, die von den in Artikel 20 Absatz 1 genannten Entscheidungen betroffen sind, haben das Recht, zur Beilegung von Streitigkeiten im Zusammenhang mit diesen Entscheidungen sowie mit Beschwerden, die nicht mit den Mitteln des in dem Artikel genannten internen Beschwerdemanagementsystems gelöst wurden, eine gemäß Absatz 3 des vorliegenden Artikels zertifizierte außergerichtliche Streitbeilegungsstelle zu wählen.
+Die Anbieter von Online-Plattformen stellen sicher, dass die Informationen über die in Unterabsatz 1 genannte Möglichkeit der Nutzer hinsichtlich des Zugangs zu einer außergerichtlichen Streitbeilegung in klarer und benutzerfreundlicher Form auf ihrer Online-Schnittstelle leicht zugänglich sind.
+Unterabsatz 1 lässt das Recht des betroffenen Nutzers unberührt, im Einklang mit dem anwendbaren Recht zur Beanstandung der Entscheidungen von Anbietern von Online-Plattformen jederzeit vor Gericht zu ziehen."""@de .
+
+lg:EU-2022-2065-art22-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 22(1) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art16-1 , lg:EU-2022-2065-art16-2 , lg:EU-2022-2065-art16-3 , lg:EU-2022-2065-art16-4 , lg:EU-2022-2065-art16-5 , lg:EU-2022-2065-art16-6 ;
+    lgo:regulates lgv:TrustedFlaggers ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[4]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art22-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art22-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[4]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of online platforms shall take the necessary technical and organisational measures to ensure that notices submitted by trusted flaggers, acting within their designated area of expertise, through the mechanisms referred to in Article 16, are given priority and are processed and decided upon without undue delay."@en .
+
+lg:EU-2022-2065-art22-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art22-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art22-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[4]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Die Anbieter von Online-Plattformen ergreifen die erforderlichen technischen und organisatorischen Maßnahmen, damit Meldungen, die von in ihrem ausgewiesenen Fachgebiet tätigen vertrauenswürdigen Hinweisgebern über die in Artikel 16 genannten Mechanismen übermittelt werden, vorrangig behandelt und unverzüglich bearbeitet und einer Entscheidung zugeführt werden."@de .
+
+lg:EU-2022-2065-art23-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 23(1) DSA" ;
+    lgo:regulates lgv:MeasuresAgainstMisuse ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[5]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art23-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art23-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[5]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of online platforms shall suspend, for a reasonable period of time and after having issued a prior warning, the provision of their services to recipients of the service that frequently provide manifestly illegal content."@en .
+
+lg:EU-2022-2065-art23-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art23-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art23-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[5]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Die Anbieter von Online-Plattformen setzen die Erbringung ihrer Dienste für Nutzer, die häufig und offensichtlich rechtswidrige Inhalte bereitstellen, für einen angemessenen Zeitraum nach vorheriger Warnung aus."@de .
+
+lg:EU-2022-2065-art24-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 24(1) DSA" ;
+    lgo:refersTo lg:EU-2022-2065-art15-1 , lg:EU-2022-2065-art21-1 , lg:EU-2022-2065-art23-1 ;
+    lgo:regulates lgv:PlatformTransparencyReporting ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[6]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art24-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art24-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[6]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. In addition to the information referred to in Article 15, providers of online platforms shall include in the reports referred to in that Article information on the following:
+(a) the number of disputes submitted to the out-of-court dispute settlement bodies referred to in Article 21, the outcomes of the dispute settlement, and the median time needed for completing the dispute settlement procedures, as well as the share of disputes where the provider of the online platform implemented the decisions of the body;
+(b) the number of suspensions imposed pursuant to Article 23, distinguishing between suspensions enacted for the provision of manifestly illegal content, the submission of manifestly unfounded notices and the submission of manifestly unfounded complaints."""@en .
+
+lg:EU-2022-2065-art24-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art24-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art24-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[6]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Zusätzlich zu den in Artikel 15 genannten Informationen nehmen die Anbieter von Online-Plattformen in die in jenem Artikel genannten Berichte folgende Informationen auf:
+a) Anzahl der Streitigkeiten, die den in Artikel 21 genannten außergerichtlichen Streitbeilegungsstellen vorgelegt wurden, Ergebnisse der Streitbeilegung und Mediandauer bis zum Abschluss der Streitbeilegungsverfahren sowie Anteil der Streitigkeiten, bei denen die Anbieter von Online-Plattform die Entscheidungen der Stelle umgesetzt haben;
+b) Anzahl der Aussetzungen nach Artikel 23, wobei zwischen Aussetzungen wegen offensichtlich rechtswidriger Inhalte, wegen Übermittlung offensichtlich unbegründeter Meldungen und wegen Einreichung offensichtlich unbegründeter Beschwerden zu unterscheiden ist."""@de .
+
+lg:EU-2022-2065-art24-3
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 24(3) DSA" ;
+    lgo:regulates lgv:PlatformTransparencyReporting ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[6]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art24-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art24-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[6]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "3. Providers of online platforms or of online search engines shall communicate to the Digital Services Coordinator of establishment and the Commission, upon their request and without undue delay, the information referred to in paragraph 2, updated to the moment of such request. That Digital Services Coordinator or the Commission may require the provider of the online platform or of the online search engine to provide additional information as regards the calculation referred to in that paragraph, including explanations and substantiation in respect of the data used. That information shall not include personal data."@en .
+
+lg:EU-2022-2065-art24-3-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art24-3-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art24-3 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[6]/PARAG[3]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(3) Die Anbieter von Online-Plattformen oder Online-Suchmaschinen übermitteln dem Koordinator für digitale Dienste am Niederlassungsort und der Kommission auf deren Verlangen und unverzüglich die in Absatz 2 genannten Informationen, die zum Zeitpunkt dieses Verlangens aktualisiert werden. Dieser Koordinator für digitale Dienste oder die Kommission kann vom Anbieter der Online-Plattform oder der Online-Suchmaschine zusätzliche Informationen über die in jenem Absatz genannte Berechnung sowie Erläuterungen und Begründungen in Bezug auf die verwendeten Daten verlangen. Diese Informationen dürfen keine personenbezogenen Daten enthalten."@de .
+
+lg:EU-2022-2065-art25-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 25(1) DSA" ;
+    lgo:regulates lgv:NonDeceptiveOnlineInterface ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[7]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art25-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art25-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[7]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of online platforms shall not design, organise or operate their online interfaces in a way that deceives or manipulates the recipients of their service or in a way that otherwise materially distorts or impairs the ability of the recipients of their service to make free and informed decisions."@en .
+
+lg:EU-2022-2065-art25-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art25-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art25-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[7]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Anbieter von Online-Plattformen dürfen ihre Online-Schnittstellen nicht so konzipieren, organisieren oder betreiben, dass Nutzer getäuscht, manipuliert oder anderweitig in ihrer Fähigkeit, freie und informierte Entscheidungen zu treffen, maßgeblich beeinträchtigt oder behindert werden."@de .
+
 lg:EU-2022-2065-art26-1
     a lgo:Provision ;
     eli:is_part_of lg:EU-2022-2065 ;
@@ -249,6 +795,68 @@ a) dass es sich bei den Informationen um Werbung handelt, einschließlich durch 
 b) die natürliche oder juristische Person, in deren Namen die Werbung angezeigt wird,
 c) die natürliche oder juristische Person, die für die Werbung bezahlt hat, wenn sich diese Person von der in Buchstabe b genannten natürlichen oder juristischen Person unterscheidet,
 d) aussagekräftige, über die Werbung direkt und leicht zugängliche Informationen über die wichtigsten Parameter zur Bestimmung der Nutzer, denen die Werbung angezeigt wird, und darüber, wie diese Parameter unter Umständen geändert werden können."""@de .
+
+lg:EU-2022-2065-art27-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 27(1) DSA" ;
+    lgo:regulates lgv:RecommenderSystemTransparency ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[9]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art27-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art27-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[9]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of online platforms that use recommender systems shall set out in their terms and conditions, in plain and intelligible language, the main parameters used in their recommender systems, as well as any options for the recipients of the service to modify or influence those main parameters."@en .
+
+lg:EU-2022-2065-art27-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art27-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art27-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[9]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Anbieter von Online-Plattformen, die Empfehlungssysteme verwenden, müssen in ihren allgemeinen Geschäftsbedingungen in klarer und verständlicher Sprache die wichtigsten Parameter, die in ihren Empfehlungssystemen verwendet werden, sowie alle Möglichkeiten für die Nutzer, diese wichtigen Parameter zu ändern oder zu beeinflussen, darlegen."@de .
+
+lg:EU-2022-2065-art28-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 28(1) DSA" ;
+    lgo:regulates lgv:OnlineProtectionOfMinors ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[10]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art28-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art28-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[10]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text "1. Providers of online platforms accessible to minors shall put in place appropriate and proportionate measures to ensure a high level of privacy, safety, and security of minors, on their service."@en .
+
+lg:EU-2022-2065-art28-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art28-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art28-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[3]/ARTICLE[10]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text "(1) Anbieter von Online-Plattformen, die für Minderjährige zugänglich sind, müssen geeignete und verhältnismäßige Maßnahmen ergreifen, um für ein hohes Maß an Privatsphäre, Sicherheit und Schutz von Minderjährigen innerhalb ihres Dienstes zu sorgen."@de .
 
 lg:EU-2022-2065-art29-1
     a lgo:Provision ;
@@ -323,6 +931,113 @@ b) Kopie des Identitätsdokuments des Unternehmers oder eine andere elektronisch
 c) Angaben zum Zahlungskonto des Unternehmers,
 d) falls der Unternehmer in einem Handelsregister oder einem ähnlichen öffentlichen Register eingetragen ist, das Handelsregister, in dem er eingetragen ist, und seine Handelsregisternummer oder eine gleichwertige in diesem Register verwendete Kennung,
 e) Selbstbescheinigung des Unternehmers, in der sich dieser verpflichtet, nur Produkte oder Dienstleistungen anzubieten, die den geltenden Vorschriften des Unionsrechts entsprechen."""@de .
+
+lg:EU-2022-2065-art31-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 31(1) DSA" ;
+    lgo:regulates lgv:ComplianceByDesign ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[4]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art31-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art31-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[4]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Providers of online platforms allowing consumers to conclude distance contracts with traders shall ensure that its online interface is designed and organised in a way that enables traders to comply with their obligations regarding pre-contractual information, compliance and product safety information under applicable Union law.
+In particular, the provider concerned shall ensure that its online interface enables traders to provide information on the name, address, telephone number and email address of the economic operator, as defined in Article 3, point (13), of Regulation (EU) 2019/1020 and other Union law."""@en .
+
+lg:EU-2022-2065-art31-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art31-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art31-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[4]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Anbieter von Online-Plattformen, die Verbrauchern den Abschluss von Fernabsatzverträgen mit Unternehmern ermöglichen, stellen sicher, dass ihre Online-Schnittstelle so konzipiert und organisiert ist, dass die Unternehmer ihren Verpflichtungen in Bezug auf vorvertragliche Informationen, Konformität und Produktsicherheitsinformationen nach geltendem Unionsrecht nachkommen können.
+Insbesondere gewährleistet der Anbieter, dass seine Online-Schnittstelle es den Unternehmern ermöglicht, Informationen zu Namen, Adresse, Telefonnummer und E-Mail-Adresse des Wirtschaftsakteurs im Sinne von Artikel 3 Nummer 13 der Verordnung (EU) 2019/1020 und anderen Rechtsvorschriften der Union bereitzustellen."""@de .
+
+lg:EU-2022-2065-art32-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 32(1) DSA" ;
+    lgo:regulates lgv:InformConsumersOfIllegalProducts ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[4]/ARTICLE[4]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art32-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art32-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[4]/ARTICLE[4]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Where a provider of an online platform allowing consumers to conclude distance contracts with traders becomes aware, irrespective of the means used, that an illegal product or service has been offered by a trader to consumers located in the Union through its services, that provider shall inform, insofar as it has their contact details, consumers who purchased the illegal product or service through its services of the following:
+(a) the fact that the product or service is illegal;
+(b) the identity of the trader; and
+(c) any relevant means of redress.
+The obligation laid down in the first subparagraph shall be limited to purchases of illegal products or services made within the six months preceding the moment that the provider became aware of the illegality."""@en .
+
+lg:EU-2022-2065-art32-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art32-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art32-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[3]/DIVISION[4]/ARTICLE[4]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Erhält ein Anbieter einer Online-Plattform, die Verbrauchern den Abschluss von Fernabsatzverträgen mit Unternehmern ermöglicht, unabhängig von den verwendeten Mitteln Kenntnis, dass ein rechtswidriges Produkt oder eine rechtswidrige Dienstleistung von einem Unternehmer über seine Dienste Verbrauchern in der Union angeboten wurde, so informiert er – sofern ihm deren Kontaktdaten vorliegen – die Verbraucher, die das rechtswidrige Produkt oder die rechtswidrige Dienstleistung über seine Dienste erworben haben über Folgendes:
+a) die Tatsache, dass das Produkt oder die Dienstleistung rechtswidrig ist
+b) die Identität des Unternehmers und
+c) die einschlägigen Rechtsbehelfe.
+Die Pflicht nach Unterabsatz 1 gilt nur für den Erwerb von rechtswidrigen Produkten oder Dienstleistungen in den vergangenen sechs Monaten ab dem Zeitpunkt, zu dem der Anbieter von der Rechtswidrigkeit Kenntnis erlangt hat."""@de .
+
+lg:EU-2022-2065-art6-1
+    a lgo:Provision ;
+    eli:is_part_of lg:EU-2022-2065 ;
+    lgo:citation "Art. 6(1) DSA" ;
+    lgo:regulates lgv:HostingLiabilityExemption ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[2]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI .
+
+lg:EU-2022-2065-art6-1-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art6-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[2]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng"^^xsd:anyURI ;
+    lgo:text """1. Where an information society service is provided that consists of the storage of information provided by a recipient of the service, the service provider shall not be liable for the information stored at the request of a recipient of the service, on condition that the provider:
+(a) does not have actual knowledge of illegal activity or illegal content and, as regards claims for damages, is not aware of facts or circumstances from which the illegal activity or illegal content is apparent; or
+(b) upon obtaining such knowledge or awareness, acts expeditiously to remove or to disable access to the illegal content."""@en .
+
+lg:EU-2022-2065-art6-1-q1-de
+    a lgo:Quote ;
+    lgo:languageVersionOf lg:EU-2022-2065-art6-1-q1 ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:EU-2022-2065-art6-1 ;
+    lgo:retrievedOn "2026-11-02"^^xsd:date ;
+    lgo:sourceDocument lg:EU-2022-2065-source-de ;
+    lgo:sourceElement "/ACT/ENACTING.TERMS[1]/DIVISION[2]/ARTICLE[3]/PARAG[1]" ;
+    lgo:sourceUrl "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu"^^xsd:anyURI ;
+    lgo:text """(1) Bei der Durchführung eines Dienstes der Informationsgesellschaft, der in der Speicherung der von einem Nutzer bereitgestellten Informationen besteht, haftet der Diensteanbieter nicht für die im Auftrag eines Nutzers gespeicherten Informationen, sofern er
+a) keine tatsächliche Kenntnis von einer rechtswidrigen Tätigkeit oder rechtswidrigen Inhalten hat und sich in Bezug auf Schadenersatzansprüche auch keiner Tatsachen oder Umstände bewusst ist, aus denen eine rechtswidrige Tätigkeit oder rechtswidrige Inhalte offensichtlich hervorgeht, oder
+b) sobald er diese Kenntnis oder dieses Bewusstsein erlangt, zügig tätig wird, um den Zugang zu den rechtswidrigen Inhalten zu sperren oder diese zu entfernen."""@de .
 
 lg:EU-2022-2065-source
     a lgo:SourceDocument ;

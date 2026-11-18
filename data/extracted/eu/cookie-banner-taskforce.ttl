@@ -219,7 +219,7 @@ lg:EDPB-CBT-2023-source
     lgo:annotatedFile "sources/eu/cookie-banner-taskforce/cookie-banner-taskforce.law.xml" ;
     lgo:authenticity lgv:Official ;
     lgo:licence lgv:ReuseWithAttribution ;
-    lgo:licenceBasis "EDPB legal notice: reproduction is authorised provided the source is acknowledged" ;
+    lgo:licenceBasis "EDPB Copyright page (edpb.europa.eu/copyright_en): reuse of website information is authorised for commercial and non-commercial purposes provided the source is acknowledged and the meaning is not distorted" ;
     lgo:mediaType "application/pdf" ;
     lgo:repositoryPath "sources/eu/cookie-banner-taskforce/edpb_20230118_report_cookie_banner_taskforce_en.pdf" ;
     lgo:retrievedOn "2026-11-03"^^xsd:date ;

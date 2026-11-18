@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BGH, Urteil vom 9. September 2021 – I ZR 90/20 ("Influencer I"), the passages the graph
+  quotes, written in schemas/law.xsd from the court's PDF. The words are the court's; only
+  the structure is ours. `legalgraph sources verify` checks each paragraph against the PDF's
+  text. An influencer's posts are geschäftliche Handlungen for her own business; a post about
+  a third company's product without consideration is one for that company when it has a
+  "werblicher Überschuss" — which a link to the manufacturer's page regularly supplies, while
+  "Tap Tags" alone do not suffice; the § 5a(6) UWG label must be obvious at first glance, and
+  a hint in the post text does not label a "Tap Tag" on an image.
+-->
+<law xmlns="https://legalgraph.org/ns/law#"
+     xmlns:lga="https://legalgraph.org/ns/annotation#"
+     lang="de"
+     lga:act="DE-BGH-2021-0909" lga:jurisdiction="DE" lga:act-type="Judgment"
+     lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR__90-20.pdf?__blob=publicationFile&amp;v=1">
+  <meta>
+    <title>Bundesgerichtshof, Urteil vom 9. September 2021 – I ZR 90/20</title>
+    <date>2021-09-09</date>
+  </meta>
+
+  <section num="Tenor" title="Tenor" source="bgh-izr90-20.pdf">
+    <paragraph lga:provision="DE-BGH-2021-0909-tenor-1" lga:citation="BGH I ZR 90/20, Tenor"
+      lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR__90-20.pdf?__blob=publicationFile&amp;v=1">Die Revision gegen das Urteil des 2. Zivilsenats des Oberlandesgerichts Braunschweig vom 13. Mai 2020 wird auf Kosten der Beklagten zurückgewiesen.</paragraph>
+  </section>
+
+  <section num="Leitsatz" title="Leitsatz" source="bgh-izr90-20.pdf">
+    <paragraph lga:provision="DE-BGH-2021-0909-ls-d" lga:citation="BGH I ZR 90/20, Leitsatz d)"
+      lga:interprets="DE-UWG-s5a-1" lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR__90-20.pdf?__blob=publicationFile&amp;v=1">d) Erhält eine Influencerin für einen in sozialen Medien veröffentlichten Beitrag mit Bezug zu einem Drittunternehmen keine Gegenleistung, stellt diese Veröffentlichung eine geschäftliche Handlung zugunsten des Drittunternehmens dar, wenn der Beitrag nach seinem Gesamteindruck übertrieben werblich ist, also einen werblichen Überschuss enthält, so dass die Förderung fremden Wettbewerbs eine größere als nur eine notwendigerweise begleitende Rolle spielt (Fortführung von BGH, Urteil vom 9. Februar 2006 - I ZR 124/03, GRUR 2006, 875 Rn. 23 = WRP 2006, 1109 - Rechtsanwalts-Ranglisten).</paragraph>
+    <paragraph lga:provision="DE-BGH-2021-0909-ls-e" lga:citation="BGH I ZR 90/20, Leitsatz e)"
+      lga:interprets="DE-UWG-s5a-1" lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR__90-20.pdf?__blob=publicationFile&amp;v=1">e) Ob ein Beitrag einer Influencerin in sozialen Medien einen zur Annahme einer geschäftlichen Handlung zugunsten eines fremden Unternehmens erforderlichen werblichen Überschuss enthält, ist aufgrund einer umfassenden Würdigung der gesamten Umstände des Einzelfalls unter Berücksichtigung des Zusammenwirkens der Gestaltungsmerkmale (z.B. gepostete Produktfotos, redaktioneller Kontext, Verlinkung auf Internetseiten von Drittunternehmen) zu beurteilen. Der Umstand, dass die Influencerin Bilder mit "Tap Tags" versehen hat, um die Hersteller der abgebildeten Waren zu bezeichnen, genügt als solcher nicht, um einen werblichen Überschuss der Instagram -Beiträge anzunehmen. Die Verlinkung auf eine Internetseite des Herstellers des abgebildeten Produkts beinhaltet hingegen regelmäßig einen werblichen Überschuss, auch wenn auf der verlinkten Seite des Herstellers der Erwerb von Produkten nicht unmittelbar möglich ist.</paragraph>
+    <paragraph lga:provision="DE-BGH-2021-0909-ls-f" lga:citation="BGH I ZR 90/20, Leitsatz f)"
+      lga:interprets="DE-UWG-s5a-1" lga:regulates="CommercialCommunication" lga:url="https://www.bundesgerichtshof.de/SharedDocs/Entscheidungen/DE/Zivilsenate/I_ZS/2020/I_ZR__90-20.pdf?__blob=publicationFile&amp;v=1">f) Der nach § 5a Abs. 6 UWG erforderliche Hinweis auf den kommerziellen Zweck einer geschäftlichen Handlung muss s o deutlich erfolgen, dass er aus der Sicht des durchschnittlich informierten, situationsadäquat aufmerksamen und verständigen Verbrauchers, der zur angesprochenen Gruppe gehört, auf den ersten Blick und zweifelsfrei hervortritt. Der im Textteil eines in sozialen Medien veröffentlichten Beitrags erscheinende Hinweis auf den kommerziellen Zweck reicht regelmäßig nicht aus, um den kommerziellen Zweck eines auf der neben dem Text angeordneten Abbildung erscheinenden "Tap Tags" als Werbung zu kennzeichnen.</paragraph>
+  </section>
+</law>

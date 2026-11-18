@@ -27,7 +27,9 @@ const stats = [
   [meta.counts.provisions, t("provisions"), pagePath("provisions", t.locale)],
   [meta.counts.obligations, t("rules for businesses"), pagePath("rules", t.locale)],
   [graph.documents.size, t("official source files"), pagePath("sources", t.locale)],
+  [meta.counts.triples, t("triples in the graph"), pagePath("download", t.locale)],
 ] as const;
+const number = new Intl.NumberFormat(t.locale);
 
 // The worked example: one line of § 5(1) DDG, in German and English, straight from the graph.
 const ddg = graph.provisions.get("DE-DDG-s5-1")!;
@@ -133,12 +135,12 @@ const coverage = [
         <HeroGraph t={t} />
       </div>
     </div>
-    <ul class="mt-14 grid grid-cols-2 gap-x-6 gap-y-6 border-t pt-8 sm:grid-cols-3 lg:grid-cols-5">
+    <ul class="mt-14 grid grid-cols-2 gap-x-6 gap-y-6 border-t pt-8 sm:grid-cols-3 lg:grid-cols-6">
       {
         stats.map(([value, label, href]) => (
           <li>
             <a href={href} class="no-underline group block">
-              <span class="block text-h2 font-semibold text-foreground group-hover:text-primary">{value}</span>
+              <span class="block text-h2 font-semibold text-foreground group-hover:text-primary">{number.format(value)}</span>
               <span class="text-sm text-muted-foreground">{label}</span>
             </a>
           </li>

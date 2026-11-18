@@ -35,7 +35,15 @@ LINK_PREDICATES = {
     "proposes-to-amend": (LG, LGO.proposesToAmend),
 }
 PROVISION_ROLES = tuple(ROLE_PREDICATES)
-PROVISION_ATTRIBUTES = {"provision", "citation", "url", "requires", *ROLE_PREDICATES, *LINK_PREDICATES}
+PROVISION_ATTRIBUTES = {
+    "provision",
+    "citation",
+    "url",
+    "requires",
+    "parallel-siblings",
+    *ROLE_PREDICATES,
+    *LINK_PREDICATES,
+}
 # An authored parallel (a translation written in schemas/law.xsd) annotates only where a provision is
 # and where it is published: lga:provision and lga:url; the root carries the usual act attributes.
 PARALLEL_PROVISION_ATTRIBUTES = {"provision", "url"}

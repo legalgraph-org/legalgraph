@@ -1,0 +1,32 @@
+# OGH, Urteil vom 18.11.2003 – 4 Ob 219/03i (ECLI:AT:OGH0002:2003:0040OB00219.03I.1118.000):
+# § 5 Abs. 1 Z 3 ECG requires, besides the email address, at least one other individual
+# communication channel (e.g. telephone or fax); an incorrect and then an unreachable
+# telephone number did not satisfy the duty. The decision's Spruch and the reasoning
+# (Rechtliche Beurteilung) are kept as RIS html-fragment originals and transcribed in
+# schemas/law.xsd, checked word for word.
+id: at/ogh-4ob219-03i
+title: OGH, Urteil vom 18.11.2003 – 4 Ob 219/03i
+jurisdiction: AT
+language: de
+publisher: Oberster Gerichtshof, RIS Justiz (ris.bka.gv.at)
+kind: authored-xml
+licence: official-work
+licence_basis: "§ 5 Abs. 1 UrhG (Austria): court decisions are official works without copyright"
+originals:
+  - file: ogh-4ob219-03i-spruch.fragment.html
+    url: "https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&Dokumentnummer=JJT_20031118_OGH0002_0040OB00219_03I0000_000"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_JustizDocumentData_0_SpruchContainer_0"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    retrieved_on: 2026-11-15
+    sha256: "12dd505d19098e2ef3d43c8d027eb1076a92ca9b30738fc12d0c671a4a4670d2"
+  - file: ogh-4ob219-03i-begruendung.fragment.html
+    url: "https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&Dokumentnummer=JJT_20031118_OGH0002_0040OB00219_03I0000_000"
+    fetch: html-fragment
+    selector: "#MainContent_DocumentRepeater_JustizDocumentData_0_RechtlicheBeurteilungContainer_0"
+    text_ignore: [".sr-only", ".onlyScreenreader"]
+    media_type: text/html
+    retrieved_on: 2026-11-15
+    sha256: "398846003064f6d39aa492914588b01e4c8581473fa7b5353e0ecba373abc877"
+annotated: ogh-4ob219-03i.law.xml

@@ -24,6 +24,7 @@ lg:SI-ZISRPS a lgo:LegalAct ;
     lgo:actType lgv:Statute ;
     lgo:jurisdiction lg:SI ;
     eli:transposes lg:EU-2013-11 ;
+    rdfs:comment "Art. 32(4) asks online sellers to link to the EU ODR platform. The platform closed on 20 July 2025 when Regulation (EU) 2024/3228 repealed Regulation 524/2013; the Slovenian text is unamended, but the government stated the related obligation ceases to apply from that date."@en ;
     lgo:reviewStatus lgv:SourceChecked .
 
 # 32. člen comes from sources/si/zisrps (official gazette PDF, Ur. l. RS

@@ -1,0 +1,44 @@
+# Judgment of the Court of Justice of the EU, Case C-330/23 (Aldi Süd), 26 September 2024:
+# Article 6a(1)-(2) of Directive 98/6/EC requires an announced price reduction (percentage or
+# promotional claim) to be *determined on the basis of* the prior price — the lowest price of
+# the last 30 days — so the reduced price cannot be equal to or higher than that prior price.
+# This is the ruling behind Germany's PAngV § 11 "30-day rule" for "was/now" price claims.
+# ECLI:EU:C:2024:804. The language of the case is German; English is the Court's translation,
+# annotated for its operative part.
+id: eu/cjeu-aldi-sued
+title: Judgment in Case C-330/23, Aldi Süd
+jurisdiction: EU
+language: en
+publisher: Court of Justice of the European Union, via the Publications Office (Cellar, EUR-Lex)
+kind: official-xml
+licence: reuse-with-attribution
+licence_basis: "EU court decision, republished under the EU reuse framework (Commission Decision 2011/833/EU; curia/EUR-Lex reuse notice)"
+originals:
+  - file: ECR_62023CJ0330_EN_01.xml
+    page: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62023CJ0330
+    url: https://publications.europa.eu/resource/celex/62023CJ0330
+    fetch: zip-member
+    member: ECR_62023CJ0330_EN_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: eng
+    media_type: application/xml
+    authentic: false
+    notes:
+      - "Language of the case: German. This English text is the Court's translation; the authentic version is the German one."
+    retrieved_on: 2026-11-16
+    sha256: ab35d78480969728680a73956f90e8d0b412c44d0911ec6391abb9cbb7ded00d
+  - file: ECR_62023CJ0330_DE_01.xml
+    role: parallel
+    language: de
+    page: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62023CJ0330
+    url: https://publications.europa.eu/resource/celex/62023CJ0330
+    fetch: zip-member
+    member: ECR_62023CJ0330_DE_01.xml
+    headers:
+      Accept: "application/zip;mtype=fmx4"
+      Accept-Language: deu
+    media_type: application/xml
+    retrieved_on: 2026-11-16
+    sha256: ef283f4e22785e6a4429d6bc1a11e6a9369bf106ec002fd4e798c361c669a272
+annotated: ECR_62023CJ0330_EN_01.annotated.xml

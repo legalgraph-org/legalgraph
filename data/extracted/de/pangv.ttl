@@ -43,6 +43,73 @@ lg:DE-PAngV-s11-1-q1
     lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI ;
     lgo:text "(1) Wer zur Angabe eines Gesamtpreises verpflichtet ist, hat gegenüber Verbrauchern bei jeder Bekanntgabe einer Preisermäßigung für eine Ware den niedrigsten Gesamtpreis anzugeben, den er innerhalb der letzten 30 Tage vor der Anwendung der Preisermäßigung gegenüber Verbrauchern angewendet hat."@de .
 
+lg:DE-PAngV-s11-2
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-PAngV ;
+    lgo:citation "§ 11 Abs. 2 PAngV" ;
+    lgo:implements lg:EU-1998-6-art6a-5 ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:PriorPrice ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-PAngV-source ;
+    lgo:sourceElement "/dokumente/norm[16]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI .
+
+lg:DE-PAngV-s11-2-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-PAngV-s11-2 ;
+    lgo:retrievedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceDocument lg:DE-PAngV-source ;
+    lgo:sourceElement "/dokumente/norm[16]/textdaten[1]/text[1]/Content[1]/P[2]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI ;
+    lgo:text "(2) Im Fall einer schrittweisen, ohne Unterbrechung ansteigenden Preisermäßigung des Gesamtpreises einer Ware kann während der Dauer der Preisermäßigung der niedrigste Gesamtpreis nach Absatz 1 angegeben werden, der vor Beginn der schrittweisen Preisermäßigung gegenüber Verbrauchern für diese Ware angewendet wurde."@de .
+
+lg:DE-PAngV-s11-3
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-PAngV ;
+    lgo:citation "§ 11 Abs. 3 PAngV" ;
+    lgo:implements lg:EU-1998-6-art6a-1 , lg:EU-1998-6-art6a-2 ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:requiresDisclosureOf lgv:PriorPrice ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-PAngV-source ;
+    lgo:sourceElement "/dokumente/norm[16]/textdaten[1]/text[1]/Content[1]/P[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI .
+
+lg:DE-PAngV-s11-3-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-PAngV-s11-3 ;
+    lgo:retrievedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceDocument lg:DE-PAngV-source ;
+    lgo:sourceElement "/dokumente/norm[16]/textdaten[1]/text[1]/Content[1]/P[3]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI ;
+    lgo:text "(3) Die Absätze 1 und 2 gelten entsprechend für nach § 4 Absatz 2 lediglich zur Angabe des Grundpreises Verpflichtete."@de .
+
+lg:DE-PAngV-s11-4
+    a lgo:Provision ;
+    eli:is_part_of lg:DE-PAngV ;
+    lgo:citation "§ 11 Abs. 4 PAngV" ;
+    lgo:implements lg:EU-1998-6-art6a-3 ;
+    lgo:regulates lgv:PriceTransparency ;
+    lgo:reviewStatus lgv:SourceChecked ;
+    lgo:sourceDocument lg:DE-PAngV-source ;
+    lgo:sourceElement "/dokumente/norm[16]/textdaten[1]/text[1]/Content[1]/P[4]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI .
+
+lg:DE-PAngV-s11-4-q1
+    a lgo:Quote ;
+    lgo:officialLanguageVersion true ;
+    lgo:quoteOf lg:DE-PAngV-s11-4 ;
+    lgo:retrievedOn "2026-11-07"^^xsd:date ;
+    lgo:sourceDocument lg:DE-PAngV-source ;
+    lgo:sourceElement "/dokumente/norm[16]/textdaten[1]/text[1]/Content[1]/P[4]" ;
+    lgo:sourceUrl "https://www.gesetze-im-internet.de/pangv_2022/__11.html"^^xsd:anyURI ;
+    lgo:text """(4) Die Absätze 1 bis 3 gelten nicht bei der Bekanntgabe von
+1. individuellen Preisermäßigungen oder
+2. Preisermäßigungen für schnell verderbliche Waren oder Waren mit kurzer Haltbarkeit, wenn der geforderte Preis wegen einer drohenden Gefahr des Verderbs oder eines drohenden Ablaufs der Haltbarkeit herabgesetzt wird und dies für die Verbraucher in geeigneter Weise kenntlich gemacht wird."""@de .
+
 lg:DE-PAngV-s3-1
     a lgo:Provision ;
     eli:is_part_of lg:DE-PAngV ;

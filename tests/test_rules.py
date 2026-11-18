@@ -63,8 +63,8 @@ def test_a_national_rule_replaces_the_rule_it_refines(loaded) -> None:
     conditions, obligations = loaded
     germany = {o.id for o in rules.applicable(conditions, obligations, {"CommercialDigitalService"}, "DE")}
     assert "DE-R-impressum" in germany and "EU-R-service-provider-information" not in germany
-    austria = {o.id for o in rules.applicable(conditions, obligations, {"CommercialDigitalService"}, "AT")}
-    assert "EU-R-service-provider-information" in austria
+    hungary = {o.id for o in rules.applicable(conditions, obligations, {"CommercialDigitalService"}, "HU")}
+    assert "EU-R-service-provider-information" in hungary
 
 
 def test_a_directive_rule_names_the_national_provision(loaded) -> None:
